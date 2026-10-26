@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>tokenmost.com — 国内 AI 大模型折扣码与免费额度情报站</title>
+<meta name="description" content="五层来源全覆盖：大模型官方、Agent 平台、算力中心、token 中间商的折扣规则、折扣码与免费额度。每日人工核验，附本地账号托管面板。">
+<link rel="canonical" href="https://tokenmost.com/">
+<meta property="og:title" content="TokenMost — AI token 折扣情报与导航">
+<meta property="og:description" content="折扣码一键复制 · 每日人工核验 · 账号本地托管">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d1117'/><text x='50' y='68' font-size='55' font-weight='bold' text-anchor='middle' fill='%2300e5a0' font-family='monospace'>tM</text></svg>">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--green:#3fb950;--cyan:#58a6ff;--amber:#d29922;--red:#f85149;--accent:#00e5a0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+a{color:var(--cyan);text-decoration:none}
+button{font-family:inherit}
+header{padding:48px 0 28px;text-align:center;border-bottom:1px solid var(--border)}
+.logo{font-size:2.3rem;font-weight:800;letter-spacing:-1px}
+.logo em{font-style:normal;color:var(--accent)}
+.tagline{color:var(--muted);margin-top:6px}
+.stats{display:flex;justify-content:center;gap:22px;margin-top:18px;flex-wrap:wrap}
+.stat{font-size:.88rem;color:var(--muted)}
+.stat b{color:var(--accent);font-family:monospace;font-size:1.05rem}
+/* ===== hao123 导航区 ===== */
+.nav-section{margin:26px 0}
+.nav-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.nav-head h3{font-size:1rem}
+.nav-head .cnt{font-size:.75rem;color:var(--muted)}
+.nav-head .dot{width:8px;height:8px;border-radius:50%}
+.nav-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.site{display:block;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:9px 12px;transition:border-color .15s}
+.site:hover{border-color:var(--accent)}
+.site b{font-size:.88rem;display:block;color:var(--text)}
+.site span{font-size:.72rem;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.site .free{color:var(--green);font-size:.72rem}
+#navCollapse{display:none}
+/* ===== 工具条 ===== */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:26px 0 16px;justify-content:space-between}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{background:var(--card);border:1px solid var(--border);color:var(--muted);border-radius:20px;padding:5px 14px;font-size:.83rem;cursor:pointer}
+.tab.active{border-color:var(--accent);color:var(--accent);background:rgba(0,229,160,.08)}
+#search{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.88rem;width:190px}
+#search:focus{border-color:var(--accent)}
+/* ===== 折扣卡片 ===== */
+#cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;padding-bottom:70px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--cyan)}
+.card-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:6px}
+.provider{font-weight:700}
+.badge{font-size:.7rem;padding:2px 8px;border-radius:10px;white-space:nowrap;font-family:monospace}
+.b-green{background:rgba(63,185,80,.15);color:var(--green)}
+.b-amber{background:rgba(210,153,34,.15);color:var(--amber)}
+.b-red{background:rgba(248,81,73,.15);color:var(--red)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.chip{font-size:.7rem;color:var(--cyan);background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.25);border-radius:6px;padding:1px 8px}
+.chip.gold{color:var(--amber);background:rgba(210,153,34,.1);border-color:rgba(210,153,34,.3)}
+.value{font-size:.9rem;margin-bottom:8px;flex:1}
+.notes{color:var(--muted);font-size:.78rem;margin-bottom:10px}
+.coupon{display:flex;align-items:center;gap:8px;background:rgba(210,153,34,.08);border:1px dashed var(--amber);border-radius:8px;padding:8px 10px;margin-bottom:10px}
+.coupon .code{font-family:monospace;font-size:.9rem;color:var(--amber);font-weight:700;flex:1;word-break:break-all}
+.coupon button{background:none;border:1px solid var(--amber);color:var(--amber);border-radius:6px;padding:4px 10px;font-size:.75rem;cursor:pointer;white-space:nowrap}
+.coupon button:hover{background:rgba(210,153,34,.15)}
+.phTag{font-size:.7rem;color:var(--red);border:1px solid var(--red);border-radius:6px;padding:2px 8px;white-space:nowrap}
+.meta{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--muted)}
+.go{background:var(--accent);color:#00150c;border-radius:8px;padding:6px 14px;font-weight:700;font-size:.82rem}
+.diff{color:var(--amber)}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:36px}
+footer{border-top:1px solid var(--border);padding:26px 0 90px;color:var(--muted);font-size:.83rem;text-align:center}
+/* ===== 账号库抽屉 ===== */
+#vaultBtn{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#00150c;border:none;border-radius:50%;width:54px;height:54px;font-size:1.4rem;cursor:pointer;box-shadow:0 4px 18px rgba(0,229,160,.4);z-index:50}
+#vaultBtn:hover{filter:brightness(1.1)}
+#vaultOverlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:60;display:none}
+#vault{position:fixed;top:0;right:-460px;width:min(440px,100vw);height:100vh;background:var(--card);border-left:1px solid var(--border);z-index:61;transition:right .25s,visibility 0s .25s;overflow-y:auto;padding:22px;visibility:hidden}
+#vault.open{right:0;visibility:visible;transition:right .25s}
+#vaultOverlay.open{display:block}
+#vault h2{font-size:1.1rem;margin-bottom:4px}
+.vault-warn{font-size:.75rem;color:var(--amber);background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.3);border-radius:8px;padding:8px 10px;margin:10px 0}
+.vault-form{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;margin:12px 0}
+.vault-form label{font-size:.75rem;color:var(--muted);display:block;margin-bottom:3px}
+.vault-form input,.vault-form select,.vault-form textarea{width:100%;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:7px 10px;color:var(--text);outline:none;margin-bottom:9px;font-size:.85rem;font-family:inherit}
+.vault-form input:focus{border-color:var(--accent)}
+.vault-form button{background:var(--accent);color:#00150c;border:none;border-radius:8px;padding:9px 18px;font-weight:700;cursor:pointer;width:100%}
+.vault-item{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:10px}
+.vault-item b{font-size:.9rem}
+.vault-item .acc{color:var(--cyan);font-size:.8rem;font-family:monospace}
+.vault-item .note{color:var(--muted);font-size:.78rem;margin:4px 0}
+.vault-item .exp{font-size:.75rem}
+.exp-soon{color:var(--red)}
+.exp-mid{color:var(--amber)}
+.vault-item .ops{display:flex;gap:10px;margin-top:6px;font-size:.75rem}
+.vault-item .ops a,.vault-item .ops button{background:none;border:none;color:var(--cyan);cursor:pointer;font-size:.75rem;padding:0}
+.vault-item .ops button.del{color:var(--red)}
+.vault-tools{display:flex;gap:8px;margin:10px 0}
+.vault-tools button{flex:1;background:var(--card);border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:7px;font-size:.75rem;cursor:pointer}
+#vaultClose{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+.vault-empty{color:var(--muted);font-size:.83rem;text-align:center;padding:20px}
+/* ===== 一键接入面板 ===== */
+.apiBtn{background:none;border:1px solid var(--cyan);color:var(--cyan);border-radius:8px;padding:6px 12px;font-size:.82rem;cursor:pointer}
+.apiBtn:hover{background:rgba(88,166,255,.12)}
+.claim{background:none;border:none;cursor:pointer;font-size:1rem;color:var(--muted);padding:0 4px;line-height:1}
+.claim.on{color:var(--amber)}
+.b-claimed{background:rgba(210,153,34,.15);color:var(--amber)}
+#apiOverlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:70;display:none}
+#apiOverlay.open{display:block}
+#apiPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(680px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:14px;z-index:71;display:none;padding:22px}
+#apiPanel.open{display:block}
+#apiClose{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+#apiPanel h3{font-size:1.05rem;margin-bottom:2px;padding-right:30px}
+#apiPanel .sub{font-size:.78rem;color:var(--muted);margin-bottom:12px}
+.api-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.api-field{margin:10px 0}
+.api-field label{font-size:.75rem;color:var(--muted);display:block;margin-bottom:3px}
+.api-field input{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);font-family:monospace;font-size:.85rem;outline:none}
+.api-field input:focus{border-color:var(--accent)}
+.snippet-wrap{position:relative}
+.snippet{background:#0a0e14;border:1px solid var(--border);border-radius:10px;padding:14px 90px 14px 14px;font-family:monospace;font-size:.8rem;line-height:1.55;white-space:pre-wrap;word-break:break-all;color:#c9d1d9;margin:0}
+.copyBtn{position:absolute;top:10px;right:10px;background:var(--accent);color:#00150c;border:none;border-radius:6px;padding:5px 12px;font-size:.72rem;font-weight:700;cursor:pointer}
+.api-links{display:flex;gap:14px;margin-top:12px;font-size:.8rem;flex-wrap:wrap}
+.api-note{font-size:.72rem;color:var(--muted);margin-top:10px}
+footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
+@media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="logo">token<em>most</em></div>
+  <p class="tagline">五层来源 · 折扣码 · 免费额度 · 每日人工核验</p>
+  <div class="stats">
+    <div class="stat">羊毛 <b id="n-deals">–</b> 条</div>
+    <div class="stat">今日验证 <b id="n-fresh">–</b> 条</div>
+    <div class="stat">导航站点 <b id="n-sites">–</b> 个</div>
+    <div class="stat">更新于 <b id="updated">–</b></div>
+  </div>
+</header>
+<div class="wrap">
+  <!-- ============ hao123 式导航 ============ -->
+  <section id="navArea"></section>
+  <button class="tab" id="navCollapse" style="margin:0 auto 20px;display:block">展开/收起导航 ↑↓</button>
+  <!-- ============ 折扣情报流 ============ -->
+  <div class="toolbar">
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-cat="all">全部</button>
+      <button class="tab" data-cat="official_cn">官方</button>
+      <button class="tab" data-cat="agent">Agent 平台</button>
+      <button class="tab" data-cat="compute">算力</button>
+      <button class="tab" data-cat="reseller">中间商</button>
+      <button class="tab" data-cat="coupon" style="border-color:rgba(210,153,34,.5)">🎁 有码</button>
+      <button class="tab" data-cat="official_global">海外</button>
+      <button class="tab" data-cat="mine">⭐ 已领</button>
+    </div>
+    <span style="display:flex;gap:10px;flex-wrap:wrap">
+      <select id="typeFilter" style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.85rem">
+        <option value="">全部类型</option>
+        <option value="signup_bonus">注册赠送</option>
+        <option value="free_tier">长期免费</option>
+        <option value="coupon">折扣码</option>
+        <option value="student">学生通道</option>
+        <option value="limited_promo">限时活动</option>
+        <option value="price_low">长期低价</option>
+      </select>
+      <input id="search" type="search" placeholder="🔍 搜索平台 / 关键词">
+    </span>
+  </div>
+  <main id="cards"><div class="empty">加载中…</div></main>
+</div>
+<footer class="wrap">
+  <p>数据每日人工更新 · 优惠以各平台官方页面为准</p>
+  <p class="disclaim">⚠️ 免责声明：本站为独立情报聚合站，与所列平台无关；所有优惠以各平台官方页面为准，请自行核实后再操作，本站不构成消费建议。</p>
+  <p><a href="rss.xml">RSS 订阅</a> · © 2026 tokenmost.com</p>
+</footer>
+<!-- ============ 一键接入面板（代码生成器） ============ -->
+<div id="apiOverlay"></div>
+<div id="apiPanel" role="dialog" aria-modal="true">
+  <button id="apiClose">✕</button>
+  <h3 id="apiTitle">⚡ 一键接入</h3>
+  <p class="sub">领完羊毛，复制即用 —— 从免费额度到跑通第一条 API</p>
+  <div class="api-tabs"></div>
+  <div class="api-field">
+    <label>Base URL（OpenAI 兼容端点）</label>
+    <input id="apiBase" spellcheck="false">
+  </div>
+  <div class="api-field">
+    <label>模型名</label>
+    <input id="apiModel" spellcheck="false">
+  </div>
+  <div class="api-field">
+    <label>KEY 环境变量名（建议 export 到终端，别写死在代码里）</label>
+    <input id="apiEnv" spellcheck="false">
+  </div>
+  <div class="snippet-wrap">
+    <pre class="snippet" id="apiCode"></pre>
+    <button class="copyBtn" id="apiCopy">📋 复制</button>
+  </div>
+  <div class="api-links">
+    <a id="apiGetkey" href="#" target="_blank" rel="noopener">🔑 获取 API Key →</a>
+    <a href="https://github.com/openai/openai-python" target="_blank" rel="noopener nofollow">openai SDK</a>
+  </div>
+  <p class="api-note">⚠️ 端点与模型名以各平台控制台/文档为准（上方可直接修改，代码实时更新）。KEY 只存在你本地，本站不收集任何密钥。</p>
+</div>
+<!-- ============ 账号库（本地存储，绝不联网） ============ -->
+<button id="vaultBtn" title="我的账号库">🔐</button>
+<div id="vaultOverlay"></div>
+<aside id="vault">
+  <button id="vaultClose">✕</button>
+  <h2>🔐 我的账号库</h2>
+  <p style="font-size:.78rem;color:var(--muted)">本地浏览器存储 · 不上传任何服务器</p>
+  <div class="vault-warn">⚠️ 此面板只存账号备注/额度/到期信息，<b>不存密码</b>。密码请交给浏览器密码管理器或 Bitwarden，登录点「直达」即可一键填充。</div>
+  <div class="vault-form">
+    <label>平台</label>
+    <select id="v-site"></select>
+    <label>账号（邮箱/手机号，仅备注用）</label>
+    <input id="v-account" placeholder="xxx@qq.com">
+    <label>额度备注</label>
+    <textarea id="v-note" rows="2" placeholder="剩余 200 万 token / 已领新手礼"></textarea>
+    <label>额度/会员到期日（可选）</label>
+    <input id="v-exp" type="date">
+    <button id="v-add">＋ 添加</button>
+  </div>
+  <div class="vault-tools">
+    <button id="v-export">导出备份</button>
+    <button id="v-import">导入备份</button>
+    <button id="v-clear" style="color:var(--red)">清空</button>
+  </div>
+  <div id="v-list"></div>
+</aside>
+<script>
+/* ============ 常量 ============ */
+const LAYER={
+ official_cn:{name:'大模型官方（国内）',color:'#00e5a0'},
+ agent:{name:'Agent 平台',color:'#58a6ff'},
+ compute:{name:'算力平台',color:'#d29922'},
+ reseller:{name:'Token 中间商',color:'#bc8cff'},
+ official_global:{name:'大模型官方（海外）',color:'#8b949e'}
+};
+const TYPE={signup_bonus:'注册赠送',free_tier:'长期免费',coupon:'折扣码',student:'学生通道',limited_promo:'限时活动',price_low:'长期低价'};
+const VKEY='tm_vault_v1',CKEY='tm_claimed_v1';
+let SITES=[],DEALS=[],curCat='all',curQ='',curType='';
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function safeUrl(u){return /^https?:/i.test(String(u||''))?u:'#'}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
+function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
+/* ============ 导航区渲染 ============ */
+function renderNav(){
+  const order=['official_cn','agent','compute','reseller','official_global'];
+  document.getElementById('navArea').innerHTML=order.map(k=>{
+    const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
+    return`<section class="nav-section">
+      <div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span>
+        <h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div>
+      <div class="nav-grid">${g.sites.map(s=>`
+        <a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}">
+          <b>${esc(s.name)}${s.hot?' 🔥':''}</b>
+          <span>${esc(s.desc||'')}</span>
+          ${s.free?'<span class="free">'+esc(s.free)+'</span>':''}
+        </a>`).join('')}</div>
+    </section>`;
+  }).join('');
+  document.getElementById('n-sites').textContent=SITES.reduce((n,g)=>n+g.sites.length,0);
+}
+/* ============ 卡片渲染 ============ */
+function freshness(d){
+  if(d.verify_status==='expired')return'<span class="badge b-red">❌ 已失效</span>';
+  if(d.verify_status!=='verified')return'<span class="badge b-amber">⚠️ 待复核</span>';
+  const h=(Date.now()-new Date(d.verified_at))/36e5;
+  if(h<24)return'<span class="badge b-green">✅ 今日验证</span>';
+  if(h<48)return'<span class="badge b-green">✅ 1天前</span>';
+  if(h<168)return'<span class="badge b-green">✅ '+Math.floor(h/24)+'天前</span>';
+  return'<span class="badge b-amber">⚠️ '+Math.floor(h/24)+'天前</span>';
+}
+function render(){
+  let list=DEALS.filter(d=>d.published!==false);
+  const claimedSet=getClaimed();
+  if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
+  else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
+  else if(curCat!=='all')list=list.filter(d=>d.category===curCat);
+  if(curType)list=list.filter(d=>d.type===curType);
+  if(curQ)list=list.filter(d=>(d.provider+d.value+d.notes+d.id).toLowerCase().includes(curQ.toLowerCase()));
+  list.sort((a,b)=>{
+    const ra=a.verify_status==='verified'?0:1,rb=b.verify_status==='verified'?0:1;
+    if(ra!==rb)return ra-rb;
+    return new Date(b.verified_at)-new Date(a.verified_at);
+  });
+  const box=document.getElementById('cards');
+  if(!list.length){box.innerHTML='<div class="empty">没有匹配的羊毛</div>';return}
+  box.innerHTML=list.map(d=>`
+  <article class="card" data-id="${esc(d.id)}">
+    <div class="card-head"><span class="provider">${esc(d.provider)}</span><span style="display:flex;gap:6px;align-items:center">${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}<button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" title="标记/取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>${freshness(d)}</span></div>
+    <div class="chips">
+      <span class="chip">${LAYER[d.category]?LAYER[d.category].name:esc(d.category)}</span>
+      <span class="chip">${TYPE[d.type]||esc(d.type)}</span>
+      ${d.region==='cn'?'<span class="chip">🇨🇳</span>':'<span class="chip">🌍</span>'}
+    </div>
+    <p class="value">${esc(d.value)}</p>
+    ${d.deadline?`<p class="notes" style="color:var(--red)">📅 截止：${esc(d.deadline)}</p>`:((d.type==='free_tier'||d.type==='price_low')?'<p class="notes" style="color:var(--green)">♾️ 长期有效</p>':'')}
+    ${d.coupon?`<div class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">⚠️ 示例码 · 非真实优惠</span>':`<button class="copy" data-code="${esc(d.coupon)}">📋 复制</button>`}</div>`:''}
+    ${d.rule?`<p class="notes">📐 规则：${esc(d.rule)}</p>`:''}
+    ${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?`<p class="notes">💡 ${esc(d.notes)}</p>`:''}
+    <div class="meta">
+      <span>难度 <span class="diff">${(n=>'★'.repeat(n)+'☆'.repeat(5-n))(Math.min(5,Math.max(1,d.difficulty||1)))}</span></span>
+      <span style="display:flex;gap:8px;align-items:center">${siteFor(d)?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡ 接入</button>`:''}<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取 →</a></span>
+    </div>
+  </article>`).join('');
+  stats();
+}
+function stats(){
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified');
+  document.getElementById('n-deals').textContent=live.length;
+  document.getElementById('n-fresh').textContent=live.filter(d=>(Date.now()-new Date(d.verified_at))<864e5).length;
+  const latest=live.reduce((m,d)=>Math.max(m,new Date(d.verified_at)),0);
+  document.getElementById('updated').textContent=new Date(latest).toLocaleDateString('zh-CN');
+}
+/* ============ 折扣码复制（事件委托） ============ */
+function copyText(t,btn,okTxt,resetTxt){
+  const done=()=>{if(btn){btn.textContent=okTxt;setTimeout(()=>btn.textContent=resetTxt,1500)}};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t).then(done).catch(()=>fallbackCopy(t,done));
+  }else fallbackCopy(t,done);
+}
+document.getElementById('cards').addEventListener('click',e=>{
+  const btn=e.target.closest('.copy');
+  if(btn){copyText(btn.dataset.code,btn,'✅ 已复制','📋 复制');return}
+  const cl=e.target.closest('[data-claim]');
+  if(cl){const s=getClaimed(),id=cl.dataset.claim;s.has(id)?s.delete(id):s.add(id);
+    try{localStorage.setItem(CKEY,JSON.stringify([...s]))}catch(_){}
+    render();return}
+  const ab=e.target.closest('[data-api]');
+  if(ab)openApi(ab.dataset.api);
+});
+function fallbackCopy(t,cb){
+  const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');cb()}catch(_){alert('复制失败，请手动选择：'+t)}
+  document.body.removeChild(ta);
+}
+/* ============ 账号库（localStorage） ============ */
+function vLoad(){try{return JSON.parse(localStorage.getItem(VKEY)||'[]')}catch(_){return[]}}
+function vSave(list){try{localStorage.setItem(VKEY,JSON.stringify(list))}catch(_){alert('本地存储不可用（隐私模式？）')}}
+function vInit(){
+  const sel=document.getElementById('v-site');
+  sel.innerHTML='<option value="">— 选择平台 —</option>'+SITES.flatMap(g=>
+    g.sites.map(s=>`<option value="${esc(s.name)}" data-url="${esc(s.url)}" data-layer="${esc(g.layer)}">${esc(s.name)}（${LAYER[g.layer]?LAYER[g.layer].name:esc(g.layer)}）</option>`)).join('');
+}
+function vRender(){
+  const list=vLoad(),box=document.getElementById('v-list');
+  if(!list.length){box.innerHTML='<div class="vault-empty">还没有记录。添加你在各平台的账号，跟踪额度和到期。</div>';return}
+  box.innerHTML=list.map(v=>{
+    let exp='';
+    if(v.expires){
+      const days=Math.ceil((new Date(v.expires)-Date.now())/864e5);
+      if(days<0)exp=`<span class="exp exp-soon">⏰ 已过期 ${-days} 天</span>`;
+      else if(days<=7)exp=`<span class="exp exp-soon">⏰ 剩 ${days} 天</span>`;
+      else if(days<=30)exp=`<span class="exp exp-mid">⏰ 剩 ${days} 天</span>`;
+      else exp=`<span class="exp">⏰ 剩 ${days} 天</span>`;
+    }
+    const site=SITES.flatMap(g=>g.sites).find(s=>s.name===v.site);
+    return`<div class="vault-item">
+      <b>${esc(v.site)}</b> ${exp}
+      ${v.account?`<div class="acc">${esc(v.account)}</div>`:''}
+      ${v.note?`<div class="note">${esc(v.note)}</div>`:''}
+      <div class="ops">
+        ${site?`<a href="${esc(safeUrl(site.url))}" target="_blank" rel="noopener">直达登录 →</a>`:''}
+        <button class="del" data-del="${esc(v.id)}">删除</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+document.getElementById('v-add').addEventListener('click',()=>{
+  const site=document.getElementById('v-site').value;
+  if(!site)return alert('请选择平台');
+  const list=vLoad();
+  list.push({id:uid(),site,account:document.getElementById('v-account').value.trim(),
+    note:document.getElementById('v-note').value.trim(),expires:document.getElementById('v-exp').value});
+  vSave(list);vRender();
+  document.getElementById('v-account').value='';document.getElementById('v-note').value='';document.getElementById('v-exp').value='';
+});
+document.getElementById('v-list').addEventListener('click',e=>{
+  const b=e.target.closest('[data-del]');if(!b)return;
+  if(confirm('删除这条账号记录？')){vSave(vLoad().filter(v=>v.id!==b.dataset.del));vRender()}
+});
+document.getElementById('v-export').addEventListener('click',()=>{
+  const blob=new Blob([JSON.stringify(vLoad(),null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='tokenmost-vault-backup.json';a.click();
+});
+document.getElementById('v-import').addEventListener('click',()=>{
+  const i=document.createElement('input');i.type='file';i.accept='.json';
+  i.onchange=()=>{const r=new FileReader();r.onload=()=>{
+    try{const d=JSON.parse(r.result);if(!Array.isArray(d))throw 0;
+      vSave(vLoad().concat(d));vRender();alert('导入成功')}
+    catch(_){alert('文件格式不对')}
+  };r.readAsText(i.files[0])};i.click();
+});
+document.getElementById('v-clear').addEventListener('click',()=>{
+  if(confirm('清空全部本地账号记录？此操作不可恢复')){vSave([]);vRender()}
+});
+/* 抽屉开关 */
+const vault=document.getElementById('vault'),ov=document.getElementById('vaultOverlay');
+document.getElementById('vaultBtn').addEventListener('click',()=>{vault.classList.add('open');ov.classList.add('open');vRender()});
+document.getElementById('vaultClose').addEventListener('click',()=>{vault.classList.remove('open');ov.classList.remove('open')});
+ov.addEventListener('click',()=>{vault.classList.remove('open');ov.classList.remove('open')});
+/* ============ 工具条 ============ */
+document.getElementById('tabs').addEventListener('click',e=>{
+  if(e.target.classList.contains('tab')&&e.target.id!=='navCollapse'){
+    document.querySelectorAll('#tabs .tab').forEach(t=>t.classList.remove('active'));
+    e.target.classList.add('active');curCat=e.target.dataset.cat;render();
+  }
+});
+document.getElementById('search').addEventListener('input',e=>{curQ=e.target.value.trim();render()});
+document.getElementById('typeFilter').addEventListener('change',e=>{curType=e.target.value;render()});
+/* ============ 一键接入（代码生成器） ============ */
+const API_TABS={curl:'cURL',python:'Python',node:'Node.js',client:'客户端配置'};
+let apiDeal=null,apiSite=null,apiTab='curl';
+function openApi(id){
+  apiDeal=DEALS.find(x=>x.id===id);if(!apiDeal)return;
+  apiSite=siteFor(apiDeal);if(!apiSite||!apiSite.api)return;
+  apiTab='curl';
+  document.getElementById('apiTitle').textContent='⚡ 一键接入 · '+apiSite.name;
+  document.getElementById('apiBase').value=apiSite.api.base_url;
+  document.getElementById('apiModel').value=apiSite.api.model;
+  document.getElementById('apiEnv').value=apiSite.api.env;
+  document.getElementById('apiGetkey').href=safeUrl(apiSite.url);
+  renderApiTabs();genSnippet();
+  document.getElementById('apiOverlay').classList.add('open');
+  document.getElementById('apiPanel').classList.add('open');
+}
+function closeApi(){document.getElementById('apiOverlay').classList.remove('open');document.getElementById('apiPanel').classList.remove('open')}
+function renderApiTabs(){
+  document.querySelector('#apiPanel .api-tabs').innerHTML=Object.entries(API_TABS).map(([k,v])=>
+    '<button class="tab '+(k===apiTab?'active':'')+'" data-apitab="'+k+'">'+v+'</button>').join('');
+}
+function genSnippet(){
+  const base=document.getElementById('apiBase').value.trim();
+  const model=document.getElementById('apiModel').value.trim()||'MODEL';
+  const env=document.getElementById('apiEnv').value.trim()||'API_KEY';
+  const T={
+    curl:'curl '+base+'/chat/completions \\\n  -H "Authorization: Bearer $%KEY%" \\\n  -H "Content-Type: application/json" \\\n  -d \'{\n    "model": "%MODEL%",\n    "messages": [{"role": "user", "content": "你好，用一句话介绍你自己"}]\n  }\'',
+    python:'# pip install openai\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    base_url="%BASE%",\n    api_key=os.environ["%KEY%"],  # 终端先执行: export %KEY%="你的 KEY"\n)\nresp = client.chat.completions.create(\n    model="%MODEL%",\n    messages=[{"role": "user", "content": "你好，用一句话介绍你自己"}],\n)\nprint(resp.choices[0].message.content)',
+    node:'// npm i openai\nimport OpenAI from "openai";\n\nconst client = new OpenAI({\n  baseURL: "%BASE%",\n  apiKey: process.env.%KEY%,\n});\nconst resp = await client.chat.completions.create({\n  model: "%MODEL%",\n  messages: [{ role: "user", content: "你好，用一句话介绍你自己" }],\n});\nconsole.log(resp.choices[0].message.content);',
+    client:'{\n  "说明": "OpenAI 兼容配置，Cherry Studio / ChatBox / Cline / Lobe Chat 等直接填",\n  "baseURL": "%BASE%",\n  "apiKey": "粘贴你的 KEY（只存在你本地客户端）",\n  "model": "%MODEL%"\n}'
+  }[apiTab]||'';
+  document.getElementById('apiCode').textContent=T.replaceAll('%BASE%',base).replaceAll('%MODEL%',model).replaceAll('%KEY%',env);
+}
+document.querySelector('#apiPanel .api-tabs').addEventListener('click',e=>{
+  const t=e.target.closest('[data-apitab]');if(!t)return;
+  apiTab=t.dataset.apitab;renderApiTabs();genSnippet();
+});
+['apiBase','apiModel','apiEnv'].forEach(id=>document.getElementById(id).addEventListener('input',genSnippet));
+document.getElementById('apiCopy').addEventListener('click',e=>copyText(document.getElementById('apiCode').textContent,e.target,'✅ 已复制','📋 复制'));
+document.getElementById('apiClose').addEventListener('click',closeApi);
+document.getElementById('apiOverlay').addEventListener('click',closeApi);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();vault.classList.remove('open');ov.classList.remove('open')}});
+/* ============ 数据加载 ============ */
+Promise.all([
+  fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
+  fetch('deals.json?ts='+Date.now()).then(r=>r.json())
+]).then(([sites,deals])=>{
+  SITES=sites;DEALS=deals;
+  renderNav();vInit();render();vRender();
+}).catch(()=>{
+  document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
+});
+</script>
+</body>
+</html>
