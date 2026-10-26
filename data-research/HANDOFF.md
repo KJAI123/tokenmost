@@ -42,3 +42,45 @@
 ## 6. 我的下一步（不会与你有写入冲突）
 
 覆盖 findings 缺口平台做交叉验证 → harvest 增补源 → v3 diff 告警脚本。产出照旧只落在 `data-research/` 与 `tools/harvest*`。
+
+---
+
+## 2026-10-27 智能体首轮（crawler-assistant 正式注册后）
+
+> 本轮四件事：harvest 采集、v3 diff 告警脚本验证、七平台交叉验证、源清单增补。deals.json 与你的 tools/{sync,check}.py、sources.json 未触碰。
+
+### 1. harvest 结果（12 源，全通）
+
+- 11/12 命中；`bailian-pricing` 0 命中（JS 渲染页，快照已标注需人工核查 pattern）
+- 快照：`data-research/harvest/harvest-2026-10-27.md` + `latest.json`
+
+### 2. v3 `tools/harvest_diff.py` 状态：可用
+
+- `--selftest` 通过：数量/内容/状态/增删源五类变化识别 + 告警落盘 + 基线滚动自愈，Python 3.9.6 实机验证
+- 实跑检出 1 源变化：`openrouter-free-models` 命中内容变化，告警在 `alert-2026-10-27.md`
+- **调参积压**：该变化实为动态页上下文漂移（match 集合与 HEAD 完全一致，纯 context 窗口文本变了）——fingerprint 目前含 context 会误报此类噪声；改进方向：指纹只取 match 集合，或对 context 做归一化。不阻塞 v3 上线
+- **源清单已扩容（我的命名空间）**：`moonshot-pricing` URL 迁至 platform.kimi.com（旧域名今日仅 1 命中）；新增 minimax / sambanova / together / cerebras / mistral / cohere 共 6 源，全部预验证可达（1–30 命中）。**下轮 harvest 起 19 源，diff 会首次报 6 个「新增源」，属预期，无需惊慌**
+
+### 3. 七平台交叉验证（findings 已落盘，均带来源+核实时间 2026-10-27）
+
+| 平台 | deals.json 条目 | 互证结论 | 要点 |
+|---|---|---|---|
+| Kimi | kimi-voucher（15 元券） | ✅ 与主数据一致 | 官方文档直核；补：**K3.1 Pro 亦不支持代金券** |
+| MiniMax | minimax-m3-half（M3 五折 2.1/8.4） | ◑ 基本一致 | 五折（2026-06-15 起）与输入 ¥2.10 多源印证；**输出 8.4 与 M3.1-Flash 1/4 元未直核，待控制台确认** |
+| SambaNova | sambanova-free | ✅ 与主数据一致 | 官方限流文档逐项命中（20 RPM/20 RPD/20 万 TPD/Developer 2000 万） |
+| Together | together-free | ✅ 与主数据一致 | Bonsai-27B 全免费、Tev1-4B 输出免费均印证；免费款属推广位，变动快 |
+| Cerebras | cerebras-credits（$5） | ⚠️ **有出入** | $5/30 天/无持续免费层一致，但官方定价页明示**需先绑有效支付方式才发 $5**——主数据「注册送」（difficulty 1, via register）漏了绑卡门槛 |
+| Mistral | mistral-free | ✅ 与主数据一致 | 免费档存在；主数据不写数额属稳妥；第三方参考约 10 亿 tokens/月、1 req/s（勿入主数据） |
+| Cohere | cohere-trial（1000 次/月） | ✅ 与主数据一致 | 官方 docs 直核；补：**Trial key 禁止生产/商用** |
+
+### 4. 给主会话的合并要点（素材均在 findings/*.md，由你裁决合入）
+
+1. **cerebras-credits（唯一实质性出入）**：建议 value/rule 补「需绑卡后发放，不会自动扣费」，difficulty 1→2，via 改 register+card；notes 可补 Free Trial 限速（约 5 RPM / 30K TPM / 100 万 tokens/日）。见 `findings/cerebras.md`
+2. kimi-voucher：rule 补「K3 与 K3.1 Pro 均不支持代金券」。见 `findings/kimi.md`
+3. cohere-trial：rule 补「Trial key 不可用于生产/商用」。见 `findings/cohere.md`
+4. minimax-m3-half：维持现状，输出价待控制台确认；已入 harvest 盯防，页面变化会出告警。见 `findings/minimax.md`
+5. sambanova / together / mistral：无需改动
+
+### 5. 我的下一步
+
+harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → fingerprint 归一化降噪 → 其余缺口平台（AIHubMix 等）入源。

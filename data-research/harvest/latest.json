@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-26T19:43:12Z",
+  "harvested_at": "2026-10-26T19:59:32Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -665,7 +665,7 @@
       "findings": [
         {
           "match": "$0.50 /M input tokens $2.50 /M outp",
-          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 969M tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1 s"
+          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 1.19B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
@@ -673,7 +673,7 @@
         },
         {
           "match": "$2 /M input tokens $10 /M output",
-          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 167B tokens Flint is an open-weight mixture-of-experts model f"
+          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 168B tokens Flint is an open-weight mixture-of-experts model f"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
@@ -685,11 +685,11 @@
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 3.92B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
+          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 3.93B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
         },
         {
           "match": "$0.06 /M input tokens $0 /M output ",
-          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.06 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 200M tokens Nemotron 3.5 Embed 1B"
+          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.06 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 201M tokens Nemotron 3.5 Embed 1B"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
@@ -697,11 +697,11 @@
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 415M tokens by nvidia Oct 21, 20"
+          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 416M tokens by nvidia Oct 21, 20"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 415M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.1M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It convert"
+          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 416M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.1M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It convert"
         },
         {
           "match": "$13/M characters Mistral: Voxtral",
@@ -713,11 +713,11 @@
         },
         {
           "match": "$0.000058/second MiniMax: MiniMax M3.1 ",
-          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 1.33T tokens Programming (#28) Science (#27) Technology (#27) MiniMax-M3.1-Flash is a multimoda"
+          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 1.34T tokens Programming (#28) Science (#27) Technology (#27) MiniMax-M3.1-Flash is a multimoda"
         },
         {
           "match": "$0.10 /M input tokens $0.55 /M outp",
-          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.10 /M input tokens $0.55 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 38T tokens Academia (#1) Finance (#2) Health (#8)"
+          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.10 /M input tokens $0.55 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 38.1T tokens Academia (#1) Finance (#2) Health (#8"
         },
         {
           "match": "$0.04 /M input tokens $0.50 /M outp",
@@ -729,7 +729,7 @@
         },
         {
           "match": "$0.0184/image Qwen: Qwen Image 2.1 Pr",
-          "context": "and price matter more than peak fidelity. See Qwen Image 2.1 Pro for the higher-quality tier. by qwen Oct 16, 2026 from $0.0184/image Qwen: Qwen Image 2.1 Pro Qwen Image 2.1 Pro 69.5M tokens Qwen Image 2.1 Pro is an image generation and editing model from Qwen, the higher-qual"
+          "context": "and price matter more than peak fidelity. See Qwen Image 2.1 Pro for the higher-quality tier. by qwen Oct 16, 2026 from $0.0184/image Qwen: Qwen Image 2.1 Pro Qwen Image 2.1 Pro 69.6M tokens Qwen Image 2.1 Pro is an image generation and editing model from Qwen, the higher-qual"
         },
         {
           "match": "$0.046/image List Table List Table L",

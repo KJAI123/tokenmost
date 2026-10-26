@@ -252,13 +252,6 @@
       <description>注册赠送（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 ZCode：ZCode 客户端周期性送 GLM-5.3-Flash 大礼包：周末计划 3 亿、1024 节 5 亿（20 万份）</title>
-      <link>https://bigmodel.cn/activity/glm-coding-1024</link>
-      <guid isPermaLink="false">zcode-linuxdo</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>火山方舟：Doubao-Seed-2.1-pro 等编程模型每日最高 500 万免费 tokens（官方公告实锤）</title>
       <link>https://www.volcengine.com/article/260593</link>
       <guid isPermaLink="false">ark-daily-5m</guid>
@@ -397,6 +390,160 @@
       <guid isPermaLink="false">xfyun-offpeak</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期低价（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>阿里云百炼：新人免费额度：每模型独立约100万tokens，开通自动发放、无需实名</title>
+      <link>https://help.aliyun.com/zh/model-studio/new-free-quota</link>
+      <guid isPermaLink="false">deep-bailian-newuser-quota</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：90天有效（自开通/模型发布/申请通过较晚者起算，过期作废不补发）；仅北京地域；仅抵实时推理；消耗优先级 免费额度&gt;资源包&gt;节省计划&gt;按量；未实名默认「用完即停」不可关，已实名可开（耗尽403 AllocationQuota.FreeTierOnly）；OAuth认证另享每天2000次独立额度；同实名重新注册不能再领（多号禁）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>阿里云百炼：各模态新人额度明细：向量 text-embedding-async-v1 高达 2000万tokens</title>
+      <link>https://help.aliyun.com/zh/model-studio/model-pricing</link>
+      <guid isPermaLink="false">deep-bailian-quota-detail</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：均为北京地域新人额度；仅抵实时推理（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>阿里云百炼：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qw</title>
+      <link>https://help.aliyun.com/zh/model-studio/model-pricing</link>
+      <guid isPermaLink="false">deep-bailian-limited-free</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>free_model · 规则：限免未标截止日期，以价格页实时标注为准；免费体验模型用完后不可再调用（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>阿里云百炼：比价基准（每百万tokens北京原价）：qwen3.8-max 12/36</title>
+      <link>https://help.aliyun.com/zh/model-studio/model-pricing</link>
+      <guid isPermaLink="false">deep-bailian-pricing</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期低价 · 规则：Batch半价；qwen3.7-plus限时8折为活动价（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Kimi（月之暗面）：Kimi 会员 Go/Plus/Pro/Max：¥49/99/199/699 每月</title>
+      <link>https://www.kimi.com/code/docs/kimi-code/membership</link>
+      <guid isPermaLink="false">deep-kimi-membership</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：官方不公布5h/月绝对token数（仅控制台/CLI /usage可见）；加油包：单次最低¥25、日限10次/累计¥3000、余额上限¥1万、不过期；官方计费示例：简单请求约¥0.03、复杂任务约¥1.6；先扣订阅再扣加油包（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Anthropic Claude：Claude Pro $20 / Max 5x $100 / Max 20x $200：官方机制=每5小时重置会话限额+</title>
+      <link>https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work</link>
+      <guid isPermaLink="false">deep-claude-pro-max</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：Max 5x=5×Pro会话用量、20x=20×（第三方口径中）；付费计划上下文：新模型1M/其余500K-200K；⚠️ 底册「订阅满7天领API credits」本次官方页未复现，存疑待核（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>GitHub Copilot：⚠️ 重大口径更新：Copilot 已弃用 premium requests（300/1000），改用 GitHub A</title>
+      <link>https://docs.github.com/en/copilot/get-started/plans-for-github-copilot</link>
+      <guid isPermaLink="false">deep-copilot-ai-credits</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：credits→token官方未公布；模型分层：Pro含Claude Haiku/Sonnet+GPT-5.3-Codex+Gemini+Grok+Kimi，Opus/GPT-6仅Pro+/Max；Free/Student仅自动选模；教师与热门开源维护者免费Pro（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Google Gemini API：Gemini API 免费层：⚠️ 官方已不再公布各模型 RPM/TPM/RPD 数字表，改为 AI Studio 内查</title>
+      <link>https://ai.google.dev/gemini-api/docs/rate-limits</link>
+      <guid isPermaLink="false">deep-gemini-free-tier</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：Tier1需绑结算（账单上限$250）；Batch API免费层未列（Tier1 Gemini 2.5 Flash 300万tokens队列）；底册「Flash 1500请求/天」为旧静态口径已不可引用（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Cerebras：⚠️ 2026-07 改版：取消「每日100万tokens永久免费」，改为 Free Trial $5 一次性credi</title>
+      <link>https://www.cerebras.ai/inference</link>
+      <guid isPermaLink="false">deep-cerebras-free-trial</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：$5 credits一次性；OpenAI兼容；Developer档自$10起（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>SCNet 国家超算互联网：核心节点邀测计划：实名注册即领 100 卡时异构加速卡算力 + 500G 分布式存储 + 1000 万 tokens 热</title>
+      <link>https://www.scnet.cn/ycjh/index.html</link>
+      <guid isPermaLink="false">deep-scnet-ycjh-100cardhours</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：步骤=注册→实名认证→活动页「领取算力资源」→选资源【立即获取】；限时邀测名额有限；Chat 页可免费对话 DeepSeek-R1（DeepSeek-V4 限时免费对话）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>SCNet 国家超算互联网：Token Plan 包月：基础版 ¥30/月 6万Credits（原价¥50）、标准 ¥110/24万、高级 ¥265</title>
+      <link>https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html</link>
+      <guid isPermaLink="false">deep-scnet-token-plan</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：自然月有效到期清零；每账号同时仅1个套餐；专属Key（sk-tp-开头）与通用Key不互通；不可升降档；模型倍率（2026-09-01版）：DeepSeek-V4-Flash 0.13 / GLM-5.3-Flash 0.15 / Qwen3.8-Flash 0.14 / MiniMax-M2.5 0.30 / DeepSeek-V4-Pro 1.06 / GLM-5.3 2.29 / Kimi-K3 4.12；仅限AI工具交互式使用，禁API自动化/后端/批量，违者封Key；严禁共享（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>SCNet 国家超算互联网：低价口径（可核）：综合约 1 元/百万 tokens（倍率1.0模型、基础版）</title>
+      <link>https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html</link>
+      <guid isPermaLink="false">deep-scnet-deepseek-price</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期低价 · 规则：⚠️ 底册「DeepSeek输出价约为官方1/8」未获官方原文支持——官方页只有倍率无单价，建议以三个可核口径收录；对照官方 deepseek-v4-pro 输出27元/百万（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>火山方舟：协作奖励计划：授权采集推理数据（匿名化）换免费额度</title>
+      <link>https://www.volcengine.com/docs/ark/collaboration-reward-program</link>
+      <guid isPermaLink="false">deep-volc-collab-reward</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>recurring_promo · 规则：前提=实名+开通模型服务+关闭安心体验模式；仅同一用户唯一账号可参与（多号禁）；仅在线推理（Chat/Responses/Messages/Image/Content API），Flex低优不返还；资源包不抵批量推理/模型单元/TPM包；⚠️ 数据授权永久、已采集不可撤回；⚠️ 模型名单收缩：2026-10-08起退出9款（Seed-2.1-pro/DS-V4-Pro/V4-Flash/GLM-5.2/Kimi-K3等），2026-09-01起退出文本31款；当前入口 Doubao-Seed-Evolving，在列模型以活动页为准（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>火山方舟：新注册账号开通模型即送免费推理额度（不同模型分别计算</title>
+      <link>https://docs.volcengine.com/docs/ark/free-inference-quota</link>
+      <guid isPermaLink="false">deep-volc-free-quota</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：仅抵按token后付费在线推理；不抵插件/知识库/批量推理/缓存存储费；主子账号共享；基础模型与精调版共享额度；耗尽后调用失败需实名+开通服务；抵扣优先级：免费包&gt;协作包（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>火山方舟：方舟 Coding Plan：Lite ¥40/月（季¥120，每5h约1200次/周9000/月18000）、Pro </title>
+      <link>https://docs.volcengine.com/docs/ark/coding-plan-personal-plan-overview</link>
+      <guid isPermaLink="false">deep-volc-coding-plan</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：刷新：5h周期（首次请求起算）+周限额周一00:00重置+自然月；支持 Claude Code/TraeCode/Roo Code/Codex CLI/OpenCode/Cline/Kilo Code/OpenClaw/Cursor/Hermes 十工具；Base URL ark.cn-beijing.volces.com/api/coding(/v3)；额度仅编程工具内生效，当API用违规停用封号；参与即授权数据永久不可退（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>讯飞星辰 MaaS：Astron Token Plan 订阅：标准 ¥200/月 2万积分（限时8折¥160）、高级 ¥600/月 6万积分</title>
+      <link>https://www.xfyun.cn/doc/spark/TokenPlan.html</link>
+      <guid isPermaLink="false">deep-xunfei-token-plan</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：31天有效；TPM 200万/300万/500万；附赠¥168 AstronClaw基础版月卡；错峰0.8倍（工作日8-22点1.0倍）；不退不换、不可升降级、可叠加购买（每份独立Key）；Flash档2万积分≈输出1亿tokens（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>讯飞星辰 MaaS：Astron Coding Plan 焕新版：高效版 ¥199/月（每5h约6000次、每周45000次、每月90000</title>
+      <link>https://www.xfyun.cn/doc/spark/CodingPlan.html</link>
+      <guid isPermaLink="false">deep-xunfei-coding-plan</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：三维流控（5h滑动+7日每天8点重置+月31天）；仅限交互式编码场景，禁止自动化脚本/批量任务/自建后端，违规可限流/停用/注销账号；不退订；仅可升级至速通版；Base URL maas-coding-api.cn-huabei-1.xf-yun.com/v2 与 /anthropic（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>讯飞星辰 MaaS：免费/订阅额度均可接 Claude Code：ANTHROPIC_BASE_URL=https://maas-codin</title>
+      <link>https://www.xfyun.cn/doc/spark/CodingPlan.html</link>
+      <guid isPermaLink="false">deep-xunfei-claude-code</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>tool_integration · 规则：官方提供 OpenClaw/Claude Code/Cursor/OpenCode 配置模板；每套餐独立 API Key，勿混用两条 Base URL（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：GLM Coding Plan 7 天体验卡：每张 2,000 积分，可用 GLM-5.3 / GLM-5.3-Flas</title>
+      <link>https://docs.bigmodel.cn/cn/coding-plan/faq</link>
+      <guid isPermaLink="false">deep-zhipu-trial-card</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：官方 FAQ 确认体验卡 2000 积分；上线时每天限量 10,000 张、持续一周（2026-08-27 随 GLM-5.3-Flash 发布）；积分用完即止；活动期另发额度重置卡（5h 重置/周重置两种，周重置卡同步回满 5h 额度）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：GLM Coding Plan 积分制：Lite 2000积分/5h+10000/周（首月¥94.4，原价¥118）</title>
+      <link>https://docs.bigmodel.cn/cn/coding-plan/overview</link>
+      <guid isPermaLink="false">deep-zhipu-coding-plan-points</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>pricing_plan · 规则：5h 额度动态刷新；周额度自下单起 7 天周期；升级立即刷新；Lite≈Flash 输出 1250 万 token/周（高峰口径）；官方称较 API 标准价最高省 92%；ZCode/AutoClaw 内 1.5 倍用量；V2 老次数制用户（¥49/149/469）到期前可按老价续订（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：推荐有礼·共享 Tokens：每邀 1 位新用户注册+实名，双方各得 2000 万 GLM-4.5-Air Tokens</title>
+      <link>https://docs.bigmodel.cn/cn/update/promotion</link>
+      <guid isPermaLink="false">deep-zhipu-invite-tokens</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>invite_bonus · 规则：共享 Tokens 活动每月最多邀 10 人、每月最高 2 亿 tokens；拼好模好友需 72h 内注册并订阅；每人仅一次首单立减（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：长期免费模型 8 款：GLM-4.7-Flash(200K)、GLM-4-Flash-250414、GLM-Z1-Fla</title>
+      <link>https://docs.bigmodel.cn/cn/guide/start/pricing</link>
+      <guid isPermaLink="false">deep-zhipu-free-models</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>free_model · 规则：免费含缓存命中；限免随时可能收回，以定价页实时状态为准（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
