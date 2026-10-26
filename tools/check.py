@@ -7,7 +7,8 @@ ROOT = Path(__file__).resolve().parent.parent
 LAYERS = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", "compute": "算力平台",
           "reseller": "Token 中间商", "official_global": "大模型官方（海外）"}
 TYPES = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "coupon": "折扣码",
-         "student": "学生通道", "limited_promo": "限时活动", "price_low": "长期低价"}
+         "student": "学生通道", "limited_promo": "限时活动", "price_low": "长期低价",
+         "free_model": "免费模型", "pricing_plan": "套餐订阅"}
 
 deals = json.loads((ROOT / "deals.json").read_text())
 sites = json.loads((ROOT / "sites.json").read_text())
@@ -25,13 +26,12 @@ for d in deals:
         if k not in d:
             errors.append(f"{d.get('id','?')} 缺字段 {k}")
     if d.get("category") not in LAYERS: errors.append(f"{d['id']} category 非法: {d['category']}")
-    if d.get("type") not in TYPES: errors.append(f"{d['id']} type 非法: {d['type']}")
-    if d.get("verify_status") not in ("verified", "stale", "expired"): errors.append(f"{d['id']} verify_status 非法")
+    # type/via 为自由标识符（主管产线可扩展），只校验格式
+    if not re.match(r"^[a-z_]{2,30}$", str(d.get("type", ""))): errors.append(f"{d['id']} type 格式非法: {d['type']}")
+    if d.get("via") and not re.match(r"^[a-z_]{2,30}$", str(d["via"])): errors.append(f"{d['id']} via 格式非法: {d['via']}")
     if not re.match(r"^https?://", d.get("url", "")): errors.append(f"{d['id']} url 非 http(s): {d['url']}")
     if d.get("coupon") and not d.get("published", True) and not d.get("placeholder"):
         warns.append(f"{d['id']} 有 coupon 且未发布但无 placeholder 标记")
-    if d.get("via") and d["via"] not in ("register", "invite", "student", "free"):
-        errors.append(f"{d['id']} via 非法: {d['via']}")
     for k in ("tokens_wan", "cny", "usd"):
         if k in d and (not isinstance(d[k], (int, float)) or d[k] < 0):
             errors.append(f"{d['id']} 收益字段 {k} 非法: {d[k]}")

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>讯飞 10 亿 Tokens 接进编程工具：Claude Code / Cursor 实操配置 — tokenmost 攻略</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#00e5a0;--amber:#d29922;--red:#f85149}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:15px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:28px 18px 80px}
+a{color:#58a6ff}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+.meta{color:var(--muted);font-size:.8rem;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h2{font-size:1.1rem;margin:22px 0 8px;color:var(--accent)}
+h3{font-size:.98rem;margin:16px 0 6px}
+ol,ul{padding-left:22px;margin:8px 0}
+li{margin:5px 0}
+code{background:#0a0e14;border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:.85em;font-family:monospace;color:#c9d1d9;word-break:break-all}
+pre{background:#0a0e14;border:1px solid var(--border);border-radius:9px;padding:12px;overflow-x:auto;margin:10px 0}
+pre code{border:none;padding:0}
+.warn{background:rgba(248,81,73,.08);border:1px solid var(--red);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+.tip{background:rgba(0,229,160,.06);border:1px solid var(--accent);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.86rem}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left}
+th{background:var(--card)}
+.back{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}
+.src{color:var(--muted);font-size:.78rem;margin-top:26px;padding-top:12px;border-top:1px solid var(--border)}
+</style></head><body>
+<a class="back" href="/">← 回 tokenmost 情报流</a>
+<h1>讯飞 10 亿 Tokens 接进编程工具：Claude Code / Cursor 实操配置</h1>
+
+<p>> 核实于 2026-10-27 ｜ 前置：已完成领取（见《xunfei-10yi.md》），额度挂 Spark-X2.6，31 天倒计时已开始</p>
+
+<h2>先明确三件事（避免白配置）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><strong>这批额度是「星辰 MaaS 常规推理额度」</strong>，不是 Coding Plan 订阅——Base URL 用 <strong><code>maas-api</code></strong> 域名（不是订阅专用的 <code>maas-coding-api</code>），两者不通用，用错地址不扣活动额度。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li><strong>模型是 Spark-X2.6</strong>（讯飞自研旗舰，2026-10-22 发布），额度绑定该模型，调 GLM/Kimi 等第三方模型不在活动额度内。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li><strong>协议支持</strong>：OpenAI 兼容协议为实测主通道（verified）；Anthropic 协议端点在讯飞文档中存在（Token Plan/Coding Plan 双协议支持），活动额度能否直连 Anthropic 端点<strong>待核实</strong>——建议先用 OpenAI 兼容方式打通。</li></ol>
+
+<h2>方案一：Claude Code 通过 OpenAI 兼容代理接入</h2>
+
+<p>Claude Code 原生走 Anthropic 协议，要用讯飞的 OpenAI 端点需要一层转换（如 claude-code-router / LiteLLM 等本地代理）：</p>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><code>npm install -g @musistudio/claude-code-router</code>（或任意 OpenAI→Anthropic 转换代理）。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li>代理配置里填讯飞信息：</li></ol>
+<p>   - <strong>API Base URL</strong>：<code>https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions</code>（实测口径，若报错尝试去掉 <code>/chat/completions</code> 用 <code>/v2</code>）</p>
+<p>   - <strong>API Key</strong>：<code>ak-xxxxxxxx</code>（你领取时创建的那个 Key，控制台「API 密钥管理」可查）</p>
+<p>   - <strong>模型名</strong>：<code>Spark-X2.6</code>（以控制台模型广场显示的精确 ID 为准）</p>
+<ol start='3' style='margin:0;padding-left:22px'><li>环境变量指向代理后启动 Claude Code；跑一条小指令验证扣的是活动额度（控制台用量页看余额变动）。</li></ol>
+
+<div class="warn">⚠️ 若不想折腾代理：讯飞控制台的模型卡片自带「Claude Code 配置模板」（官方文档口径），用模板直连 Anthropic 端点优先，失败再回落方案一。</div>
+
+<h2>方案二：Cursor（原生 OpenAI 兼容，最省事）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li>Cursor 设置 → Models → OpenAI API Key 区，勾选「Override Base URL」。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li>填入：</li></ol>
+<p>   - Base URL：<code>https://maas-api.cn-huabei-1.xf-yun.com/v2</code>（⚠️ Cursor 要求以 <code>/v1</code> 结尾时用 <code>/v2</code> 平替试试，两种都留一手）</p>
+<p>   - Key：<code>ak-xxxx</code></p>
+<ol start='3' style='margin:0;padding-left:22px'><li>模型列表手动添加 <code>Spark-X2.6</code>，Chat/Composer 里选中它即可。</li></ol>
+<ol start='4' style='margin:0;padding-left:22px'><li>验证：发一条消息 → 控制台「Token 用量」页看消耗是否走活动额度。</li></ol>
+
+<h2>方案三：workbuddy（实测最顺的路径）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li>打开 workbuddy → 对话框让 AI「添加自定义模型」。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li>粘贴 Base URL（同上）+ <code>ak-</code> 密钥。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li>配置成功后模型出现在「对话框下方模型选择的最底部」，选中即用。实测文原话路径，verified。</li></ol>
+
+<p>（Cherry Studio 等其他 OpenAI 兼容客户端同理：Base URL + ak Key + 模型名三件套。具体到 Cherry Studio 的截图级配置<strong>待核实</strong>。）</p>
+
+<h2>⚠️ 消耗速度管理（重点，这额度烧得飞快）</h2>
+
+<ul style='margin:0;padding-left:22px'><li>实测口径：<strong>「不到一天就能用完」</strong>（2026-10-26 实测文原话）。X2.6 是长上下文模型，Agent 场景一次任务几十万 token 很正常。</li></ul>
+<ul style='margin:0;padding-left:22px'><li><strong>倒计时管理</strong>：额度 31 天有效（自领取日起，非自然月）。倒推安排：第 1 周跑验证性小任务，第 2-3 周集中跑大任务，别拖到最后几天（平台限流风险）。</li></ul>
+<ul style='margin:0;padding-left:22px'><li><strong>任务分层</strong>：日常补全/小问答用免费模型（讯飞侧 Spark-X2-Flash 便宜档或智谱 4.7-Flash 限免），<strong>把 X2.6 额度留给长上下文大重构</strong>——每次任务前清上下文、控 system prompt 体积。</li></ul>
+<ul style='margin:0;padding-left:22px'><li><strong>盯用量</strong>：控制台「用量统计」页（分钟级）；发现额度异常掉速先查是不是被缓存未命中打爆。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>⚠️ 再次确认领取时<strong>取消勾选</strong>了「自动转按量计费」——额度用完后如果勾着，X2.6 会继续真实扣费。</li></ul>
+
+<h2>红线</h2>
+
+<ul style='margin:0;padding-left:22px'><li>每人限领 1 次；多号=风控对象。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>免费额度同样禁自动化脚本刷量（平台通用条款），跑批任务用官方批处理能力而非无限循环脚本。</li></ul>
+
+<p>---</p>
+<p><strong>核实于 2026-10-27</strong>。来源列表：</p>
+<ul style='margin:0;padding-left:22px'><li>实测配置文（Base URL/ak 密钥/workbuddy 路径/消耗速度）：https://www.163.com/dy/article/LA6K9DKK05527PMU.html（2026-10-26）</li></ul>
+<ul style='margin:0;padding-left:22px'><li>领取教程（多工具支持口径）：https://zhuanlan.zhihu.com/p/2097344549374914581</li></ul>
+<ul style='margin:0;padding-left:22px'><li>讯飞官方 Token Plan 文档（31 天规则/双协议佐证）：https://www.xfyun.cn/doc/spark/TokenPlan.html</li></ul>
+<ul style='margin:0;padding-left:22px'><li>官方 Coding Plan 文档（配置模板佐证）：https://www.xfyun.cn/doc/spark/CodingPlan.html</li></ul>
+<ul style='margin:0;padding-left:22px'><li>待核实项：Anthropic 端点对活动额度的支持、Cherry Studio 截图配置、X2.6 精确 model ID（以控制台为准）。</li></ul>
+
+</body></html>

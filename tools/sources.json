@@ -299,6 +299,81 @@
         "拼车",
         "共享号"
       ]
+    },
+    {
+      "id": "zcode-changelog",
+      "type": "watch",
+      "url": "https://zcode.z.ai/changelog",
+      "deals": [
+        "zcode-linuxdo"
+      ],
+      "confirm_runs": 2
+    },
+    {
+      "id": "bigmodel-pricing",
+      "type": "watch",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/pricing.md",
+      "deals": [
+        "zhipu-signup",
+        "zhipu-flash-free"
+      ],
+      "confirm_runs": 2
+    },
+    {
+      "id": "bigmodel-activity",
+      "type": "watch",
+      "url": "https://bigmodel.cn/activity/glm-coding-1024",
+      "deals": [
+        "zcode-linuxdo"
+      ],
+      "confirm_runs": 3
+    },
+    {
+      "id": "xfyun-coding-plan",
+      "type": "watch",
+      "url": "https://www.xfyun.cn/doc/spark/CodingPlan.html",
+      "deals": [
+        "xfyun-offpeak",
+        "deep-xunfei-coding-plan"
+      ],
+      "confirm_runs": 2
+    },
+    {
+      "id": "volc-ai618",
+      "type": "watch",
+      "url": "https://www.volcengine.com/activity/ai618",
+      "deals": [
+        "deep-volc-coding-promo"
+      ],
+      "confirm_runs": 2
+    },
+    {
+      "id": "ark-collab",
+      "type": "watch",
+      "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
+      "deals": [
+        "ark-daily-5m"
+      ],
+      "confirm_runs": 2
+    },
+    {
+      "id": "copilot-plans",
+      "type": "watch",
+      "url": "https://docs.github.com/en/copilot/get-started/plans",
+      "deals": [
+        "deep-copilot-ai-credits",
+        "github-copilot-free"
+      ],
+      "confirm_runs": 2
+    },
+    {
+      "id": "stepfun-pricing",
+      "type": "watch",
+      "url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "deals": [
+        "deep-stepfun-step5-preview-price"
+      ],
+      "confirm_runs": 2
     }
   ]
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCNet 国家超算互联网全攻略：tokens、卡时、OpenClaw 三线薅法 — tokenmost 攻略</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#00e5a0;--amber:#d29922;--red:#f85149}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:15px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:28px 18px 80px}
+a{color:#58a6ff}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+.meta{color:var(--muted);font-size:.8rem;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h2{font-size:1.1rem;margin:22px 0 8px;color:var(--accent)}
+h3{font-size:.98rem;margin:16px 0 6px}
+ol,ul{padding-left:22px;margin:8px 0}
+li{margin:5px 0}
+code{background:#0a0e14;border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:.85em;font-family:monospace;color:#c9d1d9;word-break:break-all}
+pre{background:#0a0e14;border:1px solid var(--border);border-radius:9px;padding:12px;overflow-x:auto;margin:10px 0}
+pre code{border:none;padding:0}
+.warn{background:rgba(248,81,73,.08);border:1px solid var(--red);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+.tip{background:rgba(0,229,160,.06);border:1px solid var(--accent);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.86rem}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left}
+th{background:var(--card)}
+.back{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}
+.src{color:var(--muted);font-size:.78rem;margin-top:26px;padding-top:12px;border-top:1px solid var(--border)}
+</style></head><body>
+<a class="back" href="/">← 回 tokenmost 情报流</a>
+<h1>SCNet 国家超算互联网全攻略：tokens、卡时、OpenClaw 三线薅法</h1>
+
+<p>> 核实于 2026-10-27 ｜ 难度：★★☆（要实名）｜ 国家队平台，价格屠夫：综合约 1 元/百万 tokens、OpenClaw 续购 0.1 元/百万</p>
+
+<h2>这平台有什么可薅（三件套）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><strong>邀测计划</strong>：100 卡时 GPU + 500G 分布式存储 + 1000 万 tokens 体验额度（verified，官方邀测文档）</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li><strong>OpenClaw 部署福利</strong>：2026-03 活动每人 1000 万 tokens（限时 2 周用完）；续购价 <strong>0.1 元/百万 tokens</strong>（官宣，全网最低档）（中-高）</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li><strong>Token Plan 包月</strong>：¥30/月起，官方折算示例透明（verified）</li></ol>
+
+<h2>线路一：邀测 100 卡时（GPU 玩家主线）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><strong>注册</strong>：https://www.scnet.cn → 右上角注册。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li><strong>实名认证</strong>：个人实名即可（必须，所有福利的前提）。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li><strong>进邀测活动页</strong>：https://www.scnet.cn/ycjh/index.html （JS 渲染，登录后看）→ 点「领取算力资源」。</li></ol>
+<ol start='4' style='margin:0;padding-left:22px'><li><strong>选资源</strong>：选择要测的资源点【立即获取】→ 到账 <strong>100 卡时异构加速卡 + 500G 存储</strong>；另有 <strong>1000 万 tokens 热门大模型体验额度</strong>（DeepSeek-R1 等）。</li></ol>
+<ol start='5' style='margin:0;padding-left:22px'><li><strong>用法</strong>：控制台部署环境跑训练/推理；或进 Chat 页直接免费对话 DeepSeek-R1（DeepSeek-V4 限时免费对话口径待核实）。</li></ol>
+
+<div class="warn">⚠️ 邀测是<strong>限时名额制</strong>，资源池时有时无；100 卡时约等于 4090 连跑 4 天多，按需申请别囤。</div>
+
+<h2>线路二：OpenClaw 部署（Agent 玩家主线）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><strong>入口</strong>：https://www.scnet.cn/ui/chatbot/openclaw →「一键部署 OpenClaw」（部署会同步开通模型 API + 共享存储服务）。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li><strong>历史活动</strong>：2026-03 面向全体 OpenClaw 用户发过每人 1000 万 tokens（活动期登录自动发放）。<strong>该活动窗口已过，当前是否延续需登录确认</strong>（入口页仍在）。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li><strong>续购价 0.1 元/百万 tokens</strong>（官宣口径）——如果是重度 Agent 用户，这个价格比官方 DeepSeek API（输出 27 元/百万）低两个数量级，靠的是超算闲时算力。</li></ol>
+<ol start='4' style='margin:0;padding-left:22px'><li>⚠️ 官方安全提醒原文：核实 Skill 来源、勿装高风险插件、防数据泄露——OpenClaw 插件生态是最大攻击面。</li></ol>
+
+<h2>线路三：Token Plan 包月（API 玩家主线）</h2>
+
+<table>| 档位 | 活动价 | 月度 Credits |
+|---|---|---|
+| 基础版 | <strong>¥30</strong>（原 ¥50） | 60,000 |
+| 标准版 | ¥110 | 240,000 |
+| 高级版 | ¥265 | 600,000 |
+| 旗舰版 | ¥764 | 1,800,000（送 OpenClaw 2核4G 实例） |
+</table>
+<ul style='margin:0;padding-left:22px'><li><strong>官方折算示例（唯一敢给数字的厂商之一）</strong>：6 万 Credits 全部折算 ≈ 缓存命中输入 1.2 亿 tokens，或非缓存输入 720 万，或输出 170 万，<strong>综合约 3000 万 tokens</strong>（以 Kimi-K2.6、倍率 1.0 计）。</li></ul>
+<ul style='margin:0;padding-left:22px'><li><strong>模型倍率表</strong>（按周调整，2026-09-01 版）：DeepSeek-V4-Flash 0.13 / GLM-5.3-Flash 0.15 / Qwen3.8-Flash 0.14（最便宜三档）；GLM-5.3 2.29 / Kimi-K3 4.12（旗舰反而贵，别用包月跑旗舰）。</li></ul>
+<ul style='margin:0;padding-left:22px'><li><strong>购买</strong>：控制台 → 模型服务 → Token Plan；专属 Key（<code>sk-tp-</code> 开头）与通用 Key 不通用，用错不抵扣。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>⚠️ 规则：自然月有效到期清零；每账号同时只能持有 1 个套餐；不可升降档；<strong>仅限 AI 工具（Claude Code/OpenClaw/Cursor）交互式使用，禁 API 自动化/后端/批量调用</strong>，违者封 Key；严禁共享。</li></ul>
+
+<h2>⚠️ 红线与坑</h2>
+
+<ul style='margin:0;padding-left:22px'><li>实名信息必须真实，活动申请人工审核。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>「DeepSeek 官方 1/8 价」流传口径<strong>未获官方原文支持</strong>——可核口径是：综合 1 元/百万（倍率 1.0）、Flash 类综合 0.13-0.15 元/百万、OpenClaw 续购 0.1 元/百万。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>Credits 到期清零不结转——按月买、按月用，别一次囤半年。</li></ul>
+
+<p>---</p>
+<p><strong>核实于 2026-10-27</strong>。来源列表：</p>
+<ul style='margin:0;padding-left:22px'><li>官方 OpenAPI 文档·Token Plan（直核，高）：https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html</li></ul>
+<ul style='margin:0;padding-left:22px'><li>官方邀测快速开始文档（直核，高）：https://www.scnet.cn/help/docs/mainsite/activity/invite/quick-test/index.html</li></ul>
+<ul style='margin:0;padding-left:22px'><li>邀测活动页（JS 需登录）：https://www.scnet.cn/ycjh/index.html</li></ul>
+<ul style='margin:0;padding-left:22px'><li>OpenClaw 入口页（JS 需登录）：https://www.scnet.cn/ui/chatbot/openclaw</li></ul>
+<ul style='margin:0;padding-left:22px'><li>OpenClaw 1000 万活动报道（中-高）：OSCHINA https://www.oschina.net/news/409844 、东方财富</li></ul>
+<ul style='margin:0;padding-left:22px'><li>3000 万历史活动存档（中）：https://cloud.tencent.com/developer/article/2656573</li></ul>
+
+</body></html>

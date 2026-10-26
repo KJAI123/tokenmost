@@ -319,6 +319,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="brow">
     <button class="on" data-bn="feed"><b>📡</b>情报流</button>
     <button data-bn="nav"><b>🧭</b>导航</button>
+    <button data-bn="guide"><b>📖</b>攻略</button>
     <button data-bn="tools"><b>🧰</b>工具</button>
     <button data-bn="mine"><b>🗂</b>我的</button>
   </div>
@@ -883,6 +884,7 @@ document.getElementById('bottomNav').addEventListener('click',e=>{
   const act=b.dataset.bn;
   if(act==='feed')window.scrollTo({top:0,behavior:'smooth'});
   if(act==='nav')document.getElementById('navArea').scrollIntoView({behavior:'smooth'});
+  if(act==='guide')openGuides();
   if(act==='tools')document.getElementById('sumBtn').click();
   if(act==='mine')vaultToggle(true);
 });
