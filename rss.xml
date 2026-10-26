@@ -434,7 +434,7 @@
       <description>套餐订阅 · 规则：Max 5x=5×Pro会话用量、20x=20×（第三方口径中）；付费计划上下文：新模型1M/其余500K-200K；⚠️ 底册「订阅满7天领API credits」本次官方页未复现，存疑待核（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>GitHub Copilot：⚠️ 重大口径更新：Copilot 已弃用 premium requests（300/1000），改用 GitHub A</title>
+      <title>GitHub Copilot：Copilot AI Credits 定案：1 credit = $0.01 按 token 计价（PRU 倍率表已从官</title>
       <link>https://docs.github.com/en/copilot/get-started/plans-for-github-copilot</link>
       <guid isPermaLink="false">deep-copilot-ai-credits</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
@@ -630,7 +630,7 @@
       <description>长期免费 · 规则：与 Gemini API 免费层同源（R1结论：官方已改AI Studio动态限额不公布静态表）；experimental/preview模型更紧；个人Google账号认证（OAuth）即可用免费档（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Cursor（Anysphere×SpaceX）：⚠️ 重大口径更新：2026-10-12起并入统一 X Subscription</title>
+      <title>Cursor（Anysphere×SpaceX）：X Subscription 统一订阅：Plus $8 明确含 Cursor 用量（官方原文）</title>
       <link>https://cursor.com/pricing</link>
       <guid isPermaLink="false">deep-cursor-x-subscription</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
@@ -684,6 +684,34 @@
       <guid isPermaLink="false">deep-xai-grok-code-status-r3</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>status · 规则：独立 API 羊毛预期删除；关注 X 档位变动与 Grok Bot 分档规则（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Anthropic：Claude Code 限额官方原文（support.claude.com/en/articles/11145838 直</title>
+      <link>https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan</link>
+      <guid isPermaLink="false">deep-anthropic-code-limits-r4</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：绝对额度官方保密=确定性结论（第二官方页交叉）；Settings&gt;Usage 进度条为唯一官方口径（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>GitHub Copilot：定案：PRU（premium request units）正式废弃、旧 1x/10x 模型倍率表已从 docs 删除</title>
+      <link>https://docs.github.com/en/copilot/get-started/plans-for-github-copilot</link>
+      <guid isPermaLink="false">deep-copilot-ai-credits-r4</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：官方无静态倍率表（本质 token 计价）；社区反馈新计费烧得更快（GitHub Community 多帖）； Flex/base 双池结构维持（R2 直核）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Google Gemini CLI：⚠️ 重大更正：Gemini CLI 已于 2026-06-18 被 Antigravity CLI 取代（README</title>
+      <link>https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli</link>
+      <guid isPermaLink="false">deep-gemini-cli-retired-r4</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>避雷 · 规则：Antigravity CLI 免费档极紧（社区口径~20 agent请求/天，单源低置信）；与 AI Pro 订阅不共享配额池；API 免费层（AI Studio 实查法）仍是可用主力（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Cursor（X Subscription）：x.ai 官方原文直核：Plus $8/月 含 Cursor 用量（原文 More AI usage in Grok a</title>
+      <link>https://x.ai/news/x-subscription</link>
+      <guid isPermaLink="false">deep-cursor-x-subscription-r4</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：第三方模型仅 Premium 及以上可在 Cursor 用（API 牌价 top-up 另计）；「每周刷新」出处为 cursor.com/pricing 页（R2 直核），x.ai 页未提刷新周期——两口径合并、各标出处（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
