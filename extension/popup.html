@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#00e5a0;--amber:#d29922;--red:#f85149}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:340px;background:var(--bg);color:var(--text);font:13px/1.5 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:12px}
+header{font-size:15px;font-weight:700;margin-bottom:10px}
+header em{font-style:normal;color:var(--accent)}
+section{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px;margin-bottom:10px}
+h3{font-size:12px;color:var(--muted);font-weight:400;margin-bottom:8px}
+.deal{display:block;padding:6px 8px;border-radius:8px;margin-bottom:6px;background:var(--bg);border:1px solid var(--border);cursor:pointer}
+.deal:hover{border-color:var(--accent)}
+.deal b{font-size:12px;display:block}
+.deal span{font-size:11px;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acc{padding:7px 8px;border-radius:8px;margin-bottom:6px;background:var(--bg);border:1px solid var(--border)}
+.acc .t{font-size:12px;font-weight:700}
+.acc .t small{color:var(--muted);font-weight:400;font-family:monospace;margin-left:6px}
+.acc .ops{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
+.acc button,.acc a{font-size:11px;padding:3px 9px;border-radius:6px;border:1px solid var(--border);background:none;color:var(--text);cursor:pointer;text-decoration:none}
+.acc .go{background:var(--accent);color:#00150c;border:none;font-weight:700}
+.acc .fill{border-color:var(--accent);color:var(--accent)}
+.acc .del{color:var(--red);margin-left:auto}
+.add{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.add input,.add select{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 8px;color:var(--text);font-size:12px;outline:none}
+.add input:focus{border-color:var(--accent)}
+.add button{grid-column:1/-1;background:var(--accent);color:#00150c;border:none;border-radius:6px;padding:7px;font-weight:700;cursor:pointer}
+.file{display:block;margin-top:8px;font-size:11px;color:var(--muted);cursor:pointer;border:1px dashed var(--border);border-radius:6px;padding:6px;text-align:center}
+.file input{display:none}
+.cfg{display:flex;gap:6px}
+.cfg input{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 8px;color:var(--text);font-size:11px;outline:none}
+.cfg button{background:none;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:11px}
+.warn{font-size:11px;color:var(--amber);margin-top:2px}
+.empty{color:var(--muted);font-size:12px;text-align:center;padding:8px}
+#tip{position:fixed;left:0;right:0;bottom:0;background:var(--accent);color:#00150c;font-weight:700;text-align:center;font-size:12px;padding:6px;display:none}
+</style>
+</head>
+<body>
+<header>token<em>most</em> 羊毛助手</header>
+<section>
+  <h3>🔥 今日羊毛（来自你的 tokenmost 站点）</h3>
+  <div id="dealsList"><div class="empty">加载中…</div></div>
+</section>
+<section>
+  <h3>🔐 我的托管账号（密码仅存本机）</h3>
+  <div id="accList"></div>
+  <div class="add">
+    <select id="p-site"><option value="">— 平台 —</option></select>
+    <input id="p-account" placeholder="手机号 / 邮箱" autocomplete="off">
+    <input id="p-pass" type="password" placeholder="密码（仅存本机，可留空）" autocomplete="off">
+    <button id="p-add">＋ 添加托管</button>
+  </div>
+  <label class="file">📥 导入 tokenmost 账号库备份（json，导入后可逐个补密码）<input id="p-import" type="file" accept=".json"></label>
+</section>
+<section class="cfg">
+  <input id="p-site-url" placeholder="站点地址 https://tokenmost.com">
+  <button id="p-save">保存</button>
+</section>
+<p class="warn">⚠️ 密码仅存本机（chrome.storage.local），不上传、不同步、不加密——公共设备勿用；高敏感账号建议 Bitwarden。「填充」= 在你当前打开的平台登录页自动填入账号密码。</p>
+<div id="tip"></div>
+<script src="fill-core.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

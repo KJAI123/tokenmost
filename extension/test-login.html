@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>填充引擎回归页</title>
+</head>
+<body style="font-family:sans-serif;max-width:360px;margin:40px auto">
+  <h3>某 AI 平台登录（回归测试用假页面）</h3>
+  <p>用 Chrome 打开本页 → 扩展 popup 里「✍️ 填充本页」；或本地服务后在控制台跑 <code>window.__fillCreds('13800001111','pw123')</code></p>
+  <form onsubmit="return false">
+    <input name="phone" id="mobileInput" type="tel" placeholder="手机号" autocomplete="tel" style="width:100%;padding:8px;margin:6px 0"><br>
+    <input name="password" type="password" placeholder="密码" style="width:100%;padding:8px;margin:6px 0"><br>
+    <button style="padding:8px 24px">登录</button>
+  </form>
+  <script src="fill-core.js"></script>
+</body>
+</html>

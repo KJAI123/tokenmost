@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "TokenMost 羊毛助手",
+  "version": "0.1.0",
+  "description": "AI 平台账号快速托管与一键填充 + 今日羊毛速览。账号与密码仅存本机（chrome.storage.local），不上传不同步。",
+  "permissions": ["storage", "activeTab", "scripting", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "TokenMost 羊毛助手"
+  }
+}

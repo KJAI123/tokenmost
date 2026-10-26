@@ -26,7 +26,9 @@ tokenmost/
 │   ├── check.py         # 数据校验 + rss 重生成（改数据必跑）
 │   ├── sync.py          # 零 token 自动流水线（GitHub Actions 定时跑）
 │   └── sources.json     # 数据源注册表（32 源：API/监控页/RSS）
-├── usage.json           # 额度直连注册表（哪些平台可在浏览器查余额）
+├── usage.json           # 额度直连注册表（哪些平台可在浏览器查余额；site 名须与 sites.json 完全一致）
+├── manifest.webmanifest # PWA
+├── extension/           # Chrome 扩展「羊毛助手」（load-unpacked，见 extension/README.md）
 ├── .github/workflows/   # sync.yml 每日 2 次同步 + pages.yml 自动发布
 ├── .sync-state.json     # 源哈希基线/失败计数（自动维护）
 ├── review-queue.md      # 人工复核队列（自动重算的实时视图）
@@ -91,6 +93,12 @@ GitHub push → **GitHub Pages**（`Settings → Pages → Source: GitHub Action
 
 （2026-10-27 老板拍板：邮箱订阅相关功能——Brevo 表单、mailto 兜底/纠错——**全部砍除，不再回加**，站内联系方式仅保留 RSS。）
 
+## v0.7（2026-10-27）：浏览器扩展 MVP + 额度直连扩到 5 平台 + PWA
+
+- **Chrome 扩展「TokenMost 羊毛助手」**（`extension/`，免上架 load-unpacked）：真·一键登录 MVP——账号托管本机（chrome.storage.local）+ 在平台官方登录页「✍️ 填充本页」一键填账号密码（fill-core 启发式定位，React 受控组件兼容，已实测）；popup 内置「今日羊毛」速览（拉取你部署站点的 deals.json）+ tokenmost 账号库备份导入。合规红线：只填本人账号，无自动注册/接码/验证码绕过；密码仅存本机不加密（明示公共设备勿用）
+- **额度直连 2 → 5 平台**（全部浏览器实测连通）：新增 硅基流动 `/v1/user/info`（余额/赠送/状态）、Kimi `api.moonshot.cn/v1/users/me/balance`（可用/现金余额），连同 OpenRouter、DeepSeek；探测方法：假 Key 收到服务器 401 即跨域放行
+- **PWA 基础**：manifest.webmanifest + theme-color（可「添加到主屏幕」独立开）
+
 ## v0.6（2026-10-27）：额度监控 + 快速托管（留存/转化抓手）+ 砍 Cloudflare
 
 - **账号库 v2「快速托管」**：新手机号 30 秒入库——卡片新增 🔒 一键托管按钮（自动预填平台+额度备注），表单手机号优先、API Key 选填
@@ -125,6 +133,6 @@ GitHub push → **GitHub Pages**（`Settings → Pages → Source: GitHub Action
 
 ## 二期路线
 
-- 浏览器扩展（Chrome Extension 注入各平台登录页 + Bitwarden 类密码填充）实现真·一键登录
-- ~~usage API 轮询做额度监控~~ ✅ 2026-10-27 已落地（v0.6 浏览器直连版，usage.json 注册表驱动；后续可扩更多平台的余额端点）
+- ~~浏览器扩展真·一键登录~~ ✅ 2026-10-27 已落地 MVP（v0.7，`extension/` load-unpacked：本机托管+一键填充+今日羊毛；后续可做商店上架与更多登录页适配）
+- ~~usage API 轮询做额度监控~~ ✅ 2026-10-27 已落地（v0.6/v0.7：浏览器直连 5 平台，usage.json 注册表驱动）
 - ~~用量计算器/比价~~ ✅ 2026-10-27 已落地（v0.3）：工具条「🧮 比价」面板，prices.json 驱动

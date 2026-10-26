@@ -4,5 +4,11 @@
    "note": "浏览器直连（实验性）"},
   {"site": "DeepSeek 开放平台", "url": "https://api.deepseek.com/user/balance",
    "fields": [["余额", "balance_infos.0.total_balance"], ["货币", "balance_infos.0.currency"]],
-   "note": "浏览器直连已实测连通（2026-10-27）"}
+   "note": "浏览器直连已实测连通（2026-10-27）"},
+  {"site": "硅基流动 SiliconFlow", "url": "https://api.siliconflow.cn/v1/user/info",
+   "fields": [["余额", "data.balance"], ["赠送余额", "data.freeBalance"], ["状态", "data.status"]],
+   "note": "浏览器直连已实测连通（2026-10-27）"},
+  {"site": "Kimi 开放平台", "url": "https://api.moonshot.cn/v1/users/me/balance",
+   "fields": [["可用余额", "available_balance"], ["现金余额", "cash_balance"]],
+   "note": "浏览器直连已实测连通（2026-10-27，api.moonshot.cn 端点）"}
 ]
