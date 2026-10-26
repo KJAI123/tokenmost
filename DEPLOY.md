@@ -32,11 +32,13 @@ git push -u origin main
 ## 3. 之后每次更新
 
 ```bash
-# 改完 deals.json / sites.json / index.html 后：
-git add -A && git commit -m "情报更新 YYYY-MM-DD" && git push
+# 手动改数据后：
+python3 tools/check.py && git add -A && git commit -m "情报更新 YYYY-MM-DD" && git push
 ```
 
-Cloudflare Pages 自动构建，约 1 分钟后全站生效。
+**日常无需手动更新**：推送到 GitHub 后，`.github/workflows/sync.yml` 自动激活——每日北京时间 06:30 / 18:30 自动抓取 33 个数据源、更新情报、自动提交，Cloudflare Pages 跟随 bot 提交自动重建全站。人工只需每天看一眼 `review-queue.md` 处理待复核项（约 5 分钟）。
+
+Actions 页面（github.com/<用户名>/tokenmost/actions）可手动触发一次 sync 验证流水线（Run workflow 按钮）。
 
 ## 上线检查单（推送前最后一眼）
 

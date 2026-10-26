@@ -16,13 +16,20 @@
 
 ```
 tokenmost/
-├── index.html      # 全站（导航+卡片流+账号库抽屉+一键接入+比价计算器）
-├── sites.json      # hao123 导航数据（五层）
-├── deals.json      # 折扣情报+折扣码
-├── prices.json     # 模型单价表（每百万 token，比价计算器数据源）
-├── robots.txt
-├── sitemap.xml
-├── DEPLOY.md       # GitHub → Cloudflare Pages 部署指南
+├── index.html           # 全站（导航+卡片流+账号库抽屉+一键接入+比价计算器）
+├── sites.json           # hao123 导航数据（五层）
+├── deals.json           # 折扣情报+折扣码
+├── prices.json          # 模型单价表（每百万 token，比价计算器数据源）
+├── rss.xml              # 由 tools/check.py 自动重生成
+├── robots.txt / sitemap.xml
+├── tools/
+│   ├── check.py         # 数据校验 + rss 重生成（改数据必跑）
+│   ├── sync.py          # 零 token 自动流水线（GitHub Actions 定时跑）
+│   └── sources.json     # 数据源注册表（33 源：API/监控页/RSS）
+├── .github/workflows/sync.yml   # 每日 2 次定时同步 + 自动提交
+├── .sync-state.json     # 源哈希基线/失败计数（自动维护）
+├── review-queue.md      # 人工复核队列（自动重算的实时视图）
+├── DEPLOY.md            # GitHub → Cloudflare Pages 部署指南
 └── README.md
 ```
 
@@ -36,18 +43,33 @@ tokenmost/
 
 GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ 绑定 tokenmost.com
 
-## 每日 30 分钟维护流程
+## 自动运营架构（v0.4，2026-10-27 落地）
 
-1. deals.json 重验 10 条 → verified_at 改今天
-2. 新羊毛加草稿条目（published:false）
-3. 折扣码有真实来源才填 coupon 字段（填真码时删掉 placeholder 标记）
-4. 改完跑 `python3 tools/check.py`——校验数据合法性并自动重生成 rss.xml（与 published:true 一一对应）
-5. git push 全站自动更新
+**目标：不烧 token 的全自动折扣站。** 机器核机器的，人只看机器看不懂的。
+
+- **GitHub Actions 每日 2 跑**（北京 06:30 / 18:30，`.github/workflows/sync.yml`，公共仓免费）：抓源 → 更新数据 → 校验 → 自动提交 → Cloudflare Pages 自动部署。全程纯规则脚本（Python 标准库），**无任何 LLM 参与**。
+- **三类数据源**（`tools/sources.json` 注册，加源只改这个文件）：
+  1. `json` 结构化 API（OpenRouter / ModelScope 公开端点）→ 直接更新情报文案与比价行
+  2. `watch` 官方页面哈希监控（30 个定价/活动页）→ 页面没变 = 自动续验证戳（卡片显示 🤖 自动核验）；变了 = 相关情报降级「待复核」并写明原因
+  3. `rss` 社区源（linux.do）→ 关键词白/黑名单过滤 → 只生成 `published:false` 草稿（多号/合租/代充等黑名单词直接拒收）
+- **稳定性机制**：哈希前归一化（剥离 script/nonce/CSRF/长随机串）；**两次观测确认制**——同一新哈希连续出现 2 次（可按源调 `confirm_runs`）才算真变更，计数器/轮换 banner 类抖动页永不误报。
+- **规则引擎**：`deadline` 过期自动标「已失效」；`verified_at` 超 14 天未被任何源续期自动降级「待复核」（防僵尸数据）。
+- **review-queue.md = 人工复核队列**：从当前数据状态实时推导（待复核条目 / RSS 草稿 / 连续失联 ≥3 次的源）。人工在 deals.json 里核实修复后，下一轮自动出队。
+- **人工只剩 5 分钟/天**：扫一眼 review-queue.md → 处理待复核和草稿 → 拿到真实折扣码时替换占位码。其余（续期、失效、比价、RSS、部署）全部自动。
+
+已知边界：需登录才能看的数额（火山方舟控制台、讯飞礼包）无法自动核，依赖 14 天老化提醒人工复核；linux.do 被 Cloudflare 拦（403）时该源优雅降级为「源失联」提醒；GitHub Actions 定时可能有几分钟到半小时延迟，属正常。
+
+## 每日 5 分钟人工维护（全自动之上的补充）
+
+1. 看 `review-queue.md`：待复核条目 → 核实官方页 → 更新 value 并改 `verify_status:"verified"`（顺手删 `stale_reason`）
+2. RSS 草稿（`published:false` + 🤖 开头 notes）→ 核实官方来源后上架或删
+3. 拿到真实折扣码 → 填 coupon 字段并删 placeholder 标记
+4. 改完任何数据跑 `python3 tools/check.py`（本地）——CI 也会自动跑
 
 ## 数据契约
 
 - sites.json：稳定入口层，很少改。可选 `api` 字段 `{base_url, model, env}`——配置了即可生成「⚡ 一键接入」代码（cURL/Python/Node/客户端配置），字段均可在面板中编辑，端点与模型名以官方文档为准
-- deals.json：五层 category 对齐 sites 的 layer key；deal 的 provider 通过首词匹配关联 sites 条目（如「硅基流动」↔「硅基流动 SiliconFlow」）。可选 `deadline` 字段（ISO 日期）显示截止提醒，free_tier/price_low 无截止时显示「长期有效」；`placeholder:true` 标记占位示例码——卡片禁用复制并显示「示例码」角标，不与真实码同权展示
+- deals.json：五层 category 对齐 sites 的 layer key；deal 的 provider 通过首词匹配关联 sites 条目（如「硅基流动」↔「硅基流动 SiliconFlow」）。可选 `deadline` 字段（ISO 日期）显示截止提醒，**到期由 sync.py 自动标失效**；`verified_at` 由数据源自动续期时附带 `verify_by:"auto"`（卡片显示 🤖）；降级时附带 `stale_reason`（维护者可见的原因，人工复核后删除）；`placeholder:true` 标记占位示例码——卡片禁用复制并显示「示例码」角标，不与真实码同权展示
 - notes 字段以 `TODO` 或 `⚠️` 开头的内容视为维护者备注，不在卡片上展示
 - coupon 字段存在时卡片自动出现「复制」按钮（placeholder 除外）
 - 账号库纯 localStorage（key: `tm_vault_v1`），无后端

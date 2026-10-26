@@ -186,7 +186,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <main id="cards"><div class="empty">加载中…</div></main>
 </div>
 <footer class="wrap">
-  <p>数据每日人工更新 · 优惠以各平台官方页面为准</p>
+  <p>数据自动+人工双轨每日更新 · 优惠以各平台官方页面为准</p>
   <p class="disclaim">⚠️ 免责声明：本站为独立情报聚合站，与所列平台无关；所有优惠以各平台官方页面为准，请自行核实后再操作，本站不构成消费建议。</p>
   <p><a href="rss.xml">RSS 订阅</a> · © 2026 tokenmost.com</p>
 </footer>
@@ -297,11 +297,12 @@ function renderNav(){
 function freshness(d){
   if(d.verify_status==='expired')return'<span class="badge b-red">❌ 已失效</span>';
   if(d.verify_status!=='verified')return'<span class="badge b-amber">⚠️ 待复核</span>';
+  const a=d.verify_by==='auto'?'🤖':'✅';
   const h=(Date.now()-new Date(d.verified_at))/36e5;
-  if(h<24)return'<span class="badge b-green">✅ 今日验证</span>';
-  if(h<48)return'<span class="badge b-green">✅ 1天前</span>';
-  if(h<168)return'<span class="badge b-green">✅ '+Math.floor(h/24)+'天前</span>';
-  return'<span class="badge b-amber">⚠️ '+Math.floor(h/24)+'天前</span>';
+  if(h<24)return `<span class="badge b-green">${a} ${a==='🤖'?'自动核验':'今日验证'}</span>`;
+  if(h<48)return `<span class="badge b-green">${a} 1天前</span>`;
+  if(h<168)return `<span class="badge b-green">${a} `+Math.floor(h/24)+`天前</span>`;
+  return `<span class="badge b-amber">⚠️ `+Math.floor(h/24)+`天前</span>`;
 }
 function render(){
   let list=DEALS.filter(d=>d.published!==false);
