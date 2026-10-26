@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>火山方舟「每日 500 万」攻略：协作奖励计划怎么开、红线在哪 — tokenmost 攻略</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#00e5a0;--amber:#d29922;--red:#f85149}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:15px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:28px 18px 80px}
+a{color:#58a6ff}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+.meta{color:var(--muted);font-size:.8rem;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h2{font-size:1.1rem;margin:22px 0 8px;color:var(--accent)}
+h3{font-size:.98rem;margin:16px 0 6px}
+ol,ul{padding-left:22px;margin:8px 0}
+li{margin:5px 0}
+code{background:#0a0e14;border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:.85em;font-family:monospace;color:#c9d1d9;word-break:break-all}
+pre{background:#0a0e14;border:1px solid var(--border);border-radius:9px;padding:12px;overflow-x:auto;margin:10px 0}
+pre code{border:none;padding:0}
+.warn{background:rgba(248,81,73,.08);border:1px solid var(--red);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+.tip{background:rgba(0,229,160,.06);border:1px solid var(--accent);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.86rem}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left}
+th{background:var(--card)}
+.back{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}
+.src{color:var(--muted);font-size:.78rem;margin-top:26px;padding-top:12px;border-top:1px solid var(--border)}
+</style></head><body>
+<a class="back" href="/">← 回 tokenmost 情报流</a>
+<h1>火山方舟「每日 500 万」攻略：协作奖励计划怎么开、红线在哪</h1>
+
+<p>> 核实于 2026-10-27 ｜ 难度：★★☆（有隐私条款，先看红线再决定）｜ 唯一的「按天给额度」型大厂羊毛</p>
+
+<h2>机制一句话</h2>
+
+<p>火山方舟的「每日最高 500 万 tokens」<strong>不是无条件白送</strong>，而是「协作奖励计划」：你<strong>授权火山采集你的推理数据</strong>（匿名化）→ 换每日等量资源包。<strong>用得越多返得越多</strong>，上限每模型每天 500 万 tokens。</p>
+
+<h2>开通步骤</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><strong>注册火山引擎 + 实名认证</strong>：https://www.volcengine.com/product/ark （个人实名即可，企业认证可提额）。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li><strong>开通模型服务</strong>：进方舟控制台 https://console.volcengine.com/ark →「开通管理」，开通你要用的模型（如 Doubao-Seed-Evolving 等）。⚠️ 新账号先看「开通管理」页的<strong>免费额度</strong>：新注册用户每模型有一笔一次性免费额度（第三方口径 50 万 tokens，官方以控制台实显为准），可先薅这个。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li><strong>关闭「安心体验模式」</strong>：这是协作奖励计划的硬前提。它本是「只耗赠送额度、用完即停」的防扣费开关——参加协作计划必须关，关了之后超额会真实计费，所以第 4 步的资源包要盯紧。</li></ol>
+<ol start='4' style='margin:0;padding-left:22px'><li><strong>报名协作奖励计划</strong>：控制台「开通管理」页点「立即参与」；或在模型广场进 Doubao-Seed-Evolving 等在列模型详情页，从模型卡进入。</li></ol>
+<ol start='5' style='margin:0;padding-left:22px'><li><strong>正常调用</strong>：API 走 Chat/Responses/Messages/Image/Content Generation 在线推理。当天授权模型消耗的量（≤500 万 tokens/天），<strong>次日 T+1 发放等量免费资源包（30 天有效）</strong>；首次授权某模型再给一笔一次性冷启动资源包（数额以活动页公示）。</li></ol>
+
+<h2>额度用法与优先级</h2>
+
+<ul style='margin:0;padding-left:22px'><li>免费资源包只抵<strong>按 token 后付费的在线推理</strong>（输入/输出/缓存命中），不抵批量推理、模型单元付费、TPM 包、缓存存储费。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>抵扣顺序官方明示：<strong>免费额度包 > 协作奖励包 > 资源包 > 按量扣费</strong>。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>支持协议齐全（含 Anthropic 兼容），可接 Claude Code 等；Coding Plan 用户另有 <code>ark.cn-beijing.volces.com/api/coding</code> 专属地址，别混。</li></ul>
+
+<h2>⚠️ 红线与知情声明（报名前必读）</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li><strong>数据授权是永久的</strong>：官方条款原文「授权期限为永久」，且已采集的数据技术上无法撤回——撤回授权只对以后生效。介意数据被用于模型训练的，别开。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li><strong>模型名单在收缩</strong>：2026-09-01 退出文本模型 31 款，2026-10-08 又退出 9 款（Doubao-Seed-2.1-pro/turbo、DeepSeek-V4-Pro/Flash、GLM-5.2、Kimi-K3 等都在退出名单里）。<strong>开通前先看活动页当前在列模型</strong>，别冲着已退出的模型去。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li><strong>一账号原则</strong>：仅同一用户的唯一一个账号可参与，多号=违规。</li></ol>
+<ol start='4' style='margin:0;padding-left:22px'><li><strong>关了安心体验模式会真实扣费</strong>：资源包 30 天过期清零、当日消耗超 500 万的部分自费——控制台设置用量告警。</li></ol>
+<ol start='5' style='margin:0;padding-left:22px'><li>「豆包编程模型每日 500 万常态化到 2027」是官方文章口径，与协作计划条款存在矛盾，<strong>以控制台活动页实时规则为准</strong>。</li></ol>
+
+<h2>顺手的低价档</h2>
+
+<ul style='margin:0;padding-left:22px'><li>方舟 Coding Plan：Lite ¥40/月（每 5h 约 1200 次）、Pro ¥200/月（约 5 倍）；首购 9.9 元特惠官方公告已于 2026-03-17 暂停，但活动页仍挂「限时 9.9 起」——<strong>下单前在 https://www.volcengine.com/activity/codingplan 实时确认</strong>。模型池含 Doubao-Seed-2.1 系列、Kimi-K3、GLM-5.3、DeepSeek-V4 系。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>⚠️ Coding Plan 仅限编程工具内使用，当 API 用会封订阅。</li></ul>
+
+<p>---</p>
+<p><strong>核实于 2026-10-27</strong>。来源（官方文档直核，高置信）：</p>
+<ul style='margin:0;padding-left:22px'><li>协作奖励计划：https://www.volcengine.com/docs/ark/collaboration-reward-program</li></ul>
+<ul style='margin:0;padding-left:22px'><li>免费推理额度：https://docs.volcengine.com/docs/ark/free-inference-quota</li></ul>
+<ul style='margin:0;padding-left:22px'><li>Coding Plan 个人版概览：https://docs.volcengine.com/docs/ark/coding-plan-personal-plan-overview</li></ul>
+<ul style='margin:0;padding-left:22px'><li>新用户特惠（9.9 暂停公告）：https://docs.volcengine.com/docs/82379/1528220</li></ul>
+<ul style='margin:0;padding-left:22px'><li>「每日 500 万」官方文章（软文性质，中置信）：https://www.volcengine.com/article/2605938</li></ul>
+<ul style='margin:0;padding-left:22px'><li>新人 50 万口径（第三方，待核实）：https://www.aipromonow.com/promos/volcengine-ark-free-500k-tokens-per-model</li></ul>
+
+</body></html>

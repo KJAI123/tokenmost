@@ -23,8 +23,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Assemble site (只发布站点文件，不含 .git/tools/工作流)
         run: |
-          mkdir -p _site
+          mkdir -p _site/guides
           cp index.html sites.json deals.json prices.json usage.json plans.json rss.xml robots.txt sitemap.xml manifest.webmanifest _site/
+          cp guides/* _site/guides/ 2>/dev/null || true
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

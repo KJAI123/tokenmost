@@ -92,6 +92,12 @@ rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 """
 (ROOT / "rss.xml").write_text(rss)
 
+# 攻略页构建（guides/*.md 存在时）
+import subprocess as _sp
+_g = ROOT / "tools" / "build_guides.py"
+if _g.exists():
+    _sp.run([sys.executable, str(_g)])
+
 pub = sum(1 for d in deals if d.get("published", True))
 verified_pub = sum(1 for d in deals if d.get("published", True) and d["verify_status"] == "verified")
 api_n = sum(1 for s in all_sites if s.get("api"))

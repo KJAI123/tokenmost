@@ -255,6 +255,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="stools">
     <button class="accent" id="authBtnSide" onclick="authOpen()">🔐 登录 / 供码</button>
     <button id="vaultBtnSide">🗂 账号库</button>
+    <button id="guideBtnSide">📖 领取攻略</button>
     <button class="violet" id="planBtnSide">⌨️ Coding 比价</button>
     <button class="gold" id="sumBtnSide">💰 白嫖总账</button>
     <button id="calcBtnSide">🧮 用量比价</button>
@@ -852,6 +853,24 @@ document.getElementById('v-more').addEventListener('click',e=>{e.preventDefault(
 /* 抽屉打开时顺带刷新「我的共享码」 */
 const _vaultToggle=vaultToggle;
 vaultToggle=function(open){_vaultToggle(open);if(open)renderMyCoupons()};
+document.getElementById('guideBtnSide').addEventListener('click',openGuides);
+/* 攻略中心（guides/index.json 驱动） */
+async function openGuides(){
+  try{
+    const list = await (await fetch('guides/index.json?ts='+Date.now())).json();
+    if(!list.length) return alert('攻略编写中，稍后再来看');
+    const box = document.getElementById('shareList');
+    document.getElementById('shareTitle').textContent = '📖 领取攻略（人工核实步骤）';
+    document.getElementById('shareSub').textContent = '深挖团队逐页核实官方规则后的分步指南';
+    box.innerHTML = list.map(g=>`
+      <a class="shareItem" href="guides/${esc(g.id)}.html" target="_blank" style="display:block;text-decoration:none">
+        <div class="row"><span class="code" style="color:var(--accent)">📄 ${esc(g.title)}</span></div>
+        ${g.desc?`<div class="meta">${esc(g.desc)}</div>`:''}
+      </a>`).join('');
+    document.getElementById('shareOverlay').classList.add('open');
+    document.getElementById('sharePanel').classList.add('open');
+  }catch(_){ alert('攻略中心暂不可用（guides/index.json 未生成）'); }
+}
 /* 侧边栏工具按钮（与主按钮等效） */
 document.getElementById('vaultBtnSide').addEventListener('click',()=>vaultToggle(true));
 document.getElementById('planBtnSide').addEventListener('click',()=>document.getElementById('planBtn').click());
