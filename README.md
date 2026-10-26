@@ -93,6 +93,14 @@ GitHub push → **GitHub Pages**（`Settings → Pages → Source: GitHub Action
 
 （2026-10-27 老板拍板：邮箱订阅相关功能——Brevo 表单、mailto 兜底/纠错——**全部砍除，不再回加**，站内联系方式仅保留 RSS。）
 
+## v1.1~v1.4（2026-10-27 凌晨）：爬虫主管产线全速冲刺
+
+- **数据量 57 → 141 条（101 发布 / 98 官方验证）**，攻略中心 8 篇（📖 侧边栏/底部栏入口，`tools/build_guides.py` md→html，check.py 自动构建）
+- **主管四轮深挖**（~1240 万 token）：R1 七单手册 / R2 33 条 / R3 攻略+补漏 / R4 海外深钻；规则手册 11 份在 token-deals/docs/deep-dive/
+- **爆点修正**：Gemini CLI 已停服（2026-06-18 Antigravity 取代）；Copilot AI Credits = $0.01/credit 按 token 计价（PRU 废弃）；Cursor 并入 X Subscription（Plus $8 含 Cursor，x.ai 原文）；讯飞 ¥3.9 套餐翻雷上架；火山协作奖励=数据授权永久不可撤回
+- **数据治理**：check.py 枚举改革（type/via 自由标识符+格式校验、category 严格五层）；监控源扩至 40 个（智谱活动页/ZCode changelog/讯飞 CodingPlan/火山普惠季/Copilot plans 等 8 源新挂）
+- **在办窗口**：智谱 ZCode Start Plan 10-28 截止；Kimi K2 对新用户 10-31 截止；讯飞 10 亿（随时可能下线）；智谱大礼包下一节点预测 1111
+
 ## v1.0（2026-10-27 凌晨）：爬虫主管产线 + 数据规模化
 
 - **「爬虫主管」专职深挖代理**上线（老板指令）：对 51 家玩家底册逐家打深——官方页面逐页抓、规则手册（token-deals/docs/deep-dive/ 7 份）+ 结构化分片（data-deep/ 7 份 JSON）双产出，主会话合并入流
