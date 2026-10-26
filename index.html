@@ -154,6 +154,46 @@ table.price .mono{font-family:monospace}
 .sum-card b{font-weight:400;font-size:.75rem}
 .sum-card .big{font-size:1.12rem;color:var(--text);font-family:monospace}
 .sum-card .big.accent{color:var(--accent)}
+/* ===== Coding Plan 面板 ===== */
+#planOverlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:70;display:none}
+#planOverlay.open{display:block}
+#planPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(780px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:14px;z-index:71;display:none;padding:22px}
+#planPanel.open{display:block}
+#planClose{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+#planPanel h3{font-size:1.05rem;margin-bottom:2px;padding-right:30px}
+#planPanel .sub{font-size:.78rem;color:var(--muted);margin-bottom:14px}
+.plan-hero{background:var(--bg);border:1px solid var(--accent);border-radius:10px;padding:12px;margin-bottom:12px;font-size:.85rem}
+.plan-hero b{color:var(--accent)}
+/* ===== 共享码 / 登录 / 供码 ===== */
+#authBtn{background:var(--accent);color:#00150c;border:none;border-radius:8px;padding:6px 14px;font-weight:700;font-size:.82rem;cursor:pointer}
+.couponFlag{display:inline-flex;align-items:center;gap:4px;background:none;border:1px solid var(--amber);color:var(--amber);border-radius:8px;padding:6px 10px;font-size:.78rem;cursor:pointer}
+.couponFlag:hover{background:rgba(210,153,34,.12)}
+.couponFlag b{font-family:monospace}
+.shareItem{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.shareItem .row{display:flex;align-items:center;gap:8px}
+.shareItem .code{font-family:monospace;font-size:.92rem;color:var(--amber);font-weight:700;flex:1;word-break:break-all}
+.shareItem .meta{font-size:.72rem;color:var(--muted);margin-top:4px}
+.shareItem button{background:none;border:1px solid var(--amber);color:var(--amber);border-radius:6px;padding:4px 10px;font-size:.75rem;cursor:pointer;white-space:nowrap}
+.shareItem button:hover{background:rgba(210,153,34,.15)}
+.shareItem .left{color:var(--green)}
+.myCoupon{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;font-size:.82rem}
+.myCoupon .st-active{color:var(--green)}.myCoupon .st-pending{color:var(--amber)}.myCoupon .st-rejected,.myCoupon .st-unlisted{color:var(--red)}
+.myCoupon .bar{height:6px;background:var(--border);border-radius:3px;margin:6px 0;overflow:hidden}
+.myCoupon .bar i{display:block;height:100%;background:var(--accent)}
+.myCoupon button{background:none;border:1px solid var(--red);color:var(--red);border-radius:6px;padding:3px 10px;font-size:.72rem;cursor:pointer}
+.mini-form label{font-size:.75rem;color:var(--muted);display:block;margin:8px 0 3px}
+.mini-form input,.mini-form select,.mini-form textarea{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.85rem;font-family:inherit}
+.mini-form input:focus,.mini-form textarea:focus{border-color:var(--accent)}
+.mini-form button{width:100%;background:var(--accent);color:#00150c;border:none;border-radius:8px;padding:9px;font-weight:700;cursor:pointer;margin-top:12px}
+.auth-switch{text-align:center;font-size:.8rem;color:var(--muted);margin-top:10px}
+.auth-switch a{cursor:pointer}
+.mask{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:70;display:none}
+.mask.open{display:block}
+#sharePanel,#subPanel,#authPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:14px;z-index:71;display:none;padding:22px}
+#sharePanel.open,#subPanel.open,#authPanel.open{display:block}
+#shareClose,#subClose,#authClose{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+#sharePanel h3,#subPanel h3,#authPanel h3{font-size:1.05rem;margin-bottom:2px;padding-right:30px}
+#sharePanel .sub,#subPanel .sub,#authPanel .sub{font-size:.78rem;color:var(--muted);margin-bottom:12px}
 footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 @media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%}}
 </style>
@@ -167,6 +207,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <div class="stat">今日验证 <b id="n-fresh">–</b> 条</div>
     <div class="stat">导航站点 <b id="n-sites">–</b> 个</div>
     <div class="stat">更新于 <b id="updated">–</b></div>
+    <div class="stat"><button id="authBtn" onclick="authOpen()">登录 / 供码</button></div>
   </div>
 </header>
 <div class="wrap">
@@ -186,6 +227,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="mine">⭐ 已领</button>
     </div>
     <span style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <button id="planBtn" class="tab" style="border-color:rgba(188,140,255,.5);color:#bc8cff">⌨️ Coding</button>
       <button id="sumBtn" class="tab" style="border-color:rgba(210,153,34,.5);color:var(--amber)">💰 总账</button>
       <button id="calcBtn" class="tab" style="border-color:rgba(88,166,255,.5);color:var(--cyan)">🧮 比价</button>
       <select id="typeFilter" style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.85rem">
@@ -262,6 +304,46 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div style="overflow-x:auto"><table class="price" id="sumTable"></table></div>
   <p class="calc-note" id="sumNote"></p>
 </div>
+<!-- ============ Coding Plan 量化对照 ============ -->
+<div id="planOverlay"></div>
+<div id="planPanel" role="dialog" aria-modal="true">
+  <button id="planClose">✕</button>
+  <h3>⌨️ Coding Plan 量化对照（包月 vs 按量）</h3>
+  <p class="sub">各家编程订阅套餐折算成 tokens/月 与 ¥/百万 token，与最低按量价同台比价</p>
+  <div id="planHero"></div>
+  <div style="overflow-x:auto"><table class="price" id="planTable"></table></div>
+  <p class="calc-note" id="planNote"></p>
+</div>
+<!-- ============ 共享码小窗 / 供码 / 登录 ============ -->
+<div id="shareOverlay" class="mask" onclick="closeShare()"></div>
+<div id="sharePanel" role="dialog" aria-modal="true">
+  <button id="shareClose" onclick="closeShare()">✕</button>
+  <h3 id="shareTitle">🎁 共享折扣码</h3>
+  <p class="sub" id="shareSub"></p>
+  <div id="shareList"></div>
+  <p class="calc-note">⚠️ 共享码由站内用户提交、Flash 模型初审 + 人工复核，非官方渠道发布，有效性自担；达到复制上限自动下架。</p>
+</div>
+<div id="subOverlay" class="mask" onclick="closeSub()"></div>
+<div id="subPanel" role="dialog" aria-modal="true">
+  <button id="subClose" onclick="closeSub()">✕</button>
+  <h3>🎟 托管我的折扣码</h3>
+  <p class="sub">提交 → GLM-4.7-Flash（免费档）自动初审 → 上架共享；你随时能看到自己的码被复制多少次，达上限自动下架</p>
+  <div class="mini-form" id="subForm"></div>
+</div>
+<div id="authOverlay" class="mask" onclick="closeAuth()"></div>
+<div id="authPanel" role="dialog" aria-modal="true">
+  <button id="authClose" onclick="closeAuth()">✕</button>
+  <h3 id="authTitle">登录</h3>
+  <p class="sub">手机号 + 密码。登录后可托管折扣码、查看复制次数。账号仅用于标识贡献者。</p>
+  <div class="mini-form">
+    <label>手机号</label>
+    <input id="auPhone" placeholder="138xxxxxxxx" maxlength="11" autocomplete="off">
+    <label>密码（≥6 位）</label>
+    <input id="auPass" type="password" placeholder="••••••" autocomplete="off">
+    <button id="auGo">登录</button>
+    <p class="auth-switch" id="authSwitch"></p>
+  </div>
+</div>
 <!-- ============ 账号库（本地存储，绝不联网） ============ -->
 <button id="vaultBtn" title="我的账号库">🔐</button>
 <div id="vaultOverlay"></div>
@@ -289,6 +371,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <button id="v-clear" style="color:var(--red)">清空</button>
   </div>
   <div id="v-list"></div>
+  <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
 <script>
@@ -367,7 +450,7 @@ function render(){
     ${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?`<p class="notes">💡 ${esc(d.notes)}</p>`:''}
     <div class="meta">
       <span>难度 <span class="diff">${(n=>'★'.repeat(n)+'☆'.repeat(5-n))(Math.min(5,Math.max(1,d.difficulty||1)))}</span></span>
-      <span style="display:flex;gap:8px;align-items:center">${siteFor(d)?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡ 接入</button>`:''}<button class="claim" data-vq="${esc(d.id)}" title="托管到账号库（仅本地）" style="font-size:.85rem">🔒</button><a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取 →</a></span>
+      <span style="display:flex;gap:8px;align-items:center">${siteFor(d)?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡ 接入</button>`:''}<button class="couponFlag" data-share="${esc(siteFor(d)?.name||d.provider)}" style="display:none"></button><button class="couponFlag" data-supply="${esc(siteFor(d)?.name||d.provider)}" title="托管你的折扣码给大家" style="display:${auth?'':'none'}">🎁 供码</button><button class="claim" data-vq="${esc(d.id)}" title="托管到账号库（仅本地）" style="font-size:.85rem">🔒</button><a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取 →</a></span>
     </div>
   </article>`).join('');
   stats();
@@ -395,6 +478,10 @@ document.getElementById('cards').addEventListener('click',e=>{
     render();return}
   const ab=e.target.closest('[data-api]');
   if(ab)openApi(ab.dataset.api);
+  const sh=e.target.closest('[data-share]');
+  if(sh)openShare(sh.dataset.share);
+  const sp=e.target.closest('[data-supply]');
+  if(sp)openSub(sp.dataset.supply);
   const vq=e.target.closest('[data-vq]');
   if(vq)quickVault(vq.dataset.vq);
 });
@@ -431,6 +518,144 @@ function fallbackCopy(t,cb){
   document.body.appendChild(ta);ta.select();
   try{document.execCommand('copy');cb()}catch(_){alert('复制失败，请手动选择：'+t)}
   document.body.removeChild(ta);
+}
+/* ============ 后端：账号 + 折扣码众包托管（v0.9） ============ */
+const API = localStorage.getItem('tm_api') ?? (/^(127\.0\.0\.1|localhost)$/.test(location.hostname) ? 'http://127.0.0.1:8001' : '');
+let auth = (()=>{try{return JSON.parse(localStorage.getItem('tm_auth')||'null')}catch(_){return null}})();
+function saveAuth(v){auth=v;v?localStorage.setItem('tm_auth',JSON.stringify(v)):localStorage.removeItem('tm_auth')}
+let SHARED={};  // provider -> [{id,code,note,remaining,max_copies}]
+async function apiFetch(path,opts={}){
+  const h={...(opts.headers||{})};
+  if(auth)h.Authorization='Bearer '+auth.token;
+  if(opts.body)h['Content-Type']='application/json';
+  const r=await fetch(API+path,{...opts,headers:h});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(j.detail||('HTTP '+r.status));
+  return j;
+}
+function authRefreshUI(){
+  const b=document.getElementById('authBtn');
+  b.textContent=auth?auth.phone+' · 我的码':'登录 / 供码';
+  render();  // 卡片上的「供码」按钮显隐随登录态
+}
+async function loadShared(){
+  if(!API)return;
+  try{
+    const j=await apiFetch('/api/coupons/public');
+    SHARED={};
+    for(const it of j.items)(SHARED[it.provider]=SHARED[it.provider]||[]).push(it);
+    document.querySelectorAll('[data-share]').forEach(b=>{
+      const p=b.dataset.share,n=(SHARED[p]||[]).length;
+      b.style.display=n?'':'none';
+      if(n)b.innerHTML=`🎁 共享 <b>${n}</b>`;
+    });
+  }catch(_){/* 后端不在线时按钮自然隐藏 */}
+}
+function openShare(provider){
+  const items=SHARED[provider]||[];
+  document.getElementById('shareTitle').textContent='🎁 '+provider+' · 共享折扣码';
+  document.getElementById('shareSub').textContent=items.length+' 个在架 · 每人每日同码只计 1 次，达上限自动下架';
+  document.getElementById('shareList').innerHTML=items.map(it=>`
+    <div class="shareItem">
+      <div class="row"><span class="code">${esc(it.code)}</span><button data-copyshare="${it.id}" data-code="${esc(it.code)}">📋 复制</button></div>
+      ${it.note?`<div class="meta">💡 ${esc(it.note)}</div>`:''}
+      <div class="meta">剩余 <span class="left">${it.remaining}</span> / ${it.max_copies} 次复制</div>
+    </div>`).join('')||'<div class="empty">暂时没有在架的共享码</div>';
+  document.getElementById('shareOverlay').classList.add('open');
+  document.getElementById('sharePanel').classList.add('open');
+}
+function closeShare(){document.getElementById('shareOverlay').classList.remove('open');document.getElementById('sharePanel').classList.remove('open')}
+document.getElementById('shareList').addEventListener('click',async e=>{
+  const b=e.target.closest('[data-copyshare]');if(!b)return;
+  try{
+    const j=await apiFetch(`/api/coupons/${b.dataset.copyshare}/copy`,{method:'POST'});
+    copyText(j.code,b,'✅ 已复制','📋 复制');
+    b.closest('.shareItem').querySelector('.left').textContent=j.max-j.copies;
+    if(j.status==='unlisted')setTimeout(()=>{loadShared();closeShare();alert('这个码已达复制上限，已自动下架。去逛逛别的羊毛吧！')},600);
+  }catch(err){alert('复制失败：'+err.message)}
+});
+function openSub(provider){
+  if(!auth)return authOpen();
+  const names=[...new Set(SITES.flatMap(g=>g.sites).map(s=>s.name))];
+  document.getElementById('subForm').innerHTML=`
+    <label>平台</label>
+    <select id="sf-provider">${names.map(n=>`<option ${n===provider?'selected':''}>${esc(n)}</option>`).join('')}</select>
+    <label>折扣码</label>
+    <input id="sf-code" placeholder="如 SILICON-XXXX" autocomplete="off">
+    <label>说明（来源/规则，选填）</label>
+    <textarea id="sf-note" rows="2" placeholder="例：官方公众号活动码，新用户可用"></textarea>
+    <label>复制上限（达限自动下架）</label>
+    <input id="sf-max" type="number" min="1" max="10000" value="50">
+    <button id="sf-go">🎟 提交托管</button>
+    <p class="calc-note" id="sf-msg"></p>`;
+  document.getElementById('subOverlay').classList.add('open');
+  document.getElementById('subPanel').classList.add('open');
+  document.getElementById('sf-go').addEventListener('click',async()=>{
+    const btn=document.getElementById('sf-go');btn.disabled=true;btn.textContent='提交中…';
+    try{
+      const j=await apiFetch('/api/coupons',{method:'POST',body:JSON.stringify({
+        provider:document.getElementById('sf-provider').value,
+        code:document.getElementById('sf-code').value.trim(),
+        note:document.getElementById('sf-note').value.trim(),
+        max_copies:+document.getElementById('sf-max').value||50})});
+      document.getElementById('sf-msg').textContent=j.message;
+      if(j.status==='active')loadShared();
+    }catch(err){document.getElementById('sf-msg').textContent='❌ '+err.message}
+    btn.disabled=false;btn.textContent='🎟 提交托管';
+  });
+}
+function closeSub(){document.getElementById('subOverlay').classList.remove('open');document.getElementById('subPanel').classList.remove('open')}
+function authOpen(){
+  document.getElementById('auPhone').value=auth?auth.phone:'';
+  authSwitchMode('login');
+  document.getElementById('authOverlay').classList.add('open');
+  document.getElementById('authPanel').classList.add('open');
+  if(auth)renderMyCoupons();
+}
+function closeAuth(){document.getElementById('authOverlay').classList.remove('open');document.getElementById('authPanel').classList.remove('open')}
+let authMode='login';
+function authSwitchMode(m){
+  authMode=m;
+  document.getElementById('authTitle').textContent=m==='login'?'登录':'注册';
+  document.getElementById('auGo').textContent=m==='login'?'登录':'注册并登录';
+  document.getElementById('authSwitch').innerHTML=m==='login'
+    ?'没有账号？<a onclick="authSwitchMode(\'register\')">30 秒注册 →</a>'
+    :'已有账号？<a onclick="authSwitchMode(\'login\')">直接登录 →</a>';
+}
+document.getElementById('auGo').addEventListener('click',async()=>{
+  const btn=document.getElementById('auGo');btn.disabled=true;
+  try{
+    const j=await apiFetch('/api/auth/'+authMode,{method:'POST',body:JSON.stringify({
+      phone:document.getElementById('auPhone').value.trim(),password:document.getElementById('auPass').value})});
+    saveAuth({token:j.token,phone:j.phone});
+    authRefreshUI();closeAuth();
+    renderMyCoupons();
+  }catch(err){alert((authMode==='login'?'登录失败：':'注册失败：')+err.message)}
+  btn.disabled=false;
+});
+async function renderMyCoupons(){
+  if(!auth)return;
+  try{
+    const j=await apiFetch('/api/my/coupons');
+    const box=document.getElementById('v-my');
+    box.innerHTML=j.items.length
+      ?'<h2 style="font-size:.95rem;margin:18px 0 8px">🎟 我托管的折扣码</h2>'+j.items.map(it=>`
+        <div class="myCoupon">
+          <div><b>${esc(it.code)}</b> · ${esc(it.provider)} <span class="st-${it.status}">〔${{active:'在架',pending:'待审',rejected:'未过审',unlisted:'已下架'}[it.status]}〕</span></div>
+          ${it.note?`<div style="color:var(--muted);font-size:.75rem;margin-top:2px">${esc(it.note)}</div>`:''}
+          <div class="bar"><i style="width:${Math.min(100,it.copies/it.max_copies*100)}%"></i></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span>已被复制 <b>${it.copies}</b> / ${it.max_copies} 次</span>
+            ${it.status==='active'||it.status==='pending'?`<button data-unlist="${it.id}">下架</button>`:''}
+          </div>
+          ${it.flash_verdict?`<div style="font-size:.7rem;color:var(--muted);margin-top:3px">🤖 ${esc(it.flash_verdict)}</div>`:''}
+        </div>`).join('')
+      :'<h2 style="font-size:.95rem;margin:18px 0 8px">🎟 我托管的折扣码</h2><div class="vault-empty">还没有托管。点卡片上的「🎁 供码」分享你的码，帮更多人薅到羊毛。</div>';
+    box.querySelectorAll('[data-unlist]').forEach(b=>b.addEventListener('click',async()=>{
+      if(!confirm('下架这个码？'))return;
+      try{await apiFetch('/api/coupons/'+b.dataset.unlist,{method:'DELETE'});renderMyCoupons();loadShared()}catch(e){alert(e.message)}
+    }));
+  }catch(e){/* 未登录/后端离线忽略 */}
 }
 /* ============ 账号库（localStorage） ============ */
 function vLoad(){try{return JSON.parse(localStorage.getItem(VKEY)||'[]')}catch(_){return[]}}
@@ -521,6 +746,9 @@ document.getElementById('vaultBtn').addEventListener('click',()=>vaultToggle(tru
 document.getElementById('vaultClose').addEventListener('click',()=>vaultToggle(false));
 ov.addEventListener('click',()=>vaultToggle(false));
 document.getElementById('v-more').addEventListener('click',e=>{e.preventDefault();vaultToggle(false)});
+/* 抽屉打开时顺带刷新「我的共享码」 */
+const _vaultToggle=vaultToggle;
+vaultToggle=function(open){_vaultToggle(open);if(open)renderMyCoupons()};
 /* ============ 工具条 ============ */
 document.getElementById('tabs').addEventListener('click',e=>{
   if(e.target.classList.contains('tab')&&e.target.id!=='navCollapse'){
@@ -571,7 +799,7 @@ document.querySelector('#apiPanel .api-tabs').addEventListener('click',e=>{
 document.getElementById('apiCopy').addEventListener('click',e=>copyText(document.getElementById('apiCode').textContent,e.target,'✅ 已复制','📋 复制'));
 document.getElementById('apiClose').addEventListener('click',closeApi);
 document.getElementById('apiOverlay').addEventListener('click',closeApi);
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();closeCalc();closeSum();vault.classList.remove('open');ov.classList.remove('open')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();closeCalc();closeSum();closePlan();closeShare();closeSub();closeAuth();vault.classList.remove('open');ov.classList.remove('open')}});
 /* ============ 比价计算器 ============ */
 let PRICES=[];
 const FX=7.2;
@@ -623,7 +851,9 @@ function sumCalc(){
   document.getElementById('sumTable').innerHTML=
     '<tr><th>买法（同预算 token 最多）</th><th>综合单价*</th><th>该预算可得</th></tr>'+
     rows.map(r=>`<tr><td class="mono">${esc(r.model)}<br><span style="color:var(--muted);font-size:.72rem">${esc(r.provider)}</span></td><td class="mono">¥${r.bl.toFixed(2)}/百万</td><td class="mono"><b>${fmtYi(B/r.bl)}</b></td></tr>`).join('')+
-    (best?`<tr class="cheapest"><td>✅ 极致路线：白嫖 ${fmtWan(freeWan)} ＋ 预算全买最低价</td><td class="mono">—</td><td class="mono"><b>≈ ${fmtYi(freeWan/100+B/best.bl)}</b></td></tr>`:'');
+    (best?`<tr class="cheapest"><td>✅ 极致路线：白嫖 ${fmtWan(freeWan)} ＋ 预算全买最低价</td><td class="mono">—</td><td class="mono"><b>≈ ${fmtYi(freeWan/100+B/best.bl)}</b></td></tr>`:'')+
+    (()=>{const bp=PLANS.map(p=>({...p,pm:planPerM(p)})).filter(p=>p.pm!==null).sort((a,b)=>a.pm-b.pm)[0];
+      return bp&&bp.pm<best?.bl?`<tr><td>⌨️ 包月参考：${esc(bp.provider)} ${esc(bp.plan)} ¥${(bp.price/(bp.currency==='USD'?FX:1)).toFixed(0)}/月 ≈ ${fmtWan(bp.tokens_wan)}/月（月付口径，见 ⌨️ Coding 面板）</td><td class="mono">¥${bp.pm.toFixed(2)}/百万</td><td class="mono">${fmtWan(bp.tokens_wan)}/月</td></tr>`:''})();
   document.getElementById('sumNote').textContent='* 综合单价按输入:输出=3:1 加权（每百万 token），DeepSeek 已计入空闲时段半价，USD 按 1:7.2 折算；缓存命中可再低（DeepSeek 低至 0.02 元/百万输入）。策略：先吃免费层 → 券抵扣 → 剩余预算买最低单价。';
 }
 function closeSum(){document.getElementById('sumOverlay').classList.remove('open');document.getElementById('sumPanel').classList.remove('open')}
@@ -631,15 +861,41 @@ document.getElementById('sumBtn').addEventListener('click',()=>{sumRender();docu
 document.getElementById('sumClose').addEventListener('click',closeSum);
 document.getElementById('sumOverlay').addEventListener('click',closeSum);
 document.getElementById('sumBudget').addEventListener('input',sumCalc);
+/* ============ Coding Plan 量化对照 ============ */
+let PLANS=[];
+function planPerM(p){const wan=p.tokens_wan||0;return wan>0?(p.price/(p.currency==='USD'?FX:1))/(wan/100):null}
+function planRender(){
+  const rows=PLANS.map(p=>({...p,pm:planPerM(p)})).filter(p=>p.pm!==null).sort((a,b)=>a.pm-b.pm);
+  const paygMin=Math.min(...PRICES.map(p=>{
+    const i=p.input_idle??p.input,o=p.output_idle??p.output;
+    if(!i&&!o)return Infinity;
+    return ((3*i+o)/4)*(p.currency==='USD'?FX:1);
+  }).concat([Infinity]));
+  const best=rows[0];
+  document.getElementById('planHero').innerHTML=best
+    ?`<div class="plan-hero">🏆 包月性价比之王：<b>${esc(best.provider)} · ${esc(best.plan)}</b> ¥${(best.price/(best.currency==='USD'?FX:1)).toFixed(0)}/月 ≈ <b>${fmtWan(best.tokens_wan)} tokens/月</b>，折合 <b>¥${best.pm.toFixed(2)}/百万</b>——${best.pm<paygMin?`比最低按量（¥${paygMin.toFixed(2)}/百万）便宜 ${Math.round((1-best.pm/paygMin)*100)}%`:`是最低按量（¥${paygMin.toFixed(2)}/百万）的 ${(best.pm/paygMin).toFixed(1)} 倍（贵在模型更强/工具链）`}</div>`
+    :'<div class="plan-hero">暂无套餐数据</div>';
+  document.getElementById('planTable').innerHTML=
+    '<tr><th>套餐</th><th>月价</th><th>官方额度</th><th>折算 tokens/月</th><th>折合 ¥/百万</th><th>vs 最低按量</th></tr>'+
+    rows.map((r,i)=>`<tr class="${i===0?'cheapest':''}"><td class="mono">${esc(r.provider)}<br><span style="color:var(--muted);font-size:.72rem">${esc(r.plan)}</span></td><td class="mono">${r.currency==='USD'?'$'+r.price:'¥'+r.price}</td><td style="font-size:.72rem;white-space:normal;max-width:200px">${esc(r.quota||'')}</td><td class="mono"><b>${fmtWan(r.tokens_wan)}</b></td><td class="mono">¥${r.pm.toFixed(2)}</td><td class="mono">${r.pm<paygMin?'✅ 省 '+Math.round((1-r.pm/paygMin)*100)+'%':'×'+(r.pm/paygMin).toFixed(1)}</td></tr>`).join('')+
+    (rows.length?'':'<tr><td colspan="6" style="text-align:center;color:var(--muted)">数据在路上（plans.json 为空）</td></tr>');
+  document.getElementById('planNote').textContent='折算口径：官方额度数字为准，缺省处以标注假设估算（每行 assumption 字段）；USD 按 1:7.2 折算；「vs 最低按量」对照比价表最低综合单价（输入:输出=3:1）。包月套餐的实际价值还含工具链/模型档次，仅供参考。';
+}
+function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
+document.getElementById('planBtn').addEventListener('click',()=>{planRender();document.getElementById('planOverlay').classList.add('open');document.getElementById('planPanel').classList.add('open')});
+document.getElementById('planClose').addEventListener('click',closePlan);
+document.getElementById('planOverlay').addEventListener('click',closePlan);
 /* ============ 数据加载 ============ */
 fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
 fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
+fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
   fetch('deals.json?ts='+Date.now()).then(r=>r.json())
 ]).then(([sites,deals])=>{
   SITES=sites;DEALS=deals;
   renderNav();vInit();render();vRender();
+  authRefreshUI();loadShared();
 }).catch(()=>{
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
 });
