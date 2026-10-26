@@ -138,6 +138,19 @@ table.price td:first-child,table.price th:first-child{text-align:left}
 table.price tr.cheapest td{background:rgba(0,229,160,.07)}
 table.price .mono{font-family:monospace}
 .calc-note{font-size:.72rem;color:var(--muted);margin-top:10px}
+/* ===== 羊毛总账面板 ===== */
+#sumOverlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:70;display:none}
+#sumOverlay.open{display:block}
+#sumPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(760px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:14px;z-index:71;display:none;padding:22px}
+#sumPanel.open{display:block}
+#sumClose{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+#sumPanel h3{font-size:1.05rem;margin-bottom:2px;padding-right:30px}
+#sumPanel .sub{font-size:.78rem;color:var(--muted);margin-bottom:14px}
+.sum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:8px}
+.sum-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:3px;font-size:.78rem;color:var(--muted)}
+.sum-card b{font-weight:400;font-size:.75rem}
+.sum-card .big{font-size:1.12rem;color:var(--text);font-family:monospace}
+.sum-card .big.accent{color:var(--accent)}
 footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 @media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%}}
 </style>
@@ -170,6 +183,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="mine">⭐ 已领</button>
     </div>
     <span style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <button id="sumBtn" class="tab" style="border-color:rgba(210,153,34,.5);color:var(--amber)">💰 总账</button>
       <button id="calcBtn" class="tab" style="border-color:rgba(88,166,255,.5);color:var(--cyan)">🧮 比价</button>
       <select id="typeFilter" style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.85rem">
         <option value="">全部类型</option>
@@ -231,6 +245,19 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </div>
   <div style="overflow-x:auto"><table class="price" id="calcTable"></table></div>
   <p class="calc-note">按 1 USD ≈ 7.2 CNY 折算排序仅供参考，实际以各平台账单为准；价格为每百万 token 单价，更新于 prices.json 的 verified_at。</p>
+</div>
+<!-- ============ 羊毛总账 & 极致预算 ============ -->
+<div id="sumOverlay"></div>
+<div id="sumPanel" role="dialog" aria-modal="true">
+  <button id="sumClose">✕</button>
+  <h3>💰 羊毛总账 · 极致预算</h3>
+  <p class="sub">单账号合规口径：全部平台注册 + 每站都走邀请码能白嫖多少；再算任意预算下的最优买法</p>
+  <div id="sumBody"></div>
+  <div class="calc-inputs" style="margin-top:14px">
+    <label>预算（元，先花免费层再花它）<br><input id="sumBudget" type="number" min="0" step="10" value="100"></label>
+  </div>
+  <div style="overflow-x:auto"><table class="price" id="sumTable"></table></div>
+  <p class="calc-note" id="sumNote"></p>
 </div>
 <!-- ============ 账号库（本地存储，绝不联网） ============ -->
 <button id="vaultBtn" title="我的账号库">🔐</button>
@@ -484,7 +511,7 @@ document.querySelector('#apiPanel .api-tabs').addEventListener('click',e=>{
 document.getElementById('apiCopy').addEventListener('click',e=>copyText(document.getElementById('apiCode').textContent,e.target,'✅ 已复制','📋 复制'));
 document.getElementById('apiClose').addEventListener('click',closeApi);
 document.getElementById('apiOverlay').addEventListener('click',closeApi);
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();closeCalc();vault.classList.remove('open');ov.classList.remove('open')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();closeCalc();closeSum();vault.classList.remove('open');ov.classList.remove('open')}});
 /* ============ 比价计算器 ============ */
 let PRICES=[];
 const FX=7.2;
@@ -505,6 +532,45 @@ document.getElementById('calcBtn').addEventListener('click',()=>{calcRender();do
 document.getElementById('calcClose').addEventListener('click',closeCalc);
 document.getElementById('calcOverlay').addEventListener('click',closeCalc);
 ['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',calcRender));
+/* ============ 羊毛总账 & 极致预算 ============ */
+function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万'}
+function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+' 亿':Math.round(million*100)+' 万'}
+function sumRender(){
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified');
+  const agg=rows=>({t:rows.reduce((s,d)=>s+(d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
+  const R=agg(live.filter(d=>d.via==='register')),I=agg(live.filter(d=>d.via==='invite')),S=agg(live.filter(d=>d.via==='student'));
+  const freeN=live.filter(d=>d.via==='free'||d.type==='free_tier').length;
+  const T={t:R.t+I.t,c:R.c+I.c,u:R.u+I.u};
+  document.getElementById('sumBody').innerHTML=
+   `<div class="sum-grid">
+     <div class="sum-card"><b>① 注册即得</b><span class="big">${fmtWan(R.t)} tokens</span><span>＋ ¥${R.c} 券 ＋ $${R.u} credits · ${R.n} 条</span></div>
+     <div class="sum-card"><b>② 邀请码加成</b><span class="big">${fmtWan(I.t)} tokens</span><span>＋ ¥${I.c} ＋ $${I.u} · ${I.n} 条（被邀请人侧）</span></div>
+     <div class="sum-card"><b>＝ 合计白嫖</b><span class="big accent">${fmtWan(T.t)} tokens</span><span>＋ ¥${T.c} 券 ＋ $${T.u} ≈ ¥${(T.c+T.u*FX).toFixed(0)} 价值</span></div>
+     <div class="sum-card"><b>学生通道再叠加</b><span class="big">$${S.u}</span><span>≈ ¥${(S.u*FX).toFixed(0)}/年 · ${S.n} 条（需学生认证）</span></div>
+   </div>
+   <p class="calc-note">另有 <b>${freeN}</b> 个长期免费层不花钱持续用（GLM-4.7-Flash、讯飞 Lite、ModelScope、Gemini、Groq、OpenRouter :free 等）。口径：每平台<b>单账号</b>官方规则；百炼按领 10 款、TokenHub 按 5 款保守估算；火山方舟（数额控制台才可见）、NVIDIA NIM（1000 credits）、讯飞礼包、Anthropic credits 未计入；自己做邀请人还能继续放大（智谱月上限 2 亿 tokens）。</p>`;
+  sumCalc();
+}
+function sumCalc(){
+  const B=parseFloat(document.getElementById('sumBudget').value)||0;
+  const rows=PRICES.map(p=>{
+    const i=p.input_idle??p.input,o=p.output_idle??p.output;
+    if(!i&&!o)return null;
+    return{...p,bl:((3*i+o)/4)*(p.currency==='USD'?FX:1)};
+  }).filter(Boolean).sort((a,b)=>a.bl-b.bl).slice(0,5);
+  const freeWan=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified').reduce((s,d)=>s+(d.tokens_wan||0),0);
+  const best=rows[0];
+  document.getElementById('sumTable').innerHTML=
+    '<tr><th>买法（同预算 token 最多）</th><th>综合单价*</th><th>该预算可得</th></tr>'+
+    rows.map(r=>`<tr><td class="mono">${esc(r.model)}<br><span style="color:var(--muted);font-size:.72rem">${esc(r.provider)}</span></td><td class="mono">¥${r.bl.toFixed(2)}/百万</td><td class="mono"><b>${fmtYi(B/r.bl)}</b></td></tr>`).join('')+
+    (best?`<tr class="cheapest"><td>✅ 极致路线：白嫖 ${fmtWan(freeWan)} ＋ 预算全买最低价</td><td class="mono">—</td><td class="mono"><b>≈ ${fmtYi(freeWan/100+B/best.bl)}</b></td></tr>`:'');
+  document.getElementById('sumNote').textContent='* 综合单价按输入:输出=3:1 加权（每百万 token），DeepSeek 已计入空闲时段半价，USD 按 1:7.2 折算；缓存命中可再低（DeepSeek 低至 0.02 元/百万输入）。策略：先吃免费层 → 券抵扣 → 剩余预算买最低单价。';
+}
+function closeSum(){document.getElementById('sumOverlay').classList.remove('open');document.getElementById('sumPanel').classList.remove('open')}
+document.getElementById('sumBtn').addEventListener('click',()=>{sumRender();document.getElementById('sumOverlay').classList.add('open');document.getElementById('sumPanel').classList.add('open')});
+document.getElementById('sumClose').addEventListener('click',closeSum);
+document.getElementById('sumOverlay').addEventListener('click',closeSum);
+document.getElementById('sumBudget').addEventListener('input',sumCalc);
 /* ============ 数据加载 ============ */
 fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
 Promise.all([

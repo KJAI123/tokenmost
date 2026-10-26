@@ -30,6 +30,11 @@ for d in deals:
     if not re.match(r"^https?://", d.get("url", "")): errors.append(f"{d['id']} url 非 http(s): {d['url']}")
     if d.get("coupon") and not d.get("published", True) and not d.get("placeholder"):
         warns.append(f"{d['id']} 有 coupon 且未发布但无 placeholder 标记")
+    if d.get("via") and d["via"] not in ("register", "invite", "student", "free"):
+        errors.append(f"{d['id']} via 非法: {d['via']}")
+    for k in ("tokens_wan", "cny", "usd"):
+        if k in d and (not isinstance(d[k], (int, float)) or d[k] < 0):
+            errors.append(f"{d['id']} 收益字段 {k} 非法: {d[k]}")
     first = d["provider"].split()[0]
     if d["provider"].split()[0] not in site_first:
         warns.append(f"{d['id']} provider「{d['provider']}」无对应导航站点（无 ⚡接入 按钮）")

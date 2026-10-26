@@ -69,7 +69,8 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 ## 数据契约
 
 - sites.json：稳定入口层，很少改。可选 `api` 字段 `{base_url, model, env}`——配置了即可生成「⚡ 一键接入」代码（cURL/Python/Node/客户端配置），字段均可在面板中编辑，端点与模型名以官方文档为准
-- deals.json：五层 category 对齐 sites 的 layer key；deal 的 provider 通过首词匹配关联 sites 条目（如「硅基流动」↔「硅基流动 SiliconFlow」）。可选 `deadline` 字段（ISO 日期）显示截止提醒，**到期由 sync.py 自动标失效**；`verified_at` 由数据源自动续期时附带 `verify_by:"auto"`（卡片显示 🤖）；降级时附带 `stale_reason`（维护者可见的原因，人工复核后删除）；`placeholder:true` 标记占位示例码——卡片禁用复制并显示「示例码」角标，不与真实码同权展示
+- deals.json：五层 category 对齐 sites 的 layer key；deal 的 provider 通过首词匹配关联 sites 条目（如「硅基流动」↔「硅基流动 SiliconFlow」）。可选 `deadline` 字段（ISO 日期）显示截止提醒，**到期由 sync.py 自动标失效**；`verified_at` 由数据源自动续期时附带 `verify_by:"auto"`（卡片显示 🤖）；降级时附带 `stale_reason`（维护者可见的原因，人工复核后删除）
+- 收益字段（驱动「💰 总账」面板，全部单账号官方口径）：`via:"register"|"invite"|"student"|"free"`（获得方式）、`tokens_wan`（token 数，单位万）、`cny`（人民币券/额度）、`usd`（美元 credits）。估算值必须在 value/notes 里写明假设（如百炼按 10 款模型估）；`placeholder:true` 标记占位示例码——卡片禁用复制并显示「示例码」角标，不与真实码同权展示
 - notes 字段以 `TODO` 或 `⚠️` 开头的内容视为维护者备注，不在卡片上展示
 - coupon 字段存在时卡片自动出现「复制」按钮（placeholder 除外）
 - 账号库纯 localStorage（key: `tm_vault_v1`），无后端
@@ -89,7 +90,14 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 
 （2026-10-27 老板拍板：邮箱订阅相关功能——Brevo 表单、mailto 兜底/纠错——**全部砍除，不再回加**，站内联系方式仅保留 RSS。）
 
-## 2026-10-27 全量情报重验（v0.3，5 路子代理并行核实）
+## v0.5（2026-10-27）：情报扩到 58 条 + 羊毛总账 + 极致预算
+
+- **58 条情报（53 发布 / 51 官方验证）**，新增：智谱 8 款免费模型、DeepSeek 缓存命中价、Kimi 缓存价与文件接口限免、MiniMax M Plan 首月五折、Mistral/Cohere 免费层、Cerebras $5、GitHub Copilot Free、FastGPT/n8n 免费档、硅基免费模型池、SCNet 0.1 元套餐、恒源云 11 月种草、302.AI 按量、OpenRouter 充 $10 解锁日限 1000/天等
+- **「💰 总账」面板**（工具栏入口）：数据驱动自动汇总——注册即得 / 邀请码加成 / 学生通道三层收益 + 长期免费层计数。当前口径：单账号全注册+全走邀请码 ≈ **8700 万 tokens + ¥55 券 + $25**（学生再加 $340/年）；火山方舟、NIM credits 等未公布数额的显式排除
+- **极致预算计算器**（总账面板下半）：任意预算 → 按比价表最低综合单价（输入:输出=3:1 加权、DeepSeek 计入空闲半价、USD 1:7.2）算最多可得 tokens，并给出「白嫖+预算购买」合计路线（100 元预算 ≈ 1.44 亿 tokens 的口径示例）
+- 数据源同步扩充：导航 43 站（新增 Cerebras）
+
+
 
 41 条情报（36 发布 / 34 官方验证），重大更正与新增：
 - **GitHub Models 已退役**（2026-07-30 全下线）→ 条目标失效 + 指向 Azure AI Foundry；导航移除

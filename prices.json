@@ -1,8 +1,8 @@
 [
   {"model": "GLM-4.7-Flash", "provider": "智谱 BigModel", "layer": "official_cn", "currency": "CNY", "input": 0, "output": 0, "free": true, "note": "长期免费（200K 上下文）", "verified_at": "2026-10-27"},
   {"model": "GLM-5.3", "provider": "智谱 BigModel", "layer": "official_cn", "currency": "CNY", "input": 8, "output": 28, "note": "旗舰", "verified_at": "2026-10-27"},
-  {"model": "deepseek-flash", "provider": "DeepSeek", "layer": "official_cn", "currency": "CNY", "input": 2, "output": 8, "note": "缓存命中输入 0.04；空闲时段半价", "verified_at": "2026-10-27"},
-  {"model": "deepseek-v4-pro", "provider": "DeepSeek", "layer": "official_cn", "currency": "CNY", "input": 9, "output": 27, "note": "缓存命中输入 0.30；空闲时段半价", "verified_at": "2026-10-27"},
+  {"model": "deepseek-flash", "provider": "DeepSeek", "layer": "official_cn", "currency": "CNY", "input": 2, "output": 8, "note": "缓存命中输入 0.04；空闲时段半价", "verified_at": "2026-10-27", "input_idle": 1, "output_idle": 4},
+  {"model": "deepseek-v4-pro", "provider": "DeepSeek", "layer": "official_cn", "currency": "CNY", "input": 9, "output": 27, "note": "缓存命中输入 0.30；空闲时段半价", "verified_at": "2026-10-27", "input_idle": 4.5, "output_idle": 13.5},
   {"model": "MiniMax-M3.1-Flash", "provider": "MiniMax 开放平台", "layer": "official_cn", "currency": "CNY", "input": 1, "output": 4, "verified_at": "2026-10-27"},
   {"model": "MiniMax-M3", "provider": "MiniMax 开放平台", "layer": "official_cn", "currency": "CNY", "input": 2.1, "output": 8.4, "note": "永久五折价", "verified_at": "2026-10-27"},
   {"model": "kimi-k3", "provider": "Kimi 开放平台", "layer": "official_cn", "currency": "USD", "input": 3, "output": 15, "note": "国际站价；缓存命中输入 $0.30", "verified_at": "2026-10-27"},
