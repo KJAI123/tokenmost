@@ -25,8 +25,9 @@ tokenmost/
 ├── tools/
 │   ├── check.py         # 数据校验 + rss 重生成（改数据必跑）
 │   ├── sync.py          # 零 token 自动流水线（GitHub Actions 定时跑）
-│   └── sources.json     # 数据源注册表（33 源：API/监控页/RSS）
-├── .github/workflows/sync.yml   # 每日 2 次定时同步 + 自动提交
+│   └── sources.json     # 数据源注册表（32 源：API/监控页/RSS）
+├── usage.json           # 额度直连注册表（哪些平台可在浏览器查余额）
+├── .github/workflows/   # sync.yml 每日 2 次同步 + pages.yml 自动发布
 ├── .sync-state.json     # 源哈希基线/失败计数（自动维护）
 ├── review-queue.md      # 人工复核队列（自动重算的实时视图）
 ├── DEPLOY.md            # GitHub → Cloudflare Pages 部署指南
@@ -41,13 +42,13 @@ tokenmost/
 
 ## 部署
 
-GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ 绑定 tokenmost.com
+GitHub push → **GitHub Pages**（`Settings → Pages → Source: GitHub Actions`，`pages.yml` 自动发布）→ 可选绑 tokenmost.com。详见 DEPLOY.md。（2026-10-27 老板拍板：**Cloudflare 砍掉**，全项目只用 GitHub 一个平台）
 
 ## 自动运营架构（v0.4，2026-10-27 落地）
 
 **目标：不烧 token 的全自动折扣站。** 机器核机器的，人只看机器看不懂的。
 
-- **GitHub Actions 每日 2 跑**（北京 06:30 / 18:30，`.github/workflows/sync.yml`，公共仓免费）：抓源 → 更新数据 → 校验 → 自动提交 → Cloudflare Pages 自动部署。全程纯规则脚本（Python 标准库），**无任何 LLM 参与**。
+- **GitHub Actions 每日 2 跑**（北京 06:30 / 18:30，`.github/workflows/sync.yml`，公共仓免费）：抓源 → 更新数据 → 校验 → 自动提交 → GitHub Pages（`pages.yml`）自动发布。全程纯规则脚本（Python 标准库），**无任何 LLM 参与**。
 - **三类数据源**（`tools/sources.json` 注册，加源只改这个文件）：
   1. `json` 结构化 API（OpenRouter / ModelScope 公开端点）→ 直接更新情报文案与比价行
   2. `watch` 官方页面哈希监控（30 个定价/活动页）→ 页面没变 = 自动续验证戳（卡片显示 🤖 自动核验）；变了 = 相关情报降级「待复核」并写明原因
@@ -90,9 +91,17 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 
 （2026-10-27 老板拍板：邮箱订阅相关功能——Brevo 表单、mailto 兜底/纠错——**全部砍除，不再回加**，站内联系方式仅保留 RSS。）
 
+## v0.6（2026-10-27）：额度监控 + 快速托管（留存/转化抓手）+ 砍 Cloudflare
+
+- **账号库 v2「快速托管」**：新手机号 30 秒入库——卡片新增 🔒 一键托管按钮（自动预填平台+额度备注），表单手机号优先、API Key 选填
+- **额度直连监控（usage.json 驱动）**：托管时存了 Key 的条目可点「🔄 查额度」，浏览器直连官方余额接口（OpenRouter `/api/v1/key`、DeepSeek `/user/balance`）实时显示已用/总额度/免费日限余量；跨域受限平台自动降级为手动更新+直达控制台。**Key 仅存本地 localStorage、绝不上传**（安全声明已同步扩写）
+- **留存/转化闭环**：薅羊毛 → 🔒 托管 → 到期倒计时/额度面板 → 底部「回情报流找下一批羊毛」CTA 回流
+- **Cloudflare 全砍**（老板拍板）：站内 Cloudflare Workers AI 条目/端点/监控源删除；部署改 **GitHub Pages**（`pages.yml` 自动发布，老板上线操作从两步减到一步——只剩 GitHub 建仓推送 + Pages 开关）
+- 数据量维持 50+：57 条（52 发布 / 50 官方验证）、导航 42 站 23 端点
+
 ## v0.5（2026-10-27）：情报扩到 58 条 + 羊毛总账 + 极致预算
 
-- **58 条情报（53 发布 / 51 官方验证）**，新增：智谱 8 款免费模型、DeepSeek 缓存命中价、Kimi 缓存价与文件接口限免、MiniMax M Plan 首月五折、Mistral/Cohere 免费层、Cerebras $5、GitHub Copilot Free、FastGPT/n8n 免费档、硅基免费模型池、SCNet 0.1 元套餐、恒源云 11 月种草、302.AI 按量、OpenRouter 充 $10 解锁日限 1000/天等
+- **58 条情报（53 发布 / 51 官方验证）**，新增：智谱 8 款免费模型、DeepSeek 缓存命中价、Kimi 缓存价与文件接口限免、MiniMax M Plan 首月五折、Mistral/Cohere 免费层、Cerebras $5、GitHub Copilot Free、FastGPT/n8n 免费档、硅基免费模型池、SCNet 0.1 元套餐、恒源云 11 月种草、302.AI 按量、OpenRouter 充 $10 解锁日限 1000/天等（v0.6 砍 Cloudflare 后余 57 条）
 - **「💰 总账」面板**（工具栏入口）：数据驱动自动汇总——注册即得 / 邀请码加成 / 学生通道三层收益 + 长期免费层计数。当前口径：单账号全注册+全走邀请码 ≈ **8700 万 tokens + ¥55 券 + $25**（学生再加 $340/年）；火山方舟、NIM credits 等未公布数额的显式排除
 - **极致预算计算器**（总账面板下半）：任意预算 → 按比价表最低综合单价（输入:输出=3:1 加权、DeepSeek 计入空闲半价、USD 1:7.2）算最多可得 tokens，并给出「白嫖+预算购买」合计路线（100 元预算 ≈ 1.44 亿 tokens 的口径示例）
 - 数据源同步扩充：导航 43 站（新增 Cerebras）
@@ -117,5 +126,5 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 ## 二期路线
 
 - 浏览器扩展（Chrome Extension 注入各平台登录页 + Bitwarden 类密码填充）实现真·一键登录
-- usage API 轮询做额度监控——账号库从「记事本」进化成「面板」
+- ~~usage API 轮询做额度监控~~ ✅ 2026-10-27 已落地（v0.6 浏览器直连版，usage.json 注册表驱动；后续可扩更多平台的余额端点）
 - ~~用量计算器/比价~~ ✅ 2026-10-27 已落地（v0.3）：工具条「🧮 比价」面板，prices.json 驱动

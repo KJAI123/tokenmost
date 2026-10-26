@@ -86,6 +86,7 @@ footer{border-top:1px solid var(--border);padding:26px 0 90px;color:var(--muted)
 .vault-item b{font-size:.9rem}
 .vault-item .acc{color:var(--cyan);font-size:.8rem;font-family:monospace}
 .vault-item .note{color:var(--muted);font-size:.78rem;margin:4px 0}
+.vault-item .quota{color:var(--green);font-size:.78rem;margin:4px 0;font-family:monospace}
 .vault-item .exp{font-size:.75rem}
 .exp-soon{color:var(--red)}
 .exp-mid{color:var(--amber)}
@@ -266,17 +267,19 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <button id="vaultClose">✕</button>
   <h2>🔐 我的账号库</h2>
   <p style="font-size:.78rem;color:var(--muted)">本地浏览器存储 · 不上传任何服务器</p>
-  <div class="vault-warn">⚠️ 此面板只存账号备注/额度/到期信息，<b>不存密码</b>。密码请交给浏览器密码管理器或 Bitwarden，登录点「直达」即可一键填充。</div>
+  <div class="vault-warn">⚠️ 此面板只存账号备注/额度/到期与（选填）API Key，<b>不存密码</b>。Key 仅保存在<b>你本地浏览器</b>、只用于在你浏览器里直连查余额，<b>绝不上传</b>；密码请交给浏览器密码管理器，登录点「直达」一键填充。</div>
   <div class="vault-form">
     <label>平台</label>
     <select id="v-site"></select>
-    <label>账号（邮箱/手机号，仅备注用）</label>
-    <input id="v-account" placeholder="xxx@qq.com">
+    <label>手机号 / 邮箱（新号快速入库，仅备注用）</label>
+    <input id="v-account" placeholder="138xxxxxxxx / xxx@qq.com" autocomplete="off">
     <label>额度备注</label>
     <textarea id="v-note" rows="2" placeholder="剩余 200 万 token / 已领新手礼"></textarea>
     <label>额度/会员到期日（可选）</label>
     <input id="v-exp" type="date">
-    <button id="v-add">＋ 添加</button>
+    <label>API Key（选填 · 仅存本地，用于浏览器直连查余额，绝不上传）</label>
+    <input id="v-key" type="password" placeholder="sk-…（可留空）" autocomplete="off">
+    <button id="v-add">＋ 添加托管</button>
   </div>
   <div class="vault-tools">
     <button id="v-export">导出备份</button>
@@ -284,6 +287,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <button id="v-clear" style="color:var(--red)">清空</button>
   </div>
   <div id="v-list"></div>
+  <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
 <script>
 /* ============ 常量 ============ */
@@ -361,7 +365,7 @@ function render(){
     ${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?`<p class="notes">💡 ${esc(d.notes)}</p>`:''}
     <div class="meta">
       <span>难度 <span class="diff">${(n=>'★'.repeat(n)+'☆'.repeat(5-n))(Math.min(5,Math.max(1,d.difficulty||1)))}</span></span>
-      <span style="display:flex;gap:8px;align-items:center">${siteFor(d)?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡ 接入</button>`:''}<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取 →</a></span>
+      <span style="display:flex;gap:8px;align-items:center">${siteFor(d)?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡ 接入</button>`:''}<button class="claim" data-vq="${esc(d.id)}" title="托管到账号库（仅本地）" style="font-size:.85rem">🔒</button><a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取 →</a></span>
     </div>
   </article>`).join('');
   stats();
@@ -389,7 +393,37 @@ document.getElementById('cards').addEventListener('click',e=>{
     render();return}
   const ab=e.target.closest('[data-api]');
   if(ab)openApi(ab.dataset.api);
+  const vq=e.target.closest('[data-vq]');
+  if(vq)quickVault(vq.dataset.vq);
 });
+/* ============ 一键托管（卡片 🔒 → 预填快速表单） ============ */
+function quickVault(dealId){
+  const d=DEALS.find(x=>x.id===dealId);if(!d)return;
+  vaultToggle(true);
+  const s=siteFor(d);
+  if(s)document.getElementById('v-site').value=s.name;
+  document.getElementById('v-note').value=d.value.slice(0,60);
+  document.getElementById('v-account').focus();
+}
+/* ============ 额度直连（usage.json 注册表驱动，Key 仅本地） ============ */
+let USAGE=[];
+function getPath(o,p){try{return String(p).split('.').reduce((a,k)=>a==null?a:a[/^\d+$/.test(k)?+k:k],o)}catch(_){return null}}
+async function pollUsage(id){
+  const list=vLoad(),v=list.find(x=>x.id===id);if(!v)return;
+  const cfg=USAGE.find(u=>u.site===v.site);
+  if(!cfg)return alert('该平台暂未配置直连查询，请手动更新备注或直达控制台');
+  try{
+    const r=await fetch(cfg.url,{headers:{Authorization:'Bearer '+v.api_key}});
+    if(!r.ok)throw new Error('HTTP '+r.status+(r.status===401?'（Key 无效？）':''));
+    const j=await r.json();
+    const parts=cfg.fields.map(([n,p])=>{const val=getPath(j,p);return val==null?null:n+' '+val}).filter(Boolean);
+    if(!parts.length)throw new Error('响应里没有认得的字段');
+    v.quota={label:parts.join(' · '),ts:Date.now()};
+    vSave(list);vRender();
+  }catch(e){
+    alert('查询失败：'+(String(e.message).includes('fetch')?'该平台浏览器直连受限（跨域），请手动更新备注或直达控制台':e.message));
+  }
+}
 function fallbackCopy(t,cb){
   const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
   document.body.appendChild(ta);ta.select();
@@ -406,7 +440,7 @@ function vInit(){
 }
 function vRender(){
   const list=vLoad(),box=document.getElementById('v-list');
-  if(!list.length){box.innerHTML='<div class="vault-empty">还没有记录。添加你在各平台的账号，跟踪额度和到期。</div>';return}
+  if(!list.length){box.innerHTML='<div class="vault-empty">还没有记录。薅完羊毛点卡片上的 🔒 一键托管，新手机号 30 秒入库。<br><a href="#" id="v-go-deals" style="color:var(--cyan)">→ 先去情报流看看有什么羊毛</a></div>';return}
   box.innerHTML=list.map(v=>{
     let exp='';
     if(v.expires){
@@ -417,12 +451,18 @@ function vRender(){
       else exp=`<span class="exp">⏰ 剩 ${days} 天</span>`;
     }
     const site=SITES.flatMap(g=>g.sites).find(s=>s.name===v.site);
+    const canPoll=v.api_key&&USAGE.some(u=>u.site===v.site);
+    const quota=v.quota?`<div class="quota">💰 ${esc(v.quota.label)} <span style="color:var(--muted);font-family:inherit">· ${new Date(v.quota.ts).toLocaleString('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})}</span></div>`:'';
+    const noDirect=v.api_key&&!USAGE.some(u=>u.site===v.site)?`<div style="font-size:.72rem;color:var(--muted)">该平台暂不支持浏览器直连，请手动更新备注或直达控制台</div>`:'';
     return`<div class="vault-item">
       <b>${esc(v.site)}</b> ${exp}
       ${v.account?`<div class="acc">${esc(v.account)}</div>`:''}
       ${v.note?`<div class="note">${esc(v.note)}</div>`:''}
+      ${quota}${noDirect}
       <div class="ops">
         ${site?`<a href="${esc(safeUrl(site.url))}" target="_blank" rel="noopener">直达登录 →</a>`:''}
+        ${canPoll?`<button data-poll="${esc(v.id)}">🔄 查额度</button>`:''}
+        <button data-setkey="${esc(v.id)}">🔑 Key</button>
         <button class="del" data-del="${esc(v.id)}">删除</button>
       </div>
     </div>`;
@@ -432,14 +472,27 @@ document.getElementById('v-add').addEventListener('click',()=>{
   const site=document.getElementById('v-site').value;
   if(!site)return alert('请选择平台');
   const list=vLoad();
+  const key=document.getElementById('v-key').value.trim();
   list.push({id:uid(),site,account:document.getElementById('v-account').value.trim(),
-    note:document.getElementById('v-note').value.trim(),expires:document.getElementById('v-exp').value});
+    note:document.getElementById('v-note').value.trim(),expires:document.getElementById('v-exp').value,
+    ...(key?{api_key:key}:{})});
   vSave(list);vRender();
-  document.getElementById('v-account').value='';document.getElementById('v-note').value='';document.getElementById('v-exp').value='';
+  document.getElementById('v-account').value='';document.getElementById('v-note').value='';document.getElementById('v-exp').value='';document.getElementById('v-key').value='';
 });
 document.getElementById('v-list').addEventListener('click',e=>{
-  const b=e.target.closest('[data-del]');if(!b)return;
-  if(confirm('删除这条账号记录？')){vSave(vLoad().filter(v=>v.id!==b.dataset.del));vRender()}
+  if(e.target.id==='v-go-deals'){vaultToggle(false);return}
+  const del=e.target.closest('[data-del]');
+  if(del){if(confirm('删除这条账号记录？')){vSave(vLoad().filter(v=>v.id!==del.dataset.del));vRender()}return}
+  const poll=e.target.closest('[data-poll]');
+  if(poll){pollUsage(poll.dataset.poll);return}
+  const sk=e.target.closest('[data-setkey]');
+  if(sk){
+    const list=vLoad(),v=list.find(x=>x.id===sk.dataset.setkey);if(!v)return;
+    const k=prompt('填入「'+v.site+'」的 API Key（仅存你本地浏览器，用于直连查余额；留空=清除）',v.api_key||'');
+    if(k===null)return;
+    if(k.trim())v.api_key=k.trim();else delete v.api_key;
+    vSave(list);vRender();
+  }
 });
 document.getElementById('v-export').addEventListener('click',()=>{
   const blob=new Blob([JSON.stringify(vLoad(),null,2)],{type:'application/json'});
@@ -458,9 +511,14 @@ document.getElementById('v-clear').addEventListener('click',()=>{
 });
 /* 抽屉开关 */
 const vault=document.getElementById('vault'),ov=document.getElementById('vaultOverlay');
-document.getElementById('vaultBtn').addEventListener('click',()=>{vault.classList.add('open');ov.classList.add('open');vRender()});
-document.getElementById('vaultClose').addEventListener('click',()=>{vault.classList.remove('open');ov.classList.remove('open')});
-ov.addEventListener('click',()=>{vault.classList.remove('open');ov.classList.remove('open')});
+function vaultToggle(open){
+  vault.classList.toggle('open',open);ov.classList.toggle('open',open);
+  if(open)vRender();
+}
+document.getElementById('vaultBtn').addEventListener('click',()=>vaultToggle(true));
+document.getElementById('vaultClose').addEventListener('click',()=>vaultToggle(false));
+ov.addEventListener('click',()=>vaultToggle(false));
+document.getElementById('v-more').addEventListener('click',e=>{e.preventDefault();vaultToggle(false)});
 /* ============ 工具条 ============ */
 document.getElementById('tabs').addEventListener('click',e=>{
   if(e.target.classList.contains('tab')&&e.target.id!=='navCollapse'){
@@ -573,6 +631,7 @@ document.getElementById('sumOverlay').addEventListener('click',closeSum);
 document.getElementById('sumBudget').addEventListener('input',sumCalc);
 /* ============ 数据加载 ============ */
 fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
+fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
   fetch('deals.json?ts='+Date.now()).then(r=>r.json())
