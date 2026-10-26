@@ -119,6 +119,25 @@ footer{border-top:1px solid var(--border);padding:26px 0 90px;color:var(--muted)
 .copyBtn{position:absolute;top:10px;right:10px;background:var(--accent);color:#00150c;border:none;border-radius:6px;padding:5px 12px;font-size:.72rem;font-weight:700;cursor:pointer}
 .api-links{display:flex;gap:14px;margin-top:12px;font-size:.8rem;flex-wrap:wrap}
 .api-note{font-size:.72rem;color:var(--muted);margin-top:10px}
+/* ===== 比价计算器 ===== */
+#calcOverlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:70;display:none}
+#calcOverlay.open{display:block}
+#calcPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(720px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:14px;z-index:71;display:none;padding:22px}
+#calcPanel.open{display:block}
+#calcClose{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+#calcPanel h3{font-size:1.05rem;margin-bottom:2px;padding-right:30px}
+#calcPanel .sub{font-size:.78rem;color:var(--muted);margin-bottom:14px}
+.calc-inputs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.calc-inputs label{font-size:.75rem;color:var(--muted)}
+.calc-inputs input{width:130px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);font-family:monospace;font-size:.9rem;outline:none}
+.calc-inputs input:focus{border-color:var(--accent)}
+table.price{width:100%;border-collapse:collapse;font-size:.82rem}
+table.price th,table.price td{padding:7px 8px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap}
+table.price th{color:var(--muted);font-weight:400;font-size:.75rem}
+table.price td:first-child,table.price th:first-child{text-align:left}
+table.price tr.cheapest td{background:rgba(0,229,160,.07)}
+table.price .mono{font-family:monospace}
+.calc-note{font-size:.72rem;color:var(--muted);margin-top:10px}
 footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 @media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%}}
 </style>
@@ -150,7 +169,8 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="official_global">海外</button>
       <button class="tab" data-cat="mine">⭐ 已领</button>
     </div>
-    <span style="display:flex;gap:10px;flex-wrap:wrap">
+    <span style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <button id="calcBtn" class="tab" style="border-color:rgba(88,166,255,.5);color:var(--cyan)">🧮 比价</button>
       <select id="typeFilter" style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.85rem">
         <option value="">全部类型</option>
         <option value="signup_bonus">注册赠送</option>
@@ -198,6 +218,19 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <a href="https://github.com/openai/openai-python" target="_blank" rel="noopener nofollow">openai SDK</a>
   </div>
   <p class="api-note">⚠️ 端点与模型名以各平台控制台/文档为准（上方可直接修改，代码实时更新）。KEY 只存在你本地，本站不收集任何密钥。</p>
+</div>
+<!-- ============ 比价计算器 ============ -->
+<div id="calcOverlay"></div>
+<div id="calcPanel" role="dialog" aria-modal="true">
+  <button id="calcClose">✕</button>
+  <h3>🧮 Token 用量比价</h3>
+  <p class="sub">填你的用量，一眼看清同样的 token 在各家花多少钱 —— 免费档排最前</p>
+  <div class="calc-inputs">
+    <label>输入 tokens（百万）<br><input id="calcIn" type="number" min="0" step="0.1" value="1"></label>
+    <label>输出 tokens（百万）<br><input id="calcOut" type="number" min="0" step="0.1" value="1"></label>
+  </div>
+  <div style="overflow-x:auto"><table class="price" id="calcTable"></table></div>
+  <p class="calc-note">按 1 USD ≈ 7.2 CNY 折算排序仅供参考，实际以各平台账单为准；价格为每百万 token 单价，更新于 prices.json 的 verified_at。</p>
 </div>
 <!-- ============ 账号库（本地存储，绝不联网） ============ -->
 <button id="vaultBtn" title="我的账号库">🔐</button>
@@ -450,8 +483,29 @@ document.querySelector('#apiPanel .api-tabs').addEventListener('click',e=>{
 document.getElementById('apiCopy').addEventListener('click',e=>copyText(document.getElementById('apiCode').textContent,e.target,'✅ 已复制','📋 复制'));
 document.getElementById('apiClose').addEventListener('click',closeApi);
 document.getElementById('apiOverlay').addEventListener('click',closeApi);
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();vault.classList.remove('open');ov.classList.remove('open')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();closeCalc();vault.classList.remove('open');ov.classList.remove('open')}});
+/* ============ 比价计算器 ============ */
+let PRICES=[];
+const FX=7.2;
+function fmt(n,cur){const s=n>=0.01||n===0?n.toFixed(2):n.toFixed(4);return (cur==='USD'?'$':'¥')+s}
+function calcRender(){
+  const tin=parseFloat(document.getElementById('calcIn').value)||0;
+  const tout=parseFloat(document.getElementById('calcOut').value)||0;
+  const rows=PRICES.map(p=>{
+    const cost=tin*(p.input||0)+tout*(p.output||0);
+    return{...p,cost};
+  }).sort((a,b)=>(a.currency==='USD'?a.cost*FX:a.cost)-(b.currency==='USD'?b.cost*FX:b.cost));
+  document.getElementById('calcTable').innerHTML=
+    '<tr><th>模型</th><th>平台</th><th>输入/百万</th><th>输出/百万</th><th>本次花费</th></tr>'+
+    rows.map((r,i)=>`<tr class="${i===0?'cheapest':''}"><td class="mono">${esc(r.model)}${r.free?' <span class="chip" style="font-size:.65rem">免费</span>':''}</td><td>${esc(r.provider)}</td><td class="mono">${fmt(r.input||0,r.currency)}</td><td class="mono">${fmt(r.output||0,r.currency)}</td><td class="mono"><b>${fmt(r.cost,r.currency)}</b></td></tr>`).join('');
+}
+function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.getElementById('calcPanel').classList.remove('open')}
+document.getElementById('calcBtn').addEventListener('click',()=>{calcRender();document.getElementById('calcOverlay').classList.add('open');document.getElementById('calcPanel').classList.add('open')});
+document.getElementById('calcClose').addEventListener('click',closeCalc);
+document.getElementById('calcOverlay').addEventListener('click',closeCalc);
+['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',calcRender));
 /* ============ 数据加载 ============ */
+fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
   fetch('deals.json?ts='+Date.now()).then(r=>r.json())

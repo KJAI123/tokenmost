@@ -16,11 +16,13 @@
 
 ```
 tokenmost/
-├── index.html      # 全站（导航+卡片流+账号库抽屉）
+├── index.html      # 全站（导航+卡片流+账号库抽屉+一键接入+比价计算器）
 ├── sites.json      # hao123 导航数据（五层）
 ├── deals.json      # 折扣情报+折扣码
+├── prices.json     # 模型单价表（每百万 token，比价计算器数据源）
 ├── robots.txt
 ├── sitemap.xml
+├── DEPLOY.md       # GitHub → Cloudflare Pages 部署指南
 └── README.md
 ```
 
@@ -39,7 +41,7 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 1. deals.json 重验 10 条 → verified_at 改今天
 2. 新羊毛加草稿条目（published:false）
 3. 折扣码有真实来源才填 coupon 字段（填真码时删掉 placeholder 标记）
-4. 有上下架变动时同步 rss.xml（当前 12 条 published 与 RSS 一一对应）
+4. 改完跑 `python3 tools/check.py`——校验数据合法性并自动重生成 rss.xml（与 published:true 一一对应）
 5. git push 全站自动更新
 
 ## 数据契约
@@ -50,6 +52,9 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 - coupon 字段存在时卡片自动出现「复制」按钮（placeholder 除外）
 - 账号库纯 localStorage（key: `tm_vault_v1`），无后端
 - 「已领」标记纯 localStorage（key: `tm_claimed_v1`），配合「⭐ 已领」筛选 chip
+- prices.json：比价计算器数据源。字段 `{model, provider, layer, currency:"CNY"|"USD", input, output, free?, note?, verified_at}`，input/output 为每百万 token 单价；只收录官方定价页确认过的数字，USD 排序按 1:7.2 粗折算（面板有脚注声明）
+- 302.AI 官方示例把 base_url 写成含 `/chat/completions` 的完整地址——照抄会拼错，SDK 里应以 `https://api.302.ai/v1` 结尾（本站已按正确格式预填）
+- tools/check.py：数据校验 + rss.xml 自动重生成，改完数据必跑
 
 ## 一键接入（v0.2 核心特性）
 
@@ -58,9 +63,20 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 ## ⚠️ 上线前两件事（交付纪律）
 
 1. **替换占位折扣码**——`SILICON-MOST` 是演示复制按钮 UI 的假码（已加 `placeholder:true` 技术闸：复制禁用 + 「示例码 · 非真实优惠」角标，不会被当真实优惠发布），拿到真实码后仍必须替换并删除 placeholder 标记
-2. **重验全部 verified 条目的具体数额**
+2. **一键接入模型名控制台复核**——2026-10-27 全量重验中，base_url 均已按官方文档直核；以下模型名置信度中，上线前登录各控制台再过一遍：`kimi-k3`（平台刚迁移至 platform.kimi.com，新端点未直核）、`glm-4.7-flash`、`qwen-plus` / `doubao-1.5-pro-32k`（旗舰已到 Qwen3.8/新豆包代次）、`hy3-preview`、`MiniMax-M3.1-Flash`（大小写）、中转商默认 `gpt-4o` 系（302/OhMyGPT/API2D/DMXAPI/AIHubMix）、`mistral-large-latest`、NIM `meta/llama-3.3-70b-instruct`、`step-2-16k`。面板内可改，错了不致命但要复核
 
 （2026-10-27 老板拍板：邮箱订阅相关功能——Brevo 表单、mailto 兜底/纠错——**全部砍除，不再回加**，站内联系方式仅保留 RSS。）
+
+## 2026-10-27 全量情报重验（v0.3，5 路子代理并行核实）
+
+41 条情报（36 发布 / 34 官方验证），重大更正与新增：
+- **GitHub Models 已退役**（2026-07-30 全下线）→ 条目标失效 + 指向 Azure AI Foundry；导航移除
+- **腾讯混元平台停服**（2026-09-30）→ 替换为 TokenHub 新人包（每模型 100 万 tokens/1 年）
+- **DeepSeek 换代**：deepseek-chat/reasoner 停售，现售 flash（2/8 元）+ v4-pro（9/27 元）；错峰半价为长期政策；Search/Fetch 免计费 **11-01 截止**
+- **Kimi 迁移 platform.kimi.com**：新用户 15 元代金券；K2 对新用户 **10-31 截止**
+- 智谱改为邀请制赠送（双方各 2000 万）；Coze 免费档缩水（0 积分）；共绩云更名 suanli.cn；FastGPT 迁 fastgpt.io
+- 新增：硅基「推荐官」16 元×2、Google AI Pro 学生年费免单（12-31 截止）、GitHub Student Pack / Azure $100、SambaNova / Together 免费层、OhMyGPT 推荐 $20×2、AIHubMix 67 免费模型、DMXAPI 7 折、SCNet 用户体验官 500 万×2、恒源云邀请 20+10、OpenRouter 17 个 :free（充值 ≥$10 日限 50→1000）
+- 草稿区（待核）：ZCode 周末活动（官方公告未找到，**多号玩法已拒收**）、阿里云 100 元券、火山方舟每日 500 万
 
 折扣码的真实来源：Linux.do 的福利帖、各中间商公众号活动、官方 Agent 平台的邀请裂变——这是初期人肉收集的主战场，收到一条填一条 coupon 字段。
 
@@ -70,3 +86,4 @@ GitHub push → Cloudflare Pages（构建命令留空，输出目录 `/`）→ �
 
 - 浏览器扩展（Chrome Extension 注入各平台登录页 + Bitwarden 类密码填充）实现真·一键登录
 - usage API 轮询做额度监控——账号库从「记事本」进化成「面板」
+- ~~用量计算器/比价~~ ✅ 2026-10-27 已落地（v0.3）：工具条「🧮 比价」面板，prices.json 驱动
