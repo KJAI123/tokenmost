@@ -2,14 +2,15 @@
 
 > 核实于 2026-10-27 ｜ 总基调：海外「注册白送大额 token」时代已结束，免费获取全部转向**限速免费层 + 一次性行用金**。本文教你在新规则下活着。
 
-## 1. Gemini API / CLI——官方不再报数字，教你实查法
+## 1. Gemini——免费层全面动态化，CLI 本体已停服（重大更正）
 
-- **现状**：官方速率限制页已改为「去 AI Studio 看你的实时限额」并声明「限额不保证、随容量浮动」。旧攻略里的静态表（如 Flash 1500 请求/天）**全部过期**。
-- **实查三步**：
-  1. 登录 https://aistudio.google.com → 左下角「Usage & billing」区看当前项目各模型 RPM/RPD 实显值；
-  2. Gemini CLI 用户看 https://github.com/google-gemini/gemini-cli README「Free tier」段——官方宣传口径是 **60 请求/分钟、1000 请求/天**，但社区实测 **Pro 系模型实领约 100/天甚至 50/天**，Flash 系才接近 1000；
-  3. 命令行 `gemini` 内用 `/stats` 看本次会话余量。
-- **经验法则**：免费档把 Pro 留给「一天一次的关键决策」，日常跑 Flash/Lite；RPD 在太平洋时间午夜重置（UTC-8），晚上薅比早上薅余量多。
+- **⚠️ 2026-06-18 起 Gemini CLI 已被 Antigravity CLI 取代**（官方开发者博客+README 过渡通知直核），旧 CLI 与 Code Assist 扩展当日停止为免费层/Pro 用户服务——**旧攻略「Gemini CLI 免费 1000 请求/天」是历史遗产，随 CLI 一起失效**。
+- **Antigravity CLI 免费档**：社区口径极度收紧（有称个人档 ~20 agent 请求/天，单源低置信）；与 Google AI Pro 订阅不共享配额池。
+- **API 免费层（仍然活着，实查法）**：
+  1. 登录 https://aistudio.google.com → Usage 区看当前项目各模型 RPM/RPD **实显值**（官方已改为动态限额、不公布静态表）；
+  2. 社区实测口径：Flash 系约几百~1000/天、Pro 系约 100/天甚至更低、preview/experimental 更紧；
+  3. RPD 太平洋时间午夜重置（UTC-8）。
+- **活法**：AI Studio API 免费层仍是海外免费主力；CLI 编程场景换 Antigravity 体验或直接用 API Key + 开源 Agent 框架。
 - ⚠️ 免费层数据可能被用于训练（免费层条款），敏感代码别走免费档。
 
 ## 2. Groq——一年三连降，先查账户实显再规划
@@ -50,8 +51,8 @@
 
 | 平台 | 现行免费形态 | 量级 | 最优用法 |
 |---|---|---|---|
-| Gemini API | 限速免费层（动态） | Flash 系~1000/天，Pro~100/天 | 日常对话+夜间批任务 |
-| Gemini CLI | 同上（CLI 入口） | 宣传 1000/天 | 交互式开发，Pro 省着用 |
+| Gemini API | 限速免费层（动态） | Flash 系数百~1000/天，Pro 系~100/天 | 日常对话+夜间批任务 |
+| Antigravity CLI（原 Gemini CLI） | 免费档极紧 | 社区口径~20 agent 请求/天（低置信） | 体验为主，量活走 API 免费层 |
 | Cohere | Trial Key | 1000 次/月 | 每月一次的批处理 |
 | OpenRouter | :free 池 | 50/天，充 $10→1000/天 | 多厂商免费轮换 |
 | Cerebras | $5 体验金 | ~1M tokens/日限速 | 一次性深度审计 |
@@ -62,7 +63,7 @@
 
 ---
 **核实于 2026-10-27**。来源列表：
-- Gemini 速率限制页：https://ai.google.dev/gemini-api/docs/rate-limits ｜ Gemini CLI（官方宣传口径引述）：https://github.com/google-gemini/gemini-cli/issues/3838 、实领收缩：/issues/4300 、/issues/10513
+- Gemini 速率限制页：https://ai.google.dev/gemini-api/docs/rate-limits ｜ CLI→Antigravity 过渡（官方博客）：https://developers.googleblog.com/en/an-important-update-transitioning-gemini-cli-to-antigravity-cli ｜ 社区实领收缩：https://github.com/google-gemini/gemini-cli/issues/4300 、/issues/10513 、过渡讨论 /discussions/27274
 - Groq 收缩轨迹（多源）：openapipricing.com（2026-06，14,400/天）、dev.to（2026-10，1,000/天）、ai-api-hub.com（250/天）、Reddit r/LLMDevs；实查入口 https://console.groq.com/settings/limits
 - Cerebras：https://www.cerebras.ai/inference （官网直核 $5 体验金）｜ 第三方限速：pricepertoken.com
 - Mistral 现状：https://docs.mistral.ai/admin/overview + Reddit r/MistralAI（403 tier_not_allowed 口径）

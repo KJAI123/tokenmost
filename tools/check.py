@@ -8,7 +8,9 @@ LAYERS = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台",
           "reseller": "Token 中间商", "official_global": "大模型官方（海外）"}
 TYPES = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "coupon": "折扣码",
          "student": "学生通道", "limited_promo": "限时活动", "price_low": "长期低价",
-         "free_model": "免费模型", "pricing_plan": "套餐订阅"}
+         "free_model": "免费模型", "pricing_plan": "套餐订阅", "recurring_promo": "长期活动",
+         "warning": "避雷", "tool_integration": "工具接入", "invite_bonus": "邀请奖励",
+         "subscription_bonus": "订阅赠送", "info": "情报"}
 
 deals = json.loads((ROOT / "deals.json").read_text())
 sites = json.loads((ROOT / "sites.json").read_text())

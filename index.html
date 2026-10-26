@@ -300,6 +300,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
         <option value="student">学生通道</option>
         <option value="limited_promo">限时活动</option>
         <option value="price_low">长期低价</option>
+        <option value="pricing_plan">套餐订阅</option>
+        <option value="warning">避雷</option>
+        <option value="invite_bonus">邀请奖励</option>
       </select>
       <input id="search" type="search" placeholder="🔍 搜索平台 / 关键词">
     </span>
@@ -458,7 +461,7 @@ const LAYER={
  reseller:{name:'Token 中间商',color:'#bc8cff'},
  official_global:{name:'大模型官方（海外）',color:'#8b949e'}
 };
-const TYPE={signup_bonus:'注册赠送',free_tier:'长期免费',coupon:'折扣码',student:'学生通道',limited_promo:'限时活动',price_low:'长期低价'};
+const TYPE={signup_bonus:'注册赠送',free_tier:'长期免费',coupon:'折扣码',student:'学生通道',limited_promo:'限时活动',price_low:'长期低价',free_model:'免费模型',pricing_plan:'套餐订阅',recurring_promo:'长期活动',warning:'避雷',tool_integration:'工具接入',invite_bonus:'邀请奖励',subscription_bonus:'订阅赠送',info:'情报'};
 const VKEY='tm_vault_v1',CKEY='tm_claimed_v1';
 let SITES=[],DEALS=[],curCat='all',curQ='',curType='';
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
