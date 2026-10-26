@@ -26,3 +26,7 @@
 ## 待办
 
 - [ ] deals.json value 补"约 1000 次/天"量级 + 标注高频重验
+
+## 与主数据（deals.json）的交叉核对
+
+deals.json 的 groq-free 条目（另一会话维护）记「gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM」，与本调研一致（交叉印证通过）。本 findings 补充趋势信息：RPD 从 2026 年中的 14400 收紧到 9 月的约 1000——该平台免费档处于持续收缩通道，建议 harvest 高频盯防 + 条目 notes 标注「收紧趋势」。
