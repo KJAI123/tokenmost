@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {"id": "zhipu-pricing", "name": "智谱 BigModel 定价", "url": "https://docs.bigmodel.cn/cn/guide/start/pricing", "patterns": ["GLM-[\\w.-]+", "免费"]},
+    {"id": "zhipu-promo", "name": "智谱 BigModel 活动页", "url": "https://docs.bigmodel.cn/cn/update/promotion", "patterns": ["Coding Plan", "赠送"]},
+    {"id": "deepseek-pricing", "name": "DeepSeek 定价", "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing", "patterns": ["峰谷", "高峰", "缓存命中"]},
+    {"id": "siliconflow-pricing", "name": "硅基流动定价", "url": "https://www.siliconflow.cn/pricing", "patterns": ["免费模型", "L0", "赠送"]},
+    {"id": "siliconflow-faq", "name": "硅基流动计费规则", "url": "https://docs.siliconflow.com/cn/faqs/billing-rules", "patterns": ["14 元", "2000"]},
+    {"id": "volc-ark-quota", "name": "火山方舟免费推理额度", "url": "https://docs.volcengine.com/docs/ark/free-inference-quota", "patterns": ["500 ?万", "每日", "领取"]},
+    {"id": "openrouter-limits", "name": "OpenRouter 限流文档", "url": "https://openrouter.ai/docs/api_reference/limits", "patterns": [":free", "\\$10", "per day"]},
+    {"id": "openrouter-free-models", "name": "OpenRouter 免费模型列表", "url": "https://openrouter.ai/models?max_price=0", "patterns": [":free"]},
+    {"id": "gemini-rate-limits", "name": "Gemini API 限流", "url": "https://ai.google.dev/gemini-api/docs/rate-limits", "patterns": ["free tier", "RPD", "requests per day"]},
+    {"id": "groq-rate-limits", "name": "Groq 限流", "url": "https://console.groq.com/docs/rate-limits", "patterns": ["free tier", "TPD", "requests per day"]},
+    {"id": "moonshot-pricing", "name": "Kimi 开放平台定价", "url": "https://platform.moonshot.cn/docs/pricing/chat", "patterns": ["免费", "赠送", "百万 ?tokens"]},
+    {"id": "bailian-pricing", "name": "阿里云百炼定价", "url": "https://help.aliyun.com/zh/model-studio/models", "patterns": ["免费额度", "限时免费", "赠送"]}
+  ]
+}

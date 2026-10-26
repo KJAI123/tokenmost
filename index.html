@@ -14,64 +14,104 @@
 <style>
 :root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--green:#3fb950;--cyan:#58a6ff;--amber:#d29922;--red:#f85149;--accent:#00e5a0}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Roboto,sans-serif;line-height:1.6}
-.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Roboto,sans-serif;line-height:1.55;display:flex;min-height:100vh}
 a{color:var(--cyan);text-decoration:none}
 button{font-family:inherit}
-header{padding:48px 0 28px;text-align:center;border-bottom:1px solid var(--border)}
-.logo{font-size:2.3rem;font-weight:800;letter-spacing:-1px}
-.logo em{font-style:normal;color:var(--accent)}
-.tagline{color:var(--muted);margin-top:6px}
-.stats{display:flex;justify-content:center;gap:22px;margin-top:18px;flex-wrap:wrap}
-.stat{font-size:.88rem;color:var(--muted)}
-.stat b{color:var(--accent);font-family:monospace;font-size:1.05rem}
-/* ===== hao123 导航区 ===== */
-.nav-section{margin:26px 0}
-.nav-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.nav-head h3{font-size:1rem}
-.nav-head .cnt{font-size:.75rem;color:var(--muted)}
-.nav-head .dot{width:8px;height:8px;border-radius:50%}
-.nav-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
-.site{display:block;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:9px 12px;transition:border-color .15s}
-.site:hover{border-color:var(--accent)}
-.site b{font-size:.88rem;display:block;color:var(--text)}
-.site span{font-size:.72rem;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.site .free{color:var(--green);font-size:.72rem}
-#navCollapse{display:none}
+/* ===== 侧边栏 ===== */
+#side{width:210px;flex-shrink:0;border-right:1px solid var(--border);padding:16px 12px;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;gap:4px}
+#side .logo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px;margin-bottom:2px}
+#side .logo em{font-style:normal;color:var(--accent)}
+#side .tag{font-size:.68rem;color:var(--muted);margin-bottom:10px}
+#side .sgroup{font-size:.68rem;color:var(--muted);margin:10px 0 3px;display:flex;align-items:center;gap:5px}
+#side .sgroup .dot{width:7px;height:7px;border-radius:50%}
+#side a.slink{display:flex;justify-content:space-between;align-items:center;font-size:.76rem;color:var(--text);padding:3px 6px;border-radius:6px}
+#side a.slink:hover{background:var(--card);color:var(--accent)}
+#side a.slink span{color:var(--muted);font-size:.64rem;max-width:76px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#side .stools{display:flex;flex-direction:column;gap:5px;margin-bottom:6px}
+#side .stools button,#side .stools .authwrap button{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 10px;font-size:.8rem;cursor:pointer;text-align:left}
+#side .stools button:hover{border-color:var(--accent);color:var(--accent)}
+#side .stools .accent{border-color:var(--accent);color:var(--accent);font-weight:700}
+#side .stools .gold{border-color:rgba(210,153,34,.5);color:var(--amber)}
+#side .stools .violet{border-color:rgba(188,140,255,.5);color:#bc8cff}
+#authBtn{background:var(--accent)!important;color:#00150c!important;border:none!important;font-weight:700;text-align:center!important}
+/* ===== 主区 ===== */
+#main{flex:1;min-width:0;padding:0 18px 80px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 0 10px;border-bottom:1px solid var(--border)}
+header .hlogo{font-size:1.3rem;font-weight:800;letter-spacing:-.5px}
+header .hlogo em{font-style:normal;color:var(--accent)}
+header .tagline{font-size:.72rem;color:var(--muted)}
+.stats{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap;align-items:center}
+.stat{font-size:.75rem;color:var(--muted)}
+.stat b{color:var(--accent);font-family:monospace;font-size:.9rem}
+.stats #authBtn{padding:5px 12px;font-size:.78rem}
+#side .m-only{display:none}
 /* ===== 工具条 ===== */
-.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:26px 0 16px;justify-content:space-between}
-.tabs{display:flex;gap:8px;flex-wrap:wrap}
-.tab{background:var(--card);border:1px solid var(--border);color:var(--muted);border-radius:20px;padding:5px 14px;font-size:.83rem;cursor:pointer}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0 10px;justify-content:space-between}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{background:var(--card);border:1px solid var(--border);color:var(--muted);border-radius:16px;padding:4px 12px;font-size:.78rem;cursor:pointer}
 .tab.active{border-color:var(--accent);color:var(--accent);background:rgba(0,229,160,.08)}
-#search{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);outline:none;font-size:.88rem;width:190px}
+#search{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:6px 10px;color:var(--text);outline:none;font-size:.82rem;width:170px}
 #search:focus{border-color:var(--accent)}
-/* ===== 折扣卡片 ===== */
-#cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;padding-bottom:70px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
-.card:hover{transform:translateY(-2px);border-color:var(--cyan)}
-.card-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:6px}
-.provider{font-weight:700}
-.badge{font-size:.7rem;padding:2px 8px;border-radius:10px;white-space:nowrap;font-family:monospace}
+#typeFilter{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:6px 10px;color:var(--text);outline:none;font-size:.8rem}
+/* ===== 情报列表（紧凑行） ===== */
+#cards{display:flex;flex-direction:column;gap:6px;padding-bottom:30px}
+.row{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 12px;display:grid;grid-template-columns:110px 1fr auto;gap:4px 12px;align-items:center;transition:border-color .15s}
+.row:hover{border-color:var(--cyan)}
+.r-tok{grid-row:span 2;text-align:center;font-family:monospace}
+.r-tok .num{font-size:1.15rem;font-weight:800;color:var(--accent);line-height:1.1;display:block}
+.r-tok .unit{font-size:.62rem;color:var(--muted);display:block}
+.r-tok.free .num{color:var(--green);font-size:.95rem}
+.r-tok.cash .num{color:var(--amber);font-size:1rem}
+.r-tok.dead .num{color:var(--red);font-size:.8rem}
+.r-line1{display:flex;align-items:center;gap:8px;min-width:0}
+.r-provider{font-weight:700;font-size:.86rem;white-space:nowrap}
+.r-value{font-size:.8rem;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+.r-line2{display:flex;align-items:center;gap:6px;font-size:.7rem;color:var(--muted);min-width:0}
+.chip{font-size:.62rem;color:var(--cyan);background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.25);border-radius:5px;padding:0 6px;white-space:nowrap}
+.chip.gold{color:var(--amber);background:rgba(210,153,34,.1);border-color:rgba(210,153,34,.3)}
+.r-notes{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+.r-ops{grid-row:span 2;display:flex;gap:4px;align-items:center;justify-content:flex-end;flex-wrap:nowrap}
+.r-ops .go{background:var(--accent);color:#00150c;border-radius:7px;padding:5px 10px;font-weight:700;font-size:.74rem;white-space:nowrap}
+.badge{font-size:.62rem;padding:1px 7px;border-radius:9px;white-space:nowrap;font-family:monospace}
 .b-green{background:rgba(63,185,80,.15);color:var(--green)}
 .b-amber{background:rgba(210,153,34,.15);color:var(--amber)}
 .b-red{background:rgba(248,81,73,.15);color:var(--red)}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
-.chip{font-size:.7rem;color:var(--cyan);background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.25);border-radius:6px;padding:1px 8px}
-.chip.gold{color:var(--amber);background:rgba(210,153,34,.1);border-color:rgba(210,153,34,.3)}
-.value{font-size:.9rem;margin-bottom:8px;flex:1}
-.notes{color:var(--muted);font-size:.78rem;margin-bottom:10px}
-.coupon{display:flex;align-items:center;gap:8px;background:rgba(210,153,34,.08);border:1px dashed var(--amber);border-radius:8px;padding:8px 10px;margin-bottom:10px}
-.coupon .code{font-family:monospace;font-size:.9rem;color:var(--amber);font-weight:700;flex:1;word-break:break-all}
-.coupon button{background:none;border:1px solid var(--amber);color:var(--amber);border-radius:6px;padding:4px 10px;font-size:.75rem;cursor:pointer;white-space:nowrap}
-.coupon button:hover{background:rgba(210,153,34,.15)}
-.phTag{font-size:.7rem;color:var(--red);border:1px solid var(--red);border-radius:6px;padding:2px 8px;white-space:nowrap}
-.meta{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--muted)}
-.go{background:var(--accent);color:#00150c;border-radius:8px;padding:6px 14px;font-weight:700;font-size:.82rem}
+.b-claimed{background:rgba(210,153,34,.15);color:var(--amber)}
+.coupon{display:inline-flex;align-items:center;gap:6px;background:rgba(210,153,34,.08);border:1px dashed var(--amber);border-radius:7px;padding:2px 8px}
+.coupon .code{font-family:monospace;font-size:.76rem;color:var(--amber);font-weight:700}
+.coupon button{background:none;border:1px solid var(--amber);color:var(--amber);border-radius:5px;padding:1px 7px;font-size:.66rem;cursor:pointer}
+.phTag{font-size:.62rem;color:var(--red);border:1px solid var(--red);border-radius:5px;padding:0 6px}
 .diff{color:var(--amber)}
-.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:36px}
-footer{border-top:1px solid var(--border);padding:26px 0 90px;color:var(--muted);font-size:.83rem;text-align:center}
+.claim{background:none;border:none;cursor:pointer;font-size:.95rem;color:var(--muted);padding:0;line-height:1}
+.claim.on{color:var(--amber)}
+.apiBtn{background:none;border:1px solid var(--cyan);color:var(--cyan);border-radius:7px;padding:4px 8px;font-size:.72rem;cursor:pointer}
+.apiBtn:hover{background:rgba(88,166,255,.12)}
+.couponFlag{display:inline-flex;align-items:center;gap:3px;background:none;border:1px solid var(--amber);color:var(--amber);border-radius:7px;padding:4px 8px;font-size:.7rem;cursor:pointer;white-space:nowrap}
+.couponFlag b{font-family:monospace}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px}
+/* ===== 底部导航（移动端 tab + 桌面页脚导航区） ===== */
+#bottomNav{display:none;position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--border);z-index:40;padding:4px 6px calc(4px + env(safe-area-inset-bottom))}
+#bottomNav .brow{display:flex;justify-content:space-around}
+#bottomNav button{background:none;border:none;color:var(--muted);font-size:.62rem;display:flex;flex-direction:column;align-items:center;gap:1px;padding:4px 8px;cursor:pointer}
+#bottomNav button b{font-size:1.05rem;font-weight:400}
+#bottomNav button.on{color:var(--accent)}
+footer{border-top:1px solid var(--border);padding:20px 0 40px;color:var(--muted);font-size:.78rem;text-align:center;margin-top:14px}
+footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.7rem;opacity:.85}
+#navArea{margin-top:10px}
+.nav-section{margin:14px 0}
+.nav-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.nav-head h3{font-size:.85rem}
+.nav-head .cnt{font-size:.68rem;color:var(--muted)}
+.nav-head .dot{width:7px;height:7px;border-radius:50%}
+.nav-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px}
+.site{display:block;background:var(--card);border:1px solid var(--border);border-radius:7px;padding:6px 10px;transition:border-color .15s}
+.site:hover{border-color:var(--accent)}
+.site b{font-size:.78rem;display:block;color:var(--text)}
+.site span{font-size:.64rem;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.site .free{color:var(--green);font-size:.64rem}
 /* ===== 账号库抽屉 ===== */
-#vaultBtn{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#00150c;border:none;border-radius:50%;width:54px;height:54px;font-size:1.4rem;cursor:pointer;box-shadow:0 4px 18px rgba(0,229,160,.4);z-index:50}
+#vaultBtn{position:fixed;right:16px;bottom:70px;background:var(--accent);color:#00150c;border:none;border-radius:50%;width:48px;height:48px;font-size:1.25rem;cursor:pointer;box-shadow:0 4px 18px rgba(0,229,160,.4);z-index:50}
+@media(min-width:861px){#vaultBtn{bottom:24px}}
 #vaultBtn:hover{filter:brightness(1.1)}
 #vaultOverlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:60;display:none}
 #vault{position:fixed;top:0;right:-460px;width:min(440px,100vw);height:100vh;background:var(--card);border-left:1px solid var(--border);z-index:61;transition:right .25s,visibility 0s .25s;overflow-y:auto;padding:22px;visibility:hidden}
@@ -196,24 +236,45 @@ table.price .mono{font-family:monospace}
 #sharePanel .sub,#subPanel .sub,#authPanel .sub{font-size:.78rem;color:var(--muted);margin-bottom:12px}
 footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 @media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%}}
+@media(max-width:860px){
+  #side{display:none}
+  #bottomNav{display:block}
+  header .tagline{display:none}
+  .row{grid-template-columns:86px 1fr auto;gap:3px 8px;padding:7px 9px}
+  .r-tok .num{font-size:1rem}
+  .r-value{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .r-ops{max-width:150px}
+}
 </style>
 </head>
 <body>
-<header class="wrap">
+<!-- ============ 侧边栏（桌面）：工具 + 五层导航 ============ -->
+<aside id="side">
   <div class="logo">token<em>most</em></div>
-  <p class="tagline">五层来源 · 折扣码 · 免费额度 · 每日人工核验</p>
+  <div class="tag">薅 token · 一键接入 · 极致省钱</div>
+  <div class="stools">
+    <button class="accent" id="authBtnSide" onclick="authOpen()">🔐 登录 / 供码</button>
+    <button id="vaultBtnSide">🗂 账号库</button>
+    <button class="violet" id="planBtnSide">⌨️ Coding 比价</button>
+    <button class="gold" id="sumBtnSide">💰 白嫖总账</button>
+    <button id="calcBtnSide">🧮 用量比价</button>
+  </div>
+  <div id="sideNav"></div>
+</aside>
+<!-- ============ 主区 ============ -->
+<div id="main">
+<header>
+  <span class="hlogo">token<em>most</em></span>
+  <span class="tagline">五层来源 · 每日核验</span>
   <div class="stats">
-    <div class="stat">羊毛 <b id="n-deals">–</b> 条</div>
-    <div class="stat">今日验证 <b id="n-fresh">–</b> 条</div>
-    <div class="stat">导航站点 <b id="n-sites">–</b> 个</div>
-    <div class="stat">更新于 <b id="updated">–</b></div>
-    <div class="stat"><button id="authBtn" onclick="authOpen()">登录 / 供码</button></div>
+    <span class="stat">羊毛 <b id="n-deals">–</b></span>
+    <span class="stat">今日 <b id="n-fresh">–</b></span>
+    <span class="stat">站点 <b id="n-sites">–</b></span>
+    <span class="stat">更新 <b id="updated">–</b></span>
+    <button id="authBtn" onclick="authOpen()">登录 / 供码</button>
   </div>
 </header>
-<div class="wrap">
-  <!-- ============ hao123 式导航 ============ -->
-  <section id="navArea"></section>
-  <button class="tab" id="navCollapse" style="margin:0 auto 20px;display:block">展开/收起导航 ↑↓</button>
+<div>
   <!-- ============ 折扣情报流 ============ -->
   <div class="toolbar">
     <div class="tabs" id="tabs">
@@ -244,11 +305,23 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </div>
   <main id="cards"><div class="empty">加载中…</div></main>
 </div>
-<footer class="wrap">
+<!-- 导航区（完整版，放页面底部） -->
+<section id="navArea"></section>
+<footer>
   <p>数据自动+人工双轨每日更新 · 优惠以各平台官方页面为准</p>
   <p class="disclaim">⚠️ 免责声明：本站为独立情报聚合站，与所列平台无关；所有优惠以各平台官方页面为准，请自行核实后再操作，本站不构成消费建议。</p>
   <p><a href="rss.xml">RSS 订阅</a> · © 2026 tokenmost.com</p>
 </footer>
+</div><!-- /main -->
+<!-- ============ 底部导航（移动端） ============ -->
+<nav id="bottomNav">
+  <div class="brow">
+    <button class="on" data-bn="feed"><b>📡</b>情报流</button>
+    <button data-bn="nav"><b>🧭</b>导航</button>
+    <button data-bn="tools"><b>🧰</b>工具</button>
+    <button data-bn="mine"><b>🗂</b>我的</button>
+  </div>
+</nav>
 <!-- ============ 一键接入面板（代码生成器） ============ -->
 <div id="apiOverlay"></div>
 <div id="apiPanel" role="dialog" aria-modal="true">
@@ -391,10 +464,15 @@ function safeUrl(u){return /^https?:/i.test(String(u||''))?u:'#'}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
-/* ============ 导航区渲染 ============ */
+/* ============ 导航区渲染（侧边栏紧凑版 + 底部完整版） ============ */
 function renderNav(){
   const order=['official_cn','agent','compute','reseller','official_global'];
-  document.getElementById('navArea').innerHTML=order.map(k=>{
+  document.getElementById('sideNav').innerHTML=order.map(k=>{
+    const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
+    return`<div class="sgroup"><span class="dot" style="background:${LAYER[k].color}"></span>${LAYER[k].name}</div>`
+      +g.sites.map(s=>`<a class="slink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}">${esc(s.name)}${s.hot?' 🔥':''}<span>${esc(s.free||s.desc||'')}</span></a>`).join('');
+  }).join('');
+  document.getElementById('navArea').innerHTML='<div style="font-size:.8rem;color:var(--muted);margin:18px 0 4px">🧭 全站导航（五层来源 '+SITES.reduce((n,g)=>n+g.sites.length,0)+' 站）</div>'+order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
     return`<section class="nav-section">
       <div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span>
@@ -420,7 +498,19 @@ function freshness(d){
   if(h<168)return `<span class="badge b-green">${a} `+Math.floor(h/24)+`天前</span>`;
   return `<span class="badge b-amber">⚠️ `+Math.floor(h/24)+`天前</span>`;
 }
+/* token 数额：列表第一视觉焦点 */
+function tokCell(d){
+  if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
+  if(d.tokens_wan)return`<span class="num">${d.tokens_wan>=10000?(d.tokens_wan/10000).toFixed(1)+' 亿':Math.round(d.tokens_wan)+' 万'}</span><span class="unit">tokens</span>`;
+  if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
+  if(d.cny)return`<span class="num">¥${d.cny}</span><span class="unit">额度</span>`;
+  if(d.type==='free_tier'||d.via==='free')return'<span class="num">免费</span><span class="unit">长期</span>';
+  if(d.type==='price_low')return'<span class="num">低价</span><span class="unit">长期</span>';
+  if(d.type==='coupon')return'<span class="num">有码</span><span class="unit">折扣</span>';
+  return'<span class="num">·</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
+}
 function render(){
+  if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
   let list=DEALS.filter(d=>d.published!==false);
   const claimedSet=getClaimed();
   if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
@@ -435,25 +525,37 @@ function render(){
   });
   const box=document.getElementById('cards');
   if(!list.length){box.innerHTML='<div class="empty">没有匹配的羊毛</div>';return}
-  box.innerHTML=list.map(d=>`
-  <article class="card" data-id="${esc(d.id)}">
-    <div class="card-head"><span class="provider">${esc(d.provider)}</span><span style="display:flex;gap:6px;align-items:center">${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}<button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" title="标记/取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>${freshness(d)}</span></div>
-    <div class="chips">
-      <span class="chip">${LAYER[d.category]?LAYER[d.category].name:esc(d.category)}</span>
-      <span class="chip">${TYPE[d.type]||esc(d.type)}</span>
-      ${d.region==='cn'?'<span class="chip">🇨🇳</span>':'<span class="chip">🌍</span>'}
+  box.innerHTML=list.map(d=>{
+    const s=siteFor(d),pname=s?s.name:d.provider;
+    const dl=d.deadline?`<span style="color:var(--red)">📅 ${esc(d.deadline)}</span>`:((d.type==='free_tier'||d.type==='price_low')?'<span style="color:var(--green)">♾️ 长期</span>':'');
+    return`
+  <article class="row" data-id="${esc(d.id)}">
+    <div class="r-tok ${d.verify_status==='expired'?'dead':(d.usd||d.cny?'cash':'')}">${tokCell(d)}</div>
+    <div class="r-line1">
+      <span class="r-provider">${esc(d.provider)}</span>
+      <span class="r-value" title="${esc(d.value)}">${esc(d.value)}</span>
+      ${d.coupon?`<span class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">示例</span>':`<button class="copy" data-code="${esc(d.coupon)}">复制</button>`}</span>`:''}
     </div>
-    <p class="value">${esc(d.value)}</p>
-    ${d.deadline?`<p class="notes" style="color:var(--red)">📅 截止：${esc(d.deadline)}</p>`:((d.type==='free_tier'||d.type==='price_low')?'<p class="notes" style="color:var(--green)">♾️ 长期有效</p>':'')}
-    ${d.coupon?`<div class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">⚠️ 示例码 · 非真实优惠</span>':`<button class="copy" data-code="${esc(d.coupon)}">📋 复制</button>`}</div>`:''}
-    ${d.rule?`<p class="notes">📐 规则：${esc(d.rule)}</p>`:''}
-    ${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?`<p class="notes">💡 ${esc(d.notes)}</p>`:''}
-    <div class="meta">
-      <span>难度 <span class="diff">${(n=>'★'.repeat(n)+'☆'.repeat(5-n))(Math.min(5,Math.max(1,d.difficulty||1)))}</span></span>
-      <span style="display:flex;gap:8px;align-items:center">${siteFor(d)?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡ 接入</button>`:''}<button class="couponFlag" data-share="${esc(siteFor(d)?.name||d.provider)}" style="display:none"></button><button class="couponFlag" data-supply="${esc(siteFor(d)?.name||d.provider)}" title="托管你的折扣码给大家" style="display:${auth?'':'none'}">🎁 供码</button><button class="claim" data-vq="${esc(d.id)}" title="托管到账号库（仅本地）" style="font-size:.85rem">🔒</button><a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取 →</a></span>
+    <div class="r-line2">
+      <span class="chip">${LAYER[d.category]?LAYER[d.category].name:d.category}</span>
+      <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
+      ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
+      ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
+      ${freshness(d)}
+      ${dl}
+      <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
+      <a href="#" data-vq="${esc(d.id)}" title="托管到账号库" style="color:var(--muted)">🔒</a>
     </div>
-  </article>`).join('');
+    <div class="r-ops">
+      ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}">⚡</button>`:''}
+      <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
+      <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
+      <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" title="标记/取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
+      <a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取</a>
+    </div>
+  </article>`}).join('');
   stats();
+  loadShared();
 }
 function stats(){
   const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified');
@@ -483,7 +585,7 @@ document.getElementById('cards').addEventListener('click',e=>{
   const sp=e.target.closest('[data-supply]');
   if(sp)openSub(sp.dataset.supply);
   const vq=e.target.closest('[data-vq]');
-  if(vq)quickVault(vq.dataset.vq);
+  if(vq){e.preventDefault();quickVault(vq.dataset.vq);}
 });
 /* ============ 一键托管（卡片 🔒 → 预填快速表单） ============ */
 function quickVault(dealId){
@@ -534,8 +636,9 @@ async function apiFetch(path,opts={}){
   return j;
 }
 function authRefreshUI(){
-  const b=document.getElementById('authBtn');
-  b.textContent=auth?auth.phone+' · 我的码':'登录 / 供码';
+  const t=auth?auth.phone+' · 我的码':'登录 / 供码';
+  document.getElementById('authBtn').textContent=t;
+  document.getElementById('authBtnSide').textContent=auth?'🔐 '+auth.phone:'🔐 登录 / 供码';
   render();  // 卡片上的「供码」按钮显隐随登录态
 }
 async function loadShared(){
@@ -749,6 +852,21 @@ document.getElementById('v-more').addEventListener('click',e=>{e.preventDefault(
 /* 抽屉打开时顺带刷新「我的共享码」 */
 const _vaultToggle=vaultToggle;
 vaultToggle=function(open){_vaultToggle(open);if(open)renderMyCoupons()};
+/* 侧边栏工具按钮（与主按钮等效） */
+document.getElementById('vaultBtnSide').addEventListener('click',()=>vaultToggle(true));
+document.getElementById('planBtnSide').addEventListener('click',()=>document.getElementById('planBtn').click());
+document.getElementById('sumBtnSide').addEventListener('click',()=>document.getElementById('sumBtn').click());
+document.getElementById('calcBtnSide').addEventListener('click',()=>document.getElementById('calcBtn').click());
+/* 底部导航（移动端） */
+document.getElementById('bottomNav').addEventListener('click',e=>{
+  const b=e.target.closest('[data-bn]');if(!b)return;
+  document.querySelectorAll('#bottomNav button').forEach(x=>x.classList.toggle('on',x===b));
+  const act=b.dataset.bn;
+  if(act==='feed')window.scrollTo({top:0,behavior:'smooth'});
+  if(act==='nav')document.getElementById('navArea').scrollIntoView({behavior:'smooth'});
+  if(act==='tools')document.getElementById('sumBtn').click();
+  if(act==='mine')vaultToggle(true);
+});
 /* ============ 工具条 ============ */
 document.getElementById('tabs').addEventListener('click',e=>{
   if(e.target.classList.contains('tab')&&e.target.id!=='navCollapse'){

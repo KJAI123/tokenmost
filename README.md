@@ -93,6 +93,16 @@ GitHub push → **GitHub Pages**（`Settings → Pages → Source: GitHub Action
 
 （2026-10-27 老板拍板：邮箱订阅相关功能——Brevo 表单、mailto 兜底/纠错——**全部砍除，不再回加**，站内联系方式仅保留 RSS。）
 
+## v0.9（2026-10-27）：后端上线——折扣码众包托管（老板拍板「开始搞后端」）
+
+- **架构升级**：纯静态之外新增可选后端 `server/`（单文件 FastAPI + SQLite，标准库加密 pbkdf2+HMAC，零额外依赖；不跑后端时站点一切照旧）
+- **账号系统**：手机号+密码注册/登录（HMAC token 30 天），仅用于标识贡献者
+- **折扣码托管闭环**：登录 → 卡片「🎁 供码」提交 → **GLM-4.7-Flash（免费档，即老板说的「用flash」）自动初审** + 代码级黑名单双重把关（多号/批量/代充/共享/接码/漏洞直接拒）→ 上架；无 KEY 时全部转人工（管理员 `POST /api/admin/coupons/{id}?action=active`，x-admin-token）
+- **共享码小窗**：卡片自动出现「🎁 共享 N」按钮 → 小窗列码+剩余次数 → 复制调 `/copy` 计数（**同人同日去重**防刷）
+- **超限自动下架**：复制次数达提交者设定的 max_copies（1-10000）→ 自动 unlisted 并提示；提交者随时在账号库抽屉「🎟 我的共享码」看被复制次数进度条
+- 起服务：`cd server && ZHIPU_API_KEY=xxx ADMIN_TOKEN=changeit uvicorn app:app --port 8001`（详见 server/README.md）；上线前必改 TM_SECRET/ADMIN_TOKEN、收紧 CORS
+- 端到端实测：注册→提交→终审→上架→共享→复制去重→达限下架→我的码统计 全链路 ✓
+
 ## v0.7（2026-10-27）：浏览器扩展 MVP + 额度直连扩到 5 平台 + PWA
 
 - **Chrome 扩展「TokenMost 羊毛助手」**（`extension/`，免上架 load-unpacked）：真·一键登录 MVP——账号托管本机（chrome.storage.local）+ 在平台官方登录页「✍️ 填充本页」一键填账号密码（fill-core 启发式定位，React 受控组件兼容，已实测）；popup 内置「今日羊毛」速览（拉取你部署站点的 deals.json）+ tokenmost 账号库备份导入。合规红线：只填本人账号，无自动注册/接码/验证码绕过；密码仅存本机不加密（明示公共设备勿用）

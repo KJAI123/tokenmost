@@ -1,1 +1,12 @@
-[]
+[
+  {"provider": "智谱 BigModel", "plan": "GLM Coding Lite", "price": 49, "currency": "CNY", "quota": "每5h 2000 积分 / 周 10000 积分，闲时 5 折", "tokens_wan": 6000, "assumption": "按积分制估算（官方积分→token 折算未公布，待深挖）", "url": "https://docs.bigmodel.cn/cn/coding-plan/overview", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "智谱 BigModel", "plan": "GLM Coding Pro", "price": 149, "currency": "CNY", "quota": "积分翻倍（官方页为准）", "tokens_wan": 18000, "assumption": "估算", "url": "https://docs.bigmodel.cn/cn/coding-plan/overview", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "Kimi 开放平台", "plan": "Kimi 会员 Go（含 Kimi Code）", "price": 49, "currency": "CNY", "quota": "5 小时滚动限额", "tokens_wan": 5000, "assumption": "按 K3 价格折算估算", "url": "https://www.kimi.com/help/membership/membership-pricing", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "MiniMax 开放平台", "plan": "M Plan Starter（含 MiniMax Code）", "price": 29, "currency": "CNY", "quota": "首促 ¥9.9", "tokens_wan": 3000, "assumption": "估算", "url": "https://www.minimax.io/m-plan", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "讯飞星火", "plan": "Astron Coding Plan（聚合星火/GLM/Kimi/DeepSeek/Qwen）", "price": 3.9, "currency": "CNY", "quota": "入门档", "tokens_wan": 500, "assumption": "按聚合模型均价估算", "url": "https://www.xfyun.cn/doc/spark/CodingPlan.html", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "火山方舟", "plan": "方舟 Coding Plan（AI 普惠季）", "price": 9.9, "currency": "CNY", "quota": "活动价起", "tokens_wan": 1200, "assumption": "估算", "url": "https://www.volcengine.com/activity/ai618", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "腾讯云 TokenHub", "plan": "个人套餐", "price": 28, "currency": "CNY", "quota": "官方页为准", "tokens_wan": 2800, "assumption": "按混元定价估算", "url": "https://cloud.tencent.com/document/product/1823/130053", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "Anthropic", "plan": "Claude Pro（Claude Code）", "price": 20, "currency": "USD", "quota": "每 5h 限额 + 周限额（官方支持页）", "tokens_wan": 6000, "assumption": "按 Sonnet 价折算的量级估算", "url": "https://support.claude.com/en/articles/11145838", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "OpenAI", "plan": "ChatGPT Plus（Codex）", "price": 20, "currency": "USD", "quota": "每周限额", "tokens_wan": 5000, "assumption": "估算", "url": "https://openai.com/chatgpt/pricing", "confidence": "中", "verified_at": "2026-10-27"},
+  {"provider": "GitHub Copilot", "plan": "Copilot Pro", "price": 10, "currency": "USD", "quota": "无限补全 + 300 premium requests/月", "tokens_wan": 2000, "assumption": "premium 折算估算", "url": "https://docs.github.com/en/copilot/get-started/plans", "confidence": "中", "verified_at": "2026-10-27"}
+]
