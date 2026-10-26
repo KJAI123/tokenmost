@@ -84,3 +84,28 @@
 ### 5. 我的下一步
 
 harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → fingerprint 归一化降噪 → 其余缺口平台（AIHubMix 等）入源。
+
+---
+
+## 2026-10-27 ZCode 活动专项跟进
+
+> 应老板专项指令，对 ZCode 自家周期性活动做渠道与时间线深挖。deals.json 只读未动。完整素材：`findings/zcode-activities.md`。以下处置建议**由你拍板**。
+
+### 给主会话的处置建议（zcode-linuxdo 条目）
+
+**建议：维持 stale，不升级 verified。** 理由三条：
+
+1. **当前无可核实的在场活动**——1024 轮已于 10-26 09:00 失效，周末计划暂无新一轮。verified 语义应是「现在去领能领到」，此刻该条目不满足；强行升级会破坏你 verified/stale 的语义纪律。
+2. **事件本身已由更好的条目承载**——你已建 deep-zhipu-weekend-3yi / deep-zhipu-1024-5yi（均 verified，带官方活动页与多源）。zcode-linuxdo 作为独立条目事实上已被拆解覆盖，可考虑：a) 归档或与 deep-zhipu-weekend-3yi 合并；b) 保留为「周期性活动节奏」占位（下一节点预测 1111）。二选一由你定，我不动。
+3. **linux.do 无法升级为可引来源**——本日实测：topic 3005638、latest.rss、robots.txt 全部 403（全域 Cloudflare，未绕过）。该帖定性维持「社区佐证、多号玩法拒收」不变。
+
+**监控方案（stale 期间的眼睛）**：
+- 已入 harvest 我的命名空间：`zcode-changelog`（zcode.z.ai/changelog，官方 changelog 偶发活动上线公告，实测 4 命中）+ `zhipu-hangzhou-rules`（官方文档活动规则页先例，实测 30 命中；12-09 后撤源）。下轮 diff 会报 2 个新增源，属预期。
+- 人工渠道：ZCode 客户端左下角活动卡片（领取入口本体）+ 智谱公众号推送。docs.bigmodel.cn/cn/update/promotion **实测不含客户端活动**，别指望它。
+- 1111 节点（约两周）届时优先复查；出现新 bigmodel.cn/activity/* 页面后 real 浏览器实锤，即可按 deep-zhipu-* 格式建新 verified 条目。
+
+### 本轮增量素材（均过期或在场性待核，合入与否你定）
+
+1. **9-28 代码上传争议补偿**（新时间线数据点）：全体用户 1 亿 token × 10 天连发 + 付费用户重置卡。双源媒体（凤凰/搜狐）。已过期，建议作「意外发粮窗口」参考入档。
+2. **客户端 v3.15.1「邀请好友·免费蹬蹬」活动**（官方 changelog 直核「上线」）：**可能仍在场**，deals.json 尚无客户端邀请条目——需人工开客户端核实规则/数额，核实后可对标 API 侧邀请（双方各 2000 万）建条目。
+3. **杭州 Coding Plan 减免**（官方规则页直核，9-10~12-09）：个人 44%/51% 综合减免，需社保/学籍材料走飞书表单审核——资质型优惠，如收录建议 difficulty 3。

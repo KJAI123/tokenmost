@@ -17,6 +17,8 @@
     {"id": "together-pricing", "name": "Together AI 定价", "url": "https://www.together.ai/pricing", "patterns": ["free", "\\$0"]},
     {"id": "cerebras-pricing", "name": "Cerebras 定价", "url": "https://www.cerebras.ai/pricing", "patterns": ["\\$5", "credit", "payment method"]},
     {"id": "mistral-usage-limits", "name": "Mistral 用量限额", "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits", "patterns": ["free", "Experiment", "limits"]},
-    {"id": "cohere-rate-limits", "name": "Cohere 限流", "url": "https://docs.cohere.com/docs/rate-limits", "patterns": ["1,000", "Trial", "req ?/ ?min"]}
+    {"id": "cohere-rate-limits", "name": "Cohere 限流", "url": "https://docs.cohere.com/docs/rate-limits", "patterns": ["1,000", "Trial", "req ?/ ?min"]},
+    {"id": "zcode-changelog", "name": "ZCode 官网更新日志", "url": "https://zcode.z.ai/changelog", "patterns": ["活动", "体验", "赠送", "邀请"]},
+    {"id": "zhipu-hangzhou-rules", "name": "智谱杭州 Coding Plan 活动规则", "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules", "patterns": ["减免", "Coding Plan", "额度"]}
   ]
 }
