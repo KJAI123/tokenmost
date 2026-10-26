@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-26T19:59:32Z",
+  "harvested_at": "2026-10-26T21:01:50Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -664,28 +664,40 @@
       "hits": 18,
       "findings": [
         {
+          "match": "$0.06/K images Amazon: Titan Embedd",
+          "context": "ectors are 1,024 dimensions by default with 384 and 256 selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.06/K images Amazon: Titan Embeddings G1 - Text Titan Embeddings G1 - Text 2 tokens Amazon Titan Embeddings G1 - Text is the first-generation Titan text"
+        },
+        {
+          "match": "$0.10/M tokens Amazon: Titan Text E",
+          "context": "per input and returns fixed 1,536-dimension vectors; the dimensions parameter is not supported. by amazon Oct 26, 2026 $0.10/M tokens Amazon: Titan Text Embeddings V2 Titan Text Embeddings V2 19 tokens Amazon Titan Text Embeddings V2 is a text embedding model for retrieval,"
+        },
+        {
+          "match": "$0.02/M tokens OpenAI: GPT-6.1 Terr",
+          "context": "s of 1,024 dimensions by default, with 512 and 256 also selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.02/M tokens OpenAI: GPT-6.1 Terra (batch) GPT-6.1 Terra (batch) Batch variant 39K tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1 se"
+        },
+        {
           "match": "$0.50 /M input tokens $2.50 /M outp",
-          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 1.19B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
+          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 2.15B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.59M tokens HeyGen Voice Turbo is a lower-latency version"
+          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.65M tokens HeyGen Voice Turbo is a lower-latency version"
         },
         {
           "match": "$2 /M input tokens $10 /M output",
-          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 168B tokens Flint is an open-weight mixture-of-experts model f"
+          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 169B tokens Flint is an open-weight mixture-of-experts model f"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 679M tokens Mammoth 1 is a 27B decision model from Base L"
+          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 682M tokens Mammoth 1 is a 27B decision model from Base L"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 455M tokens Elephant 1 is a 9B decision model from Base"
+          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 456M tokens Elephant 1 is a 9B decision model from Base"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 3.93B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
+          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 3.96B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
         },
         {
           "match": "$0.06 /M input tokens $0 /M output ",
@@ -697,43 +709,31 @@
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 416M tokens by nvidia Oct 21, 20"
+          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 420M tokens by nvidia Oct 21, 20"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 416M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.1M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It convert"
+          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 420M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.11M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It conver"
         },
         {
           "match": "$13/M characters Mistral: Voxtral",
-          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 41.7M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
+          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 41.8M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
         },
         {
           "match": "$0.000067/second Mistral: Voxtral Mini ",
-          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 12.5M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
+          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 12.6M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
         },
         {
           "match": "$0.000058/second MiniMax: MiniMax M3.1 ",
-          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 1.34T tokens Programming (#28) Science (#27) Technology (#27) MiniMax-M3.1-Flash is a multimoda"
+          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 5% off 1.38T tokens Programming (#28) Science (#27) Technology (#27) MiniMax-M3.1-Flash is a mu"
         },
         {
-          "match": "$0.10 /M input tokens $0.55 /M outp",
-          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.10 /M input tokens $0.55 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 38.1T tokens Academia (#1) Finance (#2) Health (#8"
+          "match": "$0.1425 /M input tokens $0.57 /M outp",
+          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.1425 /M input tokens $0.57 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 38.3T tokens Academia (#1) Finance (#2) Health (#8"
         },
         {
           "match": "$0.04 /M input tokens $0.50 /M outp",
-          "context": "reports that it exceeds V4 Pro on performance, speed, and task completion time. by deepseek Oct 17, 2026 1.05M context $0.04 /M input tokens $0.50 /M output tokens Elorian: Glimpse Glimpse 2.78B tokens Glimpse is a multimodal visual reasoning model from Elorian, built for v"
-        },
-        {
-          "match": "$0.60 /M input tokens $3 /M output ",
-          "context": "hysical-world use cases in robotics, construction, engineering, and manufacturing. by elorian Oct 17, 2026 262K context $0.60 /M input tokens $3 /M output tokens Qwen: Qwen Image 2.1 Turbo Qwen Image 2.1 Turbo 150M tokens Qwen Image 2.1 Turbo is the fast, lower-cost tier of"
-        },
-        {
-          "match": "$0.0184/image Qwen: Qwen Image 2.1 Pr",
-          "context": "and price matter more than peak fidelity. See Qwen Image 2.1 Pro for the higher-quality tier. by qwen Oct 16, 2026 from $0.0184/image Qwen: Qwen Image 2.1 Pro Qwen Image 2.1 Pro 69.6M tokens Qwen Image 2.1 Pro is an image generation and editing model from Qwen, the higher-qual"
-        },
-        {
-          "match": "$0.046/image List Table List Table L",
-          "context": "es. Choose it over Qwen Image 2.1 Turbo when output fidelity matters more than cost or speed. by qwen Oct 16, 2026 from $0.046/image List Table List Table List Table"
+          "context": "reports that it exceeds V4 Pro on performance, speed, and task completion time. by deepseek Oct 17, 2026 1.05M context $0.04 /M input tokens $0.50 /M output tokens List Table List Table List Table"
         }
       ]
     },
@@ -838,7 +838,7 @@
     {
       "id": "moonshot-pricing",
       "name": "Kimi 开放平台定价",
-      "url": "https://platform.moonshot.cn/docs/pricing/chat",
+      "url": "https://platform.kimi.com/docs/pricing/chat",
       "status": "ok",
       "hits": 1,
       "findings": [
@@ -855,6 +855,798 @@
       "status": "ok",
       "hits": 0,
       "findings": []
+    },
+    {
+      "id": "minimax-pricing",
+      "name": "MiniMax 开放平台定价",
+      "url": "https://platform.minimax.cn/docs/pricing/overview.md",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费额度",
+          "context": "tform.minimax.cn/user-center/payment/balance)  ### H3 系列旗舰模型         模型   输出分辨率   输出视频\\  每秒   输入视频\\  每秒   输入图片\\  每张\\  超出免费额度后            **MiniMax-H3**\\  画质优先，适合高品质视频创作   2K   ¥0.80   ¥0.80   ¥0.20        768P   ¥0.50   ¥0.50   ¥0.20        **M"
+        },
+        {
+          "match": "免费额度",
+          "context": "-Lite  > 支持  > 支持  > 支持  > 图片、视频、音频  >  >  >   ### H3 系列扩展模型         模型   输出分辨率   输出视频\\  每秒   输入视频\\  每秒   输入图片\\  每张\\  超出免费额度后            **MiniMax-H3-Max**\\  支持图片、视频和音频参考，适合多素材视频创作   768P   ¥0.50   ¥0.97   ¥0.50        480P   ¥0.33   ¥0.37   ¥0"
+        },
+        {
+          "match": "免费额度",
+          "context": ">  >  >   ### 视频再生成  将 MiniMax-H3 生成的 768P 视频再生成为 2K。  | **模型/接口** | **规格** | **输出视频** 每秒 | **输入视频** 每秒 | **输入图片** 每张 超出免费额度后 | | :- | :- | -: | -: | -: | | MiniMax-H3-Regeneration | 768P → 2K | ¥0.30 | ¥0.30 | ¥0.15 |  * 原任务的输入素材重新计费：图片前 **5 张"
+        },
+        {
+          "match": "新用户提供服务，历史付费用户可继续使用现有 API 服务；免费音乐生成接口（Music-3.0-free、",
+          "context": "| | image-01 image-01-live | 支持用户通过文本描述或参考图片生成图片 | 0.025 |  ## 音乐  > [!NOTE] > > 自 2026 年 8 月 20 日起，付费接口（音乐生成、歌词生成）不再面向新用户提供服务，历史付费用户可继续使用现有 API 服务；免费音乐生成接口（Music-3.0-free、Music-2.6-free、music-cover-free）停止服务。 > > 如需体验或使用音乐生成能力，可前往 [MiniMax Audio](https://www.minimax.cn/audio)，或使用已发布在 [Huggi"
+        },
+        {
+          "match": "赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 ",
+          "context": "— | | 总字符数量 | 2,000,000 字符 | 20,000,000 字符 | 200,000,000 字符 | —— | | 功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 HD 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性"
+        },
+        {
+          "match": "赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 ",
+          "context": "— | | 功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 HD 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## Turbo 系列  [立即购买](https://platform.minimax.cn/user-cent"
+        },
+        {
+          "match": "赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ",
+          "context": "个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## Turbo 系列  [立即购买](https://platform.minimax.cn/user-center/payment/subscription)  | **分类** | **语音套餐一** **（节省 10%）** | *"
+        },
+        {
+          "match": "赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 ",
+          "context": "| 总字符数量 | 2,000,000 字符 | 20,000,000 字符 | 200,000,000 字符 | —— | | 功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 Turbo 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 Turbo 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 Turbo 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的"
+        },
+        {
+          "match": "赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 ",
+          "context": "功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 Turbo 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 Turbo 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 Turbo 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## 视频资源包  [立即购买](https://platform.minimax.cn/user-cent"
+        },
+        {
+          "match": "赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ",
+          "context": "色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 Turbo 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 Turbo 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## 视频资源包  [立即购买](https://platform.minimax.cn/user-center/payment/subscription)  视频资源包支持 Hailuo 系列视频模型，暂不支持 MiniMax H3  需"
+        },
+        {
+          "match": "¥0.80   ¥0.80   ¥0.20        768P  ",
+          "context": "旗舰模型         模型   输出分辨率   输出视频\\  每秒   输入视频\\  每秒   输入图片\\  每张\\  超出免费额度后            **MiniMax-H3**\\  画质优先，适合高品质视频创作   2K   ¥0.80   ¥0.80   ¥0.20        768P   ¥0.50   ¥0.50   ¥0.20        **MiniMax-H3-Highspeed**\\  兼顾质量与速度，适合日常内容创作   768P   ¥0.40   ¥0.40   ¥0.20        **MiniMa"
+        },
+        {
+          "match": "¥0.50   ¥0.50   ¥0.20        **Mini",
+          "context": "输入视频\\  每秒   输入图片\\  每张\\  超出免费额度后            **MiniMax-H3**\\  画质优先，适合高品质视频创作   2K   ¥0.80   ¥0.80   ¥0.20        768P   ¥0.50   ¥0.50   ¥0.20        **MiniMax-H3-Highspeed**\\  兼顾质量与速度，适合日常内容创作   768P   ¥0.40   ¥0.40   ¥0.20        **MiniMax-H3-Lite**\\  更低的成本，适合创意尝试与批量生成   76"
+        },
+        {
+          "match": "¥0.40   ¥0.40   ¥0.20        **Mini",
+          "context": "¥0.80   ¥0.80   ¥0.20        768P   ¥0.50   ¥0.50   ¥0.20        **MiniMax-H3-Highspeed**\\  兼顾质量与速度，适合日常内容创作   768P   ¥0.40   ¥0.40   ¥0.20        **MiniMax-H3-Lite**\\  更低的成本，适合创意尝试与批量生成   768P   ¥0.26   ¥0.26   ¥0.13        480P   ¥0.16   ¥0.16   ¥0.13         * **图片输入**："
+        },
+        {
+          "match": "¥0.26   ¥0.26   ¥0.13        480P  ",
+          "context": "3-Highspeed**\\  兼顾质量与速度，适合日常内容创作   768P   ¥0.40   ¥0.40   ¥0.20        **MiniMax-H3-Lite**\\  更低的成本，适合创意尝试与批量生成   768P   ¥0.26   ¥0.26   ¥0.13        480P   ¥0.16   ¥0.16   ¥0.13         * **图片输入**：每次任务前 **5 张**免费，超出部分按张计费；单价不随图片或输出视频分辨率变化。 * **视频输入**：按输入时长及所选模型的输出分辨率计费。 * **"
+        },
+        {
+          "match": "¥0.16   ¥0.16   ¥0.13         * **图",
+          "context": "68P   ¥0.40   ¥0.40   ¥0.20        **MiniMax-H3-Lite**\\  更低的成本，适合创意尝试与批量生成   768P   ¥0.26   ¥0.26   ¥0.13        480P   ¥0.16   ¥0.16   ¥0.13         * **图片输入**：每次任务前 **5 张**免费，超出部分按张计费；单价不随图片或输出视频分辨率变化。 * **视频输入**：按输入时长及所选模型的输出分辨率计费。 * **任务类型**：同一模型、同一分辨率下，各任务类型单价相同；音频输入免费。"
+        },
+        {
+          "match": "¥0.50   ¥0.97   ¥0.50        480P  ",
+          "context": "型   输出分辨率   输出视频\\  每秒   输入视频\\  每秒   输入图片\\  每张\\  超出免费额度后            **MiniMax-H3-Max**\\  支持图片、视频和音频参考，适合多素材视频创作   768P   ¥0.50   ¥0.97   ¥0.50        480P   ¥0.33   ¥0.37   ¥0.50         * **MiniMax-H3-Max**：每次任务前 **2 张**图片免费，超出部分按张计费；输入视频按时长及输出分辨率计费。音频输入免费。  > **查看扩展模型任务类型**"
+        },
+        {
+          "match": "¥0.33   ¥0.37   ¥0.50         * **M",
+          "context": "输入图片\\  每张\\  超出免费额度后            **MiniMax-H3-Max**\\  支持图片、视频和音频参考，适合多素材视频创作   768P   ¥0.50   ¥0.97   ¥0.50        480P   ¥0.33   ¥0.37   ¥0.50         * **MiniMax-H3-Max**：每次任务前 **2 张**图片免费，超出部分按张计费；输入视频按时长及输出分辨率计费。音频输入免费。  > **查看扩展模型任务类型** > >  >  >  > 模型  > 文生 t2v  > 图生 i2v"
+        },
+        {
+          "match": "¥0.30 | ¥0.30 | ¥0.15 |  * 原任务的输入素材",
+          "context": "| **输出视频** 每秒 | **输入视频** 每秒 | **输入图片** 每张 超出免费额度后 | | :- | :- | -: | -: | -: | | MiniMax-H3-Regeneration | 768P → 2K | ¥0.30 | ¥0.30 | ¥0.15 |  * 原任务的输入素材重新计费：图片前 **5 张**免费，超出部分按张计费；视频按原输入时长计费；音频免费。 * 再生成费用在原任务费用之外单独收取，包含再生成视频输出费及输入素材费。  ### Context-IR  | **模型/接口** | **输入价格"
+        },
+        {
+          "match": "¥5.80 | ¥23.00 |  > **历史模型** > > | ",
+          "context": "。  ### Context-IR  | **模型/接口** | **输入价格** 每百万 tokens | **输出价格** 每百万 tokens | | :- | -: | -: | | MiniMax-H3-Context-IR | ¥5.80 | ¥23.00 |  > **历史模型** > > | **模型** | **功能** | **单价** 元/视频 | > | :- | :- | :- | > | MiniMax-Hailuo-2.3-Fast | 图生视频，768P 6s | 1.35 | > | MiniMax-Hailu"
+        },
+        {
+          "match": "¥0.025 元/次",
+          "context": "Plan 调用 API-vlm 时，会按其按量计费价格扣减套餐内 M Plan 额度；套餐内额度耗尽且已购积分可用时，超出部分可由已购积分自动补充支付。  🔔 **定价调整预告**：自2026年7月22日起，API-vlm 按量价格调整为 ¥0.025 元/次。M Plan 套餐内单次 API-vlm 调用扣减的 token 额度将同步减少，同等套餐可支持更多次调用。接口与能力保持不变，无需任何代码调整。  ## 服务端工具&#x20;  [立即充值](https://platform.mini"
+        },
+        {
+          "match": "¥630 | ¥5,950 | ¥56,000 | 基于量级的额外折",
+          "context": "*语音套餐一** **（节省 10%）** | **语音套餐二** **（节省 15%）** | **语音套餐三** **（节省 20%）** | **商务定制** | | :- | :- | :- | :- | :- | | 折扣价 | ¥630 | ¥5,950 | ¥56,000 | 基于量级的额外折扣 | | 原价 | ¥700 | ¥7,000 | ¥70,000 | —— | | 有效期 | 1 个月 | 3 个月 | 1 年 | —— | | 总字符数量 | 2,000,000 字符 | 20,000,000 字符 | 200,"
+        },
+        {
+          "match": "¥700 | ¥7,000 | ¥70,000 | —— | | 有",
+          "context": "* | **语音套餐三** **（节省 20%）** | **商务定制** | | :- | :- | :- | :- | :- | | 折扣价 | ¥630 | ¥5,950 | ¥56,000 | 基于量级的额外折扣 | | 原价 | ¥700 | ¥7,000 | ¥70,000 | —— | | 有效期 | 1 个月 | 3 个月 | 1 年 | —— | | 总字符数量 | 2,000,000 字符 | 20,000,000 字符 | 200,000,000 字符 | —— | | 功能 | 支持 T2A v2 / T2A asyn"
+        },
+        {
+          "match": "¥7,000 | ¥15,000 | ¥30,000 | ¥40",
+          "context": "包** **（节省 10%）** | **视频进阶包** **（节省 15%）** | **视频企业包** **（节省 20%）** | **商务定制** | | :- | :- | :- | :- | :- | :- | | 折扣价 | ¥7,000 | ¥15,000 | ¥30,000 | ¥40,000 | —— | | 原价 | ¥7,368 | ¥16,667 | ¥35,294 | ¥50,000 | | | 有效期 | 1 个月 | 1 个月 | 1 个月 | 1 个月 | —— | | 视频点数总量 | 3,680 |"
+        },
+        {
+          "match": "¥7,368 | ¥16,667 | ¥35,294 | ¥50",
+          "context": "** **（节省 20%）** | **商务定制** | | :- | :- | :- | :- | :- | :- | | 折扣价 | ¥7,000 | ¥15,000 | ¥30,000 | ¥40,000 | —— | | 原价 | ¥7,368 | ¥16,667 | ¥35,294 | ¥50,000 | | | 有效期 | 1 个月 | 1 个月 | 1 个月 | 1 个月 | —— | | 视频点数总量 | 3,680 | 8,330 | 17,650 | 25,000 | —— | | 功能 | 支持 video gene"
+        },
+        {
+          "match": "RPM = 120，若需提升可联系销售定制 | 1.0 | | Music-2.6（已",
+          "context": "iniMax/MiniMax-Music3) 的 MiniMax Music 3 开源模型。  | **模型** | **接口说明** | **单价** 元/首 | | :- | :- | :-: | | Music-3.0（已下线） | RPM = 120，若需提升可联系销售定制 | 1.0 | | Music-2.6（已下线） | RPM = 120，若需提升可联系销售定制 | 1.0 | | 歌词生成（已下线） | 歌词生成/编辑 | 0.05 |  > **历史模型** > > | **模型** | **接口说明** | **单价** 元/首 | >"
+        },
+        {
+          "match": "RPM = 120，若需提升可联系销售定制 | 1.0 | | 歌词生成（已下线） |",
+          "context": "**模型** | **接口说明** | **单价** 元/首 | | :- | :- | :-: | | Music-3.0（已下线） | RPM = 120，若需提升可联系销售定制 | 1.0 | | Music-2.6（已下线） | RPM = 120，若需提升可联系销售定制 | 1.0 | | 歌词生成（已下线） | 歌词生成/编辑 | 0.05 |  > **历史模型** > > | **模型** | **接口说明** | **单价** 元/首 | > | :- | :- | :-: | > | Music-2.5+（已下线） | 最新音乐生成模型，"
+        },
+        {
+          "match": "RPM：60 支持 HD 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2",
+          "context": "月 | 3 个月 | 1 年 | —— | | 总字符数量 | 2,000,000 字符 | 20,000,000 字符 | 200,000,000 字符 | —— | | 功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 HD 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限"
+        },
+        {
+          "match": "RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v",
+          "context": "200,000,000 字符 | —— | | 功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 HD 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## Turbo 系列  [立即购买](https://p"
+        },
+        {
+          "match": "RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/",
+          "context": "0 支持 HD 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 HD 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 HD 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## Turbo 系列  [立即购买](https://platform.minimax.cn/user-center/payment/subscription)  | **分类**"
+        },
+        {
+          "match": "RPM：200 支持 Turbo 系列模型 赠送 30 个快速克隆音色 | 支持 T2",
+          "context": "0,000,000 字符 | —— | | 功能 | 支持 T2A v2 / T2A async v2 接口 RPM：60 支持 Turbo 系列模型 赠送 10 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：200 支持 Turbo 系列模型 赠送 30 个快速克隆音色 | 支持 T2A v2 / T2A async v2 接口 RPM：500 支持 Turbo 系列模型 赠送 300 个快速克隆音色 | 无限 RPM/TPM 模型更新优先体验 专属的安全和稳定性保障 |  ## 视频资源包  [立即购买](https:"
+        }
+      ]
+    },
+    {
+      "id": "sambanova-rate-limits",
+      "name": "SambaNova 限流",
+      "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
+      "status": "ok",
+      "hits": 19,
+      "findings": [
+        {
+          "match": "RPM: Requests per minute   RPD: Requests pe",
+          "context": "y limit how many times each user can call the SambaNova API within a given interval.   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPD: Tokens per day (Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You"
+        },
+        {
+          "match": "RPM or RPD) depending on which one you reac",
+          "context": "(Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You can hit either limit type (RPM or RPD) depending on which one you reach first   You will be notified in every request response what the status of your rate limits are ( see rate limit respon"
+        },
+        {
+          "match": "Requests per minute (RPM) Requests per day (RPD) DeepSeek D",
+          "context": "n environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b 60 12000 Developer Model ID RPM RPD"
+        },
+        {
+          "match": "RPM RPD TPD DeepSeek DeepSeek-V3.1 20 20 20",
+          "context": "pSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.1 20 20 200000 Meta Meta-Llama-3.3-70B-Instruct 20 20 200000 OpenAI gpt-oss-120b 20 20 200000     ​ Preview model rate limits   Pr"
+        },
+        {
+          "match": "Requests per minute (RPM) Requests per day (RPD) DeepSeek D",
+          "context": "s. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 200000"
+        },
+        {
+          "match": "RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 20",
+          "context": "r minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 200000 Google gemma-4-31B-it 20 20 200000     ​ Rate limit response headers   These headers are found in every request res"
+        },
+        {
+          "match": "RPM (Requests per minute)     x-ratelimit-l",
+          "context": "hese headers are found in every request response and give information about the current status of rate limit usage.   ​ RPM (Requests per minute)     x-ratelimit-limit-requests – Maximum requests allowed per minute   x-ratelimit-remaining-requests – Remaining requests in current min"
+        },
+        {
+          "match": "RPD (Requests per day)     x-ratelimit-limi",
+          "context": "telimit-remaining-requests – Remaining requests in current minute   x-ratelimit-reset-requests – Time until reset     ​ RPD (Requests per day)     x-ratelimit-limit-requests-day – Maximum requests allowed per day   x-ratelimit-remaining-requests-day – Remaining requests in current d"
+        },
+        {
+          "match": "Free tier",
+          "context": "en interval.   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPD: Tokens per day (Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You can hit either limit type (RPM or RPD)"
+        },
+        {
+          "match": "Free Tier",
+          "context": "the administrator.   ​ SambaCloud rate limit tiers   SambaNova provides a few different rate limit tier offerings:     Free Tier : Applied when there is no payment method linked with your account   Developer Tier : Applied when a payment method is"
+        },
+        {
+          "match": "Free Tier",
+          "context": "intended for use in production environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3"
+        },
+        {
+          "match": "Free Tier",
+          "context": "sed in production environments. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "different rate limit tier offerings:     Free Tier : Applied when there is no payment method linked with your account   Developer Tier : Applied when a payment method is linked with your account     For higher rate limit access, please contact the SambaN"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "ss, please contact the SambaNova sales team .   Please see the Billing page to link a payment method to your account.   Developer Tier accounts are limited to 20M tokens per day across all models.     ​ Production model rate limits   Production models ar"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "ion models are intended for use in production environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "should not be used in production environments. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google ge"
+        },
+        {
+          "match": "RPM",
+          "context": "et SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b"
+        },
+        {
+          "match": "RPM",
+          "context": "limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD D"
+        },
+        {
+          "match": "20M",
+          "context": "team .   Please see the Billing page to link a payment method to your account.   Developer Tier accounts are limited to 20M tokens per day across all models.     ​ Production model rate limits   Production models are intended for use in produc"
+        }
+      ]
+    },
+    {
+      "id": "together-pricing",
+      "name": "Together AI 定价",
+      "url": "https://www.together.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$3.00 $0.30  (cached) $15.00 Qwen3.",
+          "context": "hing went wrong while submitting the form. Price per 1M tokens Batch API price Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Mu"
+        },
+        {
+          "match": "$2.00 $0.25  (cached) $6.00 GLM-5.3",
+          "context": "e per 1M tokens Batch API price Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 Tev1"
+        },
+        {
+          "match": "$1.40 $0.26  (cached) $4.40 GLM-5.3",
+          "context": "l       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.04 Free Reflectio"
+        },
+        {
+          "match": "$0.15 $0.03  (cached) $0.50 Muse Sp",
+          "context": "$0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.04 Free Reflection Beam $0.40 $0.04  (cached) $1.20 MiniMax"
+        },
+        {
+          "match": "$1.25 $0.15  (cached) $4.25 Tev1 4B",
+          "context": ".00 $0.25  (cached) $6.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.04 Free Reflection Beam $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 Dee"
+        },
+        {
+          "match": "$0.04 Free Reflection Beam $0.40 $0",
+          "context": "ached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.04 Free Reflection Beam $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.2"
+        },
+        {
+          "match": "$1.20 MiniMax M3.1 Flash $0.15 $0.0",
+          "context": "$0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.04 Free Reflection Beam $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  (cached) $1.20 Qwen3.7-"
+        },
+        {
+          "match": "$0.60 DeepSeek V4.1 Flash 1017 $0.3",
+          "context": "5 Tev1 4B Experimental $0.04 Free Reflection Beam $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  (cached) $1.20 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $"
+        },
+        {
+          "match": "$0.006  (cached) $1.20 MiniMax M3 $0",
+          "context": "lection Beam $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  (cached) $1.20 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B $0.00 $0.00 In"
+        },
+        {
+          "match": "$0.06  (cached) $1.20 Qwen3.7-Plus ",
+          "context": "MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  (cached) $1.20 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B $0.00 $0.00 Inkling $1.00 $0.17  (cached) $4.05 DeepS"
+        },
+        {
+          "match": "$0.32 $1.28 GLM-5.2 $1.40 $0.26  (c",
+          "context": "cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  (cached) $1.20 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B $0.00 $0.00 Inkling $1.00 $0.17  (cached) $4.05 DeepSeek V4 Pro 0813 $1.32 $0.13  (cache"
+        },
+        {
+          "match": "$4.40 Ternary Bonsai 27B $0.00 $0.0",
+          "context": "30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  (cached) $1.20 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B $0.00 $0.00 Inkling $1.00 $0.17  (cached) $4.05 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA"
+        },
+        {
+          "match": "$1.00 $0.17  (cached) $4.05 DeepSee",
+          "context": ".06  (cached) $1.20 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B $0.00 $0.00 Inkling $1.00 $0.17  (cached) $4.05 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $"
+        },
+        {
+          "match": "$1.32 $0.13  (cached) $3.96 Qwen3.8",
+          "context": "5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B $0.00 $0.00 Inkling $1.00 $0.17  (cached) $4.05 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Qwen3.7-Max $1.50 $0.30  (cached) $4.50 Deep"
+        },
+        {
+          "match": "$0.15 $0.47 NVIDIA Nemotron 3.5 Sup",
+          "context": "nsai 27B $0.00 $0.00 Inkling $1.00 $0.17  (cached) $4.05 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Qwen3.7-Max $1.50 $0.30  (cached) $4.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1."
+        },
+        {
+          "match": "$0.15 $0.02  (cached) $0.50 Qwen3.7",
+          "context": "(cached) $4.05 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Qwen3.7-Max $1.50 $0.30  (cached) $4.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached)"
+        },
+        {
+          "match": "$1.50 $0.30  (cached) $4.50 DeepSee",
+          "context": "32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Qwen3.7-Max $1.50 $0.30  (cached) $4.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5-"
+        },
+        {
+          "match": "$0.30 $0.006  (cached) $1.20 Muse G",
+          "context": "47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Qwen3.7-Max $1.50 $0.30  (cached) $4.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35  (cached) $3.60 Qwen3.5 9B"
+        },
+        {
+          "match": "$0.35 $0.04  (cached) $1.50 gpt-oss",
+          "context": "cached) $0.50 Qwen3.7-Max $1.50 $0.30  (cached) $4.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35  (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Cogito v2.1 671B $1.25 $1.25 Rnj-"
+        },
+        {
+          "match": "$0.15 $0.60 Qwen3.5-397B-A17B $0.60",
+          "context": "ached) $4.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35  (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50"
+        },
+        {
+          "match": "$0.35  (cached) $3.60 Qwen3.5 9B $0",
+          "context": "30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35  (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0."
+        },
+        {
+          "match": "$0.25 Cogito v2.1 671B $1.25 $1.25 ",
+          "context": "30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5-397B-A17B $0.60 $0.35  (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Llama 3 8B Instruct Lite $0.14"
+        },
+        {
+          "match": "$0.15 $0.15 Qwen3.6-Plus $0.50 $3.0",
+          "context": "$0.60 Qwen3.5-397B-A17B $0.60 $0.35  (cached) $3.60 Qwen3.5 9B $0.17 $0.25 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Llama 3 8B Instruct Lite $0.14 $0.14 Qwen3 235B A22B Instruct 2507 FP8 Throughpu"
+        },
+        {
+          "match": "$0.30 $0.30 Llama 3 8B Instruct Lit",
+          "context": "$0.17 $0.25 Cogito v2.1 671B $1.25 $1.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Llama 3 8B Instruct Lite $0.14 $0.14 Qwen3 235B A22B Instruct 2507 FP8 Throughput $0.20 $0.60 Displayed prices refer to the lowest resolution/d"
+        },
+        {
+          "match": "$0.14 $0.14 Qwen3 235B A22B Instruc",
+          "context": "1.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Llama 3 8B Instruct Lite $0.14 $0.14 Qwen3 235B A22B Instruct 2507 FP8 Throughput $0.20 $0.60 Displayed prices refer to the lowest resolution/duration settings. Actual prices might"
+        },
+        {
+          "match": "$0.20 $0.60 Displayed prices refer ",
+          "context": "Qwen2.5 7B Instruct Turbo $0.30 $0.30 Llama 3 8B Instruct Lite $0.14 $0.14 Qwen3 235B A22B Instruct 2507 FP8 Throughput $0.20 $0.60 Displayed prices refer to the lowest resolution/duration settings. Actual prices might vary. Price per 1M tokens Model       Input     output"
+        },
+        {
+          "match": "$3.00 $0.30  (cached) $15.00 Qwen3.",
+          "context": "st resolution/duration settings. Actual prices might vary. Price per 1M tokens Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached)"
+        },
+        {
+          "match": "$2.00 $0.25  (cached) $6.00 GLM-5.3",
+          "context": "might vary. Price per 1M tokens Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached)"
+        },
+        {
+          "match": "$0.15 $0.03  (cached) $0.50 Muse Sp",
+          "context": "Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.0"
+        },
+        {
+          "match": "$1.25 $0.15  (cached) $4.25 MiniMax",
+          "context": "(cached) $15.00 Qwen3.8-2.4T-A95B $2.00 $0.25  (cached) $6.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 MiniMax M3 $0.30 $0.06  ("
+        }
+      ]
+    },
+    {
+      "id": "cerebras-pricing",
+      "name": "Cerebras 定价",
+      "url": "https://www.cerebras.ai/pricing",
+      "status": "ok",
+      "hits": 7,
+      "findings": [
+        {
+          "match": "$5 promotional credit. The credi",
+          "context": "ation; not intended for production use. ** Available by agreement. *** Add a valid payment method to receive a one-time $5 promotional credit. The credit expires 30 days after activation. You will not be charged or automatically enrolled in paid usage. API and Playground"
+        },
+        {
+          "match": "credit",
+          "context": "nded for production use. ** Available by agreement. *** Add a valid payment method to receive a one-time $5 promotional credit. The credit expires 30 days after activation. You will not be charged or automatically enrolled in paid usage. API and"
+        },
+        {
+          "match": "credit",
+          "context": "duction use. ** Available by agreement. *** Add a valid payment method to receive a one-time $5 promotional credit. The credit expires 30 days after activation. You will not be charged or automatically enrolled in paid usage. API and Playground a"
+        },
+        {
+          "match": "credit",
+          "context": "ivation. You will not be charged or automatically enrolled in paid usage. API and Playground access will pause when the credit expires or is exhausted unless you separately purchase PayGo credits. Promotional credits are non-transferable, have no"
+        },
+        {
+          "match": "credit",
+          "context": "sage. API and Playground access will pause when the credit expires or is exhausted unless you separately purchase PayGo credits. Promotional credits are non-transferable, have no cash value, and may be withheld or revoked in cases of fraud, abuse"
+        },
+        {
+          "match": "credit",
+          "context": "und access will pause when the credit expires or is exhausted unless you separately purchase PayGo credits. Promotional credits are non-transferable, have no cash value, and may be withheld or revoked in cases of fraud, abuse, or duplicate accoun"
+        },
+        {
+          "match": "payment method",
+          "context": "velopment, evaluation, and experimentation; not intended for production use. ** Available by agreement. *** Add a valid payment method to receive a one-time $5 promotional credit. The credit expires 30 days after activation. You will not be charged or au"
+        }
+      ]
+    },
+    {
+      "id": "mistral-usage-limits",
+      "name": "Mistral 用量限额",
+      "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "Free",
+          "context": "usage, and limits   Your Mistral plan defines the included monthly usage and limits available to your Organization.     Free mode lets you create API keys and use included monthly usage within the limits shown on the Limits page.   Pay-as-you-g"
+        },
+        {
+          "match": "limits",
+          "context": "Usage and limits | Mistral Docs Docs & API Search docs ⌘K Vibe Studio Inference & Models Admin Resources API Reference Search docs ⌘K To"
+        },
+        {
+          "match": "limits",
+          "context": "our Organization Access and permissions Configure Workspaces Billing and usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to unders"
+        },
+        {
+          "match": "limits",
+          "context": "nd usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits"
+        },
+        {
+          "match": "limits",
+          "context": "tions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page"
+        },
+        {
+          "match": "limits",
+          "context": "Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage"
+        },
+        {
+          "match": "limits",
+          "context": "limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API ra"
+        },
+        {
+          "match": "limits",
+          "context": "on consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use"
+        },
+        {
+          "match": "limits",
+          "context": "s and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages dep"
+        },
+        {
+          "match": "limits",
+          "context": "ply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you ne"
+        },
+        {
+          "match": "limits",
+          "context": "global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:"
+        },
+        {
+          "match": "limits",
+          "context": "ending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:   Task Admin Panel page Review usage and c"
+        },
+        {
+          "match": "limits",
+          "context": "o check or change:   Task Admin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspac"
+        },
+        {
+          "match": "Limits",
+          "context": "dmin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspace spending limit Admin Pane"
+        },
+        {
+          "match": "limits",
+          "context": "ling period. Use it to understand spend, identify heavy usage areas, and decide whether to adjust Workspace caps or API limits.   The dashboard can show:     total cost;   cost per day;   completion usage;   Vibe usage beyond quota;   OCR usage;"
+        },
+        {
+          "match": "limits",
+          "context": "recent invoice payments fail, access can also be affected until the payments are processed again.   Workspace spending limits cannot exceed the Organization spending limit. To manage payments, credits, billing information, and invoices, see Bill"
+        },
+        {
+          "match": "limits",
+          "context": "tion spending limit. To manage payments, credits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspac"
+        },
+        {
+          "match": "limits",
+          "context": "dits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspace. Use Workspace caps to model team budgets,"
+        },
+        {
+          "match": "limits",
+          "context": "ab.   Set Monthly spending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can s"
+        },
+        {
+          "match": "limits",
+          "context": "ending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown"
+        },
+        {
+          "match": "limits",
+          "context": ".     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ ."
+        },
+        {
+          "match": "limits",
+          "context": "orkspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate"
+        },
+        {
+          "match": "Limits",
+          "context": "rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and"
+        },
+        {
+          "match": "limits",
+          "context": "define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minu"
+        },
+        {
+          "match": "limits",
+          "context": "n can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the m"
+        },
+        {
+          "match": "limits",
+          "context": "n in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the model.   Requests per seco"
+        },
+        {
+          "match": "limits",
+          "context": "oken throughput limit for the model.   Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds pe"
+        },
+        {
+          "match": "limits",
+          "context": "Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month."
+        },
+        {
+          "match": "limits",
+          "context": "second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document O"
+        },
+        {
+          "match": "limits",
+          "context": "o audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document OCR rate limits Copy section link Document OCR rate limits   Document OCR limits apply to OCR API consumption and can include pages per"
+        }
+      ]
+    },
+    {
+      "id": "cohere-rate-limits",
+      "name": "Cohere 限流",
+      "url": "https://docs.cohere.com/docs/rate-limits",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "1,000",
+          "context": "you intend to use those models in production.   Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contac"
+        },
+        {
+          "match": "1,000",
+          "context": "2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above)"
+        },
+        {
+          "match": "trial",
+          "context": "valuation keys (free but limited in usage), and production keys (paid and much less limited in usage). You can create a trial or production key on the API keys page . For more details on pricing please see our pricing docs .   Prod keys work lik"
+        },
+        {
+          "match": "trial",
+          "context": "r production key on the API keys page . For more details on pricing please see our pricing docs .   Prod keys work like trial keys for newer model variants such as Command A Reasoning. Please contact sales@cohere.com if you intend to use those m"
+        },
+        {
+          "match": "Trial",
+          "context": "ariants such as Command A Reasoning. Please contact sales@cohere.com if you intend to use those models in production.   Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Mode"
+        },
+        {
+          "match": "Trial",
+          "context": "eys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Cont"
+        },
+        {
+          "match": "Trial",
+          "context": "min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@cohere.com Embed 2,000 inputs / min 2,0"
+        },
+        {
+          "match": "req / min",
+          "context": "limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Con"
+        },
+        {
+          "match": "req / min",
+          "context": "Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contac"
+        },
+        {
+          "match": "req / min",
+          "context": "20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Co"
+        },
+        {
+          "match": "req / min",
+          "context": "ing 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req /"
+        },
+        {
+          "match": "req / min",
+          "context": "d A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 r"
+        },
+        {
+          "match": "req / min",
+          "context": "20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North"
+        },
+        {
+          "match": "req / min",
+          "context": "es@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min"
+        },
+        {
+          "match": "req / min",
+          "context": "Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min"
+        },
+        {
+          "match": "req / min",
+          "context": "/ min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints"
+        },
+        {
+          "match": "req / min",
+          "context": "sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Tria"
+        },
+        {
+          "match": "req / min",
+          "context": "A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production r"
+        },
+        {
+          "match": "req / min",
+          "context": "n 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audi"
+        },
+        {
+          "match": "req / min",
+          "context": "req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min"
+        },
+        {
+          "match": "req / min",
+          "context": "req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@"
+        },
+        {
+          "match": "req / min",
+          "context": "req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@cohere.com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min Emb"
+        },
+        {
+          "match": "req / min",
+          "context": "sales@cohere.com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / m"
+        },
+        {
+          "match": "req / min",
+          "context": ".com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (a"
+        },
+        {
+          "match": "req / min",
+          "context": "uts / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered"
+        },
+        {
+          "match": "req / min",
+          "context": "inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req /"
+        },
+        {
+          "match": "req / min",
+          "context": "ges) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If"
+        },
+        {
+          "match": "req / min",
+          "context": "min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If you have any qu"
+        },
+        {
+          "match": "req / min",
+          "context": "EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If you have any questions or want to s"
+        },
+        {
+          "match": "req / min",
+          "context": "q / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If you have any questions or want to speak about get"
+        }
+      ]
+    },
+    {
+      "id": "zcode-changelog",
+      "name": "ZCode 官网更新日志",
+      "url": "https://zcode.z.ai/changelog",
+      "status": "ok",
+      "hits": 4,
+      "findings": [
+        {
+          "match": "活动",
+          "context": "进入主界面。   修复多个 Agent 并行执行或连续调用模型时，部分请求异常失败的问题，提升并行任务的稳定性。   3.15.1 发布于 2026年10月12日 Release v3.15.1 新功能     邀请好友·免费蹬蹬，共得权益活动上线。   支持订阅用户随机获得 GLM HighSpeed 体验。   更新“自主模式”，危险命令执行前会先征求确认。   新增可视化交互界面，在消息流中更直观的展示信息。   新增支持 UI 插件（MCP App）。   工作流支持创建"
+        },
+        {
+          "match": "体验",
+          "context": "部分请求异常失败的问题，提升并行任务的稳定性。   3.15.1 发布于 2026年10月12日 Release v3.15.1 新功能     邀请好友·免费蹬蹬，共得权益活动上线。   支持订阅用户随机获得 GLM HighSpeed 体验。   更新“自主模式”，危险命令执行前会先征求确认。   新增可视化交互界面，在消息流中更直观的展示信息。   新增支持 UI 插件（MCP App）。   工作流支持创建前调参、运行中改并发和保存复跑。   工作流可为每个子代理单独指定"
+        },
+        {
+          "match": "体验",
+          "context": "026年10月9日 Release v3.14.5 问题修复     手动重置后，剩余重置机会的数量会保留显示。   3.14.4 发布于 2026年9月29日 Release v3.14.4 问题修复     为了进一步优化免费套餐的使用体验，关闭模型请求验证码校验。   3.14.3 发布于 2026年9月22日 Release v3.14.3 新功能     运行中的工作流可直接调整并发上限，无需停止任务。   优化了工作流修改和重启时的复用逻辑。   优化了大型工作流的实"
+        },
+        {
+          "match": "邀请",
+          "context": "再因引导判断被卡住，可以及时进入主界面。   修复多个 Agent 并行执行或连续调用模型时，部分请求异常失败的问题，提升并行任务的稳定性。   3.15.1 发布于 2026年10月12日 Release v3.15.1 新功能     邀请好友·免费蹬蹬，共得权益活动上线。   支持订阅用户随机获得 GLM HighSpeed 体验。   更新“自主模式”，危险命令执行前会先征求确认。   新增可视化交互界面，在消息流中更直观的展示信息。   新增支持 UI 插件（MCP A"
+        }
+      ]
+    },
+    {
+      "id": "zhipu-hangzhou-rules",
+      "name": "智谱杭州 Coding Plan 活动规则",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "新用户可领取 1 亿 Token 体验额度，另有周末赠送 Token 等不定期专属活动",
+          "context": "中率带来更快的响应与更长的可用时长，同时支持 BYOK 接入。   智谱 Coding Plan 用户在 ZCode 中登录使用，即可享受限时 1.5 倍使用额度：同等调用量仅按 67% 扣减，套餐更耐用，并可与非高峰时段 5 折抵扣叠加。新用户可领取 1 亿 Token 体验额度，另有周末赠送 Token 等不定期专属活动。     下载 ZCode   ​ 搭配 AI 办公产品：智谱 AutoClaw       AutoClaw｜智谱官方桌面端 AI Agent for Work   AutoClaw 是深度适配 GLM 模型的桌面端 AI Agent"
+        },
+        {
+          "match": "新用户可领取 1 亿 Token 体验额度，另有周末赠送 Token 等不定期专属活动",
+          "context": "n`,_jsx(_components.li,{children:`智谱 Coding Plan 用户在 ZCode 中登录使用，即可享受限时 1.5 倍使用额度：同等调用量仅按 67% 扣减，套餐更耐用，并可与非高峰时段 5 折抵扣叠加。新用户可领取 1 亿 Token 体验额度，另有周末赠送 Token 等不定期专属活动。`}),`\\n`]}),`\\n`,_jsx(_components.p,{children:_jsx(_components.a,{href:`https://zcode.z.ai/`,children:`下载 ZCode`})}),`\\"
+        },
+        {
+          "match": "减免",
+          "context": "。活动组织方为浙江智谱新篇科技有限公司，负责本次活动全流程的组织与运营保障工作。活动时间为9月10日至12月9日，欢迎各位用户参与。   ​ 二、活动规则       个人用户申请介绍：     谁能申请：在杭工作人员/杭州高校在校生   减免标准：个人用户购买季卡可享受 44% 综合减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策："
+        },
+        {
+          "match": "减免",
+          "context": "次活动全流程的组织与运营保障工作。活动时间为9月10日至12月9日，欢迎各位用户参与。   ​ 二、活动规则       个人用户申请介绍：     谁能申请：在杭工作人员/杭州高校在校生   减免标准：个人用户购买季卡可享受 44% 综合减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免"
+        },
+        {
+          "match": "减免",
+          "context": "活动时间为9月10日至12月9日，欢迎各位用户参与。   ​ 二、活动规则       个人用户申请介绍：     谁能申请：在杭工作人员/杭州高校在校生   减免标准：个人用户购买季卡可享受 44% 综合减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 35"
+        },
+        {
+          "match": "减免",
+          "context": "个人用户申请介绍：     谁能申请：在杭工作人员/杭州高校在校生   减免标准：个人用户购买季卡可享受 44% 综合减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/"
+        },
+        {
+          "match": "减免",
+          "context": "校生   减免标准：个人用户购买季卡可享受 44% 综合减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元"
+        },
+        {
+          "match": "减免",
+          "context": "4% 综合减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 L"
+        },
+        {
+          "match": "减免",
+          "context": "减免，购买年卡可享受 51% 综合减免   数量限制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 Lite 版"
+        },
+        {
+          "match": "减免",
+          "context": "制：每人仅限享受 1 次，季卡和年卡二选一，不可重复购买，整体的减免金额达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 Lite 版 年卡 1416 元/年 减免 51% 693.8"
+        },
+        {
+          "match": "减免",
+          "context": "达到上限后，不再发放。   个人版的 Coding 套餐具体的减免政策：     套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 Lite 版 年卡 1416 元/年 减免 51% 693.84 元/年 Pro 版 年卡 6456 元 /年 减免 51% 3163"
+        },
+        {
+          "match": "减免",
+          "context": "套餐 付费周期及原价 综合减免比例 减免后实付价 Lite 版 季卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 Lite 版 年卡 1416 元/年 减免 51% 693.84 元/年 Pro 版 年卡 6456 元 /年 减免 51% 3163.44 元/年 Max 版 年卡 12936 元 /年 减免 51% 6"
+        },
+        {
+          "match": "减免",
+          "context": "卡 354 元/季 减免 44% 198.24 元/季 Pro 版 季卡 1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 Lite 版 年卡 1416 元/年 减免 51% 693.84 元/年 Pro 版 年卡 6456 元 /年 减免 51% 3163.44 元/年 Max 版 年卡 12936 元 /年 减免 51% 6338.64 元/年     申请流程：BigModel 平台进行「 个人实"
+        },
+        {
+          "match": "减免",
+          "context": "1614 元/季 减免 44% 903.84 元/季 Max 版 季卡 3234 元/季 减免 44% 1811.04 元/季 Lite 版 年卡 1416 元/年 减免 51% 693.84 元/年 Pro 版 年卡 6456 元 /年 减免 51% 3163.44 元/年 Max 版 年卡 12936 元 /年 减免 51% 6338.64 元/年     申请流程：BigModel 平台进行「 个人实名认证 」 > 提交表单申请 > 平台进行资质审核> 审核通过，收到短信通"
+        },
+        {
+          "match": "减免",
+          "context": "4 元/季 减免 44% 1811.04 元/季 Lite 版 年卡 1416 元/年 减免 51% 693.84 元/年 Pro 版 年卡 6456 元 /年 减免 51% 3163.44 元/年 Max 版 年卡 12936 元 /年 减免 51% 6338.64 元/年     申请流程：BigModel 平台进行「 个人实名认证 」 > 提交表单申请 > 平台进行资质审核> 审核通过，收到短信通知 > 个人版套餐选购 > 直接享受减免后价格   资质审核标准：在杭工作人员"
+        },
+        {
+          "match": "减免",
+          "context": "ax 版 年卡 12936 元 /年 减免 51% 6338.64 元/年     申请流程：BigModel 平台进行「 个人实名认证 」 > 提交表单申请 > 平台进行资质审核> 审核通过，收到短信通知 > 个人版套餐选购 > 直接享受减免后价格   资质审核标准：在杭工作人员需提供杭州市的社保参保证明；杭州高校在校生，需要提供学信网的在线验证报告，证明为杭州高校在校生。         企业用户申请介绍：     谁能申请：杭州市上城区的企业主体   减免标准：企业用户购买"
+        },
+        {
+          "match": "减免",
+          "context": "选购 > 直接享受减免后价格   资质审核标准：在杭工作人员需提供杭州市的社保参保证明；杭州高校在校生，需要提供学信网的在线验证报告，证明为杭州高校在校生。         企业用户申请介绍：     谁能申请：杭州市上城区的企业主体   减免标准：企业用户购买年卡可享受 55% 综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 1"
+        },
+        {
+          "match": "减免",
+          "context": "：在杭工作人员需提供杭州市的社保参保证明；杭州高校在校生，需要提供学信网的在线验证报告，证明为杭州高校在校生。         企业用户申请介绍：     谁能申请：杭州市上城区的企业主体   减免标准：企业用户购买年卡可享受 55% 综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 5"
+        },
+        {
+          "match": "减免",
+          "context": "人员需提供杭州市的社保参保证明；杭州高校在校生，需要提供学信网的在线验证报告，证明为杭州高校在校生。         企业用户申请介绍：     谁能申请：杭州市上城区的企业主体   减免标准：企业用户购买年卡可享受 55% 综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免"
+        },
+        {
+          "match": "减免",
+          "context": "社保参保证明；杭州高校在校生，需要提供学信网的在线验证报告，证明为杭州高校在校生。         企业用户申请介绍：     谁能申请：杭州市上城区的企业主体   减免标准：企业用户购买年卡可享受 55% 综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免 55% 企业实付"
+        },
+        {
+          "match": "减免",
+          "context": "企业用户申请介绍：     谁能申请：杭州市上城区的企业主体   减免标准：企业用户购买年卡可享受 55% 综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免 55% 企业实付 3229.2 元/席位/年 6469.2 元/年/席位 企业首批减免上限 原则上不超"
+        },
+        {
+          "match": "减免",
+          "context": "55% 综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免 55% 企业实付 3229.2 元/席位/年 6469.2 元/年/席位 企业首批减免上限 原则上不超过 100 万元/家 原则上不超过 100 万元/家 付费方式 原则上仅支持年度付费 原则上仅支持年度付费"
+        },
+        {
+          "match": "减免",
+          "context": "综合减免   减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免 55% 企业实付 3229.2 元/席位/年 6469.2 元/年/席位 企业首批减免上限 原则上不超过 100 万元/家 原则上不超过 100 万元/家 付费方式 原则上仅支持年度付费 原则上仅支持年度付费     申请流"
+        },
+        {
+          "match": "减免",
+          "context": "减免限制：单家企业减免上限为 100 万元，仅支持购买年度套餐。   团队版的 Coding 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免 55% 企业实付 3229.2 元/席位/年 6469.2 元/年/席位 企业首批减免上限 原则上不超过 100 万元/家 原则上不超过 100 万元/家 付费方式 原则上仅支持年度付费 原则上仅支持年度付费     申请流程：BigMo"
+        },
+        {
+          "match": "减免",
+          "context": "ng 套餐具体的减免政策：     项目 标准版 高级版 企业版年卡原价 7176 元/席位/年 14376 元/席位/年 综合减免比例 减免 55% 减免 55% 企业实付 3229.2 元/席位/年 6469.2 元/年/席位 企业首批减免上限 原则上不超过 100 万元/家 原则上不超过 100 万元/家 付费方式 原则上仅支持年度付费 原则上仅支持年度付费     申请流程：BigModel 平台进行「 企业实名认证 」 > 提交表单申请 > 平台进行资质审核 > 商务沟"
+        },
+        {
+          "match": "减免",
+          "context": "/家 原则上不超过 100 万元/家 付费方式 原则上仅支持年度付费 原则上仅支持年度付费     申请流程：BigModel 平台进行「 企业实名认证 」 > 提交表单申请 > 平台进行资质审核 > 商务沟通 >签署合同协议 > 直接享受减免后价格   支持从未购买过团队套餐的企业申请，以及购买过团队套餐的企业新增席位。         购买与支付说明（适用于个人用户）     收款安排：本活动项下用户购买优惠套餐所支付的全部款项，均由浙江智谱新篇科技有限公司收取或由其指定的集"
+        },
+        {
+          "match": "减免",
+          "context": "适用于个人用户）     收款安排：本活动项下用户购买优惠套餐所支付的全部款项，均由浙江智谱新篇科技有限公司收取或由其指定的集团内其他关联公司代收，相关发票由浙江智谱新篇科技有限公司开具。   退款规则：本活动套餐为限时普惠权益，已享受综合减免。个人用户套餐一经购买并激活或开始使用，不支持退款（包括无理由退款）、不支持转让、不支持按剩余周期折算退费，请在购买前确认套餐版本与付费周期；企业用户的购买及退款事宜，以双方签署的合同约定为准。因平台原因导致服务无法提供，或法律法规另有规定"
+        },
+        {
+          "match": "减免",
+          "context": "如对活动规则、申请流程或资质审核有疑问，欢迎扫码加入答疑交流群，问题与建议都可以在群里反馈。   答疑交流群 飞书扫码入群   咨询活动规则   反馈申请问题   获取最新资讯     ​ 八、常见问题   Q1 · 哪些用户可以享受减免？ 个人用户需为 在杭工作人员 或 杭州高校在校生 ；企业用户需为 杭州市上城区 的企业主体。 Q2 · V1/V2 老套餐升级到 V3 套餐能享受减免吗？ 本次减免 支持升级场景 ：通过升级方式（含 V1/V2 升级至 V3、V2/V3"
+        },
+        {
+          "match": "减免",
+          "context": "反馈申请问题   获取最新资讯     ​ 八、常见问题   Q1 · 哪些用户可以享受减免？ 个人用户需为 在杭工作人员 或 杭州高校在校生 ；企业用户需为 杭州市上城区 的企业主体。 Q2 · V1/V2 老套餐升级到 V3 套餐能享受减免吗？ 本次减免 支持升级场景 ：通过升级方式（含 V1/V2 升级至 V3、V2/V3 套餐内升级）开通的套餐可以享受减免。 Q3 · 名下已有套餐，再买新版能享受减免吗？ 将名下的已有套餐进行 套餐升级 ，方可享受减免；套餐 续订 费用不"
+        },
+        {
+          "match": "减免",
+          "context": "获取最新资讯     ​ 八、常见问题   Q1 · 哪些用户可以享受减免？ 个人用户需为 在杭工作人员 或 杭州高校在校生 ；企业用户需为 杭州市上城区 的企业主体。 Q2 · V1/V2 老套餐升级到 V3 套餐能享受减免吗？ 本次减免 支持升级场景 ：通过升级方式（含 V1/V2 升级至 V3、V2/V3 套餐内升级）开通的套餐可以享受减免。 Q3 · 名下已有套餐，再买新版能享受减免吗？ 将名下的已有套餐进行 套餐升级 ，方可享受减免；套餐 续订 费用不享受减免。 Q"
+        }
+      ]
     }
   ]
 }

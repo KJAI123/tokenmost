@@ -35,10 +35,12 @@ MAX_REMOVED = 5                   # 告警里每源最多列几条消失命中
 
 
 def fingerprint(entry: dict) -> str:
-    """命中内容的指纹：任一 match/context 变了指纹就变。"""
-    parts = ["{}|{}".format(h.get("match", ""), h.get("context", ""))
-             for h in entry.get("findings", [])]
-    return hashlib.sha256("\n".join(parts).encode("utf-8")).hexdigest()
+    """命中内容的指纹：只取 match 集合（去重排序）。
+
+    动态页的上下文措辞会漂移（如 openrouter 免费模型页），context 不入指纹，
+    避免「页面没变、措辞变了」的误报；关键词出现集合的变化才是真信号。"""
+    matches = sorted({h.get("match", "").strip() for h in entry.get("findings", [])})
+    return hashlib.sha256("\n".join(matches).encode("utf-8")).hexdigest()
 
 
 def index_results(state: dict) -> dict:

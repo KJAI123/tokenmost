@@ -238,11 +238,11 @@
       <description>长期免费 · 规则：绑卡可升 Developer Tier（2000 万 tokens/日）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Together AI：Prism-ML/Ternary-Bonsai-27B 输入输出全免费</title>
+      <title>Together AI：⚠️ 免费试用 credits 已取消（官方文档口径，最低 $5 起充</title>
       <link>https://www.together.ai/pricing</link>
       <guid isPermaLink="false">together-free</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费（优惠以官方页面为准）</description>
+      <description>避雷（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Anthropic：Console 注册送 $5 API credits（需手机验证）</title>
@@ -287,7 +287,7 @@
       <description>长期低价（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>硅基流动：免费模型池长期 0 元：Hunyuan-MT-7B / Xing4.0-29B / PaddleOCR-VL / bge</title>
+      <title>硅基流动：免费池收缩（10-21 官方清单）：小模型永久免费已取消，现仅向量/语音/OCR/翻译/Kolors 生图免费</title>
       <link>https://siliconflow.cn/pricing</link>
       <guid isPermaLink="false">siliconflow-freemodels</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
@@ -712,6 +712,55 @@
       <guid isPermaLink="false">deep-cursor-x-subscription-r4</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>套餐订阅 · 规则：第三方模型仅 Premium 及以上可在 Cursor 用（API 牌价 top-up 另计）；「每周刷新」出处为 cursor.com/pricing 页（R2 直核），x.ai 页未提刷新周期——两口径合并、各标出处（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>smzdm 权益清单系列（情报源）：【情报源收录】smzdm「全网AI产品免费权益清单」系列帖=公众号活动的月度聚合器（8-14/10-05/10-21 三</title>
+      <link>https://post.smzdm.com/p/a70p0xv5</link>
+      <guid isPermaLink="false">deep-smzdm-list-series</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>status · 规则：加入每周diff清单；旧版作节奏存档（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Qoder CN（阿里）：口径更新：CN 站每天 10:00 领 100 Credits（30天有效）</title>
+      <link>https://qoder.com</link>
+      <guid isPermaLink="false">deep-qoder-daily-credits</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：每日签到式领取叠加月度权益；首注300/Trial 2000维持R2口径（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>硅基流动：注册礼：邀请链接注册送约14-16元（≈2000万tokens，历史14元/2026清单16元口径并存，控制台实显为准）</title>
+      <link>https://cloud.siliconflow.cn</link>
+      <guid isPermaLink="false">deep-siliconflow-guide-r5</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：仅邀请链接注册有礼；充值返券历史最高1000元档（节庆出现，盯公众号 SiliconFlow硅基流动）；OpenAI兼容 api.siliconflow.cn/v1（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Kimi（月之暗面）：API 新用户注册+实名送 15 元代金券（3个月有效）</title>
+      <link>https://www.kimi.com/help/kimi-api/api-free-trial</link>
+      <guid isPermaLink="false">deep-kimi-voucher-r5</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：「K2.5于10/31停止新用户」传闻未获官方证实（多渠道检索无公告）；关联已核实动态=火山聚合层 Kimi-K2.7-Code 即将下线（影响火山侧非开放平台）；充值返券历史：满500赠20%-40%（2026-03，90天有效）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Cohere：Cohere 免费层细节补全：trial key 完全免费（限速、仅供评估、非生产）</title>
+      <link>https://dashboard.cohere.com/api-keys</link>
+      <guid isPermaLink="false">deep-cohere-commanda-r5</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：trial key 无需信用卡；月度自动重置（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Together AI：⚠️ Together AI 免费试用 credits 已取消（官方文档口径：no free trials，最低 $5 </title>
+      <link>https://www.together.ai/models</link>
+      <guid isPermaLink="false">deep-together-nofree-r5</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>避雷 · 规则：200+ 开源模型 serverless 按量计费；社区 awesome-free-models 清单可跟踪各厂真免费模型（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>公众号关注清单（运营情报）：公众号人工关注清单（详见 deep-dive/wechat-r5.md）：智谱AI/智谱AI开放平台、讯飞开放平台/讯飞</title>
+      <link>https://post.smzdm.com/p/a70p0xv5</link>
+      <guid isPermaLink="false">deep-wechat-watchlist</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>status · 规则：★★★=智谱/讯飞/火山（福利最密）；smzdm 清单系列帖可替代60%盯梢（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
