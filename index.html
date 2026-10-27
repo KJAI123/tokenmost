@@ -193,6 +193,9 @@ table.price th{color:var(--muted);font-weight:500;font-size:.75rem}
 table.price td:first-child,table.price th:first-child{text-align:left}
 table.price tr.cheapest td{background:rgba(5,150,105,.05)}
 table.price .mono{font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums}
+table.price tr.vgroup td{background:var(--hover);color:var(--muted);font-size:.75rem;font-weight:600;text-align:left;padding:6px 8px}
+table.price tr.tier td{font-size:.75rem;color:var(--muted)}
+table.price tr.tier td:first-child{padding-left:24px}
 .calc-note{font-size:.75rem;color:var(--muted);margin-top:12px}
 .sum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(208px,1fr));gap:12px;margin-bottom:8px}
 .sum-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:4px;font-size:.875rem;color:var(--muted)}
@@ -373,6 +376,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <label>输入 tokens（百万）<br><input id="calcIn" type="number" min="0" step="0.1" value="1"></label>
     <label>输出 tokens（百万）<br><input id="calcOut" type="number" min="0" step="0.1" value="1"></label>
   </div>
+  <div class="tabs" id="calcFilters" style="margin-bottom:12px"></div>
   <div style="overflow-x:auto"><table class="price" id="calcTable"></table></div>
   <p class="calc-note">按高峰牌价计算并统一折人民币排序（USD 1:7.2）；DeepSeek 行另有空闲时段 5 折、各家缓存命中更低，实际账单以平台为准。价格为每百万 token，更新于 prices.json。</p>
 </div>
@@ -992,20 +996,46 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeApi();closeCal
 let PRICES=[];
 const FX=7.2;
 function fmt(n,cur){const s=n>=0.01||n===0?n.toFixed(2):n.toFixed(4);return (cur==='USD'?'$':'¥')+s}
+let calcVendor='';
 function calcRender(){
   const tin=parseFloat(document.getElementById('calcIn').value)||0;
   const tout=parseFloat(document.getElementById('calcOut').value)||0;
-  const rows=PRICES.map(p=>{
-    const i=p.input,o=p.output;  // 高峰价基准（空闲半价/错峰另注明）
-    if(i==null&&o==null)return null;
-    if(!i&&!o)return{...p,cost:0,costCny:0,free:true};
-    const cost=tin*(i||0)+tout*(o||0);
-    return{...p,cost,costCny:cost*(p.currency==='USD'?FX:1)};
-  }).filter(Boolean).sort((a,b)=>a.costCny-b.costCny);
-  document.getElementById('calcTable').innerHTML=
-    '<tr><th>模型</th><th>平台</th><th>输入/百万</th><th>输出/百万</th><th>本次花费</th><th>折合人民币</th></tr>'+
-    rows.map((r,i)=>`<tr class="${i===0&&r.costCny===0?'cheapest':''}"><td class="mono">${esc(r.model)}${r.free?' <span class="chip" style="font-size:.65rem">免费</span>':''}${String(r.model).includes('deepseek')?'<br><span style="color:var(--muted);font-size:.65rem">空闲时段再 5 折</span>':''}</td><td>${esc(r.provider)}</td><td class="mono">${fmt(r.input||0,r.currency)}</td><td class="mono">${fmt(r.output||0,r.currency)}</td><td class="mono">${fmt(r.cost,r.currency)}</td><td class="mono"><b>${r.free?'¥0.00':'¥'+r.costCny.toFixed(2)}</b></td></tr>`).join('');
-}function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.getElementById('calcPanel').classList.remove('open')}
+  // 展开分时段定价（DeepSeek 高峰/空闲两行——硅基式子行呈现）
+  const expanded=[];
+  PRICES.forEach(p=>{
+    if(p.input_idle!=null&&p.output_idle!=null&&(p.input_idle!==p.input||p.output_idle!==p.output)){
+      expanded.push({...p,tier:'高峰'});
+      expanded.push({...p,input:p.input_idle,output:p.output_idle,tier:'空闲 5 折',idle:true});
+    } else expanded.push({...p});
+  });
+  expanded.forEach(p=>{
+    if(p.input==null&&p.output==null){p.cost=0;p.costCny=0;p.free=true;}
+    else{p.cost=(tin*(p.input||0)+tout*(p.output||0));p.costCny=p.cost*(p.currency==='USD'?FX:1);}
+  });
+  // 厂商筛选 chips
+  const vendors=[...new Set(expanded.map(p=>p.provider))];
+  document.getElementById('calcFilters').innerHTML=
+    '<button class="tab '+(calcVendor===''?'active':'')+'" data-cv="">全部</button>'
+    +vendors.map(v=>'<button class="tab '+(calcVendor===v?'active':'')+'" data-cv="'+esc(v)+'">'+esc(v)+'</button>').join('');
+  // 厂商分组 + 组内按折 CNY 排序；厂商间按最低价排序
+  let shown=expanded.filter(p=>!calcVendor||p.provider===calcVendor);
+  const groups={};
+  shown.forEach(p=>{(groups[p.provider]=groups[p.provider]||[]).push(p)});
+  const order=Object.keys(groups).sort((a,b)=>Math.min(...groups[a].map(x=>x.costCny))-Math.min(...groups[b].map(x=>x.costCny)));
+  let html='<tr><th>模型</th><th>输入/百万</th><th>输出/百万</th><th>本次花费</th><th>折合人民币</th></tr>';
+  order.forEach(v=>{
+    html+='<tr class="vgroup"><td colspan="5">'+esc(v)+'</td></tr>';
+    groups[v].sort((a,b)=>a.costCny-b.costCny).forEach(p=>{
+      const nm=esc(p.model)+(p.tier?'<br><span style="color:var(--muted);font-size:.75rem">'+p.tier+'</span>':'');
+      html+=`<tr class="${p.idle?'tier ':''}${p.free?'cheapest':''}"><td class="mono">${nm}${p.free?' <span class="chip">免费</span>':''}</td><td class="mono">${p.free?'免费':fmt(p.input||0,p.currency)}</td><td class="mono">${p.free?'免费':fmt(p.output||0,p.currency)}</td><td class="mono">${p.free?'—':fmt(p.cost,p.currency)}</td><td class="mono"><b>${p.free?'¥0.00':'¥'+p.costCny.toFixed(2)}</b></td></tr>`;
+    });
+  });
+  document.getElementById('calcTable').innerHTML=html;
+}
+document.getElementById('calcFilters').addEventListener('click',e=>{
+  const b=e.target.closest('[data-cv]');if(!b)return;
+  calcVendor=b.dataset.cv;calcRender();
+});function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.getElementById('calcPanel').classList.remove('open')}
 document.getElementById('calcClose').addEventListener('click',closeCalc);
 document.getElementById('calcOverlay').addEventListener('click',closeCalc);
 ['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',calcRender));
