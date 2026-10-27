@@ -797,6 +797,58 @@
         "折扣"
       ],
       "note": "竞品监测：同类汇总站（本地agent免费模型/编程套餐，网页聊天不收录）静态可抓，其上新即告警 2026-10-28"
+    },
+    {
+      "id": "inferbase-docsgettingsta",
+      "name": "Quickstart · Docs | Infe",
+      "url": "https://inferbase.ai/docs/getting-started/quickstart",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "inference-docs-supportratelim",
+      "name": "Rate Limits - Cerebras I",
+      "url": "https://inference-docs.cerebras.ai/support/rate-limits",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "kilo-docsgatewaymod",
+      "name": "Models &amp; Providers",
+      "url": "https://kilo.ai/docs/gateway/models-and-providers",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "longcat-platformdocszh",
+      "name": "快速开始 | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/zh/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
     }
   ]
 }

@@ -47,7 +47,8 @@ def main() -> int:
     # 2) 长期源筛选：可达 + official/repo 优先 + 有标题
     long_term = sorted(
         [c for c in uniq if c.get("status") == 200 and c.get("kind") in ("official", "repo")
-         and c.get("title") and c.get("score", 0) >= 5],
+         and c.get("title") and c.get("score", 0) >= 5
+         and c.get("verified") != "offtopic" and c.get("verified") != "dead"],
         key=lambda c: (-c["score"], c["domain"] if "domain" in c else domain(c["url"])))
     for c in long_term:
         c["domain"] = domain(c["url"])
