@@ -16,7 +16,7 @@
 - [x] 学生认证补全 ✅ 2026-10-28：GitHub Copilot 学生免费 3-12 终止+Student 计划 4 月暂停——⏳主管复核主数据 github-student-pack 条目；Copilot Free 层仍有效
 - [x] OpenRouter API 快照 ✅ 2026-10-28：主会话 sources.json 已含 api/v1/models——不重复建源，闭环
 - [x] Cursor / Windsurf ✅ 2026-10-28：两定价页入采集器；Cursor 10-12 改版为 X 订阅（Free/Plus$8/Premium$30/Super$100/Ultra$200 与 Grok 共享池）——⌨️Coding 面板变更线索→主管；Windsurf 免费档≈25 Flow Actions/月
-- [ ] TaoToken 统一 Key 工具评估（同类网关，看是否值得收录为源） | TaoToken 统一 key | 工具→总表
+- [x] TaoToken ✅ 2026-10-28：定位=taotoken.net 统一Key聚合网关（注册送免费额度）；数额口径⏳主管核
 - [x] lololowe 博客 ✅ 2026-10-28：评估通过入采集器（98KB·21免费命中·11平台直链）
 - [x] 34家白嫖神 ✅ 2026-10-28 定位=OmniRoute(diegosouzapw/OmniRoute 3.7万Star)：本地网关+免费额度仪表盘；已入采集器，站点工具区收录建议→主管
 - [ ] weixin 雷达第3周查询词轮换 | — | 公众号管道
