@@ -8,16 +8,15 @@
   "region": "cn",
   "url": "https://docs.bigmodel.cn/cn/update/promotion",
   "rule": "每月最多邀 10 人；勘误（R7 复核）：GLM-5.3-Flash 为付费模型（0.8/2.8 元/百万），「限时免费」仅指缓存存储费",
-  "verify_status": "stale",
-  "verified_at": "2026-10-27T18:51:34Z",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T06:00:00Z",
   "difficulty": 1,
-  "published": false,
-  "notes": "💡 GLM-5.3 定价 8/28 元每百万，作比价基准",
+  "published": true,
+  "notes": "💡 GLM-5.3 定价 8/28 元每百万，作比价基准；复核(06:00):降级系活动页新增 Weekend Build 等活动内容(权益未撤),恢复",
   "verify_by": "auto",
   "tokens_wan": 4500,
   "via": "invite",
-  "group": "智谱",
-  "stale_reason": "源 zhipu-promotion 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)"
+  "group": "智谱"
  },
  {
   "id": "volc-ark-signup",
