@@ -200,3 +200,4 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - 2026-10-28 找源巡检：72源盯防2项变化待二次观测；TaoToken 定位=taotoken.net 统一Key聚合网关（线索→主管核数额）；队列剩2条
 - 2026-10-28 找源巡检：72源盯防2项变化待二次观测；z.ai 海外 Coding Plan 查实（Lite$18/Pro$80/Max$168·配额≈Claude 3倍）→⌨️Coding面板海外版候选；队列剩2条
 - 2026-10-28 找源巡检：72源盯防1项变化待二次观测；HN 摸底无直命中，AgentReady 工具线索(低优)入账；队列剩2条
+- 2026-10-28 找源巡检：72源盯防（心跳已写）；**扩展器第二批启动**（新关键词：awesome ai coding plan/free tokens llm list/大模型额度白嫖/free api credits list），v1.1 加验证保留合并逻辑（旧 1111 条验证状态不丢）；跑完自动并入候选池→下一轮 verify 接力；队列剩2条
