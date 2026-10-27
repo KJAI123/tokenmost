@@ -12,7 +12,7 @@
   "verified_at": "2026-10-28T06:00:00Z",
   "difficulty": 1,
   "published": true,
-  "notes": "💡 GLM-5.3 定价 8/28 元每百万，作比价基准；复核(06:00):降级系活动页新增 Weekend Build 等活动内容(权益未撤),恢复",
+  "notes": "💡 GLM-5.3 定价 8/28 元每百万，作比价基准；复核(06:00):降级系活动页新增 Weekend Build 等活动内容(权益未撤),恢复；二次确认(06:50):活动页活动五全文与条目口径逐字一致(2000 万/人+2500 万礼包+月 10 人上限 2 亿),恢复无误",
   "verify_by": "auto",
   "tokens_wan": 4500,
   "via": "invite",
@@ -3120,8 +3120,8 @@
   "region": "cn",
   "url": "https://docs.bigmodel.cn/cn/update/promotion",
   "rule": "周末限定每周刷新、周日 23:00 清零；先到先得；官方活动页直列（爬虫助理浏览器直核 2026-10-28）",
-  "notes": "此前「活动页不含客户端活动」结论已过时——promotion 页现直列 Weekend Build/ZCode 新用户 1 亿/1024 节 5 亿； tokens_wan=3 亿/周；领入口=bigmodel 控制台",
-  "verify_status": "verified",
+  "notes": "此前「活动页不含客户端活动」结论已过时——promotion 页现直列 Weekend Build/ZCode 新用户 1 亿/1024 节 5 亿； tokens_wan=3 亿/周；领入口=bigmodel 控制台；⚠️ 06:50 复查:promotion 页当前快照(4+1 活动结构)未见 Weekend Build——助理此前浏览器直核过,疑为周期性展示(临近周末上线),降 unverified,周五复查",
+  "verify_status": "unverified",
   "verified_at": "2026-10-28T04:25:00Z",
   "difficulty": 1,
   "published": true,
@@ -3129,5 +3129,23 @@
   "tokens_wan": 30000,
   "eq_wan": 30000,
   "eq_note": "GLM-5.3-Flash 牌价 0.8/2.8 加权 1.3 元/百万低于 DS 谷价 1.75，保守 1:1 计 3 亿/周"
+ },
+ {
+  "id": "zhipu-pinhaomo",
+  "provider": "智谱 BigModel",
+  "category": "official_cn",
+  "type": "invite_bonus",
+  "value": "拼好模·邀请有礼：受邀好友首订 GLM Coding Plan 享 9 折；邀请者每邀 1 人得首单实付 10% 赠金、累计满 30 位再得总额 10% 且无限叠加（赠金可抵 API 费用长期有效）",
+  "region": "cn",
+  "url": "https://docs.bigmodel.cn/cn/update/promotion",
+  "rule": "受邀限新用户/未订阅用户，每人一次首单立减；好友需 72 小时内注册并订阅；邀请人数无上限",
+  "notes": "官方活动页直核(06:50 浏览器全文抓取)；赠金口径与 Coding Plan 价格联动",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T06:50:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "invite",
+  "cny": 0,
+  "notes_caveat": "比例型权益无固定 token 数"
  }
 ]

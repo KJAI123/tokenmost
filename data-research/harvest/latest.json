@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T21:56:30Z",
+  "harvested_at": "2026-10-27T22:09:23Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -547,8 +547,33 @@
       "name": "火山方舟协作奖励计划",
       "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 6,
+      "findings": [
+        {
+          "match": "免费推理额度",
+          "context": "模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识问答 Agent"
+        },
+        {
+          "match": "协作奖励",
+          "context": "- 标准流程 模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识"
+        },
+        {
+          "match": "协作奖励",
+          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+        },
+        {
+          "match": "协作奖励",
+          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+        },
+        {
+          "match": "协作奖励",
+          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+        },
+        {
+          "match": "Token",
+          "context": "作与生成视频 查看版权用量与收入 在线推理 管理推理接入点 为 AI 生成产物添加隐式水印 安心体验模式细则说明 开通管理 安全管理 控制台-推理安全审计 控制台-精调安全审计 控制台-推理接入点安全监控总览 用量统计 项目配置 网络配置 Token 计算器 安全管理 安全管理总览 内容安全护栏 火山方舟大模型服务安全白皮书 火山方舟互信计算架构白皮书 推理会话数据应用层加密方案 精调安全防护能力介绍 通过堡垒机进入安全沙箱的运维流程 常见问题 常见问题 相关协议 火山方舟大模型服务平"
+        }
+      ]
     },
     {
       "id": "openrouter-limits",
@@ -3713,7 +3738,7 @@
         },
         {
           "match": "Free",
-          "context": "on settings Fork 12k  ( 12k ) Star 81.8k  ( 81.8k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 12.1k  ( 12.1k ) Star 81.8k  ( 81.8k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",

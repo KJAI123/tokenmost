@@ -861,6 +861,18 @@
         "额度"
       ],
       "note": "神级工具源：本地网关聚合200-300+提供商，/dashboard/free-tiers 实时免费额度（15-16亿/月）——README/releases 盯防 2026-10-28"
+    },
+    {
+      "id": "lolo-freellm",
+      "name": "免费LLM API收集(持续更新)",
+      "url": "https://blog.lololowe.com/posts/fe0d/",
+      "patterns": [
+        "免费",
+        "额度",
+        "token",
+        "领取"
+      ],
+      "note": "Key 获取合集页（11 平台直链），平台政策变化即内容变化 2026-10-28 评估通过"
     }
   ]
 }
