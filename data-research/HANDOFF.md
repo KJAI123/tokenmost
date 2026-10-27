@@ -122,3 +122,10 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **真变化 1 项：openrouter-free-models 目录轮换**（-1 个 $0.06/M 档免费条目，+nace-ai 模型与 NVIDIA Nemotron 3.5 Embed 1B 免费嵌入版），来源即官方页直抓，详见 findings/openrouter.md 巡检发现节
 - 判断：主会话 sync.py 的 OpenRouter 结构化 API 直更应已自动覆盖，**无需手动合入**；建议站内不写死免费模型数量（目录动态）
 - 其余 19 源无变化
+
+## 巡检 2026-10-27 10:5x（爬虫助理 #4：协作清单对齐轮）
+
+- **查收「信息源清单-协作版.xlsx」**：总表 28 源归属清晰（sync.py 自动 / harvest 盯防 / 人工），待补源协作区留老板填，5 条新挖羊毛线索归主管 lane（ClinePass/opencode/U2 Flash/看广告/Qoder）——助理不动，等核实结论
+- **按清单完成源对齐**：①新增指派的 3 源——kimi-membership（30 命中）、azure-students（30 命中）、gemini-pricing（本轮超时，下轮重试）②火山源从 free-inference-quota（已 302+正文 JS 化）切到清单确认的 collaboration-reward-program（6 命中，活页）③openrouter-free-models 静态页源移除（页面转 CSR，:free 目录以 sync.py 的 API 直更为准，避让重复劳动）
+- 本轮 diff 10 项全部为上述源结构调整，**非情报变化**；另 5 源（gemini/groq/sambanova/mistral 系）瞬时超时，下轮自愈
+- 备忘：zhipu-hangzhou-rules 按清单备注 12-09 活动结束后撤源

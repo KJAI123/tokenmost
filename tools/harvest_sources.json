@@ -5,9 +5,11 @@
     {"id": "deepseek-pricing", "name": "DeepSeek 定价", "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing", "patterns": ["峰谷", "高峰", "缓存命中"]},
     {"id": "siliconflow-pricing", "name": "硅基流动定价", "url": "https://www.siliconflow.cn/pricing", "patterns": ["免费模型", "L0", "赠送"]},
     {"id": "siliconflow-faq", "name": "硅基流动计费规则", "url": "https://docs.siliconflow.com/cn/faqs/billing-rules", "patterns": ["14 元", "2000"]},
-    {"id": "volc-ark-quota", "name": "火山方舟免费推理额度", "url": "https://docs.volcengine.com/docs/ark/free-inference-quota", "patterns": ["500 ?万", "每日", "领取"]},
+    {"id": "volc-ark-collab", "name": "火山方舟协作奖励计划", "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program", "patterns": ["500 ?万", "协作奖励", "每日", "token"]},
     {"id": "openrouter-limits", "name": "OpenRouter 限流文档", "url": "https://openrouter.ai/docs/api_reference/limits", "patterns": [":free", "\\$10", "per day"]},
-    {"id": "openrouter-free-models", "name": "OpenRouter 免费模型列表", "url": "https://openrouter.ai/models?max_price=0", "patterns": [":free"]},
+    {"id": "kimi-membership", "name": "Kimi 会员定价", "url": "https://www.kimi.com/help/membership/membership-pricing", "patterns": ["会员", "免费", "额度", "￥?\\d+"], "note": "信息源清单-协作版.xlsx 指派"},
+    {"id": "gemini-pricing", "name": "Gemini API 定价", "url": "https://ai.google.dev/gemini-api/docs/pricing", "patterns": ["free", "per day", "RPD", "\\$0"], "note": "信息源清单-协作版.xlsx 指派"},
+    {"id": "azure-students", "name": "Azure for Students", "url": "https://azure.microsoft.com/en-us/free/students", "patterns": ["\\$100", "free", "students", "credit"], "note": "信息源清单-协作版.xlsx 指派"},
     {"id": "gemini-rate-limits", "name": "Gemini API 限流", "url": "https://ai.google.dev/gemini-api/docs/rate-limits", "patterns": ["free tier", "RPD", "requests per day"]},
     {"id": "groq-rate-limits", "name": "Groq 限流", "url": "https://console.groq.com/docs/rate-limits", "patterns": ["free tier", "TPD", "requests per day"]},
     {"id": "moonshot-pricing", "name": "Kimi 开放平台定价", "url": "https://platform.kimi.com/docs/pricing/chat", "patterns": ["代金券", "15 元", "免费", "百万 ?tokens"]},
@@ -19,6 +21,7 @@
     {"id": "mistral-usage-limits", "name": "Mistral 用量限额", "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits", "patterns": ["free", "Experiment", "limits"]},
     {"id": "cohere-rate-limits", "name": "Cohere 限流", "url": "https://docs.cohere.com/docs/rate-limits", "patterns": ["1,000", "Trial", "req ?/ ?min"]},
     {"id": "zcode-changelog", "name": "ZCode 官网更新日志", "url": "https://zcode.z.ai/changelog", "patterns": ["活动", "体验", "赠送", "邀请"]},
+    {"id": "doubao-agent-explore", "name": "豆包智能体广场", "url": "https://www.doubao.com/pc/agent-explore", "patterns": ["免费", "额度", "无限", "试用"], "note": "老板指派 2026-10-27；CSR 壳静态 0 命中属预期，留位观察 SSR 恢复（robots Allow）；羊毛情报靠真浏览器巡检"},
     {"id": "zhipu-hangzhou-rules", "name": "智谱杭州 Coding Plan 活动规则", "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules", "patterns": ["减免", "Coding Plan", "额度"]}
   ]
 }
