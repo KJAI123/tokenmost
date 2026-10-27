@@ -3147,5 +3147,21 @@
   "via": "invite",
   "cny": 0,
   "notes_caveat": "比例型权益无固定 token 数"
+ },
+ {
+  "id": "longcat-daily-free",
+  "provider": "美团 LongCat",
+  "category": "official_cn",
+  "type": "free_tier",
+  "value": "LongCat-Flash-Chat（560B 开源旗舰）API 开放平台每日提供免费额度——每日刷新型羊毛，OpenAI/Anthropic 双格式兼容可直接接入主流工具",
+  "region": "cn",
+  "url": "https://longcat.ai",
+  "rule": "每日免费额度（数额待控制台实锤）；开发者注册即用；模型权重已在 GitHub/HuggingFace 开源可自部署",
+  "notes": "两源：AstrBot issue#6303 开发者实测+linux.do 社区讨论；数额实锤后补 daily_wan+升级 verified；美团文档已入采集器盯防（助理 65 源）",
+  "verify_status": "unverified",
+  "verified_at": "2026-10-28T07:25:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "register"
  }
 ]
