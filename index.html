@@ -289,6 +289,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="official_global">海外</button>
       <button class="tab" data-cat="mine">⭐ 已领</button>
       <button class="tab" data-cat="paid">💸 付费区</button>
+      <button class="tab" data-cat="warn">⚠️ 避雷</button>
     </div>
     <span style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-left:auto">
       <select id="typeFilter" style="box-shadow:var(--shadow)">
@@ -535,8 +536,9 @@ function render(){
   const claimedSet=getClaimed();
   const PAID=new Set(['price_low','pricing_plan']);
   if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
+  else if(curCat==='warn'){list=list.filter(d=>d.type==='warning');}
   else{
-    list=list.filter(d=>!PAID.has(d.type));  // 主板块只关注免费——价格情报进付费区
+    list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning');  // 主板块=纯免费羊毛；价格进付费区，避雷进避雷区
     if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
     else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
     else if(curCat==='hasapi')list=list.filter(d=>{const s=siteFor(d);return s&&s.api});
@@ -591,7 +593,7 @@ function render(){
 }
 const PAID_TYPES=new Set(['price_low','pricing_plan']);
 function stats(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&!PAID_TYPES.has(d.type));
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&!PAID_TYPES.has(d.type)&&d.type!=='warning');
   document.getElementById('n-deals').textContent=live.length;
   document.getElementById('n-fresh').textContent=live.filter(d=>(Date.now()-new Date(d.verified_at))<864e5).length;
   const latest=live.reduce((m,d)=>Math.max(m,new Date(d.verified_at)),0);
