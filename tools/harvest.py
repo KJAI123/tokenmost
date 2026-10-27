@@ -100,6 +100,9 @@ def run(only: str | None = None) -> int:
         sid, url = src["id"], src["url"]
         if only and only not in sid:
             continue
+        if src.get("disabled"):
+            results.append({"id": sid, "name": src["name"], "url": url, "status": "disabled"})
+            continue
         entry = {"id": sid, "name": src["name"], "url": url}
         try:
             if not robots_allows(url, robots_cache):

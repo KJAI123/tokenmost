@@ -90,7 +90,7 @@
         "RPD",
         "\\$0"
       ],
-      "note": "信息源清单-协作版.xlsx 指派"
+      "note": "信息源清单-协作版.xlsx 指派；网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
     },
     {
       "id": "azure-students",
@@ -112,7 +112,8 @@
         "free tier",
         "RPD",
         "requests per day"
-      ]
+      ],
+      "note": "网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
     },
     {
       "id": "groq-rate-limits",
@@ -122,7 +123,9 @@
         "free tier",
         "TPD",
         "requests per day"
-      ]
+      ],
+      "disabled": true,
+      "note": "403 硬反爬(任何UA)——转真浏览器/人工盯防 2026-10-28"
     },
     {
       "id": "moonshot-pricing",
@@ -194,7 +197,8 @@
         "free",
         "Experiment",
         "limits"
-      ]
+      ],
+      "note": "网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
     },
     {
       "id": "cohere-rate-limits",
@@ -353,7 +357,7 @@
         "free",
         "pricing"
       ],
-      "note": "长期源自动并入(分6) 2026-10-28"
+      "note": "长期源自动并入(分6) 2026-10-28；网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
     },
     {
       "id": "cloud-apis",
@@ -758,8 +762,8 @@
     },
     {
       "id": "windsurf-pricing",
-      "name": "Windsurf 定价",
-      "url": "https://windsurf.com/pricing",
+      "name": "Devin 定价(Windsurf 已并入)",
+      "url": "https://devin.ai/pricing",
       "patterns": [
         "free",
         "pricing",
@@ -767,7 +771,7 @@
         "\\$\\d+",
         "tier"
       ],
-      "note": "长期源自动并入 2026-10-28（外网 AI IDE 免费档盯防）"
+      "note": "windsurf.com 308→devin.ai；原 Windsurf 免费档信息现归 Devin 名下 2026-10-28"
     },
     {
       "id": "monkeycode-docs",

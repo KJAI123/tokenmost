@@ -230,13 +230,13 @@
   "region": "global",
   "url": "https://dify.ai",
   "rule": "自部署无平台费，模型费用取决于你接入的 key",
-  "verify_status": "stale",
-  "verified_at": "2026-10-27T11:03:32Z",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T03:52:00Z",
   "difficulty": 3,
-  "published": false,
+  "published": true,
   "verify_by": "auto",
   "group": "Dify 自部署",
-  "stale_reason": "源 dify-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)"
+  "notes": "复核(03:52):官网实锤 Community Edition 开源自部署 Docker 仍在,页面改版误伤已恢复"
  },
  {
   "id": "modelscope-free-infer",
