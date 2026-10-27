@@ -506,13 +506,14 @@
   "value": "Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版",
   "region": "global",
   "url": "https://education.github.com/pack",
-  "rule": "GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内",
+  "rule": "GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响",
   "verify_status": "verified",
   "verified_at": "2026-10-27T18:51:34Z",
   "difficulty": 1,
   "published": true,
   "verify_by": "auto",
-  "group": "GitHub"
+  "group": "GitHub",
+  "notes": "复核(05:2x):GitHub Community #197753 确认暂停新注册——学生总账中 Copilot 部分新用户暂不可领"
  },
  {
   "id": "azure-student",
