@@ -142,3 +142,10 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **自动化已升频**：2 小时 → **每 15 分钟**（automation-66c52f99），新流程=harvest+diff → 消费 discovery-queue.md 队列（1-2 条/轮，串行 WebSearch）→ 新源入表/入采集器 → 一行日志
 - **公众号结论**：外部搜索引擎不收录公众号内容——公众号发现只能靠聚合帖间接引流+微信内人工搜索，已写入公众号 sheet 备注；第一轮搜到 8 个社区聚合源（知乎 27 家清单/FreeLLM-API-KeyHub/博客园/腾讯云/CSDN/liurb 等）+3 条平台线索（小米 MiMo、讯飞星辰 Qwen 不限量、智谱实名 2 亿——均标 ⏳ 主管核实）
 - **发现队列**：discovery-queue.md 12 条初始线索待自动消费
+
+## 外网薅羊毛开线 + 自愈闭环（2026-10-28，老板四连令）
+
+- **外网第一轮**：5 个海外源入表——母矿 mnfst/awesome-free-llm-apis（仅永久免费层）、r/LocalLLaMA 550+ 清单、Reddit 三大追踪帖、OpenRouter 官方 13 家横评、StationX 指南；下轮评估 OpenRouter 博客入采集器
+- **自愈三件套**（老板令「抽自己一巴掌，不要断了要我手动拉起」）：①heartbeat.txt——15 分钟巡检每轮写心跳 ②**龙虾 watchdog**（openclaw cron c71c134c，每 30 分钟）心跳 >35 分钟未跳→Mac 系统弹窗+watchdog.log（Feishu 通道缺 chatId 暂 fail-closed，本机通知兜底；老板如需远程推送可补 chatId）③Obsidian 自动同步 export_obsidian_md.py
+- **Obsidian 落地**：~/Documents/Obsidian Vault/Token羊毛情报站/ 两笔记——免费Token总览.md（118 条已验证情报自动聚合）+ 信源监控看板.md（信源数/队列/心跳），deals.json 每变即刷
+- **共用 Excel 确认**：信息源总表-全量版.xlsx 为唯一全量信源注册表（本轮 51→56 源），主会话与助理共同维护，助理负责增量
