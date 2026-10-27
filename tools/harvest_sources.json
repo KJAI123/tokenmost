@@ -742,6 +742,32 @@
         "白嫖"
       ],
       "note": "公众号发现管道：每轮重查，新文章标题=diff 告警（2026-10-28 实测可用）"
+    },
+    {
+      "id": "cursor-pricing",
+      "name": "Cursor 定价",
+      "url": "https://cursor.com/pricing",
+      "patterns": [
+        "free",
+        "pricing",
+        "credits",
+        "\\$\\d+",
+        "tier"
+      ],
+      "note": "长期源自动并入 2026-10-28（外网 AI IDE 免费档盯防）"
+    },
+    {
+      "id": "windsurf-pricing",
+      "name": "Windsurf 定价",
+      "url": "https://windsurf.com/pricing",
+      "patterns": [
+        "free",
+        "pricing",
+        "credits",
+        "\\$\\d+",
+        "tier"
+      ],
+      "note": "长期源自动并入 2026-10-28（外网 AI IDE 免费档盯防）"
     }
   ]
 }

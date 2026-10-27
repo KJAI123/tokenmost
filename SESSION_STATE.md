@@ -34,11 +34,11 @@
 - ⚠️ push 瞬断用 `git -c http.version=HTTP/1.1 push`；远端有 bot auto-sync 提交时先 `git pull --rebase`
 
 ## 巡检水位
-- excel_last: 发现日志 10 行 / rev 529cd6b10709b85f（2026-10-28 01:17 核对，无新增）
+- excel_last: 助理增量已归档（2026-10-28 02:06）：千人计划达成（1245 唯一源/100 长期/采集器 60 源）+候选源池/长期源清单新 sheet；待核线索裁决（02:22）→①讯飞星辰 Qwen「不限量」已关闭：3.9 元无忧版=已避雷的 deep-xunfei-39-crash 翻车套餐（2026-05 起集体退款），163 文章为翻车前旧宣传 ②小米 MiMo 待核 ③智谱实名 2 亿待查重（疑=zhipu-signup 月上限 2 亿）
 - deep 裁决: deep-r5.json 的 deep-tencent-yuanqi 已被 deep-tencent-yuanqi-verified-r6（口径修正版）取代，永不合并防重复
 
 ## 汇总水位
-digest_last: 2026-10-28T01:13:40+08:00（测试消息已发，下一封=1小时后）
+digest_last: 2026-10-28T02:07:57+08:00（正式小时汇总#1 已发）
 
 ## 合规红线（永不违反）
 多号/批量/接码/代充/共享号/破解/漏洞永不收录；申请制/企业向营销话术不得当普通羊毛上架；CREDENTIALS.md/.env/zhipu.key 不入库不外传。

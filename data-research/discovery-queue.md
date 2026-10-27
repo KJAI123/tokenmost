@@ -15,4 +15,4 @@
 - [ ] v2ex / 掘金 / 即刻 的 AI 羊毛帖活跃度摸底 | v2ex AI token 免费 | 社区→总表
 - [ ] 各家「教育优惠/学生认证」官方页（Azure 已有，补 GitHub/Copilot/Notion 等） | AI 学生认证 免费额度 官方 | 官方页→采集器
 - [ ] OpenRouter 免费模型 API 快照源（https://openrouter.ai/api/v1/models，若 sync.py 未覆盖再补） | — | 待与主会话确认分工
-- [ ] Cursor / Windsurf 等 AI IDE 免费档官方页（v1.9 主数据已有横评，盯防官方变动页） | Cursor pricing free | 官方页→采集器
+- [x] Cursor / Windsurf ✅ 2026-10-28：两定价页入采集器；Cursor 10-12 改版为 X 订阅（Free/Plus$8/Premium$30/Super$100/Ultra$200 与 Grok 共享池）——⌨️Coding 面板变更线索→主管；Windsurf 免费档≈25 Flow Actions/月
