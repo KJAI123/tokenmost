@@ -1,2 +1,4 @@
 server/*.db
 server/__pycache__/
+server/.admin-token-local
+server/.env

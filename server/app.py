@@ -32,7 +32,7 @@ DB_PATH = os.environ.get("TM_DB", os.path.join(os.path.dirname(__file__), "token
 SECRET = os.environ.get("TM_SECRET", "dev-secret-change-me")
 ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "")
 ZHIPU_API_KEY = os.environ.get("ZHIPU_API_KEY", "")
-FLASH_MODEL = os.environ.get("FLASH_MODEL", "glm-4.7-flash")  # 免费档
+FLASH_MODELS = os.environ.get("FLASH_MODELS", "glm-4.7-flash,glm-z1-flash").split(",")  # 免费档降级链（4.7 高峰易过载，z1 兜底）
 FLASH_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
 app = FastAPI(title="tokenmost API", version=APP_VERSION)
@@ -147,17 +147,33 @@ def flash_review(provider: str, code: str, note: str, kind: str = "code") -> Dic
         "只输出 JSON：{\"ok\": true} 或 {\"ok\": false, \"reason\": \"一句话\"}"
     )
     try:
-        body = json.dumps({
-            "model": FLASH_MODEL,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.1,
-        }).encode()
-        req = urllib.request.Request(FLASH_URL, data=body, headers={
-            "Content-Type": "application/json", "Authorization": "Bearer " + ZHIPU_API_KEY})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            text = json.loads(r.read())["choices"][0]["message"]["content"]
-        m = re.search(r"\{[^}]*\}", text)
-        verdict = json.loads(m.group(0)) if m else {}
+        text = ""
+        for model in FLASH_MODELS:
+            body = json.dumps({
+                "model": model.strip(),
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,
+            }).encode()
+            req = urllib.request.Request(FLASH_URL, data=body, headers={
+                "Content-Type": "application/json", "Authorization": "Bearer " + ZHIPU_API_KEY})
+            try:
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    text = json.loads(r.read())["choices"][0]["message"]["content"]
+                break  # 拿到内容即用；下一个模型只在请求失败时兜底
+            except Exception as e:
+                last_err = e
+                continue
+        if not text:
+            return {"verdict": "审核模型过载（%s），转人工" % type(last_err).__name__, "ok": None}
+        # z1 系思考型模型输出含 <think>，取含 "ok" 键的最后一个 JSON 对象
+        verdict = {}
+        for m in re.finditer(r"\{[^{}]*\}", text):
+            try:
+                cand = json.loads(m.group(0))
+                if isinstance(cand, dict) and "ok" in cand:
+                    verdict = cand
+            except Exception:
+                continue
         if verdict.get("ok") is True:
             # 规则兜底：黑名单词直接拒，模型只是第二道
             if any(w in (note + code) for w in RISK_WORDS):
