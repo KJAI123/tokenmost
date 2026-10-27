@@ -22,11 +22,12 @@
 - 2026-03 官方活动口径：**充值满 ¥500 赠 20%–40% 代金券**，次日到账、90 天有效。
 - **盯防渠道**：官方微信公众号「**Kimi**」+ platform.kimi.com 公告 + changelog（https://platform.kimi.com/docs/changelog ）。
 
-## 4. 「K2.5 于 10-31 停止新用户」传闻核查
+## 4. 「K2.5 于 10-31 停止新用户」传闻 → 官方定案（已核实）
 
-- **未获任何官方公告证实**（开放平台 changelog 与帮助中心均无）。
-- 相关联的已核实动态：**火山方舟聚合层的 Kimi-K2.7-Code 即将下线**（火山官方文档口径，影响的是火山侧调用，非 Kimi 开放平台）；Kimi 开放平台当前仍列 kimi-k2.5/k2 开源模型。
-- **收录口径**：该传闻标「未证实」；如 10-31 前后官方公告出现再升级。别因传闻恐慌性囤额度（代金券本来就 3 个月有效）。
+- **官方 changelog 逐字**（platform.kimi.com/docs/changelog）：K2.5 于 2026-01 发布 → **2026-07 起 kimi-k2.5 与 moonshot-v1 全系停止向新注册用户开放** → **2026-08 全平台下线、调用返回 404**，官方迁移目标 Kimi-K3。
+- **结论**：传闻日期（10-31）错误但方向正确——事情早已发生完毕。开放平台现役模型只有 **K3（旗舰）与 K2.7-Code（含高速版）**。
+- ⚠️ 注意区分：百炼/讯飞等第三方聚合平台托管的 `kimi-k2.5` 快照与 Kimi 开放平台下线无关，仍可按各家额度调用。
+- K2 系（2026-05）与 kimi-latest 也已下线——网上「K2 攻略」全部过期。
 
 ## 5. 避坑
 
@@ -39,6 +40,6 @@
 - 免费试用额度说明（15 元券）：https://www.kimi.com/help/kimi-api/api-free-trial
 - 账号与财务（混扣规则/充值）：https://platform.kimi.com/docs/guide/account-and-payments
 - 会员权益（档位/5h 限额/加油包）：https://www.kimi.com/code/docs/kimi-code/membership.html
-- 发布记录：https://platform.kimi.com/docs/changelog
-- 「K2.5 停售传闻」：未证实（多渠道检索无官方公告）；火山侧 K2.7-Code 下线：https://docs.volcengine.com/docs/ark/coding-plan-personal-plan-overview
+- 发布记录（K2.5 下线定案）：https://platform.kimi.com/docs/changelog
+- 火山侧 K2.7-Code 下线：https://docs.volcengine.com/docs/ark/coding-plan-personal-plan-overview
 - 新用户约 800 万 tokens：**待核实**（smzdm 清单单源）
