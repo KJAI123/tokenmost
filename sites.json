@@ -66,6 +66,11 @@
      "model": "step-2-16k",
      "env": "STEP_API_KEY"
     }
+   },
+   {
+    "name": "小米 MiMo",
+    "url": "https://mimo.xiaomi.com/zh",
+    "desc": "小米大模型，MiMo-V2.5 开源+100 万亿 token 算力权益"
    }
   ]
  },

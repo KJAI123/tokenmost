@@ -3082,5 +3082,24 @@
   "published": true,
   "via": "register",
   "group": "字节跳动"
+ },
+ {
+  "id": "xiaomi-mimo-compute",
+  "provider": "小米 MiMo",
+  "category": "official_cn",
+  "type": "limited_promo",
+  "value": "MiMo-V2.5 开源旗舰发布送 100 万亿 token 免费算力权益：30 天内领取，支持商用部署——全网量级最大的单一羊毛",
+  "region": "cn",
+  "url": "https://mimo.mi.com/docs/zh-CN/",
+  "rule": "领取窗口 30 天；具体领取入口与分配方式待官网/控制台实锤；MiMo 国内牌价输入约 0.7 元/百万（海外 $0.1/M，缓存命中 $0.01/M）",
+  "notes": "多源：腾讯云开发者社区（2026-07 开源+权益发布）；MiMo-V2-Flash 限免已于 2026-01-20 结束勿混淆；R 主管核实领取路径后升级 verified+tokens_wan",
+  "verify_status": "unverified",
+  "verified_at": "2026-10-28T02:40:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "register",
+  "tokens_wan": 100000000,
+  "eq_wan": 100000000,
+  "eq_note": "100 万亿=1 亿万 tokens，无牌价口径按 1:1 保守（牌价 0.7 元/百万低于 DS 谷价，等效折算待核后修正）"
  }
 ]

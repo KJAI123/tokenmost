@@ -708,14 +708,14 @@
     {
       "id": "gh-aipmandy-freetoken-blob-daf",
       "name": "FreeToken/README.md at d",
-      "url": "https://github.com/AIPMAndy/FreeToken/blob/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
+      "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
       "patterns": [
         "free",
         "免费",
         "额度",
         "pricing"
       ],
-      "note": "长期源自动并入(分6) 2026-10-28"
+      "note": "长期源自动并入(分6) 2026-10-28；blob→raw 修复 2026-10-28"
     },
     {
       "id": "sogou-wx-token",
@@ -768,6 +768,18 @@
         "tier"
       ],
       "note": "长期源自动并入 2026-10-28（外网 AI IDE 免费档盯防）"
+    },
+    {
+      "id": "monkeycode-docs",
+      "name": "MonkeyCode 官方文档",
+      "url": "https://monkeycode.docs.baizhi.cloud",
+      "patterns": [
+        "免费",
+        "额度",
+        "token",
+        "每日"
+      ],
+      "note": "长期源并入 2026-10-28（每日免费 token 政策盯防）"
     }
   ]
 }
