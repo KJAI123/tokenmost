@@ -404,7 +404,7 @@
   "provider": "NVIDIA NIM",
   "category": "maas",
   "type": "signup_bonus",
-  "value": "注册送 1000 API credits 免费推理；企业邮箱激活 90 天 NVIDIA AI Enterprise 许可可再解锁 4000（免费上限 5000）",
+  "value": "注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可",
   "region": "global",
   "url": "https://build.nvidia.com",
   "rule": "用完后 API catalog 头像菜单「Request More」",
@@ -413,7 +413,8 @@
   "difficulty": 1,
   "published": true,
   "verify_by": "auto",
-  "group": "NVIDIA NIM"
+  "group": "NVIDIA NIM",
+  "notes": "复核(04:41):「一年免费不限总量」社区流传官方未确认——credits 试用性质(1000-5000 封顶)，免费速率默认较低可申请提至 200RPM"
  },
  {
   "id": "ohmygpt-referral",

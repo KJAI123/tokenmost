@@ -14,5 +14,5 @@
 - [ ] smzdm 最新 AI 免费权益聚合帖（替代每周人肉翻） | smzdm AI 免费权益 2026 | 社区→总表
 - [x] v2ex 摸底 ✅ 2026-10-28：竞品站 token.pencilai.top⭐+MiMo 重置50倍修正+快手/美团线索；掘金/即刻下轮
 - [ ] 各家「教育优惠/学生认证」官方页（Azure 已有，补 GitHub/Copilot/Notion 等） | AI 学生认证 免费额度 官方 | 官方页→采集器
-- [ ] OpenRouter 免费模型 API 快照源（https://openrouter.ai/api/v1/models，若 sync.py 未覆盖再补） | — | 待与主会话确认分工
+- [x] OpenRouter API 快照 ✅ 2026-10-28：主会话 sources.json 已含 api/v1/models——不重复建源，闭环
 - [x] Cursor / Windsurf ✅ 2026-10-28：两定价页入采集器；Cursor 10-12 改版为 X 订阅（Free/Plus$8/Premium$30/Super$100/Ultra$200 与 Grok 共享池）——⌨️Coding 面板变更线索→主管；Windsurf 免费档≈25 Flow Actions/月
