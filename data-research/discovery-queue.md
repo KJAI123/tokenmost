@@ -12,7 +12,7 @@
 - [x] Google Antigravity ✅ 2026-10-28：免费档 250→20 RPD(-92%)、RPM 10→5；积分制（Pro 1000/月·Ultra 25000/月·不滚存）；7天锁机制；负情报，无收录价值
 - [x] 每日登录类 ✅ 2026-10-28：各平台无统一签到中心；智谱「每日一亿领取」单源线索→主管；其余=注册赠送+邀请奖励模式
 - [ ] smzdm 最新 AI 免费权益聚合帖（替代每周人肉翻） | smzdm AI 免费权益 2026 | 社区→总表
-- [ ] v2ex / 掘金 / 即刻 的 AI 羊毛帖活跃度摸底 | v2ex AI token 免费 | 社区→总表
+- [x] v2ex 摸底 ✅ 2026-10-28：竞品站 token.pencilai.top⭐+MiMo 重置50倍修正+快手/美团线索；掘金/即刻下轮
 - [ ] 各家「教育优惠/学生认证」官方页（Azure 已有，补 GitHub/Copilot/Notion 等） | AI 学生认证 免费额度 官方 | 官方页→采集器
 - [ ] OpenRouter 免费模型 API 快照源（https://openrouter.ai/api/v1/models，若 sync.py 未覆盖再补） | — | 待与主会话确认分工
 - [x] Cursor / Windsurf ✅ 2026-10-28：两定价页入采集器；Cursor 10-12 改版为 X 订阅（Free/Plus$8/Premium$30/Super$100/Ultra$200 与 Grok 共享池）——⌨️Coding 面板变更线索→主管；Windsurf 免费档≈25 Flow Actions/月

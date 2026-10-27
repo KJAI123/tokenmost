@@ -10,7 +10,8 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data-research" / "weixin_articles.json"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 # 发现用查询词（按周轮换，可在队尾追加）
-QUERIES = ["token 免费额度", "AI 羊毛 折扣码", "大模型 领额度", "白嫖 API"]
+# 按周轮换：第2周批次（每周巡检时更换以避开搜狗缓存）
+QUERIES = ["GLM 免费", "Coding Plan 折扣", "AI 额度 领取", "DeepSeek 免费"]
 SNOWBALL_SEEDS = [  # 已知文章：从文内互链滚雪球
     "https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg",
 ]
