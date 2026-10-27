@@ -776,16 +776,16 @@
   "via": "free",
   "value": "Copilot Free 档：每月 2000 次代码补全 + 50 次聊天，个人零成本",
   "region": "global",
-  "url": "https://github.com/features/copilot/plans",
-  "verify_status": "stale",
-  "verified_at": "2026-10-27T11:03:32Z",
+  "url": "https://docs.github.com/en/copilot/get-started/plans-for-github-copilot",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T03:40:00Z",
   "difficulty": 1,
-  "published": false,
+  "published": true,
   "verify_by": "auto",
   "daily_wan": 4,
   "daily_note": "月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）",
   "group": "GitHub",
-  "stale_reason": "源 copilot-plans 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)"
+  "notes": "复核(03:40):官方页实锤 Free 档仍在(2000 补全/月),URL 迁移致降级,已修正"
  },
  {
   "id": "302ai-payg",
@@ -1062,16 +1062,15 @@
   "region": "global",
   "url": "https://docs.github.com/en/copilot/get-started/plans-for-github-copilot",
   "rule": "credits→token官方未公布；模型分层：Pro含Claude Haiku/Sonnet+GPT-5.3-Codex+Gemini+Grok+Kimi，Opus/GPT-6仅Pro+/Max；Free/Student仅自动选模；教师与热门开源维护者免费Pro",
-  "verify_status": "stale",
-  "verified_at": "2026-10-27T11:03:32Z",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T03:40:00Z",
   "difficulty": 1,
-  "published": false,
+  "published": true,
   "usd": 15,
   "via": "subscribe",
-  "notes": "官方文档直核（高）；plans.json若仍写300/1000 premium requests需更新",
+  "notes": "官方文档直核（高）；plans.json若仍写300/1000 premium requests需更新；复核(03:40):AI Credits 体系仍在(Pro $10/月 Base 1000),页面迁移误伤已恢复",
   "verify_by": "auto",
-  "group": "GitHub",
-  "stale_reason": "源 copilot-plans 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)"
+  "group": "GitHub"
  },
  {
   "id": "deep-comate-autofree",

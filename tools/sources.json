@@ -1,379 +1,379 @@
 {
-  "stale_days": 14,
-  "note": "数据源注册表。type: json=结构化API可自动更新内容；watch=哈希监控（页面没变=自动续验证戳，变了=进复核队列+降级待复核）；rss=关键词筛选只生成草稿。新增源往这里加，sync.py 自动生效。",
-  "sources": [
+ "stale_days": 14,
+ "note": "数据源注册表。type: json=结构化API可自动更新内容；watch=哈希监控（页面没变=自动续验证戳，变了=进复核队列+降级待复核）；rss=关键词筛选只生成草稿。新增源往这里加，sync.py 自动生效。",
+ "sources": [
+  {
+   "id": "openrouter-models",
+   "type": "json",
+   "url": "https://openrouter.ai/api/v1/models",
+   "min_len": 1000,
+   "actions": [
     {
-      "id": "openrouter-models",
-      "type": "json",
-      "url": "https://openrouter.ai/api/v1/models",
-      "min_len": 1000,
-      "actions": [
-        {
-          "do": "update_deal",
-          "deal": "openrouter-free",
-          "template": ":free 模型 {n_free} 个（{free_top} 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天"
-        },
-        {
-          "do": "sync_prices",
-          "provider": "OpenRouter",
-          "layer": "reseller",
-          "currency": "USD",
-          "free_top": 3
-        }
-      ]
+     "do": "update_deal",
+     "deal": "openrouter-free",
+     "template": ":free 模型 {n_free} 个（{free_top} 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天"
     },
     {
-      "id": "modelscope-models",
-      "type": "json",
-      "url": "https://api-inference.modelscope.cn/v1/models",
-      "min_len": 500,
-      "actions": [
-        {
-          "do": "update_deal",
-          "deal": "modelscope-free-infer",
-          "template": "API-Inference 每日 2000 次免费调用：当前 {n_models} 款模型（{top_models} 等），OpenAI 兼容端点"
-        }
-      ]
-    },
-    {
-      "id": "deepseek-pricing",
-      "type": "watch",
-      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
-      "deals": [
-        "deepseek-price",
-        "deepseek-offpeak",
-        "deepseek-searchfree"
-      ]
-    },
-    {
-      "id": "zhipu-promotion",
-      "type": "watch",
-      "url": "https://docs.bigmodel.cn/cn/update/promotion",
-      "deals": [
-        "zhipu-signup"
-      ]
-    },
-    {
-      "id": "bailian-quota",
-      "type": "watch",
-      "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
-      "deals": [
-        "bailian-signup"
-      ]
-    },
-    {
-      "id": "ark-freequota",
-      "type": "watch",
-      "url": "https://docs.volcengine.com/docs/ark/free-inference-quota",
-      "deals": [
-        "volc-ark-signup"
-      ]
-    },
-    {
-      "id": "kimi-trial",
-      "type": "watch",
-      "url": "https://www.kimi.com/help/kimi-api/api-free-trial",
-      "deals": [
-        "kimi-voucher"
-      ]
-    },
-    {
-      "id": "kimi-pricing",
-      "type": "watch",
-      "url": "https://platform.kimi.com/docs/pricing/chat",
-      "deals": [
-        "kimi-k2-deadline"
-      ]
-    },
-    {
-      "id": "qianfan-quota",
-      "type": "watch",
-      "url": "https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg",
-      "deals": [
-        "qianfan-signup"
-      ]
-    },
-    {
-      "id": "tokenhub-newuser",
-      "type": "watch",
-      "url": "https://cloud.tencent.com/document/product/1823/130053",
-      "deals": [
-        "tencenthub-signup"
-      ]
-    },
-    {
-      "id": "coze-edition",
-      "type": "watch",
-      "url": "https://docs.coze.cn/guides_edition",
-      "deals": [
-        "coze-free"
-      ]
-    },
-    {
-      "id": "siliconflow-billing",
-      "type": "watch",
-      "url": "https://docs.siliconflow.com/cn/faqs/billing-rules",
-      "deals": [
-        "siliconflow-signup"
-      ]
-    },
-    {
-      "id": "siliconflow-referral",
-      "type": "watch",
-      "url": "https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp",
-      "deals": [
-        "siliconflow-referral"
-      ]
-    },
-    {
-      "id": "minimax-pricing",
-      "type": "watch",
-      "url": "https://platform.minimax.cn/docs/pricing/overview.md",
-      "deals": [
-        "minimax-m3-half"
-      ]
-    },
-    {
-      "id": "groq-limits",
-      "type": "watch",
-      "url": "https://console.groq.com/docs/rate-limits",
-      "deals": [
-        "groq-free"
-      ]
-    },
-    {
-      "id": "gemini-pricing",
-      "type": "watch",
-      "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "deals": [
-        "google-ai-studio"
-      ]
-    },
-    {
-      "id": "gemini-students",
-      "type": "watch",
-      "url": "https://gemini.google/students",
-      "deals": [
-        "google-student"
-      ]
-    },
-    {
-      "id": "github-pack",
-      "type": "watch",
-      "url": "https://education.github.com/pack",
-      "deals": [
-        "github-student-pack"
-      ]
-    },
-    {
-      "id": "azure-students",
-      "type": "watch",
-      "url": "https://azure.microsoft.com/en-us/free/students",
-      "deals": [
-        "azure-student"
-      ]
-    },
-    {
-      "id": "sambanova-limits",
-      "type": "watch",
-      "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
-      "deals": [
-        "sambanova-free"
-      ]
-    },
-    {
-      "id": "together-pricing",
-      "type": "watch",
-      "url": "https://www.together.ai/pricing",
-      "deals": [
-        "together-free"
-      ]
-    },
-    {
-      "id": "anthropic-pricing",
-      "type": "watch",
-      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
-      "deals": [
-        "anthropic-credits"
-      ]
-    },
-    {
-      "id": "aihubmix-pricing",
-      "type": "watch",
-      "url": "https://aihubmix.com/pricing",
-      "confirm_runs": 3,
-      "deals": [
-        "aihubmix-free"
-      ]
-    },
-    {
-      "id": "ohmygpt-pricing",
-      "type": "watch",
-      "url": "https://www.ohmygpt.com/pricing",
-      "deals": [
-        "ohmygpt-referral"
-      ]
-    },
-    {
-      "id": "dmxapi-home",
-      "type": "watch",
-      "url": "https://dmxapi.com/shouye.html",
-      "deals": [
-        "dmxapi-discount"
-      ]
-    },
-    {
-      "id": "nvidia-build",
-      "type": "watch",
-      "url": "https://build.nvidia.com",
-      "deals": [
-        "nvidia-nim"
-      ]
-    },
-    {
-      "id": "autodl-coupon",
-      "type": "watch",
-      "url": "https://www.autodl.com/docs/coupon/",
-      "deals": [
-        "autodl-student"
-      ]
-    },
-    {
-      "id": "gpushare-coupon",
-      "type": "watch",
-      "url": "https://gpushare.com/docs/free_ride/coupon",
-      "deals": [
-        "gpushare-invite"
-      ]
-    },
-    {
-      "id": "xfyun-spark-docs",
-      "type": "watch",
-      "url": "https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html",
-      "deals": [
-        "xinghuo-signup"
-      ]
-    },
-    {
-      "id": "dify-pricing",
-      "type": "watch",
-      "url": "https://dify.ai/pricing",
-      "deals": [
-        "dify-selfhost"
-      ]
-    },
-    {
-      "id": "scnet-activity",
-      "type": "watch",
-      "url": "https://www.scnet.cn/home/subject/center/index.html",
-      "deals": [
-        "scnet-coupon"
-      ],
-      "min_len": 500
-    },
-    {
-      "id": "linuxdo-rss",
-      "type": "rss",
-      "url": "https://linux.do/latest.rss",
-      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
-      "include": [
-        "送",
-        "免费",
-        "额度",
-        "token",
-        "折扣",
-        "羊毛",
-        "礼包",
-        "优惠",
-        "券",
-        "credit"
-      ],
-      "exclude": [
-        "共享",
-        "合租",
-        "多号",
-        "小号",
-        "代充",
-        "批量",
-        "求邀",
-        "拼车",
-        "共享号"
-      ]
-    },
-    {
-      "id": "zcode-changelog",
-      "type": "watch",
-      "url": "https://zcode.z.ai/changelog",
-      "deals": [
-        "zcode-linuxdo"
-      ],
-      "confirm_runs": 2
-    },
-    {
-      "id": "bigmodel-pricing",
-      "type": "watch",
-      "url": "https://docs.bigmodel.cn/cn/guide/start/pricing.md",
-      "deals": [
-        "zhipu-signup",
-        "zhipu-flash-free"
-      ],
-      "confirm_runs": 2
-    },
-    {
-      "id": "bigmodel-activity",
-      "type": "watch",
-      "url": "https://bigmodel.cn/activity/glm-coding-1024",
-      "deals": [
-        "zcode-linuxdo"
-      ],
-      "confirm_runs": 3
-    },
-    {
-      "id": "xfyun-coding-plan",
-      "type": "watch",
-      "url": "https://www.xfyun.cn/doc/spark/CodingPlan.html",
-      "deals": [
-        "xfyun-offpeak",
-        "deep-xunfei-coding-plan"
-      ],
-      "confirm_runs": 2
-    },
-    {
-      "id": "volc-ai618",
-      "type": "watch",
-      "url": "https://www.volcengine.com/activity/ai618",
-      "deals": [
-        "deep-volc-coding-promo"
-      ],
-      "confirm_runs": 2
-    },
-    {
-      "id": "ark-collab",
-      "type": "watch",
-      "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
-      "deals": [
-        "ark-daily-5m"
-      ],
-      "confirm_runs": 2
-    },
-    {
-      "id": "copilot-plans",
-      "type": "watch",
-      "url": "https://docs.github.com/en/copilot/get-started/plans",
-      "deals": [
-        "deep-copilot-ai-credits",
-        "github-copilot-free"
-      ],
-      "confirm_runs": 2
-    },
-    {
-      "id": "stepfun-pricing",
-      "type": "watch",
-      "url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
-      "deals": [
-        "deep-stepfun-step5-preview-price"
-      ],
-      "confirm_runs": 2
+     "do": "sync_prices",
+     "provider": "OpenRouter",
+     "layer": "reseller",
+     "currency": "USD",
+     "free_top": 3
     }
-  ]
+   ]
+  },
+  {
+   "id": "modelscope-models",
+   "type": "json",
+   "url": "https://api-inference.modelscope.cn/v1/models",
+   "min_len": 500,
+   "actions": [
+    {
+     "do": "update_deal",
+     "deal": "modelscope-free-infer",
+     "template": "API-Inference 每日 2000 次免费调用：当前 {n_models} 款模型（{top_models} 等），OpenAI 兼容端点"
+    }
+   ]
+  },
+  {
+   "id": "deepseek-pricing",
+   "type": "watch",
+   "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+   "deals": [
+    "deepseek-price",
+    "deepseek-offpeak",
+    "deepseek-searchfree"
+   ]
+  },
+  {
+   "id": "zhipu-promotion",
+   "type": "watch",
+   "url": "https://docs.bigmodel.cn/cn/update/promotion",
+   "deals": [
+    "zhipu-signup"
+   ]
+  },
+  {
+   "id": "bailian-quota",
+   "type": "watch",
+   "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+   "deals": [
+    "bailian-signup"
+   ]
+  },
+  {
+   "id": "ark-freequota",
+   "type": "watch",
+   "url": "https://docs.volcengine.com/docs/ark/free-inference-quota",
+   "deals": [
+    "volc-ark-signup"
+   ]
+  },
+  {
+   "id": "kimi-trial",
+   "type": "watch",
+   "url": "https://www.kimi.com/help/kimi-api/api-free-trial",
+   "deals": [
+    "kimi-voucher"
+   ]
+  },
+  {
+   "id": "kimi-pricing",
+   "type": "watch",
+   "url": "https://platform.kimi.com/docs/pricing/chat",
+   "deals": [
+    "kimi-k2-deadline"
+   ]
+  },
+  {
+   "id": "qianfan-quota",
+   "type": "watch",
+   "url": "https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg",
+   "deals": [
+    "qianfan-signup"
+   ]
+  },
+  {
+   "id": "tokenhub-newuser",
+   "type": "watch",
+   "url": "https://cloud.tencent.com/document/product/1823/130053",
+   "deals": [
+    "tencenthub-signup"
+   ]
+  },
+  {
+   "id": "coze-edition",
+   "type": "watch",
+   "url": "https://docs.coze.cn/guides_edition",
+   "deals": [
+    "coze-free"
+   ]
+  },
+  {
+   "id": "siliconflow-billing",
+   "type": "watch",
+   "url": "https://docs.siliconflow.com/cn/faqs/billing-rules",
+   "deals": [
+    "siliconflow-signup"
+   ]
+  },
+  {
+   "id": "siliconflow-referral",
+   "type": "watch",
+   "url": "https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp",
+   "deals": [
+    "siliconflow-referral"
+   ]
+  },
+  {
+   "id": "minimax-pricing",
+   "type": "watch",
+   "url": "https://platform.minimax.cn/docs/pricing/overview.md",
+   "deals": [
+    "minimax-m3-half"
+   ]
+  },
+  {
+   "id": "groq-limits",
+   "type": "watch",
+   "url": "https://console.groq.com/docs/rate-limits",
+   "deals": [
+    "groq-free"
+   ]
+  },
+  {
+   "id": "gemini-pricing",
+   "type": "watch",
+   "url": "https://ai.google.dev/gemini-api/docs/pricing",
+   "deals": [
+    "google-ai-studio"
+   ]
+  },
+  {
+   "id": "gemini-students",
+   "type": "watch",
+   "url": "https://gemini.google/students",
+   "deals": [
+    "google-student"
+   ]
+  },
+  {
+   "id": "github-pack",
+   "type": "watch",
+   "url": "https://education.github.com/pack",
+   "deals": [
+    "github-student-pack"
+   ]
+  },
+  {
+   "id": "azure-students",
+   "type": "watch",
+   "url": "https://azure.microsoft.com/en-us/free/students",
+   "deals": [
+    "azure-student"
+   ]
+  },
+  {
+   "id": "sambanova-limits",
+   "type": "watch",
+   "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
+   "deals": [
+    "sambanova-free"
+   ]
+  },
+  {
+   "id": "together-pricing",
+   "type": "watch",
+   "url": "https://www.together.ai/pricing",
+   "deals": [
+    "together-free"
+   ]
+  },
+  {
+   "id": "anthropic-pricing",
+   "type": "watch",
+   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+   "deals": [
+    "anthropic-credits"
+   ]
+  },
+  {
+   "id": "aihubmix-pricing",
+   "type": "watch",
+   "url": "https://aihubmix.com/pricing",
+   "confirm_runs": 3,
+   "deals": [
+    "aihubmix-free"
+   ]
+  },
+  {
+   "id": "ohmygpt-pricing",
+   "type": "watch",
+   "url": "https://www.ohmygpt.com/pricing",
+   "deals": [
+    "ohmygpt-referral"
+   ]
+  },
+  {
+   "id": "dmxapi-home",
+   "type": "watch",
+   "url": "https://dmxapi.com/shouye.html",
+   "deals": [
+    "dmxapi-discount"
+   ]
+  },
+  {
+   "id": "nvidia-build",
+   "type": "watch",
+   "url": "https://build.nvidia.com",
+   "deals": [
+    "nvidia-nim"
+   ]
+  },
+  {
+   "id": "autodl-coupon",
+   "type": "watch",
+   "url": "https://www.autodl.com/docs/coupon/",
+   "deals": [
+    "autodl-student"
+   ]
+  },
+  {
+   "id": "gpushare-coupon",
+   "type": "watch",
+   "url": "https://gpushare.com/docs/free_ride/coupon",
+   "deals": [
+    "gpushare-invite"
+   ]
+  },
+  {
+   "id": "xfyun-spark-docs",
+   "type": "watch",
+   "url": "https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html",
+   "deals": [
+    "xinghuo-signup"
+   ]
+  },
+  {
+   "id": "dify-pricing",
+   "type": "watch",
+   "url": "https://dify.ai/pricing",
+   "deals": [
+    "dify-selfhost"
+   ]
+  },
+  {
+   "id": "scnet-activity",
+   "type": "watch",
+   "url": "https://www.scnet.cn/home/subject/center/index.html",
+   "deals": [
+    "scnet-coupon"
+   ],
+   "min_len": 500
+  },
+  {
+   "id": "linuxdo-rss",
+   "type": "rss",
+   "url": "https://linux.do/latest.rss",
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+   "include": [
+    "送",
+    "免费",
+    "额度",
+    "token",
+    "折扣",
+    "羊毛",
+    "礼包",
+    "优惠",
+    "券",
+    "credit"
+   ],
+   "exclude": [
+    "共享",
+    "合租",
+    "多号",
+    "小号",
+    "代充",
+    "批量",
+    "求邀",
+    "拼车",
+    "共享号"
+   ]
+  },
+  {
+   "id": "zcode-changelog",
+   "type": "watch",
+   "url": "https://zcode.z.ai/changelog",
+   "deals": [
+    "zcode-linuxdo"
+   ],
+   "confirm_runs": 2
+  },
+  {
+   "id": "bigmodel-pricing",
+   "type": "watch",
+   "url": "https://docs.bigmodel.cn/cn/guide/start/pricing.md",
+   "deals": [
+    "zhipu-signup",
+    "zhipu-flash-free"
+   ],
+   "confirm_runs": 2
+  },
+  {
+   "id": "bigmodel-activity",
+   "type": "watch",
+   "url": "https://bigmodel.cn/activity/glm-coding-1024",
+   "deals": [
+    "zcode-linuxdo"
+   ],
+   "confirm_runs": 3
+  },
+  {
+   "id": "xfyun-coding-plan",
+   "type": "watch",
+   "url": "https://www.xfyun.cn/doc/spark/CodingPlan.html",
+   "deals": [
+    "xfyun-offpeak",
+    "deep-xunfei-coding-plan"
+   ],
+   "confirm_runs": 2
+  },
+  {
+   "id": "volc-ai618",
+   "type": "watch",
+   "url": "https://www.volcengine.com/activity/ai618",
+   "deals": [
+    "deep-volc-coding-promo"
+   ],
+   "confirm_runs": 2
+  },
+  {
+   "id": "ark-collab",
+   "type": "watch",
+   "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
+   "deals": [
+    "ark-daily-5m"
+   ],
+   "confirm_runs": 2
+  },
+  {
+   "id": "copilot-plans",
+   "type": "watch",
+   "url": "https://docs.github.com/en/copilot/get-started/plans",
+   "deals": [
+    "deep-copilot-ai-credits",
+    "github-copilot-free"
+   ],
+   "confirm_runs": 2
+  },
+  {
+   "id": "stepfun-pricing",
+   "type": "watch",
+   "url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+   "deals": [
+    "deep-stepfun-step5-preview-price"
+   ],
+   "confirm_runs": 2
+  }
+ ]
 }
