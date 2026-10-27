@@ -38,7 +38,7 @@
 - deep 裁决: deep-r5.json 的 deep-tencent-yuanqi 已被 deep-tencent-yuanqi-verified-r6（口径修正版）取代，永不合并防重复
 
 ## 汇总水位
-digest_last: 2026-10-28T02:07:57+08:00（正式小时汇总#1 已发）
+digest_last: 2026-10-28T03:06:59+08:00（小时汇总#2 已发）
 
 ## 合规红线（永不违反）
 多号/批量/接码/代充/共享号/破解/漏洞永不收录；申请制/企业向营销话术不得当普通羊毛上架；CREDENTIALS.md/.env/zhipu.key 不入库不外传。
