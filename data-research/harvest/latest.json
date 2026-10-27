@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T19:40:15Z",
+  "harvested_at": "2026-10-27T19:54:31Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -880,8 +880,7 @@
       "id": "groq-rate-limits",
       "name": "Groq 限流",
       "url": "https://console.groq.com/docs/rate-limits",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "status": "disabled"
     },
     {
       "id": "moonshot-pricing",
@@ -3209,10 +3208,96 @@
     },
     {
       "id": "windsurf-pricing",
-      "name": "Windsurf 定价",
-      "url": "https://windsurf.com/pricing",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 308: Permanent Redirect"
+      "name": "Devin 定价(Windsurf 已并入)",
+      "url": "https://devin.ai/pricing",
+      "status": "ok",
+      "hits": 21,
+      "findings": [
+        {
+          "match": "$0  [Download](https://devin.ai/",
+          "context": "your journey  [SWE-2, our latest model, is now available →](https://cognition.com/blog/swe-2)  INDIVIDUAL PLANS  Free  $0  [Download](https://devin.ai/download)  Light quota to code with agents  Limited model availability  Unlimited inline edits  Unlimited Tab completion"
+        },
+        {
+          "match": "$20per month  [Select plan](https",
+          "context": "t quota to code with agents  Limited model availability  Unlimited inline edits  Unlimited Tab completions  ProPOPULAR  $20per month  [Select plan](https://app.devin.ai/auth/signup)  Everything in Free, plus:  Increased quotas, including access to frontier models from Open"
+        },
+        {
+          "match": "$200per month  [Select plan](https",
+          "context": "del availability  Free use of SWE-2  Access to cloud agents (Devin Cloud)  Purchase extra usage at API pricing  MaxNEW  $200per month  [Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  Significantly higher quotas  TEAM PLANS  Teams  $80/month for team pl"
+        },
+        {
+          "match": "$80/month for team plan + $40/mo ",
+          "context": "[Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  Significantly higher quotas  TEAM PLANS  Teams  $80/month for team plan + $40/mo per full dev seat  [Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  Up to 200 users  Share and coll"
+        },
+        {
+          "match": "$0/month  Pro$20/month  Max$200/",
+          "context": "tps://devin.ai/images/acp-logos/logo-04.svg)  First class support for every major model provider  ## Compare Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 200 users$40/month per full userEach full user inclu"
+        },
+        {
+          "match": "$80/month  EnterpriseLet's talk  ",
+          "context": ")  First class support for every major model provider  ## Compare Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 200 users$40/month per full userEach full user includes their own generous quota and access to D"
+        },
+        {
+          "match": "$40/month per full userEach full ",
+          "context": "Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 200 users$40/month per full userEach full user includes their own generous quota and access to Devin Desktop  Unlimited  Devin Desktop  Tab  Unlimited  Unlimited"
+        },
+        {
+          "match": "Free",
+          "context": "an for your journey  [SWE-2, our latest model, is now available →](https://cognition.com/blog/swe-2)  INDIVIDUAL PLANS  Free  $0  [Download](https://devin.ai/download)  Light quota to code with agents  Limited model availability  Unlimited inli"
+        },
+        {
+          "match": "Free",
+          "context": "ts  Unlimited Tab completions  ProPOPULAR  $20per month  [Select plan](https://app.devin.ai/auth/signup)  Everything in Free, plus:  Increased quotas, including access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading o"
+        },
+        {
+          "match": "Free",
+          "context": "to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models  Full model availability  Free use of SWE-2  Access to cloud agents (Devin Cloud)  Purchase extra usage at API pricing  MaxNEW  $200per month  [Select"
+        },
+        {
+          "match": "Free",
+          "context": "](https://devin.ai/images/acp-logos/logo-04.svg)  First class support for every major model provider  ## Compare Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 200 users$40/month p"
+        },
+        {
+          "match": "Free",
+          "context": "op  Unlimited  Devin Desktop  Tab  Unlimited  Unlimited  Unlimited  Unlimited  Unlimited  Premium models  Fast context  Free SWE-2  Slow  Devin Cloud  DeepWiki  Devin API  Ask Devin  Advanced capabilities  Sharing and collaboration  Concurrent"
+        },
+        {
+          "match": "Free",
+          "context": "ficantly higher usage quotas. It includes everything in Pro, plus significantly higher quotas.  What is included in the Free plan?  The Free plan includes a light quota to code with agents, limited model availability, unlimited inline edits, an"
+        },
+        {
+          "match": "Free",
+          "context": "usage quotas. It includes everything in Pro, plus significantly higher quotas.  What is included in the Free plan?  The Free plan includes a light quota to code with agents, limited model availability, unlimited inline edits, and unlimited Tab"
+        },
+        {
+          "match": "Pricing",
+          "context": "# Devin Plans and Pricing  Choose the perfect plan for your journey  [SWE-2, our latest model, is now available →](https://cognition.com/blog/swe"
+        },
+        {
+          "match": "pricing",
+          "context": "e models  Full model availability  Free use of SWE-2  Access to cloud agents (Devin Cloud)  Purchase extra usage at API pricing  MaxNEW  $200per month  [Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  Significantly higher quot"
+        },
+        {
+          "match": "pricing",
+          "context": "r limits. If you do go beyond your included usage on a paid plan, you can purchase extra usage which is consumed at API pricing.  How can I make my usage limits last longer?  **Control the size of your prompts.** Be precise with your instructions,"
+        },
+        {
+          "match": "$40",
+          "context": "p.devin.ai/signup)  Everything in Pro, plus:  Significantly higher quotas  TEAM PLANS  Teams  $80/month for team plan + $40/mo per full dev seat  [Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  Up to 200 users  Share and"
+        },
+        {
+          "match": "$20",
+          "context": "i/images/acp-logos/logo-04.svg)  First class support for every major model provider  ## Compare Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 200 users$40/month per full userEach"
+        },
+        {
+          "match": "$200",
+          "context": "ogos/logo-04.svg)  First class support for every major model provider  ## Compare Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 200 users$40/month per full userEach full user incl"
+        },
+        {
+          "match": "tier",
+          "context": "[Select plan](https://app.devin.ai/auth/signup)  Everything in Free, plus:  Increased quotas, including access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models  Full model availability  Free use of"
+        }
+      ]
     },
     {
       "id": "monkeycode-docs",
