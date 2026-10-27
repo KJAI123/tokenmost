@@ -22,6 +22,7 @@
     {"id": "cohere-rate-limits", "name": "Cohere 限流", "url": "https://docs.cohere.com/docs/rate-limits", "patterns": ["1,000", "Trial", "req ?/ ?min"]},
     {"id": "zcode-changelog", "name": "ZCode 官网更新日志", "url": "https://zcode.z.ai/changelog", "patterns": ["活动", "体验", "赠送", "邀请"]},
     {"id": "doubao-agent-explore", "name": "豆包智能体广场", "url": "https://www.doubao.com/pc/agent-explore", "patterns": ["免费", "额度", "无限", "试用"], "note": "老板指派 2026-10-27；CSR 壳静态 0 命中属预期，留位观察 SSR 恢复（robots Allow）；羊毛情报靠真浏览器巡检"},
+    {"id": "doubao-quota-rules", "name": "豆包天天领额度活动规则", "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/incentive-campaign-rules/f7f2c423-c770-44e7-9be4-bd67a28f074e.html", "patterns": ["活动赠送额度", "签到", "有效期", "三期|四期|五期"], "note": "活动规则官方原文（静态可抓），规则改版/期数更替即告警"},
     {"id": "zhipu-hangzhou-rules", "name": "智谱杭州 Coding Plan 活动规则", "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules", "patterns": ["减免", "Coding Plan", "额度"]}
   ]
 }

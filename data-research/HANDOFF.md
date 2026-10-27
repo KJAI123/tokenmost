@@ -129,3 +129,9 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **按清单完成源对齐**：①新增指派的 3 源——kimi-membership（30 命中）、azure-students（30 命中）、gemini-pricing（本轮超时，下轮重试）②火山源从 free-inference-quota（已 302+正文 JS 化）切到清单确认的 collaboration-reward-program（6 命中，活页）③openrouter-free-models 静态页源移除（页面转 CSR，:free 目录以 sync.py 的 API 直更为准，避让重复劳动）
 - 本轮 diff 10 项全部为上述源结构调整，**非情报变化**；另 5 源（gemini/groq/sambanova/mistral 系）瞬时超时，下轮自愈
 - 备忘：zhipu-hangzhou-rules 按清单备注 12-09 活动结束后撤源
+
+## 老板指派信源落地（2026-10-27，doubao.com/pc/agent-explore）
+
+- **实为在场活动**：豆包电脑版「天天领额度」（激励三期）——每日签到+任务领活动赠送额度（30 天/笔，免费/付费用户皆可领，消耗优先于付费额度），双端进度打通，官方明禁多号（与红线一致，只收单账号）
+- **规则原文直核**：活动规则 CDN 页静态可抓——已入采集器 doubao-quota-rules 源（规则改版/期数更替即告警）；/pc/agent-explore 网页为 CSR 壳留观察位
+- **给主会话**：候选条目「豆包电脑版·天天领额度」（type: free_tier，数额以客户端活动页为准，difficulty 1）——具体数额需客户端实锤（老板机器装有豆包）；完整调研见 findings/doubao-agents.md

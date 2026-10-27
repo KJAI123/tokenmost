@@ -529,16 +529,18 @@ function freshness(d){
 /* token 数额：表格第一列 */
 function tokCell(d){
   if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
-  if(d.tokens_wan)return`<span class="num">${d.tokens_wan>=10000?(d.tokens_wan/10000).toFixed(1)+' 亿':Math.round(d.tokens_wan)+' 万'}</span><span class="unit">tokens</span>`;
+  if(d.tokens_wan)return`<span class="num">${d.tokens_wan>=10000?(d.tokens_wan/10000).toFixed(1)+' 亿':Math.round(d.tokens_wan)+' 万'}</span><span class="unit">tokens${d.daily_wan?` · 日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+'亿':Math.round(d.daily_wan)+'万'}`:''}</span>`;
   if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
   if(d.cny)return`<span class="num">¥${d.cny}</span><span class="unit">额度</span>`;
+  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+' 亿':'~'+Math.round(d.daily_wan)+' 万'}</span><span class="unit">tokens/天</span></span>`;
+  if(d.daily_calls)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均~${d.daily_calls>=10000?(d.daily_calls/10000).toFixed(1)+'万':d.daily_calls}</span><span class="unit">次/天</span></span>`;
   if(d.type==='free_tier'||d.via==='free')return'<span class="num">免费</span><span class="unit">长期</span>';
   if(d.type==='price_low')return'<span class="num">低价</span><span class="unit">长期</span>';
   if(d.type==='coupon')return'<span class="num">有码</span><span class="unit">折扣</span>';
   return'<span class="num">·</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
 }
-/* token 数额：表格第一列（排序用估算：$1≈300万 tok，¥1≈40万 tok，仅排序口径） */
-function tokSort(d){return (d.tokens_wan||0)+(d.usd||0)*300+(d.cny||0)*40}
+/* token 数额：表格第一列（排序用估算：$1≈300万 tok，¥1≈40万 tok，仅排序口径；daily_wan 为日预估，×30 折月参与同量纲排序） */
+function tokSort(d){return (d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
 let sortKey='fresh';
 function render(){
   if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
