@@ -18,6 +18,6 @@
 - [x] Cursor / Windsurf ✅ 2026-10-28：两定价页入采集器；Cursor 10-12 改版为 X 订阅（Free/Plus$8/Premium$30/Super$100/Ultra$200 与 Grok 共享池）——⌨️Coding 面板变更线索→主管；Windsurf 免费档≈25 Flow Actions/月
 - [ ] TaoToken 统一 Key 工具评估（同类网关，看是否值得收录为源） | TaoToken 统一 key | 工具→总表
 - [ ] lololowe 免费LLM API 收集博客入采集器评估 | — | 博客→采集器
-- [ ] 「34家免费额度拧成一个接口」3.7万Star 仓库定位 | 34家 AI 免费额度 一个接口 github | 线索→主管
+- [x] 34家白嫖神 ✅ 2026-10-28 定位=OmniRoute(diegosouzapw/OmniRoute 3.7万Star)：本地网关+免费额度仪表盘；已入采集器，站点工具区收录建议→主管
 - [ ] weixin 雷达第3周查询词轮换 | — | 公众号管道
 - [x] 智谱每日一亿 ✅ 2026-10-28：入口定位=bigmodel.cn/activity/trial-card 页族（8+ 体验卡页）；数额登录核→主管
