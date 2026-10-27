@@ -621,28 +621,28 @@ function render(){
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const s=siteFor(g.best);
-      return`
+      return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}">
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天">${total?`<span class="num">${f(total)}</span><span class="unit">DS等效·首月可薅</span>`:'<span class="num">·</span>'}${g.daily?`<span class="unit" style="display:block;margin-top:2px">一次性 ${g.once?f(g.once):'—'} ＋ 日均 ${f(g.daily)}/天</span>`:(g.once?'<span class="unit" style="display:block;margin-top:2px">一次性到账</span>':'')}</span></div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">DS等效·首月可薅</span>${g.daily?`<span class="unit" style="display:block;margin-top:2px">一次性 ${g.once?f(g.once):'—'} ＋ 日均 ${f(g.daily)}/天</span>`:'<span class="unit" style="display:block;margin-top:2px">一次性到账</span>'}</span></div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${esc(g.p)}</span>
         <span class="r-value" title="${esc(g.best.value)}">${esc(g.best.value)}</span>
-        ${g.ds.length>1?`<span class="chip gold">📎 ${g.ds.length} 条信源</span>`:''}
+        <span class="chip gold">📎 ${g.ds.length} 条信源</span>
       </div>
       <div class="r-line2">
         <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
         ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
-        ${g.ds.length>1?`<span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>`:''}
+        <span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>
       </div>
     </div>
     <div class="r-state">${freshness(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
     <div class="r-ops">
-      ${g.ds.length>1?`<button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>`:''}
+      <button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>
       <a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>
     </div>
   </article>
-  ${g.ds.length>1?`<div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best)}`}).join('');
+  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best)}`).join('');
   }else{
     box.innerHTML=list.map(rowHtml).join('');
   }
