@@ -1,38 +1,83 @@
 {
-  "meta": {
-    "name": "全站 token 等效标准（老板拍板 2026-10-28）",
-    "rule": "全部 token 统一等效为 DeepSeek V4.1 Flash token；按谷峰价（空闲 5 折）折算营造真实购买力口径；等效≠算术，旗舰模型按牌价折算力倍率；国内外双基准",
-    "update": "随 prices.json 牌价变动由 sync/check 提醒复核"
+ "meta": {
+  "name": "全站 token 等效标准（老板拍板 2026-10-28）",
+  "rule": "全部 token 统一等效为 DeepSeek V4.1 Flash token；按谷峰价（空闲 5 折）折算营造真实购买力口径；等效≠算术，旗舰模型按牌价折算力倍率；国内外双基准",
+  "update": "随 prices.json 牌价变动由 sync/check 提醒复核"
+ },
+ "base_cn": {
+  "model": "DeepSeek V4.1 Flash（deepseek-flash）",
+  "price": "谷价 输入 1 / 输出 4 元每百万（高峰 2/8 的 5 折）",
+  "weighted_cny_per_m": 1.75,
+  "formula": "3:1 加权 (3×1+1×4)/4 = 1.75 元/百万 —— 国内条目统一基准"
+ },
+ "base_global": {
+  "model": "DeepSeek V4.1 Flash 国际牌价",
+  "price": "$0.30 / $1.20 每百万（OpenRouter/OpenCode 口径）",
+  "weighted_usd_per_m": 0.525,
+  "formula": "3:1 加权 (3×0.30+1×1.20)/4 = $0.525/百万 —— 国外条目统一基准（国外模型禁用国内¥基准）"
+ },
+ "factors_cn": [
+  {
+   "model": "deepseek-flash",
+   "factor": 1.0,
+   "basis": "基准本体"
   },
-  "base_cn": {
-    "model": "DeepSeek V4.1 Flash（deepseek-flash）",
-    "price": "谷价 输入 1 / 输出 4 元每百万（高峰 2/8 的 5 折）",
-    "weighted_cny_per_m": 1.75,
-    "formula": "3:1 加权 (3×1+1×4)/4 = 1.75 元/百万 —— 国内条目统一基准"
+  {
+   "model": "GLM-5.3",
+   "factor": 7.43,
+   "basis": "牌价 8/28 → 加权 13 ÷ 1.75"
   },
-  "base_global": {
-    "model": "DeepSeek V4.1 Flash 国际牌价",
-    "price": "$0.30 / $1.20 每百万（OpenRouter/OpenCode 口径）",
-    "weighted_usd_per_m": 0.525,
-    "formula": "3:1 加权 (3×0.30+1×1.20)/4 = $0.525/百万 —— 国外条目统一基准（国外模型禁用国内¥基准）"
+  {
+   "model": "deepseek-v4-pro",
+   "factor": 7.71,
+   "basis": "牌价 9/27 → 加权 13.5 ÷ 1.75"
   },
-  "factors_cn": [
-    {"model": "deepseek-flash", "factor": 1.0, "basis": "基准本体"},
-    {"model": "GLM-5.3", "factor": 7.43, "basis": "牌价 8/28 → 加权 13 ÷ 1.75"},
-    {"model": "deepseek-v4-pro", "factor": 7.71, "basis": "牌价 9/27 → 加权 13.5 ÷ 1.75"},
-    {"model": "MiniMax-M3", "factor": 2.10, "basis": "牌价 2.1/8.4 → 加权 3.675 ÷ 1.75"},
-    {"model": "MiniMax-M3.1-Flash", "factor": 1.0, "basis": "牌价 1/4 → 加权 1.75 ÷ 1.75（与基准同档）"},
-    {"model": "GLM-5.3-Flash", "factor": 0.74, "basis": "牌价 0.8/2.8 → 加权 1.3 ÷ 1.75（比基准谷价便宜）"},
-    {"model": "GLM-4.7-Flash / GLM-4.5-Air 等免费无牌价模型", "factor": 1.0, "basis": "长期免费无牌价，按同档 1:1 保守计"}
-  ],
-  "factors_global": [
-    {"model": "kimi-k3（国际站）", "factor": 11.43, "basis": "$3/15 → 加权 6 ÷ 0.525"},
-    {"model": "Groq/OpenRouter:free/ModelScope 等无牌价免费模型", "factor": 1.0, "basis": "无牌价，1:1 保守计"}
-  ],
-  "entry_eq": {
-    "_comment": "条目级等效：eq_wan = tokens_wan × 按该条目模型构成折算；未列出的通用/多模型额度条目默认 1:1",
-    "deep-zhipu-startplan-r7": {"eq_wan": 13645, "basis": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）"},
-    "deep-zhipu-startplan-r6": {"eq_wan": 13645, "basis": "同 r7 口径（体验套餐双条目同折）"},
-    "sensenova-lite": {"eq_wan": 720, "basis": "daily_wan 720 万图像 token 当量 ×1.0"}
+  {
+   "model": "MiniMax-M3",
+   "factor": 2.1,
+   "basis": "牌价 2.1/8.4 → 加权 3.675 ÷ 1.75"
+  },
+  {
+   "model": "MiniMax-M3.1-Flash",
+   "factor": 1.0,
+   "basis": "牌价 1/4 → 加权 1.75 ÷ 1.75（与基准同档）"
+  },
+  {
+   "model": "GLM-5.3-Flash",
+   "factor": 0.74,
+   "basis": "牌价 0.8/2.8 → 加权 1.3 ÷ 1.75（比基准谷价便宜）"
+  },
+  {
+   "model": "GLM-4.7-Flash / GLM-4.5-Air 等免费无牌价模型",
+   "factor": 1.0,
+   "basis": "长期免费无牌价，按同档 1:1 保守计"
   }
+ ],
+ "factors_global": [
+  {
+   "model": "kimi-k3（国际站）",
+   "factor": 11.43,
+   "basis": "$3/15 → 加权 6 ÷ 0.525"
+  },
+  {
+   "model": "Groq/OpenRouter:free/ModelScope 等无牌价免费模型",
+   "factor": 1.0,
+   "basis": "无牌价，1:1 保守计"
+  }
+ ],
+ "entry_eq": {
+  "_comment": "条目级等效：eq_wan = tokens_wan × 按该条目模型构成折算；未列出的通用/多模型额度条目默认 1:1",
+  "deep-zhipu-startplan-r6": {
+   "eq_wan": 13645,
+   "basis": "同 r7 口径（体验套餐双条目同折）"
+  },
+  "sensenova-lite": {
+   "eq_wan": 720,
+   "basis": "daily_wan 720 万图像 token 当量 ×1.0"
+  },
+  "deep-zhipu-trialplan-r7": {
+   "eq_wan": 13645,
+   "basis": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）"
+  }
+ }
 }

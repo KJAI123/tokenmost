@@ -249,7 +249,9 @@
   "difficulty": 2,
   "published": true,
   "notes": "TODO：每日 2000 次限额来自社区交叉印证，官方文档页 JS 渲染未能直核",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "daily_wan": 800,
+  "daily_note": "2000 次/天 × ~4K tok/次 ≈800 万/天（估算）"
  },
  {
   "id": "scnet-coupon",
@@ -381,7 +383,9 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 2,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "daily_wan": 20,
+  "daily_note": "默认 50 次/天 ×4K≈20 万/天；充 $10 解锁 1000 次/天≈400 万/天（估算）"
  },
  {
   "id": "nvidia-nim",
@@ -532,7 +536,9 @@
   "difficulty": 1,
   "published": true,
   "notes": "TODO：llama-3.3-70b-versatile 已转 Enterprise 档，免费表内不含；📈 RPD 曾 14400→约 1000（2026-09）收缩通道，高频重验",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "daily_wan": 400,
+  "daily_note": "1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）"
  },
  {
   "id": "sambanova-free",
@@ -547,7 +553,9 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "daily_wan": 20,
+  "daily_note": "官方 TPD 20 万 tokens 硬顶"
  },
  {
   "id": "together-free",
@@ -622,7 +630,9 @@
   "published": true,
   "rule": "数据授权一经提交永久不可撤回（官方文档原文）——介意数据用途的别碰",
   "notes": "💡 双线互证：爬虫助理会话（官方公告 2605938）+ 爬虫主管（协作奖励文档）；数据授权一经提交永久不可撤回——介意数据用途的别碰",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "daily_wan": 500,
+  "daily_note": "官方口径：单模型每日 500 万 tokens"
  },
  {
   "id": "zhipu-flash-free",
@@ -762,7 +772,9 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "daily_wan": 4,
+  "daily_note": "月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）"
  },
  {
   "id": "302ai-payg",
@@ -818,7 +830,9 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
   "published": true,
-  "rule": "Trial key 不可用于生产/商用"
+  "rule": "Trial key 不可用于生产/商用",
+  "daily_wan": 13,
+  "daily_note": "1000 次/月 ÷30 ×~4K tok/次 ≈13 万/天（估算）"
  },
  {
   "id": "cerebras-credits",
@@ -876,7 +890,10 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
   "published": true,
-  "notes": "💡 官方新闻页原文核验；Token Plan 首月免费未能核实已删除"
+  "notes": "💡 官方新闻页原文核验；Token Plan 首月免费未能核实已删除",
+  "daily_calls": 7200,
+  "daily_wan": 720,
+  "daily_note": "每5h 1500 次→7200 次/天；×~1K tok/次图像当量≈720 万 tok/天（估算）"
  },
  {
   "id": "xfyun-offpeak",
@@ -1881,7 +1898,9 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "notes": "官方宣传口径=README/官网（中高）；Pro实领=GitHub issues #3838/#4300/#10513社区汇总（中）——双口径收录"
+  "notes": "官方宣传口径=README/官网（中高）；Pro实领=GitHub issues #3838/#4300/#10513社区汇总（中）——双口径收录",
+  "daily_wan": 400,
+  "daily_note": "官方宣传 1000 请求/天 ×~4K ≈400 万/天；Pro 档实领更少（估算）"
  },
  {
   "id": "deep-cursor-x-subscription",
@@ -2681,7 +2700,9 @@
   "published": true,
   "tokens_wan": 4000,
   "via": "client",
-  "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事"
+  "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事",
+  "eq_wan": 13645,
+  "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）"
  },
  {
   "id": "deep-zhipu-flash-correction-r7",
@@ -2796,5 +2817,116 @@
   "published": true,
   "via": "client",
   "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/"
+ },
+ {
+  "id": "cline-pass-deepseek",
+  "provider": "Cline",
+  "category": "official_global",
+  "type": "price_low",
+  "value": "Cline Pass 订阅 $9.99/月，含 13 个开源模型托管额度（Kimi K3、DeepSeek V4 Pro 等，官方倍率 2-5 倍）；DeepSeek V4.1 Flash 社区实测首月可跑约 60-70 亿 tokens（折合约 ¥0.002/百万，全网最低一档）",
+  "region": "global",
+  "url": "https://cline.bot/",
+  "rule": "首月 8 折优惠码在公众号「神秘喵星人」后台获取；OpenAI 兼容 Key 可拎出单独使用；60-70 亿为社区实测口径非官方承诺",
+  "notes": "多源交叉：官方定价 $9.99/月+模型清单（CSDN 评测 163582549）、公众号文章、官方 X",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "wechat_article"
+ },
+ {
+  "id": "intel-miaowu",
+  "provider": "神秘喵星人（公众号）",
+  "category": "intel_source",
+  "type": "status",
+  "value": "编程羊毛第一线公众号：ClinePass 8 折、订阅商 DeepSeek 额度大战（$80/$120 权益）、U2 Flash 限时免费、看广告白嫖 token 等情报首发地",
+  "region": "cn",
+  "url": "https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg",
+  "notes": "2026-10-27 老板指令新收录；往期文章含 Qoder 免费 Flash、U2 无限量等线索；另见 Command Code（$11/月→$100→$80，单源待核）",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "boss_direct"
+ },
+ {
+  "id": "cline-free-tier",
+  "provider": "Cline",
+  "category": "official_global",
+  "type": "free_tier",
+  "value": "Cline 新增免费模型档：无需 API Key、无需绑卡，登录即用 DeepSeek V4.1 Flash、Kimi K3、GLM 5.3",
+  "region": "global",
+  "url": "https://cline.bot/",
+  "rule": "登录即用；免费档限 Cline IDE/插件内使用；模型清单以官方为准",
+  "notes": "来源：CSDN（166225776）；具体限额待官网核实",
+  "verify_status": "unverified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "supervisor"
+ },
+ {
+  "id": "opencode-go-deepseek",
+  "provider": "OpenCode",
+  "category": "official_global",
+  "type": "pricing_plan",
+  "value": "OpenCode Go 订阅 $10/月，DeepSeek V4.1 Flash 月配额 $80（9 月 $15→$60，10 月 12 日起 $80）——额度大战主力",
+  "region": "global",
+  "url": "https://opencode.ai/v2/docs/console/go",
+  "rule": "约每 5 小时 $16 / 每周 $40 限额；V4.1 Flash 价格 $0.30/$1.20 每百万；价格战仍在变动",
+  "notes": "多源：官方文档+凤凰科技+知乎教程；价格战全景：Command Code $11/月 曾冲 $100 后回 $80（单源 X，待核）",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "supervisor"
+ },
+ {
+  "id": "opencode-zen-free",
+  "provider": "OpenCode",
+  "category": "official_global",
+  "type": "limited_promo",
+  "value": "OpenCode Zen 限时免费开放 DeepSeek V4 Flash（限 OpenCode 内使用，200K 上下文）",
+  "region": "global",
+  "url": "https://opencode.ai/docs/zen",
+  "rule": "限时活动随时可能收回；社区讨论 V4.1-Flash-1017 上线免费版中",
+  "notes": "来源：Reddit r/opencodeCLI 等多社区报道",
+  "verify_status": "unverified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "supervisor"
+ },
+ {
+  "id": "qoder-deepseek-free",
+  "provider": "Qoder",
+  "category": "agent",
+  "type": "free_model",
+  "value": "Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）",
+  "region": "cn",
+  "url": "https://qoder.com",
+  "rule": "Qoder 内免费调用，可一键配置接入任意 Harness；官方 X 宣发",
+  "notes": "多源：Qoder 官方推文 + B 站实测视频（BV1thnA63Ew6）",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "supervisor"
+ },
+ {
+  "id": "unisound-u2flash-free",
+  "provider": "云知声",
+  "category": "official_cn",
+  "type": "limited_promo",
+  "value": "云知声 U2-Flash（266B MoE）限时免费：公众号报一个月无限量调用，编程能力对标主力模型",
+  "region": "cn",
+  "url": "https://www.unisound.com",
+  "rule": "限时免费活动，具体额度与入口以云知声开放平台公告为准",
+  "notes": "发布已多源证实（腾讯新闻/搜狐/网易）；「一个月无限量」为公众号口径待官网核",
+  "verify_status": "unverified",
+  "verified_at": "2026-10-28T01:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "supervisor"
  }
 ]
