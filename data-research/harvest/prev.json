@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T01:02:39Z",
+  "harvested_at": "2026-10-27T11:05:51Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -547,7 +547,7 @@
       "name": "火山方舟免费推理额度",
       "url": "https://docs.volcengine.com/docs/ark/free-inference-quota",
       "status": "ok",
-      "hits": 19,
+      "hits": 3,
       "findings": [
         {
           "match": "免费推理额度",
@@ -555,75 +555,11 @@
         },
         {
           "match": "免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度",
-          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 方舟为新用户提供免费推理试用额度，便于新用户 0 成本学习以及尝试将模型推理能力与业务相结合。您只需要注册火山引擎，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使"
-        },
-        {
-          "match": "免费推理额度 文档反馈 问问助手 方舟为新用户提供免费推理试用额度",
-          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 方舟为新用户提供免费推理试用额度，便于新用户 0 成本学习以及尝试将模型推理能力与业务相结合。您只需要注册火山引擎，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使用限制 ​ 免费额度仅适用于抵扣 按 token 后付费产生的在线推理费用 ，不能抵扣使用各类插件、知"
-        },
-        {
-          "match": "免费调用模型推理服务的次",
-          "context": "f 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 方舟为新用户提供免费推理试用额度，便于新用户 0 成本学习以及尝试将模型推理能力与业务相结合。您只需要注册火山引擎，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使用限制 ​ 免费额度仅适用于抵扣 按 token 后付费产生的在线推理费用 ，不能抵扣使用各类插件、知识库等产生的费用。 ​ 免费额度无法抵扣 批量推理 调用产生的 token。 ​ 免费额度可以抵扣使用上下文缓存命中缓存的to"
-        },
-        {
-          "match": "免费额度仅适用于抵扣 按 token",
-          "context": "下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 方舟为新用户提供免费推理试用额度，便于新用户 0 成本学习以及尝试将模型推理能力与业务相结合。您只需要注册火山引擎，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使用限制 ​ 免费额度仅适用于抵扣 按 token 后付费产生的在线推理费用 ，不能抵扣使用各类插件、知识库等产生的费用。 ​ 免费额度无法抵扣 批量推理 调用产生的 token。 ​ 免费额度可以抵扣使用上下文缓存命中缓存的token、未命中缓存的token、输出产生的token，但是无"
-        },
-        {
-          "match": "免费额度无法抵扣 批量推理 调用产生的 token",
-          "context": "习以及尝试将模型推理能力与业务相结合。您只需要注册火山引擎，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使用限制 ​ 免费额度仅适用于抵扣 按 token 后付费产生的在线推理费用 ，不能抵扣使用各类插件、知识库等产生的费用。 ​ 免费额度无法抵扣 批量推理 调用产生的 token。 ​ 免费额度可以抵扣使用上下文缓存命中缓存的token、未命中缓存的token、输出产生的token，但是无法抵扣缓存上下文产生的存储费用。 ​ 上下文缓存介绍请参见 上下文缓存 。 ​ 上下文缓存计费请参见 上下文缓存计费 。 ​ 免"
-        },
-        {
-          "match": "免费额度可以抵扣使用上下文缓存命中缓存的token、未命中缓存的token",
-          "context": "，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使用限制 ​ 免费额度仅适用于抵扣 按 token 后付费产生的在线推理费用 ，不能抵扣使用各类插件、知识库等产生的费用。 ​ 免费额度无法抵扣 批量推理 调用产生的 token。 ​ 免费额度可以抵扣使用上下文缓存命中缓存的token、未命中缓存的token、输出产生的token，但是无法抵扣缓存上下文产生的存储费用。 ​ 上下文缓存介绍请参见 上下文缓存 。 ​ 上下文缓存计费请参见 上下文缓存计费 。 ​ 免费推理额度，不同模型分别计算，主账号下共享。 ​ 举例说明：主账号如果有 A、B"
+          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 最近更新时间： 2026.08.24 21:58:51 这个页面对您有帮助吗？ 有用 有用 无用 无用"
         },
         {
           "match": "免费推理额度",
-          "context": "n。 ​ 免费额度可以抵扣使用上下文缓存命中缓存的token、未命中缓存的token、输出产生的token，但是无法抵扣缓存上下文产生的存储费用。 ​ 上下文缓存介绍请参见 上下文缓存 。 ​ 上下文缓存计费请参见 上下文缓存计费 。 ​ 免费推理额度，不同模型分别计算，主账号下共享。 ​ 举例说明：主账号如果有 A、B 2 个子账号调用模型推理服务，分别使用模型 1、模型 2 推理额度（k token）为 300、100，300、200 。模型 1、模型 2 的免费推理额度均为 500"
-        },
-        {
-          "match": "免费推理额度",
-          "context": "费 。 ​ 免费推理额度，不同模型分别计算，主账号下共享。 ​ 举例说明：主账号如果有 A、B 2 个子账号调用模型推理服务，分别使用模型 1、模型 2 推理额度（k token）为 300、100，300、200 。模型 1、模型 2 的免费推理额度均为 500。则主账号下的免费额度剩余： ​ ​ Plain 复制 模型1： 500 - 300 - 300 = -100 (k token) ​ 模型2： 500 - 100 - 200 = 200 (k token） ​ ​ ​ Pla"
-        },
-        {
-          "match": "免费额度",
-          "context": "计算，主账号下共享。 ​ 举例说明：主账号如果有 A、B 2 个子账号调用模型推理服务，分别使用模型 1、模型 2 推理额度（k token）为 300、100，300、200 。模型 1、模型 2 的免费推理额度均为 500。则主账号下的免费额度剩余： ​ ​ Plain 复制 模型1： 500 - 300 - 300 = -100 (k token) ​ 模型2： 500 - 100 - 200 = 200 (k token） ​ ​ ​ Plain Text 复制 模型额度剩余"
-        },
-        {
-          "match": "免费推理额度",
-          "context": "0 - 100 - 200 = 200 (k token） ​ ​ ​ Plain Text 复制 模型额度剩余如下： ​ ​ 模型 1 ：0，且产生 100 k token 使用量。 ​ ​ 模型 2：200 k token 。 ​ ​ 免费推理额度，基础模型和精调后模型共享。 ​ 举例说明：假设模型 1 的免费推理额度为 500，则模型 1 和基于模型 1 精调后的模型，共享 500 的额度。 ​ 获取资格 ​ 注册 火山引擎账号。 ​ 查询额度 ​ 您可以通过下面渠道查询到各个模型"
-        },
-        {
-          "match": "免费推理额度为 500，则模型 1 和基于模型 1 精调后的模型，共享 500 的额度",
-          "context": "Plain Text 复制 模型额度剩余如下： ​ ​ 模型 1 ：0，且产生 100 k token 使用量。 ​ ​ 模型 2：200 k token 。 ​ ​ 免费推理额度，基础模型和精调后模型共享。 ​ 举例说明：假设模型 1 的免费推理额度为 500，则模型 1 和基于模型 1 精调后的模型，共享 500 的额度。 ​ 获取资格 ​ 注册 火山引擎账号。 ​ 查询额度 ​ 您可以通过下面渠道查询到各个模型的免费额度。 ​ 开通管理 ：登录主账号，可以在控制台实时查询账号下免费额度及抵扣情况。 ​ 消耗额度 ​ 免费额度耗尽，调用将会失败，需要继续使"
-        },
-        {
-          "match": "免费额度",
-          "context": "基础模型和精调后模型共享。 ​ 举例说明：假设模型 1 的免费推理额度为 500，则模型 1 和基于模型 1 精调后的模型，共享 500 的额度。 ​ 获取资格 ​ 注册 火山引擎账号。 ​ 查询额度 ​ 您可以通过下面渠道查询到各个模型的免费额度。 ​ 开通管理 ：登录主账号，可以在控制台实时查询账号下免费额度及抵扣情况。 ​ 消耗额度 ​ 免费额度耗尽，调用将会失败，需要继续使用，需要进行实名认证并手动开通对应的模型推理服务，开通方式请见 开通管理 。 ​ 说明 ​ 平台推出了安"
-        },
-        {
-          "match": "免费额度",
-          "context": "额度为 500，则模型 1 和基于模型 1 精调后的模型，共享 500 的额度。 ​ 获取资格 ​ 注册 火山引擎账号。 ​ 查询额度 ​ 您可以通过下面渠道查询到各个模型的免费额度。 ​ 开通管理 ：登录主账号，可以在控制台实时查询账号下免费额度及抵扣情况。 ​ 消耗额度 ​ 免费额度耗尽，调用将会失败，需要继续使用，需要进行实名认证并手动开通对应的模型推理服务，开通方式请见 开通管理 。 ​ 说明 ​ 平台推出了安心体验模式，保障您既能免费体验模型推理服务，又避免产生费用。 ​"
-        },
-        {
-          "match": "免费额度",
-          "context": "1 精调后的模型，共享 500 的额度。 ​ 获取资格 ​ 注册 火山引擎账号。 ​ 查询额度 ​ 您可以通过下面渠道查询到各个模型的免费额度。 ​ 开通管理 ：登录主账号，可以在控制台实时查询账号下免费额度及抵扣情况。 ​ 消耗额度 ​ 免费额度耗尽，调用将会失败，需要继续使用，需要进行实名认证并手动开通对应的模型推理服务，开通方式请见 开通管理 。 ​ 说明 ​ 平台推出了安心体验模式，保障您既能免费体验模型推理服务，又避免产生费用。 ​ 可开启对象： 未开通过模型服务 ，且未开"
-        },
-        {
-          "match": "免费额度，接近免费额度",
-          "context": "您既能免费体验模型推理服务，又避免产生费用。 ​ 可开启对象： 未开通过模型服务 ，且未开启过或已关闭过安心体验模式的账号（包括实名认证通过的个人账号和企业账号）可开启。 ​ 工作机制：在安心体验模式下，调用推理 API 时仅消耗平台赠送的免费额度，接近免费额度后服务将不可使用，避免产生额外费用。 ​ 详情请参见 安心体验模式细则说明 。 ​ 抵扣规则 ​ 如果您参与了 协作奖励计划 ，可能会获得「协作奖励计划资源包」。本节为您介绍抵扣顺序的优先级： ​ 不同类型的资源包： ​ 「免费在线推理资源"
-        },
-        {
-          "match": "免费在线推理资源包（即免费推理额度",
-          "context": "度，接近免费额度后服务将不可使用，避免产生额外费用。 ​ 详情请参见 安心体验模式细则说明 。 ​ 抵扣规则 ​ 如果您参与了 协作奖励计划 ，可能会获得「协作奖励计划资源包」。本节为您介绍抵扣顺序的优先级： ​ 不同类型的资源包： ​ 「免费在线推理资源包（即免费推理额度）」抵扣优先级高于「协作奖励计划资源包」。 ​ 同一类型的资源包：如果用户名下同时存在多个可抵扣的同类型资源包，则系统会按照如下优先级进行抵扣：失效时间>生效时间 ​ 优先使用失效时间早的资源包；针对周期型资源包，失效时间指的是当前重置周期"
-        },
-        {
-          "match": "新用户提供免费推理试用额度，便于新用户 0 成本学习以及尝试将模型推理能力与业务相结合",
-          "context": "为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 方舟为新用户提供免费推理试用额度，便于新用户 0 成本学习以及尝试将模型推理能力与业务相结合。您只需要注册火山引擎，即可获得一定额度的免费调用模型推理服务的次数。 ​ 使用限制 ​ 免费额度仅适用于抵扣 按 token 后付费产生的在线推理费用 ，不能抵扣使用各类插件、知识库等产生的费用。 ​ 免费额度无法抵扣 批量推理 调用产生"
-        },
-        {
-          "match": "赠送的免费额度，接近免费额度后服务将不可使用，避免产生额外费用",
-          "context": "，保障您既能免费体验模型推理服务，又避免产生费用。 ​ 可开启对象： 未开通过模型服务 ，且未开启过或已关闭过安心体验模式的账号（包括实名认证通过的个人账号和企业账号）可开启。 ​ 工作机制：在安心体验模式下，调用推理 API 时仅消耗平台赠送的免费额度，接近免费额度后服务将不可使用，避免产生额外费用。 ​ 详情请参见 安心体验模式细则说明 。 ​ 抵扣规则 ​ 如果您参与了 协作奖励计划 ，可能会获得「协作奖励计划资源包」。本节为您介绍抵扣顺序的优先级： ​ 不同类型的资源包： ​ 「免费在线推理资源包（即免费推理额度）」抵扣优先级高"
+          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 最近更新时间： 2026.08.24 21:58:51 这个页面对您有帮助吗？ 有用 有用 无用 无用"
         }
       ]
     },
@@ -661,79 +597,75 @@
       "name": "OpenRouter 免费模型列表",
       "url": "https://openrouter.ai/models?max_price=0",
       "status": "ok",
-      "hits": 18,
+      "hits": 17,
       "findings": [
         {
           "match": "$0.06/K images Amazon: Titan Embedd",
-          "context": "ectors are 1,024 dimensions by default with 384 and 256 selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.06/K images Amazon: Titan Embeddings G1 - Text Titan Embeddings G1 - Text 1.71M tokens Amazon Titan Embeddings G1 - Text is the first-generation Titan t"
+          "context": "ectors are 1,024 dimensions by default with 384 and 256 selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.06/K images Amazon: Titan Embeddings G1 - Text Titan Embeddings G1 - Text 1.76M tokens Amazon Titan Embeddings G1 - Text is the first-generation Titan t"
         },
         {
           "match": "$0.10/M tokens Amazon: Titan Text E",
-          "context": "per input and returns fixed 1,536-dimension vectors; the dimensions parameter is not supported. by amazon Oct 26, 2026 $0.10/M tokens Amazon: Titan Text Embeddings V2 Titan Text Embeddings V2 734K tokens Amazon Titan Text Embeddings V2 is a text embedding model for retrieva"
+          "context": "per input and returns fixed 1,536-dimension vectors; the dimensions parameter is not supported. by amazon Oct 26, 2026 $0.10/M tokens Amazon: Titan Text Embeddings V2 Titan Text Embeddings V2 1.19M tokens Amazon Titan Text Embeddings V2 is a text embedding model for retriev"
         },
         {
           "match": "$0.02/M tokens OpenAI: GPT-6.1 Terr",
-          "context": "s of 1,024 dimensions by default, with 512 and 256 also selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.02/M tokens OpenAI: GPT-6.1 Terra (batch) GPT-6.1 Terra (batch) Batch variant 12.1M tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
+          "context": "s of 1,024 dimensions by default, with 512 and 256 also selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.02/M tokens OpenAI: GPT-6.1 Terra Pro (batch) GPT-6.1 Terra Pro (batch) Batch variant 401K tokens GPT-6.1 Terra Pro is the same underlying model as GPT-"
         },
         {
           "match": "$0.50 /M input tokens $2.50 /M outp",
-          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 9.07B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
+          "context": "x27;s docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra Pro GPT-6.1 Terra Pro 762M tokens GPT-6.1 Terra Pro is the same underlying model as GPT-"
+        },
+        {
+          "match": "$0.50 /M input tokens $2.50 /M outp",
+          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 34.2B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.52M tokens HeyGen Voice Turbo is a lower-latency version"
+          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.86M tokens HeyGen Voice Turbo is a lower-latency version"
         },
         {
           "match": "$2 /M input tokens $10 /M output",
-          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 171B tokens Flint is an open-weight mixture-of-experts model f"
+          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 174B tokens Flint is an open-weight mixture-of-experts model f"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 715M tokens Mammoth 1 is a 27B decision model from Base L"
+          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 798M tokens Mammoth 1 is a 27B decision model from Base L"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 473M tokens Elephant 1 is a 9B decision model from Base"
+          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 503M tokens Elephant 1 is a 9B decision model from Base"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 4.08B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
+          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 4.39B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
         },
         {
           "match": "$0.12 /M input tokens $0 /M output ",
-          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.12 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 223M tokens Nemotron 3.5 Embed 1B"
+          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.12 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 244M tokens Nemotron 3.5 Embed 1B"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "8-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 1B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 8B (free) Nemotron 3.5 Embed 8B (free) Free variant 222M tokens Nemotron 3.5 Embed 8B"
+          "context": "8-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 1B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 8B (free) Nemotron 3.5 Embed 8B (free) Free variant 223M tokens Nemotron 3.5 Embed 8B"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 457M tokens by nvidia Oct 21, 20"
+          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 496M tokens by nvidia Oct 21, 20"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 457M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.13M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It conver"
+          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 496M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.18M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It conver"
         },
         {
           "match": "$13/M characters Mistral: Voxtral",
-          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 42.3M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
+          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 45.1M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
         },
         {
           "match": "$0.000067/second Mistral: Voxtral Mini ",
-          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 12.8M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
+          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 14.1M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
         },
         {
-          "match": "$0.000058/second MiniMax: MiniMax M3.1 ",
-          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 5% off 1.49T tokens Academia (#44) Finance (#38) Marketing (#42) SEO (#16) Programming (#17) +"
-        },
-        {
-          "match": "$0.1425 /M input tokens $0.57 /M outp",
-          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.1425 /M input tokens $0.57 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 35.6T tokens Academia (#1) Finance (#2) Health (#9"
-        },
-        {
-          "match": "$0.04 /M input tokens $0.50 /M outp",
-          "context": "reports that it exceeds V4 Pro on performance, speed, and task completion time. by deepseek Oct 17, 2026 1.05M context $0.04 /M input tokens $0.50 /M output tokens List Table List Table List Table"
+          "match": "$0.000058/second List Table List Table ",
+          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second List Table List Table List Table"
         }
       ]
     },
