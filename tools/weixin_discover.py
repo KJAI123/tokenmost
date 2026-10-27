@@ -11,7 +11,8 @@ OUT = ROOT / "data-research" / "weixin_articles.json"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 # 发现用查询词（按周轮换，可在队尾追加）
 # 按周轮换：第2周批次（每周巡检时更换以避开搜狗缓存）
-QUERIES = ["GLM 免费", "Coding Plan 折扣", "AI 额度 领取", "DeepSeek 免费"]
+# 按周轮换：第3周批次
+QUERIES = ["AI 编程 白嫖", "注册送 tokens", "大模型 体验卡", "Claude Code 折扣"]
 SNOWBALL_SEEDS = [  # 已知文章：从文内互链滚雪球
     "https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg",
 ]

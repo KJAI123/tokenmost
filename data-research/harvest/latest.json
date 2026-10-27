@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T21:39:37Z",
+  "harvested_at": "2026-10-27T21:56:30Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -547,33 +547,8 @@
       "name": "火山方舟协作奖励计划",
       "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
       "status": "ok",
-      "hits": 6,
-      "findings": [
-        {
-          "match": "免费推理额度",
-          "context": "模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识问答 Agent"
-        },
-        {
-          "match": "协作奖励",
-          "context": "- 标准流程 模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识"
-        },
-        {
-          "match": "协作奖励",
-          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
-        },
-        {
-          "match": "协作奖励",
-          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
-        },
-        {
-          "match": "协作奖励",
-          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
-        },
-        {
-          "match": "Token",
-          "context": "作与生成视频 查看版权用量与收入 在线推理 管理推理接入点 为 AI 生成产物添加隐式水印 安心体验模式细则说明 开通管理 安全管理 控制台-推理安全审计 控制台-精调安全审计 控制台-推理接入点安全监控总览 用量统计 项目配置 网络配置 Token 计算器 安全管理 安全管理总览 内容安全护栏 火山方舟大模型服务安全白皮书 火山方舟互信计算架构白皮书 推理会话数据应用层加密方案 精调安全防护能力介绍 通过堡垒机进入安全沙箱的运维流程 常见问题 常见问题 相关协议 火山方舟大模型服务平"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "openrouter-limits",
@@ -3686,6 +3661,135 @@
         {
           "match": "额度",
           "context": "-Preview\",   \"max_tokens\": 1000,   \"messages\": [{\"role\": \"user\", \"content\": \"Hello!\"}]   }' 重要提醒 ​ 请妥善保管您的API Key，避免泄露造成额度被盗用 现在您已经了解了LongCat API开放平台的基本使用方法，快去试用吧！ 本页目录 如何获取API Key？ 注册账户 获取密钥 支持的接口类型 OpenAI API 格式 Anthropic API 格式 接入端点 支持的模型"
+        }
+      ]
+    },
+    {
+      "id": "omniroute-repo",
+      "name": "OmniRoute 白嫖网关(3.7万Star)",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$100 free credits on signup (free ",
+          "context": "ese are public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Chat"
+        },
+        {
+          "match": "$100 →     ⚠️ Affiliate link — Omn",
+          "context": "the OpenAI-compatible path. Available models include claude-opus-4-8 , claude-opus-5 , gpt-5.6-sol and more. Grab your $100 →     ⚠️ Affiliate link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup c"
+        },
+        {
+          "match": "$0 in cost analytics; budget, qu",
+          "context": "án), RTK filters for Gradle & .NET. → Compression   💸 Honest flat-rate cost — subscription / coding-plan providers read $0 in cost analytics; budget, quota & routing keep estimating. → API Reference   ⚖️ Quota-Share routing — split a shared account's quota fairly across p"
+        },
+        {
+          "match": "$0, no card       OpenCode Zen D",
+          "context": "d 350+ more — every icon resolves live from the dashboard's provider catalog. 📖 Provider Reference     🆓 Free Forever — $0, no card       OpenCode Zen DeepSeek V4, Nemotron 3 No token cap   Kilo Code Auto-router, Tencent Hy3 Free forever   Requesty GPT-OSS 120B, Nemotron"
+        },
+        {
+          "match": "$5 credit; card required   OpenR",
+          "context": "Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md"
+        },
+        {
+          "match": "$10 → higher RPM       📖 Full mac",
+          "context": "NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app,"
+        },
+        {
+          "match": "RPM rolling leases per connection. → Resili",
+          "context": "2A Server   🛂 Adaptive admission & overload protection — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → Resilience Guide   🗂️ Canonical /v1/models ordering — one contiguous provider-grouped block per provider (combos pinned first)"
+        },
+        {
+          "match": "RPM free   Cerebras GLM 4.7, GPT-OSS One-ti",
+          "context": "Pollinations GPT, Llama, Claude No key needed   Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/ref"
+        },
+        {
+          "match": "RPM       📖 Full machine-readable catalog →",
+          "context": "iMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app, your machine, your rule"
+        },
+        {
+          "match": "Free",
+          "context": "GitHub - cheaper-inference/OmniRoute: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+        },
+        {
+          "match": "Free",
+          "context": "on settings Fork 12k  ( 12k ) Star 81.8k  ( 81.8k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+        },
+        {
+          "match": "free",
+          "context": "must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cli"
+        },
+        {
+          "match": "free",
+          "context": "utors omniroute.online Topics a2a ai-agents ai-gateway anthropic claude claude-code cline codex copilot cursor deepseek free-ai gemini kimi llm-gateway mcp openai openai-proxy qwen token-saver Resources Readme MIT license Code of conduct Code o"
+        },
+        {
+          "match": "Free",
+          "context": "pository files navigation README Code of conduct Contributing MIT license Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This i"
+        },
+        {
+          "match": "Free",
+          "context": "icense Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party fre"
+        },
+        {
+          "match": "free",
+          "context": "ree Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party free tiers, not a token grant from OmniRoute. Sign up, obtain credentials where required, and connect the providers you can"
+        },
+        {
+          "match": "free",
+          "context": "required, and connect the providers you can use; each provider controls its limits, availability, and terms.   Stacking free tiers by hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute cat"
+        },
+        {
+          "match": "free",
+          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 484 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
+        },
+        {
+          "match": "free",
+          "context": "ional identity verification, and never summed into the headline. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers,"
+        },
+        {
+          "match": "free",
+          "context": "e. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figure"
+        },
+        {
+          "match": "FREE",
+          "context": "ry of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends"
+        },
+        {
+          "match": "free",
+          "context": "ERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends a free tier and the number drops; a new one lands and it climbs. We publish what the catalog actually computes, never a rounde"
+        },
+        {
+          "match": "free",
+          "context": "🧠 Unique chat model IDs   1320   1374   1475       🖼️ Modality Bridge   🆕 vision + audio + video   ✓   ✓       📡 Radar free catalog   🆕 opt-in   ✓   ✓       ⚖️ Quota-aware scheduling   🆕 Quota-Share   ✓   ✓       📊 Quota telemetry   🆕 live   ✓"
+        },
+        {
+          "match": "Free",
+          "context": "ing Kiro, are excluded from automatic routing by default; connecting an account does not override that setting. See the Free Tiers Guide before choosing a provider.   📦 Copy-paste quickstart scripts for Python, Node.js, PHP, and cURL → examples"
+        },
+        {
+          "match": "free",
+          "context": "inks tagged aff=omniroute are partner links. They fund the project at no extra cost to you.       🎟️ Affiliates Promo — free signup coupons from providers we don't sponsor (click to expand)   This section is for referral/coupon codes only. Spon"
+        },
+        {
+          "match": "free",
+          "context": "re public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniR"
+        },
+        {
+          "match": "free",
+          "context": "can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Cha"
+        },
+        {
+          "match": "free",
+          "context": "te link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup coupon that benefits OmniRoute users? Open an issue and we'll add it here.         🎯 Combos — The Flagship"
+        },
+        {
+          "match": "Free",
+          "context": "ick whatever fits you. Sponsorship never affects routing priority; it buys visibility, not ranking.     ⭐ Star the repo Free — genuinely helps visibility Star OmniRoute   🐙 GitHub Sponsors One-off or monthly · zero platform fee github.com/spons"
+        },
+        {
+          "match": "free",
+          "context": "s/DEVELOPER-ENVIRONMENT.md for guidance on managing local environment files and secrets.   📡 OmniRoute Radar   The main free-tier headline remains ~1.62B tokens/month from the documented, pool-deduplicated catalog above. Temporary provider sign"
         }
       ]
     }
