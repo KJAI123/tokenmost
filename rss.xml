@@ -14,13 +14,6 @@
       <description>限时活动 · 规则：每月最多邀 10 人；勘误（R7 复核）：GLM-5.3-Flash 为付费模型（0.8/2.8 元/百万），「限时免费」仅指缓存存储费（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>火山方舟：新用户每模型免费推理额度（数额以控制台「开通管理」为准），支持「安心体验模式」只耗免费额度防超支</title>
-      <link>https://www.volcengine.com/product/ark</link>
-      <guid isPermaLink="false">volc-ark-signup</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：主账号（含子账号）共享；仅抵扣按 token 后付费的在线推理（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>阿里云百炼：每模型约 100 万 tokens、90 天有效，开通即自动发放</title>
       <link>https://bailian.aliyun.com</link>
       <guid isPermaLink="false">bailian-signup</guid>
@@ -96,13 +89,6 @@
       <guid isPermaLink="false">coze-free</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：2026-10-18 新订阅体系：积分耗尽即停，免费档不可增购（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>Dify 自部署：开源自部署，0 成本接任意 API Key（云服务免费档仅 200 条消息/5 应用）</title>
-      <link>https://dify.ai</link>
-      <guid isPermaLink="false">dify-selfhost</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：自部署无平台费，模型费用取决于你接入的 key（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>魔搭 ModelScope：API-Inference 每日 2000 次免费调用：当前 37 款模型（deepseek-ai/DeepSeek-V</title>
@@ -224,13 +210,6 @@
       <description>长期免费 · 规则：绑卡可升 Developer Tier（2000 万 tokens/日）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>火山方舟：每日单模型最高 500 万免费 tokens：官方公告确认为长期常态化政策（至少至 2027 年底）</title>
-      <link>https://www.volcengine.com/article/260593</link>
-      <guid isPermaLink="false">ark-daily-5m</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：数据授权一经提交永久不可撤回（官方文档原文）——介意数据用途的别碰（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>智谱 BigModel：8 款模型长期免费（输入输出全免）：GLM-4.7-Flash(200K)/GLM-4-Flash-250414/GLM</title>
       <link>https://docs.bigmodel.cn/cn/guide/start/pricing.md</link>
       <guid isPermaLink="false">zhipu-flash-free</guid>
@@ -290,13 +269,6 @@
       <title>n8n：Community Edition 开源自部署免费，可接任意 LLM API（云端版仅免费试用）</title>
       <link>https://n8n.io/pricing/</link>
       <guid isPermaLink="false">n8n-selfhost</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>GitHub Copilot：Copilot Free 档：每月 2000 次代码补全 + 50 次聊天，个人零成本</title>
-      <link>https://github.com/features/copilot/plans</link>
-      <guid isPermaLink="false">github-copilot-free</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费（优惠以官方页面为准）</description>
     </item>
@@ -404,13 +376,6 @@
       <guid isPermaLink="false">deep-claude-pro-max</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>套餐订阅 · 规则：Max 5x=5×Pro会话用量、20x=20×（第三方口径中）；付费计划上下文：新模型1M/其余500K-200K；⚠️ 底册「订阅满7天领API credits」本次官方页未复现，存疑待核（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>GitHub Copilot：Copilot AI Credits 定案：1 credit = $0.01 按 token 计价（PRU 倍率表已从官</title>
-      <link>https://docs.github.com/en/copilot/get-started/plans-for-github-copilot</link>
-      <guid isPermaLink="false">deep-copilot-ai-credits</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>套餐订阅 · 规则：credits→token官方未公布；模型分层：Pro含Claude Haiku/Sonnet+GPT-5.3-Codex+Gemini+Grok+Kimi，Opus/GPT-6仅Pro+/Max；Free/Student仅自动选模；教师与热门开源维护者免费Pro（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Google Gemini API：Gemini API 免费层：⚠️ 官方已不再公布各模型 RPM/TPM/RPD 数字表，改为 AI Studio 内查</title>
@@ -838,13 +803,6 @@
       <guid isPermaLink="false">doubao-daily-quota</guid>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期活动 · 规则：客户端内领取（网页版仅引导下载）；每笔自发放起 30 天有效；消耗顺序=活动赠送→原有免费→付费（先吃赠送不浪费）；单账号（官方明文禁多号/批量/模拟器）（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>小米 MiMo：MiMo-V2.5 开源旗舰发布送 100 万亿 token 免费算力权益：30 天内领取，支持商用部署</title>
-      <link>https://mimo.mi.com/docs/zh-CN/</link>
-      <guid isPermaLink="false">xiaomi-mimo-compute</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：领取窗口 30 天；具体领取入口与分配方式待官网/控制台实锤；MiMo 国内牌价输入约 0.7 元/百万（海外 $0.1/M，缓存命中 $0.01/M）（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
