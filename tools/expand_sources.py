@@ -44,12 +44,10 @@ OFFICIAL_PAT = re.compile(r"(docs?\.|/docs|/pricing|api-docs|developer\.|platfor
 URL_RE = re.compile(r"https?://[^\s\"'<>\)\]\\，。；]+")
 
 def fetch(url: str) -> tuple[int, str]:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
     try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
         with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
             return r.status, r.read(600_000).decode("utf-8", "ignore")
-    except urllib.error.HTTPError as e:
-        return e.code, ""
     except Exception:
         return 0, ""
 
@@ -66,6 +64,8 @@ def extract_urls(text: str) -> set[str]:
         if low.startswith(("http://localhost", "https://example")):
             continue
         if len(u) < 12 or low.endswith((".png", ".jpg", ".svg", ".ico", ".gif", ".webp", ".css", ".woff2")):
+            continue
+        if any(ch in u for ch in "[]{}<>\"'\\ "):
             continue
         out.add(u)
     return out
@@ -146,11 +146,14 @@ def collect() -> dict[str, dict]:
 def probe(pool: dict[str, dict], workers: int = 6) -> None:
     def one(item):
         url, meta = item
-        st, body = fetch(url)
-        meta["status"] = st
-        m = re.search(r"<title[^>]*>([^<]{2,120})", body)
-        if m:
-            meta["title"] = m.group(1).strip()[:100]
+        try:
+            st, body = fetch(url)
+            meta["status"] = st
+            m = re.search(r"<title[^>]*>([^<]{2,120})", body)
+            if m:
+                meta["title"] = m.group(1).strip()[:100]
+        except Exception:
+            meta["status"] = 0
         time.sleep(0.2)
     items = list(pool.items())
     with cf.ThreadPoolExecutor(max_workers=workers) as ex:

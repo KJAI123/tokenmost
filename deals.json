@@ -20,7 +20,7 @@
  {
   "id": "volc-ark-signup",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "新用户每模型免费推理额度（数额以控制台「开通管理」为准），支持「安心体验模式」只耗免费额度防超支",
   "region": "cn",
@@ -36,7 +36,7 @@
  {
   "id": "bailian-signup",
   "provider": "阿里云百炼",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "每模型约 100 万 tokens、90 天有效，开通即自动发放——无需实名认证即可领取",
   "region": "cn",
@@ -131,7 +131,7 @@
  {
   "id": "qianfan-signup",
   "provider": "文心千帆",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "首次开通送 17 个模型各 100 万 tokens（ERNIE-4.5-Turbo/X1、DeepSeek-R1/V3.1、Qwen3-235B、Kimi-K2 等），3 个月有效",
   "region": "cn",
@@ -163,7 +163,7 @@
  {
   "id": "tencenthub-signup",
   "provider": "腾讯云 TokenHub",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "新人免费体验包：hy3-preview / DeepSeek-V4-Pro/Flash / GLM-5 / MiniMax-M2.7 及全部多模态理解模型，每模型 100 万 tokens、1 年有效，模型广场领取",
   "region": "cn",
@@ -180,7 +180,7 @@
  {
   "id": "hunyuan-lite",
   "provider": "腾讯云 TokenHub",
-  "category": "official_cn",
+  "category": "maas",
   "type": "free_tier",
   "value": "hunyuan-lite 等 47 款旧模型已于 2026-06-22 下线、原混元平台 2026-09-30 停服——请迁移至 TokenHub（见新人免费包）",
   "region": "cn",
@@ -238,7 +238,7 @@
  {
   "id": "modelscope-free-infer",
   "provider": "魔搭 ModelScope",
-  "category": "compute",
+  "category": "maas",
   "type": "free_tier",
   "value": "API-Inference 每日 2000 次免费调用：当前 37 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点",
   "region": "cn",
@@ -320,7 +320,7 @@
  {
   "id": "siliconflow-signup",
   "provider": "硅基流动",
-  "category": "reseller",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "注册赠送额度（官方计费 FAQ 载 14 元，以控制台到账为准）+ 免费模型池：Embedding / OCR / 语音 / 生图（Kolors）及小尺寸对话模型",
   "region": "cn",
@@ -340,7 +340,7 @@
  {
   "id": "siliconflow-referral",
   "provider": "硅基流动",
-  "category": "reseller",
+  "category": "maas",
   "type": "limited_promo",
   "value": "「推荐官」：本人实名认证领 16 元全平台通用券；邀好友注册+实名，双方各得 16 元券，人数不限（券 180 天有效，可用于 Pro/高速模型）",
   "region": "cn",
@@ -390,7 +390,7 @@
  {
   "id": "nvidia-nim",
   "provider": "NVIDIA NIM",
-  "category": "reseller",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "注册送 1000 API credits 免费推理；企业邮箱激活 90 天 NVIDIA AI Enterprise 许可可再解锁 4000（免费上限 5000）",
   "region": "global",
@@ -526,7 +526,7 @@
  {
   "id": "groq-free",
   "provider": "Groq",
-  "category": "official_global",
+  "category": "maas",
   "type": "free_tier",
   "value": "免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快",
   "region": "global",
@@ -543,7 +543,7 @@
  {
   "id": "sambanova-free",
   "provider": "SambaNova",
-  "category": "official_global",
+  "category": "maas",
   "type": "free_tier",
   "value": "免费层无需绑卡：DeepSeek-V3.1 / Llama-3.3-70B / gpt-oss-120b（20 RPM、每日 20 请求、20 万 tokens/日）",
   "region": "global",
@@ -560,7 +560,7 @@
  {
   "id": "together-free",
   "provider": "Together AI",
-  "category": "official_global",
+  "category": "maas",
   "type": "warning",
   "value": "⚠️ 免费试用 credits 已取消（官方文档口径，最低 $5 起充；旧免费模型报 out of credits）——存档避雷",
   "region": "global",
@@ -605,7 +605,7 @@
  {
   "id": "aliyun-100coupon",
   "provider": "阿里云百炼",
-  "category": "official_cn",
+  "category": "maas",
   "type": "limited_promo",
   "value": "AI 优惠页 100 元全模型通用抵扣券",
   "region": "cn",
@@ -619,7 +619,7 @@
  {
   "id": "ark-daily-5m",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "limited_promo",
   "value": "每日单模型最高 500 万免费 tokens：官方公告确认为长期常态化政策（至少至 2027 年底）；机制=协作奖励计划（授权数据后 T+1 等量返还，30 天有效期）",
   "region": "cn",
@@ -691,7 +691,7 @@
  {
   "id": "siliconflow-freemodels",
   "provider": "硅基流动",
-  "category": "reseller",
+  "category": "maas",
   "type": "free_tier",
   "via": "free",
   "value": "免费池收缩（10-21 官方清单）：小模型永久免费已取消，现仅向量/语音/OCR/翻译/Kolors 生图免费——RAG/嵌入白嫖组合仍成立",
@@ -837,7 +837,7 @@
  {
   "id": "cerebras-credits",
   "provider": "Cerebras",
-  "category": "official_global",
+  "category": "maas",
   "type": "signup_bonus",
   "usd": 5,
   "via": "register",
@@ -913,7 +913,7 @@
  {
   "id": "deep-bailian-newuser-quota",
   "provider": "阿里云百炼",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "新人免费额度：每模型独立约100万tokens，开通自动发放、无需实名；覆盖 Qwen 全系+DeepSeek/Kimi(k3,k2.7-code)/GLM-5.3~5/MiniMax-M2.5 等第三方模型；快照版与正式版额度独立（同模型可领双份）",
   "region": "cn",
@@ -930,7 +930,7 @@
  {
   "id": "deep-bailian-quota-detail",
   "provider": "阿里云百炼",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "各模态新人额度明细：向量 text-embedding-async-v1 高达 2000万tokens；ASR 36000秒(10小时)；TTS 1万字符；Sambert 每月3万字符长期；图像生成 wanx系500张/qwen-image 10-100张；视频 wan2.x 50条/万相3.0 30秒；音乐1000秒；音色1000个/账号",
   "region": "cn",
@@ -946,7 +946,7 @@
  {
   "id": "deep-bailian-limited-free",
   "provider": "阿里云百炼",
-  "category": "official_cn",
+  "category": "maas",
   "type": "free_model",
   "value": "限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）",
   "region": "cn",
@@ -962,7 +962,7 @@
  {
   "id": "deep-bailian-pricing",
   "provider": "阿里云百炼",
-  "category": "official_cn",
+  "category": "maas",
   "type": "price_low",
   "value": "比价基准（每百万tokens北京原价）：qwen3.8-max 12/36；qwen3.7-plus 2/8（限时8折）；qwen3.8-flash 0.8/2.7；deepseek-v4-pro 忙12闲4.5入、忙24闲13.5出；deepseek-v4.1-flash 忙2闲1入；glm-5.2 8/28；kimi-k3 20/100（仅思考模式）",
   "region": "cn",
@@ -1130,7 +1130,7 @@
  {
   "id": "deep-cerebras-free-trial",
   "provider": "Cerebras",
-  "category": "official_global",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "⚠️ 2026-07 改版：取消「每日100万tokens永久免费」，改为 Free Trial $5 一次性credits（官网原文直核）；Free Trial 限速约 5 RPM/30K未缓存TPM/≈1M tokens/日（第三方口径，gpt-oss-120b）；Developer 档 $10 起充速率10×",
   "region": "global",
@@ -1234,7 +1234,7 @@
  {
   "id": "deep-volc-collab-reward",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "recurring_promo",
   "value": "协作奖励计划：授权采集推理数据（匿名化）换免费额度——每授权模型每日最高采集500万tokens，T+1次日发放等量资源包（30天有效）；首次授权另得冷启动资源包（数额以活动页为准）",
   "region": "cn",
@@ -1251,7 +1251,7 @@
  {
   "id": "deep-volc-free-quota",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "新注册账号开通模型即送免费推理额度（不同模型分别计算；第三方与社区口径每模型50万tokens，官方文档未写死、以控制台为准）；可开「安心体验模式」只耗赠送额度防超支",
   "region": "cn",
@@ -1268,7 +1268,7 @@
  {
   "id": "deep-volc-coding-plan",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "pricing_plan",
   "value": "方舟 Coding Plan：Lite ¥40/月（季¥120，每5h约1200次/周9000/月18000）、Pro ¥200/月（季¥600，≈Lite5倍）；模型池 Auto调度+Doubao-Seed-2.1-pro/lite/2.0-mini/Evolving+Kimi-K2.8/K3/K3.1-Pro+GLM-5.3(+Flash)+DeepSeek-V4系+MiniMax-M3",
   "region": "cn",
@@ -1285,7 +1285,7 @@
  {
   "id": "deep-volc-coding-promo",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "limited_promo",
   "value": "新用户首购特惠：Lite ¥9.9/月、Pro ¥49.9/月（限从未订阅者，每实名主体1次，单账号限一档，最多连订6个月）；另有普惠季「9.9元起」+豆包旗舰19元购（AI普惠季活动页）",
   "region": "cn",
@@ -1302,7 +1302,7 @@
  {
   "id": "deep-volc-21pro-daily",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "recurring_promo",
   "value": "官方文章口径：Doubao-Seed-2.1-pro 每日500万tokens免费、每日自动申领、所有注册用户无捆绑、定价0.8元/百万（日免费额≈¥4、月≈¥120）、「常态化至少至2027年底」",
   "region": "cn",
@@ -1319,7 +1319,7 @@
  {
   "id": "deep-xunfei-1024-10yi",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "limited_promo",
   "value": "1024 开发者节：每人免费领 10 亿 tokens（Spark-X2.6 系额度），手机号注册+实名即领，每人限 1 次",
   "region": "cn",
@@ -1337,7 +1337,7 @@
  {
   "id": "deep-xunfei-token-plan",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "pricing_plan",
   "value": "Astron Token Plan 订阅：标准 ¥200/月 2万积分（限时8折¥160）、高级 ¥600/月 6万积分（7折¥420）、尊享 ¥2000/月 20万积分（6折¥1200）；官方公布积分→token折算：每百万token耗积分（Spark-X2-Flash 输入100/输出200，GLM-5.2 800/2800，DeepSeek-V4-Pro 1200/2400，Kimi-K2.6 650/2700）",
   "region": "cn",
@@ -1354,7 +1354,7 @@
  {
   "id": "deep-xunfei-coding-plan",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "pricing_plan",
   "value": "Astron Coding Plan 焕新版：高效版 ¥199/月（每5h约6000次、每周45000次、每月90000次），速通版 ¥999/月首月¥699；聚合星火X2/GLM-5.2/DeepSeek-V4-Pro/Kimi-K2.7-Code/MiniMax-M2.5/Qwen3.5 等，统一 model=astron-code-latest；波谷0.8倍、模型抵扣系数1-5",
   "region": "cn",
@@ -1372,7 +1372,7 @@
  {
   "id": "deep-xunfei-39-crash",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "warning",
   "value": "⚠️ ¥3.9/月「不限量」Coding Plan 已翻车：2026-03 上线（3.9/7.9/39.9 三档），5月起 system busy，8-13 用户称几乎瘫痪（GLM上下文压至50K），8-18 集中退款，官方仅口头「服务器超载」无公开说明",
   "region": "cn",
@@ -1388,7 +1388,7 @@
  {
   "id": "deep-xunfei-claude-code",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "tool_integration",
   "value": "免费/订阅额度均可接 Claude Code：ANTHROPIC_BASE_URL=https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic（订阅）或 maas-token-api.cn-huabei-1.xf-yun.com/anthropic（Token Plan），ANTHROPIC_MODEL=astron-code-latest",
   "region": "cn",
@@ -1955,7 +1955,7 @@
  {
   "id": "deep-xunfei-1024-10yi-r2",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "limited_promo",
   "value": "【二次攻坚·确认在线】1024 活动：注册+个人实名认证（秒过、免人脸免身份证上传）→ 首页「星火X2.6的活动」→ 创建 API → 领 10 亿 tokens（Spark-X2.6 额度）",
   "region": "cn",
@@ -1973,7 +1973,7 @@
  {
   "id": "deep-xunfei-wechat-miniapp",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "limited_promo",
   "value": "微信小程序成长计划二期：10 亿 Token + 10 万张生图额度，报名截至 2026 年底",
   "region": "cn",
@@ -1991,7 +1991,7 @@
  {
   "id": "deep-xunfei-workbuddy",
   "provider": "讯飞星辰 MaaS",
-  "category": "official_cn",
+  "category": "maas",
   "type": "tool_integration",
   "value": "workbuddy 可接入星辰 MaaS 自定义模型（OpenAI 协议 v2/chat/completions）；⚠️ 同文实测：workbuddy 内阶跃 Step-5-Preview 已开始收费（0.33X 费率）",
   "region": "cn",
@@ -2336,7 +2336,7 @@
  {
   "id": "deep-tencent-tokenhub",
   "provider": "腾讯云 TokenHub",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "新人包可用至 12/31 + 每模型 100 万 tokens（1年有效）+ 混元 Lite 长期免费",
   "region": "cn",
@@ -2453,7 +2453,7 @@
  {
   "id": "deep-siliconflow-guide-r5",
   "provider": "硅基流动",
-  "category": "official_cn",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "注册礼：邀请链接注册送约14-16元（≈2000万tokens，历史14元/2026清单16元口径并存，控制台实显为准）；推荐官计划：邀请双方各2000万tokens上不封顶；⚠️ 小模型永久免费已取消（2026-10），现免费池仅 embedding/语音/OCR/翻译/Kolors",
   "region": "cn",
@@ -2520,7 +2520,7 @@
  {
   "id": "deep-together-nofree-r5",
   "provider": "Together AI",
-  "category": "official_global",
+  "category": "maas",
   "type": "warning",
   "value": "⚠️ Together AI 免费试用 credits 已取消（官方文档口径：no free trials，最低 $5 起充）；此前免费模型（BAAI 等开源系）报 out of credits——底册「Together $100 取消」进一步坐实为免费层全面收缩",
   "region": "global",

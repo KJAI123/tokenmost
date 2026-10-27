@@ -5,7 +5,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LAYERS = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", "compute": "算力平台",
-          "reseller": "Token 中间商", "official_global": "大模型官方（海外）", "intel_source": "情报源"}
+          "reseller": "Token 中间商", "official_global": "大模型官方（海外）", "intel_source": "情报源",
+          "maas": "MaaS 平台（云上托管）"}
 TYPES = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "coupon": "折扣码",
          "student": "学生通道", "limited_promo": "限时活动", "price_low": "长期低价",
          "free_model": "免费模型", "pricing_plan": "套餐订阅", "recurring_promo": "长期活动",
