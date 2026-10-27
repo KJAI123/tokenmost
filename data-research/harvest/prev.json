@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T20:25:16Z",
+  "harvested_at": "2026-10-27T20:39:54Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,10 +637,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -730,6 +726,10 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -1036,86 +1036,8 @@
       "id": "sambanova-rate-limits",
       "name": "SambaNova 限流",
       "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
-      "status": "ok",
-      "hits": 19,
-      "findings": [
-        {
-          "match": "RPM: Requests per minute   RPD: Requests pe",
-          "context": "y limit how many times each user can call the SambaNova API within a given interval.   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPD: Tokens per day (Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You"
-        },
-        {
-          "match": "RPM or RPD) depending on which one you reac",
-          "context": "(Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You can hit either limit type (RPM or RPD) depending on which one you reach first   You will be notified in every request response what the status of your rate limits are ( see rate limit respon"
-        },
-        {
-          "match": "Requests per minute (RPM) Requests per day (RPD) DeepSeek D",
-          "context": "n environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b 60 12000 Developer Model ID RPM RPD"
-        },
-        {
-          "match": "RPM RPD TPD DeepSeek DeepSeek-V3.1 20 20 20",
-          "context": "pSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.1 20 20 200000 Meta Meta-Llama-3.3-70B-Instruct 20 20 200000 OpenAI gpt-oss-120b 20 20 200000     ​ Preview model rate limits   Pr"
-        },
-        {
-          "match": "Requests per minute (RPM) Requests per day (RPD) DeepSeek D",
-          "context": "s. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 200000"
-        },
-        {
-          "match": "RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 20",
-          "context": "r minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 200000 Google gemma-4-31B-it 20 20 200000     ​ Rate limit response headers   These headers are found in every request res"
-        },
-        {
-          "match": "RPM (Requests per minute)     x-ratelimit-l",
-          "context": "hese headers are found in every request response and give information about the current status of rate limit usage.   ​ RPM (Requests per minute)     x-ratelimit-limit-requests – Maximum requests allowed per minute   x-ratelimit-remaining-requests – Remaining requests in current min"
-        },
-        {
-          "match": "RPD (Requests per day)     x-ratelimit-limi",
-          "context": "telimit-remaining-requests – Remaining requests in current minute   x-ratelimit-reset-requests – Time until reset     ​ RPD (Requests per day)     x-ratelimit-limit-requests-day – Maximum requests allowed per day   x-ratelimit-remaining-requests-day – Remaining requests in current d"
-        },
-        {
-          "match": "Free tier",
-          "context": "en interval.   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPD: Tokens per day (Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You can hit either limit type (RPM or RPD)"
-        },
-        {
-          "match": "Free Tier",
-          "context": "the administrator.   ​ SambaCloud rate limit tiers   SambaNova provides a few different rate limit tier offerings:     Free Tier : Applied when there is no payment method linked with your account   Developer Tier : Applied when a payment method is"
-        },
-        {
-          "match": "Free Tier",
-          "context": "intended for use in production environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3"
-        },
-        {
-          "match": "Free Tier",
-          "context": "sed in production environments. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-"
-        },
-        {
-          "match": "Developer Tier",
-          "context": "different rate limit tier offerings:     Free Tier : Applied when there is no payment method linked with your account   Developer Tier : Applied when a payment method is linked with your account     For higher rate limit access, please contact the SambaN"
-        },
-        {
-          "match": "Developer Tier",
-          "context": "ss, please contact the SambaNova sales team .   Please see the Billing page to link a payment method to your account.   Developer Tier accounts are limited to 20M tokens per day across all models.     ​ Production model rate limits   Production models ar"
-        },
-        {
-          "match": "Developer Tier",
-          "context": "ion models are intended for use in production environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta"
-        },
-        {
-          "match": "Developer Tier",
-          "context": "should not be used in production environments. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google ge"
-        },
-        {
-          "match": "RPM",
-          "context": "et SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b"
-        },
-        {
-          "match": "RPM",
-          "context": "limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD D"
-        },
-        {
-          "match": "20M",
-          "context": "team .   Please see the Billing page to link a payment method to your account.   Developer Tier accounts are limited to 20M tokens per day across all models.     ​ Production model rate limits   Production models are intended for use in produc"
-        }
-      ]
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "together-pricing",
@@ -3008,8 +2930,130 @@
       "id": "gh-aipmandy-freetoken-blob-daf",
       "name": "FreeToken/README.md at d",
       "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费 AI API Token",
+          "context": "# 🎁 FreeToken  收集各种免费 AI API Token 的获取方法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-gith"
+        },
+        {
+          "match": "免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度",
+          "context": "法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服"
+        },
+        {
+          "match": "免费额度](#-国内大模型免费额度",
+          "context": "最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)"
+        },
+        {
+          "match": "免费额度](#️-云服务免费额度",
+          "context": "ub-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)  ---  ## 🏆 GitHub 热门免费 API 项目  ### 🔥 第一梯队（万星以上）  | 项目 | Sta"
+        },
+        {
+          "match": "免费额度  ### OpenAI - **免费额度",
+          "context": "t.ai](https://www.forefront.ai/) | | **nat.dev** | 免费的 AI 代码助手，支持多种模型 | [nat.dev](https://nat.dev/) |  ---  ## 🤖 AI 模型官方免费额度  ### OpenAI - **免费额度**: 新用户注册送 **$5 体验金**（有效期 3 个月） - **获取方式**:  1. 访问 [OpenAI Platform](https://platform.openai.com/)  2. 注册账号并验证手机号  3. 在"
+        },
+        {
+          "match": "免费额度",
+          "context": "*限制**: 免费层速率限制因模型而异 - **推荐模型**: GPT-4o-mini（性价比最高） - **文档**: https://platform.openai.com/docs  ### Anthropic Claude - **免费额度**: 新用户注册送**小额体验金**（具体金额未公开） - **获取方式**:  1. 访问 [Anthropic Console](https://console.anthropic.com/)  2. 注册账号  3. 创建 API"
+        },
+        {
+          "match": "免费额度",
+          "context": "aude Haiku 系列价格低，适合日常使用 - **亮点**: Claude 3.5 Sonnet 代码能力顶尖 - **文档**: https://docs.anthropic.com/  ### Google Gemini - **免费额度**: **免费层**（Gemini 2.5 Flash 等模型免费输入输出） - **获取方式**:  1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Googl"
+        },
+        {
+          "match": "免费层额度非常慷慨，200 万 Token",
+          "context": "1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Google 账号登录  3. 获取 API Key - **亮点**: Gemini 2.5 Pro/Flash 免费层额度非常慷慨，200 万 Token/天 - **⚠️ 注意**: Gemini 2.0 Flash 已弃用，将于 2026 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https"
+        },
+        {
+          "match": "免费额度",
+          "context": "26 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https://ai.google.dev/docs  ### xAI (Grok) - **免费额度**: 新用户**可能**有体验金（金额不固定，非官方公开承诺） - **获取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**"
+        },
+        {
+          "match": "免费额度**: 免费层有基础调用额度",
+          "context": "取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**: https://docs.x.ai/  ### Mistral - **免费额度**: 免费层有基础调用额度 - **获取方式**: 访问 [Mistral Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mist"
+        },
+        {
+          "match": "免费额度**: 试用版有基础调用额度",
+          "context": "Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mistral.ai/  ### Cohere - **免费额度**: 试用版有基础调用额度（具体数量不固定） - **获取方式**: 访问 [Cohere Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://doc"
+        },
+        {
+          "match": "免费额度  > ⚠️ 以下国内厂商的免费额度",
+          "context": "e Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://docs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSe"
+        },
+        {
+          "match": "免费额度",
+          "context": "ocs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSeek、Llama、Mistral、Qwen、GLM、Nemotron 等 - **限制**: 每 1.5 秒一次请求（每天可调用 5 万+"
+        },
+        {
+          "match": "免费额度**: **100 万亿（100T）Token",
+          "context": "试用版，不是阉割版 - **省多少钱**: 同时用 3-4 个模型，一年至少省 **7000 元** - **文档**: https://build.nvidia.com/docs  ### 小米 MiMo 🔥🔥（Andy 推荐） - **免费额度**: **100 万亿（100T）Token** 激励计划，赠完即止 - **活动时间**: 2026 年 4 月 28 日 00:00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t."
+        },
+        {
+          "match": "免费发放 - **API 地址**: https://token",
+          "context": "00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t.xiaomimimo.com/) - **亮点**: 小米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万"
+        },
+        {
+          "match": "免费额度**: 注册送 **500万 Tokens",
+          "context": "米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万 Tokens），日常使用几乎免费 - **获取方式**: 访问 [DeepSeek Platform](https://platform.deepseek.com/) - **亮点**: 性价"
+        },
+        {
+          "match": "免费额度",
+          "context": "型优秀 - **推荐**: DeepSeek-V3（综合能力）、DeepSeek-R1（复杂推理） - **文档**: https://platform.deepseek.com/api-docs  ### 通义千问 (Qwen) - **免费额度**: 部分模型**限时免费**，注册送体验金 - **获取方式**: 访问 [阿里云百炼](https://bailian.console.aliyun.com/) - **亮点**: Qwen 系列模型齐全，多模态能力强 - **推荐*"
+        },
+        {
+          "match": "免费额度**: 注册送 **500万 Tokens",
+          "context": "，多模态能力强 - **推荐**: Qwen-Plus（综合能力）、Qwen-VL（视觉理解） - **文档**: https://help.aliyun.com/zh/model-studio/  ### 智谱 AI (GLM) - **免费额度**: 注册送 **500万 Tokens** 体验金 - **获取方式**: 访问 [智谱开放平台](https://open.bigmodel.cn/) - **亮点**: GLM-4 系列，支持联网搜索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速"
+        },
+        {
+          "match": "免费额度",
+          "context": "索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速）、GLM-4V（视觉理解） - **文档**: https://open.bigmodel.cn/dev/api  ### 百度文心一言 (ERNIE) - **免费额度**: 部分模型**完全免费** - **获取方式**: 访问 [百度千帆](https://qianfan.cloud.baidu.com/) - **亮点**: ERNIE-Speed 系列免费，中文能力强 - **推荐**: ERNI"
+        },
+        {
+          "match": "免费额度",
+          "context": "推荐**: ERNIE-Speed-8K（免费）、ERNIE-4.0（付费高级） - **文档**: https://cloud.baidu.com/doc/WENXINWORKSHOP/  ### Moonshot (月之暗面) - **免费额度**: 注册送 **15 元** 体验金 - **获取方式**: 访问 [Moonshot 开放平台](https://platform.moonshot.cn/) - **亮点**: Kimi 长文本能力，128K 上下文，K1 思考模型"
+        },
+        {
+          "match": "免费额度",
+          "context": "- **推荐**: moonshot-v1-8k（日常）、moonshot-v1-128k（长文本） - **文档**: https://platform.moonshot.cn/docs  ### MiniMax (海螺 AI) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [MiniMax 开放平台](https://platform.minimaxi.com/) - **亮点**: 语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础"
+        },
+        {
+          "match": "免费额度**: 星火 Lite **完全免费**，其他版本送 Token",
+          "context": "语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础）、speech-01（语音） - **文档**: https://platform.minimaxi.com/docs  ### 讯飞星火 (Spark) - **免费额度**: 星火 Lite **完全免费**，其他版本送 Token - **获取方式**: 访问 [讯飞开放平台](https://xinghuo.xfyun.cn/) - **亮点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **"
+        },
+        {
+          "match": "免费额度",
+          "context": "点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **文档**: https://www.xfyun.cn/doc/spark/  ### 豆包 (字节跳动) - **免费额度**: 部分模型**限时免费** - **获取方式**: 访问 [火山引擎](https://console.volcengine.com/ark) - **亮点**: 字节跳动出品，多模态能力强，联网搜索优秀 - **推荐**: Doub"
+        },
+        {
+          "match": "免费额度",
+          "context": "，联网搜索优秀 - **推荐**: Doubao-pro（综合）、Doubao-vision（视觉） - **文档**: https://www.volcengine.com/docs/82379  ### 阶跃星辰 (Step) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [阶跃星辰开放平台](https://platform.stepfun.com/) - **亮点**: 多模态理解能力强 - **推荐**: Step-1（基础）、Step-1V（视觉）"
+        },
+        {
+          "match": "免费额度",
+          "context": "le Gemini 2.5 Flash（Google 官方）  - Mistral Large（欧洲之光） - **文档**: https://openrouter.ai/docs  ### Silicon Flow (硅基流动) - **免费额度**: 多个模型**完全免费**（Qwen、GLM、Llama 等） - **获取方式**: 访问 [SiliconFlow](https://cloud.siliconflow.cn/) - **亮点**: 国内直连，免费模型多，Open"
+        },
+        {
+          "match": "免费额度**: 每天 **10,000 次",
+          "context": "2B（阿里最强）  - DeepSeek-V2.5（性价比王）  - GLM-4-9B（智谱免费） - **文档**: https://docs.siliconflow.cn/  ### Cloudflare Workers AI - **免费额度**: 每天 **10,000 次**请求免费 - **获取方式**: 注册 [Cloudflare](https://dash.cloudflare.com/) → Workers AI - **亮点**: 全球边缘节点，延迟低，无需信用卡 - **推荐模型**: Lla"
+        },
+        {
+          "match": "免费额度",
+          "context": "信用卡 - **推荐模型**: Llama 3、Mistral、SDXL（图像生成） - **文档**: https://developers.cloudflare.com/workers-ai/  ### Together AI - **免费额度**: 注册送 **$25 体验金**（2026年6月更新） - **获取方式**: 访问 [Together AI](https://api.together.xyz/) - **亮点**: 开源模型丰富（Llama、Mixtral、FL"
+        },
+        {
+          "match": "免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次",
+          "context": "lama、Mixtral、FLUX等），速度快 - **推荐模型**: Llama 3.1 405B、FLUX.1-schnell（图像） - **文档**: https://docs.together.ai/  ### Groq - **免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次** - **获取方式**: 访问 [Groq Console](https://console.groq.com/) - **亮点**: 超快推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama"
+        },
+        {
+          "match": "免费额度**: 免费层有基础额度",
+          "context": "推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama 3.1 70B（速度最快） - **文档**: https://console.groq.com/docs  ### Cerebras - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [Cerebras](https://cloud.cerebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: h"
+        },
+        {
+          "match": "免费额度**: 免费层有基础额度",
+          "context": "rebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: https://cerebras.ai/docs  ### SambaNova - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [SambaNova Cloud](https://cloud.sambanova.ai/) - **亮点**: 开源模型高速推理 - **推荐模型**: Llama 3、Qwen - **文档**: htt"
+        }
+      ]
     },
     {
       "id": "sogou-wx-token",
@@ -3187,6 +3231,135 @@
         {
           "match": "额度",
           "context": "eyCode 用户权益调整公告（9月2日起） 🌟 MonkeyCode介绍 🔥 上手指南-在线版本 🔦 上手指南-私有化部署 🗂️ 上手指南-本地work版本 🎉 个人用户注册 💰 MonkeyCode 积分说明 🎁 MonkeyCode 额度说明 💫 上手指南-从零到一实践案例 👥 团队版 👉 配置说明 内容摘要 MonkeyCode AI MonkeyCode 不是 AI 编程工具，是对传统研发模式的变革，是全新的 AI 编程体验，让你的研发团队效率 Max。 相关产品 Pa"
+        }
+      ]
+    },
+    {
+      "id": "competitor-pencilai",
+      "name": "竞品雷达·Token羊毛党",
+      "url": "https://token.pencilai.top",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费 查看官方活动页 ↗          Agent Harness 免费额度",
+          "context": "文多模态 注意 仅限 Qoder 平台不可导出   获取方式 注册 / 登录 Qoder CN 个人账号 → 在桌面端 / IDE / 插件 / CLI 的模型选择器切到 Qwen3.8-Flash 。   官方活动页 · 10-11 仍在免费 查看官方活动页 ↗          Agent Harness 免费额度   结束待公告     Qoder CN · 每日 100 Credits ¥ 0   桌面端每日 10:00 可领 100 通用 Credits（手动领取、漏领不补、每笔 30 天有效，未用可结余）；新用户首次登录送 14 天 Pro"
+        },
+        {
+          "match": "免费档 + 周末 3 亿 tokens",
+          "context": "Qoder CN 桌面端 → 左下角用量面板 → 礼物图标 → 手动领取。   官方文档 · 结束日待公告 查看活动文档 ↗          Agent Harness 免费档   ◷ 本轮至 10.12     智谱 ZCode · 免费档 + 周末 3 亿 tokens ¥ 0   ZCode 客户端免费 tier：智谱账号登录即用内置模型，v3.14.4 起免费 tier 免验证码；本轮周末 10-10 23:00–10-12 09:00 登录可领 3 亿 GLM-5.3-Flash tokens（仅限"
+        },
+        {
+          "match": "免费体验（官方两页口径 500–800 万 tokens",
+          "context": "费 tier：智谱账号登录即用内置模型，v3.14.4 起免费 tier 免验证码；本轮周末 10-10 23:00–10-12 09:00 登录可领 3 亿 GLM-5.3-Flash tokens（仅限客户端内调用）。新用户另有 5 天免费体验（官方两页口径 500–800 万 tokens/日，以客户端为准）。   门槛 登录免 key（B 级） 周末额度 3 亿 tokens 注意 每周五滚动刷新   获取方式 下载 ZCode 客户端 → 智谱账号登录 → 首页活动卡点「领取」→ 模型设置切 GLM-5.3-Flash。"
+        },
+        {
+          "match": "免费方案 ↗          免费额度",
+          "context": "门槛 Google 账号免卡（B 级） 模型 7 款含 Opus 4.6 注意 额度数字官方未公布   获取方式 antigravity.google 下载 IDE 或 CLI → 登录 Google 账户即用。   官方方案页 查看免费方案 ↗          免费额度   B 级 · 长期方案     GitHub Copilot Free ¥ 0 /月   每月 2,000 次代码补全 + 50 次聊天请求（含 Copilot Edits），Haiku 4.5、GPT-5 mini 等 Auto 模型"
+        },
+        {
+          "match": "免费方案 ↗          免费额度",
+          "context": "级） 额度 2000 补全 + 50 聊天 注意 仅 Auto 选模型   获取方式 github.com 注册 → 设置中开启 Copilot Free，或在 VS Code 安装 Copilot 扩展并登录即用。   官方方案页 查看免费方案 ↗          免费额度   B 级 · 长期方案     ChatGPT Free · 内置 Codex ¥ 0 /月   ChatGPT 免费账号即可使用 Codex（Web / CLI / IDE 扩展），GPT-6 Luna 标准速度；无云端功能（GitH"
+        },
+        {
+          "match": "免费自动续期：每月 500 积分、3 会话并发，Token",
+          "context": "2,000 积分。   官方活动页 查看邀请活动 ↗          Agent Harness 免费档   活动至 12-31     华为 CodeArts · 个人体验版免费 ¥ 0 /月   代码智能体个人体验版 0 元/月、到期免费自动续期：每月 500 积分、3 会话并发，Token 用尽仅降排队优先级；模型含盘古 OpenPangu、GLM-5.3-flash、DeepSeek V4 Pro / Flash 等福利模型轮换。活动积分：每日签到 1,000 积分（30 天有效）、注册 4,000 积分、学生认证 4,0"
+        },
+        {
+          "match": "免费 Token",
+          "context": "flash、DeepSeek V4 Pro / Flash 等福利模型轮换。活动积分：每日签到 1,000 积分（30 天有效）、注册 4,000 积分、学生认证 4,000 积分，均至 2026-12-31；另有每日登录领 1,000 万免费 Token（当日有效）。   门槛 登录免 key（B 级） 额度 500 积分/月 + 签到 注意 3 会话并发   获取方式 developer.huaweicloud.com/codeartsco.html 点「免费开通」→ 装码道插件 → 华"
+        },
+        {
+          "match": "免费，注册送 500 次对话额度（一次交互消耗 1 次",
+          "context": "登录 → 每日签到自动发放积分。   官方页面 查看免费开通 ↗          Agent Harness 免费档   长期免费     美团 CatPaw · 长期免费 ¥ 0   美团 AI IDE + Agent 平台：官网称完全免费，注册送 500 次对话额度（一次交互消耗 1 次），用完后可在设置页提交续充申请，审核通过继续用；内置 LongCat 2.0（1.6T 开源模型）。   门槛 登录免 key（B 级） 额度 500 次对话 注意 额度与续充口径为第三方   获取方式 catpaw.meituan.co"
+        },
+        {
+          "match": "免费 · 额度",
+          "context": "at 2.0（1.6T 开源模型）。   门槛 登录免 key（B 级） 额度 500 次对话 注意 额度与续充口径为第三方   获取方式 catpaw.meituan.com 下载 IDE → 手机号 / 邮箱注册 → 直接用。   官网免费 · 额度第三方转述 前往 CatPaw ↗          Agent Harness 免费档   长期公测     商汤小浣熊 · 免费公测 ¥ 0   代码小浣熊 Raccoon：个人 C 端完全免费、不收个人订阅，登录即可用代码补全 / 生"
+        },
+        {
+          "match": "免费额度",
+          "context": "级） 额度 500 积分 / 月 平台 WorkBuddy   获取方式 下载安装 WorkBuddy → 注册 / 登录 → 直接选择体验版。积分和限免权益以账号套餐页当日展示为准。   官网定价页 查看官方权益 ↗          免费额度   B 级 · 长期有效     魔搭 ModelScope · 每日 2000 次 ¥ 0   注册并绑定阿里云账号、完成实名认证后，每天 2,000 次 API 累计调用（约每模型 500 次/天），覆盖 Qwen、DeepSeek、"
+        },
+        {
+          "match": "免费体验」勾选领取；或首次",
+          "context": "iew 等，每模型 50–100 万、90 天有效；另有视觉 / 视频 / 3D 额度。   资格 新主账号实名 有效期 90 天 注意 每模型限领一次   获取方式 注册并实名腾讯云 → TokenHub 控制台 → 模型广场「新用户福利免费体验」勾选领取；或首次调用自动到账。   官方文档 查看领取说明 ↗          新用户礼   需实名     阿里云百炼 · 新用户免费额度 ¥ 0   开通百炼即赠：各模型 100 万 tokens 新人额度（社区汇总合计约 7,000 万），有效期约"
+        },
+        {
+          "match": "免费额度 ¥ 0   开通百炼即赠：各模型 100 万 tokens 新人额度",
+          "context": "限领一次   获取方式 注册并实名腾讯云 → TokenHub 控制台 → 模型广场「新用户福利免费体验」勾选领取；或首次调用自动到账。   官方文档 查看领取说明 ↗          新用户礼   需实名     阿里云百炼 · 新用户免费额度 ¥ 0   开通百炼即赠：各模型 100 万 tokens 新人额度（社区汇总合计约 7,000 万），有效期约 90 天，仅抵实时推理，用尽自动转按量、可开「用完即停」；Token / Coding Plan 专用 Key 不占额度。注意地域限定：国内版仅华北 2（北京）、国际站仅新加坡；2026-09-"
+        },
+        {
+          "match": "免费额度",
+          "context": "9-15 起开通需先完善信息。   资格 新用户实名 额度 100 万 / 模型 注意 仅华北 2 / 新加坡   获取方式 开通百炼对应地域 → 完善信息并同意协议 → 创建通用 API Key → 实时调用自动抵扣。   官方文档 查看免费额度说明 ↗          新用户礼   每天限量     智谱 GLM · 注册礼 + 7 天体验卡 ¥ 0   新注册赠 2,000 万 tokens 体验包；另有 GLM Coding Plan 7 天免费体验卡（GLM-5.3 高速"
+        },
+        {
+          "match": "免费额度",
+          "context": "获取方式 bigmodel.cn 注册登录 → banner 领取注册礼 → 再进体验卡活动页点「领取 7 天免费体验」。   官方活动页 查看体验卡活动 ↗          新用户礼   3 个月有效     百度千帆 · 新用户免费额度 ¥ 0   访问千帆大模型平台并同意协议即自动开通：每款预置模型 100 万 tokens 免费额度，有效期 3 个月，仅抵在线推理。   资格 新用户 额度 100 万 / 模型 注意 仅抵在线推理   获取方式 cloud.baidu"
+        },
+        {
+          "match": "免费额度",
+          "context": "「领取 7 天免费体验」。   官方活动页 查看体验卡活动 ↗          新用户礼   3 个月有效     百度千帆 · 新用户免费额度 ¥ 0   访问千帆大模型平台并同意协议即自动开通：每款预置模型 100 万 tokens 免费额度，有效期 3 个月，仅抵在线推理。   资格 新用户 额度 100 万 / 模型 注意 仅抵在线推理   获取方式 cloud.baidu.com 注册并实名 → 开通千帆 → 创建 API Key 调用即自动抵扣。   官方文档 查看额度"
+        },
+        {
+          "match": "免费额度",
+          "context": "注册取 Key 限额 RPM 100 注意 第三方跟踪核验   获取方式 maas.unisound.com 注册 → 创建 API Key → 调用 u2-flash。   官方模型页 · 第三方转引 查看模型页 ↗          免费额度   长期方案     百度 Comate · 个人标准版免费 ¥ 0 /月   个人标准版免费：首次注册赠 ¥10 模型额度（部分文档口径约 5,000 积分、7 天有效），轻量模型不限量，Auto-Free 模式 150k tokens"
+        },
+        {
+          "match": "免费 ¥ 0 /月   个人标准版免费：首次注册赠 ¥10 模型额度",
+          "context": "获取方式 maas.unisound.com 注册 → 创建 API Key → 调用 u2-flash。   官方模型页 · 第三方转引 查看模型页 ↗          免费额度   长期方案     百度 Comate · 个人标准版免费 ¥ 0 /月   个人标准版免费：首次注册赠 ¥10 模型额度（部分文档口径约 5,000 积分、7 天有效），轻量模型不限量，Auto-Free 模式 150k tokens/h（额度耗尽自动切换轻量模型）；专业版 ¥59/月含 ¥55 模型额度。   门槛 登录免 key（B 级） 额度 ¥10"
+        },
+        {
+          "match": "免费用户与付费会员同享；部分模型每日 22:00–次",
+          "context": "额度和适用区域以控制台展示为准。   官方计划说明 查看官方说明 ↗          模型折扣   ◷ 至 10.15     Trae · 内置模型 1 折 1 折   指定内置模型（如 Seed-2.1-Pro）限时 1 折积分折扣，免费用户与付费会员同享；部分模型每日 22:00–次日 8:00 自动按闲时价计费。整体活动结束日未公布。   活动期 至 2026.10.15 前 适用 免费 + 付费用户 机制 第三方转引官方文档   获取方式 更新 Trae 客户端 → 闲时时段调用指定模型自动生效。另有邀请活动：双方"
+        },
+        {
+          "match": "免费窗口 0 项   暂无重置规则，添加后会显示额度",
+          "context": "tgpt.com/codex/offers/students 用 ChatGPT 账户启动验证 → 自动到账。   官方页面 查看学生活动 ↗           03 DAILY / MONTHLY RESET WINDOWS 额度重置与免费窗口 0 项   暂无重置规则，添加后会显示额度刷新时间和获取方式。              04   EXPIRED / ARCHIVE 刚结束     9 项         × 刚结束   WorkBuddy · Hy4 Preview 权益调整 新用户 14 天免费窗口须在 1"
+        },
+        {
+          "match": "免费额度",
+          "context": "RCHIVE 刚结束     9 项         × 刚结束   WorkBuddy · Hy4 Preview 权益调整 新用户 14 天免费窗口须在 10 月 10 日 23:59 前开启，该通道已截止；已开启用户之后 14 天每日免费额度，已体验用户夜间 23:00–08:00 仍可免费（延至 10-31）。现在下载仍能用 WorkBuddy，但不再享新用户 14 天权益。   查看调整说明 ↗       × 刚结束   智谱双节畅用 / ZCode Trust Buil"
+        },
+        {
+          "match": "免费层与 Gemini CLI 免费额度（原 1,000 次",
+          "context": "老用户维持原价至套餐到期，替代路径为校园活动 / 申请表申请 credits。   查看学生折扣说明 ↗       × 刚结束   Gemini CLI 个人免费层停止 2026-06-18 起 Gemini Code Assist 个人免费层与 Gemini CLI 免费额度（原 1,000 次/天）停止服务，官方引导迁移至 Antigravity。   查看官方 FAQ ↗       × 刚结束   Roo Code · 关停归档 VS Code 扩展 2026-05-15 关停，官方建议迁移 ZooCode（社区 fork）"
+        },
+        {
+          "match": "免费层 2026-04-15 正式取消（此前已从 1,000 次/天削减到 100 次",
+          "context": "o+ 暂停新注册（官方标注 temporarily paused），此前已认证用户保留权益，恢复时间未公布。   查看学生说明 ↗       × 刚结束   Qwen Code / iFlow 免费层关停 Qwen Code OAuth 免费层 2026-04-15 正式取消（此前已从 1,000 次/天削减到 100 次/天），iFlow CLI 04-17 停止服务；昔日每天千次免费请求的国产 CLI 均已收费。   查看变更记录 ↗                     T/ 专找能用的 Token 优惠   信息可能随时变更；订阅 / 支付前，请以"
+        },
+        {
+          "match": "新用户首次登录送 14 天 Pro Trial + 300 Credits（含无限补全与 NES）",
+          "context": "Agent Harness 免费额度   结束待公告     Qoder CN · 每日 100 Credits ¥ 0   桌面端每日 10:00 可领 100 通用 Credits（手动领取、漏领不补、每笔 30 天有效，未用可结余）；新用户首次登录送 14 天 Pro Trial + 300 Credits（含无限补全与 NES）。调用 Qwen3.8-Flash 不扣这 100 Credits。   门槛 登录免 key（B 级） 额度 100 Credits / 天 注意 仅桌面端手动领   获取方式 Qoder CN 桌面端 → 左下角用量面板 → 礼物图标"
+        },
+        {
+          "match": "新用户另有 5 天免费体验（官方两页口径 500–800 万 tokens/日，以客户端为准）",
+          "context": "Code 客户端免费 tier：智谱账号登录即用内置模型，v3.14.4 起免费 tier 免验证码；本轮周末 10-10 23:00–10-12 09:00 登录可领 3 亿 GLM-5.3-Flash tokens（仅限客户端内调用）。新用户另有 5 天免费体验（官方两页口径 500–800 万 tokens/日，以客户端为准）。   门槛 登录免 key（B 级） 周末额度 3 亿 tokens 注意 每周五滚动刷新   获取方式 下载 ZCode 客户端 → 智谱账号登录 → 首页活动卡点「领取」→ 模型设置切 GLM-5.3-Flash。   官方客户端文档"
+        },
+        {
+          "match": "注册送 500 次对话额度（一次交互消耗 1 次），用完后可在设置页提交续充申请，审核通过继续用；内置 L",
+          "context": "→ 每日签到自动发放积分。   官方页面 查看免费开通 ↗          Agent Harness 免费档   长期免费     美团 CatPaw · 长期免费 ¥ 0   美团 AI IDE + Agent 平台：官网称完全免费，注册送 500 次对话额度（一次交互消耗 1 次），用完后可在设置页提交续充申请，审核通过继续用；内置 LongCat 2.0（1.6T 开源模型）。   门槛 登录免 key（B 级） 额度 500 次对话 注意 额度与续充口径为第三方   获取方式 catpaw.meituan.com 下载 IDE → 手机号 / 邮箱注册 → 直接用。"
+        },
+        {
+          "match": "新用户注册礼 5,000 积分（90 天）、每日签到第 7 天再得 1,000 积分（后两项为社区整理，以",
+          "context": "Agent Harness 免费档   B 级 · 长期方案     WorkBuddy · 体验版 ¥ 0 /月   每月 500 积分，Auto 模型调度可选全模型；代码实时补全页面列示 5,000 次/月（当前限免无限次）。新用户注册礼 5,000 积分（90 天）、每日签到第 7 天再得 1,000 积分（后两项为社区整理，以账号页为准）。   门槛 注册账号（B 级） 额度 500 积分 / 月 平台 WorkBuddy   获取方式 下载安装 WorkBuddy → 注册 / 登录 → 直接选择体验版。积分和限免权益以账号套餐页当日展示为准。   官网定价页"
+        },
+        {
+          "match": "新用户礼   ◷ 至 12.31     腾讯云 TokenHub · 新用户 100 万 tokens ",
+          "context": "获取方式 注册魔搭 → 绑定阿里云账号并实名 → Access Tokens 页复制 default 令牌 → 调用 api-inference.modelscope.cn/v1 。   官方文档 查看官方说明 ↗          新用户礼   ◷ 至 12.31     腾讯云 TokenHub · 新用户 100 万 tokens ¥ 0   新主账号一次性领最高 100 万 tokens：DeepSeek-V4-Pro/Flash、GLM-5 系列、Kimi-K2.5/2.6、MiniMax-M3、Hy3/4 preview 等，每模型 50–100 万、90 天有"
+        },
+        {
+          "match": "新用户福利免费体验」勾选领取；或首次调用自动到账",
+          "context": "preview 等，每模型 50–100 万、90 天有效；另有视觉 / 视频 / 3D 额度。   资格 新主账号实名 有效期 90 天 注意 每模型限领一次   获取方式 注册并实名腾讯云 → TokenHub 控制台 → 模型广场「新用户福利免费体验」勾选领取；或首次调用自动到账。   官方文档 查看领取说明 ↗          新用户礼   需实名     阿里云百炼 · 新用户免费额度 ¥ 0   开通百炼即赠：各模型 100 万 tokens 新人额度（社区汇总合计约 7,000 万），有效期约 90 天，"
+        },
+        {
+          "match": "新用户礼   需实名     阿里云百炼 · 新用户免费额度 ¥ 0   开通百炼即赠：各模型 100 万",
+          "context": "资格 新主账号实名 有效期 90 天 注意 每模型限领一次   获取方式 注册并实名腾讯云 → TokenHub 控制台 → 模型广场「新用户福利免费体验」勾选领取；或首次调用自动到账。   官方文档 查看领取说明 ↗          新用户礼   需实名     阿里云百炼 · 新用户免费额度 ¥ 0   开通百炼即赠：各模型 100 万 tokens 新人额度（社区汇总合计约 7,000 万），有效期约 90 天，仅抵实时推理，用尽自动转按量、可开「用完即停」；Token / Coding Plan 专用 Key 不占额度。注意地域限定：国内版仅华北 2（北京）、国际站仅"
+        },
+        {
+          "match": "新用户实名 额度 100 万 / 模型 注意 仅华北 2 / 新加坡   获取方式 开通百炼对应地域 → ",
+          "context": "效期约 90 天，仅抵实时推理，用尽自动转按量、可开「用完即停」；Token / Coding Plan 专用 Key 不占额度。注意地域限定：国内版仅华北 2（北京）、国际站仅新加坡；2026-09-15 起开通需先完善信息。   资格 新用户实名 额度 100 万 / 模型 注意 仅华北 2 / 新加坡   获取方式 开通百炼对应地域 → 完善信息并同意协议 → 创建通用 API Key → 实时调用自动抵扣。   官方文档 查看免费额度说明 ↗          新用户礼   每天限量     智谱 GLM · 注册礼 + 7 天体验卡 ¥ 0   新注册赠 2,000 万"
         }
       ]
     }
