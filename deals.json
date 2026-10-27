@@ -2928,5 +2928,21 @@
   "difficulty": 1,
   "published": true,
   "via": "supervisor"
+ },
+ {
+  "id": "doubao-daily-quota",
+  "provider": "豆包",
+  "category": "official_cn",
+  "type": "recurring_promo",
+  "value": "豆包电脑版「天天领额度」（激励三期在场）：每日签到+活动页任务各得一笔活动赠送额度，免费/付费用户都可领，与 ZCode 同构的客户端自产羊毛",
+  "region": "cn",
+  "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/incentive-campaign-rules/f7f2c423-c770-44e7-9be4-bd67a28f074e.html",
+  "rule": "客户端内领取（网页版仅引导下载）；每笔自发放起 30 天有效；消耗顺序=活动赠送→原有免费→付费（先吃赠送不浪费）；单账号（官方明文禁多号/批量/模拟器）",
+  "notes": "官方规则页全文直核（爬虫助理真浏览器+CDN 静态页 2026-10-27）；具体数额以活动页展示为准，待客户端实锤后补 daily_wan",
+  "verify_status": "verified",
+  "verified_at": "2026-10-28T02:30:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "register"
  }
 ]
