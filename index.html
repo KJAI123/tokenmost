@@ -277,6 +277,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <header>
   <span class="hlogo">token<em>most</em></span>
   <span class="tagline">只关注免费 · 花 1 分钱买 token 都是原罪</span>
+  <span class="tagline">📐 全站计量基准：DeepSeek V4.1 Flash 等效（国内谷价 ¥1.75/百万 · 国际 $0.525/百万 · 旗舰按牌价折算力）</span>
   <div class="stats">
     <span class="stat">羊毛 <b id="n-deals">–</b></span>
     <span class="stat">今日 <b id="n-fresh">–</b></span>
@@ -526,21 +527,21 @@ function freshness(d){
   if(h<168)return `<span class="badge b-green">${a} `+Math.floor(h/24)+`天前</span>`;
   return `<span class="badge b-amber">⚠️ `+Math.floor(h/24)+`天前</span>`;
 }
-/* token 数额：表格第一列 */
+/* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
 function tokCell(d){
   if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
-  if(d.tokens_wan)return`<span class="num">${d.tokens_wan>=10000?(d.tokens_wan/10000).toFixed(1)+' 亿':Math.round(d.tokens_wan)+' 万'}</span><span class="unit">tokens${d.daily_wan?` · 日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+'亿':Math.round(d.daily_wan)+'万'}`:''}</span>`;
+  if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${eq>=10000?(eq/10000).toFixed(2)+' 亿':Math.round(eq)+' 万'}</span><span class="unit">DS等效</span></span>`;}
   if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
   if(d.cny)return`<span class="num">¥${d.cny}</span><span class="unit">额度</span>`;
-  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+' 亿':'~'+Math.round(d.daily_wan)+' 万'}</span><span class="unit">tokens/天</span></span>`;
+  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+' 亿':'~'+Math.round(d.daily_wan)+' 万'}</span><span class="unit">DS等效/天</span></span>`;
   if(d.daily_calls)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均~${d.daily_calls>=10000?(d.daily_calls/10000).toFixed(1)+'万':d.daily_calls}</span><span class="unit">次/天</span></span>`;
   if(d.type==='free_tier'||d.via==='free')return'<span class="num">免费</span><span class="unit">长期</span>';
   if(d.type==='price_low')return'<span class="num">低价</span><span class="unit">长期</span>';
   if(d.type==='coupon')return'<span class="num">有码</span><span class="unit">折扣</span>';
   return'<span class="num">·</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
 }
-/* token 数额：表格第一列（排序用估算：$1≈300万 tok，¥1≈40万 tok，仅排序口径；daily_wan 为日预估，×30 折月参与同量纲排序） */
-function tokSort(d){return (d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
+/* 排序：DS等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
+function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
 let sortKey='fresh';
 function render(){
   if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
@@ -1065,7 +1066,7 @@ function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' �
 function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+' 亿':Math.round(million*100)+' 万'}
 function sumRender(){
   const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified');
-  const agg=rows=>({t:rows.reduce((s,d)=>s+(d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
+  const agg=rows=>({t:rows.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
   const R=agg(live.filter(d=>d.via==='register')),I=agg(live.filter(d=>d.via==='invite')),S=agg(live.filter(d=>d.via==='student'));
   const freeN=live.filter(d=>d.via==='free'||d.type==='free_tier').length;
   const T={t:R.t+I.t,c:R.c+I.c,u:R.u+I.u};
@@ -1076,6 +1077,7 @@ function sumRender(){
      <div class="sum-card"><b>＝ 合计白嫖</b><span class="big accent">${fmtWan(T.t)} tokens</span><span>＋ ¥${T.c} 券 ＋ $${T.u} ≈ ¥${(T.c+T.u*FX).toFixed(0)} 价值</span></div>
      <div class="sum-card"><b>学生通道再叠加</b><span class="big">$${S.u}</span><span>≈ ¥${(S.u*FX).toFixed(0)}/年 · ${S.n} 条（需学生认证）</span></div>
    </div>
+   <p class="calc-note"><b>📐 等效口径（2026-10-28 老板拍板）</b>：全站 token 统一折算为 <b>DeepSeek V4.1 Flash 等效 token</b>——国内按谷价（空闲 5 折）加权 ¥1.75/百万、国际按牌价加权 $0.525/百万；等效按算力购买力折算而非裸计数：GLM-5.3 ×7.43、DeepSeek V4 Pro ×7.71、Kimi K3 ×11.43、MiniMax-M3 ×2.10，同档 Flash 模型与无牌价免费模型 1:1。通用/多模型额度保守取 1:1。系数表在 tools/eq.json，随牌价更新复核。</p>
    <p class="calc-note">另有 <b>${freeN}</b> 个长期免费层不花钱持续用（GLM-4.7-Flash、讯飞 Lite、ModelScope、Gemini、Groq、OpenRouter :free 等）。口径：每平台<b>单账号</b>官方规则；百炼按领 10 款、TokenHub 按 5 款保守估算；火山方舟（数额控制台才可见）、NVIDIA NIM（1000 credits）、讯飞礼包、Anthropic credits 未计入；自己做邀请人还能继续放大（智谱月上限 2 亿 tokens）。</p>`;
   sumCalc();
 }
@@ -1086,7 +1088,7 @@ function sumCalc(){
     if(!i&&!o)return null;
     return{...p,bl:((3*i+o)/4)*(p.currency==='USD'?FX:1)};
   }).filter(Boolean).sort((a,b)=>a.bl-b.bl).slice(0,5);
-  const freeWan=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified').reduce((s,d)=>s+(d.tokens_wan||0),0);
+  const freeWan=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified').reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const best=rows[0];
   document.getElementById('sumTable').innerHTML=
     '<tr><th>买法（同预算 token 最多）</th><th>综合单价*</th><th>该预算可得</th></tr>'+
