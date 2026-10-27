@@ -28,8 +28,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "tools" / "harvest_sources.json"
 OUTDIR = ROOT / "data-research" / "harvest"
 UA = "tokenmost-harvest/0.1 (+https://tokenmost.com; deal-verification research bot)"
-DELAY = 2.0  # 抓取间隔秒数
-TIMEOUT = 15
+DELAY = 1.0  # 抓取间隔秒数（60+ 源规模下保证 15 分钟内跑完）
+TIMEOUT = 10
 
 # 通用关键词：命中即记录上下文
 DEFAULT_PATTERNS = [

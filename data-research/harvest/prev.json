@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T11:05:51Z",
+  "harvested_at": "2026-10-27T18:00:57Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -543,23 +543,35 @@
       ]
     },
     {
-      "id": "volc-ark-quota",
-      "name": "火山方舟免费推理额度",
-      "url": "https://docs.volcengine.com/docs/ark/free-inference-quota",
+      "id": "volc-ark-collab",
+      "name": "火山方舟协作奖励计划",
+      "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
       "status": "ok",
-      "hits": 3,
+      "hits": 6,
       "findings": [
         {
           "match": "免费推理额度",
           "context": "模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识问答 Agent"
         },
         {
-          "match": "免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度",
-          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 最近更新时间： 2026.08.24 21:58:51 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+          "match": "协作奖励",
+          "context": "- 标准流程 模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识"
         },
         {
-          "match": "免费推理额度",
-          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 热门活动 免费推理额度 复制全文 下载 pdf 我的收藏 免费推理额度 文档反馈 问问助手 最近更新时间： 2026.08.24 21:58:51 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+          "match": "协作奖励",
+          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+        },
+        {
+          "match": "协作奖励",
+          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+        },
+        {
+          "match": "协作奖励",
+          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+        },
+        {
+          "match": "Token",
+          "context": "作与生成视频 查看版权用量与收入 在线推理 管理推理接入点 为 AI 生成产物添加隐式水印 安心体验模式细则说明 开通管理 安全管理 控制台-推理安全审计 控制台-精调安全审计 控制台-推理接入点安全监控总览 用量统计 项目配置 网络配置 Token 计算器 安全管理 安全管理总览 内容安全护栏 火山方舟大模型服务安全白皮书 火山方舟互信计算架构白皮书 推理会话数据应用层加密方案 精调安全防护能力介绍 通过堡垒机进入安全沙箱的运维流程 常见问题 常见问题 相关协议 火山方舟大模型服务平"
         }
       ]
     },
@@ -593,79 +605,267 @@
       ]
     },
     {
-      "id": "openrouter-free-models",
-      "name": "OpenRouter 免费模型列表",
-      "url": "https://openrouter.ai/models?max_price=0",
+      "id": "kimi-membership",
+      "name": "Kimi 会员定价",
+      "url": "https://www.kimi.com/help/membership/membership-pricing",
       "status": "ok",
-      "hits": 17,
+      "hits": 30,
       "findings": [
         {
-          "match": "$0.06/K images Amazon: Titan Embedd",
-          "context": "ectors are 1,024 dimensions by default with 384 and 256 selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.06/K images Amazon: Titan Embeddings G1 - Text Titan Embeddings G1 - Text 1.76M tokens Amazon Titan Embeddings G1 - Text is the first-generation Titan t"
+          "match": "赠送额度     可以把额度都用在一个功能上吗？   可以",
+          "context": "待额度按月自动刷新；若触发 Kimi Code 用量限制，请按控制台显示的时间恢复使用（周限额仅适用于旧套餐）   升级至更高等级会员获取更多额度   购买 加油包 ：开启后按实际用量付费，无需等待额度刷新即可继续使用   参与官方活动获取赠送额度     可以把额度都用在一个功能上吗？   可以。所有会员功能共享一个额度池，你可以自由支配。但请注意：某个功能把额度用完，会影响其他功能的使用；Kimi Code 另有滚动 5 小时限额，旧套餐另有周限额，仅作用于 Kimi Code。   每天下午 4 点「Claw-云主机」扣除的"
         },
         {
-          "match": "$0.10/M tokens Amazon: Titan Text E",
-          "context": "per input and returns fixed 1,536-dimension vectors; the dimensions parameter is not supported. by amazon Oct 26, 2026 $0.10/M tokens Amazon: Titan Text Embeddings V2 Titan Text Embeddings V2 1.19M tokens Amazon Titan Text Embeddings V2 is a text embedding model for retriev"
+          "match": "¥49/月 ¥468/年 ¥39/月 Plus ¥99/月 ¥94",
+          "context": "整权益及购买资格请以 会员购买页 展示为准。   订阅方式与价格   国内会员购买页（连续包年）。大号价格为年付折合月价，实际按全年总额扣费。截图于 2026 年 10 月 19 日。   套餐 连续包月 连续包年总价 年付折合每月 Go ¥49/月 ¥468/年 ¥39/月 Plus ¥99/月 ¥948/年 ¥79/月 Pro ¥199/月 ¥1,908/年 ¥159/月 Max ¥699/月 ¥6,708/年 ¥559/月 Ultra ¥1,399/月 ¥13,428/年 ¥1,119/月   年付价格为一次支付的全年总额，折合每月价"
         },
         {
-          "match": "$0.02/M tokens OpenAI: GPT-6.1 Terr",
-          "context": "s of 1,024 dimensions by default, with 512 and 256 also selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.02/M tokens OpenAI: GPT-6.1 Terra Pro (batch) GPT-6.1 Terra Pro (batch) Batch variant 401K tokens GPT-6.1 Terra Pro is the same underlying model as GPT-"
+          "match": "¥79/月 Pro ¥199/月 ¥1,908/年 ¥159/月 ",
+          "context": "会员购买页（连续包年）。大号价格为年付折合月价，实际按全年总额扣费。截图于 2026 年 10 月 19 日。   套餐 连续包月 连续包年总价 年付折合每月 Go ¥49/月 ¥468/年 ¥39/月 Plus ¥99/月 ¥948/年 ¥79/月 Pro ¥199/月 ¥1,908/年 ¥159/月 Max ¥699/月 ¥6,708/年 ¥559/月 Ultra ¥1,399/月 ¥13,428/年 ¥1,119/月   年付价格为一次支付的全年总额，折合每月价格仅用于比较，并非按月扣费。连续包年最高可省 ¥3,360/年 。   如"
         },
         {
-          "match": "$0.50 /M input tokens $2.50 /M outp",
-          "context": "x27;s docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra Pro GPT-6.1 Terra Pro 762M tokens GPT-6.1 Terra Pro is the same underlying model as GPT-"
+          "match": "¥699/月 ¥6,708/年 ¥559/月 Ultra ¥1,39",
+          "context": "2026 年 10 月 19 日。   套餐 连续包月 连续包年总价 年付折合每月 Go ¥49/月 ¥468/年 ¥39/月 Plus ¥99/月 ¥948/年 ¥79/月 Pro ¥199/月 ¥1,908/年 ¥159/月 Max ¥699/月 ¥6,708/年 ¥559/月 Ultra ¥1,399/月 ¥13,428/年 ¥1,119/月   年付价格为一次支付的全年总额，折合每月价格仅用于比较，并非按月扣费。连续包年最高可省 ¥3,360/年 。   如何选择套餐     Go ：日常文档、PPT、深度研究和网站部署，不包含 K"
         },
         {
-          "match": "$0.50 /M input tokens $2.50 /M outp",
-          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 34.2B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
+          "match": "¥13,428/年 ¥1,119/月   年付价格为一次支付的全年",
+          "context": "折合每月 Go ¥49/月 ¥468/年 ¥39/月 Plus ¥99/月 ¥948/年 ¥79/月 Pro ¥199/月 ¥1,908/年 ¥159/月 Max ¥699/月 ¥6,708/年 ¥559/月 Ultra ¥1,399/月 ¥13,428/年 ¥1,119/月   年付价格为一次支付的全年总额，折合每月价格仅用于比较，并非按月扣费。连续包年最高可省 ¥3,360/年 。   如何选择套餐     Go ：日常文档、PPT、深度研究和网站部署，不包含 Kimi Code。   Plus ：需要 Kimi Code 和 Agen"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.86M tokens HeyGen Voice Turbo is a lower-latency version"
+          "match": "¥3,360/年 ",
+          "context": ",908/年 ¥159/月 Max ¥699/月 ¥6,708/年 ¥559/月 Ultra ¥1,399/月 ¥13,428/年 ¥1,119/月   年付价格为一次支付的全年总额，折合每月价格仅用于比较，并非按月扣费。连续包年最高可省 ¥3,360/年 。   如何选择套餐     Go ：日常文档、PPT、深度研究和网站部署，不包含 Kimi Code。   Plus ：需要 Kimi Code 和 Agent 集群的用户。   Pro ：需要目标模式、专属 Kimi Claw 和更多额"
         },
         {
-          "match": "$2 /M input tokens $10 /M output",
-          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 174B tokens Flint is an open-weight mixture-of-experts model f"
+          "match": "会员",
+          "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 798M tokens Mammoth 1 is a 27B decision model from Base L"
+          "match": "会员",
+          "context": "制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 503M tokens Elephant 1 is a 9B decision model from Base"
+          "match": "会员",
+          "context": "案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Bu"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 4.39B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
+          "match": "会员",
+          "context": "下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi"
         },
         {
-          "match": "$0.12 /M input tokens $0 /M output ",
-          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.12 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 244M tokens Nemotron 3.5 Embed 1B"
+          "match": "会员",
+          "context": "imi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi Claw Kimi 黑板报 常见问"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "8-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 1B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 8B (free) Nemotron 3.5 Embed 8B (free) Free variant 223M tokens Nemotron 3.5 Embed 8B"
+          "match": "会员",
+          "context": "PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi Claw Kimi 黑板报 常见问题 帮助中心 会员订阅 会员是怎么收费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 496M tokens by nvidia Oct 21, 20"
+          "match": "会员",
+          "context": "套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi Claw Kimi 黑板报 常见问题 帮助中心 会员订阅 会员是怎么收费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为 Go、Plus、Pro、Max、Ultra 。下表为新套餐权益，旧套餐规则见下文。最新价格、完整权益及购买资格请以 会员购买页 展示为准。   订阅方"
         },
         {
-          "match": "$0 /M input tokens $0 /M output ",
-          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 496M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.18M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It conver"
+          "match": "会员",
+          "context": "与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi Claw Kimi 黑板报 常见问题 帮助中心 会员订阅 会员是怎么收费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为 Go、Plus、Pro、Max、Ultra 。下表为新套餐权益，旧套餐规则见下文。最新价格、完整权益及购买资格请以 会员购买页 展示为准。   订阅方式与价格"
         },
         {
-          "match": "$13/M characters Mistral: Voxtral",
-          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 45.1M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
+          "match": "会员",
+          "context": "续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi Claw Kimi 黑板报 常见问题 帮助中心 会员订阅 会员是怎么收费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为 Go、Plus、Pro、Max、Ultra 。下表为新套餐权益，旧套餐规则见下文。最新价格、完整权益及购买资格请以 会员购买页 展示为准。   订阅方式与价格   国内会员购买页（连续包年）。大号价"
         },
         {
-          "match": "$0.000067/second Mistral: Voxtral Mini ",
-          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 14.1M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
+          "match": "会员",
+          "context": "发票 会员问题联系方式 Kimi Code Kimi API与企业合作 Kimi Business Kimi Claw Kimi 黑板报 常见问题 帮助中心 会员订阅 会员是怎么收费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为 Go、Plus、Pro、Max、Ultra 。下表为新套餐权益，旧套餐规则见下文。最新价格、完整权益及购买资格请以 会员购买页 展示为准。   订阅方式与价格   国内会员购买页（连续包年）。大号价格为年付折合月价，实际按全年总额扣"
         },
         {
-          "match": "$0.000058/second List Table List Table ",
-          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second List Table List Table List Table"
+          "match": "会员",
+          "context": "黑板报 常见问题 帮助中心 会员订阅 会员是怎么收费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为 Go、Plus、Pro、Max、Ultra 。下表为新套餐权益，旧套餐规则见下文。最新价格、完整权益及购买资格请以 会员购买页 展示为准。   订阅方式与价格   国内会员购买页（连续包年）。大号价格为年付折合月价，实际按全年总额扣费。截图于 2026 年 10 月 19 日。   套餐 连续包月 连续包年总价 年付折合每月 Go ¥49/月 ¥468/年"
+        },
+        {
+          "match": "会员",
+          "context": "费的/套餐包括什么？   会员收费与套餐介绍   当前国内新会员套餐为 Go、Plus、Pro、Max、Ultra 。下表为新套餐权益，旧套餐规则见下文。最新价格、完整权益及购买资格请以 会员购买页 展示为准。   订阅方式与价格   国内会员购买页（连续包年）。大号价格为年付折合月价，实际按全年总额扣费。截图于 2026 年 10 月 19 日。   套餐 连续包月 连续包年总价 年付折合每月 Go ¥49/月 ¥468/年 ¥39/月 Plus ¥99/月 ¥948/年 ¥7"
+        },
+        {
+          "match": "会员",
+          "context": "要更大额度和更多定时任务、小组件任务的高频用户。提供 28 倍 Agent 额度，是 Max 的 2 倍；支持 4 个 Agent 任务并行、定时任务与小组件任务各 25 个、100 个项目及 50GB 项目存储空间。     完整对比见 会员订阅服务权益介绍 。   旧套餐如何处理？   Andante、Moderato、Allegretto、Allegro 为旧套餐。已订阅用户的套餐名称、权益规则和自动续费保持不变，可继续使用、续费，或按页面提供的选项升级；无需为了继续使用而"
+        },
+        {
+          "match": "会员",
+          "context": "及以上仍可使用 Kimi Code，保留滚动 5 小时限额和周限额。新套餐 Go 不包含 Kimi Code，Plus 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周"
+        },
+        {
+          "match": "会员",
+          "context": "e，保留滚动 5 小时限额和周限额。新套餐 Go 不包含 Kimi Code，Plus 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限"
+        },
+        {
+          "match": "会员",
+          "context": "s 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Co"
+        },
+        {
+          "match": "会员",
+          "context": "时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Co"
+        },
+        {
+          "match": "会员",
+          "context": "以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Code。   详见 会员额度更新与使用规则 。   额度常见问题   如何查看额度使用情况？     Web 端 ：点击左下角头像 → 设置 → 订阅   APP 端 ：我的 → 会员计划 → 订阅     可查看当前额度余额（百分比）、下次刷新时间，以及最近 1"
+        },
+        {
+          "match": "会员",
+          "context": "Kimi Code。月度共享额度用尽也会影响 Kimi Code。   详见 会员额度更新与使用规则 。   额度常见问题   如何查看额度使用情况？     Web 端 ：点击左下角头像 → 设置 → 订阅   APP 端 ：我的 → 会员计划 → 订阅     可查看当前额度余额（百分比）、下次刷新时间，以及最近 1000 条使用明细（使用时间、功能、消耗比例）。   使用明细数据可能存在短暂延迟，请以当前额度显示为准。   额度用完了怎么办？   当前正在进行的任务可以正"
+        },
+        {
+          "match": "会员",
+          "context": "为准。   额度用完了怎么办？   当前正在进行的任务可以正常完成，新任务将提示额度不足。你可以：     等待额度按月自动刷新；若触发 Kimi Code 用量限制，请按控制台显示的时间恢复使用（周限额仅适用于旧套餐）   升级至更高等级会员获取更多额度   购买 加油包 ：开启后按实际用量付费，无需等待额度刷新即可继续使用   参与官方活动获取赠送额度     可以把额度都用在一个功能上吗？   可以。所有会员功能共享一个额度池，你可以自由支配。但请注意：某个功能把额度用完，"
+        },
+        {
+          "match": "会员",
+          "context": "制台显示的时间恢复使用（周限额仅适用于旧套餐）   升级至更高等级会员获取更多额度   购买 加油包 ：开启后按实际用量付费，无需等待额度刷新即可继续使用   参与官方活动获取赠送额度     可以把额度都用在一个功能上吗？   可以。所有会员功能共享一个额度池，你可以自由支配。但请注意：某个功能把额度用完，会影响其他功能的使用；Kimi Code 另有滚动 5 小时限额，旧套餐另有周限额，仅作用于 Kimi Code。   每天下午 4 点「Claw-云主机」扣除的 0.6%"
+        },
+        {
+          "match": "会员",
+          "context": "OpenClaw：每次调用 Claw，系统都会在云端启动一个隔离沙箱来执行代码、操作浏览器或调用工具。沙箱不是\"免费待机\"的，而是按运行时长和资源消耗持续计费——即使你没有主动发起任务，已部署的云主机仍会保留运行环境和数据，因此每天会产生约会员额度 0.6% 的费用，于每天下午 4 点结算。   如果近期不打算使用 Kimi Claw，建议先将 memory、soul、workspace 等重要文件保存到本地，再删除云主机；删除后即不再产生该费用，需要时可重新部署。   「Age"
+        },
+        {
+          "match": "会员",
+          "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
+        }
+      ]
+    },
+    {
+      "id": "gemini-pricing",
+      "name": "Gemini API 定价",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
+    },
+    {
+      "id": "azure-students",
+      "name": "Azure for Students",
+      "url": "https://azure.microsoft.com/en-us/free/students",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$100 credit Gain access to industr",
+          "context": "s only) Free monthly amounts of 65&#43; always-free services  Access to full catalog of services up to free amounts and $100 credit Gain access to industry-leading technology like Azure OpenAI along with extensive resources curated for student developers to accelerate your"
+        },
+        {
+          "match": "$ 100 credit</h3> \"> $ 100 credit t",
+          "context": "ng – at any level Renew your subscription annually and continue to get free access to Azure as long as you're a student $ 100 credit</h3> \"> $ 100 credit to use on Azure services within 12 months Sign up Azure for Startups Available only to new Azure customers $1,000 in Azur"
+        },
+        {
+          "match": "$1,000 in Azure credits instantl",
+          "context": "$ 100 credit to use on Azure services within 12 months Sign up Azure for Startups Available only to new Azure customers $1,000 in Azure credits instantly—no application required Unlock up to $5,000 in total credits with business verification Credits valid for 90 days (ini"
+        },
+        {
+          "match": "$5,000 in total credits with bus",
+          "context": "r Startups Available only to new Azure customers $1,000 in Azure credits instantly—no application required Unlock up to $5,000 in total credits with business verification Credits valid for 90 days (initial) and 180 days (post-verification) Access to full Azure catalog up"
+        },
+        {
+          "match": "$5,000 in Azure credits</h3> \"> ",
+          "context": "redit* No upfront commitment—cancel anytime. Move to pay-as-you-go pricing after credits expire or are fully used Up to $5,000 in Azure credits</h3> \"> Up to $5,000 in Azure credits $1,000 available immediately, plus up to $4,000 more after verification Get started FREE S"
+        },
+        {
+          "match": "$5,000 in Azure credits $1,000 a",
+          "context": "ytime. Move to pay-as-you-go pricing after credits expire or are fully used Up to $5,000 in Azure credits</h3> \"> Up to $5,000 in Azure credits $1,000 available immediately, plus up to $4,000 more after verification Get started FREE SERVICES Create more with access to fre"
+        },
+        {
+          "match": "$4,000 more after verification G",
+          "context": "fully used Up to $5,000 in Azure credits</h3> \"> Up to $5,000 in Azure credits $1,000 available immediately, plus up to $4,000 more after verification Get started FREE SERVICES Create more with access to free products</h2> \"> Create more with access to free products Build"
+        },
+        {
+          "match": "$100 free credit? We'll send you a",
+          "context": "k to carousel navigation controls FAQ Frequently asked questions Expand all Collapse all 01/ What happens once I use my $100 free credit? We'll send you an email so you can decide if you want to move to pay as you go. If you do, you'll keep getting free monthly amounts of p"
+        },
+        {
+          "match": "$100 credit toward Azure Marketpla",
+          "context": "monthly amounts of popular services. If you don't, your subscription and products will be disabled. 02/ Can I apply my $100 credit toward Azure Marketplace offers? No, you can't use your credit for Azure Marketplace offers. However, many Azure Marketplace partners offer fr"
+        },
+        {
+          "match": "$100 credit, which can be used wit",
+          "context": "ommunity Visual Studio for Mac Windows Server 07/ How much is Azure for Students? Free (no credit card required) with a $100 credit, which can be used within 12 months on most Azure products. 08/ Can I learn Azure on my own? Take advantage of Microsoft Learn. Microsoft Lear"
+        },
+        {
+          "match": "Free",
+          "context": "for Azure   FinOps on Azure   Microsoft Marketplace                  Azure pricing overview   Create an Azure account   Free Azure services   Flexible purchase options       Pricing calculator   FinOps on Azure   Maximize ROI from AI       Azur"
+        },
+        {
+          "match": "free",
+          "context": "tact Sales     Get started with Azure     Sign in              Build in the cloud&nbsp;with Azure for Students for&nbsp;free</h1> \"> Build in the cloud with Azure for Students for free Use your school email to sign up and renew yearly while you"
+        },
+        {
+          "match": "free",
+          "context": "Build in the cloud&nbsp;with Azure for Students for&nbsp;free</h1> \"> Build in the cloud with Azure for Students for free Use your school email to sign up and renew yearly while you’re a student. Start free Not a student? Get started with Az"
+        },
+        {
+          "match": "free",
+          "context": "cloud with Azure for Students for free Use your school email to sign up and renew yearly while you’re a student. Start free Not a student? Get started with Azure OVERVIEW Overview Compare accounts Free services AI products Resources FAQ Other"
+        },
+        {
+          "match": "Free",
+          "context": "enew yearly while you’re a student. Start free Not a student? Get started with Azure OVERVIEW Overview Compare accounts Free services AI products Resources FAQ Other account types OVERVIEW Discover what you can create with Azure</h2> \"> Discove"
+        },
+        {
+          "match": "free",
+          "context": "bsp;credit&nbsp;card&nbsp;required</h3> \"> No credit card required Renew your subscription annually and continue to get free access to Azure as long as you're a student. ACCOUNT TYPES Choose the Azure account&nbsp;that’s&nbsp;right for you</h2>"
+        },
+        {
+          "match": "Free",
+          "context": "er—no credit card required. Azure for Students Available only to full-time university students* No credit card required Free monthly amounts of 20&#43; popular services for 12 months (new Azure customers only) Free monthly amounts of 65&#43; al"
+        },
+        {
+          "match": "Free",
+          "context": "ents* No credit card required Free monthly amounts of 20&#43; popular services for 12 months (new Azure customers only) Free monthly amounts of 65&#43; always-free services  Access to full catalog of services up to free amounts and $100 credit"
+        },
+        {
+          "match": "free",
+          "context": "hly amounts of 20&#43; popular services for 12 months (new Azure customers only) Free monthly amounts of 65&#43; always-free services  Access to full catalog of services up to free amounts and $100 credit Gain access to industry-leading technol"
+        },
+        {
+          "match": "free",
+          "context": "ew Azure customers only) Free monthly amounts of 65&#43; always-free services  Access to full catalog of services up to free amounts and $100 credit Gain access to industry-leading technology like Azure OpenAI along with extensive resources cur"
+        },
+        {
+          "match": "free",
+          "context": "n in development, data science, and cloud computing – at any level Renew your subscription annually and continue to get free access to Azure as long as you're a student $ 100 credit</h3> \"> $ 100 credit to use on Azure services within 12 months"
+        },
+        {
+          "match": "FREE",
+          "context": "3> \"> Up to $5,000 in Azure credits $1,000 available immediately, plus up to $4,000 more after verification Get started FREE SERVICES Create more with access to free products</h2> \"> Create more with access to free products Build and create wit"
+        },
+        {
+          "match": "free",
+          "context": "0 available immediately, plus up to $4,000 more after verification Get started FREE SERVICES Create more with access to free products</h2> \"> Create more with access to free products Build and create with a host of free products, up to the spec"
+        },
+        {
+          "match": "free",
+          "context": "fter verification Get started FREE SERVICES Create more with access to free products</h2> \"> Create more with access to free products Build and create with a host of free products, up to the specified monthly amounts. Some are always free to al"
+        },
+        {
+          "match": "free",
+          "context": "eate more with access to free products</h2> \"> Create more with access to free products Build and create with a host of free products, up to the specified monthly amounts. Some are always free to all Azure customers, and some are free for 12 mo"
+        },
+        {
+          "match": "free",
+          "context": "ss to free products Build and create with a host of free products, up to the specified monthly amounts. Some are always free to all Azure customers, and some are free for 12 months to new customers only. Popular services AI and machine learning"
+        },
+        {
+          "match": "free",
+          "context": "a host of free products, up to the specified monthly amounts. Some are always free to all Azure customers, and some are free for 12 months to new customers only. Popular services AI and machine learning Hybrid and multicloud Compute Containers"
+        },
+        {
+          "match": "Free",
+          "context": "AI Search 50 MB storage for 10,000 hosted documents and 3 indexes per service Learn more Always Azure Machine Learning Free Learn more 12 months Azure Vision in Foundry Tools 5,000 transactions each for S1, S2, and S3 tiers Learn more Always A"
+        },
+        {
+          "match": "free",
+          "context": "ssages and unlimited standard channel messages Learn more Always Azure Translator in Foundry Tools 2 million characters free tier Learn more Always Content Safety in Foundry Control Plane 5,000 text records or 5,000 images of the free tier Lear"
+        },
+        {
+          "match": "free",
+          "context": "haracters free tier Learn more Always Content Safety in Foundry Control Plane 5,000 text records or 5,000 images of the free tier Learn more Always Azure Speech in Foundry Tools 0.5 million neural characters per month Learn more Always  Azure D"
         }
       ]
     },
@@ -673,99 +873,15 @@
       "id": "gemini-rate-limits",
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
-      "status": "ok",
-      "hits": 11,
-      "findings": [
-        {
-          "match": "$10       第 2 层级   $50       第 3 ",
-          "context": "。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用"
-        },
-        {
-          "match": "$200          如果您达到基于支出的速率限制，API 会",
-          "context": "于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用较小的上下文窗口或较短的输出。   如果您在正常使用期间始终达到此限制，请 申"
-        },
-        {
-          "match": "$250       第 2 层级   已支付 100 美元 + 自",
-          "context": "务（包括但不限于 Gemini API）上的累计总支出。          使用层   资格赛   结算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批"
-        },
-        {
-          "match": "$2,000       第 3 层级   已支付 1,000 ",
-          "context": "算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批准，但在极少数情况下，升级请求可能会因审核过程中发现的其他因素而被拒绝。    此系统有助于维护"
-        },
-        {
-          "match": "每日 token",
-          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，"
-        },
-        {
-          "match": "RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RP",
-          "context": "发出的请求数量。这些限制有助于维护公平使用、防范滥用行为，并帮助所有用户保持系统性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非"
-        },
-        {
-          "match": "RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请",
-          "context": "个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够"
-        },
-        {
-          "match": "RPD ) 配额会在美国太平洋时间零点重置",
-          "context": "的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)"
-        },
-        {
-          "match": "RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强",
-          "context": "能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
-        },
-        {
-          "match": "RPM）",
-          "context": "升级到下一层级。从免费层级升级到第 1 层级通常会立即生效，后续层级升级将在 10 分钟内生效。前往 AI Studio 中的 “项目”页面 ，查看您的层级。    申请提高速率限制    每个模型变体都有一个关联的速率限制（每分钟请求数，RPM）。 如需详细了解这些速率限制，请参阅 AI Studio 速率限制 页面。    申请提高付费层级速率限制    我们不保证一定会提高您的速率限制，但会尽力审核您的请求。"
-        },
-        {
-          "match": "RPD",
-          "context": "性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "groq-rate-limits",
       "name": "Groq 限流",
       "url": "https://console.groq.com/docs/rate-limits",
-      "status": "ok",
-      "hits": 9,
-      "findings": [
-        {
-          "match": "RPM: Requests per minute   RPD: Requests pe",
-          "context": "o that we can serve reliable and fast inference for all.   Understanding Rate Limits   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPM: Tokens per minute   TPD: Tokens per day   ASH: Audio seconds per hour   ASD: Audio seconds per day   ITPM:"
-        },
-        {
-          "match": "RPM = 50 and your TPM = 200K. If you were t",
-          "context": "vidual users. You can hit any limit type depending on which threshold you reach first.     Example: Let&#x27;s say your RPM = 50 and your TPM = 200K. If you were to send 50 requests with only 100 tokens within a minute, you would reach your limit even though you did not send 200K to"
-        },
-        {
-          "match": "RPM RPD TPM TPD ASH ASD canopylabs/orpheus-",
-          "context": "limits are available for select workloads and enterprise use cases.     Free Plan Limits Developer Plan Limits MODEL ID RPM RPD TPM TPD ASH ASD canopylabs/orpheus-arabic-saudi 10 100 1.2K 3.6K - - canopylabs/orpheus-v1-english 10 100 1.2K 3.6K - - meta-llama/llama-prompt-guard-2-22m"
-        },
-        {
-          "match": "Requests Per Day (RPD) x-ratelimit-limit-tokens 18000 Al",
-          "context": "es are illustrative):     Header Value Notes retry-after 2 In seconds x-ratelimit-limit-requests 14400 Always refers to Requests Per Day (RPD) x-ratelimit-limit-tokens 18000 Always refers to Tokens Per Minute (TPM) x-ratelimit-remaining-requests 14370 Always refers to Requests Per Day (RPD) x-ra"
-        },
-        {
-          "match": "Requests Per Day (RPD) x-ratelimit-remaining-tokens 1799",
-          "context": "limit-limit-tokens 18000 Always refers to Tokens Per Minute (TPM) x-ratelimit-remaining-requests 14370 Always refers to Requests Per Day (RPD) x-ratelimit-remaining-tokens 17997 Always refers to Tokens Per Minute (TPM) x-ratelimit-reset-requests 2m59.56s Always refers to Requests Per Day (RPD) x"
-        },
-        {
-          "match": "Requests Per Day (RPD) x-ratelimit-reset-tokens 7.66s Al",
-          "context": "it-remaining-tokens 17997 Always refers to Tokens Per Minute (TPM) x-ratelimit-reset-requests 2m59.56s Always refers to Requests Per Day (RPD) x-ratelimit-reset-tokens 7.66s Always refers to Tokens Per Minute (TPM)   Handling Rate Limits   When you exceed rate limits, our API returns a 429 Too M"
-        },
-        {
-          "match": "TPD",
-          "context": "e Limits   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPM: Tokens per minute   TPD: Tokens per day   ASH: Audio seconds per hour   ASD: Audio seconds per day   ITPM: Input tokens per minute   OTPM: Outp"
-        },
-        {
-          "match": "TPD",
-          "context": "vailable for select workloads and enterprise use cases.     Free Plan Limits Developer Plan Limits MODEL ID RPM RPD TPM TPD ASH ASD canopylabs/orpheus-arabic-saudi 10 100 1.2K 3.6K - - canopylabs/orpheus-v1-english 10 100 1.2K 3.6K - - meta-ll"
-        },
-        {
-          "match": "Requests per day",
-          "context": "fast inference for all.   Understanding Rate Limits   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPM: Tokens per minute   TPD: Tokens per day   ASH: Audio seconds per hour   ASD: Audio seconds per day   ITPM: Input"
-        }
-      ]
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "moonshot-pricing",
@@ -1172,130 +1288,8 @@
       "id": "mistral-usage-limits",
       "name": "Mistral 用量限额",
       "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "Free",
-          "context": "usage, and limits   Your Mistral plan defines the included monthly usage and limits available to your Organization.     Free mode lets you create API keys and use included monthly usage within the limits shown on the Limits page.   Pay-as-you-g"
-        },
-        {
-          "match": "limits",
-          "context": "Usage and limits | Mistral Docs Docs & API Search docs ⌘K Vibe Studio Inference & Models Admin Resources API Reference Search docs ⌘K To"
-        },
-        {
-          "match": "limits",
-          "context": "our Organization Access and permissions Configure Workspaces Billing and usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to unders"
-        },
-        {
-          "match": "limits",
-          "context": "nd usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits"
-        },
-        {
-          "match": "limits",
-          "context": "tions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page"
-        },
-        {
-          "match": "limits",
-          "context": "Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage"
-        },
-        {
-          "match": "limits",
-          "context": "limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API ra"
-        },
-        {
-          "match": "limits",
-          "context": "on consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use"
-        },
-        {
-          "match": "limits",
-          "context": "s and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages dep"
-        },
-        {
-          "match": "limits",
-          "context": "ply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you ne"
-        },
-        {
-          "match": "limits",
-          "context": "global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:"
-        },
-        {
-          "match": "limits",
-          "context": "ending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:   Task Admin Panel page Review usage and c"
-        },
-        {
-          "match": "limits",
-          "context": "o check or change:   Task Admin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspac"
-        },
-        {
-          "match": "Limits",
-          "context": "dmin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspace spending limit Admin Pane"
-        },
-        {
-          "match": "limits",
-          "context": "ling period. Use it to understand spend, identify heavy usage areas, and decide whether to adjust Workspace caps or API limits.   The dashboard can show:     total cost;   cost per day;   completion usage;   Vibe usage beyond quota;   OCR usage;"
-        },
-        {
-          "match": "limits",
-          "context": "recent invoice payments fail, access can also be affected until the payments are processed again.   Workspace spending limits cannot exceed the Organization spending limit. To manage payments, credits, billing information, and invoices, see Bill"
-        },
-        {
-          "match": "limits",
-          "context": "tion spending limit. To manage payments, credits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspac"
-        },
-        {
-          "match": "limits",
-          "context": "dits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspace. Use Workspace caps to model team budgets,"
-        },
-        {
-          "match": "limits",
-          "context": "ab.   Set Monthly spending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can s"
-        },
-        {
-          "match": "limits",
-          "context": "ending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown"
-        },
-        {
-          "match": "limits",
-          "context": ".     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ ."
-        },
-        {
-          "match": "limits",
-          "context": "orkspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate"
-        },
-        {
-          "match": "Limits",
-          "context": "rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and"
-        },
-        {
-          "match": "limits",
-          "context": "define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minu"
-        },
-        {
-          "match": "limits",
-          "context": "n can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the m"
-        },
-        {
-          "match": "limits",
-          "context": "n in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the model.   Requests per seco"
-        },
-        {
-          "match": "limits",
-          "context": "oken throughput limit for the model.   Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds pe"
-        },
-        {
-          "match": "limits",
-          "context": "Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month."
-        },
-        {
-          "match": "limits",
-          "context": "second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document O"
-        },
-        {
-          "match": "limits",
-          "context": "o audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document OCR rate limits Copy section link Document OCR rate limits   Document OCR limits apply to OCR API consumption and can include pages per"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "cohere-rate-limits",
@@ -1452,6 +1446,143 @@
       ]
     },
     {
+      "id": "doubao-agent-explore",
+      "name": "豆包智能体广场",
+      "url": "https://www.doubao.com/pc/agent-explore",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "doubao-quota-rules",
+      "name": "豆包天天领额度活动规则",
+      "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/incentive-campaign-rules/f7f2c423-c770-44e7-9be4-bd67a28f074e.html",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费额度，最后才消耗您的付费额度",
+          "context": "动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需手动切换 ：做任务得到的额度会自动叠加到您的可用额度中，消耗时自动生效。 消耗顺序 ：优先消耗活动赠送的额度，其次消耗您原有的免费额度，最后才消耗您的付费额度。也就是说，活动赠送额度会先被使用，尽量不浪费您已购买的权益。 有效期 ：每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有"
+        },
+        {
+          "match": "免费额度 → 付费额度”，活动赠送额度",
+          "context": "免费完成豆包的工作 / 任务。它不改变您的会员身份，免费用户和付费用户都可以获得和使用。做任务得到的额度会自动叠加到您的可用额度里，无需手动切换。 Q：我领的额度怎么用？会先扣我买的会员额度吗？ A：不会。消耗顺序是“活动赠送额度 → 原有免费额度 → 付费额度”，活动赠送额度会优先被消耗，尽量不浪费您已购买的权益。 Q：为什么我看不到额度的消耗明细？ A：如需查看消耗明细，可前往豆包工作端查看（具体查询路径以产品实际展示为准）。 Q：额度有有效期吗？ A：有。每一笔活动赠送额度自发放之日起 30 天有效（具体以"
+        },
+        {
+          "match": "赠送额度 （活动赠送额度的性质与使用规则详见后文\"活动赠送额度说明\")",
+          "context": "可能无法正常参与活动，建议升级至最新版本后再试。 谁能参与 已登录豆包账号的用户； 使用最新版本豆包电脑版 / 豆包工作电脑版； 在客户端中能看到活动入口。 做任务得额度 能拿到什么 完成活动页展示的任务，每完成 1 个任务可获得一笔 活动赠送额度 （活动赠送额度的性质与使用规则详见后文\"活动赠送额度说明\")。具体任务清单与每项奖励数值以活动页面展示为准。 怎么参与 进入任务列表 ：在客户端找到活动入口，进入活动页任务列表。 完成任务 ：按页面提示完成任务。其中每日签到每天可领取 1 次、次日刷新。 领取奖励 ： 如果您在活动页内完成任务，可直"
+        },
+        {
+          "match": "新用户 ：从未下载过豆包电脑版，并且使用从未在豆包电脑版登录过的豆包账号； 久未使用的老用户 ：您的电脑和",
+          "context": "请 1 位好友，你和好友 双方各获得 1 次额度重置机会 ，自动发放到账，无需手动领取谁能参与 邀请方 ：在客户端中看到活动入口的用户，即可成为邀请方。每位邀请方有邀请次数上限，具体以活动页面展示为准。 被邀请方 需要满足以下任一条件： 全新用户 ：从未下载过豆包电脑版，并且使用从未在豆包电脑版登录过的豆包账号； 久未使用的老用户 ：您的电脑和豆包账号都已连续 30 天以上没有使用过豆包电脑版。 怎么参与 复制邀请链接 ：在活动页复制您的专属邀请链接。每个用户的邀请链接由系统自动生成，与您的账号绑定。 分享给好友 ：把邀请链接发给好友。 好友只有通过这个专属链接参与，才能建立邀请"
+        },
+        {
+          "match": "新用户或久未使用老用户\"被其他人邀请",
+          "context": "成操作并收到\"成功\"提示后，双方自动获得奖励。如果好友未收到\"成功\"提示，则本次邀请不计为有效邀请，不会获得奖励。 温馨提示 ：当您的邀请次数已达上限时，继续分享邀请链接不会为双方带来奖励，而且好友如果通过这个链接下载登录，将不能再作为\"全新用户或久未使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会"
+        },
+        {
+          "match": "赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您",
+          "context": "奖励。 温馨提示 ：当您的邀请次数已达上限时，继续分享邀请链接不会为双方带来奖励，而且好友如果通过这个链接下载登录，将不能再作为\"全新用户或久未使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需"
+        },
+        {
+          "match": "赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度",
+          "context": "使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需手动切换 ：做任务得到的额度会自动叠加到您的可用额度中，消耗时自动生效。 消耗顺序 ：优先消耗活动赠送的额度，其次消耗您原有的免费额度，"
+        },
+        {
+          "match": "赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能",
+          "context": "说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需手动切换 ：做任务得到的额度会自动叠加到您的可用额度中，消耗时自动生效。 消耗顺序 ：优先消耗活动赠送的额度，其次消耗您原有的免费额度，最后才消耗您的付费额度。也就是说，活动赠送额度会先被使用，尽量不浪费您已购买"
+        },
+        {
+          "match": "赠送的额度，其次消耗您原有的免费额度，最后才消耗您的付费额度",
+          "context": "订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需手动切换 ：做任务得到的额度会自动叠加到您的可用额度中，消耗时自动生效。 消耗顺序 ：优先消耗活动赠送的额度，其次消耗您原有的免费额度，最后才消耗您的付费额度。也就是说，活动赠送额度会先被使用，尽量不浪费您已购买的权益。 有效期 ：每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有"
+        },
+        {
+          "match": "赠送额度会先被使用，尽量不浪费您已购买的权益",
+          "context": "什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需手动切换 ：做任务得到的额度会自动叠加到您的可用额度中，消耗时自动生效。 消耗顺序 ：优先消耗活动赠送的额度，其次消耗您原有的免费额度，最后才消耗您的付费额度。也就是说，活动赠送额度会先被使用，尽量不浪费您已购买的权益。 有效期 ：每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限。 在哪查看 可在"
+        },
+        {
+          "match": "赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间",
+          "context": "动切换 ：做任务得到的额度会自动叠加到您的可用额度中，消耗时自动生效。 消耗顺序 ：优先消耗活动赠送的额度，其次消耗您原有的免费额度，最后才消耗您的付费额度。也就是说，活动赠送额度会先被使用，尽量不浪费您已购买的权益。 有效期 ：每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限。 在哪查看 可在豆包额度状态页的\"活动赠送额度\"中查看活动赠送额度的发放与消耗。 如产品页面有调整，以实际展示为准。 如需查看活动赠送额度的消耗"
+        },
+        {
+          "match": "赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限",
+          "context": "后才消耗您的付费额度。也就是说，活动赠送额度会先被使用，尽量不浪费您已购买的权益。 有效期 ：每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限。 在哪查看 可在豆包额度状态页的\"活动赠送额度\"中查看活动赠送额度的发放与消耗。 如产品页面有调整，以实际展示为准。 如需查看活动赠送额度的消耗明细，可前往豆包工作电脑端查看。 关于额度重置机会 本活动\"邀好友\"模块发放的奖励为\"额度重置"
+        },
+        {
+          "match": "赠送额度\"中查看活动赠送额度的发放与消耗",
+          "context": "动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限。 在哪查看 可在豆包额度状态页的\"活动赠送额度\"中查看活动赠送额度的发放与消耗。 如产品页面有调整，以实际展示为准。 如需查看活动赠送额度的消耗明细，可前往豆包工作电脑端查看。 关于额度重置机会 本活动\"邀好友\"模块发放的奖励为\"额度重置机会\"，其说明如下： 是什么 ：额度重置机会可以在您额度用完后重置一次，让您继续"
+        },
+        {
+          "match": "赠送额度的消耗明细，可前往豆包工作电脑端查看",
+          "context": "时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限。 在哪查看 可在豆包额度状态页的\"活动赠送额度\"中查看活动赠送额度的发放与消耗。 如产品页面有调整，以实际展示为准。 如需查看活动赠送额度的消耗明细，可前往豆包工作电脑端查看。 关于额度重置机会 本活动\"邀好友\"模块发放的奖励为\"额度重置机会\"，其说明如下： 是什么 ：额度重置机会可以在您额度用完后重置一次，让您继续使用相关功能。它不会提高您的基础额度，也不代表可以无限次使用。额度重置机会只重置套餐额度，不影响"
+        },
+        {
+          "match": "赠送额度",
+          "context": "关于额度重置机会 本活动\"邀好友\"模块发放的奖励为\"额度重置机会\"，其说明如下： 是什么 ：额度重置机会可以在您额度用完后重置一次，让您继续使用相关功能。它不会提高您的基础额度，也不代表可以无限次使用。额度重置机会只重置套餐额度，不影响活动赠送额度。 数量与有效期 ：单个账号最多可同时持有 10 次额度重置机会，达到上限后，新获得的无法继续叠加；每次有效期从获得之日起 30 天，到期后自动失效（具体以活动页面展示为准）。 在哪查看和使用 ：获得后可在豆包-“我的”页面查看和使用额度重"
+        },
+        {
+          "match": "赠送的额度重置机会仅在电脑版可以使用",
+          "context": "效期 ：单个账号最多可同时持有 10 次额度重置机会，达到上限后，新获得的无法继续叠加；每次有效期从获得之日起 30 天，到期后自动失效（具体以活动页面展示为准）。 在哪查看和使用 ：获得后可在豆包-“我的”页面查看和使用额度重置机会，活动赠送的额度重置机会仅在电脑版可以使用。 注意事项 请通过本平台官方认可的方式参与活动。未经本平台事先书面许可，您通过参与本活动所获得的权益不得转让或赠与。任何第三方以本平台名义开展类似活动、恶意发放或转让奖励、欺诈用户等造成的损失，本平台不承担法律责任。 基于设备、操作系统版"
+        },
+        {
+          "match": "赠送额度 Q：活动赠送额度是什么？和会员有什么区别？ A：活动赠送额度是一种免费权益，用于让您免费完成豆",
+          "context": "隐私政策》及其他平台规范同样适用于本活动；本活动规则与平台规范不一致的，以本活动规则为准。 本活动适用中华人民共和国法律。如对活动有任何疑问，可通过豆包客户端内的用户反馈渠道咨询。 本活动与 Apple Inc. 无关。 常见问题 关于活动赠送额度 Q：活动赠送额度是什么？和会员有什么区别？ A：活动赠送额度是一种免费权益，用于让您免费完成豆包的工作 / 任务。它不改变您的会员身份，免费用户和付费用户都可以获得和使用。做任务得到的额度会自动叠加到您的可用额度里，无需手动切换。 Q：我领的额度怎么用？会先扣我买的会员额度吗？ A：不会。消耗顺序是“活动赠送额度 → 原有免费额度"
+        },
+        {
+          "match": "赠送额度 → 原有免费额度 → 付费额度”，活动赠送额度会优先被消耗，尽量不浪费您已购买的权益",
+          "context": "免费权益，用于让您免费完成豆包的工作 / 任务。它不改变您的会员身份，免费用户和付费用户都可以获得和使用。做任务得到的额度会自动叠加到您的可用额度里，无需手动切换。 Q：我领的额度怎么用？会先扣我买的会员额度吗？ A：不会。消耗顺序是“活动赠送额度 → 原有免费额度 → 付费额度”，活动赠送额度会优先被消耗，尽量不浪费您已购买的权益。 Q：为什么我看不到额度的消耗明细？ A：如需查看消耗明细，可前往豆包工作端查看（具体查询路径以产品实际展示为准）。 Q：额度有有效期吗？ A：有。每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同"
+        },
+        {
+          "match": "赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，先到期的先",
+          "context": "原有免费额度 → 付费额度”，活动赠送额度会优先被消耗，尽量不浪费您已购买的权益。 Q：为什么我看不到额度的消耗明细？ A：如需查看消耗明细，可前往豆包工作端查看（具体查询路径以产品实际展示为准）。 Q：额度有有效期吗？ A：有。每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，先到期的先消耗。 关于做任务 Q：任务显示已完成，为什么奖励没到账？ A：部分任务完成后还需要点击\"领取\"或\"去领取\"，奖励才会到账。只显示完成但没点击领取的，奖励还没发放。 Q：忘记领取奖励了，可以补领吗？ A：需要手动领取的任务奖励，请在页面规定"
+        },
+        {
+          "match": "新用户\"或\"久未使用老用户\"的条件，也可能是您的邀请次数已达上限",
+          "context": "端状态都会刷新，奖励只发放一次。 关于邀好友得奖励 Q：邀请奖励是自动发放还是需要手动领取？ A：邀好友得奖励是自动发放的，好友助力成功后双方同时获得额度重置机会，不需要手动领取。 Q：为什么我的好友助力没有成功？ A：可能是好友不符合\"全新用户\"或\"久未使用老用户\"的条件，也可能是您的邀请次数已达上限。具体情况您可以留意活动页面展示的邀请记录。 关于额度重置机会 Q：额度重置机会是什么？ A：额度重置机会可以在您额度用完后重置一次，让您继续使用相关功能。它不会提高您的基础额度，也不代表可以无限次使用；额度重置机会只重置套餐额度，不影响活"
+        },
+        {
+          "match": "赠送额度",
+          "context": "具体情况您可以留意活动页面展示的邀请记录。 关于额度重置机会 Q：额度重置机会是什么？ A：额度重置机会可以在您额度用完后重置一次，让您继续使用相关功能。它不会提高您的基础额度，也不代表可以无限次使用；额度重置机会只重置套餐额度，不影响活动赠送额度。 Q：额度重置机会有数量限制吗？在哪查看？ A：单个账号最多可同时持有 10 次，每次有效期为获得之日起 30 天。获得后可在豆包订阅页查看\"额度重置\"，移动端、网页版和电脑版都可以使用。"
+        },
+        {
+          "match": "每日签到每天可领取 1 次、次",
+          "context": "获得一笔 活动赠送额度 （活动赠送额度的性质与使用规则详见后文\"活动赠送额度说明\")。具体任务清单与每项奖励数值以活动页面展示为准。 怎么参与 进入任务列表 ：在客户端找到活动入口，进入活动页任务列表。 完成任务 ：按页面提示完成任务。其中每日签到每天可领取 1 次、次日刷新。 领取奖励 ： 如果您在活动页内完成任务，可直接在活动页领取奖励； 如果您在活动页外完成任务，会通过系统提示告知任务已完成，点击后打开活动页领取。 邀好友得奖励 能拿到什么 奖励说明额度重置机会每成功邀请 1 位好友，你和好友 双方"
+        },
+        {
+          "match": "每日或单次",
+          "context": "度会先被使用，尽量不浪费您已购买的权益。 有效期 ：每一笔活动赠送额度自发放之日起 30 天有效（具体以活动页面展示为准），到期后自动失效；同时持有多笔时，按到期时间先到期先消耗。 额度限制 ：活动赠送额度遵循豆包现有的额度规则，不额外提高每日或单次的使用上限。 在哪查看 可在豆包额度状态页的\"活动赠送额度\"中查看活动赠送额度的发放与消耗。 如产品页面有调整，以实际展示为准。 如需查看活动赠送额度的消耗明细，可前往豆包工作电脑端查看。 关于额度重置机会 本活动\"邀好友\"模块发放的奖励为"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "低，可能无法正常参与活动，建议升级至最新版本后再试。 谁能参与 已登录豆包账号的用户； 使用最新版本豆包电脑版 / 豆包工作电脑版； 在客户端中能看到活动入口。 做任务得额度 能拿到什么 完成活动页展示的任务，每完成 1 个任务可获得一笔 活动赠送额度 （活动赠送额度的性质与使用规则详见后文\"活动赠送额度说明\")。具体任务清单与每项奖励数值以活动页面展示为准。 怎么参与 进入任务列表 ：在客户端找到活动入口，进入活动页任务列表。 完成任务 ：按页面提示完成任务。其中每日签到每天可领取 1"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "参与活动，建议升级至最新版本后再试。 谁能参与 已登录豆包账号的用户； 使用最新版本豆包电脑版 / 豆包工作电脑版； 在客户端中能看到活动入口。 做任务得额度 能拿到什么 完成活动页展示的任务，每完成 1 个任务可获得一笔 活动赠送额度 （活动赠送额度的性质与使用规则详见后文\"活动赠送额度说明\")。具体任务清单与每项奖励数值以活动页面展示为准。 怎么参与 进入任务列表 ：在客户端找到活动入口，进入活动页任务列表。 完成任务 ：按页面提示完成任务。其中每日签到每天可领取 1 次、次日刷新。"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "谁能参与 已登录豆包账号的用户； 使用最新版本豆包电脑版 / 豆包工作电脑版； 在客户端中能看到活动入口。 做任务得额度 能拿到什么 完成活动页展示的任务，每完成 1 个任务可获得一笔 活动赠送额度 （活动赠送额度的性质与使用规则详见后文\"活动赠送额度说明\")。具体任务清单与每项奖励数值以活动页面展示为准。 怎么参与 进入任务列表 ：在客户端找到活动入口，进入活动页任务列表。 完成任务 ：按页面提示完成任务。其中每日签到每天可领取 1 次、次日刷新。 领取奖励 ： 如果您在活动页内完成任"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "获得奖励。 温馨提示 ：当您的邀请次数已达上限时，继续分享邀请链接不会为双方带来奖励，而且好友如果通过这个链接下载登录，将不能再作为\"全新用户或久未使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "，继续分享邀请链接不会为双方带来奖励，而且好友如果通过这个链接下载登录，将不能再作为\"全新用户或久未使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "带来奖励，而且好友如果通过这个链接下载登录，将不能再作为\"全新用户或久未使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗"
+        },
+        {
+          "match": "活动赠送额度",
+          "context": "久未使用老用户\"被其他人邀请。请在邀请前留意页面展示的剩余可邀请次数，避免浪费好友的参与资格。 活动赠送额度说明 本活动做任务发放的奖励主要为\"活动赠送额度\" 额度是什么 活动赠送额度是一种免费权益 ，您可用于完成豆包的工作 / 任务。领取活动赠送额度 不会改变您的会员或付费身份 ——无论您是否为付费订阅用户，都可以获得并消耗活动赠送额度。 活动赠送额度可直接被消耗；您当前是什么套餐，就用什么套餐对应的模型和功能。 消耗规则 自动使用、无需手动切换 ：做任务得到的额度会自动叠加到您的可用"
+        }
+      ]
+    },
+    {
       "id": "zhipu-hangzhou-rules",
       "name": "智谱杭州 Coding Plan 活动规则",
       "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules",
@@ -1579,6 +1710,1441 @@
           "context": "获取最新资讯     ​ 八、常见问题   Q1 · 哪些用户可以享受减免？ 个人用户需为 在杭工作人员 或 杭州高校在校生 ；企业用户需为 杭州市上城区 的企业主体。 Q2 · V1/V2 老套餐升级到 V3 套餐能享受减免吗？ 本次减免 支持升级场景 ：通过升级方式（含 V1/V2 升级至 V3、V2/V3 套餐内升级）开通的套餐可以享受减免。 Q3 · 名下已有套餐，再买新版能享受减免吗？ 将名下的已有套餐进行 套餐升级 ，方可享受减免；套餐 续订 费用不享受减免。 Q"
         }
       ]
+    },
+    {
+      "id": "alibabacloud-enproductmodel",
+      "name": "Alibaba Cloud Model Stud",
+      "url": "https://www.alibabacloud.com/en/product/modelstudio",
+      "status": "ok",
+      "hits": 3,
+      "findings": [
+        {
+          "match": "Pricing",
+          "context": "Models Overview Products Solutions Pricing Resources Partners Support See all results for \"\" AI Assistant EN Contact Us Docs Console"
+        },
+        {
+          "match": "Pricing",
+          "context": "Global Offices         Trust Center         Case Studies         Analyst Reports                     Products & Pricings       Pricing Calculator         ECS         SAS         Model Studio         Database         Security         SMS"
+        },
+        {
+          "match": "Pricing",
+          "context": "Offices         Trust Center         Case Studies         Analyst Reports                     Products & Pricings       Pricing Calculator         ECS         SAS         Model Studio         Database         Security         SMS"
+        }
+      ]
+    },
+    {
+      "id": "api-docs-docsreleasenot",
+      "name": "更新公告",
+      "url": "https://api-docs.siliconflow.cn/docs/release-notes/overview",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "¥0.15 / M Tokens ¥1.5 / M Tokens ¥4",
+          "context": "ng to different time periods. Billing Period Cache Hit Cache Miss (Input) Output 2:00 AM – 8:00 AM (Beijing Time) daily ¥0.15 / M Tokens ¥1.5 / M Tokens ¥4.5 / M Tokens All other hours ¥0.3 / M Tokens ¥3 / M Tokens ¥9 / M Tokens If you are using the above model, please monit"
+        },
+        {
+          "match": "¥0.3 / M Tokens ¥3 / M Tokens ¥9 /",
+          "context": "(Input) Output 2:00 AM – 8:00 AM (Beijing Time) daily ¥0.15 / M Tokens ¥1.5 / M Tokens ¥4.5 / M Tokens All other hours ¥0.3 / M Tokens ¥3 / M Tokens ¥9 / M Tokens If you are using the above model, please monitor your billing statements. Note: Prices are subject to change."
+        },
+        {
+          "match": "¥1 / M Tokens       If you are u",
+          "context": ", the cache hit input token price for the deepseek-ai/DeepSeek-V4-Pro model will be adjusted as follows:     Cache Hit: ¥1 / M Tokens       If you are using the above model, please monitor your billing statements. Note: Prices are subject to change. Please refer to the re"
+        },
+        {
+          "match": "¥1.75 / M Tokens   Output: ¥7 / M T",
+          "context": "r the nex-agi/Nex-N2-Pro model is about to end. Starting from 2026-06-26 , the platform will begin charging:     Input: ¥1.75 / M Tokens   Output: ¥7 / M Tokens   Cache Hit: ¥0.175 / M Tokens       The limited-time discount for the deepseek-ai/DeepSeek-V4-Pro model will end"
+        },
+        {
+          "match": "¥0.175 / M Tokens       The limited-",
+          "context": "ng from 2026-06-26 , the platform will begin charging:     Input: ¥1.75 / M Tokens   Output: ¥7 / M Tokens   Cache Hit: ¥0.175 / M Tokens       The limited-time discount for the deepseek-ai/DeepSeek-V4-Pro model will end on 2026-06-30 , after which the original pricing will b"
+        },
+        {
+          "match": "¥12 / M Tokens   Output: ¥24 / M ",
+          "context": "eepseek-ai/DeepSeek-V4-Pro model will end on 2026-06-30 , after which the original pricing will be restored:     Input: ¥12 / M Tokens   Output: ¥24 / M Tokens   Cache Hit: ¥0.1 / M Tokens       Pricing for Pro/deepseek-ai/DeepSeek-V3.2 and deepseek-ai/DeepSeek-V3.2 will b"
+        },
+        {
+          "match": "¥0.1 / M Tokens       Pricing for ",
+          "context": "30 , after which the original pricing will be restored:     Input: ¥12 / M Tokens   Output: ¥24 / M Tokens   Cache Hit: ¥0.1 / M Tokens       Pricing for Pro/deepseek-ai/DeepSeek-V3.2 and deepseek-ai/DeepSeek-V3.2 will be adjusted on 2026-06-30 :     Input: ¥4 / M Tokens"
+        },
+        {
+          "match": "¥4 / M Tokens   Output: ¥6 / M T",
+          "context": "Pricing for Pro/deepseek-ai/DeepSeek-V3.2 and deepseek-ai/DeepSeek-V3.2 will be adjusted on 2026-06-30 :     Input: ¥4 / M Tokens   Output: ¥6 / M Tokens   Cache Hit: ¥0.4 / M Tokens       Pricing for the Qwen/Qwen3.6-27B model will be adjusted on 2026-06-30 and will"
+        },
+        {
+          "match": "¥0.4 / M Tokens       Pricing for ",
+          "context": "eepseek-ai/DeepSeek-V3.2 will be adjusted on 2026-06-30 :     Input: ¥4 / M Tokens   Output: ¥6 / M Tokens   Cache Hit: ¥0.4 / M Tokens       Pricing for the Qwen/Qwen3.6-27B model will be adjusted on 2026-06-30 and will no longer differentiate input length tiers:     Input"
+        },
+        {
+          "match": "¥3 / M Tokens   Output: ¥18 / M ",
+          "context": "e Qwen/Qwen3.6-27B model will be adjusted on 2026-06-30 and will no longer differentiate input length tiers:     Input: ¥3 / M Tokens   Output: ¥18 / M Tokens       Pricing for the Qwen/Qwen3.6-35B-A3B model will be adjusted on 2026-06-30 and will no longer differentiate"
+        },
+        {
+          "match": "¥1.8 / M Tokens   Output: ¥10.8 / ",
+          "context": "en/Qwen3.6-35B-A3B model will be adjusted on 2026-06-30 and will no longer differentiate input length tiers:     Input: ¥1.8 / M Tokens   Output: ¥10.8 / M Tokens       If you are using any of the above models, please monitor your billing statements. Note: Prices are subjec"
+        },
+        {
+          "match": "¥2/M Tokens   Output: ¥8/M Token",
+          "context": "e been restored to the original price starting from Beijing time February 9, 2025, at 00:00.  Specific prices:   Input: ¥2/M Tokens   Output: ¥8/M Tokens     2025.02.03 [Feature Update] Reasoning Model reasoning_content Field Separated The display of the reasoning chain i"
+        },
+        {
+          "match": "￥4/ M Tokens Output: ￥16/ M Toke",
+          "context": "-ai/DeepSeek-R1 and deepseek-ai/DeepSeek-V3 Models  The specific pricing is as follows:   deepseek-ai/DeepSeek-R1 Input:￥4/ M Tokens Output: ￥16/ M Tokens   deepseek-ai/DeepSeek-V3     From February 1, 2025, to February 8, 2025, 24:00 Beijing Time, enjoy a limited-time di"
+        },
+        {
+          "match": "¥2 ￥1/ M Tokens Output： ¥8 ￥2/ M",
+          "context": "pSeek-V3     From February 1, 2025, to February 8, 2025, 24:00 Beijing Time, enjoy a limited-time discount price：Input： ¥2 ￥1/ M Tokens Output： ¥8 ￥2/ M Tokens，The original price will be restored from February 9, 2025, 00:00.         2024.12.27 [Service Adjustment] Image"
+        },
+        {
+          "match": "¥ 1.00 / M tokens   Original price：¥",
+          "context": "for free, will start charging from October 17, 2024. The pricing details are as follows:   Limited-time discount price：¥ 1.00 / M tokens   Original price：¥ 4.13 / M tokens（the original price will be restored at a later date）   Third-Party Information Sharing List and Third-P"
+        },
+        {
+          "match": "RPD Limits Removed for DeepSeek-R1/V3 To co",
+          "context": "s month (March 31). If you have any questions, please contact us at any time.   2025.03.07 [Service Adjustment] RPH and RPD Limits Removed for DeepSeek-R1/V3 To continuously improve user experience, the Rate Limits policy is being adjusted as follows: Remove the RPH and RPD rate lim"
+        },
+        {
+          "match": "RPD rate limits for deepseek-ai/DeepSeek-R1",
+          "context": "-R1/V3 To continuously improve user experience, the Rate Limits policy is being adjusted as follows: Remove the RPH and RPD rate limits for deepseek-ai/DeepSeek-R1 and deepseek-ai/DeepSeek-V3. As traffic and load change, the policy may be adjusted at any time, and Silicic Flow reser"
+        },
+        {
+          "match": "RPD Rate Limits for DeepSeek-R1/V3 To ensur",
+          "context": "TS       Video models:     Lightricks/LTX-Video   genmo/mochi-1-preview         2025.02.22 [Service Adjustment] New RPH/RPD Rate Limits for DeepSeek-R1/V3 To ensure the quality of platform services and the rational allocation of resources, the following adjustments to Rate Limits po"
+        },
+        {
+          "match": "RPD Limit (Requests Per Day, Per Day Reques",
+          "context": "epseek-ai/DeepSeek-R1, deepseek-ai/DeepSeek-V3   Applicable Users: All users   Limit Standard: 30 requests/hour   2.New RPD Limit (Requests Per Day, Per Day Requests)   Model Scope: deepseek-ai/DeepSeek-R1, deepseek-ai/DeepSeek-V3   Applicable Users: Users who have not completed rea"
+        },
+        {
+          "match": "RPD Limits Removed for DeepSeek-R1/V3 [Mode",
+          "context": "pgraded to 0324 Version [Service Adjustment] api.siliconflow.com Endpoint to Be Phased Out [Service Adjustment] RPH and RPD Limits Removed for DeepSeek-R1/V3 [Model Service Adjustment] Marco-o1, FLUX.1, and Other Models to Be Discontinued [Service Adjustment] New RPH/RPD Rate Limits"
+        },
+        {
+          "match": "RPD Rate Limits for DeepSeek-R1/V3 [Model S",
+          "context": "eek-R1/V3 [Model Service Adjustment] Marco-o1, FLUX.1, and Other Models to Be Discontinued [Service Adjustment] New RPH/RPD Rate Limits for DeepSeek-R1/V3 [Model Service Adjustment] Yi-1.5, SD-3-medium, and Other Models to Be Discontinued [Pricing Adjustment] DeepSeek-V3 Prices Rest"
+        },
+        {
+          "match": "free",
+          "context": "26.06.25 [Pricing Adjustment] Pricing Adjusted for Nex-N2-Pro, DeepSeek-V4-Pro, DeepSeek-V3.2, and Qwen3.6 Models   The free trial for the nex-agi/Nex-N2-Pro model is about to end. Starting from 2026-06-26 , the platform will begin charging:"
+        },
+        {
+          "match": "free",
+          "context": "e, high-quality, and sustainable services, the Vendor-A/Qwen/Qwen2-72B-Instruct model, which was previously offered for free, will start charging from October 17, 2024. The pricing details are as follows:   Limited-time discount price：¥ 1.00 /"
+        },
+        {
+          "match": "pricing",
+          "context": "ces English Release notes Release notes SiliconFlow platform release notes covering model updates, service adjustments, pricing changes, and new features. 2026.10.21 [Model Upgrade] DeepSeek-V4.1-Flash Upgraded to DeepSeek-V4.1-Flash-1017 To furth"
+        },
+        {
+          "match": "Pricing",
+          "context": "it is recommended that you switch to alternative models as soon as possible to avoid service disruptions.   2026.08.25 [Pricing Adjustment] Time-Based Pricing for DeepSeek-V4-Flash Starting from September 1, 2026 , the deepseek-ai/DeepSeek-V4-Flas"
+        },
+        {
+          "match": "Pricing",
+          "context": "ch to alternative models as soon as possible to avoid service disruptions.   2026.08.25 [Pricing Adjustment] Time-Based Pricing for DeepSeek-V4-Flash Starting from September 1, 2026 , the deepseek-ai/DeepSeek-V4-Flash model will adopt time-based p"
+        },
+        {
+          "match": "pricing",
+          "context": "g for DeepSeek-V4-Flash Starting from September 1, 2026 , the deepseek-ai/DeepSeek-V4-Flash model will adopt time-based pricing, with different rates applying to different time periods. Billing Period Cache Hit Cache Miss (Input) Output 2:00 AM –"
+        },
+        {
+          "match": "Pricing",
+          "context": "e plan to remove the related calls as soon as possible. Thank you for your understanding and cooperation.   2026.07.29 [Pricing Adjustment] Cache Hit Input Token Price Adjustment for DeepSeek-V4-Pro   Starting from 2026-08-03 , the cache hit input"
+        },
+        {
+          "match": "Pricing",
+          "context": "ents. Note: Prices are subject to change. Please refer to the real-time prices displayed on the platform.   2026.06.25 [Pricing Adjustment] Pricing Adjusted for Nex-N2-Pro, DeepSeek-V4-Pro, DeepSeek-V3.2, and Qwen3.6 Models   The free trial for th"
+        },
+        {
+          "match": "Pricing",
+          "context": "re subject to change. Please refer to the real-time prices displayed on the platform.   2026.06.25 [Pricing Adjustment] Pricing Adjusted for Nex-N2-Pro, DeepSeek-V4-Pro, DeepSeek-V3.2, and Qwen3.6 Models   The free trial for the nex-agi/Nex-N2-Pro"
+        }
+      ]
+    },
+    {
+      "id": "aws-qdeveloperpric",
+      "name": "AI for Software Developm",
+      "url": "https://aws.amazon.com/q/developer/pricing/",
+      "status": "ok",
+      "hits": 19,
+      "findings": [
+        {
+          "match": "$19/mo. per user                 ",
+          "context": "Free Tier: Advanced capabilities at zero cost         Pro Tier: Expanded limits $19/mo. per user                 摘要             每月的代理请求次数有限   可访问最新的 Claude 模型   可在 IDE 或 CLI 中使用             免费套餐中包含的所有内容，以及     提高了代理请求限额   提高了 Java 和"
+        },
+        {
+          "match": "免费",
+          "context": "跳至主要内容         想了解专为中国区域提供的云产品？请访问 www.amazonaws.cn 。申请中国区域免费套餐请访问 www.amazonaws.cn/free 。"
+        },
+        {
+          "match": "免费",
+          "context": "已安排就绪，我们正虚位以待。立即注册                           构建和部署智能体     88% 的代理试点项目陷入停滞。了解其他人的不同做法                           开始使用     免费注册，连接您的编程智能体，然后开始构建                                     适用于智能体人工智能的数据     扩展智能体人工智能的 7 种基本数据能力"
+        },
+        {
+          "match": "免费",
+          "context": "一站式了解定价和计划                                   AWS 定价计算器   估计您架构解决方案的成本                                   AWS Free Tier   免费获取使用 AWS 产品和服务的实践经验                                   AWS 优惠   探索不同的优惠计划以获得实践经验                                   AWS 节省"
+        },
+        {
+          "match": "免费",
+          "context": "ed limits $19/mo. per user                 摘要             每月的代理请求次数有限   可访问最新的 Claude 模型   可在 IDE 或 CLI 中使用             免费套餐中包含的所有内容，以及     提高了代理请求限额   提高了 Java 和 .NET 应用程序转换的限额   支持身份中心，配备管理员控制面板和控件   IP 赔偿"
+        },
+        {
+          "match": "免费",
+          "context": "on Q 开发者版，账户的使用情况可能会根据地区因素、付款记录、欺诈性使用或配额增加请求的批准情况进行更新。要了解更多信息，请参阅 服务限制 。   * 用于 Java 升级的 Amazon Q 开发者版功能可供 Amazon Q 开发者版免费套餐和 Amazon Q 开发者版专业套餐用户使用。定价费用和使用量是根据您提交给 Amazon Q 的代码行数（LOC）的限制来计算的。只有收到建议升级代码的提交才会被计算在内，在完成之前停止作业或在升级过程中遇到故障的提交不包含在内。存"
+        },
+        {
+          "match": "免费",
+          "context": "Amazon Q 的代码行数（LOC）的限制来计算的。只有收到建议升级代码的提交才会被计算在内，在完成之前停止作业或在升级过程中遇到故障的提交不包含在内。存储库中的非代码行（例如注释和空行）不计算在内。   作为 Amazon Q 开发者版免费套餐的一部分，您可以免费开始使用 Amazon Q 开发者版转换功能。每位 Amazon Q 开发者版免费套餐用户每月可以升级 1000 个 LOC。如果您的代码超出此限制，请考虑提交较小的可构建单元（例如模块），或订阅 Amazon Q"
+        },
+        {
+          "match": "免费",
+          "context": "行数（LOC）的限制来计算的。只有收到建议升级代码的提交才会被计算在内，在完成之前停止作业或在升级过程中遇到故障的提交不包含在内。存储库中的非代码行（例如注释和空行）不计算在内。   作为 Amazon Q 开发者版免费套餐的一部分，您可以免费开始使用 Amazon Q 开发者版转换功能。每位 Amazon Q 开发者版免费套餐用户每月可以升级 1000 个 LOC。如果您的代码超出此限制，请考虑提交较小的可构建单元（例如模块），或订阅 Amazon Q 开发者版专业套餐以获得更"
+        },
+        {
+          "match": "免费",
+          "context": "停止作业或在升级过程中遇到故障的提交不包含在内。存储库中的非代码行（例如注释和空行）不计算在内。   作为 Amazon Q 开发者版免费套餐的一部分，您可以免费开始使用 Amazon Q 开发者版转换功能。每位 Amazon Q 开发者版免费套餐用户每月可以升级 1000 个 LOC。如果您的代码超出此限制，请考虑提交较小的可构建单元（例如模块），或订阅 Amazon Q 开发者版专业套餐以获得更高的分配限额以及按使用量付费的升级功能。   Amazon Q 开发者版专业套餐订"
+        },
+        {
+          "match": "免费",
+          "context": "，提交每个 LOC 将收取 0.003 美元的费用。   Amazon Q 开发者版将向以 AWS Identity and Access Management（IAM）用户或 AWS 构建者 ID 用户身份登录的用户提供具有每月限制的永久免费套餐。     IDE 中的免费套餐限制仅适用于构建者 ID 用户。   免费套餐限制适用于以 IAM 用户身份登录的账户级别，或适用于 AWS 构建者 ID 用户的用户级别。   只有有权访问 AWS 管理控制台的用户才能使用其中的 Am"
+        },
+        {
+          "match": "免费",
+          "context": "003 美元的费用。   Amazon Q 开发者版将向以 AWS Identity and Access Management（IAM）用户或 AWS 构建者 ID 用户身份登录的用户提供具有每月限制的永久免费套餐。     IDE 中的免费套餐限制仅适用于构建者 ID 用户。   免费套餐限制适用于以 IAM 用户身份登录的账户级别，或适用于 AWS 构建者 ID 用户的用户级别。   只有有权访问 AWS 管理控制台的用户才能使用其中的 Amazon Q 开发者版免费套餐限"
+        },
+        {
+          "match": "免费",
+          "context": "发者版将向以 AWS Identity and Access Management（IAM）用户或 AWS 构建者 ID 用户身份登录的用户提供具有每月限制的永久免费套餐。     IDE 中的免费套餐限制仅适用于构建者 ID 用户。   免费套餐限制适用于以 IAM 用户身份登录的账户级别，或适用于 AWS 构建者 ID 用户的用户级别。   只有有权访问 AWS 管理控制台的用户才能使用其中的 Amazon Q 开发者版免费套餐限制。   通过 AWS 控制台移动应用程序、A"
+        },
+        {
+          "match": "免费",
+          "context": "中的免费套餐限制仅适用于构建者 ID 用户。   免费套餐限制适用于以 IAM 用户身份登录的账户级别，或适用于 AWS 构建者 ID 用户的用户级别。   只有有权访问 AWS 管理控制台的用户才能使用其中的 Amazon Q 开发者版免费套餐限制。   通过 AWS 控制台移动应用程序、AWS Chatbot 以及 AWS 营销和文档页面进行的聊天交互目前仅受免费套餐限制。     订阅与具有 IAM Identity Center 的组织关联的成员将受益于用户级别的专业套"
+        },
+        {
+          "match": "免费",
+          "context": "者 ID 用户的用户级别。   只有有权访问 AWS 管理控制台的用户才能使用其中的 Amazon Q 开发者版免费套餐限制。   通过 AWS 控制台移动应用程序、AWS Chatbot 以及 AWS 营销和文档页面进行的聊天交互目前仅受免费套餐限制。     订阅与具有 IAM Identity Center 的组织关联的成员将受益于用户级别的专业套餐限制。请注意，用于代码转换的 Amazon Q 开发者版代理程序限额在付费订阅的付款人账户级别合并。   ** Amazon"
+        },
+        {
+          "match": "免费",
+          "context": "订阅与具有 IAM Identity Center 的组织关联的成员将受益于用户级别的专业套餐限制。请注意，用于代码转换的 Amazon Q 开发者版代理程序限额在付费订阅的付款人账户级别合并。   ** Amazon Q 开发者版免费套餐用户可以通过自己的构建者 ID 和 AWS 账户升级为个人专业套餐订阅。如果仅通过构建者 ID（而非 IAM Identity Center）进行升级，那么即使使用专业套餐，也无法访问此功能。如果您希望使用该功能，请通过 IAM Ide"
+        },
+        {
+          "match": "额度",
+          "context": "将被收取整个月的订阅费。               我的订阅如何计算 Amazon Q 开发者版超额费用？         使用专业套餐的 Q 开发者版代码转换的每位用户每月可获得 4000 LOC 的 Amazon Q 开发者版代理转换额度。这些分配每月按照 AWS 付款人账户级别汇总。超出 Q 开发者版专业套餐分配的使用量将按每提交一个 LOC 用于转换 0.003 美元收费。您的账单将显示转换的总 LOC 使用量以及根据您的 Q 开发者版专业套餐订阅提供的任何适用折扣。每"
+        },
+        {
+          "match": "Free",
+          "context": "AWS 定价   一站式了解定价和计划                                   AWS 定价计算器   估计您架构解决方案的成本                                   AWS Free Tier   免费获取使用 AWS 产品和服务的实践经验                                   AWS 优惠   探索不同的优惠计划以获得实践经验"
+        },
+        {
+          "match": "Free",
+          "context": "发生命周期（SDLC）的体验，使用户能够更快、更轻松地构建、保护、管理和优化应用程序。Amazon Q 开发者版提供两个定价套餐。                                                       Free Tier: Advanced capabilities at zero cost         Pro Tier: Expanded limits $19/mo. per user                 摘要"
+        },
+        {
+          "match": "Free",
+          "context": "定价表                                               Feature         Free         Pro                 IDE 插件和 CLI                                 包括代理请求（问答聊天、代理编码）           每月 50 个代理请求"
+        }
+      ]
+    },
+    {
+      "id": "bailian-main",
+      "name": "Alibaba Cloud Model Stud",
+      "url": "https://bailian.console.alibabacloud.com/?apiKey=1",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "bailian-main",
+      "name": "大模型服务平台百炼控制台",
+      "url": "https://bailian.console.aliyun.com/",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "bazaarlink-docsapi",
+      "name": "API 參考文件｜聊天、嵌入與模型路由",
+      "url": "https://bazaarlink.ai/docs/api#free-models",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$2／$10，1M 上下文 2026年10月24日 DeepSe",
+          "context": "API Tavily 相容：search / extract / crawl / map AI 影片生成 探索 AI 影片模型並生成影片。 部落格最新 全部文章 → Kimi K3.1 Pro API 價格（台幣）：AA 指數 55.1，$2／$10，1M 上下文 2026年10月24日 DeepSeek V4.1 Flash-1017 上架 BazaarLink：寫程式跑分超過 Opus 5，每題約 US$0.2 2026年10月17日 Gemini 4 Argon 上架 BazaarLink：1M context、可看圖、可呼叫工具"
+        },
+        {
+          "match": "$0.2 2026年10月17日 Gemini 4 Argon 上架",
+          "context": "mi K3.1 Pro API 價格（台幣）：AA 指數 55.1，$2／$10，1M 上下文 2026年10月24日 DeepSeek V4.1 Flash-1017 上架 BazaarLink：寫程式跑分超過 Opus 5，每題約 US$0.2 2026年10月17日 Gemini 4 Argon 上架 BazaarLink：1M context、可看圖、可呼叫工具 2026年10月14日 搜尋模型... / 🇹🇼 繁體中文 登入 文件 API 參考 SDK 參考 Agent 應用 AI Skills API 指南 Jev 評估 總覽 串"
+        },
+        {
+          "match": "$5",
+          "context": "最大 10 MB、總計 25 MB；格式：mp3, wav, m4a, ogg, flac, webm。總長約 30 秒到 5 分鐘的乾淨人聲效果最好。 每天最多建立 3 次（以 UTC 日計）。 帳號需已驗證 Email，且餘額至少 US$5。 模仿公眾人物、或聽起來像官方／員工的名稱與描述會被拒絕（invalid_voice_name）。 錄音只用來建立聲音，我們不保存錄音。我們保留聲音名稱、擁有者、同意紀錄與時間戳記。 價格 建立聲音收取一次性費用（預設 US$1.00）；"
+        },
+        {
+          "match": "$1.00）；實際收取的金額會在 usage.cost_usd 回傳，",
+          "context": "至少 US$5。 模仿公眾人物、或聽起來像官方／員工的名稱與描述會被拒絕（invalid_voice_name）。 錄音只用來建立聲音，我們不保存錄音。我們保留聲音名稱、擁有者、同意紀錄與時間戳記。 價格 建立聲音收取一次性費用（預設 US$1.00）；實際收取的金額會在 usage.cost_usd 回傳，且只有聲音建立成功才會收費。在語音合成中使用自訂聲音，每字元價格與該模型其他聲音相同。刪除免費。 同意聲明 每次建立都必須帶 consent=true 與 consent_statement_version=\"v1\"。聲明更新時，建立會回"
+        },
+        {
+          "match": "$2.00/$6.00 text+image+video->text ",
+          "context": "ion\" : \"16.00\"   }   ]   } ⌄ 顯示全部 15 行 可用模型 ( 171 ) 以下是目前 BazaarLink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $2.00/$6.00 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen"
+        },
+        {
+          "match": "$0.32/$1.28 text+image->text qwen/q",
+          "context": "ink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $2.00/$6.00 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwe"
+        },
+        {
+          "match": "$1.48/$4.42 text->text qwen/qwen3.7",
+          "context": "00/$6.00 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text"
+        },
+        {
+          "match": "$0.03/$0.13 text+image+video->text ",
+          "context": "K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+vi"
+        },
+        {
+          "match": "$0.31/$1.25 text+image+video->text ",
+          "context": "1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 t"
+        },
+        {
+          "match": "$0.26/$2.60 text+image+video->text ",
+          "context": "3 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+im"
+        },
+        {
+          "match": "$0.10/$1.10 text->text qwen/qwen3.5",
+          "context": "+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->tex"
+        },
+        {
+          "match": "$0.55/$3.50 text+image+video->text ",
+          "context": "+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->te"
+        },
+        {
+          "match": "$0.33/$1.95 text+image+video->text ",
+          "context": ".10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video"
+        },
+        {
+          "match": "$0.20/$0.97 text->text qwen/qwen3.5",
+          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+im"
+        },
+        {
+          "match": "$0.29/$2.40 text+image+video->text ",
+          "context": "1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+i"
+        },
+        {
+          "match": "$0.21/$1.90 text+image->text qwen/q",
+          "context": "->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen"
+        },
+        {
+          "match": "$0.55/$3.20 text+image+video->text ",
+          "context": "image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
+        },
+        {
+          "match": "$2.00/$6.00 text->text qwen/qwen3-e",
+          "context": ".90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen"
+        },
+        {
+          "match": "$0.01/$0.00 text->embeddings qwen/q",
+          "context": "3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embedding"
+        },
+        {
+          "match": "$0.01/$0.00 text->embeddings qwen/q",
+          "context": ".00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+vid"
+        },
+        {
+          "match": "$0.02/$0.00 text->embeddings qwen/q",
+          "context": ".00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
+        },
+        {
+          "match": "$0.07/$0.26 text+image+video->text ",
+          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+ima"
+        },
+        {
+          "match": "$0.07/$0.28 text->text qwen/qwen3.6",
+          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen"
+        },
+        {
+          "match": "$0.15/$1.00 text+image+video->text ",
+          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
+        },
+        {
+          "match": "$0.12/$0.80 text->text qwen/qwen3-v",
+          "context": "07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
+        },
+        {
+          "match": "$0.15/$0.60 text+image->text qwen/q",
+          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+vide"
+        },
+        {
+          "match": "$0.26/$1.56 text+image+video->text ",
+          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
+        },
+        {
+          "match": "$0.29/$2.40 text+image+video->text ",
+          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
+        },
+        {
+          "match": "$0.30/$1.80 text+image+video->text ",
+          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
+        },
+        {
+          "match": "$0.30/$1.00 text->text qwen/qwen-2.",
+          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
+        }
+      ]
+    },
+    {
+      "id": "cloud-productwenxinw",
+      "name": "千帆大模型平台-企业级一站式大模型开发及应用开发",
+      "url": "https://cloud.baidu.com/product/wenxinworkshop",
+      "status": "ok",
+      "hits": 11,
+      "findings": [
+        {
+          "match": "￥0.006-0.01/ 千tokens 输出价格 ￥0.024-0.0",
+          "context": "视觉理解 文心5.0是原生全模态大模型，基础能力全面升级，具备更强深度思考、视觉理解能力，在多模态理解、指令遵循、创意写作、事实性、智能体规划与工具应用等表现尤其出色。 模型接入点 ernie-5.0 上下文 119k，64k 输入价格 ￥0.006-0.01/ 千tokens 输出价格 ￥0.024-0.04/ 千tokens 立即体验 ERNIE X1.1 Preview 全新升级，效果提升 深度推理 问答、工具调用、智能体、指令遵循、逻辑推理、数学、代码任务的效果显著提升，事实性显著提升。支持64K上下文长度，兼顾响应速度与长链路推理连贯"
+        },
+        {
+          "match": "¥0.001/ 千tokens 输出价格 ¥0.004/ 千tokens",
+          "context": "问答、工具调用、智能体、指令遵循、逻辑推理、数学、代码任务的效果显著提升，事实性显著提升。支持64K上下文长度，兼顾响应速度与长链路推理连贯性。 模型接入点 ernie-x1.1-preview 上下文 64k,55K+64K 输入价格 ¥0.001/ 千tokens 输出价格 ¥0.004/ 千tokens 立即体验 ERNIE 4.5 Turbo VL 多模态 图像理解 图片理解、创作、翻译、代码等能力显著提升，支持128K上下文长度，首Token时延显著降低。 模型接入点 ernie-4.5-turbo-vl 上下文 128K,123K+"
+        },
+        {
+          "match": "¥0.003/ 千tokens 输出价格 ¥0.009/ 千tokens",
+          "context": "E 4.5 Turbo VL 多模态 图像理解 图片理解、创作、翻译、代码等能力显著提升，支持128K上下文长度，首Token时延显著降低。 模型接入点 ernie-4.5-turbo-vl 上下文 128K,123K+ 16K 输入价格 ¥0.003/ 千tokens 输出价格 ¥0.009/ 千tokens 立即体验 ERNIE 4.5 Turbo 文本生成 文心4.5 Turbo在去幻觉、逻辑推理和代码能力等方面也有着明显增强。对比文心4.5，速度更快、价格更低。 模型接入点 ernie-4.5-turbo-128k 上下文 128K,12"
+        },
+        {
+          "match": "¥0.0008/ 千tokens 输出价格 ¥0.0032/ 千token",
+          "context": ".5 Turbo 文本生成 文心4.5 Turbo在去幻觉、逻辑推理和代码能力等方面也有着明显增强。对比文心4.5，速度更快、价格更低。 模型接入点 ernie-4.5-turbo-128k 上下文 128K,123K+ 12K 输入价格 ¥0.0008/ 千tokens 输出价格 ¥0.0032/ 千tokens 立即体验 ERNIE-5.0-Thinking-Preview 深度推理 视觉理解 文心5.0是原生全模态大模型，基础能力全面升级，多模态理解、指令遵循、创意写作、事实性、智能体规划与工具应用等表现尤其出色 模型接入点 ernie-5."
+        },
+        {
+          "match": "¥0.006-0.01/ 千tokens 输出价格 ¥0.024-0.0",
+          "context": "理 视觉理解 文心5.0是原生全模态大模型，基础能力全面升级，多模态理解、指令遵循、创意写作、事实性、智能体规划与工具应用等表现尤其出色 模型接入点 ernie-5.0-thinking-preview 上下文 119k，64k 输入价格 ¥0.006-0.01/ 千tokens 输出价格 ¥0.024-0.04/ 千tokens 立即体验 ERNIE-4.5-VL-28B-A3B 多模融合,全新升级 多模态 深度推理 文心4.5中的多模态开源模型，采用MoE架构，具备 280 亿总参数量，激活参数为 30 亿，支持切换思考和非思考两种模式。 模"
+        },
+        {
+          "match": "¥0.001/ 千tokens 输出价格 ¥0.01/ 千tokens ",
+          "context": "多模态 深度推理 文心4.5中的多模态开源模型，采用MoE架构，具备 280 亿总参数量，激活参数为 30 亿，支持切换思考和非思考两种模式。 模型接入点 ernie-4.5-vl-28b-a3b 上下文 32K,30K+8K 输入价格 ¥0.001/ 千tokens 输出价格 ¥0.01/ 千tokens 立即体验 探索更多大模型 独家优质Skill与精选MCP服务 百度搜索 免费试用 独家 Skill MCP 百度搜索（BaiduSearch）服务基于百度搜索能力与AI技术，专为生成式AI提供全网实时信息检索服务，具备海量内容站点、高权威性"
+        },
+        {
+          "match": "免费",
+          "context": "模型接入点 ernie-4.5-vl-28b-a3b 上下文 32K,30K+8K 输入价格 ¥0.001/ 千tokens 输出价格 ¥0.01/ 千tokens 立即体验 探索更多大模型 独家优质Skill与精选MCP服务 百度搜索 免费试用 独家 Skill MCP 百度搜索（BaiduSearch）服务基于百度搜索能力与AI技术，专为生成式AI提供全网实时信息检索服务，具备海量内容站点、高权威性，强时效性，提供全新的搜索体验。 了解更多 智能搜索生成 免费试用 独家 M"
+        },
+        {
+          "match": "免费",
+          "context": "务 百度搜索 免费试用 独家 Skill MCP 百度搜索（BaiduSearch）服务基于百度搜索能力与AI技术，专为生成式AI提供全网实时信息检索服务，具备海量内容站点、高权威性，强时效性，提供全新的搜索体验。 了解更多 智能搜索生成 免费试用 独家 MCP 智能搜索生成（AI总结）基于百度搜索与AI技术，在搜索结果基础上融合大模型能力，提供高质量内容总结，助力用户快速获取关键信息，省去繁琐的信息筛选与整合。支持智能改写与扩写、灵活的模型配置以及可定制的安全策略，全面满足多场"
+        },
+        {
+          "match": "免费",
+          "context": "百度搜索与AI技术，在搜索结果基础上融合大模型能力，提供高质量内容总结，助力用户快速获取关键信息，省去繁琐的信息筛选与整合。支持智能改写与扩写、灵活的模型配置以及可定制的安全策略，全面满足多场景下的信息获取与处理需求。 了解更多 百度百科 免费试用 独家 Skill MCP 百度百科提供百科官方内容检索服务，帮助用户快速、全面地获取权威的百科信息。支持百科词条义项查询、词条详情查询以及秒懂百科视频获取。适用于AI问答、内容创作、教育教学、知识检索等场景，为模型提供可信的知识支撑。"
+        },
+        {
+          "match": "免费",
+          "context": "度百科提供百科官方内容检索服务，帮助用户快速、全面地获取权威的百科信息。支持百科词条义项查询、词条详情查询以及秒懂百科视频获取。适用于AI问答、内容创作、教育教学、知识检索等场景，为模型提供可信的知识支撑。 了解更多 百度网盘AI视频笔记 免费试用 独家 Skill MCP 百度网盘AI视频笔记是百度网盘推出的一款基于大模型的视频内容理解工具，支持用户通过输入视频文件的公网下载链接，自动生成对应的视频摘要、重点笔记与结构化知识，帮助用户快速理解和整理视频信息。 了解更多 百度文库"
+        },
+        {
+          "match": "免费",
+          "context": "Skill MCP 百度网盘AI视频笔记是百度网盘推出的一款基于大模型的视频内容理解工具，支持用户通过输入视频文件的公网下载链接，自动生成对应的视频摘要、重点笔记与结构化知识，帮助用户快速理解和整理视频信息。 了解更多 百度文库AI绘本 免费试用 独家 Skill MCP 百度文库AI绘本是百度文库推出的一项基于人工智能的辅助绘本制作服务，旨在帮助内容创作者解决因缺乏专业绘画技能而无法快速创作高质量绘本的问题。无论是在儿童教育、亲子互动、品牌营销，还是在社交媒体内容创作等领域，"
+        }
+      ]
+    },
+    {
+      "id": "cloud-iamapikeys",
+      "name": "Log in to IBM Cloud – IB",
+      "url": "https://cloud.ibm.com/iam/apikeys",
+      "status": "error",
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "cloud-apis",
+      "name": "API Keys",
+      "url": "https://cloud.sambanova.ai/apis",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "cloud-accountak",
+      "name": "硅基流动统一登录",
+      "url": "https://cloud.siliconflow.cn/account/ak",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "cloud-producthunyuan",
+      "name": "腾讯混元大模型_大语言模型_自然语言大模型- 腾",
+      "url": "https://cloud.tencent.com/product/hunyuan",
+      "status": "ok",
+      "hits": 2,
+      "findings": [
+        {
+          "match": "免费体验？ 腾讯混元大模型如何收费？ 调用 Token",
+          "context": "HY）由腾讯公司全链路自研，在高质量内容创作、数理逻辑、代码生成和多轮对话上性能表现卓越，处于业界领先水平。混元 API 支持 AI 搜索联网插件，通过整合腾讯优质的内容生态，提供强大的时新、深度内容获取和 AI 问答能力。 新用户是否有免费体验？ 腾讯混元大模型如何收费？ 调用 Token 如何计算？ 更多问题请查看 常见问题 ，也可在 问答社区 中进行提问 。 网信算备440305295988701230071号 腾讯混元大模型已对外开放，点击下方按钮立即开通服务。 立即开通 腾讯混元大模型官方交流群 混元生文助手 如需申"
+        },
+        {
+          "match": "新用户是否有免费体验？ 腾讯混元大模型如何收费？ 调用 Token 如何计算？ 更多问题请查看 常见问题 ",
+          "context": "encent HY）由腾讯公司全链路自研，在高质量内容创作、数理逻辑、代码生成和多轮对话上性能表现卓越，处于业界领先水平。混元 API 支持 AI 搜索联网插件，通过整合腾讯优质的内容生态，提供强大的时新、深度内容获取和 AI 问答能力。 新用户是否有免费体验？ 腾讯混元大模型如何收费？ 调用 Token 如何计算？ 更多问题请查看 常见问题 ，也可在 问答社区 中进行提问 。 网信算备440305295988701230071号 腾讯混元大模型已对外开放，点击下方按钮立即开通服务。 立即开通 腾讯混元大模型官方交流群 混元生文助手 如需申请更多测试资源，或咨询混元生文产品相关问"
+        }
+      ]
+    },
+    {
+      "id": "code-docs",
+      "name": "Overview - Claude Code D",
+      "url": "https://code.claude.com/docs",
+      "status": "ok",
+      "hits": 2,
+      "findings": [
+        {
+          "match": "free",
+          "context": "auto memory   Common workflows and best practices : patterns for getting the most out of Claude Code   Claude Academy : free self-paced courses, including Claude Code 101 and Claude Code in Action   A harness for every task : how the Claude Cod"
+        },
+        {
+          "match": "pricing",
+          "context": "gs : customize Claude Code for your workflow   Troubleshooting : solutions for common issues   code.claude.com : demos, pricing, and product details   Was this page helpful? Yes No Quickstart Claude Code Docs home page x linkedin Company Anthropic"
+        }
+      ]
+    },
+    {
+      "id": "codeium-docs",
+      "name": "Discord",
+      "url": "https://codeium.com/docs",
+      "status": "ok",
+      "hits": 5,
+      "findings": [
+        {
+          "match": "free",
+          "context": "lugin Get started using Windsurf Plugin in your preferred Jetbrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analysis, and more. Changelog Check out our change"
+        },
+        {
+          "match": "Pricing",
+          "context": "Products Enterprise Pricing Blog Resources Company Download This page does not exist Sorry, we couldn&#x27;t find the page you&#x27;re looking for."
+        },
+        {
+          "match": "Pricing",
+          "context": "- the most powerful AI IDE. Install Windsurf Plugin Get started using Windsurf Plugin in your preferred Jetbrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analys"
+        },
+        {
+          "match": "pricing",
+          "context": "I IDE. Install Windsurf Plugin Get started using Windsurf Plugin in your preferred Jetbrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analysis, and more. Changelo"
+        },
+        {
+          "match": "Pricing",
+          "context": "tiktok Twitter twitter Discord discord Discord LinkedIn linkedin Reddit reddit YouTube youtube Product Windsurf Editor Pricing Windsurf for Enterprise Capabilities Cascade Tab JetBrains Plugin Company About Us Blog Careers Support Contact Partner"
+        }
+      ]
+    },
+    {
+      "id": "console-main",
+      "name": "百度智能云控制台-管理中心",
+      "url": "https://console.bce.baidu.com/",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "console-tokenhub",
+      "name": "登录 - 腾讯云",
+      "url": "https://console.cloud.tencent.com/tokenhub",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "console-main",
+      "name": "Upstage Console",
+      "url": "https://console.upstage.ai/",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "console-ark",
+      "name": "火山方舟 - 首页",
+      "url": "https://console.volcengine.com/ark",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "cursor-enpricing",
+      "name": "Cursor · Pricing",
+      "url": "https://cursor.com/en/pricing",
+      "status": "ok",
+      "hits": 18,
+      "findings": [
+        {
+          "match": "$0 /month Get started Get starte",
+          "context": "dels  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started with: Limited AI usage AI Features Limited agent requests Limited Chat requests Features ✓ Post, reply, and follow Plu"
+        },
+        {
+          "match": "$8 /month Get Plus Our introduct",
+          "context": "with: Limited AI usage AI Features Limited agent requests Limited Chat requests Features ✓ Post, reply, and follow Plus $8 /month Get Plus Our introductory plan: Shared AI usage pool AI Features Cursor Grok Chat, Voice, Imagine, and Build Grok API access Features ✓ Premiu"
+        },
+        {
+          "match": "$30 /month Get Premium Everything",
+          "context": "ine ads ✓ Enhanced creator tools ✓ Advanced Analytics *Only Grok models are available on this plan Premium Most popular $30 /month Get Premium Everything in Plus, and: 4x more usage compared to Plus AI Features ✓ Latest Grok models Cloud agents & automations Code hosting &"
+        },
+        {
+          "match": "$100 /month Get Super Everything i",
+          "context": "es ✓ Preferred @handle ✓ Higher reply boost *3rd party models are available in Cursor, billed separately by usage Super $100 /month Get Super Everything in Premium, and: 15x more usage compared to Plus AI Features ✓ Priority model access at peak times *3rd party models are"
+        },
+        {
+          "match": "$200 /month Get Ultra Everything i",
+          "context": "tures ✓ Priority model access at peak times *3rd party models are available in Cursor, billed separately by usage Ultra $200 /month Get Ultra Everything in Super, and: 50x more usage compared to Plus AI Features ✓ Earliest access to all products & models *3rd party models a"
+        },
+        {
+          "match": "$0 /month Get started Plus $8 /m",
+          "context": "ours prior to renewal to avoid additional charges. Prices subject to change. Compare features across plans Feature Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /month Get Ultra Teams $30 +/user/mo"
+        },
+        {
+          "match": "$30 /month Get Premium Super $100",
+          "context": "ces subject to change. Compare features across plans Feature Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /month Get Ultra Teams $30 +/user/month Get Teams Enterprise Custom Contact Sales Usage Lim"
+        },
+        {
+          "match": "$200 /month Get Ultra Teams $30 +/",
+          "context": "ure Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /month Get Ultra Teams $30 +/user/month Get Teams Enterprise Custom Contact Sales Usage Limited Basic 4x Plus 15x Plus 50x Plus 4-50x Plus Pooled Cur"
+        },
+        {
+          "match": "Free",
+          "context": "rs Models  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started with: Limited AI usage AI Features Limited agent requests Limited Chat requests Featu"
+        },
+        {
+          "match": "free",
+          "context": "iews Third-party models at API list price Grok Bot Faster Chat responses Make stunning AI images & videos Features ✓ Ad-free scrolling on most surfaces ✓ Preferred @handle ✓ Higher reply boost *3rd party models are available in Cursor, billed s"
+        },
+        {
+          "match": "Free",
+          "context": "24 hours prior to renewal to avoid additional charges. Prices subject to change. Compare features across plans Feature Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /mo"
+        },
+        {
+          "match": "free",
+          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+        },
+        {
+          "match": "Pricing",
+          "context": "Cursor · Pricing Skip to content Cursor Models ↓ Grok Evals Product ↓ Agents Cloud Grok Bot  ↗ Mobile Automations CLI Marketplace  ↗ Rev"
+        },
+        {
+          "match": "Pricing",
+          "context": "t Cursor Models ↓ Grok Evals Product ↓ Agents Cloud Grok Bot  ↗ Mobile Automations CLI Marketplace  ↗ Review Enterprise Pricing Resources ↓ Changelog Blog Docs Community Help  ↗ Workshops Forum  ↗ Careers Models  → Product  → Enterprise Pricing Re"
+        },
+        {
+          "match": "Pricing",
+          "context": "se Pricing Resources ↓ Changelog Blog Docs Community Help  ↗ Workshops Forum  ↗ Careers Models  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started wit"
+        },
+        {
+          "match": "Pricing",
+          "context": "Workshops Forum  ↗ Careers Models  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started with: Limited AI usage AI Features Limited agent requests Limit"
+        },
+        {
+          "match": "pricing",
+          "context": "PI usage is billed separately at standard model rates and doesn&#x27;t draw from your plan&#x27;s usage pool. See model pricing . What models are supported? ↓ ↑ Plus includes Grok models only. Premium and above include generous usage of Grok model"
+        },
+        {
+          "match": "Pricing",
+          "context": "on only through our official website. Get started with Cursor. Download ⤓ Contact Sales Product Agents Teams Enterprise Pricing Code Review CLI Cloud Agents Composer Marketplace  ↗ Resources Download Changelog Docs Learn  ↗ Forum  ↗ Help  ↗ Worksh"
+        }
+      ]
+    },
+    {
+      "id": "developer-radeontokenfac",
+      "name": "Radeon Cloud",
+      "url": "https://developer.amd.com.cn/radeon/tokenfactory",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "developer-zonelist",
+      "name": "腾讯云开发者社区-腾讯云",
+      "url": "https://developer.cloud.tencent.com/zone/list",
+      "status": "ok",
+      "hits": 4,
+      "findings": [
+        {
+          "match": "免费",
+          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+        },
+        {
+          "match": "免费",
+          "context": "://cloud.tencent.com/developer/article/2494356 Cloud Studio 适合初学者和专业开发者快速体验7B 以下DeepSeek-R1蒸馏模型。 提供DeepSeek AI模板+10000分钟免费算力/月，一键部署，即开即用，无需本地搭建。 部署教程：https://mp.weixin.qq.com/s/DiD1smANUGYxCNFI637VVA 大模型知识引擎 适合对技术门槛要求极低的小伙伴，支持快速构建客服、搜索问答、知识管理"
+        },
+        {
+          "match": "free",
+          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
+        },
+        {
+          "match": "free",
+          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支持文生图,也可作为视频等多模态视觉生成基础。 粉丝 3 内容 17 讨论 10 进入"
+        }
+      ]
+    },
+    {
+      "id": "developer-codeartscohtml",
+      "name": "Developer Events_Develop",
+      "url": "https://developer.huaweicloud.com/codeartsco.html?source=dmzntgwltcsdn1&sourcead=dmzntgwltcsdncommunity9",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "developers-workersaiplatf",
+      "name": "Pricing · Cloudflare Wor",
+      "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$0.011 per 1,000 Neurons .   Our fre",
+          "context": "l billing in neurons in the back end.   Workers AI is included in both the Free and Paid Workers plans and is priced at $0.011 per 1,000 Neurons .   Our free allocation allows anyone to use a total of 10,000 Neurons per day at no charge . To use more than 10,000 Neurons per d"
+        },
+        {
+          "match": "$0.011 / 1,000 Neurons for any usage",
+          "context": "re than 10,000 Neurons per day, you need to sign up for the Workers Paid plan . On Workers Paid, you will be charged at $0.011 / 1,000 Neurons for any usage above the free allocation of 10,000 Neurons per day.   You can monitor your Neuron usage in the Cloudflare Workers AI d"
+        },
+        {
+          "match": "$0.011 / 1,000 Neurons         Note ",
+          "context": "Workers Free   10,000 Neurons per day   N/A - Upgrade to Workers Paid       Workers Paid   10,000 Neurons per day   $0.011 / 1,000 Neurons         Note Some models require a paid billing method. This applies to @cf/moonshotai/kimi-k2.6 , @cf/moonshotai/kimi-k2.7-code , @c"
+        },
+        {
+          "match": "$0.027 per M input tokens $0.201 per",
+          "context": "cing.   LLM model pricing         Model   Price in Tokens   Price in Neurons           @cf/meta/llama-3.2-1b-instruct   $0.027 per M input tokens $0.201 per M output tokens   2457 neurons per M input tokens 18252 neurons per M output tokens       @cf/meta/llama-3.2-3b-instruc"
+        },
+        {
+          "match": "$0.051 per M input tokens $0.335 per",
+          "context": "utput tokens   2457 neurons per M input tokens 18252 neurons per M output tokens       @cf/meta/llama-3.2-3b-instruct   $0.051 per M input tokens $0.335 per M output tokens   4625 neurons per M input tokens 30475 neurons per M output tokens       @cf/meta/llama-3.1-8b-instruc"
+        },
+        {
+          "match": "$0.045 per M input tokens $0.384 per",
+          "context": "ens   4625 neurons per M input tokens 30475 neurons per M output tokens       @cf/meta/llama-3.1-8b-instruct-fp8-fast   $0.045 per M input tokens $0.384 per M output tokens   4119 neurons per M input tokens 34868 neurons per M output tokens       @cf/meta/llama-3.2-11b-vision"
+        },
+        {
+          "match": "$0.049 per M input tokens $0.676 per",
+          "context": "kens   4119 neurons per M input tokens 34868 neurons per M output tokens       @cf/meta/llama-3.2-11b-vision-instruct   $0.049 per M input tokens $0.676 per M output tokens   4410 neurons per M input tokens 61493 neurons per M output tokens       @cf/meta/llama-3.1-70b-instru"
+        },
+        {
+          "match": "$0.293 per M input tokens $2.253 per",
+          "context": "ns   4410 neurons per M input tokens 61493 neurons per M output tokens       @cf/meta/llama-3.1-70b-instruct-fp8-fast   $0.293 per M input tokens $2.253 per M output tokens   26668 neurons per M input tokens 204805 neurons per M output tokens       @cf/meta/llama-3.3-70b-inst"
+        },
+        {
+          "match": "$0.293 per M input tokens $2.253 per",
+          "context": "26668 neurons per M input tokens 204805 neurons per M output tokens       @cf/meta/llama-3.3-70b-instruct-fp8-fast   $0.293 per M input tokens $2.253 per M output tokens   26668 neurons per M input tokens 204805 neurons per M output tokens       @cf/deepseek-ai/deepseek-r1"
+        },
+        {
+          "match": "$0.497 per M input tokens $4.881 per",
+          "context": "6668 neurons per M input tokens 204805 neurons per M output tokens       @cf/deepseek-ai/deepseek-r1-distill-qwen-32b   $0.497 per M input tokens $4.881 per M output tokens   45170 neurons per M input tokens 443756 neurons per M output tokens       @cf/deepseek-ai/deepseek-v4"
+        },
+        {
+          "match": "$0.440 per M input tokens $0.014 per",
+          "context": "ns   45170 neurons per M input tokens 443756 neurons per M output tokens       @cf/deepseek-ai/deepseek-v4-flash-0731   $0.440 per M input tokens $0.014 per M cached input tokens $1.320 per M output tokens   40000 neurons per M input tokens 1273 neurons per M cached input tok"
+        },
+        {
+          "match": "$1.320 per M output tokens   40000 n",
+          "context": "output tokens       @cf/deepseek-ai/deepseek-v4-flash-0731   $0.440 per M input tokens $0.014 per M cached input tokens $1.320 per M output tokens   40000 neurons per M input tokens 1273 neurons per M cached input tokens 120000 neurons per M output tokens       @cf/deepseek-a"
+        },
+        {
+          "match": "$0.300 per M input tokens $0.006 per",
+          "context": "3 neurons per M cached input tokens 120000 neurons per M output tokens       @cf/deepseek-ai/deepseek-v4.1-flash-1017   $0.300 per M input tokens $0.006 per M cached input tokens $1.200 per M output tokens   27273 neurons per M input tokens 545 neurons per M cached input toke"
+        },
+        {
+          "match": "$1.200 per M output tokens   27273 n",
+          "context": "tput tokens       @cf/deepseek-ai/deepseek-v4.1-flash-1017   $0.300 per M input tokens $0.006 per M cached input tokens $1.200 per M output tokens   27273 neurons per M input tokens 545 neurons per M cached input tokens 109091 neurons per M output tokens       @cf/deepseek-ai"
+        },
+        {
+          "match": "$1.320 per M input tokens $0.044 per",
+          "context": "s 545 neurons per M cached input tokens 109091 neurons per M output tokens       @cf/deepseek-ai/deepseek-v4-pro-0813   $1.320 per M input tokens $0.044 per M cached input tokens $3.960 per M output tokens   120000 neurons per M input tokens 4000 neurons per M cached input to"
+        },
+        {
+          "match": "$3.960 per M output tokens   120000 ",
+          "context": "M output tokens       @cf/deepseek-ai/deepseek-v4-pro-0813   $1.320 per M input tokens $0.044 per M cached input tokens $3.960 per M output tokens   120000 neurons per M input tokens 4000 neurons per M cached input tokens 360000 neurons per M output tokens       @cf/mistral/m"
+        },
+        {
+          "match": "$0.110 per M input tokens $0.190 per",
+          "context": "4000 neurons per M cached input tokens 360000 neurons per M output tokens       @cf/mistral/mistral-7b-instruct-v0.1   $0.110 per M input tokens $0.190 per M output tokens   10000 neurons per M input tokens 17300 neurons per M output tokens       @cf/mistralai/mistral-small-"
+        },
+        {
+          "match": "$0.351 per M input tokens $0.555 per",
+          "context": "10000 neurons per M input tokens 17300 neurons per M output tokens       @cf/mistralai/mistral-small-3.1-24b-instruct   $0.351 per M input tokens $0.555 per M output tokens   31876 neurons per M input tokens 50488 neurons per M output tokens       @cf/meta/llama-3.1-8b-instru"
+        },
+        {
+          "match": "$0.282 per M input tokens $0.827 per",
+          "context": "tput tokens   31876 neurons per M input tokens 50488 neurons per M output tokens       @cf/meta/llama-3.1-8b-instruct   $0.282 per M input tokens $0.827 per M output tokens   25608 neurons per M input tokens 75147 neurons per M output tokens       @cf/meta/llama-3.1-8b-instru"
+        },
+        {
+          "match": "$0.152 per M input tokens $0.287 per",
+          "context": "tokens   25608 neurons per M input tokens 75147 neurons per M output tokens       @cf/meta/llama-3.1-8b-instruct-fp8   $0.152 per M input tokens $0.287 per M output tokens   13778 neurons per M input tokens 26128 neurons per M output tokens       @cf/meta/llama-3.1-8b-instru"
+        },
+        {
+          "match": "$0.123 per M input tokens $0.266 per",
+          "context": "tokens   13778 neurons per M input tokens 26128 neurons per M output tokens       @cf/meta/llama-3.1-8b-instruct-awq   $0.123 per M input tokens $0.266 per M output tokens   11161 neurons per M input tokens 24215 neurons per M output tokens       @cf/meta/llama-3-8b-instruct"
+        },
+        {
+          "match": "$0.282 per M input tokens $0.827 per",
+          "context": "output tokens   11161 neurons per M input tokens 24215 neurons per M output tokens       @cf/meta/llama-3-8b-instruct   $0.282 per M input tokens $0.827 per M output tokens   25608 neurons per M input tokens 75147 neurons per M output tokens       @cf/meta/llama-3-8b-instruct"
+        },
+        {
+          "match": "$0.123 per M input tokens $0.266 per",
+          "context": "ut tokens   25608 neurons per M input tokens 75147 neurons per M output tokens       @cf/meta/llama-3-8b-instruct-awq   $0.123 per M input tokens $0.266 per M output tokens   11161 neurons per M input tokens 24215 neurons per M output tokens       @cf/meta/llama-2-7b-chat-fp1"
+        },
+        {
+          "match": "$0.556 per M input tokens $6.667 per",
+          "context": "utput tokens   11161 neurons per M input tokens 24215 neurons per M output tokens       @cf/meta/llama-2-7b-chat-fp16   $0.556 per M input tokens $6.667 per M output tokens   50505 neurons per M input tokens 606061 neurons per M output tokens       @cf/meta/llama-guard-3-8b"
+        },
+        {
+          "match": "$0.484 per M input tokens $0.030 per",
+          "context": "M output tokens   50505 neurons per M input tokens 606061 neurons per M output tokens       @cf/meta/llama-guard-3-8b   $0.484 per M input tokens $0.030 per M output tokens   44003 neurons per M input tokens 2730 neurons per M output tokens       @cf/meta/llama-4-scout-17b-16"
+        },
+        {
+          "match": "$0.270 per M input tokens $0.850 per",
+          "context": "ens   44003 neurons per M input tokens 2730 neurons per M output tokens       @cf/meta/llama-4-scout-17b-16e-instruct   $0.270 per M input tokens $0.850 per M output tokens   24545 neurons per M input tokens 77273 neurons per M output tokens       @cf/google/gemma-3-12b-it"
+        },
+        {
+          "match": "$0.345 per M input tokens $0.556 per",
+          "context": "M output tokens   24545 neurons per M input tokens 77273 neurons per M output tokens       @cf/google/gemma-3-12b-it   $0.345 per M input tokens $0.556 per M output tokens   31371 neurons per M input tokens 50560 neurons per M output tokens       @cf/qwen/qwq-32b   $0.660 pe"
+        },
+        {
+          "match": "$0.660 per M input tokens $1.000 per",
+          "context": "0.556 per M output tokens   31371 neurons per M input tokens 50560 neurons per M output tokens       @cf/qwen/qwq-32b   $0.660 per M input tokens $1.000 per M output tokens   60000 neurons per M input tokens 90909 neurons per M output tokens       @cf/qwen/qwen2.5-coder-32b-i"
+        },
+        {
+          "match": "$0.660 per M input tokens $1.000 per",
+          "context": "tokens   60000 neurons per M input tokens 90909 neurons per M output tokens       @cf/qwen/qwen2.5-coder-32b-instruct   $0.660 per M input tokens $1.000 per M output tokens   60000 neurons per M input tokens 90909 neurons per M output tokens       @cf/qwen/qwen3-30b-a3b-fp8"
+        },
+        {
+          "match": "$0.051 per M input tokens $0.335 per",
+          "context": "M output tokens   60000 neurons per M input tokens 90909 neurons per M output tokens       @cf/qwen/qwen3-30b-a3b-fp8   $0.051 per M input tokens $0.335 per M output tokens   4625 neurons per M input tokens 30475 neurons per M output tokens       @cf/qwen/qwen3.8-27b   $0.450"
+        }
+      ]
+    },
+    {
+      "id": "doc-formsdfoox09n0",
+      "name": "收集表",
+      "url": "https://doc.weixin.qq.com/forms/AJEAIQdfAAoAVIAoAZxAL0CN9ODn0Xvaf?page=1",
+      "status": "robots_disallowed"
+    },
+    {
+      "id": "docs-amazonqlatesta",
+      "name": "What is Amazon Q Develop",
+      "url": "https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/what-is.html",
+      "status": "ok",
+      "hits": 5,
+      "findings": [
+        {
+          "match": "free",
+          "context": ".       IDEs     Download the Amazon Q extension and use your AWS Builder ID (no AWS account  required) to sign in for free.                 Download Amazon Q in Visual Studio Code               Download Amazon Q in JetBrains IDEs"
+        },
+        {
+          "match": "Free",
+          "context": "mazon Q Developer in chat applications .         Amazon Q Developer pricing   Amazon Q Developer is available through a Free tier and the Amazon Q Developer Pro subscription. For  more information, see Amazon Q Developer pricing .    Javascript"
+        },
+        {
+          "match": "pricing",
+          "context": "page What is Amazon Q Developer? - Amazon Q Developer Documentation Amazon Q User Guide Get started Amazon Q Developer pricing What is Amazon Q Developer? End of support notice On April 30, 2027, AWS will discontinue support for Amazon Q Develope"
+        },
+        {
+          "match": "pricing",
+          "context": "lications. For more information, see Chatting with Amazon Q Developer in chat applications .         Amazon Q Developer pricing   Amazon Q Developer is available through a Free tier and the Amazon Q Developer Pro subscription. For  more informatio"
+        },
+        {
+          "match": "pricing",
+          "context": "vailable through a Free tier and the Amazon Q Developer Pro subscription. For  more information, see Amazon Q Developer pricing .    Javascript is disabled or is unavailable in your browser. To use the Amazon Web Services Documentation, Javascript"
+        }
+      ]
+    },
+    {
+      "id": "gh-en-copilot-how-tos-manage-y",
+      "name": "Access Copilot Pro for f",
+      "url": "https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro",
+      "status": "ok",
+      "hits": 17,
+      "findings": [
+        {
+          "match": "free",
+          "context": "Access Copilot Pro for free as a teacher or open source maintainer - GitHub Docs Skip to main content Skip to content GitHub Docs Search or ask Cop"
+        },
+        {
+          "match": "Free",
+          "context": "company spending Manage your account Get started with a Copilot plan View and change your Copilot plan Disable Copilot Free Manage policies Administer Copilot Manage for organization Manage plan Subscribe Cancel Manage access Grant access Mana"
+        },
+        {
+          "match": "free",
+          "context": "e an AI SME Create CLI extensions Responsible use Chat Inline suggestions Agents In this article Access Copilot Pro for free as a teacher or open source maintainer Get free access to Copilot Pro as a verified teacher or open-source maintainer."
+        },
+        {
+          "match": "free",
+          "context": "e Chat Inline suggestions Agents In this article Access Copilot Pro for free as a teacher or open source maintainer Get free access to Copilot Pro as a verified teacher or open-source maintainer. Copy markdown In this article About free GitHub"
+        },
+        {
+          "match": "free",
+          "context": "ner Get free access to Copilot Pro as a verified teacher or open-source maintainer. Copy markdown In this article About free GitHub Copilot Pro access What if I don&#x27;t qualify for free access to Copilot Pro? Accessing Copilot Pro for free A"
+        },
+        {
+          "match": "free",
+          "context": "-source maintainer. Copy markdown In this article About free GitHub Copilot Pro access What if I don&#x27;t qualify for free access to Copilot Pro? Accessing Copilot Pro for free About free GitHub Copilot Pro access   There are two ways to qual"
+        },
+        {
+          "match": "free",
+          "context": "t free GitHub Copilot Pro access What if I don&#x27;t qualify for free access to Copilot Pro? Accessing Copilot Pro for free About free GitHub Copilot Pro access   There are two ways to qualify for free access to Copilot Pro:     As a verified"
+        },
+        {
+          "match": "free",
+          "context": "ub Copilot Pro access What if I don&#x27;t qualify for free access to Copilot Pro? Accessing Copilot Pro for free About free GitHub Copilot Pro access   There are two ways to qualify for free access to Copilot Pro:     As a verified teacher on"
+        },
+        {
+          "match": "free",
+          "context": "to Copilot Pro? Accessing Copilot Pro for free About free GitHub Copilot Pro access   There are two ways to qualify for free access to Copilot Pro:     As a verified teacher on GitHub Education. To become a verified teacher, see Apply to GitHub"
+        },
+        {
+          "match": "free",
+          "context": "acher .   As a maintainer of a popular open-source repository. To check your eligibility, see Accessing Copilot Pro for free .     GitHub reevaluates your eligibility every month.   If you have been granted free access to Copilot as a verified"
+        },
+        {
+          "match": "free",
+          "context": "y, see Accessing Copilot Pro for free .     GitHub reevaluates your eligibility every month.   If you have been granted free access to Copilot as a verified student, teacher, or maintainer of a popular open source project, you won’t be able to"
+        },
+        {
+          "match": "free",
+          "context": "mation about managing your plan, see Viewing and changing your GitHub Copilot plan .   What if I don&#x27;t qualify for free access to Copilot Pro?   If you do not meet the previous criteria, you can do one of the following:     Subscribe to Co"
+        },
+        {
+          "match": "Free",
+          "context": "ubscribe to Copilot Pro , Copilot Pro+ , or Copilot Max for a paid plan with access to premium models.   Set up Copilot Free to get a limited experience of Copilot without a paid plan. See Plans for GitHub Copilot .     Accessing Copilot Pro fo"
+        },
+        {
+          "match": "free",
+          "context": "o get a limited experience of Copilot without a paid plan. See Plans for GitHub Copilot .     Accessing Copilot Pro for free     In the upper-right corner of any page, click your profile picture, then click Copilot settings .   If you qualify f"
+        },
+        {
+          "match": "free",
+          "context": "In the upper-right corner of any page, click your profile picture, then click Copilot settings .   If you qualify for free access to Copilot, you will see a page titled \"GitHub Copilot Pro\" informing you that you are eligible. Click Get acces"
+        },
+        {
+          "match": "pricing",
+          "context": "ort Hooks reference Supported surfaces for policies Copilot allowlist reference Metrics data Copilot billing Models and pricing Billing cycle Seat assignment License changes Azure billing Request-based billing (legacy) What changed with billing (l"
+        },
+        {
+          "match": "Pricing",
+          "context": "Still need help? Ask the GitHub community Contact support Expert services Blog GitHub Inc. © 2026 Terms Privacy Status Pricing"
+        }
+      ]
+    },
+    {
+      "id": "docs-guidesbillinga",
+      "name": "Billing & Deposits | Gon",
+      "url": "https://docs.gonkabroker.com/guides/billing-and-deposits/",
+      "status": "ok",
+      "hits": 22,
+      "findings": [
+        {
+          "match": "$50 today and token prices go up ",
+          "context": "ecord of your payment that also captures the token prices at the exact moment you paid.   This means:     If you top up $50 today and token prices go up tomorrow, your $50 still buys the same number of tokens it did today   Each top-up is a separate deposit with its own lo"
+        },
+        {
+          "match": "$50 still buys the same number of",
+          "context": "en prices at the exact moment you paid.   This means:     If you top up $50 today and token prices go up tomorrow, your $50 still buys the same number of tokens it did today   Each top-up is a separate deposit with its own locked prices   Your total balance is the sum of a"
+        },
+        {
+          "match": "$20 $0.30 Deposit 2 (Feb 1) $30 $",
+          "context": "de two top-ups on different days:                       Deposit Amount Price per 1M tokens (Model A) Deposit 1 (Jan 15) $20 $0.30 Deposit 2 (Feb 1) $30 $0.40   Your usage first draws from Deposit 1 at $0.30/1M tokens. After Deposit 1 is fully consumed, usage continues from"
+        },
+        {
+          "match": "$0.30/1M tokens. After Deposit 1 is",
+          "context": "1M tokens (Model A) Deposit 1 (Jan 15) $20 $0.30 Deposit 2 (Feb 1) $30 $0.40   Your usage first draws from Deposit 1 at $0.30/1M tokens. After Deposit 1 is fully consumed, usage continues from Deposit 2 at $0.40/1M tokens. Your total balance reflects the combined token capac"
+        },
+        {
+          "match": "$0.40/1M tokens. Your total balance",
+          "context": "age first draws from Deposit 1 at $0.30/1M tokens. After Deposit 1 is fully consumed, usage continues from Deposit 2 at $0.40/1M tokens. Your total balance reflects the combined token capacity of both deposits, each at its own rate.   Free tier Section titled “Free tier”   I"
+        },
+        {
+          "match": "Free",
+          "context": "thropic API Limits & Quotas Support FAQ Contact Us On this page Overview Top-ups and deposits How deposits are consumed Free tier Viewing your balance Usage history Payment methods Redeeming a promo code Auto top-up Credit billing On this page"
+        },
+        {
+          "match": "Free",
+          "context": "Redeeming a promo code Auto top-up Credit billing On this page Overview Top-ups and deposits How deposits are consumed Free tier Viewing your balance Usage history Payment methods Redeeming a promo code Auto top-up Credit billing Billing & Dep"
+        },
+        {
+          "match": "Free",
+          "context": "2 at $0.40/1M tokens. Your total balance reflects the combined token capacity of both deposits, each at its own rate.   Free tier Section titled “Free tier”   If a free tier is available on your account, you receive a monthly grant of free toke"
+        },
+        {
+          "match": "Free",
+          "context": "total balance reflects the combined token capacity of both deposits, each at its own rate.   Free tier Section titled “Free tier”   If a free tier is available on your account, you receive a monthly grant of free tokens , usable with any model"
+        },
+        {
+          "match": "free",
+          "context": "lects the combined token capacity of both deposits, each at its own rate.   Free tier Section titled “Free tier”   If a free tier is available on your account, you receive a monthly grant of free tokens , usable with any model, no card required"
+        },
+        {
+          "match": "free",
+          "context": "e.   Free tier Section titled “Free tier”   If a free tier is available on your account, you receive a monthly grant of free tokens , usable with any model, no card required.   How it works:     The free tier is tied to a verified mobile phone"
+        },
+        {
+          "match": "free",
+          "context": "account, you receive a monthly grant of free tokens , usable with any model, no card required.   How it works:     The free tier is tied to a verified mobile phone number. The app asks you to confirm one with a one-time SMS code — on first log"
+        },
+        {
+          "match": "free",
+          "context": "to a verified mobile phone number. The app asks you to confirm one with a one-time SMS code — on first login, from the free-tier banner, or in Settings → Free Tier . One free tier per number; VoIP and landline numbers are not accepted. The num"
+        },
+        {
+          "match": "Free",
+          "context": "The app asks you to confirm one with a one-time SMS code — on first login, from the free-tier banner, or in Settings → Free Tier . One free tier per number; VoIP and landline numbers are not accepted. The number is used only to confirm you are"
+        },
+        {
+          "match": "free",
+          "context": "u to confirm one with a one-time SMS code — on first login, from the free-tier banner, or in Settings → Free Tier . One free tier per number; VoIP and landline numbers are not accepted. The number is used only to confirm you are a real person."
+        },
+        {
+          "match": "Free",
+          "context": "month.   It arrives as a regular deposit with prices locked at grant time. In your deposit history it is marked with a Free chip, and the USD Paid  column shows ”—”.   Free funds are always spent before your paid deposits; your own money is un"
+        },
+        {
+          "match": "Free",
+          "context": "ices locked at grant time. In your deposit history it is marked with a Free chip, and the USD Paid  column shows ”—”.   Free funds are always spent before your paid deposits; your own money is untouched while free tokens remain.   The grant doe"
+        },
+        {
+          "match": "free",
+          "context": "USD Paid  column shows ”—”.   Free funds are always spent before your paid deposits; your own money is untouched while free tokens remain.   The grant does not accumulate: any unused remainder expires when the next month’s grant is issued.   Y"
+        },
+        {
+          "match": "free",
+          "context": ".   The grant does not accumulate: any unused remainder expires when the next month’s grant is issued.   Your remaining free balance is shown on the Balances screen, right under the total.   You can turn the free tier off (and back on) at any t"
+        },
+        {
+          "match": "free",
+          "context": "ant is issued.   Your remaining free balance is shown on the Balances screen, right under the total.   You can turn the free tier off (and back on) at any time in Settings . We may occasionally ask you to re-verify your number; until you do, th"
+        },
+        {
+          "match": "free",
+          "context": "ier off (and back on) at any time in Settings . We may occasionally ask you to re-verify your number; until you do, the free tier is paused — paid usage is never affected.     While an account is running on free-tier funds only, requests are ra"
+        },
+        {
+          "match": "free",
+          "context": "y your number; until you do, the free tier is paused — paid usage is never affected.     While an account is running on free-tier funds only, requests are rate-limited; see Limits &#x26; Quotas .   Viewing your balance Section titled “Viewing y"
+        }
+      ]
+    },
+    {
+      "id": "docs-generalcompany",
+      "name": "Inference API - Hetzner ",
+      "url": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
+      "status": "ok",
+      "hits": 2,
+      "findings": [
+        {
+          "match": "free",
+          "context": "dn.hetzner.de/cdn/public/Uploads/Finnland_Luftaufnahme-v2.jpg\"}  }  ]  }  ]  }'   FAQ   Can I use the Inference API for free?   As long as the Inference API remains in experimental status, it is free of charge. Should this status change, we wil"
+        },
+        {
+          "match": "free",
+          "context": "}'   FAQ   Can I use the Inference API for free?   As long as the Inference API remains in experimental status, it is free of charge. Should this status change, we will notify you in advance via email with detailed information.   What informa"
+        }
+      ]
+    },
+    {
+      "id": "docs-main",
+      "name": "LiteLLM documentation | ",
+      "url": "https://docs.litellm.ai",
+      "status": "ok",
+      "hits": 4,
+      "findings": [
+        {
+          "match": "$200 monthly budget. Claude Done. ",
+          "context": "ys, add models, control teams and budgets, or find a request with an error. You Create a key for the search team with a $200 monthly budget. Claude Done. The key belongs to team search, with a $200 budget per month. Read the guide Copy agent prompt Enterprise Single sign-on"
+        },
+        {
+          "match": "$200 budget per month. Read the gu",
+          "context": "r. You Create a key for the search team with a $200 monthly budget. Claude Done. The key belongs to team search, with a $200 budget per month. Read the guide Copy agent prompt Enterprise Single sign-on, audit logs, and admin roles for all the teams in your company. A licens"
+        },
+        {
+          "match": "free",
+          "context": "oles for each team, and help from the LiteLLM engineers. It uses the same gateway with one license key. Talk to sales A free 30-day trial is available. One API for every model, in your code or behind your own gateway. Get the latest LiteLLM upd"
+        },
+        {
+          "match": "Pricing",
+          "context": "access to tools Agent Gateway Register and invoke A2A agents Python SDK Call 100+ LLMs with one interface Model Catalog Pricing and context windows Docs AI Providers Integrations Enterprise Learn Changelog Blog Rust Search for anything... Ctrl K A"
+        }
+      ]
+    },
+    {
+      "id": "docs-limits",
+      "name": "Limits - LLM7.io Documen",
+      "url": "https://docs.llm7.io/limits",
+      "status": "ok",
+      "hits": 22,
+      "findings": [
+        {
+          "match": "$12/mo) 25 1,500 15,000   ​ Token",
+          "context": "vailability.   ​ Text generation (/v1/chat/completions)   Access type 1 second 1 minute 1 hour Free token 1 60 250 Pro ($12/mo) 25 1,500 15,000   ​ Token usage availability   Token usage is counted as input tokens plus output tokens.   Access type Token availability Free t"
+        },
+        {
+          "match": "$12/mo) Higher dynamically manage",
+          "context": "ounted as input tokens plus output tokens.   Access type Token availability Free token 100,000 tokens per 24 hours Pro ($12/mo) Higher dynamically managed token limits than the free tier   For Pro accounts, token availability is calculated across the monthly billing period"
+        },
+        {
+          "match": "$12/mo)`}),_jsx(_components.td,{\\",
+          "context": "nts.td,{\\\"data-numeric\\\":`true`,children:`250`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Pro ($12/mo)`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`25`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`1,500`}),_jsx(_components."
+        },
+        {
+          "match": "$12/mo)`}),_jsx(_components.td,{c",
+          "context": "nts.td,{children:`100,000 tokens per 24 hours`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Pro ($12/mo)`}),_jsx(_components.td,{children:`Higher dynamically managed token limits than the free tier`})]})]})]}),`\\n`,_jsxs(_components.p,{children:[`For"
+        },
+        {
+          "match": "Free",
+          "context": "an, endpoint, and model availability.   ​ Text generation (/v1/chat/completions)   Access type 1 second 1 minute 1 hour Free token 1 60 250 Pro ($12/mo) 25 1,500 15,000   ​ Token usage availability   Token usage is counted as input tokens plus"
+        },
+        {
+          "match": "Free",
+          "context": "Token usage availability   Token usage is counted as input tokens plus output tokens.   Access type Token availability Free token 100,000 tokens per 24 hours Pro ($12/mo) Higher dynamically managed token limits than the free tier   For Pro acc"
+        },
+        {
+          "match": "free",
+          "context": "Token availability Free token 100,000 tokens per 24 hours Pro ($12/mo) Higher dynamically managed token limits than the free tier   For Pro accounts, token availability is calculated across the monthly billing period based on your usage relativ"
+        },
+        {
+          "match": "Free",
+          "context": "bility remains subject to model availability, service capacity, fair-use calculations, and abuse-prevention controls.   Free-token quotas are provided at no charge and may be reduced without notice based on demand, service capacity, model avail"
+        },
+        {
+          "match": "free",
+          "context": "s not accepted.   Use the Models API to inspect live model tiers, pricing, context windows, and capability flags. Get a free token at dash.llm7.io or upgrade to Pro for higher caps. Quickstart Streaming x github linkedin Powered by This documen"
+        },
+        {
+          "match": "Free",
+          "context": "ldren:`1 hour`})]})}),_jsxs(_components.tbody,{children:[_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Free token`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`1`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,child"
+        },
+        {
+          "match": "Free",
+          "context": "availability`})]})}),_jsxs(_components.tbody,{children:[_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Free token`}),_jsx(_components.td,{children:`100,000 tokens per 24 hours`})]}),_jsxs(_components.tr,{children:[_jsx(_compone"
+        },
+        {
+          "match": "free",
+          "context": "omponents.td,{children:`Pro ($12/mo)`}),_jsx(_components.td,{children:`Higher dynamically managed token limits than the free tier`})]})]})]}),`\\n`,_jsxs(_components.p,{children:[`For Pro accounts, token availability is calculated across the mon"
+        },
+        {
+          "match": "Free",
+          "context": "lability, service capacity, fair-use calculations, and abuse-prevention controls.`}),`\\n`,_jsx(_components.p,{children:`Free-token quotas are provided at no charge and may be reduced without notice based on demand, service capacity, model avail"
+        },
+        {
+          "match": "free",
+          "context": "odels-api`,children:`Models API`}),` to inspect live model tiers, pricing, context windows, and capability flags. Get a free token at `,_jsx(_components.a,{href:`https://dash.llm7.io`,children:`dash.llm7.io`}),` or upgrade to Pro for higher cap"
+        },
+        {
+          "match": "pricing",
+          "context": ". After the Pro allowance is reached, requests can continue from a topped-up balance and are billed from the live model pricing.   Pro token availability remains subject to model availability, service capacity, fair-use calculations, and abuse-pre"
+        },
+        {
+          "match": "pricing",
+          "context": "hen use the route-level public price:   seconds * selected_route.public_price_usd_per_second     Fall back to seconds * pricing.price only when the model does not expose pricing.route_prices_usd_per_second .   The hold is consumed when the task co"
+        },
+        {
+          "match": "pricing",
+          "context": "selected_route.public_price_usd_per_second     Fall back to seconds * pricing.price only when the model does not expose pricing.route_prices_usd_per_second .   The hold is consumed when the task completes successfully and released when upstream ge"
+        },
+        {
+          "match": "pricing",
+          "context": "ased when upstream generation fails or task creation is not accepted.   Use the Models API to inspect live model tiers, pricing, context windows, and capability flags. Get a free token at dash.llm7.io or upgrade to Pro for higher caps. Quickstart"
+        },
+        {
+          "match": "pricing",
+          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"a"
+        },
+        {
+          "match": "pricing",
+          "context": "onents.span,{})})]})})}),`\\n`,_jsxs(_components.p,{children:[`Fall back to `,_jsx(_components.code,{children:`seconds * pricing.price`}),` only when the model does not expose `,_jsx(_components.code,{children:`pricing.route_prices_usd_per_second`}"
+        },
+        {
+          "match": "pricing",
+          "context": "nts.code,{children:`seconds * pricing.price`}),` only when the model does not expose `,_jsx(_components.code,{children:`pricing.route_prices_usd_per_second`}),`.`]}),`\\n`,_jsx(_components.p,{children:`The hold is consumed when the task completes s"
+        },
+        {
+          "match": "pricing",
+          "context": "ildren:[`Use the `,_jsx(_components.a,{href:`/guides/models-api`,children:`Models API`}),` to inspect live model tiers, pricing, context windows, and capability flags. Get a free token at `,_jsx(_components.a,{href:`https://dash.llm7.io`,children:"
+        }
+      ]
+    },
+    {
+      "id": "docs-main",
+      "name": "What is Qoder - Qoder",
+      "url": "https://docs.qoder.com/",
+      "status": "ok",
+      "hits": 6,
+      "findings": [
+        {
+          "match": "$10 a month Qoder Tier Upgrade: P",
+          "context": "rWake Release Notes QoderWork Release Notes Product Announcements Introducing Qoder Lite: Start creating with Qoder for $10 a month Qoder Tier Upgrade: Performance Becomes Fast Qoder Model Usage Reference Factor Adjustment Notice Qoder IDE Quest window retirement notice Re"
+        },
+        {
+          "match": "Free",
+          "context": "edits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade Claim 100 Credits Every Day DeepSeek-Flash: Free for a Limited Time Qwen3.8-Flash: Free for a Limited Time SOTA Models — Limited-Time Free Experience Efficient Model Ti"
+        },
+        {
+          "match": "Free",
+          "context": "Bonus Credits on Renewal and Upgrade Claim 100 Credits Every Day DeepSeek-Flash: Free for a Limited Time Qwen3.8-Flash: Free for a Limited Time SOTA Models — Limited-Time Free Experience Efficient Model Tier: Free for Paid Users for a Limited T"
+        },
+        {
+          "match": "Free",
+          "context": "its Every Day DeepSeek-Flash: Free for a Limited Time Qwen3.8-Flash: Free for a Limited Time SOTA Models — Limited-Time Free Experience Efficient Model Tier: Free for Paid Users for a Limited Time Premium Model Discount Rates [Ended] Double Fir"
+        },
+        {
+          "match": "Free",
+          "context": "a Limited Time Qwen3.8-Flash: Free for a Limited Time SOTA Models — Limited-Time Free Experience Efficient Model Tier: Free for Paid Users for a Limited Time Premium Model Discount Rates [Ended] Double First-Month Credits and 1,000 Bonus Credi"
+        },
+        {
+          "match": "Pricing",
+          "context": "erence Factor Adjustment Notice Qoder IDE Quest window retirement notice Removal of the Lite model tier Account Credits Pricing Billing Events Qoder 1024 · Community Boost Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus C"
+        }
+      ]
+    },
+    {
+      "id": "docs-idenewplansand",
+      "name": "Plans &amp; billing - Do",
+      "url": "https://docs.trae.ai/ide/new-plans-and-billing",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "docs-main",
+      "name": "xKiro API Documentation",
+      "url": "https://docs.xkiro.com",
+      "status": "ok",
+      "hits": 2,
+      "findings": [
+        {
+          "match": "Pricing",
+          "context": "xKiro API Documentation xKiro docs Search… Ctrl K API Keys Pricing Console Guides API Reference Models Help Get started Quick start Overview Authentication Core parameters Pricing & bill"
+        },
+        {
+          "match": "Pricing",
+          "context": "I Keys Pricing Console Guides API Reference Models Help Get started Quick start Overview Authentication Core parameters Pricing & billing SDKs OpenAI SDK Anthropic SDK HTTP / cURL Migrate to xKiro Coding tools Overview Claude Code VS Code Cursor J"
+        }
+      ]
+    },
+    {
+      "id": "docs-guidesdeveloph",
+      "name": "HTTP API Calls - Overvie",
+      "url": "https://docs.z.ai/guides/develop/http/introduction",
+      "status": "ok",
+      "hits": 5,
+      "findings": [
+        {
+          "match": "$18/month—fast, reliable code gen",
+          "context": "3 \\u0026 GLM-5.3-FLASH for AI coding in Claude Code, Kilo Code, Cline, OpenCode, Clawdbot/OpenClaw and more. Plans from $18/month—fast, reliable code generation and tool use for daily dev work.\",\"colors\":{\"primary\":\"#141618\",\"light\":\"#9fa0a0\",\"dark\":\"#141618\"},\"logo\":{\"lig"
+        },
+        {
+          "match": "Pricing",
+          "context": "API Calls Guides API Reference Coding Plan Released Notes Terms and Policy Help Center Get Started Quick Start Overview Pricing Core Parameters SDKs Guide HTTP API Calls Official Python SDK Official Java SDK OpenAI Python SDK LangChain Integration"
+        },
+        {
+          "match": "pricing",
+          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"a"
+        },
+        {
+          "match": "Pricing",
+          "context": ":\"Quick Start\",\"href\":\"/guides/overview/quick-start\"},{\"title\":\"Overview\",\"href\":\"/guides/overview/overview\"},{\"title\":\"Pricing\",\"href\":\"/guides/overview/pricing\"},{\"title\":\"Core Parameters\",\"description\":null,\"href\":\"/guides/overview/concept-para"
+        },
+        {
+          "match": "pricing",
+          "context": "rview/quick-start\"},{\"title\":\"Overview\",\"href\":\"/guides/overview/overview\"},{\"title\":\"Pricing\",\"href\":\"/guides/overview/pricing\"},{\"title\":\"Core Parameters\",\"description\":null,\"href\":\"/guides/overview/concept-param\"},{\"group\":\"SDKs Guide\",\"pages\":"
+        }
+      ]
+    },
+    {
+      "id": "ecloud-main",
+      "name": "移动云官网-智能新空间",
+      "url": "https://ecloud.10086.cn/",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "endpoints-main",
+      "name": "AI Endpoints - Powerful,",
+      "url": "https://endpoints.ai.cloud.ovh.net",
+      "status": "ok",
+      "hits": 10,
+      "findings": [
+        {
+          "match": "free",
+          "context": "nference Solutions AI Endpoints Serverless AI model usage via API AI Endpoints - Model Catalogue Try all our models for free AI Endpoints - Base API No commitment, standard response times AI Endpoints - Batch API The most economical, your reque"
+        },
+        {
+          "match": "Free",
+          "context": "samples Output Dimensions : 32 – 4096 dimensions Try this model Safety & Moderation Beta Qwen3Guard-Gen-0.6B Streaming Free Licence : Apache 2.0 Parameters : 0.6B Quantization : fp16 Max. context : 32K Try this model Safety & Moderation Beta Q"
+        },
+        {
+          "match": "Free",
+          "context": "eters : 0.6B Quantization : fp16 Max. context : 32K Try this model Safety & Moderation Beta Qwen3Guard-Gen-8B Streaming Free Licence : Apache 2.0 Parameters : 8B Quantization : fp16 Max. context : 32K Try this model Text Generation gpt-oss-120b"
+        },
+        {
+          "match": "Free",
+          "context": "tion : fp16 Max. context : 118K End of life on Nov 4, 2026 Try this model Image Generation stable-diffusion-xl-base-v10 Free Licence : OpenRail++ Parameters : 3.5B Quantization : fp32 Try this model Text To Speech nvr-tts-de-de Free Licence : R"
+        },
+        {
+          "match": "Free",
+          "context": "xl-base-v10 Free Licence : OpenRail++ Parameters : 3.5B Quantization : fp32 Try this model Text To Speech nvr-tts-de-de Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-es-es Free Licence : Riva license Quan"
+        },
+        {
+          "match": "Free",
+          "context": "ext To Speech nvr-tts-de-de Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-es-es Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-it-it Free Licence : Riva license Quan"
+        },
+        {
+          "match": "Free",
+          "context": "ext To Speech nvr-tts-es-es Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-it-it Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-en-us Free Licence : Riva license Quan"
+        },
+        {
+          "match": "Free",
+          "context": "ext To Speech nvr-tts-it-it Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-en-us Free Licence : Riva license Quantization : fp32 Try this model                                                          Tool"
+        },
+        {
+          "match": "free",
+          "context": "Contact us             New order, technical advice, incidents  OVHcloud Customer Service    1-855-684-5463    Toll free                                 News                         Press                      Blog                       Soci"
+        },
+        {
+          "match": "pricing",
+          "context": "tus Available: ready to use. New: among the latest models added to the catalogue. Beta: in testing, so its behavior and pricing may still change. Being retired: still answering, but scheduled for end of life, so choose another model for new work."
+        }
+      ]
+    },
+    {
+      "id": "gh-aipmandy-freetoken-blob-daf",
+      "name": "FreeToken/README.md at d",
+      "url": "https://github.com/AIPMAndy/FreeToken/blob/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费 AI API Token",
+          "context": "Blame 564 lines (456 loc) · 24.6 KB Raw Copy raw file Download raw file Outline Edit and raw actions 🎁 FreeToken   收集各种免费 AI API Token 的获取方法、开源项目和使用指南。     🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用   最后更新 : 2026-06-21     📋 目录     🏆 GitHub 热门免费 API 项目   🤖 AI 模型官方免"
+        },
+        {
+          "match": "免费 API 项目   🤖 AI 模型官方免费额度   🇨🇳 国内大模型免费额度",
+          "context": "收集各种免费 AI API Token 的获取方法、开源项目和使用指南。     🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用   最后更新 : 2026-06-21     📋 目录     🏆 GitHub 热门免费 API 项目   🤖 AI 模型官方免费额度   🇨🇳 国内大模型免费额度   🌐 API 聚合/代理平台   ☁️ 云服务免费额度   🛠️ 开发工具   📊 数据服务   📝 使用建议       🏆 GitHub 热门免费 API 项目   🔥 第一梯队（万星以上）         项目   Stars"
+        },
+        {
+          "match": "免费额度",
+          "context": "tar ⭐ 收藏备用   最后更新 : 2026-06-21     📋 目录     🏆 GitHub 热门免费 API 项目   🤖 AI 模型官方免费额度   🇨🇳 国内大模型免费额度   🌐 API 聚合/代理平台   ☁️ 云服务免费额度   🛠️ 开发工具   📊 数据服务   📝 使用建议       🏆 GitHub 热门免费 API 项目   🔥 第一梯队（万星以上）         项目   Stars   说明   链接           chatanywhe"
+        },
+        {
+          "match": "免费额度   OpenAI     免费额度",
+          "context": "ront   免费访问 GPT-4、Claude、Gemini 等模型的聊天平台   forefront.ai       nat.dev   免费的 AI 代码助手，支持多种模型   nat.dev           🤖 AI 模型官方免费额度   OpenAI     免费额度 : 新用户注册送 $5 体验金 （有效期 3 个月）   获取方式 :    访问 OpenAI Platform   注册账号并验证手机号   在 API Keys 页面创建密钥       限制 : 免费层速率限制因模型而异   推荐"
+        },
+        {
+          "match": "免费额度",
+          "context": "密钥       限制 : 免费层速率限制因模型而异   推荐模型 : GPT-4o-mini（性价比最高）   文档 : https://platform.openai.com/docs     Anthropic Claude     免费额度 : 新用户注册送 小额体验金 （具体金额未公开）   获取方式 :    访问 Anthropic Console   注册账号   创建 API Key       推荐 : Claude Haiku 系列价格低，适合日常使用   亮点"
+        },
+        {
+          "match": "免费额度",
+          "context": "推荐 : Claude Haiku 系列价格低，适合日常使用   亮点 : Claude 3.5 Sonnet 代码能力顶尖   文档 : https://docs.anthropic.com/     Google Gemini     免费额度 : 免费层 （Gemini 2.5 Flash 等模型免费输入输出）   获取方式 :    访问 Google AI Studio   使用 Google 账号登录   获取 API Key       亮点 : Gemini 2.5"
+        },
+        {
+          "match": "免费层额度非常慷慨，200 万 Token",
+          "context": "mini 2.5 Flash 等模型免费输入输出）   获取方式 :    访问 Google AI Studio   使用 Google 账号登录   获取 API Key       亮点 : Gemini 2.5 Pro/Flash 免费层额度非常慷慨，200 万 Token/天   ⚠️ 注意 : Gemini 2.0 Flash 已弃用，将于 2026 年 6 月关停，请用 2.5 系列   推荐 : Gemini 2.5 Flash（免费 + 快速 + 多模态）   文档 : https://ai.goo"
+        },
+        {
+          "match": "免费额度",
+          "context": "用，将于 2026 年 6 月关停，请用 2.5 系列   推荐 : Gemini 2.5 Flash（免费 + 快速 + 多模态）   文档 : https://ai.google.dev/docs     xAI (Grok)     免费额度 : 新用户 可能 有体验金（金额不固定，非官方公开承诺）   获取方式 : 访问 xAI Console   亮点 : Grok 系列模型，实时网络数据   文档 : https://docs.x.ai/     Mistral"
+        },
+        {
+          "match": "免费额度 : 免费层有基础调用额度",
+          "context": ": 新用户 可能 有体验金（金额不固定，非官方公开承诺）   获取方式 : 访问 xAI Console   亮点 : Grok 系列模型，实时网络数据   文档 : https://docs.x.ai/     Mistral     免费额度 : 免费层有基础调用额度   获取方式 : 访问 Mistral Console   推荐 : Mistral Small（性价比高）   文档 : https://docs.mistral.ai/     Cohere     免费额度 : 试用版有基础调用额度"
+        },
+        {
+          "match": "免费额度 : 试用版有基础调用额度",
+          "context": "免费额度 : 免费层有基础调用额度   获取方式 : 访问 Mistral Console   推荐 : Mistral Small（性价比高）   文档 : https://docs.mistral.ai/     Cohere     免费额度 : 试用版有基础调用额度（具体数量不固定）   获取方式 : 访问 Cohere Dashboard   亮点 : 企业级 RAG 和搜索能力   文档 : https://docs.cohere.com/       🇨🇳 国内大模型免费额度     ⚠️ 以下"
+        },
+        {
+          "match": "免费额度     ⚠️ 以下国内厂商的免费额度",
+          "context": "度 : 试用版有基础调用额度（具体数量不固定）   获取方式 : 访问 Cohere Dashboard   亮点 : 企业级 RAG 和搜索能力   文档 : https://docs.cohere.com/       🇨🇳 国内大模型免费额度     ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。     NVIDIA 🔥🔥🔥（Andy 推荐）     免费额度 : 100+ 顶级模型免费用一整年 （H100 算力）   免费模型 : DeepSeek、Llama"
+        },
+        {
+          "match": "免费额度",
+          "context": "//docs.cohere.com/       🇨🇳 国内大模型免费额度     ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。     NVIDIA 🔥🔥🔥（Andy 推荐）     免费额度 : 100+ 顶级模型免费用一整年 （H100 算力）   免费模型 : DeepSeek、Llama、Mistral、Qwen、GLM、Nemotron 等   限制 : 每 1.5 秒一次请求（每天可调用 5 万+ 次）   获取方式"
+        },
+        {
+          "match": "免费额度 : 100 万亿（100T）Token",
+          "context": "H100 算力，不是试用版，不是阉割版   省多少钱 : 同时用 3-4 个模型，一年至少省 7000 元   文档 : https://build.nvidia.com/docs     小米 MiMo 🔥🔥（Andy 推荐）     免费额度 : 100 万亿（100T）Token 激励计划，赠完即止   活动时间 : 2026 年 4 月 28 日 00:00 至 5 月 28 日 00:00（北京时间）   获取方式 : 访问 100t.xiaomimimo.com   亮点 : 小米自研模型，面向全球 AI 用"
+        },
+        {
+          "match": "免费发放   API 地址 : https://token",
+          "context": "激励计划，赠完即止   活动时间 : 2026 年 4 月 28 日 00:00 至 5 月 28 日 00:00（北京时间）   获取方式 : 访问 100t.xiaomimimo.com   亮点 : 小米自研模型，面向全球 AI 用户免费发放   API 地址 : https://token-plan-cn.xiaomimimo.com   ⚠️ 注意 : 限时活动，赠完即止，尽早领取     DeepSeek 🔥     免费额度 : 注册送 500万 Tokens   价格 : 极低（约 ¥1/百万 Tokens），日常使"
+        },
+        {
+          "match": "免费额度 : 注册送 500万 Tokens   价格 : 极低（约 ¥1/百万 Tokens",
+          "context": "亮点 : 小米自研模型，面向全球 AI 用户免费发放   API 地址 : https://token-plan-cn.xiaomimimo.com   ⚠️ 注意 : 限时活动，赠完即止，尽早领取     DeepSeek 🔥     免费额度 : 注册送 500万 Tokens   价格 : 极低（约 ¥1/百万 Tokens），日常使用几乎免费   获取方式 : 访问 DeepSeek Platform   亮点 : 性价比之王，R1 推理模型强大，V3 基础模型优秀   推荐 : DeepSeek-V3（综合能力）、DeepSeek-R1（复杂推理）   文"
+        },
+        {
+          "match": "免费额度",
+          "context": "，V3 基础模型优秀   推荐 : DeepSeek-V3（综合能力）、DeepSeek-R1（复杂推理）   文档 : https://platform.deepseek.com/api-docs     通义千问 (Qwen)     免费额度 : 部分模型 限时免费 ，注册送体验金   获取方式 : 访问 阿里云百炼   亮点 : Qwen 系列模型齐全，多模态能力强   推荐 : Qwen-Plus（综合能力）、Qwen-VL（视觉理解）   文档 : https://hel"
+        },
+        {
+          "match": "免费额度 : 注册送 500万 Tokens",
+          "context": "系列模型齐全，多模态能力强   推荐 : Qwen-Plus（综合能力）、Qwen-VL（视觉理解）   文档 : https://help.aliyun.com/zh/model-studio/     智谱 AI (GLM)     免费额度 : 注册送 500万 Tokens 体验金   获取方式 : 访问 智谱开放平台   亮点 : GLM-4 系列，支持联网搜索、代码执行、视频生成   推荐 : GLM-4-Flash（免费快速）、GLM-4V（视觉理解）   文档 : https://open.bigmo"
+        },
+        {
+          "match": "免费额度",
+          "context": "列，支持联网搜索、代码执行、视频生成   推荐 : GLM-4-Flash（免费快速）、GLM-4V（视觉理解）   文档 : https://open.bigmodel.cn/dev/api     百度文心一言 (ERNIE)     免费额度 : 部分模型 完全免费   获取方式 : 访问 百度千帆   亮点 : ERNIE-Speed 系列免费，中文能力强   推荐 : ERNIE-Speed-8K（免费）、ERNIE-4.0（付费高级）   文档 : https://clo"
+        },
+        {
+          "match": "免费额度",
+          "context": "力强   推荐 : ERNIE-Speed-8K（免费）、ERNIE-4.0（付费高级）   文档 : https://cloud.baidu.com/doc/WENXINWORKSHOP/     Moonshot (月之暗面)     免费额度 : 注册送 15 元 体验金   获取方式 : 访问 Moonshot 开放平台   亮点 : Kimi 长文本能力，128K 上下文，K1 思考模型   推荐 : moonshot-v1-8k（日常）、moonshot-v1-128k（"
+        },
+        {
+          "match": "免费额度",
+          "context": "1 思考模型   推荐 : moonshot-v1-8k（日常）、moonshot-v1-128k（长文本）   文档 : https://platform.moonshot.cn/docs     MiniMax (海螺 AI)     免费额度 : 注册送体验金   获取方式 : 访问 MiniMax 开放平台   亮点 : 语音合成能力突出，支持语音克隆   推荐 : abab6.5s（基础）、speech-01（语音）   文档 : https://platform.mini"
+        },
+        {
+          "match": "免费额度 : 星火 Lite 完全免费 ，其他版本送 Token",
+          "context": "亮点 : 语音合成能力突出，支持语音克隆   推荐 : abab6.5s（基础）、speech-01（语音）   文档 : https://platform.minimaxi.com/docs     讯飞星火 (Spark)     免费额度 : 星火 Lite 完全免费 ，其他版本送 Token   获取方式 : 访问 讯飞开放平台   亮点 : 中文理解强，办公场景优化   推荐 : Spark Lite（免费）、Spark Max（付费高级）   文档 : https://www.xfyun.cn/doc/spark/"
+        },
+        {
+          "match": "免费额度",
+          "context": "开放平台   亮点 : 中文理解强，办公场景优化   推荐 : Spark Lite（免费）、Spark Max（付费高级）   文档 : https://www.xfyun.cn/doc/spark/     豆包 (字节跳动)     免费额度 : 部分模型 限时免费   获取方式 : 访问 火山引擎   亮点 : 字节跳动出品，多模态能力强，联网搜索优秀   推荐 : Doubao-pro（综合）、Doubao-vision（视觉）   文档 : https://www.vol"
+        },
+        {
+          "match": "免费额度",
+          "context": "，多模态能力强，联网搜索优秀   推荐 : Doubao-pro（综合）、Doubao-vision（视觉）   文档 : https://www.volcengine.com/docs/82379     阶跃星辰 (Step)     免费额度 : 注册送体验金   获取方式 : 访问 阶跃星辰开放平台   亮点 : 多模态理解能力强   推荐 : Step-1（基础）、Step-1V（视觉）   文档 : https://platform.stepfun.com/docs"
+        },
+        {
+          "match": "免费额度",
+          "context": "gle Gemini 2.5 Flash（Google 官方）   Mistral Large（欧洲之光）       文档 : https://openrouter.ai/docs     Silicon Flow (硅基流动)     免费额度 : 多个模型 完全免费 （Qwen、GLM、Llama 等）   获取方式 : 访问 SiliconFlow   亮点 : 国内直连，免费模型多，OpenAI 兼容格式   推荐免费模型 :    Qwen2.5-72B（阿里最强）"
+        },
+        {
+          "match": "免费额度 : 每天 10,000 次",
+          "context": "-72B（阿里最强）   DeepSeek-V2.5（性价比王）   GLM-4-9B（智谱免费）       文档 : https://docs.siliconflow.cn/     Cloudflare Workers AI     免费额度 : 每天 10,000 次 请求免费   获取方式 : 注册 Cloudflare → Workers AI   亮点 : 全球边缘节点，延迟低，无需信用卡   推荐模型 : Llama 3、Mistral、SDXL（图像生成）   文档 : https://dev"
+        },
+        {
+          "match": "免费额度",
+          "context": "，延迟低，无需信用卡   推荐模型 : Llama 3、Mistral、SDXL（图像生成）   文档 : https://developers.cloudflare.com/workers-ai/     Together AI     免费额度 : 注册送 $25 体验金 （2026年6月更新）   获取方式 : 访问 Together AI   亮点 : 开源模型丰富（Llama、Mixtral、FLUX等），速度快   推荐模型 : Llama 3.1 405B、FLUX.1"
+        },
+        {
+          "match": "免费额度 : 免费层每分钟 30 次 请求，每天 14,400 次",
+          "context": "源模型丰富（Llama、Mixtral、FLUX等），速度快   推荐模型 : Llama 3.1 405B、FLUX.1-schnell（图像）   文档 : https://docs.together.ai/     Groq     免费额度 : 免费层每分钟 30 次 请求，每天 14,400 次   获取方式 : 访问 Groq Console   亮点 : 超快推理速度（LPU 加速），Llama/Mixtral 免费   推荐模型 : Llama 3.1 70B（速度最快）   文档 : https://console.gro"
+        },
+        {
+          "match": "免费额度 : 免费层有基础额度",
+          "context": "亮点 : 超快推理速度（LPU 加速），Llama/Mixtral 免费   推荐模型 : Llama 3.1 70B（速度最快）   文档 : https://console.groq.com/docs     Cerebras     免费额度 : 免费层有基础额度   获取方式 : 访问 Cerebras   亮点 : 超快推理速度，Llama 系列优化   推荐模型 : Llama 3.1 70B   文档 : https://cerebras.ai/docs     SambaNova"
+        },
+        {
+          "match": "免费额度 : 免费层有基础额度",
+          "context": "获取方式 : 访问 Cerebras   亮点 : 超快推理速度，Llama 系列优化   推荐模型 : Llama 3.1 70B   文档 : https://cerebras.ai/docs     SambaNova     免费额度 : 免费层有基础额度   获取方式 : 访问 SambaNova Cloud   亮点 : 开源模型高速推理   推荐模型 : Llama 3、Qwen   文档 : https://docs.sambanova.ai/     HuggingFace Inf"
+        },
+        {
+          "match": "免费额度 : 社区免费，每月一定额度",
+          "context": "mbaNova Cloud   亮点 : 开源模型高速推理   推荐模型 : Llama 3、Qwen   文档 : https://docs.sambanova.ai/     HuggingFace Inference API     免费额度 : 社区免费，每月一定额度   获取方式 : 访问 HuggingFace   亮点 : 10万+ 开源模型，社区活跃   推荐模型 : Llama、Mistral、SDXL、Whisper   文档 : https://huggingface.co/docs/ap"
+        }
+      ]
+    },
+    {
+      "id": "sogou-wx-token",
+      "name": "搜狗微信·token免费额度",
+      "url": "https://weixin.sogou.com/weixin?type=2&query=token+免费额度",
+      "status": "robots_disallowed"
+    },
+    {
+      "id": "sogou-wx-yangmao",
+      "name": "搜狗微信·AI羊毛折扣码",
+      "url": "https://weixin.sogou.com/weixin?type=2&query=AI+羊毛+折扣码",
+      "status": "robots_disallowed"
     }
   ]
 }
