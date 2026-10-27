@@ -642,7 +642,8 @@ function render(){
       <a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>
     </div>
   </article>
-  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best)}`).join('');
+  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best);
+    }).join('');
   }else{
     box.innerHTML=list.map(rowHtml).join('');
   }
