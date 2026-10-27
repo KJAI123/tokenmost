@@ -30,6 +30,10 @@
 - ⚠️ **rebase 铁律（v2.4.1 血泪教训）**：rebase 冲突中 `--ours`=已重放的旧基、`--theirs`=自己的新提交——要保自己的新内容必须用 `--theirs`；用错会静默丢数据（v2.3 曾丢 7 条情报+9 条日均字段）。解冲突后必须核对条数与新增字段再 continue
 - ⚠️ push 瞬断用 `git -c http.version=HTTP/1.1 push`；远端有 bot auto-sync 提交时先 `git pull --rebase`
 
+## 巡检水位
+- excel_last: 发现日志 10 行 / rev 529cd6b10709b85f（2026-10-28 01:17 核对，无新增）
+- deep 裁决: deep-r5.json 的 deep-tencent-yuanqi 已被 deep-tencent-yuanqi-verified-r6（口径修正版）取代，永不合并防重复
+
 ## 汇总水位
 digest_last: 2026-10-28T01:13:40+08:00（测试消息已发，下一封=1小时后）
 

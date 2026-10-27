@@ -178,19 +178,6 @@
   "via": "register"
  },
  {
-  "id": "hunyuan-lite",
-  "provider": "腾讯云 TokenHub",
-  "category": "maas",
-  "type": "free_tier",
-  "value": "hunyuan-lite 等 47 款旧模型已于 2026-06-22 下线、原混元平台 2026-09-30 停服——请迁移至 TokenHub（见新人免费包）",
-  "region": "cn",
-  "url": "https://cloud.tencent.com/document/product/1729/131925",
-  "verify_status": "expired",
-  "verified_at": "2026-10-27T00:00:00Z",
-  "difficulty": 1,
-  "published": true
- },
- {
   "id": "minimax-m3-half",
   "provider": "MiniMax 开放平台",
   "category": "official_cn",
@@ -511,19 +498,6 @@
   "via": "student"
  },
  {
-  "id": "github-models",
-  "provider": "GitHub Models",
-  "category": "official_global",
-  "type": "free_tier",
-  "value": "已于 2026-07-30 全面退役（playground / 推理 API / BYOK 全下线）；官方迁移指向 Azure AI Foundry / GitHub Copilot",
-  "region": "global",
-  "url": "https://docs.github.com/en/github-models",
-  "verify_status": "expired",
-  "verified_at": "2026-10-27T00:00:00Z",
-  "difficulty": 1,
-  "published": true
- },
- {
   "id": "groq-free",
   "provider": "Groq",
   "category": "maas",
@@ -558,20 +532,6 @@
   "daily_note": "官方 TPD 20 万 tokens 硬顶"
  },
  {
-  "id": "together-free",
-  "provider": "Together AI",
-  "category": "maas",
-  "type": "warning",
-  "value": "⚠️ 免费试用 credits 已取消（官方文档口径，最低 $5 起充；旧免费模型报 out of credits）——存档避雷",
-  "region": "global",
-  "url": "https://www.together.ai/pricing",
-  "verify_status": "expired",
-  "verified_at": "2026-10-26T20:49:59Z",
-  "difficulty": 2,
-  "published": true,
-  "verify_by": "auto"
- },
- {
   "id": "anthropic-credits",
   "provider": "Anthropic",
   "category": "official_global",
@@ -582,11 +542,11 @@
   "verify_status": "stale",
   "verified_at": "2026-10-26T20:48:36Z",
   "difficulty": 1,
-  "published": true,
+  "published": false,
   "verify_by": "auto",
   "usd": 5,
   "notes": "💡 官方文档+多方交叉（中置信度）",
-  "stale_reason": "源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）"
+  "stale_reason": "源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）清洗机制:stale不宜挂主板块"
  },
  {
   "id": "zcode-linuxdo",
