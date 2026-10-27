@@ -15,7 +15,8 @@
   "notes": "💡 GLM-5.3 定价 8/28 元每百万，作比价基准",
   "verify_by": "auto",
   "tokens_wan": 4500,
-  "via": "invite"
+  "via": "invite",
+  "group": "智谱"
  },
  {
   "id": "volc-ark-signup",
@@ -31,7 +32,8 @@
   "difficulty": 2,
   "published": true,
   "notes": "💡 另有协作奖励计划每日 50 万/模型；编程模型每日 500 万见独立条目",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "字节跳动"
  },
  {
   "id": "bailian-signup",
@@ -48,7 +50,8 @@
   "published": true,
   "verify_by": "auto",
   "tokens_wan": 1000,
-  "via": "register"
+  "via": "register",
+  "group": "阿里云"
  },
  {
   "id": "deepseek-price",
@@ -63,7 +66,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "DeepSeek"
  },
  {
   "id": "deepseek-offpeak",
@@ -78,7 +82,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "DeepSeek"
  },
  {
   "id": "deepseek-searchfree",
@@ -93,7 +98,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "DeepSeek"
  },
  {
   "id": "kimi-voucher",
@@ -111,7 +117,8 @@
   "notes": "💡 平台已从 platform.moonshot.cn 迁移至 platform.kimi.com",
   "verify_by": "auto",
   "cny": 15,
-  "via": "register"
+  "via": "register",
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "kimi-k2-deadline",
@@ -126,7 +133,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "qianfan-signup",
@@ -143,7 +151,8 @@
   "published": true,
   "verify_by": "auto",
   "tokens_wan": 1700,
-  "via": "register"
+  "via": "register",
+  "group": "百度"
  },
  {
   "id": "xinghuo-signup",
@@ -158,7 +167,8 @@
   "difficulty": 1,
   "published": true,
   "notes": "TODO：Max 套餐 2026-03-10 已下线（升级为 Ultra），勿引用旧攻略",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "讯飞"
  },
  {
   "id": "tencenthub-signup",
@@ -175,7 +185,8 @@
   "published": true,
   "verify_by": "auto",
   "tokens_wan": 500,
-  "via": "register"
+  "via": "register",
+  "group": "腾讯"
  },
  {
   "id": "minimax-m3-half",
@@ -190,7 +201,8 @@
   "difficulty": 1,
   "published": true,
   "notes": "💡 平台域名 minimaxi.com 已 302 至 minimax.cn",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "MiniMax 开放平台"
  },
  {
   "id": "coze-free",
@@ -205,7 +217,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "字节跳动"
  },
  {
   "id": "dify-selfhost",
@@ -220,7 +233,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 3,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "Dify 自部署"
  },
  {
   "id": "modelscope-free-infer",
@@ -238,7 +252,8 @@
   "notes": "TODO：每日 2000 次限额来自社区交叉印证，官方文档页 JS 渲染未能直核",
   "verify_by": "auto",
   "daily_wan": 800,
-  "daily_note": "2000 次/天 × ~4K tok/次 ≈800 万/天（估算）"
+  "daily_note": "2000 次/天 × ~4K tok/次 ≈800 万/天（估算）",
+  "group": "阿里云"
  },
  {
   "id": "scnet-coupon",
@@ -257,7 +272,8 @@
   "verify_by": "auto",
   "tokens_wan": 1000,
   "via": "register",
-  "notes": "💡 官方活动中心核实；付费套餐（0.1 元档等）已按站规移出免费视野，见付费区"
+  "notes": "💡 官方活动中心核实；付费套餐（0.1 元档等）已按站规移出免费视野，见付费区",
+  "group": "SCNet"
  },
  {
   "id": "autodl-student",
@@ -272,7 +288,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "AutoDL"
  },
  {
   "id": "gpushare-invite",
@@ -288,7 +305,8 @@
   "published": true,
   "verify_by": "auto",
   "cny": 10,
-  "via": "invite"
+  "via": "invite",
+  "group": "恒源云"
  },
  {
   "id": "gongji-subsidy",
@@ -302,7 +320,8 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
   "published": false,
-  "notes": "TODO：注册后看控制台或咨询 ai@suanli.cn 再决定是否上架"
+  "notes": "TODO：注册后看控制台或咨询 ai@suanli.cn 再决定是否上架",
+  "group": "共绩算力"
  },
  {
   "id": "siliconflow-signup",
@@ -322,7 +341,8 @@
   "notes": "⚠️ coupon 为占位示例，上线前替换为真实码",
   "verify_by": "auto",
   "cny": 14,
-  "via": "register"
+  "via": "register",
+  "group": "硅基流动"
  },
  {
   "id": "siliconflow-referral",
@@ -339,7 +359,8 @@
   "published": true,
   "verify_by": "auto",
   "cny": 16,
-  "via": "register"
+  "via": "register",
+  "group": "硅基流动"
  },
  {
   "id": "302ai-signup",
@@ -355,7 +376,8 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
   "published": false,
-  "notes": "⚠️ coupon 占位，替换真实码；网传「邀请码送 $1」来自第三方训练营，非官方，不收"
+  "notes": "⚠️ coupon 占位，替换真实码；网传「邀请码送 $1」来自第三方训练营，非官方，不收",
+  "group": "302.AI"
  },
  {
   "id": "openrouter-free",
@@ -372,7 +394,8 @@
   "published": true,
   "verify_by": "auto",
   "daily_wan": 20,
-  "daily_note": "默认 50 次/天 ×4K≈20 万/天；充 $10 解锁 1000 次/天≈400 万/天（估算）"
+  "daily_note": "默认 50 次/天 ×4K≈20 万/天；充 $10 解锁 1000 次/天≈400 万/天（估算）",
+  "group": "OpenRouter"
  },
  {
   "id": "nvidia-nim",
@@ -387,7 +410,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "NVIDIA NIM"
  },
  {
   "id": "ohmygpt-referral",
@@ -403,7 +427,8 @@
   "published": true,
   "verify_by": "auto",
   "usd": 20,
-  "via": "invite"
+  "via": "invite",
+  "group": "OhMyGPT"
  },
  {
   "id": "aihubmix-free",
@@ -417,7 +442,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "AIHubMix"
  },
  {
   "id": "dmxapi-discount",
@@ -431,7 +457,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "DMXAPI"
  },
  {
   "id": "google-ai-studio",
@@ -446,7 +473,8 @@
   "difficulty": 1,
   "published": true,
   "notes": "💡 辟谣：Google Cloud $300 试用金不能用于 Gemini API / Vertex 生成式模型（官方文档 2026-10-22），别被教程带偏；📈 免费档持续收紧（2025-12 曾 250→约 20 RPD），限额以 AI Studio 内实时显示为准；⚠️ Gemini CLI 已于 2026-06-18 被 Antigravity CLI 取代并停免费层（官方博客直核），免费 1000/天说法已过时",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "Google"
  },
  {
   "id": "google-student",
@@ -464,7 +492,8 @@
   "published": true,
   "verify_by": "auto",
   "usd": 240,
-  "via": "student"
+  "via": "student",
+  "group": "Google"
  },
  {
   "id": "github-student-pack",
@@ -479,7 +508,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "GitHub"
  },
  {
   "id": "azure-student",
@@ -495,7 +525,8 @@
   "published": true,
   "verify_by": "auto",
   "usd": 100,
-  "via": "student"
+  "via": "student",
+  "group": "Azure for Students"
  },
  {
   "id": "groq-free",
@@ -512,7 +543,8 @@
   "notes": "TODO：llama-3.3-70b-versatile 已转 Enterprise 档，免费表内不含；📈 RPD 曾 14400→约 1000（2026-09）收缩通道，高频重验",
   "verify_by": "auto",
   "daily_wan": 400,
-  "daily_note": "1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）"
+  "daily_note": "1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）",
+  "group": "Groq"
  },
  {
   "id": "sambanova-free",
@@ -529,7 +561,8 @@
   "published": true,
   "verify_by": "auto",
   "daily_wan": 20,
-  "daily_note": "官方 TPD 20 万 tokens 硬顶"
+  "daily_note": "官方 TPD 20 万 tokens 硬顶",
+  "group": "SambaNova"
  },
  {
   "id": "anthropic-credits",
@@ -546,7 +579,8 @@
   "verify_by": "auto",
   "usd": 5,
   "notes": "💡 官方文档+多方交叉（中置信度）",
-  "stale_reason": "源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）清洗机制:stale不宜挂主板块"
+  "stale_reason": "源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）清洗机制:stale不宜挂主板块",
+  "group": "Anthropic"
  },
  {
   "id": "zcode-linuxdo",
@@ -560,7 +594,8 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
   "published": false,
-  "notes": "⚠️ 主管深挖核实：1024 轮已于 10-26 09:00 失效、周末计划暂无新一轮——周期性活动（约每月 1-2 轮，下一节点预测 1111），盯 ZCode 客户端活动卡片；多号玩法拒绝收录"
+  "notes": "⚠️ 主管深挖核实：1024 轮已于 10-26 09:00 失效、周末计划暂无新一轮——周期性活动（约每月 1-2 轮，下一节点预测 1111），盯 ZCode 客户端活动卡片；多号玩法拒绝收录",
+  "group": "智谱 ZCode"
  },
  {
   "id": "aliyun-100coupon",
@@ -574,7 +609,8 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
   "published": false,
-  "notes": "TODO：登录确认适用范围与有效期"
+  "notes": "TODO：登录确认适用范围与有效期",
+  "group": "阿里云"
  },
  {
   "id": "ark-daily-5m",
@@ -592,7 +628,8 @@
   "notes": "💡 双线互证：爬虫助理会话（官方公告 2605938）+ 爬虫主管（协作奖励文档）；数据授权一经提交永久不可撤回——介意数据用途的别碰",
   "verify_by": "auto",
   "daily_wan": 500,
-  "daily_note": "官方口径：单模型每日 500 万 tokens"
+  "daily_note": "官方口径：单模型每日 500 万 tokens",
+  "group": "字节跳动"
  },
  {
   "id": "zhipu-flash-free",
@@ -607,7 +644,8 @@
   "verified_at": "2026-10-27T11:03:32Z",
   "difficulty": 1,
   "published": true,
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "智谱"
  },
  {
   "id": "deepseek-cache",
@@ -620,7 +658,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "DeepSeek"
  },
  {
   "id": "kimi-filefree",
@@ -633,7 +672,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "minimax-mplan",
@@ -646,7 +686,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "MiniMax 开放平台"
  },
  {
   "id": "siliconflow-freemodels",
@@ -661,7 +702,8 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
   "published": true,
-  "notes": "⚠️ R5 官方清单直核：此前『Hunyuan-MT/Xing4.0 对话免费』口径已过期"
+  "notes": "⚠️ R5 官方清单直核：此前『Hunyuan-MT/Xing4.0 对话免费』口径已过期",
+  "group": "硅基流动"
  },
  {
   "id": "scnet-maas",
@@ -675,7 +717,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
-  "published": true
+  "published": true,
+  "group": "SCNet"
  },
  {
   "id": "gpushare-nov",
@@ -689,7 +732,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
-  "published": true
+  "published": true,
+  "group": "恒源云"
  },
  {
   "id": "fastgpt-free",
@@ -703,7 +747,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "FastGPT"
  },
  {
   "id": "n8n-selfhost",
@@ -717,7 +762,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
-  "published": true
+  "published": true,
+  "group": "n8n"
  },
  {
   "id": "github-copilot-free",
@@ -734,7 +780,8 @@
   "published": true,
   "verify_by": "auto",
   "daily_wan": 4,
-  "daily_note": "月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）"
+  "daily_note": "月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）",
+  "group": "GitHub"
  },
  {
   "id": "302ai-payg",
@@ -747,7 +794,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "302.AI"
  },
  {
   "id": "ohmygpt-glmfree",
@@ -761,7 +809,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "OhMyGPT"
  },
  {
   "id": "mistral-free",
@@ -775,7 +824,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "Mistral"
  },
  {
   "id": "cohere-trial",
@@ -792,7 +842,8 @@
   "published": true,
   "rule": "Trial key 不可用于生产/商用",
   "daily_wan": 13,
-  "daily_note": "1000 次/月 ÷30 ×~4K tok/次 ≈13 万/天（估算）"
+  "daily_note": "1000 次/月 ÷30 ×~4K tok/次 ≈13 万/天（估算）",
+  "group": "Cohere"
  },
  {
   "id": "cerebras-credits",
@@ -809,7 +860,8 @@
   "difficulty": 2,
   "published": true,
   "rule": "Free Trial 限速约 5 RPM / 30K TPM / 100 万 tokens/日",
-  "notes": "💡 爬虫助理会话交叉验证：官方定价页明示绑卡门槛——主数据此前遗漏"
+  "notes": "💡 爬虫助理会话交叉验证：官方定价页明示绑卡门槛——主数据此前遗漏",
+  "group": "Cerebras"
  },
  {
   "id": "kimi-cache",
@@ -822,7 +874,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "openrouter-boost",
@@ -835,7 +888,8 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true
+  "published": true,
+  "group": "OpenRouter"
  },
  {
   "id": "sensenova-lite",
@@ -853,7 +907,8 @@
   "notes": "💡 官方新闻页原文核验；Token Plan 首月免费未能核实已删除",
   "daily_calls": 7200,
   "daily_wan": 720,
-  "daily_note": "每5h 1500 次→7200 次/天；×~1K tok/次图像当量≈720 万 tok/天（估算）"
+  "daily_note": "每5h 1500 次→7200 次/天；×~1K tok/次图像当量≈720 万 tok/天（估算）",
+  "group": "商汤"
  },
  {
   "id": "xfyun-offpeak",
@@ -868,7 +923,8 @@
   "difficulty": 1,
   "published": true,
   "notes": "💡 官方文档原文；另速通版 ¥999/月首月 ¥699",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "讯飞"
  },
  {
   "id": "deep-bailian-newuser-quota",
@@ -885,7 +941,8 @@
   "published": true,
   "tokens_wan": 1000,
   "via": "register",
-  "notes": "官方帮助文档逐字（高）；70+模型合计7000万+口径由价格页模型清单支撑（中高）"
+  "notes": "官方帮助文档逐字（高）；70+模型合计7000万+口径由价格页模型清单支撑（中高）",
+  "group": "阿里云"
  },
  {
   "id": "deep-bailian-quota-detail",
@@ -901,7 +958,8 @@
   "difficulty": 2,
   "published": true,
   "via": "register",
-  "notes": "官方价格页逐字（高）；async向量2000万是额度最大的单项"
+  "notes": "官方价格页逐字（高）；async向量2000万是额度最大的单项",
+  "group": "阿里云"
  },
  {
   "id": "deep-bailian-limited-free",
@@ -917,7 +975,8 @@
   "difficulty": 1,
   "published": true,
   "via": "api",
-  "notes": "官方价格页标注（高）"
+  "notes": "官方价格页标注（高）",
+  "group": "阿里云"
  },
  {
   "id": "deep-bailian-pricing",
@@ -933,7 +992,8 @@
   "difficulty": 1,
   "published": true,
   "via": "api",
-  "notes": "官方价格页逐字（高）"
+  "notes": "官方价格页逐字（高）",
+  "group": "阿里云"
  },
  {
   "id": "deep-kimi-membership",
@@ -950,7 +1010,8 @@
   "published": true,
   "cny": 15,
   "via": "subscribe",
-  "notes": "官方文档直核（高）；年付价39/79/159与Starter¥29等未见官方原文待核；折算：官方拒绝公布token口径"
+  "notes": "官方文档直核（高）；年付价39/79/159与Starter¥29等未见官方原文待核；折算：官方拒绝公布token口径",
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "deep-minimax-mplan",
@@ -967,7 +1028,8 @@
   "published": false,
   "usd": 5,
   "via": "subscribe",
-  "notes": "官方页仅补充包价格（高）；人民币档位与71亿token口径=GitHub yacuo/ai-coding-plan（中）；Starter¥29首促未见官方原文"
+  "notes": "官方页仅补充包价格（高）；人民币档位与71亿token口径=GitHub yacuo/ai-coding-plan（中）；Starter¥29首促未见官方原文",
+  "group": "MiniMax"
  },
  {
   "id": "deep-claude-pro-max",
@@ -984,7 +1046,8 @@
   "published": true,
   "usd": 20,
   "via": "subscribe",
-  "notes": "机制=官方帮助中心直核（高）；价格与倍数=第三方（低中）；绝对额度官方保密是确定性结论"
+  "notes": "机制=官方帮助中心直核（高）；价格与倍数=第三方（低中）；绝对额度官方保密是确定性结论",
+  "group": "Anthropic"
  },
  {
   "id": "deep-copilot-ai-credits",
@@ -1002,7 +1065,8 @@
   "usd": 15,
   "via": "subscribe",
   "notes": "官方文档直核（高）；plans.json若仍写300/1000 premium requests需更新",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "GitHub"
  },
  {
   "id": "deep-comate-autofree",
@@ -1019,7 +1083,8 @@
   "difficulty": 1,
   "published": false,
   "via": "install",
-  "notes": "多第三方交叉（掘金/知乎/腾讯云，中）；官方页price 404需JS，官方原文未直核——published=false待人工核后可发布"
+  "notes": "多第三方交叉（掘金/知乎/腾讯云，中）；官方页price 404需JS，官方原文未直核——published=false待人工核后可发布",
+  "group": "百度"
  },
  {
   "id": "deep-gemini-free-tier",
@@ -1035,7 +1100,8 @@
   "difficulty": 2,
   "published": true,
   "via": "free",
-  "notes": "官方文档直核（高）；合并时需修正deals.json/面板中的1500/天静态数字"
+  "notes": "官方文档直核（高）；合并时需修正deals.json/面板中的1500/天静态数字",
+  "group": "Google"
  },
  {
   "id": "deep-anthropic-trial-5usd",
@@ -1052,7 +1118,8 @@
   "published": false,
   "usd": 5,
   "via": "register",
-  "notes": "多第三方交叉（pricepertoken/getaiperks 2026-04 vs Reddit/klymentiev 报告不一致，中）"
+  "notes": "多第三方交叉（pricepertoken/getaiperks 2026-04 vs Reddit/klymentiev 报告不一致，中）",
+  "group": "Anthropic"
  },
  {
   "id": "deep-anthropic-startup",
@@ -1069,7 +1136,8 @@
   "published": false,
   "usd": 1000,
   "via": "register",
-  "notes": "搜索摘要口径（中高）；资格门槛高、非个人羊毛"
+  "notes": "搜索摘要口径（中高）；资格门槛高、非个人羊毛",
+  "group": "Anthropic"
  },
  {
   "id": "deep-anthropic-sub-credits",
@@ -1085,7 +1153,8 @@
   "difficulty": 2,
   "published": false,
   "via": "subscribe",
-  "notes": "搜索两源印证（中）；⚠️ R4 复核：『满 7 天』条款未获官方证实——Max/Team 含月度 API credits（10-07 起，灰度）为现行口径"
+  "notes": "搜索两源印证（中）；⚠️ R4 复核：『满 7 天』条款未获官方证实——Max/Team 含月度 API credits（10-07 起，灰度）为现行口径",
+  "group": "Anthropic"
  },
  {
   "id": "deep-cerebras-free-trial",
@@ -1102,7 +1171,8 @@
   "published": true,
   "usd": 5,
   "via": "register",
-  "notes": "$5试用=官网直核（高）；限速数字=pricepertoken（中）；底册「免费层1M/日」需改为2026-07前历史口径"
+  "notes": "$5试用=官网直核（高）；限速数字=pricepertoken（中）；底册「免费层1M/日」需改为2026-07前历史口径",
+  "group": "Cerebras"
  },
  {
   "id": "deep-scnet-ycjh-100cardhours",
@@ -1119,7 +1189,8 @@
   "published": true,
   "tokens_wan": 1000,
   "via": "register",
-  "notes": "官方活动页+官方邀测文档 help/docs/mainsite/activity/invite/quick-test（高）；活动页JS渲染需登录看余量"
+  "notes": "官方活动页+官方邀测文档 help/docs/mainsite/activity/invite/quick-test（高）；活动页JS渲染需登录看余量",
+  "group": "SCNet"
  },
  {
   "id": "deep-scnet-openclaw-10m",
@@ -1137,7 +1208,8 @@
   "published": false,
   "tokens_wan": 1000,
   "via": "client",
-  "notes": "来源=OSCHINA/东方财富报道（中高）；活动窗口已过但 openclaw 入口页仍在（当前可领性需登录核实）；0.1元/百万续购价为官宣口径（中高）"
+  "notes": "来源=OSCHINA/东方财富报道（中高）；活动窗口已过但 openclaw 入口页仍在（当前可领性需登录核实）；0.1元/百万续购价为官宣口径（中高）",
+  "group": "SCNet"
  },
  {
   "id": "deep-scnet-30m-promo",
@@ -1155,7 +1227,8 @@
   "published": false,
   "tokens_wan": 3000,
   "via": "register",
-  "notes": "存档用于节奏预测；来源腾讯云开发者教程（中）"
+  "notes": "存档用于节奏预测；来源腾讯云开发者教程（中）",
+  "group": "SCNet"
  },
  {
   "id": "deep-scnet-token-plan",
@@ -1172,7 +1245,8 @@
   "published": true,
   "cny": 30,
   "via": "subscribe",
-  "notes": "官方OpenAPI文档逐字（高）；倍率按周调整"
+  "notes": "官方OpenAPI文档逐字（高）；倍率按周调整",
+  "group": "SCNet"
  },
  {
   "id": "deep-scnet-deepseek-price",
@@ -1189,7 +1263,8 @@
   "published": false,
   "cny": 0.1,
   "via": "api",
-  "notes": "官方文档示例推算（高）+官宣续购价（中高）；免费对话=官方快速开始文档（中高）"
+  "notes": "官方文档示例推算（高）+官宣续购价（中高）；免费对话=官方快速开始文档（中高）",
+  "group": "SCNet"
  },
  {
   "id": "deep-volc-collab-reward",
@@ -1206,7 +1281,8 @@
   "published": true,
   "tokens_wan": 500,
   "via": "none",
-  "notes": "官方文档2026-10-12更新（高）。每日500万=每日奖励包上限，非无条件赠送；活动期原至2026-09-30（文档仍挂，疑已续期）；抵扣优先级：免费额度包>协作奖励包"
+  "notes": "官方文档2026-10-12更新（高）。每日500万=每日奖励包上限，非无条件赠送；活动期原至2026-09-30（文档仍挂，疑已续期）；抵扣优先级：免费额度包>协作奖励包",
+  "group": "字节跳动"
  },
  {
   "id": "deep-volc-free-quota",
@@ -1223,7 +1299,8 @@
   "published": true,
   "tokens_wan": 50,
   "via": "register",
-  "notes": "官方文档2026-08-24更新（高）；50万为aipromonow/linux.do交叉口径（中）"
+  "notes": "官方文档2026-08-24更新（高）；50万为aipromonow/linux.do交叉口径（中）",
+  "group": "字节跳动"
  },
  {
   "id": "deep-volc-coding-plan",
@@ -1240,7 +1317,8 @@
   "published": true,
   "cny": 40,
   "via": "subscribe",
-  "notes": "官方个人版概览文档（高）；次数口径来自活动页/搜索（中）；GLM-5.3与Kimi-K3抵扣系数高"
+  "notes": "官方个人版概览文档（高）；次数口径来自活动页/搜索（中）；GLM-5.3与Kimi-K3抵扣系数高",
+  "group": "字节跳动"
  },
  {
   "id": "deep-volc-coding-promo",
@@ -1257,7 +1335,8 @@
   "published": false,
   "cny": 9.9,
   "via": "subscribe",
-  "notes": "特惠规则=官方文档 docs.volcengine.com/docs/82379/1928220（高）；当前是否重启=活动页JS横幅（中）矛盾待人工核"
+  "notes": "特惠规则=官方文档 docs.volcengine.com/docs/82379/1928220（高）；当前是否重启=活动页JS横幅（中）矛盾待人工核",
+  "group": "字节跳动"
  },
  {
   "id": "deep-volc-21pro-daily",
@@ -1274,7 +1353,8 @@
   "published": false,
   "tokens_wan": 500,
   "via": "none",
-  "notes": "来源为官方域名文章（软文性质，中）；矛盾两口径均存档，合并时以控制台实时为准"
+  "notes": "来源为官方域名文章（软文性质，中）；矛盾两口径均存档，合并时以控制台实时为准",
+  "group": "字节跳动"
  },
  {
   "id": "deep-xunfei-1024-10yi",
@@ -1292,7 +1372,8 @@
   "published": false,
   "tokens_wan": 100000,
   "via": "register",
-  "notes": "31天倒计时推定截止≈11-24。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + X实测帖（数额/步骤多源一致=中高）；官方页面 JS 渲染未能直核（需登录）；31天规则与官方 Token Plan 文档一致（高）"
+  "notes": "31天倒计时推定截止≈11-24。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + X实测帖（数额/步骤多源一致=中高）；官方页面 JS 渲染未能直核（需登录）；31天规则与官方 Token Plan 文档一致（高）",
+  "group": "讯飞"
  },
  {
   "id": "deep-xunfei-token-plan",
@@ -1309,7 +1390,8 @@
   "published": true,
   "cny": 200,
   "via": "subscribe",
-  "notes": "官方文档逐字（高）。积分表全模型见 deep-dive/xunfei.md"
+  "notes": "官方文档逐字（高）。积分表全模型见 deep-dive/xunfei.md",
+  "group": "讯飞"
  },
  {
   "id": "deep-xunfei-coding-plan",
@@ -1327,7 +1409,8 @@
   "cny": 199,
   "via": "subscribe",
   "notes": "官方文档v2.3（2026-07-22，高）。无忧¥19/专业¥39已下线",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "讯飞"
  },
  {
   "id": "deep-xunfei-39-crash",
@@ -1343,7 +1426,8 @@
   "difficulty": 3,
   "published": true,
   "via": "subscribe",
-  "notes": "风险情报（中-高，smzdm复盘+新浪/知乎报道交叉；官方公告原文缺失）。收录纪律：¥3.9历史价只可作避雷存档，不得作为可领取羊毛收录；订阅类建议按月勿囤年卡"
+  "notes": "风险情报（中-高，smzdm复盘+新浪/知乎报道交叉；官方公告原文缺失）。收录纪律：¥3.9历史价只可作避雷存档，不得作为可领取羊毛收录；订阅类建议按月勿囤年卡",
+  "group": "讯飞"
  },
  {
   "id": "deep-xunfei-claude-code",
@@ -1359,7 +1443,8 @@
   "difficulty": 2,
   "published": true,
   "via": "api",
-  "notes": "官方文档（高）"
+  "notes": "官方文档（高）",
+  "group": "讯飞"
  },
  {
   "id": "deep-zhipu-1024-5yi",
@@ -1377,7 +1462,8 @@
   "published": false,
   "tokens_wan": 50000,
   "via": "client",
-  "notes": "已失效（存档用于预测下一轮节奏：智谱大礼包≈每月1-2轮，下一节点1111）。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + smzdm post.smzdm.com/p/ak8lw7xk + 官方活动页存在（JS）。20万份为搜索摘要数字（中）；数额/截止时间多源一致（高）"
+  "notes": "已失效（存档用于预测下一轮节奏：智谱大礼包≈每月1-2轮，下一节点1111）。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + smzdm post.smzdm.com/p/ak8lw7xk + 官方活动页存在（JS）。20万份为搜索摘要数字（中）；数额/截止时间多源一致（高）",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-weekend-3yi",
@@ -1394,7 +1480,8 @@
   "published": false,
   "tokens_wan": 30000,
   "via": "client",
-  "notes": "周期性活动，扫描日未见新一轮（待盯）。来源：smzdm post.smzdm.com/p/aqrx263p（高，含各期窗口明细）+ 知乎教程。新用户 1 亿叠加为中置信单源"
+  "notes": "周期性活动，扫描日未见新一轮（待盯）。来源：smzdm post.smzdm.com/p/aqrx263p（高，含各期窗口明细）+ 知乎教程。新用户 1 亿叠加为中置信单源",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-night-global",
@@ -1411,7 +1498,8 @@
   "difficulty": 2,
   "published": false,
   "via": "client",
-  "notes": "已失效。夜间免费型活动可能复刻，作节奏参考。来源：smzdm+搜索摘要（中-高）"
+  "notes": "已失效。夜间免费型活动可能复刻，作节奏参考。来源：smzdm+搜索摘要（中-高）",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-start-plan",
@@ -1429,7 +1517,8 @@
   "published": true,
   "via": "register",
   "notes": "⏰ 中置信（官方活动页 JS 渲染），10-28 23:59 截止——最后的窗口，尽快领",
-  "tokens_wan": 300
+  "tokens_wan": 300,
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-trial-card",
@@ -1445,7 +1534,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "notes": "折算参考：2000积分≈Flash输出250万token（按官方公式）。来源：官方FAQ（高）+知乎 p/2076249896244473928 实测（限量数字中）。当前是否仍在发需登录 bigmodel.cn 确认"
+  "notes": "折算参考：2000积分≈Flash输出250万token（按官方公式）。来源：官方FAQ（高）+知乎 p/2076249896244473928 实测（限量数字中）。当前是否仍在发需登录 bigmodel.cn 确认",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-coding-plan-points",
@@ -1462,7 +1552,8 @@
   "published": true,
   "cny": 94.4,
   "via": "subscribe",
-  "notes": "积分→token折算率官方原文（全网罕见）。来源：官方 overview/usage-revision/quick-start 三个 .md 直出（高）；价格为 zcode.z.ai 官方页（高）"
+  "notes": "积分→token折算率官方原文（全网罕见）。来源：官方 overview/usage-revision/quick-start 三个 .md 直出（高）；价格为 zcode.z.ai 官方页（高）",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-invite-tokens",
@@ -1479,7 +1570,8 @@
   "published": true,
   "tokens_wan": 2000,
   "via": "invite",
-  "notes": "官方推广文档 mdx 原文（高），页面最后更新 2026-10-21。与 deals.json zhipu-signup 条一致，此为逐字复核版"
+  "notes": "官方推广文档 mdx 原文（高），页面最后更新 2026-10-21。与 deals.json zhipu-signup 条一致，此为逐字复核版",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-free-models",
@@ -1495,7 +1587,8 @@
   "difficulty": 1,
   "published": true,
   "via": "api",
-  "notes": "官方定价页 .md 直出（高）。⚠️ deals.json 旧条目「GLM-5.3-Flash 不免费」与定价页「限免」矛盾，合并时以定价页为准复核"
+  "notes": "官方定价页 .md 直出（高）。⚠️ deals.json 旧条目「GLM-5.3-Flash 不免费」与定价页「限免」矛盾，合并时以定价页为准复核",
+  "group": "智谱"
  },
  {
   "id": "deep-trae-cn-pricing",
@@ -1512,7 +1605,8 @@
   "published": true,
   "cny": 49,
   "via": "subscribe",
-  "notes": "官方价目页直核（高）；底册「五档」确认但需改积分制口径"
+  "notes": "官方价目页直核（高）；底册「五档」确认但需改积分制口径",
+  "group": "Trae 国内版"
  },
  {
   "id": "deep-trae-intl-pricing",
@@ -1529,7 +1623,8 @@
   "published": false,
   "usd": 10,
   "via": "subscribe",
-  "notes": "低-中置信；收录需登录 trae.ai 复核"
+  "notes": "低-中置信；收录需登录 trae.ai 复核",
+  "group": "Trae 国际版"
  },
  {
   "id": "deep-qoder-cn-free",
@@ -1545,7 +1640,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "notes": "阿里云开发者社区文（中高）；底册「100 Credits/月」补全认证前提"
+  "notes": "阿里云开发者社区文（中高）；底册「100 Credits/月」补全认证前提",
+  "group": "Qoder（阿里）"
  },
  {
   "id": "deep-qoder-cn-paid",
@@ -1562,7 +1658,8 @@
   "published": true,
   "cny": 59,
   "via": "subscribe",
-  "notes": "阿里云开发者社区文（中高）"
+  "notes": "阿里云开发者社区文（中高）",
+  "group": "Qoder（阿里）"
  },
  {
   "id": "deep-codebuddy-free-kimi",
@@ -1578,7 +1675,8 @@
   "difficulty": 1,
   "published": true,
   "via": "client",
-  "notes": "腾讯 InfoQ 官方号+知乎交叉（中高）；价目为多源聚合（中）"
+  "notes": "腾讯 InfoQ 官方号+知乎交叉（中高）；价目为多源聚合（中）",
+  "group": "腾讯"
  },
  {
   "id": "deep-codebuddy-pricing",
@@ -1595,7 +1693,8 @@
   "published": false,
   "cny": 58,
   "via": "subscribe",
-  "notes": "多源聚合（dayuyun/新浪财经/官方公告报道，中）；登录 codebuddy.cn 复核后可升verified"
+  "notes": "多源聚合（dayuyun/新浪财经/官方公告报道，中）；登录 codebuddy.cn 复核后可升verified",
+  "group": "腾讯"
  },
  {
   "id": "deep-codegeex-free",
@@ -1611,7 +1710,8 @@
   "difficulty": 1,
   "published": true,
   "via": "client",
-  "notes": "官网口径+2026评测交叉（高）"
+  "notes": "官网口径+2026评测交叉（高）",
+  "group": "智谱"
  },
  {
   "id": "deep-fitten-free",
@@ -1627,7 +1727,8 @@
   "difficulty": 1,
   "published": false,
   "via": "client",
-  "notes": "官网宣传口径（中）；额度数字未能核实，published=false"
+  "notes": "官网宣传口径（中）；额度数字未能核实，published=false",
+  "group": "Fitten Code（非十科技）"
  },
  {
   "id": "deep-luchentech-welfare",
@@ -1644,7 +1745,8 @@
   "published": true,
   "cny": 50,
   "via": "invite",
-  "notes": "官方福利中心文档直核（高）；分享50元券有效期仅7天，收录时标注"
+  "notes": "官方福利中心文档直核（高）；分享50元券有效期仅7天，收录时标注",
+  "group": "潞晨云"
  },
  {
   "id": "deep-luchentech-opensource",
@@ -1661,7 +1763,8 @@
   "published": true,
   "cny": 500,
   "via": "contribute",
-  "notes": "colossalai.org 官方福利页直核（高）；知乎口径「前3000名注册送50元/企业认证送1000元」未见官方页，待核不发布"
+  "notes": "colossalai.org 官方福利页直核（高）；知乎口径「前3000名注册送50元/企业认证送1000元」未见官方页，待核不发布",
+  "group": "潞晨云"
  },
  {
   "id": "deep-wuwenqiong-status",
@@ -1677,7 +1780,8 @@
   "difficulty": 3,
   "published": false,
   "via": "register",
-  "notes": "网易/腾讯新闻2026-10报道交叉（中高）；从可领清单移除"
+  "notes": "网易/腾讯新闻2026-10报道交叉（中高）；从可领清单移除",
+  "group": "无问芯穹"
  },
  {
   "id": "deep-paratera-trial",
@@ -1693,7 +1797,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "官网新闻页（中）；具体数额未核实不发布"
+  "notes": "官网新闻页（中）；具体数额未核实不发布",
+  "group": "并行智算（并行科技）"
  },
  {
   "id": "deep-invocloud-4090",
@@ -1709,7 +1814,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "公开搜索无果（低）；不发布"
+  "notes": "公开搜索无果（低）；不发布",
+  "group": "英博云"
  },
  {
   "id": "deep-aigalaxy-4090",
@@ -1726,7 +1832,8 @@
   "published": false,
   "cny": 1.35,
   "via": "subscribe",
-  "notes": "知乎实测文（中）；价格可参考、新人礼不发布"
+  "notes": "知乎实测文（中）；价格可参考、新人礼不发布",
+  "group": "智星云"
  },
  {
   "id": "deep-autodl-student",
@@ -1742,7 +1849,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "官方文档结构存在（中）+第三方折扣数字（低中）——需人工注册核实后再发布"
+  "notes": "官方文档结构存在（中）+第三方折扣数字（低中）——需人工注册核实后再发布",
+  "group": "AutoDL"
  },
  {
   "id": "deep-gpushare-student",
@@ -1758,7 +1866,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "知乎/CSDN教程交叉（中）；实名时序坑点值得收录（先实名再充值）"
+  "notes": "知乎/CSDN教程交叉（中）；实名时序坑点值得收录（先实名再充值）",
+  "group": "恒源云 GpuShare"
  },
  {
   "id": "deep-comate-autofree-r2",
@@ -1776,7 +1885,8 @@
   "published": true,
   "cny": 199,
   "via": "subscribe",
-  "notes": "升级为verified+published=true：官方百度智能云文章（高）+知乎/CSDN/腾讯云多源交叉；替代第一轮 deep-comate-autofree（partial）；知乎「请求包18/33/150」口径未在官方文出现，不收录"
+  "notes": "升级为verified+published=true：官方百度智能云文章（高）+知乎/CSDN/腾讯云多源交叉；替代第一轮 deep-comate-autofree（partial）；知乎「请求包18/33/150」口径未在官方文出现，不收录",
+  "group": "百度"
  },
  {
   "id": "deep-comate-signup",
@@ -1793,7 +1903,8 @@
   "published": true,
   "cny": 10,
   "via": "register",
-  "notes": "官方域文章+InfoQ 交叉（中高）；价格页 comate.baidu.com/zh/pricing 为 JS 渲染未能直核原表"
+  "notes": "官方域文章+InfoQ 交叉（中高）；价格页 comate.baidu.com/zh/pricing 为 JS 渲染未能直核原表",
+  "group": "百度"
  },
  {
   "id": "deep-laozhang-pricing",
@@ -1810,7 +1921,8 @@
   "published": true,
   "usd": 0.44,
   "via": "api",
-  "notes": "官方docs .md直核（高）；中转站风险提示：余额无托管"
+  "notes": "官方docs .md直核（高）；中转站风险提示：余额无托管",
+  "group": "laozhang.ai（老张）"
  },
  {
   "id": "deep-deepbricks-status",
@@ -1826,7 +1938,8 @@
   "difficulty": 3,
   "published": false,
   "via": "api",
-  "notes": "实测直核（高）"
+  "notes": "实测直核（高）",
+  "group": "Deepbricks"
  },
  {
   "id": "deep-dmxapi-free-models",
@@ -1842,7 +1955,8 @@
   "difficulty": 2,
   "published": false,
   "via": "api",
-  "notes": "搜狐推广文（中）；7折不发布（未能核实）"
+  "notes": "搜狐推广文（中）；7折不发布（未能核实）",
+  "group": "DMXAPI"
  },
  {
   "id": "deep-gemini-cli-free",
@@ -1860,7 +1974,8 @@
   "via": "register",
   "notes": "官方宣传口径=README/官网（中高）；Pro实领=GitHub issues #3838/#4300/#10513社区汇总（中）——双口径收录",
   "daily_wan": 400,
-  "daily_note": "官方宣传 1000 请求/天 ×~4K ≈400 万/天；Pro 档实领更少（估算）"
+  "daily_note": "官方宣传 1000 请求/天 ×~4K ≈400 万/天；Pro 档实领更少（估算）",
+  "group": "Google"
  },
  {
   "id": "deep-cursor-x-subscription",
@@ -1877,7 +1992,8 @@
   "published": true,
   "usd": 8,
   "via": "subscribe",
-  "notes": "官方pricing页+x.ai/news/x-subscription直核（高）；背景：SpaceX 600亿美元全股票收购Anysphere（6-16宣布/8-14交割，第三方报道中）；社区对套餐重叠有抱怨，定价动荡期数据时效敏感"
+  "notes": "官方pricing页+x.ai/news/x-subscription直核（高）；背景：SpaceX 600亿美元全股票收购Anysphere（6-16宣布/8-14交割，第三方报道中）；社区对套餐重叠有抱怨，定价动荡期数据时效敏感",
+  "group": "Cursor"
  },
  {
   "id": "deep-windsurf-devin",
@@ -1894,7 +2010,8 @@
   "published": true,
   "usd": 20,
   "via": "subscribe",
-  "notes": "官方页直核（高）；底册Windsurf独立条目需改挂Devin口径"
+  "notes": "官方页直核（高）；底册Windsurf独立条目需改挂Devin口径",
+  "group": "Windsurf（并入Devin/Cognition）"
  },
  {
   "id": "deep-xai-grok-code-status",
@@ -1910,7 +2027,8 @@
   "difficulty": 2,
   "published": true,
   "via": "subscribe",
-  "notes": "x.ai官方新闻页（高）+R1底册口径（中）"
+  "notes": "x.ai官方新闻页（高）+R1底册口径（中）",
+  "group": "xAI"
  },
  {
   "id": "deep-xunfei-1024-10yi-r2",
@@ -1928,7 +2046,8 @@
   "published": true,
   "tokens_wan": 100000,
   "via": "register",
-  "notes": "升级为verified：三源交叉（网易转载IT时代网/公众号卢斯克 2026-10-26 19:35 实测文 www.163.com/dy/article/LA6K9DKK05527PMU.html + X帖 + 知乎教程），活动确认在线；官方页面JS无法直核原文，31天口径保持中置信。替代第一轮 partial 条目 deep-xunfei-1024-10yi"
+  "notes": "升级为verified：三源交叉（网易转载IT时代网/公众号卢斯克 2026-10-26 19:35 实测文 www.163.com/dy/article/LA6K9DKK05527PMU.html + X帖 + 知乎教程），活动确认在线；官方页面JS无法直核原文，31天口径保持中置信。替代第一轮 partial 条目 deep-xunfei-1024-10yi",
+  "group": "讯飞"
  },
  {
   "id": "deep-xunfei-wechat-miniapp",
@@ -1946,7 +2065,8 @@
   "published": false,
   "tokens_wan": 100000,
   "via": "register",
-  "notes": "新发现活动（smzdm单源，中置信）；需登录讯飞开放平台小程序专区核实入口"
+  "notes": "新发现活动（smzdm单源，中置信）；需登录讯飞开放平台小程序专区核实入口",
+  "group": "讯飞"
  },
  {
   "id": "deep-xunfei-workbuddy",
@@ -1962,7 +2082,8 @@
   "difficulty": 2,
   "published": false,
   "via": "api",
-  "notes": "2026-10-26 实测文（中高）；workbuddy 同时出现在智谱 Coding Plan 支持工具清单——跨厂客户端工具，收录时注意区分计费体系"
+  "notes": "2026-10-26 实测文（中高）；workbuddy 同时出现在智谱 Coding Plan 支持工具清单——跨厂客户端工具，收录时注意区分计费体系",
+  "group": "讯飞"
  },
  {
   "id": "deep-zhipu-start-plan-r2",
@@ -1980,7 +2101,8 @@
   "published": false,
   "tokens_wan": 300,
   "via": "client",
-  "notes": "证据链补全：CSDN实测文（5天免费）blog.csdn.net/jiangfuofu555/article/details/162196304 + linux.do 社区（约300万，俗称免费鸡蛋）+ 官方changelog搜索摘要含Start Plan字样；维持partial、published=false，明日截止前需人工登录核"
+  "notes": "证据链补全：CSDN实测文（5天免费）blog.csdn.net/jiangfuofu555/article/details/162196304 + linux.do 社区（约300万，俗称免费鸡蛋）+ 官方changelog搜索摘要含Start Plan字样；维持partial、published=false，明日截止前需人工登录核",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-zcode-invite-r2",
@@ -1996,7 +2118,8 @@
   "difficulty": 1,
   "published": true,
   "via": "invite",
-  "notes": "官方 changelog 原文（高）；活动仍在客户端进行中；「免费蹬蹬」为官方活动名原样收录"
+  "notes": "官方 changelog 原文（高）；活动仍在客户端进行中；「免费蹬蹬」为官方活动名原样收录",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-trial-card-gift-r2",
@@ -2012,7 +2135,8 @@
   "difficulty": 1,
   "published": false,
   "via": "invite",
-  "notes": "linux.do/Telegram 推送文案（中）；与官方FAQ「每天限量1万张」互为补充——老用户邀请是发放通道之一"
+  "notes": "linux.do/Telegram 推送文案（中）；与官方FAQ「每天限量1万张」互为补充——老用户邀请是发放通道之一",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-ban-case-r2",
@@ -2028,7 +2152,8 @@
   "difficulty": 3,
   "published": false,
   "via": "subscribe",
-  "notes": "社区案例（中）；收录站应提示：单人单环境使用、避免账号共享场景"
+  "notes": "社区案例（中）；收录站应提示：单人单环境使用、避免账号共享场景",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-zcode-free-tier-r2",
@@ -2044,7 +2169,8 @@
   "difficulty": 1,
   "published": false,
   "via": "client",
-  "notes": "官方changelog直核免费层存在（高）；数额未知；「¥70标准版」仅搜索摘要单源（低）不收录数字"
+  "notes": "官方changelog直核免费层存在（高）；数额未知；「¥70标准版」仅搜索摘要单源（低）不收录数字",
+  "group": "智谱"
  },
  {
   "id": "deep-sensenova-tokenplan-beta",
@@ -2060,7 +2186,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "CSDN攻略×3交叉（2026-05~09，中）；官方页证书校验异常未能直核——主会话可安排浏览器登录核实后发布"
+  "notes": "CSDN攻略×3交叉（2026-05~09，中）；官方页证书校验异常未能直核——主会话可安排浏览器登录核实后发布",
+  "group": "商汤"
  },
  {
   "id": "deep-zhipu-taobao-resale-warning",
@@ -2076,7 +2203,8 @@
   "difficulty": 3,
   "published": true,
   "via": "subscribe",
-  "notes": "淘宝商品页实存（中高）+官方红线条款（高）；作为避雷条目发布"
+  "notes": "淘宝商品页实存（中高）+官方红线条款（高）；作为避雷条目发布",
+  "group": "智谱"
  },
  {
   "id": "deep-stepfun-step5-preview-price",
@@ -2094,7 +2222,8 @@
   "cny": 7,
   "via": "api",
   "notes": "官方发布口径经新浪/网易报道交叉（中高）；底册「U系公测免费」待人工登录复核",
-  "verify_by": "auto"
+  "verify_by": "auto",
+  "group": "阶跃星辰 StepFun"
  },
  {
   "id": "deep-stepfun-neo-phone",
@@ -2111,7 +2240,8 @@
   "published": false,
   "cny": 3999,
   "via": "hardware",
-  "notes": "新浪/腾讯/Binance Square 报道交叉（中高）；1200亿 token 版为微博单源（低）"
+  "notes": "新浪/腾讯/Binance Square 报道交叉（中高）；1200亿 token 版为微博单源（低）",
+  "group": "阶跃星辰 StepFun"
  },
  {
   "id": "deep-zhipu-qingyan-status",
@@ -2127,7 +2257,8 @@
   "difficulty": 3,
   "published": false,
   "via": "register",
-  "notes": "搜索无官方限时会员活动页（低价值确认）"
+  "notes": "搜索无官方限时会员活动页（低价值确认）",
+  "group": "智谱清言（App）"
  },
  {
   "id": "deep-xai-grok-code-status-r3",
@@ -2143,7 +2274,8 @@
   "difficulty": 2,
   "published": true,
   "via": "subscribe",
-  "notes": "x.ai 官方新闻页（高）+R2 cursor.com/pricing 直核"
+  "notes": "x.ai 官方新闻页（高）+R2 cursor.com/pricing 直核",
+  "group": "xAI"
  },
  {
   "id": "deep-anthropic-code-limits-r4",
@@ -2159,7 +2291,8 @@
   "difficulty": 2,
   "published": true,
   "via": "subscribe",
-  "notes": "官方页逐字（高）；取代第一轮 partial 的倍数猜测条目"
+  "notes": "官方页逐字（高）；取代第一轮 partial 的倍数猜测条目",
+  "group": "Anthropic"
  },
  {
   "id": "deep-anthropic-sub-credits-r4",
@@ -2176,7 +2309,8 @@
   "published": false,
   "usd": 100,
   "via": "subscribe",
-  "notes": "Reddit 官方公告转述+we0.ai 等多源（中高）；具体数额与7天条件需登录 Settings 核实"
+  "notes": "Reddit 官方公告转述+we0.ai 等多源（中高）；具体数额与7天条件需登录 Settings 核实",
+  "group": "Anthropic"
  },
  {
   "id": "deep-copilot-ai-credits-r4",
@@ -2193,7 +2327,8 @@
   "published": true,
   "usd": 10,
   "via": "subscribe",
-  "notes": "plans页直核（R2高）+Reddit/HN 公告确认（中高）；deals 若有 premium requests 表述需改"
+  "notes": "plans页直核（R2高）+Reddit/HN 公告确认（中高）；deals 若有 premium requests 表述需改",
+  "group": "GitHub"
  },
  {
   "id": "deep-gemini-cli-retired-r4",
@@ -2209,7 +2344,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "notes": "官方博客+README+GitHub discussion 27274 直核（高）；free-tier-survival.md 已同步更正；主数据 Gemini CLI 条目需加停服注脚"
+  "notes": "官方博客+README+GitHub discussion 27274 直核（高）；free-tier-survival.md 已同步更正；主数据 Gemini CLI 条目需加停服注脚",
+  "group": "Google"
  },
  {
   "id": "deep-chatglm-status-r4",
@@ -2225,7 +2361,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "两次直抓失败定案（低价值确认）；浏览器登录可破但非本轮配额优先项"
+  "notes": "两次直抓失败定案（低价值确认）；浏览器登录可破但非本轮配额优先项",
+  "group": "智谱清言 chatglm.cn"
  },
  {
   "id": "deep-cursor-x-subscription-r4",
@@ -2242,7 +2379,8 @@
   "published": true,
   "usd": 8,
   "via": "subscribe",
-  "notes": "x.ai 官方新闻页逐字（高）；修正 R2「$8 仅 Grok 模型」的过严表述——$8 含 Cursor 用量，仅第三方模型受限"
+  "notes": "x.ai 官方新闻页逐字（高）；修正 R2「$8 仅 Grok 模型」的过严表述——$8 含 Cursor 用量，仅第三方模型受限",
+  "group": "Cursor"
  },
  {
   "id": "deep-smzdm-list-series",
@@ -2258,7 +2396,8 @@
   "difficulty": 1,
   "published": false,
   "via": "wechat_repost",
-  "notes": "本轮最高价值发现；10-21版全文直核（高）；内部信源不上站（老板指令）"
+  "notes": "本轮最高价值发现；10-21版全文直核（高）；内部信源不上站（老板指令）",
+  "group": "smzdm 权益清单系列（情报源）"
  },
  {
   "id": "deep-autoclaw-promos",
@@ -2275,7 +2414,8 @@
   "published": false,
   "tokens_wan": 20000,
   "via": "client",
-  "notes": "smzdm 清单帖直核（高）；活动已过窗存档——AutoClaw 长期 2 亿注册礼值得作为新条目人工复核后发布"
+  "notes": "smzdm 清单帖直核（高）；活动已过窗存档——AutoClaw 长期 2 亿注册礼值得作为新条目人工复核后发布",
+  "group": "智谱 AutoClaw"
  },
  {
   "id": "deep-workbuddy-oct-promos",
@@ -2291,7 +2431,8 @@
   "difficulty": 2,
   "published": false,
   "via": "client",
-  "notes": "smzdm 清单帖直核（中高）；Hy 系限免至 10/31 仍可冲；教师版值得单列人群条目"
+  "notes": "smzdm 清单帖直核（中高）；Hy 系限免至 10/31 仍可冲；教师版值得单列人群条目",
+  "group": "腾讯 WorkBuddy"
  },
  {
   "id": "deep-tencent-tokenhub",
@@ -2308,7 +2449,8 @@
   "published": false,
   "tokens_wan": 100,
   "via": "register",
-  "notes": "smzdm 清单帖口径（中）；需登录控制台复核"
+  "notes": "smzdm 清单帖口径（中）；需登录控制台复核",
+  "group": "腾讯"
  },
  {
   "id": "deep-tmall-1111-token",
@@ -2326,7 +2468,8 @@
   "published": false,
   "cny": 38.99,
   "via": "purchase",
-  "notes": "smzdm 清单帖11月预热段（中）；11月主战场，主会话可作双11攻略素材"
+  "notes": "smzdm 清单帖11月预热段（中）；11月主战场，主会话可作双11攻略素材",
+  "group": "多厂商（天猫旗舰店）"
  },
  {
   "id": "deep-deepseek-search-free",
@@ -2343,7 +2486,8 @@
   "difficulty": 1,
   "published": false,
   "via": "api",
-  "notes": "smzdm 清单帖口径（中）"
+  "notes": "smzdm 清单帖口径（中）",
+  "group": "DeepSeek"
  },
  {
   "id": "deep-qoder-daily-credits",
@@ -2359,7 +2503,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "notes": "smzdm 清单帖直核（中高）；与R2口径互补，以控制台实显为准"
+  "notes": "smzdm 清单帖直核（中高）；与R2口径互补，以控制台实显为准",
+  "group": "Qoder（阿里）"
  },
  {
   "id": "deep-intern-inkpoint",
@@ -2375,7 +2520,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "smzdm 清单帖口径（中）；5000万/墨点大额，值得人工复核"
+  "notes": "smzdm 清单帖口径（中）；5000万/墨点大额，值得人工复核",
+  "group": "书生·端砚（上海AI实验室）"
  },
  {
   "id": "deep-amd-tokenfactory",
@@ -2391,7 +2537,8 @@
   "difficulty": 1,
   "published": false,
   "via": "register",
-  "notes": "smzdm 清单帖口径（中）"
+  "notes": "smzdm 清单帖口径（中）",
+  "group": "AMD Token Factory"
  },
  {
   "id": "deep-xfyun-twinsplan",
@@ -2408,7 +2555,8 @@
   "published": false,
   "tokens_wan": 10000000,
   "via": "register",
-  "notes": "转载单源（中）；需讯飞开放平台官方页核实报名入口——若属实为面向团队的最大额公开活动"
+  "notes": "转载单源（中）；需讯飞开放平台官方页核实报名入口——若属实为面向团队的最大额公开活动",
+  "group": "讯飞"
  },
  {
   "id": "deep-siliconflow-guide-r5",
@@ -2425,7 +2573,8 @@
   "published": true,
   "tokens_wan": 2000,
   "via": "invite",
-  "notes": "攻略已写盘 guides/siliconflow-guide.md；免费池取消为重要口径变化"
+  "notes": "攻略已写盘 guides/siliconflow-guide.md；免费池取消为重要口径变化",
+  "group": "硅基流动"
  },
  {
   "id": "deep-kimi-voucher-r5",
@@ -2442,7 +2591,8 @@
   "published": true,
   "cny": 15,
   "via": "register",
-  "notes": "攻略已写盘 guides/kimi-guide.md；官方帮助文档直核（高）"
+  "notes": "攻略已写盘 guides/kimi-guide.md；官方帮助文档直核（高）",
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "deep-grok-codefast-price",
@@ -2459,7 +2609,8 @@
   "published": false,
   "usd": 0.2,
   "via": "api",
-  "notes": "第三方 tracker 交叉（中）；官方页未直核现价"
+  "notes": "第三方 tracker 交叉（中）；官方页未直核现价",
+  "group": "xAI"
  },
  {
   "id": "deep-cohere-commanda-r5",
@@ -2475,7 +2626,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "notes": "多源交叉（中高）；A3 攻略口径一致"
+  "notes": "多源交叉（中高）；A3 攻略口径一致",
+  "group": "Cohere"
  },
  {
   "id": "deep-together-nofree-r5",
@@ -2492,7 +2644,8 @@
   "published": true,
   "usd": 5,
   "via": "register",
-  "notes": "官方文档口径+社区报告交叉（中高）"
+  "notes": "官方文档口径+社区报告交叉（中高）",
+  "group": "Together AI"
  },
  {
   "id": "deep-wechat-watchlist",
@@ -2508,7 +2661,8 @@
   "difficulty": 1,
   "published": false,
   "via": "wechat_repost",
-  "notes": "供老板人工关注；每周与 smzdm 清单帖 diff 一次；内部信源不上站（老板指令）"
+  "notes": "供老板人工关注；每周与 smzdm 清单帖 diff 一次；内部信源不上站（老板指令）",
+  "group": "公众号关注清单（运营情报）"
  },
  {
   "id": "deep-kimi-k25-offline-r6",
@@ -2524,7 +2678,8 @@
   "difficulty": 1,
   "published": true,
   "via": "api",
-  "notes": "官方 changelog 逐字直核（高）；kimi-guide.md 已同步修正；主数据涉及 K2.5 开放平台口径的条目建议标注下线"
+  "notes": "官方 changelog 逐字直核（高）；kimi-guide.md 已同步修正；主数据涉及 K2.5 开放平台口径的条目建议标注下线",
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "deep-zhipu-startplan-r6",
@@ -2543,7 +2698,8 @@
   "via": "register",
   "notes": "💡 老板 2026-10-27 亲测官方客户端「升级套餐」页截图直核——此前『约 300 万』估算作废，实测口径大 13 倍；与 r7 定版重复，已归档防重复计账（等效口径 v2.4）",
   "eq_wan": 13645,
-  "eq_note": "同 r7 口径（体验套餐双条目同折）"
+  "eq_note": "同 r7 口径（体验套餐双条目同折）",
+  "group": "智谱"
  },
  {
   "id": "deep-tencent-yuanqi-verified-r6",
@@ -2560,7 +2716,8 @@
   "published": true,
   "tokens_wan": 100,
   "via": "register",
-  "notes": "官方指南页逐字（高）；修正 deep-r5 的 1 亿口径（smzdm 单源有误）；长期月度型额度仍有收录价值"
+  "notes": "官方指南页逐字（高）；修正 deep-r5 的 1 亿口径（smzdm 单源有误）；长期月度型额度仍有收录价值",
+  "group": "腾讯"
  },
  {
   "id": "deep-xfyun-twinsplan-r6",
@@ -2577,7 +2734,8 @@
   "published": false,
   "tokens_wan": 10000000,
   "via": "register",
-  "notes": "❌ 老板 2026-10-27 裁决：『1000 亿 tokens』纯属扯淡，下架——R6 所核 startup 孵化口径系申请制营销话术，非一般用户可领补贴，勿当羊毛传播"
+  "notes": "❌ 老板 2026-10-27 裁决：『1000 亿 tokens』纯属扯淡，下架——R6 所核 startup 孵化口径系申请制营销话术，非一般用户可领补贴，勿当羊毛传播",
+  "group": "讯飞"
  },
  {
   "id": "deep-xfyun-spark-freepack-r6",
@@ -2594,7 +2752,8 @@
   "published": true,
   "tokens_wan": 200,
   "via": "register",
-  "notes": "官方活动页直核（高）；免费包真实性高但页面年代待控制台验证"
+  "notes": "官方活动页直核（高）；免费包真实性高但页面年代待控制台验证",
+  "group": "讯飞"
  },
  {
   "id": "deep-sensenova-status-r6",
@@ -2610,7 +2769,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "三路尝试已尽（工具侧限制非情报缺失）；建议老板人工浏览器核一次即可升级"
+  "notes": "三路尝试已尽（工具侧限制非情报缺失）；建议老板人工浏览器核一次即可升级",
+  "group": "商汤"
  },
  {
   "id": "deep-grok-codefast-r6",
@@ -2627,7 +2787,8 @@
   "published": true,
   "usd": 1,
   "via": "api",
-  "notes": "官方模型页直核（高）；R5 的第三方 Code Fast 价格锚点作废"
+  "notes": "官方模型页直核（高）；R5 的第三方 Code Fast 价格锚点作废",
+  "group": "xAI"
  },
  {
   "id": "deep-intern-inkstone-r6",
@@ -2643,7 +2804,8 @@
   "difficulty": 2,
   "published": false,
   "via": "register",
-  "notes": "JS 壳+登录墙待人工核；维持 R5 partial 不升级"
+  "notes": "JS 壳+登录墙待人工核；维持 R5 partial 不升级",
+  "group": "书生·端砚（上海AI实验室）"
  },
  {
   "id": "deep-zhipu-trialplan-r7",
@@ -2662,7 +2824,8 @@
   "via": "client",
   "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事",
   "eq_wan": 13645,
-  "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）"
+  "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）",
+  "group": "智谱"
  },
  {
   "id": "deep-zhipu-flash-correction-r7",
@@ -2678,7 +2841,8 @@
   "difficulty": 1,
   "published": true,
   "via": "api",
-  "notes": "官方定价页 .md 直核（高）；zhipu-weekly.md 已同步勘误"
+  "notes": "官方定价页 .md 直核（高）；zhipu-weekly.md 已同步勘误",
+  "group": "智谱"
  },
  {
   "id": "deep-kimi-trial-r7",
@@ -2695,7 +2859,8 @@
   "published": false,
   "cny": 15,
   "via": "register",
-  "notes": "7 天试用=Reddit 单源（低-中）；token 折算为估算不发布"
+  "notes": "7 天试用=Reddit 单源（低-中）；token 折算为估算不发布",
+  "group": "Kimi（月之暗面）"
  },
  {
   "id": "deep-minimax-trial-r7",
@@ -2711,7 +2876,8 @@
   "difficulty": 2,
   "published": false,
   "via": "subscribe",
-  "notes": "检索无果定案（低价值确认）"
+  "notes": "检索无果定案（低价值确认）",
+  "group": "MiniMax"
  },
  {
   "id": "deep-lingma-qoder-merge-r7",
@@ -2728,7 +2894,8 @@
   "published": true,
   "cny": 59,
   "via": "client",
-  "notes": "aliyun 官方文档 slug+cnblogs/阿里云社区交叉（高）；体验档够干嘛：社区版=补全+轻量 Chat 够个人日常，Agent 重活需 Pro"
+  "notes": "aliyun 官方文档 slug+cnblogs/阿里云社区交叉（高）；体验档够干嘛：社区版=补全+轻量 Chat 够个人日常，Agent 重活需 Pro",
+  "group": "Qoder（阿里）"
  },
  {
   "id": "deep-trae-free-usage-r7",
@@ -2744,7 +2911,8 @@
   "difficulty": 1,
   "published": true,
   "via": "client",
-  "notes": "官方价目页直核（高）；换算未公布故「够干嘛」为定性判断"
+  "notes": "官方价目页直核（高）；换算未公布故「够干嘛」为定性判断",
+  "group": "Trae 国内版"
  },
  {
   "id": "deep-copilot-free-r7",
@@ -2760,7 +2928,8 @@
   "difficulty": 1,
   "published": true,
   "via": "client",
-  "notes": "官方 plans 页 2000 completions 直核（高）+上线报道交叉；Pro 试用=第三方/官方活动口径（中）"
+  "notes": "官方 plans 页 2000 completions 直核（高）+上线报道交叉；Pro 试用=第三方/官方活动口径（中）",
+  "group": "GitHub"
  },
  {
   "id": "deep-trial-tier-matrix-r7",
@@ -2776,7 +2945,8 @@
   "difficulty": 1,
   "published": true,
   "via": "client",
-  "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/"
+  "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/",
+  "group": "全行业体验档横评"
  },
  {
   "id": "cline-pass-deepseek",
@@ -2792,7 +2962,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "wechat_article"
+  "via": "wechat_article",
+  "group": "Cline"
  },
  {
   "id": "intel-miaowu",
@@ -2807,7 +2978,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": false,
-  "via": "boss_direct"
+  "via": "boss_direct",
+  "group": "神秘喵星人（公众号）"
  },
  {
   "id": "cline-free-tier",
@@ -2823,7 +2995,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "supervisor"
+  "via": "supervisor",
+  "group": "Cline"
  },
  {
   "id": "opencode-go-deepseek",
@@ -2839,7 +3012,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "supervisor"
+  "via": "supervisor",
+  "group": "OpenCode"
  },
  {
   "id": "opencode-zen-free",
@@ -2855,7 +3029,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "supervisor"
+  "via": "supervisor",
+  "group": "OpenCode"
  },
  {
   "id": "qoder-deepseek-free",
@@ -2871,7 +3046,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "supervisor"
+  "via": "supervisor",
+  "group": "Qoder（阿里）"
  },
  {
   "id": "unisound-u2flash-free",
@@ -2887,7 +3063,8 @@
   "verified_at": "2026-10-28T01:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "supervisor"
+  "via": "supervisor",
+  "group": "云知声"
  },
  {
   "id": "doubao-daily-quota",
@@ -2903,6 +3080,7 @@
   "verified_at": "2026-10-28T02:30:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "register"
+  "via": "register",
+  "group": "字节跳动"
  }
 ]

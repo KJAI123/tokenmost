@@ -74,8 +74,8 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .row{display:grid;grid-template-columns:96px minmax(0,1fr) 116px max-content;gap:4px 16px;padding:12px 16px;border-bottom:1px solid #eef1f4;align-items:center;transition:background .1s}
 .row.agg{background:#f0faf5}
 .agg .r-provider{font-weight:700}
-.aggToggle{border:1px solid var(--border);background:#fff;border-radius:6px;padding:5px 10px;font-size:.78rem;color:var(--muted);cursor:pointer;min-height:32px}
-.aggToggle:hover{color:var(--accent);border-color:var(--accent)}
+.aggToggle{border:1.5px solid var(--accent);background:#ecfdf5;border-radius:6px;padding:5px 10px;font-size:.78rem;font-weight:700;color:var(--accent);cursor:pointer;min-height:32px;box-shadow:0 1px 3px rgba(5,150,105,.18)}
+.aggToggle:hover{background:var(--accent);color:#fff}
 .agg-detail{display:none}
 .agg-detail.open{display:block}
 .agg-detail .row{padding-left:28px;background:#fbfdfc}
@@ -610,35 +610,35 @@ function render(){
   const AGG_ON=!['paid','warn','mine','coupon'].includes(curCat);
   if(AGG_ON){
     const gmap={};
-    list.forEach(d=>{(gmap[d.provider]=gmap[d.provider]||[]).push(d)});
+    list.forEach(d=>{(gmap[d.group||d.provider]=gmap[d.group||d.provider]||[]).push(d)});
     const groups=Object.values(gmap).map(ds=>{
       const once=ds.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
       const daily=ds.reduce((s,d)=>s+(d.daily_wan||0),0);
       const best=ds.slice().sort((a,b)=>tokSort(b)-tokSort(a))[0];
-      return {ds,once,daily,best,p:best.provider};
+      return {ds,once,daily,best,p:best.group||best.provider};
     }).sort((a,b)=>(b.once+b.daily*30)-(a.once+a.daily*30));
     box.innerHTML=groups.map(g=>{
-      const onceTxt=g.once?`${g.once>=10000?(g.once/10000).toFixed(2)+' 亿':Math.round(g.once)+' 万'}`:'';
-      const dailyTxt=g.daily?`日均~${g.daily>=10000?(g.daily/10000).toFixed(1)+' 亿':Math.round(g.daily)+' 万'}`:'';
+      const total=Math.round(g.once+g.daily*30);
+      const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const s=siteFor(g.best);
       return`
   <article class="row agg" data-agg="${esc(g.p)}">
-    <div class="r-tok"><span title="该平台全部条目按 DS4.1 Flash 等效加总（一次性+日均）">${onceTxt?`<span class="num">${onceTxt}</span><span class="unit">一次性</span>`:''}${dailyTxt?`<span class="num" style="display:block;font-size:.85rem">${dailyTxt}</span><span class="unit" style="display:block">DS等效/天</span>`:(!onceTxt?'<span class="num">·</span>':'')}</span></div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天">${total?`<span class="num">${f(total)}</span><span class="unit">DS等效·首月可薅</span>`:'<span class="num">·</span>'}${g.daily?`<span class="unit" style="display:block;margin-top:2px">一次性 ${g.once?f(g.once):'—'} ＋ 日均 ${f(g.daily)}/天</span>`:(g.once?'<span class="unit" style="display:block;margin-top:2px">一次性到账</span>':'')}</span></div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${esc(g.p)}</span>
         <span class="r-value" title="${esc(g.best.value)}">${esc(g.best.value)}</span>
-        ${g.ds.length>1?`<span class="chip gold">📎 ${g.ds.length} 条明细</span>`:''}
+        ${g.ds.length>1?`<span class="chip gold">📎 ${g.ds.length} 条信源</span>`:''}
       </div>
       <div class="r-line2">
         <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
         ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
-        ${g.ds.length>1?`<span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.value.slice(0,26)+'…').join(' '))}</span>`:''}
+        ${g.ds.length>1?`<span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>`:''}
       </div>
     </div>
     <div class="r-state">${freshness(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
     <div class="r-ops">
-      ${g.ds.length>1?`<button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开</button>`:''}
+      ${g.ds.length>1?`<button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>`:''}
       <a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>
     </div>
   </article>
