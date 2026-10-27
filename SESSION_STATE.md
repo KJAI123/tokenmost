@@ -8,7 +8,8 @@
 - 服务器 30 分钟 cron 自动 git pull；GitHub push 即部署 Pages
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
-## 当前任务队列（做完一个划掉一个）
+## 当前任务队列
+- [x] v2.6.1 过期清洗（2026-10-28，老板指令）：物理删除 3 条 expired（hunyuan-lite/github-models/together-free）+ anthropic-credits 存疑归档；监督任务每轮自动清洗（expired 即删、stale 不挂主板块）——总库 178 条（0765280）（做完一个划掉一个）
 - [x] v2.5（2026-10-28，b71ed1c，老板指令全部落地）：①官方平台每家聚合一条——同 provider 合成主行（收益=一次性+日均 DS等效加总），明细 📎 可展开（数据无损），55 家聚合/15 组可展开，浏览器实测通过；②收益列「一次性+日均」算清；③白嫖总账重构：①注册 ②邀请 ③持续日入（日均折月）④学生，合计=首月口径（一次性+日入×30）；④tokenmost.com 服务器已手动同步（老板报"没同步"=cron 未到点，已 SSH git pull 180 条验证）
 - [x] v2.4 等效标准 + v2.4.1 rebase 误伤重建（180 条线上验证）
 - [x] v2.3.1 日均预估环节（9 条频次型量化）

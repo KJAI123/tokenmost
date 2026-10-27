@@ -561,7 +561,7 @@ function render(){
   if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
   else if(curCat==='warn'){list=list.filter(d=>d.type==='warning'||d.verify_status==='expired');}
   else{
-    list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning'&&d.verify_status!=='expired');  // 主板块=纯免费且有效；价格进付费区，避雷/失效进避雷区
+    list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning'&&d.verify_status!=='expired'&&d.category!=='intel_source');  // 主板块=纯免费且有效；价格进付费区，避雷/失效进避雷区，内部信源不上站
     if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
     else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
     else if(curCat==='hasapi')list=list.filter(d=>{const s=siteFor(d);return s&&s.api});
