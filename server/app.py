@@ -62,7 +62,8 @@ CREATE TABLE IF NOT EXISTS coupons(
   status TEXT NOT NULL DEFAULT 'pending',  -- pending/active/unlisted/rejected
   flash_verdict TEXT DEFAULT '',
   review_note TEXT DEFAULT '',
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  kind TEXT NOT NULL DEFAULT 'code'  -- code=折扣码 | link=折扣链接（code 字段存 URL）
 );
 CREATE TABLE IF NOT EXISTS copy_events(
   coupon_id INTEGER NOT NULL REFERENCES coupons(id),
@@ -82,6 +83,9 @@ def conn():
 def startup():
     c = conn()
     c.executescript(SCHEMA)
+    cols = [r[1] for r in c.execute("PRAGMA table_info(coupons)").fetchall()]
+    if "kind" not in cols:
+        c.execute("ALTER TABLE coupons ADD COLUMN kind TEXT NOT NULL DEFAULT 'code'")
     c.close()
 
 # ---------------- 认证（标准库实现） ----------------
@@ -131,16 +135,16 @@ def current_user(authorization: str = Header(default="")) -> int:
 
 RISK_WORDS = ["多号", "小号", "批量", "代充", "合租", "共享号", "接码", "破解", "漏洞", "薅到平台倒闭"]
 
-def flash_review(provider: str, code: str, note: str) -> Dict[str, Any]:
+def flash_review(provider: str, code: str, note: str, kind: str = "code") -> Dict[str, Any]:
     """用 GLM-4.7-Flash（免费档）初审用户提交。返回 {verdict, ok}。
     无 KEY 或调用失败 → ok=None（转人工）。"""
     if not ZHIPU_API_KEY:
         return {"verdict": "未配置审核模型，转人工", "ok": None}
     prompt = (
-        "你是折扣码合规审核员。判断以下用户提交的折扣码是否可上架：\n"
-        "平台：%s\n码：%s\n说明：%s\n"
+        "你是折扣优惠信息合规审核员。判断以下用户提交的%s是否可上架：\n"
+        "平台：%s\n内容：%s\n说明：%s\n" % ("折扣链接（仅允许官方/授权推广链接）" if kind == "link" else "折扣码", provider, code[:120], note[:200]) + "\n"
         "规则：只允许官方/授权渠道折扣码；涉黑产话术（多号/批量/代充/共享/接码/漏洞）或明显乱码、广告、联系方式 → 拒绝。\n"
-        "只输出 JSON：{\"ok\": true} 或 {\"ok\": false, \"reason\": \"一句话\"}" % (provider, code[:40], note[:200])
+        "只输出 JSON：{\"ok\": true} 或 {\"ok\": false, \"reason\": \"一句话\"}"
     )
     try:
         body = json.dumps({
@@ -171,16 +175,27 @@ class AuthBody(BaseModel):
 
 class CouponCreate(BaseModel):
     provider: str = Field(..., min_length=2, max_length=40)
-    code: str = Field(..., min_length=3, max_length=80)
+    code: str = Field(..., min_length=3, max_length=300)  # kind=link 时存完整 URL
     note: str = Field("", max_length=200)
     max_copies: int = Field(50, ge=1, le=10000)
+    kind: str = Field("code", pattern="^(code|link)$")
 
     @field_validator("code")
     @classmethod
     def code_clean(cls, v):
         if re.search(r"\s{2,}", v):
-            raise ValueError("码里别带连续空格")
+            raise ValueError("别带连续空格")
         return v.strip()
+
+    @field_validator("kind")
+    @classmethod
+    def link_must_be_url(cls, v, info):
+        if v == "link":
+            data = info.data
+            code = data.get("code", "")
+            if not code.startswith(("http://", "https://")):
+                raise ValueError("折扣链接必须以 http(s):// 开头")
+        return v
 
 # ---------------- 接口 ----------------
 
@@ -220,15 +235,15 @@ def login(body: AuthBody):
 @app.post("/api/coupons", status_code=201)
 def submit_coupon(body: CouponCreate, uid: int = Depends(current_user)):
     """提交托管折扣码。Flash 初审通过 → 直接上架（active）；拒绝 → rejected；无审核 → pending 人工。"""
-    v = flash_review(body.provider, body.code, body.note)
+    v = flash_review(body.provider, body.code, body.note, body.kind)
     status = {True: "active", False: "rejected", None: "pending"}[v["ok"]]
     c = conn()
     try:
         cur = c.execute(
-            "INSERT INTO coupons(user_id, provider, code, note, max_copies, status, flash_verdict, created_at)"
-            " VALUES (?,?,?,?,?,?,?,?)",
+            "INSERT INTO coupons(user_id, provider, code, note, max_copies, status, flash_verdict, created_at, kind)"
+            " VALUES (?,?,?,?,?,?,?,?,?)",
             (uid, body.provider.strip(), body.code.strip(), body.note.strip(),
-             body.max_copies, status, v["verdict"], datetime.datetime.utcnow().isoformat()))
+             body.max_copies, status, v["verdict"], datetime.datetime.utcnow().isoformat(), body.kind))
         c.commit()
         return {"id": cur.lastrowid, "status": status, "review": v["verdict"],
                 "message": {"active": "✅ Flash 初审通过，已上架",
@@ -244,12 +259,12 @@ def public_coupons(provider: Optional[str] = Query(None)):
     try:
         if provider:
             rows = c.execute(
-                "SELECT id, provider, code, note, max_copies, copies, created_at FROM coupons"
+                "SELECT id, provider, code, note, max_copies, copies, created_at, kind FROM coupons"
                 " WHERE provider=? AND status='active' AND copies < max_copies"
                 " ORDER BY id DESC LIMIT 20", (provider,)).fetchall()
         else:
             rows = c.execute(
-                "SELECT id, provider, code, note, max_copies, copies, created_at FROM coupons"
+                "SELECT id, provider, code, note, max_copies, copies, created_at, kind FROM coupons"
                 " WHERE status='active' AND copies < max_copies"
                 " ORDER BY id DESC LIMIT 100").fetchall()
         return {"items": [dict(r, remaining=r["max_copies"] - r["copies"]) for r in rows]}
@@ -288,7 +303,7 @@ def my_coupons(uid: int = Depends(current_user)):
     c = conn()
     try:
         rows = c.execute(
-            "SELECT id, provider, code, note, max_copies, copies, status, flash_verdict, created_at"
+            "SELECT id, provider, code, note, max_copies, copies, status, flash_verdict, created_at, kind"
             " FROM coupons WHERE user_id=? ORDER BY id DESC", (uid,)).fetchall()
         return {"items": [dict(r, remaining=r["max_copies"] - r["copies"]) for r in rows]}
     finally:

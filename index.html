@@ -290,6 +290,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="compute">算力</button>
       <button class="tab" data-cat="reseller">中间商</button>
       <button class="tab" data-cat="coupon" style="border-color:rgba(210,153,34,.5)">🎁 有码</button>
+      <button class="tab" data-cat="hasapi">⚡ 有 API</button>
       <button class="tab" data-cat="official_global">海外</button>
       <button class="tab" data-cat="mine">⭐ 已领</button>
     </div>
@@ -531,6 +532,7 @@ function render(){
   const claimedSet=getClaimed();
   if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
   else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
+  else if(curCat==='hasapi')list=list.filter(d=>{const s=siteFor(d);return s&&s.api});
   else if(curCat!=='all')list=list.filter(d=>d.category===curCat);
   if(curType)list=list.filter(d=>d.type===curType);
   if(curQ)list=list.filter(d=>(d.provider+d.value+d.notes+d.id).toLowerCase().includes(curQ.toLowerCase()));
@@ -680,17 +682,32 @@ function openShare(provider){
   const items=SHARED[provider]||[];
   document.getElementById('shareTitle').textContent='🎁 '+provider+' · 共享折扣码';
   document.getElementById('shareSub').textContent=items.length+' 个在架 · 每人每日同码只计 1 次，达上限自动下架';
-  document.getElementById('shareList').innerHTML=items.map(it=>`
+  document.getElementById('shareList').innerHTML=items.map(it=>{
+    const action=it.kind==='link'
+      ?`<button data-jumpshare="${it.id}" data-code="${esc(it.code)}">🔗 跳转 →</button>`
+      :`<button data-copyshare="${it.id}" data-code="${esc(it.code)}">📋 复制</button>`;
+    return`
     <div class="shareItem">
-      <div class="row"><span class="code">${esc(it.code)}</span><button data-copyshare="${it.id}" data-code="${esc(it.code)}">📋 复制</button></div>
-      ${it.note?`<div class="meta">💡 ${esc(it.note)}</div>`:''}
-      <div class="meta">剩余 <span class="left">${it.remaining}</span> / ${it.max_copies} 次复制</div>
-    </div>`).join('')||'<div class="empty">暂时没有在架的共享码</div>';
+      <div class="row"><span class="code">${esc(it.kind==='link'?(it.note||it.code):it.code)}</span>${action}</div>
+      ${it.kind==='link'&&it.note?`<div class="meta" title="${esc(it.code)}">${esc(it.code)}</div>`:''}
+      ${it.kind!=='link'&&it.note?`<div class="meta">💡 ${esc(it.note)}</div>`:''}
+      <div class="meta">剩余 <span class="left">${it.remaining}</span> / ${it.max_copies} 次${it.kind==='link'?'跳转':'复制'}</div>
+    </div>`}).join('')||'<div class="empty">暂时没有在架的共享码</div>';
   document.getElementById('shareOverlay').classList.add('open');
   document.getElementById('sharePanel').classList.add('open');
 }
 function closeShare(){document.getElementById('shareOverlay').classList.remove('open');document.getElementById('sharePanel').classList.remove('open')}
 document.getElementById('shareList').addEventListener('click',async e=>{
+  const jb=e.target.closest('[data-jumpshare]');
+  if(jb){
+    try{
+      const j=await apiFetch(`/api/coupons/${jb.dataset.jumpshare}/copy`,{method:'POST'});
+      window.open(jb.dataset.code,'_blank','noopener');
+      jb.closest('.shareItem').querySelector('.left').textContent=j.max-j.copies;
+      if(j.status==='unlisted')setTimeout(()=>{loadShared();closeShare();alert('这个链接已达次数上限，已自动下架')},600);
+    }catch(err){alert('跳转失败：'+err.message)}
+    return;
+  }
   const b=e.target.closest('[data-copyshare]');if(!b)return;
   try{
     const j=await apiFetch(`/api/coupons/${b.dataset.copyshare}/copy`,{method:'POST'});
@@ -705,14 +722,21 @@ function openSub(provider){
   document.getElementById('subForm').innerHTML=`
     <label>平台</label>
     <select id="sf-provider">${names.map(n=>`<option ${n===provider?'selected':''}>${esc(n)}</option>`).join('')}</select>
-    <label>折扣码</label>
+    <label>类型</label>
+    <select id="sf-kind"><option value="code">🎟 折扣码</option><option value="link">🔗 折扣链接（推广/邀请/活动直达）</option></select>
+    <label id="sf-code-label">折扣码</label>
     <input id="sf-code" placeholder="如 SILICON-XXXX" autocomplete="off">
     <label>说明（来源/规则，选填）</label>
     <textarea id="sf-note" rows="2" placeholder="例：官方公众号活动码，新用户可用"></textarea>
-    <label>复制上限（达限自动下架）</label>
+    <label>次数上限（达限自动下架）</label>
     <input id="sf-max" type="number" min="1" max="10000" value="50">
     <button id="sf-go">🎟 提交托管</button>
     <p class="calc-note" id="sf-msg"></p>`;
+  document.getElementById('sf-kind').addEventListener('change',e=>{
+    const link=e.target.value==='link';
+    document.getElementById('sf-code-label').textContent=link?'折扣链接（完整 URL）':'折扣码';
+    document.getElementById('sf-code').placeholder=link?'https://xxx.cn/activity?ref=你的邀请码':'如 SILICON-XXXX';
+  });
   document.getElementById('subOverlay').classList.add('open');
   document.getElementById('subPanel').classList.add('open');
   document.getElementById('sf-go').addEventListener('click',async()=>{
@@ -722,7 +746,8 @@ function openSub(provider){
         provider:document.getElementById('sf-provider').value,
         code:document.getElementById('sf-code').value.trim(),
         note:document.getElementById('sf-note').value.trim(),
-        max_copies:+document.getElementById('sf-max').value||50})});
+        max_copies:+document.getElementById('sf-max').value||50,
+        kind:document.getElementById('sf-kind').value})});
       document.getElementById('sf-msg').textContent=j.message;
       if(j.status==='active')loadShared();
     }catch(err){document.getElementById('sf-msg').textContent='❌ '+err.message}
