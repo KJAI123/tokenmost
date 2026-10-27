@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-27T23:00:30Z",
+  "harvested_at": "2026-10-27T22:54:20Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -737,130 +737,8 @@
       "id": "gemini-pricing",
       "name": "Gemini API 定价",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "免费开始构建，享受宽裕的额度",
-          "context": "eveloper API 价格                                                                                                         免费开始构建，享受宽裕的额度；待应用可用于生产用途后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   ch"
-        },
-        {
-          "match": "免费输入和输出 token",
-          "context": "后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   check_circle 免费输入和输出 token   check_circle Google AI Studio 访问权限   check_circle 内容会用于改进 Google 产品 *     免费开始使用       付费   适用于需要更高调用量和高级功能的生产级应用。"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "码生成而打造。   注意 ： Gemini 4 Argon 不适用于免费层级。模型处理的每个 token 都会被统计并计费，包括思考 token、内部工具系统指令以及使用接地功能时的函数声明。   标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 2.00 美元。 2026 年 12 月 1 日起为 4.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "*   不可用   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "0 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "日之前为 0.05 美元。 2026 年 12 月 1 日起为 0.10 美元。 仅限隐式缓存（不支持显式缓存）。       用于改进 Google 产品   不可用   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "flash         在 Google AI Studio 中试用        Google 旗下最智能的 Flash 模型，专为长期软件工程、自主智能体和复杂的企业工作流而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "2 月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "用 **   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "6-flash         在 Google AI Studio 中试用        Google 的上一代 Flash 模型，在一般性智能体任务和日常任务中兼顾了速度和多模态功能。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "00 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "view       在 Google AI Studio 中试用        我们的低延迟音频转音频模型，针对实时语音智能体和实时对话场景进行了优化，包括通过扩展思考提供后台推理支持。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.75 美元（文本） 3.00 美元或 0.005 美元/分钟（音频） 1.00 美元或 0.002 美元/分钟（图片/视频）       输出价格（包括思考 Token）   免费   4"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "3.5-live-translate-preview         在 Google AI Studio 中试用        我们的低延迟实时语音转语音翻译模型，支持 70 多种语言。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.0053 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.0315 美元/分钟 * （音频）       用"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ibe-live         在 Google AI Studio 中试用        Google 的低延迟、实时语音转文字模型，可通过 WebSocket 实现双向流式音频转写。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.005 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.004 美元/分钟 * （文本）       依托"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "3.5-transcribe         在 Google AI Studio 中试用        我们的语音转文字模型，支持自动检测语言、讲话人区分、字词级时间戳和自定义词汇偏好。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2.00 美元或 0.003 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   12.00 美元或 0.002 美元/分钟 * （文本）       依托"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ni-3.5-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.30 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   免费   $2.50       上下文缓存价格   不可用   0.03 美元 1.0"
-        },
-        {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
-        },
-        {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "搜索查询 14 美元计费。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
-        },
-        {
-          "match": "免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $4.50       上下文缓存价格   不可用   0.05 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
-        },
-        {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.015 美元 1.00 美元/100 万个 token/小时（存储价格）       用于改进 Google 产品   是   是           * 客户向"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ni-3.1-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.25 美元（文本 / 图片 / 视频） 0.50 美元（音频）       输出价格（包括思考 Token）   免费   $1.50       上下文缓存价格   不可用   0.02"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ash         在 Google AI Studio 中试用        Google 的新一代视频生成和编辑模型，现已面向使用 Gemini API 付费层级的开发者正式推出。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   不可用   9.00 美元（文本） 17.50 美元（视频） *       用于改进"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "eview-customtools         在 Google AI Studio 中试用        我们的第三代 Pro 模型，专为多模态理解能力、智能体功能和氛围编程而打造。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2.00 美元：提示 <= 20 万个 token 4.00 美元：提示 > 20 万个 token       输出价格（包括思考 Token）   不可用   12.00 美元：提示 <"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "1 Flash Image) 的更新版本，专为高效图片生成和对话式编辑而打造，在 1K、2K 和 4K 分辨率下，视觉质量、多轮角色一致性、准确的文本渲染以及基于搜索的生成能力均有所提升。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本/图片/视频）       输出价格   不可用   7.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 图片 0.0336 美元 * 、"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "在所有 Gemini 3 及更新的模型中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ge         在 Google AI Studio 中试用        Gemini 3.1 Flash 图片生成模型专为速度和效率而打造，非常适合快速交互式响应和高吞吐量场景。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.50 美元（文本/图片）       输出价格   不可用   3 美元（文本和思考）   60.00 美元（图片）   相当于每张 0.5K 图片 0.045 美元 *   每张 1K"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "oogle AI Studio 中试用        Gemini 3.1 Flash Lite Image 模型是图片生成系列中的效率专家，专为超低延迟和高性价比的图片生成和编辑而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.25 美元（文本/图片/视频）       输出价格   不可用   1.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 分辨率图片 0.0336 美元 *"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "azure-students",
@@ -995,54 +873,8 @@
       "id": "gemini-rate-limits",
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
-      "status": "ok",
-      "hits": 11,
-      "findings": [
-        {
-          "match": "$10       第 2 层级   $50       第 3 ",
-          "context": "。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用"
-        },
-        {
-          "match": "$200          如果您达到基于支出的速率限制，API 会",
-          "context": "于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用较小的上下文窗口或较短的输出。   如果您在正常使用期间始终达到此限制，请 申"
-        },
-        {
-          "match": "$250       第 2 层级   已支付 100 美元 + 自",
-          "context": "务（包括但不限于 Gemini API）上的累计总支出。          使用层   资格赛   结算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批"
-        },
-        {
-          "match": "$2,000       第 3 层级   已支付 1,000 ",
-          "context": "算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批准，但在极少数情况下，升级请求可能会因审核过程中发现的其他因素而被拒绝。    此系统有助于维护"
-        },
-        {
-          "match": "每日 token",
-          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，"
-        },
-        {
-          "match": "RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RP",
-          "context": "发出的请求数量。这些限制有助于维护公平使用、防范滥用行为，并帮助所有用户保持系统性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非"
-        },
-        {
-          "match": "RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请",
-          "context": "个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够"
-        },
-        {
-          "match": "RPD ) 配额会在美国太平洋时间零点重置",
-          "context": "的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)"
-        },
-        {
-          "match": "RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强",
-          "context": "能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
-        },
-        {
-          "match": "RPM）",
-          "context": "升级到下一层级。从免费层级升级到第 1 层级通常会立即生效，后续层级升级将在 10 分钟内生效。前往 AI Studio 中的 “项目”页面 ，查看您的层级。    申请提高速率限制    每个模型变体都有一个关联的速率限制（每分钟请求数，RPM）。 如需详细了解这些速率限制，请参阅 AI Studio 速率限制 页面。    申请提高付费层级速率限制    我们不保证一定会提高您的速率限制，但会尽力审核您的请求。"
-        },
-        {
-          "match": "RPD",
-          "context": "性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "groq-rate-limits",
@@ -1455,130 +1287,8 @@
       "id": "mistral-usage-limits",
       "name": "Mistral 用量限额",
       "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "Free",
-          "context": "usage, and limits   Your Mistral plan defines the included monthly usage and limits available to your Organization.     Free mode lets you create API keys and use included monthly usage within the limits shown on the Limits page.   Pay-as-you-g"
-        },
-        {
-          "match": "limits",
-          "context": "Usage and limits | Mistral Docs Docs & API Search docs ⌘K Vibe Studio Inference & Models Admin Resources API Reference Search docs ⌘K To"
-        },
-        {
-          "match": "limits",
-          "context": "our Organization Access and permissions Configure Workspaces Billing and usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to unders"
-        },
-        {
-          "match": "limits",
-          "context": "nd usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits"
-        },
-        {
-          "match": "limits",
-          "context": "tions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page"
-        },
-        {
-          "match": "limits",
-          "context": "Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage"
-        },
-        {
-          "match": "limits",
-          "context": "limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API ra"
-        },
-        {
-          "match": "limits",
-          "context": "on consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use"
-        },
-        {
-          "match": "limits",
-          "context": "s and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages dep"
-        },
-        {
-          "match": "limits",
-          "context": "ply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you ne"
-        },
-        {
-          "match": "limits",
-          "context": "global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:"
-        },
-        {
-          "match": "limits",
-          "context": "ending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:   Task Admin Panel page Review usage and c"
-        },
-        {
-          "match": "limits",
-          "context": "o check or change:   Task Admin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspac"
-        },
-        {
-          "match": "Limits",
-          "context": "dmin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspace spending limit Admin Pane"
-        },
-        {
-          "match": "limits",
-          "context": "ling period. Use it to understand spend, identify heavy usage areas, and decide whether to adjust Workspace caps or API limits.   The dashboard can show:     total cost;   cost per day;   completion usage;   Vibe usage beyond quota;   OCR usage;"
-        },
-        {
-          "match": "limits",
-          "context": "recent invoice payments fail, access can also be affected until the payments are processed again.   Workspace spending limits cannot exceed the Organization spending limit. To manage payments, credits, billing information, and invoices, see Bill"
-        },
-        {
-          "match": "limits",
-          "context": "tion spending limit. To manage payments, credits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspac"
-        },
-        {
-          "match": "limits",
-          "context": "dits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspace. Use Workspace caps to model team budgets,"
-        },
-        {
-          "match": "limits",
-          "context": "ab.   Set Monthly spending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can s"
-        },
-        {
-          "match": "limits",
-          "context": "ending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown"
-        },
-        {
-          "match": "limits",
-          "context": ".     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ ."
-        },
-        {
-          "match": "limits",
-          "context": "orkspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate"
-        },
-        {
-          "match": "Limits",
-          "context": "rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and"
-        },
-        {
-          "match": "limits",
-          "context": "define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minu"
-        },
-        {
-          "match": "limits",
-          "context": "n can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the m"
-        },
-        {
-          "match": "limits",
-          "context": "n in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the model.   Requests per seco"
-        },
-        {
-          "match": "limits",
-          "context": "oken throughput limit for the model.   Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds pe"
-        },
-        {
-          "match": "limits",
-          "context": "Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month."
-        },
-        {
-          "match": "limits",
-          "context": "second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document O"
-        },
-        {
-          "match": "limits",
-          "context": "o audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document OCR rate limits Copy section link Document OCR rate limits   Document OCR limits apply to OCR API consumption and can include pages per"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "cohere-rate-limits",
@@ -2155,11 +1865,15 @@
       "name": "AI for Software Developm",
       "url": "https://aws.amazon.com/q/developer/pricing/",
       "status": "ok",
-      "hits": 18,
+      "hits": 19,
       "findings": [
         {
           "match": "$19/mo. per user                 ",
           "context": "Free Tier: Advanced capabilities at zero cost         Pro Tier: Expanded limits $19/mo. per user                 摘要             每月的代理请求次数有限   可访问最新的 Claude 模型   可在 IDE 或 CLI 中使用             免费套餐中包含的所有内容，以及     提高了代理请求限额   提高了 Java 和"
+        },
+        {
+          "match": "免费",
+          "context": "跳至主要内容         想了解专为中国区域提供的云产品？请访问 www.amazonaws.cn 。申请中国区域免费套餐请访问 www.amazonaws.cn/free 。"
         },
         {
           "match": "免费",
@@ -2600,7 +2314,7 @@
         },
         {
           "match": "free",
-          "context": "6.00% 6.00% By seat tier By seat tier 𝕏 Money cashback 3% with Direct Deposit 3% 3% 3% 3% By seat tier By seat tier Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
         },
         {
           "match": "Pricing",
@@ -3237,8 +2951,9 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "error",
-      "error": "RemoteDisconnected: Remote end closed connection without response"
+      "status": "ok",
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "endpoints-main",
@@ -3978,130 +3693,8 @@
       "id": "omniroute-repo",
       "name": "OmniRoute 白嫖网关(3.7万Star)",
       "url": "https://github.com/diegosouzapw/OmniRoute",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "$100 free credits on signup (free ",
-          "context": "ese are public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Chat"
-        },
-        {
-          "match": "$100 →     ⚠️ Affiliate link — Omn",
-          "context": "the OpenAI-compatible path. Available models include claude-opus-4-8 , claude-opus-5 , gpt-5.6-sol and more. Grab your $100 →     ⚠️ Affiliate link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup c"
-        },
-        {
-          "match": "$0 in cost analytics; budget, qu",
-          "context": "án), RTK filters for Gradle & .NET. → Compression   💸 Honest flat-rate cost — subscription / coding-plan providers read $0 in cost analytics; budget, quota & routing keep estimating. → API Reference   ⚖️ Quota-Share routing — split a shared account's quota fairly across p"
-        },
-        {
-          "match": "$0, no card       OpenCode Zen D",
-          "context": "d 350+ more — every icon resolves live from the dashboard's provider catalog. 📖 Provider Reference     🆓 Free Forever — $0, no card       OpenCode Zen DeepSeek V4, Nemotron 3 No token cap   Kilo Code Auto-router, Tencent Hy3 Free forever   Requesty GPT-OSS 120B, Nemotron"
-        },
-        {
-          "match": "$5 credit; card required   OpenR",
-          "context": "Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md"
-        },
-        {
-          "match": "$10 → higher RPM       📖 Full mac",
-          "context": "NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app,"
-        },
-        {
-          "match": "RPM rolling leases per connection. → Resili",
-          "context": "2A Server   🛂 Adaptive admission & overload protection — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → Resilience Guide   🗂️ Canonical /v1/models ordering — one contiguous provider-grouped block per provider (combos pinned first)"
-        },
-        {
-          "match": "RPM free   Cerebras GLM 4.7, GPT-OSS One-ti",
-          "context": "Pollinations GPT, Llama, Claude No key needed   Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/ref"
-        },
-        {
-          "match": "RPM       📖 Full machine-readable catalog →",
-          "context": "iMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app, your machine, your rule"
-        },
-        {
-          "match": "Free",
-          "context": "GitHub - cheaper-inference/OmniRoute: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
-        },
-        {
-          "match": "Free",
-          "context": "ettings Fork 12.1k  ( 12.1k ) Star 81.9k  ( 81.9k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
-        },
-        {
-          "match": "free",
-          "context": "must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cli"
-        },
-        {
-          "match": "free",
-          "context": "utors omniroute.online Topics a2a ai-agents ai-gateway anthropic claude claude-code cline codex copilot cursor deepseek free-ai gemini kimi llm-gateway mcp openai openai-proxy qwen token-saver Resources Readme MIT license Code of conduct Code o"
-        },
-        {
-          "match": "Free",
-          "context": "pository files navigation README Code of conduct Contributing MIT license Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This i"
-        },
-        {
-          "match": "Free",
-          "context": "icense Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party fre"
-        },
-        {
-          "match": "free",
-          "context": "ree Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party free tiers, not a token grant from OmniRoute. Sign up, obtain credentials where required, and connect the providers you can"
-        },
-        {
-          "match": "free",
-          "context": "required, and connect the providers you can use; each provider controls its limits, availability, and terms.   Stacking free tiers by hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute cat"
-        },
-        {
-          "match": "free",
-          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 484 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
-        },
-        {
-          "match": "free",
-          "context": "ional identity verification, and never summed into the headline. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers,"
-        },
-        {
-          "match": "free",
-          "context": "e. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figure"
-        },
-        {
-          "match": "FREE",
-          "context": "ry of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends"
-        },
-        {
-          "match": "free",
-          "context": "ERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends a free tier and the number drops; a new one lands and it climbs. We publish what the catalog actually computes, never a rounde"
-        },
-        {
-          "match": "free",
-          "context": "🧠 Unique chat model IDs   1320   1374   1475       🖼️ Modality Bridge   🆕 vision + audio + video   ✓   ✓       📡 Radar free catalog   🆕 opt-in   ✓   ✓       ⚖️ Quota-aware scheduling   🆕 Quota-Share   ✓   ✓       📊 Quota telemetry   🆕 live   ✓"
-        },
-        {
-          "match": "Free",
-          "context": "ing Kiro, are excluded from automatic routing by default; connecting an account does not override that setting. See the Free Tiers Guide before choosing a provider.   📦 Copy-paste quickstart scripts for Python, Node.js, PHP, and cURL → examples"
-        },
-        {
-          "match": "free",
-          "context": "inks tagged aff=omniroute are partner links. They fund the project at no extra cost to you.       🎟️ Affiliates Promo — free signup coupons from providers we don't sponsor (click to expand)   This section is for referral/coupon codes only. Spon"
-        },
-        {
-          "match": "free",
-          "context": "re public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniR"
-        },
-        {
-          "match": "free",
-          "context": "can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Cha"
-        },
-        {
-          "match": "free",
-          "context": "te link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup coupon that benefits OmniRoute users? Open an issue and we'll add it here.         🎯 Combos — The Flagship"
-        },
-        {
-          "match": "Free",
-          "context": "ick whatever fits you. Sponsorship never affects routing priority; it buys visibility, not ranking.     ⭐ Star the repo Free — genuinely helps visibility Star OmniRoute   🐙 GitHub Sponsors One-off or monthly · zero platform fee github.com/spons"
-        },
-        {
-          "match": "free",
-          "context": "s/DEVELOPER-ENVIRONMENT.md for guidance on managing local environment files and secrets.   📡 OmniRoute Radar   The main free-tier headline remains ~1.62B tokens/month from the documented, pool-deduplicated catalog above. Temporary provider sign"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "lolo-freellm",

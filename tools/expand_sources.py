@@ -27,6 +27,9 @@ GH_SEARCHES = [
     "免费 大模型 API 汇总",
     "free token llm 额度",
 ]
+import os
+if os.environ.get("GH_QUERIES_B2"):
+    GH_SEARCHES = ["awesome ai coding plan", "free tokens llm list", "大模型 额度 白嫖", "free api credits list"]
 # 社区攻略帖（提取出链）
 PAGE_SOURCES = [
     "https://zhuanlan.zhihu.com/p/2014053076936438015",
@@ -42,6 +45,9 @@ BLOCK_DOMAINS = ("twitter.com", "x.com", "youtube.com", "facebook.com", "linkedi
                  "zhihu.com/career", "appstore", "play.google", "itunes")
 OFFICIAL_PAT = re.compile(r"(docs?\.|/docs|/pricing|api-docs|developer\.|platform\.|console\.|/doc/|/help|open\.\w+\.com|cloud\.|\.md$)", re.I)
 URL_RE = re.compile(r"https?://[^\s\"'<>\)\]\\，。；]+")
+
+def normalize_url(u: str) -> str:
+    return u.strip().rstrip("/").lower()
 
 def fetch(url: str) -> tuple[int, str]:
     try:
@@ -162,7 +168,19 @@ def probe(pool: dict[str, dict], workers: int = 6) -> None:
                 print(f"探测进度 {i}/{len(items)}")
 
 def main() -> int:
+    prev = {}
+    if OUT.exists():
+        try:
+            for c in json.loads(OUT.read_text(encoding="utf-8")).get("candidates", []):
+                if c.get("verified"):
+                    prev[normalize_url(c["url"])] = c.get("verified")
+        except Exception:
+            pass
     pool = collect()
+    for m in pool.values():
+        v = prev.get(normalize_url(m["url"]))
+        if v:
+            m["verified"] = v
     probe(pool)
     for m in pool.values():
         ok = m["status"] == 200
