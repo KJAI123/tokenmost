@@ -374,7 +374,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <label>输出 tokens（百万）<br><input id="calcOut" type="number" min="0" step="0.1" value="1"></label>
   </div>
   <div style="overflow-x:auto"><table class="price" id="calcTable"></table></div>
-  <p class="calc-note">按 1 USD ≈ 7.2 CNY 折算排序仅供参考，实际以各平台账单为准；价格为每百万 token 单价，更新于 prices.json 的 verified_at。</p>
+  <p class="calc-note">按高峰牌价计算并统一折人民币排序（USD 1:7.2）；DeepSeek 行另有空闲时段 5 折、各家缓存命中更低，实际账单以平台为准。价格为每百万 token，更新于 prices.json。</p>
 </div>
 <!-- ============ 羊毛总账 & 极致预算 ============ -->
 <div id="sumOverlay"></div>
@@ -996,14 +996,16 @@ function calcRender(){
   const tin=parseFloat(document.getElementById('calcIn').value)||0;
   const tout=parseFloat(document.getElementById('calcOut').value)||0;
   const rows=PRICES.map(p=>{
-    const cost=tin*(p.input||0)+tout*(p.output||0);
-    return{...p,cost};
-  }).sort((a,b)=>(a.currency==='USD'?a.cost*FX:a.cost)-(b.currency==='USD'?b.cost*FX:b.cost));
+    const i=p.input,o=p.output;  // 高峰价基准（空闲半价/错峰另注明）
+    if(i==null&&o==null)return null;
+    if(!i&&!o)return{...p,cost:0,costCny:0,free:true};
+    const cost=tin*(i||0)+tout*(o||0);
+    return{...p,cost,costCny:cost*(p.currency==='USD'?FX:1)};
+  }).filter(Boolean).sort((a,b)=>a.costCny-b.costCny);
   document.getElementById('calcTable').innerHTML=
-    '<tr><th>模型</th><th>平台</th><th>输入/百万</th><th>输出/百万</th><th>本次花费</th></tr>'+
-    rows.map((r,i)=>`<tr class="${i===0?'cheapest':''}"><td class="mono">${esc(r.model)}${r.free?' <span class="chip" style="font-size:.65rem">免费</span>':''}</td><td>${esc(r.provider)}</td><td class="mono">${fmt(r.input||0,r.currency)}</td><td class="mono">${fmt(r.output||0,r.currency)}</td><td class="mono"><b>${fmt(r.cost,r.currency)}</b></td></tr>`).join('');
-}
-function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.getElementById('calcPanel').classList.remove('open')}
+    '<tr><th>模型</th><th>平台</th><th>输入/百万</th><th>输出/百万</th><th>本次花费</th><th>折合人民币</th></tr>'+
+    rows.map((r,i)=>`<tr class="${i===0&&r.costCny===0?'cheapest':''}"><td class="mono">${esc(r.model)}${r.free?' <span class="chip" style="font-size:.65rem">免费</span>':''}${String(r.model).includes('deepseek')?'<br><span style="color:var(--muted);font-size:.65rem">空闲时段再 5 折</span>':''}</td><td>${esc(r.provider)}</td><td class="mono">${fmt(r.input||0,r.currency)}</td><td class="mono">${fmt(r.output||0,r.currency)}</td><td class="mono">${fmt(r.cost,r.currency)}</td><td class="mono"><b>${r.free?'¥0.00':'¥'+r.costCny.toFixed(2)}</b></td></tr>`).join('');
+}function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.getElementById('calcPanel').classList.remove('open')}
 document.getElementById('calcClose').addEventListener('click',closeCalc);
 document.getElementById('calcOverlay').addEventListener('click',closeCalc);
 ['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',calcRender));
@@ -1049,25 +1051,31 @@ document.getElementById('sumOverlay').addEventListener('click',closeSum);
 document.getElementById('sumBudget').addEventListener('input',sumCalc);
 /* ============ Coding Plan 量化对照 ============ */
 let PLANS=[];
-function planPerM(p){const wan=p.tokens_wan||0;return wan>0?((p.price*(p.currency==='USD'?FX:1))/(wan/100)):null}
+function planPerM(p){const wan=p.tokens_wan||0;return wan>0?(p.price*(p.currency==='USD'?FX:1))/(wan/100):null}
 function planRender(){
-  const rows=PLANS.map(p=>({...p,pm:planPerM(p)})).filter(p=>p.pm!==null).sort((a,b)=>a.pm-b.pm);
+  const conv=PLANS.filter(p=>p.quota_kind==='official_tokens').map(p=>({...p,pm:planPerM(p)})).filter(p=>p.pm!==null).sort((a,b)=>a.pm-b.pm);
+  const ref=PLANS.filter(p=>p.quota_kind!=='official_tokens');
   const paygMin=Math.min(...PRICES.map(p=>{
-    const i=p.input_idle??p.input,o=p.output_idle??p.output;
+    const i=p.input,o=p.output;
     if(!i&&!o)return Infinity;
     return ((3*i+o)/4)*(p.currency==='USD'?FX:1);
   }).concat([Infinity]));
-  const best=rows[0];
+  const best=conv[0];
   document.getElementById('planHero').innerHTML=best
-    ?`<div class="plan-hero">🏆 包月性价比之王：<b>${esc(best.provider)} · ${esc(best.plan)}</b> ¥${(best.price*(best.currency==='USD'?FX:1)).toFixed(0)}/月 ≈ <b>${fmtWan(best.tokens_wan)} tokens/月</b>，折合 <b>¥${best.pm.toFixed(2)}/百万</b>——${best.pm<paygMin?`比最低按量（¥${paygMin.toFixed(2)}/百万）便宜 ${Math.round((1-best.pm/paygMin)*100)}%`:`是最低按量（¥${paygMin.toFixed(2)}/百万）的 ${(best.pm/paygMin).toFixed(1)} 倍（贵在模型更强/工具链）`}</div>`
-    :'<div class="plan-hero">暂无套餐数据</div>';
+    ?`<div class="plan-hero">🏆 可折算套餐中：<b>${esc(best.provider)} · ${esc(best.plan)}</b> ¥${(best.price*(best.currency==='USD'?FX:1)).toFixed(0)}/月 ≈ <b>${fmtWan(best.tokens_wan)} tokens/月</b>，折合 <b>¥${best.pm.toFixed(2)}/百万</b>${best.pm<paygMin?`（比最低按量 ¥${paygMin.toFixed(2)}/百万 便宜 ${Math.round((1-best.pm/paygMin)*100)}%）`:''}——折算依据：${esc(best.conv_note||'官方口径')}</div>`
+    :'<div class="plan-hero">暂无可折算套餐（需官方公布 token 折算）</div>';
+  const convRows=conv.map((r,i)=>`<tr class="${i===0?'cheapest':''}"><td class="mono">${esc(r.provider)}<br><span style="color:var(--muted);font-size:.75rem">${esc(r.plan)}</span></td><td class="mono">${r.currency==='USD'?'$'+r.price:'¥'+r.price}</td><td style="font-size:.75rem;white-space:normal;max-width:210px">${esc(r.quota)}</td><td class="mono"><b>${fmtWan(r.tokens_wan)}</b></td><td class="mono">¥${r.pm.toFixed(2)}</td><td class="mono">${r.pm<paygMin?'✅ 省 '+Math.round((1-r.pm/paygMin)*100)+'%':'×'+(r.pm/paygMin).toFixed(1)}</td></tr>`).join('');
+  const refRows=ref.map(r=>{
+    const val=r.quota_kind==='usd_credits'
+      ?`<span class="mono" style="color:var(--amber)">${r.quota.match(/≈?\$[\d,]+/)?r.quota.match(/≈?\$[\d,]+/)[0]:'$'+(r.price*FX).toFixed(0)+' 等值'}</span>`
+      :'<span style="color:var(--muted)">官方未公布 token 折算</span>';
+    return`<tr><td class="mono">${esc(r.provider)}<br><span style="color:var(--muted);font-size:.75rem">${esc(r.plan)}</span></td><td class="mono">${r.currency==='USD'?'$'+r.price:'¥'+r.price}</td><td style="font-size:.75rem;white-space:normal;max-width:210px">${esc(r.quota)}</td><td colspan="3">${val}</td></tr>`}).join('');
   document.getElementById('planTable').innerHTML=
-    '<tr><th>套餐</th><th>月价</th><th>官方额度</th><th>折算 tokens/月</th><th>折合 ¥/百万</th><th>vs 最低按量</th></tr>'+
-    rows.map((r,i)=>`<tr class="${i===0?'cheapest':''}"><td class="mono">${esc(r.provider)}<br><span style="color:var(--muted);font-size:.72rem">${esc(r.plan)}</span></td><td class="mono">${r.currency==='USD'?'$'+r.price:'¥'+r.price}</td><td style="font-size:.72rem;white-space:normal;max-width:200px">${esc(r.quota||'')}</td><td class="mono"><b>${fmtWan(r.tokens_wan)}</b></td><td class="mono">¥${r.pm.toFixed(2)}</td><td class="mono">${r.pm<paygMin?'✅ 省 '+Math.round((1-r.pm/paygMin)*100)+'%':'×'+(r.pm/paygMin).toFixed(1)}</td></tr>`).join('')+
-    (rows.length?'':'<tr><td colspan="6" style="text-align:center;color:var(--muted)">数据在路上（plans.json 为空）</td></tr>');
-  document.getElementById('planNote').textContent='折算口径：官方额度数字为准，缺省处以标注假设估算（每行 assumption 字段）；USD 按 1:7.2 折算；「vs 最低按量」对照比价表最低综合单价（输入:输出=3:1）。包月套餐的实际价值还含工具链/模型档次，仅供参考。';
-}
-function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
+    '<tr><th>套餐</th><th>月价</th><th>官方额度口径</th><th>折算 tokens/月</th><th>折合 ¥/百万</th><th>vs 最低按量</th></tr>'
+    +(convRows?`<tr><td colspan="6" style="background:var(--hover);color:var(--muted);font-size:.75rem">▼ 可折算组（官方公布 token 数/官方折算公式，参与排名）</td></tr>`+convRows:'')
+    +(refRows?`<tr><td colspan="6" style="background:var(--hover);color:var(--muted);font-size:.75rem">▼ 参考组（积分/次数/会话制，官方未公布折算——不做假换算）</td></tr>`+refRows:'');
+  document.getElementById('planNote').textContent='诚实口径：只有官方公布 token 数或官方折算公式的套餐参与排名（智谱/SCNet）；其余积分、次数、会话制套餐不换算不排名。DeepSeek 空闲半价、缓存命中另见「🧮 比价」。USD 按 1:7.2。';
+}function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
 document.getElementById('planClose').addEventListener('click',closePlan);
 document.getElementById('planOverlay').addEventListener('click',closePlan);
 /* ============ 数据加载 ============ */
