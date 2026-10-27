@@ -115,3 +115,10 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - 采集：19 源全通（含 ZCode changelog/杭州规则页两个新源，均命中）；diff 报 9 项=8 新增源首基线+1 已知动态页漂移，**无实质内容变化**
 - 已修积压：harvest_diff.py fingerprint 改为只取 match 集合（动态页措辞漂移不再误报，selftest 五类变化识别通过，重跑全源 no change）
 - 佐证：zcode.z.ai/changelog 今日仍列 v3.15.1「邀请好友·免费蹬蹬」——与 findings/zcode-activities.md 的「可能仍在场」互证，建议主会话按 1111 节点方案处理，无需提前建条
+- 2026-10-27 05:5x 巡检：无变化（20 源全通）
+
+## 巡检 2026-10-27 07:5x（爬虫助理自动巡检 #3）
+
+- **真变化 1 项：openrouter-free-models 目录轮换**（-1 个 $0.06/M 档免费条目，+nace-ai 模型与 NVIDIA Nemotron 3.5 Embed 1B 免费嵌入版），来源即官方页直抓，详见 findings/openrouter.md 巡检发现节
+- 判断：主会话 sync.py 的 OpenRouter 结构化 API 直更应已自动覆盖，**无需手动合入**；建议站内不写死免费模型数量（目录动态）
+- 其余 19 源无变化

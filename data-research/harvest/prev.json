@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-26T21:01:50Z",
+  "harvested_at": "2026-10-27T01:02:39Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -665,43 +665,43 @@
       "findings": [
         {
           "match": "$0.06/K images Amazon: Titan Embedd",
-          "context": "ectors are 1,024 dimensions by default with 384 and 256 selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.06/K images Amazon: Titan Embeddings G1 - Text Titan Embeddings G1 - Text 2 tokens Amazon Titan Embeddings G1 - Text is the first-generation Titan text"
+          "context": "ectors are 1,024 dimensions by default with 384 and 256 selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.06/K images Amazon: Titan Embeddings G1 - Text Titan Embeddings G1 - Text 1.71M tokens Amazon Titan Embeddings G1 - Text is the first-generation Titan t"
         },
         {
           "match": "$0.10/M tokens Amazon: Titan Text E",
-          "context": "per input and returns fixed 1,536-dimension vectors; the dimensions parameter is not supported. by amazon Oct 26, 2026 $0.10/M tokens Amazon: Titan Text Embeddings V2 Titan Text Embeddings V2 19 tokens Amazon Titan Text Embeddings V2 is a text embedding model for retrieval,"
+          "context": "per input and returns fixed 1,536-dimension vectors; the dimensions parameter is not supported. by amazon Oct 26, 2026 $0.10/M tokens Amazon: Titan Text Embeddings V2 Titan Text Embeddings V2 734K tokens Amazon Titan Text Embeddings V2 is a text embedding model for retrieva"
         },
         {
           "match": "$0.02/M tokens OpenAI: GPT-6.1 Terr",
-          "context": "s of 1,024 dimensions by default, with 512 and 256 also selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.02/M tokens OpenAI: GPT-6.1 Terra (batch) GPT-6.1 Terra (batch) Batch variant 39K tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1 se"
+          "context": "s of 1,024 dimensions by default, with 512 and 256 also selectable via the dimensions parameter. by amazon Oct 26, 2026 $0.02/M tokens OpenAI: GPT-6.1 Terra (batch) GPT-6.1 Terra (batch) Batch variant 12.1M tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
         },
         {
           "match": "$0.50 /M input tokens $2.50 /M outp",
-          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 2.15B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
+          "context": "eenshots and on-screen content, and is efficient enough for high-volume workloads. by openai Oct 26, 2026 1.05M context $0.50 /M input tokens $2.50 /M output tokens OpenAI: GPT-6.1 Terra GPT-6.1 Terra 9.07B tokens GPT-6.1 Terra is the mid-tier model in OpenAI&#x27;s GPT-6.1"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.65M tokens HeyGen Voice Turbo is a lower-latency version"
+          "context": "s 44.1 kHz mono PCM audio, with support for 39 languages and up to 5,000 characters per request. by heygen Oct 26, 2026 $0 /M input tokens $0 /M output tokens HeyGen: HeyGen Voice Turbo HeyGen Voice Turbo 50% off 3.52M tokens HeyGen Voice Turbo is a lower-latency version"
         },
         {
           "match": "$2 /M input tokens $10 /M output",
-          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 169B tokens Flint is an open-weight mixture-of-experts model f"
+          "context": "end-to-end agentic knowledge work, with native image and video understanding. by moonshotai Oct 23, 2026 1.05M context $2 /M input tokens $10 /M output tokens Recursive: Flint (free) Flint (free) Free variant 171B tokens Flint is an open-weight mixture-of-experts model f"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 682M tokens Mammoth 1 is a 27B decision model from Base L"
+          "context": "investigating codebases, fixing bugs, implementing features, and writing tests. by recursive Oct 21, 2026 262K context $0 /M input tokens $0 /M output tokens Baseten: Mammoth 1 (free) Mammoth 1 (free) Free variant 715M tokens Mammoth 1 is a 27B decision model from Base L"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 456M tokens Elephant 1 is a 9B decision model from Base"
+          "context": "nd scoring where you need a scored answer instead of prose. Its smaller sibling is Elephant 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Baseten: Elephant 1 (free) Elephant 1 (free) Free variant 473M tokens Elephant 1 is a 9B decision model from Base"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 3.96B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
+          "context": "and scoring where you need a scored answer instead of prose. Its larger sibling is Mammoth 1 . by baseten Oct 21, 2026 $0 /M input tokens $0 /M output tokens Nace.AI: Drex Max Drex Max 4.08B tokens Drex Max is the largest decision model from Nace.AI, the successor to Dre"
         },
         {
-          "match": "$0.06 /M input tokens $0 /M output ",
-          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.06 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 201M tokens Nemotron 3.5 Embed 1B"
+          "match": "$0.12 /M input tokens $0 /M output ",
+          "context": "nd suits routing, classification, and policy checks that need a scored answer instead of prose. by nace-ai Oct 21, 2026 $0.12 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Embed 1B (free) Nemotron 3.5 Embed 1B (free) Free variant 223M tokens Nemotron 3.5 Embed 1B"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
@@ -709,27 +709,27 @@
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 420M tokens by nvidia Oct 21, 20"
+          "context": "6-dim vectors that can be truncated, and shares the text embedding space of Nemotron 3 Embed 8B. by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 457M tokens by nvidia Oct 21, 20"
         },
         {
           "match": "$0 /M input tokens $0 /M output ",
-          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 420M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.11M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It conver"
+          "context": "ens NVIDIA: Nemotron 3.5 Rerank 8B (free) Nemotron 3.5 Rerank 8B (free) Free variant 457M tokens by nvidia Oct 21, 2026 $0 /M input tokens $0 /M output tokens Mistral: Voxtral TTS 3 Voxtral TTS 3 2.13M tokens Voxtral TTS 3 is Mistral&#x27;s text-to-speech model. It conver"
         },
         {
           "match": "$13/M characters Mistral: Voxtral",
-          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 41.8M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
+          "context": "with low time-to-first-audio and suits voice agents, narration, and multilingual assistants. by mistralai Oct 20, 2026 $13/M characters Mistral: Voxtral Small Transcribe 3 Voxtral Small Transcribe 3 42.3M characters Voxtral Small Transcribe 3 is Mistral&#x27;s flagship sp"
         },
         {
           "match": "$0.000067/second Mistral: Voxtral Mini ",
-          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 12.6M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
+          "context": "r high-accuracy multilingual transcription of meetings, interviews, media, and support calls. by mistralai Oct 20, 2026 $0.000067/second Mistral: Voxtral Mini Transcribe 3 Voxtral Mini Transcribe 3 12.8M characters Voxtral Mini Transcribe 3 is Mistral&#x27;s compact speech-to-te"
         },
         {
           "match": "$0.000058/second MiniMax: MiniMax M3.1 ",
-          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 5% off 1.38T tokens Programming (#28) Science (#27) Technology (#27) MiniMax-M3.1-Flash is a mu"
+          "context": "nments, and fits meeting notes, call analytics, and voice-agent pipelines where cost matters. by mistralai Oct 20, 2026 $0.000058/second MiniMax: MiniMax M3.1 Flash MiniMax M3.1 Flash 5% off 1.49T tokens Academia (#44) Finance (#38) Marketing (#42) SEO (#16) Programming (#17) +"
         },
         {
           "match": "$0.1425 /M input tokens $0.57 /M outp",
-          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.1425 /M input tokens $0.57 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 38.3T tokens Academia (#1) Finance (#2) Health (#8"
+          "context": "an open-weight mixture-of-experts model with 23B active / 428B total parameters. by minimax Oct 19, 2026 1.05M context $0.1425 /M input tokens $0.57 /M output tokens DeepSeek: DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 35.6T tokens Academia (#1) Finance (#2) Health (#9"
         },
         {
           "match": "$0.04 /M input tokens $0.50 /M outp",

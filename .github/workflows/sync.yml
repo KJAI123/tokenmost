@@ -24,6 +24,10 @@ jobs:
         run: |
           python3 tools/check.py        # 前置校验（当前数据必须合法）
           python3 tools/sync.py         # 抓取 → 更新 → 规则引擎 → 校验 + 重生成 rss
+      - name: Harvest keyword snapshots (零 token 盯防)
+        run: |
+          python3 tools/harvest.py || true          # 采集失败不阻塞主流水线
+          python3 tools/harvest_diff.py || true     # diff 告警落盘，供人工看 review
       - name: Commit and push if changed
         run: |
           git config user.name "tokenmost-bot"

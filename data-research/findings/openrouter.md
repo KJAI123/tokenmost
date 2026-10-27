@@ -26,3 +26,12 @@
 ## 待办
 
 - [ ] deals.json value 补充 50→1000 解锁话术（低投入高回报，用户爱看）
+
+## 采集器巡检发现（2026-10-27，harvest 直抓官方页）
+
+免费模型目录出现**轮换**（match 集合变化，diff 告警捕获）：
+
+- 消失：一个「$0.06 /M input tokens $0 /M output」的免费档条目
+- 新增：nace-ai 模型（Oct 21, 2026 上架，$0.12/M input、$0/M output，定位 routing/classification/policy 打分）＋ **NVIDIA: Nemotron 3.5 Embed 1B (free)** 免费嵌入模型（223M tokens 标注）
+
+含义：:free 目录是动态的，「17 个」这类静态计数会很快过时。主会话 sync.py 的 OpenRouter 结构化 API 直更应已自动覆盖本变化，本条仅作双线互证与「目录动态性」的实证记录；建议站内条目避免写死免费模型数量，改为「免费模型列表见 openrouter.ai/models?max_price=0」。
