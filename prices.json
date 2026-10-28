@@ -6,7 +6,7 @@
   {"model": "MiniMax-M3.1-Flash", "provider": "MiniMax 开放平台", "layer": "official_cn", "currency": "CNY", "input": 1, "output": 4, "verified_at": "2026-10-27"},
   {"model": "MiniMax-M3", "provider": "MiniMax 开放平台", "layer": "official_cn", "currency": "CNY", "input": 2.1, "output": 8.4, "note": "永久五折价", "verified_at": "2026-10-27"},
   {"model": "kimi-k3", "provider": "Kimi 开放平台", "layer": "official_cn", "currency": "USD", "input": 3, "output": 15, "note": "国际站价；缓存命中输入 $0.30", "verified_at": "2026-10-27"},
-  {"model": "recursive/flint-v1.0:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-27", "source": "auto:openrouter-models"},
-  {"model": "xingchen-agi/xing4.0-29b-a4b:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-27", "source": "auto:openrouter-models"},
-  {"model": "nvidia/nemotron-3.5-super-vl:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-27", "source": "auto:openrouter-models"}
+  {"model": "recursive/flint-v1.0:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-28", "source": "auto:openrouter-models"},
+  {"model": "xingchen-agi/xing4.0-29b-a4b:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-28", "source": "auto:openrouter-models"},
+  {"model": "nvidia/nemotron-3.5-super-vl:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-28", "source": "auto:openrouter-models"}
 ]

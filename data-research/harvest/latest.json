@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T00:11:18Z",
+  "harvested_at": "2026-10-28T00:26:11Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,6 +637,10 @@
         },
         {
           "match": "会员",
+          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
+        },
+        {
+          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -726,10 +730,6 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
-        },
-        {
-          "match": "会员",
-          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -3008,8 +3008,130 @@
       "id": "gh-aipmandy-freetoken-blob-daf",
       "name": "FreeToken/README.md at d",
       "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费 AI API Token",
+          "context": "# 🎁 FreeToken  收集各种免费 AI API Token 的获取方法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-gith"
+        },
+        {
+          "match": "免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度",
+          "context": "法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服"
+        },
+        {
+          "match": "免费额度](#-国内大模型免费额度",
+          "context": "最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)"
+        },
+        {
+          "match": "免费额度](#️-云服务免费额度",
+          "context": "ub-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)  ---  ## 🏆 GitHub 热门免费 API 项目  ### 🔥 第一梯队（万星以上）  | 项目 | Sta"
+        },
+        {
+          "match": "免费额度  ### OpenAI - **免费额度",
+          "context": "t.ai](https://www.forefront.ai/) | | **nat.dev** | 免费的 AI 代码助手，支持多种模型 | [nat.dev](https://nat.dev/) |  ---  ## 🤖 AI 模型官方免费额度  ### OpenAI - **免费额度**: 新用户注册送 **$5 体验金**（有效期 3 个月） - **获取方式**:  1. 访问 [OpenAI Platform](https://platform.openai.com/)  2. 注册账号并验证手机号  3. 在"
+        },
+        {
+          "match": "免费额度",
+          "context": "*限制**: 免费层速率限制因模型而异 - **推荐模型**: GPT-4o-mini（性价比最高） - **文档**: https://platform.openai.com/docs  ### Anthropic Claude - **免费额度**: 新用户注册送**小额体验金**（具体金额未公开） - **获取方式**:  1. 访问 [Anthropic Console](https://console.anthropic.com/)  2. 注册账号  3. 创建 API"
+        },
+        {
+          "match": "免费额度",
+          "context": "aude Haiku 系列价格低，适合日常使用 - **亮点**: Claude 3.5 Sonnet 代码能力顶尖 - **文档**: https://docs.anthropic.com/  ### Google Gemini - **免费额度**: **免费层**（Gemini 2.5 Flash 等模型免费输入输出） - **获取方式**:  1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Googl"
+        },
+        {
+          "match": "免费层额度非常慷慨，200 万 Token",
+          "context": "1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Google 账号登录  3. 获取 API Key - **亮点**: Gemini 2.5 Pro/Flash 免费层额度非常慷慨，200 万 Token/天 - **⚠️ 注意**: Gemini 2.0 Flash 已弃用，将于 2026 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https"
+        },
+        {
+          "match": "免费额度",
+          "context": "26 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https://ai.google.dev/docs  ### xAI (Grok) - **免费额度**: 新用户**可能**有体验金（金额不固定，非官方公开承诺） - **获取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**"
+        },
+        {
+          "match": "免费额度**: 免费层有基础调用额度",
+          "context": "取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**: https://docs.x.ai/  ### Mistral - **免费额度**: 免费层有基础调用额度 - **获取方式**: 访问 [Mistral Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mist"
+        },
+        {
+          "match": "免费额度**: 试用版有基础调用额度",
+          "context": "Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mistral.ai/  ### Cohere - **免费额度**: 试用版有基础调用额度（具体数量不固定） - **获取方式**: 访问 [Cohere Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://doc"
+        },
+        {
+          "match": "免费额度  > ⚠️ 以下国内厂商的免费额度",
+          "context": "e Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://docs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSe"
+        },
+        {
+          "match": "免费额度",
+          "context": "ocs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSeek、Llama、Mistral、Qwen、GLM、Nemotron 等 - **限制**: 每 1.5 秒一次请求（每天可调用 5 万+"
+        },
+        {
+          "match": "免费额度**: **100 万亿（100T）Token",
+          "context": "试用版，不是阉割版 - **省多少钱**: 同时用 3-4 个模型，一年至少省 **7000 元** - **文档**: https://build.nvidia.com/docs  ### 小米 MiMo 🔥🔥（Andy 推荐） - **免费额度**: **100 万亿（100T）Token** 激励计划，赠完即止 - **活动时间**: 2026 年 4 月 28 日 00:00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t."
+        },
+        {
+          "match": "免费发放 - **API 地址**: https://token",
+          "context": "00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t.xiaomimimo.com/) - **亮点**: 小米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万"
+        },
+        {
+          "match": "免费额度**: 注册送 **500万 Tokens",
+          "context": "米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万 Tokens），日常使用几乎免费 - **获取方式**: 访问 [DeepSeek Platform](https://platform.deepseek.com/) - **亮点**: 性价"
+        },
+        {
+          "match": "免费额度",
+          "context": "型优秀 - **推荐**: DeepSeek-V3（综合能力）、DeepSeek-R1（复杂推理） - **文档**: https://platform.deepseek.com/api-docs  ### 通义千问 (Qwen) - **免费额度**: 部分模型**限时免费**，注册送体验金 - **获取方式**: 访问 [阿里云百炼](https://bailian.console.aliyun.com/) - **亮点**: Qwen 系列模型齐全，多模态能力强 - **推荐*"
+        },
+        {
+          "match": "免费额度**: 注册送 **500万 Tokens",
+          "context": "，多模态能力强 - **推荐**: Qwen-Plus（综合能力）、Qwen-VL（视觉理解） - **文档**: https://help.aliyun.com/zh/model-studio/  ### 智谱 AI (GLM) - **免费额度**: 注册送 **500万 Tokens** 体验金 - **获取方式**: 访问 [智谱开放平台](https://open.bigmodel.cn/) - **亮点**: GLM-4 系列，支持联网搜索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速"
+        },
+        {
+          "match": "免费额度",
+          "context": "索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速）、GLM-4V（视觉理解） - **文档**: https://open.bigmodel.cn/dev/api  ### 百度文心一言 (ERNIE) - **免费额度**: 部分模型**完全免费** - **获取方式**: 访问 [百度千帆](https://qianfan.cloud.baidu.com/) - **亮点**: ERNIE-Speed 系列免费，中文能力强 - **推荐**: ERNI"
+        },
+        {
+          "match": "免费额度",
+          "context": "推荐**: ERNIE-Speed-8K（免费）、ERNIE-4.0（付费高级） - **文档**: https://cloud.baidu.com/doc/WENXINWORKSHOP/  ### Moonshot (月之暗面) - **免费额度**: 注册送 **15 元** 体验金 - **获取方式**: 访问 [Moonshot 开放平台](https://platform.moonshot.cn/) - **亮点**: Kimi 长文本能力，128K 上下文，K1 思考模型"
+        },
+        {
+          "match": "免费额度",
+          "context": "- **推荐**: moonshot-v1-8k（日常）、moonshot-v1-128k（长文本） - **文档**: https://platform.moonshot.cn/docs  ### MiniMax (海螺 AI) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [MiniMax 开放平台](https://platform.minimaxi.com/) - **亮点**: 语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础"
+        },
+        {
+          "match": "免费额度**: 星火 Lite **完全免费**，其他版本送 Token",
+          "context": "语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础）、speech-01（语音） - **文档**: https://platform.minimaxi.com/docs  ### 讯飞星火 (Spark) - **免费额度**: 星火 Lite **完全免费**，其他版本送 Token - **获取方式**: 访问 [讯飞开放平台](https://xinghuo.xfyun.cn/) - **亮点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **"
+        },
+        {
+          "match": "免费额度",
+          "context": "点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **文档**: https://www.xfyun.cn/doc/spark/  ### 豆包 (字节跳动) - **免费额度**: 部分模型**限时免费** - **获取方式**: 访问 [火山引擎](https://console.volcengine.com/ark) - **亮点**: 字节跳动出品，多模态能力强，联网搜索优秀 - **推荐**: Doub"
+        },
+        {
+          "match": "免费额度",
+          "context": "，联网搜索优秀 - **推荐**: Doubao-pro（综合）、Doubao-vision（视觉） - **文档**: https://www.volcengine.com/docs/82379  ### 阶跃星辰 (Step) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [阶跃星辰开放平台](https://platform.stepfun.com/) - **亮点**: 多模态理解能力强 - **推荐**: Step-1（基础）、Step-1V（视觉）"
+        },
+        {
+          "match": "免费额度",
+          "context": "le Gemini 2.5 Flash（Google 官方）  - Mistral Large（欧洲之光） - **文档**: https://openrouter.ai/docs  ### Silicon Flow (硅基流动) - **免费额度**: 多个模型**完全免费**（Qwen、GLM、Llama 等） - **获取方式**: 访问 [SiliconFlow](https://cloud.siliconflow.cn/) - **亮点**: 国内直连，免费模型多，Open"
+        },
+        {
+          "match": "免费额度**: 每天 **10,000 次",
+          "context": "2B（阿里最强）  - DeepSeek-V2.5（性价比王）  - GLM-4-9B（智谱免费） - **文档**: https://docs.siliconflow.cn/  ### Cloudflare Workers AI - **免费额度**: 每天 **10,000 次**请求免费 - **获取方式**: 注册 [Cloudflare](https://dash.cloudflare.com/) → Workers AI - **亮点**: 全球边缘节点，延迟低，无需信用卡 - **推荐模型**: Lla"
+        },
+        {
+          "match": "免费额度",
+          "context": "信用卡 - **推荐模型**: Llama 3、Mistral、SDXL（图像生成） - **文档**: https://developers.cloudflare.com/workers-ai/  ### Together AI - **免费额度**: 注册送 **$25 体验金**（2026年6月更新） - **获取方式**: 访问 [Together AI](https://api.together.xyz/) - **亮点**: 开源模型丰富（Llama、Mixtral、FL"
+        },
+        {
+          "match": "免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次",
+          "context": "lama、Mixtral、FLUX等），速度快 - **推荐模型**: Llama 3.1 405B、FLUX.1-schnell（图像） - **文档**: https://docs.together.ai/  ### Groq - **免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次** - **获取方式**: 访问 [Groq Console](https://console.groq.com/) - **亮点**: 超快推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama"
+        },
+        {
+          "match": "免费额度**: 免费层有基础额度",
+          "context": "推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama 3.1 70B（速度最快） - **文档**: https://console.groq.com/docs  ### Cerebras - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [Cerebras](https://cloud.cerebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: h"
+        },
+        {
+          "match": "免费额度**: 免费层有基础额度",
+          "context": "rebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: https://cerebras.ai/docs  ### SambaNova - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [SambaNova Cloud](https://cloud.sambanova.ai/) - **亮点**: 开源模型高速推理 - **推荐模型**: Llama 3、Qwen - **文档**: htt"
+        }
+      ]
     },
     {
       "id": "sogou-wx-token",
@@ -3571,130 +3693,8 @@
       "id": "omniroute-repo",
       "name": "OmniRoute 白嫖网关(3.7万Star)",
       "url": "https://github.com/diegosouzapw/OmniRoute",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "$100 free credits on signup (free ",
-          "context": "ese are public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Chat"
-        },
-        {
-          "match": "$100 →     ⚠️ Affiliate link — Omn",
-          "context": "the OpenAI-compatible path. Available models include claude-opus-4-8 , claude-opus-5 , gpt-5.6-sol and more. Grab your $100 →     ⚠️ Affiliate link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup c"
-        },
-        {
-          "match": "$0 in cost analytics; budget, qu",
-          "context": "án), RTK filters for Gradle & .NET. → Compression   💸 Honest flat-rate cost — subscription / coding-plan providers read $0 in cost analytics; budget, quota & routing keep estimating. → API Reference   ⚖️ Quota-Share routing — split a shared account's quota fairly across p"
-        },
-        {
-          "match": "$0, no card       OpenCode Zen D",
-          "context": "d 350+ more — every icon resolves live from the dashboard's provider catalog. 📖 Provider Reference     🆓 Free Forever — $0, no card       OpenCode Zen DeepSeek V4, Nemotron 3 No token cap   Kilo Code Auto-router, Tencent Hy3 Free forever   Requesty GPT-OSS 120B, Nemotron"
-        },
-        {
-          "match": "$5 credit; card required   OpenR",
-          "context": "Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md"
-        },
-        {
-          "match": "$10 → higher RPM       📖 Full mac",
-          "context": "NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app,"
-        },
-        {
-          "match": "RPM rolling leases per connection. → Resili",
-          "context": "2A Server   🛂 Adaptive admission & overload protection — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → Resilience Guide   🗂️ Canonical /v1/models ordering — one contiguous provider-grouped block per provider (combos pinned first)"
-        },
-        {
-          "match": "RPM free   Cerebras GLM 4.7, GPT-OSS One-ti",
-          "context": "Pollinations GPT, Llama, Claude No key needed   Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/ref"
-        },
-        {
-          "match": "RPM       📖 Full machine-readable catalog →",
-          "context": "iMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app, your machine, your rule"
-        },
-        {
-          "match": "Free",
-          "context": "GitHub - cheaper-inference/OmniRoute: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
-        },
-        {
-          "match": "Free",
-          "context": "ettings Fork 12.1k  ( 12.1k ) Star 81.9k  ( 81.9k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
-        },
-        {
-          "match": "free",
-          "context": "must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cli"
-        },
-        {
-          "match": "free",
-          "context": "utors omniroute.online Topics a2a ai-agents ai-gateway anthropic claude claude-code cline codex copilot cursor deepseek free-ai gemini kimi llm-gateway mcp openai openai-proxy qwen token-saver Resources Readme MIT license Code of conduct Code o"
-        },
-        {
-          "match": "Free",
-          "context": "pository files navigation README Code of conduct Contributing MIT license Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This i"
-        },
-        {
-          "match": "Free",
-          "context": "icense Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party fre"
-        },
-        {
-          "match": "free",
-          "context": "ree Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party free tiers, not a token grant from OmniRoute. Sign up, obtain credentials where required, and connect the providers you can"
-        },
-        {
-          "match": "free",
-          "context": "required, and connect the providers you can use; each provider controls its limits, availability, and terms.   Stacking free tiers by hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute cat"
-        },
-        {
-          "match": "free",
-          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 484 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
-        },
-        {
-          "match": "free",
-          "context": "ional identity verification, and never summed into the headline. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers,"
-        },
-        {
-          "match": "free",
-          "context": "e. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figure"
-        },
-        {
-          "match": "FREE",
-          "context": "ry of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends"
-        },
-        {
-          "match": "free",
-          "context": "ERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends a free tier and the number drops; a new one lands and it climbs. We publish what the catalog actually computes, never a rounde"
-        },
-        {
-          "match": "free",
-          "context": "🧠 Unique chat model IDs   1320   1374   1475       🖼️ Modality Bridge   🆕 vision + audio + video   ✓   ✓       📡 Radar free catalog   🆕 opt-in   ✓   ✓       ⚖️ Quota-aware scheduling   🆕 Quota-Share   ✓   ✓       📊 Quota telemetry   🆕 live   ✓"
-        },
-        {
-          "match": "Free",
-          "context": "ing Kiro, are excluded from automatic routing by default; connecting an account does not override that setting. See the Free Tiers Guide before choosing a provider.   📦 Copy-paste quickstart scripts for Python, Node.js, PHP, and cURL → examples"
-        },
-        {
-          "match": "free",
-          "context": "inks tagged aff=omniroute are partner links. They fund the project at no extra cost to you.       🎟️ Affiliates Promo — free signup coupons from providers we don't sponsor (click to expand)   This section is for referral/coupon codes only. Spon"
-        },
-        {
-          "match": "free",
-          "context": "re public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniR"
-        },
-        {
-          "match": "free",
-          "context": "can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Cha"
-        },
-        {
-          "match": "free",
-          "context": "te link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup coupon that benefits OmniRoute users? Open an issue and we'll add it here.         🎯 Combos — The Flagship"
-        },
-        {
-          "match": "Free",
-          "context": "ick whatever fits you. Sponsorship never affects routing priority; it buys visibility, not ranking.     ⭐ Star the repo Free — genuinely helps visibility Star OmniRoute   🐙 GitHub Sponsors One-off or monthly · zero platform fee github.com/spons"
-        },
-        {
-          "match": "free",
-          "context": "s/DEVELOPER-ENVIRONMENT.md for guidance on managing local environment files and secrets.   📡 OmniRoute Radar   The main free-tier headline remains ~1.62B tokens/month from the documented, pool-deduplicated catalog above. Temporary provider sign"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "lolo-freellm",

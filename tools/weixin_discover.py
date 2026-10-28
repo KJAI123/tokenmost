@@ -3,7 +3,7 @@
 搜狗 robots 仅限制其自家蜘蛛；本工具低频查询（每关键词 1 请求 + 限量重定向解析）。
 产出：data-research/weixin_articles.json（文章/账号发现记录）。"""
 from __future__ import annotations
-import json, re, sys, time, urllib.request
+import json, re, sys, time, urllib.request, http.cookiejar
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -17,6 +17,11 @@ QUERIES = ["免费 claude", "qwen 免费", "copilot 学生", "API 中转 折扣"
 SNOWBALL_SEEDS = [  # 已知文章：从文内互链滚雪球
     "https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg",
 ]
+
+# 带 cookie 的会话级 opener（搜狗 /link 解析必需：SUID/ABTEST 预热）
+_CJ = http.cookiejar.CookieJar()
+_OP = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_CJ))
+_OP.addheaders = [("User-Agent", UA)]
 
 def fetch(url: str, referer: str = "") -> tuple[int, str]:
     try:
@@ -49,17 +54,19 @@ def sogou(query: str) -> list[dict]:
     return out[:10]
 
 def resolve(sogou_link: str) -> str:
-    """解析搜狗 /link 重定向到真实 mp.weixin 地址（低频，仅取前几条）。"""
-    st, h = fetch(sogou_link.replace("/link?", "/link?"), referer="https://weixin.sogou.com/")
-    m = re.search(r'url \+= \'([^\']*)\'', h) or re.search(r'href\s*=\s*"(https?://mp\.weixin\.qq\.com[^"]+)"', h)
-    if m and "mp.weixin" in (m.group(1) or ""):
-        return m.group(1)
-    parts = re.findall(r"url \+= '([^']*)'", h)
-    if parts:
-        cand = "".join(parts).replace("@", "")
-        if cand.startswith("http"):
-            return cand
-    return ""
+    """解析搜狗 /link 加密跳转：cookie 预热 + Referer + JS 片段拼装（2026-10-28 实测 3/3）。"""
+    try:
+        clean = "".join(sogou_link.split()).replace("&amp;", "&")
+        req = urllib.request.Request("https://weixin.sogou.com" + clean,
+                                     headers={"Referer": "https://weixin.sogou.com/"})
+        body = _OP.open(req, timeout=12).read().decode("utf-8", "ignore")
+    except Exception:
+        return ""
+    frag = "".join(re.findall(r"url \+= '([^']*)'", body)).replace("@", "")
+    if frag.startswith("http"):
+        return frag
+    m = re.search(r'window\.location\.replace\("([^"]+)"\)', body)
+    return m.group(1) if m else ""
 
 def snowball(seed: str) -> dict:
     st, h = fetch(seed)
