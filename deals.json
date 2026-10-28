@@ -623,7 +623,7 @@
   "difficulty": 1,
   "published": false,
   "notes": "⚠️ 主管深挖核实：1024 轮已于 10-26 09:00 失效、周末计划暂无新一轮——周期性活动（约每月 1-2 轮，下一节点预测 1111），盯 ZCode 客户端活动卡片；多号玩法拒绝收录",
-  "group": "智谱 ZCode"
+  "group": "ZCode"
  },
  {
   "id": "aliyun-100coupon",
@@ -1527,7 +1527,7 @@
   "tokens_wan": 50000,
   "via": "client",
   "notes": "已失效（存档用于预测下一轮节奏：智谱大礼包≈每月1-2轮，下一节点1111）。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + smzdm post.smzdm.com/p/ak8lw7xk + 官方活动页存在（JS）。20万份为搜索摘要数字（中）；数额/截止时间多源一致（高）",
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-zhipu-weekend-3yi",
@@ -1563,7 +1563,7 @@
   "published": false,
   "via": "client",
   "notes": "已失效。夜间免费型活动可能复刻，作节奏参考。来源：smzdm+搜索摘要（中-高）",
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-zhipu-start-plan",
@@ -1582,7 +1582,7 @@
   "via": "register",
   "notes": "⏰ 中置信（官方活动页 JS 渲染），10-28 23:59 截止——最后的窗口，尽快领",
   "tokens_wan": 300,
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-zhipu-trial-card",
@@ -1599,7 +1599,7 @@
   "published": true,
   "via": "register",
   "notes": "折算参考：2000积分≈Flash输出250万token（按官方公式）。来源：官方FAQ（高）+知乎 p/2076249896244473928 实测（限量数字中）。当前是否仍在发需登录 bigmodel.cn 确认",
-  "group": "智谱",
+  "group": "ZCode",
   "eq_wan": 800,
   "eq_note": "7天体验卡2000积分；按官方积分公式折约800万(估算)"
  },
@@ -2176,7 +2176,7 @@
   "tokens_wan": 300,
   "via": "client",
   "notes": "证据链补全：CSDN实测文（5天免费）blog.csdn.net/jiangfuofu555/article/details/162196304 + linux.do 社区（约300万，俗称免费鸡蛋）+ 官方changelog搜索摘要含Start Plan字样；维持partial、published=false，明日截止前需人工登录核",
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-zhipu-zcode-invite-r2",
@@ -2193,7 +2193,7 @@
   "published": true,
   "via": "invite",
   "notes": "官方 changelog 原文（高）；活动仍在客户端进行中；「免费蹬蹬」为官方活动名原样收录",
-  "group": "智谱",
+  "group": "ZCode",
   "eq_wan": 2000,
   "eq_note": "客户端邀请活动权益;对标API侧2000万/人(估算,待数额公布)"
  },
@@ -2246,7 +2246,7 @@
   "published": false,
   "via": "client",
   "notes": "官方changelog直核免费层存在（高）；数额未知；「¥70标准版」仅搜索摘要单源（低）不收录数字",
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-sensenova-tokenplan-beta",
@@ -2784,7 +2784,7 @@
   "notes": "💡 老板 2026-10-27 亲测官方客户端「升级套餐」页截图直核——此前『约 300 万』估算作废，实测口径大 13 倍；与 r7 定版重复，已归档防重复计账（等效口径 v2.4）",
   "eq_wan": 13645,
   "eq_note": "同 r7 口径（体验套餐双条目同折）",
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-tencent-yuanqi-verified-r6",
@@ -2908,7 +2908,7 @@
   "tokens_wan": 13645,
   "via": "client",
   "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事",
-  "group": "智谱",
+  "group": "ZCode",
   "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（¥0/5 天窗口总量，非月度流水）"
  },
  {
@@ -3274,6 +3274,7 @@
   "published": true,
   "via": "invite",
   "daily_wan": 10000,
-  "daily_note": "每日 1 亿 token 池滚动放量（老板亲测口径）+ZCode 3.0 每日 500 万"
+  "daily_note": "每日 1 亿 token 池滚动放量（老板亲测口径）+ZCode 3.0 每日 500 万",
+  "group": "ZCode"
  }
 ]

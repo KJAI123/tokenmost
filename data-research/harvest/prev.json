@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T16:18:58Z",
+  "harvested_at": "2026-10-28T17:08:12Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,6 +637,10 @@
         },
         {
           "match": "会员",
+          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
+        },
+        {
+          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -726,10 +730,6 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
-        },
-        {
-          "match": "会员",
-          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -737,8 +737,130 @@
       "id": "gemini-pricing",
       "name": "Gemini API 定价",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费开始构建，享受宽裕的额度",
+          "context": "eveloper API 价格                                                                                                         免费开始构建，享受宽裕的额度；待应用可用于生产用途后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   ch"
+        },
+        {
+          "match": "免费输入和输出 token",
+          "context": "后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   check_circle 免费输入和输出 token   check_circle Google AI Studio 访问权限   check_circle 内容会用于改进 Google 产品 *     免费开始使用       付费   适用于需要更高调用量和高级功能的生产级应用。"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "码生成而打造。   注意 ： Gemini 4 Argon 不适用于免费层级。模型处理的每个 token 都会被统计并计费，包括思考 token、内部工具系统指令以及使用接地功能时的函数声明。   标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 2.00 美元。 2026 年 12 月 1 日起为 4.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
+          "context": "*   不可用   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "0 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "日之前为 0.05 美元。 2026 年 12 月 1 日起为 0.10 美元。 仅限隐式缓存（不支持显式缓存）。       用于改进 Google 产品   不可用   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "flash         在 Google AI Studio 中试用        Google 旗下最智能的 Flash 模型，专为长期软件工程、自主智能体和复杂的企业工作流而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "2 月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
+          "context": "用 **   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "6-flash         在 Google AI Studio 中试用        Google 的上一代 Flash 模型，在一般性智能体任务和日常任务中兼顾了速度和多模态功能。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "00 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "view       在 Google AI Studio 中试用        我们的低延迟音频转音频模型，针对实时语音智能体和实时对话场景进行了优化，包括通过扩展思考提供后台推理支持。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.75 美元（文本） 3.00 美元或 0.005 美元/分钟（音频） 1.00 美元或 0.002 美元/分钟（图片/视频）       输出价格（包括思考 Token）   免费   4"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "3.5-live-translate-preview         在 Google AI Studio 中试用        我们的低延迟实时语音转语音翻译模型，支持 70 多种语言。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.0053 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.0315 美元/分钟 * （音频）       用"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ibe-live         在 Google AI Studio 中试用        Google 的低延迟、实时语音转文字模型，可通过 WebSocket 实现双向流式音频转写。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.005 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.004 美元/分钟 * （文本）       依托"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "3.5-transcribe         在 Google AI Studio 中试用        我们的语音转文字模型，支持自动检测语言、讲话人区分、字词级时间戳和自定义词汇偏好。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2.00 美元或 0.003 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   12.00 美元或 0.002 美元/分钟 * （文本）       依托"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ni-3.5-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.30 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   免费   $2.50       上下文缓存价格   不可用   0.03 美元 1.0"
+        },
+        {
+          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+        },
+        {
+          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "搜索查询 14 美元计费。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+        },
+        {
+          "match": "免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $4.50       上下文缓存价格   不可用   0.05 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+        },
+        {
+          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.015 美元 1.00 美元/100 万个 token/小时（存储价格）       用于改进 Google 产品   是   是           * 客户向"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ni-3.1-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.25 美元（文本 / 图片 / 视频） 0.50 美元（音频）       输出价格（包括思考 Token）   免费   $1.50       上下文缓存价格   不可用   0.02"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ash         在 Google AI Studio 中试用        Google 的新一代视频生成和编辑模型，现已面向使用 Gemini API 付费层级的开发者正式推出。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   不可用   9.00 美元（文本） 17.50 美元（视频） *       用于改进"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "eview-customtools         在 Google AI Studio 中试用        我们的第三代 Pro 模型，专为多模态理解能力、智能体功能和氛围编程而打造。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2.00 美元：提示 <= 20 万个 token 4.00 美元：提示 > 20 万个 token       输出价格（包括思考 Token）   不可用   12.00 美元：提示 <"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "1 Flash Image) 的更新版本，专为高效图片生成和对话式编辑而打造，在 1K、2K 和 4K 分辨率下，视觉质量、多轮角色一致性、准确的文本渲染以及基于搜索的生成能力均有所提升。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本/图片/视频）       输出价格   不可用   7.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 图片 0.0336 美元 * 、"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "在所有 Gemini 3 及更新的模型中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ge         在 Google AI Studio 中试用        Gemini 3.1 Flash 图片生成模型专为速度和效率而打造，非常适合快速交互式响应和高吞吐量场景。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.50 美元（文本/图片）       输出价格   不可用   3 美元（文本和思考）   60.00 美元（图片）   相当于每张 0.5K 图片 0.045 美元 *   每张 1K"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "oogle AI Studio 中试用        Gemini 3.1 Flash Lite Image 模型是图片生成系列中的效率专家，专为超低延迟和高性价比的图片生成和编辑而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.25 美元（文本/图片/视频）       输出价格   不可用   1.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 分辨率图片 0.0336 美元 *"
+        }
+      ]
     },
     {
       "id": "azure-students",
@@ -873,8 +995,54 @@
       "id": "gemini-rate-limits",
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
-      "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "status": "ok",
+      "hits": 11,
+      "findings": [
+        {
+          "match": "$10       第 2 层级   $50       第 3 ",
+          "context": "。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用"
+        },
+        {
+          "match": "$200          如果您达到基于支出的速率限制，API 会",
+          "context": "于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用较小的上下文窗口或较短的输出。   如果您在正常使用期间始终达到此限制，请 申"
+        },
+        {
+          "match": "$250       第 2 层级   已支付 100 美元 + 自",
+          "context": "务（包括但不限于 Gemini API）上的累计总支出。          使用层   资格赛   结算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批"
+        },
+        {
+          "match": "$2,000       第 3 层级   已支付 1,000 ",
+          "context": "算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批准，但在极少数情况下，升级请求可能会因审核过程中发现的其他因素而被拒绝。    此系统有助于维护"
+        },
+        {
+          "match": "每日 token",
+          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，"
+        },
+        {
+          "match": "RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RP",
+          "context": "发出的请求数量。这些限制有助于维护公平使用、防范滥用行为，并帮助所有用户保持系统性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非"
+        },
+        {
+          "match": "RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请",
+          "context": "个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够"
+        },
+        {
+          "match": "RPD ) 配额会在美国太平洋时间零点重置",
+          "context": "的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)"
+        },
+        {
+          "match": "RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强",
+          "context": "能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
+        },
+        {
+          "match": "RPM）",
+          "context": "升级到下一层级。从免费层级升级到第 1 层级通常会立即生效，后续层级升级将在 10 分钟内生效。前往 AI Studio 中的 “项目”页面 ，查看您的层级。    申请提高速率限制    每个模型变体都有一个关联的速率限制（每分钟请求数，RPM）。 如需详细了解这些速率限制，请参阅 AI Studio 速率限制 页面。    申请提高付费层级速率限制    我们不保证一定会提高您的速率限制，但会尽力审核您的请求。"
+        },
+        {
+          "match": "RPD",
+          "context": "性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按"
+        }
+      ]
     },
     {
       "id": "groq-rate-limits",
@@ -1287,8 +1455,130 @@
       "id": "mistral-usage-limits",
       "name": "Mistral 用量限额",
       "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
-      "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "Free",
+          "context": "usage, and limits   Your Mistral plan defines the included monthly usage and limits available to your Organization.     Free mode lets you create API keys and use included monthly usage within the limits shown on the Limits page.   Pay-as-you-g"
+        },
+        {
+          "match": "limits",
+          "context": "Usage and limits | Mistral Docs Docs & API Search docs ⌘K Vibe Studio Inference & Models Admin Resources API Reference Search docs ⌘K To"
+        },
+        {
+          "match": "limits",
+          "context": "our Organization Access and permissions Configure Workspaces Billing and usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to unders"
+        },
+        {
+          "match": "limits",
+          "context": "nd usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits"
+        },
+        {
+          "match": "limits",
+          "context": "tions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page"
+        },
+        {
+          "match": "limits",
+          "context": "Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage"
+        },
+        {
+          "match": "limits",
+          "context": "limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API ra"
+        },
+        {
+          "match": "limits",
+          "context": "on consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use"
+        },
+        {
+          "match": "limits",
+          "context": "s and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages dep"
+        },
+        {
+          "match": "limits",
+          "context": "ply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you ne"
+        },
+        {
+          "match": "limits",
+          "context": "global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:"
+        },
+        {
+          "match": "limits",
+          "context": "ending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:   Task Admin Panel page Review usage and c"
+        },
+        {
+          "match": "limits",
+          "context": "o check or change:   Task Admin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspac"
+        },
+        {
+          "match": "Limits",
+          "context": "dmin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspace spending limit Admin Pane"
+        },
+        {
+          "match": "limits",
+          "context": "ling period. Use it to understand spend, identify heavy usage areas, and decide whether to adjust Workspace caps or API limits.   The dashboard can show:     total cost;   cost per day;   completion usage;   Vibe usage beyond quota;   OCR usage;"
+        },
+        {
+          "match": "limits",
+          "context": "recent invoice payments fail, access can also be affected until the payments are processed again.   Workspace spending limits cannot exceed the Organization spending limit. To manage payments, credits, billing information, and invoices, see Bill"
+        },
+        {
+          "match": "limits",
+          "context": "tion spending limit. To manage payments, credits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspac"
+        },
+        {
+          "match": "limits",
+          "context": "dits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspace. Use Workspace caps to model team budgets,"
+        },
+        {
+          "match": "limits",
+          "context": "ab.   Set Monthly spending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can s"
+        },
+        {
+          "match": "limits",
+          "context": "ending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown"
+        },
+        {
+          "match": "limits",
+          "context": ".     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ ."
+        },
+        {
+          "match": "limits",
+          "context": "orkspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate"
+        },
+        {
+          "match": "Limits",
+          "context": "rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and"
+        },
+        {
+          "match": "limits",
+          "context": "define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minu"
+        },
+        {
+          "match": "limits",
+          "context": "n can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the m"
+        },
+        {
+          "match": "limits",
+          "context": "n in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the model.   Requests per seco"
+        },
+        {
+          "match": "limits",
+          "context": "oken throughput limit for the model.   Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds pe"
+        },
+        {
+          "match": "limits",
+          "context": "Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month."
+        },
+        {
+          "match": "limits",
+          "context": "second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document O"
+        },
+        {
+          "match": "limits",
+          "context": "o audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document OCR rate limits Copy section link Document OCR rate limits   Document OCR limits apply to OCR API consumption and can include pages per"
+        }
+      ]
     },
     {
       "id": "cohere-rate-limits",
@@ -1865,15 +2155,11 @@
       "name": "AI for Software Developm",
       "url": "https://aws.amazon.com/q/developer/pricing/",
       "status": "ok",
-      "hits": 19,
+      "hits": 18,
       "findings": [
         {
           "match": "$19/mo. per user                 ",
           "context": "Free Tier: Advanced capabilities at zero cost         Pro Tier: Expanded limits $19/mo. per user                 摘要             每月的代理请求次数有限   可访问最新的 Claude 模型   可在 IDE 或 CLI 中使用             免费套餐中包含的所有内容，以及     提高了代理请求限额   提高了 Java 和"
-        },
-        {
-          "match": "免费",
-          "context": "跳至主要内容         想了解专为中国区域提供的云产品？请访问 www.amazonaws.cn 。申请中国区域免费套餐请访问 www.amazonaws.cn/free 。"
         },
         {
           "match": "免费",
@@ -2616,7 +2902,7 @@
         },
         {
           "match": "pricing",
-          "context": "ort Hooks reference Supported surfaces for policies Copilot allowlist reference Metrics data Copilot billing Models and pricing Billing cycle Seat assignment License changes Azure billing Request-based billing (legacy) What changed with billing (l"
+          "context": "upported connectors Supported surfaces for policies Copilot allowlist reference Metrics data Copilot billing Models and pricing Billing cycle Seat assignment License changes Azure billing Request-based billing (legacy) What changed with billing (l"
         },
         {
           "match": "Pricing",
@@ -3008,20 +3294,130 @@
       "id": "gh-aipmandy-freetoken-blob-daf",
       "name": "FreeToken/README.md at d",
       "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
-    },
-    {
-      "id": "sogou-wx-token",
-      "name": "搜狗微信·token免费额度",
-      "url": "https://weixin.sogou.com/weixin?type=2&query=token+免费额度",
-      "status": "robots_disallowed"
-    },
-    {
-      "id": "sogou-wx-yangmao",
-      "name": "搜狗微信·AI羊毛折扣码",
-      "url": "https://weixin.sogou.com/weixin?type=2&query=AI+羊毛+折扣码",
-      "status": "robots_disallowed"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费 AI API Token",
+          "context": "# 🎁 FreeToken  收集各种免费 AI API Token 的获取方法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-gith"
+        },
+        {
+          "match": "免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度",
+          "context": "法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服"
+        },
+        {
+          "match": "免费额度](#-国内大模型免费额度",
+          "context": "最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)"
+        },
+        {
+          "match": "免费额度](#️-云服务免费额度",
+          "context": "ub-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)  ---  ## 🏆 GitHub 热门免费 API 项目  ### 🔥 第一梯队（万星以上）  | 项目 | Sta"
+        },
+        {
+          "match": "免费额度  ### OpenAI - **免费额度",
+          "context": "t.ai](https://www.forefront.ai/) | | **nat.dev** | 免费的 AI 代码助手，支持多种模型 | [nat.dev](https://nat.dev/) |  ---  ## 🤖 AI 模型官方免费额度  ### OpenAI - **免费额度**: 新用户注册送 **$5 体验金**（有效期 3 个月） - **获取方式**:  1. 访问 [OpenAI Platform](https://platform.openai.com/)  2. 注册账号并验证手机号  3. 在"
+        },
+        {
+          "match": "免费额度",
+          "context": "*限制**: 免费层速率限制因模型而异 - **推荐模型**: GPT-4o-mini（性价比最高） - **文档**: https://platform.openai.com/docs  ### Anthropic Claude - **免费额度**: 新用户注册送**小额体验金**（具体金额未公开） - **获取方式**:  1. 访问 [Anthropic Console](https://console.anthropic.com/)  2. 注册账号  3. 创建 API"
+        },
+        {
+          "match": "免费额度",
+          "context": "aude Haiku 系列价格低，适合日常使用 - **亮点**: Claude 3.5 Sonnet 代码能力顶尖 - **文档**: https://docs.anthropic.com/  ### Google Gemini - **免费额度**: **免费层**（Gemini 2.5 Flash 等模型免费输入输出） - **获取方式**:  1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Googl"
+        },
+        {
+          "match": "免费层额度非常慷慨，200 万 Token",
+          "context": "1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Google 账号登录  3. 获取 API Key - **亮点**: Gemini 2.5 Pro/Flash 免费层额度非常慷慨，200 万 Token/天 - **⚠️ 注意**: Gemini 2.0 Flash 已弃用，将于 2026 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https"
+        },
+        {
+          "match": "免费额度",
+          "context": "26 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https://ai.google.dev/docs  ### xAI (Grok) - **免费额度**: 新用户**可能**有体验金（金额不固定，非官方公开承诺） - **获取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**"
+        },
+        {
+          "match": "免费额度**: 免费层有基础调用额度",
+          "context": "取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**: https://docs.x.ai/  ### Mistral - **免费额度**: 免费层有基础调用额度 - **获取方式**: 访问 [Mistral Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mist"
+        },
+        {
+          "match": "免费额度**: 试用版有基础调用额度",
+          "context": "Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mistral.ai/  ### Cohere - **免费额度**: 试用版有基础调用额度（具体数量不固定） - **获取方式**: 访问 [Cohere Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://doc"
+        },
+        {
+          "match": "免费额度  > ⚠️ 以下国内厂商的免费额度",
+          "context": "e Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://docs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSe"
+        },
+        {
+          "match": "免费额度",
+          "context": "ocs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSeek、Llama、Mistral、Qwen、GLM、Nemotron 等 - **限制**: 每 1.5 秒一次请求（每天可调用 5 万+"
+        },
+        {
+          "match": "免费额度**: **100 万亿（100T）Token",
+          "context": "试用版，不是阉割版 - **省多少钱**: 同时用 3-4 个模型，一年至少省 **7000 元** - **文档**: https://build.nvidia.com/docs  ### 小米 MiMo 🔥🔥（Andy 推荐） - **免费额度**: **100 万亿（100T）Token** 激励计划，赠完即止 - **活动时间**: 2026 年 4 月 28 日 00:00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t."
+        },
+        {
+          "match": "免费发放 - **API 地址**: https://token",
+          "context": "00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t.xiaomimimo.com/) - **亮点**: 小米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万"
+        },
+        {
+          "match": "免费额度**: 注册送 **500万 Tokens",
+          "context": "米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万 Tokens），日常使用几乎免费 - **获取方式**: 访问 [DeepSeek Platform](https://platform.deepseek.com/) - **亮点**: 性价"
+        },
+        {
+          "match": "免费额度",
+          "context": "型优秀 - **推荐**: DeepSeek-V3（综合能力）、DeepSeek-R1（复杂推理） - **文档**: https://platform.deepseek.com/api-docs  ### 通义千问 (Qwen) - **免费额度**: 部分模型**限时免费**，注册送体验金 - **获取方式**: 访问 [阿里云百炼](https://bailian.console.aliyun.com/) - **亮点**: Qwen 系列模型齐全，多模态能力强 - **推荐*"
+        },
+        {
+          "match": "免费额度**: 注册送 **500万 Tokens",
+          "context": "，多模态能力强 - **推荐**: Qwen-Plus（综合能力）、Qwen-VL（视觉理解） - **文档**: https://help.aliyun.com/zh/model-studio/  ### 智谱 AI (GLM) - **免费额度**: 注册送 **500万 Tokens** 体验金 - **获取方式**: 访问 [智谱开放平台](https://open.bigmodel.cn/) - **亮点**: GLM-4 系列，支持联网搜索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速"
+        },
+        {
+          "match": "免费额度",
+          "context": "索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速）、GLM-4V（视觉理解） - **文档**: https://open.bigmodel.cn/dev/api  ### 百度文心一言 (ERNIE) - **免费额度**: 部分模型**完全免费** - **获取方式**: 访问 [百度千帆](https://qianfan.cloud.baidu.com/) - **亮点**: ERNIE-Speed 系列免费，中文能力强 - **推荐**: ERNI"
+        },
+        {
+          "match": "免费额度",
+          "context": "推荐**: ERNIE-Speed-8K（免费）、ERNIE-4.0（付费高级） - **文档**: https://cloud.baidu.com/doc/WENXINWORKSHOP/  ### Moonshot (月之暗面) - **免费额度**: 注册送 **15 元** 体验金 - **获取方式**: 访问 [Moonshot 开放平台](https://platform.moonshot.cn/) - **亮点**: Kimi 长文本能力，128K 上下文，K1 思考模型"
+        },
+        {
+          "match": "免费额度",
+          "context": "- **推荐**: moonshot-v1-8k（日常）、moonshot-v1-128k（长文本） - **文档**: https://platform.moonshot.cn/docs  ### MiniMax (海螺 AI) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [MiniMax 开放平台](https://platform.minimaxi.com/) - **亮点**: 语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础"
+        },
+        {
+          "match": "免费额度**: 星火 Lite **完全免费**，其他版本送 Token",
+          "context": "语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础）、speech-01（语音） - **文档**: https://platform.minimaxi.com/docs  ### 讯飞星火 (Spark) - **免费额度**: 星火 Lite **完全免费**，其他版本送 Token - **获取方式**: 访问 [讯飞开放平台](https://xinghuo.xfyun.cn/) - **亮点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **"
+        },
+        {
+          "match": "免费额度",
+          "context": "点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **文档**: https://www.xfyun.cn/doc/spark/  ### 豆包 (字节跳动) - **免费额度**: 部分模型**限时免费** - **获取方式**: 访问 [火山引擎](https://console.volcengine.com/ark) - **亮点**: 字节跳动出品，多模态能力强，联网搜索优秀 - **推荐**: Doub"
+        },
+        {
+          "match": "免费额度",
+          "context": "，联网搜索优秀 - **推荐**: Doubao-pro（综合）、Doubao-vision（视觉） - **文档**: https://www.volcengine.com/docs/82379  ### 阶跃星辰 (Step) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [阶跃星辰开放平台](https://platform.stepfun.com/) - **亮点**: 多模态理解能力强 - **推荐**: Step-1（基础）、Step-1V（视觉）"
+        },
+        {
+          "match": "免费额度",
+          "context": "le Gemini 2.5 Flash（Google 官方）  - Mistral Large（欧洲之光） - **文档**: https://openrouter.ai/docs  ### Silicon Flow (硅基流动) - **免费额度**: 多个模型**完全免费**（Qwen、GLM、Llama 等） - **获取方式**: 访问 [SiliconFlow](https://cloud.siliconflow.cn/) - **亮点**: 国内直连，免费模型多，Open"
+        },
+        {
+          "match": "免费额度**: 每天 **10,000 次",
+          "context": "2B（阿里最强）  - DeepSeek-V2.5（性价比王）  - GLM-4-9B（智谱免费） - **文档**: https://docs.siliconflow.cn/  ### Cloudflare Workers AI - **免费额度**: 每天 **10,000 次**请求免费 - **获取方式**: 注册 [Cloudflare](https://dash.cloudflare.com/) → Workers AI - **亮点**: 全球边缘节点，延迟低，无需信用卡 - **推荐模型**: Lla"
+        },
+        {
+          "match": "免费额度",
+          "context": "信用卡 - **推荐模型**: Llama 3、Mistral、SDXL（图像生成） - **文档**: https://developers.cloudflare.com/workers-ai/  ### Together AI - **免费额度**: 注册送 **$25 体验金**（2026年6月更新） - **获取方式**: 访问 [Together AI](https://api.together.xyz/) - **亮点**: 开源模型丰富（Llama、Mixtral、FL"
+        },
+        {
+          "match": "免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次",
+          "context": "lama、Mixtral、FLUX等），速度快 - **推荐模型**: Llama 3.1 405B、FLUX.1-schnell（图像） - **文档**: https://docs.together.ai/  ### Groq - **免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次** - **获取方式**: 访问 [Groq Console](https://console.groq.com/) - **亮点**: 超快推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama"
+        },
+        {
+          "match": "免费额度**: 免费层有基础额度",
+          "context": "推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama 3.1 70B（速度最快） - **文档**: https://console.groq.com/docs  ### Cerebras - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [Cerebras](https://cloud.cerebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: h"
+        },
+        {
+          "match": "免费额度**: 免费层有基础额度",
+          "context": "rebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: https://cerebras.ai/docs  ### SambaNova - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [SambaNova Cloud](https://cloud.sambanova.ai/) - **亮点**: 开源模型高速推理 - **推荐模型**: Llama 3、Qwen - **文档**: htt"
+        }
+      ]
     },
     {
       "id": "cursor-pricing",
@@ -3571,8 +3967,130 @@
       "id": "omniroute-repo",
       "name": "OmniRoute 白嫖网关(3.7万Star)",
       "url": "https://github.com/diegosouzapw/OmniRoute",
-      "status": "error",
-      "error": "RemoteDisconnected: Remote end closed connection without response"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$100 free credits on signup (free ",
+          "context": "ese are public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Chat"
+        },
+        {
+          "match": "$100 →     ⚠️ Affiliate link — Omn",
+          "context": "the OpenAI-compatible path. Available models include claude-opus-4-8 , claude-opus-5 , gpt-5.6-sol and more. Grab your $100 →     ⚠️ Affiliate link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup c"
+        },
+        {
+          "match": "$0 in cost analytics; budget, qu",
+          "context": "án), RTK filters for Gradle & .NET. → Compression   💸 Honest flat-rate cost — subscription / coding-plan providers read $0 in cost analytics; budget, quota & routing keep estimating. → API Reference   ⚖️ Quota-Share routing — split a shared account's quota fairly across p"
+        },
+        {
+          "match": "$0, no card       OpenCode Zen D",
+          "context": "d 350+ more — every icon resolves live from the dashboard's provider catalog. 📖 Provider Reference     🆓 Free Forever — $0, no card       OpenCode Zen DeepSeek V4, Nemotron 3 No token cap   Kilo Code Auto-router, Tencent Hy3 Free forever   Requesty GPT-OSS 120B, Nemotron"
+        },
+        {
+          "match": "$5 credit; card required   OpenR",
+          "context": "Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md"
+        },
+        {
+          "match": "$10 → higher RPM       📖 Full mac",
+          "context": "NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app,"
+        },
+        {
+          "match": "RPM rolling leases per connection. → Resili",
+          "context": "2A Server   🛂 Adaptive admission & overload protection — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → Resilience Guide   🗂️ Canonical /v1/models ordering — one contiguous provider-grouped block per provider (combos pinned first)"
+        },
+        {
+          "match": "RPM free   Cerebras GLM 4.7, GPT-OSS One-ti",
+          "context": "Pollinations GPT, Llama, Claude No key needed   Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/ref"
+        },
+        {
+          "match": "RPM       📖 Full machine-readable catalog →",
+          "context": "iMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app, your machine, your rule"
+        },
+        {
+          "match": "Free",
+          "context": "GitHub - cheaper-inference/OmniRoute: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+        },
+        {
+          "match": "Free",
+          "context": "ettings Fork 12.1k  ( 12.1k ) Star 82.1k  ( 82.1k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+        },
+        {
+          "match": "free",
+          "context": "must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cli"
+        },
+        {
+          "match": "free",
+          "context": "utors omniroute.online Topics a2a ai-agents ai-gateway anthropic claude claude-code cline codex copilot cursor deepseek free-ai gemini kimi llm-gateway mcp openai openai-proxy qwen token-saver Resources Readme MIT license Code of conduct Code o"
+        },
+        {
+          "match": "Free",
+          "context": "pository files navigation README Code of conduct Contributing MIT license Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This i"
+        },
+        {
+          "match": "Free",
+          "context": "icense Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party fre"
+        },
+        {
+          "match": "free",
+          "context": "ree Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party free tiers, not a token grant from OmniRoute. Sign up, obtain credentials where required, and connect the providers you can"
+        },
+        {
+          "match": "free",
+          "context": "required, and connect the providers you can use; each provider controls its limits, availability, and terms.   Stacking free tiers by hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute cat"
+        },
+        {
+          "match": "free",
+          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 484 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
+        },
+        {
+          "match": "free",
+          "context": "ional identity verification, and never summed into the headline. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers,"
+        },
+        {
+          "match": "free",
+          "context": "e. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figure"
+        },
+        {
+          "match": "FREE",
+          "context": "ry of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends"
+        },
+        {
+          "match": "free",
+          "context": "ERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends a free tier and the number drops; a new one lands and it climbs. We publish what the catalog actually computes, never a rounde"
+        },
+        {
+          "match": "free",
+          "context": "🧠 Unique chat model IDs   1320   1374   1475       🖼️ Modality Bridge   🆕 vision + audio + video   ✓   ✓       📡 Radar free catalog   🆕 opt-in   ✓   ✓       ⚖️ Quota-aware scheduling   🆕 Quota-Share   ✓   ✓       📊 Quota telemetry   🆕 live   ✓"
+        },
+        {
+          "match": "Free",
+          "context": "ing Kiro, are excluded from automatic routing by default; connecting an account does not override that setting. See the Free Tiers Guide before choosing a provider.   📦 Copy-paste quickstart scripts for Python, Node.js, PHP, and cURL → examples"
+        },
+        {
+          "match": "free",
+          "context": "inks tagged aff=omniroute are partner links. They fund the project at no extra cost to you.       🎟️ Affiliates Promo — free signup coupons from providers we don't sponsor (click to expand)   This section is for referral/coupon codes only. Spon"
+        },
+        {
+          "match": "free",
+          "context": "re public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniR"
+        },
+        {
+          "match": "free",
+          "context": "can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Cha"
+        },
+        {
+          "match": "free",
+          "context": "te link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup coupon that benefits OmniRoute users? Open an issue and we'll add it here.         🎯 Combos — The Flagship"
+        },
+        {
+          "match": "Free",
+          "context": "ick whatever fits you. Sponsorship never affects routing priority; it buys visibility, not ranking.     ⭐ Star the repo Free — genuinely helps visibility Star OmniRoute   🐙 GitHub Sponsors One-off or monthly · zero platform fee github.com/spons"
+        },
+        {
+          "match": "free",
+          "context": "s/DEVELOPER-ENVIRONMENT.md for guidance on managing local environment files and secrets.   📡 OmniRoute Radar   The main free-tier headline remains ~1.62B tokens/month from the documented, pool-deduplicated catalog above. Temporary provider sign"
+        }
+      ]
     },
     {
       "id": "lolo-freellm",
@@ -4084,21 +4602,518 @@
       "id": "warp-pricing",
       "name": "Warp",
       "url": "https://www.warp.dev/pricing",
-      "status": "error",
-      "error": "timeout: The read operation timed out"
+      "status": "ok",
+      "hits": 20,
+      "findings": [
+        {
+          "match": "$0 /month For developers who wan",
+          "context": "In Book a demo Get Started Warp Terminal and agents Warp Factories Automated software delivery Pricing for Warp Free   $0 /month For developers who want Warp’s modern terminal with the flexibility to use Warp’s AI or bring their own. Download Now Includes core terminal f"
+        },
+        {
+          "match": "$20 /month For developers who wan",
+          "context": "cess ○ Limited cloud conversation storage Purchase additional agent usage Build Recommended Monthly Annual Monthly plan $20 /month For developers who want flexible access to AI that scales with their usage Start Today Everything in Free, plus: ○ $20 of agent usage included"
+        },
+        {
+          "match": "$20 of agent usage included each ",
+          "context": "onth For developers who want flexible access to AI that scales with their usage Start Today Everything in Free, plus: ○ $20 of agent usage included each month at API rates ○ Full Warp Agent access (frontier and open-source models from OpenAI, Anthropic, z.ai, and more) ○ A"
+        },
+        {
+          "match": "$200 /month For developers who nee",
+          "context": "ited cloud conversation storage ○ Private email support Purchase additional agent usage Max Monthly Annual Monthly plan $200 /month For developers who need maximum AI capacity with all the flexibility of Build Start Today Everything in Build, plus: ○ $200 of agent usage inc"
+        },
+        {
+          "match": "$200 of agent usage included each ",
+          "context": "For developers who need maximum AI capacity with all the flexibility of Build Start Today Everything in Build, plus: ○ $200 of agent usage included each month (10× Build) ○ Add-on agent usage, auto-reload, and team-wide spend cap Purchase additional agent usage Business Mo"
+        },
+        {
+          "match": "$50 /user /month For teams scalin",
+          "context": "agent usage, auto-reload, and team-wide spend cap Purchase additional agent usage Business Monthly Annual Monthly plan $50 /user /month For teams scaling AI-powered development (up to 25 seats) Start Today Everything in Build, plus: ○ $20 of agent usage included per seat"
+        },
+        {
+          "match": "$20 of agent usage included per s",
+          "context": "lan $50 /user /month For teams scaling AI-powered development (up to 25 seats) Start Today Everything in Build, plus: ○ $20 of agent usage included per seat each month at API rates ○ Team usage metrics ○ Admin-configurable data controls ○ Bring your own API keys and custom"
+        },
+        {
+          "match": "$0 /month For developers who wan",
+          "context": "arding and implementation engineer support ○ Dedicated account manager and a shared Slack channel with your team Free   $0 /month For developers who want Warp’s modern terminal with the flexibility to use Warp’s AI or bring their own. Download Now Includes core terminal f"
+        },
+        {
+          "match": "$18 /month For developers who wan",
+          "context": "ccess ○ Limited cloud conversation storage Purchase additional agent usage Build Recommended Monthly Annual Annual plan $18 /month For developers who want flexible access to AI that scales with their usage Start Today Everything in Free, plus: ○ $20 of agent usage included"
+        },
+        {
+          "match": "$180 /month For developers who nee",
+          "context": "mited cloud conversation storage ○ Private email support Purchase additional agent usage Max Monthly Annual Annual plan $180 /month For developers who need maximum AI capacity with all the flexibility of Build Start Today Everything in Build, plus: ○ $200 of agent usage inc"
+        },
+        {
+          "match": "$45 /user /month For teams scalin",
+          "context": "n agent usage, auto-reload, and team-wide spend cap Purchase additional agent usage Business Monthly Annual Annual plan $45 /user /month For teams scaling AI-powered development (up to 25 seats) Start Today Everything in Build, plus: ○ $20 of agent usage included per seat"
+        },
+        {
+          "match": "$20 of agent usage included per s",
+          "context": "lan $45 /user /month For teams scaling AI-powered development (up to 25 seats) Start Today Everything in Build, plus: ○ $20 of agent usage included per seat each month at API rates ○ Team usage metrics ○ Admin-configurable data controls ○ Bring your own API keys and custom"
+        },
+        {
+          "match": "$0 /month For teams getting star",
+          "context": "ctories. Execution is usage-based; each plan adds capabilities for teams, governance, and infrastructure. Pay as you go $0 /month For teams getting started with software factories. Request access   ○ Usage at 20% above API rates ○ Built-in and custom agents with cloud run"
+        },
+        {
+          "match": "$20 /month For developers buildin",
+          "context": "d self-improvement ○ Warp-hosted factory-as-code and cross-platform cloud runners Purchase additional agent usage Build $20 /month For developers building repeatable factory workflows. Start today Everything in Pay as you go, plus: ○ Usage at API rates ○ Claude Code and Co"
+        },
+        {
+          "match": "$50 /user /month For teams scalin",
+          "context": "your GitHub code forge ○ Attribution controls and multiple admins Purchase additional agent usage Business Recommended $50 /user /month For teams scaling factories across production workflows. Start today Everything in Build, plus: ○ SAML-based SSO ○ Team telemetry and co"
+        },
+        {
+          "match": "rpm Red Hat, Fedora, SUSE .deb x64 ARM64 .r",
+          "context": "experimental features with Warp Preview Mac macOS Version 10.14+ $ brew install --cask warp Linux .deb Debian, Ubuntu .rpm Red Hat, Fedora, SUSE .deb x64 ARM64 .rpm x64 ARM64 .tar.zst Arch Linux x64 ARM64 AppImage x64 ARM64 Windows .exe Windows 11/10 x64 .exe Windows 11/10 ARM64 $"
+        },
+        {
+          "match": "Free",
+          "context": "ng Sign In Book a demo Get Started Warp Terminal and agents Warp Factories Automated software delivery Pricing for Warp Free   $0 /month For developers who want Warp’s modern terminal with the flexibility to use Warp’s AI or bring their own. Do"
+        },
+        {
+          "match": "Free",
+          "context": "ly plan $20 /month For developers who want flexible access to AI that scales with their usage Start Today Everything in Free, plus: ○ $20 of agent usage included each month at API rates ○ Full Warp Agent access (frontier and open-source models"
+        },
+        {
+          "match": "Free",
+          "context": "ve onboarding and implementation engineer support ○ Dedicated account manager and a shared Slack channel with your team Free   $0 /month For developers who want Warp’s modern terminal with the flexibility to use Warp’s AI or bring their own. Do"
+        },
+        {
+          "match": "Free",
+          "context": "al plan $18 /month For developers who want flexible access to AI that scales with their usage Start Today Everything in Free, plus: ○ $20 of agent usage included each month at API rates ○ Full Warp Agent access (frontier and open-source models"
+        }
+      ]
     },
     {
       "id": "tabnine-pricing",
       "name": "Tabnine",
       "url": "https://www.tabnine.com/pricing/",
-      "status": "error",
-      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+      "status": "ok",
+      "hits": 3,
+      "findings": [
+        {
+          "match": "Trial",
+          "context": "rces Blog Case studies eBooks & Guides Reports & White Papers Webinars & videos Glossary Product insights Product tours Trials Product updates AI-powered quality Tricentis Labs Events Tricentis Transform 2026 Upcoming webinars Past conference hi"
+        },
+        {
+          "match": "Trial",
+          "context": "Events Tricentis Transform 2026 Upcoming webinars Public sector events Recent conference highlights Contact us Demos & Trials Locations Follow Us     Get a demo or trial Send your testing into overdrive Copyright ©2026 Tricentis. All Rights Res"
+        },
+        {
+          "match": "trial",
+          "context": "inars Public sector events Recent conference highlights Contact us Demos & Trials Locations Follow Us     Get a demo or trial Send your testing into overdrive Copyright ©2026 Tricentis. All Rights Reserved Exercise Your Privacy Rights Privacy Po"
+        }
+      ]
     },
     {
       "id": "sensenova-platform",
       "name": "商汤 SenseNova 平台",
       "url": "https://platform.sensenova.cn",
       "status": "robots_disallowed"
+    },
+    {
+      "id": "deepinfra-pricing",
+      "name": "DeepInfra 定价",
+      "url": "https://deepinfra.com/prices",
+      "status": "error",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "fireworks-pricing",
+      "name": "Fireworks 定价",
+      "url": "https://fireworks.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$0.008 150M - 350M $0.016 Qwen3 8B $",
+          "context": "ving paths, visit our full pricing documentation . Embeddings Base model parameter count $ / 1M input tokens up to 150M $0.008 150M - 350M $0.016 Qwen3 8B $0.1 Limited-time offer Training Pricing Serve fine-tuned models for the same price as base models. Muse Glimmer 30B SFT"
+        },
+        {
+          "match": "$0.50 $1.00 $1.00 $2.00 Models 16.1",
+          "context": "FAQ on calculating image tokens. Base Model LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >30"
+        },
+        {
+          "match": "$3.00 $6.00 $6.00 $12.00 Models 80B",
+          "context": "LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSeek V3, Kimi K2) $10.00 $20.0"
+        },
+        {
+          "match": "$6.00 $12.00 $12.00 $24.00 Models >",
+          "context": "s $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSeek V3, Kimi K2) $10.00 $20.00 $20.00 $40.00 Serverless Training API Attach to a shared, always-on train"
+        },
+        {
+          "match": "$10.00 $20.00 $20.00 $40.00 Serverle",
+          "context": "0 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSeek V3, Kimi K2) $10.00 $20.00 $20.00 $40.00 Serverless Training API Attach to a shared, always-on trainer pool for LoRA training on the launch models. There’s no provisioni"
+        },
+        {
+          "match": "$6.19 $1.239 $15.48 $18.58 DeepSeek",
+          "context": "s Training API catalog. Base Model Context Prefill / 1M Cached Prefill / 1M Sample / 1M Train / 1M Muse Spark Open 256K $6.19 $1.239 $15.48 $18.58 DeepSeek V4.1 Flash 1017 256K $0.60 $0.12 $3.60 $4.98 GLM 5.3 Flash 200K $2.96 $0.593 $7.41 $8.89 GLM 5.3 262K $4.86 $0.972 $12."
+        },
+        {
+          "match": "$0.60 $0.12 $3.60 $4.98 GLM 5.3 Fla",
+          "context": "ached Prefill / 1M Sample / 1M Train / 1M Muse Spark Open 256K $6.19 $1.239 $15.48 $18.58 DeepSeek V4.1 Flash 1017 256K $0.60 $0.12 $3.60 $4.98 GLM 5.3 Flash 200K $2.96 $0.593 $7.41 $8.89 GLM 5.3 262K $4.86 $0.972 $12.15 $14.58 Qwen 3.8 27B 128K $1.86 $0.372 $5.595 $4.103 Ki"
+        },
+        {
+          "match": "$2.96 $0.593 $7.41 $8.89 GLM 5.3 26",
+          "context": "use Spark Open 256K $6.19 $1.239 $15.48 $18.58 DeepSeek V4.1 Flash 1017 256K $0.60 $0.12 $3.60 $4.98 GLM 5.3 Flash 200K $2.96 $0.593 $7.41 $8.89 GLM 5.3 262K $4.86 $0.972 $12.15 $14.58 Qwen 3.8 27B 128K $1.86 $0.372 $5.595 $4.103 Kimi K3 192K $10.87 $2.17 $27.11 $32.55 DeepS"
+        },
+        {
+          "match": "$4.86 $0.972 $12.15 $14.58 Qwen 3.8",
+          "context": "8 $18.58 DeepSeek V4.1 Flash 1017 256K $0.60 $0.12 $3.60 $4.98 GLM 5.3 Flash 200K $2.96 $0.593 $7.41 $8.89 GLM 5.3 262K $4.86 $0.972 $12.15 $14.58 Qwen 3.8 27B 128K $1.86 $0.372 $5.595 $4.103 Kimi K3 192K $10.87 $2.17 $27.11 $32.55 DeepSeek V4 Flash 0731 262K $1.74 $0.35 $4."
+        },
+        {
+          "match": "$1.86 $0.372 $5.595 $4.103 Kimi K3 ",
+          "context": "$0.12 $3.60 $4.98 GLM 5.3 Flash 200K $2.96 $0.593 $7.41 $8.89 GLM 5.3 262K $4.86 $0.972 $12.15 $14.58 Qwen 3.8 27B 128K $1.86 $0.372 $5.595 $4.103 Kimi K3 192K $10.87 $2.17 $27.11 $32.55 DeepSeek V4 Flash 0731 262K $1.74 $0.35 $4.33 $5.20 Muse Glimmer 30B 128K $1.96 $0.39 $4"
+        },
+        {
+          "match": "$10.87 $2.17 $27.11 $32.55 DeepSeek ",
+          "context": "96 $0.593 $7.41 $8.89 GLM 5.3 262K $4.86 $0.972 $12.15 $14.58 Qwen 3.8 27B 128K $1.86 $0.372 $5.595 $4.103 Kimi K3 192K $10.87 $2.17 $27.11 $32.55 DeepSeek V4 Flash 0731 262K $1.74 $0.35 $4.33 $5.20 Muse Glimmer 30B 128K $1.96 $0.39 $4.88 $5.86 Dedicated Training API Dedicate"
+        },
+        {
+          "match": "$1.74 $0.35 $4.33 $5.20 Muse Glimme",
+          "context": "$14.58 Qwen 3.8 27B 128K $1.86 $0.372 $5.595 $4.103 Kimi K3 192K $10.87 $2.17 $27.11 $32.55 DeepSeek V4 Flash 0731 262K $1.74 $0.35 $4.33 $5.20 Muse Glimmer 30B 128K $1.96 $0.39 $4.88 $5.86 Dedicated Training API Dedicated Training API jobs are priced per GPU hour. Please se"
+        },
+        {
+          "match": "$1.96 $0.39 $4.88 $5.86 Dedicated T",
+          "context": "4.103 Kimi K3 192K $10.87 $2.17 $27.11 $32.55 DeepSeek V4 Flash 0731 262K $1.74 $0.35 $4.33 $5.20 Muse Glimmer 30B 128K $1.96 $0.39 $4.88 $5.86 Dedicated Training API Dedicated Training API jobs are priced per GPU hour. Please see the On-Demand Pricing section below for deta"
+        },
+        {
+          "match": "$0.134 $8.00 H200 141 GB GPU $0.134 ",
+          "context": "priced at a 1.5x premium. Contact Sales to get started. GPU Type Price ($) per minute Price ($) per hour H100 80 GB GPU $0.134 $8.00 H200 141 GB GPU $0.134 $8.00 B200 180 GB GPU $0.217 $13.00 B300 288 GB GPU $0.250 $15.00 GB300 288 GB GPU $0.334 $20.00 SOC 2 Type 2 ISO 27001"
+        },
+        {
+          "match": "$8.00 B200 180 GB GPU $0.217 $13.00",
+          "context": "les to get started. GPU Type Price ($) per minute Price ($) per hour H100 80 GB GPU $0.134 $8.00 H200 141 GB GPU $0.134 $8.00 B200 180 GB GPU $0.217 $13.00 B300 288 GB GPU $0.250 $15.00 GB300 288 GB GPU $0.334 $20.00 SOC 2 Type 2 ISO 27001 ISO 27701 ISO 42001 Products Overvi"
+        },
+        {
+          "match": "$0.250 $15.00 GB300 288 GB GPU $0.33",
+          "context": "ice ($) per hour H100 80 GB GPU $0.134 $8.00 H200 141 GB GPU $0.134 $8.00 B200 180 GB GPU $0.217 $13.00 B300 288 GB GPU $0.250 $15.00 GB300 288 GB GPU $0.334 $20.00 SOC 2 Type 2 ISO 27001 ISO 27701 ISO 42001 Products Overview Inference Nexus Training Pricing Solutions For ent"
+        },
+        {
+          "match": "$20.00 SOC 2 Type 2 ISO 27001 ISO 27",
+          "context": "$8.00 H200 141 GB GPU $0.134 $8.00 B200 180 GB GPU $0.217 $13.00 B300 288 GB GPU $0.250 $15.00 GB300 288 GB GPU $0.334 $20.00 SOC 2 Type 2 ISO 27001 ISO 27701 ISO 42001 Products Overview Inference Nexus Training Pricing Solutions For enterprise For startups Code assistance C"
+        },
+        {
+          "match": "free",
+          "context": "Limited-time offer Training Pricing Serve fine-tuned models for the same price as base models. Muse Glimmer 30B SFT is free via UI and Serverless Training API until 11/30 ✨ No credit card required. Start a job Managed Training Supervised and p"
+        },
+        {
+          "match": "credit",
+          "context": "e See pricing Serverless Inference Pay per token with pre-paid, usage-based billing. Simply add a payment method to buy credits, and usage is then deducted from your balance. Usage is billed on output, input, and cached tokens. Turn on Auto Reloa"
+        },
+        {
+          "match": "credit",
+          "context": "els for the same price as base models. Muse Glimmer 30B SFT is free via UI and Serverless Training API until 11/30 ✨ No credit card required. Start a job Managed Training Supervised and preference fine tuning is priced per 1M training tokens. SFT"
+        },
+        {
+          "match": "tier",
+          "context": "you prefill, sample, and train. Checkpoint storage for serverless models is included during private preview. Other frontier models are coming soon to the Serverless Training API catalog. Base Model Context Prefill / 1M Cached Prefill / 1M Samp"
+        },
+        {
+          "match": "$0",
+          "context": "ur full pricing documentation . Embeddings Base model parameter count $ / 1M input tokens up to 150M $0.008 150M - 350M $0.016 Qwen3 8B $0.1 Limited-time offer Training Pricing Serve fine-tuned models for the same price as base models. Muse G"
+        },
+        {
+          "match": "$0",
+          "context": "documentation . Embeddings Base model parameter count $ / 1M input tokens up to 150M $0.008 150M - 350M $0.016 Qwen3 8B $0.1 Limited-time offer Training Pricing Serve fine-tuned models for the same price as base models. Muse Glimmer 30B SFT i"
+        },
+        {
+          "match": "$1",
+          "context": "calculating image tokens. Base Model LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12."
+        },
+        {
+          "match": "$1",
+          "context": "lating image tokens. Base Model LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12"
+        },
+        {
+          "match": "$2",
+          "context": "image tokens. Base Model LoRA SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $2"
+        },
+        {
+          "match": "$6",
+          "context": "SFT LoRA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSee"
+        },
+        {
+          "match": "$6",
+          "context": "RA DPO Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSeek V3,"
+        },
+        {
+          "match": "$12",
+          "context": "Full Param SFT Full Param DPO Models up to 16B parameters $0.50 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSeek V3, Kimi K2"
+        },
+        {
+          "match": "$12",
+          "context": "0 $1.00 $1.00 $2.00 Models 16.1B - 80B $3.00 $6.00 $6.00 $12.00 Models 80B - 300B (e.g. Qwen3-235B, gpt-oss-120B) $6.00 $12.00 $12.00 $24.00 Models >300B (e.g. DeepSeek V3, Kimi K2) $10.00 $20.00 $20.00 $40.00 Serverless Training API Attach to"
+        }
+      ]
+    },
+    {
+      "id": "modal-pricing",
+      "name": "Modal 定价",
+      "url": "https://modal.com/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$1B in annualized run rate, new ",
+          "context": "Pricing: Pay per second for GPUs and CPUs | Modal                     Skip to content Series D: $1B in annualized run rate, new funding, and where Modal goes next. Learn more Download logo as .svg Download wordmark as .svg Go to press kit Products"
+        },
+        {
+          "match": "$ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia ",
+          "context": "actual compute time, by the  CPU cycle. Get started Contact us Resource costs Per hour Per second GPU Tasks Nvidia B300 $ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia B200 $ 0.001736 0 . 0 0 1 7 3 6 / sec Nvidia H200 SXM $ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia H100 SXM5 $ 0.001097 0 . 0"
+        },
+        {
+          "match": "$ 0.001736 0 . 0 0 1 7 3 6 / sec Nvidia ",
+          "context": "tarted Contact us Resource costs Per hour Per second GPU Tasks Nvidia B300 $ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia B200 $ 0.001736 0 . 0 0 1 7 3 6 / sec Nvidia H200 SXM $ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia H100 SXM5 $ 0.001097 0 . 0 0 1 0 9 7 / sec Nvidia RTX PRO 6000 $ 0.0008"
+        },
+        {
+          "match": "$ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia ",
+          "context": "ond GPU Tasks Nvidia B300 $ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia B200 $ 0.001736 0 . 0 0 1 7 3 6 / sec Nvidia H200 SXM $ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia H100 SXM5 $ 0.001097 0 . 0 0 1 0 9 7 / sec Nvidia RTX PRO 6000 $ 0.000842 0 . 0 0 0 8 4 2 / sec Nvidia A100, 80 GB $ 0.0"
+        },
+        {
+          "match": "$ 0.001097 0 . 0 0 1 0 9 7 / sec Nvidia ",
+          "context": "2 / sec Nvidia B200 $ 0.001736 0 . 0 0 1 7 3 6 / sec Nvidia H200 SXM $ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia H100 SXM5 $ 0.001097 0 . 0 0 1 0 9 7 / sec Nvidia RTX PRO 6000 $ 0.000842 0 . 0 0 0 8 4 2 / sec Nvidia A100, 80 GB $ 0.000694 0 . 0 0 0 6 9 4 / sec Nvidia A100, 40 GB $ 0"
+        },
+        {
+          "match": "$ 0.000842 0 . 0 0 0 8 4 2 / sec Nvidia ",
+          "context": "Nvidia H200 SXM $ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia H100 SXM5 $ 0.001097 0 . 0 0 1 0 9 7 / sec Nvidia RTX PRO 6000 $ 0.000842 0 . 0 0 0 8 4 2 / sec Nvidia A100, 80 GB $ 0.000694 0 . 0 0 0 6 9 4 / sec Nvidia A100, 40 GB $ 0.000583 0 . 0 0 0 5 8 3 / sec Nvidia L40S $ 0.000542"
+        },
+        {
+          "match": "$ 0.000694 0 . 0 0 0 6 9 4 / sec Nvidia ",
+          "context": "idia H100 SXM5 $ 0.001097 0 . 0 0 1 0 9 7 / sec Nvidia RTX PRO 6000 $ 0.000842 0 . 0 0 0 8 4 2 / sec Nvidia A100, 80 GB $ 0.000694 0 . 0 0 0 6 9 4 / sec Nvidia A100, 40 GB $ 0.000583 0 . 0 0 0 5 8 3 / sec Nvidia L40S $ 0.000542 0 . 0 0 0 5 4 2 / sec Nvidia A10 $ 0.000306 0 . 0 0"
+        },
+        {
+          "match": "$ 0.000583 0 . 0 0 0 5 8 3 / sec Nvidia ",
+          "context": "ia RTX PRO 6000 $ 0.000842 0 . 0 0 0 8 4 2 / sec Nvidia A100, 80 GB $ 0.000694 0 . 0 0 0 6 9 4 / sec Nvidia A100, 40 GB $ 0.000583 0 . 0 0 0 5 8 3 / sec Nvidia L40S $ 0.000542 0 . 0 0 0 5 4 2 / sec Nvidia A10 $ 0.000306 0 . 0 0 0 3 0 6 / sec Nvidia L4 $ 0.000222 0 . 0 0 0 2 2 2 /"
+        },
+        {
+          "match": "$ 0.000542 0 . 0 0 0 5 4 2 / sec Nvidia ",
+          "context": "sec Nvidia A100, 80 GB $ 0.000694 0 . 0 0 0 6 9 4 / sec Nvidia A100, 40 GB $ 0.000583 0 . 0 0 0 5 8 3 / sec Nvidia L40S $ 0.000542 0 . 0 0 0 5 4 2 / sec Nvidia A10 $ 0.000306 0 . 0 0 0 3 0 6 / sec Nvidia L4 $ 0.000222 0 . 0 0 0 2 2 2 / sec Nvidia T4 $ 0.000164 0 . 0 0 0 1 6 4 / s"
+        },
+        {
+          "match": "$ 0.000306 0 . 0 0 0 3 0 6 / sec Nvidia ",
+          "context": "6 9 4 / sec Nvidia A100, 40 GB $ 0.000583 0 . 0 0 0 5 8 3 / sec Nvidia L40S $ 0.000542 0 . 0 0 0 5 4 2 / sec Nvidia A10 $ 0.000306 0 . 0 0 0 3 0 6 / sec Nvidia L4 $ 0.000222 0 . 0 0 0 2 2 2 / sec Nvidia T4 $ 0.000164 0 . 0 0 0 1 6 4 / sec CPU $ 0.0000131 0 . 0 0 0 0 1 3 1 / core"
+        },
+        {
+          "match": "$ 0.000222 0 . 0 0 0 2 2 2 / sec Nvidia ",
+          "context": ". 0 0 0 5 8 3 / sec Nvidia L40S $ 0.000542 0 . 0 0 0 5 4 2 / sec Nvidia A10 $ 0.000306 0 . 0 0 0 3 0 6 / sec Nvidia L4 $ 0.000222 0 . 0 0 0 2 2 2 / sec Nvidia T4 $ 0.000164 0 . 0 0 0 1 6 4 / sec CPU $ 0.0000131 0 . 0 0 0 0 1 3 1 / core / sec Physical core (2 vCPU equivalent) *mi"
+        },
+        {
+          "match": "$ 0.000164 0 . 0 0 0 1 6 4 / sec CPU $ 0",
+          "context": "0 . 0 0 0 5 4 2 / sec Nvidia A10 $ 0.000306 0 . 0 0 0 3 0 6 / sec Nvidia L4 $ 0.000222 0 . 0 0 0 2 2 2 / sec Nvidia T4 $ 0.000164 0 . 0 0 0 1 6 4 / sec CPU $ 0.0000131 0 . 0 0 0 0 1 3 1 / core / sec Physical core (2 vCPU equivalent) *minimum of 0.125 cores per container Memory $"
+        },
+        {
+          "match": "$ 0.00000222 0 . 0 0 0 0 0 2 2 2 / GiB / s",
+          "context": "0.0000131 0 . 0 0 0 0 1 3 1 / core / sec Physical core (2 vCPU equivalent) *minimum of 0.125 cores per container Memory $ 0.00000222 0 . 0 0 0 0 0 2 2 2 / GiB / sec Volumes $ 0.09 0 . 0 9 / GiB / mo *includes 1 TiB / mo free Network Egress $ 0.04 0 . 0 4 / GiB *See plan for include"
+        },
+        {
+          "match": "$ 0.09 0 . 0 9 / GiB / mo *includes ",
+          "context": "e (2 vCPU equivalent) *minimum of 0.125 cores per container Memory $ 0.00000222 0 . 0 0 0 0 0 2 2 2 / GiB / sec Volumes $ 0.09 0 . 0 9 / GiB / mo *includes 1 TiB / mo free Network Egress $ 0.04 0 . 0 4 / GiB *See plan for included usage / mo Pricing plans Starter Popular Buil"
+        },
+        {
+          "match": "$ 0.04 0 . 0 4 / GiB *See plan for i",
+          "context": "$ 0.00000222 0 . 0 0 0 0 0 2 2 2 / GiB / sec Volumes $ 0.09 0 . 0 9 / GiB / mo *includes 1 TiB / mo free Network Egress $ 0.04 0 . 0 4 / GiB *See plan for included usage / mo Pricing plans Starter Popular Built for small teams and independent developers looking to level up. $"
+        },
+        {
+          "match": "$0 + compute / month $30 / month",
+          "context": "included usage / mo Pricing plans Starter Popular Built for small teams and independent developers looking to level up. $0 + compute / month $30 / month free credits 3 workspace seats included 100 containers + 10 GPU concurrency Scheduled and Web Functions (limited) Real-"
+        },
+        {
+          "match": "$30 / month free credit Get start",
+          "context": "Web Functions (limited) Real-time metrics and logs Region selection 1 TiB / month free network egress Get started with $30 / month free credit Get started Team Built for startups and larger organizations looking to scale quickly. $250 + compute / month $100 / month free c"
+        },
+        {
+          "match": "$250 + compute / month $100 / mont",
+          "context": "ted with $30 / month free credit Get started Team Built for startups and larger organizations looking to scale quickly. $250 + compute / month $100 / month free credits Unlimited seats 5000 containers + 50 GPU concurrency Unlimited Scheduled Functions Custom domains Static"
+        },
+        {
+          "match": "$10k free compute credits on Moda",
+          "context": "compute credits on Modal. Apply now Credit grants for academics Graduate students, labs, and researchers can get up to $10k free compute credits on Modal Apply now Use committed spend on Modal Transact through the AWS and GCP marketplace to use committed spend on Modal. A"
+        },
+        {
+          "match": "$ 0.00003942 0 . 0 0 0 0 3 9 4 2 / core / ",
+          "context": "costs button]:px-3.5 [&>button]:py-[3px]\"> Per hour Per second CPU (non-preemptible) Physical core (2 vCPU equivalent) $ 0.00003942 0 . 0 0 0 0 3 9 4 2 / core / sec *minimum of 0.125 cores per container Memory (non-preemptible) $ 0.00000667 0 . 0 0 0 0 0 6 6 7 / GiB / sec GPU See"
+        },
+        {
+          "match": "$ 0.00000667 0 . 0 0 0 0 0 6 6 7 / GiB / s",
+          "context": "quivalent) $ 0.00003942 0 . 0 0 0 0 3 9 4 2 / core / sec *minimum of 0.125 cores per container Memory (non-preemptible) $ 0.00000667 0 . 0 0 0 0 0 6 6 7 / GiB / sec GPU See standard pricing Why serverless? Modal is serverless, which means that we instantly autoscale up and  down fo"
+        },
+        {
+          "match": "$5,400 75 GPUs × 24 hrs × $3 / G",
+          "context": "ctive than fixed on-demand/reserved  compute. Traditional cloud You’re billed for reserved GPUs, even when usage drops. $5,400 75 GPUs × 24 hrs × $3 / GPU-hr Modal serverless cloud Only pay for what you use, when you use it. $4,740 12% lower cost Avg 50 GPUs × 24 hrs × $3"
+        },
+        {
+          "match": "$4,740 12% lower cost Avg 50 GPU",
+          "context": "n usage drops. $5,400 75 GPUs × 24 hrs × $3 / GPU-hr Modal serverless cloud Only pay for what you use, when you use it. $4,740 12% lower cost Avg 50 GPUs × 24 hrs × $3.95 / GPU-hr Compare features Plans Starter $0 + compute / month path]:fill-v2-secondary-orange\"> Team $2"
+        },
+        {
+          "match": "$3.95 / GPU-hr Compare features Pla",
+          "context": "GPU-hr Modal serverless cloud Only pay for what you use, when you use it. $4,740 12% lower cost Avg 50 GPUs × 24 hrs × $3.95 / GPU-hr Compare features Plans Starter $0 + compute / month path]:fill-v2-secondary-orange\"> Team $250 + compute / month Enterprise Custom compute C"
+        },
+        {
+          "match": "$0 + compute / month path]:fill-",
+          "context": "at you use, when you use it. $4,740 12% lower cost Avg 50 GPUs × 24 hrs × $3.95 / GPU-hr Compare features Plans Starter $0 + compute / month path]:fill-v2-secondary-orange\"> Team $250 + compute / month Enterprise Custom compute Compare Starter, Team, and Enterprise plans"
+        },
+        {
+          "match": "$250 + compute / month Enterprise ",
+          "context": "PUs × 24 hrs × $3.95 / GPU-hr Compare features Plans Starter $0 + compute / month path]:fill-v2-secondary-orange\"> Team $250 + compute / month Enterprise Custom compute Compare Starter, Team, and Enterprise plans Plans Starter: $0 + compute / month Team: $250 + compute / mo"
+        },
+        {
+          "match": "$0 + compute / month Team: $250 ",
+          "context": "ange\"> Team $250 + compute / month Enterprise Custom compute Compare Starter, Team, and Enterprise plans Plans Starter: $0 + compute / month Team: $250 + compute / month Enterprise: Custom compute Workspace Number of seats Up to 3 Unlimited Unlimited Credits and variable"
+        },
+        {
+          "match": "$30 / month $100 / month Custom I",
+          "context": "prise: Custom compute Workspace Number of seats Up to 3 Unlimited Unlimited Credits and variable costs Included compute $30 / month $100 / month Custom Included network egress 1 TiB / month 10 TiB / month 100 TiB / month Features Containers 100 5000 Custom GPU concurrency"
+        },
+        {
+          "match": "$0.02365/day for the CPU, and $0.00200",
+          "context": "chedule a job to run once a day for an hour. The job uses 50% of one CPU core and 256 MiB of memory. This job will cost $0.02365/day for the CPU, and $0.00200/day for the memory, adding up to $0.02565/day , or $0.77 over 30 days . What's an example of real-world GPU billing? Yo"
+        },
+        {
+          "match": "$0.02565/day , or $0.77 over 30 days .",
+          "context": "core and 256 MiB of memory. This job will cost $0.02365/day for the CPU, and $0.00200/day for the memory, adding up to $0.02565/day , or $0.77 over 30 days . What's an example of real-world GPU billing? You run stable diffusion on an A10G GPU. This will run for about 1.5 secon"
+        }
+      ]
+    },
+    {
+      "id": "novita-pricing",
+      "name": "Novita 定价",
+      "url": "https://novita.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$0.3 /Mt · Cache Read $0.006 /Mt O",
+          "context": "lities and competitive pricing for enterprise and research applications. DeepSeek V4.1 Flash 1017 More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4.1 Flash More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4 Pr"
+        },
+        {
+          "match": "$1.2 /Mt DeepSeek V4.1 Flash More ",
+          "context": "prise and research applications. DeepSeek V4.1 Flash 1017 More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4.1 Flash More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4 Pro 0813 More Context 1M Input $1.32 /Mt ·"
+        },
+        {
+          "match": "$0.3 /Mt · Cache Read $0.006 /Mt O",
+          "context": "h 1017 More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4.1 Flash More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4 Pro 0813 More Context 1M Input $1.32 /Mt · Cache Read $0.044 /Mt Output $3.96 /Mt DeepSeek V4"
+        },
+        {
+          "match": "$1.2 /Mt DeepSeek V4 Pro 0813 More",
+          "context": "Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4.1 Flash More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4 Pro 0813 More Context 1M Input $1.32 /Mt · Cache Read $0.044 /Mt Output $3.96 /Mt DeepSeek V4 Flash 0731 More Context 1M Input $0.44"
+        },
+        {
+          "match": "$1.32 /Mt · Cache Read $0.044 /Mt O",
+          "context": "Flash More Context 1M Input $0.3 /Mt · Cache Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4 Pro 0813 More Context 1M Input $1.32 /Mt · Cache Read $0.044 /Mt Output $3.96 /Mt DeepSeek V4 Flash 0731 More Context 1M Input $0.44 /Mt · Cache Read $0.028 /Mt Output $1.32 /Mt DeepSeek"
+        },
+        {
+          "match": "$3.96 /Mt DeepSeek V4 Flash 0731 Mo",
+          "context": "che Read $0.006 /Mt Output $1.2 /Mt DeepSeek V4 Pro 0813 More Context 1M Input $1.32 /Mt · Cache Read $0.044 /Mt Output $3.96 /Mt DeepSeek V4 Flash 0731 More Context 1M Input $0.44 /Mt · Cache Read $0.028 /Mt Output $1.32 /Mt DeepSeek V4 Pro More Context 1M Input $1.6 /Mt ·"
+        },
+        {
+          "match": "$0.44 /Mt · Cache Read $0.028 /Mt O",
+          "context": "3 More Context 1M Input $1.32 /Mt · Cache Read $0.044 /Mt Output $3.96 /Mt DeepSeek V4 Flash 0731 More Context 1M Input $0.44 /Mt · Cache Read $0.028 /Mt Output $1.32 /Mt DeepSeek V4 Pro More Context 1M Input $1.6 /Mt · Cache Read $0.135 /Mt Output $3.2 /Mt DeepSeek OCR 2 Mo"
+        },
+        {
+          "match": "$1.32 /Mt DeepSeek V4 Pro More Cont",
+          "context": "Read $0.044 /Mt Output $3.96 /Mt DeepSeek V4 Flash 0731 More Context 1M Input $0.44 /Mt · Cache Read $0.028 /Mt Output $1.32 /Mt DeepSeek V4 Pro More Context 1M Input $1.6 /Mt · Cache Read $0.135 /Mt Output $3.2 /Mt DeepSeek OCR 2 More Context 8K Input $0.03 /Mt Output $0.0"
+        },
+        {
+          "match": "$1.6 /Mt · Cache Read $0.135 /Mt O",
+          "context": "ash 0731 More Context 1M Input $0.44 /Mt · Cache Read $0.028 /Mt Output $1.32 /Mt DeepSeek V4 Pro More Context 1M Input $1.6 /Mt · Cache Read $0.135 /Mt Output $3.2 /Mt DeepSeek OCR 2 More Context 8K Input $0.03 /Mt Output $0.03 /Mt DeepSeek R1 0528 More Context 160K Input"
+        },
+        {
+          "match": "$3.2 /Mt DeepSeek OCR 2 More Conte",
+          "context": "· Cache Read $0.028 /Mt Output $1.32 /Mt DeepSeek V4 Pro More Context 1M Input $1.6 /Mt · Cache Read $0.135 /Mt Output $3.2 /Mt DeepSeek OCR 2 More Context 8K Input $0.03 /Mt Output $0.03 /Mt DeepSeek R1 0528 More Context 160K Input $0.7 /Mt · Cache Read $0.35 /Mt Output $"
+        },
+        {
+          "match": "$0.03 /Mt Output $0.03 /Mt DeepSeek",
+          "context": "Seek V4 Pro More Context 1M Input $1.6 /Mt · Cache Read $0.135 /Mt Output $3.2 /Mt DeepSeek OCR 2 More Context 8K Input $0.03 /Mt Output $0.03 /Mt DeepSeek R1 0528 More Context 160K Input $0.7 /Mt · Cache Read $0.35 /Mt Output $2.5 /Mt DeepSeek R1 Turbo More Context 63K Inpu"
+        },
+        {
+          "match": "$0.7 /Mt · Cache Read $0.35 /Mt Ou",
+          "context": "utput $3.2 /Mt DeepSeek OCR 2 More Context 8K Input $0.03 /Mt Output $0.03 /Mt DeepSeek R1 0528 More Context 160K Input $0.7 /Mt · Cache Read $0.35 /Mt Output $2.5 /Mt DeepSeek R1 Turbo More Context 63K Input $0.7 /Mt Output $2.5 /Mt DeepSeek Advanced AI models from DeepSee"
+        },
+        {
+          "match": "$2.5 /Mt DeepSeek R1 Turbo More Co",
+          "context": "ext 8K Input $0.03 /Mt Output $0.03 /Mt DeepSeek R1 0528 More Context 160K Input $0.7 /Mt · Cache Read $0.35 /Mt Output $2.5 /Mt DeepSeek R1 Turbo More Context 63K Input $0.7 /Mt Output $2.5 /Mt DeepSeek Advanced AI models from DeepSeek, offering cutting-edge reasoning capa"
+        },
+        {
+          "match": "$0.7 /Mt Output $2.5 /Mt DeepSeek ",
+          "context": "1 0528 More Context 160K Input $0.7 /Mt · Cache Read $0.35 /Mt Output $2.5 /Mt DeepSeek R1 Turbo More Context 63K Input $0.7 /Mt Output $2.5 /Mt DeepSeek Advanced AI models from DeepSeek, offering cutting-edge reasoning capabilities and competitive pricing for enterprise an"
+        },
+        {
+          "match": "$0.3 /Mt · Cache Read $0.006 /Mt $",
+          "context": "e pricing for enterprise and research applications. Model Name Context Input Output Actions DeepSeek V4.1 Flash 1017 1M $0.3 /Mt · Cache Read $0.006 /Mt $1.2 /Mt More DeepSeek V4.1 Flash 1M $0.3 /Mt · Cache Read $0.006 /Mt $1.2 /Mt More DeepSeek V4 Pro 0813 1M $1.32 /Mt · C"
+        },
+        {
+          "match": "$0.3 /Mt · Cache Read $0.006 /Mt $",
+          "context": "Input Output Actions DeepSeek V4.1 Flash 1017 1M $0.3 /Mt · Cache Read $0.006 /Mt $1.2 /Mt More DeepSeek V4.1 Flash 1M $0.3 /Mt · Cache Read $0.006 /Mt $1.2 /Mt More DeepSeek V4 Pro 0813 1M $1.32 /Mt · Cache Read $0.044 /Mt $3.96 /Mt More DeepSeek V4 Flash 0731 1M $0.44 /M"
+        },
+        {
+          "match": "$1.32 /Mt · Cache Read $0.044 /Mt $",
+          "context": "$0.006 /Mt $1.2 /Mt More DeepSeek V4.1 Flash 1M $0.3 /Mt · Cache Read $0.006 /Mt $1.2 /Mt More DeepSeek V4 Pro 0813 1M $1.32 /Mt · Cache Read $0.044 /Mt $3.96 /Mt More DeepSeek V4 Flash 0731 1M $0.44 /Mt · Cache Read $0.028 /Mt $1.32 /Mt More DeepSeek V4 Pro 1M $1.6 /Mt · C"
+        },
+        {
+          "match": "$0.44 /Mt · Cache Read $0.028 /Mt $",
+          "context": "06 /Mt $1.2 /Mt More DeepSeek V4 Pro 0813 1M $1.32 /Mt · Cache Read $0.044 /Mt $3.96 /Mt More DeepSeek V4 Flash 0731 1M $0.44 /Mt · Cache Read $0.028 /Mt $1.32 /Mt More DeepSeek V4 Pro 1M $1.6 /Mt · Cache Read $0.135 /Mt $3.2 /Mt More DeepSeek OCR 2 8K $0.03 /Mt $0.03 /Mt Mo"
+        },
+        {
+          "match": "$1.6 /Mt · Cache Read $0.135 /Mt $",
+          "context": "$0.044 /Mt $3.96 /Mt More DeepSeek V4 Flash 0731 1M $0.44 /Mt · Cache Read $0.028 /Mt $1.32 /Mt More DeepSeek V4 Pro 1M $1.6 /Mt · Cache Read $0.135 /Mt $3.2 /Mt More DeepSeek OCR 2 8K $0.03 /Mt $0.03 /Mt More DeepSeek R1 0528 160K $0.7 /Mt · Cache Read $0.35 /Mt $2.5 /Mt M"
+        },
+        {
+          "match": "$0.03 /Mt $0.03 /Mt More DeepSeek R",
+          "context": "ache Read $0.028 /Mt $1.32 /Mt More DeepSeek V4 Pro 1M $1.6 /Mt · Cache Read $0.135 /Mt $3.2 /Mt More DeepSeek OCR 2 8K $0.03 /Mt $0.03 /Mt More DeepSeek R1 0528 160K $0.7 /Mt · Cache Read $0.35 /Mt $2.5 /Mt More DeepSeek R1 Turbo 63K $0.7 /Mt $2.5 /Mt More Z.ai GLM series m"
+        },
+        {
+          "match": "$0.7 /Mt · Cache Read $0.35 /Mt $2",
+          "context": "Pro 1M $1.6 /Mt · Cache Read $0.135 /Mt $3.2 /Mt More DeepSeek OCR 2 8K $0.03 /Mt $0.03 /Mt More DeepSeek R1 0528 160K $0.7 /Mt · Cache Read $0.35 /Mt $2.5 /Mt More DeepSeek R1 Turbo 63K $0.7 /Mt $2.5 /Mt More Z.ai GLM series models from Tsinghua University, featuring adva"
+        },
+        {
+          "match": "$0.7 /Mt $2.5 /Mt More Z.ai GLM se",
+          "context": "2 8K $0.03 /Mt $0.03 /Mt More DeepSeek R1 0528 160K $0.7 /Mt · Cache Read $0.35 /Mt $2.5 /Mt More DeepSeek R1 Turbo 63K $0.7 /Mt $2.5 /Mt More Z.ai GLM series models from Tsinghua University, featuring advanced Chinese language understanding and generation capabilities. GLM"
+        },
+        {
+          "match": "$0.15 /Mt · Cache Read $0.03 /Mt Ou",
+          "context": "ity, featuring advanced Chinese language understanding and generation capabilities. GLM 5.3 Flash More Context 1M Input $0.15 /Mt · Cache Read $0.03 /Mt Output $0.5 /Mt GLM 5.3 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.2 More Context 1M Inpu"
+        },
+        {
+          "match": "$0.5 /Mt GLM 5.3 More Context 1M I",
+          "context": "understanding and generation capabilities. GLM 5.3 Flash More Context 1M Input $0.15 /Mt · Cache Read $0.03 /Mt Output $0.5 /Mt GLM 5.3 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.2 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Outpu"
+        },
+        {
+          "match": "$1.4 /Mt · Cache Read $0.26 /Mt Ou",
+          "context": "ies. GLM 5.3 Flash More Context 1M Input $0.15 /Mt · Cache Read $0.03 /Mt Output $0.5 /Mt GLM 5.3 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.2 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.1 More Context 200K In"
+        },
+        {
+          "match": "$4.4 /Mt GLM 5.2 More Context 1M I",
+          "context": "t $0.15 /Mt · Cache Read $0.03 /Mt Output $0.5 /Mt GLM 5.3 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.2 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.1 More Context 200K Input $1.38 /Mt · Cache Read $0.26 /Mt Ou"
+        },
+        {
+          "match": "$1.4 /Mt · Cache Read $0.26 /Mt Ou",
+          "context": "ut $0.5 /Mt GLM 5.3 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.2 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.1 More Context 200K Input $1.38 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5 More Context 198K I"
+        },
+        {
+          "match": "$4.4 /Mt GLM 5.1 More Context 200K",
+          "context": "ut $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.2 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.1 More Context 200K Input $1.38 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5 More Context 198K Input $1 /Mt · Cache Read $0.2 /Mt Outpu"
+        },
+        {
+          "match": "$1.38 /Mt · Cache Read $0.26 /Mt Ou",
+          "context": "$4.4 /Mt GLM 5.2 More Context 1M Input $1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.1 More Context 200K Input $1.38 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5 More Context 198K Input $1 /Mt · Cache Read $0.2 /Mt Output $3.2 /Mt GLM 4.7 Flash More Context 195K"
+        },
+        {
+          "match": "$4.4 /Mt GLM 5 More Context 198K I",
+          "context": "$1.4 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5.1 More Context 200K Input $1.38 /Mt · Cache Read $0.26 /Mt Output $4.4 /Mt GLM 5 More Context 198K Input $1 /Mt · Cache Read $0.2 /Mt Output $3.2 /Mt GLM 4.7 Flash More Context 195K Input $0.07 /Mt · Cache Read $0.01 /Mt"
+        }
+      ]
+    },
+    {
+      "id": "xai-pricing",
+      "name": "xAI 定价",
+      "url": "https://console.x.ai",
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     }
   ]
 }
