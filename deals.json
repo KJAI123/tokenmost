@@ -303,8 +303,7 @@
   "published": true,
   "verify_by": "auto",
   "group": "AutoDL",
-  "eq_wan": 20000,
-  "eq_note": "学生会员价GPU 1.5-2.5元/时;按¥40万tok/元月2000万算力当量(估算)"
+  "notes": "；GPU 算力非 token 不折对标"
  },
  {
   "id": "gpushare-invite",
@@ -535,8 +534,8 @@
   "verify_by": "auto",
   "group": "GitHub",
   "notes": "复核(05:2x):GitHub Community #197753 确认暂停新注册——学生总账中 Copilot 部分新用户暂不可领",
-  "eq_wan": 50000,
-  "eq_note": "学生包:Azure $100/年+Copilot;折$100×300万tok/$≈3亿年当量→月2.5亿取5千万保守(估算)"
+  "tokens_wan": 30000,
+  "eq_note": "Azure $100/年+Copilot Free；$100×300万tok/$≈3亿 tokens/年一次性（$1≈300万排序口径）"
  },
  {
   "id": "azure-student",
@@ -1711,8 +1710,8 @@
   "via": "register",
   "notes": "阿里云开发者社区文（中高）；底册「100 Credits/月」补全认证前提",
   "group": "Qoder（阿里）",
-  "eq_wan": 1200,
-  "eq_note": "社区版首注300+每月100 Credits；按1 credit≈0.01元折算≈1200万/月(估算)"
+  "eq_wan": 2000,
+  "eq_note": "社区版300+100Credits/月；1 credit≈0.01元折月2000万（估算,限额未公布）"
  },
  {
   "id": "deep-qoder-cn-paid",
@@ -3127,8 +3126,8 @@
   "published": true,
   "via": "supervisor",
   "group": "OpenCode",
-  "eq_wan": 50000,
-  "eq_note": "Zen限时免费V4 Flash(200K上下文)；按$0.525/百万国际基准月5千万当量(估算,随时收回)"
+  "eq_wan": 2000,
+  "eq_note": "Zen 限时免费 V4 Flash 限额未公布；保守月2000万当量（估算,随时收回）"
  },
  {
   "id": "qoder-deepseek-free",
@@ -3146,8 +3145,8 @@
   "published": true,
   "via": "supervisor",
   "group": "Qoder（阿里）",
-  "eq_wan": 100000,
-  "eq_note": "Qoder IDE免费调V4.1-Flash-1017；IDE订阅档位月配额普遍$20-40折算1亿当量(估算)"
+  "eq_wan": 2000,
+  "eq_note": "IDE 免费调 V4.1-Flash-1017 限额未公布；保守月2000万当量（估算）"
  },
  {
   "id": "unisound-u2flash-free",
