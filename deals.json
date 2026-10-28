@@ -401,7 +401,8 @@
   "verify_by": "auto",
   "daily_wan": 20,
   "daily_note": "默认 50 次/天 ×4K≈20 万/天；充 $10 解锁 1000 次/天≈400 万/天（估算）",
-  "group": "OpenRouter"
+  "group": "OpenRouter",
+  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛"
  },
  {
   "id": "nvidia-nim",
