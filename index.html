@@ -399,14 +399,23 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <div id="calcPanel" role="dialog" aria-modal="true">
   <button id="calcClose">✕</button>
   <h3>🧮 Token 用量比价</h3>
-  <p class="sub">填你的用量，一眼看清同样的 token 在各家花多少钱 —— 免费档排最前</p>
+  <p class="sub">填你的用量，一眼看清同样的 token 在各家花多少钱 —— 免费层抵扣后才是真实净成本</p>
   <div class="calc-inputs">
     <label>输入 tokens（百万）<br><input id="calcIn" type="number" min="0" step="0.1" value="1"></label>
     <label>输出 tokens（百万）<br><input id="calcOut" type="number" min="0" step="0.1" value="1"></label>
   </div>
+  <div class="calc-inputs" style="margin-top:8px;align-items:center;flex-wrap:wrap;gap:8px">
+    <span style="font-size:.78rem;color:var(--muted)">场景预设：</span>
+    <button class="tab" data-sc="0.03,0.01">💬 轻聊 4万/天</button>
+    <button class="tab" data-sc="1.1,0.4">⌨️ 重度编程 150万/天</button>
+    <button class="tab" data-sc="11,4">🏭 批量处理 1500万/天</button>
+    <label style="font-size:.78rem;color:var(--muted)">缓存命中 <input id="calcCache" type="range" min="0" max="90" value="0" style="vertical-align:middle;width:90px"> <b id="cacheV" class="mono">0%</b></label>
+    <label style="font-size:.78rem;color:var(--muted)"><input id="calcOffpeak" type="checkbox"> 走错峰空闲价</label>
+  </div>
   <div class="tabs" id="calcFilters" style="margin-bottom:12px"></div>
   <div style="overflow-x:auto"><table class="price" id="calcTable"></table></div>
-  <p class="calc-note">按高峰牌价计算并统一折人民币排序（USD 1:7.2）；DeepSeek 行另有空闲时段 5 折、各家缓存命中更低，实际账单以平台为准。价格为每百万 token，更新于 prices.json。</p>
+  <p class="calc-note" id="calcSummary"></p>
+  <p class="calc-note">口径：按牌价折人民币排序（USD 1:7.2）；缓存命中按滑块比例混合计价（DeepSeek 缓存 0.04/Kimi 缓存 $0.3）；「免费层抵扣」=该厂当月白嫖日均额度（白嫖总账 daily_wan×30）直接抵扣用量，净成本=max(0, 牌价成本−抵扣量×混合单价)；错峰开关对 DeepSeek/讯飞生效（空闲 5 折/0.8 系数）。价格为每百万 token，更新于 prices.json。</p>
 </div>
 <!-- ============ 羊毛总账 & 极致预算 ============ -->
 <div id="sumOverlay"></div>
@@ -1083,39 +1092,74 @@ const FX=7.2;
 function fmt(n,cur){const s=n>=0.01||n===0?n.toFixed(2):n.toFixed(4);return (cur==='USD'?'$':'¥')+s}
 let calcVendor='';
 function calcRender(){
-  const tin=parseFloat(document.getElementById('calcIn').value)||0;
-  const tout=parseFloat(document.getElementById('calcOut').value)||0;
-  // 展开分时段定价（DeepSeek 高峰/空闲两行——硅基式子行呈现）
-  const expanded=[];
+  const tin=Math.max(0,parseFloat(document.getElementById('calcIn').value)||0);
+  const tout=Math.max(0,parseFloat(document.getElementById('calcOut').value)||0);
+  const cachePct=(parseFloat(document.getElementById('calcCache').value)||0)/100;
+  const offpeak=document.getElementById('calcOffpeak')?.checked;
+  document.getElementById('cacheV').textContent=Math.round(cachePct*100)+'%';
+  const days=30;  // 月口径
+  // 免费层抵扣池：厂商 group → 当月白嫖量（百万）＝Σdaily_wan(万)×30÷100
+  const VFREE={'智谱 BigModel':'智谱','DeepSeek':'DeepSeek','Kimi 开放平台':'Kimi（月之暗面）','MiniMax 开放平台':'MiniMax 开放平台','Google AI Studio':'Google','Anthropic':'Anthropic','xAI（Grok）':'xAI','美团 LongCat':'美团 LongCat','小米 MiMo':'小米 MiMo','阿里云百炼':'阿里云','硅基流动':'硅基流动','讯飞星火':'讯飞','讯飞星辰 MaaS':'讯飞'};
+  const freeByV={};
+  DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan').forEach(d=>{
+    const v=VFREE[d.provider]||d.group; if(!v||!d.daily_wan) return;
+    freeByV[v]=(freeByV[v]||0)+d.daily_wan*days/100;  // 万→百万
+  });
+  // 行构建：缓存混合价 + 错峰
+  const rows=[];
   PRICES.forEach(p=>{
+    let input=p.input, output=p.output, tier='', free=p.input==null&&p.output==null;
     if(p.input_idle!=null&&p.output_idle!=null&&(p.input_idle!==p.input||p.output_idle!==p.output)){
-      expanded.push({...p,tier:'高峰'});
-      expanded.push({...p,input:p.input_idle,output:p.output_idle,tier:'空闲 5 折',idle:true});
-    } else expanded.push({...p});
+      if(offpeak){ input=p.input_idle; output=p.output_idle; tier='空闲 5 折'; }
+      else tier='高峰·错峰5折可选';
+    }
+    // 缓存混合：行有缓存价（input_cache）或为 DeepSeek/Kimi 缓存衍生行
+    let cacheIn=null;
+    if(p.model==='deepseek-flash') cacheIn=0.04;
+    if(p.model==='kimi-k3') cacheIn=0.3;
+    if(p.model==='GLM-5.3-Flash') cacheIn=0.23;
+    if(cachePct>0&&cacheIn!=null&&input) input=input*(1-cachePct)+cacheIn*cachePct;
+    const cost=free?0:(tin*input+tout*output), costCny=cost*(p.currency==='USD'?FX:1);
+    rows.push({...p,input,output,tier,free,cost,costCny});
   });
-  expanded.forEach(p=>{
-    if(p.input==null&&p.output==null){p.cost=0;p.costCny=0;p.free=true;}
-    else{p.cost=(tin*(p.input||0)+tout*(p.output||0));p.costCny=p.cost*(p.currency==='USD'?FX:1);}
-  });
+  // 缓存衍生行（滑块>0 时展开 DeepSeek/Kimi 缓存对照）
+  if(cachePct>0){/* 混合价已直接应用在原行，对照行略——保持表格精简 */}
   // 厂商筛选 chips
-  const vendors=[...new Set(expanded.map(p=>p.provider))];
+  const vendors=[...new Set(rows.map(p=>p.provider))];
   document.getElementById('calcFilters').innerHTML=
     '<button class="tab '+(calcVendor===''?'active':'')+'" data-cv="">全部</button>'
     +vendors.map(v=>'<button class="tab '+(calcVendor===v?'active':'')+'" data-cv="'+esc(v)+'">'+esc(v)+'</button>').join('');
-  // 厂商分组 + 组内按折 CNY 排序；厂商间按最低价排序
-  let shown=expanded.filter(p=>!calcVendor||p.provider===calcVendor);
+  let shown=rows.filter(p=>!calcVendor||p.provider===calcVendor);
   const groups={};
   shown.forEach(p=>{(groups[p.provider]=groups[p.provider]||[]).push(p)});
   const order=Object.keys(groups).sort((a,b)=>Math.min(...groups[a].map(x=>x.costCny))-Math.min(...groups[b].map(x=>x.costCny)));
-  let html='<tr><th>模型</th><th>输入/百万</th><th>输出/百万</th><th>本次花费</th><th>折合人民币</th></tr>';
+  const dsRow=rows.find(p=>p.model==='deepseek-flash');
+  const dsNet=dsRow?dsRow.costCny:0;
+  let html='<tr><th>模型</th><th>输入/百万</th><th>输出/百万</th><th>月花费</th><th>免费层月抵扣</th><th>净月成本</th><th>vs DeepSeek</th></tr>';
   order.forEach(v=>{
-    html+='<tr class="vgroup"><td colspan="5">'+esc(v)+'</td></tr>';
+    html+='<tr class="vgroup"><td colspan="7">'+esc(v)+(freeByV[v]?' <span class="chip" title="该厂白嫖日均×30，可抵扣本厂用量">🎁 白嫖池 '+freeByV[v].toFixed(0)+' 百万/月</span>':'')+'</td></tr>';
     groups[v].sort((a,b)=>a.costCny-b.costCny).forEach(p=>{
+      const fv=VFREE[p.provider]||p.group;
+      const freeTok=freeByV[fv]||0;
+      const needTok=tin+tout;                     // 月总量（百万）
+      const used=Math.min(freeTok,needTok);       // 免费抵扣量
+      const blend=needTok>0?(p.costCny/needTok):0;// 混合单价 ¥/百万
+      const net=Math.max(0,p.costCny-used*blend);
+      const pct=dsNet>0&&p.costCny>0?Math.round((p.costCny/dsNet-1)*100):null;
       const nm=esc(p.model)+(p.tier?'<br><span style="color:var(--muted);font-size:.75rem">'+p.tier+'</span>':'');
-      html+=`<tr class="${p.idle?'tier ':''}${p.free?'cheapest':''}"><td class="mono">${nm}${p.free?' <span class="chip">免费</span>':''}</td><td class="mono">${p.free?'免费':fmt(p.input||0,p.currency)}</td><td class="mono">${p.free?'免费':fmt(p.output||0,p.currency)}</td><td class="mono">${p.free?'—':fmt(p.cost,p.currency)}</td><td class="mono"><b>${p.free?'¥0.00':'¥'+p.costCny.toFixed(2)}</b></td></tr>`;
+      html+=`<tr class="${p.idle?'tier ':''}${p.free||p.costCny===0?'cheapest':''}"><td class="mono">${nm}${p.free?' <span class="chip">免费</span>':''}</td><td class="mono">${p.free?'免费':fmt(p.input||0,p.currency)}</td><td class="mono">${p.free?'免费':fmt(p.output||0,p.currency)}</td><td class="mono">${p.free?'—':'¥'+p.costCny.toFixed(2)}</td><td class="mono" style="color:var(--accent)">${freeTok>0?'-'+used.toFixed(1)+'M':''}</td><td class="mono"><b>${p.free?'¥0.00':'¥'+net.toFixed(2)}</b></td><td class="mono">${pct===null?'—':(pct>0?'+'+pct+'%':pct+'%')}</td></tr>`;
     });
   });
   document.getElementById('calcTable').innerHTML=html;
+  // 汇总行
+  const sorted=[...rows].filter(p=>!p.free).sort((a,b)=>a.costCny-b.costCny);
+  const cheap=sorted[0];
+  if(cheap){
+    const fv=VFREE[cheap.provider]||cheap.group;
+    const freeTok=freeByV[fv]||0, needTok=tin+tout;
+    const net=Math.max(0,cheap.costCny-Math.min(freeTok,needTok)*(cheap.costCny/needTok||0));
+    document.getElementById('calcSummary').innerHTML='💡 同用量下最省：<b>'+esc(cheap.provider)+' '+esc(cheap.model)+'</b> 月牌价 ¥'+cheap.costCny.toFixed(2)+(freeTok>0?'，抵扣白嫖后净 <b>¥'+net.toFixed(2)+'</b>':'')+'（按日 '+needTok.toFixed(1)+' 百万 × 30 天）';
+  }
 }
 document.getElementById('calcFilters').addEventListener('click',e=>{
   const b=e.target.closest('[data-cv]');if(!b)return;
@@ -1124,6 +1168,9 @@ document.getElementById('calcFilters').addEventListener('click',e=>{
 document.getElementById('calcClose').addEventListener('click',closeCalc);
 document.getElementById('calcOverlay').addEventListener('click',closeCalc);
 ['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',calcRender));
+document.getElementById('calcFilters').addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)return;const [a,o]=b.dataset.sc.split(',');document.getElementById('calcIn').value=a;document.getElementById('calcOut').value=o;calcRender();});
+document.getElementById('calcCache').addEventListener('input',calcRender);
+document.getElementById('calcOffpeak').addEventListener('change',calcRender);
 /* ============ 羊毛总账 & 极致预算 ============ */
 function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万'}
 function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+' 亿':Math.round(million*100)+' 万'}
