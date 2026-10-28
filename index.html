@@ -548,7 +548,10 @@ function tokCell(d){
   if(d.type==='free_tier'||d.via==='free')return'<span class="num">免费</span><span class="unit">长期</span>';
   if(d.type==='price_low')return'<span class="num">低价</span><span class="unit">长期</span>';
   if(d.type==='coupon')return'<span class="num">有码</span><span class="unit">折扣</span>';
-  return'<span class="num">·</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
+  if(d.type==='price_low')return'<span class="num">锚</span><span class="unit">牌价基准</span>';
+  if(d.type==='free_tier')return'<span class="num">∞</span><span class="unit">不限*</span>';
+  if(d.type==='student')return'<span class="num">🎓</span><span class="unit">学生价</span>';
+  return'<span class="num">—</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
 }
 /* 排序：DS等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
