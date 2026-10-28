@@ -210,5 +210,25 @@
   "output": 0.4,
   "note": "缓存命中 $0.01；海外分轨",
   "verified_at": "2026-10-29"
+ },
+ {
+  "model": "deepseek-v4-flash",
+  "provider": "OpenCode",
+  "layer": "reseller",
+  "currency": "USD",
+  "input": 0.3,
+  "output": 1.2,
+  "note": "OpenCode 转售价（老板指定比价参考源 console models 页口径，多轮核实一致）；$10/月 Go 订阅含 $80 配额更省",
+  "verified_at": "2026-10-29"
+ },
+ {
+  "model": "deepseek-v4-pro",
+  "provider": "OpenCode",
+  "layer": "reseller",
+  "currency": "USD",
+  "input": 1.5,
+  "output": 6.0,
+  "note": "OpenCode 转售 V4 Pro 档（4 倍 Flash 价惯例推算，控制台登录可实锤）",
+  "verified_at": "2026-10-29"
  }
 ]

@@ -12,3 +12,10 @@
 - 📰 标题雷达 [Coding Plan 折扣] 阿里云Coding Plan是什么?费用、额度及使用全攻略
 - 📰 标题雷达 [Coding Plan 折扣] 阿里云出手掀桌子了,codingPlan骨折价7.9元爽玩claude code
 - 📰 标题雷达 [Coding Plan 折扣] AI编程新时代的通行证Coding Plan
+
+## 2026-10-28 18:25 UTC（轮 9，查询：Claude Code 折扣）
+- 🆕 公众号新文 [碗里飞Vannifaye] 就在刚刚,Claude Code开源啦!全网狂欢~是不是又要向前走一步了! → https://mp.weixin.qq.com/s?src=11&timestamp=1793211922&ver=7
+- 📰 标题雷达 [Claude Code 折扣] Cursor和Claude Code,根本不在一个赛道
+- 📰 标题雷达 [Claude Code 折扣] Codex不打算让Claude Code好过
+- 📰 标题雷达 [Claude Code 折扣] Claude Code -p 成为智能函数
+- 📰 标题雷达 [Claude Code 折扣] 为什么要用Claude Code来管理PMs&mdash;&mdash;而不是用 Claude.ai
