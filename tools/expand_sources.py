@@ -178,13 +178,6 @@ def main() -> int:
                 prev[normalize_url(c["url"])] = c  # 累积模式：旧条目全保留
         except Exception:
             pass
-    if OUT.exists():
-        try:
-            for c in json.loads(OUT.read_text(encoding="utf-8")).get("candidates", []):
-                if c.get("verified"):
-                    prev[normalize_url(c["url"])] = c.get("verified")
-        except Exception:
-            pass
     pool = collect()
     for k, m in pool.items():
         old = prev.get(k)

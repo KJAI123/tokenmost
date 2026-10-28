@@ -1024,6 +1024,71 @@
         "Free"
       ],
       "note": "商汤官方平台盯防（替代证书异常域名）（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "deepinfra-pricing",
+      "name": "DeepInfra 定价",
+      "url": "https://deepinfra.com/prices",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；免费起·按量"
+    },
+    {
+      "id": "fireworks-pricing",
+      "name": "Fireworks 定价",
+      "url": "https://fireworks.ai/pricing",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；$1 起步积分"
+    },
+    {
+      "id": "modal-pricing",
+      "name": "Modal 定价",
+      "url": "https://modal.com/pricing",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；$30/月免费积分(历史口径)"
+    },
+    {
+      "id": "novita-pricing",
+      "name": "Novita 定价",
+      "url": "https://novita.ai/pricing",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；free-to-start·130模型"
+    },
+    {
+      "id": "xai-pricing",
+      "name": "xAI 定价",
+      "url": "https://console.x.ai",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；负情报盯防(免费档已退场)"
     }
   ]
 }
