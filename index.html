@@ -546,10 +546,10 @@ function freshness(d){
 /* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
 function tokCell(d){
   if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
-  if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${eq>=10000?(eq/10000).toFixed(2)+' 亿':Math.round(eq)+' 万'}</span><span class="unit">DS等效</span></span>`;}
+  if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${eq>=10000?(eq/10000).toFixed(2)+' 亿':Math.round(eq)+' 万'}</span><span class="unit">DS Flash等效</span></span>`;}
   if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
   if(d.cny)return`<span class="num">¥${d.cny}</span><span class="unit">额度</span>`;
-  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+' 亿':'~'+Math.round(d.daily_wan)+' 万'}</span><span class="unit">DS等效/天</span></span>`;
+  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+' 亿':'~'+Math.round(d.daily_wan)+' 万'}</span><span class="unit">DS Flash等效/天</span></span>`;
   if(d.daily_calls)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均~${d.daily_calls>=10000?(d.daily_calls/10000).toFixed(1)+'万':d.daily_calls}</span><span class="unit">次/天</span></span>`;
   if(d.type==='free_tier'||d.via==='free')return'<span class="num">免费</span><span class="unit">长期</span>';
   if(d.type==='price_low')return'<span class="num">低价</span><span class="unit">长期</span>';
@@ -559,7 +559,7 @@ function tokCell(d){
   if(d.type==='student')return'<span class="num">🎓</span><span class="unit">学生价</span>';
   return'<span class="num">—</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
 }
-/* 排序：DS等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
+/* 排序：DS Flash等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
 let sortKey='fresh';
 function render(){
@@ -632,7 +632,7 @@ function render(){
       const s=siteFor(g.best);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}">
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">DS等效·首月可薅</span>${g.daily?`<span class="unit" style="display:block;margin-top:2px">一次性 ${g.once?f(g.once):'—'} ＋ 日均 ${f(g.daily)}/天</span>`:'<span class="unit" style="display:block;margin-top:2px">一次性到账</span>'}</span></div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">DS Flash等效·首月可薅</span>${g.daily?`<span class="unit" style="display:block;margin-top:2px">一次性 ${g.once?f(g.once):'—'} ＋ 日均 ${f(g.daily)}/天</span>`:'<span class="unit" style="display:block;margin-top:2px">一次性到账</span>'}</span></div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${esc(g.p)}</span>
@@ -1137,10 +1137,10 @@ function sumRender(){
   const T={t:R.t+I.t+Math.round(DT*30),c:R.c+I.c,u:R.u+I.u};
   document.getElementById('sumBody').innerHTML=
    `<div class="sum-grid">
-     <div class="sum-card"><b>① 注册即得</b><span class="big">${fmtWan(R.t)} DS等效</span><span>一次性到账 ＋ ¥${R.c} 券 ＋ $${R.u} credits · ${R.n} 条</span></div>
-     <div class="sum-card"><b>② 邀请码加成</b><span class="big">${fmtWan(I.t)} DS等效</span><span>一次性到账 ＋ ¥${I.c} ＋ $${I.u} · ${I.n} 条（被邀请人侧）</span></div>
-     <div class="sum-card"><b>③ 持续日入（长期免费层）</b><span class="big">${fmtWan(Math.round(DT))} DS等效/天</span><span>${dailyLive.length} 条长期刷新 · 折月 ≈ ${fmtWan(Math.round(DT*30))}</span></div>
-     <div class="sum-card"><b>＝ 合计白嫖（首月口径）</b><span class="big accent">${fmtWan(T.t)} DS等效</span><span>一次性 ${fmtWan(R.t+I.t)} ＋ 日入折月 ${fmtWan(Math.round(DT*30))} ＋ ¥${T.c} 券 ＋ $${T.u} ≈ ¥${(T.c+T.u*FX).toFixed(0)} 价值</span></div>
+     <div class="sum-card"><b>① 注册即得</b><span class="big">${fmtWan(R.t)} DS Flash等效</span><span>一次性到账 ＋ ¥${R.c} 券 ＋ $${R.u} credits · ${R.n} 条</span></div>
+     <div class="sum-card"><b>② 邀请码加成</b><span class="big">${fmtWan(I.t)} DS Flash等效</span><span>一次性到账 ＋ ¥${I.c} ＋ $${I.u} · ${I.n} 条（被邀请人侧）</span></div>
+     <div class="sum-card"><b>③ 持续日入（长期免费层）</b><span class="big">${fmtWan(Math.round(DT))} DS Flash等效/天</span><span>${dailyLive.length} 条长期刷新 · 折月 ≈ ${fmtWan(Math.round(DT*30))}</span></div>
+     <div class="sum-card"><b>＝ 合计白嫖（首月口径）</b><span class="big accent">${fmtWan(T.t)} DS Flash等效</span><span>一次性 ${fmtWan(R.t+I.t)} ＋ 日入折月 ${fmtWan(Math.round(DT*30))} ＋ ¥${T.c} 券 ＋ $${T.u} ≈ ¥${(T.c+T.u*FX).toFixed(0)} 价值</span></div>
      <div class="sum-card"><b>④ 学生通道再叠加</b><span class="big">$${S.u}</span><span>≈ ¥${(S.u*FX).toFixed(0)}/年 · ${S.n} 条（需学生认证）</span></div>
    </div>
    <p class="calc-note"><b>📐 等效口径（2026-10-28 老板拍板）</b>：全站 token 统一折算为 <b>DeepSeek V4.1 Flash 等效 token</b>——国内按谷价（空闲 5 折）加权 ¥1.75/百万、国际按牌价加权 $0.525/百万；等效按算力购买力折算而非裸计数：GLM-5.3 ×7.43、DeepSeek V4 Pro ×7.71、Kimi K3 ×11.43、MiniMax-M3 ×2.10，同档 Flash 模型与无牌价免费模型 1:1。通用/多模型额度保守取 1:1。系数表在 tools/eq.json，随牌价更新复核。</p>
@@ -1208,7 +1208,7 @@ function calcGlobalBanner(){
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const monthly=Math.round(once+daily*30);
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
-  document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS等效';
+  document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
   document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
 }
 Promise.all([

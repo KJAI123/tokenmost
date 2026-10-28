@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T17:09:44Z",
+  "harvested_at": "2026-10-28T17:16:54Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -429,8 +429,118 @@
       "id": "siliconflow-faq",
       "name": "硅基流动计费规则",
       "url": "https://docs.siliconflow.com/cn/faqs/billing-rules",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 27,
+      "findings": [
+        {
+          "match": "免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens",
+          "context": "Chat 32K 免费 THUDM/glm-4-9b-chat 32K 免费 THUDM/chatglm3-6b 32K 免费 01-ai/Yi-1.5-9B-Chat-16K 16K 免费 01-ai/Yi-1.5-6B-Chat 4K 免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥"
+        },
+        {
+          "match": "免费额度 (相当于 2 千万 Qwen1.5-14B Tokens",
+          "context": "价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 立即体验。 SiliconFlow home page x linkedin discord Models Images Video LLM Audio Products Inference Fine-tuning Rese"
+        },
+        {
+          "match": "免费额度 (相当于 2 千万 Qwen1.5-14B Tokens",
+          "context": "京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。`}),`\\n`,_jsx(_components.p,{children:_jsxs(_components.strong,{children:[`新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/models/text/chat`,children:`点此链接`}),`立即体验。`]})})]})}function"
+        },
+        {
+          "match": "赠送额度中进行扣减",
+          "context": "i/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   ​ 扣费规则   平台根据 Input 和 Output 的 Token 总数计费。   费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1"
+        },
+        {
+          "match": "新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 ",
+          "context": "en 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 立即体验。 SiliconFlow home page x linkedin discord Models Images Video LLM Audio Products Inference Fine-tuning Reserved GPU"
+        },
+        {
+          "match": "赠送额度中进行扣减",
+          "context": "nts.p,{children:`平台根据 Input 和 Output 的 Token 总数计费。`}),`\\n`,_jsx(_components.p,{children:`费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。`}),`\\n`,_jsxs(_components.p,{children:[`详情请点击`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/account/expense"
+        },
+        {
+          "match": "新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx",
+          "context": "以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。`}),`\\n`,_jsx(_components.p,{children:_jsxs(_components.strong,{children:[`新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/models/text/chat`,children:`点此链接`}),`立即体验。`]})})]})}function MDXCont"
+        },
+        {
+          "match": "¥4.13/1M tokens Qwen/Qwen2-57B-A14B",
+          "context": "32K 免费 THUDM/chatglm3-6b 32K 免费 01-ai/Yi-1.5-9B-Chat-16K 16K 免费 01-ai/Yi-1.5-6B-Chat 4K 免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/"
+        },
+        {
+          "match": "¥1.26/1M tokens Qwen/Qwen1.5-110B-C",
+          "context": "Chat-16K 16K 免费 01-ai/Yi-1.5-6B-Chat 4K 免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/D"
+        },
+        {
+          "match": "¥4.13/1M tokens Qwen/Qwen1.5-32B-Ch",
+          "context": "Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M toke"
+        },
+        {
+          "match": "¥1.26/1M tokens Qwen/Qwen1.5-14B-Ch",
+          "context": "s Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/"
+        },
+        {
+          "match": "¥0.7/1M tokens deepseek-ai/DeepSee",
+          "context": "M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-ch"
+        },
+        {
+          "match": "¥1.33/1M tokens deepseek-ai/DeepSee",
+          "context": "wen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M t"
+        },
+        {
+          "match": "¥1.33/1M tokens deepseek-ai/deepsee",
+          "context": "14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   ​ 扣费规则   平台根据 Input 和 Output 的 Token 总数计费"
+        },
+        {
+          "match": "¥1/1M tokens 01-ai/Yi-1.5-34B-Ch",
+          "context": "r-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   ​ 扣费规则   平台根据 Input 和 Output 的 Token 总数计费。   费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情"
+        },
+        {
+          "match": "¥1.26/1M tokens   ​ 扣费规则   平台根据 Inp",
+          "context": "ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   ​ 扣费规则   平台根据 Input 和 Output 的 Token 总数计费。   费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北"
+        },
+        {
+          "match": "¥4.13/1M tokens`})]}),_jsxs(_compon",
+          "context": "Qwen/Qwen2-72B-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥4.13/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen2-57B-A14B-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":"
+        },
+        {
+          "match": "¥1.26/1M tokens`})]}),_jsxs(_compon",
+          "context": "Qwen2-57B-A14B-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.26/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen1.5-110B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`"
+        },
+        {
+          "match": "¥4.13/1M tokens`})]}),_jsxs(_compon",
+          "context": "`Qwen/Qwen1.5-110B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥4.13/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen1.5-32B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,"
+        },
+        {
+          "match": "¥1.26/1M tokens`})]}),_jsxs(_compon",
+          "context": ":`Qwen/Qwen1.5-32B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.26/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen1.5-14B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,"
+        },
+        {
+          "match": "¥0.7/1M tokens`})]}),_jsxs(_compon",
+          "context": ":`Qwen/Qwen1.5-14B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥0.7/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`deepseek-ai/DeepSeek-Coder-V2-Instruct`}),_jsx(_components.td,{\\\"data-"
+        },
+        {
+          "match": "¥1.33/1M tokens`})]}),_jsxs(_compon",
+          "context": "pSeek-Coder-V2-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.33/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`deepseek-ai/DeepSeek-V2-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":"
+        },
+        {
+          "match": "¥1.33/1M tokens`})]}),_jsxs(_compon",
+          "context": "eek-ai/DeepSeek-V2-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.33/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`deepseek-ai/deepseek-Ilm-67b-chat`}),_jsx(_components.td,{\\\"data-numer"
+        },
+        {
+          "match": "¥1/1M tokens`})]}),_jsxs(_compon",
+          "context": "ai/deepseek-Ilm-67b-chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`4K`}),_jsx(_components.td,{children:`¥1/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`01-ai/Yi-1.5-34B-Chat-16K`}),_jsx(_components.td,{\\\"data-numeric\\\":`tr"
+        },
+        {
+          "match": "¥1.26/1M tokens`})]})]})]}),`\\n`,_j",
+          "context": "-ai/Yi-1.5-34B-Chat-16K`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`16K`}),_jsx(_components.td,{children:`¥1.26/1M tokens`})]})]})]}),`\\n`,_jsx(Heading,{level:`2`,id:`扣费规则`,children:`扣费规则`}),`\\n`,_jsx(_components.p,{children:`平台根据 Input 和 Output 的 Token 总数计费。`}"
+        },
+        {
+          "match": "14 元",
+          "context": "模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 立即体验。 SiliconFlow home page x linkedin discord Models Images Video LLM Audio Pr"
+        },
+        {
+          "match": "14 元",
+          "context": "情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。`}),`\\n`,_jsx(_components.p,{children:_jsxs(_components.strong,{children:[`新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/models/text/chat`,children:"
+        }
+      ]
     },
     {
       "id": "volc-ark-collab",

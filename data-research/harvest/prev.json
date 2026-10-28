@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T17:08:12Z",
+  "harvested_at": "2026-10-28T17:16:54Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,10 +637,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -730,6 +726,10 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -5114,6 +5114,747 @@
       "url": "https://console.x.ai",
       "status": "error",
       "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "ov-kilo-pricing",
+      "name": "Kilo Code",
+      "url": "https://kilo.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$15 /user/month 14-day Enterprise",
+          "context": "cial use of 40K+ Anaconda Core packages Works with any AI model Selected Teams Everything in Free, plus team management $15 /user/month 14-day Enterprise trial Usage analytics & reporting AI adoption score Shared custom agents Centralized billing Shared BYOK Team managemen"
+        },
+        {
+          "match": "$0 /mo No hosted credit required",
+          "context": "tegy for the task. Learn about Auto Model . Auto Free, BYOK, or local Use Kilo Code without a paid Kilo inference plan. $0 /mo No hosted credit required Auto Free routes to free models through Kilo Gateway where available Bring your own Anthropic, OpenAI, Google, Azure, A"
+        },
+        {
+          "match": "$0 /mo + usage Exact provider ra",
+          "context": "dy have inference or want maximum control Selected Kilo Gateway Pay-as-you-go hosted AI inference with no subscription. $0 /mo + usage Exact provider rates 500+ models across 60+ providers Auto Model routes through Frontier, Efficient, or Free so you can choose capability"
+        },
+        {
+          "match": "$ 19 /mo Up to 50% bonus credits M",
+          "context": "ts only when you need them Selected Kilo Pass Subscribe to a monthly credit amount and get rewarded with bonus credits. $ 19 /mo Up to 50% bonus credits Monthly AI credit subscription for regular usage Earn up to 50% bonus credits on top of your subscribed credits Auto Mode"
+        },
+        {
+          "match": "$ 588 /year Select your tier Starte",
+          "context": "ription adds to your balance with free bonus credits Billing cycle Monthly Pay monthly, cancel anytime Annual 50% bonus $ 588 /year Select your tier Starter $ 19 /mo Up to $ 26.60 /mo in credits Pro $ 49 /mo Up to $ 68.60 /mo in credits Expert $ 199 /mo Up to $ 278.60 /mo in"
+        },
+        {
+          "match": "$ 19 /mo Up to $ 26.60 /mo in cred",
+          "context": "e bonus credits Billing cycle Monthly Pay monthly, cancel anytime Annual 50% bonus $ 588 /year Select your tier Starter $ 19 /mo Up to $ 26.60 /mo in credits Pro $ 49 /mo Up to $ 68.60 /mo in credits Expert $ 199 /mo Up to $ 278.60 /mo in credits Your subscription streak 12"
+        },
+        {
+          "match": "$ 49 /mo Up to $ 68.60 /mo in cred",
+          "context": "monthly, cancel anytime Annual 50% bonus $ 588 /year Select your tier Starter $ 19 /mo Up to $ 26.60 /mo in credits Pro $ 49 /mo Up to $ 68.60 /mo in credits Expert $ 199 /mo Up to $ 278.60 /mo in credits Your subscription streak 12 months Your Savings Journey +$ 188.65 tot"
+        },
+        {
+          "match": "$ 199 /mo Up to $ 278.60 /mo in cre",
+          "context": "8 /year Select your tier Starter $ 19 /mo Up to $ 26.60 /mo in credits Pro $ 49 /mo Up to $ 68.60 /mo in credits Expert $ 199 /mo Up to $ 278.60 /mo in credits Your subscription streak 12 months Your Savings Journey +$ 188.65 total bonus Paid credits Bonus credits Month 1: 1"
+        },
+        {
+          "match": "$ 188.65 total bonus Paid credits Bonu",
+          "context": "/mo in credits Expert $ 199 /mo Up to $ 278.60 /mo in credits Your subscription streak 12 months Your Savings Journey +$ 188.65 total bonus Paid credits Bonus credits Month 1: 10% · Month 2: 50% welcome bonus Month 8 : 40% max bonus unlocked You pay $ 588 Bonus earned +$ 188.6"
+        },
+        {
+          "match": "$ 588 Bonus earned +$ 188.65 Total ",
+          "context": "tal bonus Paid credits Bonus credits Month 1: 10% · Month 2: 50% welcome bonus Month 8 : 40% max bonus unlocked You pay $ 588 Bonus earned +$ 188.65 Total value $ 776.65 That&#x27;s 32 % extra value over 12 months ! Get Kilo Pass Learn more about Kilo Pass Compare all pricin"
+        },
+        {
+          "match": "$ 776.65 That&#x27;s 32 % extra value ",
+          "context": "h 1: 10% · Month 2: 50% welcome bonus Month 8 : 40% max bonus unlocked You pay $ 588 Bonus earned +$ 188.65 Total value $ 776.65 That&#x27;s 32 % extra value over 12 months ! Get Kilo Pass Learn more about Kilo Pass Compare all pricing components Review platform plans, inferenc"
+        },
+        {
+          "match": "$0 $15/user/month Custom AI infe",
+          "context": "edit purchases, BYOK, and cloud compute in one place. Pricing summary Feature Individual Teams Enterprise Platform plan $0 $15/user/month Custom AI inference Provider rates Provider rates Provider rates Kilo Pass (optional) From $19/mo From $19/mo From $19/mo Credit purch"
+        },
+        {
+          "match": "$19/mo From $19/mo From $19/mo Cr",
+          "context": "tform plan $0 $15/user/month Custom AI inference Provider rates Provider rates Provider rates Kilo Pass (optional) From $19/mo From $19/mo From $19/mo Credit purchase processing fee 5% 5% 5% Bring Your Own Keys (BYOK) Individual Shared Shared Private Gateway Cloud compute"
+        },
+        {
+          "match": "$ 0.33 / hour Billed per second Clou",
+          "context": "Shared Shared Private Gateway Cloud compute Pay-as-you-go Pay-as-you-go Pay-as-you-go Cloud compute pricing Code Review $ 0.33 / hour Billed per second Cloud Agent — Docker $ 0.60 / hour Billed per second Cloud Agent — Small $ 0.60 / hour Billed per second Cloud Agent — Stand"
+        },
+        {
+          "match": "$ 0.60 / hour Billed per second Clou",
+          "context": "u-go Pay-as-you-go Pay-as-you-go Cloud compute pricing Code Review $ 0.33 / hour Billed per second Cloud Agent — Docker $ 0.60 / hour Billed per second Cloud Agent — Small $ 0.60 / hour Billed per second Cloud Agent — Standard $ 1.20 / hour Billed per second Billed per second"
+        },
+        {
+          "match": "$ 0.60 / hour Billed per second Clou",
+          "context": "ng Code Review $ 0.33 / hour Billed per second Cloud Agent — Docker $ 0.60 / hour Billed per second Cloud Agent — Small $ 0.60 / hour Billed per second Cloud Agent — Standard $ 1.20 / hour Billed per second Billed per second. No rounding up or minimum usage charge. Model infe"
+        },
+        {
+          "match": "$ 1.20 / hour Billed per second Bill",
+          "context": "ent — Docker $ 0.60 / hour Billed per second Cloud Agent — Small $ 0.60 / hour Billed per second Cloud Agent — Standard $ 1.20 / hour Billed per second Billed per second. No rounding up or minimum usage charge. Model inference is charged separately. View full cloud pricing ."
+        },
+        {
+          "match": "$5 cloud minimum an extra charge",
+          "context": "I inference and why is it priced separately? When does the 5% processing fee apply? How is cloud compute billed? Is the $5 cloud minimum an extra charge? Do BYOK users and organizations pay for cloud compute? What&#x27;s the difference between Kilo Gateway and Kilo Pass?"
+        },
+        {
+          "match": "Free",
+          "context": "Kilo Code Pricing: Free, Teams, Enterprise & Usage Costs Cursor loses OpenAI on November 12. Keep GPT and 500+ models on Kilo Enterprise, free"
+        },
+        {
+          "match": "free",
+          "context": "Free, Teams, Enterprise & Usage Costs Cursor loses OpenAI on November 12. Keep GPT and 500+ models on Kilo Enterprise, free through your Cursor contract Claim Offer Skip to main content Kilo GitHub Product Models Enterprise Resources Pricing S"
+        },
+        {
+          "match": "free",
+          "context": "lo GitHub Product Models Enterprise Resources Pricing Sign in Contact sales Get Started Kilo Code pricing Pricing Start free as an individual, then add team collaboration or enterprise governance when you need it. Free & Open Source For every d"
+        },
+        {
+          "match": "Free",
+          "context": "ode pricing Pricing Start free as an individual, then add team collaboration or enterprise governance when you need it. Free & Open Source For every developer building with AI Free Usage is billed separately Open source VS Code, JetBrains & CLI"
+        },
+        {
+          "match": "Free",
+          "context": "d team collaboration or enterprise governance when you need it. Free & Open Source For every developer building with AI Free Usage is billed separately Open source VS Code, JetBrains & CLI extensions Agentic coding assistant Code completion & g"
+        },
+        {
+          "match": "Free",
+          "context": "pletion & generation Commercial use of 40K+ Anaconda Core packages Works with any AI model Selected Teams Everything in Free, plus team management $15 /user/month 14-day Enterprise trial Usage analytics & reporting AI adoption score Shared cust"
+        },
+        {
+          "match": "Free",
+          "context": "y BYOK Audit logs SSO, OIDC, & SCIM support SLA commitments Dedicated support channels Selected Get Started — It&#x27;s Free Your 14-day trial is an Enterprise trial, so your team can evaluate Enterprise features before choosing a plan. When th"
+        },
+        {
+          "match": "Free",
+          "context": "ilo separates platform access, AI inference, and cloud compute so you only pay for what you use and need. Platform plan Free for individuals. Teams and Enterprise add collaboration, security, governance, and support. AI inference Choose free mo"
+        },
+        {
+          "match": "free",
+          "context": "an Free for individuals. Teams and Enterprise add collaboration, security, governance, and support. AI inference Choose free models, local models, BYOK, Kilo Gateway, or Kilo Pass. Cloud compute Usage-based compute for cloud features, charged s"
+        },
+        {
+          "match": "free",
+          "context": "pute Usage-based compute for cloud features, charged separately from inference. Choose how you pay for AI inference Use free or local models, pay as you go through Kilo Gateway, bring your own provider keys, or subscribe to Kilo Pass for bonus"
+        },
+        {
+          "match": "Free",
+          "context": "tier for capability and cost control, then let Kilo pick the model strategy for the task. Learn about Auto Model . Auto Free, BYOK, or local Use Kilo Code without a paid Kilo inference plan. $0 /mo No hosted credit required Auto Free routes to"
+        },
+        {
+          "match": "Free",
+          "context": "del . Auto Free, BYOK, or local Use Kilo Code without a paid Kilo inference plan. $0 /mo No hosted credit required Auto Free routes to free models through Kilo Gateway where available Bring your own Anthropic, OpenAI, Google, Azure, AWS Bedrock"
+        }
+      ]
+    },
+    {
+      "id": "ov-taotoken",
+      "name": "TaoToken 聚合网关",
+      "url": "https://taotoken.net",
+      "status": "ok",
+      "hits": 15,
+      "findings": [
+        {
+          "match": "免费体验 Go 5 分钟接入文档 → 7000亿 日均 Token",
+          "context": "主流大模型稳定直连 一个 Key 全模型通用 DeepSeek、Qwen、Kimi、GLM 等一站接入，兼容标准 API 协议，按量计费、余额不过期，企业可开专票。 Coding Plan 限量 限时抢购 Token Plan 立即订阅 免费体验 Go 5 分钟接入文档 → 7000亿 日均 Token 消耗 8万 活跃开发者 30 ms 专线平均延迟 Codex • AtomCode 主流工具开箱即用 热门模型 本周调用 编程 低价 base_url = \"https://api.taotoken.net/v1\" 复制 全部模型 → 企"
+        },
+        {
+          "match": "额度",
+          "context": "需求。 统一接入 对外暴露一致的 HTTP 接口，便于客户端与 SDK 复用同一套调用方式。 协议适配 在常见开放格式之间做转换与映射，降低多供应商并存时的维护成本。 路由与容灾 按权重、渠道健康度做调度，支持主备切换与限流等策略。 计费与额度 按调用或 Token 计量，配合余额与倍率配置，账单可追溯。 访问控制 令牌粒度授权、模型可见范围与审计日志，便于团队协作与合规。 用量看板 汇总请求量、错误率与成本趋势，辅助容量与预算决策。 与主流厂商深度整合 Taotoken 聚合多"
+        },
+        {
+          "match": "token",
+          "context": "首页 · Taotoken                                                      首页 模型列表 模型体验 控制台 文档中心 企业服务 ⚡ Coding Plan 限量 Token Plan 登录/注册 150+"
+        },
+        {
+          "match": "Token",
+          "context": "50+ 主流模型 官方价 5 折 主流大模型稳定直连 一个 Key 全模型通用 DeepSeek、Qwen、Kimi、GLM 等一站接入，兼容标准 API 协议，按量计费、余额不过期，企业可开专票。 Coding Plan 限量 限时抢购 Token Plan 立即订阅 免费体验 Go 5 分钟接入文档 → 7000亿 日均 Token 消耗 8万 活跃开发者 30 ms 专线平均延迟 Codex • AtomCode 主流工具开箱即用 热门模型 本周调用 编程 低价 base_url"
+        },
+        {
+          "match": "Token",
+          "context": "Seek、Qwen、Kimi、GLM 等一站接入，兼容标准 API 协议，按量计费、余额不过期，企业可开专票。 Coding Plan 限量 限时抢购 Token Plan 立即订阅 免费体验 Go 5 分钟接入文档 → 7000亿 日均 Token 消耗 8万 活跃开发者 30 ms 专线平均延迟 Codex • AtomCode 主流工具开箱即用 热门模型 本周调用 编程 低价 base_url = \"https://api.taotoken.net/v1\" 复制 全部模型 → 企"
+        },
+        {
+          "match": "token",
+          "context": "5 分钟接入文档 → 7000亿 日均 Token 消耗 8万 活跃开发者 30 ms 专线平均延迟 Codex • AtomCode 主流工具开箱即用 热门模型 本周调用 编程 低价 base_url = \"https://api.taotoken.net/v1\" 复制 全部模型 → 企业决策者与团队管理员 把个人 API 接入，升级为企业统一 Token 管理 承接采购、安全、预算与团队协作需求，在统一控制台完成成员权限、配额与用量管理。 对公采购 对公转账、合规发票、财务可入账。"
+        },
+        {
+          "match": "Token",
+          "context": "x • AtomCode 主流工具开箱即用 热门模型 本周调用 编程 低价 base_url = \"https://api.taotoken.net/v1\" 复制 全部模型 → 企业决策者与团队管理员 把个人 API 接入，升级为企业统一 Token 管理 承接采购、安全、预算与团队协作需求，在统一控制台完成成员权限、配额与用量管理。 对公采购 对公转账、合规发票、财务可入账。 安全合规 成员权限与访问审计，含 SLA 支持。 成本透明 统一配额、用量看板、团队预算可控。 企业/团队采"
+        },
+        {
+          "match": "token",
+          "context": "Hermes Agent 、 OpenCode 在文档内一键接入配置。 Python Node.js curl 复制 import requests  response = requests.post(  \"https://api.taotoken.net/v1/chat/completions\",  headers={  \"Authorization\": \"Bearer YOUR_API_KEY\",  \"Content-Type\": \"application/json\",  },"
+        },
+        {
+          "match": "Token",
+          "context": "timeout=60, ) response.raise_for_status() print(response.json()[\"choices\"][0][\"message\"][\"content\"]) 我们正在极速发展 7000亿 当日 Token 消耗 8万 活跃用户 30ms 专线平均延迟 为什么选择 Taotoken 稳定直连主流大模型，价格比官方更低，为团队 AI 使用提供完整保障。 多模型聚合 150+ 主流大模型，一套 API Key 覆盖文本、图像、视频生成。 高速稳定"
+        },
+        {
+          "match": "token",
+          "context": "us() print(response.json()[\"choices\"][0][\"message\"][\"content\"]) 我们正在极速发展 7000亿 当日 Token 消耗 8万 活跃用户 30ms 专线平均延迟 为什么选择 Taotoken 稳定直连主流大模型，价格比官方更低，为团队 AI 使用提供完整保障。 多模型聚合 150+ 主流大模型，一套 API Key 覆盖文本、图像、视频生成。 高速稳定 专线加速，平均延迟 < 100ms，保障生产环境可用性。 接入简单 兼容主"
+        },
+        {
+          "match": "Token",
+          "context": "多模型聚合 150+ 主流大模型，一套 API Key 覆盖文本、图像、视频生成。 高速稳定 专线加速，平均延迟 < 100ms，保障生产环境可用性。 接入简单 兼容主流 API 格式，5 分钟完成迁移，无需改造现有代码。 灵活计费 按 Token 付费，无最低消费，随用随充，余额永不过期。 对公企业开票 支持增值税专用发票，满足企业合规采购与财务报销需求。 专业团队支持 灵明智码提供全链路技术支持，稳定性与售后双重保障。 能力一览 覆盖接入、转发、计费等核心环节，一站式管理所有 A"
+        },
+        {
+          "match": "Token",
+          "context": "对外暴露一致的 HTTP 接口，便于客户端与 SDK 复用同一套调用方式。 协议适配 在常见开放格式之间做转换与映射，降低多供应商并存时的维护成本。 路由与容灾 按权重、渠道健康度做调度，支持主备切换与限流等策略。 计费与额度 按调用或 Token 计量，配合余额与倍率配置，账单可追溯。 访问控制 令牌粒度授权、模型可见范围与审计日志，便于团队协作与合规。 用量看板 汇总请求量、错误率与成本趋势，辅助容量与预算决策。 与主流厂商深度整合 Taotoken 聚合多家头部模型厂商，在同一"
+        },
+        {
+          "match": "token",
+          "context": "策略。 计费与额度 按调用或 Token 计量，配合余额与倍率配置，账单可追溯。 访问控制 令牌粒度授权、模型可见范围与审计日志，便于团队协作与合规。 用量看板 汇总请求量、错误率与成本趋势，辅助容量与预算决策。 与主流厂商深度整合 Taotoken 聚合多家头部模型厂商，在同一套账户里完成鉴权、调用与计费，下方为部分合作品牌示意。 想了解完整模型、能力与定价，请前往 模型列表 DeepSeek Qwen 月之暗面 智谱 美团 DeepSeek Qwen 月之暗面 智谱 美团 常见问题"
+        },
+        {
+          "match": "token",
+          "context": "时在 HTTP 请求头中加入：Authorization: Bearer <你的密钥>。请妥善保管密钥，勿泄露给他人或在公开代码中明文保存。 支持哪些接口形态？ 提供标准 REST API，常见编程语言只需把 Base URL 换成 Taotoken 提供的地址，并配上你的 API 密钥即可开始调用。支持文本对话、图像、音视频等能力，具体以模型列表与文档中各模型说明为准。 用量与计费在哪里看？ 在控制台可查看账户余额、充值记录，以及「用量统计」中的每次调用与费用汇总。支持按时间范围、模"
+        },
+        {
+          "match": "token",
+          "context": "等能力，具体以模型列表与文档中各模型说明为准。 用量与计费在哪里看？ 在控制台可查看账户余额、充值记录，以及「用量统计」中的每次调用与费用汇总。支持按时间范围、模型、API 密钥等条件筛选，便于你对账与排查问题。 可以私有化部署吗？ Taotoken 面向个人与团队提供在线服务，默认通过官网与控制台使用。若你有企业级私有化部署、专属集群或合规方面的需求，可通过网站上的联系方式或客服渠道咨询，我们会根据你的场景给出可行方案。 ©2026 北京灵明智码科技有限公司  京ICP备202512"
+        }
+      ]
+    },
+    {
+      "id": "ov-llm7-docs",
+      "name": "llm7 免费聚合",
+      "url": "https://docs.llm7.io",
+      "status": "ok",
+      "hits": 2,
+      "findings": [
+        {
+          "match": "token",
+          "context": "Quickstart Install the SDK, configure the client, and make your first requests.   ​ Text generation   Streaming Stream tokens for low-latency UIs. Function calling Let the model call your functions with structured arguments. JSON mode Force val"
+        },
+        {
+          "match": "token",
+          "context": "ildren:[_jsx(Card,{title:`Streaming`,icon:`bolt`,href:`/guides/streaming`,children:_jsx(_components.p,{children:`Stream tokens for low-latency UIs.`})}),_jsx(Card,{title:`Function calling`,icon:`brackets-curly`,href:`/guides/function-calling`,ch"
+        }
+      ]
+    },
+    {
+      "id": "ov-agnes-ai",
+      "name": "Agnes AI",
+      "url": "https://platform.agnes-ai.com",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "ov-regolo-pricing",
+      "name": "Regolo.ai",
+      "url": "https://regolo.ai/pricing/",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "free",
+          "context": "Sign In                      Choose the plan that fits your needs Zero Data Retention, Fast and Secure AI      Start free for a month, subscribe for more capacity, or go flexible with pay-as-you-go.   Access to all features. Scale when you n"
+        },
+        {
+          "match": "Free",
+          "context": "r go flexible with pay-as-you-go.   Access to all features. Scale when you need. Pay only for what you use.             Free Trial       Subscriptions       Pay-as-you-go   PAYG       Enterprise                        Free Trial     START YOUR"
+        },
+        {
+          "match": "Free",
+          "context": "you use.             Free Trial       Subscriptions       Pay-as-you-go   PAYG       Enterprise                        Free Trial     START YOUR 30-DAY FREE TRIAL   Get full access to all Core Models. No credit card required, no commitment. Si"
+        },
+        {
+          "match": "FREE",
+          "context": "Subscriptions       Pay-as-you-go   PAYG       Enterprise                        Free Trial     START YOUR 30-DAY FREE TRIAL   Get full access to all Core Models. No credit card required, no commitment. Sign up and start building.     Sta"
+        },
+        {
+          "match": "Free",
+          "context": "IAL   Get full access to all Core Models. No credit card required, no commitment. Sign up and start building.     Start Free Trial              1 month duration   Full access for 30 days, then choose a plan             1M tokens per day   Daily"
+        },
+        {
+          "match": "Free",
+          "context": "y capacity   Up to 600M tokens           Tokens per day   20 million       Support   Email support included       Start Free 30‑Day Trial             Most popular      Boost Plan     Move beyond everyday AI with more room to build, test, and it"
+        },
+        {
+          "match": "Free",
+          "context": "Monthly capacity   Up to 1.5B tokens           Tokens per day   50 million       Support   Priority support       Start Free 30‑Day Trial             Best value      Pro Plan     Power production-scale AI features with predictable performance."
+        },
+        {
+          "match": "Free",
+          "context": "Monthly capacity   Up to 3B tokens           Tokens per day   100 million       Support   Priority support       Start Free 30‑Day Trial           Scale Plan     Max out capacity for mission-critical, high-volume AI workloads.   Perfect for en"
+        },
+        {
+          "match": "Free",
+          "context": "Up to 6B tokens           Tokens per day   200 million       Support   Dedicated setup and priority support       Start Free 30‑Day Trial           Access To All Core Chat Models       No credit card needed, get the full service for 30 days, ri"
+        },
+        {
+          "match": "free",
+          "context": "‑Day Trial           Access To All Core Chat Models       No credit card needed, get the full service for 30 days, risk‑free.                      Pay-as-you-go     Pay only for what you use   Perfect for teams prototyping, testing, or running"
+        },
+        {
+          "match": "Free",
+          "context": "for teams prototyping, testing, or running variable workloads. No commitment. Scale up any time.     Start with 30 Days Free              €0 monthly fee   Pay only for the tokens you actually consume             No commitment   No contracts. St"
+        },
+        {
+          "match": "free",
+          "context": "cisely before running any workload — and choose the most cost-efficient model for each task.               How does the free trial work?         You get 30 days of full, unrestricted access to all Regolo core models — no credit card required. S"
+        },
+        {
+          "match": "free",
+          "context": ", transition seamlessly to Pay-as-you-Go or Subscription plans when your trial ends.               What happens when my free trial expires?         Your account stays active. You'll simply transition to the Pay-as-you-Go plan, where you only pa"
+        },
+        {
+          "match": "token",
+          "context": "ilding.     Start Free Trial              1 month duration   Full access for 30 days, then choose a plan             1M tokens per day   Daily token limit to explore all features             Stricter rate limits   Fair usage throttling applies"
+        },
+        {
+          "match": "token",
+          "context": "Trial              1 month duration   Full access for 30 days, then choose a plan             1M tokens per day   Daily token limit to explore all features             Stricter rate limits   Fair usage throttling applies             All Core Mod"
+        },
+        {
+          "match": "token",
+          "context": "olo builders.       €39.00 *   per month     With 70% discount on the first 3 months.     Monthly capacity   Up to 600M tokens           Tokens per day   20 million       Support   Email support included       Start Free 30‑Day Trial"
+        },
+        {
+          "match": "Token",
+          "context": "€39.00 *   per month     With 70% discount on the first 3 months.     Monthly capacity   Up to 600M tokens           Tokens per day   20 million       Support   Email support included       Start Free 30‑Day Trial             Most popular"
+        },
+        {
+          "match": "token",
+          "context": "d data teams.       €89.00 *   per month     Flat monthly price for greater capacity.     Monthly capacity   Up to 1.5B tokens           Tokens per day   50 million       Support   Priority support       Start Free 30‑Day Trial             Best"
+        },
+        {
+          "match": "Token",
+          "context": "€89.00 *   per month     Flat monthly price for greater capacity.     Monthly capacity   Up to 1.5B tokens           Tokens per day   50 million       Support   Priority support       Start Free 30‑Day Trial             Best value      Pro Pl"
+        },
+        {
+          "match": "token",
+          "context": "o products.       €169.00 *   per month     Flat monthly price for demanding workloads.     Monthly capacity   Up to 3B tokens           Tokens per day   100 million       Support   Priority support       Start Free 30‑Day Trial           Scale"
+        },
+        {
+          "match": "Token",
+          "context": "€169.00 *   per month     Flat monthly price for demanding workloads.     Monthly capacity   Up to 3B tokens           Tokens per day   100 million       Support   Priority support       Start Free 30‑Day Trial           Scale Plan     Max out"
+        },
+        {
+          "match": "token",
+          "context": "ing platforms.       €319.00 *   per month     Flat monthly price for maximum capacity.     Monthly capacity   Up to 6B tokens           Tokens per day   200 million       Support   Dedicated setup and priority support       Start Free 30‑Day Tr"
+        },
+        {
+          "match": "Token",
+          "context": "€319.00 *   per month     Flat monthly price for maximum capacity.     Monthly capacity   Up to 6B tokens           Tokens per day   200 million       Support   Dedicated setup and priority support       Start Free 30‑Day Trial           Acc"
+        },
+        {
+          "match": "token",
+          "context": "workloads. No commitment. Scale up any time.     Start with 30 Days Free              €0 monthly fee   Pay only for the tokens you actually consume             No commitment   No contracts. Start and stop whenever you want             Scale on d"
+        },
+        {
+          "match": "token",
+          "context": "ricing tailored to your specific volume and needs             Volume discounts   The more you use, the less you pay per token             Custom SLA   Service-level agreements built around your requirements             Dedicated support   Direct"
+        },
+        {
+          "match": "token",
+          "context": "Models library pricing      Here you can explore the full list of supported models, together with their token pricing* and limits.  Use this table to plan your workloads and choose the most cost‑efficient models for each task."
+        },
+        {
+          "match": "token",
+          "context": "mage      OCR      Rerank      Decision        Large Language Models Text and multimodal chat models priced per million tokens (input and output). Pay-as-you-go Subscription Model Input cost per 1M tokens Output cost per 1M tokens Core · Boost ·"
+        },
+        {
+          "match": "token",
+          "context": "multimodal chat models priced per million tokens (input and output). Pay-as-you-go Subscription Model Input cost per 1M tokens Output cost per 1M tokens Core · Boost · Pro · Scale apertus-70b €0.40 €2.10 Included brick-complexity-pro €0.10 €0.40"
+        },
+        {
+          "match": "token",
+          "context": "ced per million tokens (input and output). Pay-as-you-go Subscription Model Input cost per 1M tokens Output cost per 1M tokens Core · Boost · Pro · Scale apertus-70b €0.40 €2.10 Included brick-complexity-pro €0.10 €0.40 Included brick-v1-beta €0"
+        },
+        {
+          "match": "token",
+          "context": "query Core · Boost · Pro · Scale Qwen3-Reranker-4B €0.01 Not included Decision Decision models priced per million input tokens. Billed for input tokens only, not included in subscription plans. Pay-as-you-go Subscription Model Input cost per 1M"
+        }
+      ]
+    },
+    {
+      "id": "ov-tokenharbor",
+      "name": "TokenHarbor",
+      "url": "https://tokenharbor.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$0 / month Try Token Harbor with",
+          "context": "e with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Fl"
+        },
+        {
+          "match": "$0.99 $1.99 / month First month onl",
+          "context": "period Promotional models added over time One OpenAI-compatible API Start free No card required. Agent Pass First month $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage"
+        },
+        {
+          "match": "$1.99/month Built for agents and sc",
+          "context": "e OpenAI-compatible API Start free No card required. Agent Pass First month $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selecte"
+        },
+        {
+          "match": "$10 included usage Plus your free",
+          "context": "nth First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selected models go up to $20 Then 5 % off pay-as-you-go Adds DeepSeek V4.1 Flash 1017 Minimax M3."
+        },
+        {
+          "match": "$20 Then 5 % off pay-as-you-go Ad",
+          "context": "e API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selected models go up to $20 Then 5 % off pay-as-you-go Adds DeepSeek V4.1 Flash 1017 Minimax M3.1 Flash Claude Haiku 5.5 and everything below Your free model allowance runs alon"
+        },
+        {
+          "match": "$9.99 / month For desktop agents an",
+          "context": ".5 and everything below Your free model allowance runs alongside it Sign in to subscribe Auto-renew Office Pass Popular $9.99 / month For desktop agents and everyday work — writing, research, coding. Included usage $35 included usage Plus your free allowance Model boost Sele"
+        },
+        {
+          "match": "$35 included usage Plus your free",
+          "context": "enew Office Pass Popular $9.99 / month For desktop agents and everyday work — writing, research, coding. Included usage $35 included usage Plus your free allowance Model boost Selected models go up to $70 Then 10 % off pay-as-you-go Adds Claude Sonnet 5.5 Grok 4.7 Qwen3.8"
+        },
+        {
+          "match": "$70 Then 10 % off pay-as-you-go A",
+          "context": "ting, research, coding. Included usage $35 included usage Plus your free allowance Model boost Selected models go up to $70 Then 10 % off pay-as-you-go Adds Claude Sonnet 5.5 Grok 4.7 Qwen3.8 Max and everything below Built for daily desktop and office use Sign in to subscr"
+        },
+        {
+          "match": "$99 / month Frontier model access",
+          "context": "7 Qwen3.8 Max and everything below Built for daily desktop and office use Sign in to subscribe Auto-renew Frontier Pass $99 / month Frontier model access for heavy usage and professional work. Included usage $180 included usage Plus your free allowance Model boost Selected"
+        },
+        {
+          "match": "$180 included usage Plus your free",
+          "context": "scribe Auto-renew Frontier Pass $99 / month Frontier model access for heavy usage and professional work. Included usage $180 included usage Plus your free allowance Model boost Selected models go up to $360 Then 15 % off pay-as-you-go Adds Claude Fable 5.1 GPT-6 Astra Claud"
+        },
+        {
+          "match": "$360 Then 15 % off pay-as-you-go A",
+          "context": "and professional work. Included usage $180 included usage Plus your free allowance Model boost Selected models go up to $360 Then 15 % off pay-as-you-go Adds Claude Fable 5.1 GPT-6 Astra Claude Opus 5.5 and everything below Designed for heavy and professional users Sign in"
+        },
+        {
+          "match": "free",
+          "context": "Models Models Pricing Pricing Connect Blog Blog Docs Docs One API · Every model Choose how far you want to build. Start free, save more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Ye"
+        },
+        {
+          "match": "free",
+          "context": "build. Start free, save more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Res"
+        },
+        {
+          "match": "Free",
+          "context": "e more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day"
+        },
+        {
+          "match": "free",
+          "context": "monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiM"
+        },
+        {
+          "match": "Free",
+          "context": "ry Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiMo V2.6 Flash TH-Rudder Free allowance on a r"
+        },
+        {
+          "match": "Free",
+          "context": "ng model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiMo V2.6 Flash TH-Rudder Free allowance on a rolling 7-day period Promotional models added over time One OpenAI-compatible API Start free No card req"
+        },
+        {
+          "match": "free",
+          "context": "h TH-Rudder Free allowance on a rolling 7-day period Promotional models added over time One OpenAI-compatible API Start free No card required. Agent Pass First month $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and s"
+        },
+        {
+          "match": "free",
+          "context": "1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selected models go up to $20 Then 5 % off pay-as-you-go Adds DeepSeek V4.1 Flash 1017 Minimax M3."
+        },
+        {
+          "match": "free",
+          "context": "Then 5 % off pay-as-you-go Adds DeepSeek V4.1 Flash 1017 Minimax M3.1 Flash Claude Haiku 5.5 and everything below Your free model allowance runs alongside it Sign in to subscribe Auto-renew Office Pass Popular $9.99 / month For desktop agents"
+        },
+        {
+          "match": "free",
+          "context": "9 / month For desktop agents and everyday work — writing, research, coding. Included usage $35 included usage Plus your free allowance Model boost Selected models go up to $70 Then 10 % off pay-as-you-go Adds Claude Sonnet 5.5 Grok 4.7 Qwen3.8"
+        },
+        {
+          "match": "free",
+          "context": "s $99 / month Frontier model access for heavy usage and professional work. Included usage $180 included usage Plus your free allowance Model boost Selected models go up to $360 Then 15 % off pay-as-you-go Adds Claude Fable 5.1 GPT-6 Astra Claud"
+        },
+        {
+          "match": "free",
+          "context": "nce. A month here is 4 windows of 7 days: a quarter of the figure in each, and unused room does not carry forward. Your free allowance carries over Subscribing does not replace the free allowance you already have. It stays alongside the pass, w"
+        },
+        {
+          "match": "free",
+          "context": "gure in each, and unused room does not carry forward. Your free allowance carries over Subscribing does not replace the free allowance you already have. It stays alongside the pass, with its own bar on your dashboard. You choose what happens at"
+        },
+        {
+          "match": "free",
+          "context": "per-token routes. Paid routes are not kept for training and are not stored beyond a five-minute exact-match cache. The free models are separate: they follow the free-model retention policy, you enable them yourself in your dashboard, and subsc"
+        },
+        {
+          "match": "free",
+          "context": "t for training and are not stored beyond a five-minute exact-match cache. The free models are separate: they follow the free-model retention policy, you enable them yourself in your dashboard, and subscribing neither switches them on nor counts"
+        },
+        {
+          "match": "free",
+          "context": "cy Privacy Terms Terms Refund Refund Safety Safety Service level Service level GDPR GDPR Report bug Sign in Sign in Try free"
+        },
+        {
+          "match": "token",
+          "context": "Pricing — pay per token or a monthly Pass · Token Harbor Loading Rudder.chat Powered by Token Harbor Playground Models Pricing Rudder.chat Toke"
+        },
+        {
+          "match": "Token",
+          "context": "oken or a monthly Pass · Token Harbor Loading Rudder.chat Powered by Token Harbor Playground Models Pricing Rudder.chat Token Harbor Chat Models Models Pricing Pricing Connect Blog Blog Docs Docs One API · Every model Choose how far you want to"
+        },
+        {
+          "match": "Token",
+          "context": "and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes Deep"
+        }
+      ]
+    },
+    {
+      "id": "ov-iteracompute",
+      "name": "IteraCompute",
+      "url": "https://platform.iteracompute.com/api-keys",
+      "status": "robots_disallowed"
+    },
+    {
+      "id": "ov-upstage",
+      "name": "Upstage",
+      "url": "https://console.upstage.ai",
+      "status": "ok",
+      "hits": 0,
+      "findings": []
+    },
+    {
+      "id": "ov-replicate-pricing",
+      "name": "Replicate",
+      "url": "https://replicate.com/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$0.04 / output image black-forest-l",
+          "context": "-pro Faster, better FLUX Pro. Text-to-image model with excellent image quality, prompt adherence, and output diversity. $0.04 / output image black-forest-labs / flux-dev A 12 billion parameter rectified flow transformer capable of generating images from text descriptions $0."
+        },
+        {
+          "match": "$0.025 / output image black-forest-l",
+          "context": "t-labs / flux-dev A 12 billion parameter rectified flow transformer capable of generating images from text descriptions $0.025 / output image black-forest-labs / flux-schnell The fastest image generation model tailored for local development and personal use $3.00 / thousand o"
+        },
+        {
+          "match": "$3.00 / thousand output images deep",
+          "context": "age black-forest-labs / flux-schnell The fastest image generation model tailored for local development and personal use $3.00 / thousand output images deepseek-ai / deepseek-r1 A reasoning model trained with reinforcement learning, on par with OpenAI o1 $0.01 / thousand outp"
+        },
+        {
+          "match": "$0.01 / thousand output tokens $3.7",
+          "context": "nd output images deepseek-ai / deepseek-r1 A reasoning model trained with reinforcement learning, on par with OpenAI o1 $0.01 / thousand output tokens $3.75 / million input tokens ideogram-ai / ideogram-v3-quality The highest quality Ideogram v3 model. v3 creates images with"
+        },
+        {
+          "match": "$0.09 / output image recraft-ai / r",
+          "context": "The highest quality Ideogram v3 model. v3 creates images with stunning realism, creative designs, and consistent styles $0.09 / output image recraft-ai / recraft-v3 Recraft V3 (code-named red_panda) is a text-to-image model with the ability to generate long texts, and images"
+        },
+        {
+          "match": "$0.04 / output image wavespeedai / ",
+          "context": "st of styles. As of today, it is SOTA in image generation, proven by the Text-to-Image Benchmark by Artificial Analysis $0.04 / output image wavespeedai / wan-2.1-i2v-480p Accelerated inference for Wan 2.1 14B image to video, a comprehensive and open suite of video foundatio"
+        },
+        {
+          "match": "$0.09 / second of output video wave",
+          "context": "age to video, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. $0.09 / second of output video wavespeedai / wan-2.1-i2v-720p Accelerated inference for Wan 2.1 14B image to video with high resolution, a comprehensive an"
+        },
+        {
+          "match": "$0.25 / second of output video Priv",
+          "context": "h resolution, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. $0.25 / second of output video Private models You aren&#x27;t limited to the public models on Replicate: you can deploy your own custom models using Cog ,"
+        },
+        {
+          "match": "$ 0.000025 /sec $ 0.09 /hr GPU - CPU 1x ",
+          "context": "s. Fast booting fine-tunes are labeled as such in the model&#x27;s version list. Hardware pricing CPU (Small) cpu-small $ 0.000025 /sec $ 0.09 /hr GPU - CPU 1x GPU RAM - RAM 2GB CPU cpu $ 0.000100 /sec $ 0.36 /hr GPU - CPU 4x GPU RAM - RAM 8GB Nvidia A100 (80GB) GPU gpu-a100-larg"
+        },
+        {
+          "match": "$ 0.000100 /sec $ 0.36 /hr GPU - CPU 4x ",
+          "context": "version list. Hardware pricing CPU (Small) cpu-small $ 0.000025 /sec $ 0.09 /hr GPU - CPU 1x GPU RAM - RAM 2GB CPU cpu $ 0.000100 /sec $ 0.36 /hr GPU - CPU 4x GPU RAM - RAM 8GB Nvidia A100 (80GB) GPU gpu-a100-large $ 0.001400 /sec $ 5.04 /hr GPU 1x CPU 10x GPU RAM 80GB RAM 144GB"
+        },
+        {
+          "match": "$ 0.001400 /sec $ 5.04 /hr GPU 1x CPU 10",
+          "context": "U RAM - RAM 2GB CPU cpu $ 0.000100 /sec $ 0.36 /hr GPU - CPU 4x GPU RAM - RAM 8GB Nvidia A100 (80GB) GPU gpu-a100-large $ 0.001400 /sec $ 5.04 /hr GPU 1x CPU 10x GPU RAM 80GB RAM 144GB 2x Nvidia A100 (80GB) GPU gpu-a100-large-2x $ 0.002800 /sec $ 10.08 /hr GPU 2x CPU 20x GPU RAM"
+        },
+        {
+          "match": "$ 0.002800 /sec $ 10.08 /hr GPU 2x CPU 2",
+          "context": "a100-large $ 0.001400 /sec $ 5.04 /hr GPU 1x CPU 10x GPU RAM 80GB RAM 144GB 2x Nvidia A100 (80GB) GPU gpu-a100-large-2x $ 0.002800 /sec $ 10.08 /hr GPU 2x CPU 20x GPU RAM 160GB RAM 288GB Nvidia H100 GPU gpu-h100 $ 0.001525 /sec $ 5.49 /hr GPU 1x CPU 13x GPU RAM 80GB RAM 144GB Nvi"
+        },
+        {
+          "match": "$ 0.001525 /sec $ 5.49 /hr GPU 1x CPU 13",
+          "context": "80GB) GPU gpu-a100-large-2x $ 0.002800 /sec $ 10.08 /hr GPU 2x CPU 20x GPU RAM 160GB RAM 288GB Nvidia H100 GPU gpu-h100 $ 0.001525 /sec $ 5.49 /hr GPU 1x CPU 13x GPU RAM 80GB RAM 144GB Nvidia L40S GPU gpu-l40s $ 0.000975 /sec $ 3.51 /hr GPU 1x CPU 10x GPU RAM 48GB RAM 65GB 2x Nvi"
+        },
+        {
+          "match": "$ 0.000975 /sec $ 3.51 /hr GPU 1x CPU 10",
+          "context": "88GB Nvidia H100 GPU gpu-h100 $ 0.001525 /sec $ 5.49 /hr GPU 1x CPU 13x GPU RAM 80GB RAM 144GB Nvidia L40S GPU gpu-l40s $ 0.000975 /sec $ 3.51 /hr GPU 1x CPU 10x GPU RAM 48GB RAM 65GB 2x Nvidia L40S GPU gpu-l40s-2x $ 0.001950 /sec $ 7.02 /hr GPU 2x CPU 20x GPU RAM 96GB RAM 144GB"
+        },
+        {
+          "match": "$ 0.001950 /sec $ 7.02 /hr GPU 2x CPU 20",
+          "context": "Nvidia L40S GPU gpu-l40s $ 0.000975 /sec $ 3.51 /hr GPU 1x CPU 10x GPU RAM 48GB RAM 65GB 2x Nvidia L40S GPU gpu-l40s-2x $ 0.001950 /sec $ 7.02 /hr GPU 2x CPU 20x GPU RAM 96GB RAM 144GB Nvidia T4 GPU gpu-t4 $ 0.000225 /sec $ 0.81 /hr GPU 1x CPU 4x GPU RAM 16GB RAM 16GB Additional"
+        },
+        {
+          "match": "$ 0.000225 /sec $ 0.81 /hr GPU 1x CPU 4x",
+          "context": "GB 2x Nvidia L40S GPU gpu-l40s-2x $ 0.001950 /sec $ 7.02 /hr GPU 2x CPU 20x GPU RAM 96GB RAM 144GB Nvidia T4 GPU gpu-t4 $ 0.000225 /sec $ 0.81 /hr GPU 1x CPU 4x GPU RAM 16GB RAM 16GB Additional hardware 4x Nvidia A100 (80GB) GPU gpu-a100-large-4x $ 0.005600 /sec $ 20.16 /hr Addit"
+        },
+        {
+          "match": "$ 0.005600 /sec $ 20.16 /hr Additional M",
+          "context": "225 /sec $ 0.81 /hr GPU 1x CPU 4x GPU RAM 16GB RAM 16GB Additional hardware 4x Nvidia A100 (80GB) GPU gpu-a100-large-4x $ 0.005600 /sec $ 20.16 /hr Additional Multi-GPU A100 capacity is available with committed spend contracts. 8x Nvidia A100 (80GB) GPU gpu-a100-large-8x $ 0.0112"
+        },
+        {
+          "match": "$ 0.011200 /sec $ 40.32 /hr Additional M",
+          "context": "tional Multi-GPU A100 capacity is available with committed spend contracts. 8x Nvidia A100 (80GB) GPU gpu-a100-large-8x $ 0.011200 /sec $ 40.32 /hr Additional Multi-GPU A100 capacity is available with committed spend contracts. 2x Nvidia H100 GPU gpu-h100-2x $ 0.003050 /sec $ 10."
+        },
+        {
+          "match": "$ 0.003050 /sec $ 10.98 /hr Additional M",
+          "context": "0.32 /hr Additional Multi-GPU A100 capacity is available with committed spend contracts. 2x Nvidia H100 GPU gpu-h100-2x $ 0.003050 /sec $ 10.98 /hr Additional Multi-GPU H100 capacity is available with committed spend contracts. 4x Nvidia H100 GPU gpu-h100-4x $ 0.006100 /sec $ 21."
+        },
+        {
+          "match": "$ 0.006100 /sec $ 21.96 /hr Additional M",
+          "context": "0.98 /hr Additional Multi-GPU H100 capacity is available with committed spend contracts. 4x Nvidia H100 GPU gpu-h100-4x $ 0.006100 /sec $ 21.96 /hr Additional Multi-GPU H100 capacity is available with committed spend contracts. 8x Nvidia H100 GPU gpu-h100-8x $ 0.012200 /sec $ 43."
+        },
+        {
+          "match": "$ 0.012200 /sec $ 43.92 /hr Additional M",
+          "context": "1.96 /hr Additional Multi-GPU H100 capacity is available with committed spend contracts. 8x Nvidia H100 GPU gpu-h100-8x $ 0.012200 /sec $ 43.92 /hr Additional Multi-GPU H100 capacity is available with committed spend contracts. Nvidia H200 GPU gpu-h200 $ 0.001525 /sec $ 5.49 /hr"
+        },
+        {
+          "match": "$ 0.001525 /sec $ 5.49 /hr H200 capacity",
+          "context": "ec $ 43.92 /hr Additional Multi-GPU H100 capacity is available with committed spend contracts. Nvidia H200 GPU gpu-h200 $ 0.001525 /sec $ 5.49 /hr H200 capacity is available with committed spend contracts. 2x Nvidia H200 GPU gpu-h200-2x $ 0.003050 /sec $ 10.98 /hr Additional Mult"
+        },
+        {
+          "match": "$ 0.003050 /sec $ 10.98 /hr Additional M",
+          "context": "00 $ 0.001525 /sec $ 5.49 /hr H200 capacity is available with committed spend contracts. 2x Nvidia H200 GPU gpu-h200-2x $ 0.003050 /sec $ 10.98 /hr Additional Multi-GPU H200 capacity is available with committed spend contracts. 4x Nvidia H200 GPU gpu-h200-4x $ 0.006100 /sec $ 21."
+        },
+        {
+          "match": "$ 0.006100 /sec $ 21.96 /hr Additional M",
+          "context": "0.98 /hr Additional Multi-GPU H200 capacity is available with committed spend contracts. 4x Nvidia H200 GPU gpu-h200-4x $ 0.006100 /sec $ 21.96 /hr Additional Multi-GPU H200 capacity is available with committed spend contracts. 8x Nvidia H200 GPU gpu-h200-8x $ 0.012200 /sec $ 43."
+        },
+        {
+          "match": "$ 0.012200 /sec $ 43.92 /hr Additional M",
+          "context": "1.96 /hr Additional Multi-GPU H200 capacity is available with committed spend contracts. 8x Nvidia H200 GPU gpu-h200-8x $ 0.012200 /sec $ 43.92 /hr Additional Multi-GPU H200 capacity is available with committed spend contracts. 4x Nvidia L40S GPU gpu-l40s-4x $ 0.003900 /sec $ 14."
+        },
+        {
+          "match": "$ 0.003900 /sec $ 14.04 /hr Additional M",
+          "context": "3.92 /hr Additional Multi-GPU H200 capacity is available with committed spend contracts. 4x Nvidia L40S GPU gpu-l40s-4x $ 0.003900 /sec $ 14.04 /hr Additional Multi-GPU L40S capacity is available with committed spend contracts. 8x Nvidia L40S GPU gpu-l40s-8x $ 0.007800 /sec $ 28."
+        },
+        {
+          "match": "$ 0.007800 /sec $ 28.08 /hr Additional M",
+          "context": "4.04 /hr Additional Multi-GPU L40S capacity is available with committed spend contracts. 8x Nvidia L40S GPU gpu-l40s-8x $ 0.007800 /sec $ 28.08 /hr Additional Multi-GPU L40S capacity is available with committed spend contracts. Hardware Price GPU CPU GPU RAM RAM CPU (Small) cpu-s"
+        },
+        {
+          "match": "$ 0.000025 /sec $ 0.09 /hr - 1x - 2GB CP",
+          "context": "GPU L40S capacity is available with committed spend contracts. Hardware Price GPU CPU GPU RAM RAM CPU (Small) cpu-small $ 0.000025 /sec $ 0.09 /hr - 1x - 2GB CPU cpu $ 0.000100 /sec $ 0.36 /hr - 4x - 8GB Nvidia A100 (80GB) GPU gpu-a100-large $ 0.001400 /sec $ 5.04 /hr 1x 10x 80GB"
+        },
+        {
+          "match": "$ 0.000100 /sec $ 0.36 /hr - 4x - 8GB Nv",
+          "context": "spend contracts. Hardware Price GPU CPU GPU RAM RAM CPU (Small) cpu-small $ 0.000025 /sec $ 0.09 /hr - 1x - 2GB CPU cpu $ 0.000100 /sec $ 0.36 /hr - 4x - 8GB Nvidia A100 (80GB) GPU gpu-a100-large $ 0.001400 /sec $ 5.04 /hr 1x 10x 80GB 144GB 2x Nvidia A100 (80GB) GPU gpu-a100-larg"
+        },
+        {
+          "match": "$ 0.001400 /sec $ 5.04 /hr 1x 10x 80GB 1",
+          "context": "0.000025 /sec $ 0.09 /hr - 1x - 2GB CPU cpu $ 0.000100 /sec $ 0.36 /hr - 4x - 8GB Nvidia A100 (80GB) GPU gpu-a100-large $ 0.001400 /sec $ 5.04 /hr 1x 10x 80GB 144GB 2x Nvidia A100 (80GB) GPU gpu-a100-large-2x $ 0.002800 /sec $ 10.08 /hr 2x 20x 160GB 288GB Nvidia H100 GPU gpu-h100"
+        }
+      ]
+    },
+    {
+      "id": "ov-hf-inference",
+      "name": "HuggingFace 推理",
+      "url": "https://huggingface.co/docs/inference-providers/index",
+      "status": "ok",
+      "hits": 27,
+      "findings": [
+        {
+          "match": "credits",
+          "context": "NER, summarization, and speech recognition ⚡ Get Started : Inference Providers is pay-as-you-go, with monthly included credits for PRO users and Team & Enterprise organizations . Key Features 🎯 All-in-One API : A single API for text generation, i"
+        },
+        {
+          "match": "Token",
+          "context": "ptimum PEFT Reachy Mini Safetensors Sentence Transformers TRL Tasks Text Embeddings Inference Text Generation Inference Tokenizers Trackio Transformers Transformers.js Xet smolagents timm Search documentation main EN Get Started Inference Provid"
+        },
+        {
+          "match": "token",
+          "context": "sing a coding agent? Point it at Inference Providers to run the latest open models available with a single Hugging Face token. Pick your tool below to jump straight to its setup guide. OpenCode Pi Codex Claude Code Hermes Agent Partners Our plat"
+        },
+        {
+          "match": "token",
+          "context": "son for scripts and agents. See the Hub API page for the full set of filters. Authentication You’ll need a Hugging Face token to authenticate your requests. Create one by visiting your token settings and generating a fine-grained token with Make"
+        },
+        {
+          "match": "token",
+          "context": "of filters. Authentication You’ll need a Hugging Face token to authenticate your requests. Create one by visiting your token settings and generating a fine-grained token with Make calls to Inference Providers permissions. For complete token man"
+        },
+        {
+          "match": "token",
+          "context": "ging Face token to authenticate your requests. Create one by visiting your token settings and generating a fine-grained token with Make calls to Inference Providers permissions. For complete token management details, see our security tokens guid"
+        },
+        {
+          "match": "token",
+          "context": "our token settings and generating a fine-grained token with Make calls to Inference Providers permissions. For complete token management details, see our security tokens guide . Quick Start - LLM Let’s start with the most common use case: conver"
+        },
+        {
+          "match": "token",
+          "context": "ained token with Make calls to Inference Providers permissions. For complete token management details, see our security tokens guide . Quick Start - LLM Let’s start with the most common use case: conversational AI using large language models. Th"
+        },
+        {
+          "match": "token",
+          "context": "l, install the Hugging Face Hub Python client and log in: Copied pip install huggingface_hub hf auth login # get a read token from hf.co/settings/tokens You can now use the client with a Python interpreter. By default, our system automatically s"
+        },
+        {
+          "match": "token",
+          "context": "e Hub Python client and log in: Copied pip install huggingface_hub hf auth login # get a read token from hf.co/settings/tokens You can now use the client with a Python interpreter. By default, our system automatically selects the fastest availab"
+        },
+        {
+          "match": "token",
+          "context": "lects the fastest available provider for the specified model (equivalent to the :fastest policy — highest throughput in tokens per second). You can change the provider selection policy by appending a policy suffix to the model id: :cheapest for"
+        },
+        {
+          "match": "token",
+          "context": "y by appending a policy suffix to the model id: :cheapest for the most cost-efficient provider (lowest price per output token), or :preferred to follow your preference order in Inference Provider settings . For example, openai/gpt-oss-120b:cheap"
+        },
+        {
+          "match": "TOKEN",
+          "context": "s  from openai import OpenAI  client = OpenAI(  base_url= \"https://router.huggingface.co/v1\" ,  api_key=os.environ[ \"HF_TOKEN\" ], )  completion = client.chat.completions.create(  model= \"openai/gpt-oss-120b:fastest\" ,  messages=[  {  \"role\" : \"u"
+        },
+        {
+          "match": "TOKEN",
+          "context": "URL = \"https://router.huggingface.co/v1/chat/completions\"  headers = { \"Authorization\" : f\"Bearer {os.environ[ &#x27;HF_TOKEN&#x27; ]} \" } payload = {  \"messages\" : [  {  \"role\" : \"user\" ,  \"content\" : \"How many &#x27;G&#x27;s in &#x27;huggingfa"
+        },
+        {
+          "match": "TOKEN",
+          "context": "pied import { InferenceClient } from \"@huggingface/inference\" ;   const client = new InferenceClient (process. env . HF_TOKEN );   const chatCompletion = await client. chatCompletion ({  model : \"openai/gpt-oss-120b:fastest\" ,  messages : [  {"
+        },
+        {
+          "match": "TOKEN",
+          "context": "m \"openai\" ;   const client = new OpenAI ({  baseURL : \"https://router.huggingface.co/v1\" ,  apiKey : process. env . HF_TOKEN , });   const completion = await client. chat . completions . create ({  model : \"openai/gpt-oss-120b:fastest\" ,  messa"
+        },
+        {
+          "match": "TOKEN",
+          "context": "uter.huggingface.co/v1/chat/completions\" ,  {  method : \"POST\" ,  headers : {  Authorization : `Bearer ${process.env.HF_TOKEN} ` ,  \"Content-Type\" : \"application/json\" ,  },  body : JSON . stringify ({  model : \"openai/gpt-oss-120b:fastest\" ,  m"
+        },
+        {
+          "match": "TOKEN",
+          "context": "ai/gpt-oss-120b:groq\" ). Copied curl https://router.huggingface.co/v1/chat/completions \\  -H \"Authorization: Bearer $HF_TOKEN \" \\  -H &#x27;Content-Type: application/json&#x27; \\  -d &#x27;{  \"messages\": [  {  \"role\": \"user\",  \"content\": \"How ma"
+        },
+        {
+          "match": "TOKEN",
+          "context": "ection: Copied import os  from huggingface_hub import InferenceClient  client = InferenceClient(api_key=os.environ[ \"HF_TOKEN\" ])  image = client.text_to_image(  prompt= \"A serene lake surrounded by mountains at sunset, photorealistic style\" ,"
+        },
+        {
+          "match": "TOKEN",
+          "context": "Client } from \"@huggingface/inference\" ;  import fs from \"fs\" ;   const client = new InferenceClient (process. env . HF_TOKEN );   const imageBlob = await client. textToImage ({  model : \"black-forest-labs/FLUX.1-dev\" ,  inputs :  \"A serene lake"
+        },
+        {
+          "match": "token",
+          "context": "proxy infrastructure, which provides several key benefits: Unified Authentication & Billing : Use a single Hugging Face token for all providers Automatic Failover : When using automatic provider selection ( provider=\"auto\" ), requests are automa"
+        },
+        {
+          "match": "token",
+          "context": "r\" , content : \"Hello!\" }], }); Copied import os  from huggingface_hub import InferenceClient  client = InferenceClient(token=os.environ[ \"HF_TOKEN\" ])   # Explicit provider selection  result = client.chat_completion(  model= \"deepseek-ai/DeepSe"
+        },
+        {
+          "match": "TOKEN",
+          "context": "\" }], }); Copied import os  from huggingface_hub import InferenceClient  client = InferenceClient(token=os.environ[ \"HF_TOKEN\" ])   # Explicit provider selection  result = client.chat_completion(  model= \"deepseek-ai/DeepSeek-R1\" ,  provider= \"n"
+        },
+        {
+          "match": "token",
+          "context": "lection Policy: provider: \"auto\" (default): Selects the fastest available provider for the model (highest throughput in tokens per second), equivalent to the :fastest policy. provider: \"specific-provider\" : Forces use of a specific provider (e.g"
+        },
+        {
+          "match": "token",
+          "context": "tically on the server side. By default, the fastest available provider is selected for the model (highest throughput in tokens per second). This is equivalent to appending :fastest to the model name. You can change that policy by adding a suffix"
+        },
+        {
+          "match": "token",
+          "context": "g a suffix to the model name: :cheapest selects the most cost-efficient provider for the model (lowest price per output tokens) :preferred selects the first available provider sorted by your preference order in Inference Provider settings Note :"
+        },
+        {
+          "match": "TOKEN",
+          "context": "letion service directly. Copied curl https://router.huggingface.co/v1/chat/completions \\  -H \"Authorization: Bearer $HF_TOKEN \" \\  -H \"Content-Type: application/json\" \\  -d &#x27;{  \"model\": \"deepseek-ai/DeepSeek-R1:fastest\",  \"messages\": [  {"
+        }
+      ]
     }
   ]
 }
