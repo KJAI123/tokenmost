@@ -1206,10 +1206,10 @@ function calcGlobalBanner(){
   const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning');
   const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
-  const total=once+daily;
+  const monthly=Math.round(once+daily*30);
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
-  document.getElementById('gbNum').textContent='🌍 全球羊毛 ≈ '+f(total)+' DS等效';
-  document.getElementById('gbSub').textContent='一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 · 共 '+live.length+' 条 · 点击看明细';
+  document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS等效';
+  document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
 }
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
