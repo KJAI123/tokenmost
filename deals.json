@@ -68,9 +68,7 @@
   "difficulty": 1,
   "published": true,
   "verify_by": "auto",
-  "group": "DeepSeek",
-  "eq_wan": 100000,
-  "eq_note": "比价基准线；按月1亿用量基准自身对标(展示牌价锚点)"
+  "group": "DeepSeek"
  },
  {
   "id": "deepseek-offpeak",
@@ -1020,8 +1018,7 @@
   "published": true,
   "via": "register",
   "notes": "官方价格页逐字（高）；async向量2000万是额度最大的单项",
-  "group": "阿里云",
-  "tokens_wan": 2000
+  "group": "阿里云"
  },
  {
   "id": "deep-bailian-limited-free",
@@ -1057,9 +1054,7 @@
   "published": true,
   "via": "api",
   "notes": "官方价格页逐字（高）",
-  "group": "阿里云",
-  "eq_wan": 100000,
-  "eq_note": "百炼比价基准；按月1亿用量基准对标(展示牌价锚点)"
+  "group": "阿里云"
  },
  {
   "id": "deep-kimi-membership",
@@ -1657,9 +1652,9 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true,
+  "published": false,
   "via": "api",
-  "notes": "官方定价页 .md 直出（高）。⚠️ deals.json 旧条目「GLM-5.3-Flash 不免费」与定价页「限免」矛盾，合并时以定价页为准复核",
+  "notes": "官方定价页 .md 直出（高）。⚠️ deals.json 旧条目「GLM-5.3-Flash 不免费」与定价页「限免」矛盾，合并时以定价页为准复核；与 zhipu-flash-free 同事实重复，归档防双计",
   "group": "智谱",
   "eq_wan": 200000,
   "eq_note": "同 zhipu-flash-free 口径(8款免费模型月当量保守2亿)"
@@ -3041,9 +3036,7 @@
   "published": true,
   "via": "client",
   "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/",
-  "group": "全行业体验档横评",
-  "eq_wan": 30000,
-  "eq_note": "横评综述:单家最大方=智谱体验套餐1.36亿/5天;折3亿参考当量(综述条目)"
+  "group": "全行业体验档横评"
  },
  {
   "id": "cline-pass-deepseek",
