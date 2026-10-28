@@ -76,6 +76,7 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 #cards{border:1px solid var(--border);border-top:none;border-radius:0 0 var(--r) var(--r);overflow:hidden;background:var(--card);margin-bottom:24px;box-shadow:var(--shadow)}
 .row{display:grid;grid-template-columns:96px minmax(0,1fr) 116px max-content;gap:4px 16px;padding:12px 16px;border-bottom:1px solid #eef1f4;align-items:center;transition:background .1s}
 .row.agg{background:#f0faf5}
+.row.agg .r-tok{white-space:nowrap}
 .agg .r-provider{font-weight:700}
 .aggToggle{border:1.5px solid var(--accent);background:#ecfdf5;border-radius:6px;padding:5px 10px;font-size:.78rem;font-weight:700;color:var(--accent);cursor:pointer;min-height:32px;box-shadow:0 1px 3px rgba(5,150,105,.18)}
 .aggToggle:hover{background:var(--accent);color:#fff}
@@ -638,10 +639,11 @@ function render(){
     box.innerHTML=groups.map(g=>{
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
+      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
       const s=siteFor(g.best);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}">
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">DS Flash等效·首月可薅</span>${g.daily?`<span class="unit" style="display:block;margin-top:2px;font-size:.68rem">${g.once?f(g.once)+'万＋':''}日均 ${f(g.daily)}/天</span>`:'<span class="unit" style="display:block;margin-top:2px;font-size:.68rem">一次性到账</span>'}</span></div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f2(g.once)+'万＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${esc(g.p)}</span>
@@ -1255,6 +1257,7 @@ function calcGlobalBanner(){
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const monthly=Math.round(once+daily*30);
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
+      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
   document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
   document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
 }
