@@ -30,6 +30,8 @@ GH_SEARCHES = [
 import os
 if os.environ.get("GH_QUERIES_B2"):
     GH_SEARCHES = ["awesome ai coding plan", "free tokens llm list", "大模型 额度 白嫖", "free api credits list"]
+if os.environ.get("GH_QUERIES_B3"):
+    GH_SEARCHES = ["free ai api overseas", "llm provider free tier", "openai compatible free api", "free inference api list"]
 # 社区攻略帖（提取出链）
 PAGE_SOURCES = [
     "https://zhuanlan.zhihu.com/p/2014053076936438015",

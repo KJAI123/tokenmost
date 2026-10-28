@@ -13,7 +13,8 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 # 按周轮换：第2周批次（每周巡检时更换以避开搜狗缓存）
 # 按周轮换：第3周批次
 # 按周轮换：第4周批次
-QUERIES = ["免费 claude", "qwen 免费", "copilot 学生", "API 中转 折扣"]
+# 按周轮换：第5周批次
+QUERIES = ["模型 免费 送", "agent 免费 额度", "算力 白嫖", " inference 免费"]
 SNOWBALL_SEEDS = [  # 已知文章：从文内互链滚雪球
     "https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg",
 ]

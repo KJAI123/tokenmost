@@ -176,8 +176,8 @@
   "notes": "TODO：Max 套餐 2026-03-10 已下线（升级为 Ultra），勿引用旧攻略",
   "verify_by": "auto",
   "group": "讯飞",
-  "eq_wan": 30000,
-  "eq_note": "Spark Lite 长期免费+新用户礼包；按讯飞波谷价折算保守3亿/月当量(估算)"
+  "daily_wan": 1000,
+  "daily_note": "长期免费层月当量 30000 万 ÷30 折日均（每天可薅）；Spark Lite 长期免费+新用户礼包；按讯飞波谷价折算保守3亿/月当量(估算)"
  },
  {
   "id": "tencenthub-signup",
@@ -462,8 +462,8 @@
   "published": true,
   "verify_by": "auto",
   "group": "AIHubMix",
-  "eq_wan": 5000,
-  "eq_note": "67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)"
+  "daily_wan": 167,
+  "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)"
  },
  {
   "id": "dmxapi-discount",
@@ -675,8 +675,8 @@
   "published": true,
   "verify_by": "auto",
   "group": "智谱",
-  "eq_wan": 200000,
-  "eq_note": "GLM-4.7-Flash 长期免费无硬上限；按Flash牌价0.8/2.8加权1.3元/百万、参考每日500万 Flash体验档口径×30=1.5亿保守计2000万级实际更多——取等效月量2亿(估算)"
+  "daily_wan": 6667,
+  "daily_note": "长期免费层月当量 200000 万 ÷30 折日均（每天可薅）；GLM-4.7-Flash 长期免费无硬上限；按Flash牌价0.8/2.8加权1.3元/百万、参考每日500万 Fla"
  },
  {
   "id": "deepseek-cache",
@@ -741,8 +741,8 @@
   "published": true,
   "notes": "⚠️ R5 官方清单直核：此前『Hunyuan-MT/Xing4.0 对话免费』口径已过期",
   "group": "硅基流动",
-  "eq_wan": 3000,
-  "eq_note": "向量/语音/OCR/Kolors生图免费；按调用量折月3000万当量(估算)"
+  "daily_wan": 100,
+  "daily_note": "长期免费层月当量 3000 万 ÷30 折日均（每天可薅）；向量/语音/OCR/Kolors生图免费；按调用量折月3000万当量(估算)"
  },
  {
   "id": "scnet-maas",
@@ -791,8 +791,8 @@
   "difficulty": 1,
   "published": true,
   "group": "FastGPT",
-  "eq_wan": 200,
-  "eq_note": "商业版免费档100 AI Credits；按1 credit≈0.01元×40万tok/元折算月200万级(估算)"
+  "daily_wan": 7,
+  "daily_note": "长期免费层月当量 200 万 ÷30 折日均（每天可薅）；商业版免费档100 AI Credits；按1 credit≈0.01元×40万tok/元折算月200万级(估算)"
  },
  {
   "id": "n8n-selfhost",
@@ -859,8 +859,8 @@
   "difficulty": 1,
   "published": true,
   "group": "OhMyGPT",
-  "eq_wan": 15000,
-  "eq_note": "$0标价模型转发；按GLM-4.7-Flash口径月1.5亿保守(估算)"
+  "daily_wan": 500,
+  "daily_note": "长期免费层月当量 15000 万 ÷30 折日均（每天可薅）；$0标价模型转发；按GLM-4.7-Flash口径月1.5亿保守(估算)"
  },
  {
   "id": "mistral-free",
@@ -876,8 +876,8 @@
   "difficulty": 1,
   "published": true,
   "group": "Mistral",
-  "eq_wan": 10000,
-  "eq_note": "免费档月内含用量；第三方参考10亿tokens/月口径×保守折扣=1亿(估算)"
+  "daily_wan": 333,
+  "daily_note": "长期免费层月当量 10000 万 ÷30 折日均（每天可薅）；免费档月内含用量；第三方参考10亿tokens/月口径×保守折扣=1亿(估算)"
  },
  {
   "id": "cohere-trial",
@@ -1035,8 +1035,8 @@
   "via": "api",
   "notes": "官方价格页标注（高）",
   "group": "阿里云",
-  "eq_wan": 10000,
-  "eq_note": "限时免费模型(decision-preview/R1蒸馏等)；按开放期月1千万当量保守(估算)"
+  "daily_wan": 333,
+  "daily_note": "长期免费层月当量 10000 万 ÷30 折日均（每天可薅）；限时免费模型(decision-preview/R1蒸馏等)；按开放期月1千万当量保守(估算)"
  },
  {
   "id": "deep-bailian-pricing",
@@ -1162,8 +1162,8 @@
   "via": "free",
   "notes": "官方文档直核（高）；合并时需修正deals.json/面板中的1500/天静态数字",
   "group": "Google",
-  "eq_wan": 5000,
-  "eq_note": "免费层数字已不公开；历史口径~20RPD×4K×30≈月500万保守(估算)"
+  "daily_wan": 167,
+  "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；免费层数字已不公开；历史口径~20RPD×4K×30≈月500万保守(估算)"
  },
  {
   "id": "deep-anthropic-trial-5usd",
@@ -1710,8 +1710,8 @@
   "via": "register",
   "notes": "阿里云开发者社区文（中高）；底册「100 Credits/月」补全认证前提",
   "group": "Qoder（阿里）",
-  "eq_wan": 2000,
-  "eq_note": "社区版300+100Credits/月；1 credit≈0.01元折月2000万（估算,限额未公布）"
+  "daily_wan": 67,
+  "daily_note": "长期免费层月当量 2000 万 ÷30 折日均（每天可薅）；社区版300+100Credits/月；1 credit≈0.01元折月2000万（估算,限额未公布）"
  },
  {
   "id": "deep-qoder-cn-paid",
@@ -1747,8 +1747,8 @@
   "via": "client",
   "notes": "腾讯 InfoQ 官方号+知乎交叉（中高）；价目为多源聚合（中）",
   "group": "腾讯",
-  "eq_wan": 500,
-  "eq_note": "体验版500 Credits/月+Kimi-K2.5免费(排队)；折算月500万(估算)"
+  "daily_wan": 17,
+  "daily_note": "长期免费层月当量 500 万 ÷30 折日均（每天可薅）；体验版500 Credits/月+Kimi-K2.5免费(排队)；折算月500万(估算)"
  },
  {
   "id": "deep-codebuddy-pricing",
@@ -1784,8 +1784,8 @@
   "via": "client",
   "notes": "官网口径+2026评测交叉（高）",
   "group": "智谱",
-  "eq_wan": 5000,
-  "eq_note": "个人版全功能免费；按补全场景月500万当量保守(估算)"
+  "daily_wan": 167,
+  "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；个人版全功能免费；按补全场景月500万当量保守(估算)"
  },
  {
   "id": "deep-fitten-free",
@@ -2586,8 +2586,8 @@
   "via": "register",
   "notes": "smzdm 清单帖直核（中高）；与R2口径互补，以控制台实显为准",
   "group": "Qoder（阿里）",
-  "eq_wan": 1200,
-  "eq_note": "每日100 Credits×30天同上≈1200万/月(估算)"
+  "daily_wan": 40,
+  "daily_note": "长期免费层月当量 1200 万 ÷30 折日均（每天可薅）；每日100 Credits×30天同上≈1200万/月(估算)"
  },
  {
   "id": "deep-intern-inkpoint",
@@ -2711,8 +2711,8 @@
   "via": "register",
   "notes": "多源交叉（中高）；A3 攻略口径一致",
   "group": "Cohere",
-  "eq_wan": 1300,
-  "eq_note": "trial key月1000次×4K≈1300万/月(同cohere-trial口径,估算)"
+  "daily_wan": 43,
+  "daily_note": "长期免费层月当量 1300 万 ÷30 折日均（每天可薅）；trial key月1000次×4K≈1300万/月(同cohere-trial口径,估算)"
  },
  {
   "id": "deep-together-nofree-r5",
@@ -2908,9 +2908,9 @@
   "tokens_wan": 4000,
   "via": "client",
   "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事",
-  "eq_wan": 13645,
-  "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）",
-  "group": "智谱"
+  "group": "智谱",
+  "daily_wan": 455,
+  "daily_note": "长期免费层月当量 13645 万 ÷30 折日均（每天可薅）；GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）"
  },
  {
   "id": "deep-zhipu-flash-correction-r7",
@@ -2998,8 +2998,8 @@
   "via": "client",
   "notes": "官方价目页直核（高）；换算未公布故「够干嘛」为定性判断",
   "group": "Trae 国内版",
-  "eq_wan": 500,
-  "eq_note": "Free档500积分/月；官方未公布换算,按1积分≈0.01元折500万(估算)"
+  "daily_wan": 17,
+  "daily_note": "长期免费层月当量 500 万 ÷30 折日均（每天可薅）；Free档500积分/月；官方未公布换算,按1积分≈0.01元折500万(估算)"
  },
  {
   "id": "deep-copilot-free-r7",
@@ -3017,8 +3017,8 @@
   "via": "client",
   "notes": "官方 plans 页 2000 completions 直核（高）+上线报道交叉；Pro 试用=第三方/官方活动口径（中）",
   "group": "GitHub",
-  "eq_wan": 400,
-  "eq_note": "月2000补全+50聊天；同github-copilot-free口径≈400万/月(估算)"
+  "daily_wan": 13,
+  "daily_note": "长期免费层月当量 400 万 ÷30 折日均（每天可薅）；月2000补全+50聊天；同github-copilot-free口径≈400万/月(估算)"
  },
  {
   "id": "deep-trial-tier-matrix-r7",
@@ -3088,8 +3088,8 @@
   "published": true,
   "via": "supervisor",
   "group": "Cline",
-  "eq_wan": 20000,
-  "eq_note": "登录即用V4.1 Flash/K3/GLM5.3免费档；按Cline官方免费档口径月2千万保守(估算)"
+  "daily_wan": 667,
+  "daily_note": "长期免费层月当量 20000 万 ÷30 折日均（每天可薅）；登录即用V4.1 Flash/K3/GLM5.3免费档；按Cline官方免费档口径月2千万保守(估算)"
  },
  {
   "id": "opencode-go-deepseek",
@@ -3145,8 +3145,8 @@
   "published": true,
   "via": "supervisor",
   "group": "Qoder（阿里）",
-  "eq_wan": 2000,
-  "eq_note": "IDE 免费调 V4.1-Flash-1017 限额未公布；保守月2000万当量（估算）"
+  "daily_wan": 67,
+  "daily_note": "长期免费层月当量 2000 万 ÷30 折日均（每天可薅）；IDE 免费调 V4.1-Flash-1017 限额未公布；保守月2000万当量（估算）"
  },
  {
   "id": "unisound-u2flash-free",
@@ -3217,9 +3217,9 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "tokens_wan": 30000,
-  "eq_wan": 30000,
-  "eq_note": "GLM-5.3-Flash 牌价 0.8/2.8 加权 1.3 元/百万低于 DS 谷价 1.75，保守 1:1 计 3 亿/周"
+  "eq_note": "GLM-5.3-Flash 牌价 0.8/2.8 加权 1.3 元/百万低于 DS 谷价 1.75，保守 1:1 计 3 亿/周",
+  "daily_wan": 4286,
+  "daily_note": "每周领 3 亿 GLM-5.3-Flash（周日 23 点清零）÷7 折日均 4286 万/天——周期性日入"
  },
  {
   "id": "zhipu-pinhaomo",
@@ -3256,7 +3256,7 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "eq_wan": 720,
-  "eq_note": "每日免费额度(数额待实锤);按同类每日刷新型720万/日口径保守(估算)"
+  "daily_wan": 24,
+  "daily_note": "长期免费层月当量 720 万 ÷30 折日均（每天可薅）；每日免费额度(数额待实锤);按同类每日刷新型720万/日口径保守(估算)"
  }
 ]
