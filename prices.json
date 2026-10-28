@@ -144,10 +144,12 @@
   "provider": "美团 LongCat",
   "layer": "official_cn",
   "currency": "CNY",
-  "input": 0.7,
-  "output": 2.1,
-  "note": "输出按 3 倍推算，待官方核",
-  "verified_at": "2026-10-29"
+  "input": 2,
+  "output": 8,
+  "note": "LongCat 2.0 官方价 2/8（缓存命中 0.04）；此前 0.7/2.1 为推算误值已更正",
+  "verified_at": "2026-10-29",
+  "input_idle": null,
+  "output_idle": null
  },
  {
   "model": "MiMo-V2.5",

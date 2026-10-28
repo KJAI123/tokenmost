@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T17:16:54Z",
+  "harvested_at": "2026-10-28T17:25:42Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,6 +637,10 @@
         },
         {
           "match": "会员",
+          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
+        },
+        {
+          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -726,10 +730,6 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
-        },
-        {
-          "match": "会员",
-          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -737,130 +737,8 @@
       "id": "gemini-pricing",
       "name": "Gemini API 定价",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "免费开始构建，享受宽裕的额度",
-          "context": "eveloper API 价格                                                                                                         免费开始构建，享受宽裕的额度；待应用可用于生产用途后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   ch"
-        },
-        {
-          "match": "免费输入和输出 token",
-          "context": "后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   check_circle 免费输入和输出 token   check_circle Google AI Studio 访问权限   check_circle 内容会用于改进 Google 产品 *     免费开始使用       付费   适用于需要更高调用量和高级功能的生产级应用。"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "码生成而打造。   注意 ： Gemini 4 Argon 不适用于免费层级。模型处理的每个 token 都会被统计并计费，包括思考 token、内部工具系统指令以及使用接地功能时的函数声明。   标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 2.00 美元。 2026 年 12 月 1 日起为 4.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "*   不可用   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "0 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "日之前为 0.05 美元。 2026 年 12 月 1 日起为 0.10 美元。 仅限隐式缓存（不支持显式缓存）。       用于改进 Google 产品   不可用   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "flash         在 Google AI Studio 中试用        Google 旗下最智能的 Flash 模型，专为长期软件工程、自主智能体和复杂的企业工作流而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "2 月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "用 **   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "6-flash         在 Google AI Studio 中试用        Google 的上一代 Flash 模型，在一般性智能体任务和日常任务中兼顾了速度和多模态功能。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "00 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "view       在 Google AI Studio 中试用        我们的低延迟音频转音频模型，针对实时语音智能体和实时对话场景进行了优化，包括通过扩展思考提供后台推理支持。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.75 美元（文本） 3.00 美元或 0.005 美元/分钟（音频） 1.00 美元或 0.002 美元/分钟（图片/视频）       输出价格（包括思考 Token）   免费   4"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "3.5-live-translate-preview         在 Google AI Studio 中试用        我们的低延迟实时语音转语音翻译模型，支持 70 多种语言。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.0053 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.0315 美元/分钟 * （音频）       用"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ibe-live         在 Google AI Studio 中试用        Google 的低延迟、实时语音转文字模型，可通过 WebSocket 实现双向流式音频转写。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.005 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.004 美元/分钟 * （文本）       依托"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "3.5-transcribe         在 Google AI Studio 中试用        我们的语音转文字模型，支持自动检测语言、讲话人区分、字词级时间戳和自定义词汇偏好。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2.00 美元或 0.003 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   12.00 美元或 0.002 美元/分钟 * （文本）       依托"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ni-3.5-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.30 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   免费   $2.50       上下文缓存价格   不可用   0.03 美元 1.0"
-        },
-        {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
-        },
-        {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "搜索查询 14 美元计费。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
-        },
-        {
-          "match": "免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $4.50       上下文缓存价格   不可用   0.05 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
-        },
-        {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.015 美元 1.00 美元/100 万个 token/小时（存储价格）       用于改进 Google 产品   是   是           * 客户向"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ni-3.1-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.25 美元（文本 / 图片 / 视频） 0.50 美元（音频）       输出价格（包括思考 Token）   免费   $1.50       上下文缓存价格   不可用   0.02"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ash         在 Google AI Studio 中试用        Google 的新一代视频生成和编辑模型，现已面向使用 Gemini API 付费层级的开发者正式推出。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   不可用   9.00 美元（文本） 17.50 美元（视频） *       用于改进"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "eview-customtools         在 Google AI Studio 中试用        我们的第三代 Pro 模型，专为多模态理解能力、智能体功能和氛围编程而打造。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2.00 美元：提示 <= 20 万个 token 4.00 美元：提示 > 20 万个 token       输出价格（包括思考 Token）   不可用   12.00 美元：提示 <"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "1 Flash Image) 的更新版本，专为高效图片生成和对话式编辑而打造，在 1K、2K 和 4K 分辨率下，视觉质量、多轮角色一致性、准确的文本渲染以及基于搜索的生成能力均有所提升。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本/图片/视频）       输出价格   不可用   7.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 图片 0.0336 美元 * 、"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "在所有 Gemini 3 及更新的模型中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ge         在 Google AI Studio 中试用        Gemini 3.1 Flash 图片生成模型专为速度和效率而打造，非常适合快速交互式响应和高吞吐量场景。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.50 美元（文本/图片）       输出价格   不可用   3 美元（文本和思考）   60.00 美元（图片）   相当于每张 0.5K 图片 0.045 美元 *   每张 1K"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "oogle AI Studio 中试用        Gemini 3.1 Flash Lite Image 模型是图片生成系列中的效率专家，专为超低延迟和高性价比的图片生成和编辑而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.25 美元（文本/图片/视频）       输出价格   不可用   1.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 分辨率图片 0.0336 美元 *"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
     },
     {
       "id": "azure-students",
@@ -2336,43 +2214,43 @@
         },
         {
           "match": "$0.02/$0.00 text->embeddings qwen/q",
-          "context": ".00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0."
+          "context": ".00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
         },
         {
           "match": "$0.07/$0.26 text+image+video->text ",
-          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+ima"
+          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+ima"
         },
         {
-          "match": "$0.15/$0.60 text->text qwen/qwen3.6",
-          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen"
+          "match": "$0.07/$0.28 text->text qwen/qwen3.6",
+          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen"
         },
         {
           "match": "$0.15/$1.00 text+image+video->text ",
-          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
+          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
         },
         {
-          "match": "$0.18/$1.35 text->text qwen/qwen3-v",
-          "context": "15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
+          "match": "$0.12/$0.80 text->text qwen/qwen3-v",
+          "context": "07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
         },
         {
           "match": "$0.15/$0.60 text+image->text qwen/q",
-          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+vide"
+          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+vide"
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "5 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
+          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
         },
         {
-          "match": "$0.45/$2.70 text+image+video->text ",
-          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.78/$3.80 text->"
+          "match": "$0.29/$2.40 text+image+video->text ",
+          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.78/$3.80 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
+          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
         },
         {
-          "match": "$0.78/$3.80 text->text qwen/qwen-2.",
-          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.78/$3.80 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
+          "match": "$0.30/$1.00 text->text qwen/qwen-2.",
+          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
         }
       ]
     },
@@ -3967,130 +3845,8 @@
       "id": "omniroute-repo",
       "name": "OmniRoute 白嫖网关(3.7万Star)",
       "url": "https://github.com/diegosouzapw/OmniRoute",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "$100 free credits on signup (free ",
-          "context": "ese are public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Chat"
-        },
-        {
-          "match": "$100 →     ⚠️ Affiliate link — Omn",
-          "context": "the OpenAI-compatible path. Available models include claude-opus-4-8 , claude-opus-5 , gpt-5.6-sol and more. Grab your $100 →     ⚠️ Affiliate link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup c"
-        },
-        {
-          "match": "$0 in cost analytics; budget, qu",
-          "context": "án), RTK filters for Gradle & .NET. → Compression   💸 Honest flat-rate cost — subscription / coding-plan providers read $0 in cost analytics; budget, quota & routing keep estimating. → API Reference   ⚖️ Quota-Share routing — split a shared account's quota fairly across p"
-        },
-        {
-          "match": "$0, no card       OpenCode Zen D",
-          "context": "d 350+ more — every icon resolves live from the dashboard's provider catalog. 📖 Provider Reference     🆓 Free Forever — $0, no card       OpenCode Zen DeepSeek V4, Nemotron 3 No token cap   Kilo Code Auto-router, Tencent Hy3 Free forever   Requesty GPT-OSS 120B, Nemotron"
-        },
-        {
-          "match": "$5 credit; card required   OpenR",
-          "context": "Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md"
-        },
-        {
-          "match": "$10 → higher RPM       📖 Full mac",
-          "context": "NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app,"
-        },
-        {
-          "match": "RPM rolling leases per connection. → Resili",
-          "context": "2A Server   🛂 Adaptive admission & overload protection — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → Resilience Guide   🗂️ Canonical /v1/models ordering — one contiguous provider-grouped block per provider (combos pinned first)"
-        },
-        {
-          "match": "RPM free   Cerebras GLM 4.7, GPT-OSS One-ti",
-          "context": "Pollinations GPT, Llama, Claude No key needed   Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/ref"
-        },
-        {
-          "match": "RPM       📖 Full machine-readable catalog →",
-          "context": "iMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app, your machine, your rule"
-        },
-        {
-          "match": "Free",
-          "context": "GitHub - cheaper-inference/OmniRoute: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
-        },
-        {
-          "match": "Free",
-          "context": "ettings Fork 12.1k  ( 12.1k ) Star 82.1k  ( 82.1k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
-        },
-        {
-          "match": "free",
-          "context": "must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cli"
-        },
-        {
-          "match": "free",
-          "context": "utors omniroute.online Topics a2a ai-agents ai-gateway anthropic claude claude-code cline codex copilot cursor deepseek free-ai gemini kimi llm-gateway mcp openai openai-proxy qwen token-saver Resources Readme MIT license Code of conduct Code o"
-        },
-        {
-          "match": "Free",
-          "context": "pository files navigation README Code of conduct Contributing MIT license Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This i"
-        },
-        {
-          "match": "Free",
-          "context": "icense Security More items         🚀 OmniRoute — The Free AI Gateway         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party fre"
-        },
-        {
-          "match": "free",
-          "context": "ree Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party free tiers, not a token grant from OmniRoute. Sign up, obtain credentials where required, and connect the providers you can"
-        },
-        {
-          "match": "free",
-          "context": "required, and connect the providers you can use; each provider controls its limits, availability, and terms.   Stacking free tiers by hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute cat"
-        },
-        {
-          "match": "free",
-          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 484 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
-        },
-        {
-          "match": "free",
-          "context": "ional identity verification, and never summed into the headline. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers,"
-        },
-        {
-          "match": "free",
-          "context": "e. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figure"
-        },
-        {
-          "match": "FREE",
-          "context": "ry of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends"
-        },
-        {
-          "match": "free",
-          "context": "ERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends a free tier and the number drops; a new one lands and it climbs. We publish what the catalog actually computes, never a rounde"
-        },
-        {
-          "match": "free",
-          "context": "🧠 Unique chat model IDs   1320   1374   1475       🖼️ Modality Bridge   🆕 vision + audio + video   ✓   ✓       📡 Radar free catalog   🆕 opt-in   ✓   ✓       ⚖️ Quota-aware scheduling   🆕 Quota-Share   ✓   ✓       📊 Quota telemetry   🆕 live   ✓"
-        },
-        {
-          "match": "Free",
-          "context": "ing Kiro, are excluded from automatic routing by default; connecting an account does not override that setting. See the Free Tiers Guide before choosing a provider.   📦 Copy-paste quickstart scripts for Python, Node.js, PHP, and cURL → examples"
-        },
-        {
-          "match": "free",
-          "context": "inks tagged aff=omniroute are partner links. They fund the project at no extra cost to you.       🎟️ Affiliates Promo — free signup coupons from providers we don't sponsor (click to expand)   This section is for referral/coupon codes only. Spon"
-        },
-        {
-          "match": "free",
-          "context": "re public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniR"
-        },
-        {
-          "match": "free",
-          "context": "can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Cha"
-        },
-        {
-          "match": "free",
-          "context": "te link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup coupon that benefits OmniRoute users? Open an issue and we'll add it here.         🎯 Combos — The Flagship"
-        },
-        {
-          "match": "Free",
-          "context": "ick whatever fits you. Sponsorship never affects routing priority; it buys visibility, not ranking.     ⭐ Star the repo Free — genuinely helps visibility Star OmniRoute   🐙 GitHub Sponsors One-off or monthly · zero platform fee github.com/spons"
-        },
-        {
-          "match": "free",
-          "context": "s/DEVELOPER-ENVIRONMENT.md for guidance on managing local environment files and secrets.   📡 OmniRoute Radar   The main free-tier headline remains ~1.62B tokens/month from the documented, pool-deduplicated catalog above. Temporary provider sign"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
     },
     {
       "id": "lolo-freellm",

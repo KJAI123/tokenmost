@@ -5,3 +5,10 @@
 - 📰 标题雷达 [AI 羊毛 折扣码] 薅羊毛的姿势要正确,AI扛起优惠券反欺诈大旗
 - 📰 标题雷达 [AI 羊毛 折扣码] [小羊毛系列] 12元打车金 + 5元话费充值金, 千问挺好 实实惠惠!
 - 📰 标题雷达 [AI 羊毛 折扣码] YPL品牌折扣返场!黑科技瘦腿裤、羊绒围巾全部88折!
+
+## 2026-10-28 17:25 UTC（轮 5，查询：Coding Plan 折扣）
+- 🆕 公众号新文 [财闻] 阿里云Coding Plan需求火爆,优惠活动将限时限量供应 → https://mp.weixin.qq.com/s?src=11&timestamp=1793208342&ver=7
+- 📰 标题雷达 [Coding Plan 折扣] 智谱称GLM Coding Plan需求火爆且成本不断上涨 即日起调整首次购买优惠并涨价
+- 📰 标题雷达 [Coding Plan 折扣] 阿里云Coding Plan是什么?费用、额度及使用全攻略
+- 📰 标题雷达 [Coding Plan 折扣] 阿里云出手掀桌子了,codingPlan骨折价7.9元爽玩claude code
+- 📰 标题雷达 [Coding Plan 折扣] AI编程新时代的通行证Coding Plan
