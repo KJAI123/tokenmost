@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T18:39:48Z",
+  "harvested_at": "2026-10-28T23:04:55Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -2474,15 +2474,43 @@
       "name": "Overview - Claude Code D",
       "url": "https://code.claude.com/docs",
       "status": "ok",
-      "hits": 2,
+      "hits": 9,
       "findings": [
         {
           "match": "free",
           "context": "auto memory   Common workflows and best practices : patterns for getting the most out of Claude Code   Claude Academy : free self-paced courses, including Claude Code 101 and Claude Code in Action   A harness for every task : how the Claude Cod"
         },
         {
+          "match": "free",
+          "context": "`,_jsxs(_components.li,{children:[_jsx(_components.a,{href:`https://academy.claude.com/`,children:`Claude Academy`}),`: free self-paced courses, including `,_jsx(_components.a,{href:`https://academy.claude.com/courses/claude-code-101`,children:"
+        },
+        {
           "match": "pricing",
           "context": "gs : customize Claude Code for your workflow   Troubleshooting : solutions for common issues   code.claude.com : demos, pricing, and product details   Was this page helpful? Yes No Quickstart Claude Code Docs home page x linkedin Company Anthropic"
+        },
+        {
+          "match": "pricing",
+          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"a"
+        },
+        {
+          "match": "pricing",
+          "context": ". Choose one from the tabs below to get started. Most surfaces require a `,_jsx(_components.a,{href:`https://claude.com/pricing?utm_source=claude_code\\u0026utm_medium=docs\\u0026utm_content=overview_pricing`,children:`Claude subscription`}),` or `,"
+        },
+        {
+          "match": "pricing",
+          "context": "x(_components.a,{href:`https://claude.com/pricing?utm_source=claude_code\\u0026utm_medium=docs\\u0026utm_content=overview_pricing`,children:`Claude subscription`}),` or `,_jsx(_components.a,{href:`https://platform.claude.com/`,children:`Anthropic Co"
+        },
+        {
+          "match": "pricing",
+          "context": "includes Claude Code, so you don’t need to install the CLI separately. A `,_jsx(_components.a,{href:`https://claude.com/pricing?utm_source=claude_code\\u0026utm_medium=docs\\u0026utm_content=overview_desktop_pricing`,children:`paid subscription`}),`"
+        },
+        {
+          "match": "pricing",
+          "context": "nents.a,{href:`https://claude.com/pricing?utm_source=claude_code\\u0026utm_medium=docs\\u0026utm_content=overview_desktop_pricing`,children:`paid subscription`}),` is required.`]}),_jsx(_components.p,{children:_jsx(_components.a,{href:`/en/desktop-q"
+        },
+        {
+          "match": "pricing",
+          "context": "xs(_components.li,{children:[_jsx(_components.a,{href:`https://code.claude.com/`,children:`code.claude.com`}),`: demos, pricing, and product details`]}),`\\n`]})]})}function MDXContent(props={}){const{wrapper:MDXLayout}={..._provideComponents(),..."
         }
       ]
     },
@@ -2600,7 +2628,7 @@
         },
         {
           "match": "free",
-          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+          "context": "6.00% 6.00% By seat tier By seat tier 𝕏 Money cashback 3% with Direct Deposit 3% 3% 3% 3% By seat tier By seat tier Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
         },
         {
           "match": "Pricing",
@@ -3237,9 +3265,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -4012,7 +4039,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 12.1k  ( 12.1k ) Star 82.2k  ( 82.2k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 12.1k  ( 12.1k ) Star 82.3k  ( 82.3k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4368,8 +4395,24 @@
       "name": "MiniMax 国际站",
       "url": "https://platform.minimax.io/",
       "status": "ok",
-      "hits": 4,
+      "hits": 8,
       "findings": [
+        {
+          "match": "token",
+          "context": "\"https://platform.minimax.io/docs/guides/models-intro\"},{\"label\":\"M Plan\",\"href\":\"https://platform.minimax.io/subscribe/token-plan\"},{\"label\":\"Pricing\",\"href\":\"https://platform.minimax.io/docs/pricing/overview\"},{\"label\":\"Console Login\",\"href\":\""
+        },
+        {
+          "match": "token",
+          "context": "orm.minimax.io/docs/guides/text-generation\"},{\"label\":\"M3 for AI Coding Tools\",\"href\":\"https://platform.minimax.io/docs/token-plan/openclaw\"},{\"label\":\"Text to Speech\",\"href\":\"https://platform.minimax.io/docs/guides/speech-t2a-websocket\"},{\"labe"
+        },
+        {
+          "match": "token",
+          "context": ":3,\"children\":[]}],\"codeExamples\":{}},\"jsLinks\":[\"/docs/_mintlify/custom/minimax-cac98058/74cbedfd7ddc6a81/scripts/auto-token.js\",\"/docs/_mintlify/custom/minimax-cac98058/08175b8daa74cd64/scripts/logo.js\",\"/docs/_mintlify/custom/minimax-cac98058"
+        },
+        {
+          "match": "token",
+          "context": "troduction to the Model Context Protocol (MCP)\",\"href\":\"/guides/mcp-guide\"},{\"title\":\"M Plan MCP Guide\",\"href\":\"/guides/token-plan-mcp-guide\"}]},{\"group\":\"Local \\u0026 Self-hosted\",\"pages\":[{\"title\":\"Run and self-host MiniMax Open Models\",\"href\""
+        },
         {
           "match": "free",
           "context": "tion) will no longer be available to new users; existing paying users can continue to use the current API services. The free music generation APIs (Music-3.0-free, Music-2.6-free, music-cover-free) will be discontinued. To experience or use mus"
@@ -4417,57 +4460,8 @@
       "name": "Trae 国际站",
       "url": "https://trae.ai/pricing",
       "status": "ok",
-      "hits": 12,
-      "findings": [
-        {
-          "match": "$0   Start for free Auto mode on",
-          "context": "te with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all m"
-        },
-        {
-          "match": "$20 per month, auto-renews To get",
-          "context": "yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade"
-        },
-        {
-          "match": "$20 usage / month Unlimited Autoc",
-          "context": "ited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus"
-        },
-        {
-          "match": "$60 per month, auto-renews Everyt",
-          "context": "uto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per mo"
-        },
-        {
-          "match": "$60 usage / month (3× Pro) Up to ",
-          "context": "plete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usag"
-        },
-        {
-          "match": "$200 per month, auto-renews Everyt",
-          "context": "news Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade"
-        },
-        {
-          "match": "$200 usage / month (10× Pro) Model",
-          "context": "o) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compar"
-        },
-        {
-          "match": "$ 20 Basic usage $ 60 Basic usage ",
-          "context": "Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited U"
-        },
-        {
-          "match": "$ 200 Basic usage Queue Priority St",
-          "context": "o Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited Unlimited Unlimited Concurrent Cloud"
-        },
-        {
-          "match": "Free",
-          "context": "aborate with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-r"
-        },
-        {
-          "match": "free",
-          "context": "gence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started"
-        },
-        {
-          "match": "Free",
-          "context": "ccess Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "ollama-pricing",
@@ -5112,8 +5106,14 @@
       "id": "xai-pricing",
       "name": "xAI 定价",
       "url": "https://console.x.ai",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "status": "ok",
+      "hits": 1,
+      "findings": [
+        {
+          "match": "credit",
+          "context": "Manage your team Invite members and set roles. Access latest models Grok, voice, and image. Centralized billing Usage, credits, and invoices."
+        }
+      ]
     },
     {
       "id": "ov-kilo-pricing",
@@ -5317,8 +5317,18 @@
       "id": "ov-llm7-docs",
       "name": "llm7 免费聚合",
       "url": "https://docs.llm7.io",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 2,
+      "findings": [
+        {
+          "match": "token",
+          "context": "Quickstart Install the SDK, configure the client, and make your first requests.   ​ Text generation   Streaming Stream tokens for low-latency UIs. Function calling Let the model call your functions with structured arguments. JSON mode Force val"
+        },
+        {
+          "match": "token",
+          "context": "ildren:[_jsx(Card,{title:`Streaming`,icon:`bolt`,href:`/guides/streaming`,children:_jsx(_components.p,{children:`Stream tokens for low-latency UIs.`})}),_jsx(Card,{title:`Function calling`,icon:`brackets-curly`,href:`/guides/function-calling`,ch"
+        }
+      ]
     },
     {
       "id": "ov-agnes-ai",
@@ -5880,6 +5890,135 @@
         {
           "match": "免费",
           "context": "安全合规 分析师报告 大模型 大模型服务平台 千问大模型 模型市场 产品和定价 全部产品 免费试用 产品动态 产品定价 配置报价器 云上成本管理 技术内容 技术解决方案 帮助文档 开发者社区 天池大赛 阿里云认证 权益 免费试用 解决方案免费试用 高校计划 推荐返现计划 服务 基础服务 企业增值服务 迁云服务 官网公告 健康看板 信任中心 关注阿里云 关注阿里云公众号或下载阿里云APP，关注云资讯，随时随地运维管控云服务 联系我们：4008013260 法律声明 Cookies"
+        }
+      ]
+    },
+    {
+      "id": "ov-opencode-data",
+      "name": "OpenCode 用量/价格数据页",
+      "url": "https://dev.opencode.ai/data",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "100 万 token",
+          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存"
+        },
+        {
+          "match": "$0.20 muse-spark-1.3-contributor $0",
+          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
+        },
+        {
+          "match": "$1.20 deepseek-v4-flash 输入 $0.30 输出",
+          "context": "会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-con"
+        },
+        {
+          "match": "$1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ #",
+          "context": "00 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deep"
+        },
+        {
+          "match": "每日 01 deepseek-v4-flash 0B token",
+          "context": "B 0B OCT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "8日, UTC 12:45 已更新 10月28日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SE"
+        },
+        {
+          "match": "deepseek",
+          "context": "T 22 0B OCT 23 OCT 23 0B OCT 24 OCT 24 0B OCT 25 OCT 25 0B OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP 4 0B 0B 0B 0B 0B 0B 0B SEP 5 0B 0B 0B 0B 0B 0B 0B SEP 6 0B"
+        },
+        {
+          "match": "deepseek",
+          "context": "CT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ken DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "ibutor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较"
+        },
+        {
+          "match": "deepseek",
+          "context": "n Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 22 0 OCT 23 OCT 23 5 OCT 24 OCT 24 0 OCT 25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0 0 0 0 0 SEP 5 0 0 0 0 0 0 0 SEP 6 0 0 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比"
+        },
+        {
+          "match": "deepseek",
+          "context": "。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 2"
+        },
+        {
+          "match": "deepseek",
+          "context": "-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多"
+        },
+        {
+          "match": "deepseek",
+          "context": "▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 7 SEP 7 0 SEP 8 SEP 8 0 SEP 10 S"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "5M OCT 23 OCT 23 31M OCT 24 OCT 24 103M OCT 25 OCT 25 1M OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 7 100.0% 0.0% 0.0% 0.0% SEP 8 100.0% 0.0% 0.0% 0.0% SEP 10 100.0% 0.0% 0.0% 0.0% SEP 11 100.0% 0."
+        },
+        {
+          "match": "DeepSeek",
+          "context": ".0% OCT 25 100.0% 0.0% 0.0% 0.0% OCT 26 98.6% 1.0% 0.4% 0.0% OCT 27 87.0% 7.8% 5.2% 0.0% OCT 28 94.3% 4.6% 1.1% 0.0% 01 DeepSeek 0 token 94.3 % 02 Meta 0 token 4.6 % 03 Other 0 token 1.1 % [*] OCT 28 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 57% 02"
+        },
+        {
+          "match": "deepseek",
+          "context": "a（opencode.ai/data）以及页面顶部显示的更新时间。 Model Comparisons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent"
+        },
+        {
+          "match": "deepseek",
+          "context": "age deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-c"
+        },
+        {
+          "match": "deepseek",
+          "context": "use-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-contributor · test Top mode"
+        },
+        {
+          "match": "$0.30",
+          "context": "成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-"
+        },
+        {
+          "match": "Token",
+          "context": "AI 模型使用排名 | OpenCode 数据 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 GitHub [ 220K ] 试用 OpenCode GitHub [ 220K ] 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 已更新 10月28日, UTC 12:"
+        },
+        {
+          "match": "token",
+          "context": "8日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SEP 3 0B SEP 4 SEP 4"
+        },
+        {
+          "match": "token",
+          "context": "0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
         }
       ]
     }
