@@ -52,6 +52,9 @@ header .hlogo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px}
 header .hlogo em{font-style:normal;color:var(--accent)}
 header .tagline{font-size:.75rem;color:var(--muted)}
 .stats{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap;align-items:center}
+.global-banner{display:inline-flex;flex-direction:column;gap:2px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:2px solid var(--accent);border-radius:12px;padding:8px 16px;margin-left:12px;cursor:pointer;box-shadow:0 2px 8px rgba(5,150,105,.25);order:-1}
+.global-banner b{font-size:1.35rem;color:var(--accent);font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums;line-height:1.1}
+.global-banner i{font-style:normal;font-size:.72rem;color:#065f46;white-space:nowrap}
 .stat{font-size:.75rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.875rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
@@ -286,6 +289,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <span class="hlogo">token<em>most</em></span>
   <span class="tagline">只关注免费 · 花 1 分钱买 token 都是原罪</span>
   <span class="tagline">📐 全站计量基准：DeepSeek V4.1 Flash 等效（国内谷价 ¥1.75/百万 · 国际 $0.525/百万 · 旗舰按牌价折算力）</span>
+  <span class="global-banner" id="globalBanner" title="全球全平台免费羊毛按 DS4.1 Flash 等效加总：一次性可领 + 每日刷新（点击打开白嫖总账看明细）" onclick="document.getElementById('sumBtnSide').click()">
+    <b id="gbNum">…</b><i id="gbSub"></i>
+  </span>
   <div class="stats">
     <span class="stat">羊毛 <b id="n-deals">–</b></span>
     <span class="stat">今日 <b id="n-fresh">–</b></span>
@@ -1195,12 +1201,22 @@ document.getElementById('planOverlay').addEventListener('click',closePlan);
 fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
 fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
 fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
+/* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
+function calcGlobalBanner(){
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning');
+  const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
+  const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
+  const total=once+daily;
+  const f=w=>w>=100000?(w/1000000).toFixed(2)+' 万亿':(w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万');
+  document.getElementById('gbNum').textContent='🌍 全球羊毛 ≈ '+f(total)+' DS等效';
+  document.getElementById('gbSub').textContent='一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 · 共 '+live.length+' 条 · 点击看明细';
+}
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
   fetch('deals.json?ts='+Date.now()).then(r=>r.json())
 ]).then(([sites,deals])=>{
   SITES=sites;DEALS=deals;
-  renderNav();vInit();render();vRender();
+  renderNav();vInit();render();vRender();calcGlobalBanner();
   authRefreshUI();loadShared();
 }).catch(()=>{
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
