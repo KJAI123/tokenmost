@@ -52,7 +52,7 @@ header .hlogo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px}
 header .hlogo em{font-style:normal;color:var(--accent)}
 header .tagline{font-size:.75rem;color:var(--muted)}
 .stats{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap;align-items:center}
-.global-banner{display:inline-flex;flex-direction:column;gap:2px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:2px solid var(--accent);border-radius:12px;padding:8px 16px;margin-left:12px;cursor:pointer;box-shadow:0 2px 8px rgba(5,150,105,.25);order:-1}
+.global-banner{display:inline-flex;flex-direction:column;gap:2px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:2px solid var(--accent);border-radius:12px;padding:8px 16px;margin-left:12px;cursor:pointer;box-shadow:0 2px 8px rgba(5,150,105,.25)}
 .global-banner b{font-size:1.35rem;color:var(--accent);font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums;line-height:1.1}
 .global-banner i{font-style:normal;font-size:.72rem;color:#065f46;white-space:nowrap}
 .stat{font-size:.75rem;color:var(--muted)}
@@ -1207,7 +1207,7 @@ function calcGlobalBanner(){
   const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const total=once+daily;
-  const f=w=>w>=100000?(w/1000000).toFixed(2)+' 万亿':(w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万');
+  const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
   document.getElementById('gbNum').textContent='🌍 全球羊毛 ≈ '+f(total)+' DS等效';
   document.getElementById('gbSub').textContent='一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 · 共 '+live.length+' 条 · 点击看明细';
 }
