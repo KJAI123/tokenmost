@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T00:26:11Z",
+  "harvested_at": "2026-10-28T00:44:35Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -579,30 +579,8 @@
       "id": "openrouter-limits",
       "name": "OpenRouter 限流文档",
       "url": "https://openrouter.ai/docs/api_reference/limits",
-      "status": "ok",
-      "hits": 5,
-      "findings": [
-        {
-          "match": "$52.00 of $50.00 used; resets 2026-1",
-          "context": "\"error\" : {   \"code\" : 403 ,   \"message\" : \"Org member budget limit exceeded (weekly limit). Contact your org admin. $52.00 of $50.00 used; resets 2026-10-12T00:00:00.000Z.\" ,   \"metadata\" : {   \"limit_source\" : \"openrouter_guardrail_budget\" ,   \"remedy_hint\" : \"Wait for t"
-        },
-        {
-          "match": "Requests per minute Requests per day Less than At least   T",
-          "context": "u’re using a free model variant (with an ID ending in : ), the following limits apply:     Credits purchased (all time) Requests per minute Requests per day Less than At least   The free_model_daily_requests field in the GET /api/v1/key response above reports the daily counter and ceiling that gate"
-        },
-        {
-          "match": "requests per minute or per day, or DDoS protection).   The ",
-          "context": "}   }     A error can come from two places:     OpenRouter , when you hit one of the platform limits above (free-model requests per minute or per day, or DDoS protection).   The upstream provider , when the provider serving your request is rate limiting or at capacity. In this case error.metadata."
-        },
-        {
-          "match": "per day",
-          "context": "nt (with an ID ending in : ), the following limits apply:     Credits purchased (all time) Requests per minute Requests per day Less than At least   The free_model_daily_requests field in the GET /api/v1/key response above reports the daily counte"
-        },
-        {
-          "match": "per day",
-          "context": "come from two places:     OpenRouter , when you hit one of the platform limits above (free-model requests per minute or per day, or DDoS protection).   The upstream provider , when the provider serving your request is rate limiting or at capacity."
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
     },
     {
       "id": "kimi-membership",
@@ -1294,130 +1272,8 @@
       "id": "cohere-rate-limits",
       "name": "Cohere 限流",
       "url": "https://docs.cohere.com/docs/rate-limits",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "1,000",
-          "context": "you intend to use those models in production.   Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contac"
-        },
-        {
-          "match": "1,000",
-          "context": "2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above)"
-        },
-        {
-          "match": "trial",
-          "context": "valuation keys (free but limited in usage), and production keys (paid and much less limited in usage). You can create a trial or production key on the API keys page . For more details on pricing please see our pricing docs .   Prod keys work lik"
-        },
-        {
-          "match": "trial",
-          "context": "r production key on the API keys page . For more details on pricing please see our pricing docs .   Prod keys work like trial keys for newer model variants such as Command A Reasoning. Please contact sales@cohere.com if you intend to use those m"
-        },
-        {
-          "match": "Trial",
-          "context": "ariants such as Command A Reasoning. Please contact sales@cohere.com if you intend to use those models in production.   Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Mode"
-        },
-        {
-          "match": "Trial",
-          "context": "eys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Cont"
-        },
-        {
-          "match": "Trial",
-          "context": "min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@cohere.com Embed 2,000 inputs / min 2,0"
-        },
-        {
-          "match": "req / min",
-          "context": "limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Con"
-        },
-        {
-          "match": "req / min",
-          "context": "Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contac"
-        },
-        {
-          "match": "req / min",
-          "context": "20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Co"
-        },
-        {
-          "match": "req / min",
-          "context": "ing 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req /"
-        },
-        {
-          "match": "req / min",
-          "context": "d A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 r"
-        },
-        {
-          "match": "req / min",
-          "context": "20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North"
-        },
-        {
-          "match": "req / min",
-          "context": "es@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min"
-        },
-        {
-          "match": "req / min",
-          "context": "Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min"
-        },
-        {
-          "match": "req / min",
-          "context": "/ min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints"
-        },
-        {
-          "match": "req / min",
-          "context": "sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Tria"
-        },
-        {
-          "match": "req / min",
-          "context": "A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production r"
-        },
-        {
-          "match": "req / min",
-          "context": "n 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audi"
-        },
-        {
-          "match": "req / min",
-          "context": "req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min"
-        },
-        {
-          "match": "req / min",
-          "context": "req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@"
-        },
-        {
-          "match": "req / min",
-          "context": "req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@cohere.com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min Emb"
-        },
-        {
-          "match": "req / min",
-          "context": "sales@cohere.com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / m"
-        },
-        {
-          "match": "req / min",
-          "context": ".com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (a"
-        },
-        {
-          "match": "req / min",
-          "context": "uts / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered"
-        },
-        {
-          "match": "req / min",
-          "context": "inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req /"
-        },
-        {
-          "match": "req / min",
-          "context": "ges) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If"
-        },
-        {
-          "match": "req / min",
-          "context": "min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If you have any qu"
-        },
-        {
-          "match": "req / min",
-          "context": "EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If you have any questions or want to s"
-        },
-        {
-          "match": "req / min",
-          "context": "q / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above) 500 req / min 500 req / min   If you have any questions or want to speak about get"
-        }
-      ]
+      "status": "error",
+      "error": "timeout: The read operation timed out"
     },
     {
       "id": "zcode-changelog",
@@ -2204,30 +2060,8 @@
       "id": "codeium-docs",
       "name": "Discord",
       "url": "https://codeium.com/docs",
-      "status": "ok",
-      "hits": 5,
-      "findings": [
-        {
-          "match": "free",
-          "context": "lugin Get started using Windsurf Plugin in your preferred Jetbrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analysis, and more. Changelog Check out our change"
-        },
-        {
-          "match": "Pricing",
-          "context": "Products Enterprise Pricing Blog Resources Company Download This page does not exist Sorry, we couldn&#x27;t find the page you&#x27;re looking for."
-        },
-        {
-          "match": "Pricing",
-          "context": "- the most powerful AI IDE. Install Windsurf Plugin Get started using Windsurf Plugin in your preferred Jetbrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analys"
-        },
-        {
-          "match": "pricing",
-          "context": "I IDE. Install Windsurf Plugin Get started using Windsurf Plugin in your preferred Jetbrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analysis, and more. Changelo"
-        },
-        {
-          "match": "Pricing",
-          "context": "tiktok Twitter twitter Discord discord Discord LinkedIn linkedin Reddit reddit YouTube youtube Product Windsurf Editor Pricing Windsurf for Enterprise Capabilities Cascade Tab JetBrains Plugin Company About Us Blog Careers Support Contact Partner"
-        }
-      ]
+      "status": "error",
+      "error": "timeout: The read operation timed out"
     },
     {
       "id": "console-main",
@@ -2265,82 +2099,8 @@
       "id": "cursor-enpricing",
       "name": "Cursor · Pricing",
       "url": "https://cursor.com/en/pricing",
-      "status": "ok",
-      "hits": 18,
-      "findings": [
-        {
-          "match": "$0 /month Get started Get starte",
-          "context": "dels  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started with: Limited AI usage AI Features Limited agent requests Limited Chat requests Features ✓ Post, reply, and follow Plu"
-        },
-        {
-          "match": "$8 /month Get Plus Our introduct",
-          "context": "with: Limited AI usage AI Features Limited agent requests Limited Chat requests Features ✓ Post, reply, and follow Plus $8 /month Get Plus Our introductory plan: Shared AI usage pool AI Features Cursor Grok Chat, Voice, Imagine, and Build Grok API access Features ✓ Premiu"
-        },
-        {
-          "match": "$30 /month Get Premium Everything",
-          "context": "ine ads ✓ Enhanced creator tools ✓ Advanced Analytics *Only Grok models are available on this plan Premium Most popular $30 /month Get Premium Everything in Plus, and: 4x more usage compared to Plus AI Features ✓ Latest Grok models Cloud agents & automations Code hosting &"
-        },
-        {
-          "match": "$100 /month Get Super Everything i",
-          "context": "es ✓ Preferred @handle ✓ Higher reply boost *3rd party models are available in Cursor, billed separately by usage Super $100 /month Get Super Everything in Premium, and: 15x more usage compared to Plus AI Features ✓ Priority model access at peak times *3rd party models are"
-        },
-        {
-          "match": "$200 /month Get Ultra Everything i",
-          "context": "tures ✓ Priority model access at peak times *3rd party models are available in Cursor, billed separately by usage Ultra $200 /month Get Ultra Everything in Super, and: 50x more usage compared to Plus AI Features ✓ Earliest access to all products & models *3rd party models a"
-        },
-        {
-          "match": "$0 /month Get started Plus $8 /m",
-          "context": "ours prior to renewal to avoid additional charges. Prices subject to change. Compare features across plans Feature Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /month Get Ultra Teams $30 +/user/mo"
-        },
-        {
-          "match": "$30 /month Get Premium Super $100",
-          "context": "ces subject to change. Compare features across plans Feature Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /month Get Ultra Teams $30 +/user/month Get Teams Enterprise Custom Contact Sales Usage Lim"
-        },
-        {
-          "match": "$200 /month Get Ultra Teams $30 +/",
-          "context": "ure Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /month Get Ultra Teams $30 +/user/month Get Teams Enterprise Custom Contact Sales Usage Limited Basic 4x Plus 15x Plus 50x Plus 4-50x Plus Pooled Cur"
-        },
-        {
-          "match": "Free",
-          "context": "rs Models  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started with: Limited AI usage AI Features Limited agent requests Limited Chat requests Featu"
-        },
-        {
-          "match": "free",
-          "context": "iews Third-party models at API list price Grok Bot Faster Chat responses Make stunning AI images & videos Features ✓ Ad-free scrolling on most surfaces ✓ Preferred @handle ✓ Higher reply boost *3rd party models are available in Cursor, billed s"
-        },
-        {
-          "match": "Free",
-          "context": "24 hours prior to renewal to avoid additional charges. Prices subject to change. Compare features across plans Feature Free $0 /month Get started Plus $8 /month Get Plus Premium $30 /month Get Premium Super $100 /month Get Super Ultra $200 /mo"
-        },
-        {
-          "match": "free",
-          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
-        },
-        {
-          "match": "Pricing",
-          "context": "Cursor · Pricing Skip to content Cursor Models ↓ Grok Evals Product ↓ Agents Cloud Grok Bot  ↗ Mobile Automations CLI Marketplace  ↗ Rev"
-        },
-        {
-          "match": "Pricing",
-          "context": "t Cursor Models ↓ Grok Evals Product ↓ Agents Cloud Grok Bot  ↗ Mobile Automations CLI Marketplace  ↗ Review Enterprise Pricing Resources ↓ Changelog Blog Docs Community Help  ↗ Workshops Forum  ↗ Careers Models  → Product  → Enterprise Pricing Re"
-        },
-        {
-          "match": "Pricing",
-          "context": "se Pricing Resources ↓ Changelog Blog Docs Community Help  ↗ Workshops Forum  ↗ Careers Models  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started wit"
-        },
-        {
-          "match": "Pricing",
-          "context": "Workshops Forum  ↗ Careers Models  → Product  → Enterprise Pricing Resources  → Sign in Contact Contact sales Download Pricing Individual Teams Free $0 /month Get started Get started with: Limited AI usage AI Features Limited agent requests Limit"
-        },
-        {
-          "match": "pricing",
-          "context": "PI usage is billed separately at standard model rates and doesn&#x27;t draw from your plan&#x27;s usage pool. See model pricing . What models are supported? ↓ ↑ Plus includes Grok models only. Premium and above include generous usage of Grok model"
-        },
-        {
-          "match": "Pricing",
-          "context": "on only through our official website. Get started with Cursor. Download ⤓ Contact Sales Product Agents Teams Enterprise Pricing Code Review CLI Cloud Agents Composer Marketplace  ↗ Resources Download Changelog Docs Learn  ↗ Forum  ↗ Help  ↗ Worksh"
-        }
-      ]
+      "status": "error",
+      "error": "timeout: The read operation timed out"
     },
     {
       "id": "developer-radeontokenfac",
@@ -3008,130 +2768,8 @@
       "id": "gh-aipmandy-freetoken-blob-daf",
       "name": "FreeToken/README.md at d",
       "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "免费 AI API Token",
-          "context": "# 🎁 FreeToken  收集各种免费 AI API Token 的获取方法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-gith"
-        },
-        {
-          "match": "免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度",
-          "context": "法、开源项目和使用指南。  > 🔥 持续更新 | 欢迎 PR 贡献 | Star ⭐ 收藏备用 >  > **最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服"
-        },
-        {
-          "match": "免费额度](#-国内大模型免费额度",
-          "context": "最后更新**: 2026-06-21  ## 📋 目录  - [🏆 GitHub 热门免费 API 项目](#-github-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)"
-        },
-        {
-          "match": "免费额度](#️-云服务免费额度",
-          "context": "ub-热门免费-api-项目) - [🤖 AI 模型官方免费额度](#-ai-模型官方免费额度) - [🇨🇳 国内大模型免费额度](#-国内大模型免费额度) - [🌐 API 聚合/代理平台](#-api-聚合代理平台) - [☁️ 云服务免费额度](#️-云服务免费额度) - [🛠️ 开发工具](#️-开发工具) - [📊 数据服务](#-数据服务) - [📝 使用建议](#-使用建议)  ---  ## 🏆 GitHub 热门免费 API 项目  ### 🔥 第一梯队（万星以上）  | 项目 | Sta"
-        },
-        {
-          "match": "免费额度  ### OpenAI - **免费额度",
-          "context": "t.ai](https://www.forefront.ai/) | | **nat.dev** | 免费的 AI 代码助手，支持多种模型 | [nat.dev](https://nat.dev/) |  ---  ## 🤖 AI 模型官方免费额度  ### OpenAI - **免费额度**: 新用户注册送 **$5 体验金**（有效期 3 个月） - **获取方式**:  1. 访问 [OpenAI Platform](https://platform.openai.com/)  2. 注册账号并验证手机号  3. 在"
-        },
-        {
-          "match": "免费额度",
-          "context": "*限制**: 免费层速率限制因模型而异 - **推荐模型**: GPT-4o-mini（性价比最高） - **文档**: https://platform.openai.com/docs  ### Anthropic Claude - **免费额度**: 新用户注册送**小额体验金**（具体金额未公开） - **获取方式**:  1. 访问 [Anthropic Console](https://console.anthropic.com/)  2. 注册账号  3. 创建 API"
-        },
-        {
-          "match": "免费额度",
-          "context": "aude Haiku 系列价格低，适合日常使用 - **亮点**: Claude 3.5 Sonnet 代码能力顶尖 - **文档**: https://docs.anthropic.com/  ### Google Gemini - **免费额度**: **免费层**（Gemini 2.5 Flash 等模型免费输入输出） - **获取方式**:  1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Googl"
-        },
-        {
-          "match": "免费层额度非常慷慨，200 万 Token",
-          "context": "1. 访问 [Google AI Studio](https://aistudio.google.com/)  2. 使用 Google 账号登录  3. 获取 API Key - **亮点**: Gemini 2.5 Pro/Flash 免费层额度非常慷慨，200 万 Token/天 - **⚠️ 注意**: Gemini 2.0 Flash 已弃用，将于 2026 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https"
-        },
-        {
-          "match": "免费额度",
-          "context": "26 年 6 月关停，请用 2.5 系列 - **推荐**: Gemini 2.5 Flash（免费 + 快速 + 多模态） - **文档**: https://ai.google.dev/docs  ### xAI (Grok) - **免费额度**: 新用户**可能**有体验金（金额不固定，非官方公开承诺） - **获取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**"
-        },
-        {
-          "match": "免费额度**: 免费层有基础调用额度",
-          "context": "取方式**: 访问 [xAI Console](https://console.x.ai/) - **亮点**: Grok 系列模型，实时网络数据 - **文档**: https://docs.x.ai/  ### Mistral - **免费额度**: 免费层有基础调用额度 - **获取方式**: 访问 [Mistral Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mist"
-        },
-        {
-          "match": "免费额度**: 试用版有基础调用额度",
-          "context": "Console](https://console.mistral.ai/) - **推荐**: Mistral Small（性价比高） - **文档**: https://docs.mistral.ai/  ### Cohere - **免费额度**: 试用版有基础调用额度（具体数量不固定） - **获取方式**: 访问 [Cohere Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://doc"
-        },
-        {
-          "match": "免费额度  > ⚠️ 以下国内厂商的免费额度",
-          "context": "e Dashboard](https://dashboard.cohere.com/) - **亮点**: 企业级 RAG 和搜索能力 - **文档**: https://docs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSe"
-        },
-        {
-          "match": "免费额度",
-          "context": "ocs.cohere.com/  ---  ## 🇨🇳 国内大模型免费额度  > ⚠️ 以下国内厂商的免费额度基于公开信息和用户反馈，具体金额可能随活动调整，请以官方最新公告为准。  ### NVIDIA 🔥🔥🔥（Andy 推荐） - **免费额度**: **100+ 顶级模型免费用一整年**（H100 算力） - **免费模型**: DeepSeek、Llama、Mistral、Qwen、GLM、Nemotron 等 - **限制**: 每 1.5 秒一次请求（每天可调用 5 万+"
-        },
-        {
-          "match": "免费额度**: **100 万亿（100T）Token",
-          "context": "试用版，不是阉割版 - **省多少钱**: 同时用 3-4 个模型，一年至少省 **7000 元** - **文档**: https://build.nvidia.com/docs  ### 小米 MiMo 🔥🔥（Andy 推荐） - **免费额度**: **100 万亿（100T）Token** 激励计划，赠完即止 - **活动时间**: 2026 年 4 月 28 日 00:00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t."
-        },
-        {
-          "match": "免费发放 - **API 地址**: https://token",
-          "context": "00 至 5 月 28 日 00:00（北京时间） - **获取方式**: 访问 [100t.xiaomimimo.com](https://100t.xiaomimimo.com/) - **亮点**: 小米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万"
-        },
-        {
-          "match": "免费额度**: 注册送 **500万 Tokens",
-          "context": "米自研模型，面向全球 AI 用户免费发放 - **API 地址**: https://token-plan-cn.xiaomimimo.com - **⚠️ 注意**: 限时活动，赠完即止，尽早领取  ### DeepSeek 🔥 - **免费额度**: 注册送 **500万 Tokens** - **价格**: 极低（约 ¥1/百万 Tokens），日常使用几乎免费 - **获取方式**: 访问 [DeepSeek Platform](https://platform.deepseek.com/) - **亮点**: 性价"
-        },
-        {
-          "match": "免费额度",
-          "context": "型优秀 - **推荐**: DeepSeek-V3（综合能力）、DeepSeek-R1（复杂推理） - **文档**: https://platform.deepseek.com/api-docs  ### 通义千问 (Qwen) - **免费额度**: 部分模型**限时免费**，注册送体验金 - **获取方式**: 访问 [阿里云百炼](https://bailian.console.aliyun.com/) - **亮点**: Qwen 系列模型齐全，多模态能力强 - **推荐*"
-        },
-        {
-          "match": "免费额度**: 注册送 **500万 Tokens",
-          "context": "，多模态能力强 - **推荐**: Qwen-Plus（综合能力）、Qwen-VL（视觉理解） - **文档**: https://help.aliyun.com/zh/model-studio/  ### 智谱 AI (GLM) - **免费额度**: 注册送 **500万 Tokens** 体验金 - **获取方式**: 访问 [智谱开放平台](https://open.bigmodel.cn/) - **亮点**: GLM-4 系列，支持联网搜索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速"
-        },
-        {
-          "match": "免费额度",
-          "context": "索、代码执行、视频生成 - **推荐**: GLM-4-Flash（免费快速）、GLM-4V（视觉理解） - **文档**: https://open.bigmodel.cn/dev/api  ### 百度文心一言 (ERNIE) - **免费额度**: 部分模型**完全免费** - **获取方式**: 访问 [百度千帆](https://qianfan.cloud.baidu.com/) - **亮点**: ERNIE-Speed 系列免费，中文能力强 - **推荐**: ERNI"
-        },
-        {
-          "match": "免费额度",
-          "context": "推荐**: ERNIE-Speed-8K（免费）、ERNIE-4.0（付费高级） - **文档**: https://cloud.baidu.com/doc/WENXINWORKSHOP/  ### Moonshot (月之暗面) - **免费额度**: 注册送 **15 元** 体验金 - **获取方式**: 访问 [Moonshot 开放平台](https://platform.moonshot.cn/) - **亮点**: Kimi 长文本能力，128K 上下文，K1 思考模型"
-        },
-        {
-          "match": "免费额度",
-          "context": "- **推荐**: moonshot-v1-8k（日常）、moonshot-v1-128k（长文本） - **文档**: https://platform.moonshot.cn/docs  ### MiniMax (海螺 AI) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [MiniMax 开放平台](https://platform.minimaxi.com/) - **亮点**: 语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础"
-        },
-        {
-          "match": "免费额度**: 星火 Lite **完全免费**，其他版本送 Token",
-          "context": "语音合成能力突出，支持语音克隆 - **推荐**: abab6.5s（基础）、speech-01（语音） - **文档**: https://platform.minimaxi.com/docs  ### 讯飞星火 (Spark) - **免费额度**: 星火 Lite **完全免费**，其他版本送 Token - **获取方式**: 访问 [讯飞开放平台](https://xinghuo.xfyun.cn/) - **亮点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **"
-        },
-        {
-          "match": "免费额度",
-          "context": "点**: 中文理解强，办公场景优化 - **推荐**: Spark Lite（免费）、Spark Max（付费高级） - **文档**: https://www.xfyun.cn/doc/spark/  ### 豆包 (字节跳动) - **免费额度**: 部分模型**限时免费** - **获取方式**: 访问 [火山引擎](https://console.volcengine.com/ark) - **亮点**: 字节跳动出品，多模态能力强，联网搜索优秀 - **推荐**: Doub"
-        },
-        {
-          "match": "免费额度",
-          "context": "，联网搜索优秀 - **推荐**: Doubao-pro（综合）、Doubao-vision（视觉） - **文档**: https://www.volcengine.com/docs/82379  ### 阶跃星辰 (Step) - **免费额度**: 注册送体验金 - **获取方式**: 访问 [阶跃星辰开放平台](https://platform.stepfun.com/) - **亮点**: 多模态理解能力强 - **推荐**: Step-1（基础）、Step-1V（视觉）"
-        },
-        {
-          "match": "免费额度",
-          "context": "le Gemini 2.5 Flash（Google 官方）  - Mistral Large（欧洲之光） - **文档**: https://openrouter.ai/docs  ### Silicon Flow (硅基流动) - **免费额度**: 多个模型**完全免费**（Qwen、GLM、Llama 等） - **获取方式**: 访问 [SiliconFlow](https://cloud.siliconflow.cn/) - **亮点**: 国内直连，免费模型多，Open"
-        },
-        {
-          "match": "免费额度**: 每天 **10,000 次",
-          "context": "2B（阿里最强）  - DeepSeek-V2.5（性价比王）  - GLM-4-9B（智谱免费） - **文档**: https://docs.siliconflow.cn/  ### Cloudflare Workers AI - **免费额度**: 每天 **10,000 次**请求免费 - **获取方式**: 注册 [Cloudflare](https://dash.cloudflare.com/) → Workers AI - **亮点**: 全球边缘节点，延迟低，无需信用卡 - **推荐模型**: Lla"
-        },
-        {
-          "match": "免费额度",
-          "context": "信用卡 - **推荐模型**: Llama 3、Mistral、SDXL（图像生成） - **文档**: https://developers.cloudflare.com/workers-ai/  ### Together AI - **免费额度**: 注册送 **$25 体验金**（2026年6月更新） - **获取方式**: 访问 [Together AI](https://api.together.xyz/) - **亮点**: 开源模型丰富（Llama、Mixtral、FL"
-        },
-        {
-          "match": "免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次",
-          "context": "lama、Mixtral、FLUX等），速度快 - **推荐模型**: Llama 3.1 405B、FLUX.1-schnell（图像） - **文档**: https://docs.together.ai/  ### Groq - **免费额度**: 免费层每分钟 **30 次**请求，每天 **14,400 次** - **获取方式**: 访问 [Groq Console](https://console.groq.com/) - **亮点**: 超快推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama"
-        },
-        {
-          "match": "免费额度**: 免费层有基础额度",
-          "context": "推理速度（LPU 加速），Llama/Mixtral 免费 - **推荐模型**: Llama 3.1 70B（速度最快） - **文档**: https://console.groq.com/docs  ### Cerebras - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [Cerebras](https://cloud.cerebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: h"
-        },
-        {
-          "match": "免费额度**: 免费层有基础额度",
-          "context": "rebras.ai/) - **亮点**: 超快推理速度，Llama 系列优化 - **推荐模型**: Llama 3.1 70B - **文档**: https://cerebras.ai/docs  ### SambaNova - **免费额度**: 免费层有基础额度 - **获取方式**: 访问 [SambaNova Cloud](https://cloud.sambanova.ai/) - **亮点**: 开源模型高速推理 - **推荐模型**: Llama 3、Qwen - **文档**: htt"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
     },
     {
       "id": "sogou-wx-token",

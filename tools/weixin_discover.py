@@ -39,7 +39,11 @@ def txt(h: str) -> str:
     return re.sub(r"\s+", " ", t)
 
 def sogou(query: str) -> list[dict]:
-    st, h = fetch("https://weixin.sogou.com/weixin?type=2&query=" + urllib.request.quote(query))
+    try:
+        r = _OP.open("https://weixin.sogou.com/weixin?type=2&query=" + urllib.request.quote(query), timeout=12)
+        st, h = r.status, r.read().decode("utf-8", "ignore")
+    except Exception:
+        st, h = 0, ""
     out = []
     if st != 200 or "antispider" in h.lower():
         print(f"[warn] 搜狗查询受限或失败: {query} (HTTP {st})")
@@ -81,16 +85,20 @@ def snowball(seed: str) -> dict:
     return info
 
 def main() -> int:
+    try:
+        _OP.open("https://weixin.sogou.com/", timeout=10)  # cookie 预热（SUID/ABTEST）
+    except Exception:
+        pass
     articles: list[dict] = []
     for q in QUERIES:
         res = sogou(q)
         articles += res
         print(f"[sogou] {q}: {len(res)} 条结果")
         time.sleep(2.5)
-    # 解析前 3 条真实地址
-    for a in articles[:3]:
-        a["wx_url"] = resolve(a["sogou_link"])
-        time.sleep(2.0)
+    # 解析 1 条真实地址（多查询连发触发搜狗反爬，每轮限 1 条）
+    if articles:
+        articles[0]["wx_url"] = resolve(articles[0]["sogou_link"])
+        print(f"[resolve] {'✅ ' + articles[0]['wx_url'][:60] if articles[0]['wx_url'] else '未解析（反爬或无结果）'}")
     # 滚雪球
     snowballs = []
     for s in SNOWBALL_SEEDS:
