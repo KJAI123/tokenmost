@@ -3276,5 +3276,25 @@
   "daily_wan": 10000,
   "daily_note": "每日 1 亿 token 池滚动放量（老板亲测口径）+ZCode 3.0 每日 500 万",
   "group": "ZCode"
+ },
+ {
+  "id": "workbuddy-free",
+  "provider": "腾讯 WorkBuddy",
+  "category": "official_cn",
+  "type": "free_tier",
+  "value": "WorkBuddy（腾讯 AI 办公助手）：公测期送 5000 Credits + 免费版每月自动发基础积分 + 绑卡享 7 天 Pro 试用另加 500 积分；可跑报告生成/文件整理/数据处理多任务",
+  "region": "cn",
+  "url": "https://cloud.tencent.com/product/workbuddy",
+  "rule": "公测 Credits 进团队共享池；Pro 试用需绑卡开自动续费（积分 7 天有效）；Credits 不可提现转让，消耗随模型倍率浮动（Kimi K3 1.6x）",
+  "notes": "官方计费文档+腾讯云开发者文章（公测 5000 Credits 2026-03 起）；牌价 2000 Credits=¥100 → 1 credit≈2万 tok 当量（倍率浮动实耗更高）；免费版月度积分数额待控制台实锤",
+  "verify_status": "verified",
+  "verified_at": "2026-10-29T09:40:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "register",
+  "group": "腾讯",
+  "tokens_wan": 10000,
+  "cny": 250,
+  "eq_note": "公测 5000 Credits 按牌价 2000=¥100 折 250 元≈1 亿 tok 当量（倍率浮动口径）"
  }
 ]
