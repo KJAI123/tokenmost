@@ -2905,12 +2905,11 @@
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
   "published": true,
-  "tokens_wan": 4000,
+  "tokens_wan": 13645,
   "via": "client",
   "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事",
   "group": "智谱",
-  "daily_wan": 455,
-  "daily_note": "长期免费层月当量 13645 万 ÷30 折日均（每天可薅）；GLM-5.3 1500万×7.43 + Flash 2500万×1.0（5 天：日 300 万+500 万）"
+  "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（¥0/5 天窗口总量，非月度流水）"
  },
  {
   "id": "deep-zhipu-flash-correction-r7",
