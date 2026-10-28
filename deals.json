@@ -249,9 +249,7 @@
   "published": true,
   "verify_by": "auto",
   "group": "Dify 自部署",
-  "notes": "复核(03:52):官网实锤 Community Edition 开源自部署 Docker 仍在,页面改版误伤已恢复",
-  "eq_wan": 99999999,
-  "eq_note": "开源自部署0平台费:token上限=所接Key总额度,理论上不设限(对标展示为∞)"
+  "notes": "复核(03:52):官网实锤 Community Edition 开源自部署 Docker 仍在,页面改版误伤已恢复；自部署工具不折 token（上限=所接 Key 额度，不进总账）"
  },
  {
   "id": "modelscope-free-infer",
@@ -813,8 +811,7 @@
   "difficulty": 2,
   "published": true,
   "group": "n8n",
-  "eq_wan": 99999999,
-  "eq_note": "开源自部署同上,理论上不设限"
+  "notes": "自部署工具不折 token（上限=所接 Key 额度，不进总账）"
  },
  {
   "id": "github-copilot-free",
