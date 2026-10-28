@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T00:57:50Z",
+  "harvested_at": "2026-10-28T11:13:57Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,10 +637,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -730,6 +726,10 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -737,8 +737,130 @@
       "id": "gemini-pricing",
       "name": "Gemini API 定价",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费开始构建，享受宽裕的额度",
+          "context": "eveloper API 价格                                                                                                         免费开始构建，享受宽裕的额度；待应用可用于生产用途后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   ch"
+        },
+        {
+          "match": "免费输入和输出 token",
+          "context": "后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   check_circle 免费输入和输出 token   check_circle Google AI Studio 访问权限   check_circle 内容会用于改进 Google 产品 *     免费开始使用       付费   适用于需要更高调用量和高级功能的生产级应用。"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "码生成而打造。   注意 ： Gemini 4 Argon 不适用于免费层级。模型处理的每个 token 都会被统计并计费，包括思考 token、内部工具系统指令以及使用接地功能时的函数声明。   标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 2.00 美元。 2026 年 12 月 1 日起为 4.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
+          "context": "*   不可用   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "0 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "日之前为 0.05 美元。 2026 年 12 月 1 日起为 0.10 美元。 仅限隐式缓存（不支持显式缓存）。       用于改进 Google 产品   不可用   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "flash         在 Google AI Studio 中试用        Google 旗下最智能的 Flash 模型，专为长期软件工程、自主智能体和复杂的企业工作流而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "2 月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
+          "context": "用 **   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "6-flash         在 Google AI Studio 中试用        Google 的上一代 Flash 模型，在一般性智能体任务和日常任务中兼顾了速度和多模态功能。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "00 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "view       在 Google AI Studio 中试用        我们的低延迟音频转音频模型，针对实时语音智能体和实时对话场景进行了优化，包括通过扩展思考提供后台推理支持。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.75 美元（文本） 3.00 美元或 0.005 美元/分钟（音频） 1.00 美元或 0.002 美元/分钟（图片/视频）       输出价格（包括思考 Token）   免费   4"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "3.5-live-translate-preview         在 Google AI Studio 中试用        我们的低延迟实时语音转语音翻译模型，支持 70 多种语言。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.0053 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.0315 美元/分钟 * （音频）       用"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ibe-live         在 Google AI Studio 中试用        Google 的低延迟、实时语音转文字模型，可通过 WebSocket 实现双向流式音频转写。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.005 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.004 美元/分钟 * （文本）       依托"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "3.5-transcribe         在 Google AI Studio 中试用        我们的语音转文字模型，支持自动检测语言、讲话人区分、字词级时间戳和自定义词汇偏好。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2.00 美元或 0.003 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   12.00 美元或 0.002 美元/分钟 * （文本）       依托"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ni-3.5-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.30 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   免费   $2.50       上下文缓存价格   不可用   0.03 美元 1.0"
+        },
+        {
+          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+        },
+        {
+          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "搜索查询 14 美元计费。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+        },
+        {
+          "match": "免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $4.50       上下文缓存价格   不可用   0.05 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+        },
+        {
+          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
+          "context": "可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.015 美元 1.00 美元/100 万个 token/小时（存储价格）       用于改进 Google 产品   是   是           * 客户向"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ni-3.1-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.25 美元（文本 / 图片 / 视频） 0.50 美元（音频）       输出价格（包括思考 Token）   免费   $1.50       上下文缓存价格   不可用   0.02"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ash         在 Google AI Studio 中试用        Google 的新一代视频生成和编辑模型，现已面向使用 Gemini API 付费层级的开发者正式推出。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   不可用   9.00 美元（文本） 17.50 美元（视频） *       用于改进"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "eview-customtools         在 Google AI Studio 中试用        我们的第三代 Pro 模型，专为多模态理解能力、智能体功能和氛围编程而打造。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2.00 美元：提示 <= 20 万个 token 4.00 美元：提示 > 20 万个 token       输出价格（包括思考 Token）   不可用   12.00 美元：提示 <"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "1 Flash Image) 的更新版本，专为高效图片生成和对话式编辑而打造，在 1K、2K 和 4K 分辨率下，视觉质量、多轮角色一致性、准确的文本渲染以及基于搜索的生成能力均有所提升。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本/图片/视频）       输出价格   不可用   7.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 图片 0.0336 美元 * 、"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "在所有 Gemini 3 及更新的模型中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "ge         在 Google AI Studio 中试用        Gemini 3.1 Flash 图片生成模型专为速度和效率而打造，非常适合快速交互式响应和高吞吐量场景。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.50 美元（文本/图片）       输出价格   不可用   3 美元（文本和思考）   60.00 美元（图片）   相当于每张 0.5K 图片 0.045 美元 *   每张 1K"
+        },
+        {
+          "match": "免费层级   付费层级（美元/100 万个 token",
+          "context": "oogle AI Studio 中试用        Gemini 3.1 Flash Lite Image 模型是图片生成系列中的效率专家，专为超低延迟和高性价比的图片生成和编辑而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.25 美元（文本/图片/视频）       输出价格   不可用   1.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 分辨率图片 0.0336 美元 *"
+        }
+      ]
     },
     {
       "id": "azure-students",
@@ -873,8 +995,54 @@
       "id": "gemini-rate-limits",
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
-      "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "status": "ok",
+      "hits": 11,
+      "findings": [
+        {
+          "match": "$10       第 2 层级   $50       第 3 ",
+          "context": "。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用"
+        },
+        {
+          "match": "$200          如果您达到基于支出的速率限制，API 会",
+          "context": "于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用较小的上下文窗口或较短的输出。   如果您在正常使用期间始终达到此限制，请 申"
+        },
+        {
+          "match": "$250       第 2 层级   已支付 100 美元 + 自",
+          "context": "务（包括但不限于 Gemini API）上的累计总支出。          使用层   资格赛   结算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批"
+        },
+        {
+          "match": "$2,000       第 3 层级   已支付 1,000 ",
+          "context": "算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批准，但在极少数情况下，升级请求可能会因审核过程中发现的其他因素而被拒绝。    此系统有助于维护"
+        },
+        {
+          "match": "每日 token",
+          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，"
+        },
+        {
+          "match": "RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RP",
+          "context": "发出的请求数量。这些限制有助于维护公平使用、防范滥用行为，并帮助所有用户保持系统性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非"
+        },
+        {
+          "match": "RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请",
+          "context": "个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够"
+        },
+        {
+          "match": "RPD ) 配额会在美国太平洋时间零点重置",
+          "context": "的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)"
+        },
+        {
+          "match": "RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强",
+          "context": "能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
+        },
+        {
+          "match": "RPM）",
+          "context": "升级到下一层级。从免费层级升级到第 1 层级通常会立即生效，后续层级升级将在 10 分钟内生效。前往 AI Studio 中的 “项目”页面 ，查看您的层级。    申请提高速率限制    每个模型变体都有一个关联的速率限制（每分钟请求数，RPM）。 如需详细了解这些速率限制，请参阅 AI Studio 速率限制 页面。    申请提高付费层级速率限制    我们不保证一定会提高您的速率限制，但会尽力审核您的请求。"
+        },
+        {
+          "match": "RPD",
+          "context": "性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按"
+        }
+      ]
     },
     {
       "id": "groq-rate-limits",
@@ -1287,8 +1455,130 @@
       "id": "mistral-usage-limits",
       "name": "Mistral 用量限额",
       "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
-      "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "Free",
+          "context": "usage, and limits   Your Mistral plan defines the included monthly usage and limits available to your Organization.     Free mode lets you create API keys and use included monthly usage within the limits shown on the Limits page.   Pay-as-you-g"
+        },
+        {
+          "match": "limits",
+          "context": "Usage and limits | Mistral Docs Docs & API Search docs ⌘K Vibe Studio Inference & Models Admin Resources API Reference Search docs ⌘K To"
+        },
+        {
+          "match": "limits",
+          "context": "our Organization Access and permissions Configure Workspaces Billing and usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to unders"
+        },
+        {
+          "match": "limits",
+          "context": "nd usage Subscriptions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits"
+        },
+        {
+          "match": "limits",
+          "context": "tions Billing Invoices Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page"
+        },
+        {
+          "match": "limits",
+          "context": "Usage and limits Admin API Monitor and comply Admin Billing and usage Usage and limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage"
+        },
+        {
+          "match": "limits",
+          "context": "limits Usage and limits   Use Usage and limits to understand how your Organization consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API ra"
+        },
+        {
+          "match": "limits",
+          "context": "on consumes Mistral services and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use"
+        },
+        {
+          "match": "limits",
+          "context": "s and which limits apply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages dep"
+        },
+        {
+          "match": "limits",
+          "context": "ply. This page covers the global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you ne"
+        },
+        {
+          "match": "limits",
+          "context": "global usage dashboard, Organization spending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:"
+        },
+        {
+          "match": "limits",
+          "context": "ending limits, Workspace spending limits, and API rate limits.   Open usage and limits Copy section link Open usage and limits   Use these Admin Panel pages depending on what you need to check or change:   Task Admin Panel page Review usage and c"
+        },
+        {
+          "match": "limits",
+          "context": "o check or change:   Task Admin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspac"
+        },
+        {
+          "match": "Limits",
+          "context": "dmin Panel page Review usage and cost breakdowns Admin Panel › API › Usage ↗ Review API rate limits Admin Panel › API › Limits ↗ Set the Organization spending limit Admin Panel › Subscriptions › Billing ↗ Set a Workspace spending limit Admin Pane"
+        },
+        {
+          "match": "limits",
+          "context": "ling period. Use it to understand spend, identify heavy usage areas, and decide whether to adjust Workspace caps or API limits.   The dashboard can show:     total cost;   cost per day;   completion usage;   Vibe usage beyond quota;   OCR usage;"
+        },
+        {
+          "match": "limits",
+          "context": "recent invoice payments fail, access can also be affected until the payments are processed again.   Workspace spending limits cannot exceed the Organization spending limit. To manage payments, credits, billing information, and invoices, see Bill"
+        },
+        {
+          "match": "limits",
+          "context": "tion spending limit. To manage payments, credits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspac"
+        },
+        {
+          "match": "limits",
+          "context": "dits, billing information, and invoices, see Billing .   Workspace spending limits Copy section link Workspace spending limits   A Workspace spending limit caps API and Vibe consumption for one Workspace. Use Workspace caps to model team budgets,"
+        },
+        {
+          "match": "limits",
+          "context": "ab.   Set Monthly spending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can s"
+        },
+        {
+          "match": "limits",
+          "context": "ending limit .   Save your changes.     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown"
+        },
+        {
+          "match": "limits",
+          "context": ".     For a full Workspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ ."
+        },
+        {
+          "match": "limits",
+          "context": "orkspace-focused guide, see Workspace usage and limits .   API rate limits Copy section link API rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate"
+        },
+        {
+          "match": "Limits",
+          "context": "rate limits   API rate limits define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and"
+        },
+        {
+          "match": "limits",
+          "context": "define how much traffic your Organization can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minu"
+        },
+        {
+          "match": "limits",
+          "context": "n can send. They are shown in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the m"
+        },
+        {
+          "match": "limits",
+          "context": "n in Admin Panel › API › Limits ↗ .   Completion rate limits Copy section link Completion rate limits   Completion rate limits are listed per model and include:     Tokens per minute : the token throughput limit for the model.   Requests per seco"
+        },
+        {
+          "match": "limits",
+          "context": "oken throughput limit for the model.   Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds pe"
+        },
+        {
+          "match": "limits",
+          "context": "Requests per second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month."
+        },
+        {
+          "match": "limits",
+          "context": "second : the request throughput limit for the model.     Audio rate limits Copy section link Audio rate limits   Audio limits apply to audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document O"
+        },
+        {
+          "match": "limits",
+          "context": "o audio API consumption and can include:     audio seconds per minute;   audio seconds per month.     Document OCR rate limits Copy section link Document OCR rate limits   Document OCR limits apply to OCR API consumption and can include pages per"
+        }
+      ]
     },
     {
       "id": "cohere-rate-limits",
@@ -1865,15 +2155,11 @@
       "name": "AI for Software Developm",
       "url": "https://aws.amazon.com/q/developer/pricing/",
       "status": "ok",
-      "hits": 19,
+      "hits": 18,
       "findings": [
         {
           "match": "$19/mo. per user                 ",
           "context": "Free Tier: Advanced capabilities at zero cost         Pro Tier: Expanded limits $19/mo. per user                 摘要             每月的代理请求次数有限   可访问最新的 Claude 模型   可在 IDE 或 CLI 中使用             免费套餐中包含的所有内容，以及     提高了代理请求限额   提高了 Java 和"
-        },
-        {
-          "match": "免费",
-          "context": "跳至主要内容         想了解专为中国区域提供的云产品？请访问 www.amazonaws.cn 。申请中国区域免费套餐请访问 www.amazonaws.cn/free 。"
         },
         {
           "match": "免费",
@@ -1985,64 +2271,64 @@
           "context": "至少 US$5。 模仿公眾人物、或聽起來像官方／員工的名稱與描述會被拒絕（invalid_voice_name）。 錄音只用來建立聲音，我們不保存錄音。我們保留聲音名稱、擁有者、同意紀錄與時間戳記。 價格 建立聲音收取一次性費用（預設 US$1.00）；實際收取的金額會在 usage.cost_usd 回傳，且只有聲音建立成功才會收費。在語音合成中使用自訂聲音，每字元價格與該模型其他聲音相同。刪除免費。 同意聲明 每次建立都必須帶 consent=true 與 consent_statement_version=\"v1\"。聲明更新時，建立會回"
         },
         {
-          "match": "$2.00/$6.00 text+image+video->text ",
-          "context": "ion\" : \"16.00\"   }   ]   } ⌄ 顯示全部 15 行 可用模型 ( 171 ) 以下是目前 BazaarLink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $2.00/$6.00 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen"
+          "match": "$1.65/$4.95 text+image+video->text ",
+          "context": "ion\" : \"16.00\"   }   ]   } ⌄ 顯示全部 15 行 可用模型 ( 171 ) 以下是目前 BazaarLink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $1.65/$4.95 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen"
         },
         {
           "match": "$0.32/$1.28 text+image->text qwen/q",
-          "context": "ink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $2.00/$6.00 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwe"
+          "context": "ink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $1.65/$4.95 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwe"
         },
         {
-          "match": "$1.48/$4.42 text->text qwen/qwen3.7",
-          "context": "00/$6.00 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text"
+          "match": "$1.65/$4.95 text->text qwen/qwen3.7",
+          "context": "65/$4.95 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text"
         },
         {
           "match": "$0.03/$0.13 text+image+video->text ",
-          "context": "K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+vi"
+          "context": "K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+vi"
         },
         {
           "match": "$0.31/$1.25 text+image+video->text ",
-          "context": "1.48/$4.42 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 t"
+          "context": "1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 t"
         },
         {
           "match": "$0.26/$2.60 text+image+video->text ",
-          "context": "3 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+im"
+          "context": "3 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+im"
         },
         {
-          "match": "$0.10/$1.10 text->text qwen/qwen3.5",
-          "context": "+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->tex"
+          "match": "$0.14/$0.57 text->text qwen/qwen3.5",
+          "context": "+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->tex"
         },
         {
           "match": "$0.55/$3.50 text+image+video->text ",
-          "context": "+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->te"
+          "context": "+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->te"
         },
         {
           "match": "$0.33/$1.95 text+image+video->text ",
-          "context": ".10/$1.10 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video"
+          "context": ".14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video"
         },
         {
           "match": "$0.20/$0.97 text->text qwen/qwen3.5",
-          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+im"
+          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+im"
         },
         {
-          "match": "$0.29/$2.40 text+image+video->text ",
-          "context": "1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+i"
+          "match": "$0.40/$3.20 text+image+video->text ",
+          "context": "1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+i"
         },
         {
-          "match": "$0.21/$1.90 text+image->text qwen/q",
-          "context": "->text qwen/qwen3.5-122b-a10b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen"
+          "match": "$0.20/$0.88 text+image->text qwen/q",
+          "context": "->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen"
         },
         {
-          "match": "$0.55/$3.20 text+image+video->text ",
-          "context": "image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.21/$1.90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
+          "match": "$0.50/$3.00 text+image+video->text ",
+          "context": "image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
         },
         {
           "match": "$2.00/$6.00 text->text qwen/qwen3-e",
-          "context": ".90 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.55/$3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen"
+          "context": ".88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
-          "context": "3.20 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embedding"
+          "context": "3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embedding"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
@@ -2050,43 +2336,43 @@
         },
         {
           "match": "$0.02/$0.00 text->embeddings qwen/q",
-          "context": ".00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
+          "context": ".00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0."
         },
         {
           "match": "$0.07/$0.26 text+image+video->text ",
-          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+ima"
+          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+ima"
         },
         {
-          "match": "$0.07/$0.28 text->text qwen/qwen3.6",
-          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen"
+          "match": "$0.15/$0.60 text->text qwen/qwen3.6",
+          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen"
         },
         {
           "match": "$0.15/$1.00 text+image+video->text ",
-          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
+          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
         },
         {
-          "match": "$0.12/$0.80 text->text qwen/qwen3-v",
-          "context": "07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
+          "match": "$0.18/$1.35 text->text qwen/qwen3-v",
+          "context": "15/$0.60 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
         },
         {
           "match": "$0.15/$0.60 text+image->text qwen/q",
-          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+vide"
+          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.18/$1.35 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+vide"
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
+          "context": "5 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
         },
         {
-          "match": "$0.29/$2.40 text+image+video->text ",
-          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
+          "match": "$0.45/$2.70 text+image+video->text ",
+          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.78/$3.80 text->"
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
+          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.45/$2.70 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.78/$3.80 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
         },
         {
-          "match": "$0.30/$1.00 text->text qwen/qwen-2.",
-          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
+          "match": "$0.78/$3.80 text->text qwen/qwen-2.",
+          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.78/$3.80 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
         }
       ]
     },
@@ -2314,7 +2600,7 @@
         },
         {
           "match": "free",
-          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+          "context": "6.00% 6.00% By seat tier By seat tier 𝕏 Money cashback 3% with Direct Deposit 3% 3% 3% 3% By seat tier By seat tier Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
         },
         {
           "match": "Pricing",
@@ -2951,9 +3237,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -3738,7 +4023,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 12.1k  ( 12.1k ) Star 81.9k  ( 81.9k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "on settings Fork 12.1k  ( 12.1k ) Star 82k  ( 82k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",

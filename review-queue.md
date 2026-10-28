@@ -3,5 +3,5 @@
 机器不能判断的事都在这里：官方页面有变、来源失联、超期未复核、RSS 草稿。
 处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:"verified"；不实→删）。
 
-- **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-10-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 8 次失败（URLError: <urlopen error timed out>）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **待复核** `google-student`（Google AI Studio）：源 gemini-students 页面于 2026-10-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **源失联** `linuxdo-rss`：连续 9 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
