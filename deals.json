@@ -124,7 +124,9 @@
   "cny": 15,
   "via": "register",
   "group": "Kimi（月之暗面）",
-  "stale_reason": "源 kimi-trial 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)"
+  "stale_reason": "源 kimi-trial 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
+  "eq_wan": 600,
+  "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）"
  },
  {
   "id": "kimi-k2-deadline",
@@ -320,7 +322,9 @@
   "verify_by": "auto",
   "cny": 10,
   "via": "invite",
-  "group": "恒源云"
+  "group": "恒源云",
+  "eq_wan": 400,
+  "eq_note": "¥10 券/额度 ×40 万 tok/元 ≈ 400 万当量（全站统一折算口径）"
  },
  {
   "id": "gongji-subsidy",
@@ -357,7 +361,9 @@
   "cny": 14,
   "via": "register",
   "group": "硅基流动",
-  "stale_reason": "源 siliconflow-billing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)"
+  "stale_reason": "源 siliconflow-billing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
+  "eq_wan": 560,
+  "eq_note": "¥14 券/额度 ×40 万 tok/元 ≈ 560 万当量（全站统一折算口径）"
  },
  {
   "id": "siliconflow-referral",
@@ -375,7 +381,9 @@
   "verify_by": "auto",
   "cny": 16,
   "via": "register",
-  "group": "硅基流动"
+  "group": "硅基流动",
+  "eq_wan": 640,
+  "eq_note": "¥16 券/额度 ×40 万 tok/元 ≈ 640 万当量（全站统一折算口径）"
  },
  {
   "id": "302ai-signup",
@@ -446,7 +454,9 @@
   "verify_by": "auto",
   "usd": 20,
   "via": "invite",
-  "group": "OhMyGPT"
+  "group": "OhMyGPT",
+  "eq_wan": 6000,
+  "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）"
  },
  {
   "id": "aihubmix-free",
@@ -516,7 +526,9 @@
   "verify_by": "auto",
   "usd": 240,
   "via": "student",
-  "group": "Google"
+  "group": "Google",
+  "eq_wan": 72000,
+  "eq_note": "$240 credits ×300 万 tok/$ ≈ 72000 万当量（$1≈300万口径）"
  },
  {
   "id": "github-student-pack",
@@ -553,7 +565,9 @@
   "usd": 100,
   "via": "student",
   "group": "Azure for Students",
-  "stale_reason": "源 azure-students 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)"
+  "stale_reason": "源 azure-students 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
+  "eq_wan": 30000,
+  "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）"
  },
  {
   "id": "groq-free",
@@ -608,7 +622,9 @@
   "usd": 5,
   "notes": "💡 官方文档+多方交叉（中置信度）",
   "stale_reason": "源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）清洗机制:stale不宜挂主板块",
-  "group": "Anthropic"
+  "group": "Anthropic",
+  "eq_wan": 1500,
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
  },
  {
   "id": "zcode-linuxdo",
@@ -913,7 +929,9 @@
   "published": true,
   "rule": "Free Trial 限速约 5 RPM / 30K TPM / 100 万 tokens/日",
   "notes": "💡 爬虫助理会话交叉验证：官方定价页明示绑卡门槛——主数据此前遗漏",
-  "group": "Cerebras"
+  "group": "Cerebras",
+  "eq_wan": 1500,
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
  },
  {
   "id": "kimi-cache",
@@ -1071,7 +1089,9 @@
   "cny": 15,
   "via": "subscribe",
   "notes": "官方文档直核（高）；年付价39/79/159与Starter¥29等未见官方原文待核；折算：官方拒绝公布token口径",
-  "group": "Kimi（月之暗面）"
+  "group": "Kimi（月之暗面）",
+  "eq_wan": 600,
+  "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-minimax-mplan",
@@ -1089,7 +1109,9 @@
   "usd": 5,
   "via": "subscribe",
   "notes": "官方页仅补充包价格（高）；人民币档位与71亿token口径=GitHub yacuo/ai-coding-plan（中）；Starter¥29首促未见官方原文",
-  "group": "MiniMax"
+  "group": "MiniMax",
+  "eq_wan": 1500,
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-claude-pro-max",
@@ -1107,7 +1129,9 @@
   "usd": 20,
   "via": "subscribe",
   "notes": "机制=官方帮助中心直核（高）；价格与倍数=第三方（低中）；绝对额度官方保密是确定性结论",
-  "group": "Anthropic"
+  "group": "Anthropic",
+  "eq_wan": 6000,
+  "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-copilot-ai-credits",
@@ -1126,7 +1150,9 @@
   "via": "subscribe",
   "notes": "官方文档直核（高）；plans.json若仍写300/1000 premium requests需更新；复核(03:40):AI Credits 体系仍在(Pro $10/月 Base 1000),页面迁移误伤已恢复",
   "verify_by": "auto",
-  "group": "GitHub"
+  "group": "GitHub",
+  "eq_wan": 4500,
+  "eq_note": "$15 credits ×300 万 tok/$ ≈ 4500 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-comate-autofree",
@@ -1181,7 +1207,9 @@
   "usd": 5,
   "via": "register",
   "notes": "多第三方交叉（pricepertoken/getaiperks 2026-04 vs Reddit/klymentiev 报告不一致，中）",
-  "group": "Anthropic"
+  "group": "Anthropic",
+  "eq_wan": 1500,
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-anthropic-startup",
@@ -1199,7 +1227,9 @@
   "usd": 1000,
   "via": "register",
   "notes": "搜索摘要口径（中高）；资格门槛高、非个人羊毛",
-  "group": "Anthropic"
+  "group": "Anthropic",
+  "eq_wan": 300000,
+  "eq_note": "$1000 credits ×300 万 tok/$ ≈ 300000 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-anthropic-sub-credits",
@@ -1234,7 +1264,9 @@
   "usd": 5,
   "via": "register",
   "notes": "$5试用=官网直核（高）；限速数字=pricepertoken（中）；底册「免费层1M/日」需改为2026-07前历史口径",
-  "group": "Cerebras"
+  "group": "Cerebras",
+  "eq_wan": 1500,
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-scnet-ycjh-100cardhours",
@@ -1308,7 +1340,9 @@
   "cny": 30,
   "via": "subscribe",
   "notes": "官方OpenAPI文档逐字（高）；倍率按周调整",
-  "group": "SCNet"
+  "group": "SCNet",
+  "eq_wan": 1200,
+  "eq_note": "¥30 券/额度 ×40 万 tok/元 ≈ 1200 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-scnet-deepseek-price",
@@ -1326,7 +1360,9 @@
   "cny": 0.1,
   "via": "api",
   "notes": "官方文档示例推算（高）+官宣续购价（中高）；免费对话=官方快速开始文档（中高）",
-  "group": "SCNet"
+  "group": "SCNet",
+  "eq_wan": 4,
+  "eq_note": "¥0.1 券/额度 ×40 万 tok/元 ≈ 4 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-volc-collab-reward",
@@ -1380,7 +1416,9 @@
   "cny": 40,
   "via": "subscribe",
   "notes": "官方个人版概览文档（高）；次数口径来自活动页/搜索（中）；GLM-5.3与Kimi-K3抵扣系数高",
-  "group": "字节跳动"
+  "group": "字节跳动",
+  "eq_wan": 1600,
+  "eq_note": "¥40 券/额度 ×40 万 tok/元 ≈ 1600 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-volc-coding-promo",
@@ -1398,7 +1436,9 @@
   "cny": 9.9,
   "via": "subscribe",
   "notes": "特惠规则=官方文档 docs.volcengine.com/docs/82379/1928220（高）；当前是否重启=活动页JS横幅（中）矛盾待人工核",
-  "group": "字节跳动"
+  "group": "字节跳动",
+  "eq_wan": 396,
+  "eq_note": "¥9.9 券/额度 ×40 万 tok/元 ≈ 396 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-volc-21pro-daily",
@@ -1453,7 +1493,9 @@
   "cny": 200,
   "via": "subscribe",
   "notes": "官方文档逐字（高）。积分表全模型见 deep-dive/xunfei.md",
-  "group": "讯飞"
+  "group": "讯飞",
+  "eq_wan": 8000,
+  "eq_note": "¥200 券/额度 ×40 万 tok/元 ≈ 8000 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-xunfei-coding-plan",
@@ -1472,7 +1514,9 @@
   "via": "subscribe",
   "notes": "官方文档v2.3（2026-07-22，高）。无忧¥19/专业¥39已下线",
   "verify_by": "auto",
-  "group": "讯飞"
+  "group": "讯飞",
+  "eq_wan": 7960,
+  "eq_note": "¥199 券/额度 ×40 万 tok/元 ≈ 7960 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-xunfei-39-crash",
@@ -1619,7 +1663,9 @@
   "cny": 94.4,
   "via": "subscribe",
   "notes": "积分→token折算率官方原文（全网罕见）。来源：官方 overview/usage-revision/quick-start 三个 .md 直出（高）；价格为 zcode.z.ai 官方页（高）",
-  "group": "智谱"
+  "group": "智谱",
+  "eq_wan": 3776,
+  "eq_note": "¥94.4 券/额度 ×40 万 tok/元 ≈ 3776 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-zhipu-invite-tokens",
@@ -1674,7 +1720,9 @@
   "cny": 49,
   "via": "subscribe",
   "notes": "官方价目页直核（高）；底册「五档」确认但需改积分制口径",
-  "group": "Trae 国内版"
+  "group": "Trae 国内版",
+  "eq_wan": 1960,
+  "eq_note": "¥49 券/额度 ×40 万 tok/元 ≈ 1960 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-trae-intl-pricing",
@@ -1692,7 +1740,9 @@
   "usd": 10,
   "via": "subscribe",
   "notes": "低-中置信；收录需登录 trae.ai 复核",
-  "group": "Trae 国际版"
+  "group": "Trae 国际版",
+  "eq_wan": 3000,
+  "eq_note": "$10 credits ×300 万 tok/$ ≈ 3000 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-qoder-cn-free",
@@ -1729,7 +1779,9 @@
   "cny": 59,
   "via": "subscribe",
   "notes": "阿里云开发者社区文（中高）",
-  "group": "Qoder（阿里）"
+  "group": "Qoder（阿里）",
+  "eq_wan": 2360,
+  "eq_note": "¥59 券/额度 ×40 万 tok/元 ≈ 2360 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-codebuddy-free-kimi",
@@ -1766,7 +1818,9 @@
   "cny": 58,
   "via": "subscribe",
   "notes": "多源聚合（dayuyun/新浪财经/官方公告报道，中）；登录 codebuddy.cn 复核后可升verified",
-  "group": "腾讯"
+  "group": "腾讯",
+  "eq_wan": 2320,
+  "eq_note": "¥58 券/额度 ×40 万 tok/元 ≈ 2320 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-codegeex-free",
@@ -1820,7 +1874,9 @@
   "cny": 50,
   "via": "invite",
   "notes": "官方福利中心文档直核（高）；分享50元券有效期仅7天，收录时标注",
-  "group": "潞晨云"
+  "group": "潞晨云",
+  "eq_wan": 2000,
+  "eq_note": "¥50 券/额度 ×40 万 tok/元 ≈ 2000 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-luchentech-opensource",
@@ -1838,7 +1894,9 @@
   "cny": 500,
   "via": "contribute",
   "notes": "colossalai.org 官方福利页直核（高）；知乎口径「前3000名注册送50元/企业认证送1000元」未见官方页，待核不发布",
-  "group": "潞晨云"
+  "group": "潞晨云",
+  "eq_wan": 20000,
+  "eq_note": "¥500 券/额度 ×40 万 tok/元 ≈ 20000 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-wuwenqiong-status",
@@ -1907,7 +1965,9 @@
   "cny": 1.35,
   "via": "subscribe",
   "notes": "知乎实测文（中）；价格可参考、新人礼不发布",
-  "group": "智星云"
+  "group": "智星云",
+  "eq_wan": 54,
+  "eq_note": "¥1.35 券/额度 ×40 万 tok/元 ≈ 54 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-autodl-student",
@@ -1960,7 +2020,9 @@
   "cny": 199,
   "via": "subscribe",
   "notes": "升级为verified+published=true：官方百度智能云文章（高）+知乎/CSDN/腾讯云多源交叉；替代第一轮 deep-comate-autofree（partial）；知乎「请求包18/33/150」口径未在官方文出现，不收录",
-  "group": "百度"
+  "group": "百度",
+  "eq_wan": 7960,
+  "eq_note": "¥199 券/额度 ×40 万 tok/元 ≈ 7960 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-comate-signup",
@@ -1978,7 +2040,9 @@
   "cny": 10,
   "via": "register",
   "notes": "官方域文章+InfoQ 交叉（中高）；价格页 comate.baidu.com/zh/pricing 为 JS 渲染未能直核原表",
-  "group": "百度"
+  "group": "百度",
+  "eq_wan": 400,
+  "eq_note": "¥10 券/额度 ×40 万 tok/元 ≈ 400 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-laozhang-pricing",
@@ -1996,7 +2060,9 @@
   "usd": 0.44,
   "via": "api",
   "notes": "官方docs .md直核（高）；中转站风险提示：余额无托管",
-  "group": "laozhang.ai（老张）"
+  "group": "laozhang.ai（老张）",
+  "eq_wan": 132,
+  "eq_note": "$0.44 credits ×300 万 tok/$ ≈ 132 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-deepbricks-status",
@@ -2067,7 +2133,9 @@
   "usd": 8,
   "via": "subscribe",
   "notes": "官方pricing页+x.ai/news/x-subscription直核（高）；背景：SpaceX 600亿美元全股票收购Anysphere（6-16宣布/8-14交割，第三方报道中）；社区对套餐重叠有抱怨，定价动荡期数据时效敏感",
-  "group": "Cursor"
+  "group": "Cursor",
+  "eq_wan": 2400,
+  "eq_note": "$8 credits ×300 万 tok/$ ≈ 2400 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-windsurf-devin",
@@ -2085,7 +2153,9 @@
   "usd": 20,
   "via": "subscribe",
   "notes": "官方页直核（高）；底册Windsurf独立条目需改挂Devin口径；迁移细节补全(21:5x):更名 Devin Desktop,设置/扩展自动保留;积分→配额制多源(whichaicoder/tokenplan)交叉",
-  "group": "Windsurf（并入Devin/Cognition）"
+  "group": "Windsurf（并入Devin/Cognition）",
+  "eq_wan": 6000,
+  "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-xai-grok-code-status",
@@ -2300,7 +2370,9 @@
   "notes": "官方发布口径经新浪/网易报道交叉（中高）；底册「U系公测免费」待人工登录复核",
   "verify_by": "auto",
   "group": "阶跃星辰 StepFun",
-  "stale_reason": "源 stepfun-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)"
+  "stale_reason": "源 stepfun-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
+  "eq_wan": 280,
+  "eq_note": "¥7 券/额度 ×40 万 tok/元 ≈ 280 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-stepfun-neo-phone",
@@ -2318,7 +2390,9 @@
   "cny": 3999,
   "via": "hardware",
   "notes": "新浪/腾讯/Binance Square 报道交叉（中高）；1200亿 token 版为微博单源（低）",
-  "group": "阶跃星辰 StepFun"
+  "group": "阶跃星辰 StepFun",
+  "eq_wan": 159960,
+  "eq_note": "¥3999 券/额度 ×40 万 tok/元 ≈ 159960 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-zhipu-qingyan-status",
@@ -2391,7 +2465,9 @@
   "usd": 100,
   "via": "subscribe",
   "notes": "Reddit 官方公告转述+we0.ai 等多源（中高）；具体数额与7天条件需登录 Settings 核实",
-  "group": "Anthropic"
+  "group": "Anthropic",
+  "eq_wan": 30000,
+  "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-copilot-ai-credits-r4",
@@ -2409,7 +2485,9 @@
   "usd": 10,
   "via": "subscribe",
   "notes": "plans页直核（R2高）+Reddit/HN 公告确认（中高）；deals 若有 premium requests 表述需改",
-  "group": "GitHub"
+  "group": "GitHub",
+  "eq_wan": 3000,
+  "eq_note": "$10 credits ×300 万 tok/$ ≈ 3000 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-gemini-cli-retired-r4",
@@ -2461,7 +2539,9 @@
   "usd": 8,
   "via": "subscribe",
   "notes": "x.ai 官方新闻页逐字（高）；修正 R2「$8 仅 Grok 模型」的过严表述——$8 含 Cursor 用量，仅第三方模型受限",
-  "group": "Cursor"
+  "group": "Cursor",
+  "eq_wan": 2400,
+  "eq_note": "$8 credits ×300 万 tok/$ ≈ 2400 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-smzdm-list-series",
@@ -2550,7 +2630,9 @@
   "cny": 38.99,
   "via": "purchase",
   "notes": "smzdm 清单帖11月预热段（中）；11月主战场，主会话可作双11攻略素材",
-  "group": "多厂商（天猫旗舰店）"
+  "group": "多厂商（天猫旗舰店）",
+  "eq_wan": 1560,
+  "eq_note": "¥38.99 券/额度 ×40 万 tok/元 ≈ 1560 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-deepseek-search-free",
@@ -2675,7 +2757,9 @@
   "cny": 15,
   "via": "register",
   "notes": "攻略已写盘 guides/kimi-guide.md；官方帮助文档直核（高）",
-  "group": "Kimi（月之暗面）"
+  "group": "Kimi（月之暗面）",
+  "eq_wan": 600,
+  "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-grok-codefast-price",
@@ -2693,7 +2777,9 @@
   "usd": 0.2,
   "via": "api",
   "notes": "第三方 tracker 交叉（中）；官方页未直核现价",
-  "group": "xAI"
+  "group": "xAI",
+  "eq_wan": 60,
+  "eq_note": "$0.2 credits ×300 万 tok/$ ≈ 60 万当量（$1≈300万口径）"
  },
  {
   "id": "deep-cohere-commanda-r5",
@@ -2944,7 +3030,9 @@
   "cny": 15,
   "via": "register",
   "notes": "7 天试用=Reddit 单源（低-中）；token 折算为估算不发布",
-  "group": "Kimi（月之暗面）"
+  "group": "Kimi（月之暗面）",
+  "eq_wan": 600,
+  "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-minimax-trial-r7",
@@ -2979,7 +3067,9 @@
   "cny": 59,
   "via": "client",
   "notes": "aliyun 官方文档 slug+cnblogs/阿里云社区交叉（高）；体验档够干嘛：社区版=补全+轻量 Chat 够个人日常，Agent 重活需 Pro",
-  "group": "Qoder（阿里）"
+  "group": "Qoder（阿里）",
+  "eq_wan": 2360,
+  "eq_note": "¥59 券/额度 ×40 万 tok/元 ≈ 2360 万当量（全站统一折算口径）"
  },
  {
   "id": "deep-trae-free-usage-r7",

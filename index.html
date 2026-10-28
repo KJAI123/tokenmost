@@ -1128,7 +1128,7 @@ document.getElementById('calcOverlay').addEventListener('click',closeCalc);
 function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万'}
 function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+' 亿':Math.round(million*100)+' 万'}
 function sumRender(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified');
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan');
   const agg=rows=>({t:rows.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
   const R=agg(live.filter(d=>d.via==='register')),I=agg(live.filter(d=>d.via==='invite')),S=agg(live.filter(d=>d.via==='student'));
   const freeN=live.filter(d=>d.via==='free'||d.type==='free_tier').length;
@@ -1203,7 +1203,7 @@ fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArra
 fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
 /* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
 function calcGlobalBanner(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning');
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan');
   const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const monthly=Math.round(once+daily*30);
