@@ -237,6 +237,36 @@
      "model": "nvidia/nemotron-3-super-120b-a12b:free",
      "env": "OPENROUTER_API_KEY"
     }
+   },
+   {
+    "name": "Kilo Code",
+    "url": "https://kilo.ai",
+    "desc": "聚合路由，Auto Free 免费模型层"
+   },
+   {
+    "name": "llm7.io",
+    "url": "https://llm7.io",
+    "desc": "免费聚合 API（llm7 free tier）"
+   },
+   {
+    "name": "TaoToken",
+    "url": "https://taotoken.net",
+    "desc": "统一 Key 聚合网关，注册送额度"
+   },
+   {
+    "name": "Agnes AI",
+    "url": "https://platform.agnes-ai.com",
+    "desc": "聚合平台"
+   },
+   {
+    "name": "Fireworks AI",
+    "url": "https://fireworks.ai",
+    "desc": "高速推理云免费层"
+   },
+   {
+    "name": "Replicate",
+    "url": "https://replicate.com",
+    "desc": "模型托管平台按量计费"
    }
   ]
  },
