@@ -169,6 +169,13 @@ def probe(pool: dict[str, dict], workers: int = 6) -> None:
 
 def main() -> int:
     prev = {}
+    ACC = Path(__file__).resolve().parent.parent / "data-research" / "source_candidates.json"  # 累积基准=池本体
+    if ACC.exists():
+        try:
+            for c in json.loads(ACC.read_text(encoding="utf-8")).get("candidates", []):
+                prev[normalize_url(c["url"])] = c  # 累积模式：旧条目全保留
+        except Exception:
+            pass
     if OUT.exists():
         try:
             for c in json.loads(OUT.read_text(encoding="utf-8")).get("candidates", []):
@@ -177,10 +184,15 @@ def main() -> int:
         except Exception:
             pass
     pool = collect()
-    for m in pool.values():
-        v = prev.get(normalize_url(m["url"]))
-        if v:
-            m["verified"] = v
+    for k, m in pool.items():
+        old = prev.get(k)
+        if old:
+            for f in ("verified", "title"):
+                if old.get(f) and not m.get(f):
+                    m[f] = old[f]
+            if old.get("status") and not m.get("status"):
+                m["status"] = old["status"]
+    pool.update({k: v for k, v in prev.items() if k not in pool})  # 累积：旧候选永不丢失
     probe(pool)
     for m in pool.values():
         ok = m["status"] == 200
