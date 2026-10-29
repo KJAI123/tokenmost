@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-29T15:17:43Z",
+  "harvested_at": "2026-10-29T23:06:56Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -2472,7 +2472,7 @@
         },
         {
           "match": "$0.30/$1.00 text->text qwen/qwen-2.",
-          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro"
+          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
         }
       ]
     },
@@ -2728,7 +2728,7 @@
         },
         {
           "match": "free",
-          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+          "context": "6.00% 6.00% By seat tier By seat tier 𝕏 Money cashback 3% with Direct Deposit 3% 3% 3% 3% By seat tier By seat tier Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
         },
         {
           "match": "Pricing",
@@ -3365,9 +3365,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -4140,7 +4139,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 12.2k  ( 12.2k ) Star 82.5k  ( 82.5k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 12.2k  ( 12.2k ) Star 82.6k  ( 82.6k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4370,11 +4369,11 @@
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "商主动预告外，其余日期为媒体 / 社区预期，非厂商承诺。 开发者福利专区 面向开发者的额度、试用与教育优惠 进入专区 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 33 天"
+          "context": "商主动预告外，其余日期为媒体 / 社区预期，非厂商承诺。 开发者福利专区 面向开发者的额度、试用与教育优惠 进入专区 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 32 天"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 33 天 额度 100000000 Tokens/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 32 天 额度 100000000 Tokens/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4398,7 +4397,7 @@
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-10-29 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-10-30 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 4",
@@ -4561,57 +4560,8 @@
       "name": "Trae 国际站",
       "url": "https://trae.ai/pricing",
       "status": "ok",
-      "hits": 12,
-      "findings": [
-        {
-          "match": "$0   Start for free Auto mode on",
-          "context": "te with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all m"
-        },
-        {
-          "match": "$20 per month, auto-renews To get",
-          "context": "yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade"
-        },
-        {
-          "match": "$20 usage / month Unlimited Autoc",
-          "context": "ited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus"
-        },
-        {
-          "match": "$60 per month, auto-renews Everyt",
-          "context": "uto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per mo"
-        },
-        {
-          "match": "$60 usage / month (3× Pro) Up to ",
-          "context": "plete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usag"
-        },
-        {
-          "match": "$200 per month, auto-renews Everyt",
-          "context": "news Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade"
-        },
-        {
-          "match": "$200 usage / month (10× Pro) Model",
-          "context": "o) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compar"
-        },
-        {
-          "match": "$ 20 Basic usage $ 60 Basic usage ",
-          "context": "Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited U"
-        },
-        {
-          "match": "$ 200 Basic usage Queue Priority St",
-          "context": "o Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited Unlimited Unlimited Concurrent Cloud"
-        },
-        {
-          "match": "Free",
-          "context": "aborate with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-r"
-        },
-        {
-          "match": "free",
-          "context": "gence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started"
-        },
-        {
-          "match": "Free",
-          "context": "ccess Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "ollama-pricing",
@@ -4710,27 +4660,27 @@
         },
         {
           "match": "$0.15   $0.015   $0.60           mi",
-          "context": "kimi-k2.7-code   $0.95   $0.19   $4.00           kimi-k2.6   $0.95   $0.16   $4.00           minimax-m3.1-flash   $0.15   $0.015   $0.60           minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.68   $0.0"
+          "context": "kimi-k2.7-code   $0.95   $0.19   $4.00           kimi-k2.6   $0.95   $0.16   $4.00           minimax-m3.1-flash   $0.15   $0.015   $0.60           minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.70   $0.0"
         },
         {
           "match": "$0.60   $0.12   $2.40           min",
-          "context": "kimi-k2.6   $0.95   $0.16   $4.00           minimax-m3.1-flash   $0.15   $0.015   $0.60           minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.68   $0.07   $2.09           mistral-large-3   $0.50"
+          "context": "kimi-k2.6   $0.95   $0.16   $4.00           minimax-m3.1-flash   $0.15   $0.015   $0.60           minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.70   $0.07   $2.10           mistral-large-3   $0.50"
         },
         {
           "match": "$0.30   $0.06   $1.20           mis",
-          "context": "minimax-m3.1-flash   $0.15   $0.015   $0.60           minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.68   $0.07   $2.09           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $"
+          "context": "minimax-m3.1-flash   $0.15   $0.015   $0.60           minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.70   $0.07   $2.10           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $"
         },
         {
-          "match": "$0.68   $0.07   $2.09           mis",
-          "context": "minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.68   $0.07   $2.09           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $0.15   $4.25           nemotron-3-nano   $0.06   -"
+          "match": "$0.70   $0.07   $2.10           mis",
+          "context": "minimax-m3   $0.60   $0.12   $2.40           minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.70   $0.07   $2.10           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $0.15   $4.25           nemotron-3-nano   $0.06   -"
         },
         {
           "match": "$0.50   -   $1.50           muse-sp",
-          "context": "minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.68   $0.07   $2.09           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $0.15   $4.25           nemotron-3-nano   $0.06   -   $0.24           nemotron-3-super   $0.015   $0."
+          "context": "minimax-m2.7   $0.30   $0.06   $1.20           mistral-large-4   $0.70   $0.07   $2.10           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $0.15   $4.25           nemotron-3-nano   $0.06   -   $0.24           nemotron-3-super   $0.015   $0."
         },
         {
           "match": "$1.25   $0.15   $4.25           nem",
-          "context": "mistral-large-4   $0.68   $0.07   $2.09           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $0.15   $4.25           nemotron-3-nano   $0.06   -   $0.24           nemotron-3-super   $0.015   $0.015   $0.60           nemotron-3-ultra   $0.10"
+          "context": "mistral-large-4   $0.70   $0.07   $2.10           mistral-large-3   $0.50   -   $1.50           muse-spark-open   $1.25   $0.15   $4.25           nemotron-3-nano   $0.06   -   $0.24           nemotron-3-super   $0.015   $0.015   $0.60           nemotron-3-ultra   $0.10"
         },
         {
           "match": "$0.06   -   $0.24           nemotro",
@@ -5003,7 +4953,7 @@
       "findings": [
         {
           "match": "$1B in annualized run rate, new ",
-          "context": "Pricing: Pay per second for GPUs and CPUs | Modal                     Skip to content Series D: $1B in annualized run rate, new funding, and where Modal goes next. Learn more Download logo as .svg Download wordmark as .svg Go to press kit Products"
+          "context": "Pricing: Pay per second for GPUs and CPUs | Modal                     Skip to content Series D: $1B in annualized run rate, new funding, and where Modal goes next. Learn more Download logo as .svg Download wordmark as .svg Go to press kit Product R"
         },
         {
           "match": "$ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia ",
@@ -5256,8 +5206,14 @@
       "id": "xai-pricing",
       "name": "xAI 定价",
       "url": "https://console.x.ai",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "status": "ok",
+      "hits": 1,
+      "findings": [
+        {
+          "match": "credit",
+          "context": "Manage your team Invite members and set roles. Access latest models Grok, voice, and image. Centralized billing Usage, credits, and invoices."
+        }
+      ]
     },
     {
       "id": "ov-kilo-pricing",
@@ -6041,8 +5997,130 @@
       "id": "ov-opencode-data",
       "name": "OpenCode 用量/价格数据页",
       "url": "https://dev.opencode.ai/data",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 308: Permanent Redirect"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "100 万 token",
+          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $0.66 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存"
+        },
+        {
+          "match": "$0.20 muse-spark-1.3-contributor $0",
+          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $0.66 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
+        },
+        {
+          "match": "$0.66 deepseek-v4-flash-vision-exp ",
+          "context": "没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $0.66 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-sp"
+        },
+        {
+          "match": "$0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOK",
+          "context": "成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $0.66 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.1"
+        },
+        {
+          "match": "每日 01 deepseek-v4-flash 0B token",
+          "context": "B 0B OCT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "8日, UTC 12:45 已更新 10月28日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SE"
+        },
+        {
+          "match": "deepseek",
+          "context": "T 22 0B OCT 23 OCT 23 0B OCT 24 OCT 24 0B OCT 25 OCT 25 0B OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP 4 0B 0B 0B 0B 0B 0B 0B SEP 5 0B 0B 0B 0B 0B 0B 0B SEP 6 0B"
+        },
+        {
+          "match": "deepseek",
+          "context": "CT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ken DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "ibutor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较"
+        },
+        {
+          "match": "deepseek",
+          "context": "n Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 22 0 OCT 23 OCT 23 5 OCT 24 OCT 24 0 OCT 25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0 0 0 0 0 SEP 5 0 0 0 0 0 0 0 SEP 6 0 0 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $0.66 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比"
+        },
+        {
+          "match": "deepseek",
+          "context": "产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $0.66 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek"
+        },
+        {
+          "match": "deepseek",
+          "context": "deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多"
+        },
+        {
+          "match": "deepseek",
+          "context": "▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 7 SEP 7 0 SEP 8 SEP 8 0 SEP 10 S"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "5M OCT 23 OCT 23 31M OCT 24 OCT 24 103M OCT 25 OCT 25 1M OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 7 100.0% 0.0% 0.0% 0.0% SEP 8 100.0% 0.0% 0.0% 0.0% SEP 10 100.0% 0.0% 0.0% 0.0% SEP 11 100.0% 0."
+        },
+        {
+          "match": "DeepSeek",
+          "context": ".0% OCT 25 100.0% 0.0% 0.0% 0.0% OCT 26 98.6% 1.0% 0.4% 0.0% OCT 27 87.0% 7.8% 5.2% 0.0% OCT 28 94.3% 4.6% 1.1% 0.0% 01 DeepSeek 0 token 94.3 % 02 Meta 0 token 4.6 % 03 Other 0 token 1.1 % [*] OCT 28 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 57% 02"
+        },
+        {
+          "match": "deepseek",
+          "context": "a（opencode.ai/data）以及页面顶部显示的更新时间。 Model Comparisons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent"
+        },
+        {
+          "match": "deepseek",
+          "context": "age deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-c"
+        },
+        {
+          "match": "deepseek",
+          "context": "use-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-contributor · test Top mode"
+        },
+        {
+          "match": "Token",
+          "context": "AI 模型使用排名 | OpenCode 数据 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 GitHub [ 220K ] 试用 OpenCode GitHub [ 220K ] 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 已更新 10月28日, UTC 12:"
+        },
+        {
+          "match": "token",
+          "context": "8日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SEP 3 0B SEP 4 SEP 4"
+        },
+        {
+          "match": "token",
+          "context": "0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+        },
+        {
+          "match": "token",
+          "context": "0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 d"
+        }
+      ]
     },
     {
       "id": "ctyun-ai-zhuanxiang",
@@ -6368,15 +6446,15 @@
         },
         {
           "match": "Pricing",
-          "context": "nt Alpha Search ⌘ K Models Benchmarks Chat Chat Rankings Apps Ori Pricing Docs Models Rankings Ori Benchmarks Chat Chat Pricing Docs Dashboard Sign Up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, a"
+          "context": "content Alpha Search ⌘ K Models Benchmarks Chat Chat Rankings Apps Ori Pricing Docs Models Rankings Ori Docs Chat Chat Pricing Dashboard Sign Up Talk to sales Sign in Sign up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native s"
         },
         {
           "match": "pricing",
-          "context": "nkings Apps Ori Pricing Docs Models Rankings Ori Benchmarks Chat Chat Pricing Docs Dashboard Sign Up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Stan"
+          "context": "cing Docs Models Rankings Ori Docs Chat Chat Pricing Dashboard Sign Up Talk to sales Sign in Sign up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Stan"
         },
         {
           "match": "Pricing",
-          "context": "pps Ori Pricing Docs Models Rankings Ori Benchmarks Chat Chat Pricing Docs Dashboard Sign Up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Standard Bus"
+          "context": "s Models Rankings Ori Docs Chat Chat Pricing Dashboard Sign Up Talk to sales Sign in Sign up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Standard Bus"
         },
         {
           "match": "Pricing",
