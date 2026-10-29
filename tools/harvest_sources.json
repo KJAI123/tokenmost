@@ -1,1291 +1,1316 @@
 {
- "sources": [
-  {
-   "id": "zhipu-pricing",
-   "name": "智谱 BigModel 定价",
-   "url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
-   "patterns": [
-    "GLM-[\\w.-]+",
-    "免费"
-   ]
-  },
-  {
-   "id": "zhipu-promo",
-   "name": "智谱 BigModel 活动页",
-   "url": "https://docs.bigmodel.cn/cn/update/promotion",
-   "patterns": [
-    "Coding Plan",
-    "赠送"
-   ]
-  },
-  {
-   "id": "deepseek-pricing",
-   "name": "DeepSeek 定价",
-   "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
-   "patterns": [
-    "峰谷",
-    "高峰",
-    "缓存命中"
-   ]
-  },
-  {
-   "id": "siliconflow-pricing",
-   "name": "硅基流动定价",
-   "url": "https://www.siliconflow.cn/pricing",
-   "patterns": [
-    "免费模型",
-    "L0",
-    "赠送"
-   ]
-  },
-  {
-   "id": "siliconflow-faq",
-   "name": "硅基流动计费规则",
-   "url": "https://docs.siliconflow.com/cn/faqs/billing-rules",
-   "patterns": [
-    "14 元",
-    "2000"
-   ]
-  },
-  {
-   "id": "volc-ark-collab",
-   "name": "火山方舟协作奖励计划",
-   "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
-   "patterns": [
-    "500 ?万",
-    "协作奖励",
-    "每日",
-    "token"
-   ]
-  },
-  {
-   "id": "openrouter-limits",
-   "name": "OpenRouter 限流文档",
-   "url": "https://openrouter.ai/docs/api_reference/limits",
-   "patterns": [
-    ":free",
-    "\\$10",
-    "per day"
-   ]
-  },
-  {
-   "id": "kimi-membership",
-   "name": "Kimi 会员定价",
-   "url": "https://www.kimi.com/help/membership/membership-pricing",
-   "patterns": [
-    "会员",
-    "免费",
-    "额度",
-    "￥?\\d+"
-   ],
-   "note": "信息源清单-协作版.xlsx 指派"
-  },
-  {
-   "id": "gemini-pricing",
-   "name": "Gemini API 定价",
-   "url": "https://ai.google.dev/gemini-api/docs/pricing",
-   "patterns": [
-    "free",
-    "per day",
-    "RPD",
-    "\\$0"
-   ],
-   "note": "信息源清单-协作版.xlsx 指派；网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
-  },
-  {
-   "id": "azure-students",
-   "name": "Azure for Students",
-   "url": "https://azure.microsoft.com/en-us/free/students",
-   "patterns": [
-    "\\$100",
-    "free",
-    "students",
-    "credit"
-   ],
-   "note": "信息源清单-协作版.xlsx 指派"
-  },
-  {
-   "id": "gemini-rate-limits",
-   "name": "Gemini API 限流",
-   "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
-   "patterns": [
-    "free tier",
-    "RPD",
-    "requests per day"
-   ],
-   "note": "网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
-  },
-  {
-   "id": "groq-rate-limits",
-   "name": "Groq 限流",
-   "url": "https://console.groq.com/docs/rate-limits",
-   "patterns": [
-    "free tier",
-    "TPD",
-    "requests per day"
-   ],
-   "disabled": true,
-   "note": "403 硬反爬(任何UA)——转真浏览器/人工盯防 2026-10-28"
-  },
-  {
-   "id": "moonshot-pricing",
-   "name": "Kimi 开放平台定价",
-   "url": "https://platform.kimi.com/docs/pricing/chat",
-   "patterns": [
-    "代金券",
-    "15 元",
-    "免费",
-    "百万 ?tokens"
-   ]
-  },
-  {
-   "id": "bailian-pricing",
-   "name": "阿里云百炼定价",
-   "url": "https://help.aliyun.com/zh/model-studio/models",
-   "patterns": [
-    "免费额度",
-    "限时免费",
-    "赠送"
-   ]
-  },
-  {
-   "id": "minimax-pricing",
-   "name": "MiniMax 开放平台定价",
-   "url": "https://platform.minimax.cn/docs/pricing/overview.md",
-   "patterns": [
-    "M3",
-    "五折",
-    "折扣",
-    "百万 ?tokens"
-   ]
-  },
-  {
-   "id": "sambanova-rate-limits",
-   "name": "SambaNova 限流",
-   "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
-   "patterns": [
-    "Free Tier",
-    "Developer Tier",
-    "RPM",
-    "20M"
-   ]
-  },
-  {
-   "id": "together-pricing",
-   "name": "Together AI 定价",
-   "url": "https://www.together.ai/pricing",
-   "patterns": [
-    "free",
-    "\\$0"
-   ]
-  },
-  {
-   "id": "cerebras-pricing",
-   "name": "Cerebras 定价",
-   "url": "https://www.cerebras.ai/pricing",
-   "patterns": [
-    "\\$5",
-    "credit",
-    "payment method"
-   ]
-  },
-  {
-   "id": "mistral-usage-limits",
-   "name": "Mistral 用量限额",
-   "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
-   "patterns": [
-    "free",
-    "Experiment",
-    "limits"
-   ],
-   "note": "网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
-  },
-  {
-   "id": "cohere-rate-limits",
-   "name": "Cohere 限流",
-   "url": "https://docs.cohere.com/docs/rate-limits",
-   "patterns": [
-    "1,000",
-    "Trial",
-    "req ?/ ?min"
-   ]
-  },
-  {
-   "id": "zcode-changelog",
-   "name": "ZCode 官网更新日志",
-   "url": "https://zcode.z.ai/changelog",
-   "patterns": [
-    "活动",
-    "体验",
-    "赠送",
-    "邀请"
-   ]
-  },
-  {
-   "id": "doubao-agent-explore",
-   "name": "豆包智能体广场",
-   "url": "https://www.doubao.com/pc/agent-explore",
-   "patterns": [
-    "免费",
-    "额度",
-    "无限",
-    "试用"
-   ],
-   "note": "老板指派 2026-10-27；CSR 壳静态 0 命中属预期，留位观察 SSR 恢复（robots Allow）；羊毛情报靠真浏览器巡检"
-  },
-  {
-   "id": "doubao-quota-rules",
-   "name": "豆包天天领额度活动规则",
-   "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/incentive-campaign-rules/f7f2c423-c770-44e7-9be4-bd67a28f074e.html",
-   "patterns": [
-    "活动赠送额度",
-    "签到",
-    "有效期",
-    "三期|四期|五期"
-   ],
-   "note": "活动规则官方原文（静态可抓），规则改版/期数更替即告警"
-  },
-  {
-   "id": "zhipu-hangzhou-rules",
-   "name": "智谱杭州 Coding Plan 活动规则",
-   "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules",
-   "patterns": [
-    "减免",
-    "Coding Plan",
-    "额度"
-   ]
-  },
-  {
-   "id": "alibabacloud-enproductmodel",
-   "name": "Alibaba Cloud Model Stud",
-   "url": "https://www.alibabacloud.com/en/product/modelstudio",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "api-docs-docsreleasenot",
-   "name": "更新公告",
-   "url": "https://api-docs.siliconflow.cn/docs/release-notes/overview",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "aws-qdeveloperpric",
-   "name": "AI for Software Developm",
-   "url": "https://aws.amazon.com/q/developer/pricing/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "bailian-main",
-   "name": "Alibaba Cloud Model Stud",
-   "url": "https://bailian.console.alibabacloud.com/?apiKey=1",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "bailian-main",
-   "name": "大模型服务平台百炼控制台",
-   "url": "https://bailian.console.aliyun.com/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "bazaarlink-docsapi",
-   "name": "API 參考文件｜聊天、嵌入與模型路由",
-   "url": "https://bazaarlink.ai/docs/api#free-models",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "cloud-productwenxinw",
-   "name": "千帆大模型平台-企业级一站式大模型开发及应用开发",
-   "url": "https://cloud.baidu.com/product/wenxinworkshop",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "cloud-iamapikeys",
-   "name": "Log in to IBM Cloud – IB",
-   "url": "https://cloud.ibm.com/iam/apikeys",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28；网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
-  },
-  {
-   "id": "cloud-apis",
-   "name": "API Keys",
-   "url": "https://cloud.sambanova.ai/apis",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "cloud-accountak",
-   "name": "硅基流动统一登录",
-   "url": "https://cloud.siliconflow.cn/account/ak",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "cloud-producthunyuan",
-   "name": "腾讯混元大模型_大语言模型_自然语言大模型- 腾",
-   "url": "https://cloud.tencent.com/product/hunyuan",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "code-docs",
-   "name": "Overview - Claude Code D",
-   "url": "https://code.claude.com/docs",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "codeium-docs",
-   "name": "Discord",
-   "url": "https://codeium.com/docs",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "console-main",
-   "name": "百度智能云控制台-管理中心",
-   "url": "https://console.bce.baidu.com/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "console-tokenhub",
-   "name": "登录 - 腾讯云",
-   "url": "https://console.cloud.tencent.com/tokenhub",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "console-main",
-   "name": "Upstage Console",
-   "url": "https://console.upstage.ai/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "console-ark",
-   "name": "火山方舟 - 首页",
-   "url": "https://console.volcengine.com/ark",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "cursor-enpricing",
-   "name": "Cursor · Pricing",
-   "url": "https://cursor.com/en/pricing",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "developer-radeontokenfac",
-   "name": "Radeon Cloud",
-   "url": "https://developer.amd.com.cn/radeon/tokenfactory",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "developer-zonelist",
-   "name": "腾讯云开发者社区-腾讯云",
-   "url": "https://developer.cloud.tencent.com/zone/list",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "developer-codeartscohtml",
-   "name": "Developer Events_Develop",
-   "url": "https://developer.huaweicloud.com/codeartsco.html?source=dmzntgwltcsdn1&sourcead=dmzntgwltcsdncommunity9",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "developers-workersaiplatf",
-   "name": "Pricing · Cloudflare Wor",
-   "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "doc-formsdfoox09n0",
-   "name": "收集表",
-   "url": "https://doc.weixin.qq.com/forms/AJEAIQdfAAoAVIAoAZxAL0CN9ODn0Xvaf?page=1",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-amazonqlatesta",
-   "name": "What is Amazon Q Develop",
-   "url": "https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/what-is.html",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "gh-en-copilot-how-tos-manage-y",
-   "name": "Access Copilot Pro for f",
-   "url": "https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro",
-   "patterns": [
-    "free",
-    "免费",
-    "额度",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-guidesbillinga",
-   "name": "Billing & Deposits | Gon",
-   "url": "https://docs.gonkabroker.com/guides/billing-and-deposits/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-generalcompany",
-   "name": "Inference API - Hetzner ",
-   "url": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-main",
-   "name": "LiteLLM documentation | ",
-   "url": "https://docs.litellm.ai",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-limits",
-   "name": "Limits - LLM7.io Documen",
-   "url": "https://docs.llm7.io/limits",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-main",
-   "name": "What is Qoder - Qoder",
-   "url": "https://docs.qoder.com/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-idenewplansand",
-   "name": "Plans &amp; billing - Do",
-   "url": "https://docs.trae.ai/ide/new-plans-and-billing",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-main",
-   "name": "xKiro API Documentation",
-   "url": "https://docs.xkiro.com",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "docs-guidesdeveloph",
-   "name": "HTTP API Calls - Overvie",
-   "url": "https://docs.z.ai/guides/develop/http/introduction",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "ecloud-main",
-   "name": "移动云官网-智能新空间",
-   "url": "https://ecloud.10086.cn/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "endpoints-main",
-   "name": "AI Endpoints - Powerful,",
-   "url": "https://endpoints.ai.cloud.ovh.net",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "gh-aipmandy-freetoken-blob-daf",
-   "name": "FreeToken/README.md at d",
-   "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
-   "patterns": [
-    "free",
-    "免费",
-    "额度",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28；blob→raw 修复 2026-10-28"
-  },
-  {
-   "id": "cursor-pricing",
-   "name": "Cursor 定价",
-   "url": "https://cursor.com/pricing",
-   "patterns": [
-    "free",
-    "pricing",
-    "credits",
-    "\\$\\d+",
-    "tier"
-   ],
-   "note": "长期源自动并入 2026-10-28（外网 AI IDE 免费档盯防）"
-  },
-  {
-   "id": "windsurf-pricing",
-   "name": "Devin 定价(Windsurf 已并入)",
-   "url": "https://devin.ai/pricing",
-   "patterns": [
-    "free",
-    "pricing",
-    "credits",
-    "\\$\\d+",
-    "tier"
-   ],
-   "note": "windsurf.com 308→devin.ai；原 Windsurf 免费档信息现归 Devin 名下 2026-10-28"
-  },
-  {
-   "id": "monkeycode-docs",
-   "name": "MonkeyCode 官方文档",
-   "url": "https://monkeycode.docs.baizhi.cloud",
-   "patterns": [
-    "免费",
-    "额度",
-    "token",
-    "每日"
-   ],
-   "note": "长期源并入 2026-10-28（每日免费 token 政策盯防）"
-  },
-  {
-   "id": "competitor-pencilai",
-   "name": "竞品雷达·Token羊毛党",
-   "url": "https://token.pencilai.top",
-   "patterns": [
-    "免费",
-    "额度",
-    "优惠",
-    "套餐",
-    "折扣"
-   ],
-   "note": "竞品监测：同类汇总站（本地agent免费模型/编程套餐，网页聊天不收录）静态可抓，其上新即告警 2026-10-28"
-  },
-  {
-   "id": "inferbase-docsgettingsta",
-   "name": "Quickstart · Docs | Infe",
-   "url": "https://inferbase.ai/docs/getting-started/quickstart",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "inference-docs-supportratelim",
-   "name": "Rate Limits - Cerebras I",
-   "url": "https://inference-docs.cerebras.ai/support/rate-limits",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "kilo-docsgatewaymod",
-   "name": "Models &amp; Providers",
-   "url": "https://kilo.ai/docs/gateway/models-and-providers",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "longcat-platformdocszh",
-   "name": "快速开始 | LongCat API Docs",
-   "url": "https://longcat.chat/platform/docs/zh/",
-   "patterns": [
-    "免费",
-    "赠送",
-    "额度",
-    "free",
-    "pricing"
-   ],
-   "note": "长期源自动并入(分6) 2026-10-28"
-  },
-  {
-   "id": "omniroute-repo",
-   "name": "OmniRoute 白嫖网关(3.7万Star)",
-   "url": "https://github.com/diegosouzapw/OmniRoute",
-   "patterns": [
-    "free",
-    "免费",
-    "token",
-    "额度"
-   ],
-   "note": "神级工具源：本地网关聚合200-300+提供商，/dashboard/free-tiers 实时免费额度（15-16亿/月）——README/releases 盯防 2026-10-28"
-  },
-  {
-   "id": "lolo-freellm",
-   "name": "免费LLM API收集(持续更新)",
-   "url": "https://blog.lololowe.com/posts/fe0d/",
-   "patterns": [
-    "免费",
-    "额度",
-    "token",
-    "领取"
-   ],
-   "note": "Key 获取合集页（11 平台直链），平台政策变化即内容变化 2026-10-28 评估通过"
-  },
-  {
-   "id": "competitor-aiyangmao",
-   "name": "竞品雷达·AI羊毛情报站",
-   "url": "https://aiyangmao.xyz",
-   "patterns": [
-    "免费",
-    "羊毛",
-    "额度",
-    "token"
-   ],
-   "note": "老板指派 2026-10-28；同类竞品+排版学习对象（三主题皮肤 light/dark/neon·卡片圆角·CSS 变量皮肤系统）；robots Allow 静态可抓 359KB"
-  },
-  {
-   "id": "lingyiwanwu-pricing",
-   "name": "零一万物平台",
-   "url": "https://platform.lingyiwanwu.com/",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "官方平台 yi 系列定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "moonshot-global-pricing",
-   "name": "Moonshot 国际站",
-   "url": "https://platform.moonshot.cn/",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "Kimi 国际站定价分轨（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "minimax-global-pricing",
-   "name": "MiniMax 国际站",
-   "url": "https://platform.minimax.io/",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "MiniMax 海外定价分轨（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "xiaomi-mimo-platform",
-   "name": "小米 MiMo 开放平台",
-   "url": "https://platform.xiaomimimo.com/",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "MiMo-2.5 低价/重置额度盯防（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "tiangong-modelplatform",
-   "name": "昆仑万维天工",
-   "url": "https://model-platform.tiangong.cn/",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "天工大模型平台定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "qoder-global-pricing",
-   "name": "Qoder 国际站",
-   "url": "https://qoder.com/pricing",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "Qoder 海外五档定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "trae-global-pricing",
-   "name": "Trae 国际站",
-   "url": "https://trae.ai/pricing",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "TRAE 五档定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "ollama-pricing",
-   "name": "Ollama",
-   "url": "https://ollama.com/pricing",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "本地推理+云定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "warp-pricing",
-   "name": "Warp",
-   "url": "https://www.warp.dev/pricing",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "AI 终端定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "tabnine-pricing",
-   "name": "Tabnine",
-   "url": "https://www.tabnine.com/pricing/",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "代码补全定价（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "sensenova-platform",
-   "name": "商汤 SenseNova 平台",
-   "url": "https://platform.sensenova.cn",
-   "patterns": [
-    "免费",
-    "价格",
-    "credits",
-    "额度",
-    "token",
-    "Trial",
-    "Free"
-   ],
-   "note": "商汤官方平台盯防（替代证书异常域名）（候选池收录 v2.8.1）"
-  },
-  {
-   "id": "deepinfra-pricing",
-   "name": "DeepInfra 定价",
-   "url": "https://deepinfra.com/prices",
-   "patterns": [
-    "free",
-    "credit",
-    "tier",
-    "\\$\\d+",
-    "pricing"
-   ],
-   "note": "海外扩容 2026-10-28；免费起·按量"
-  },
-  {
-   "id": "fireworks-pricing",
-   "name": "Fireworks 定价",
-   "url": "https://fireworks.ai/pricing",
-   "patterns": [
-    "free",
-    "credit",
-    "tier",
-    "\\$\\d+",
-    "pricing"
-   ],
-   "note": "海外扩容 2026-10-28；$1 起步积分"
-  },
-  {
-   "id": "modal-pricing",
-   "name": "Modal 定价",
-   "url": "https://modal.com/pricing",
-   "patterns": [
-    "free",
-    "credit",
-    "tier",
-    "\\$\\d+",
-    "pricing"
-   ],
-   "note": "海外扩容 2026-10-28；$30/月免费积分(历史口径)"
-  },
-  {
-   "id": "novita-pricing",
-   "name": "Novita 定价",
-   "url": "https://novita.ai/pricing",
-   "patterns": [
-    "free",
-    "credit",
-    "tier",
-    "\\$\\d+",
-    "pricing"
-   ],
-   "note": "海外扩容 2026-10-28；free-to-start·130模型"
-  },
-  {
-   "id": "xai-pricing",
-   "name": "xAI 定价",
-   "url": "https://console.x.ai",
-   "patterns": [
-    "free",
-    "credit",
-    "tier",
-    "\\$\\d+",
-    "pricing"
-   ],
-   "note": "海外扩容 2026-10-28；负情报盯防(免费档已退场)"
-  },
-  {
-   "id": "ov-kilo-pricing",
-   "name": "Kilo Code",
-   "url": "https://kilo.ai/pricing",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-taotoken",
-   "name": "TaoToken 聚合网关",
-   "url": "https://taotoken.net",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-llm7-docs",
-   "name": "llm7 免费聚合",
-   "url": "https://docs.llm7.io",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-agnes-ai",
-   "name": "Agnes AI",
-   "url": "https://platform.agnes-ai.com",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-regolo-pricing",
-   "name": "Regolo.ai",
-   "url": "https://regolo.ai/pricing/",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-tokenharbor",
-   "name": "TokenHarbor",
-   "url": "https://tokenharbor.ai/pricing",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-iteracompute",
-   "name": "IteraCompute",
-   "url": "https://platform.iteracompute.com/api-keys",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-upstage",
-   "name": "Upstage",
-   "url": "https://console.upstage.ai",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-replicate-pricing",
-   "name": "Replicate",
-   "url": "https://replicate.com/pricing",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "ov-hf-inference",
-   "name": "HuggingFace 推理",
-   "url": "https://huggingface.co/docs/inference-providers/index",
-   "patterns": [
-    "free",
-    "Free",
-    "credits",
-    "额度",
-    "免费",
-    "token",
-    "rate limit",
-    "trial"
-   ],
-   "lane": "ov-aggregator",
-   "note": "海外聚合商专项（老板指令 10-29）"
-  },
-  {
-   "id": "aliyun-codingplan",
-   "name": "阿里云 Coding Plan 文档",
-   "url": "https://help.aliyun.com/zh/model-studio/coding-plan",
-   "patterns": [
-    "7.9",
-    "首月",
-    "7000",
-    "tokens",
-    "免费"
-   ],
-   "note": "价格战核心条目盯防 2026-10-29（首月7.9元+7000万tokens+9万次请求）"
-  },
-  {
-   "id": "ov-opencode-data",
-   "name": "OpenCode 用量/价格数据页",
-   "url": "https://dev.opencode.ai/data",
-   "patterns": [
-    "deepseek",
-    "price",
-    "\\$0.30",
-    "\\$1.20",
-    "token"
-   ],
-   "lane": "ov-aggregator",
-   "note": "老板指定比价参考源（10-29）；静态 HTML 可抓"
-  }
- ]
+  "sources": [
+    {
+      "id": "zhipu-pricing",
+      "name": "智谱 BigModel 定价",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "patterns": [
+        "GLM-[\\w.-]+",
+        "免费"
+      ]
+    },
+    {
+      "id": "zhipu-promo",
+      "name": "智谱 BigModel 活动页",
+      "url": "https://docs.bigmodel.cn/cn/update/promotion",
+      "patterns": [
+        "Coding Plan",
+        "赠送"
+      ]
+    },
+    {
+      "id": "deepseek-pricing",
+      "name": "DeepSeek 定价",
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "patterns": [
+        "峰谷",
+        "高峰",
+        "缓存命中"
+      ]
+    },
+    {
+      "id": "siliconflow-pricing",
+      "name": "硅基流动定价",
+      "url": "https://www.siliconflow.cn/pricing",
+      "patterns": [
+        "免费模型",
+        "L0",
+        "赠送"
+      ]
+    },
+    {
+      "id": "siliconflow-faq",
+      "name": "硅基流动计费规则",
+      "url": "https://docs.siliconflow.com/cn/faqs/billing-rules",
+      "patterns": [
+        "14 元",
+        "2000"
+      ]
+    },
+    {
+      "id": "volc-ark-collab",
+      "name": "火山方舟协作奖励计划",
+      "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
+      "patterns": [
+        "500 ?万",
+        "协作奖励",
+        "每日",
+        "token"
+      ]
+    },
+    {
+      "id": "openrouter-limits",
+      "name": "OpenRouter 限流文档",
+      "url": "https://openrouter.ai/docs/api_reference/limits",
+      "patterns": [
+        ":free",
+        "\\$10",
+        "per day"
+      ]
+    },
+    {
+      "id": "kimi-membership",
+      "name": "Kimi 会员定价",
+      "url": "https://www.kimi.com/help/membership/membership-pricing",
+      "patterns": [
+        "会员",
+        "免费",
+        "额度",
+        "￥?\\d+"
+      ],
+      "note": "信息源清单-协作版.xlsx 指派"
+    },
+    {
+      "id": "gemini-pricing",
+      "name": "Gemini API 定价",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "patterns": [
+        "free",
+        "per day",
+        "RPD",
+        "\\$0"
+      ],
+      "note": "信息源清单-协作版.xlsx 指派；网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
+    },
+    {
+      "id": "azure-students",
+      "name": "Azure for Students",
+      "url": "https://azure.microsoft.com/en-us/free/students",
+      "patterns": [
+        "\\$100",
+        "free",
+        "students",
+        "credit"
+      ],
+      "note": "信息源清单-协作版.xlsx 指派"
+    },
+    {
+      "id": "gemini-rate-limits",
+      "name": "Gemini API 限流",
+      "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "patterns": [
+        "free tier",
+        "RPD",
+        "requests per day"
+      ],
+      "note": "网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
+    },
+    {
+      "id": "groq-rate-limits",
+      "name": "Groq 限流",
+      "url": "https://console.groq.com/docs/rate-limits",
+      "patterns": [
+        "free tier",
+        "TPD",
+        "requests per day"
+      ],
+      "disabled": true,
+      "note": "403 硬反爬(任何UA)——转真浏览器/人工盯防 2026-10-28"
+    },
+    {
+      "id": "moonshot-pricing",
+      "name": "Kimi 开放平台定价",
+      "url": "https://platform.kimi.com/docs/pricing/chat",
+      "patterns": [
+        "代金券",
+        "15 元",
+        "免费",
+        "百万 ?tokens"
+      ]
+    },
+    {
+      "id": "bailian-pricing",
+      "name": "阿里云百炼定价",
+      "url": "https://help.aliyun.com/zh/model-studio/models",
+      "patterns": [
+        "免费额度",
+        "限时免费",
+        "赠送"
+      ]
+    },
+    {
+      "id": "minimax-pricing",
+      "name": "MiniMax 开放平台定价",
+      "url": "https://platform.minimax.cn/docs/pricing/overview.md",
+      "patterns": [
+        "M3",
+        "五折",
+        "折扣",
+        "百万 ?tokens"
+      ]
+    },
+    {
+      "id": "sambanova-rate-limits",
+      "name": "SambaNova 限流",
+      "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
+      "patterns": [
+        "Free Tier",
+        "Developer Tier",
+        "RPM",
+        "20M"
+      ]
+    },
+    {
+      "id": "together-pricing",
+      "name": "Together AI 定价",
+      "url": "https://www.together.ai/pricing",
+      "patterns": [
+        "free",
+        "\\$0"
+      ]
+    },
+    {
+      "id": "cerebras-pricing",
+      "name": "Cerebras 定价",
+      "url": "https://www.cerebras.ai/pricing",
+      "patterns": [
+        "\\$5",
+        "credit",
+        "payment method"
+      ]
+    },
+    {
+      "id": "mistral-usage-limits",
+      "name": "Mistral 用量限额",
+      "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+      "patterns": [
+        "free",
+        "Experiment",
+        "limits"
+      ],
+      "note": "网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
+    },
+    {
+      "id": "cohere-rate-limits",
+      "name": "Cohere 限流",
+      "url": "https://docs.cohere.com/docs/rate-limits",
+      "patterns": [
+        "1,000",
+        "Trial",
+        "req ?/ ?min"
+      ]
+    },
+    {
+      "id": "zcode-changelog",
+      "name": "ZCode 官网更新日志",
+      "url": "https://zcode.z.ai/changelog",
+      "patterns": [
+        "活动",
+        "体验",
+        "赠送",
+        "邀请"
+      ]
+    },
+    {
+      "id": "doubao-agent-explore",
+      "name": "豆包智能体广场",
+      "url": "https://www.doubao.com/pc/agent-explore",
+      "patterns": [
+        "免费",
+        "额度",
+        "无限",
+        "试用"
+      ],
+      "note": "老板指派 2026-10-27；CSR 壳静态 0 命中属预期，留位观察 SSR 恢复（robots Allow）；羊毛情报靠真浏览器巡检"
+    },
+    {
+      "id": "doubao-quota-rules",
+      "name": "豆包天天领额度活动规则",
+      "url": "https://lf3-cdn-tos.draftstatic.com/obj/ies-hotsoon-draft/incentive-campaign-rules/f7f2c423-c770-44e7-9be4-bd67a28f074e.html",
+      "patterns": [
+        "活动赠送额度",
+        "签到",
+        "有效期",
+        "三期|四期|五期"
+      ],
+      "note": "活动规则官方原文（静态可抓），规则改版/期数更替即告警"
+    },
+    {
+      "id": "zhipu-hangzhou-rules",
+      "name": "智谱杭州 Coding Plan 活动规则",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules",
+      "patterns": [
+        "减免",
+        "Coding Plan",
+        "额度"
+      ]
+    },
+    {
+      "id": "alibabacloud-enproductmodel",
+      "name": "Alibaba Cloud Model Stud",
+      "url": "https://www.alibabacloud.com/en/product/modelstudio",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "api-docs-docsreleasenot",
+      "name": "更新公告",
+      "url": "https://api-docs.siliconflow.cn/docs/release-notes/overview",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "aws-qdeveloperpric",
+      "name": "AI for Software Developm",
+      "url": "https://aws.amazon.com/q/developer/pricing/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "bailian-main",
+      "name": "Alibaba Cloud Model Stud",
+      "url": "https://bailian.console.alibabacloud.com/?apiKey=1",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "bailian-main",
+      "name": "大模型服务平台百炼控制台",
+      "url": "https://bailian.console.aliyun.com/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "bazaarlink-docsapi",
+      "name": "API 參考文件｜聊天、嵌入與模型路由",
+      "url": "https://bazaarlink.ai/docs/api#free-models",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "cloud-productwenxinw",
+      "name": "千帆大模型平台-企业级一站式大模型开发及应用开发",
+      "url": "https://cloud.baidu.com/product/wenxinworkshop",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "cloud-iamapikeys",
+      "name": "Log in to IBM Cloud – IB",
+      "url": "https://cloud.ibm.com/iam/apikeys",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28；网络层不可达(VPN路由相关)间歇失败属预期 2026-10-28"
+    },
+    {
+      "id": "cloud-apis",
+      "name": "API Keys",
+      "url": "https://cloud.sambanova.ai/apis",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "cloud-accountak",
+      "name": "硅基流动统一登录",
+      "url": "https://cloud.siliconflow.cn/account/ak",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "cloud-producthunyuan",
+      "name": "腾讯混元大模型_大语言模型_自然语言大模型- 腾",
+      "url": "https://cloud.tencent.com/product/hunyuan",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "code-docs",
+      "name": "Overview - Claude Code D",
+      "url": "https://code.claude.com/docs",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "codeium-docs",
+      "name": "Discord",
+      "url": "https://codeium.com/docs",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "console-main",
+      "name": "百度智能云控制台-管理中心",
+      "url": "https://console.bce.baidu.com/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "console-tokenhub",
+      "name": "登录 - 腾讯云",
+      "url": "https://console.cloud.tencent.com/tokenhub",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "console-main",
+      "name": "Upstage Console",
+      "url": "https://console.upstage.ai/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "console-ark",
+      "name": "火山方舟 - 首页",
+      "url": "https://console.volcengine.com/ark",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "cursor-enpricing",
+      "name": "Cursor · Pricing",
+      "url": "https://cursor.com/en/pricing",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "developer-radeontokenfac",
+      "name": "Radeon Cloud",
+      "url": "https://developer.amd.com.cn/radeon/tokenfactory",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "developer-zonelist",
+      "name": "腾讯云开发者社区-腾讯云",
+      "url": "https://developer.cloud.tencent.com/zone/list",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "developer-codeartscohtml",
+      "name": "Developer Events_Develop",
+      "url": "https://developer.huaweicloud.com/codeartsco.html?source=dmzntgwltcsdn1&sourcead=dmzntgwltcsdncommunity9",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "developers-workersaiplatf",
+      "name": "Pricing · Cloudflare Wor",
+      "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "doc-formsdfoox09n0",
+      "name": "收集表",
+      "url": "https://doc.weixin.qq.com/forms/AJEAIQdfAAoAVIAoAZxAL0CN9ODn0Xvaf?page=1",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-amazonqlatesta",
+      "name": "What is Amazon Q Develop",
+      "url": "https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/what-is.html",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "gh-en-copilot-how-tos-manage-y",
+      "name": "Access Copilot Pro for f",
+      "url": "https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro",
+      "patterns": [
+        "free",
+        "免费",
+        "额度",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-guidesbillinga",
+      "name": "Billing & Deposits | Gon",
+      "url": "https://docs.gonkabroker.com/guides/billing-and-deposits/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-generalcompany",
+      "name": "Inference API - Hetzner ",
+      "url": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-main",
+      "name": "LiteLLM documentation | ",
+      "url": "https://docs.litellm.ai",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-limits",
+      "name": "Limits - LLM7.io Documen",
+      "url": "https://docs.llm7.io/limits",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-main",
+      "name": "What is Qoder - Qoder",
+      "url": "https://docs.qoder.com/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-idenewplansand",
+      "name": "Plans &amp; billing - Do",
+      "url": "https://docs.trae.ai/ide/new-plans-and-billing",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-main",
+      "name": "xKiro API Documentation",
+      "url": "https://docs.xkiro.com",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "docs-guidesdeveloph",
+      "name": "HTTP API Calls - Overvie",
+      "url": "https://docs.z.ai/guides/develop/http/introduction",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "ecloud-main",
+      "name": "移动云官网-智能新空间",
+      "url": "https://ecloud.10086.cn/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "endpoints-main",
+      "name": "AI Endpoints - Powerful,",
+      "url": "https://endpoints.ai.cloud.ovh.net",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "gh-aipmandy-freetoken-blob-daf",
+      "name": "FreeToken/README.md at d",
+      "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/daf796ce49bdaf7e1d70c0085f8b36f5a8909b89/README.md",
+      "patterns": [
+        "free",
+        "免费",
+        "额度",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28；blob→raw 修复 2026-10-28"
+    },
+    {
+      "id": "cursor-pricing",
+      "name": "Cursor 定价",
+      "url": "https://cursor.com/pricing",
+      "patterns": [
+        "free",
+        "pricing",
+        "credits",
+        "\\$\\d+",
+        "tier"
+      ],
+      "note": "长期源自动并入 2026-10-28（外网 AI IDE 免费档盯防）"
+    },
+    {
+      "id": "windsurf-pricing",
+      "name": "Devin 定价(Windsurf 已并入)",
+      "url": "https://devin.ai/pricing",
+      "patterns": [
+        "free",
+        "pricing",
+        "credits",
+        "\\$\\d+",
+        "tier"
+      ],
+      "note": "windsurf.com 308→devin.ai；原 Windsurf 免费档信息现归 Devin 名下 2026-10-28"
+    },
+    {
+      "id": "monkeycode-docs",
+      "name": "MonkeyCode 官方文档",
+      "url": "https://monkeycode.docs.baizhi.cloud",
+      "patterns": [
+        "免费",
+        "额度",
+        "token",
+        "每日"
+      ],
+      "note": "长期源并入 2026-10-28（每日免费 token 政策盯防）"
+    },
+    {
+      "id": "competitor-pencilai",
+      "name": "竞品雷达·Token羊毛党",
+      "url": "https://token.pencilai.top",
+      "patterns": [
+        "免费",
+        "额度",
+        "优惠",
+        "套餐",
+        "折扣"
+      ],
+      "note": "竞品监测：同类汇总站（本地agent免费模型/编程套餐，网页聊天不收录）静态可抓，其上新即告警 2026-10-28"
+    },
+    {
+      "id": "inferbase-docsgettingsta",
+      "name": "Quickstart · Docs | Infe",
+      "url": "https://inferbase.ai/docs/getting-started/quickstart",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "inference-docs-supportratelim",
+      "name": "Rate Limits - Cerebras I",
+      "url": "https://inference-docs.cerebras.ai/support/rate-limits",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "kilo-docsgatewaymod",
+      "name": "Models &amp; Providers",
+      "url": "https://kilo.ai/docs/gateway/models-and-providers",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "longcat-platformdocszh",
+      "name": "快速开始 | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/zh/",
+      "patterns": [
+        "免费",
+        "赠送",
+        "额度",
+        "free",
+        "pricing"
+      ],
+      "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "omniroute-repo",
+      "name": "OmniRoute 白嫖网关(3.7万Star)",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "patterns": [
+        "free",
+        "免费",
+        "token",
+        "额度"
+      ],
+      "note": "神级工具源：本地网关聚合200-300+提供商，/dashboard/free-tiers 实时免费额度（15-16亿/月）——README/releases 盯防 2026-10-28"
+    },
+    {
+      "id": "lolo-freellm",
+      "name": "免费LLM API收集(持续更新)",
+      "url": "https://blog.lololowe.com/posts/fe0d/",
+      "patterns": [
+        "免费",
+        "额度",
+        "token",
+        "领取"
+      ],
+      "note": "Key 获取合集页（11 平台直链），平台政策变化即内容变化 2026-10-28 评估通过"
+    },
+    {
+      "id": "competitor-aiyangmao",
+      "name": "竞品雷达·AI羊毛情报站",
+      "url": "https://aiyangmao.xyz",
+      "patterns": [
+        "免费",
+        "羊毛",
+        "额度",
+        "token"
+      ],
+      "note": "老板指派 2026-10-28；同类竞品+排版学习对象（三主题皮肤 light/dark/neon·卡片圆角·CSS 变量皮肤系统）；robots Allow 静态可抓 359KB"
+    },
+    {
+      "id": "lingyiwanwu-pricing",
+      "name": "零一万物平台",
+      "url": "https://platform.lingyiwanwu.com/",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "官方平台 yi 系列定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "moonshot-global-pricing",
+      "name": "Moonshot 国际站",
+      "url": "https://platform.moonshot.cn/",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "Kimi 国际站定价分轨（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "minimax-global-pricing",
+      "name": "MiniMax 国际站",
+      "url": "https://platform.minimax.io/",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "MiniMax 海外定价分轨（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "xiaomi-mimo-platform",
+      "name": "小米 MiMo 开放平台",
+      "url": "https://platform.xiaomimimo.com/",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "MiMo-2.5 低价/重置额度盯防（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "tiangong-modelplatform",
+      "name": "昆仑万维天工",
+      "url": "https://model-platform.tiangong.cn/",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "天工大模型平台定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "qoder-global-pricing",
+      "name": "Qoder 国际站",
+      "url": "https://qoder.com/pricing",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "Qoder 海外五档定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "trae-global-pricing",
+      "name": "Trae 国际站",
+      "url": "https://trae.ai/pricing",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "TRAE 五档定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "ollama-pricing",
+      "name": "Ollama",
+      "url": "https://ollama.com/pricing",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "本地推理+云定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "warp-pricing",
+      "name": "Warp",
+      "url": "https://www.warp.dev/pricing",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "AI 终端定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "tabnine-pricing",
+      "name": "Tabnine",
+      "url": "https://www.tabnine.com/pricing/",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "代码补全定价（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "sensenova-platform",
+      "name": "商汤 SenseNova 平台",
+      "url": "https://platform.sensenova.cn",
+      "patterns": [
+        "免费",
+        "价格",
+        "credits",
+        "额度",
+        "token",
+        "Trial",
+        "Free"
+      ],
+      "note": "商汤官方平台盯防（替代证书异常域名）（候选池收录 v2.8.1）"
+    },
+    {
+      "id": "deepinfra-pricing",
+      "name": "DeepInfra 定价",
+      "url": "https://deepinfra.com/prices",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；免费起·按量"
+    },
+    {
+      "id": "fireworks-pricing",
+      "name": "Fireworks 定价",
+      "url": "https://fireworks.ai/pricing",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；$1 起步积分"
+    },
+    {
+      "id": "modal-pricing",
+      "name": "Modal 定价",
+      "url": "https://modal.com/pricing",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；$30/月免费积分(历史口径)"
+    },
+    {
+      "id": "novita-pricing",
+      "name": "Novita 定价",
+      "url": "https://novita.ai/pricing",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；free-to-start·130模型"
+    },
+    {
+      "id": "xai-pricing",
+      "name": "xAI 定价",
+      "url": "https://console.x.ai",
+      "patterns": [
+        "free",
+        "credit",
+        "tier",
+        "\\$\\d+",
+        "pricing"
+      ],
+      "note": "海外扩容 2026-10-28；负情报盯防(免费档已退场)"
+    },
+    {
+      "id": "ov-kilo-pricing",
+      "name": "Kilo Code",
+      "url": "https://kilo.ai/pricing",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-taotoken",
+      "name": "TaoToken 聚合网关",
+      "url": "https://taotoken.net",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-llm7-docs",
+      "name": "llm7 免费聚合",
+      "url": "https://docs.llm7.io",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-agnes-ai",
+      "name": "Agnes AI",
+      "url": "https://platform.agnes-ai.com",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-regolo-pricing",
+      "name": "Regolo.ai",
+      "url": "https://regolo.ai/pricing/",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-tokenharbor",
+      "name": "TokenHarbor",
+      "url": "https://tokenharbor.ai/pricing",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-iteracompute",
+      "name": "IteraCompute",
+      "url": "https://platform.iteracompute.com/api-keys",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-upstage",
+      "name": "Upstage",
+      "url": "https://console.upstage.ai",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-replicate-pricing",
+      "name": "Replicate",
+      "url": "https://replicate.com/pricing",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "ov-hf-inference",
+      "name": "HuggingFace 推理",
+      "url": "https://huggingface.co/docs/inference-providers/index",
+      "patterns": [
+        "free",
+        "Free",
+        "credits",
+        "额度",
+        "免费",
+        "token",
+        "rate limit",
+        "trial"
+      ],
+      "lane": "ov-aggregator",
+      "note": "海外聚合商专项（老板指令 10-29）"
+    },
+    {
+      "id": "aliyun-codingplan",
+      "name": "阿里云 Coding Plan 文档",
+      "url": "https://help.aliyun.com/zh/model-studio/coding-plan",
+      "patterns": [
+        "7.9",
+        "首月",
+        "7000",
+        "tokens",
+        "免费"
+      ],
+      "note": "价格战核心条目盯防 2026-10-29（首月7.9元+7000万tokens+9万次请求）"
+    },
+    {
+      "id": "ov-opencode-data",
+      "name": "OpenCode 用量/价格数据页",
+      "url": "https://dev.opencode.ai/data",
+      "patterns": [
+        "deepseek",
+        "price",
+        "\\$0.30",
+        "\\$1.20",
+        "token"
+      ],
+      "lane": "ov-aggregator",
+      "note": "老板指定比价参考源（10-29）；静态 HTML 可抓"
+    },
+    {
+      "id": "ctyun-ai-zhuanxiang",
+      "name": "天翼云大模型AI专项",
+      "url": "https://www.ctyun.cn/act/AI/zhuanxiang",
+      "patterns": [
+        "免费",
+        "额度",
+        "GLM",
+        "包月",
+        "Cursor"
+      ],
+      "note": "运营商层首源 2026-10-29（2500万Tokens/息壤平台活动页，静态941KB富内容）"
+    },
+    {
+      "id": "cucloud-tokenplan",
+      "name": "联通云 Token Plan 活动",
+      "url": "https://www.cucloud.cn/information/535/7137.html",
+      "patterns": [
+        "600",
+        "Token",
+        "免费",
+        "注册"
+      ],
+      "note": "运营商层第二源 2026-10-29（600万Tokens活动页，静态540KB）"
+    }
+  ]
 }

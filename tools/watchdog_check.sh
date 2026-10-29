@@ -9,6 +9,6 @@ alert() {
 }
 if [ ! -f "$HB" ]; then alert "🚨 心跳文件不存在——找源管线未启动，请在 ZCode 手动拉起一轮巡检"; fi
 AGE=$(( ($(date +%s) - $(stat -f %m "$HB")) / 60 ))
-if [ "$AGE" -gt 35 ]; then
-  alert "🚨 找源巡检心跳已 ${AGE} 分钟未跳（阈值35分钟）。检查 ZCode 自动化「TokenMost 爬虫助理每15分钟找源巡检」，必要时手动拉起。"
+if [ "$AGE" -gt 360 ]; then  # 5小时巡检节奏（2026-10-29 调整，原35分钟）
+  alert "🚨 找源巡检心跳已 ${AGE} 分钟未跳（阈值360分钟）。检查 ZCode 自动化「TokenMost 爬虫助理每5小时找源巡检」，必要时手动拉起。"
 fi

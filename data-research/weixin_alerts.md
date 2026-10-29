@@ -19,3 +19,26 @@
 - 📰 标题雷达 [Claude Code 折扣] Codex不打算让Claude Code好过
 - 📰 标题雷达 [Claude Code 折扣] Claude Code -p 成为智能函数
 - 📰 标题雷达 [Claude Code 折扣] 为什么要用Claude Code来管理PMs&mdash;&mdash;而不是用 Claude.ai
+
+## 2026-10-28 19:22 UTC（轮 13，查询：agent 免费 额度）
+- 🆕 公众号新文 [?] 别再乱买 Token 了:这份&ldquo;免费 Agent / 服务器 / 模型额度&rdquo;清单,我帮你筛过一遍 → https://mp.weixin.qq.com/s?src=11&timestamp=1793215366&ver=7
+- 📰 标题雷达 [agent 免费 额度] 手机里免费的 AI 编程 Agent:FreeMilk 每天白送 GLM / DeepSeek / GPT 额度
+- 📰 标题雷达 [agent 免费 额度] 给 AI Agent 加上联网搜索:这些免费 API 值得收藏
+- 📰 标题雷达 [agent 免费 额度] Magpie保姆级教程:一个Agent用遍多个平台的免费AI额度,还能自动签到!
+- 📰 标题雷达 [agent 免费 额度] Orca AI 编排器教程:多 agent 并行 worktree 实战与配额管理避坑
+
+## 2026-10-28 20:22 UTC（轮 17，查询：AI 编程 折扣）
+- 🆕 公众号新文 [?] OpenAI靠打折,抢到了编程大客户 → https://mp.weixin.qq.com/s?src=11&timestamp=1793218970&ver=7
+- 📰 标题雷达 [AI 编程 折扣] 告别AI编程配置繁琐!CC Switch一键切换API
+- 📰 标题雷达 [AI 编程 折扣] Tokscale:AI 编程成本的可观测性工具
+- 📰 标题雷达 [AI 编程 折扣] OpenAI正在用大幅折扣,挖走Anthropic的企业大客户.
+- 📰 标题雷达 [AI 编程 折扣] AI编程实战&middot;第7章
+
+## 2026-10-28 22:52 UTC（轮 25，查询：Claude Code 折扣）
+- 📰 标题雷达 [Claude Code 折扣] 拆开 Claude Code 源码后,我才看懂 AI 编程助手真正厉害的地方
+
+## 2026-10-28 23:52 UTC（轮 29，查询：agent 免费 额度）
+- 📰 标题雷达 [agent 免费 额度] WorkBuddy 每天白拿 100 积分!3 个 agent 免费额度,我这样搭成省钱组合
+
+## 2026-10-29 01:07 UTC（轮 33，查询：AI 编程 折扣）
+- 📰 标题雷达 [AI 编程 折扣] AI编程工具是&ldquo;文档&rdquo;驱动的新范式

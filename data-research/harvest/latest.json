@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-28T23:04:55Z",
+  "harvested_at": "2026-10-29T01:07:29Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -637,10 +637,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -730,6 +726,10 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -754,7 +754,7 @@
         },
         {
           "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "*   不可用   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格"
+          "context": "次免费搜索请求（在所有 Gemini 3 及更新型号之间共享），超出后按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格"
         },
         {
           "match": "免费层级   付费层级（美元/100 万个 token",
@@ -763,6 +763,10 @@
         {
           "match": "免费层级   付费层级（美元/100 万个 token",
           "context": "日之前为 0.05 美元。 2026 年 12 月 1 日起为 0.10 美元。 仅限隐式缓存（不支持显式缓存）。       用于改进 Google 产品   不可用   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+        },
+        {
+          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
+          "context": "次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条"
         },
         {
           "match": "免费层级   付费层级（美元/100 万个 token",
@@ -786,11 +790,15 @@
         },
         {
           "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "用 **   每月 5,000 次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
+          "context": "搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
         },
         {
           "match": "免费层级   付费层级（美元/100 万个 token",
           "context": "6-flash         在 Google AI Studio 中试用        Google 的上一代 Flash 模型，在一般性智能体任务和日常任务中兼顾了速度和多模态功能。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+        },
+        {
+          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
+          "context": "搜索请求（在所有 Gemini 3 及更新型号之间共享），超出后按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格"
         },
         {
           "match": "免费层级   付费层级（美元/100 万个 token",
@@ -850,15 +858,7 @@
         },
         {
           "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "在所有 Gemini 3 及更新的模型中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ge         在 Google AI Studio 中试用        Gemini 3.1 Flash 图片生成模型专为速度和效率而打造，非常适合快速交互式响应和高吞吐量场景。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.50 美元（文本/图片）       输出价格   不可用   3 美元（文本和思考）   60.00 美元（图片）   相当于每张 0.5K 图片 0.045 美元 *   每张 1K"
-        },
-        {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "oogle AI Studio 中试用        Gemini 3.1 Flash Lite Image 模型是图片生成系列中的效率专家，专为超低延迟和高性价比的图片生成和编辑而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.25 美元（文本/图片/视频）       输出价格   不可用   1.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 分辨率图片 0.0336 美元 *"
+          "context": "中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
         }
       ]
     },
@@ -996,7 +996,7 @@
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
       "status": "ok",
-      "hits": 11,
+      "hits": 12,
       "findings": [
         {
           "match": "$10       第 2 层级   $50       第 3 ",
@@ -1016,7 +1016,7 @@
         },
         {
           "match": "每日 token",
-          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，"
+          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。 内置工具也有特定的速率限制。例如，在 Gemini 3 及更新的模型上，依托 Google 搜索进行接地功能在 Gemini Developer API 上每个项目每天默认最多可发出 1,500 个请求 (RPD)"
         },
         {
           "match": "RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RP",
@@ -1031,8 +1031,12 @@
           "context": "的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)"
         },
         {
+          "match": "RPD)（请参阅 依托 Google 搜索进行接地 ）",
+          "context": "oken 数量限制 (TPD)。 内置工具也有特定的速率限制。例如，在 Gemini 3 及更新的模型上，依托 Google 搜索进行接地功能在 Gemini Developer API 上每个项目每天默认最多可发出 1,500 个请求 (RPD)（请参阅 依托 Google 搜索进行接地 ）。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这"
+        },
+        {
           "match": "RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强",
-          "context": "能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
+          "context": "Developer API 上每个项目每天默认最多可发出 1,500 个请求 (RPD)（请参阅 依托 Google 搜索进行接地 ）。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
         },
         {
           "match": "RPM）",
@@ -2628,7 +2632,7 @@
         },
         {
           "match": "free",
-          "context": "6.00% 6.00% By seat tier By seat tier 𝕏 Money cashback 3% with Direct Deposit 3% 3% 3% 3% By seat tier By seat tier Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
         },
         {
           "match": "Pricing",
@@ -2673,7 +2677,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "例如：企业微信智能机器人、QQ、飞书、钉钉等）、自动决策与任务执行能力、预设的技能（Skills）能力。它能控制您的终端执行操作，而不是只出主意。 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -3265,8 +3269,9 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "error",
-      "error": "RemoteDisconnected: Remote end closed connection without response"
+      "status": "ok",
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "endpoints-main",
@@ -4460,8 +4465,57 @@
       "name": "Trae 国际站",
       "url": "https://trae.ai/pricing",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 12,
+      "findings": [
+        {
+          "match": "$0   Start for free Auto mode on",
+          "context": "te with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all m"
+        },
+        {
+          "match": "$20 per month, auto-renews To get",
+          "context": "yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade"
+        },
+        {
+          "match": "$20 usage / month Unlimited Autoc",
+          "context": "ited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus"
+        },
+        {
+          "match": "$60 per month, auto-renews Everyt",
+          "context": "uto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per mo"
+        },
+        {
+          "match": "$60 usage / month (3× Pro) Up to ",
+          "context": "plete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usag"
+        },
+        {
+          "match": "$200 per month, auto-renews Everyt",
+          "context": "news Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade"
+        },
+        {
+          "match": "$200 usage / month (10× Pro) Model",
+          "context": "o) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compar"
+        },
+        {
+          "match": "$ 20 Basic usage $ 60 Basic usage ",
+          "context": "Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited U"
+        },
+        {
+          "match": "$ 200 Basic usage Queue Priority St",
+          "context": "o Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited Unlimited Unlimited Concurrent Cloud"
+        },
+        {
+          "match": "Free",
+          "context": "aborate with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-r"
+        },
+        {
+          "match": "free",
+          "context": "gence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started"
+        },
+        {
+          "match": "Free",
+          "context": "ccess Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $"
+        }
+      ]
     },
     {
       "id": "ollama-pricing",
@@ -5106,14 +5160,8 @@
       "id": "xai-pricing",
       "name": "xAI 定价",
       "url": "https://console.x.ai",
-      "status": "ok",
-      "hits": 1,
-      "findings": [
-        {
-          "match": "credit",
-          "context": "Manage your team Invite members and set roles. Access latest models Grok, voice, and image. Centralized billing Usage, credits, and invoices."
-        }
-      ]
+      "status": "error",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "id": "ov-kilo-pricing",
@@ -5572,27 +5620,27 @@
         },
         {
           "match": "free",
-          "context": "per-token routes. Paid routes are not kept for training and are not stored beyond a five-minute exact-match cache. The free models are separate: they follow the free-model retention policy, you enable them yourself in your dashboard, and subsc"
+          "context": "d, apart from a cache of up to five minutes and short excerpts kept when an automated safety check flags a request. The free models are separate: they follow the free-model policy, you enable them yourself in your dashboard, and subscribing nei"
         },
         {
           "match": "free",
-          "context": "t for training and are not stored beyond a five-minute exact-match cache. The free models are separate: they follow the free-model retention policy, you enable them yourself in your dashboard, and subscribing neither switches them on nor counts"
+          "context": "s and short excerpts kept when an automated safety check flags a request. The free models are separate: they follow the free-model policy, you enable them yourself in your dashboard, and subscribing neither switches them on nor counts as consen"
         },
         {
           "match": "free",
-          "context": "cy Privacy Terms Terms Refund Refund Safety Safety Service level Service level GDPR GDPR Report bug Sign in Sign in Try free"
+          "context": "those prompts and responses for diagnostics, safety, optimisation and model or product improvement. Our staff may read free-route conversations and may use third-party AI tools to help analyze them, and the providers that serve free models may"
         },
         {
-          "match": "token",
-          "context": "Pricing — pay per token or a monthly Pass · Token Harbor Loading Rudder.chat Powered by Token Harbor Playground Models Pricing Rudder.chat Toke"
+          "match": "free",
+          "context": "f may read free-route conversations and may use third-party AI tools to help analyze them, and the providers that serve free models may use them under their own terms, including to train their own models. We do not train models on them ourselve"
         },
         {
-          "match": "Token",
-          "context": "oken or a monthly Pass · Token Harbor Loading Rudder.chat Powered by Token Harbor Playground Models Pricing Rudder.chat Token Harbor Chat Models Models Pricing Pricing Connect Blog Blog Docs Docs One API · Every model Choose how far you want to"
+          "match": "free",
+          "context": "icy . Last updated October 29, 2026 . What changed: paid routes now list the cache and safety-check excerpts they keep; free routes say staff may read conversations. © 2026 Token Harbor Blog Blog Lab Lab FAQ FAQ Privacy Privacy Terms Terms Refu"
         },
         {
-          "match": "Token",
-          "context": "and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes Deep"
+          "match": "free",
+          "context": "Terms Refund Refund Safety Safety Service level Service level GDPR GDPR Cookie settings Report bug Sign in Sign in Try free"
         }
       ]
     },
@@ -5897,128 +5945,168 @@
       "id": "ov-opencode-data",
       "name": "OpenCode 用量/价格数据页",
       "url": "https://dev.opencode.ai/data",
+      "status": "error",
+      "error": "HTTPError: HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "id": "ctyun-ai-zhuanxiang",
+      "name": "天翼云大模型AI专项",
+      "url": "https://www.ctyun.cn/act/AI/zhuanxiang",
       "status": "ok",
       "hits": 30,
       "findings": [
         {
-          "match": "100 万 token",
-          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存"
+          "match": "免费tokens    AI创作平台套餐    Token",
+          "context": "n按量调用 · GPU算力租用 · 一站式全栈AI解决方案，赋能全行业低成本落地     AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上即享预置模板化创作工具，支持多类"
         },
         {
-          "match": "$0.20 muse-spark-1.3-contributor $0",
-          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
+          "match": "免费tokens",
+          "context": "天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上即享预置模板化创作工具，支持多类模型调用，随心随地开启 AI 内容生产。   【帮助文档】    AI创作平台（天翼云DramaFlow)基础会员  一站式AI内容"
         },
         {
-          "match": "$1.20 deepseek-v4-flash 输入 $0.30 输出",
-          "context": "会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-con"
+          "match": "免费领取Tokens",
+          "context": "企业解决方案    头部政企AI解决方案    通用场景AI解决方案  能力优势及资质 聚焦AI专项 · 打造全栈服务核心壁垒，以合规为基石、以算力为支撑、以模型服务为核心、以全场景适配为抓手，全方位满足客户AI开发、调用、部署全周期需求 免费领取Tokens 联系我们 智能客服 7*24小时为您解答问题 提交工单 为您解决专业的技术等问题 预约技术专家 专业技术构架师为您提供1对1解答     扫码联系您的专属客户经理 咨询热线：400-810-9889转1 7*24小时售后 无忧退款 免费备"
         },
         {
-          "match": "$1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ #",
-          "context": "00 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deep"
+          "match": "新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅",
+          "context": "业务扬帆出海，通达全球！   天翼云信创专区  NEW “一云多芯、一云多态”,国产化软件全面适配，国产操作系统及硬件芯片支持丰富   云上钜惠  爆款云主机全场特惠，2核4G只要1.8折起！   天翼云奖励推广计划  加入成为云推官，推荐新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅   天翼云用户体验官  NEW 您的洞察，重塑科技边界 息壤智算 领先开放的智算服务平台，提供算力、平台、数据、模型、应用“五位一体”智算服务体系，构建全流程的AI基础设施能力 星辰TokenHub   模型广场    体验中心    服"
         },
         {
-          "match": "每日 01 deepseek-v4-flash 0B token",
-          "context": "B 0B OCT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+          "match": "新用户享体验价(每个新用户限领取1次)，订购后不退不换  订购后不退不换 快速上手 尝鲜体验   32  ",
+          "context": "产。   产品优势  享有积分：1600 批量创作，8个并发任务 集成Seedance-2.5、MiniMax-H3等高阶模型 支持团队项目管理能力，账号席位5个 可生成Seedance2.0视频约34s（720P），具体以实际消耗为准  新用户享体验价(每个新用户限领取1次)，订购后不退不换  订购后不退不换 快速上手 尝鲜体验   32    .67  元/年   立省：66.33元/年  已抢购0%   立即订购    已抢购0%  新客专享   AI创作平台（天翼云DramaFlow)基础会员  一站式AI内容创作工具，云上赋能多场景内容高效生产。   产品优势  享有积"
         },
         {
-          "match": "DeepSeek",
-          "context": "8日, UTC 12:45 已更新 10月28日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SE"
+          "match": "新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    【配置指引】    Toke",
+          "context": "久固定提供任一指定模型。 AI工程师 高频AI开发   699    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠 展开更多 收起 Token Plan套餐订购专区 Token与GPU算力支持按需定制、灵活采购，新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    【配置指引】    Token Plan 基础版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM"
         },
         {
-          "match": "deepseek",
-          "context": "T 22 0B OCT 23 OCT 23 0B OCT 24 OCT 24 0B OCT 25 OCT 25 0B OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP"
+          "match": "1429万Token",
+          "context": "购买编码套餐   2  获得专属App Key   3  接入AI工具   查看教程》》    4  开启编码   查看教程》》    编程Token Plan 3000积分   入门体验，适合首次体验AI工具能力   产品优势  约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kim"
         },
         {
-          "match": "deepseek",
-          "context": "OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP 4 0B 0B 0B 0B 0B 0B 0B SEP 5 0B 0B 0B 0B 0B 0B 0B SEP 6 0B"
+          "match": "462万Token",
+          "context": "y   3  接入AI工具   查看教程》》    4  开启编码   查看教程》》    编程Token Plan 3000积分   入门体验，适合首次体验AI工具能力   产品优势  约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3  支持工"
         },
         {
-          "match": "deepseek",
-          "context": "CT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+          "match": "4762万Token",
+          "context": "一指定模型。 入门首选 适合学生、编程初学者   29    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 10000积分  日常使用，适合处理基础的开发任务   产品优势  约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
         },
         {
-          "match": "DeepSeek",
-          "context": "OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+          "match": "1538万Token",
+          "context": "29    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 10000积分  日常使用，适合处理基础的开发任务   产品优势  约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
         },
         {
-          "match": "deepseek",
-          "context": "ken DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token"
+          "match": "11905万Token",
+          "context": "定模型。 独立开发者 日常开发、代码补全   89    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 25000积分  轻量开发，适合处理较为复杂的开发任务   产品优势  约兑换11905万Token的minimax-m3，或3846万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：25000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
         },
         {
-          "match": "DeepSeek",
-          "context": "ibutor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较"
+          "match": "3846万Token",
+          "context": "9    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 25000积分  轻量开发，适合处理较为复杂的开发任务   产品优势  约兑换11905万Token的minimax-m3，或3846万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：25000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
         },
         {
-          "match": "deepseek",
-          "context": "n Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+          "match": "23810万Token",
+          "context": "型。 小型开发团队 复杂任务、项目重构   199    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 50000积分  专业开发，适合处理复杂项目的开发任务   产品优势  约兑换23810万Token的minimax-m3，或7692万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：50000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
         },
         {
-          "match": "DeepSeek",
-          "context": "token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+          "match": "7692万Token",
+          "context": "9    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 50000积分  专业开发，适合处理复杂项目的开发任务   产品优势  约兑换23810万Token的minimax-m3，或7692万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：50000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
         },
         {
-          "match": "deepseek",
-          "context": "OCT 22 0 OCT 23 OCT 23 5 OCT 24 OCT 24 0 OCT 25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0"
+          "match": "47619万Token",
+          "context": "阶开发者 复杂项目、持续迭代   399    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 100000积分  高频AI开发，适合处理复杂项目的持续迭代任务   产品优势  约兑换47619万Token的minimax-m3，或15385万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：100000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1"
         },
         {
-          "match": "deepseek",
-          "context": "25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0 0 0 0 0 SEP 5 0 0 0 0 0 0 0 SEP 6 0 0 0 0 0"
+          "match": "15385万Token",
+          "context": ".00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 100000积分  高频AI开发，适合处理复杂项目的持续迭代任务   产品优势  约兑换47619万Token的minimax-m3，或15385万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：100000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持"
         },
         {
-          "match": "deepseek",
-          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比"
+          "match": "1500万Tokens",
+          "context": "码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：TeleAgent、OpenClaw、OpenCode、Cursor、Cline、Chatbox、Codebuddy、Trae等 1500万Tokens 知识库问答 长上下文处理   39    .90  元/个/月 已抢购0%   立即订购    已抢购0%  开发者/中小企业   Token Plan 专业版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小"
         },
         {
-          "match": "deepseek",
-          "context": "。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 2"
+          "match": "1000万Tokens",
+          "context": "、预算难控等问题   产品优势  享受固定低价抵扣单价、输入输出 Token 统一抵扣、用量实时查询明细、售后技术支撑等专属权益 比按量付费成本更低，消耗透明可控，满足企业稳定大批量 AI 调用需求。 支持模型：DeepSeek v3.2 1000万Tokens 支持工具：TeleAgent等 个人尝鲜 轻量API调用   9    .90  元/个/月 已抢购0%   立即订购    已抢购0%  个人/家庭用户   Token Plan畅享版  推理高效、成本下降超60%，性价比突出，日常批量"
         },
         {
-          "match": "deepseek",
-          "context": "-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多"
+          "match": "4000万Tokens",
+          "context": "预算难控等问题   产品优势  可享受固定低价抵扣单价、输入输出 Token 统一抵扣、用量实时查询明细、售后技术支撑等专属权益 比按量付费成本更低，消耗透明可控，满足企业稳定大批量 AI 调用需求。 支持模型：DeepSeek v3.2 4000万Tokens 支持工具：TeleAgent等 小型应用开发者 日常API、内容生成   29    .90  元/个/月 已抢购0%   立即订购    已抢购0%  个人/家庭用户   Token Plan尊享版  推理高效、成本下降超60%，性价比"
         },
         {
-          "match": "deepseek",
-          "context": "▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 7 SEP 7 0 SEP 8 SEP 8 0 SEP 10 S"
+          "match": "免费",
+          "context": "天翼云大模型AI专项 - 天翼云          -->  活动 天翼云最新优惠活动，涵盖免费试用，产品折扣等，助您降本增效！   热门活动    安全隔离版OpenClaw  NEW OpenClaw云服务器专属“龙虾“套餐低至1.5折起   聚力AI赋能 天翼云大模型专项  大模型特惠专区·Token Plan 轻享包低至9.9"
         },
         {
-          "match": "DeepSeek",
-          "context": "5M OCT 23 OCT 23 31M OCT 24 OCT 24 103M OCT 25 OCT 25 1M OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 7 100.0% 0.0% 0.0% 0.0% SEP 8 100.0% 0.0% 0.0% 0.0% SEP 10 100.0% 0.0% 0.0% 0.0% SEP 11 100.0% 0."
+          "match": "免费",
+          "context": "天翼云信创专区  NEW “一云多芯、一云多态”,国产化软件全面适配，国产操作系统及硬件芯片支持丰富   云上钜惠  爆款云主机全场特惠，2核4G只要1.8折起！   天翼云奖励推广计划  加入成为云推官，推荐新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅   天翼云用户体验官  NEW 您的洞察，重塑科技边界 息壤智算 领先开放的智算服务平台，提供算力、平台、数据、模型、应用“五位一体”智算服务体系，构建全流程的AI基"
         },
         {
-          "match": "DeepSeek",
-          "context": ".0% OCT 25 100.0% 0.0% 0.0% 0.0% OCT 26 98.6% 1.0% 0.4% 0.0% OCT 27 87.0% 7.8% 5.2% 0.0% OCT 28 94.3% 4.6% 1.1% 0.0% 01 DeepSeek 0 token 94.3 % 02 Meta 0 token 4.6 % 03 Other 0 token 1.1 % [*] OCT 28 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 57% 02"
+          "match": "免费",
+          "context": "NEW “一云多芯、一云多态”,国产化软件全面适配，国产操作系统及硬件芯片支持丰富   云上钜惠  爆款云主机全场特惠，2核4G只要1.8折起！   天翼云奖励推广计划  加入成为云推官，推荐新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅   天翼云用户体验官  NEW 您的洞察，重塑科技边界 息壤智算 领先开放的智算服务平台，提供算力、平台、数据、模型、应用“五位一体”智算服务体系，构建全流程的AI基础设施能力 星辰"
         },
         {
-          "match": "deepseek",
-          "context": "a（opencode.ai/data）以及页面顶部显示的更新时间。 Model Comparisons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-"
+          "match": "免费",
+          "context": "国产化软件全面适配，国产操作系统及硬件芯片支持丰富   云上钜惠  爆款云主机全场特惠，2核4G只要1.8折起！   天翼云奖励推广计划  加入成为云推官，推荐新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅   天翼云用户体验官  NEW 您的洞察，重塑科技边界 息壤智算 领先开放的智算服务平台，提供算力、平台、数据、模型、应用“五位一体”智算服务体系，构建全流程的AI基础设施能力 星辰TokenHub   模型广场"
         },
         {
-          "match": "deepseek",
-          "context": "ons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent"
+          "match": "免费",
+          "context": "活动规则】    【配置指引】    Token Plan 基础版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：TeleAgent、OpenClaw、OpenCode、Cursor、Cline、Chatbox、Codebuddy、Trae等 1500万Tokens 知识库问答 长上下文处理"
         },
         {
-          "match": "deepseek",
-          "context": "age deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-c"
+          "match": "免费",
+          "context": "已抢购0%  开发者/中小企业   Token Plan 专业版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：TeleAgent、OpenClaw、OpenCode、Cursor、Cline、Chatbox、Codebuddy、Trae等 7000万Tokens 技术团队 智能体构建、工程任务"
         },
         {
-          "match": "deepseek",
-          "context": "use-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-contributor · test Top mode"
+          "match": "免费",
+          "context": "已抢购0%  开发者/中小企业   Token Plan 旗舰版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：TeleAgent、OpenClaw、OpenCode、Cursor、Cline、Chatbox、Codebuddy、Trae等 1.5亿Tokens 企业研发部门 大规模文档处理"
         },
         {
-          "match": "$0.30",
-          "context": "成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp $1.20 deepseek-v4-flash 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-"
+          "match": "免费",
+          "context": "ens 联系我们 智能客服 7*24小时为您解答问题 提交工单 为您解决专业的技术等问题 预约技术专家 专业技术构架师为您提供1对1解答     扫码联系您的专属客户经理 咨询热线：400-810-9889转1 7*24小时售后 无忧退款 免费备案 专家服务 售前咨询热线 400-810-9889转1 关注天翼云 服务与支持 备案中心 售前咨询 智能客服 自助服务 工单管理 客户公告 涉诈举报 账户管理 管理中心 订单管理 余额管理 发票管理 充值汇款 续费管理 快速入口 天翼云"
         },
         {
-          "match": "Token",
-          "context": "AI 模型使用排名 | OpenCode 数据 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 GitHub [ 220K ] 试用 OpenCode GitHub [ 220K ] 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 已更新 10月28日, UTC 12:"
+          "match": "免费",
+          "context": "400-810-9889转1 关注天翼云 服务与支持 备案中心 售前咨询 智能客服 自助服务 工单管理 客户公告 涉诈举报 账户管理 管理中心 订单管理 余额管理 发票管理 充值汇款 续费管理 快速入口 天翼云旗舰店 文档中心 最新活动 免费试用 信任中心 天翼云学堂 云网生态 甄选商城 渠道合作 云市场合作 了解天翼云 关于天翼云 天翼云APP 服务案例 新闻资讯 联系我们 热门产品 云电脑 弹性云主机 云电脑政企版 天翼云手机 云数据库 对象存储 云硬盘 Web应用防火墙"
         },
         {
-          "match": "token",
-          "context": "8日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SEP 3 0B SEP 4 SEP 4"
+          "match": "额度",
+          "context": "查看教程》》    编程Token Plan 3000积分   入门体验，适合首次体验AI工具能力   产品优势  约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3  支持工具：OpenClaw、Claude Code 等主流编"
         },
         {
-          "match": "token",
-          "context": "0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+          "match": "额度",
+          "context": "购0%  限时特惠   编程Token Plan 10000积分  日常使用，适合处理基础的开发任务   产品优势  约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工具：OpenClaw、Claude Code 等主流编"
+        }
+      ]
+    },
+    {
+      "id": "cucloud-tokenplan",
+      "name": "联通云 Token Plan 活动",
+      "url": "https://www.cucloud.cn/information/535/7137.html",
+      "status": "ok",
+      "hits": 6,
+      "findings": [
+        {
+          "match": "注册送福利啦！                 -->                          ",
+          "context": "最高享600万Tokens 免费用！联通云注册送福利啦！                 -->                                                                                                                                     联通云微信公众号注册云账户"
+        },
+        {
+          "match": "600万Tokens",
+          "context": "最高享600万Tokens 免费用！联通云注册送福利啦！                 -->"
+        },
+        {
+          "match": "免费",
+          "context": "中国站               中国站   简体中文         International   简体中文   English           文档       控制台             登录       免费注册               {{userInfo.iamUserName ? userInfo.iamUserName : userInfo.mainUserName}}                 账号中心   {{ifAtte"
+        },
+        {
+          "match": "注册",
+          "context": "联通云微信公众号注册云账户，福利加码送不停                 {{item.title}}                               {{product.title}}           {{list.title}}"
+        },
+        {
+          "match": "注册",
+          "context": "{peopleList.noReadMsg > 999 ? '999+' : peopleList.noReadMsg}}     工单管理   积分中心   我的社区   退出登录                     联通云微信公众号注册云账户，福利加码送不停                                   取消       0 || searchDocumentResultList.length > 0\"  @click.stop @click.sel"
+        },
+        {
+          "match": "注册",
+          "context": "可兑换的优惠券，请前往   积分中心   查看           {{userInfo.iamUserName ? userInfo.iamUserName : userInfo.mainUserName}}    退出登录       注册   登录                     {{ item.title }}                     {{ subItem.title }}        {{ subItem.description }}"
         }
       ]
     }

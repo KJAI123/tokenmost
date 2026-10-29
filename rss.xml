@@ -280,10 +280,10 @@
       <description>长期低价（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>商汤日日新：U1.5 文生图公测期完全免费：每 5 小时 1500 次请求（官方新闻页原文）</title>
+      <title>商汤日日新：U1.5 文生图公测免费 + 积分池翻倍：5h 窗口 6万→12万、周窗口 60万→120万 积分，免费公测模型 6→7</title>
       <link>https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741</link>
       <guid isPermaLink="false">sensenova-lite</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费（优惠以官方页面为准）</description>
     </item>
     <item>
@@ -735,11 +735,11 @@
       <description>免费模型 · 规则：Qoder 内免费调用，可一键配置接入任意 Harness；官方 X 宣发（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>云知声：云知声 U2-Flash（266B MoE）限时免费：公众号报一个月无限量调用，编程能力对标主力模型</title>
+      <title>云知声：云知声 U2-Flash（266B MoE）**不限量 0 元调用**：输入/缓存/输出全免费（限速 20 RPM / </title>
       <link>https://www.unisound.com</link>
       <guid isPermaLink="false">unisound-u2flash-free</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：限时免费活动，具体额度与入口以云知声开放平台公告为准（优惠以官方页面为准）</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：验证码登录→控制台建 Key→OpenAI 兼容 https://maas-api.unisound.com/v1 直调；活动结束另送 5 亿 Token · 截止 2026-10-31（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>豆包：豆包电脑版「天天领额度」（激励三期在场）：每日签到+活动页任务各得一笔活动赠送额度，免费/付费用户都可领，与 ZCode</title>
@@ -753,7 +753,7 @@
       <link>https://docs.bigmodel.cn/cn/update/promotion</link>
       <guid isPermaLink="false">zhipu-weekend-build</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：登录即可领，先到先得；清零周期与名额以控制台实领为准（优惠以官方页面为准）</description>
+      <description>长期活动 · 规则：App 每日 19:00 开领，仅 23:00–次日 09:00 可用（窗口极窄，错过作废）；先到先得（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>智谱 BigModel：拼好模·邀请有礼：受邀好友首订 GLM Coding Plan 享 9 折</title>
@@ -781,7 +781,7 @@
       <link>https://cloud.tencent.com/product/workbuddy</link>
       <guid isPermaLink="false">workbuddy-free</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：公测 Credits 进团队共享池；Pro 试用需绑卡开自动续费（积分 7 天有效）；Credits 不可提现转让，消耗随模型倍率浮动（Kimi K3 1.6x）（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：公测 Credits 进团队共享池；Pro 试用需绑卡开自动续费（积分 7 天有效）；Credits 不可提现转让，消耗随模型倍率浮动（Kimi K3 1.6x）；限免：混元 Hy3 全天/Hy4 夜间 23:00-8:00（10-31 止）（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>MonkeyCode：MonkeyCode（长亭科技，代码全栈开源 AGPL）免费档：每日 1000 万-3000 万 token（多源口径，</title>
@@ -810,6 +810,41 @@
       <guid isPermaLink="false">deepinfra-payg</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期低价 · 规则：按量计费无月费；部分模型有免费试用额度（以控制台为准）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>阶跃星辰：新用户最高 75 天免费（99 元 Flash Plus 套餐）：注册即得 30 天+登录 +15+首调 +15+邀 3</title>
+      <link>https://www.stepfun.com</link>
+      <guid isPermaLink="false">stepfun-75d</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：注册→客户端按提示做任务，天数自动累加；邀 3 人需新用户（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Qoder：Qoder Community Boost 第 4 轮：12,288 Credits 免费领（IDE/CLI 输入 /c</title>
+      <link>https://qoder.com</link>
+      <guid isPermaLink="false">qoder-boost-r4</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：10-30 23:59 截止；领到后仅 24h 有效——没现成任务别碰（领了不用=白扔） · 截止 2026-10-30（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>SCNet 国家超算互联网：Auto 夜间闲时免费：21:00–次日 9:00 算力零成本（今晚起剩 2 晚）</title>
+      <link>https://www.cstcloud.cn</link>
+      <guid isPermaLink="false">scnet-night-free</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：10-30 截止；夜间窗口使用 · 截止 2026-10-30（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>火山方舟：⚠️ kimi-k2.7-code 已于 10-28 14:00 下线</title>
+      <link>https://www.volcengine.com/docs/82369/1544109</link>
+      <guid isPermaLink="false">volc-k27-alias-warning</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>避雷 · 规则：迁移检查项：代码里用 kimi-latest 的立即显式指定新模型名（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>防扣费四条（全网通用）：⚠️ 防扣费清单：①讯飞 X2.6 领 10 亿时取消「用完继续计费」勾选 ②百炼手动开「额度用尽即停止调用」开关 ③网</title>
+      <link>https://bailian.console.aliyun.com</link>
+      <guid isPermaLink="false">anti-charge-checklist</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>避雷 · 规则：领取大额赠送时逐项检查计费开关；任何「通用兑换码」都是钓鱼（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
