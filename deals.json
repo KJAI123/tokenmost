@@ -161,7 +161,8 @@
   "verify_by": "auto",
   "tokens_wan": 1700,
   "via": "register",
-  "group": "百度"
+  "group": "百度",
+  "notes": "TK 10-29：千帆模型清单已进入文心 5.1/DeepSeek-V4/GLM-5 时代（新户额度随清单更新）"
  },
  {
   "id": "xinghuo-signup",
@@ -232,7 +233,8 @@
   "published": false,
   "verify_by": "auto",
   "group": "字节跳动",
-  "stale_reason": "源 coze-edition 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)"
+  "stale_reason": "源 coze-edition 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
+  "notes": "TK 巡检确认：旧版 500 点/天口径已过时，本条 10-26 实测口径为权威"
  },
  {
   "id": "dify-selfhost",
@@ -407,19 +409,19 @@
   "provider": "OpenRouter",
   "category": "reseller",
   "type": "free_tier",
-  "value": ":free 模型 16 个（recursive/flint-v1.0:free、xingchen-agi/xing4.0-29b-a4b:free、nvidia/nemotron-3.5-super-vl:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天",
+  "value": ":free 免费模型 19 款（API 实测 10-29）：Nemotron 3.5 Super VL/Lightning（1M ctx）、Laguna S/XS 2.1、Inkling/Inkling Small（1M）、dots-3-note（512K）、flint 等——含国产/新品轮换快，目录动态以 API 为准",
   "region": "global",
   "url": "https://openrouter.ai/models?max_price=0",
   "rule": "免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests",
   "verify_status": "verified",
-  "verified_at": "2026-10-28T00:36:17Z",
+  "verified_at": "2026-10-29T12:00:00Z",
   "difficulty": 2,
   "published": true,
   "verify_by": "auto",
-  "daily_wan": 20,
-  "daily_note": "默认 50 次/天 ×4K≈20 万/天；充 $10 解锁 1000 次/天≈400 万/天（估算）",
+  "daily_wan": 400,
+  "daily_note": "充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天",
   "group": "OpenRouter",
-  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛"
+  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛；10-29 API 直抓更新（19 款含 2 新品）；自动路由 openrouter/free 免选型"
  },
  {
   "id": "nvidia-nim",
@@ -3389,7 +3391,9 @@
   "group": "腾讯",
   "tokens_wan": 10000,
   "cny": 250,
-  "eq_note": "公测 5000 Credits 按牌价 2000=¥100 折 250 元≈1 亿 tok 当量（倍率浮动口径）"
+  "eq_note": "公测 5000 Credits 按牌价 2000=¥100 折 250 元≈1 亿 tok 当量（倍率浮动口径）",
+  "daily_wan": 4000,
+  "daily_note": "免费版每天白拿 100 积分（公众号实测帖 10-28）×1 credit≈2万 tok 当量≈400 万/天；加公测 5000 一次性"
  },
  {
   "id": "monkeycode-daily",
