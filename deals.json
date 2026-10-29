@@ -3768,5 +3768,22 @@
   "eq_wan": 60000,
   "eq_note": "起步档 $2,000 ×300 万 ≈ 6 亿当量（封顶 $200K 不计量防虚高）",
   "group": "初创额度"
+ },
+ {
+  "id": "qwen-app-5h-limit",
+  "provider": "千问",
+  "category": "agent",
+  "type": "free_tier",
+  "value": "千问客户端「工作」模式（agent 任务）免费试用额度有 5 小时滚动上限：达到上限即暂停服务、到点自动恢复（实测提示 02:29 恢复）；订阅千问专业会员可获取更多额度，发送「继续」即可恢复当前任务",
+  "region": "cn",
+  "url": "https://chat.qwen.ai",
+  "rule": "5 小时窗口制（用量窗口滚动）；窗口内 agent 任务消耗额度较快（实测 6 分 44 秒任务即触发上限提示）；等待重置或订阅后发「继续」续跑",
+  "notes": "老板客户端亲测截图直核（深氪qwen 客户端「工作」模式，2026-10-29 UTC 16:35）；千问试用额度具体 token 数官方未公布，白嫖按 5h 窗口规划任务；与 Claude Pro 的 5h 重置同款机制",
+  "verify_status": "verified",
+  "verified_at": "2026-10-29T16:35:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "register",
+  "group": "千问"
  }
 ]
