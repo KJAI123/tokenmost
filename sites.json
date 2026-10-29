@@ -134,6 +134,72 @@
     "name": "Coze 海外版",
     "url": "https://www.coze.com",
     "desc": "可接 GPT/Claude/Gemini"
+   },
+   {
+    "name": "ZCode",
+    "url": "https://zcode.z.ai",
+    "desc": "智谱官方编程 CLI，活动主阵地（每日 3 亿/体验套餐/拉新 1 亿）",
+    "hot": true
+   },
+   {
+    "name": "Claude Code",
+    "url": "https://claude.com/claude-code",
+    "desc": "Anthropic 官方编程 agent，各家国产免费额度均可接入",
+    "hot": false
+   },
+   {
+    "name": "Codex",
+    "url": "https://openai.com/codex",
+    "desc": "OpenAI 编程 agent（订阅内含）",
+    "hot": false
+   },
+   {
+    "name": "OpenCode",
+    "url": "https://opencode.ai",
+    "desc": "开源编程 CLI+Zen 网关（Go $10 含 $80 配额）",
+    "hot": true
+   },
+   {
+    "name": "Cursor",
+    "url": "https://cursor.com",
+    "desc": "AI IDE（X Subscription 共享池）",
+    "hot": false
+   },
+   {
+    "name": "OpenClaw",
+    "url": "https://openclaw.ai",
+    "desc": "开源 Claw 编程助手，自部署接任意 Key",
+    "hot": false
+   },
+   {
+    "name": "AutoClaw",
+    "url": "https://autoclaw.ai",
+    "desc": "自动化 Claw agent，开源可自部署",
+    "hot": false
+   },
+   {
+    "name": "TraeCode",
+    "url": "https://trae.cn",
+    "desc": "字节 Trae 编程国内站（Free 500 积分/月）",
+    "hot": false
+   },
+   {
+    "name": "TraeWork",
+    "url": "https://trae.ai",
+    "desc": "字节 Trae 工作台国际站",
+    "hot": false
+   },
+   {
+    "name": "CodeBuddy",
+    "url": "https://copilot.tencent.com",
+    "desc": "腾讯 CodeBuddy（Kimi-K2.5 免费+500 Credits/月）",
+    "hot": false
+   },
+   {
+    "name": "WorkBuddy",
+    "url": "https://cloud.tencent.com/product/workbuddy",
+    "desc": "腾讯 AI 办公助手（公测 5000 Credits+日 100 积分）",
+    "hot": false
    }
   ]
  },
