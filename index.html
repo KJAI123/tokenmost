@@ -544,6 +544,130 @@ function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2
 function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
 /* ============ 导航区渲染（侧边栏紧凑版 + 底部完整版） ============ */
+function freshness(d){
+  if(d.verify_status==='expired')return'<span class="badge b-red">❌ 已失效</span>';
+  if(d.verify_status!=='verified')return'<span class="badge b-amber">⚠️ 待复核</span>';
+  const a=d.verify_by==='auto'?'🤖':'✅';
+  const h=(Date.now()-new Date(d.verified_at))/36e5;
+  if(h<24)return `<span class="badge b-green">${a} ${a==='🤖'?'自动核验':'今日验证'}</span>`;
+  if(h<48)return `<span class="badge b-green">${a} 1天前</span>`;
+  if(h<168)return `<span class="badge b-green">${a} `+Math.floor(h/24)+`天前</span>`;
+  return `<span class="badge b-amber">⚠️ `+Math.floor(h/24)+`天前</span>`;
+}
+/* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
+function tokCell(d){
+  if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
+  if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${eq>=10000?(eq/10000).toFixed(2)+' 亿':Math.round(eq)+' 万'}</span><span class="unit">DS Flash等效</span></span>`;}
+  if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
+  if(d.cny)return`<span class="num">¥${d.cny}</span><span class="unit">额度</span>`;
+  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+' 亿':'~'+Math.round(d.daily_wan)+' 万'}</span><span class="unit">DS Flash等效/天</span></span>`;
+  if(d.daily_calls)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均~${d.daily_calls>=10000?(d.daily_calls/10000).toFixed(1)+'万':d.daily_calls}</span><span class="unit">次/天</span></span>`;
+  if(d.type==='free_tier'||d.via==='free')return'<span class="num">免费</span><span class="unit">长期</span>';
+  if(d.type==='price_low')return'<span class="num">低价</span><span class="unit">长期</span>';
+  if(d.type==='coupon')return'<span class="num">有码</span><span class="unit">折扣</span>';
+  if(d.type==='price_low')return'<span class="num">锚</span><span class="unit">牌价基准</span>';
+  if(d.type==='free_tier')return'<span class="num">∞</span><span class="unit">不限*</span>';
+  if(d.type==='student')return'<span class="num">🎓</span><span class="unit">学生价</span>';
+  return'<span class="num">—</span><span class="unit">'+(TYPE[d.type]||'')+'</span>';
+}
+/* 排序：DS Flash等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
+function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
+let sortKey='fresh';
+function render(){
+  if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
+  let list=DEALS.filter(d=>d.published!==false);
+  const claimedSet=getClaimed();
+  const PAID=new Set(['price_low','pricing_plan']);
+  if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
+  else if(curCat==='warn'){list=list.filter(d=>d.type==='warning'||d.verify_status==='expired');}
+  else{
+    list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning'&&d.verify_status!=='expired'&&d.category!=='intel_source');  // 主板块=纯免费且有效；价格进付费区，避雷/失效进避雷区，内部信源不上站
+    if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
+    else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
+    else if(curCat==='hasapi')list=list.filter(d=>{const s=siteFor(d);return s&&s.api});
+    else if(curCat!=='all')list=list.filter(d=>d.category===curCat);
+  }
+  if(curType)list=list.filter(d=>d.type===curType);
+  if(curQ)list=list.filter(d=>(d.provider+d.value+d.notes+d.id).toLowerCase().includes(curQ.toLowerCase()));
+  if(sortKey==='tokens')list.sort((a,b)=>tokSort(b)-tokSort(a));
+  else list.sort((a,b)=>{
+    const ra=a.verify_status==='verified'?0:1,rb=b.verify_status==='verified'?0:1;
+    if(ra!==rb)return ra-rb;
+    return new Date(b.verified_at)-new Date(a.verified_at);
+  });
+  const box=document.getElementById('cards');
+  if(!list.length){box.innerHTML='<div class="empty"><b>没有匹配的羊毛</b><span>换个关键词试试，或点上方「🆓 免费专区」查看全部 '+DEALS.filter(d=>d.published!==false&&!PAID_TYPES.has(d.type)).length+' 条免费情报（付费类在「💸 付费区」）</span></div>';return}
+  const rowHtml=d=>{
+    const s=siteFor(d),pname=s?s.name:d.provider;
+    const dl=d.deadline?`<span style="color:var(--red)">📅 ${esc(d.deadline)}</span>`:((d.type==='free_tier'||d.type==='price_low'||d.via==='free')?'<span style="color:var(--green)">♾️ 长期</span>':'');
+    return`
+  <article class="row" data-id="${esc(d.id)}">
+    <div class="r-tok ${d.verify_status==='expired'?'dead':(d.usd||d.cny?'cash':'')}">${tokCell(d)}</div>
+    <div>
+      <div class="r-line1">
+        <span class="r-provider">${esc(d.provider)}</span>
+        <span class="r-value" title="${esc(d.value)}">${esc(d.value)}</span>
+        ${d.coupon?`<span class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">示例</span>':`<button class="copy" data-code="${esc(d.coupon)}">复制</button>`}</span>`:''}
+      </div>
+      <div class="r-line2">
+        <span class="chip">${LAYER[d.category]?LAYER[d.category].name:d.category}</span>
+        <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
+        ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
+        ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
+        <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
+      </div>
+    </div>
+    <div class="r-state">${freshness(d)}${dl}</div>
+    <div class="r-ops">
+      ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="一键接入">⚡</button>`:''}
+      <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
+      <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
+      <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" title="标记/取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
+      <a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取</a>
+    </div>
+  </article>`};
+  // 官方平台聚合：同 provider 合成一条（主行=收益合计；明细可展开），付费区/避雷/我的/有码保持明细
+  const AGG_ON=!['paid','warn','mine','coupon'].includes(curCat);
+  if(AGG_ON){
+    const gmap={};
+    list.forEach(d=>{(gmap[d.group||d.provider]=gmap[d.group||d.provider]||[]).push(d)});
+    const groups=Object.values(gmap).map(ds=>{
+      const once=ds.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
+      const daily=ds.reduce((s,d)=>s+(d.daily_wan||0),0);
+      const best=ds.slice().sort((a,b)=>tokSort(b)-tokSort(a))[0];
+      return {ds,once,daily,best,p:best.group||best.provider};
+    }).sort((a,b)=>(b.once+b.daily*30)-(a.once+a.daily*30));
+    box.innerHTML=groups.map(g=>{
+      const total=Math.round(g.once+g.daily*30);
+      const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
+      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
+      const s=siteFor(g.best);
+      return g.ds.length>1?`
+  <article class="row agg" data-agg="${esc(g.p)}">
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
+    <div>
+      <div class="r-line1">
+        <span class="r-provider">${esc(g.p)}</span>
+        <span class="r-value" title="${esc(g.best.value)}">${esc(g.best.value)}</span>
+        <span class="chip gold">📎 ${g.ds.length} 条信源</span>
+      </div>
+      <div class="r-line2">
+        <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
+        ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
+        <span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>
+      </div>
+    </div>
+    <div class="r-state">${freshness(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
+    <div class="r-ops">
+      <button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>
+      <a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>
+    </div>
+  </article>
+  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best);
+    }).join('');
+  }else{
+    box.innerHTML=list.map(rowHtml).join('');
+  }
 function renderNav(){
   const order=['official_cn','maas','agent','compute','reseller','official_global'];
   const SHORT={'official_cn':'官方·国内','maas':'MaaS','agent':'Agent','compute':'算力','reseller':'聚合商','official_global':'官方·海外'};
