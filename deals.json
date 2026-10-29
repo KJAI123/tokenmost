@@ -534,7 +534,7 @@
  {
   "id": "github-student-pack",
   "provider": "GitHub Student Pack",
-  "category": "official_global",
+  "category": "agent",
   "type": "student",
   "value": "Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版",
   "region": "global",
@@ -553,7 +553,7 @@
  {
   "id": "azure-student",
   "provider": "Azure for Students",
-  "category": "official_global",
+  "category": "maas",
   "type": "student",
   "value": "$100 额度 / 12 个月，免信用卡、年年可续，含 Azure OpenAI 访问；另有 Speech/Translator 等 AI 免费层",
   "region": "global",
@@ -630,7 +630,7 @@
  {
   "id": "zcode-linuxdo",
   "provider": "智谱 ZCode",
-  "category": "official_cn",
+  "category": "agent",
   "type": "limited_promo",
   "value": "ZCode 客户端周期性送 GLM-5.3-Flash 大礼包：周末计划 3 亿、1024 节 5 亿（20 万份）——官方活动页 real 实锤，打开客户端活动卡片即领",
   "region": "cn",
@@ -1137,7 +1137,7 @@
  {
   "id": "deep-copilot-ai-credits",
   "provider": "GitHub Copilot",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "Copilot AI Credits 定案：1 credit = $0.01 按 token 计价（PRU 倍率表已从官方 docs 删除）；Pro 1500 / Pro+ 7000 credits/月",
   "region": "global",
@@ -1158,7 +1158,7 @@
  {
   "id": "deep-comate-autofree",
   "provider": "文心快码 Comate",
-  "category": "official_cn",
+  "category": "agent",
   "type": "limited_promo",
   "value": "Auto-Free 限时不限量至 2026-12-31（多源一致）：高速层额度用完后自动切 Auto-Free 兜底不限量；第三方口径：专业版 150k tokens/h、旗舰版 500k tokens/h 高速层",
   "region": "cn",
@@ -1272,7 +1272,7 @@
  {
   "id": "deep-scnet-ycjh-100cardhours",
   "provider": "SCNet 国家超算互联网",
-  "category": "official_cn",
+  "category": "compute",
   "type": "signup_bonus",
   "value": "核心节点邀测计划：实名注册即领 100 卡时异构加速卡算力 + 500G 分布式存储 + 1000 万 tokens 热门大模型体验额度 + 在线技术支持",
   "region": "cn",
@@ -1290,7 +1290,7 @@
  {
   "id": "deep-scnet-openclaw-10m",
   "provider": "SCNet 国家超算互联网",
-  "category": "official_cn",
+  "category": "compute",
   "type": "limited_promo",
   "value": "OpenClaw 用户每人 1000 万 tokens（2026-03-11 官宣，限时 2 周使用）；续购价 0.1 元/百万 tokens 全网最低档",
   "region": "cn",
@@ -1309,7 +1309,7 @@
  {
   "id": "deep-scnet-30m-promo",
   "provider": "SCNet 国家超算互联网",
-  "category": "official_cn",
+  "category": "compute",
   "type": "limited_promo",
   "value": "3000 万 tokens 限时活动（2026-03-25 至 04-06，新老用户均可，约 4500 万字，三步领取）",
   "region": "cn",
@@ -1328,7 +1328,7 @@
  {
   "id": "deep-scnet-token-plan",
   "provider": "SCNet 国家超算互联网",
-  "category": "official_cn",
+  "category": "compute",
   "type": "pricing_plan",
   "value": "Token Plan 包月：基础版 ¥30/月 6万Credits（原价¥50）、标准 ¥110/24万、高级 ¥265/60万、旗舰 ¥764/180万（送OpenClaw 2核4G实例）；官方折算示例（Kimi-K2.6 倍率1.0）：6万Credits≈缓存命中输入1.2亿 或 输出170万 或 综合3000万 tokens",
   "region": "cn",
@@ -1348,7 +1348,7 @@
  {
   "id": "deep-scnet-deepseek-price",
   "provider": "SCNet 国家超算互联网",
-  "category": "official_cn",
+  "category": "compute",
   "type": "price_low",
   "value": "低价口径（可核）：综合约 1 元/百万 tokens（倍率1.0模型、基础版）；Flash 类综合约 0.13-0.15 元/百万；OpenClaw 续购 0.1 元/百万；Chat 页 DeepSeek-R1/V4 限时免费对话",
   "region": "cn",
@@ -1558,7 +1558,7 @@
  {
   "id": "deep-zhipu-1024-5yi",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "limited_promo",
   "value": "ZCode 1024 程序员节大礼包：每人 5 亿 tokens（GLM-5.3 + GLM-5.3-Flash 额度），共 20 万份先到先得，新用户/Coding Plan 用户均可领",
   "region": "cn",
@@ -1577,7 +1577,7 @@
  {
   "id": "deep-zhipu-weekend-3yi",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "recurring_promo",
   "value": "周末计划 WEEKEND BUILD：每人 3 亿 GLM-5.3-Flash tokens，新老用户均可领、不要求订阅，先到先得（单轮 10 万份+）",
   "region": "cn",
@@ -1590,12 +1590,12 @@
   "tokens_wan": 30000,
   "via": "client",
   "notes": "周期性活动，扫描日未见新一轮（待盯）。来源：smzdm post.smzdm.com/p/aqrx263p（高，含各期窗口明细）+ 知乎教程。新用户 1 亿叠加为中置信单源",
-  "group": "智谱"
+  "group": "ZCode"
  },
  {
   "id": "deep-zhipu-night-global",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "limited_promo",
   "value": "夜间 Global Build：每晚 23:00–次日 09:00 ZCode 内 GLM-5.3-Flash 消耗归零；Claude Code/TRAE/OpenCode 额度翻倍（Coding Plan 付费用户专属）",
   "region": "cn",
@@ -1613,7 +1613,7 @@
  {
   "id": "deep-zhipu-start-plan",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "signup_bonus",
   "value": "ZCode Start Plan 新用户体验包：登录 ZCode 即领数百万级 tokens",
   "region": "cn",
@@ -1708,7 +1708,7 @@
  {
   "id": "deep-trae-cn-pricing",
   "provider": "Trae 国内版",
-  "category": "official_cn",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "官方五档积分制：Free ¥0=500积分/月；Lite ¥49（首月¥39）=2000；Pro ¥99（首¥69）=4000；Pro+ ¥239（首¥219）=12000；Ultra ¥699（首¥629）=40000；会员签到月多得3000积分",
   "region": "cn",
@@ -1728,7 +1728,7 @@
  {
   "id": "deep-trae-intl-pricing",
   "provider": "Trae 国际版",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "国际版 Pro $10/月≈600 次快速请求+慢速不限（第三方聚合口径）；⚠️ GitHub issue #2318：2026-02 计费变更用户称权益缩水5-10倍、GPT-5.3-Codex 仅 Ultra 档可用",
   "region": "global",
@@ -1748,7 +1748,7 @@
  {
   "id": "deep-qoder-cn-free",
   "provider": "Qoder CN（阿里）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "社区版免费：首注赠 300 Credits + 完成账号认证后每月自动发 100 Credits（当月清零）；Pro Trial 注册14天内可领 2000 Credits（300自动+1700手动），30天有效",
   "region": "cn",
@@ -1767,7 +1767,7 @@
  {
   "id": "deep-qoder-cn-paid",
   "provider": "Qoder CN（阿里）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "Pro ¥59/月=2000 Credits；Pro+ ¥169/月=6000 Credits；国际版 Pro $20/月",
   "region": "cn",
@@ -1787,7 +1787,7 @@
  {
   "id": "deep-codebuddy-free-kimi",
   "provider": "CodeBuddy（腾讯）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_model",
   "value": "Kimi-K2.5 内置且可免费使用（高峰期排队）；体验版免费 500 Credits/月",
   "region": "cn",
@@ -1806,7 +1806,7 @@
  {
   "id": "deep-codebuddy-pricing",
   "provider": "CodeBuddy（腾讯）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "个人专业版 ¥58/月=2000 Credits+限时加赠2000（年付840/连续包年672）；SaaS企业版 ¥198/人/月（2026-05-15起+154%，年内第三次涨价）；专有云企业版 ¥316/人/月；海外版 Pro $9.95=1000 Credits+每日100（零点重置）",
   "region": "cn",
@@ -1826,7 +1826,7 @@
  {
   "id": "deep-codegeex-free",
   "provider": "CodeGeeX（智谱系）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "个人版完全免费、功能不阉割（补全/注释/翻译/问答全开）；企业版收费支持私有化",
   "region": "cn",
@@ -1845,7 +1845,7 @@
  {
   "id": "deep-fitten-free",
   "provider": "Fitten Code（非十科技）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "个人免费（官方宣传终身免费），主打低延迟；额度上限官方未公布",
   "region": "cn",
@@ -2007,7 +2007,7 @@
  {
   "id": "deep-comate-autofree-r2",
   "provider": "文心快码 Comate",
-  "category": "official_cn",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "【口径修正·官方域直核】Auto-Free 限时不限量=个人旗舰版 ¥199/月（原价¥299）限时福利，至 2026-12-31；原文「Auto-Free 模式不限量免费使用，即额度耗尽后仍可无缝切换轻量模型保持补全流畅」；免费版=智能补全全功能+首注赠¥10模型额度；专业版 ¥59/月（原价¥100）=¥55/月模型额度+Auto-Free 150k tokens/h；企业版 ¥150/人/月起",
   "region": "cn",
@@ -2028,7 +2028,7 @@
  {
   "id": "deep-comate-signup",
   "provider": "文心快码 Comate",
-  "category": "official_cn",
+  "category": "agent",
   "type": "signup_bonus",
   "value": "首次注册赠 ¥10 模型额度（免费版即可领）；智能补全个人标准版永久免费不限次",
   "region": "cn",
@@ -2102,7 +2102,7 @@
  {
   "id": "deep-gemini-cli-free",
   "provider": "Google Gemini CLI",
-  "category": "official_global",
+  "category": "agent",
   "type": "free_tier",
   "value": "免费档：官方宣传 60 请求/分钟 + 1000 请求/天（业界最大免费额度）；社区实况按模型分额——Pro 模型实领约 100/天甚至更低（个别报 50/天/模型），Flash 系才接近 1000",
   "region": "global",
@@ -2121,7 +2121,7 @@
  {
   "id": "deep-cursor-x-subscription",
   "provider": "Cursor（Anysphere×SpaceX）",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "X Subscription 统一订阅：Plus $8 明确含 Cursor 用量（官方原文）；Premium $30 = SuperGrok + Cursor Pro + X Premium+ 三合一（原价 $90），共享池周刷新",
   "region": "global",
@@ -2141,7 +2141,7 @@
  {
   "id": "deep-windsurf-devin",
   "provider": "Windsurf（并入Devin/Cognition）",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "Devin Desktop（原 Windsurf，2025-07 并入 Cognition）Free 档：无限 Tab 补全/inline 编辑 + 约 50 credits 轻量 agent 额度（受限模型）；2026-03 起 credits 制改 quota 制，Max 档日限取消仅留周配额",
   "region": "global",
@@ -2233,7 +2233,7 @@
  {
   "id": "deep-zhipu-start-plan-r2",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "signup_bonus",
   "value": "ZCode/GLM Start Plan：新用户 5 天免费体验（绑定 BigModel 账号自动生效），社区口径约 300 万额度；1024 期新用户赠包 2026-10-28 23:59 到期",
   "region": "cn",
@@ -2252,7 +2252,7 @@
  {
   "id": "deep-zhipu-zcode-invite-r2",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "invite_bonus",
   "value": "【官方changelog直核】ZCode 3.15.1（2026-10-12）：「邀请好友·免费蹬蹬，共得权益活动上线」+「支持订阅用户随机获得 GLM HighSpeed 体验」",
   "region": "cn",
@@ -2271,7 +2271,7 @@
  {
   "id": "deep-zhipu-trial-card-gift-r2",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "invite_bonus",
   "value": "GLM Coding Plan 7 天体验卡可由老用户向好友赠送（邀请文案原文：「免费送5张GLM Coding Plan体验卡-先到先得……赠送你1张7天AI Coding体验卡，一起来用」）",
   "region": "cn",
@@ -2288,7 +2288,7 @@
  {
   "id": "deep-zhipu-ban-case-r2",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "warning",
   "value": "⚠️ 封号实锤案例：linux.do/Telegram 用户反馈老 Lite 套餐被封，疑似触发因素=多人使用（服务器登录+多IP+出差异地）",
   "region": "cn",
@@ -2305,7 +2305,7 @@
  {
   "id": "deep-zhipu-zcode-free-tier-r2",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "ZCode 存在免费套餐层（官方 changelog 3.14.4「关闭免费套餐的模型请求验证码校验」）；免费版走 Auto 模型调度不可手动指定（搜索口径）",
   "region": "cn",
@@ -2378,7 +2378,7 @@
  {
   "id": "deep-stepfun-neo-phone",
   "provider": "阶跃星辰 StepFun",
-  "category": "official_cn",
+  "category": "agent",
   "type": "hardware_bundle",
   "value": "战略转向硬件：智能体手机 STEPX Neo ¥3999（每月百亿 token 套餐）；¥3499 版含 1200 亿 token 套餐（微博口径，低）——买硬件送 token，非白嫖通道",
   "region": "cn",
@@ -2398,7 +2398,7 @@
  {
   "id": "deep-zhipu-qingyan-status",
   "provider": "智谱清言（App）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "status",
   "value": "结论：智谱清言为 C 端对话 App，无 API token 羊毛价值；API 侧羊毛全部在开放平台（大礼包/积分制/体验卡/邀请，见智谱主手册）；「GLM-5.3-Flash 3亿活动额度」网文未能复核（原文404单源），存疑不发布",
   "region": "cn",
@@ -2434,7 +2434,7 @@
  {
   "id": "deep-anthropic-code-limits-r4",
   "provider": "Anthropic",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "Claude Code 限额官方原文（support.claude.com/en/articles/11145838 直核）：Pro 与 Max 同构——5小时会话限额+周限额双闸；Max 另有 Fable 独立周限额；Claude 应用与 Claude Code 共享同一套限额；新「wrapping up」机制：触顶允许在途回复收尾（计入周限额），Pro 每周1次/Max 每次触5h限额均可（灰度）；Max 5x/20x 仅计划名，官方全篇无任何绝对数字",
   "region": "global",
@@ -2473,7 +2473,7 @@
  {
   "id": "deep-copilot-ai-credits-r4",
   "provider": "GitHub Copilot",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "定案：PRU（premium request units）正式废弃、旧 1x/10x 模型倍率表已从 docs 删除；新单位 GitHub AI Credits=1 credit $0.01，按模型 token 用量换算扣减（模型公开 API 价→credits）；额度 Pro 1500/Pro+ 7000/Max 20000/Business 1900每席",
   "region": "global",
@@ -2493,7 +2493,7 @@
  {
   "id": "deep-gemini-cli-retired-r4",
   "provider": "Google Gemini CLI",
-  "category": "official_global",
+  "category": "agent",
   "type": "warning",
   "value": "⚠️ 重大更正：Gemini CLI 已于 2026-06-18 被 Antigravity CLI 取代（README 过渡通知+官方博客直核）；当日旧 CLI 与 Code Assist 扩展停止为免费层/Pro/Ultra 服务——「免费1000请求/天」随 CLI 退役成为历史遗产",
   "region": "global",
@@ -2510,7 +2510,7 @@
  {
   "id": "deep-chatglm-status-r4",
   "provider": "智谱清言 chatglm.cn",
-  "category": "official_cn",
+  "category": "agent",
   "type": "status",
   "value": "chatglm.cn 为纯 JS 渲染+疑似登录墙（两条路径 WebFetch 均只返回标题）——API 入口/Flash 限免截止/会员权益均未能核实；维持 R3 结论：无 API 羊毛价值",
   "region": "cn",
@@ -2527,7 +2527,7 @@
  {
   "id": "deep-cursor-x-subscription-r4",
   "provider": "Cursor（X Subscription）",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "x.ai 官方原文直核：Plus $8/月 含 Cursor 用量（原文 More AI usage in Grok and Cursor）；Free 档含 Cursor coding agents 初始额度；Premium $30=SuperGrok+Cursor Pro+X Premium+ 三合一（原价合计 $90/月）；共享池覆盖 Grok apps/X tab/Cursor 三处；官方话术：编码用量至少为同级 Cursor 计划 2 倍",
   "region": "global",
@@ -2564,7 +2564,7 @@
  {
   "id": "deep-autoclaw-promos",
   "provider": "智谱 AutoClaw",
-  "category": "official_cn",
+  "category": "agent",
   "type": "limited_promo",
   "value": "AutoClaw 活动组合：登录领 2 亿 tokens（v2.1.0 福利，7天有效，10/15-21）+ 每日登录 500 credits（10/19-25 整期6000万）——均已过窗；长期档：新用户注册长期送约 2 亿 tokens（多源清单口径）",
   "region": "cn",
@@ -2582,7 +2582,7 @@
  {
   "id": "deep-workbuddy-oct-promos",
   "provider": "腾讯 WorkBuddy",
-  "category": "official_cn",
+  "category": "agent",
   "type": "limited_promo",
   "value": "WorkBuddy 10月组合：DeepSeek 故障补偿500积分（至10/22已过）；Step 5-Preview 限免至10/25（6000亿MoE/1M上下文）；Hy3全天/Hy4夜间23:00-8:00限免至10/31；教育公益版：全国在职教师每月2000积分连发12个月（公众号「腾讯WorkBuddy/腾讯SSV」申领，长期）",
   "region": "cn",
@@ -2617,7 +2617,7 @@
  {
   "id": "deep-tmall-1111-token",
   "provider": "多厂商（天猫旗舰店）",
-  "category": "official_cn",
+  "category": "reseller",
   "type": "limited_promo",
   "value": "11月节点：天猫双11 Token旗舰店开卖——智谱/MiniMax/阿里云/千问办公/Qoder 等入驻，编程月卡约¥38.99（官网¥68.99），价保至 11/28 23:59（付费促销非白嫖）",
   "region": "cn",
@@ -2656,7 +2656,7 @@
  {
   "id": "deep-qoder-daily-credits",
   "provider": "Qoder CN（阿里）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "口径更新：CN 站每天 10:00 领 100 Credits（30天有效）——修正 R2「认证后每月发100」旧口径；另 Qwen3.8-Flash 调用系数 0.0× 免费（截止未定）",
   "region": "cn",
@@ -2675,7 +2675,7 @@
  {
   "id": "deep-intern-inkpoint",
   "provider": "书生·端砚（上海AI实验室）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "墨点计划：每月免费墨点，1墨点≈5000万tokens（intern-ai 生态）",
   "region": "cn",
@@ -2692,7 +2692,7 @@
  {
   "id": "deep-amd-tokenfactory",
   "provider": "AMD Token Factory",
-  "category": "official_global",
+  "category": "maas",
   "type": "free_tier",
   "value": "5 款大模型 API 免费开放、每日额度重置",
   "region": "global",
@@ -2856,7 +2856,7 @@
  {
   "id": "deep-zhipu-startplan-r6",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "signup_bonus",
   "value": "ZCode 体验套餐（¥0 / 5 天免费试用，官方客户端直核）：GLM-5.3 每日 300 万 + GLM-5.3-Flash 每日 500 万 tokens（合计 4000 万/5 天）+ BYOK 自定义模型 + 不定期免费 token 领取 + Weekend Build / Global Build 参与权",
   "region": "cn",
@@ -2876,7 +2876,7 @@
  {
   "id": "deep-tencent-yuanqi-verified-r6",
   "provider": "腾讯元器",
-  "category": "official_cn",
+  "category": "agent",
   "type": "signup_bonus",
   "value": "【官方文档直核·口径修正】元器免费额度=每月 100 万 token（原句：「新元器提供每个月100w token的模型调用额度」）；仅限 API 调用（web/微信客服/公众号等渠道不消耗）；查看路径=系统管理→调用统计→模型使用量统计；token 购买功能未上线（敬请期待）",
   "region": "cn",
@@ -2965,7 +2965,7 @@
  {
   "id": "deep-intern-inkstone-r6",
   "provider": "书生·端砚（上海AI实验室）",
-  "category": "official_cn",
+  "category": "agent",
   "type": "status",
   "value": "discovery.intern-ai.org.cn 为 JS 壳（直抓仅得标题「书生·端砚 Intern InkStone」），墨点计划细则（每月额度/1墨点≈5000万token 换算）未能官方直核；官方平台与「端砚」科学发现平台报道证实生态存在",
   "region": "cn",
@@ -2982,7 +2982,7 @@
  {
   "id": "deep-zhipu-trialplan-r7",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "【老板客户端截图直核】ZCode 体验套餐 ¥0/5 天：GLM-5.3 每日 300 万 + GLM-5.3-Flash 每日 500 万 tokens（每日刷新，5 天合计约 4000 万）+ BYOK 自带 Key 接入 + Weekend Build/Global Build 活动资格",
   "region": "cn",
@@ -3055,7 +3055,7 @@
  {
   "id": "deep-lingma-qoder-merge-r7",
   "provider": "通义灵码→Qoder CN",
-  "category": "official_cn",
+  "category": "agent",
   "type": "status",
   "value": "【重要口径】通义灵码已改版更名为 Qoder CN（阿里云 help 文档域名仍为 /zh/lingma/）：个人专业版原「限时免费」已收回（2026-06 报道）；早期 Qwen3-Coder 免费不限量政策随改版结束",
   "region": "cn",
@@ -3075,7 +3075,7 @@
  {
   "id": "deep-trae-free-usage-r7",
   "provider": "Trae 国内版",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "Trae Free 档 500 积分/月能干嘛：官方未公布积分→token/次数换算；已知权益=全部功能可用+云端任务并发 2+Seed-2.1-Turbo 5 折/DeepSeek 系闲时 5 折（官方价目页）——500 积分≈轻度补全+少量 Agent 对话（体感口径）",
   "region": "cn",
@@ -3094,7 +3094,7 @@
  {
   "id": "deep-copilot-free-r7",
   "provider": "GitHub Copilot",
-  "category": "official_global",
+  "category": "agent",
   "type": "free_tier",
   "value": "Copilot Free 档细则：每月 2000 次代码补全 + 50 次聊天（2024-12 上线口径）+ 有限 AI Credits + 仅自动模型选择（不能用 Claude/GPT 等指定模型）；Copilot Pro 另有移动端一个月免费试用（周期性活动）",
   "region": "global",
@@ -3113,7 +3113,7 @@
  {
   "id": "deep-trial-tier-matrix-r7",
   "provider": "全行业体验档横评",
-  "category": "official_cn",
+  "category": "agent",
   "type": "status",
   "value": "体验/入门档横评（白嫖能拿多少·够干嘛）：①智谱体验套餐 4000万/5天每日刷新=全场最大方（含 BYOK+活动）②Kimi=15元券+免费对话（无会员体验期）③MiniMax=无试用④Qoder CN 社区版=300+月100+日签100 Credits≈个人日常⑤CodeBuddy 体验版 500 Credits/月+Kimi-K2.5 免费=轻度够用⑥文心快码标准版=补全全功能免费+首注¥10（Chat/Agent 需额度）⑦Trae Free 500积分=轻度⑧Cursor Free=Grok 每日访问+Cursor agents 初始额度（x.ai 原文）⑨Copilot Free=2000补全+50聊天⑩Gemini API 免费层=Flash 系数百~千次/天⑪Antigravity CLI=~20/天（极紧）⑫Devin/Windsurf Free=轻 quota+≤10 并发",
   "region": "global",
@@ -3130,7 +3130,7 @@
  {
   "id": "cline-pass-deepseek",
   "provider": "Cline",
-  "category": "official_global",
+  "category": "agent",
   "type": "price_low",
   "value": "Cline Pass 订阅 $9.99/月，含 13 个开源模型托管额度（Kimi K3、DeepSeek V4 Pro 等，官方倍率 2-5 倍）；DeepSeek V4.1 Flash 社区实测首月可跑约 60-70 亿 tokens（折合约 ¥0.002/百万，全网最低一档）",
   "region": "global",
@@ -3165,7 +3165,7 @@
  {
   "id": "cline-free-tier",
   "provider": "Cline",
-  "category": "official_global",
+  "category": "agent",
   "type": "free_tier",
   "value": "Cline 新增免费模型档：无需 API Key、无需绑卡，登录即用 DeepSeek V4.1 Flash、Kimi K3、GLM 5.3",
   "region": "global",
@@ -3184,7 +3184,7 @@
  {
   "id": "opencode-go-deepseek",
   "provider": "OpenCode",
-  "category": "official_global",
+  "category": "agent",
   "type": "pricing_plan",
   "value": "OpenCode Go 订阅 $10/月，DeepSeek V4.1 Flash 月配额 $80（9 月 $15→$60，10 月 12 日起 $80）——额度大战主力",
   "region": "global",
@@ -3203,7 +3203,7 @@
  {
   "id": "opencode-zen-free",
   "provider": "OpenCode",
-  "category": "official_global",
+  "category": "agent",
   "type": "limited_promo",
   "value": "OpenCode Zen 限时免费开放 DeepSeek V4 Flash（限 OpenCode 内使用，200K 上下文）",
   "region": "global",
@@ -3264,7 +3264,7 @@
  {
   "id": "doubao-daily-quota",
   "provider": "豆包",
-  "category": "official_cn",
+  "category": "agent",
   "type": "recurring_promo",
   "value": "豆包电脑版「天天领额度」（激励三期在场）：每日签到+活动页任务各得一笔活动赠送额度，免费/付费用户都可领，与 ZCode 同构的客户端自产羊毛",
   "region": "cn",
@@ -3356,7 +3356,7 @@
  {
   "id": "zcode-daily-1e8",
   "provider": "智谱 BigModel",
-  "category": "official_cn",
+  "category": "agent",
   "type": "recurring_promo",
   "value": "ZCode 拉新「每天 1 亿 token」：新用户经邀请链接注册+24 小时内发出首条消息，双方即领奖——每日全球滚动放量（老板亲测口径）",
   "region": "cn",
@@ -3375,7 +3375,7 @@
  {
   "id": "workbuddy-free",
   "provider": "腾讯 WorkBuddy",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "WorkBuddy（腾讯 AI 办公助手）：公测期送 5000 Credits + 免费版每月自动发基础积分 + 绑卡享 7 天 Pro 试用另加 500 积分；可跑报告生成/文件整理/数据处理多任务",
   "region": "cn",
@@ -3397,7 +3397,7 @@
  {
   "id": "monkeycode-daily",
   "provider": "MonkeyCode",
-  "category": "official_cn",
+  "category": "agent",
   "type": "free_tier",
   "value": "MonkeyCode（长亭科技，代码全栈开源 AGPL）免费档：每日 1000 万-3000 万 token（多源口径，控制台实锤为准）；私有化部署注册另送 200 元算力≈9 亿 token 初始额度",
   "region": "cn",
@@ -3417,7 +3417,7 @@
  {
   "id": "novita-freetostart",
   "provider": "Novita",
-  "category": "official_global",
+  "category": "maas",
   "type": "signup_bonus",
   "value": "Novita AI 云 free-to-start：130+ 模型（DeepSeek/Qwen/GLM 系）注册即用，新用户赠送起步额度（数额以控制台为准）",
   "region": "global",
@@ -3434,7 +3434,7 @@
  {
   "id": "fireworks-payg",
   "provider": "Fireworks AI",
-  "category": "official_global",
+  "category": "maas",
   "type": "price_low",
   "value": "Fireworks AI 高速推理云：$1 起步纯按量（无月费门槛），托管 DeepSeek/Qwen/Llama 系，生产级吞吐",
   "region": "global",
@@ -3452,7 +3452,7 @@
  {
   "id": "deepinfra-payg",
   "provider": "DeepInfra",
-  "category": "official_global",
+  "category": "maas",
   "type": "price_low",
   "value": "DeepInfra 纯按量推理聚合：开源模型低价托管（0 月费无门槛），OpenAI 兼容 API",
   "region": "global",
@@ -3526,7 +3526,7 @@
  {
   "id": "volc-k27-alias-warning",
   "provider": "火山方舟",
-  "category": "official_cn",
+  "category": "maas",
   "type": "warning",
   "value": "⚠️ kimi-k2.7-code 已于 10-28 14:00 下线；kimi-latest 别名仍指旧模型——用别名的需手动改代码，否则静默走旧模型",
   "region": "cn",
@@ -3712,7 +3712,7 @@
  {
   "id": "comet-free",
   "provider": "Perplexity Comet",
-  "category": "official_global",
+  "category": "agent",
   "type": "free_tier",
   "value": "Perplexity Comet AI 浏览器全面免费开放（原 Max 订阅 $200/月专属→全量免费）；邀请好友计划：好友得 1 个月 Pro，邀请人得 $10-15 现金",
   "region": "global",

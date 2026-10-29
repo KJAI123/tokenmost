@@ -332,14 +332,14 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="toolbar">
     <div class="tabs" id="tabs">
       <button class="tab active" data-cat="all">🆓 免费专区</button>
-      <button class="tab" data-cat="official_cn">官方</button>
+      <button class="tab" data-cat="official_cn">大模型官方</button>
       <button class="tab" data-cat="maas">☁️ MaaS</button>
       <button class="tab" data-cat="agent">Agent 平台</button>
       <button class="tab" data-cat="compute">算力</button>
       <button class="tab" data-cat="reseller">中间商</button>
       <button class="tab" data-cat="coupon" style="border-color:rgba(210,153,34,.5)">🎁 有码</button>
       <button class="tab" data-cat="hasapi">⚡ 有 API</button>
-      <button class="tab" data-cat="official_global">海外</button>
+      <button class="tab" data-cat="official_global">大模型官方·海外</button>
       <button class="tab" data-cat="mine">⭐ 已领</button>
       <button class="tab" data-cat="paid">💸 付费区</button>
       <button class="tab" data-cat="warn">⚠️ 避雷</button>
@@ -548,7 +548,7 @@ function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=
 /* ============ 导航区渲染（侧边栏紧凑版 + 底部完整版） ============ */
 function renderNav(){
   const order=['official_cn','maas','agent','compute','reseller','official_global'];
-  const SHORT={'official_cn':'官方·国内','maas':'MaaS','agent':'Agent','compute':'算力','reseller':'聚合商','official_global':'官方·海外'};
+  const SHORT={'official_cn':'大模型官方','maas':'MaaS','agent':'Agent','compute':'算力','reseller':'聚合商','official_global':'大模型官方·海外'};
   document.getElementById('sideNav').innerHTML=order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
     return`<div class="shead" data-fold="nav-${k}"><span class="dot" style="background:${LAYER[k].color}"></span>${SHORT[k]||LAYER[k].name}<span class="cnt">${g.sites.length}</span><i>▾</i></div>`
