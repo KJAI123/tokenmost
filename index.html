@@ -36,8 +36,8 @@ button{font-family:inherit}
 #side .sgroup{font-size:.75rem;color:var(--muted);margin:16px 0 4px;display:flex;align-items:center;gap:8px;font-weight:600}
 #side .sgroup .dot{width:8px;height:8px;border-radius:50%}
 #side a.slink{display:flex;align-items:center;gap:6px;font-size:.8rem;color:var(--text);padding:4px 8px 4px 14px;
-  #side .favi{width:14px;height:14px;border-radius:4px;flex-shrink:0}
-  .nav-grid .site b .favi{width:13px;height:13px;border-radius:3px;vertical-align:-2px;margin-right:5px};border-radius:6px;min-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #side .favi{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+  .nav-grid .site b .favi{width:11px;height:11px;border-radius:3px;vertical-align:-2px;margin-right:5px};border-radius:6px;min-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #side a.slink .hot{font-size:.6rem;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:0 4px;margin-left:6px;font-weight:700}
 #side a.slink:hover{background:var(--hover);color:var(--accent)}
 
@@ -553,7 +553,7 @@ function renderNav(){
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
     return`<div class="shead" data-fold="nav-${k}"><span class="dot" style="background:${LAYER[k].color}"></span>${SHORT[k]||LAYER[k].name}<span class="cnt">${g.sites.length}</span><i>▾</i></div>`
       +`<div class="sgroup-body" id="fold-nav-${k}">`
-      +g.sites.map(s=>{const dom=s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0];return`<a class="slink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><img class="favi" src="https://www.google.com/s2/favicons?domain=${dom}&sz=32" alt="" onerror="this.style.display='none'">${esc(s.name)}${s.hot?' <b class="hot">HOT</b>':''}</a>`}).join('')
+      +g.sites.map(s=>{const dom=s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0];return`<a class="slink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><img class="favi" src="https://icon.horse/icon/${dom}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=128';}else{this.style.display='none';}">${esc(s.name)}${s.hot?' <b class="hot">HOT</b>':''}</a>`}).join('')
       +'</div>';
   }).join('');
   const bodies=document.querySelectorAll('#sideNav .sgroup-body');
@@ -561,7 +561,7 @@ function renderNav(){
   document.querySelectorAll('#sideNav .shead').forEach((h,i)=>{if(i>0)h.classList.add('folded')});
   document.getElementById('navArea').innerHTML='<div style="font-size:.8rem;color:var(--muted);margin:18px 0 4px">🧭 全站导航（六层来源 '+SITES.reduce((n,g)=>n+g.sites.length,0)+' 站）</div>'+order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
-    return`<section class="nav-section"><div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span><h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div><div class="nav-grid">${g.sites.map(s=>`<a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><b><img class="favi" src="https://www.google.com/s2/favicons?domain=${esc(s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0])}&sz=64" alt="" onerror="this.style.display='none'">${esc(s.name)}${s.hot?' 🔥':''}</b><span>${esc(s.desc||'')}</span>${s.free?'<span class="free">'+esc(s.free)+'</span>':''}</a>`).join('')}</div></section>`;
+    return`<section class="nav-section"><div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span><h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div><div class="nav-grid">${g.sites.map(s=>{const dom=s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0];return`<a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><b><img class="favi" src="https://icon.horse/icon/${dom}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=128';}else{this.style.display='none';}">${esc(s.name)}${s.hot?' 🔥':''}</b><span>${esc(s.desc||'')}</span>${s.free?'<span class="free">'+esc(s.free)+'</span>':''}</a>`}).join('')}</div></section>`;
   }).join('');
   document.getElementById('n-sites').textContent=SITES.reduce((n,g)=>n+g.sites.length,0);
 }
