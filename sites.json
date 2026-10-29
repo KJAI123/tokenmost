@@ -76,16 +76,6 @@
     "name": "美团 LongCat",
     "url": "https://longcat.chat/platform/docs/zh",
     "desc": "美团开源 560B Flash-Chat，API 每日免费额度，OpenAI/Anthropic 双兼容"
-   },
-   {
-    "name": "腾讯 WorkBuddy",
-    "url": "https://cloud.tencent.com/product/workbuddy",
-    "desc": "腾讯 AI 办公助手，公测 5000 Credits+月度积分"
-   },
-   {
-    "name": "MonkeyCode",
-    "url": "https://monkeycode-ai.com",
-    "desc": "长亭开源 AI 编程平台，免费档每日千万级 token+注册送 9 亿"
    }
   ]
  },
@@ -200,6 +190,26 @@
     "url": "https://cloud.tencent.com/product/workbuddy",
     "desc": "腾讯 AI 办公助手（公测 5000 Credits+日 100 积分）",
     "hot": false
+   },
+   {
+    "name": "腾讯 WorkBuddy",
+    "url": "https://cloud.tencent.com/product/workbuddy",
+    "desc": "腾讯 AI 办公助手，公测 5000 Credits+月度积分"
+   },
+   {
+    "name": "MonkeyCode",
+    "url": "https://monkeycode-ai.com",
+    "desc": "长亭开源 AI 编程平台，免费档每日千万级 token+注册送 9 亿"
+   },
+   {
+    "name": "Cline",
+    "url": "https://cline.bot/",
+    "api": {
+     "base_url": "https://api.cline.bot/v1",
+     "model": "deepseek-v4.1-flash",
+     "env": "CLINE_API_KEY"
+    },
+    "desc": "VS Code 编程代理，Cline Pass 订阅含 DeepSeek 额度"
    }
   ]
  },
@@ -396,16 +406,6 @@
     "url": "https://platform.claude.com",
     "desc": "Claude 官方 API，新用户少量免费 credits",
     "free": "新用户 credits"
-   },
-   {
-    "name": "Cline",
-    "url": "https://cline.bot/",
-    "api": {
-     "base_url": "https://api.cline.bot/v1",
-     "model": "deepseek-v4.1-flash",
-     "env": "CLINE_API_KEY"
-    },
-    "desc": "VS Code 编程代理，Cline Pass 订阅含 DeepSeek 额度"
    }
   ]
  },
