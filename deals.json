@@ -3787,5 +3787,23 @@
   "published": true,
   "via": "register",
   "group": "千问"
+ },
+ {
+  "id": "zai-subscribe-coupon",
+  "provider": "智谱 BigModel",
+  "category": "official_cn",
+  "type": "coupon",
+  "value": "z.ai 国际版订阅 9 折邀请码：经该链接购买 GLM Coding Plan 首单享 9 折，可与包年 7 折叠加",
+  "region": "cn",
+  "url": "https://z.ai/subscribe?ic=Y2H91IWSU3",
+  "coupon": "Y2H91IWSU3",
+  "rule": "结账时 ic 邀请码自动生效享 9 折；仅国际版 z.ai 订阅可用，国内 bigmodel.cn 不适用",
+  "notes": "社区流传的官方邀请机制码（与拼好模「受邀首订 9 折」同款官方规则背书）；⚠️ 第三方渠道来源未控制台复核，失效即清洗；推荐人带返利属性，介意可走官网直购再找官方活动",
+  "verify_status": "unverified",
+  "verified_at": "2026-10-29T18:20:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "coupon",
+  "group": "智谱 BigModel"
  }
 ]
