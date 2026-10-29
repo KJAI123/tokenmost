@@ -559,7 +559,7 @@ function renderNav(){
   document.querySelectorAll('#sideNav .shead').forEach((h,i)=>{if(i>0)h.classList.add('folded')});
   document.getElementById('navArea').innerHTML='<div style="font-size:.8rem;color:var(--muted);margin:18px 0 4px">🧭 全站导航（六层来源 '+SITES.reduce((n,g)=>n+g.sites.length,0)+' 站）</div>'+order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
-    return`<section class="nav-section"><div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span><h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div><div class="nav-grid">${g.sites.map(s=>`<a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><b>${esc(s.name)}${s.hot?' 🔥':''}</b><span>${esc(s.desc||'')}</span>${s.free?'<span class="free">'+esc(s.free)+'</span>':''}</a>`).join('')}</div></section>`;
+    return`<section class="nav-section"><div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span><h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div><div class="nav-grid">${g.sites.map(s=>`<a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><b><img class="favi" src="https://www.google.com/s2/favicons?domain=${esc(s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0])}&sz=64" alt="" onerror="this.style.display='none'">${esc(s.name)}${s.hot?' 🔥':''}</b><span>${esc(s.desc||'')}</span>${s.free?'<span class="free">'+esc(s.free)+'</span>':''}</a>`).join('')}</div></section>`;
   }).join('');
   document.getElementById('n-sites').textContent=SITES.reduce((n,g)=>n+g.sites.length,0);
 }
