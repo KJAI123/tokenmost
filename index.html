@@ -285,17 +285,17 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="logo">token<em>most</em></div>
   <div class="tag">薅 token · 一键接入 · 极致省钱</div>
   <nav class="snav">
-    <a class="sitem accent" href="#" onclick="authOpen();return false">🔐 登录 / 供码</a>
+    <a class="sitem accent" id="authBtnSide" href="#" onclick="authOpen();return false">🔐 登录 / 供码</a>
     <div class="shead" data-fold="p">工具 <i>▾</i></div>
     <div class="sgroup-body" id="fold-p">
-      <a class="sitem gold" href="#" onclick="document.getElementById('sumBtnSide').click();return false">💰 白嫖总账</a>
-      <a class="sitem" href="#" onclick="document.getElementById('calcBtnSide').click();return false">🧮 用量比价</a>
-      <a class="sitem violet" href="#" onclick="document.getElementById('planBtnSide').click();return false">⌨️ Coding 比价</a>
+      <a class="sitem gold" id="sumBtnSide" href="#" onclick="return false">💰 白嫖总账</a>
+      <a class="sitem" id="calcBtnSide" href="#" onclick="return false">🧮 用量比价</a>
+      <a class="sitem violet" id="planBtnSide" href="#" onclick="return false">⌨️ Coding 比价</a>
     </div>
     <div class="shead" data-fold="m">我的 <i>▾</i></div>
     <div class="sgroup-body" id="fold-m">
-      <a class="sitem" href="#" onclick="document.getElementById('vaultBtnSide').click();return false">🗂 账号库</a>
-      <a class="sitem" href="#" onclick="document.getElementById('guideBtnSide').click();return false">📖 领取攻略</a>
+      <a class="sitem" id="vaultBtnSide" href="#" onclick="return false">🗂 账号库</a>
+      <a class="sitem" id="guideBtnSide" href="#" onclick="return false">📖 领取攻略</a>
     </div>
   </nav>
   <div id="sideNav"></div>
@@ -781,10 +781,16 @@ async function apiFetch(path,opts={}){
 }
 function authRefreshUI(){
   const t=auth?auth.phone+' · 我的码':'登录 / 供码';
-  document.getElementById('authBtn').textContent=t;
-  document.getElementById('authBtnSide').textContent=auth?'🔐 '+auth.phone:'🔐 登录 / 供码';
+  const el=document.getElementById('authBtn');if(el)el.textContent=t;
+  const el2=document.getElementById('authBtnSide');if(el2)el2.textContent=auth?'🔐 '+auth.phone:'🔐 登录 / 供码';
   render();  // 卡片上的「供码」按钮显隐随登录态
 }
+/* 面板打开的稳定入口（侧边栏 id 重建也不受影响） */
+function openSum(){document.getElementById('sumOverlay').classList.add('open');document.getElementById('sumPanel').classList.add('open')}
+function openCalc(){document.getElementById('calcOverlay').classList.add('open');document.getElementById('calcPanel').classList.add('open')}
+function openPlan(){const o=document.querySelector('#planPanel');if(o)o.classList.add('open');const m=document.getElementById('planModal');if(m)m.classList.add('open')}
+function openVault(){const v=document.getElementById('vault');if(v)v.classList.add('open')}
+function openGuide(){location.hash='#guides'}
 async function loadShared(){
   if(!API)return;
   try{
@@ -1295,8 +1301,10 @@ Promise.all([
 ]).then(([sites,deals])=>{
   SITES=sites;DEALS=deals;
   renderNav();vInit();render();vRender();calcGlobalBanner();
-  authRefreshUI();loadShared();
-}).catch(()=>{
+  try{authRefreshUI()}catch(e){console.error('authRefreshUI',e)}
+  try{loadShared()}catch(e){console.error('loadShared',e)}
+}).catch(e=>{
+  console.error('data load',e);
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
 });
 </script>
