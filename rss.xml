@@ -910,25 +910,67 @@
       <description>长期免费 · 规则：订阅制（Plus $20 起）；免费党走国产替代（各家免费额度均可接 Codex CLI 兼容工具）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>OpenClaw：OpenClaw 开源编程助手：自部署 0 成本，接任意 API Key（含各家免费额度）</title>
-      <link>https://openclaw.ai</link>
-      <guid isPermaLink="false">openclaw-free</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：开源自部署=token 上限取决于所接 Key；免费玩法=接智谱/GLM-4.7-Flash 等免费模型（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>AutoClaw：AutoClaw 自动化 Claw agent：开源可自部署，接任意模型 API</title>
-      <link>https://autoclaw.ai</link>
-      <guid isPermaLink="false">autoclaw-free</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：自部署接免费模型 Key 即零成本（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>Trae：Trae 双轨：国内版（trae.cn）Free 档 500 积分/月+全功能可用</title>
       <link>https://trae.cn</link>
       <guid isPermaLink="false">trae-free-tier</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：国内 Free 500 积分/月（1 积分≈0.01 元折 500 万 tok 当量）；国际 Free 档轻量（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>小米 MiMo：新客注册专享：注册 MiMo 开放平台并首次完成实名认证，即得 ¥5 API 赠金（40 天有效）</title>
+      <link>https://mimo.mi.com/docs/zh-CN/quick-start/promotions/new%20user</link>
+      <guid isPermaLink="false">xiaomi-mimo-free5</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：仅注册不发，须首次实名认证后自动到账；每账号一次；限中国大陆；抵扣 API 费不可提现（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>小米 MiMo：邀请有礼：好友绑定邀请码双方各得 ¥10 赠金（即时到账）</title>
+      <link>https://mimo.mi.com/docs/zh-CN/quick-start/promotions/refer</link>
+      <guid isPermaLink="false">xiaomi-mimo-refer</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：被邀方须注册 3 天内绑定；30 天窗口内完成首单才有返赠；赠金抵 API 费不可抵套餐；40 天有效期先进先出（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>天翼云息壤：天翼云息壤平台新用户免费领 2500 万 Tokens（新用户长期体验额度，非限时）</title>
+      <link>https://www.ctyun.cn</link>
+      <guid isPermaLink="false">ecloud-tianyi-25m</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：注册天翼云→息壤控制台→模型广场领取；新用户限一次；模型含 DeepSeek/GLM 等主流开源（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>联通云：联通云注册送 600 万 Tokens（公众号渠道限量 1 万份，先到先得）</title>
+      <link>https://www.chinaunicom.cn</link>
+      <guid isPermaLink="false">unicom-cloud-6m</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：限量 1 万份；领取路径与有效期待官方页复核（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Perplexity Comet：Perplexity Comet AI 浏览器全面免费开放（原 Max 订阅 $200/月专属→全量免费）</title>
+      <link>https://www.perplexity.ai/comet</link>
+      <guid isPermaLink="false">comet-free</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：下载 Comet 注册即用；邀请需好友注册+提问激活；现金奖励或限时以官方 refer-a-friend 条款页为准（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>AWS Activate：AWS Activate 初创云积分开放申请：最高 $200K AWS 积分（含 Bedrock 全模型算力）</title>
+      <link>https://startups.aws.com</link>
+      <guid isPermaLink="false">aws-activate</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：需公司实体资质；自助档在线即申，最高档需 VC/加速器背书；积分有效期 1-2 年（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Google for Startups：Google for Startups 初创云额度最高 $200K/2 年（Gemini/Vertex AI 全量）</title>
+      <link>https://cloud.google.com/startup</link>
+      <guid isPermaLink="false">google-startups</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：初创需公司+融资阶段证明，批准额浮动；科研线限高校教职/博士/博后（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>千问：千问客户端「工作」模式（agent 任务）免费试用额度有 5 小时滚动上限：达到上限即暂停服务、到点自动恢复（实测提示 </title>
+      <link>https://chat.qwen.ai</link>
+      <guid isPermaLink="false">qwen-app-5h-limit</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：5 小时窗口制（用量窗口滚动）；窗口内 agent 任务消耗额度较快（实测 6 分 44 秒任务即触发上限提示）；等待重置或订阅后发「继续」续跑（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>

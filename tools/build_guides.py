@@ -13,6 +13,16 @@ OUT = GDIR
 TEMPLATE = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title} — tokenmost 攻略</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="https://tokenmost.com/guides/{gid}.html">
+<meta property="og:title" content="{title} — tokenmost 攻略">
+<meta property="og:description" content="{desc}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tokenmost.com/guides/{gid}.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{desc}","url":"https://tokenmost.com/guides/{gid}.html","inLanguage":"zh-CN","publisher":{{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}}}
+</script>
 <style>
 :root{{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#00e5a0;--amber:#d29922;--red:#f85149}}
 *{{box-sizing:border-box;margin:0;padding:0}}
@@ -97,13 +107,13 @@ def main():
         md = f.read_text(encoding="utf-8")
         title = md.split("\n")[0].lstrip("# ").strip() if md.startswith("#") else f.stem
         body = md2html(md)
-        # 来源节（若有）
-        (OUT / (f.stem + ".html")).write_text(
-            TEMPLATE.format(title=html.escape(title), body=body), encoding="utf-8")
         desc = ""
         m = re.search(r"\n(?!#|\n)([^\n]{20,90})", md)
         if m:
-            desc = re.sub(r"[⚠️💡#*`]", "", m.group(1)).strip()[:80]
+            desc = re.sub(r"[⚠️💡#*`>|]", "", m.group(1)).strip()[:80]
+        (OUT / (f.stem + ".html")).write_text(
+            TEMPLATE.format(title=html.escape(title), body=body,
+                            desc=html.escape(desc, quote=True), gid=f.stem), encoding="utf-8")
         index.append({"id": f.stem, "title": title, "desc": desc})
         print(f"  {f.stem}.html ← {title[:40]}")
     (OUT / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")

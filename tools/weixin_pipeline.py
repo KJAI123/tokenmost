@@ -90,7 +90,7 @@ def main() -> int:
     html = fetch(seed)
     if html:
         title, account = article_meta(html)
-        if account:
+        if account and 2 <= len(account) <= 20 and not re.search(r"[;={}()\[\]]|\bvar\b|\blen\b|\barr\b", account):
             acc = s.setdefault("accounts", {})
             acc[account] = {"last_title": title, "last_seen": now()}
             ACCOUNTS.write_text(json.dumps(acc, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -106,7 +106,7 @@ def main() -> int:
     results = []
     resolved = ""
     q = ""
-    do_search = (s["turn"] % 4 == 1)
+    do_search = True  # 5小时节奏下每轮1查询，反爬安全（2026-10-29 放宽）
     if do_search:
         q = QUERIES[s["turn"] % len(QUERIES)]
         results = sogou_search(q)  # 搜狗查询
@@ -119,7 +119,7 @@ def main() -> int:
             art = fetch(resolved)
             if art:
                 t2, acc2 = article_meta(art)
-                if acc2:
+                if acc2 and 2 <= len(acc2) <= 20 and not re.search(r"[;={}()\[\]]|\bvar\b|\blen\b|\barr\b", acc2):
                     acc = s.setdefault("accounts", {})
                     acc[acc2] = {"last_title": t2, "last_seen": now()}
                 r0 = results[0]
