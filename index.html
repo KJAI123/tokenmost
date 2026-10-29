@@ -577,7 +577,9 @@ function freshness(d){
   return `<span class="badge b-amber">⚠️ `+Math.floor(h/24)+`天前</span>`;
 }
 /* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
-function tokCell(d){
+function tokCell(d,ov){
+  if(ov){const total=Math.round(ov.once+ov.daily*30),fw=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
+    return`<span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${fw(ov.once)} ＋ 日均 ${fw(ov.daily)}×30 天（与排序同口径）"><span class="num">${fw(total)}</span><span class="unit">首月可薅</span>${ov.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${ov.once?fw(ov.once)+'＋':''}日均${ov.daily>=10000?(ov.daily/10000).toFixed(1)+' 亿':'~'+Math.round(ov.daily)+' 万'}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span>`;}
   if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
   if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${eq>=10000?(eq/10000).toFixed(2)+' 亿':Math.round(eq)+' 万'}</span><span class="unit">DS Flash等效</span></span>`;}
   if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
@@ -619,12 +621,12 @@ function render(){
   });
   const box=document.getElementById('cards');
   if(!list.length){box.innerHTML='<div class="empty"><b>没有匹配的羊毛</b><span>换个关键词试试，或点上方「🆓 免费专区」查看全部 '+DEALS.filter(d=>d.published!==false&&!PAID_TYPES.has(d.type)).length+' 条免费情报（付费类在「💸 付费区」）</span></div>';return}
-  const rowHtml=d=>{
+  const rowHtml=(d,ov)=>{
     const s=siteFor(d),pname=s?s.name:d.provider;
     const dl=d.deadline?`<span style="color:var(--red)">📅 ${esc(d.deadline)}</span>`:((d.type==='free_tier'||d.type==='price_low'||d.via==='free')?'<span style="color:var(--green)">♾️ 长期</span>':'');
     return`
   <article class="row" data-id="${esc(d.id)}">
-    <div class="r-tok ${d.verify_status==='expired'?'dead':(d.usd||d.cny?'cash':'')}">${tokCell(d)}</div>
+    <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${esc(d.provider)}</span>
@@ -658,7 +660,15 @@ function render(){
       const daily=ds.reduce((s,d)=>s+(d.daily_wan||0),0);
       const best=ds.slice().sort((a,b)=>tokSort(b)-tokSort(a))[0];
       return {ds,once,daily,best,p:best.group||best.provider};
-    }).sort((a,b)=>(b.once+b.daily*30)-(a.once+a.daily*30));
+    }).sort((a,b)=>{
+      if(sortKey==='tokens')return (b.once+b.daily*30)-(a.once+a.daily*30);
+      const va=a.ds.filter(d=>d.verify_status==='verified').length/a.ds.length;
+      const vb=b.ds.filter(d=>d.verify_status==='verified').length/b.ds.length;
+      if(vb!==va)return vb-va;
+      const ta=Math.max(...a.ds.map(d=>Date.parse(d.verified_at)||0));
+      const tb=Math.max(...b.ds.map(d=>Date.parse(d.verified_at)||0));
+      return tb-ta;
+    });
     box.innerHTML=groups.map(g=>{
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
@@ -685,7 +695,7 @@ function render(){
       <a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>
     </div>
   </article>
-  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best);
+  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
     }).join('');
   }else{
     box.innerHTML=list.map(rowHtml).join('');
