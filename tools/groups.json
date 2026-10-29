@@ -1,9 +1,9 @@
 {
  "_meta": "平台主体归组：聚合键=group||provider；同一家公司/生态的所有信源归入同组，展开即看全；新条目产出时按此表写 group 字段",
  "map": {
-  "智谱 BigModel": "智谱",
-  "CodeGeeX（智谱系）": "智谱",
-  "智谱清言": "智谱",
+  "智谱 BigModel": "智谱 BigModel",
+  "CodeGeeX（智谱系）": "CodeGeeX（智谱系）",
+  "智谱清言": "智谱 BigModel",
   "讯飞星辰 MaaS": "讯飞",
   "讯飞星火": "讯飞",
   "讯飞开放平台": "讯飞",
@@ -37,7 +37,7 @@
   "Anthropic Claude": "Anthropic",
   "商汤日日新": "商汤",
   "商汤日日新 SenseNova": "商汤",
-  "_zcode_rule": "ZCode 客户端产品线条目按 id 手工归「ZCode」组（provider 名义多为智谱 BigModel）：含 start-plan/trialplan/zcode-invite/daily-1e8/1024/night-global 等",
+  "_zcode_rule": "ZCode",
   "腾讯 WorkBuddy": "腾讯"
  }
 }

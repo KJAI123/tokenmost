@@ -16,7 +16,7 @@
   "verify_by": "auto",
   "tokens_wan": 4500,
   "via": "invite",
-  "group": "智谱"
+  "group": "智谱 BigModel"
  },
  {
   "id": "volc-ark-signup",
@@ -691,7 +691,7 @@
   "difficulty": 1,
   "published": true,
   "verify_by": "auto",
-  "group": "智谱",
+  "group": "智谱 BigModel",
   "daily_wan": 6667,
   "daily_note": "长期免费层月当量 200000 万 ÷30 折日均（每天可薅）；GLM-4.7-Flash 长期免费无硬上限；按Flash牌价0.8/2.8加权1.3元/百万、参考每日500万 Fla"
  },
@@ -1664,7 +1664,7 @@
   "cny": 94.4,
   "via": "subscribe",
   "notes": "积分→token折算率官方原文（全网罕见）。来源：官方 overview/usage-revision/quick-start 三个 .md 直出（高）；价格为 zcode.z.ai 官方页（高）",
-  "group": "智谱",
+  "group": "智谱 BigModel",
   "eq_wan": 3776,
   "eq_note": "¥94.4 券/额度 ×40 万 tok/元 ≈ 3776 万当量（全站统一折算口径）"
  },
@@ -1684,7 +1684,7 @@
   "tokens_wan": 2000,
   "via": "invite",
   "notes": "官方推广文档 mdx 原文（高），页面最后更新 2026-10-21。与 deals.json zhipu-signup 条一致，此为逐字复核版",
-  "group": "智谱"
+  "group": "智谱 BigModel"
  },
  {
   "id": "deep-zhipu-free-models",
@@ -1838,7 +1838,7 @@
   "published": true,
   "via": "client",
   "notes": "官网口径+2026评测交叉（高）",
-  "group": "智谱",
+  "group": "CodeGeeX（智谱系）",
   "daily_wan": 167,
   "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；个人版全功能免费；按补全场景月500万当量保守(估算)"
  },
@@ -2351,7 +2351,7 @@
   "published": true,
   "via": "subscribe",
   "notes": "淘宝商品页实存（中高）+官方红线条款（高）；作为避雷条目发布",
-  "group": "智谱"
+  "group": "智谱 BigModel"
  },
  {
   "id": "deep-stepfun-step5-preview-price",
@@ -3013,7 +3013,7 @@
   "published": true,
   "via": "api",
   "notes": "官方定价页 .md 直核（高）；zhipu-weekly.md 已同步勘误",
-  "group": "智谱"
+  "group": "智谱 BigModel"
  },
  {
   "id": "deep-kimi-trial-r7",
@@ -3313,7 +3313,8 @@
   "via": "register",
   "eq_note": "GLM-5.3-Flash 牌价 0.8/2.8 加权 1.3 元/百万低于 DS 谷价 1.75，保守 1:1 计 3 亿/周",
   "daily_wan": 30000,
-  "daily_note": "每日 3 亿（老板用户侧亲测第一手）；演变线：9 月周末 3 亿档(smzdm/人人都是产品经理)→CSDN 10-17 报 5 亿加码帖→10 月底每日化（老板口径），公开搜索滞后于客户端活动（本项目已知规律）"
+  "daily_note": "每日 3 亿（老板用户侧亲测第一手）；演变线：9 月周末 3 亿档(smzdm/人人都是产品经理)→CSDN 10-17 报 5 亿加码帖→10 月底每日化（老板口径），公开搜索滞后于客户端活动（本项目已知规律）",
+  "group": "智谱 BigModel"
  },
  {
   "id": "zhipu-pinhaomo",
@@ -3333,7 +3334,8 @@
   "cny": 0,
   "notes_caveat": "比例型权益无固定 token 数",
   "eq_wan": 2000,
-  "eq_note": "比例型权益:邀请返10%赠金;按月2万订阅基准返2千万当量(口径展示,随订阅额浮动)"
+  "eq_note": "比例型权益:邀请返10%赠金;按月2万订阅基准返2千万当量(口径展示,随订阅额浮动)",
+  "group": "智谱 BigModel"
  },
  {
   "id": "longcat-daily-free",
