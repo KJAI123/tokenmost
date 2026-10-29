@@ -823,9 +823,9 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 2,
-  "published": true,
+  "published": false,
   "group": "n8n",
-  "notes": "自部署工具不折 token（上限=所接 Key 额度，不进总账）"
+  "notes": "自部署工具不折 token（上限=所接 Key 额度，不进总账）；2026-10-29 老板指令下架"
  },
  {
   "id": "github-copilot-free",
@@ -3122,9 +3122,9 @@
   "verify_status": "verified",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true,
+  "published": false,
   "via": "client",
-  "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/",
+  "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/；2026-10-29 老板指令下架",
   "group": "全行业体验档横评"
  },
  {
