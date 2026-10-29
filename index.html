@@ -35,11 +35,13 @@ button{font-family:inherit}
 #side .tag{font-size:.75rem;color:var(--muted);margin-bottom:16px}
 #side .sgroup{font-size:.75rem;color:var(--muted);margin:16px 0 4px;display:flex;align-items:center;gap:8px;font-weight:600}
 #side .sgroup .dot{width:8px;height:8px;border-radius:50%}
-#side a.slink{display:flex;justify-content:space-between;align-items:center;font-size:.875rem;color:var(--text);padding:4px 8px;border-radius:6px;min-height:28px}
+#side a.slink{display:flex;flex-direction:column;justify-content:center;font-size:.8rem;color:var(--text);padding:3px 8px;border-radius:6px;min-height:26px;line-height:1.25}
 #side a.slink:hover{background:var(--hover);color:var(--accent)}
+#side a.slink span{font-size:.68rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #side a.slink span{color:var(--muted);font-size:.75rem;max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-#side .stools{display:flex;flex-direction:column;gap:8px;margin-bottom:8px}
-#side .stools button{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 12px;font-size:.875rem;cursor:pointer;text-align:left;min-height:36px;transition:all .12s}
+#side .stools{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+#side .stool-label{font-size:.68rem;color:var(--muted);letter-spacing:1px;margin:6px 0 -2px 2px;font-weight:600}
+#side .stools button{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 11px;font-size:.82rem;cursor:pointer;text-align:left;min-height:34px;transition:all .12s}
 #side .stools button:hover{border-color:var(--accent);color:var(--accent);background:rgba(5,150,105,.04)}
 #side .stools .accent{border-color:var(--accent);color:var(--accent);font-weight:600}
 #side .stools .gold{color:var(--amber)}
@@ -276,11 +278,13 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="tag">薅 token · 一键接入 · 极致省钱</div>
   <div class="stools">
     <button class="accent" id="authBtnSide" onclick="authOpen()">🔐 登录 / 供码</button>
-    <button id="vaultBtnSide">🗂 账号库</button>
-    <button id="guideBtnSide">📖 领取攻略</button>
-    <button class="violet" id="planBtnSide">⌨️ Coding 比价</button>
+    <div class="stool-label">面板</div>
     <button class="gold" id="sumBtnSide">💰 白嫖总账</button>
     <button id="calcBtnSide">🧮 用量比价</button>
+    <button class="violet" id="planBtnSide">⌨️ Coding 比价</button>
+    <div class="stool-label">我的</div>
+    <button id="vaultBtnSide">🗂 账号库</button>
+    <button id="guideBtnSide">📖 领取攻略</button>
   </div>
   <div id="sideNav"></div>
 </aside>
