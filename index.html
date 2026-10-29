@@ -544,6 +544,29 @@ function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2
 function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
 /* ============ 导航区渲染（侧边栏紧凑版 + 底部完整版） ============ */
+function renderNav(){
+  const order=['official_cn','agent','compute','reseller','official_global'];
+  document.getElementById('sideNav').innerHTML=order.map(k=>{
+    const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
+    return`<div class="sgroup"><span class="dot" style="background:${LAYER[k].color}"></span>${LAYER[k].name}</div>`
+      +g.sites.map(s=>`<a class="slink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}">${esc(s.name)}${s.hot?' 🔥':''}<span>${esc(s.free||s.desc||'')}</span></a>`).join('');
+  }).join('');
+  document.getElementById('navArea').innerHTML='<div style="font-size:.8rem;color:var(--muted);margin:18px 0 4px">🧭 全站导航（五层来源 '+SITES.reduce((n,g)=>n+g.sites.length,0)+' 站）</div>'+order.map(k=>{
+    const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
+    return`<section class="nav-section">
+      <div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span>
+        <h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div>
+      <div class="nav-grid">${g.sites.map(s=>`
+        <a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}">
+          <b>${esc(s.name)}${s.hot?' 🔥':''}</b>
+          <span>${esc(s.desc||'')}</span>
+          ${s.free?'<span class="free">'+esc(s.free)+'</span>':''}
+        </a>`).join('')}</div>
+    </section>`;
+  }).join('');
+  document.getElementById('n-sites').textContent=SITES.reduce((n,g)=>n+g.sites.length,0);
+}
+/* ============ 卡片渲染 ============ */
 function freshness(d){
   if(d.verify_status==='expired')return'<span class="badge b-red">❌ 已失效</span>';
   if(d.verify_status!=='verified')return'<span class="badge b-amber">⚠️ 待复核</span>';
@@ -668,34 +691,247 @@ function render(){
   }else{
     box.innerHTML=list.map(rowHtml).join('');
   }
+  document.querySelectorAll('#listhead .sortbtn').forEach(b=>{
+    const on=b.dataset.sort===sortKey;
+    b.classList.toggle('on',on);
+    b.textContent=b.dataset.sort==='tokens'?(on?'收益 ↓':'收益 ⇅'):(on?'核验 ↓':'核验 ⇅');
+  });
+  stats();
+  loadShared();
 }
-function renderNav(){
-  const order=['official_cn','maas','agent','compute','reseller','official_global'];
-  const SHORT={'official_cn':'官方·国内','maas':'MaaS','agent':'Agent','compute':'算力','reseller':'聚合商','official_global':'官方·海外'};
-  document.getElementById('sideNav').innerHTML=order.map(k=>{
-    const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
-    return`<div class="shead" data-fold="nav-${k}"><span class="dot" style="background:${LAYER[k].color}"></span>${SHORT[k]||LAYER[k].name}<span class="cnt">${g.sites.length}</span><i>▾</i></div>`
-      +`<div class="sgroup-body" id="fold-nav-${k}">`
-      +g.sites.map(s=>`<a class="slink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}">${esc(s.name)}${s.hot?' <b class="hot">HOT</b>':''}</a>`).join('')
-      +'</div>';
-  }).join('');
-  const bodies=document.querySelectorAll('#sideNav .sgroup-body');
-  bodies.forEach((b,i)=>{if(i>0)b.classList.add('folded')});
-  document.querySelectorAll('#sideNav .shead').forEach((h,i)=>{if(i>0)h.classList.add('folded')});
-  document.getElementById('navArea').innerHTML='<div style="font-size:.8rem;color:var(--muted);margin:18px 0 4px">🧭 全站导航（六层来源 '+SITES.reduce((n,g)=>n+g.sites.length,0)+' 站）</div>'+order.map(k=>{
-    const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
-    return`<section class="nav-section">
-      <div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span>
-        <h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div>
-      <div class="nav-grid">${g.sites.map(s=>`
-        <a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}">
-          <b>${esc(s.name)}${s.hot?' 🔥':''}</b>
-          <span>${esc(s.desc||'')}</span>
-          ${s.free?'<span class="free">'+esc(s.free)+'</span>':''}
-        </a>`).join('')}</div>
-    </section>`;
-  }).join('');
+const PAID_TYPES=new Set(['price_low','pricing_plan']);
+function stats(){
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&!PAID_TYPES.has(d.type)&&d.type!=='warning');
+  document.getElementById('n-deals').textContent=live.length;
+  document.getElementById('n-fresh').textContent=live.filter(d=>(Date.now()-new Date(d.verified_at))<864e5).length;
+  const latest=live.reduce((m,d)=>Math.max(m,new Date(d.verified_at)),0);
+  document.getElementById('updated').textContent=new Date(latest).toLocaleDateString('zh-CN');
 }
+/* ============ 折扣码复制（事件委托） ============ */
+function copyText(t,btn,okTxt,resetTxt){
+  const done=()=>{if(btn){btn.textContent=okTxt;setTimeout(()=>btn.textContent=resetTxt,1500)}};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(t).then(done).catch(()=>fallbackCopy(t,done));
+  }else fallbackCopy(t,done);
+}
+document.getElementById('cards').addEventListener('click',e=>{
+  const ag=e.target.closest('.aggToggle');
+  if(ag){const det=document.querySelector(`.agg-detail[data-detail="${CSS.escape(ag.dataset.agg)}"]`);
+    if(det){const open=det.classList.toggle('open');ag.textContent=open?'▴ 收起':'▾ 展开';}return}
+  const btn=e.target.closest('.copy');
+  if(btn){copyText(btn.dataset.code,btn,'✅ 已复制','📋 复制');return}
+  const cl=e.target.closest('[data-claim]');
+  if(cl){const s=getClaimed(),id=cl.dataset.claim;s.has(id)?s.delete(id):s.add(id);
+    try{localStorage.setItem(CKEY,JSON.stringify([...s]))}catch(_){}
+    render();return}
+  const ab=e.target.closest('[data-api]');
+  if(ab)openApi(ab.dataset.api);
+  const sh=e.target.closest('[data-share]');
+  if(sh)openShare(sh.dataset.share);
+  const sp=e.target.closest('[data-supply]');
+  if(sp)openSub(sp.dataset.supply);
+  const vq=e.target.closest('[data-vq]');
+  if(vq){e.preventDefault();quickVault(vq.dataset.vq);}
+});
+/* ============ 一键托管（卡片 🔒 → 预填快速表单） ============ */
+function quickVault(dealId){
+  const d=DEALS.find(x=>x.id===dealId);if(!d)return;
+  vaultToggle(true);
+  const s=siteFor(d);
+  if(s)document.getElementById('v-site').value=s.name;
+  document.getElementById('v-note').value=d.value.slice(0,60);
+  document.getElementById('v-account').focus();
+}
+/* ============ 额度直连（usage.json 注册表驱动，Key 仅本地） ============ */
+let USAGE=[];
+function getPath(o,p){try{return String(p).split('.').reduce((a,k)=>a==null?a:a[/^\d+$/.test(k)?+k:k],o)}catch(_){return null}}
+async function pollUsage(id){
+  const list=vLoad(),v=list.find(x=>x.id===id);if(!v)return;
+  const cfg=USAGE.find(u=>u.site===v.site);
+  if(!cfg)return alert('该平台暂未配置直连查询，请手动更新备注或直达控制台');
+  try{
+    const r=await fetch(cfg.url,{headers:{Authorization:'Bearer '+v.api_key}});
+    if(!r.ok)throw new Error('HTTP '+r.status+(r.status===401?'（Key 无效？）':''));
+    const j=await r.json();
+    const parts=cfg.fields.map(([n,p])=>{const val=getPath(j,p);return val==null?null:n+' '+val}).filter(Boolean);
+    if(!parts.length)throw new Error('响应里没有认得的字段');
+    v.quota={label:parts.join(' · '),ts:Date.now()};
+    vSave(list);vRender();
+  }catch(e){
+    alert('查询失败：'+(String(e.message).includes('fetch')?'该平台浏览器直连受限（跨域），请手动更新备注或直达控制台':e.message));
+  }
+}
+function fallbackCopy(t,cb){
+  const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');cb()}catch(_){alert('复制失败，请手动选择：'+t)}
+  document.body.removeChild(ta);
+}
+/* ============ 后端：账号 + 折扣码众包托管（v0.9） ============ */
+const API = localStorage.getItem('tm_api') ?? (/^(127\.0\.0\.1|localhost)$/.test(location.hostname) ? 'http://127.0.0.1:8001' : '');
+let auth = (()=>{try{return JSON.parse(localStorage.getItem('tm_auth')||'null')}catch(_){return null}})();
+function saveAuth(v){auth=v;v?localStorage.setItem('tm_auth',JSON.stringify(v)):localStorage.removeItem('tm_auth')}
+let SHARED={};  // provider -> [{id,code,note,remaining,max_copies}]
+async function apiFetch(path,opts={}){
+  const h={...(opts.headers||{})};
+  if(auth)h.Authorization='Bearer '+auth.token;
+  if(opts.body)h['Content-Type']='application/json';
+  const r=await fetch(API+path,{...opts,headers:h});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(j.detail||('HTTP '+r.status));
+  return j;
+}
+function authRefreshUI(){
+  const t=auth?auth.phone+' · 我的码':'登录 / 供码';
+  document.getElementById('authBtn').textContent=t;
+  document.getElementById('authBtnSide').textContent=auth?'🔐 '+auth.phone:'🔐 登录 / 供码';
+  render();  // 卡片上的「供码」按钮显隐随登录态
+}
+async function loadShared(){
+  if(!API)return;
+  try{
+    const j=await apiFetch('/api/coupons/public');
+    SHARED={};
+    for(const it of j.items)(SHARED[it.provider]=SHARED[it.provider]||[]).push(it);
+    document.querySelectorAll('[data-share]').forEach(b=>{
+      const p=b.dataset.share,n=(SHARED[p]||[]).length;
+      b.style.display=n?'':'none';
+      if(n)b.innerHTML=`🎁 共享 <b>${n}</b>`;
+    });
+  }catch(_){/* 后端不在线时按钮自然隐藏 */}
+}
+function openShare(provider){
+  const items=SHARED[provider]||[];
+  document.getElementById('shareTitle').textContent='🎁 '+provider+' · 共享折扣码';
+  document.getElementById('shareSub').textContent=items.length+' 个在架 · 每人每日同码只计 1 次，达上限自动下架';
+  document.getElementById('shareList').innerHTML=items.map(it=>{
+    const action=it.kind==='link'
+      ?`<button data-jumpshare="${it.id}" data-code="${esc(it.code)}">🔗 跳转 →</button>`
+      :`<button data-copyshare="${it.id}" data-code="${esc(it.code)}">📋 复制</button>`;
+    return`
+    <div class="shareItem">
+      <div class="row"><span class="code">${esc(it.kind==='link'?(it.note||it.code):it.code)}</span>${action}</div>
+      ${it.kind==='link'&&it.note?`<div class="meta" title="${esc(it.code)}">${esc(it.code)}</div>`:''}
+      ${it.kind!=='link'&&it.note?`<div class="meta">💡 ${esc(it.note)}</div>`:''}
+      <div class="meta">剩余 <span class="left">${it.remaining}</span> / ${it.max_copies} 次${it.kind==='link'?'跳转':'复制'}</div>
+    </div>`}).join('')||'<div class="empty">暂时没有在架的共享码</div>';
+  document.getElementById('shareOverlay').classList.add('open');
+  document.getElementById('sharePanel').classList.add('open');
+}
+function closeShare(){document.getElementById('shareOverlay').classList.remove('open');document.getElementById('sharePanel').classList.remove('open')}
+document.getElementById('shareList').addEventListener('click',async e=>{
+  const jb=e.target.closest('[data-jumpshare]');
+  if(jb){
+    try{
+      const j=await apiFetch(`/api/coupons/${jb.dataset.jumpshare}/copy`,{method:'POST'});
+      window.open(jb.dataset.code,'_blank','noopener');
+      jb.closest('.shareItem').querySelector('.left').textContent=j.max-j.copies;
+      if(j.status==='unlisted')setTimeout(()=>{loadShared();closeShare();alert('这个链接已达次数上限，已自动下架')},600);
+    }catch(err){alert('跳转失败：'+err.message)}
+    return;
+  }
+  const b=e.target.closest('[data-copyshare]');if(!b)return;
+  try{
+    const j=await apiFetch(`/api/coupons/${b.dataset.copyshare}/copy`,{method:'POST'});
+    copyText(j.code,b,'✅ 已复制','📋 复制');
+    b.closest('.shareItem').querySelector('.left').textContent=j.max-j.copies;
+    if(j.status==='unlisted')setTimeout(()=>{loadShared();closeShare();alert('这个码已达复制上限，已自动下架。去逛逛别的羊毛吧！')},600);
+  }catch(err){alert('复制失败：'+err.message)}
+});
+function openSub(provider){
+  if(!auth)return authOpen();
+  const names=[...new Set(SITES.flatMap(g=>g.sites).map(s=>s.name))];
+  document.getElementById('subForm').innerHTML=`
+    <label>平台</label>
+    <select id="sf-provider">${names.map(n=>`<option ${n===provider?'selected':''}>${esc(n)}</option>`).join('')}</select>
+    <label>类型</label>
+    <select id="sf-kind"><option value="code">🎟 折扣码</option><option value="link">🔗 折扣链接（推广/邀请/活动直达）</option></select>
+    <label id="sf-code-label">折扣码</label>
+    <input id="sf-code" placeholder="如 SILICON-XXXX" autocomplete="off">
+    <label>说明（来源/规则，选填）</label>
+    <textarea id="sf-note" rows="2" placeholder="例：官方公众号活动码，新用户可用"></textarea>
+    <label>次数上限（达限自动下架）</label>
+    <input id="sf-max" type="number" min="1" max="10000" value="50">
+    <button id="sf-go">🎟 提交托管</button>
+    <p class="calc-note" id="sf-msg"></p>`;
+  document.getElementById('sf-kind').addEventListener('change',e=>{
+    const link=e.target.value==='link';
+    document.getElementById('sf-code-label').textContent=link?'折扣链接（完整 URL）':'折扣码';
+    document.getElementById('sf-code').placeholder=link?'https://xxx.cn/activity?ref=你的邀请码':'如 SILICON-XXXX';
+  });
+  document.getElementById('subOverlay').classList.add('open');
+  document.getElementById('subPanel').classList.add('open');
+  document.getElementById('sf-go').addEventListener('click',async()=>{
+    const btn=document.getElementById('sf-go');btn.disabled=true;btn.textContent='提交中…';
+    try{
+      const j=await apiFetch('/api/coupons',{method:'POST',body:JSON.stringify({
+        provider:document.getElementById('sf-provider').value,
+        code:document.getElementById('sf-code').value.trim(),
+        note:document.getElementById('sf-note').value.trim(),
+        max_copies:+document.getElementById('sf-max').value||50,
+        kind:document.getElementById('sf-kind').value})});
+      document.getElementById('sf-msg').textContent=j.message;
+      if(j.status==='active')loadShared();
+    }catch(err){document.getElementById('sf-msg').textContent='❌ '+err.message}
+    btn.disabled=false;btn.textContent='🎟 提交托管';
+  });
+}
+function closeSub(){document.getElementById('subOverlay').classList.remove('open');document.getElementById('subPanel').classList.remove('open')}
+function authOpen(){
+  document.getElementById('auPhone').value=auth?auth.phone:'';
+  authSwitchMode('login');
+  document.getElementById('authOverlay').classList.add('open');
+  document.getElementById('authPanel').classList.add('open');
+  if(auth)renderMyCoupons();
+}
+function closeAuth(){document.getElementById('authOverlay').classList.remove('open');document.getElementById('authPanel').classList.remove('open')}
+let authMode='login';
+function authSwitchMode(m){
+  authMode=m;
+  document.getElementById('authTitle').textContent=m==='login'?'登录':'注册';
+  document.getElementById('auGo').textContent=m==='login'?'登录':'注册并登录';
+  document.getElementById('authSwitch').innerHTML=m==='login'
+    ?'没有账号？<a onclick="authSwitchMode(\'register\')">30 秒注册 →</a>'
+    :'已有账号？<a onclick="authSwitchMode(\'login\')">直接登录 →</a>';
+}
+document.getElementById('auGo').addEventListener('click',async()=>{
+  const btn=document.getElementById('auGo');btn.disabled=true;
+  try{
+    const j=await apiFetch('/api/auth/'+authMode,{method:'POST',body:JSON.stringify({
+      phone:document.getElementById('auPhone').value.trim(),password:document.getElementById('auPass').value})});
+    saveAuth({token:j.token,phone:j.phone});
+    authRefreshUI();closeAuth();
+    renderMyCoupons();
+  }catch(err){alert((authMode==='login'?'登录失败：':'注册失败：')+err.message)}
+  btn.disabled=false;
+});
+async function renderMyCoupons(){
+  if(!auth)return;
+  try{
+    const j=await apiFetch('/api/my/coupons');
+    const box=document.getElementById('v-my');
+    box.innerHTML=j.items.length
+      ?'<h2 style="font-size:.95rem;margin:18px 0 8px">🎟 我托管的折扣码</h2>'+j.items.map(it=>`
+        <div class="myCoupon">
+          <div><b>${esc(it.code)}</b> · ${esc(it.provider)} <span class="st-${it.status}">〔${{active:'在架',pending:'待审',rejected:'未过审',unlisted:'已下架'}[it.status]}〕</span></div>
+          ${it.note?`<div style="color:var(--muted);font-size:.75rem;margin-top:2px">${esc(it.note)}</div>`:''}
+          <div class="bar"><i style="width:${Math.min(100,it.copies/it.max_copies*100)}%"></i></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span>已被复制 <b>${it.copies}</b> / ${it.max_copies} 次</span>
+            ${it.status==='active'||it.status==='pending'?`<button data-unlist="${it.id}">下架</button>`:''}
+          </div>
+          ${it.flash_verdict?`<div style="font-size:.7rem;color:var(--muted);margin-top:3px">🤖 ${esc(it.flash_verdict)}</div>`:''}
+        </div>`).join('')
+      :'<h2 style="font-size:.95rem;margin:18px 0 8px">🎟 我托管的折扣码</h2><div class="vault-empty">还没有托管。点卡片上的「🎁 供码」分享你的码，帮更多人薅到羊毛。</div>';
+    box.querySelectorAll('[data-unlist]').forEach(b=>b.addEventListener('click',async()=>{
+      if(!confirm('下架这个码？'))return;
+      try{await apiFetch('/api/coupons/'+b.dataset.unlist,{method:'DELETE'});renderMyCoupons();loadShared()}catch(e){alert(e.message)}
+    }));
+  }catch(e){/* 未登录/后端离线忽略 */}
+}
+/* ============ 账号库（localStorage） ============ */
+function vLoad(){try{return JSON.parse(localStorage.getItem(VKEY)||'[]')}catch(_){return[]}}
+function vSave(list){try{localStorage.setItem(VKEY,JSON.stringify(list))}catch(_){alert('本地存储不可用（隐私模式？）')}}
 function vInit(){
   const sel=document.getElementById('v-site');
   sel.innerHTML='<option value="">— 选择平台 —</option>'+SITES.flatMap(g=>
@@ -1034,10 +1270,6 @@ function planRender(){
 }function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
 document.getElementById('planClose').addEventListener('click',closePlan);
 document.getElementById('planOverlay').addEventListener('click',closePlan);
-/* ============ 数据加载 ============ */
-fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
-fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
-fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
 /* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
 function calcGlobalBanner(){
   const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan');
@@ -1055,16 +1287,29 @@ document.getElementById('side').addEventListener('click',e=>{
   const body=document.getElementById('fold-'+h.dataset.fold)||h.nextElementSibling;
   if(body){body.classList.toggle('folded');h.classList.toggle('folded');}
 });
+/* ============ 数据加载 ============ */
+fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
+fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
+fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
+/* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
+function calcGlobalBanner(){
+  const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan');
+  const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
+  const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
+  const monthly=Math.round(once+daily*30);
+  const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
+      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
+  document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
+  document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
+}
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
   fetch('deals.json?ts='+Date.now()).then(r=>r.json())
 ]).then(([sites,deals])=>{
   SITES=sites;DEALS=deals;
   renderNav();vInit();render();vRender();calcGlobalBanner();
-  try{authRefreshUI()}catch(e){console.error('authRefreshUI',e)}
-  try{loadShared()}catch(e){console.error('loadShared',e)}
-}).catch(e=>{
-  console.error('data load',e);
+  authRefreshUI();loadShared();
+}).catch(()=>{
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
 });
 </script>
