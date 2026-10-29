@@ -83,49 +83,6 @@
   "layer": "agent",
   "sites": [
    {
-    "name": "扣子 Coze",
-    "url": "https://www.coze.cn",
-    "desc": "字节 Agent 搭建平台",
-    "free": "免费档 0 积分（仅基础）",
-    "hot": true
-   },
-   {
-    "name": "智谱清言",
-    "url": "https://chatglm.cn",
-    "desc": "智谱官方对话 Agent"
-   },
-   {
-    "name": "文心智能体",
-    "url": "https://agents.baidu.com",
-    "desc": "百度智能体平台"
-   },
-   {
-    "name": "腾讯元器",
-    "url": "https://yuanqi.tencent.com",
-    "desc": "腾讯智能体平台"
-   },
-   {
-    "name": "Dify",
-    "url": "https://dify.ai",
-    "desc": "开源 LLM 应用平台，可自部署",
-    "hot": true
-   },
-   {
-    "name": "FastGPT",
-    "url": "https://fastgpt.io",
-    "desc": "知识库 + 工作流，开源自部署"
-   },
-   {
-    "name": "n8n",
-    "url": "https://n8n.io",
-    "desc": "自动化工作流，可接各家 LLM"
-   },
-   {
-    "name": "Coze 海外版",
-    "url": "https://www.coze.com",
-    "desc": "可接 GPT/Claude/Gemini"
-   },
-   {
     "name": "ZCode",
     "url": "https://zcode.z.ai",
     "desc": "智谱官方编程 CLI，活动主阵地（每日 3 亿/体验套餐/拉新 1 亿）",
@@ -156,16 +113,14 @@
     "hot": false
    },
    {
-    "name": "OpenClaw",
-    "url": "https://openclaw.ai",
-    "desc": "开源 Claw 编程助手，自部署接任意 Key",
-    "hot": false
-   },
-   {
-    "name": "AutoClaw",
-    "url": "https://autoclaw.ai",
-    "desc": "自动化 Claw agent，开源可自部署",
-    "hot": false
+    "name": "Cline",
+    "url": "https://cline.bot/",
+    "api": {
+     "base_url": "https://api.cline.bot/v1",
+     "model": "deepseek-v4.1-flash",
+     "env": "CLINE_API_KEY"
+    },
+    "desc": "VS Code 编程代理，Cline Pass 订阅含 DeepSeek 额度"
    },
    {
     "name": "TraeCode",
@@ -186,9 +141,20 @@
     "hot": false
    },
    {
-    "name": "WorkBuddy",
-    "url": "https://cloud.tencent.com/product/workbuddy",
-    "desc": "腾讯 AI 办公助手（公测 5000 Credits+日 100 积分）",
+    "name": "MonkeyCode",
+    "url": "https://monkeycode-ai.com",
+    "desc": "长亭开源 AI 编程平台，免费档每日千万级 token+注册送 9 亿"
+   },
+   {
+    "name": "OpenClaw",
+    "url": "https://openclaw.ai",
+    "desc": "开源 Claw 编程助手，自部署接任意 Key",
+    "hot": false
+   },
+   {
+    "name": "AutoClaw",
+    "url": "https://autoclaw.ai",
+    "desc": "自动化 Claw agent，开源可自部署",
     "hot": false
    },
    {
@@ -197,19 +163,47 @@
     "desc": "腾讯 AI 办公助手，公测 5000 Credits+月度积分"
    },
    {
-    "name": "MonkeyCode",
-    "url": "https://monkeycode-ai.com",
-    "desc": "长亭开源 AI 编程平台，免费档每日千万级 token+注册送 9 亿"
+    "name": "扣子 Coze",
+    "url": "https://www.coze.cn",
+    "desc": "字节 Agent 搭建平台",
+    "free": "免费档 0 积分（仅基础）",
+    "hot": true
    },
    {
-    "name": "Cline",
-    "url": "https://cline.bot/",
-    "api": {
-     "base_url": "https://api.cline.bot/v1",
-     "model": "deepseek-v4.1-flash",
-     "env": "CLINE_API_KEY"
-    },
-    "desc": "VS Code 编程代理，Cline Pass 订阅含 DeepSeek 额度"
+    "name": "Coze 海外版",
+    "url": "https://www.coze.com",
+    "desc": "可接 GPT/Claude/Gemini"
+   },
+   {
+    "name": "文心智能体",
+    "url": "https://agents.baidu.com",
+    "desc": "百度智能体平台"
+   },
+   {
+    "name": "腾讯元器",
+    "url": "https://yuanqi.tencent.com",
+    "desc": "腾讯智能体平台"
+   },
+   {
+    "name": "Dify",
+    "url": "https://dify.ai",
+    "desc": "开源 LLM 应用平台，可自部署",
+    "hot": true
+   },
+   {
+    "name": "FastGPT",
+    "url": "https://fastgpt.io",
+    "desc": "知识库 + 工作流，开源自部署"
+   },
+   {
+    "name": "n8n",
+    "url": "https://n8n.io",
+    "desc": "自动化工作流，可接各家 LLM"
+   },
+   {
+    "name": "智谱清言",
+    "url": "https://chatglm.cn",
+    "desc": "智谱官方对话 Agent"
    }
   ]
  },
