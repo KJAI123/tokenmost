@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-29T01:07:29Z",
+  "harvested_at": "2026-10-29T11:16:06Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -547,11 +547,47 @@
       "name": "火山方舟协作奖励计划",
       "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
       "status": "ok",
-      "hits": 6,
+      "hits": 30,
       "findings": [
         {
           "match": "免费推理额度",
           "context": "模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识问答 Agent"
+        },
+        {
+          "match": "免费资源包，该资源包可用于抵扣按tokens后付费用量，奖励额度",
+          "context": "用户可参与本活动，享受企业权益。 ​ 完成个人实名认证的用户可参与本活动并享受个人权益，可在活动页面完成企业认证，并手动确认升级，享受企业权益。 ​ ​ ​ ​ 活动规则说明 ​ 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按tokens后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过500万tokens的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个"
+        },
+        {
+          "match": "免费资源包；未获授权的接入点数据将不予采集，该部分使用量次",
+          "context": "获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按tokens后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过500万tokens的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活动页面说明。 ​ 本计划所发放的免费资源包，可用于抵扣在线推理过程中推理输入、推理输"
+        },
+        {
+          "match": "免费资源包，可用于抵扣在线推理过程中推理输入、推理输出以及推理缓存命中的按token",
+          "context": "源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活动页面说明。 ​ 本计划所发放的免费资源包，可用于抵扣在线推理过程中推理输入、推理输出以及推理缓存命中的按token后付费计费用量。目前，暂不支持抵扣批量推理、按模型单元付费、TPM保障包以及推理缓存存储等计费项的用量。若后续对上述抵扣规则进行调整，将在相关活动页面或文档中予以说明，请予以关注。 ​ 目前平台仅针对部分模型和调用方式进行数据采集，通过不支"
+        },
+        {
+          "match": "免费资源额度",
+          "context": "期延长至2026年9月30日 ）内，在您订购/使用火山方舟指定模型时（以【 产品活动介绍页 】公示为准）如选择参与本计划，火山方舟将为您提供一份冷启动资源包，同时为您提供每日奖励包（统称“方舟奖励资源包”或“奖励包”）。 ​ （1）奖励包的免费资源额度和种类等，以您开通本计划时火山方舟指定模型在【 产品活动介绍页 】公示的奖励信息为准； ​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （"
+        },
+        {
+          "match": "免费额度资源包奖励，具体奖励额度",
+          "context": "奖励资源包”或“奖励包”）。 ​ （1）奖励包的免费资源额度和种类等，以您开通本计划时火山方舟指定模型在【 产品活动介绍页 】公示的奖励信息为准； ​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 ​ （4）奖"
+        },
+        {
+          "match": "免费额度",
+          "context": "声音、图形、图片、图像、视频、软件或任何其他类似信息（以下称“协作奖励数据”）将授权提供给火山引擎用于火山引擎及其关联公司的模型和算法优化 。 ​ 数据授权说明 ​ 本计划项下授权的协作奖励数据为您参与本计划并按奖励规则启动奖励包计算程序及免费额度期间输入模型和模型输出的所有内容。对于采集的数据，火山方舟平台将在匿名化处理后加密存储用于火山引擎及其关联公司的模型算法和服务优化。 特别说明，对于不在以上采集范围内的数据，火山引擎将不会进行采集和存储 。 ​ 您理解并确认，火山引擎可永久"
+        },
+        {
+          "match": "500万tokens",
+          "context": "​ ​ 活动规则说明 ​ 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按tokens后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过500万tokens的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平"
+        },
+        {
+          "match": "每日将采集每个模型不超过500万tokens的推理数据，并于次",
+          "context": "享受企业权益。 ​ ​ ​ ​ 活动规则说明 ​ 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按tokens后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过500万tokens的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活"
+        },
+        {
+          "match": "每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次",
+          "context": "​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 ​ （4）奖励包仅可用于抵扣按 Token 付费的后付费推理费用； ​ （5）奖励包将在发放到您账号后的 30 个自然日内有效，到期后清零； ​ 您可选择同时使用参与本计划的任意一款或几款"
         },
         {
           "match": "协作奖励",
@@ -559,19 +595,79 @@
         },
         {
           "match": "协作奖励",
-          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​"
         },
         {
           "match": "协作奖励",
-          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协"
         },
         {
           "match": "协作奖励",
-          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 最近更新时间： 2026.10.12 17:08:22 这个页面对您有帮助吗？ 有用 有用 无用 无用"
+          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页"
         },
         {
-          "match": "Token",
-          "context": "作与生成视频 查看版权用量与收入 在线推理 管理推理接入点 为 AI 生成产物添加隐式水印 安心体验模式细则说明 开通管理 安全管理 控制台-推理安全审计 控制台-精调安全审计 控制台-推理接入点安全监控总览 用量统计 项目配置 网络配置 Token 计算器 安全管理 安全管理总览 内容安全护栏 火山方舟大模型服务安全白皮书 火山方舟互信计算架构白皮书 推理会话数据应用层加密方案 精调安全防护能力介绍 通过堡垒机进入安全沙箱的运维流程 常见问题 常见问题 相关协议 火山方舟大模型服务平"
+          "match": "协作奖励",
+          "context": "励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页面「立即参与」入口 ​ 您可在 火山方舟控制台-开通管理页 ，点击 立即参与 进入产品活动页面。 ​ ​ ​ ​ 方式二：通过模型广场进入模型详情页，在模型卡片进入 ​ 您可登录 火山方舟控制台 ，"
+        },
+        {
+          "match": "协作奖励",
+          "context": "片进入 ​ 您可登录 火山方舟控制台 ，在左侧导航栏选择 模型广场 ，点击目标模型卡片即可进入模型详情页。点击 火山方舟模型奖励计划 进入活动详情页。 ​ 当前入口支持模型 ： Doubao-Seed-Evolving ​ ​ ​ ​ 进入协作奖励详情页后，您可在当前页面完成协作奖励计划的 授权 或 撤回授权 操作。 ​ ​ ​ ​ ​ ​ ​ 活动参与范围 ​ 完成企业认证的用户可参与本活动，享受企业权益。 ​ 完成个人实名认证的用户可参与本活动并享受个人权益，可在活动页面完成企业"
+        },
+        {
+          "match": "协作奖励",
+          "context": "，在左侧导航栏选择 模型广场 ，点击目标模型卡片即可进入模型详情页。点击 火山方舟模型奖励计划 进入活动详情页。 ​ 当前入口支持模型 ： Doubao-Seed-Evolving ​ ​ ​ ​ 进入协作奖励详情页后，您可在当前页面完成协作奖励计划的 授权 或 撤回授权 操作。 ​ ​ ​ ​ ​ ​ ​ 活动参与范围 ​ 完成企业认证的用户可参与本活动，享受企业权益。 ​ 完成个人实名认证的用户可参与本活动并享受个人权益，可在活动页面完成企业认证，并手动确认升级，享受企业权益。"
+        },
+        {
+          "match": "协作奖励",
+          "context": "计划参与人数较多，资源包下发可能存在延迟，请耐心等待。 ​ 数据安全保障 ​ 隐私无忧：您的授权数据会被严格加密和匿名化处理； ​ 无授权不采集：当您从未授权、撤回授权，或者本计划终止时，您的数据不会被采集； ​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含"
+        },
+        {
+          "match": "协作奖励",
+          "context": "等待。 ​ 数据安全保障 ​ 隐私无忧：您的授权数据会被严格加密和匿名化处理； ​ 无授权不采集：当您从未授权、撤回授权，或者本计划终止时，您的数据不会被采集； ​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发"
+        },
+        {
+          "match": "协作奖励",
+          "context": "无授权不采集：当您从未授权、撤回授权，或者本计划终止时，您的数据不会被采集； ​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发放的奖励包在有效期内仍可正常使用 ，可继续用于对应模型（含本次退出的 9 款模型）"
+        },
+        {
+          "match": "协作奖励",
+          "context": "​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发放的奖励包在有效期内仍可正常使用 ，可继续用于对应模型（含本次退出的 9 款模型）。 ​ 仍在协作奖励计划中的模型可正常领取与使用奖励包 。 ​ 退出模型清单"
+        },
+        {
+          "match": "协作奖励",
+          "context": "于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发放的奖励包在有效期内仍可正常使用 ，可继续用于对应模型（含本次退出的 9 款模型）。 ​ 仍在协作奖励计划中的模型可正常领取与使用奖励包 。 ​ 退出模型清单 ​ 图片生成模型（1 款）： Doubao-Seedream-5.0-Pro ​ 语言模型（8 款）： Doubao-Seed-2.1-pro 、 Doubao-Seed-2.1-t"
+        },
+        {
+          "match": "协作奖励",
+          "context": "er 、 Doubao-smart-router 、 DeepSeek-V4-Pro正式版 、 DeepSeek-V4-Flash正式版 、 GLM-5.2 、 Kimi-K3 ​ 2026 年 9 月 1 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 9 月 1 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 调整说明 ​ 模型服务本身不受影响 ，退出后您仍可正常调用，按标准价格计费。 ​ 已发放的奖励包在有效期内仍"
+        },
+        {
+          "match": "协作奖励",
+          "context": "-Pro正式版 、 DeepSeek-V4-Flash正式版 、 GLM-5.2 、 Kimi-K3 ​ 2026 年 9 月 1 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 9 月 1 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 调整说明 ​ 模型服务本身不受影响 ，退出后您仍可正常调用，按标准价格计费。 ​ 已发放的奖励包在有效期内仍可正常使用 ，不会提前清零，到期规则不变（发放后 30 个自然日内有效）。"
+        },
+        {
+          "match": "协作奖励",
+          "context": "ill-Qwen-7B 、 Kimi-K2 、 Kimi-K2.5 ​ 后续安排 ​ 本次退出后，仍在本计划内的模型将继续生效，后续调整信息将通过站内信及本文档另行通知。 ​ 如需查询奖励包余额与有效期，请登录 火山方舟控制台-开通管理页-协作奖励计划活动页 查看。 ​ 火山 方舟协作奖励计划活动规则（第二期） ​ 火山引擎邀请客户（“您”）参与协作奖励计划（“本计划”），本计划旨在与您一起共建更优质的模型服务。 ​ 协作奖励计划权益说明 ​ 本计划合作期（ 原合作期为2024年12"
+        },
+        {
+          "match": "协作奖励",
+          "context": "、 Kimi-K2.5 ​ 后续安排 ​ 本次退出后，仍在本计划内的模型将继续生效，后续调整信息将通过站内信及本文档另行通知。 ​ 如需查询奖励包余额与有效期，请登录 火山方舟控制台-开通管理页-协作奖励计划活动页 查看。 ​ 火山 方舟协作奖励计划活动规则（第二期） ​ 火山引擎邀请客户（“您”）参与协作奖励计划（“本计划”），本计划旨在与您一起共建更优质的模型服务。 ​ 协作奖励计划权益说明 ​ 本计划合作期（ 原合作期为2024年12月1日至2025年5月31日，合作期延长至"
+        },
+        {
+          "match": "协作奖励",
+          "context": "内的模型将继续生效，后续调整信息将通过站内信及本文档另行通知。 ​ 如需查询奖励包余额与有效期，请登录 火山方舟控制台-开通管理页-协作奖励计划活动页 查看。 ​ 火山 方舟协作奖励计划活动规则（第二期） ​ 火山引擎邀请客户（“您”）参与协作奖励计划（“本计划”），本计划旨在与您一起共建更优质的模型服务。 ​ 协作奖励计划权益说明 ​ 本计划合作期（ 原合作期为2024年12月1日至2025年5月31日，合作期延长至2026年9月30日 ）内，在您订购/使用火山方舟指定模型时（以【"
+        },
+        {
+          "match": "协作奖励",
+          "context": "询奖励包余额与有效期，请登录 火山方舟控制台-开通管理页-协作奖励计划活动页 查看。 ​ 火山 方舟协作奖励计划活动规则（第二期） ​ 火山引擎邀请客户（“您”）参与协作奖励计划（“本计划”），本计划旨在与您一起共建更优质的模型服务。 ​ 协作奖励计划权益说明 ​ 本计划合作期（ 原合作期为2024年12月1日至2025年5月31日，合作期延长至2026年9月30日 ）内，在您订购/使用火山方舟指定模型时（以【 产品活动介绍页 】公示为准）如选择参与本计划，火山方舟将为您提供一份冷启"
+        },
+        {
+          "match": "协作奖励",
+          "context": "示的奖励信息为准； ​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 ​ （4）奖励包仅可用于抵扣按 Token 付费的后付费推理费用； ​ （5）奖励包将在发放到您账号后的 30 个自"
+        },
+        {
+          "match": "协作奖励",
+          "context": "个账户或多个账号，这些账户或账号不可同时申请参与本计划。 ​ 您在合作期内调用火山方舟指定模型服务期间的调用数据，即因调用模型而输入和模型生成的内容，包括但不限于所有输入的文本、声音、图形、图片、图像、视频、软件或任何其他类似信息（以下称“协作奖励数据”）将授权提供给火山引擎用于火山引擎及其关联公司的模型和算法优化 。 ​ 数据授权说明 ​ 本计划项下授权的协作奖励数据为您参与本计划并按奖励规则启动奖励包计算程序及免费额度期间输入模型和模型输出的所有内容。对于采集的数据，火山方舟平台"
         }
       ]
     },
@@ -2632,7 +2728,7 @@
         },
         {
           "match": "free",
-          "context": "y seat tier ✓ Priority support — — — — — — ✓ X Post, reply, and follow ✓ ✓ ✓ ✓ ✓ ✓ ✓ Premium checkmark — ✓ ✓ ✓ ✓ ✓ ✓ Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
+          "context": "6.00% 6.00% By seat tier By seat tier 𝕏 Money cashback 3% with Direct Deposit 3% 3% 3% 3% By seat tier By seat tier Ad-free scrolling — Some surfaces Most surfaces Most surfaces Most surfaces Most surfaces Most surfaces Get paid to post — ✓ ✓"
         },
         {
           "match": "Pricing",
@@ -2677,7 +2773,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "例如：企业微信智能机器人、QQ、飞书、钉钉等）、自动决策与任务执行能力、预设的技能（Skills）能力。它能控制您的终端执行操作，而不是只出主意。 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -2685,7 +2781,7 @@
         },
         {
           "match": "free",
-          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
+          "context": "绍 2022-04-27 432 2分33秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
@@ -3207,7 +3303,7 @@
         },
         {
           "match": "Pricing",
-          "context": "erence Factor Adjustment Notice Qoder IDE Quest window retirement notice Removal of the Lite model tier Account Credits Pricing Billing Events Qoder 1024 · Community Boost Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus C"
+          "context": "erence Factor Adjustment Notice Qoder IDE Quest window retirement notice Removal of the Lite model tier Account Credits Pricing Billing Events Invite Friends to Complete Tasks and Earn Rewards Qoder 1024 · Community Boost Limited-Time Offer: Doubl"
         }
       ]
     },
@@ -3269,9 +3365,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -4044,7 +4139,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 12.1k  ( 12.1k ) Star 82.3k  ( 82.3k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 12.2k  ( 12.2k ) Star 82.4k  ( 82.4k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4226,51 +4321,51 @@
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoRout"
+          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoRo"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 NVIDIA NIM 长期有效 NVIDIA NIM：100+ 模型免费原型调用（按速率限制，不计 Token） NVIDIA NIM（build"
+          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 NVIDIA NIM 长期有效 NVIDIA NIM：100+ 模型免费原型调用（按速率限制，不计 Token） NVIDIA NIM（bui"
         },
         {
           "match": "免费原型调用（按速率限制，不计 Token",
-          "context": "成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 NVIDIA NIM 长期有效 NVIDIA NIM：100+ 模型免费原型调用（按速率限制，不计 Token） NVIDIA NIM（build.nvidia.com）提供 100+ 模型的免费原型调用，不按 Token 计费、不需要信用卡，限制方式是速率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费"
+          "context": "。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 NVIDIA NIM 长期有效 NVIDIA NIM：100+ 模型免费原型调用（按速率限制，不计 Token） NVIDIA NIM（build.nvidia.com）提供 100+ 模型的免费原型调用，不按 Token 计费、不需要信用卡，限制方式是速率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费"
         },
         {
           "match": "免费原型调用，不按 Token",
-          "context": "点赞 收藏 需注册 查看详情 直接去官方领取 NVIDIA NIM 长期有效 NVIDIA NIM：100+ 模型免费原型调用（按速率限制，不计 Token） NVIDIA NIM（build.nvidia.com）提供 100+ 模型的免费原型调用，不按 Token 计费、不需要信用卡，限制方式是速率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏"
+          "context": "点赞 收藏 需注册 查看详情 直接去官方领取 NVIDIA NIM 长期有效 NVIDIA NIM：100+ 模型免费原型调用（按速率限制，不计 Token） NVIDIA NIM（build.nvidia.com）提供 100+ 模型的免费原型调用，不按 Token 计费、不需要信用卡，限制方式是速率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "en） NVIDIA NIM（build.nvidia.com）提供 100+ 模型的免费原型调用，不按 Token 计费、不需要信用卡，限制方式是速率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档"
+          "context": "en） NVIDIA NIM（build.nvidia.com）提供 100+ 模型的免费原型调用，不按 Token 计费、不需要信用卡，限制方式是速率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费"
         },
         {
           "match": "免费 API Token 专区 注册赠送、每日/每月额度",
-          "context": "率：多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
+          "context": "多数模型约 40 RPM。GLM 系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
         },
         {
           "match": "免费档 API 每天 1000 次",
-          "context": "布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
+          "context": "额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 智谱 AI 长期有效 z.ai 三款 Flash 模型 API 免费无限调用 智谱国际站 z.ai 把 glm-4.5-"
+          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 智谱 AI 长期有效 z.ai 三款 Flash 模型 API 免费无限调用 智谱国际站 z.ai 把 glm-4."
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 Tokens",
-          "context": "三款 Flash 模型 API 免费无限调用 智谱国际站 z.ai 把 glm-4.5-flash、glm-4.7-flash、glm-4.6v-flash 定价为 0，无月上限、无需信用卡，邮箱注册即可拿 Key。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 Tokens 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 Google 长期有效 Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用"
+          "context": "三款 Flash 模型 API 免费无限调用 智谱国际站 z.ai 把 glm-4.5-flash、glm-4.7-flash、glm-4.6v-flash 定价为 0，无月上限、无需信用卡，邮箱注册即可拿 Key。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 Tokens 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 Google 长期有效 Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需"
         },
         {
           "match": "免费层 每日 1500 次",
-          "context": "册即可拿 Key。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 Tokens 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 Google 长期有效 Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公"
+          "context": "可拿 Key。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 Tokens 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 Google 长期有效 Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公"
         },
         {
           "match": "免费层，无需信用卡，Flash 系列每日约 1500 次",
-          "context": "度 Tokens 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 Google 长期有效 Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1500 次请求/天 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布"
+          "context": "Tokens 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 Google 长期有效 Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1500 次请求/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1500 次",
-          "context": "Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1500 次请求/天 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条 完整时间表 → 10月21日（"
+          "context": "Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1500 次请求/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条 完整时间表 → 10月21"
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
@@ -4278,23 +4373,23 @@
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 33 天 额度 100000000 Tokens/天 核实 2026-10-27 昨天 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qoder"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 33 天 额度 100000000 Tokens/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkB"
+          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / Wor"
         },
         {
           "match": "免费（10–11 月邀请码可到 6000 次",
-          "context": "开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkBuddy / ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合"
+          "context": "发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkBuddy / ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合"
         },
         {
           "match": "免费额度，10–11 月凭邀请码可提升到 6000 次",
-          "context": "方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkBuddy / ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合给 Agent 补联网检索。 开发者福利 每月免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度） 核实 2026-10-24 4 天前 点赞"
+          "context": "方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkBuddy / ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合给 Agent 补联网检索。 开发者福利 每月免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度） 核实 2026-10-24 5 天前 点赞"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度",
-          "context": "ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合给 Agent 补联网检索。 开发者福利 每月免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度） 核实 2026-10-24 4 天前 点赞 收藏 需注册 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名认证送 5 元体验金，教育/企"
+          "context": "ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合给 Agent 补联网检索。 开发者福利 每月免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度） 核实 2026-10-24 5 天前 点赞 收藏 需注册 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名认证送 5 元体验金，教育/企"
         },
         {
           "match": "免费层 每日 1500 次",
@@ -4306,15 +4401,15 @@
         },
         {
           "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 4",
-          "context": "Agnes AI · 模型体验 见官方说明 2 火山方舟：新户 50 万 + 协作奖励每日单模型 200 万（企业认证升 500 万） 5 火山引擎方舟 · Token 额度 2000000 Tokens 3 SiliconFlow 注册赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 4 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 5 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tok"
+          "context": "计费） 5 Agnes AI · 模型体验 见官方说明 2 火山方舟：新户 50 万 + 协作奖励每日单模型最高 500 万（二期升级） 5 火山引擎方舟 · Token 额度 2000000 Tokens 3 SiliconFlow 注册赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 4 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 5 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tok"
         },
         {
           "match": "赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免",
-          "context": "系模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 R"
+          "context": "模型是否在池里以平台实时列表为准。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 R"
         },
         {
           "match": "新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换",
-          "context": "接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000"
+          "context": "接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 2 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 200"
         }
       ]
     },
@@ -4465,57 +4560,8 @@
       "name": "Trae 国际站",
       "url": "https://trae.ai/pricing",
       "status": "ok",
-      "hits": 12,
-      "findings": [
-        {
-          "match": "$0   Start for free Auto mode on",
-          "context": "te with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all m"
-        },
-        {
-          "match": "$20 per month, auto-renews To get",
-          "context": "yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade"
-        },
-        {
-          "match": "$20 usage / month Unlimited Autoc",
-          "context": "ited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started Auto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus"
-        },
-        {
-          "match": "$60 per month, auto-renews Everyt",
-          "context": "uto + all models $20 usage / month Unlimited Autocomplete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per mo"
-        },
-        {
-          "match": "$60 usage / month (3× Pro) Up to ",
-          "context": "plete Up to 10 concurrent cloud tasks in TraeWork Upgrade plan Pro+ $60 per month, auto-renews Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usag"
-        },
-        {
-          "match": "$200 per month, auto-renews Everyt",
-          "context": "news Everything in Pro, plus: $60 usage / month (3× Pro) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade"
-        },
-        {
-          "match": "$200 usage / month (10× Pro) Model",
-          "context": "o) Up to 15 concurrent cloud tasks in TraeWork Upgrade plan Ultra $200 per month, auto-renews Everything in Pro+, plus: $200 usage / month (10× Pro) Model early access Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compar"
-        },
-        {
-          "match": "$ 20 Basic usage $ 60 Basic usage ",
-          "context": "Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited U"
-        },
-        {
-          "match": "$ 200 Basic usage Queue Priority St",
-          "context": "o Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $ 60 Basic usage $ 200 Basic usage Queue Priority Standard queue Fast queue Fast queue Fast queue Autocompletion 5000 / month Unlimited Unlimited Unlimited Concurrent Cloud"
-        },
-        {
-          "match": "Free",
-          "context": "aborate with Intelligence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-r"
-        },
-        {
-          "match": "free",
-          "context": "gence   Pricing Looking for enterprise solutions? Contact us via BytePlus . monthly yearly Save 17% Free $0   Start for free Auto mode only Limited usage Limited Autocomplete Get started Pro Recommended $20 per month, auto-renews To get started"
-        },
-        {
-          "match": "Free",
-          "context": "ccess Up to 20 concurrent cloud tasks in TraeWork Upgrade plan Most payment methods supported for upgrade Compare Plans Free Get started Pro Upgrade plan Pro+ Upgrade plan Ultra Upgrade plan Monthly Basic Usage Limited usage $ 20 Basic usage $"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "ollama-pricing",
@@ -5160,8 +5206,14 @@
       "id": "xai-pricing",
       "name": "xAI 定价",
       "url": "https://console.x.ai",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "status": "ok",
+      "hits": 1,
+      "findings": [
+        {
+          "match": "credit",
+          "context": "Manage your team Invite members and set roles. Access latest models Grok, voice, and image. Centralized billing Usage, credits, and invoices."
+        }
+      ]
     },
     {
       "id": "ov-kilo-pricing",
@@ -5945,8 +5997,130 @@
       "id": "ov-opencode-data",
       "name": "OpenCode 用量/价格数据页",
       "url": "https://dev.opencode.ai/data",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 308: Permanent Redirect"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "100 万 token",
+          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.18 deepseek-v4-flash $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存"
+        },
+        {
+          "match": "$0.18 deepseek-v4-flash $0.20 muse-",
+          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.18 deepseek-v4-flash $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
+        },
+        {
+          "match": "$0.65 deepseek-v4-flash-vision-exp ",
+          "context": "没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.18 deepseek-v4-flash $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-sp"
+        },
+        {
+          "match": "$0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOK",
+          "context": "成本 . 每 100 万 token 的价格。 $0.18 deepseek-v4-flash $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.1"
+        },
+        {
+          "match": "每日 01 deepseek-v4-flash 0B token",
+          "context": "B 0B OCT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "8日, UTC 12:45 已更新 10月28日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SE"
+        },
+        {
+          "match": "deepseek",
+          "context": "T 22 0B OCT 23 OCT 23 0B OCT 24 OCT 24 0B OCT 25 OCT 25 0B OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP 4 0B 0B 0B 0B 0B 0B 0B SEP 5 0B 0B 0B 0B 0B 0B 0B SEP 6 0B"
+        },
+        {
+          "match": "deepseek",
+          "context": "CT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ken DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "ibutor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较"
+        },
+        {
+          "match": "deepseek",
+          "context": "n Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 22 0 OCT 23 OCT 23 5 OCT 24 OCT 24 0 OCT 25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0 0 0 0 0 SEP 5 0 0 0 0 0 0 0 SEP 6 0 0 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.18 deepseek-v4-flash $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOKEN 成"
+        },
+        {
+          "match": "deepseek",
+          "context": "产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.18 deepseek-v4-flash $0.20 muse-spark-1.3-contributor $0.65 deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek"
+        },
+        {
+          "match": "deepseek",
+          "context": "deepseek-v4-flash-vision-exp 输入 $0.22 输出 $0.65 已缓存 $0.0069 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多"
+        },
+        {
+          "match": "deepseek",
+          "context": "▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 7 SEP 7 0 SEP 8 SEP 8 0 SEP 10 S"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "5M OCT 23 OCT 23 31M OCT 24 OCT 24 103M OCT 25 OCT 25 1M OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 7 100.0% 0.0% 0.0% 0.0% SEP 8 100.0% 0.0% 0.0% 0.0% SEP 10 100.0% 0.0% 0.0% 0.0% SEP 11 100.0% 0."
+        },
+        {
+          "match": "DeepSeek",
+          "context": ".0% OCT 25 100.0% 0.0% 0.0% 0.0% OCT 26 98.6% 1.0% 0.4% 0.0% OCT 27 87.0% 7.8% 5.2% 0.0% OCT 28 94.3% 4.6% 1.1% 0.0% 01 DeepSeek 0 token 94.3 % 02 Meta 0 token 4.6 % 03 Other 0 token 1.1 % [*] OCT 28 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 57% 02"
+        },
+        {
+          "match": "deepseek",
+          "context": "a（opencode.ai/data）以及页面顶部显示的更新时间。 Model Comparisons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent"
+        },
+        {
+          "match": "deepseek",
+          "context": "age deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-c"
+        },
+        {
+          "match": "deepseek",
+          "context": "use-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-contributor · test Top mode"
+        },
+        {
+          "match": "Token",
+          "context": "AI 模型使用排名 | OpenCode 数据 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 GitHub [ 220K ] 试用 OpenCode GitHub [ 220K ] 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 已更新 10月28日, UTC 12:"
+        },
+        {
+          "match": "token",
+          "context": "8日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SEP 3 0B SEP 4 SEP 4"
+        },
+        {
+          "match": "token",
+          "context": "0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+        },
+        {
+          "match": "token",
+          "context": "0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 d"
+        }
+      ]
     },
     {
       "id": "ctyun-ai-zhuanxiang",
@@ -6107,6 +6281,264 @@
         {
           "match": "注册",
           "context": "可兑换的优惠券，请前往   积分中心   查看           {{userInfo.iamUserName ? userInfo.iamUserName : userInfo.mainUserName}}    退出登录       注册   登录                     {{ item.title }}                     {{ subItem.title }}        {{ subItem.description }}"
+        }
+      ]
+    },
+    {
+      "id": "ov-openrouter-models-api",
+      "name": "OpenRouter 模型 API（含免费层）",
+      "url": "https://openrouter.ai/api/v1/models",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$0.08 per song. Lyria 3 is Google's",
+          "context": "_face_id\":null,\"name\":\"Google: Lyria 3 Pro Preview\",\"created\":1774907286,\"description\":\"Full-length songs are priced at $0.08 per song. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate high-quality, 48kHz"
+        },
+        {
+          "match": "$0.04 per clip. Lyria 3 is Google's",
+          "context": "\":null,\"name\":\"Google: Lyria 3 Clip Preview\",\"created\":1774907255,\"description\":\"30 second duration clips are priced at $0.04 per clip. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate...\",\"context_length"
+        },
+        {
+          "match": "$0.60 per million...\",\"context_leng",
+          "context": "eatures an upgraded decoder for more natural sounding voices and maintains better voice consistency. Input is priced at $0.60 per million...\",\"context_length\":128000,\"architecture\":{\"modality\":\"text+audio->text+audio\",\"input_modalities\":[\"text\",\"audio\"],\"output_modalities\":["
+        },
+        {
+          "match": ":free",
+          "context": "fault_enabled\":true,\"supported_efforts\":[\"max\",\"high\",\"low\",\"none\"],\"default_effort\":\"max\"}},{\"id\":\"recursive/flint-v1.0:free\",\"canonical_slug\":\"recursive/flint-v1.0-20261021\",\"hugging_face_id\":\"RecursiveSI/flint\",\"name\":\"Recursive: Flint (free)"
+        },
+        {
+          "match": ":free",
+          "context": "/api/v1/models/elorian/glimpse-20261016/endpoints\"},\"reasoning\":{\"mandatory\":false}},{\"id\":\"xingchen-agi/xing4.0-29b-a4b:free\",\"canonical_slug\":\"xingchen-agi/xing4.0-29b-a4b-20261015\",\"hugging_face_id\":\"XingChen-AGI/Xing4.0-29B-A4B\",\"name\":\"Xing"
+        },
+        {
+          "match": ":free",
+          "context": "ex\":13.6,\"coding_index\":null,\"agentic_index\":null}},\"reasoning\":{\"mandatory\":false}},{\"id\":\"nvidia/nemotron-3.5-super-vl:free\",\"canonical_slug\":\"nvidia/nemotron-3.5-super-vl-20261015\",\"hugging_face_id\":\"nvidia/NVIDIA-Nemotron-3.5-Super-VL\",\"name"
+        },
+        {
+          "match": ":free",
+          "context": "ue,\"supported_efforts\":[\"xhigh\",\"medium\",\"low\",\"none\"],\"default_effort\":\"xhigh\"}},{\"id\":\"dots-studio/dots-3-note-preview:free\",\"canonical_slug\":\"dots-studio/dots-3-note-preview-20260813\",\"hugging_face_id\":null,\"name\":\"Dots Studio: Dots3-Note Pre"
+        },
+        {
+          "match": ":free",
+          "context": "ligence_index\":null,\"coding_index\":7.7,\"agentic_index\":null}},\"reasoning\":{\"mandatory\":true}},{\"id\":\"liquid/lfm-2.5-2.6b:free\",\"canonical_slug\":\"liquid/lfm-2.5-2.6b-20260811\",\"hugging_face_id\":\"LiquidAI/LFM2.5-2.6B\",\"name\":\"LiquidAI: LFM2.5-2.6B"
+        },
+        {
+          "match": ":free",
+          "context": "ex\":null,\"coding_index\":26.8,\"agentic_index\":3.5}},\"reasoning\":{\"mandatory\":false}},{\"id\":\"nvidia/nemotron-3.5-lightning:free\",\"canonical_slug\":\"nvidia/nemotron-3.5-lightning-20260807\",\"hugging_face_id\":\"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-"
+        },
+        {
+          "match": ":free",
+          "context": "_efforts\":[\"max\",\"high\",\"medium\",\"low\",\"minimal\",\"none\"],\"default_effort\":\"high\"}},{\"id\":\"thinkingmachines/inkling-small:free\",\"canonical_slug\":\"thinkingmachines/inkling-small-20260730\",\"hugging_face_id\":\"thinkingmachines/Inkling-Small\",\"name\":\""
+        },
+        {
+          "match": ":free",
+          "context": "e/laguna-s-2.1-20260720/endpoints\"},\"reasoning\":{\"mandatory\":false,\"default_enabled\":true}},{\"id\":\"poolside/laguna-s-2.1:free\",\"canonical_slug\":\"poolside/laguna-s-2.1-20260720\",\"hugging_face_id\":\"poolside/Laguna-S-2.1\",\"name\":\"Poolside: Laguna S"
+        },
+        {
+          "match": ":free",
+          "context": "ported_efforts\":[\"max\",\"high\",\"medium\",\"low\",\"minimal\",\"none\"],\"default_effort\":\"high\"}},{\"id\":\"thinkingmachines/inkling:free\",\"canonical_slug\":\"thinkingmachines/inkling-20260715\",\"hugging_face_id\":\"thinkingmachines/Inkling\",\"name\":\"Thinking Mac"
+        },
+        {
+          "match": ":free",
+          "context": "laguna-xs-2.1-20260625/endpoints\"},\"reasoning\":{\"mandatory\":false,\"default_enabled\":true}},{\"id\":\"poolside/laguna-xs-2.1:free\",\"canonical_slug\":\"poolside/laguna-xs-2.1-20260625\",\"hugging_face_id\":\"poolside/Laguna-XS-2.1\",\"name\":\"Poolside: Laguna"
+        },
+        {
+          "match": ":free",
+          "context": "i/v1/models/google/gemini-3-pro-image-20260528/endpoints\"},\"reasoning\":{\"mandatory\":true}},{\"id\":\"cohere/north-mini-code:free\",\"canonical_slug\":\"cohere/north-mini-code-20260617\",\"hugging_face_id\":\"CohereLabs/North-Mini-Code-1.0\",\"name\":\"Cohere:"
+        },
+        {
+          "match": ":free",
+          "context": "y-20260604/endpoints\"},\"reasoning\":{\"mandatory\":false,\"default_enabled\":true}},{\"id\":\"nvidia/nemotron-3.5-content-safety:free\",\"canonical_slug\":\"nvidia/nemotron-3.5-content-safety-20260604\",\"hugging_face_id\":\"nvidia/Nemotron-3.5-Content-Safety\","
+        },
+        {
+          "match": ":free",
+          "context": "ns\":true,\"supported_efforts\":[\"high\",\"medium\",\"none\"],\"default_effort\":\"high\"}},{\"id\":\"nvidia/nemotron-3-ultra-550b-a55b:free\",\"canonical_slug\":\"nvidia/nemotron-3-ultra-550b-a55b-20260604\",\"hugging_face_id\":\"nvidia/NVIDIA-Nemotron-3-Ultra-550B-A"
+        },
+        {
+          "match": ":free",
+          "context": "false,\"supported_efforts\":[\"high\",\"none\"],\"default_effort\":\"high\"}},{\"id\":\"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free\",\"canonical_slug\":\"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428\",\"hugging_face_id\":\"nvidia/Nemotron-3-Nano-Om"
+        },
+        {
+          "match": ":free",
+          "context": "ex\":39.3,\"agentic_index\":2.9}},\"reasoning\":{\"mandatory\":false,\"default_enabled\":false}},{\"id\":\"google/gemma-4-26b-a4b-it:free\",\"canonical_slug\":\"google/gemma-4-26b-a4b-it-20260403\",\"hugging_face_id\":\"google/gemma-4-26B-A4B-it\",\"name\":\"Google: Ge"
+        },
+        {
+          "match": ":free",
+          "context": "_index\":43.4,\"agentic_index\":4.2}},\"reasoning\":{\"mandatory\":false,\"default_enabled\":false}},{\"id\":\"google/gemma-4-31b-it:free\",\"canonical_slug\":\"google/gemma-4-31b-it-20260402\",\"hugging_face_id\":\"google/gemma-4-31B-it\",\"name\":\"Google: Gemma 4 31"
+        },
+        {
+          "match": "pricing",
+          "context": "mage->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000025\",\"completion\":\"0.000001\",\"input_cache_read\":\"0.00000003\"},\"top_provider\":{\"context_length\":10485"
+        },
+        {
+          "match": "pricing",
+          "context": ">text\",\"input_modalities\":[\"file\",\"image\",\"text\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"GPT\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000001\",\"completion\":\"0.000005\",\"web_search\":\"0.01\",\"input_cache_read\":\"0.00000005\",\"input_cache_write\":\""
+        },
+        {
+          "match": "pricing",
+          "context": "xt\",\"input_modalities\":[\"text\",\"image\",\"video\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000002\",\"completion\":\"0.00001\",\"input_cache_read\":\"0.0000002\"},\"top_provider\":{\"context_length\":1048576,\""
+        },
+        {
+          "match": "pricing",
+          "context": "ality\":\"text->text\",\"input_modalities\":[\"text\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0\",\"completion\":\"0\"},\"top_provider\":{\"context_length\":262144,\"max_completion_tokens\":235929,\"is_moderated\":"
+        },
+        {
+          "match": "pricing",
+          "context": "e->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"DeepSeek\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000015\",\"completion\":\"0.0000006\",\"input_cache_read\":\"0.000000003\",\"overrides\":[{\"utc_days\":[\"saturday\","
+        },
+        {
+          "match": "pricing",
+          "context": "image->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Qwen\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000008\",\"completion\":\"0.00000013\",\"input_cache_read\":\"0.00000004\"},\"top_provider\":{\"context_length\":262"
+        },
+        {
+          "match": "pricing",
+          "context": "lities\":[\"text\",\"image\",\"video\",\"file\",\"audio\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000125\",\"completion\":\"0.00000425\",\"input_cache_read\":\"0.00000015\"},\"top_provider\":{\"context_length\":104"
+        },
+        {
+          "match": "pricing",
+          "context": "age->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Router\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.0000008\",\"completion\":\"0.0000032\",\"input_cache_read\":\"0.00000003\"},\"top_provider\":{\"context_length\":10485"
+        },
+        {
+          "match": "pricing",
+          "context": "ities\":[\"audio\",\"file\",\"image\",\"text\",\"video\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Gemini\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000002\",\"completion\":\"0.00001\",\"image\":\"0.000002\",\"audio\":\"0.000002\",\"input_audio_cache\":\"0.0000001\",\"web"
+        },
+        {
+          "match": "pricing",
+          "context": "ext\",\"input_modalities\":[\"text\",\"image\",\"file\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000004\",\"completion\":\"0\"},\"top_provider\":{\"context_length\":1000000,\"max_completion_tokens\":4000,\"is_mod"
+        },
+        {
+          "match": "pricing",
+          "context": "xt\",\"input_modalities\":[\"text\",\"image\",\"file\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Claude\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.0000001\",\"completion\":\"0.0000005\",\"web_search\":\"0.01\",\"input_cache_read\":\"0.00000001\",\"input_cache_write\""
+        }
+      ]
+    },
+    {
+      "id": "ov-openrouter-pricing-page",
+      "name": "OpenRouter Pricing 页",
+      "url": "https://openrouter.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$25,000 of list price inference /",
+          "context": "rypto & more Business Credit card, crypto & more Enterprise Invoicing options BYOK Limits Learn more → Free No Standard $25,000 of list price inference / month with no fees, 5% fee after Business $25,000 of list price inference / month with no fees, 5% fee after Enterprise"
+        },
+        {
+          "match": "$25,000 of list price inference /",
+          "context": "s BYOK Limits Learn more → Free No Standard $25,000 of list price inference / month with no fees, 5% fee after Business $25,000 of list price inference / month with no fees, 5% fee after Enterprise Custom Rate limits Free 50 requests/day Standard Passthrough from the provi"
+        },
+        {
+          "match": "$25,000 of list-price inference p",
+          "context": "annual commitments, with invoicing. BYOK: the provider bills you for inference directly. Standard and Business include $25,000 of list-price inference per month through BYOK with no OpenRouter fee; Enterprise allowances are custom. Above the allowance, OpenRouter charges"
+        },
+        {
+          "match": "$10 of credits. Failed attempts c",
+          "context": "dels are capped at 20 requests per minute and 50 per day, rising to 1,000 per day once your account has bought at least $10 of credits. Failed attempts count toward that daily cap, and a negative balance blocks free models until you add credits. Details are in the rate lim"
+        },
+        {
+          "match": "requests per minute and 50 per day, rising to 1,000 per day",
+          "context": "y very high burst traffic is rejected by OpenRouter&#x27;s own DDoS protection with a 429. Free models are capped at 20 requests per minute and 50 per day, rising to 1,000 per day once your account has bought at least $10 of credits. Failed attempts count toward that daily cap, and a negative balan"
+        },
+        {
+          "match": "Pricing",
+          "context": "Pricing | OpenRouter Skip to content Alpha Search ⌘ K Models Benchmarks Chat Chat Rankings Apps Ori Pricing Docs Models Ranking"
+        },
+        {
+          "match": "Pricing",
+          "context": "nt Alpha Search ⌘ K Models Benchmarks Chat Chat Rankings Apps Ori Pricing Docs Models Rankings Ori Benchmarks Chat Chat Pricing Docs Dashboard Sign Up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, a"
+        },
+        {
+          "match": "pricing",
+          "context": "nkings Apps Ori Pricing Docs Models Rankings Ori Benchmarks Chat Chat Pricing Docs Dashboard Sign Up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Stan"
+        },
+        {
+          "match": "Pricing",
+          "context": "pps Ori Pricing Docs Models Rankings Ori Benchmarks Chat Chat Pricing Docs Dashboard Sign Up Sign Up OpenRouter pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Standard Bus"
+        },
+        {
+          "match": "Pricing",
+          "context": "Standard Email support Business Email support Enterprise Dedicated support team Frequently Asked Questions Billing and Pricing How are tokens billed? Input and output tokens are billed per model at posted rates. Do you mark up provider pricing? N"
+        },
+        {
+          "match": "pricing",
+          "context": "nd Pricing How are tokens billed? Input and output tokens are billed per model at posted rates. Do you mark up provider pricing? No. Inference is billed at the provider&#x27;s list price on every plan. OpenRouter&#x27;s fee is charged when you buy"
+        },
+        {
+          "match": "pricing",
+          "context": "nly billing difference between the two is the fee on credit purchases, 5.5% on Standard and 8% on Business. Enterprise: pricing is set by contract and based on volume, prepaid credits and annual commitments, with invoicing. BYOK: the provider bill"
+        },
+        {
+          "match": "Pricing",
+          "context": "d OpenRouter fees in our enterprise plan. We do not discount inference. Are streaming responses billed differently? No. Pricing is per token whether or not you stream. What payment methods do you accept? Standard and Business: credit and debit car"
+        },
+        {
+          "match": "pricing",
+          "context": "rovider and region. For consistent latency, pin a specific model and provider. What happens if a model is deprecated or pricing changes? If a model is deprecated, you will receive a 404 when you request it, with an error message like \"no endpoints"
+        },
+        {
+          "match": "pricing",
+          "context": "ted, you will receive a 404 when you request it, with an error message like \"no endpoints for this model found.\" If the pricing changes, we will continue to route to the model and it will serve your requests. But, you will be charged at the new ra"
+        },
+        {
+          "match": "Pricing",
+          "context": "les Footer © 2026 OpenRouter, Inc Product Chat Rankings Benchmarks Apps Discover Models Ori Collections Providers Tools Pricing Business Enterprise Labs Company About Blog Customers Careers Hiring Privacy Terms of Service Trust Center Support Work"
+        },
+        {
+          "match": "Free",
+          "context": "r pricing Pricing Plans for indie hackers, AI native startups, growing teams, and enterprises Get started Talk to sales Free Standard Business Enterprise Feature Free Platform fees N/A Models Explore all models → 25+ free models Providers Explo"
+        },
+        {
+          "match": "Free",
+          "context": "AI native startups, growing teams, and enterprises Get started Talk to sales Free Standard Business Enterprise Feature Free Platform fees N/A Models Explore all models → 25+ free models Providers Explore all models → 4 free providers Chat and"
+        },
+        {
+          "match": "free",
+          "context": "started Talk to sales Free Standard Business Enterprise Feature Free Platform fees N/A Models Explore all models → 25+ free models Providers Explore all models → 4 free providers Chat and API Access Try chat now → Yes Activity logs & export Ye"
+        },
+        {
+          "match": "free",
+          "context": "Enterprise Feature Free Platform fees N/A Models Explore all models → 25+ free models Providers Explore all models → 4 free providers Chat and API Access Try chat now → Yes Activity logs & export Yes Auto-routing, preferred vendor selections L"
+        },
+        {
+          "match": "free",
+          "context": "No Payment options No BYOK Limits Learn more → No Rate limits 50 requests/day Support Community support Get started for free Free Standard Pay-as-you-go Business Pay-as-you-go Enterprise Get started for free Get started Upgrade to Business Cont"
+        },
+        {
+          "match": "Free",
+          "context": "yment options No BYOK Limits Learn more → No Rate limits 50 requests/day Support Community support Get started for free Free Standard Pay-as-you-go Business Pay-as-you-go Enterprise Get started for free Get started Upgrade to Business Contact s"
+        },
+        {
+          "match": "free",
+          "context": "rt Community support Get started for free Free Standard Pay-as-you-go Business Pay-as-you-go Enterprise Get started for free Get started Upgrade to Business Contact sales Platform fees Free N/A Standard 5.5% Business 8% Enterprise Fee discounts"
+        },
+        {
+          "match": "Free",
+          "context": "u-go Business Pay-as-you-go Enterprise Get started for free Get started Upgrade to Business Contact sales Platform fees Free N/A Standard 5.5% Business 8% Enterprise Fee discounts available Models Explore all models → Free 25+ free models Stand"
+        },
+        {
+          "match": "Free",
+          "context": "t sales Platform fees Free N/A Standard 5.5% Business 8% Enterprise Fee discounts available Models Explore all models → Free 25+ free models Standard 500+ models Business 500+ models Enterprise 500+ models Providers Explore all models → Free 4"
+        },
+        {
+          "match": "free",
+          "context": "latform fees Free N/A Standard 5.5% Business 8% Enterprise Fee discounts available Models Explore all models → Free 25+ free models Standard 500+ models Business 500+ models Enterprise 500+ models Providers Explore all models → Free 4 free prov"
+        },
+        {
+          "match": "Free",
+          "context": "→ Free 25+ free models Standard 500+ models Business 500+ models Enterprise 500+ models Providers Explore all models → Free 4 free providers Standard 80+ providers Business 80+ providers Enterprise 80+ providers Chat and API Access Try chat no"
+        },
+        {
+          "match": "free",
+          "context": "25+ free models Standard 500+ models Business 500+ models Enterprise 500+ models Providers Explore all models → Free 4 free providers Standard 80+ providers Business 80+ providers Enterprise 80+ providers Chat and API Access Try chat now → Fre"
+        },
+        {
+          "match": "Free",
+          "context": "ree providers Standard 80+ providers Business 80+ providers Enterprise 80+ providers Chat and API Access Try chat now → Free Yes Standard Yes Business Yes Enterprise Yes Activity logs & export Free Yes Standard Yes Business Yes Enterprise Yes A"
+        },
+        {
+          "match": "Free",
+          "context": "+ providers Chat and API Access Try chat now → Free Yes Standard Yes Business Yes Enterprise Yes Activity logs & export Free Yes Standard Yes Business Yes Enterprise Yes Auto-routing, preferred vendor selections Learn more → Free No Standard Ye"
         }
       ]
     }
