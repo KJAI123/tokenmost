@@ -22,6 +22,11 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.19.0 顶部扫码入群+全量重验三层机制（2026-10-31 凌晨，老板三连令，422383c）：
+  - **顶部扫码入群**：微信群海报图入库 assets/wechat-group.jpg（966×1530）；页面最顶部金色条「📥 扫码进微信群 · 每天分享 token 折扣码」点击开弹窗；弹窗 280px 宽原比例（0.6335 vs 0.6314 保真不变形）+「本码 11-07 前有效」提示；**pages.yml 已补 assets/ 部署**（此前漏了会 404）；侧边栏/页脚微信群入口同步生效
+  - **⚠️ 待办 11-07：群二维码到期换图**（老板海报自带说明，替换 assets/wechat-group.jpg 即全站生效）
+  - **全量重验三层**：①sync.py 全量监控源哈希重验（后台跑，页面未变自动续验证戳/变了降级待复核）②OpenRouter 官方 API 直抓：456 款中免费 19 款全目录入流（16→19，新增 thinkingmachines/inkling 1M、dots-3 512K、poolside laguna、gemma-4、nemotron-3-ultra 550B）③搜索互证：智谱每日 3 亿 ✓ 无变化；知乎 27 家清单/火山「每日 200 万」口径为线索待核（火山旧条目口径 500 万已归档）
+  - **教训**：爬虫助理子代理派单被平台风控秒拦（"unusual activity"）——并发限额期派单仍不可靠，主会话亲自搜照旧
 - [x] OpenCode 10 款免费模型全目录 + 免费 API 站展开扩容（2026-10-31 凌晨，老板贴官方 Console Models 汇总+亲测，c385ccb；客户端 UI 实锤补注 242b480）：
   - **opencode-zen-free 按官方价格表口径重写**：10 款全 $0（输入/输出/缓存全免费、支持工具调用）——Big Pickle（隐身推理）/GLM-5.3-Flash Free/DeepSeek V4.1 Flash Free/Beam Free（1M）/Flint 40B/MiMo-V2.6-Flash（全模态）/Nemotron 3 Ultra/3.5 Lightning/3.5 Super VL/Jev 1.13（结构化判定）；**取代早前「每模型每日上限」口径**（官方=$0 计费制非按 token 扣费，无公布上限，上游可能限速）；只能经 OpenCode 本体（opencode/<id>）+需 Console 登录
   - ⚠️ 合规标注：Beam 中国大陆含港澳不可用；隐私分级（GLM/DS 零保留最稳；Big Pickle/Flint/MiMo 收集数据 30 天；Nemotron 试用端点记日志）；限时免费随时下架
