@@ -22,7 +22,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
-- [x] OpenCode 10 款免费模型全目录 + 免费 API 站展开扩容（2026-10-31 凌晨，老板贴官方 Console Models 汇总+亲测，c385ccb）：
+- [x] OpenCode 10 款免费模型全目录 + 免费 API 站展开扩容（2026-10-31 凌晨，老板贴官方 Console Models 汇总+亲测，c385ccb；客户端 UI 实锤补注 242b480）：
   - **opencode-zen-free 按官方价格表口径重写**：10 款全 $0（输入/输出/缓存全免费、支持工具调用）——Big Pickle（隐身推理）/GLM-5.3-Flash Free/DeepSeek V4.1 Flash Free/Beam Free（1M）/Flint 40B/MiMo-V2.6-Flash（全模态）/Nemotron 3 Ultra/3.5 Lightning/3.5 Super VL/Jev 1.13（结构化判定）；**取代早前「每模型每日上限」口径**（官方=$0 计费制非按 token 扣费，无公布上限，上游可能限速）；只能经 OpenCode 本体（opencode/<id>）+需 Console 登录
   - ⚠️ 合规标注：Beam 中国大陆含港澳不可用；隐私分级（GLM/DS 零保留最稳；Big Pickle/Flint/MiMo 收集数据 30 天；Nemotron 试用端点记日志）；限时免费随时下架
   - **前端扩容**：deals 条目新增 `free_models` 结构化字段 → 行内渲染「🆓 免费模型目录」chips 块（fm-grid，悬停看备注/上下文）——OpenCode 行 10 款/OpenRouter 行 4 款代表作直接展示；明细行 notes 放宽 2 行
