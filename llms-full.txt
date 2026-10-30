@@ -105,7 +105,7 @@
 - 状态：已验证（核验时间 2026-10-29T13:30:00Z）
 
 ## OpenRouter｜长期免费
-- 内容：:free 模型 16 个（recursive/flint-v1.0:free、xingchen-agi/xing4.0-29b-a4b:free、nvidia/nemotron-3.5-super-vl:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
+- 内容：官方目录 456 款中 :free 免费模型 19 款（API 直抓核验）——含 nvidia/nemotron-3-ultra-550b（1M）、thinkingmachines/inkling（1M）、dots-3-note（512K）、nemotron-3.5-super-vl（1M 视觉）、gemma-4、poolside laguna 等；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 日均：充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天
 - 链接：https://openrouter.ai/models?max_price=0

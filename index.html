@@ -98,6 +98,14 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .ad-top{width:176px;min-height:56px;padding:8px 12px;margin-left:12px;flex:none}
 .ad-bottom{display:flex;max-width:920px;height:90px;margin:8px auto 0;padding:8px 16px}
 .ad-slot:empty{display:none!important}
+/* ===== 顶部扫码入群条（v2.19 老板令：顶部扫码入群，每天分享 token 折扣码） ===== */
+#wxTopBar{display:flex;align-items:center;gap:12px;background:rgba(210,153,34,.07);border:1px solid rgba(210,153,34,.35);border-radius:10px;padding:8px 16px;margin:12px 0 0;cursor:pointer;transition:border-color .12s,background .12s;min-height:40px;box-sizing:border-box}
+#wxTopBar:hover{border-color:rgba(210,153,34,.65);background:rgba(210,153,34,.11)}
+#wxTopBar .wx-qtext{font-size:.82rem;color:#475467}
+#wxTopBar .wx-qtext b{color:var(--amber)}
+#wxTopBar .wx-qgo{margin-left:auto;font-size:.8rem;font-weight:700;color:var(--amber);white-space:nowrap}
+#wxTopBar:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+@media(max-width:640px){#wxTopBar{padding:7px 12px}#wxTopBar .wx-qtext{font-size:.75rem}#wxTopBar .wx-qgo{font-size:.75rem}}
 /* 加倍领取说明条 */
 .double-note{background:rgba(210,153,34,.06);border:1px solid rgba(210,153,34,.3);border-radius:10px;padding:10px 14px;font-size:.82rem;color:#475467;margin:10px 12px;line-height:1.6}
 .double-note b{color:var(--amber)}
@@ -270,7 +278,7 @@ table.price tr.cheapest td{background:rgba(5,150,105,.05)}
 #redeemQr{display:none;text-align:center;margin-top:14px}
 #redeemQr img{width:190px;height:190px;border:1px solid var(--border);border-radius:10px;background:#fff;padding:6px}
 #wxPanel{width:min(360px,92vw);text-align:center}
-#wxPanel img{width:230px;max-width:100%;border:1px solid var(--border);border-radius:10px;margin:10px auto}
+#wxPanel img{width:280px;max-width:100%;height:auto;border:1px solid var(--border);border-radius:10px;margin:10px auto;display:block}
 .wx-miss{font-size:.82rem;color:var(--muted);background:var(--bg);border:1px dashed var(--border);border-radius:10px;padding:14px;margin:10px 0}
 #planPanel table.price{table-layout:fixed}
 #planPanel table.price th,#planPanel table.price td{white-space:normal;text-align:left;vertical-align:top}
@@ -417,9 +425,13 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <p>聚合五层来源的 token 羊毛情报（每日核验）：智谱 BigModel（每日 3 亿 tokens 放量）、DeepSeek（谷峰价与缓存低价）、Kimi（15 元 API 券）、讯飞星火（免费资源包）、MiniMax（M3 永久五折）、阿里云百炼（新人多模型免费额度）、美团 LongCat（每日 5000 万）、天翼云息壤（新用户 2500 万）、小米 MiMo（新客 ¥5 赠金+邀请各 ¥10）等；海外有 Google AI Studio 免费层、Mistral、Cohere、Anthropic、xAI 等。全部额度统一折算 DeepSeek V4.1 Flash 等效 token 横向可比。启用 JavaScript 可查看实时情报流、用量比价器与折扣码；领取攻略见 <a href="/guides/bailian-70.html">百炼免费额度攻略</a>、<a href="/guides/kimi-guide.html">Kimi 攻略</a>、<a href="/guides/free-tier-survival.html">海外免费层生存指南</a>、<a href="/guides/coding-plan-guide.html">Coding Plan 选购攻略</a> 等 10 篇。订阅 <a href="/rss.xml">RSS 情报流</a>。</p>
   </section>
 </noscript>
+<!-- ============ 顶部扫码入群条（每天分享 token 折扣码） ============ -->
+<div id="wxTopBar" role="button" tabindex="0" aria-label="扫码加入微信群，每天分享 token 折扣码" onclick="openWx()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openWx()}">
+  <span class="wx-qtext">📥 扫码进微信群 · <b>每天分享 token 折扣码</b>与限时羊毛速报</span>
+  <span class="wx-qgo">免费入群 →</span>
+</div>
 <header>
-  <h1 class="hlogo">token<em>most</em></h1>
-  <span class="tagline">只关注免费 · 花 1 分钱买 token 都是原罪</span>
+  <h1 class="hlogo">token<em>most</em></h1>  <span class="tagline">只关注免费 · 花 1 分钱买 token 都是原罪</span>
   <span class="tagline">📐 全站计量基准：DeepSeek V4.1 Flash 等效（国内谷价 ¥1.75/百万 · 国际 $0.525/百万 · 旗舰按牌价折算力）</span>
   <span class="global-banner" id="globalBanner" title="全球全平台免费羊毛按 DS4.1 Flash 等效加总：一次性可领 + 每日刷新（点击打开白嫖总账看明细）" onclick="document.getElementById('sumBtnSide').click()">
     <b id="gbNum">…</b><i id="gbSub"></i>
@@ -623,8 +635,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <h3>📥 微信交流群</h3>
   <p class="sub">羊毛情报第一时间推送 · 群友互助答疑</p>
   <img id="wxQrImg" alt="微信群二维码" style="display:none">
-  <div class="wx-miss" id="wxMiss">微信群二维码待配置：站长把群二维码图片放到网站 <code>assets/wechat-group.png</code> 即自动显示（微信群码 7 天会过期，到期换图即可；建议用企业微信「无限期入群二维码」免维护）。</div>
-  <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日羊毛速报不错过</p>
+  <p id="wxExpiry" style="display:none;font-size:.72rem;color:var(--muted);margin:0 0 6px">微信群二维码 7 天轮换 · 本码 11-07 前有效，过期请以最新为准</p>
+  <div class="wx-miss" id="wxMiss">二维码加载失败，请刷新重试；或通过页面底部 RSS 订阅获取羊毛速报。</div>
+  <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日 token 折扣码与羊毛速报不错过</p>
 </div>
 <div id="sumPanel" role="dialog" aria-modal="true">
   <button id="sumClose">✕</button>
@@ -1253,11 +1266,11 @@ async function openGuides(){
     document.getElementById('sharePanel').classList.add('open');
   }catch(_){ alert('攻略中心暂不可用（guides/index.json 未生成）'); }
 }
-/* 侧边栏工具按钮（直接开面板） */
+/* ===== 侧边栏工具按钮（直接开面板） ===== */
 function openPanel(o,p){document.querySelector(o).classList.add('open');document.querySelector(p).classList.add('open')}
 
 /* ============ 兑换方式弹窗 & 微信群弹窗 ============ */
-const WECHAT_QR='/assets/wechat-group.png';
+const WECHAT_QR='/assets/wechat-group.jpg';
 let rdCtx={code:'',url:''};
 function openRedeem(el){
   rdCtx={code:el.dataset.code||'',url:el.href||el.getAttribute('href')||''};
@@ -1281,7 +1294,7 @@ document.getElementById('redeemOverlay').addEventListener('click',closeRedeem);
 function openWx(){
   const img=document.getElementById('wxQrImg'),miss=document.getElementById('wxMiss');
   img.src=WECHAT_QR+'?v='+Date.now();
-  img.onload=()=>{img.style.display='block';miss.style.display='none'};
+  img.onload=()=>{img.style.display='block';document.getElementById('wxExpiry').style.display='block';miss.style.display='none'};
   img.onerror=()=>{img.style.display='none';miss.style.display='block'};
   openPanel('#wxOverlay','#wxPanel');
 }

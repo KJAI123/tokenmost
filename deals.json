@@ -417,7 +417,7 @@
   "provider": "OpenRouter",
   "category": "reseller",
   "type": "free_tier",
-  "value": ":free 模型 16 个（recursive/flint-v1.0:free、xingchen-agi/xing4.0-29b-a4b:free、nvidia/nemotron-3.5-super-vl:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天",
+  "value": "官方目录 456 款中 :free 免费模型 19 款（API 直抓核验）——含 nvidia/nemotron-3-ultra-550b（1M）、thinkingmachines/inkling（1M）、dots-3-note（512K）、nemotron-3.5-super-vl（1M 视觉）、gemma-4、poolside laguna 等；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天",
   "region": "global",
   "url": "https://openrouter.ai/models?max_price=0",
   "rule": "免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests",
@@ -429,27 +429,102 @@
   "daily_wan": 400,
   "daily_note": "充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天",
   "group": "OpenRouter",
-  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛；10-29 API 直抓更新（19 款含 2 新品）；自动路由 openrouter/free 免选型 | 2026-10-31 补充：免费目录动态轮换约 16 款，展开明细展示代表作+实时目录链接；对比 OpenCode 免费池（10 款全 $0 无日次数上限口径）——OpenRouter 免费档=50 次/天起、需充 $10 提 1000 次/天",
+  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛；10-29 API 直抓更新（19 款含 2 新品）；自动路由 openrouter/free 免选型 | 2026-10-31 补充：免费目录动态轮换约 16 款，展开明细展示代表作+实时目录链接；对比 OpenCode 免费池（10 款全 $0 无日次数上限口径）——OpenRouter 免费档=50 次/天起、需充 $10 提 1000 次/天 | 2026-10-31 官方 API 直抓全量核验：/api/v1/models 456 款中免费 19 款（上轮 16 款→19 款，新增 thinkingmachines inkling/dots-3/poolside laguna/gemma-4/nemotron-3-ultra 等）；20 RPM 不变",
   "free_models": [
    {
+    "id": "cohere/north-mini-code:free",
+    "ctx": "256K",
+    "note": ""
+   },
+   {
+    "id": "dots-studio/dots-3-note-preview:free",
+    "ctx": "512K",
+    "note": ""
+   },
+   {
+    "id": "google/gemma-4-26b-a4b-it:free",
+    "ctx": "262K",
+    "note": ""
+   },
+   {
+    "id": "google/gemma-4-31b-it:free",
+    "ctx": "262K",
+    "note": ""
+   },
+   {
+    "id": "google/lyria-3-clip-preview",
+    "ctx": "1049K",
+    "note": "Google Lyria 3 预览（媒体生成向）"
+   },
+   {
+    "id": "google/lyria-3-pro-preview",
+    "ctx": "1049K",
+    "note": "Google Lyria 3 Pro 预览（媒体生成向）"
+   },
+   {
+    "id": "liquid/lfm-2.5-2.6b:free",
+    "ctx": "66K",
+    "note": ""
+   },
+   {
+    "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "ctx": "256K",
+    "note": "全模态推理 30B-A3B"
+   },
+   {
+    "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "ctx": "1000K",
+    "note": "550B 旗舰 1M 上下文"
+   },
+   {
+    "id": "nvidia/nemotron-3.5-content-safety:free",
+    "ctx": "128K",
+    "note": ""
+   },
+   {
+    "id": "nvidia/nemotron-3.5-lightning:free",
+    "ctx": "1000K",
+    "note": ""
+   },
+   {
     "id": "nvidia/nemotron-3.5-super-vl:free",
-    "ctx": "1M",
-    "note": "视觉-语言旗舰免费档"
+    "ctx": "1000K",
+    "note": ""
+   },
+   {
+    "id": "openrouter/free",
+    "ctx": "200K",
+    "note": "官方自动路由：在全部免费模型中智能选型免手动"
+   },
+   {
+    "id": "poolside/laguna-s-2.1:free",
+    "ctx": "262K",
+    "note": ""
+   },
+   {
+    "id": "poolside/laguna-xs-2.1:free",
+    "ctx": "262K",
+    "note": ""
    },
    {
     "id": "recursive/flint-v1.0:free",
     "ctx": "262K",
-    "note": "轻量编码向"
+    "note": ""
+   },
+   {
+    "id": "thinkingmachines/inkling-small:free",
+    "ctx": "1049K",
+    "note": "Thinking Machines 小杯 1M 上下文"
+   },
+   {
+    "id": "thinkingmachines/inkling:free",
+    "ctx": "1049K",
+    "note": "Thinking Machines 新品 1M 上下文"
    },
    {
     "id": "xingchen-agi/xing4.0-29b-a4b:free",
-    "ctx": "—",
-    "note": "讯飞星辰系"
-   },
-   {
-    "id": "…目录动态轮换",
-    "ctx": "",
-    "note": "完整免费目录实时见 openrouter.ai/models?max_price=0（约 16 款在架，勿写死数量）"
+    "ctx": "262K",
+    "note": ""
    }
   ]
  },
