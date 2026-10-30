@@ -622,7 +622,7 @@ function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
 /* ============ 导航区渲染（侧边栏紧凑版 + 底部完整版） ============ */
 function renderNav(){
-  const order=['official_cn','maas','agent','compute','reseller','official_global'];
+  const order=['official_cn','official_global','maas','agent','compute','reseller'];
   const SHORT={'official_cn':'大模型官方','maas':'MaaS','agent':'Agent','compute':'算力','reseller':'聚合商','official_global':'大模型官方·海外'};
   document.getElementById('sideNav').innerHTML=order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
