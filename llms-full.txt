@@ -111,6 +111,12 @@
 - 链接：https://openrouter.ai/models?max_price=0
 - 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
+## NVIDIA NIM｜注册赠送
+- 内容：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可
+- 规则：用完后 API catalog 头像菜单「Request More」
+- 链接：https://build.nvidia.com
+- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
+
 ## OhMyGPT｜注册赠送
 - 内容：官方推荐计划：好友双方各得 $20 额度；另有 GLM-4.7-Flash 等零星免费模型
 - 链接：https://www.ohmygpt.com/pricing
@@ -414,6 +420,12 @@
 - 链接：https://www.trae.cn/pricing
 - 状态：已验证（核验时间 2026-10-27T00:00:00Z）
 
+## Trae 国际版｜pricing_plan
+- 内容：国际版 2026-02-24 起 Dollar 额度制：Free $0（有限额度）；Pro $10/月含 $20 使用额度（花 $10 得 $20）+无限 Autocomplete+10 个并发云端任务；年付 Pro $80/年≈$6.7/月 · Pro+ $200 · Max $600
+- 规则：计费=Token 消耗折 Dollar 额度；官方 docs.trae.ai/ide/new-plans-and-billing+pricing 页直核
+- 链接：https://www.trae.ai/pricing
+- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
+
 ## Qoder CN（阿里）｜长期免费
 - 内容：社区版免费：首注赠 300 Credits + 完成账号认证后每月自动发 100 Credits（当月清零）；Pro Trial 注册14天内可领 2000 Credits（300自动+1700手动），30天有效
 - 规则：月度额度不结转；不定期活动：首月额度翻倍、续费/升级加赠1000
@@ -657,11 +669,11 @@
 - 链接：https://opencode.ai/v2/docs/console/go
 - 状态：已验证（核验时间 2026-10-28T01:30:00Z）
 
-## OpenCode｜限时活动
-- 内容：OpenCode Zen 限时免费开放 DeepSeek V4 Flash（限 OpenCode 内使用，200K 上下文）
-- 规则：限时活动随时可能收回；社区讨论 V4.1-Flash-1017 上线免费版中
-- 链接：https://opencode.ai/docs/zen
-- 状态：已验证（核验时间 2026-10-29T02:10:00Z）
+## OpenCode｜长期免费
+- 内容：OpenCode Zen 免费池：免费模型无需绑卡即可调用、额度每日刷新——mimo-v2-pro-free / nemotron-3-super-free 各 100 万 tokens/日（免费池最高档），另有多款 20-40 万/日（MiniMax 系列等）；目录动态轮换，以 opencode.ai/zh/zen 实时为准
+- 规则：免费池长期存在（非单模型限时活动）；每模型每日上限次日重置
+- 链接：https://opencode.ai/zh/zen
+- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
 
 ## Qoder｜免费模型
 - 内容：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）
@@ -779,10 +791,10 @@
 - 状态：已验证（核验时间 2026-10-29T14:20:00Z）
 
 ## Trae｜长期免费
-- 内容：Trae 双轨：国内版（trae.cn）Free 档 500 积分/月+全功能可用；国际版（trae.ai）五档 Free/$8/$20/$60/$200 与 Grok 共享池
+- 内容：Trae 双轨：国内版（trae.cn）Free 档 500 积分/月+全功能可用；国际版（trae.ai）Free $0（有限额度+无限 Autocomplete），2026-02-24 起 Dollar 额度制
 - 规则：国内 Free 500 积分/月（1 积分≈0.01 元折 500 万 tok 当量）；国际 Free 档轻量
 - 链接：https://trae.cn
-- 状态：已验证（核验时间 2026-10-29T14:20:00Z）
+- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
 
 ## 小米 MiMo｜注册赠送
 - 内容：新客注册专享：注册 MiMo 开放平台并首次完成实名认证，即得 ¥5 API 赠金（40 天有效）——长期开放运营
@@ -874,4 +886,16 @@
 - 规则：领取：注册后网页版得 3000→下载桌面客户端登录再得 3000→手机 App 登录再得 3000；积分用于办公自动化任务（PPT/文档/表格）
 - 链接：https://office.xiaohuanxiong.com
 - 状态：待复核（核验时间 2026-10-30T13:51:07Z）
+
+## 小米 MiMo Code｜长期免费
+- 内容：小米 MiMo Code 终端 AI 编程助手：MIT 协议开源免费（基于 OpenCode 二次开发，个人/企业可免费使用、修改、分发），终端直连小米自研 MiMo-V2.6 系列模型
+- 规则：开源工具本身零成本；模型用量走 Token Plan 订阅（见付费区 xiaomi-mimo-tokenplan）或开放平台 ¥5 新客赠金（xiaomi-mimo-free5）
+- 链接：https://mimo.mi.com
+- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
+
+## 小米 MiMo｜pricing_plan
+- 内容：Token Plan 编程订阅（mimo.mi.com 官方）：Lite ¥39/月=41 亿 Credits · Standard ¥99/110 亿 · Pro ¥329/380 亿 · Max ¥659/820 亿；首购 88 折+连续包年 88 折+夜间 0 点-8 点消耗 0.8x；TTS 系列限时免费不耗额度
+- 规则：Credits 消耗制（模型倍率不同，V2.6 系列已上线）；夜间 0 点-8 点 0.8x；首购=账号生命周期首次订阅实付
+- 链接：https://mimo.mi.com/docs/zh-CN/price/token-plan
+- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
 

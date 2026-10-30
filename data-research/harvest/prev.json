@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-30T12:33:45Z",
+  "harvested_at": "2026-10-30T15:59:07Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -809,10 +809,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -874,6 +870,10 @@
         {
           "match": "会员",
           "context": "s 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Co"
+        },
+        {
+          "match": "会员",
+          "context": "时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Co"
         }
       ]
     },
@@ -1480,7 +1480,7 @@
       "name": "Mistral 用量限额",
       "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "cohere-rate-limits",
@@ -2206,41 +2206,8 @@
       "name": "大模型服务平台百炼控制台",
       "url": "https://bailian.console.aliyun.com/",
       "status": "ok",
-      "hits": 8,
-      "findings": [
-        {
-          "match": "免费额度 查看和领取模型免费额度",
-          "context": "vg) Token Plan 购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用 ## 模型. 覆盖文本"
-        },
-        {
-          "match": "¥49/ 月 轻量创作性价比之选，适合在Hackathon、创作比",
-          "context": "享，为智能体持续扩展能力边界。 RAG RAG 连接企业知识与检索增强能力，让智能体回答有据可依、结果可追溯。 Memory Memory 沉淀长期与短期记忆，为智能体提供连贯、个性化的上下文体验。 ## 订阅.灵活选择 模型工具轻体验包 ¥49/ 月 轻量创作性价比之选，适合在Hackathon、创作比赛中使用。 Token Plan Lite 模型调用权益 百炼自研工具节省计划 配套免费 Skills 任务指引 支持在兼容的 Agent 中接入使用 个人版 Essential 套餐 ¥79/ 月¥120 进阶实战，适用于已完成入门验证、"
-        },
-        {
-          "match": "¥79/ 月¥120 进阶实战，适用于已完成入门验证、需稳定承接日",
-          "context": "轻量创作性价比之选，适合在Hackathon、创作比赛中使用。 Token Plan Lite 模型调用权益 百炼自研工具节省计划 配套免费 Skills 任务指引 支持在兼容的 Agent 中接入使用 个人版 Essential 套餐 ¥79/ 月¥120 进阶实战，适用于已完成入门验证、需稳定承接日常单智能体任务的开发者与创作者 25,500Credits / 月 文本、视觉等多模态模型 联网搜索等 Harness 工具 可同时支持 2-3 个 Agent 并发运行 个人版 Standard 套餐 ¥139/ 月¥180 效率升级，适"
-        },
-        {
-          "match": "¥139/ 月¥180 效率升级，适用日常高频调用、需要多智能体并行",
-          "context": "，适用于已完成入门验证、需稳定承接日常单智能体任务的开发者与创作者 25,500Credits / 月 文本、视觉等多模态模型 联网搜索等 Harness 工具 可同时支持 2-3 个 Agent 并发运行 个人版 Standard 套餐 ¥139/ 月¥180 效率升级，适用日常高频调用、需要多智能体并行协作的开发者与业务用户 45,000Credits / 月 享受Essential套餐所有权益 4x Lite 套餐用量 可同时支持 3-4 个 Agent 并发运行 ## 更多客户选择百炼 来自开发者、初创企业及大型企业的真实客户故事——"
-        },
-        {
-          "match": "免费",
-          "context": "an 购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用 ## 模型. 覆盖"
-        },
-        {
-          "match": "免费",
-          "context": "短期记忆，为智能体提供连贯、个性化的上下文体验。 ## 订阅.灵活选择 模型工具轻体验包 ¥49/ 月 轻量创作性价比之选，适合在Hackathon、创作比赛中使用。 Token Plan Lite 模型调用权益 百炼自研工具节省计划 配套免费 Skills 任务指引 支持在兼容的 Agent 中接入使用 个人版 Essential 套餐 ¥79/ 月¥120 进阶实战，适用于已完成入门验证、需稳定承接日常单智能体任务的开发者与创作者 25,500Credits / 月 文本、视"
-        },
-        {
-          "match": "额度",
-          "context": ") Token Plan 购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用"
-        },
-        {
-          "match": "额度",
-          "context": "购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用 ## 模型. 覆盖文本"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "bazaarlink-docsapi",
@@ -2266,68 +2233,68 @@
           "context": "至少 US$5。 模仿公眾人物、或聽起來像官方／員工的名稱與描述會被拒絕（invalid_voice_name）。 錄音只用來建立聲音，我們不保存錄音。我們保留聲音名稱、擁有者、同意紀錄與時間戳記。 價格 建立聲音收取一次性費用（預設 US$1.00）；實際收取的金額會在 usage.cost_usd 回傳，且只有聲音建立成功才會收費。在語音合成中使用自訂聲音，每字元價格與該模型其他聲音相同。刪除免費。 同意聲明 每次建立都必須帶 consent=true 與 consent_statement_version=\"v1\"。聲明更新時，建立會回"
         },
         {
-          "match": "$1.65/$4.95 text+image+video->text ",
-          "context": "ion\" : \"16.00\"   }   ]   } ⌄ 顯示全部 15 行 可用模型 ( 171 ) 以下是目前 BazaarLink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $1.65/$4.95 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen"
+          "match": "$1.32/$3.96 text+image+video->text ",
+          "context": "ion\" : \"16.00\"   }   ]   } ⌄ 顯示全部 15 行 可用模型 ( 171 ) 以下是目前 BazaarLink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $1.32/$3.96 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen"
         },
         {
-          "match": "$0.32/$1.28 text+image->text qwen/q",
-          "context": "ink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $1.65/$4.95 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwe"
+          "match": "$0.26/$1.02 text+image->text qwen/q",
+          "context": "ink 上可用的模型，從資料庫動態載入： Qwen qwen/qwen3.8-max 1000K ctx · $1.32/$3.96 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwe"
         },
         {
-          "match": "$1.65/$4.95 text->text qwen/qwen3.7",
-          "context": "65/$4.95 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text"
+          "match": "$1.32/$3.96 text->text qwen/qwen3.7",
+          "context": "32/$3.96 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text"
         },
         {
           "match": "$0.03/$0.13 text+image+video->text ",
-          "context": "K ctx · $0.32/$1.28 text+image->text qwen/qwen3.7-max 1000K ctx · $1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+vi"
+          "context": "K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+vi"
         },
         {
-          "match": "$0.31/$1.25 text+image+video->text ",
-          "context": "1.65/$4.95 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 t"
+          "match": "$0.25/$1.00 text+image+video->text ",
+          "context": "1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 t"
         },
         {
-          "match": "$0.26/$2.60 text+image+video->text ",
-          "context": "3 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.31/$1.25 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+im"
+          "match": "$0.21/$2.08 text+image+video->text ",
+          "context": "3 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.44/$2.80 text+im"
         },
         {
-          "match": "$0.14/$0.57 text->text qwen/qwen3.5",
-          "context": "+video->text qwen/qwen3.5-27b 262K ctx · $0.26/$2.60 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->tex"
+          "match": "$0.12/$0.46 text->text qwen/qwen3.5",
+          "context": "+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.44/$2.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->tex"
         },
         {
-          "match": "$0.55/$3.50 text+image+video->text ",
-          "context": "+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->te"
+          "match": "$0.44/$2.80 text+image+video->text ",
+          "context": "+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.44/$2.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->te"
         },
         {
-          "match": "$0.33/$1.95 text+image+video->text ",
-          "context": ".14/$0.57 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.55/$3.50 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video"
+          "match": "$0.26/$1.56 text+image+video->text ",
+          "context": ".12/$0.46 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.44/$2.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+i"
         },
         {
-          "match": "$0.20/$0.97 text->text qwen/qwen3.5",
-          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.33/$1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+im"
-        },
-        {
-          "match": "$0.40/$3.20 text+image+video->text ",
-          "context": "1.95 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.20/$0.97 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+i"
+          "match": "$0.16/$0.78 text->text qwen/qwen3-v",
+          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+vi"
         },
         {
           "match": "$0.20/$0.88 text+image->text qwen/q",
-          "context": "->text qwen/qwen3.5-122b-a10b 262K ctx · $0.40/$3.20 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen"
+          "context": "image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video"
         },
         {
-          "match": "$0.50/$3.00 text+image+video->text ",
-          "context": "image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
+          "match": "$0.32/$2.56 text+image+video->text ",
+          "context": "8 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->tex"
         },
         {
-          "match": "$2.00/$6.00 text->text qwen/qwen3-e",
-          "context": ".88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.50/$3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen"
+          "match": "$0.40/$2.40 text+image+video->text ",
+          "context": "0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
+        },
+        {
+          "match": "$1.60/$4.80 text->text qwen/qwen3-e",
+          "context": "xt+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
-          "context": "3.00 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $2.00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embedding"
+          "context": "2.40 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embedding"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
-          "context": ".00/$6.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+vid"
+          "context": ".60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+vid"
         },
         {
           "match": "$0.02/$0.00 text->embeddings qwen/q",
@@ -2335,35 +2302,35 @@
         },
         {
           "match": "$0.07/$0.26 text+image+video->text ",
-          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+ima"
+          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.12/$0.80 text+ima"
         },
         {
           "match": "$0.07/$0.28 text->text qwen/qwen3.6",
-          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen"
+          "context": "gs qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.12/$0.80 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen"
         },
         {
-          "match": "$0.15/$1.00 text+image+video->text ",
-          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
+          "match": "$0.12/$0.80 text+image+video->text ",
+          "context": "t+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.12/$0.80 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
         },
         {
           "match": "$0.12/$0.80 text->text qwen/qwen3-v",
-          "context": "07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.15/$1.00 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
+          "context": "07/$0.28 text->text qwen/qwen3.6-35b-a3b 262K ctx · $0.12/$0.80 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
         },
         {
           "match": "$0.15/$0.60 text+image->text qwen/q",
-          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+vide"
+          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.23/$1.92 text+image+vide"
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
+          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.23/$1.92 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+i"
         },
         {
-          "match": "$0.29/$2.40 text+image+video->text ",
-          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
+          "match": "$0.23/$1.92 text+image+video->text ",
+          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.23/$1.92 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.29/$2.40 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
+          "context": "image+video->text qwen/qwen3.6-27b 262K ctx · $0.23/$1.92 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
         },
         {
           "match": "$0.30/$1.00 text->text qwen/qwen-2.",
@@ -2732,7 +2699,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "例如：企业微信智能机器人、QQ、飞书、钉钉等）、自动决策与任务执行能力、预设的技能（Skills）能力。它能控制您的终端执行操作，而不是只出主意。 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -2740,7 +2707,7 @@
         },
         {
           "match": "免费",
-          "context": "快讯文章归档 关键词归档 开发者手册归档 开发者手册 Section 归档 领券  文章/答案/技术大牛 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
+          "context": "s）能力。它能控制您的终端执行操作，而不是只出主意。 [进入专区](https://developer.cloud.tencent.com/zone/adp) ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 16 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
         },
         {
           "match": "free",
@@ -3476,9 +3443,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -4371,7 +4337,7 @@
       "name": "OmniRoute 白嫖网关(3.7万Star)",
       "url": "https://github.com/diegosouzapw/OmniRoute",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "TimeoutError: The read operation timed out"
     },
     {
       "id": "lolo-freellm",
@@ -5516,7 +5482,7 @@
       "name": "xAI 定价",
       "url": "https://console.x.ai",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "ov-kilo-pricing",
@@ -6207,7 +6173,7 @@
       "name": "HuggingFace 推理",
       "url": "https://huggingface.co/docs/inference-providers/index",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "aliyun-codingplan",
@@ -6266,170 +6232,144 @@
       "id": "ov-opencode-data",
       "name": "OpenCode 用量/价格数据页",
       "url": "https://dev.opencode.ai/data",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 308: Permanent Redirect"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "100 万 token",
+          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $0.60 deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存"
+        },
+        {
+          "match": "$0.20 muse-spark-1.3-contributor $0",
+          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $0.60 deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
+        },
+        {
+          "match": "$0.60 deepseek-v4-flash-vision-exp ",
+          "context": "没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $0.60 deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-sp"
+        },
+        {
+          "match": "$0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOK",
+          "context": "成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $0.60 deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.1"
+        },
+        {
+          "match": "$0.20**muse-spark-1.3-contributor**",
+          "context": "sion-bearing model rows matched this product. LEARN MORE**SESSION COST****▸** ## **Token Cost.** Price per 1M tokens. **$0.20**muse-spark-1.3-contributor**$0.28**deepseek-v4-flash**$0.60**deepseek-v4-flash-vision-exp Input**$0.15** Output**$0.60** Cached**$0.0030** LEARN MOR"
+        },
+        {
+          "match": "$0.28**deepseek-v4-flash**$0.60**de",
+          "context": "s product. LEARN MORE**SESSION COST****▸** ## **Token Cost.** Price per 1M tokens. **$0.20**muse-spark-1.3-contributor**$0.28**deepseek-v4-flash**$0.60**deepseek-v4-flash-vision-exp Input**$0.15** Output**$0.60** Cached**$0.0030** LEARN MORE**TOKEN COST****▸** ## **Cache Rat"
+        },
+        {
+          "match": "$0.15** Output**$0.60** Cached**$0.",
+          "context": "er 1M tokens. **$0.20**muse-spark-1.3-contributor**$0.28**deepseek-v4-flash**$0.60**deepseek-v4-flash-vision-exp Input**$0.15** Output**$0.60** Cached**$0.0030** LEARN MORE**TOKEN COST****▸** ## **Cache Ratio.** Share of input tokens served from cache. **95%**deepseek-v4-fla"
+        },
+        {
+          "match": "每日 01 deepseek-v4-flash 0B token",
+          "context": "B 0B OCT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "8日, UTC 12:45 已更新 10月28日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SE"
+        },
+        {
+          "match": "deepseek",
+          "context": "T 22 0B OCT 23 OCT 23 0B OCT 24 OCT 24 0B OCT 25 OCT 25 0B OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 26 OCT 26 0B OCT 27 OCT 27 0B OCT 28 OCT 28 热门模型用量堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor test jev-1.13 deepseek-v4-flash-vision-exp Other 总计 SEP 3 0B 0B 0B 0B 0B 0B 0B SEP 4 0B 0B 0B 0B 0B 0B 0B SEP 5 0B 0B 0B 0B 0B 0B 0B SEP 6 0B"
+        },
+        {
+          "match": "deepseek",
+          "context": "CT 25 0B 0B 0B 0B 0B 0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ken DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "ibutor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较"
+        },
+        {
+          "match": "deepseek",
+          "context": "n Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-flash-vision-exp 0B token DeepSeek 新 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "OCT 22 0 OCT 23 OCT 23 5 OCT 24 OCT 24 0 OCT 25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "25 OCT 25 0 OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor deepseek-v4-flash-vision-exp test jev-1.13 Other 总计 SEP 3 0 0 0 0 0 0 0 SEP 4 0 0 0 0 0 0 0 SEP 5 0 0 0 0 0 0 0 SEP 6 0 0 0 0 0"
+        },
+        {
+          "match": "deepseek",
+          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $0.60 deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比"
+        },
+        {
+          "match": "deepseek",
+          "context": "产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $0.60 deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek"
+        },
+        {
+          "match": "deepseek",
+          "context": "deepseek-v4-flash-vision-exp 输入 $0.15 输出 $0.60 已缓存 $0.0030 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多"
+        },
+        {
+          "match": "deepseek",
+          "context": "▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.13 0% deepseek-v4-flash-vision-exp 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 7 SEP 7 0 SEP 8 SEP 8 0 SEP 10 S"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "5M OCT 23 OCT 23 31M OCT 24 OCT 24 103M OCT 25 OCT 25 1M OCT 26 OCT 26 0 OCT 27 OCT 27 0 OCT 28 OCT 28 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 7 100.0% 0.0% 0.0% 0.0% SEP 8 100.0% 0.0% 0.0% 0.0% SEP 10 100.0% 0.0% 0.0% 0.0% SEP 11 100.0% 0."
+        },
+        {
+          "match": "DeepSeek",
+          "context": ".0% OCT 25 100.0% 0.0% 0.0% 0.0% OCT 26 98.6% 1.0% 0.4% 0.0% OCT 27 87.0% 7.8% 5.2% 0.0% OCT 28 94.3% 4.6% 1.1% 0.0% 01 DeepSeek 0 token 94.3 % 02 Meta 0 token 4.6 % 03 Other 0 token 1.1 % [*] OCT 28 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 57% 02"
+        },
+        {
+          "match": "deepseek",
+          "context": "a（opencode.ai/data）以及页面顶部显示的更新时间。 Model Comparisons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-"
+        },
+        {
+          "match": "deepseek",
+          "context": "ons . Popular model pairs from the leaderboard. Top two by recent usage deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent"
+        },
+        {
+          "match": "deepseek",
+          "context": "age deepseek-v4-flash vs muse-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-c"
+        },
+        {
+          "match": "deepseek",
+          "context": "use-spark-1.3-contributor deepseek-v4-flash · muse-spark-1.3-contributor Leader vs challenger deepseek-v4-flash vs test deepseek-v4-flash · test Adjacent leaderboard pair muse-spark-1.3-contributor vs test muse-spark-1.3-contributor · test Top mode"
+        },
+        {
+          "match": "DeepSeek",
+          "context": "See which models are winning real usage, how the mix is shifting, and what that means for cost. As of October 28, 2026, DeepSeek V4 Flash led OpenCode usage over the past 7 days with 0 tokens, followed by Muse Spark 1.3 Contributor (0) and test (0)"
+        }
+      ]
     },
     {
       "id": "ctyun-ai-zhuanxiang",
       "name": "天翼云大模型AI专项",
       "url": "https://www.ctyun.cn/act/AI/zhuanxiang",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "免费tokens    AI创作平台套餐    Token",
-          "context": "n按量调用 · GPU算力租用 · 一站式全栈AI解决方案，赋能全行业低成本落地     AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上即享预置模板化创作工具，支持多类"
-        },
-        {
-          "match": "免费tokens",
-          "context": "天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上即享预置模板化创作工具，支持多类模型调用，随心随地开启 AI 内容生产。   【帮助文档】    AI创作平台（天翼云DramaFlow)基础会员  一站式AI内容"
-        },
-        {
-          "match": "免费领取Tokens",
-          "context": "企业解决方案    头部政企AI解决方案    通用场景AI解决方案  能力优势及资质 聚焦AI专项 · 打造全栈服务核心壁垒，以合规为基石、以算力为支撑、以模型服务为核心、以全场景适配为抓手，全方位满足客户AI开发、调用、部署全周期需求 免费领取Tokens 联系我们 智能客服 7*24小时为您解答问题 提交工单 为您解决专业的技术等问题 预约技术专家 专业技术构架师为您提供1对1解答     扫码联系您的专属客户经理 咨询热线：400-810-9889转1 7*24小时售后 无忧退款 免费备"
-        },
-        {
-          "match": "免费领取Tokens",
-          "context": "ee54a5240224f1.png) ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/52c2c2f4e8df4d88be5524c949479059.png) 免费领取Tokens [![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/050ec53fd76242a9a47e61d7cbd0d450.png)](https://ctxirang."
-        },
-        {
-          "match": "新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅",
-          "context": "业务扬帆出海，通达全球！   天翼云信创专区  NEW “一云多芯、一云多态”,国产化软件全面适配，国产操作系统及硬件芯片支持丰富   云上钜惠  爆款云主机全场特惠，2核4G只要1.8折起！   天翼云奖励推广计划  加入成为云推官，推荐新用户注册下单得现金奖励   免费活动    免费试用中心  HOT 多款云产品免费试用，快来开启云上之旅   天翼云用户体验官  NEW 您的洞察，重塑科技边界 息壤智算 领先开放的智算服务平台，提供算力、平台、数据、模型、应用“五位一体”智算服务体系，构建全流程的AI基础设施能力 星辰TokenHub   模型广场    体验中心    服"
-        },
-        {
-          "match": "新用户享体验价(每个新用户限领取1次)，订购后不退不换  订购后不退不换 快速上手 尝鲜体验   32  ",
-          "context": "产。   产品优势  享有积分：1600 批量创作，8个并发任务 集成Seedance-2.5、MiniMax-H3等高阶模型 支持团队项目管理能力，账号席位5个 可生成Seedance2.0视频约34s（720P），具体以实际消耗为准  新用户享体验价(每个新用户限领取1次)，订购后不退不换  订购后不退不换 快速上手 尝鲜体验   32    .67  元/年   立省：66.33元/年  已抢购0%   立即订购    已抢购0%  新客专享   AI创作平台（天翼云DramaFlow)基础会员  一站式AI内容创作工具，云上赋能多场景内容高效生产。   产品优势  享有积"
-        },
-        {
-          "match": "新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    【配置指引】    Toke",
-          "context": "久固定提供任一指定模型。 AI工程师 高频AI开发   699    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠 展开更多 收起 Token Plan套餐订购专区 Token与GPU算力支持按需定制、灵活采购，新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    【配置指引】    Token Plan 基础版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM"
-        },
-        {
-          "match": "新用户享体验价(每个新用户限领取1次)，订购后不退不换 订购后不退不换 快速上手 尝鲜体验 32 .67 ",
-          "context": "能多场景内容高效生产。 享有积分：1600 批量创作，8个并发任务 集成Seedance-2.5、MiniMax-H3等高阶模型 支持团队项目管理能力，账号席位5个 可生成Seedance2.0视频约34s（720P），具体以实际消耗为准 新用户享体验价(每个新用户限领取1次)，订购后不退不换 订购后不退不换 快速上手 尝鲜体验 32 .67 元/年 立省：66.33元/年 立即订购 新客专享 AI创作平台（天翼云DramaFlow)基础会员 一站式AI内容创作工具，云上赋能多场景内容高效生产。 享有积分：1600 批量创作，8个并发任务 集成Seedance-2.5、MiniM"
-        },
-        {
-          "match": "新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容 Token Plan 基础版 200K 上下文，更长",
-          "context": "换、升级、范围调整或下线。套餐仅提供当期适配模型使用权限，不承诺永久固定提供任一指定模型。 AI工程师高频AI开发 699 .00 元/月 立即订购 限时特惠 Token Plan套餐订购专区 Token与GPU算力支持按需定制、灵活采购，新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容 Token Plan 基础版 200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量 包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：TeleAgent、OpenClaw、OpenC"
-        },
-        {
-          "match": "1429万Token",
-          "context": "购买编码套餐   2  获得专属App Key   3  接入AI工具   查看教程》》    4  开启编码   查看教程》》    编程Token Plan 3000积分   入门体验，适合首次体验AI工具能力   产品优势  约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kim"
-        },
-        {
-          "match": "462万Token",
-          "context": "y   3  接入AI工具   查看教程》》    4  开启编码   查看教程》》    编程Token Plan 3000积分   入门体验，适合首次体验AI工具能力   产品优势  约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3  支持工"
-        },
-        {
-          "match": "4762万Token",
-          "context": "一指定模型。 入门首选 适合学生、编程初学者   29    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 10000积分  日常使用，适合处理基础的开发任务   产品优势  约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
-        },
-        {
-          "match": "1538万Token",
-          "context": "29    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 10000积分  日常使用，适合处理基础的开发任务   产品优势  约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
-        },
-        {
-          "match": "11905万Token",
-          "context": "定模型。 独立开发者 日常开发、代码补全   89    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 25000积分  轻量开发，适合处理较为复杂的开发任务   产品优势  约兑换11905万Token的minimax-m3，或3846万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：25000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
-        },
-        {
-          "match": "3846万Token",
-          "context": "9    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 25000积分  轻量开发，适合处理较为复杂的开发任务   产品优势  约兑换11905万Token的minimax-m3，或3846万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：25000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
-        },
-        {
-          "match": "23810万Token",
-          "context": "型。 小型开发团队 复杂任务、项目重构   199    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 50000积分  专业开发，适合处理复杂项目的开发任务   产品优势  约兑换23810万Token的minimax-m3，或7692万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：50000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
-        },
-        {
-          "match": "7692万Token",
-          "context": "9    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 50000积分  专业开发，适合处理复杂项目的开发任务   产品优势  约兑换23810万Token的minimax-m3，或7692万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：50000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
-        },
-        {
-          "match": "47619万Token",
-          "context": "阶开发者 复杂项目、持续迭代   399    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 100000积分  高频AI开发，适合处理复杂项目的持续迭代任务   产品优势  约兑换47619万Token的minimax-m3，或15385万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：100000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1"
-        },
-        {
-          "match": "15385万Token",
-          "context": ".00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠   编程Token Plan 100000积分  高频AI开发，适合处理复杂项目的持续迭代任务   产品优势  约兑换47619万Token的minimax-m3，或15385万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：100000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持"
-        },
-        {
-          "match": "1500万Tokens",
-          "context": "码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：TeleAgent、OpenClaw、OpenCode、Cursor、Cline、Chatbox、Codebuddy、Trae等 1500万Tokens 知识库问答 长上下文处理   39    .90  元/个/月 已抢购0%   立即订购    已抢购0%  开发者/中小企业   Token Plan 专业版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小"
-        },
-        {
-          "match": "1000万Tokens",
-          "context": "、预算难控等问题   产品优势  享受固定低价抵扣单价、输入输出 Token 统一抵扣、用量实时查询明细、售后技术支撑等专属权益 比按量付费成本更低，消耗透明可控，满足企业稳定大批量 AI 调用需求。 支持模型：DeepSeek v3.2 1000万Tokens 支持工具：TeleAgent等 个人尝鲜 轻量API调用   9    .90  元/个/月 已抢购0%   立即订购    已抢购0%  个人/家庭用户   Token Plan畅享版  推理高效、成本下降超60%，性价比突出，日常批量"
-        },
-        {
-          "match": "4000万Tokens",
-          "context": "预算难控等问题   产品优势  可享受固定低价抵扣单价、输入输出 Token 统一抵扣、用量实时查询明细、售后技术支撑等专属权益 比按量付费成本更低，消耗透明可控，满足企业稳定大批量 AI 调用需求。 支持模型：DeepSeek v3.2 4000万Tokens 支持工具：TeleAgent等 小型应用开发者 日常API、内容生成   29    .90  元/个/月 已抢购0%   立即订购    已抢购0%  个人/家庭用户   Token Plan尊享版  推理高效、成本下降超60%，性价比"
-        },
-        {
-          "match": "1429万Token",
-          "context": "码场景设计，支持主流AI开发工具，畅享热门模型，获得便捷、稳定、流畅的编码体验 1 购买编码套餐 2 获得专属App Key 3 接入AI工具 4 开启编码 编程Token Plan 3000积分 入门体验，适合首次体验AI工具能力 约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kim"
-        },
-        {
-          "match": "462万Token",
-          "context": "，获得便捷、稳定、流畅的编码体验 1 购买编码套餐 2 获得专属App Key 3 接入AI工具 4 开启编码 编程Token Plan 3000积分 入门体验，适合首次体验AI工具能力 约兑换1429万Token的minimax-m3，或462万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：3000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工具"
-        },
-        {
-          "match": "4762万Token",
-          "context": "级、范围调整或下线。套餐仅提供当期适配模型使用权限，不承诺永久固定提供任一指定模型。 入门首选适合学生、编程初学者 29 .00 元/月 立即订购 限时特惠 编程Token Plan 10000积分 日常使用，适合处理基础的开发任务 约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
-        },
-        {
-          "match": "1538万Token",
-          "context": "权限，不承诺永久固定提供任一指定模型。 入门首选适合学生、编程初学者 29 .00 元/月 立即订购 限时特惠 编程Token Plan 10000积分 日常使用，适合处理基础的开发任务 约兑换4762万Token的minimax-m3，或1538万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：10000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
-        },
-        {
-          "match": "11905万Token",
-          "context": "范围调整或下线。套餐仅提供当期适配模型使用权限，不承诺永久固定提供任一指定模型。 独立开发者日常开发、代码补全 89 .00 元/月 立即订购 限时特惠 编程Token Plan 25000积分 轻量开发，适合处理较为复杂的开发任务 约兑换11905万Token的minimax-m3，或3846万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：25000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
-        },
-        {
-          "match": "3846万Token",
-          "context": "不承诺永久固定提供任一指定模型。 独立开发者日常开发、代码补全 89 .00 元/月 立即订购 限时特惠 编程Token Plan 25000积分 轻量开发，适合处理较为复杂的开发任务 约兑换11905万Token的minimax-m3，或3846万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：25000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
-        },
-        {
-          "match": "23810万Token",
-          "context": "调整或下线。套餐仅提供当期适配模型使用权限，不承诺永久固定提供任一指定模型。 小型开发团队复杂任务、项目重构 199 .00 元/月 立即订购 限时特惠 编程Token Plan 50000积分 专业开发，适合处理复杂项目的开发任务 约兑换23810万Token的minimax-m3，或7692万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：50000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、K"
-        },
-        {
-          "match": "7692万Token",
-          "context": "诺永久固定提供任一指定模型。 小型开发团队复杂任务、项目重构 199 .00 元/月 立即订购 限时特惠 编程Token Plan 50000积分 专业开发，适合处理复杂项目的开发任务 约兑换23810万Token的minimax-m3，或7692万Token的kimi-k2.6 （参考值，以最终消耗为准） 额度：50000积分 支持模型：DeepSeek-V4-Pro、DeepSeek-V4-Flash-0731、GLM-5.2、GLM-5.1、Kimi-K2.6、MiniMax-M3 支持工"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
     },
     {
       "id": "cucloud-tokenplan",
       "name": "联通云 Token Plan 活动",
       "url": "https://www.cucloud.cn/information/535/7137.html",
-      "status": "ok",
-      "hits": 6,
-      "findings": [
-        {
-          "match": "注册送福利啦！                 -->                          ",
-          "context": "最高享600万Tokens 免费用！联通云注册送福利啦！                 -->                                                                                                                                     联通云微信公众号注册云账户"
-        },
-        {
-          "match": "600万Tokens",
-          "context": "最高享600万Tokens 免费用！联通云注册送福利啦！                 -->"
-        },
-        {
-          "match": "免费",
-          "context": "中国站               中国站   简体中文         International   简体中文   English           文档       控制台             登录       免费注册               {{userInfo.iamUserName ? userInfo.iamUserName : userInfo.mainUserName}}                 账号中心   {{ifAtte"
-        },
-        {
-          "match": "注册",
-          "context": "联通云微信公众号注册云账户，福利加码送不停                 {{item.title}}                               {{product.title}}           {{list.title}}"
-        },
-        {
-          "match": "注册",
-          "context": "{peopleList.noReadMsg > 999 ? '999+' : peopleList.noReadMsg}}     工单管理   积分中心   我的社区   退出登录                     联通云微信公众号注册云账户，福利加码送不停                                   取消       0 || searchDocumentResultList.length > 0\"  @click.stop @click.sel"
-        },
-        {
-          "match": "注册",
-          "context": "可兑换的优惠券，请前往   积分中心   查看           {{userInfo.iamUserName ? userInfo.iamUserName : userInfo.mainUserName}}    退出登录       注册   登录                     {{ item.title }}                     {{ subItem.title }}        {{ subItem.description }}"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "ov-openrouter-models-api",
@@ -6843,14 +6783,8 @@
       "id": "api-docs",
       "name": "PaxSenixAPI Documentatio",
       "url": "https://api.paxsenix.org/docs",
-      "status": "ok",
-      "hits": 1,
-      "findings": [
-        {
-          "match": "Pricing",
-          "context": "discontinued. Switch to  api.paxsenix.org .      close                PaxSenix _API         fork_right v3.3.4    Home   Pricing   Telegram                 Navigation       home Overview      api Endpoints          Categories                     Pa"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "assemblyai-docs",
@@ -6873,12 +6807,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 62 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 62 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 65 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 62 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. All featured models r"
+          "context": "ed · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. All featured models r"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -7105,7 +7039,7 @@
       "name": "Get started with Meta Mo",
       "url": "https://dev.meta.ai/docs/overview",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "developer-isaacgym",
@@ -7280,14 +7214,8 @@
       "id": "docs-main",
       "name": "Documentation Map | AI/M",
       "url": "https://docs.aimlapi.com",
-      "status": "ok",
-      "hits": 1,
-      "findings": [
-        {
-          "match": "Free",
-          "context": "s Decision Models FAQ How can I work with my API keys? Can I use API in Python? Can I use API in NodeJS? How to use the Free Tier? Are my requests cropped? Can I call API in the asynchronous mode? OpenAI SDK doesn&#x27;t work? Use Cases Create"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "docs-geminienterpri",
@@ -7300,14 +7228,8 @@
       "id": "docs-main",
       "name": "Introduction to Diffbot ",
       "url": "https://docs.diffbot.com",
-      "status": "ok",
-      "hits": 1,
-      "findings": [
-        {
-          "match": "Pricing",
-          "context": "Skip to content Diffbot Main Navigation Home Technology Documentation Resources Pricing Search Ctrl K CONTENTS Return to top Sidebar Navigation Introduction Introduction to Diffbot Products Overview Authenti"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-guidesquotasus",
@@ -7405,154 +7327,22 @@
       "id": "docs-apiapiquicksta",
       "name": "API Quickstart - Inferen",
       "url": "https://docs.inference.net/api/api-quickstart",
-      "status": "ok",
-      "hits": 2,
-      "findings": [
-        {
-          "match": "pricing",
-          "context": "ng \"priority\" (alias \"fast\" ) serves the request from the model&#x27;s fast tier, where one exists, at that tier&#x27;s pricing; the response then reports \"service_tier\": \"priority\" . Fast tiers: moonshotai/kimi-k3 (served as moonshotai/kimi-k3-fa"
-        },
-        {
-          "match": "pricing",
-          "context": "string` | `\"priority\"` (alias `\"fast\"`) serves the request from the model's fast tier, where one exists, at that tier's pricing; the response then reports `\"service_tier\": \"priority\"`. Fast tiers: `moonshotai/kimi-k3` (served as `moonshotai/kimi-k"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-main",
       "name": "Quick Start Guide",
       "url": "https://docs.leonardo.ai",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-main",
       "name": "Nexusify — Documentation",
       "url": "https://docs.nexusify.co/",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "$25 in free credits every week , ",
-          "context": "API_KEY ;                 Getting Started   Pricing & Credits    Nexus uses a credit-based system. New accounts receive $25 in free credits every week , automatically renewed on Mondays — no credit card required to start.    How Credits Work        🎁   Weekly Free Credits"
-        },
-        {
-          "match": "$25 in free credits every Monday.",
-          "context": "tomatically renewed on Mondays — no credit card required to start.    How Credits Work        🎁   Weekly Free Credits   $25 in free credits every Monday. Automatically topped up — no action needed on your part.       💳   Paid Credits   Purchase additional credits at any ti"
-        },
-        {
-          "match": "$30.00 $60.00   grok-3 $3.00 $15.00 ",
-          "context": "ut and output priced separately. All prices are in USD.          Model Input / 1M tokens Output / 1M tokens       gpt-4 $30.00 $60.00   grok-3 $3.00 $15.00   llama-3.1-405b-instruct $5.00 $15.00   gemini-2.5-flash $0.15 $0.60   gpt-4o-mini $0.15 $0.60   mistral-large-3 $2.00"
-        },
-        {
-          "match": "$5.00 $15.00   gemini-2.5-flash $0.",
-          "context": "Model Input / 1M tokens Output / 1M tokens       gpt-4 $30.00 $60.00   grok-3 $3.00 $15.00   llama-3.1-405b-instruct $5.00 $15.00   gemini-2.5-flash $0.15 $0.60   gpt-4o-mini $0.15 $0.60   mistral-large-3 $2.00 $6.00   deepseek-v3.2 $0.27 $1.10   kimi-k2.5 $0.80 $3.00   q"
-        },
-        {
-          "match": "$0.60   gpt-4o-mini $0.15 $0.60   m",
-          "context": "tokens       gpt-4 $30.00 $60.00   grok-3 $3.00 $15.00   llama-3.1-405b-instruct $5.00 $15.00   gemini-2.5-flash $0.15 $0.60   gpt-4o-mini $0.15 $0.60   mistral-large-3 $2.00 $6.00   deepseek-v3.2 $0.27 $1.10   kimi-k2.5 $0.80 $3.00   qwen3-235b-a22b $0.20 $0.60   All other"
-        },
-        {
-          "match": "$2.00 $6.00   deepseek-v3.2 $0.27 $",
-          "context": "15.00   llama-3.1-405b-instruct $5.00 $15.00   gemini-2.5-flash $0.15 $0.60   gpt-4o-mini $0.15 $0.60   mistral-large-3 $2.00 $6.00   deepseek-v3.2 $0.27 $1.10   kimi-k2.5 $0.80 $3.00   qwen3-235b-a22b $0.20 $0.60   All other models follow per-token pricing. Refer to the ful"
-        },
-        {
-          "match": "$0.80 $3.00   qwen3-235b-a22b $0.20",
-          "context": "i-2.5-flash $0.15 $0.60   gpt-4o-mini $0.15 $0.60   mistral-large-3 $2.00 $6.00   deepseek-v3.2 $0.27 $1.10   kimi-k2.5 $0.80 $3.00   qwen3-235b-a22b $0.20 $0.60   All other models follow per-token pricing. Refer to the full model list for details.          Image Model Prici"
-        },
-        {
-          "match": "$0.60   All other models follow per",
-          "context": "i $0.15 $0.60   mistral-large-3 $2.00 $6.00   deepseek-v3.2 $0.27 $1.10   kimi-k2.5 $0.80 $3.00   qwen3-235b-a22b $0.20 $0.60   All other models follow per-token pricing. Refer to the full model list for details.          Image Model Pricing   Image generation is billed at a"
-        },
-        {
-          "match": "$0.003 $0.012   zimage $0.005 $0.020",
-          "context": "lies to 512×512 px; larger resolutions scale proportionally.          Model Base (512×512) Large (1024×1024)       flux $0.003 $0.012   zimage $0.005 $0.020   klein $0.006 $0.024   gptimage $0.040 $0.160   qwen-image $0.020 $0.080   wan-image $0.008 $0.032   p-image $0.055 $0"
-        },
-        {
-          "match": "$0.006 $0.024   gptimage $0.040 $0.1",
-          "context": "proportionally.          Model Base (512×512) Large (1024×1024)       flux $0.003 $0.012   zimage $0.005 $0.020   klein $0.006 $0.024   gptimage $0.040 $0.160   qwen-image $0.020 $0.080   wan-image $0.008 $0.032   p-image $0.055 $0.220            Low balance. When your credit"
-        },
-        {
-          "match": "$0.020 $0.080   wan-image $0.008 $0.",
-          "context": "(1024×1024)       flux $0.003 $0.012   zimage $0.005 $0.020   klein $0.006 $0.024   gptimage $0.040 $0.160   qwen-image $0.020 $0.080   wan-image $0.008 $0.032   p-image $0.055 $0.220            Low balance. When your credit balance is insufficient, requests return a 402 erro"
-        },
-        {
-          "match": "$0.055 $0.220            Low balance",
-          "context": "05 $0.020   klein $0.006 $0.024   gptimage $0.040 $0.160   qwen-image $0.020 $0.080   wan-image $0.008 $0.032   p-image $0.055 $0.220            Low balance. When your credit balance is insufficient, requests return a 402 error. Purchase credits at dash.nexusify.co ."
-        },
-        {
-          "match": "$25   Free Credits / Week       ∞",
-          "context": "HTTP error responses helps you build more resilient integrations.    Usage Limits        130   Requests / Minute       $25   Free Credits / Week       ∞   With Paid Credits        Error Codes          Code Status Description       400 Bad Request Missing required paramete"
-        },
-        {
-          "match": "$25 in free credits every week**,",
-          "context": "ess.env.NEXUS_API_KEY; ``` Getting Started # Pricing & Credits Nexus uses a credit-based system. New accounts receive **$25 in free credits every week**, automatically renewed on Mondays — no credit card required to start. ## How Credits Work 🎁 #### Weekly Free Credits $25"
-        },
-        {
-          "match": "$25 in free credits every Monday.",
-          "context": "**, automatically renewed on Mondays — no credit card required to start. ## How Credits Work 🎁 #### Weekly Free Credits $25 in free credits every Monday. Automatically topped up — no action needed on your part. 💳 #### Paid Credits Purchase additional credits at any time fr"
-        },
-        {
-          "match": "$30.00 | $60.00 | | `grok-3` | $3.00",
-          "context": "d separately. All prices are in USD. | Model | Input / 1M tokens | Output / 1M tokens | | --- | --- | --- | | `gpt-4` | $30.00 | $60.00 | | `grok-3` | $3.00 | $15.00 | | `llama-3.1-405b-instruct` | $5.00 | $15.00 | | `gemini-2.5-flash` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.1"
-        },
-        {
-          "match": "$15.00 | | `llama-3.1-405b-instruct`",
-          "context": "Model | Input / 1M tokens | Output / 1M tokens | | --- | --- | --- | | `gpt-4` | $30.00 | $60.00 | | `grok-3` | $3.00 | $15.00 | | `llama-3.1-405b-instruct` | $5.00 | $15.00 | | `gemini-2.5-flash` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.15 | $0.60 | | `mistral-large-3` | $2.00"
-        },
-        {
-          "match": "$5.00 | $15.00 | | `gemini-2.5-flas",
-          "context": "tokens | | --- | --- | --- | | `gpt-4` | $30.00 | $60.00 | | `grok-3` | $3.00 | $15.00 | | `llama-3.1-405b-instruct` | $5.00 | $15.00 | | `gemini-2.5-flash` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.15 | $0.60 | | `mistral-large-3` | $2.00 | $6.00 | | `deepseek-v3.2` | $0.27 |"
-        },
-        {
-          "match": "$0.15 | $0.60 | | `gpt-4o-mini` | $",
-          "context": "| $30.00 | $60.00 | | `grok-3` | $3.00 | $15.00 | | `llama-3.1-405b-instruct` | $5.00 | $15.00 | | `gemini-2.5-flash` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.15 | $0.60 | | `mistral-large-3` | $2.00 | $6.00 | | `deepseek-v3.2` | $0.27 | $1.10 | | `kimi-k2.5` | $0.80 | $3.00 |"
-        },
-        {
-          "match": "$0.60 | | `mistral-large-3` | $2.00",
-          "context": "15.00 | | `llama-3.1-405b-instruct` | $5.00 | $15.00 | | `gemini-2.5-flash` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.15 | $0.60 | | `mistral-large-3` | $2.00 | $6.00 | | `deepseek-v3.2` | $0.27 | $1.10 | | `kimi-k2.5` | $0.80 | $3.00 | | `qwen3-235b-a22b` | $0.20 | $0.60 | | A"
-        },
-        {
-          "match": "$6.00 | | `deepseek-v3.2` | $0.27 |",
-          "context": "$5.00 | $15.00 | | `gemini-2.5-flash` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.15 | $0.60 | | `mistral-large-3` | $2.00 | $6.00 | | `deepseek-v3.2` | $0.27 | $1.10 | | `kimi-k2.5` | $0.80 | $3.00 | | `qwen3-235b-a22b` | $0.20 | $0.60 | | All other models follow per-token prici"
-        },
-        {
-          "match": "$1.10 | | `kimi-k2.5` | $0.80 | $3.",
-          "context": "` | $0.15 | $0.60 | | `gpt-4o-mini` | $0.15 | $0.60 | | `mistral-large-3` | $2.00 | $6.00 | | `deepseek-v3.2` | $0.27 | $1.10 | | `kimi-k2.5` | $0.80 | $3.00 | | `qwen3-235b-a22b` | $0.20 | $0.60 | | All other models follow per-token pricing. Refer to the full model list for"
-        },
-        {
-          "match": "$0.20 | $0.60 | | All other models ",
-          "context": "al-large-3` | $2.00 | $6.00 | | `deepseek-v3.2` | $0.27 | $1.10 | | `kimi-k2.5` | $0.80 | $3.00 | | `qwen3-235b-a22b` | $0.20 | $0.60 | | All other models follow per-token pricing. Refer to the full model list for details. | | | ## Image Model Pricing Image generation is bil"
-        },
-        {
-          "match": "$0.003 | $0.012 | | `zimage` | $0.00",
-          "context": "larger resolutions scale proportionally. | Model | Base (512×512) | Large (1024×1024) | | --- | --- | --- | | `flux` | $0.003 | $0.012 | | `zimage` | $0.005 | $0.020 | | `klein` | $0.006 | $0.024 | | `gptimage` | $0.040 | $0.160 | | `qwen-image` | $0.020 | $0.080 | | `wan-im"
-        },
-        {
-          "match": "$0.020 | | `klein` | $0.006 | $0.024",
-          "context": ". | Model | Base (512×512) | Large (1024×1024) | | --- | --- | --- | | `flux` | $0.003 | $0.012 | | `zimage` | $0.005 | $0.020 | | `klein` | $0.006 | $0.024 | | `gptimage` | $0.040 | $0.160 | | `qwen-image` | $0.020 | $0.080 | | `wan-image` | $0.008 | $0.032 | | `p-image` | $"
-        },
-        {
-          "match": "$0.040 | $0.160 | | `qwen-image` | $",
-          "context": "| --- | --- | | `flux` | $0.003 | $0.012 | | `zimage` | $0.005 | $0.020 | | `klein` | $0.006 | $0.024 | | `gptimage` | $0.040 | $0.160 | | `qwen-image` | $0.020 | $0.080 | | `wan-image` | $0.008 | $0.032 | | `p-image` | $0.055 | $0.220 | **Low balance.** When your credit bal"
-        },
-        {
-          "match": "$0.080 | | `wan-image` | $0.008 | $0",
-          "context": "| `zimage` | $0.005 | $0.020 | | `klein` | $0.006 | $0.024 | | `gptimage` | $0.040 | $0.160 | | `qwen-image` | $0.020 | $0.080 | | `wan-image` | $0.008 | $0.032 | | `p-image` | $0.055 | $0.220 | **Low balance.** When your credit balance is insufficient, requests return a `402"
-        },
-        {
-          "match": "$0.055 | $0.220 | **Low balance.** W",
-          "context": "4 | | `gptimage` | $0.040 | $0.160 | | `qwen-image` | $0.020 | $0.080 | | `wan-image` | $0.008 | $0.032 | | `p-image` | $0.055 | $0.220 | **Low balance.** When your credit balance is insufficient, requests return a `402` error. Purchase credits at [dash.nexusify.co](https://d"
-        },
-        {
-          "match": "$25 Free Credits / Week ∞ With Pa",
-          "context": "onal limits and HTTP error responses helps you build more resilient integrations. ## Usage Limits 130 Requests / Minute $25 Free Credits / Week ∞ With Paid Credits ## Error Codes | Code | Status | Description | | --- | --- | --- | | `400` | **Bad Request** | Missing requir"
-        },
-        {
-          "match": "requests per minute rate limit.   500 Internal Server Error",
-          "context": "ts Your credit balance is too low. Purchase credits at the dashboard.   429 Too Many Requests You have exceeded the 130 requests per minute rate limit.   500 Internal Server Error An unexpected error occurred on our end. Please retry after a short wait.                   Text Generation   Chat Comp"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-main",
@@ -7713,9 +7503,8 @@
       "id": "docs-main",
       "name": "Roboflow Documentation |",
       "url": "https://docs.roboflow.com",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-main",
@@ -7858,7 +7647,7 @@
       "name": "Rate limits - Together A",
       "url": "https://docs.together.ai/docs/serverless/rate-limits",
       "status": "error",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-aimodelsinfere",
@@ -7906,148 +7695,26 @@
       "id": "docs-main",
       "name": "Introduction",
       "url": "https://docs.voyageai.com",
-      "status": "ok",
-      "hits": 1,
-      "findings": [
-        {
-          "match": "Pricing",
-          "context": "l Embeddings Rerankers GUIDES Tokenization Flexible Dimensions and Quantization Batch Inference Error Codes Rate Limits Pricing Organizations and Projects Service Level Objectives DEPLOYMENT ON VPC AWS Marketplace Model Package MongoDB Voyage AI M"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "docs-developersgrok",
       "name": "Grok 4.7 Developer Guide",
       "url": "https://docs.x.ai/developers/grok-4-7",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "electronhub-pricing",
       "name": "Pricing — Electron Hub",
       "url": "https://www.electronhub.ai/pricing",
       "status": "ok",
-      "hits": 30,
+      "hits": 1,
       "findings": [
         {
-          "match": "$0foreverStart building with no ",
-          "context": "Steady weekly credits, permanent top-ups, or a flat-rate coding plan. Same models, same key. MonthlyYearlysave ~20% Free$0foreverStart building with no commitment. **$0.25 weekly credits**, refilled every Sunday**Up to 200 free-model requests daily** via ad rewards**600+"
-        },
-        {
-          "match": "$0.25 weekly credits**, refilled ev",
-          "context": "flat-rate coding plan. Same models, same key. MonthlyYearlysave ~20% Free$0foreverStart building with no commitment. **$0.25 weekly credits**, refilled every Sunday**Up to 200 free-model requests daily** via ad rewards**600+ AI models** behind one keyBuild custom bots & app"
-        },
-        {
-          "match": "$10per monthGetting started with ",
-          "context": "://www.electronhub.ai/images/deepseek-color.svg)+40 more [Get started](https://app.electronhub.ai/#subscription) Starter$10per monthGetting started with AI-powered development. **$8 weekly credits**, save up to 3× vs direct API rates (up to $32/month)**Up to 200 free-model"
-        },
-        {
-          "match": "$8 weekly credits**, save up to ",
-          "context": "et started](https://app.electronhub.ai/#subscription) Starter$10per monthGetting started with AI-powered development. **$8 weekly credits**, save up to 3× vs direct API rates (up to $32/month)**Up to 200 free-model requests daily****150+ premium models**: GPT, Claude, Gem"
-        },
-        {
-          "match": "$32/month)**Up to 200 free-model ",
-          "context": "10per monthGetting started with AI-powered development. **$8 weekly credits**, save up to 3× vs direct API rates (up to $32/month)**Up to 200 free-model requests daily****150+ premium models**: GPT, Claude, Gemini, Grok, DeepSeek**Reasoning models** with chain-of-thought**"
-        },
-        {
-          "match": "$19per monthGrowing projects with",
-          "context": "tps://www.electronhub.ai/images/deepseek-color.svg)+40 more [Get Starter](https://app.electronhub.ai/#subscription) Plus$19per monthGrowing projects with increased usage. **$15 weekly credits**, save up to 3× vs direct API rates (up to $60/month)**Up to 200 free-model requ"
-        },
-        {
-          "match": "$15 weekly credits**, save up to ",
-          "context": "0 more [Get Starter](https://app.electronhub.ai/#subscription) Plus$19per monthGrowing projects with increased usage. **$15 weekly credits**, save up to 3× vs direct API rates (up to $60/month)**Up to 200 free-model requests daily**Everything in Starter**Image & video gene"
-        },
-        {
-          "match": "$60/month)**Up to 200 free-model ",
-          "context": "Plus$19per monthGrowing projects with increased usage. **$15 weekly credits**, save up to 3× vs direct API rates (up to $60/month)**Up to 200 free-model requests daily**Everything in Starter**Image & video generation**: Flux, Recraft & more**Priority support****15 requests"
-        },
-        {
-          "match": "$39per monthProfessional develope",
-          "context": "w.electronhub.ai/images/deepseek-color.svg)+40 more [Get Plus](https://app.electronhub.ai/#subscription) RecommendedCore$39per monthProfessional developers and small studios. **$30 weekly credits**, save up to 3× vs direct API rates (up to $120/month)**Up to 200 free-model"
-        },
-        {
-          "match": "$30 weekly credits**, save up to ",
-          "context": "Plus](https://app.electronhub.ai/#subscription) RecommendedCore$39per monthProfessional developers and small studios. **$30 weekly credits**, save up to 3× vs direct API rates (up to $120/month)**Up to 200 free-model requests daily**Everything in Plus**Multi-provider routi"
-        },
-        {
-          "match": "$120/month)**Up to 200 free-model ",
-          "context": "$39per monthProfessional developers and small studios. **$30 weekly credits**, save up to 3× vs direct API rates (up to $120/month)**Up to 200 free-model requests daily**Everything in Plus**Multi-provider routing** with automatic fallback**Priority support****20 requests /"
-        },
-        {
-          "match": "$69per monthAdvanced users needin",
-          "context": "](https://www.electronhub.ai/images/deepseek-color.svg)+40 more [Get Core](https://app.electronhub.ai/#subscription) Pro$69per monthAdvanced users needing ultimate model access. **$50 weekly credits**, save up to 3× vs direct API rates (up to $200/month)**Up to 200 free-mo"
-        },
-        {
-          "match": "$50 weekly credits**, save up to ",
-          "context": "ore [Get Core](https://app.electronhub.ai/#subscription) Pro$69per monthAdvanced users needing ultimate model access. **$50 weekly credits**, save up to 3× vs direct API rates (up to $200/month)**Up to 200 free-model requests daily**Everything in Core**Early access** to cu"
-        },
-        {
-          "match": "$200/month)**Up to 200 free-model ",
-          "context": "per monthAdvanced users needing ultimate model access. **$50 weekly credits**, save up to 3× vs direct API rates (up to $200/month)**Up to 200 free-model requests daily**Everything in Core**Early access** to cutting-edge models**Higher priority support****30 requests / minu"
-        },
-        {
-          "match": "$100 weekly credits**, save up to ",
-          "context": "[Get Pro](https://app.electronhub.ai/#subscription) Business$129per monthHigh-volume requirements, serious workloads. **$100 weekly credits**, save up to 3× vs direct API rates (up to $400/month)**Up to 200 free-model requests daily**Everything in Pro**Advanced guardrails**"
-        },
-        {
-          "match": "$400/month)**Up to 200 free-model ",
-          "context": "per monthHigh-volume requirements, serious workloads. **$100 weekly credits**, save up to 3× vs direct API rates (up to $400/month)**Up to 200 free-model requests daily**Everything in Pro**Advanced guardrails** + SSO**Highest priority support****60 requests / minute** 600+"
-        },
-        {
-          "match": "$249per monthLarge teams with maxi",
-          "context": "ww.electronhub.ai/images/deepseek-color.svg)+40 more [Get Business](https://app.electronhub.ai/#subscription) Enterprise$249per monthLarge teams with maximum requirements. **$200 weekly credits**, save up to 3× vs direct API rates (up to $800/month)**Up to 200 free-model re"
-        },
-        {
-          "match": "$200 weekly credits**, save up to ",
-          "context": "Get Business](https://app.electronhub.ai/#subscription) Enterprise$249per monthLarge teams with maximum requirements. **$200 weekly credits**, save up to 3× vs direct API rates (up to $800/month)**Up to 200 free-model requests daily**Everything in Business**Enterprise SLA**"
-        },
-        {
-          "match": "$800/month)**Up to 200 free-model ",
-          "context": "se$249per monthLarge teams with maximum requirements. **$200 weekly credits**, save up to 3× vs direct API rates (up to $800/month)**Up to 200 free-model requests daily**Everything in Business**Enterprise SLA** + SCIM provisioning**VIP support** with dedicated assistance**1"
-        },
-        {
-          "match": "$0/mo | Starter $10/mo | Plus $1",
-          "context": "F%20proxy-key%20needs%3A%0ACompliance%20or%20data-retention%20requirements%3A%0A%0AThanks%2C) ## Compare plans | | Free $0/mo | Starter $10/mo | Plus $19/mo | Core $39/mo | Pro $69/mo | Business $129/mo | Enterprise $249/mo | Custom custom | | --- | --- | --- | --- | ---"
-        },
-        {
-          "match": "$39/mo | Pro $69/mo | Business $1",
-          "context": "0data-retention%20requirements%3A%0A%0AThanks%2C) ## Compare plans | | Free $0/mo | Starter $10/mo | Plus $19/mo | Core $39/mo | Pro $69/mo | Business $129/mo | Enterprise $249/mo | Custom custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | CreditsCredits |"
-        },
-        {
-          "match": "$249/mo | Custom custom | | --- | ",
-          "context": "Compare plans | | Free $0/mo | Starter $10/mo | Plus $19/mo | Core $39/mo | Pro $69/mo | Business $129/mo | Enterprise $249/mo | Custom custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | CreditsCredits | | | | | | | | | | Weekly credits | $0.25/wk | $8/wk |"
-        },
-        {
-          "match": "$0.25/wk | $8/wk | $15/wk | $30/wk ",
-          "context": "custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | CreditsCredits | | | | | | | | | | Weekly credits | $0.25/wk | $8/wk | $15/wk | $30/wk | $50/wk | $100/wk | $200/wk | Custom | | Free models (200/day) | via ads | ad-free | ad-free | ad-free | ad-free | ad-f"
-        },
-        {
-          "match": "$50/wk | $100/wk | $200/wk | Cust",
-          "context": "-- | --- | --- | --- | --- | | CreditsCredits | | | | | | | | | | Weekly credits | $0.25/wk | $8/wk | $15/wk | $30/wk | $50/wk | $100/wk | $200/wk | Custom | | Free models (200/day) | via ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wa"
-        },
-        {
-          "match": "$0.13 | $4 | $7.50 | $15 | $25 | $5",
-          "context": "models (200/day) | via ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | — | | | | | | | | | LimitsLimits | | | | | | | | | | Requests / minute | 5 | 1"
-        },
-        {
-          "match": "$100 | Custom | | Permanent credit",
-          "context": "ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | — | | | | | | | | | LimitsLimits | | | | | | | | | | Requests / minute | 5 | 10 | 15 | 20 | 30 | 60 | 100 | 100 | |"
-        },
-        {
-          "match": "RPM up to 10×. Can I combine a subscription",
-          "context": "d work with every model. They also raise your rate-limit scale tier, since lifetime purchases multiply your plan's base RPM up to 10×. Can I combine a subscription with pay-as-you-go? Yes, and most heavy users do: the subscription covers steady weekly usage, permanent credits absorb"
-        },
-        {
-          "match": "requests per minute (burst 4 or 8). Heavy models use 2 slot",
-          "context": "de? Flat-rate access to a curated set of frontier coding models with 2 (Lite) or 5 (Turbo) concurrent slots and 8 or 20 requests per minute (burst 4 or 8). Heavy models use 2 slots per request. Full speed under normal use. Sustained heavy use continues at reduced speed, never a hard stop. Card via"
-        },
-        {
-          "match": "Free",
-          "context": "ld. Steady weekly credits, permanent top-ups, or a flat-rate coding plan. Same models, same key. MonthlyYearlysave ~20% Free$0foreverStart building with no commitment. **$0.25 weekly credits**, refilled every Sunday**Up to 200 free-model reques"
-        },
-        {
-          "match": "free",
-          "context": "rlysave ~20% Free$0foreverStart building with no commitment. **$0.25 weekly credits**, refilled every Sunday**Up to 200 free-model requests daily** via ad rewards**600+ AI models** behind one keyBuild custom bots & apps**Basic support****5 requ"
+          "match": "Pricing",
+          "context": "Pricing — Electron Hub                                                                     Pricing — Electron Hub   Pay how you"
         }
       ]
     },
@@ -8239,7 +7906,7 @@
       "name": "Why am I hitting API rat",
       "url": "https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "id": "help-managementapi",
@@ -8385,7 +8052,7 @@
       "name": "Limits and Plans | Jules",
       "url": "https://jules.google/docs/usage-limits/",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "kiro-pricing",
@@ -8521,7 +8188,7 @@
       "name": "Pricing | ChatGPT Learn",
       "url": "https://learn.chatgpt.com/docs/pricing",
       "status": "error",
-      "error": "URLError: <urlopen error timed out>"
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "id": "stepfun-plan",
@@ -8564,9 +8231,8 @@
       "id": "tiangong-platform",
       "name": "天工开放平台",
       "url": "https://model-platform.tiangong.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     }
   ]
 }

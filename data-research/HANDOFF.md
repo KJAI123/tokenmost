@@ -288,3 +288,10 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **并线查重对账**：29 条待核实线索中 18 条已被主数据覆盖（含天翼云/联通云/MiniMax五折——主会话建条效率高）；实测撞车 1 次（MiMo tokenplan 条目我准备写入时 30min cron 抢先建了——说明主会话在持续消化我的 HANDOFF 素材，好事）
 - **并线后新协议**：①我建条前必须先查重（id/url/provider 三重）②check.py 每次写后必跑③stale 态保守上架为主数据惯例，沿用④主数据格式：via/tokens_wan/cny/usd 字段化+备注带来源
 - 我线独特价值重定位：**发现引擎**（154 源盯防/双专属管线/2245 池）→ 产出素材进 HANDOFF+总表 → 双向流入 deals.json（我直接建或 cron 消化，谁先谁算）
+
+## ⭐爬虫管线 Docker 化完成（2026-10-30，老板令「管线放docker，等反馈」）
+- **三件套**：Dockerfile.crawler（python:3.11-slim 基座=本地 DaoCloud 缓存镜像，绕开 Docker Hub 被墙；pip 装 pagesift 0.81.2 Linux arm64）+ docker-compose.crawler.yml（仓库整体挂载，结果直落宿主）+ tools/docker_cycle.sh（5 步全周期）
+- **容器首轮跑通**：152 源采集→diff(22 变化)→公众号→TG→验证，全流程约 50 分钟
+- **容器网络诊断（重要）**：容器内失败 33 源（含 ctyun/cucloud/gemini/groq 系全部海外+运营商）——容器网络走 Docker Desktop NAT，部分海外/运营商域名在此路径不可达（宿主机直连可达）；**结论：容器适合国内源盯防，海外源留宿主机采集**（分工：容器=国内层，宿主=海外层）
+- pagesift 在容器内 Linux 原生运行正常（无 macOS VPN resolver 冲突）
+- 周期脚本 tools/docker_cycle.sh 可重复执行：docker compose -f docker-compose.crawler.yml run --rm crawler

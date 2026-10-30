@@ -140,6 +140,13 @@
       <description>长期免费 · 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>NVIDIA NIM：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免</title>
+      <link>https://build.nvidia.com</link>
+      <guid isPermaLink="false">nvidia-nim</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：用完后 API catalog 头像菜单「Request More」（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>OhMyGPT：官方推荐计划：好友双方各得 $20 额度</title>
       <link>https://www.ohmygpt.com/pricing</link>
       <guid isPermaLink="false">ohmygpt-referral</guid>
@@ -504,6 +511,13 @@
       <description>套餐订阅 · 规则：模型折扣：免费档 Seed-2.1-Turbo 5折、DeepSeek-V4.1-Flash/V4-Pro 闲时5折；付费档 Seed系 2.5折、GLM-5.3/DeepSeek-V4.1 全时段5折；云端并发 Free/Lite=2、Pro+/Ultra=10、Ultra=20；积分跨产品通用（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>Trae 国际版：国际版 2026-02-24 起 Dollar 额度制：Free $0（有限额度）</title>
+      <link>https://www.trae.ai/pricing</link>
+      <guid isPermaLink="false">deep-trae-intl-pricing</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：计费=Token 消耗折 Dollar 额度；官方 docs.trae.ai/ide/new-plans-and-billing+pricing 页直核（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>Qoder CN（阿里）：社区版免费：首注赠 300 Credits + 完成账号认证后每月自动发 100 Credits（当月清零）</title>
       <link>https://developer.aliyun.com/article/1757180</link>
       <guid isPermaLink="false">deep-qoder-cn-free</guid>
@@ -777,11 +791,11 @@
       <description>套餐订阅 · 规则：约每 5 小时 $16 / 每周 $40 限额；V4.1 Flash 价格 $0.30/$1.20 每百万；价格战仍在变动（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>OpenCode：OpenCode Zen 限时免费开放 DeepSeek V4 Flash（限 OpenCode 内使用，200K 上下</title>
-      <link>https://opencode.ai/docs/zen</link>
+      <title>OpenCode：OpenCode Zen 免费池：免费模型无需绑卡即可调用、额度每日刷新</title>
+      <link>https://opencode.ai/zh/zen</link>
       <guid isPermaLink="false">opencode-zen-free</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：限时活动随时可能收回；社区讨论 V4.1-Flash-1017 上线免费版中（优惠以官方页面为准）</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：免费池长期存在（非单模型限时活动）；每模型每日上限次日重置（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Qoder：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M </title>
@@ -913,7 +927,7 @@
       <title>Trae：Trae 双轨：国内版（trae.cn）Free 档 500 积分/月+全功能可用</title>
       <link>https://trae.cn</link>
       <guid isPermaLink="false">trae-free-tier</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：国内 Free 500 积分/月（1 积分≈0.01 元折 500 万 tok 当量）；国际 Free 档轻量（优惠以官方页面为准）</description>
     </item>
     <item>
@@ -1020,6 +1034,20 @@
       <guid isPermaLink="false">deep-sensenova-xiaohuanxiong</guid>
       <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
       <description>注册赠送 · 规则：领取：注册后网页版得 3000→下载桌面客户端登录再得 3000→手机 App 登录再得 3000；积分用于办公自动化任务（PPT/文档/表格）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>小米 MiMo Code：小米 MiMo Code 终端 AI 编程助手：MIT 协议开源免费（基于 OpenCode 二次开发，个人/企业可免费</title>
+      <link>https://mimo.mi.com</link>
+      <guid isPermaLink="false">xiaomi-mimo-code</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：开源工具本身零成本；模型用量走 Token Plan 订阅（见付费区 xiaomi-mimo-tokenplan）或开放平台 ¥5 新客赠金（xiaomi-mimo-free5）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>小米 MiMo：Token Plan 编程订阅（mimo.mi.com 官方）：Lite ¥39/月=41 亿 Credits · St</title>
+      <link>https://mimo.mi.com/docs/zh-CN/price/token-plan</link>
+      <guid isPermaLink="false">xiaomi-mimo-tokenplan</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：Credits 消耗制（模型倍率不同，V2.6 系列已上线）；夜间 0 点-8 点 0.8x；首购=账号生命周期首次订阅实付（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
