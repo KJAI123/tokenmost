@@ -18,7 +18,7 @@
   {"model": "mimo-intl", "provider": "小米 MiMo 国际", "layer": "official_global", "currency": "USD", "input": 0.1, "output": 0.4, "note": "缓存命中 $0.01；海外分轨", "verified_at": "2026-10-29"},
   {"model": "deepseek-v4-flash", "provider": "OpenCode", "layer": "reseller", "currency": "USD", "input": 0.3, "output": 1.2, "note": "OpenCode 转售价（老板指定比价参考源 console models 页口径，多轮核实一致）；$10/月 Go 订阅含 $80 配额更省", "verified_at": "2026-10-29"},
   {"model": "deepseek-v4-pro", "provider": "OpenCode", "layer": "reseller", "currency": "USD", "input": 1.5, "output": 6.0, "note": "OpenCode 转售 V4 Pro 档（4 倍 Flash 价惯例推算，控制台登录可实锤）", "verified_at": "2026-10-29"},
-  {"model": "recursive/flint-v1.0:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-29", "source": "auto:openrouter-models"},
-  {"model": "xingchen-agi/xing4.0-29b-a4b:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-29", "source": "auto:openrouter-models"},
-  {"model": "nvidia/nemotron-3.5-super-vl:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-29", "source": "auto:openrouter-models"}
+  {"model": "recursive/flint-v1.0:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-30", "source": "auto:openrouter-models"},
+  {"model": "xingchen-agi/xing4.0-29b-a4b:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-30", "source": "auto:openrouter-models"},
+  {"model": "nvidia/nemotron-3.5-super-vl:free", "provider": "OpenRouter", "layer": "reseller", "currency": "USD", "input": 0, "output": 0, "free": true, "note": ":free 自动同步", "verified_at": "2026-10-30", "source": "auto:openrouter-models"}
 ]

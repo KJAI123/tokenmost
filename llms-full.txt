@@ -4,7 +4,7 @@
 - 内容：「推荐有礼」每邀 1 人双方各得 2000 万 GLM-4.5-Air tokens + 被邀人 2500 万礼包（月上限 2 亿）；未订阅者可领 7 天体验卡（2000 积分/日，限 1 万张）
 - 规则：每月最多邀 10 人；勘误（R7 复核）：GLM-5.3-Flash 为付费模型（0.8/2.8 元/百万），「限时免费」仅指缓存存储费
 - 链接：https://docs.bigmodel.cn/cn/update/promotion
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：待复核（核验时间 2026-10-29T23:01:36Z）
 
 ## 阿里云百炼｜注册赠送
 - 内容：每模型约 100 万 tokens、90 天有效，开通即自动发放——无需实名认证即可领取
@@ -16,30 +16,30 @@
 - 内容：deepseek-flash 2/8 元、deepseek-v4-pro 9/27 元每百万（缓存命中低至 0.04/0.30 元）——全网比价基准线
 - 规则：按量计费；deepseek-chat/reasoner 已停售，现售两款模型
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## DeepSeek｜price_low
 - 内容：错峰半价：空闲时段（北京工作日 9-12、14-18 点以外）全模型一律 5 折——夜间批量任务首选
 - 规则：长期政策，定价页明示两档价
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## DeepSeek｜限时活动
 - 内容：Search/Fetch 调用不计费（Harness / Claude Code / Codex 场景经服务端调用）；11-01 起恢复 5 元/千次
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## Kimi 开放平台｜注册赠送
 - 内容：新用户实名认证后自动发放 15 元代金券（3 个月内有效，自动优先扣减）——注意不能用于 K3 模型
 - 规则：国内手机号注册；K3 与 K3.1 Pro 均不支持代金券
 - 链接：https://platform.kimi.com
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：待复核（核验时间 2026-10-29T23:01:36Z）
 
 ## 文心千帆｜注册赠送
 - 内容：首次开通送 17 个模型各 100 万 tokens（ERNIE-4.5-Turbo/X1、DeepSeek-R1/V3.1、Qwen3-235B、Kimi-K2 等），3 个月有效
 - 规则：仅抵扣预置服务在线推理，不抵批量推理
 - 链接：https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：待复核（核验时间 2026-10-29T23:01:36Z）
 
 ## 讯飞星火｜长期免费
 - 内容：Spark Lite 长期免费调用；新用户另有 token 礼包（数额以控制台领取页为准）
@@ -51,12 +51,12 @@
 - 内容：新人免费体验包：hy3-preview / DeepSeek-V4-Pro/Flash / GLM-5 / MiniMax-M2.7 及全部多模态理解模型，每模型 100 万 tokens、1 年有效，模型广场领取
 - 规则：每主账号限一次；原混元平台 2026-09-30 已停服，这是官方迁移后的新平台
 - 链接：https://cloud.tencent.com/document/product/1823/130053
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## MiniMax 开放平台｜price_low
 - 内容：MiniMax-M3 永久五折：2.1/8.4 元每百万；M3.1-Flash 1/4 元
 - 链接：https://platform.minimax.cn/docs/pricing/overview.md
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## Dify 自部署｜长期免费
 - 内容：开源自部署，0 成本接任意 API Key（云服务免费档仅 200 条消息/5 应用）
@@ -69,29 +69,29 @@
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 日均：2000 次/天 × ~4K tok/次 ≈800 万/天（估算）
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
 - 规则：活动中心领取；旧「核心节点邀测计划」已于 2026-04-30 截止
 - 链接：https://www.scnet.cn/home/subject/center/index.html
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## AutoDL｜学生通道
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 硅基流动｜限时活动
 - 内容：「推荐官」：本人实名认证领 16 元全平台通用券；邀好友注册+实名，双方各得 16 元券，人数不限（券 180 天有效，可用于 Pro/高速模型）
 - 链接：https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 302.AI｜注册赠送
 - 内容：按量计费聚合平台，0 月费先充后用；新用户赠送官方未公示
@@ -103,52 +103,52 @@
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 日均：充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## OhMyGPT｜注册赠送
 - 内容：官方推荐计划：好友双方各得 $20 额度；另有 GLM-4.7-Flash 等零星免费模型
 - 链接：https://www.ohmygpt.com/pricing
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## AIHubMix｜长期免费
 - 内容：67 个 $0 免费模型（Nemotron 3.5 Super VL 等），无需信用卡
 - 日均：长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)
 - 链接：https://aihubmix.com/pricing
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## Google AI Studio｜学生通道
 - 内容：Google AI Pro 学生 12 个月免费（价值 $240；美区 18+ 高校，2025 领过的可再领；部分地区为 AI Plus 一年）
 - 规则：SheerID 学生身份验证
 - 链接：https://gemini.google/students
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## GitHub Student Pack｜学生通道
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
 - 日均：1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）
 - 链接：https://console.groq.com
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 智谱 ZCode｜限时活动
 - 内容：ZCode 客户端周期性送 GLM-5.3-Flash 大礼包：周末计划 3 亿、1024 节 5 亿（20 万份）——官方活动页 real 实锤，打开客户端活动卡片即领
 - 链接：https://bigmodel.cn/activity/glm-coding-1024
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 智谱 BigModel｜长期免费
 - 内容：8 款模型长期免费（输入输出全免）：GLM-4.7-Flash(200K)/GLM-4-Flash-250414/GLM-Z1-Flash/GLM-4.6V-Flash/CogView-3-Flash/CogVideoX-Flash 等
 - 日均：长期免费层月当量 200000 万 ÷30 折日均（每天可薅）；GLM-4.7-Flash 长期免费无硬上限；按Flash牌价0.8/2.8加权1.3元/百万、参考每日500万 Fla
 - 链接：https://docs.bigmodel.cn/cn/guide/start/pricing.md
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## DeepSeek｜price_low
 - 内容：缓存命中输入低至 0.04 元/百万（空闲时段再半价到 0.02）——重复上下文/长会话场景比未命中便宜 50 倍
@@ -191,7 +191,7 @@
 - 内容：Copilot Free 档：每月 2000 次代码补全 + 50 次聊天，个人零成本
 - 日均：月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）
 - 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## 302.AI｜price_low
 - 内容：0 月费纯按量计费聚合（400+ 模型），充多少用多少，不设最低消费
@@ -285,7 +285,7 @@
 - 内容：Copilot AI Credits 定案：1 credit = $0.01 按 token 计价（PRU 倍率表已从官方 docs 删除）；Pro 1500 / Pro+ 7000 credits/月
 - 规则：credits→token官方未公布；模型分层：Pro含Claude Haiku/Sonnet+GPT-5.3-Codex+Gemini+Grok+Kimi，Opus/GPT-6仅Pro+/Max；Free/Student仅自动选模；教师与热门开源维护者免费Pro
 - 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
 
 ## Google Gemini API｜长期免费
 - 内容：Gemini API 免费层：⚠️ 官方已不再公布各模型 RPM/TPM/RPD 数字表，改为 AI Studio 内查看实时动态限额（「限额不保证」）；限额按项目计、RPD太平洋午夜重置、preview/experimental模型更紧、免费层无支出限额
@@ -346,7 +346,7 @@
 - 内容：新用户首购特惠：Lite ¥9.9/月、Pro ¥49.9/月（限从未订阅者，每实名主体1次，单账号限一档，最多连订6个月）；另有普惠季「9.9元起」+豆包旗舰19元购（AI普惠季活动页）
 - 规则：⚠️ 官方公告：首购特惠已于2026-03-17 0点起暂停、恢复刊例；但2026-10活动页仍挂「限时9.9元起」与2.5折续/升（前2月≈¥49.5）——疑普惠季重启，需登录核实；不支持退款
 - 链接：https://www.volcengine.com/activity/codingplan
-- 状态：已验证（核验时间 2026-10-29T23:01:36Z）
+- 状态：待复核（核验时间 2026-10-29T23:01:36Z）
 
 ## 讯飞星辰 MaaS｜限时活动
 - 内容：1024 开发者节：每人免费领 10 亿 tokens（Spark-X2.6 系额度），手机号注册+实名即领，每人限 1 次
