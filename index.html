@@ -723,7 +723,7 @@ function render(){
       <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
       <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
       <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" title="标记/取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
-      ${d.coupon&&!d.placeholder?`<a class="go cgo" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(d.coupon)}" title="点击复制折扣码并打开领取页">🎁 券领</a>`:`<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
+      ${(d.coupon||d.type==='coupon')&&!d.placeholder?`<a class="go cgo" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(d.coupon||d.url)}" title="${d.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${d.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
     </div>
   </article>`};
   // 官方平台聚合：同 provider 合成一条（主行=收益合计；明细可展开），付费区/避雷/我的/有码保持明细
@@ -768,7 +768,7 @@ function render(){
     <div class="r-state">${freshness(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
     <div class="r-ops">
       <button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>
-      ${g.best.coupon&&!g.best.placeholder?`<a class="go cgo" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(g.best.coupon)}" title="点击复制折扣码并打开领取页">🎁 券领</a>`:`<a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
+      ${(g.best.coupon||g.best.type==='coupon')&&!g.best.placeholder?`<a class="go cgo" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(g.best.coupon||g.best.url)}" title="${g.best.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${g.best.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
     </div>
   </article>
   <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});

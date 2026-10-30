@@ -1,6 +1,6 @@
 # SESSION_STATE — 断点状态文件（断线重连后必读）
 
-> 最后更新：2026-10-29 18:50 UTC（主会话 v2.12.0 OpenCode 提供商生态调研轮）
+> 最后更新：2026-10-30 01:10 UTC（主会话 v2.13.0 pSEO 上线轮）
 > 用途：本会话断线后，监督任务/新会话读本文件即可无缝续命。
 
 ## 项目现状
@@ -9,6 +9,14 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.13.0 程序化 SEO 上线（2026-10-30，老板指令「看爬虫助理信息源+GitHub seo 邪修找好方案」）：
+  - TK 增量已读：150 源超重型运转+TG 管线战果（4 频道收编）+DeepSeek 搜索 API 白嫖至 11 月（待核入流）+GLM-5 免费渠道汇总文+Tibo Pro 翻倍事件；11 月聚焦活动源
+  - GitHub SEO 调研（4 轮搜索）：黑帽（隐身文字/门页/cloaking/关键词堆砌）=Google 拉黑风险不碰；**最优方案=合法 pSEO（模板+结构化数据批量产长尾落地页，GitHub 有 cms-programmatic-seo-demo 等范式）+llms.txt（AI 搜索引用通道）**
+  - 落地：tools/build_seo.py——deals.json 按平台聚合生成 platform/ 61 页（title「XX免费额度领取攻略：N 亿 DS Flash 等效可薅」+WebPage/FAQPage 双 JSON-LD+可见 FAQ 3 问+领取卡+关联攻略内链）；check.py 挂接自动重建（数据更新→页面同步）
+  - llms.txt（精选地图）+llms-full.txt（211 条全量 Markdown，ChatGPT/Perplexity 可直接引用）；sitemap 12→75 URL；pages.yml 部署补 platform/+llms*.txt
+  - 中文 slug（platform/智谱-bigmodel.html）URL/canonical/sitemap 三处一致，Google 可索引
+  - 抽验：deepseek/智谱/302.ai 三页 title+JSON-LD×2 ✓；JSC 语法门 PASS；推版 173d94f
+  - **待办**：GSC 验证码仍等老板（埋 head→验证→提交 75 URL sitemap）；1111 临近 TK 聚焦活动源
 - [x] v2.12.0 OpenCode 提供商生态调研（2026-10-29，老板指令「好好操作一下我本机的 opencode」）：
   - 挖矿路径：/Applications/OpenCode.app→~/.local/share/opencode/opencode.db（SQLite）→kv 表 models-dev:v2:catalog→**双解嵌套 JSON 得 231 家提供商全量清单**（截图那 12 家只是冰山一角）；站内比对 20+ 未收录
   - 子代理双次被 API 风控秒拦（411/530ms）→主会话亲自 7 搜索调研
