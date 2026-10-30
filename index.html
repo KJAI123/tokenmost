@@ -97,6 +97,10 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .ad-slot img{display:block;width:100%;height:100%;object-fit:cover;border-radius:8px}
 .ad-top{width:176px;min-height:56px;padding:8px 12px;margin-left:12px;flex:none}
 .ad-bottom{display:flex;max-width:920px;height:90px;margin:8px auto 0;padding:8px 16px}
+.ad-slot:empty{display:none!important}
+/* 加倍领取说明条 */
+.double-note{background:rgba(210,153,34,.06);border:1px solid rgba(210,153,34,.3);border-radius:10px;padding:10px 14px;font-size:.82rem;color:#475467;margin:10px 12px;line-height:1.6}
+.double-note b{color:var(--amber)}
 @media(max-width:860px){.ad-top{width:100%;margin:4px 0 0}.ad-bottom{height:72px}}
 /* ===== 工具条 ===== */
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 12px}
@@ -378,6 +382,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <div class="sgroup-body" id="fold-p">
       <a class="sitem gold" id="sumBtnSide" href="#" onclick="return false">💰 白嫖总账</a>
       <a class="sitem" id="calcBtnSide" href="#" onclick="return false">🧮 用量比价</a>
+      <a class="sitem gold" id="doubleBtnSide" href="#" onclick="return false">🪙 加倍领取</a>
       <a class="sitem violet" id="planBtnSide" href="#" onclick="return false">⌨️ Coding 比价</a>
     </div>
     <div class="shead" data-fold="m">我的 <i>▾</i></div>
@@ -432,6 +437,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="compute">算力</button>
       <button class="tab" data-cat="reseller">中间商</button>
       <button class="tab" data-cat="coupon" style="border-color:rgba(210,153,34,.5)">🎁 有码</button>
+      <button class="tab" data-cat="double" style="border-color:rgba(210,153,34,.5)">🪙 加倍领取</button>
       <button class="tab" data-cat="hasapi">⚡ 有 API</button>
       <button class="tab" data-cat="mine">⭐ 已领</button>
       <button class="tab" data-cat="paid">💸 付费区</button>
@@ -601,6 +607,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <button class="redeem-opt" id="rdQrBtn"><span class="ic">📱</span><span><b>扫码领取</b><span>手机扫二维码直达，不用传链接</span></span></button>
   </div>
   <div id="redeemQr"><img id="rdQrImg" alt="领取页二维码"><p style="font-size:.75rem;color:var(--muted);margin-top:6px">微信扫一扫 · 手机直达领取页</p></div>
+  <p style="font-size:.75rem;color:var(--muted);margin-top:12px;line-height:1.6">🪙 <b style="color:var(--amber)">用码加倍</b>：注册/订阅流程中先填此码（或直接经链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠/折扣/翻倍）。</p>
 </div>
 <div id="wxOverlay"></div>
 <div id="wxPanel" role="dialog" aria-modal="true">
@@ -714,7 +721,7 @@ function renderAds(){
     if(ad.img&&ad.url){
       el.innerHTML=`<a href="${esc(safeUrl(ad.url))}" target="_blank" rel="sponsored nofollow noopener"><img src="${esc(ad.img)}" alt="${esc(ad.alt||'广告')}" loading="lazy"></a><i class="ad-tag">广告</i>`;
     }else{
-      el.innerHTML='<i class="ad-tag">广告</i><span>广告位招租</span>';
+      el.innerHTML='';  // 老板令 2026-10-31：广告位招租占位先不用——有素材再渲染（.ad-slot:empty 自动隐藏）
     }
   };
   paint(document.getElementById('adTop'),TM_ADS.top);
@@ -780,6 +787,9 @@ function tokCell(d,ov){
 /* 排序：DS Flash等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
 let sortKey='fresh';
+/* 🪙 加倍领取：用折扣码/邀请链接在平台基础赠送之上额外加成的条目（v2.18，老板令「通过折扣加倍领取」） */
+function isDouble(d){return (d.coupon&&!d.placeholder)||d.type==='coupon'||d.type==='invite_bonus'||d.via==='invite'}
+const DOUBLE_NOTE='<div class="double-note">🪙 <b>加倍领取</b>：以下平台的福利可经<b>折扣码 / 邀请链接</b>加成领取——点「领取 / 券领」复制码，注册或订阅时填入（或直接经邀请链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠 / 折扣 / 翻倍）。链接即码的条目点领取就自动带上邀请关系，无需手动填。</div>';
 function render(){
   if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
   let list=DEALS.filter(d=>d.published!==false);
@@ -791,6 +801,7 @@ function render(){
     list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning'&&d.verify_status!=='expired'&&d.category!=='intel_source');  // 主板块=纯免费且有效；价格进付费区，避雷/失效进避雷区，内部信源不上站
     if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
     else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
+    else if(curCat==='double')list=list.filter(isDouble);
     else if(curCat==='hasapi')list=list.filter(d=>{const s=siteFor(d);return s&&s.api});
     else if(curCat!=='all')list=list.filter(d=>d.category===curCat);
   }
@@ -852,7 +863,7 @@ function render(){
       const tb=Math.max(...b.ds.map(d=>Date.parse(d.verified_at)||0));
       return tb-ta;
     });
-    box.innerHTML=groups.map(g=>{
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+groups.map(g=>{
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
@@ -881,7 +892,7 @@ function render(){
   <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
     }).join('');
   }else{
-    box.innerHTML=list.map(rowHtml).join('');
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+list.map(rowHtml).join('');
   }
   document.querySelectorAll('#listhead .sortbtn').forEach(b=>{
     const on=b.dataset.sort===sortKey;
@@ -1275,6 +1286,10 @@ document.getElementById('vaultBtnSide').addEventListener('click',()=>vaultToggle
 document.getElementById('planBtnSide').addEventListener('click',()=>{planRender();openPanel('#planOverlay','#planPanel')});
 document.getElementById('sumBtnSide').addEventListener('click',()=>{sumRender();openPanel('#sumOverlay','#sumPanel')});
 document.getElementById('calcBtnSide').addEventListener('click',()=>{calcRender();openPanel('#calcOverlay','#calcPanel')});
+document.getElementById('doubleBtnSide').addEventListener('click',()=>{
+  document.querySelectorAll('#tabs .tab').forEach(t=>t.classList.toggle('active',t.dataset.cat==='double'));
+  curCat='double';render();window.scrollTo({top:0,behavior:'smooth'});
+});
 /* 表头排序 */
 document.getElementById('listhead').addEventListener('click',e=>{
   const b=e.target.closest('[data-sort]');if(!b)return;
