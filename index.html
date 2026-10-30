@@ -383,6 +383,16 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .stats{gap:6px}
   .row{grid-template-columns:78px minmax(0,1fr) 78px}
   .skel{grid-template-columns:78px minmax(0,1fr) 78px}
+  /* 🆓 模型目录行（:has 支持处）：目录块独占全宽一行，不再挤进窄中栏（老浏览器优雅降级为嵌套布局） */
+  article.row:has(.fm-wrap){grid-template-rows:auto auto auto}
+  article.row:has(.fm-wrap)>.r-tok{grid-row:1;grid-column:1}
+  article.row:has(.fm-wrap)>.r-ops{grid-row:1;grid-column:3}
+  article.row:has(.fm-wrap)>div:nth-child(2){grid-row:2;grid-column:1/-1}
+  article.row:has(.fm-wrap) .r-state{grid-row:3;grid-column:1/-1}
+  .fm-wrap{margin:8px -10px -4px;padding:8px 10px;border-radius:0;border-left:none;border-right:none}
+  .fm-chip{font-size:.66rem;padding:2px 7px}
+  .fm-chip b{font-size:.64rem}
+  .fm-head{font-size:.66rem}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
