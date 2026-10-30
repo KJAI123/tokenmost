@@ -101,6 +101,13 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 /* 加倍领取说明条 */
 .double-note{background:rgba(210,153,34,.06);border:1px solid rgba(210,153,34,.3);border-radius:10px;padding:10px 14px;font-size:.82rem;color:#475467;margin:10px 12px;line-height:1.6}
 .double-note b{color:var(--amber)}
+/* 免费模型目录块（纯免费 API 站展开明细） */
+.fm-wrap{grid-column:1/-1;margin-top:6px;padding:8px 10px;background:var(--bg);border:1px solid var(--border);border-radius:10px}
+.fm-head{font-size:.7rem;color:var(--muted);font-weight:600;margin-bottom:6px}
+.fm-grid{display:flex;flex-wrap:wrap;gap:6px}
+.fm-chip{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-size:.72rem;cursor:help}
+.fm-chip b{color:var(--text);font-weight:600;font-family:ui-monospace,monospace;font-size:.7rem}
+.fm-chip i{font-style:normal;color:var(--muted);font-size:.66rem;white-space:nowrap}
 @media(max-width:860px){.ad-top{width:100%;margin:4px 0 0}.ad-bottom{height:72px}}
 /* ===== 工具条 ===== */
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 12px}
@@ -128,6 +135,7 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .agg-detail.open{display:block}
 .agg-detail .row{padding-left:28px;background:#fbfdfc}
 .agg-detail .row .r-provider{font-size:.82rem;color:var(--muted)}
+.agg-detail .r-notes{-webkit-line-clamp:2}
 .row:last-child{border-bottom:none}
 .row:hover{background:var(--hover)}
 .r-tok{grid-row:span 2;text-align:center;font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums}
@@ -834,6 +842,7 @@ function render(){
         ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
         <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
       </div>
+      ${d.free_models&&d.free_models.length?`<div class="fm-wrap"><div class="fm-head">🆓 免费模型目录（${d.free_models.length} 款 · 全 $0 · 展开看备注）</div><div class="fm-grid">${d.free_models.map(m=>`<span class="fm-chip" title="${esc(m.note||'')}"><b>${esc(m.id)}</b>${m.ctx?`<i>${esc(m.ctx)}</i>`:''}</span>`).join('')}</div></div>`:''}
     </div>
     <div class="r-state">${freshness(d)}${dl}</div>
     <div class="r-ops">

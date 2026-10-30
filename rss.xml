@@ -136,7 +136,7 @@
       <title>OpenRouter：:free 模型 16 个（recursive/flint-v1.0:free、xingchen-agi/xing4.0</title>
       <link>https://openrouter.ai/models?max_price=0</link>
       <guid isPermaLink="false">openrouter-free</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests（优惠以官方页面为准）</description>
     </item>
     <item>
@@ -791,11 +791,11 @@
       <description>套餐订阅 · 规则：约每 5 小时 $16 / 每周 $40 限额；V4.1 Flash 价格 $0.30/$1.20 每百万；价格战仍在变动（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>OpenCode：OpenCode Zen 免费池：免费模型无需绑卡即可调用、额度每日刷新</title>
+      <title>OpenCode：OpenCode 免费模型池 10 款全 $0（输入/输出/缓存读取全免费，支持工具调用）：Big Pickle（隐身推</title>
       <link>https://opencode.ai/zh/zen</link>
       <guid isPermaLink="false">opencode-zen-free</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：免费池长期存在（非单模型限时活动）；每模型每日上限次日重置（优惠以官方页面为准）</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：只能经 OpenCode 本体使用（/models 选 opencode/&lt;模型id&gt;），需登录 Console 或配 OPENCODE_API_KEY；第三方客户端只能走付费模型或 Go 订阅；官方未公布每日/月 token 上限（$0 计费不耗额度），上游供应商可能动态限速；OPENCODE_DISABLE_FREE_MODELS=1 可隐藏全部免费模型（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Qoder：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M </title>

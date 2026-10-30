@@ -422,14 +422,36 @@
   "url": "https://openrouter.ai/models?max_price=0",
   "rule": "免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests",
   "verify_status": "verified",
-  "verified_at": "2026-10-30T11:06:36Z",
+  "verified_at": "2026-10-31T00:00:00Z",
   "difficulty": 2,
   "published": true,
   "verify_by": "auto",
   "daily_wan": 400,
   "daily_note": "充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天",
   "group": "OpenRouter",
-  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛；10-29 API 直抓更新（19 款含 2 新品）；自动路由 openrouter/free 免选型"
+  "notes": "Kilo Code/OmniRoute 等工具的「Auto Free」模式即路由至本条 :free 层（07:2x 复核），无独立羊毛；10-29 API 直抓更新（19 款含 2 新品）；自动路由 openrouter/free 免选型 | 2026-10-31 补充：免费目录动态轮换约 16 款，展开明细展示代表作+实时目录链接；对比 OpenCode 免费池（10 款全 $0 无日次数上限口径）——OpenRouter 免费档=50 次/天起、需充 $10 提 1000 次/天",
+  "free_models": [
+   {
+    "id": "nvidia/nemotron-3.5-super-vl:free",
+    "ctx": "1M",
+    "note": "视觉-语言旗舰免费档"
+   },
+   {
+    "id": "recursive/flint-v1.0:free",
+    "ctx": "262K",
+    "note": "轻量编码向"
+   },
+   {
+    "id": "xingchen-agi/xing4.0-29b-a4b:free",
+    "ctx": "—",
+    "note": "讯飞星辰系"
+   },
+   {
+    "id": "…目录动态轮换",
+    "ctx": "",
+    "note": "完整免费目录实时见 openrouter.ai/models?max_price=0（约 16 款在架，勿写死数量）"
+   }
+  ]
  },
  {
   "id": "nvidia-nim",
@@ -3223,19 +3245,71 @@
   "provider": "OpenCode",
   "category": "agent",
   "type": "free_tier",
-  "value": "OpenCode Zen 免费池：免费模型无需绑卡即可调用、额度每日刷新——mimo-v2-pro-free / nemotron-3-super-free 各 100 万 tokens/日（免费池最高档），另有多款 20-40 万/日（MiniMax 系列等）；目录动态轮换，以 opencode.ai/zh/zen 实时为准",
+  "value": "OpenCode 免费模型池 10 款全 $0（输入/输出/缓存读取全免费，支持工具调用）：Big Pickle（隐身推理）、GLM-5.3-Flash Free（智谱多模态）、DeepSeek V4.1 Flash Free、Beam Free（1M 上下文全场最强）、Flint 40B、MiMo-V2.6-Flash（小米全模态）、Nemotron 3 Ultra/3.5 Lightning/3.5 Super VL（NVIDIA）、Jev 1.13（结构化判定）——限时免费，随时可能下架",
   "region": "global",
   "url": "https://opencode.ai/zh/zen",
-  "rule": "免费池长期存在（非单模型限时活动）；每模型每日上限次日重置",
-  "notes": "来源：Reddit r/opencodeCLI 等多社区报道；升级 verified：Reddit+官方 docs 双源 | 2026-10-30 复核改写：早期「DeepSeek V4 Flash 限免」已轮换出池；腾讯云社区 2026-09+博客园 2026-03 双源互证；⚠️ 目录动态勿写死模型数量",
+  "rule": "只能经 OpenCode 本体使用（/models 选 opencode/<模型id>），需登录 Console 或配 OPENCODE_API_KEY；第三方客户端只能走付费模型或 Go 订阅；官方未公布每日/月 token 上限（$0 计费不耗额度），上游供应商可能动态限速；OPENCODE_DISABLE_FREE_MODELS=1 可隐藏全部免费模型",
+  "notes": "⭐老板 2026-10-31 从 OpenCode Console Models 官方文档全量汇总+亲测（当前会话即在用 GLM-5.3-Flash Free）——取代早前「每模型每日上限」口径（官方价格表实为 $0 计费制非按 token 扣费） | 隐私分级：GLM-5.3-Flash/DeepSeek V4.1 Flash 零保留最稳；Big Pickle/Flint/MiMo 免费期收集数据（30 天保留）；Beam 保留 30 天且⚠️中国大陆（含港澳）不可用；Nemotron=试用端点记录日志勿提交机密 | 早期 DeepSeek V4 Flash 限免已轮换出池",
   "verify_status": "verified",
-  "verified_at": "2026-10-30T00:00:00Z",
+  "verified_at": "2026-10-31T00:00:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "supervisor",
+  "via": "boss",
   "group": "OpenCode",
   "eq_wan": 3000,
-  "eq_note": "保守按免费池最高单模型 100 万/日×30=3000 万当量（多模型可叠加，实际更高）"
+  "eq_note": "官方未公布额度上限（$0 计费制）——保守按 3000 万/月当量估算，实际无硬性上限（上游可能限速）",
+  "free_models": [
+   {
+    "id": "Big Pickle",
+    "ctx": "200K/32K",
+    "note": "隐身（stealth）模型：深度推理、多步问题、工具调用；免费期收集数据改进模型"
+   },
+   {
+    "id": "GLM-5.3-Flash Free",
+    "ctx": "200K/32K",
+    "note": "智谱 glm-5.3-flash；文本/图片/视频多模态；零数据保留隐私最稳"
+   },
+   {
+    "id": "DeepSeek V4.1 Flash Free",
+    "ctx": "200K/32K",
+    "note": "DeepSeek v4.1-flash；文本/图片；推理+agentic 编码；零数据保留"
+   },
+   {
+    "id": "Beam Free",
+    "ctx": "1M/131K",
+    "note": "beam-1.0-501B MoE（23B 激活）；长上下文最强；⚠️ 中国大陆（含港澳）/俄罗斯/伊朗不可用；数据保留 30 天"
+   },
+   {
+    "id": "Flint 40B Free",
+    "ctx": "262K/64K",
+    "note": "40B MoE（≈2.5B 激活）轻量开源编码 Agent；数据保留 30 天"
+   },
+   {
+    "id": "MiMo-V2.6-Flash Free",
+    "ctx": "200K/32K",
+    "note": "小米 MiMo；文本/图片/音频/视频全模态；数据保留 30 天"
+   },
+   {
+    "id": "Nemotron 3 Ultra Free",
+    "ctx": "—",
+    "note": "NVIDIA 推理模型试用端点；API 目录暂未上架；会话日志被记录勿提交敏感数据"
+   },
+   {
+    "id": "Nemotron 3.5 Lightning Free",
+    "ctx": "262K/262K",
+    "note": "NVIDIA Nemotron MoE；快速可靠的 agent 任务"
+   },
+   {
+    "id": "Nemotron 3.5 Super VL Free",
+    "ctx": "1M/131K",
+    "note": "NVIDIA 120B-A12B 视觉-语言模型；文本/图片；思考档位 none→xhigh"
+   },
+   {
+    "id": "Jev 1.13 Free",
+    "ctx": "—",
+    "note": "TypeSafe AI（System One 端点）；非聊天模型——输出结构化判定/打分/选择题结果"
+   }
+  ]
  },
  {
   "id": "qoder-deepseek-free",

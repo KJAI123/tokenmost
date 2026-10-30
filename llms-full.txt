@@ -109,7 +109,7 @@
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 日均：充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-10-30T11:06:36Z）
+- 状态：已验证（核验时间 2026-10-31T00:00:00Z）
 
 ## NVIDIA NIM｜注册赠送
 - 内容：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可
@@ -670,10 +670,10 @@
 - 状态：已验证（核验时间 2026-10-28T01:30:00Z）
 
 ## OpenCode｜长期免费
-- 内容：OpenCode Zen 免费池：免费模型无需绑卡即可调用、额度每日刷新——mimo-v2-pro-free / nemotron-3-super-free 各 100 万 tokens/日（免费池最高档），另有多款 20-40 万/日（MiniMax 系列等）；目录动态轮换，以 opencode.ai/zh/zen 实时为准
-- 规则：免费池长期存在（非单模型限时活动）；每模型每日上限次日重置
+- 内容：OpenCode 免费模型池 10 款全 $0（输入/输出/缓存读取全免费，支持工具调用）：Big Pickle（隐身推理）、GLM-5.3-Flash Free（智谱多模态）、DeepSeek V4.1 Flash Free、Beam Free（1M 上下文全场最强）、Flint 40B、MiMo-V2.6-Flash（小米全模态）、Nemotron 3 Ultra/3.5 Lightning/3.5 Super VL（NVIDIA）、Jev 1.13（结构化判定）——限时免费，随时可能下架
+- 规则：只能经 OpenCode 本体使用（/models 选 opencode/<模型id>），需登录 Console 或配 OPENCODE_API_KEY；第三方客户端只能走付费模型或 Go 订阅；官方未公布每日/月 token 上限（$0 计费不耗额度），上游供应商可能动态限速；OPENCODE_DISABLE_FREE_MODELS=1 可隐藏全部免费模型
 - 链接：https://opencode.ai/zh/zen
-- 状态：已验证（核验时间 2026-10-30T00:00:00Z）
+- 状态：已验证（核验时间 2026-10-31T00:00:00Z）
 
 ## Qoder｜免费模型
 - 内容：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）
