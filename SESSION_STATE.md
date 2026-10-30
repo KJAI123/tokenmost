@@ -22,6 +22,12 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 四家羊毛补全（2026-10-30 深夜，老板令「补充 trae、opencode、mimo code、nvidia nim 的羊毛信息」，099a5fb）：
+  - **小米 MiMo Code 双条新建**：xiaomi-mimo-code（agent 层，MIT 开源免费/OpenCode 二开/终端直连 V2.6；⚠️内置 V2.5 初期限免已于 6 月结束勿再宣传）+ xiaomi-mimo-tokenplan（付费区，官方定价页 webReader 直核：Lite ¥39=41 亿 Credits/Standard ¥99/110 亿/Pro ¥329/380 亿/Max ¥659/820 亿，首购 88 折+包年 88 折+夜间 0 点-8 点 0.8x+TTS 限免）；plans.json 补行（credits 参考组）；agent 导航站+「小米 MiMo Code」
+  - **NVIDIA NIM 复活**：论坛+搜索互证注册 1000/上限 5000 credits 口径未变——10-28 降级系 build.nvidia.com 改版误伤，stale 清除恢复 verified/published
+  - **Trae 国际版重核**：2026-02-24 起 Dollar 额度制（Free $0/Pro $10 含 $20 使用额度+无限 Autocomplete+10 并发云任务；年付 Pro $80/Pro+ $200/Max $600），旧「600 次快速请求」口径作废；trae-free-tier 国际段同步；issue #2318 争议对应旧制
+  - **OpenCode Zen 升级**：limited_promo→free_tier 免费池口径——免绑卡每日刷新（mimo-v2-pro-free/nemotron-3-super-free 各 100 万/日最高档，其余 20-40 万，目录动态勿写死数量）；早期 DeepSeek V4 Flash 限免已轮换出池；opencode-go-deepseek 补「协议有效至 10-31 届满复核」备注
+  - 总库 214 条（published 149/verified 130）；pSEO 66 页（+nvidia-nim/trae-国际版）；浏览器实测四条渲染+付费区+Coding 比价面板全过
 - [x] v2.16.2 广告位两处落地（2026-10-30，老板拍板「先不做开屏广告吧，到时候做到右上角和底部就好」+「咱整改吧」）：
   - 右上角：header 内 flex 末位 .ad-slot.ad-top（176×56 桌面 / 移动端全宽），页底：footer 上方 .ad-slot.ad-bottom（920×90 / 移动 72px）
   - **配置驱动**：脚本顶部 `TM_ADS={top:{},bottom:{}}`——素材到位填 {img,url,alt} 即渲染真实广告（自动带「广告」角标+rel="sponsored nofollow noopener" Google 合规）；空对象=优雅「广告位招租」虚线占位
