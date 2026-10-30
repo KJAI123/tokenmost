@@ -22,6 +22,11 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] OpenCode 10 款免费模型全目录 + 免费 API 站展开扩容（2026-10-31 凌晨，老板贴官方 Console Models 汇总+亲测，c385ccb）：
+  - **opencode-zen-free 按官方价格表口径重写**：10 款全 $0（输入/输出/缓存全免费、支持工具调用）——Big Pickle（隐身推理）/GLM-5.3-Flash Free/DeepSeek V4.1 Flash Free/Beam Free（1M）/Flint 40B/MiMo-V2.6-Flash（全模态）/Nemotron 3 Ultra/3.5 Lightning/3.5 Super VL/Jev 1.13（结构化判定）；**取代早前「每模型每日上限」口径**（官方=$0 计费制非按 token 扣费，无公布上限，上游可能限速）；只能经 OpenCode 本体（opencode/<id>）+需 Console 登录
+  - ⚠️ 合规标注：Beam 中国大陆含港澳不可用；隐私分级（GLM/DS 零保留最稳；Big Pickle/Flint/MiMo 收集数据 30 天；Nemotron 试用端点记日志）；限时免费随时下架
+  - **前端扩容**：deals 条目新增 `free_models` 结构化字段 → 行内渲染「🆓 免费模型目录」chips 块（fm-grid，悬停看备注/上下文）——OpenCode 行 10 款/OpenRouter 行 4 款代表作直接展示；明细行 notes 放宽 2 行
+  - openrouter-free 补代表作目录+与 OpenCode 机制对比注
 - [x] v2.18.0 加倍领取功能+广告位撤下（2026-10-31 凌晨，老板双令「通过折扣加倍领取的功能你还是没做出来啊」「广告位招租先不用」，75157d6）：
   - **加倍领取**：新 tab「🪙 加倍领取」（金色描边）+侧边栏工具入口+兑换弹窗「用码加倍」提示行；筛选口径 isDouble()=有折扣码/折扣链接/邀请奖励条目（邀请链接即码），聚合展示 14 条/8 平台（智谱/小米/恒源云/OhMyGPT/潞晨云/硅基流动/ZCode/Comet）；金色说明条讲清用码逻辑（到账=基础赠送+加成）
   - **数据现状提醒**：实体折扣码仅 2 条（z.ai 9 折码真实/302.AI TM-302 假码被排除）——后续联盟渠道（硅基流动推荐官等，老板注册后发链接）自动进此专区；邀请类加成=站点主力
