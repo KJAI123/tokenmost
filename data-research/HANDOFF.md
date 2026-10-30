@@ -281,3 +281,4 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **定位**：单页抽取引擎（LLM 级干净 Markdown/1-2ms/页）而非发现引擎；正经合规（robots 尊重/RFC UA/polite 模式/Firecrawl 兼容 API）
 - **实测**：pip 装 0.81.2；Python SDK 内嵌 resolver 与 VPN 冲突（DNS timeout），**CLI 走系统栈正常**；智谱定价页输出干净 Markdown（# API 定价/表格结构完整）
 - **已集成**：harvest.py 双通道抽取——pagesift Markdown 与原 regex 文本合并去重，失败静默回退（零风险增强）；关键收益=定价表格页关键词命中质量提升
+- 2026-10-30 **故障修复**：prev.json 混入 git 合并冲突标记（<<<<<<< Updated upstream——主会话 git 操作与本地写入撞车）致 diff 崩溃；已从 latest.json 重建（152 源）；建议主会话 git 合并时避开 tools 数据文件或加 .gitattributes merge=ours；23源失败=VPN波动潮；AI_News_CN 频道本轮偶发失败下轮自愈
