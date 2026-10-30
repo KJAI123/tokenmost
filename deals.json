@@ -3249,7 +3249,7 @@
   "region": "global",
   "url": "https://opencode.ai/zh/zen",
   "rule": "只能经 OpenCode 本体使用（/models 选 opencode/<模型id>），需登录 Console 或配 OPENCODE_API_KEY；第三方客户端只能走付费模型或 Go 订阅；官方未公布每日/月 token 上限（$0 计费不耗额度），上游供应商可能动态限速；OPENCODE_DISABLE_FREE_MODELS=1 可隐藏全部免费模型",
-  "notes": "⭐老板 2026-10-31 从 OpenCode Console Models 官方文档全量汇总+亲测（当前会话即在用 GLM-5.3-Flash Free）——取代早前「每模型每日上限」口径（官方价格表实为 $0 计费制非按 token 扣费） | 隐私分级：GLM-5.3-Flash/DeepSeek V4.1 Flash 零保留最稳；Big Pickle/Flint/MiMo 免费期收集数据（30 天保留）；Beam 保留 30 天且⚠️中国大陆（含港澳）不可用；Nemotron=试用端点记录日志勿提交机密 | 早期 DeepSeek V4 Flash 限免已轮换出池",
+  "notes": "⭐老板 2026-10-31 从 OpenCode Console Models 官方文档全量汇总+亲测（当前会话即在用 GLM-5.3-Flash Free）——取代早前「每模型每日上限」口径（官方价格表实为 $0 计费制非按 token 扣费） | 隐私分级：GLM-5.3-Flash/DeepSeek V4.1 Flash 零保留最稳；Big Pickle/Flint/MiMo 免费期收集数据（30 天保留）；Beam 保留 30 天且⚠️中国大陆（含港澳）不可用；Nemotron=试用端点记录日志勿提交机密 | 早期 DeepSeek V4 Flash 限免已轮换出池 | ⭐客户端 UI 实锤（老板截图 2026-10-31）：模型选择器实际展示 8 款带「免费」徽章的聊天模型（Big Pickle/DeepSeek V4.1 Flash/GLM-5.3-Flash/Flint 40B/Nemotron 3.5 Super VL/Beam/MiMo-V2.6-Flash/Nemotron 3.5 Lightning）——Nemotron 3 Ultra（API 目录暂未上架）与 Jev 1.13（独立 SystemOne 判定端点）不在选择器内，合计口径仍为 10 款；选择器底部「从热门提供商添加更多模型」=OpenCode Go/Console/OpenAI/Anthropic/Google/GitHub Copilot+70 多提供商",
   "verify_status": "verified",
   "verified_at": "2026-10-31T00:00:00Z",
   "difficulty": 1,
