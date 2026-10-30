@@ -19,6 +19,7 @@ import json
 import re
 import sys
 import time
+import subprocess
 import urllib.request
 import urllib.robotparser
 from datetime import date, datetime, timezone
@@ -92,6 +93,19 @@ def fetch(url: str) -> str:
         return r.read().decode("utf-8", "ignore")
 
 
+PS_BIN = str(Path.home() / "Library" / "Python" / "3.9" / "bin" / "pagesift")
+def fetch_md(url: str) -> str:
+    """pagesift 增强：LLM 级干净 Markdown（对表格/结构页抽取质量显著优于 regex）。
+    仅用于关键词上下文增强，失败时静默回退原 HTML。"""
+    try:
+        r = subprocess.run([PS_BIN, "scrape", url, "--format", "md"], capture_output=True, timeout=30)
+        if r.returncode == 0 and len(r.stdout) > 2000:
+            return r.stdout.decode("utf-8", "ignore")
+    except Exception:
+        pass
+    return ""
+
+
 def run(only: str | None = None) -> int:
     cfg = json.loads(SOURCES.read_text(encoding="utf-8"))
     robots_cache: dict = {}
@@ -111,7 +125,12 @@ def run(only: str | None = None) -> int:
                 print(f"[skip] {sid}: robots.txt 不允许，尊重站点选择")
                 continue
             raw = fetch(url)
-            hits = extract(load_text(raw), DEFAULT_PATTERNS + src.get("patterns", []))
+            # pagesift 增强：双通道抽取，关键词上下文合并去重
+            md = fetch_md(url)
+            src_text = load_text(raw)
+            if md:
+                src_text = src_text + " " + re.sub(r"\s+", " ", md)
+            hits = extract(src_text, DEFAULT_PATTERNS + src.get("patterns", []))
             entry.update(status="ok", hits=len(hits), findings=hits)
             results.append(entry)
             print(f"[ok]   {sid}: {len(hits)} 处命中（{url}）")

@@ -76,6 +76,185 @@
     "name": "美团 LongCat",
     "url": "https://longcat.chat/platform/docs/zh",
     "desc": "美团开源 560B Flash-Chat，API 每日免费额度，OpenAI/Anthropic 双兼容"
+   },
+   {
+    "name": "豆包",
+    "url": "https://www.doubao.com/about",
+    "desc": "字节大模型官方（电脑版天天领额度）",
+    "hot": true
+   }
+  ]
+ },
+ {
+  "layer": "official_global",
+  "sites": [
+   {
+    "name": "Google AI Studio",
+    "url": "https://aistudio.google.com",
+    "desc": "Gemini 免费层（3.x 系多款）",
+    "free": "稳定免费",
+    "api": {
+     "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+     "model": "gemini-3.8-flash",
+     "env": "GEMINI_API_KEY"
+    }
+   },
+   {
+    "name": "Mistral",
+    "url": "https://console.mistral.ai",
+    "desc": "La Plateforme 免费 tier（限额控制台内查看）",
+    "api": {
+     "base_url": "https://api.mistral.ai/v1",
+     "model": "mistral-large-latest",
+     "env": "MISTRAL_API_KEY"
+    }
+   },
+   {
+    "name": "Cohere",
+    "url": "https://dashboard.cohere.com",
+    "desc": "Trial Key 免费 1000 次/月",
+    "free": "Trial Key",
+    "api": {
+     "base_url": "https://api.cohere.ai/compatibility/v1",
+     "model": "command-a-plus-05-2026",
+     "env": "COHERE_API_KEY"
+    }
+   },
+   {
+    "name": "Anthropic",
+    "url": "https://platform.claude.com",
+    "desc": "Claude 官方 API，新用户少量免费 credits",
+    "free": "新用户 credits"
+   },
+   {
+    "name": "OpenAI Platform",
+    "url": "https://platform.openai.com",
+    "desc": "GPT/Codex/O系列 API"
+   },
+   {
+    "name": "xAI Console",
+    "url": "https://console.x.ai",
+    "desc": "Grok 系列 API"
+   },
+   {
+    "name": "Meta AI",
+    "url": "https://meta.ai",
+    "desc": "Llama 系官方对话"
+   }
+  ]
+ },
+ {
+  "layer": "maas",
+  "name": "MaaS 平台（云上托管）",
+  "sites": [
+   {
+    "name": "阿里云百炼",
+    "url": "https://bailian.aliyun.com",
+    "desc": "通义千问系列",
+    "free": "每模型 100 万 tokens/90 天",
+    "api": {
+     "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+     "model": "qwen-plus",
+     "env": "DASHSCOPE_API_KEY"
+    }
+   },
+   {
+    "name": "火山方舟",
+    "url": "https://www.volcengine.com/product/ark",
+    "desc": "豆包 doubao 系列",
+    "hot": true,
+    "free": "新用户每模型免费额度",
+    "api": {
+     "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+     "model": "doubao-1.5-pro-32k",
+     "env": "ARK_API_KEY"
+    }
+   },
+   {
+    "name": "文心千帆",
+    "url": "https://qianfan.cloud.baidu.com",
+    "desc": "百度 ERNIE 系列",
+    "free": "17 模型各 100 万 tokens",
+    "api": {
+     "base_url": "https://qianfan.baidubce.com/v2",
+     "model": "ernie-4.5-turbo-128k",
+     "env": "QIANFAN_API_KEY"
+    }
+   },
+   {
+    "name": "腾讯云 TokenHub",
+    "url": "https://cloud.tencent.com/document/product/1823/130053",
+    "desc": "原混元平台停服后的新大模型服务平台",
+    "free": "新人每模型 100 万 tokens/1 年",
+    "api": {
+     "base_url": "https://tokenhub.tencentmaas.com/v1",
+     "model": "hy3-preview",
+     "env": "HUNYUAN_API_KEY"
+    }
+   },
+   {
+    "name": "魔搭 ModelScope",
+    "url": "https://modelscope.cn",
+    "desc": "模型社区 + 免费推理 API",
+    "free": "每日 2000 次免费推理",
+    "hot": true,
+    "api": {
+     "base_url": "https://api-inference.modelscope.cn/v1",
+     "model": "ZhipuAI/GLM-4.7-Flash",
+     "env": "MODELSCOPE_SDK_TOKEN"
+    }
+   },
+   {
+    "name": "硅基流动 SiliconFlow",
+    "url": "https://siliconflow.cn",
+    "desc": "开源模型聚合 API",
+    "free": "注册赠额度 + 免费模型池",
+    "hot": true,
+    "api": {
+     "base_url": "https://api.siliconflow.cn/v1",
+     "model": "deepseek-ai/DeepSeek-V3",
+     "env": "SILICONFLOW_API_KEY"
+    }
+   },
+   {
+    "name": "NVIDIA NIM",
+    "url": "https://build.nvidia.com",
+    "desc": "注册送 1000 credits（可扩至 5000）",
+    "free": "免费 API",
+    "api": {
+     "base_url": "https://integrate.api.nvidia.com/v1",
+     "model": "meta/llama-3.3-70b-instruct",
+     "env": "NVIDIA_API_KEY"
+    }
+   },
+   {
+    "name": "Groq",
+    "url": "https://console.groq.com",
+    "desc": "LPU 极速推理",
+    "free": "免费 tier 1K 请求/日",
+    "api": {
+     "base_url": "https://api.groq.com/openai/v1",
+     "model": "openai/gpt-oss-120b",
+     "env": "GROQ_API_KEY"
+    }
+   },
+   {
+    "name": "SambaNova",
+    "url": "https://cloud.sambanova.ai",
+    "desc": "免费层免绑卡（DeepSeek/Llama/gpt-oss）",
+    "free": "每日 20 次免费"
+   },
+   {
+    "name": "Together AI",
+    "url": "https://www.together.ai",
+    "desc": "云端推理，Prism 系有全免费模型",
+    "free": "免费模型"
+   },
+   {
+    "name": "Cerebras",
+    "url": "https://cerebras.ai",
+    "desc": "Wafer 级极速推理",
+    "free": "注册送 $5"
    }
   ]
  },
@@ -357,164 +536,6 @@
     "name": "DeepInfra",
     "url": "https://deepinfra.com",
     "desc": "纯按量低价推理聚合"
-   }
-  ]
- },
- {
-  "layer": "official_global",
-  "sites": [
-   {
-    "name": "Google AI Studio",
-    "url": "https://aistudio.google.com",
-    "desc": "Gemini 免费层（3.x 系多款）",
-    "free": "稳定免费",
-    "api": {
-     "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
-     "model": "gemini-3.8-flash",
-     "env": "GEMINI_API_KEY"
-    }
-   },
-   {
-    "name": "Mistral",
-    "url": "https://console.mistral.ai",
-    "desc": "La Plateforme 免费 tier（限额控制台内查看）",
-    "api": {
-     "base_url": "https://api.mistral.ai/v1",
-     "model": "mistral-large-latest",
-     "env": "MISTRAL_API_KEY"
-    }
-   },
-   {
-    "name": "Cohere",
-    "url": "https://dashboard.cohere.com",
-    "desc": "Trial Key 免费 1000 次/月",
-    "free": "Trial Key",
-    "api": {
-     "base_url": "https://api.cohere.ai/compatibility/v1",
-     "model": "command-a-plus-05-2026",
-     "env": "COHERE_API_KEY"
-    }
-   },
-   {
-    "name": "Anthropic",
-    "url": "https://platform.claude.com",
-    "desc": "Claude 官方 API，新用户少量免费 credits",
-    "free": "新用户 credits"
-   }
-  ]
- },
- {
-  "layer": "maas",
-  "name": "MaaS 平台（云上托管）",
-  "sites": [
-   {
-    "name": "阿里云百炼",
-    "url": "https://bailian.aliyun.com",
-    "desc": "通义千问系列",
-    "free": "每模型 100 万 tokens/90 天",
-    "api": {
-     "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-     "model": "qwen-plus",
-     "env": "DASHSCOPE_API_KEY"
-    }
-   },
-   {
-    "name": "火山方舟",
-    "url": "https://www.volcengine.com/product/ark",
-    "desc": "豆包 doubao 系列",
-    "hot": true,
-    "free": "新用户每模型免费额度",
-    "api": {
-     "base_url": "https://ark.cn-beijing.volces.com/api/v3",
-     "model": "doubao-1.5-pro-32k",
-     "env": "ARK_API_KEY"
-    }
-   },
-   {
-    "name": "文心千帆",
-    "url": "https://qianfan.cloud.baidu.com",
-    "desc": "百度 ERNIE 系列",
-    "free": "17 模型各 100 万 tokens",
-    "api": {
-     "base_url": "https://qianfan.baidubce.com/v2",
-     "model": "ernie-4.5-turbo-128k",
-     "env": "QIANFAN_API_KEY"
-    }
-   },
-   {
-    "name": "腾讯云 TokenHub",
-    "url": "https://cloud.tencent.com/document/product/1823/130053",
-    "desc": "原混元平台停服后的新大模型服务平台",
-    "free": "新人每模型 100 万 tokens/1 年",
-    "api": {
-     "base_url": "https://tokenhub.tencentmaas.com/v1",
-     "model": "hy3-preview",
-     "env": "HUNYUAN_API_KEY"
-    }
-   },
-   {
-    "name": "魔搭 ModelScope",
-    "url": "https://modelscope.cn",
-    "desc": "模型社区 + 免费推理 API",
-    "free": "每日 2000 次免费推理",
-    "hot": true,
-    "api": {
-     "base_url": "https://api-inference.modelscope.cn/v1",
-     "model": "ZhipuAI/GLM-4.7-Flash",
-     "env": "MODELSCOPE_SDK_TOKEN"
-    }
-   },
-   {
-    "name": "硅基流动 SiliconFlow",
-    "url": "https://siliconflow.cn",
-    "desc": "开源模型聚合 API",
-    "free": "注册赠额度 + 免费模型池",
-    "hot": true,
-    "api": {
-     "base_url": "https://api.siliconflow.cn/v1",
-     "model": "deepseek-ai/DeepSeek-V3",
-     "env": "SILICONFLOW_API_KEY"
-    }
-   },
-   {
-    "name": "NVIDIA NIM",
-    "url": "https://build.nvidia.com",
-    "desc": "注册送 1000 credits（可扩至 5000）",
-    "free": "免费 API",
-    "api": {
-     "base_url": "https://integrate.api.nvidia.com/v1",
-     "model": "meta/llama-3.3-70b-instruct",
-     "env": "NVIDIA_API_KEY"
-    }
-   },
-   {
-    "name": "Groq",
-    "url": "https://console.groq.com",
-    "desc": "LPU 极速推理",
-    "free": "免费 tier 1K 请求/日",
-    "api": {
-     "base_url": "https://api.groq.com/openai/v1",
-     "model": "openai/gpt-oss-120b",
-     "env": "GROQ_API_KEY"
-    }
-   },
-   {
-    "name": "SambaNova",
-    "url": "https://cloud.sambanova.ai",
-    "desc": "免费层免绑卡（DeepSeek/Llama/gpt-oss）",
-    "free": "每日 20 次免费"
-   },
-   {
-    "name": "Together AI",
-    "url": "https://www.together.ai",
-    "desc": "云端推理，Prism 系有全免费模型",
-    "free": "免费模型"
-   },
-   {
-    "name": "Cerebras",
-    "url": "https://cerebras.ai",
-    "desc": "Wafer 级极速推理",
-    "free": "注册送 $5"
    }
   ]
  }

@@ -275,3 +275,9 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **下一轮深化方向**：①TG/公众号渠道的 site:t.me 定向搜持续挖 ②150 源跑几轮后按命中数据淘汰零命中源 ③1111 临近，聚焦活动类源
 - 2026-10-30 找源巡检(5h)：**⭐双管线出活——①DeepSeek 搜索API白嫖至11月（限时）②GLM-5 免费渠道汇总（新号「给AI画个饼」第6号）③龙虾API教程文出现（生态信号）④红线拒收「免手机验证白嫖法」1条→主管**；4项采集变化=基线/波动；验证池稳定；队列剩2条
 - 2026-10-30 找源巡检(5h)：TG雷达——Tibo 官宣 ChatGPT Pro 额度翻倍今日生效+Pro用户反弹致额度恢复（生态先例→主管知悉）；Claude 账号存活/封号帖=灰产边缘仅观察不追；验证池稳定；队列剩2条
+
+## ⭐Pagesift 调研+集成（2026-10-30，老板指「看下github上pagesift的项目，能爬2亿信息源」）
+- **「2亿」真相**：YOLOW92/pagesift（169⭐，Rust）的 200M = 192 vCPU 单机压测合成请求（947,611 p/s 实验室峰值，无真实网络）——不是爬过2亿真实源；joeychilson/pagesift 原仓库已 404（改名/删库）
+- **定位**：单页抽取引擎（LLM 级干净 Markdown/1-2ms/页）而非发现引擎；正经合规（robots 尊重/RFC UA/polite 模式/Firecrawl 兼容 API）
+- **实测**：pip 装 0.81.2；Python SDK 内嵌 resolver 与 VPN 冲突（DNS timeout），**CLI 走系统栈正常**；智谱定价页输出干净 Markdown（# API 定价/表格结构完整）
+- **已集成**：harvest.py 双通道抽取——pagesift Markdown 与原 regex 文本合并去重，失败静默回退（零风险增强）；关键收益=定价表格页关键词命中质量提升

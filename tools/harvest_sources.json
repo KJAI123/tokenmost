@@ -1946,6 +1946,29 @@
         "pricing"
       ],
       "note": "长期源自动并入(分6) 2026-10-28"
+    },
+    {
+      "id": "stepfun-plan",
+      "name": "阶跃星辰 Step Plan",
+      "url": "https://platform.stepfun.com",
+      "patterns": [
+        "免费",
+        "领取",
+        "Plan",
+        "15天"
+      ],
+      "note": "全网覆盖 2026-10-30；盲区补全：15天Mini Plan免费领"
+    },
+    {
+      "id": "tiangong-platform",
+      "name": "天工开放平台",
+      "url": "https://model-platform.tiangong.cn/",
+      "patterns": [
+        "免费",
+        "额度",
+        "API"
+      ],
+      "note": "全网覆盖 2026-10-30；盲区补全：昆仑万维官方平台"
     }
   ]
 }
