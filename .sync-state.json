@@ -2,124 +2,116 @@
   "sources": {
     "openrouter-models": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "hash": "c9cce3ada19c17d2",
-      "len": 768212
+      "last_ok": "2026-10-30T17:07:22Z",
+      "hash": "3402b90d50be67bd",
+      "len": 809926
     },
     "modelscope-models": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "hash": "40aa97cdb090b0b8",
       "len": 3387
     },
     "deepseek-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 25543,
-      "hash": "711724c1ad51ca5c",
-      "pending": {
-        "hash": "5f9939f8733422e1",
-        "seen": 1
-      }
+      "hash": "5f9939f8733422e1"
     },
     "zhipu-promotion": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 155633,
       "hash": "f603217594094612"
     },
     "bailian-quota": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 94849,
-      "hash": "11dee5f1ce3eeda5",
-      "pending": {
-        "hash": "88e90b877d7b7622",
-        "seen": 1
-      }
+      "hash": "88e90b877d7b7622"
     },
     "ark-freequota": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 445516,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 446486,
       "hash": "36663c788f2f426e",
       "pending": {
-        "hash": "79580deb7d1f83bd",
+        "hash": "7f714be45c9fc663",
         "seen": 1
       }
     },
     "kimi-trial": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 473408,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 473047,
       "hash": "a6aba17cf7b9732a"
     },
     "kimi-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 290297,
-      "hash": "e1c3a3c3d2691ea8"
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 290765,
+      "hash": "e1c3a3c3d2691ea8",
+      "pending": {
+        "hash": "be22022ac74548de",
+        "seen": 1
+      }
     },
     "qianfan-quota": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 286109,
       "hash": "ed16a23718868cf2"
     },
     "tokenhub-newuser": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 50019,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 49956,
       "hash": "74a969f7fea8907b",
       "pending": {
-        "hash": "a9bfc032f36b0e5a",
+        "hash": "97843547e638b66b",
         "seen": 1
       }
     },
     "coze-edition": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 102734,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 102732,
       "hash": "5d5ec68a411cf425"
     },
     "siliconflow-billing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 147746,
       "hash": "fa19a7fb79f696b8"
     },
     "siliconflow-referral": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 127952,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 127991,
       "hash": "e31cd298982914b3"
     },
     "minimax-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 14013,
-      "hash": "600d4477b6c35326",
-      "pending": {
-        "hash": "572a84898ff3055f",
-        "seen": 1
-      }
+      "hash": "572a84898ff3055f"
     },
     "groq-limits": {
-      "fail_streak": 0,
+      "fail_streak": 1,
       "last_ok": "2026-10-30T11:06:36Z",
       "len": 321032,
       "hash": "edd9b2dfc8a8d880",
       "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     "gemini-pricing": {
-      "fail_streak": 0,
+      "fail_streak": 1,
       "last_ok": "2026-10-30T11:06:36Z",
       "len": 259801,
       "hash": "1e29b8ec6dda0c64",
       "last_error": "URLError: <urlopen error timed out>"
     },
     "gemini-students": {
-      "fail_streak": 0,
+      "fail_streak": 1,
       "last_ok": "2026-10-30T11:06:36Z",
       "len": 193875,
       "hash": "04d9589fde339967",
@@ -127,48 +119,48 @@
     },
     "github-pack": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 271442,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 271469,
       "hash": "9ef519cec6fd8ba7",
       "pending": {
-        "hash": "d4fbdee0f92a43b5",
+        "hash": "d019e61aaf3a2349",
         "seen": 1
       }
     },
     "azure-students": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 391310,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 391229,
       "hash": "25f2d0795c2a90e4",
       "pending": {
-        "hash": "0a5ee4ed43eed6bf",
+        "hash": "ba928f06379c0bf3",
         "seen": 1
       }
     },
     "sambanova-limits": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 349766,
       "hash": "1359bf1c797c7ebf"
     },
     "together-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 630806,
       "hash": "bdb61d5f6565a177"
     },
     "anthropic-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 1348009,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 306890,
       "hash": "d28506eecc92d24e",
       "pending": {
-        "hash": "9cac7e78992f817f",
+        "hash": "ba0ff309640e4bde",
         "seen": 1
       }
     },
     "aihubmix-pricing": {
-      "fail_streak": 0,
+      "fail_streak": 1,
       "last_ok": "2026-10-30T11:06:36Z",
       "len": 743401,
       "hash": "07415bae2ae79ce9",
@@ -179,7 +171,7 @@
       "last_error": "URLError: <urlopen error timed out>"
     },
     "ohmygpt-pricing": {
-      "fail_streak": 0,
+      "fail_streak": 1,
       "last_ok": "2026-10-30T11:06:36Z",
       "len": 2214114,
       "hash": "3b5ee48ab4d370c4",
@@ -191,119 +183,103 @@
     },
     "dmxapi-home": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 28745,
       "hash": "ed6ec647fea3ae13"
     },
     "nvidia-build": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 137030,
       "hash": "724721c183ee6d77"
     },
     "autodl-coupon": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 42371,
       "hash": "ae18de188a9adc61"
     },
     "gpushare-coupon": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 34896,
       "hash": "6fbc0a7041749e62"
     },
     "xfyun-spark-docs": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 119912,
-      "hash": "d94cb2494be3e4ab",
-      "pending": {
-        "hash": "9f43f2c58f8b3b92",
-        "seen": 1
-      }
+      "hash": "9f43f2c58f8b3b92"
     },
     "dify-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 140736,
-      "hash": "810f219f8d483938",
-      "pending": {
-        "hash": "bf3c300cf5122f87",
-        "seen": 1
-      }
+      "hash": "bf3c300cf5122f87"
     },
     "scnet-activity": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 148903,
       "hash": "96fbb3f3aeafa1d0"
     },
     "linuxdo-rss": {
-      "fail_streak": 13,
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "fail_streak": 14,
+      "last_error": "URLError: <urlopen error timed out>"
     },
     "zcode-changelog": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 89845,
       "hash": "1525468ab2f97e24"
     },
     "bigmodel-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 6936,
       "hash": "edad8cf93275888f"
     },
     "bigmodel-activity": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 6128,
-      "hash": "f7883c569c829953",
-      "last_error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
-      "pending": {
-        "hash": "7a963d61bd70065a",
-        "seen": 2
-      }
+      "hash": "7a963d61bd70065a",
+      "last_error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     "xfyun-coding-plan": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 104504,
-      "hash": "ef040ee1e7ff2a17",
-      "pending": {
-        "hash": "69663e47bce2721a",
-        "seen": 1
-      }
+      "hash": "69663e47bce2721a"
     },
     "volc-ai618": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 1051551,
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 1052136,
       "hash": "7779f992419bbc65"
     },
     "ark-collab": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 492005,
-      "hash": "79a49f06fd786d67",
-      "pending": {
-        "hash": "9cb1ce8f11b810d9",
-        "seen": 1
-      }
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 492975,
+      "hash": "9cb1ce8f11b810d9"
     },
     "copilot-plans": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
-      "len": 1044181,
-      "hash": "a36a335c4f27458b"
+      "last_ok": "2026-10-30T17:07:22Z",
+      "len": 1044986,
+      "hash": "a36a335c4f27458b",
+      "pending": {
+        "hash": "44820a3b68f84664",
+        "seen": 1
+      }
     },
     "stepfun-pricing": {
       "fail_streak": 0,
-      "last_ok": "2026-10-30T11:06:36Z",
+      "last_ok": "2026-10-30T17:07:22Z",
       "len": 832171,
       "hash": "3344fffb01bb8b9f"
     }
   },
-  "generated_at": "2026-10-30T11:06:36Z"
+  "generated_at": "2026-10-30T17:07:22Z"
 }
