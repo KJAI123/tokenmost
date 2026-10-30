@@ -1,14 +1,20 @@
 # SESSION_STATE — 断点状态文件（断线重连后必读）
 
-> 最后更新：2026-10-30 03:00 UTC（主会话 v2.15.0 兑换弹窗+微信群轮）
+> 最后更新：2026-10-30 14:00 UTC（主会话 v2.16.0 公众号双信源轮）
 > 用途：本会话断线后，监督任务/新会话读本文件即可无缝续命。
 
 ## 项目现状
-- tokenmost.com 生产运行（香港服务器 HTTPS + GitHub Pages 镜像），deals.json 共 204 条（published 139/verified 134）
+- tokenmost.com 生产运行（香港服务器 HTTPS + GitHub Pages 镜像），deals.json 共 212 条（published 144）；sites 70 站（agent 层 22）
 - 服务器 30 分钟 cron 自动 git pull；GitHub push 即部署 Pages
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.16.0 公众号双信源入库（2026-10-30，老板发两个 mp.weixin.qq.com 链接作信源）：
+  - **抓取通道备忘：WebFetch 被微信「环境异常」验证页拦截（老边界），webReader（Z.ai 内置）两篇全量直抓成功——公众号正文首选 webReader，失败再退 TK 管线/人肉**
+  - ①《每月白送5亿token，这次是国家队出手》→ 书生·端砚墨点计划 deep-intern-inkpoint **复活上架**（TK R6 曾被 JS 壳挡）：每月 10 墨点、1 墨点上限 5000 万 token；保守折 1250 万/月（缓存命中 5 亿口径不采信防虚高）；DeepSeek-V4 全系/GLM-5.3/Kimi-K2.6/MiniMax-M3 阵容；书生-S2/Agents-A1/Atria-Dawn-Preview 三款 0 墨点限免；OpenAI+Anthropic 双协议（Claude Code 直连）；微信扫码无需绑卡；⚠️ 墨点月清零；unverified 待复核
+  - ②《白嫖9000积分！DeepSeek免费用》（果核）→ 商汤小浣熊 deep-sensenova-xiaohuanxiong 新建：三端各 3000 积分（网页/桌面/手机）共 9000；平台内 DeepSeek-V4.1-Flash-1017 免费；积分制不折总账（poe 先例）；agent 层+导航站第 70 站；并入商汤聚合组
+  - 书生端砚自动生成 pSEO 平台页；浏览器实测双条目渲染+AGENT 22 ✓；推版 61520b2
+- [x] **广告位决策备忘（老板原话「先不做开屏广告吧，到时候做到右上角和底部就好」）**：未来广告位只做两处——右上角+页底；开屏广告不做。未写任何代码，纯决策记录；实现时再找老板要广告素材
 - [x] v2.15.0 折扣兑现三选一弹窗+微信群入口（2026-10-30，老板双指令）：
   - ①券领点击→「折扣兑现」面板：📋 复制折扣码（无码类隐藏）/🔗 直接跳转/📱 扫码领取（qrserver 二维码，手机直达不用传链接）——券码虚线框展示，标题带平台名
   - ②微信群弹窗：侧边栏「📥 微信交流群」+页脚「微信交流群」→ 二维码面板；**待老板把群二维码图放 repo assets/wechat-group.png 即自动显示**（面板内置 7 天过期换图说明+企业微信无限期入群码建议）
