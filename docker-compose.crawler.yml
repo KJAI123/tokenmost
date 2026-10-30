@@ -1,0 +1,9 @@
+services:
+  crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile.crawler
+    volumes:
+      - ./:/app
+    environment:
+      - PAGESIFT_BIN=/usr/local/bin/pagesift

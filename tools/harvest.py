@@ -93,7 +93,8 @@ def fetch(url: str) -> str:
         return r.read().decode("utf-8", "ignore")
 
 
-PS_BIN = str(Path.home() / "Library" / "Python" / "3.9" / "bin" / "pagesift")
+import os as _os
+PS_BIN = _os.environ.get("PAGESIFT_BIN") or str(Path.home() / "Library" / "Python" / "3.9" / "bin" / "pagesift")
 def fetch_md(url: str) -> str:
     """pagesift 增强：LLM 级干净 Markdown（对表格/结构页抽取质量显著优于 regex）。
     仅用于关键词上下文增强，失败时静默回退原 HTML。"""

@@ -282,3 +282,9 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **实测**：pip 装 0.81.2；Python SDK 内嵌 resolver 与 VPN 冲突（DNS timeout），**CLI 走系统栈正常**；智谱定价页输出干净 Markdown（# API 定价/表格结构完整）
 - **已集成**：harvest.py 双通道抽取——pagesift Markdown 与原 regex 文本合并去重，失败静默回退（零风险增强）；关键收益=定价表格页关键词命中质量提升
 - 2026-10-30 **故障修复**：prev.json 混入 git 合并冲突标记（<<<<<<< Updated upstream——主会话 git 操作与本地写入撞车）致 diff 崩溃；已从 latest.json 重建（152 源）；建议主会话 git 合并时避开 tools 数据文件或加 .gitattributes merge=ours；23源失败=VPN波动潮；AI_News_CN 频道本轮偶发失败下轮自愈
+
+## ⭐并线接管确认（2026-10-30，老板令「接管tokenmost店铺会话，并线处理」）
+- 主会话已达 v2.16.0（212 条 deals/145 发布），我线接管产品职能——**单写入方协议解除**，双线可直写 deals.json
+- **并线查重对账**：29 条待核实线索中 18 条已被主数据覆盖（含天翼云/联通云/MiniMax五折——主会话建条效率高）；实测撞车 1 次（MiMo tokenplan 条目我准备写入时 30min cron 抢先建了——说明主会话在持续消化我的 HANDOFF 素材，好事）
+- **并线后新协议**：①我建条前必须先查重（id/url/provider 三重）②check.py 每次写后必跑③stale 态保守上架为主数据惯例，沿用④主数据格式：via/tokens_wan/cny/usd 字段化+备注带来源
+- 我线独特价值重定位：**发现引擎**（154 源盯防/双专属管线/2245 池）→ 产出素材进 HANDOFF+总表 → 双向流入 deals.json（我直接建或 cron 消化，谁先谁算）

@@ -1,0 +1,7 @@
+FROM docker.m.daocloud.io/library/python:3.11-slim
+WORKDIR /app
+# 系统依赖：无（harvest/verify/管线全标准库；pagesift 提供 LLM 级 Markdown 抽取）
+RUN pip install --no-cache-dir pagesift
+COPY tools/ /app/tools/
+ENV PAGESIFT_BIN=/usr/local/bin/pagesift
+CMD ["bash", "/app/tools/docker_cycle.sh"]
