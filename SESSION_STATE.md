@@ -1,14 +1,25 @@
 # SESSION_STATE — 断点状态文件（断线重连后必读）
 
-> 最后更新：2026-10-30 14:00 UTC（主会话 v2.16.0 公众号双信源轮）
+> 最后更新：2026-10-30 23:4x（会话接管：新会话接管 tokenmost店铺线，v2.16.2 广告位落地）
 > 用途：本会话断线后，监督任务/新会话读本文件即可无缝续命。
 
+## 会话接管记录（2026-10-30 深夜）
+- **tokenmost店铺会话（session_2d698e01）于 22:21 起被 provider 1301 内容过滤连续拦截三连（老板「改善一下/继续/咱整改吧」均未获回复）**——历史上下文已被平台标记，该会话不可再用
+- 老板令新会话「接管【tokenmost店铺】会话的所有内容、任务和技能」→ 新会话已接管产品线（本文档+记忆+tokenmost/ 仓库为交接载体）；爬虫助理线（72167d）并线协议见 data-research/HANDOFF.md（单写入方已解除，双向流动）
+- 接管后首夜完成：①收口店铺会话挂起的共绩算力入流（1e63e29）②爬虫线容器化产物入库（7205ec9）③**v2.16.2 广告位两处落地**（右上角+页底，老板 21:46 拍板）
+- **等老板事项池**：①微信群二维码图（放 repo assets/wechat-group.png 即自动显示）②GSC 验证码（埋 head→提交 78 URL sitemap）③联盟链接注册（硅基流动推荐官等，见 tools/affiliate_channels.md）④TG 频道名⑤models.dev 231 家挂巡检池点头⑥广告素材（给了就填 index.html 脚本顶部 TM_ADS 配置，两位置即上）
+
 ## 项目现状
-- tokenmost.com 生产运行（香港服务器 HTTPS + GitHub Pages 镜像），deals.json 共 212 条（published 144）；sites 70 站（agent 层 22）
+- tokenmost.com 生产运行（香港服务器 HTTPS + GitHub Pages 镜像），deals.json 共 212 条（published 145，verified 126）；sites 70 站（agent 层 22）
 - 服务器 30 分钟 cron 自动 git pull；GitHub push 即部署 Pages
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.16.2 广告位两处落地（2026-10-30，老板拍板「先不做开屏广告吧，到时候做到右上角和底部就好」+「咱整改吧」）：
+  - 右上角：header 内 flex 末位 .ad-slot.ad-top（176×56 桌面 / 移动端全宽），页底：footer 上方 .ad-slot.ad-bottom（920×90 / 移动 72px）
+  - **配置驱动**：脚本顶部 `TM_ADS={top:{},bottom:{}}`——素材到位填 {img,url,alt} 即渲染真实广告（自动带「广告」角标+rel="sponsored nofollow noopener" Google 合规）；空对象=优雅「广告位招租」虚线占位
+  - JSC 语法门 PASS；IAB 浏览器实测：桌面头部/页底/移动端三截图 ✓、真实素材渲染路径 evaluate 实测 ✓（anchor/rel/img/角标/还原全对）
+- [x] 共绩算力条目复活上架（2026-10-30，老板问「共绩云的为啥没有补充进来」；店铺会话核完未推即被 1301 杀，接管会话收口推版 1e63e29）：gongji-subsidy stale→verified，个人开发者计划 50 元体验积分（进群+填表，审核制最高 1500 元/月 200 元起持续）+MaaS 公测 1 亿 tokens 口径存疑未采信防虚高；prices.json 补共绩 DeepSeek V4 Flash 1/2 元低价行；pSEO 共绩页 64 页
 - [x] v2.16.0 公众号双信源入库（2026-10-30，老板发两个 mp.weixin.qq.com 链接作信源）：
   - **抓取通道备忘：WebFetch 被微信「环境异常」验证页拦截（老边界），webReader（Z.ai 内置）两篇全量直抓成功——公众号正文首选 webReader，失败再退 TK 管线/人肉**
   - ①《每月白送5亿token，这次是国家队出手》→ 书生·端砚墨点计划 deep-intern-inkpoint **复活上架**（TK R6 曾被 JS 壳挡）：每月 10 墨点、1 墨点上限 5000 万 token；保守折 1250 万/月（缓存命中 5 亿口径不采信防虚高）；DeepSeek-V4 全系/GLM-5.3/Kimi-K2.6/MiniMax-M3 阵容；书生-S2/Agents-A1/Atria-Dawn-Preview 三款 0 墨点限免；OpenAI+Anthropic 双协议（Claude Code 直连）；微信扫码无需绑卡；⚠️ 墨点月清零；unverified 待复核
