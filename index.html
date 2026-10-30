@@ -212,13 +212,13 @@ footer{border-top:1px solid var(--border);padding:24px 0 48px;color:var(--muted)
 /* ===== 面板通用 ===== */
 .mask{position:fixed;inset:0;background:rgba(16,24,40,.45);z-index:70;display:none}
 .mask.open{display:block}
-#apiOverlay,#calcOverlay,#sumOverlay,#planOverlay{position:fixed;inset:0;background:rgba(16,24,40,.45);z-index:70;display:none}
-#apiOverlay.open,#calcOverlay.open,#sumOverlay.open,#planOverlay.open{display:block}
-#apiPanel,#calcPanel,#sumPanel,#planPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(720px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:16px;z-index:71;display:none;padding:24px;box-shadow:0 8px 30px rgba(16,24,40,.12)}
-#apiPanel.open,#calcPanel.open,#sumPanel.open,#planPanel.open{display:block}
-#apiClose,#calcClose,#sumClose,#planClose{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:1.25rem;cursor:pointer}
-#apiPanel h3,#calcPanel h3,#sumPanel h3,#planPanel h3{font-size:1rem;margin-bottom:4px;padding-right:32px}
-#apiPanel .sub,#calcPanel .sub,#sumPanel .sub,#planPanel .sub{font-size:.875rem;color:var(--muted);margin-bottom:16px}
+#apiOverlay,#calcOverlay,#sumOverlay,#planOverlay,#redeemOverlay,#wxOverlay{position:fixed;inset:0;background:rgba(16,24,40,.45);z-index:70;display:none}
+#apiOverlay.open,#calcOverlay.open,#sumOverlay.open,#planOverlay.open,#redeemOverlay.open,#wxOverlay.open{display:block}
+#apiPanel,#calcPanel,#sumPanel,#planPanel,#redeemPanel,#wxPanel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(720px,94vw);max-height:88vh;overflow-y:auto;background:var(--card);border:1px solid var(--border);border-radius:16px;z-index:71;display:none;padding:24px;box-shadow:0 8px 30px rgba(16,24,40,.12)}
+#apiPanel.open,#calcPanel.open,#sumPanel.open,#planPanel.open,#redeemPanel.open,#wxPanel.open{display:block}
+#apiClose,#calcClose,#sumClose,#planClose,#redeemClose,#wxClose{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:1.25rem;cursor:pointer}
+#apiPanel h3,#calcPanel h3,#sumPanel h3,#planPanel h3,#redeemPanel h3,#wxPanel h3{font-size:1rem;margin-bottom:4px;padding-right:32px}
+#apiPanel .sub,#calcPanel .sub,#sumPanel .sub,#planPanel .sub,#redeemPanel .sub,#wxPanel .sub{font-size:.875rem;color:var(--muted);margin-bottom:16px}
 .api-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .api-field{margin:12px 0}
 .api-field label{font-size:.75rem;color:var(--muted);display:block;margin-bottom:4px}
@@ -239,6 +239,19 @@ table.price th{color:var(--muted);font-weight:500;font-size:.75rem}
 table.price td:first-child,table.price th:first-child{text-align:left}
 table.price tr.cheapest td{background:rgba(5,150,105,.05)}
 #planPanel{width:min(920px,96vw)}
+#redeemPanel{width:min(420px,92vw)}
+.redeem-opts{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.redeem-opt{display:flex;align-items:center;gap:12px;border:1px solid var(--border);border-radius:10px;background:var(--bg);padding:12px 14px;cursor:pointer;font-size:.9rem;color:var(--text);text-align:left;transition:border-color .12s}
+.redeem-opt:hover{border-color:var(--accent)}
+.redeem-opt .ic{font-size:1.2rem}
+.redeem-opt b{display:block;font-size:.9rem}
+.redeem-opt span{display:block;font-size:.75rem;color:var(--muted)}
+.redeem-code{font-family:monospace;background:var(--bg);border:1px dashed var(--border);border-radius:8px;padding:8px 12px;font-size:1.05rem;letter-spacing:1px;text-align:center;margin-top:10px;word-break:break-all}
+#redeemQr{display:none;text-align:center;margin-top:14px}
+#redeemQr img{width:190px;height:190px;border:1px solid var(--border);border-radius:10px;background:#fff;padding:6px}
+#wxPanel{width:min(360px,92vw);text-align:center}
+#wxPanel img{width:230px;max-width:100%;border:1px solid var(--border);border-radius:10px;margin:10px auto}
+.wx-miss{font-size:.82rem;color:var(--muted);background:var(--bg);border:1px dashed var(--border);border-radius:10px;padding:14px;margin:10px 0}
 #planPanel table.price{table-layout:fixed}
 #planPanel table.price th,#planPanel table.price td{white-space:normal;text-align:left;vertical-align:top}
 #planPanel table.price th:nth-child(1),#planPanel table.price td:nth-child(1){width:19%}
@@ -320,6 +333,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <div class="sgroup-body" id="fold-m">
       <a class="sitem" id="vaultBtnSide" href="#" onclick="return false">🗂 账号库</a>
       <a class="sitem" id="guideBtnSide" href="#" onclick="return false">📖 领取攻略</a>
+      <a class="sitem" id="wxBtnSide" href="#" onclick="return false">📥 微信交流群</a>
       <a class="sitem" href="#faq">❓ 常见问题</a>
     </div>
   </nav>
@@ -454,7 +468,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <footer>
   <p>数据自动+人工双轨每日更新 · 优惠以各平台官方页面为准</p>
   <p class="disclaim">⚠️ 免责声明：本站为独立情报聚合站，与所列平台无关；所有优惠以各平台官方页面为准，请自行核实后再操作，本站不构成消费建议。</p>
-  <p><a href="rss.xml">RSS 订阅</a> · © 2026 tokenmost.com</p>
+  <p><a href="#" id="wxFootLink">微信交流群</a> · <a href="rss.xml">RSS 订阅</a> · © 2026 tokenmost.com</p>
 </footer>
 </div><!-- /main -->
 <!-- ============ 底部导航（移动端） ============ -->
@@ -521,6 +535,29 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </div>
 <!-- ============ 羊毛总账 & 极致预算 ============ -->
 <div id="sumOverlay"></div>
+<!-- ============ 兑换方式弹窗 & 微信群弹窗 ============ -->
+<div id="redeemOverlay"></div>
+<div id="redeemPanel" role="dialog" aria-modal="true">
+  <button id="redeemClose">✕</button>
+  <h3 id="rdTitle">兑换</h3>
+  <p class="sub" id="rdSub">选一种方式兑现折扣</p>
+  <div class="redeem-code" id="rdCode" style="display:none"></div>
+  <div class="redeem-opts">
+    <button class="redeem-opt" id="rdCopy"><span class="ic">📋</span><span><b>复制折扣码</b><span>复制后去领取页粘贴</span></span></button>
+    <button class="redeem-opt" id="rdGo"><span class="ic">🔗</span><span><b>直接跳转领取页</b><span>新标签打开官方页面</span></span></button>
+    <button class="redeem-opt" id="rdQrBtn"><span class="ic">📱</span><span><b>扫码领取</b><span>手机扫二维码直达，不用传链接</span></span></button>
+  </div>
+  <div id="redeemQr"><img id="rdQrImg" alt="领取页二维码"><p style="font-size:.75rem;color:var(--muted);margin-top:6px">微信扫一扫 · 手机直达领取页</p></div>
+</div>
+<div id="wxOverlay"></div>
+<div id="wxPanel" role="dialog" aria-modal="true">
+  <button id="wxClose">✕</button>
+  <h3>📥 微信交流群</h3>
+  <p class="sub">羊毛情报第一时间推送 · 群友互助答疑</p>
+  <img id="wxQrImg" alt="微信群二维码" style="display:none">
+  <div class="wx-miss" id="wxMiss">微信群二维码待配置：站长把群二维码图片放到网站 <code>assets/wechat-group.png</code> 即自动显示（微信群码 7 天会过期，到期换图即可；建议用企业微信「无限期入群二维码」免维护）。</div>
+  <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日羊毛速报不错过</p>
+</div>
 <div id="sumPanel" role="dialog" aria-modal="true">
   <button id="sumClose">✕</button>
   <h3>💰 羊毛总账 · 极致预算</h3>
@@ -806,7 +843,7 @@ document.getElementById('cards').addEventListener('click',e=>{
   const btn=e.target.closest('.copy');
   if(btn){copyText(btn.dataset.code,btn,'✅ 已复制','📋 复制');return}
   const cg=e.target.closest('.cgo');
-  if(cg)copyText(cg.dataset.code,cg,'✅ 券码已复制','🎁 券领');
+  if(cg){e.preventDefault();openRedeem(cg);return}
   const cl=e.target.closest('[data-claim]');
   if(cl){const s=getClaimed(),id=cl.dataset.claim;s.has(id)?s.delete(id):s.add(id);
     try{localStorage.setItem(CKEY,JSON.stringify([...s]))}catch(_){}
@@ -1128,6 +1165,42 @@ async function openGuides(){
 }
 /* 侧边栏工具按钮（直接开面板） */
 function openPanel(o,p){document.querySelector(o).classList.add('open');document.querySelector(p).classList.add('open')}
+
+/* ============ 兑换方式弹窗 & 微信群弹窗 ============ */
+const WECHAT_QR='/assets/wechat-group.png';
+let rdCtx={code:'',url:''};
+function openRedeem(el){
+  rdCtx={code:el.dataset.code||'',url:el.href||el.getAttribute('href')||''};
+  const isCode=el.textContent.includes('券领');
+  document.getElementById('rdTitle').textContent=(el.closest('article')?.querySelector('.r-provider')?.textContent.trim()||'平台')+'·折扣兑现';
+  document.getElementById('rdSub').textContent=isCode?'复制折扣码或直达领取页，三选一':'折扣链接直达或扫码，二选一';
+  const cd=document.getElementById('rdCode');
+  if(isCode){cd.style.display='block';cd.textContent=rdCtx.code}else cd.style.display='none';
+  document.getElementById('rdCopy').style.display=isCode?'flex':'none';
+  document.getElementById('redeemQr').style.display='none';
+  document.getElementById('rdQrImg').src='https://api.qrserver.com/v1/create-qr-code/?size=190x190&data='+encodeURIComponent(rdCtx.url);
+  document.getElementById('rdGo').onclick=()=>window.open(rdCtx.url,'_blank','noopener');
+  document.getElementById('rdCopy').onclick=e=>copyText(rdCtx.code,e.currentTarget,'✅ 已复制','📋 复制折扣码');
+  document.getElementById('rdQrBtn').onclick=()=>{const q=document.getElementById('redeemQr');q.style.display=q.style.display==='block'?'none':'block'};
+  document.getElementById('rdQrImg').onerror=function(){document.getElementById('rdQrBtn').title='二维码服务暂不可用，请用复制或跳转';};
+  openPanel('#redeemOverlay','#redeemPanel');
+}
+function closeRedeem(){document.getElementById('redeemOverlay').classList.remove('open');document.getElementById('redeemPanel').classList.remove('open')}
+document.getElementById('redeemClose').addEventListener('click',closeRedeem);
+document.getElementById('redeemOverlay').addEventListener('click',closeRedeem);
+function openWx(){
+  const img=document.getElementById('wxQrImg'),miss=document.getElementById('wxMiss');
+  img.src=WECHAT_QR+'?v='+Date.now();
+  img.onload=()=>{img.style.display='block';miss.style.display='none'};
+  img.onerror=()=>{img.style.display='none';miss.style.display='block'};
+  openPanel('#wxOverlay','#wxPanel');
+}
+function closeWx(){document.getElementById('wxOverlay').classList.remove('open');document.getElementById('wxPanel').classList.remove('open')}
+document.getElementById('wxClose').addEventListener('click',closeWx);
+document.getElementById('wxOverlay').addEventListener('click',closeWx);
+document.getElementById('wxBtnSide').addEventListener('click',openWx);
+const wf=document.getElementById('wxFootLink');if(wf)wf.addEventListener('click',e=>{e.preventDefault();openWx()});
+
 document.getElementById('vaultBtnSide').addEventListener('click',()=>vaultToggle(true));
 document.getElementById('planBtnSide').addEventListener('click',()=>{planRender();openPanel('#planOverlay','#planPanel')});
 document.getElementById('sumBtnSide').addEventListener('click',()=>{sumRender();openPanel('#sumOverlay','#sumPanel')});
