@@ -22,6 +22,12 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] WorkBuddy 国内/国际版羊毛区分（2026-10-31 凌晨，老板令「国内版和国外版不太一样你关注一下」，3ef135d）：
+  - **双版本实锤**：本机 App（com.tencent.workbuddy.mac v5.9.3）asar 内双域并存（workbuddy.cn 31 处/workbuddy.ai 15 处）——与国际版 Trae 同款分轨产品
+  - **国内版**（workbuddy.cn/腾讯云，group=腾讯 WorkBuddy→腾讯）：公测 5000 Credits+每日 100 积分+教师版 2000/月×12+Hy 系限免（10-31 止）；workbuddy-free 条目已标版本口径
+  - **国际版**（workbuddy.ai，group=WorkBuddy 国际版独立成组，Trae 先例）双条新建：workbuddy-intl-free（Free 100 credits/月+限时每日活跃奖 30/日≈1000/月+补全 5000 次/月限免不限量+自动任务 3→99 限免+全模型限免含 Hi-4 Preview）+workbuddy-intl-pro（付费区：Pro $10 首月 $7=2000 credits+每日 50/年付 $96/Team $40 座）；官方定价页 webReader 直核（2026-09-30 build）
+  - ⚠️ 风险标注：第三方称新账号免费 credits 曾因滥用临时暂停（风控期注册可能限领）；有源称国际版以香港等区域为先
+  - sites.json 双站分轨（腾讯 WorkBuddy 国内版/WorkBuddy 国际版）；总库 216 条（published 151）；pSEO 67 页（+workbuddy-国际版）
 - [x] 四家羊毛补全（2026-10-30 深夜，老板令「补充 trae、opencode、mimo code、nvidia nim 的羊毛信息」，099a5fb）：
   - **小米 MiMo Code 双条新建**：xiaomi-mimo-code（agent 层，MIT 开源免费/OpenCode 二开/终端直连 V2.6；⚠️内置 V2.5 初期限免已于 6 月结束勿再宣传）+ xiaomi-mimo-tokenplan（付费区，官方定价页 webReader 直核：Lite ¥39=41 亿 Credits/Standard ¥99/110 亿/Pro ¥329/380 亿/Max ¥659/820 亿，首购 88 折+包年 88 折+夜间 0 点-8 点 0.8x+TTS 限免）；plans.json 补行（credits 参考组）；agent 导航站+「小米 MiMo Code」
   - **NVIDIA NIM 复活**：论坛+搜索互证注册 1000/上限 5000 credits 口径未变——10-28 降级系 build.nvidia.com 改版误伤，stale 清除恢复 verified/published
