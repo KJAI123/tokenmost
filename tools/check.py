@@ -109,6 +109,12 @@ pub = sum(1 for d in deals if d.get("published", True))
 verified_pub = sum(1 for d in deals if d.get("published", True) and d["verify_status"] == "verified")
 api_n = sum(1 for s in all_sites if s.get("api"))
 print(f"deals {len(deals)} 条（published {pub}，其中 verified {verified_pub}）| sites {len(all_sites)} 个（api 端点 {api_n}）| prices {len(prices)} 行 | rss items {len(items)}")
+# pSEO 平台页+llms.txt 生成（随校验流水线自动产出）
+try:
+    import build_seo
+    build_seo.main()
+except Exception as e:
+    warns.append(f"build_seo: {e}")
 for e in errors: print("ERROR:", e)
 for w in warns: print("WARN:", w)
 sys.exit(1 if errors else 0)

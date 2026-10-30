@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CAND = ROOT / "data-research" / "source_candidates.json"
 XLSX = ROOT / "data-research" / "信息源总表-全量版.xlsx"
 HSRC = ROOT / "tools" / "harvest_sources.json"
-HARVEST_CAP = 70          # 采集器源总量上限（保证 15 分钟内跑完一轮）
-AUTO_ADD_LIMIT = 36       # 本次自动并入采集器的长期源上限
-LONG_TERM_TARGET = 120    # 长期源清单目标条数
+HARVEST_CAP = 150          # 采集器源总量上限（保证 15 分钟内跑完一轮）
+AUTO_ADD_LIMIT = 60       # 本次自动并入采集器的长期源上限
+LONG_TERM_TARGET = 200    # 长期源清单目标条数
 
 BAD_PATH = re.compile(r"(github\.com/[^/]+/?$|github\.com/topics|/search\?|utm_|/login|/signup|\.pdf$)", re.I)
 
@@ -48,7 +48,7 @@ def main() -> int:
     long_term = sorted(
         [c for c in uniq if c.get("status") == 200 and c.get("kind") in ("official", "repo")
          and c.get("title") and c.get("score", 0) >= 5
-         and c.get("verified") != "offtopic" and c.get("verified") != "dead"],
+         and c.get("verified") in ("relevant", "weak", None)],
         key=lambda c: (-c["score"], c["domain"] if "domain" in c else domain(c["url"])))
     for c in long_term:
         c["domain"] = domain(c["url"])

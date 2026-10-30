@@ -1,6 +1,6 @@
 # SESSION_STATE — 断点状态文件（断线重连后必读）
 
-> 最后更新：2026-10-29 17:20 UTC（主会话 v2.10.6 OpenClaw/AutoClaw 下架轮）
+> 最后更新：2026-10-29 18:50 UTC（主会话 v2.12.0 OpenCode 提供商生态调研轮）
 > 用途：本会话断线后，监督任务/新会话读本文件即可无缝续命。
 
 ## 项目现状
@@ -9,6 +9,26 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.12.0 OpenCode 提供商生态调研（2026-10-29，老板指令「好好操作一下我本机的 opencode」）：
+  - 挖矿路径：/Applications/OpenCode.app→~/.local/share/opencode/opencode.db（SQLite）→kv 表 models-dev:v2:catalog→**双解嵌套 JSON 得 231 家提供商全量清单**（截图那 12 家只是冰山一角）；站内比对 20+ 未收录
+  - 子代理双次被 API 风控秒拦（411/530ms）→主会话亲自 7 搜索调研
+  - 入流 5 条：**七牛云 Conatus 每日 1 亿 token（实名）→10 亿（充值 100 元）**=聚合平台最大方（daily_wan 10000 万）、ZenMux 注册 Gifts 可试旗舰（unverified）、Poe 每日积分 3000→300 缩水、Baseten $30 试用金（$25K 初创线）、AI/ML API startup 1000 万（单源待核）；总库 211 条 published 142
+  - 排除 7 家：Chutes（免费档 2026-02-27 已死）、NanoGPT（按次付费）、Berget.AI/Charm Hyper（无免费层）、Boundless（仅企业试点）、Vercel/CF AI Gateway/Helicone（网关自带 Key）、Amazon Bedrock（云托管，AWS Activate 已覆盖）
+  - **防污染案例**：搜索聚合站称 Cerebras 免费层 1M/天=旧信息，站内 deep-cerebras-free-trial 已核 2026-07 改版取消——未新建，聚合站信息不可直接采信
+  - 推版 edaac01；TK 可将 models.dev 231 家清单加入巡检池（监控目录 diff）
+- [x] v2.11.1 领取按钮分类+券库补货（2026-10-29，老板指令「领取分直接领取和折扣券领取，折扣要突出」）：①有 coupon 条目操作列=金色渐变「🎁 券领」（点击复制券码+直达页一步完成，a 默认跳转不被拦截），无码=绿色「领取」；聚合主行同规则（best.coupon）；②券库原为空（历史折扣码全被时效清洗）→补首条实体：z.ai 国际版 9 折邀请码 Y2H91IWSU3（unverified 标注第三方来源+官方拼好模机制背书，失效即清洗）；实测有码 tab 金色券领渲染 ✓；推版 10c0cd7；published 137
+- [x] v2.10.9 智谱归组去重（2026-10-29，老板指令「智谱别搞 3 个条，夹带私货嫌疑」）：group 字段三种值并存（「智谱」×6/None→「智谱 BigModel」×2/ZCode×5）致同家裂三组（智谱 BigModel 90 亿+智谱 21 亿+ZCode）——统一智谱 BigModel 8 条一组、ZCode 6 条独立（老板此前指令）、CodeGeeX 独立行；groups.json map 智谱系全部指向「智谱 BigModel」防复发；实测主板块智谱系仅剩 ZCode+智谱 BigModel 两组；推版 b8bcf59
+- [x] v2.10.8 html 防缓存 meta（2026-10-29，老板「你是不是没推版」）：实测 main=origin/main+线上已含 FAQ/千问（cron 已同步）——老板看到旧页=浏览器缓存 index.html；head 加 no-cache/no-store/Pragma meta 根治；推版 50fac18。今日累计 10 版全在库。**说明话术：主域 30 分钟 cron+浏览器强刷 Cmd+Shift+R**
+- [x] v2.10.7 下架 n8n+全行业体验档横评（2026-10-29，老板截图指令「这三条都删了」）：n8n-selfhost（自部署工具）+deep-trial-tier-matrix-r7（横评攻略）归档；AutoClaw=旧缓存（v2.10.6 已下架）；published 138→136；推版 e27cb56。同类残留提示：Dify/FastGPT 亦为自部署编排工具，待老板示下
+- [x] v2.11.0 整站彻底 SEO（2026-10-29，老板指令「qa 啥的都搞，Google 可收录」）：
+  - head：title/desc/keywords 重写（关键词=AI 大模型免费额度/token 羊毛/折扣码/白嫖）+OG 全套+Twitter Card+RSS alternate+preconnect(icon.horse/google)
+  - 结构化数据：首页 WebSite+Organization、FAQPage 8 问（与可见 FAQ 同步）、guides 每页 Article
+  - FAQ 区块 8 条 details（tokenmost 是什么/DS Flash 等效/收益算法/最大额度平台/可信度/折扣码/比价器/更新频率）
+  - noscript 静态兜底（无 JS 爬虫可读核心情报+攻略链接）；h1 补齐（logo span→h1，CSS 类选择器不受影响）
+  - sitemap.xml 全量 12 URL（首页 daily 1.0+10 攻略 weekly 0.8+rss）；guides 模板补 desc/canonical/og 重建 10 篇
+  - 0 万口径修复：无数额条目（如千问机制条）显示「免费·额度未公布」不再显示误导性「0 万」
+  - 校验：JSON-LD 合法性+JSC 语法门+浏览器实测（rows 46/FAQ 8/h1 ✓）；推版 decbeca（顺带 TK 的 telegram_monitor.py 管线文件入库）
+  - **GSC 待老板操作**：search.google.com/search-console→网址前缀验证（HTML meta 或文件法，验证码给我可埋 head）→提交 sitemap.xml→请求编入索引
 - [x] v2.10.6 下架 OpenClaw/AutoClaw（2026-10-29，老板截图指令「这俩去掉」）：自部署接任意 Key 类无平台方 token 羊毛属性，双条归档出主板块（published 140→138，总库 205）；推版 d6e779a
 - [x] v2.10.5 收益列排序修复（2026-10-29，老板指令「token收益无法排序，推一下版」）：
   - 根因×2：①聚合模式组间排序写死收益降序、不接 sortKey——点「核验」只亮灯不动列表；②**显示与排序口径分裂**——单条组主行显示条目自身字段（云知声 720 万），排序却按组口径（daily 2 亿/天×30=60 亿），视觉上「720 万排在 31 亿前」=乱序感
