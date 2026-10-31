@@ -4164,5 +4164,24 @@
   "usd": 10,
   "eq_wan": 3000,
   "eq_note": "2,000 credits×$0.005=$10×300 万 tok/$=3000 万当量（首月 $7 更低；每日 50 限时赠未计）"
+ },
+ {
+  "id": "huawei-codearts-daily",
+  "provider": "华为云码道 CodeArts",
+  "category": "agent",
+  "type": "coupon",
+  "value": "每日登录码道客户端（AI IDE / JetBrains / VS Code 插件）领 1000 万免费 Token，当日有效、全场景可用（AI 对话/代码生成）；新用户首次开通+学生认证另有 4000 积分档奖励；注册领全场景对话入口见折扣链接",
+  "region": "cn",
+  "url": "https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-k__zSpxu3WV2HbdUK2_opuvnaG2DiGI8M_Vkr_7OCWpuqIxshK6vUbOGkAqIk_06gznQQPE1zlzUcBg16rFfyi5USB425eDT3Xnj3ci6POjTvbND700dgJfpdOJ4wXoVJrBuE_7xl_eXY8DQ7Rz_vkKwrsVe0pGdJrhSYnKlU4e9vAy8",
+  "rule": "每日 Token 当日有效不滚存，客户端登录即领；新用户积分档数额以控制台实领为准（待核）",
+  "verify_status": "verified",
+  "verified_at": "2026-10-31T00:00:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "invite",
+  "group": "华为云码道 CodeArts",
+  "notes": "⭐官方 changelog 直核+搜索互证（每日登录领 1000 万 Token 限时福利，codearts.huaweicloud.com/changelog.html）| 🔗折扣链接=站长邀请渠道（source=dmzntgwlb，含推荐属性）| 新用户 4000 积分/学生认证档为开发者论坛口径待控制台实核 | 华为云全家首条：ModelArts Studio 千万 Token（华东二限定）与开发者空间百万券为同门线索待核",
+  "daily_wan": 1000,
+  "daily_note": "每日登录客户端领 1000 万 Token（当日有效）——码道平台通用额度按 1:1 保守折 DS 等效"
  }
 ]
