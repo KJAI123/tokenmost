@@ -1,0 +1,23 @@
+/* ============================================================
+   tokenmost 设计优化补丁 v1（沙盘验证版）
+   1) 表头/数据列对齐：第 4 列 max-content → 固定宽，两处共用
+   2) 移动端横向溢出：.tabs 真正滚动容器化 + 干掉 column 里的 margin-left:auto
+   ============================================================ */
+:root{
+  /* 桌面列模板：第 4 列定宽 156px，表头与数据行共用 → 消除 109px 错位 */
+  --cols:96px minmax(0,1fr) 116px 156px;
+}
+.lhead,.row,.skel{grid-template-columns:var(--cols)}
+
+@media(max-width:860px){
+  /* 移动/平板：三列布局（表头隐藏，无对齐问题） */
+  .row,.skel{grid-template-columns:78px minmax(0,1fr) 78px}
+}
+
+@media(max-width:640px){
+  /* 修复移动端整页横向滚动（scrollWidth 1120 → 390） */
+  .tabs{min-width:0;max-width:100%;width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+  .toolbar>span{margin-left:0!important;min-width:0;width:100%;flex-wrap:wrap}
+  #search{width:100%;min-width:0;flex:1 1 140px}
+  #typeFilter{min-width:0;flex:0 1 auto}
+}

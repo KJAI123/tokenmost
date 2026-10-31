@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tokenmost 设计优化方案 v3 · 实测驱动</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f7f5f0; --card:#fffdfa; --line:#e9e3d6; --line-soft:#f0ebe0;
+  --ink:#14171e; --ink2:#3a4256; --muted:#7c7a72;
+  --accent:#0f766e; --accent-soft:rgba(15,118,110,.08);
+  --warn:#c97b3f; --bad:#b06367;
+  --sans:"Outfit","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --serif:"DM Serif Display","Songti SC","STSong",Georgia,serif;
+  --mono:"JetBrains Mono","SFMono-Regular",Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(700px 400px at 12% -8%,rgba(15,118,110,.07),transparent 70%),
+             radial-gradient(600px 380px at 92% 4%,rgba(201,123,63,.06),transparent 70%)}
+.wrap{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:0 24px}
+
+/* ── Hero ── */
+header.hero{padding:72px 0 48px}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:20px}
+h1{font-family:var(--serif);font-size:clamp(30px,5.2vw,50px);line-height:1.18;font-weight:400;letter-spacing:-.01em;max-width:19em}
+h1 em{font-style:italic;color:var(--accent)}
+.lede{margin-top:20px;max-width:46em;font-size:16px;color:var(--ink2);line-height:1.7}
+.lede b{color:var(--ink);font-weight:600}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:36px}
+.hero-stats dl{background:var(--card);padding:16px 18px;margin:0}
+.hero-stats dt{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.hero-stats dd{font-family:var(--mono);font-size:23px;font-weight:500;letter-spacing:-.02em;line-height:1.2;white-space:nowrap}
+.hero-stats dd small{font-size:12px;color:var(--muted);font-family:var(--sans);margin-left:3px}
+
+/* ── Sections ── */
+section{padding:44px 0}
+h2{font-family:var(--serif);font-size:26px;font-weight:400;letter-spacing:-.01em;margin-bottom:8px;display:flex;align-items:center;gap:11px}
+h2 svg{flex-shrink:0;color:var(--accent)}
+.sec-sub{color:var(--muted);font-size:14px;margin-bottom:28px;max-width:52em}
+
+/* ── Issue card ── */
+.issue{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.issue-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.issue-head h3{font-size:17px;font-weight:600;letter-spacing:-.01em}
+.tag{font-family:var(--mono);font-size:11px;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
+.tag.p0{color:#9b3b3f;border-color:rgba(176,99,103,.4);background:rgba(176,99,103,.07)}
+.tag.p1{color:var(--warn);border-color:rgba(201,123,63,.4);background:rgba(201,123,63,.07)}
+.issue p{margin:8px 0 14px;color:var(--ink2);font-size:14.5px;max-width:54em}
+.issue p code{font-family:var(--mono);font-size:12.5px;background:var(--line-soft);padding:1.5px 6px;border-radius:5px;color:var(--ink)}
+.issue-diagram{margin:16px 0 14px;border:1px solid var(--line-soft);border-radius:12px;background:#fdfcf9;padding:18px 16px;overflow-x:auto}
+
+/* ── Bench ── */
+.bench{display:grid;grid-template-columns:132px 1fr 92px;gap:12px;align-items:center;padding:7px 0;font-size:13px}
+.bench-label{color:var(--ink2);font-weight:500}
+.bench-track{height:18px;background:var(--line-soft);border-radius:7px;overflow:hidden;position:relative}
+.bench-fill{height:100%;border-radius:7px;background:var(--accent)}
+.bench-fill.bad{background:#c98a8d}
+.bench-val{font-family:var(--mono);font-size:12.5px;text-align:right;color:var(--ink2)}
+.bench-val.gain{color:var(--accent);font-weight:500}
+
+/* ── Change grid ── */
+.changes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.change{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 2px 8px rgba(0,0,0,.03);transition:transform .2s,box-shadow .2s}
+.change:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.change-head{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.change-head svg{color:var(--accent);flex-shrink:0}
+.change h4{font-size:15px;font-weight:600;letter-spacing:-.01em}
+.change p{font-size:13.5px;color:var(--ink2);line-height:1.65}
+.change .why{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+.change .why b{color:var(--accent);font-weight:600;font-family:var(--mono)}
+
+/* ── Mockups ── */
+.mock{background:#fbfaf7;border:1px solid var(--line-soft);border-radius:10px;padding:12px;margin-top:12px;font-size:12px}
+.mock-row{display:grid;grid-template-columns:64px 1fr 76px;gap:9px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line-soft)}
+.mock-row:last-child{border-bottom:none}
+.mock-tok{text-align:center}
+.mock-tok b{display:block;font-family:var(--mono);font-size:14px;color:var(--accent);font-weight:500;letter-spacing:-.03em}
+.mock-tok span{font-size:9.5px;color:var(--muted)}
+.mock-bar{height:3.5px;border-radius:3px;background:#d9eee9;margin:4px 8px 0;overflow:hidden}
+.mock-bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.mock-mid{min-width:0}
+.mock-mid b{font-weight:600;font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mock-mid span{color:var(--muted);font-size:11px}
+.mock-ops{display:flex;gap:5px;justify-content:flex-end;align-items:center}
+.pill{font-size:10.5px;padding:3px 9px;border-radius:7px;border:1px solid transparent;white-space:nowrap}
+.pill.solid{background:var(--accent);color:#fff}
+.pill.outline{background:transparent;color:var(--accent);border-color:var(--accent)}
+.pill.ghost{background:transparent;color:var(--muted);border-color:var(--line)}
+.pill.gold{background:linear-gradient(135deg,#e3b341,#b45309);color:#fff}
+.mock-fm{display:flex;align-items:center;gap:6px;margin-top:6px;padding:5px 8px;background:#f2f6f5;border-radius:7px;font-size:11px;color:var(--muted)}
+.mock-fm b{color:var(--ink);font-weight:500}
+.mock-fm .arrow{margin-left:auto;color:#9aa7a4}
+
+/* ── Shots ── */
+.shot-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.shot{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.shot figcaption{padding:10px 14px;font-size:12.5px;color:var(--ink2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.shot figcaption b{font-weight:600}
+.shot figcaption .pill{font-size:10px}
+.shot img{width:100%;display:block;background:#fff}
+.shot.mob{max-width:300px;margin:0 auto}
+.shot-pair.mob-pair{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+
+/* ── Timeline ── */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--accent);opacity:.3}
+.timeline li{position:relative;padding:0 0 26px 32px}
+.timeline li::before{content:"";position:absolute;left:2px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--cream);border:2px solid var(--accent)}
+.timeline strong{display:block;font-size:15px;margin-bottom:4px}
+.timeline p{color:var(--ink2);font-size:13.5px;max-width:52em}
+.timeline code{font-family:var(--mono);font-size:12px;background:var(--line-soft);padding:1.5px 6px;border-radius:5px}
+
+pre{background:#14171e;color:#d6d9e0;border-radius:12px;padding:18px 20px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.75;margin:14px 0}
+pre .c{color:#7f8a99}pre .k{color:#7fd1c4}pre .s{color:#e0b062}pre .n{color:#c792d8}
+
+.callout{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;padding:16px 20px;margin:18px 0;font-size:14px;color:var(--ink2)}
+.callout b{color:var(--ink)}
+footer{padding:36px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media(max-width:760px){
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hero-stats dd{font-size:19px}
+  .changes{grid-template-columns:1fr}
+  .shot-pair{grid-template-columns:1fr}
+  .bench{grid-template-columns:88px 1fr 74px;font-size:12px}
+  h2{font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">tokenmost.com · 网页设计优化方案 v3</p>
+  <h1>不是审美不够好，<br>是三个结构性 bug <em>吃掉了大半体验</em></h1>
+  <p class="lede">
+    用真实浏览器在 <b>390 / 768 / 1440</b> 三档逐项实测后定位：<b>移动端整页横向滚动 730px</b>、
+    <b>表头与数据列错位 109px</b>、<b>单条目录块撑到 1000px 高</b>。
+    这三处修掉，页面可用性提升远大于任何配色或圆角调整。改版已在沙盘实测通过，下方附完整证据与前后对比。
+  </p>
+  <div class="hero-stats">
+    <dl><dt>移动端溢出</dt><dd>1120<small>px</small> → 390</dd></dl>
+    <dl><dt>表头错位</dt><dd>109<small>px</small> → 0</dd></dl>
+    <dl><dt>手机首屏平台数</dt><dd>1.5<small>→</small> 6<small>+</small></dd></dl>
+    <dl><dt>改版后行高</dt><dd>-91<small>%</small></dd></dl>
+  </div>
+</header>
+
+<section id="evidence">
+  <h2><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>一、实测证据：三个硬伤</h2>
+  <p class="sec-sub">每一条都有可复现的数值。方法：无头 Chrome 加载真实页面，用 iframe 锁定精确视口宽（绕开 macOS 最小窗口 500px 限制），读取 <code>documentElement.scrollWidth</code> 与 <code>getBoundingClientRect()</code>。</p>
+
+  <article class="issue">
+    <div class="issue-head">
+      <h3>硬伤 1 · 移动端整页横向滚动</h3>
+      <span class="tag p0">P0</span>
+    </div>
+    <p>≤640px 时 <code>.tabs</code> 有 12 个不可断行按钮，min-content 宽 <b>1108px</b>。它作为 flex item 未重置 <code>min-width</code>，于是把整个 <code>.toolbar</code> 撑到 1108px，<code>.toolbar &gt; span</code> 又因 <code>margin-left:auto</code> 在 column 容器里被推到最右，最终 <code>scrollWidth = 1120</code> —— 视口只有 390px，右侧 730px 完全在屏幕外。</p>
+    <div class="issue-diagram">
+      <svg viewBox="0 0 720 190" width="100%" height="190" role="img" aria-label="移动端横向溢出示意图">
+        <defs>
+          <linearGradient id="badg" x1="0" x2="1"><stop offset="0" stop-color="#c98a8d" stop-opacity=".35"/><stop offset="1" stop-color="#c98a8d" stop-opacity=".08"/></linearGradient>
+          <linearGradient id="okg" x1="0" x2="1"><stop offset="0" stop-color="#0f766e" stop-opacity=".3"/><stop offset="1" stop-color="#0f766e" stop-opacity=".08"/></linearGradient>
+        </defs>
+        <!-- viewport -->
+        <rect x="20" y="34" width="370" height="58" rx="8" fill="url(#badg)" stroke="#c98a8d" stroke-width="1"/>
+        <text x="32" y="56" font-family="JetBrains Mono,monospace" font-size="11" fill="#9b3b3f">视口 390px</text>
+        <rect x="32" y="64" width="346" height="16" rx="4" fill="#0f766e" opacity=".18"/>
+        <text x="32" y="112" font-family="JetBrains Mono,monospace" font-size="11" fill="#9b3b3f">内容 1108px 溢出 → scrollWidth 1120</text>
+        <!-- overflow arrow -->
+        <path d="M396 63 H556" stroke="#c98a8d" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <path d="M556 63 l-7 -4 v8 z" fill="#c98a8d"/>
+        <rect x="562" y="34" width="138" height="58" rx="8" fill="#f0ebea" stroke="#e2d3d3"/>
+        <text x="574" y="58" font-family="JetBrains Mono,monospace" font-size="11" fill="#9b3b3f">屏幕外</text>
+        <text x="574" y="76" font-family="JetBrains Mono,monospace" font-size="11" fill="#9b3b3f">+730px</text>
+        <!-- fix -->
+        <rect x="20" y="132" width="370" height="44" rx="8" fill="url(#okg)" stroke="#0f766e" stroke-width="1"/>
+        <text x="32" y="152" font-family="JetBrains Mono,monospace" font-size="11" fill="#0f766e">修：.tabs  min-width:0 + max-width:100%</text>
+        <text x="32" y="168" font-family="JetBrains Mono,monospace" font-size="11" fill="#0f766e">　　.toolbar&gt;span  margin-left:0</text>
+        <path d="M396 154 H470" stroke="#0f766e" stroke-width="1.5"/>
+        <path d="M470 154 l-7 -4 v8 z" fill="#0f766e"/>
+        <text x="480" y="158" font-family="JetBrains Mono,monospace" font-size="11" fill="#0f766e">scrollWidth 390 ✓</text>
+      </svg>
+    </div>
+    <div class="bench"><span class="bench-label">改版前 scrollWidth</span><div class="bench-track"><div class="bench-fill bad" style="width:100%"></div></div><span class="bench-val">1120px</span></div>
+    <div class="bench"><span class="bench-label">改版后 scrollWidth</span><div class="bench-track"><div class="bench-fill" style="width:35%"></div></div><span class="bench-val gain">390px</span></div>
+  </article>
+
+  <article class="issue">
+    <div class="issue-head">
+      <h3>硬伤 2 · 表头与数据列整体错位 109px</h3>
+      <span class="tag p0">P0</span>
+    </div>
+    <p><code>.lhead</code>（表头）与 <code>.row</code>（数据行）都用 <code>96px minmax(0,1fr) 116px max-content</code>，但第 4 列是 <code>max-content</code>：表头里是「操作」二字（24px），数据行里是「⚡ ☆ 领取」按钮组（133px）。中间的 <code>1fr</code> 吸收了 109px 差值，把第 3、4 列整体右推 —— 结果「核验」表头压在状态徽章右边 109px 处，点错列。</p>
+    <div class="issue-diagram">
+      <svg viewBox="0 0 720 200" width="100%" height="200" role="img" aria-label="表头与数据列错位示意图">
+        <text x="20" y="26" font-family="JetBrains Mono,monospace" font-size="11" fill="#9b3b3f">改版前</text>
+        <rect x="20" y="34" width="200" height="26" rx="5" fill="#efece5" stroke="#ded6c7"/>
+        <text x="30" y="51" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">收益</text>
+        <rect x="220" y="34" width="280" height="26" rx="5" fill="#efece5" stroke="#ded6c7"/>
+        <text x="230" y="51" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">平台 / 福利内容</text>
+        <rect x="500" y="34" width="80" height="26" rx="5" fill="#c98a8d" opacity=".2" stroke="#c98a8d"/>
+        <text x="508" y="51" font-family="Outfit,sans-serif" font-size="11.5" fill="#9b3b3f">核验</text>
+        <rect x="580" y="34" width="60" height="26" rx="5" fill="#efece5" stroke="#ded6c7"/>
+        <text x="590" y="51" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">操作</text>
+        <rect x="20" y="70" width="200" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="30" y="87" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">1.20 亿</text>
+        <rect x="220" y="70" width="280" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="230" y="87" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">OpenRouter 官方目录…</text>
+        <rect x="500" y="70" width="80" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="506" y="87" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">✅今日验证</text>
+        <rect x="580" y="70" width="92" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="586" y="87" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">⚡ ☆ 领取</text>
+        <path d="M540 64 v34" stroke="#9b3b3f" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <path d="M534 92 h12 M534 70 h12" stroke="#9b3b3f" stroke-width="1.5"/>
+        <text x="690" y="92" font-family="JetBrains Mono,monospace" font-size="11" fill="#9b3b3f" text-anchor="end">Δ109px</text>
+        <text x="20" y="128" font-family="JetBrains Mono,monospace" font-size="11" fill="#0f766e">改版后（第 4 列定宽 156px，--cols 共享）</text>
+        <rect x="20" y="136" width="200" height="26" rx="5" fill="#e9f3f0" stroke="#0f766e"/>
+        <text x="30" y="153" font-family="Outfit,sans-serif" font-size="11.5" fill="#0f766e">收益</text>
+        <rect x="220" y="136" width="280" height="26" rx="5" fill="#e9f3f0" stroke="#0f766e"/>
+        <text x="230" y="153" font-family="Outfit,sans-serif" font-size="11.5" fill="#0f766e">平台 / 福利内容</text>
+        <rect x="500" y="136" width="80" height="26" rx="5" fill="#e9f3f0" stroke="#0f766e"/>
+        <text x="508" y="153" font-family="Outfit,sans-serif" font-size="11.5" fill="#0f766e">核验</text>
+        <rect x="580" y="136" width="92" height="26" rx="5" fill="#e9f3f0" stroke="#0f766e"/>
+        <text x="586" y="153" font-family="Outfit,sans-serif" font-size="11.5" fill="#0f766e">操作</text>
+        <rect x="20" y="170" width="200" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="30" y="187" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">1.20 亿</text>
+        <rect x="220" y="170" width="280" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="230" y="187" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">OpenRouter 官方目录…</text>
+        <rect x="500" y="170" width="80" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="506" y="187" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">✅今日验证</text>
+        <rect x="580" y="170" width="92" height="26" rx="5" fill="#fbfaf7" stroke="#ded6c7"/>
+        <text x="586" y="187" font-family="Outfit,sans-serif" font-size="11.5" fill="#3a4256">⚡ ☆ 领取</text>
+        <path d="M540 164 v38" stroke="#0f766e" stroke-width="1.5"/>
+        <text x="690" y="188" font-family="JetBrains Mono,monospace" font-size="11" fill="#0f766e" text-anchor="end">Δ0 ✓</text>
+      </svg>
+    </div>
+    <div class="bench"><span class="bench-label">改版前列偏移</span><div class="bench-track"><div class="bench-fill bad" style="width:100%"></div></div><span class="bench-val">109px</span></div>
+    <div class="bench"><span class="bench-label">改版后列偏移</span><div class="bench-track"><div class="bench-fill" style="width:2%"></div></div><span class="bench-val gain">0px</span></div>
+  </article>
+
+  <article class="issue">
+    <div class="issue-head">
+      <h3>硬伤 3 · 免费模型目录默认全展开，单条撑到 1000px</h3>
+      <span class="tag p1">P1</span>
+    </div>
+    <p>OpenRouter 行有 19 款免费模型、OpenCode 行有 10 款，<code>.fm-wrap</code> 默认常驻渲染。桌面端单行高度 <b>~400px</b>，手机端首条 OpenRouter 直接吃掉 <b>1000px+</b> —— 手机用户打开只看到<b>1.5 个平台</b>，其余 85 条情报在屏幕外。</p>
+    <div class="bench"><span class="bench-label">改版前首条行高</span><div class="bench-track"><div class="bench-fill bad" style="width:100%"></div></div><span class="bench-val">1000px</span></div>
+    <div class="bench"><span class="bench-label">改版后首条行高</span><div class="bench-track"><div class="bench-fill" style="width:9%"></div></div><span class="bench-val gain">90px</span></div>
+    <div class="bench"><span class="bench-label">手机首屏可见平台</span><div class="bench-track"><div class="bench-fill" style="width:25%"></div></div><span class="bench-val">1.5 → 6+</span></div>
+  </article>
+</section>
+
+<section id="changes">
+  <h2><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>二、v3 改了什么</h2>
+  <p class="sec-sub">六项改动全部已实现并在沙盘实测通过。前两项是修 bug，后四项是主动做的体验升级。</p>
+
+  <div class="changes">
+    <div class="change">
+      <div class="change-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="8"/><rect x="12" y="5" width="3" height="13"/></svg><h4>收益条形图</h4></div>
+      <p>原第一列只有数字，「13.11 亿」和「1500 万」在视觉上等重。现在数字下方加一条按 <code>tokSort / MAXTOK</code> 缩放的横条，量级差一眼可辨，不用逐个读数字。</p>
+      <div class="mock">
+        <div class="mock-row"><div class="mock-tok"><b>30.00 亿</b><span>首月可薅</span><div class="mock-bar"><i style="width:100%"></i></div></div><div class="mock-mid"><b>七牛云</b><span>实名每日 1 亿 Token</span></div><div class="mock-ops"><span class="pill outline">领取</span></div></div>
+        <div class="mock-row"><div class="mock-tok"><b>4.32 亿</b><span>首月可薅</span><div class="mock-bar"><i style="width:14%"></i></div></div><div class="mock-mid"><b>商汤</b><span>三端合计 9000 积分</span></div><div class="mock-ops"><span class="pill outline">领取</span></div></div>
+        <div class="mock-row"><div class="mock-tok"><b>600 万</b><span>首月可薅</span><div class="mock-bar"><i style="width:2%"></i></div></div><div class="mock-mid"><b>小米 MiMo</b><span>邀请双方各得 ¥10</span></div><div class="mock-ops"><span class="pill ghost">领取</span></div></div>
+      </div>
+      <div class="why">收益列从 <b>数字列表</b> 变成 <b>可扫读的量级对比</b>，符合「哪个最薅」这个站点的第一诉求。</div>
+    </div>
+
+    <div class="change">
+      <div class="change-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20"/></svg><h4>CTA 三级分级</h4></div>
+      <p>改版前 87 行全是同一种实心绿「领取」，视觉上没有任何优先级，用户不知道该点哪个。现在按收益分三档：≥1 亿实心、≥1000 万描边、其余幽灵按钮，全页焦点从 87 个降到 3–5 个。</p>
+      <div class="mock">
+        <div class="mock-row"><div class="mock-tok"><b>13.11 亿</b><span>首月可薅</span></div><div class="mock-mid"><b>腾讯 WorkBuddy</b><span>4 条信源</span></div><div class="mock-ops"><span class="pill solid">领取</span></div></div>
+        <div class="mock-row"><div class="mock-tok"><b>3000 万</b><span>首月可薅</span></div><div class="mock-mid"><b>OpenCode</b><span>免费模型 10 款</span></div><div class="mock-ops"><span class="pill outline">领取</span></div></div>
+        <div class="mock-row"><div class="mock-tok"><b>免费</b><span>额度未公布</span></div><div class="mock-mid"><b>AutoDL</b><span>学生认证享会员价</span></div><div class="mock-ops"><span class="pill ghost">领取</span></div></div>
+      </div>
+      <div class="why">同质化的 87 个按钮 = 0 个按钮；<b>分级的 3 个按钮 = 3 个决策锚点</b>。</div>
+    </div>
+
+    <div class="change">
+      <div class="change-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg><h4>模型目录默认折叠</h4></div>
+      <p>19 款 / 10 款免费模型从常驻渲染改为 <code>&lt;details&gt;</code> 折叠，一行摘要 + 点击展开。既保住信息量，又把行高从 400–1000px 压回 ~90px。</p>
+      <div class="mock">
+        <div class="mock-row"><div class="mock-tok"><b>1.20 亿</b><span>首月可薅</span></div><div class="mock-mid"><b>OpenRouter</b><span>官方目录 456 款中 :free 19 款</span></div><div class="mock-ops"><span class="pill outline">领取</span></div></div>
+        <div class="mock-fm"><b>免费模型目录</b>（19 款 · 全 $0 · 点击展开）<span class="arrow">▾</span></div>
+      </div>
+      <div class="why">手机首屏平台数 <b>1.5 → 6+</b>，是本次改版<b>体感最强</b>的一处。</div>
+    </div>
+
+    <div class="change">
+      <div class="change-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg><h4>详情展开</h4></div>
+      <p>桌面中栏有 749px，但 <code>.r-value</code> 是 nowrap + ellipsis，80–120 字的额度说明被砍成「…」。现在每行加「详情」按钮，点开是结构化面板：完整额度、领取规则、备注、折算口径、截止时间、核验时间、官方入口。</p>
+      <div class="why">原来只能靠 <code>title</code> 悬停看全文（手机根本悬停不了）；现在是<b>点击即读</b>，且信息按字段归位而不是一坨。</div>
+    </div>
+
+    <div class="change">
+      <div class="change-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg><h4>暗色模式</h4></div>
+      <p>跟随系统 <code>prefers-color-scheme</code>，也可手动切换并用 localStorage 记忆。深浅两套色板只改 CSS 变量，组件层零改动 —— 对一个程序员向的 AI 工具站，暗色几乎是标配，也是差异化。</p>
+      <div class="why">已在沙盘渲染验证，<b>深色下对比度与层级均正常</b>，见下方对比图。</div>
+    </div>
+
+    <div class="change">
+      <div class="change-head"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><h4>顶部入群条降噪</h4></div>
+      <p>原「扫码进微信群」是全宽琥珀色高对比条，压在 h1 之上，跟「全球羊毛 349 亿」这个核心价值抢黄金位。改为轻量提示条 + 药丸按钮，权重下调但不删转化路径。</p>
+      <div class="why">首屏第一眼应该落在 <b>「今天能薅多少」</b>，不是「进群领折扣码」。</div>
+    </div>
+  </div>
+</section>
+
+<section id="shots">
+  <h2><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>三、前后对比</h2>
+  <p class="sec-sub">均为真实浏览器截图（非手工绘制）。桌面 1440px，手机为真实 390px 视口渲染。</p>
+
+  <div class="shot-pair">
+    <figure class="shot"><figcaption><b>改版前 · 桌面 1440</b><span class="pill p0">表头错位 109px</span></figcaption><img src="shots/before-1440.png" alt="改版前桌面端"></figure>
+    <figure class="shot"><figcaption><b>改版后 · 桌面 1440</b><span class="pill" style="color:#0f766e;border-color:rgba(15,118,110,.4);background:rgba(15,118,110,.07)">列对齐 ✓</span></figcaption><img src="shots/after-1440.png" alt="改版后桌面端"></figure>
+  </div>
+
+  <div class="shot-pair mob-pair">
+    <figure class="shot mob"><figcaption><b>改版前 · 手机 390</b><span class="pill p0">首屏 1.5 个平台</span></figcaption><img src="shots/before-390.png" alt="改版前手机端"></figure>
+    <figure class="shot mob"><figcaption><b>改版后 · 手机 390</b><span class="pill" style="color:#0f766e;border-color:rgba(15,118,110,.4);background:rgba(15,118,110,.07)">首屏 6+ 个平台</span></figcaption><img src="shots/after-390.png" alt="改版后手机端"></figure>
+  </div>
+</section>
+
+<section id="howto">
+  <h2><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>四、落地与验收</h2>
+  <p class="sec-sub">交给 zcode 主会话执行。改版已实现为可直接合并的两份产物，位于同目录。</p>
+
+  <ol class="timeline">
+    <li>
+      <strong>1 · 先合纯 CSS 补丁（低风险，10 分钟）</strong>
+      <p>把 <code>design/patch-v3.css</code> 的内容追加到 <code>index.html</code> 主 <code>&lt;style&gt;</code> 块尾部。这一步单独就修掉硬伤 1 和硬伤 2：</p>
+<pre><span class="c">/* 表头对齐：第 4 列 max-content → 定宽，两处共用同一模板 */</span>
+<span class="k">:root</span>{ <span class="k">--cols</span>:<span class="s">96px minmax(0,1fr) 116px 156px</span>; }
+<span class="k">.lhead</span>,<span class="k">.row</span>,<span class="k">.skel</span>{ grid-template-columns:<span class="k">var</span>(--cols) }
+
+<span class="c">/* 移动端横向溢出根治 */</span>
+@media(max-width:<span class="n">640px</span>){
+  <span class="k">.tabs</span>{ min-width:<span class="n">0</span>; max-width:<span class="n">100%</span>; width:<span class="n">100%</span>; overflow-x:auto }
+  <span class="k">.toolbar &gt; span</span>{ margin-left:<span class="n">0</span>!important; min-width:<span class="n">0</span>; width:<span class="n">100%</span> }
+}</pre>
+    </li>
+    <li>
+      <strong>2 · 再合并 JS/结构改动（需回归）</strong>
+      <p><code>design/index-v3.html</code> 是改版后的完整页面（相对原版 +8.9KB，12 处精确替换）。它包含：收益条形图、CTA 分级、目录折叠、详情面板、暗色模式、错误文案修正。也可以只把这几段摘出来合进现有 <code>index.html</code>。</p>
+    </li>
+    <li>
+      <strong>3 · 按 zcode 的既有纪律验收</strong>
+      <p>沿用 <code>SESSION_STATE.md</code> 里的规矩：CSS 改动<b>必须截图实测</b>（JSC 语法门抓不到布局问题），跑 <b>360 / 390 / 430 / 768 / 1440</b> 五档，桌面零回归。</p>
+    </li>
+    <li>
+      <strong>4 · 顺手修掉一个文案 bug</strong>
+      <p>原 catch 块无论何种失败都提示「file:// 协议无法 fetch」，HTTPS 线上真出故障时会把排查方向带偏。改版会区分本地预览 / 网络异常，并给出「重试」按钮。</p>
+    </li>
+  </ol>
+
+  <div class="callout">
+    <b>协作提示：</b>仓库 <code>index.html</code> 由 zcode 主会话单方写入，本次<b>未改动</b>该文件，也未提交 git —— 避免与主会话产生写冲突。所有产物以独立文件落在 <code>design/</code> 目录，等 zcode 确认后再合并。
+  </div>
+
+  <div class="callout" style="border-left-color:var(--warn);background:rgba(201,123,63,.06)">
+    <b>已知取舍：</b>收益条形图用 <code>tokSort</code>（含美元/人民币折算）做比例，与「收益」排序键完全一致，不会出现排序与条长打架；手机端「折扣链接」按钮在 78px 操作列里仍会折成两行，属可接受的次要问题，未在本轮处理。
+  </div>
+</section>
+
+<footer>
+  <span>tokenmost 设计优化方案 v3 · 2026-10-31</span>
+  <span>实测环境：Chrome 156 headless · 390 / 768 / 1440 三档 · 真实页面加载</span>
+</footer>
+
+</div>
+</body>
+</html>

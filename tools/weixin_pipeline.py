@@ -24,7 +24,7 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/
 QUERIES = ["token 免费额度", "AI 编程 折扣", "大模型 领额度", "白嫖 API",
            "GLM 免费", "Coding Plan 折扣", "AI 编程 白嫖", "注册送 tokens",
            "大模型 体验卡", "Claude Code 折扣", "免费 claude", "API 中转 折扣",
-           "模型 免费 送", "agent 免费 额度", "算力 白嫖", "inference 免费"]
+           "大模型 限免", "agent 免费 额度", "算力 白嫖", "inference 免费"]
 SEEDS_MIN = ["https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg"]  # 神秘喵星人
 
 _CJ = http.cookiejar.CookieJar()
