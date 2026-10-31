@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-10-31T11:05:43Z",
+  "harvested_at": "2026-10-31T23:03:45Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -2125,130 +2125,8 @@
       "id": "api-docs-docsreleasenot",
       "name": "更新公告",
       "url": "https://api-docs.siliconflow.cn/docs/release-notes/overview",
-      "status": "ok",
-      "hits": 30,
-      "findings": [
-        {
-          "match": "¥0.15 / M Tokens ¥1.5 / M Tokens ¥4",
-          "context": "ng to different time periods. Billing Period Cache Hit Cache Miss (Input) Output 2:00 AM – 8:00 AM (Beijing Time) daily ¥0.15 / M Tokens ¥1.5 / M Tokens ¥4.5 / M Tokens All other hours ¥0.3 / M Tokens ¥3 / M Tokens ¥9 / M Tokens If you are using the above model, please monit"
-        },
-        {
-          "match": "¥0.3 / M Tokens ¥3 / M Tokens ¥9 /",
-          "context": "(Input) Output 2:00 AM – 8:00 AM (Beijing Time) daily ¥0.15 / M Tokens ¥1.5 / M Tokens ¥4.5 / M Tokens All other hours ¥0.3 / M Tokens ¥3 / M Tokens ¥9 / M Tokens If you are using the above model, please monitor your billing statements. Note: Prices are subject to change."
-        },
-        {
-          "match": "¥1 / M Tokens       If you are u",
-          "context": ", the cache hit input token price for the deepseek-ai/DeepSeek-V4-Pro model will be adjusted as follows:     Cache Hit: ¥1 / M Tokens       If you are using the above model, please monitor your billing statements. Note: Prices are subject to change. Please refer to the re"
-        },
-        {
-          "match": "¥1.75 / M Tokens   Output: ¥7 / M T",
-          "context": "r the nex-agi/Nex-N2-Pro model is about to end. Starting from 2026-06-26 , the platform will begin charging:     Input: ¥1.75 / M Tokens   Output: ¥7 / M Tokens   Cache Hit: ¥0.175 / M Tokens       The limited-time discount for the deepseek-ai/DeepSeek-V4-Pro model will end"
-        },
-        {
-          "match": "¥0.175 / M Tokens       The limited-",
-          "context": "ng from 2026-06-26 , the platform will begin charging:     Input: ¥1.75 / M Tokens   Output: ¥7 / M Tokens   Cache Hit: ¥0.175 / M Tokens       The limited-time discount for the deepseek-ai/DeepSeek-V4-Pro model will end on 2026-06-30 , after which the original pricing will b"
-        },
-        {
-          "match": "¥12 / M Tokens   Output: ¥24 / M ",
-          "context": "eepseek-ai/DeepSeek-V4-Pro model will end on 2026-06-30 , after which the original pricing will be restored:     Input: ¥12 / M Tokens   Output: ¥24 / M Tokens   Cache Hit: ¥0.1 / M Tokens       Pricing for Pro/deepseek-ai/DeepSeek-V3.2 and deepseek-ai/DeepSeek-V3.2 will b"
-        },
-        {
-          "match": "¥0.1 / M Tokens       Pricing for ",
-          "context": "30 , after which the original pricing will be restored:     Input: ¥12 / M Tokens   Output: ¥24 / M Tokens   Cache Hit: ¥0.1 / M Tokens       Pricing for Pro/deepseek-ai/DeepSeek-V3.2 and deepseek-ai/DeepSeek-V3.2 will be adjusted on 2026-06-30 :     Input: ¥4 / M Tokens"
-        },
-        {
-          "match": "¥4 / M Tokens   Output: ¥6 / M T",
-          "context": "Pricing for Pro/deepseek-ai/DeepSeek-V3.2 and deepseek-ai/DeepSeek-V3.2 will be adjusted on 2026-06-30 :     Input: ¥4 / M Tokens   Output: ¥6 / M Tokens   Cache Hit: ¥0.4 / M Tokens       Pricing for the Qwen/Qwen3.6-27B model will be adjusted on 2026-06-30 and will"
-        },
-        {
-          "match": "¥0.4 / M Tokens       Pricing for ",
-          "context": "eepseek-ai/DeepSeek-V3.2 will be adjusted on 2026-06-30 :     Input: ¥4 / M Tokens   Output: ¥6 / M Tokens   Cache Hit: ¥0.4 / M Tokens       Pricing for the Qwen/Qwen3.6-27B model will be adjusted on 2026-06-30 and will no longer differentiate input length tiers:     Input"
-        },
-        {
-          "match": "¥3 / M Tokens   Output: ¥18 / M ",
-          "context": "e Qwen/Qwen3.6-27B model will be adjusted on 2026-06-30 and will no longer differentiate input length tiers:     Input: ¥3 / M Tokens   Output: ¥18 / M Tokens       Pricing for the Qwen/Qwen3.6-35B-A3B model will be adjusted on 2026-06-30 and will no longer differentiate"
-        },
-        {
-          "match": "¥1.8 / M Tokens   Output: ¥10.8 / ",
-          "context": "en/Qwen3.6-35B-A3B model will be adjusted on 2026-06-30 and will no longer differentiate input length tiers:     Input: ¥1.8 / M Tokens   Output: ¥10.8 / M Tokens       If you are using any of the above models, please monitor your billing statements. Note: Prices are subjec"
-        },
-        {
-          "match": "¥2/M Tokens   Output: ¥8/M Token",
-          "context": "e been restored to the original price starting from Beijing time February 9, 2025, at 00:00.  Specific prices:   Input: ¥2/M Tokens   Output: ¥8/M Tokens     2025.02.03 [Feature Update] Reasoning Model reasoning_content Field Separated The display of the reasoning chain i"
-        },
-        {
-          "match": "￥4/ M Tokens Output: ￥16/ M Toke",
-          "context": "-ai/DeepSeek-R1 and deepseek-ai/DeepSeek-V3 Models  The specific pricing is as follows:   deepseek-ai/DeepSeek-R1 Input:￥4/ M Tokens Output: ￥16/ M Tokens   deepseek-ai/DeepSeek-V3     From February 1, 2025, to February 8, 2025, 24:00 Beijing Time, enjoy a limited-time di"
-        },
-        {
-          "match": "¥2 ￥1/ M Tokens Output： ¥8 ￥2/ M",
-          "context": "pSeek-V3     From February 1, 2025, to February 8, 2025, 24:00 Beijing Time, enjoy a limited-time discount price：Input： ¥2 ￥1/ M Tokens Output： ¥8 ￥2/ M Tokens，The original price will be restored from February 9, 2025, 00:00.         2024.12.27 [Service Adjustment] Image"
-        },
-        {
-          "match": "¥ 1.00 / M tokens   Original price：¥",
-          "context": "for free, will start charging from October 17, 2024. The pricing details are as follows:   Limited-time discount price：¥ 1.00 / M tokens   Original price：¥ 4.13 / M tokens（the original price will be restored at a later date）   Third-Party Information Sharing List and Third-P"
-        },
-        {
-          "match": "RPD Limits Removed for DeepSeek-R1/V3 To co",
-          "context": "s month (March 31). If you have any questions, please contact us at any time.   2025.03.07 [Service Adjustment] RPH and RPD Limits Removed for DeepSeek-R1/V3 To continuously improve user experience, the Rate Limits policy is being adjusted as follows: Remove the RPH and RPD rate lim"
-        },
-        {
-          "match": "RPD rate limits for deepseek-ai/DeepSeek-R1",
-          "context": "-R1/V3 To continuously improve user experience, the Rate Limits policy is being adjusted as follows: Remove the RPH and RPD rate limits for deepseek-ai/DeepSeek-R1 and deepseek-ai/DeepSeek-V3. As traffic and load change, the policy may be adjusted at any time, and Silicic Flow reser"
-        },
-        {
-          "match": "RPD Rate Limits for DeepSeek-R1/V3 To ensur",
-          "context": "TS       Video models:     Lightricks/LTX-Video   genmo/mochi-1-preview         2025.02.22 [Service Adjustment] New RPH/RPD Rate Limits for DeepSeek-R1/V3 To ensure the quality of platform services and the rational allocation of resources, the following adjustments to Rate Limits po"
-        },
-        {
-          "match": "RPD Limit (Requests Per Day, Per Day Reques",
-          "context": "epseek-ai/DeepSeek-R1, deepseek-ai/DeepSeek-V3   Applicable Users: All users   Limit Standard: 30 requests/hour   2.New RPD Limit (Requests Per Day, Per Day Requests)   Model Scope: deepseek-ai/DeepSeek-R1, deepseek-ai/DeepSeek-V3   Applicable Users: Users who have not completed rea"
-        },
-        {
-          "match": "RPD Limits Removed for DeepSeek-R1/V3 [Mode",
-          "context": "pgraded to 0324 Version [Service Adjustment] api.siliconflow.com Endpoint to Be Phased Out [Service Adjustment] RPH and RPD Limits Removed for DeepSeek-R1/V3 [Model Service Adjustment] Marco-o1, FLUX.1, and Other Models to Be Discontinued [Service Adjustment] New RPH/RPD Rate Limits"
-        },
-        {
-          "match": "RPD Rate Limits for DeepSeek-R1/V3 [Model S",
-          "context": "eek-R1/V3 [Model Service Adjustment] Marco-o1, FLUX.1, and Other Models to Be Discontinued [Service Adjustment] New RPH/RPD Rate Limits for DeepSeek-R1/V3 [Model Service Adjustment] Yi-1.5, SD-3-medium, and Other Models to Be Discontinued [Pricing Adjustment] DeepSeek-V3 Prices Rest"
-        },
-        {
-          "match": "free",
-          "context": "26.06.25 [Pricing Adjustment] Pricing Adjusted for Nex-N2-Pro, DeepSeek-V4-Pro, DeepSeek-V3.2, and Qwen3.6 Models   The free trial for the nex-agi/Nex-N2-Pro model is about to end. Starting from 2026-06-26 , the platform will begin charging:"
-        },
-        {
-          "match": "free",
-          "context": "e, high-quality, and sustainable services, the Vendor-A/Qwen/Qwen2-72B-Instruct model, which was previously offered for free, will start charging from October 17, 2024. The pricing details are as follows:   Limited-time discount price：¥ 1.00 /"
-        },
-        {
-          "match": "pricing",
-          "context": "ces English Release notes Release notes SiliconFlow platform release notes covering model updates, service adjustments, pricing changes, and new features. 2026.10.21 [Model Upgrade] DeepSeek-V4.1-Flash Upgraded to DeepSeek-V4.1-Flash-1017 To furth"
-        },
-        {
-          "match": "Pricing",
-          "context": "it is recommended that you switch to alternative models as soon as possible to avoid service disruptions.   2026.08.25 [Pricing Adjustment] Time-Based Pricing for DeepSeek-V4-Flash Starting from September 1, 2026 , the deepseek-ai/DeepSeek-V4-Flas"
-        },
-        {
-          "match": "Pricing",
-          "context": "ch to alternative models as soon as possible to avoid service disruptions.   2026.08.25 [Pricing Adjustment] Time-Based Pricing for DeepSeek-V4-Flash Starting from September 1, 2026 , the deepseek-ai/DeepSeek-V4-Flash model will adopt time-based p"
-        },
-        {
-          "match": "pricing",
-          "context": "g for DeepSeek-V4-Flash Starting from September 1, 2026 , the deepseek-ai/DeepSeek-V4-Flash model will adopt time-based pricing, with different rates applying to different time periods. Billing Period Cache Hit Cache Miss (Input) Output 2:00 AM –"
-        },
-        {
-          "match": "Pricing",
-          "context": "e plan to remove the related calls as soon as possible. Thank you for your understanding and cooperation.   2026.07.29 [Pricing Adjustment] Cache Hit Input Token Price Adjustment for DeepSeek-V4-Pro   Starting from 2026-08-03 , the cache hit input"
-        },
-        {
-          "match": "Pricing",
-          "context": "ents. Note: Prices are subject to change. Please refer to the real-time prices displayed on the platform.   2026.06.25 [Pricing Adjustment] Pricing Adjusted for Nex-N2-Pro, DeepSeek-V4-Pro, DeepSeek-V3.2, and Qwen3.6 Models   The free trial for th"
-        },
-        {
-          "match": "Pricing",
-          "context": "re subject to change. Please refer to the real-time prices displayed on the platform.   2026.06.25 [Pricing Adjustment] Pricing Adjusted for Nex-N2-Pro, DeepSeek-V4-Pro, DeepSeek-V3.2, and Qwen3.6 Models   The free trial for the nex-agi/Nex-N2-Pro"
-        }
-      ]
+      "status": "error",
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
     },
     {
       "id": "aws-qdeveloperpric",
@@ -2355,12 +2233,8 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$2／$10，1M 上下文 2026年10月24日 DeepSe",
-          "context": "最新 全部文章 → 用 BazaarLink 呼叫 ElevenLabs 語音模型：9 款文字轉語音＋2 款語音轉文字，一組 API 金鑰搞定 2026年10月28日 Kimi K3.1 Pro API 價格（台幣）：AA 指數 55.1，$2／$10，1M 上下文 2026年10月24日 DeepSeek V4.1 Flash-1017 上架 BazaarLink：寫程式跑分超過 Opus 5，每題約 US$0.2 2026年10月17日 搜尋模型... / 🇹🇼 繁體中文 登入 文件 API 參考 SDK 參考 Agent 應用 AI"
-        },
-        {
-          "match": "$0.2 2026年10月17日 搜尋模型... / 🇹🇼 繁體中文",
-          "context": "mi K3.1 Pro API 價格（台幣）：AA 指數 55.1，$2／$10，1M 上下文 2026年10月24日 DeepSeek V4.1 Flash-1017 上架 BazaarLink：寫程式跑分超過 Opus 5，每題約 US$0.2 2026年10月17日 搜尋模型... / 🇹🇼 繁體中文 登入 文件 API 參考 SDK 參考 Agent 應用 AI Skills API 指南 Jev 評估 總覽 串流 嵌入向量 參數 錯誤與除錯 Responses API 語音、轉錄與重新排序 API 參考 決策 POST 送出決策請求"
+          "match": "$2／$10，1M 上下文 2026年10月24日 搜尋模型..",
+          "context": "26年10月31日 用 BazaarLink 呼叫 ElevenLabs 語音模型：9 款文字轉語音＋2 款語音轉文字，一組 API 金鑰搞定 2026年10月28日 Kimi K3.1 Pro API 價格（台幣）：AA 指數 55.1，$2／$10，1M 上下文 2026年10月24日 搜尋模型... / 🇹🇼 繁體中文 登入 文件 API 參考 SDK 參考 Agent 應用 AI Skills API 指南 Jev 評估 總覽 串流 嵌入向量 參數 錯誤與除錯 Responses API 語音、轉錄與重新排序 API 參考 決策"
         },
         {
           "match": "$5",
@@ -2380,19 +2254,23 @@
         },
         {
           "match": "$1.32/$3.96 text->text qwen/qwen3.7",
-          "context": "32/$3.96 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text"
+          "context": "32/$3.96 text+image+video->text qwen/qwen3.7-plus 1000K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwe"
         },
         {
           "match": "$0.03/$0.13 text+image+video->text ",
-          "context": "K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+vi"
+          "context": "K ctx · $0.26/$1.02 text+image->text qwen/qwen3.7-max 1000K ctx · $1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+vi"
+        },
+        {
+          "match": "$0.02/$0.00 text->embeddings qwen/q",
+          "context": "32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->t"
         },
         {
           "match": "$0.25/$1.00 text+image+video->text ",
-          "context": "1.32/$3.96 text->text qwen/qwen3.7-flash 1000K ctx · $0.03/$0.13 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 t"
+          "context": "3 text+image+video->text qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 t"
         },
         {
           "match": "$0.21/$2.08 text+image+video->text ",
-          "context": "3 text+image+video->text qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.44/$2.80 text+im"
+          "context": "2/$0.00 text->embeddings qwen/qwen3.5-35b-a3b 262K ctx · $0.25/$1.00 text+image+video->text qwen/qwen3.5-27b 262K ctx · $0.21/$2.08 text+image+video->text qwen/qwen3-next-80b-a3b-instruct 262K ctx · $0.12/$0.46 text->text qwen/qwen3.5-397b-a17b 262K ctx · $0.44/$2.80 text+im"
         },
         {
           "match": "$0.12/$0.46 text->text qwen/qwen3.5",
@@ -2408,47 +2286,43 @@
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "text+image+video->text qwen/qwen3.6-35b-a3b 262K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+i"
+          "context": "text+image+video->text qwen/qwen3.6-35b-a3b 262K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video"
         },
         {
-          "match": "$0.16/$0.78 text->text qwen/qwen3-v",
-          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+vi"
-        },
-        {
-          "match": "$0.20/$0.88 text+image->text qwen/q",
-          "context": "image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video"
+          "match": "$0.16/$0.78 text->text qwen/qwen3.5",
+          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+im"
         },
         {
           "match": "$0.32/$2.56 text+image+video->text ",
-          "context": "8 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video"
+          "context": "1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.16/$0.78 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+i"
+        },
+        {
+          "match": "$0.20/$0.88 text+image->text qwen/q",
+          "context": "->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text"
         },
         {
           "match": "$0.40/$2.40 text+image+video->text ",
-          "context": "0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text"
+          "context": "image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text"
         },
         {
           "match": "$0.48/$2.88 text+image+video->text ",
-          "context": "2.56 text+image+video->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
+          "context": "0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddin"
         },
         {
           "match": "$1.60/$4.80 text->text qwen/qwen3-e",
-          "context": "ext+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen"
+          "context": "ext+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
-          "context": "2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embedding"
+          "context": "88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+vid"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
-          "context": ".60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+vid"
-        },
-        {
-          "match": "$0.02/$0.00 text->embeddings qwen/q",
-          "context": ".00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
+          "context": ".60/$4.80 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
         },
         {
           "match": "$0.07/$0.26 text+image+video->text ",
-          "context": "00 text->embeddings qwen/qwen3-embedding-4b 33K ctx · $0.02/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->t"
+          "context": "00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->t"
         },
         {
           "match": "$0.07/$0.28 text->text qwen/qwen3-c",
@@ -2460,19 +2334,23 @@
         },
         {
           "match": "$0.15/$0.60 text+image->text qwen/q",
-          "context": "0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text"
+          "context": "0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen"
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
+          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->"
+        },
+        {
+          "match": "$0.30/$1.00 text->text qwen/qwen3.5",
+          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->tex"
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "age->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
+          "context": "/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-"
         },
         {
-          "match": "$0.30/$1.00 text->text qwen/qwen-2.",
-          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro"
+          "match": "$0.36/$0.40 text->text qwen/qwen-im",
+          "context": "xt->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image Google google/gemini-4-argon"
         }
       ]
     },
@@ -4139,7 +4017,7 @@
         },
         {
           "match": "Free",
-          "context": "on settings Fork 12.3k  ( 12.3k ) Star 83k  ( 83k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 12.4k  ( 12.4k ) Star 83.2k  ( 83.2k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4368,36 +4246,28 @@
           "context": "Gemini API 免费层 每日 1500 次请求 Google AI Studio 提供的 Gemini API 免费层，无需信用卡，Flash 系列每日约 1500 次请求，代价是免费层数据可能被用于改进产品。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1500 次请求/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条 完整时间表 → 10月21"
         },
         {
-          "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "商主动预告外，其余日期为媒体 / 社区预期，非厂商承诺。 开发者福利专区 面向开发者的额度、试用与教育优惠 进入专区 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 31 天"
-        },
-        {
-          "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 31 天 额度 100000000 Tokens/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
+          "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
+          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 今天 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / Wor"
+          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免"
         },
         {
-          "match": "免费（10–11 月邀请码可到 6000 次",
-          "context": "发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkBuddy / ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合"
+          "match": "免费模型：实名认证后每日 1 亿 Token",
+          "context": "度 100 积分/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 30 天"
         },
         {
-          "match": "免费额度，10–11 月凭邀请码可提升到 6000 次",
-          "context": "方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 2000 次免费（10–11 月邀请码可到 6000 次） 腾讯云把元宝 / WorkBuddy / ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合给 Agent 补联网检索。 开发者福利 每月免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度） 核实 2026-10-24 7 天前 点赞"
-        },
-        {
-          "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度",
-          "context": "ima 背后的联网搜索能力开放为「元宝搜索 WSA」，开通即每月 2000 次免费额度，10–11 月凭邀请码可提升到 6000 次/月。支持 API / MCP / Skill 三种接入，适合给 Agent 补联网检索。 开发者福利 每月免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 2000 次/月（免费额度） 核实 2026-10-24 7 天前 点赞 收藏 需注册 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名认证送 5 元体验金，教育/企"
+          "match": "免费额度",
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 30 天 额度 100000000 Tokens/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
         },
         {
           "match": "免费层 每日 1500 次",
-          "context": "Tokens 体验额度 补充详情页正文（原为摘要复制） 2026-10-18 14:22 SiliconFlow 注册赠送 2000 万 Tokens 补充详情页正文（原为摘要复制） 2026-10-18 14:22 Gemini API 免费层 每日 1500 次请求 补充详情页正文（原为摘要复制） 2026-10-18 14:22 即将结束 有截止的优先，无固定截止标长期 看全部 即将结束 最近截止 · 无截止标「长期」 全部 1 DeepSeek 自研搜索 API（Search/Fetch）限时"
+          "context": "Tokens 体验额度 补充详情页正文（原为摘要复制） 2026-10-18 14:22 SiliconFlow 注册赠送 2000 万 Tokens 补充详情页正文（原为摘要复制） 2026-10-18 14:22 Gemini API 免费层 每日 1500 次请求 补充详情页正文（原为摘要复制） 2026-10-18 14:22 即将结束 有截止的优先，无固定截止标长期 看全部 即将结束 最近截止 · 无截止标「长期」 全部 1 国家超算互联网：新客 0.1 元购 5000 万 Tokens 量"
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-10-31 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-01 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 4",
@@ -4409,7 +4279,15 @@
         },
         {
           "match": "新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换",
-          "context": "接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 日期未公布 腾讯元宝搜索 WSA：每月 200"
+          "context": "接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 4 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天"
+        },
+        {
+          "match": "注册送 30 元余额，学生认证再享 95 折 开箱即用、镜像市场最厚，学生认证享 95 折 1.32 元/",
+          "context": "元/时 RTX 4090 48G 3.30 元/时 RTX 5090 32G 3.20 元/时 实名领 5 元体验金 下方为专属邀请链接，注册后按平台规则发放新人/实名奖励 看优缺点 → A AutoDL 国内头部 GPU 零售平台 新人注册送 30 元余额，学生认证再享 95 折 开箱即用、镜像市场最厚，学生认证享 95 折 1.32 元/时起 官方挂牌价（2026-10 核验），会员享 95 折 RTX 3090 24G 1.32 元/时 摩尔线程 MTT S4000 48G 1.86 元/时 RTX 4090 24G 1.88 元/时 注册领 30 元新人余额 官网入口，"
+        },
+        {
+          "match": "注册送 100 算力金 + 完成新客任务再得 180 元算力红包，另送 50GB 免费存储（活动制） 价格",
+          "context": ".32 元/时 摩尔线程 MTT S4000 48G 1.86 元/时 RTX 4090 24G 1.88 元/时 注册领 30 元新人余额 官网入口，专属邀请码待上线；注册后按平台新人规则领取奖励 看优缺点 → 趋 趋动云 国产异构算力 注册送 100 算力金 + 完成新客任务再得 180 元算力红包，另送 50GB 免费存储（活动制） 价格低到 0.49 元/时起，无卡也能改代码，适合轻任务白嫖 0.49 元/时起 国产异构卡（无 4090/A100） 最高 24G 0.49 元/时起 24G 显存实例 24G 约 1.99 元/时 注册领算力金 官网入口，专属邀请码待上线；"
         }
       ]
     },
@@ -4918,10 +4796,6 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$1B in annualized run rate, new ",
-          "context": "Pricing: Pay per second for GPUs and CPUs | Modal                     Skip to content Series D: $1B in annualized run rate, new funding, and where Modal goes next. Learn more Download logo as .svg Download wordmark as .svg Go to press kit Product R"
-        },
-        {
           "match": "$ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia ",
           "context": "actual compute time, by the  CPU cycle. Get started Contact us Resource costs Per hour Per second GPU Tasks Nvidia B300 $ 0.001972 0 . 0 0 1 9 7 2 / sec Nvidia B200 $ 0.001736 0 . 0 0 1 7 3 6 / sec Nvidia H200 SXM $ 0.001261 0 . 0 0 1 2 6 1 / sec Nvidia H100 SXM5 $ 0.001097 0 . 0"
         },
@@ -5036,6 +4910,10 @@
         {
           "match": "$0.02565/day , or $0.77 over 30 days .",
           "context": "core and 256 MiB of memory. This job will cost $0.02365/day for the CPU, and $0.00200/day for the memory, adding up to $0.02565/day , or $0.77 over 30 days . What's an example of real-world GPU billing? You run stable diffusion on an A10G GPU. This will run for about 1.5 secon"
+        },
+        {
+          "match": "$0.000458/image in GPU charges, $0.0000",
+          "context": "is will run for about 1.5 seconds to generate each image, while using 4 GiB RAM and 1 CPU. This will cost approximately $0.000458/image in GPU charges, $0.000020/image in CPU charges, and $0.000013/image in memory charges, adding up to $0.000491/image in total charges, i.e., $0."
         }
       ]
     },
@@ -6299,15 +6177,7 @@
         },
         {
           "match": ":free",
-          "context": "i/v1/messages\",\"/api/v1/responses\"],\"reasoning\":{\"mandatory\":false,\"default_enabled\":true}},{\"id\":\"poolside/laguna-s-2.1:free\",\"canonical_slug\":\"poolside/laguna-s-2.1-20260720\",\"hugging_face_id\":\"poolside/Laguna-S-2.1\",\"name\":\"Poolside: Laguna S"
-        },
-        {
-          "match": ":free",
           "context": "ported_efforts\":[\"max\",\"high\",\"medium\",\"low\",\"minimal\",\"none\"],\"default_effort\":\"high\"}},{\"id\":\"thinkingmachines/inkling:free\",\"canonical_slug\":\"thinkingmachines/inkling-20260715\",\"hugging_face_id\":\"thinkingmachines/Inkling\",\"name\":\"Thinking Mac"
-        },
-        {
-          "match": ":free",
-          "context": "/v1/messages\",\"/api/v1/responses\"],\"reasoning\":{\"mandatory\":false,\"default_enabled\":true}},{\"id\":\"poolside/laguna-xs-2.1:free\",\"canonical_slug\":\"poolside/laguna-xs-2.1-20260625\",\"hugging_face_id\":\"poolside/Laguna-XS-2.1\",\"name\":\"Poolside: Laguna"
         },
         {
           "match": ":free",
@@ -6376,6 +6246,14 @@
         {
           "match": "pricing",
           "context": "xt\",\"input_modalities\":[\"text\",\"image\",\"file\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Claude\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.0000001\",\"completion\":\"0.0000005\",\"web_search\":\"0.01\",\"input_cache_read\":\"0.00000001\",\"input_cache_write\""
+        },
+        {
+          "match": "pricing",
+          "context": "e\",\"input_modalities\":[\"image\",\"text\"],\"output_modalities\":[\"image\",\"text\"],\"tokenizer\":\"Gemini\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.0000015\",\"completion\":\"0.0000075\",\"image_output\":\"0.00003\",\"web_search\":\"0.014\"},\"top_provider\":{\"context"
+        },
+        {
+          "match": "pricing",
+          "context": "ge->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Mistral\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.0000007\",\"completion\":\"0.0000021\",\"input_cache_read\":\"0.00000007\"},\"top_provider\":{\"context_length\":10485"
         }
       ]
     },
@@ -6668,12 +6546,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 58 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 58 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 60 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 60 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 58 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. All featured models r"
+          "context": "ed · 60 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. All featured models r"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -6867,7 +6745,7 @@
       "name": "Quickstart - DeepL Docum",
       "url": "https://www.deepl.com/docs-api",
       "status": "ok",
-      "hits": 16,
+      "hits": 15,
       "findings": [
         {
           "match": "Free",
@@ -6924,10 +6802,6 @@
         {
           "match": "Pricing",
           "context": "alse},\"background\":{\"color\":{\"light\":\"#ffffff\"}},\"navbar\":{\"links\":[{\"href\":\"https://www.deepl.com/en/pro#api\",\"label\":\"Pricing\"}],\"primary\":{\"type\":\"button\",\"label\":\"Free API Key\",\"href\":\"https://www.deepl.com/en/checkout?is_api=true\"}},\"footer\":"
-        },
-        {
-          "match": "pricing",
-          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"a"
         },
         {
           "match": "pricing",
