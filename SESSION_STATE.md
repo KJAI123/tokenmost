@@ -16,6 +16,12 @@
 - 实测矩阵：360/390/430/1280 四档截图+聚合展开+比价面板+页底+桌面零回归；改移动端 CSS 必须重跑这套矩阵（教训：CSS 事故 vm/JSC 门抓不到，只能截图实测）
 - **等老板事项池**：①微信群二维码图（放 repo assets/wechat-group.png 即自动显示）②GSC 验证码（埋 head→提交 78 URL sitemap）③联盟链接注册（硅基流动推荐官等，见 tools/affiliate_channels.md）④TG 频道名⑤models.dev 231 家挂巡检池点头⑥广告素材（给了就填 index.html 脚本顶部 TM_ADS 配置，两位置即上）
 
+
+## ⚠️ 事故复盘：sync.py 后台运行期编辑 deals.json 会被整文件覆盖（2026-10-31）
+- **事故**：v2.19 轮 sync.py 后台全量跑（约 8 分钟）期间，主会话更新了 openrouter-free（19 款模型目录）并提交；sync.py 结束时用它**启动时加载的内存快照整文件写回** deals.json → 19 款更新被静默覆盖丢失；爬虫线会话随后把被覆盖态提交上库（远端 17 条 22:58:43 时间戳来源）
+- **恢复**：从 422383c 提交取回 19 款版语义合并回库（27f35f3）
+- **铁律新增：sync.py / harvest 等任何「读-改-写整个 deals.json」的脚本运行期间，禁止一切 deals.json 编辑；跑脚本前先确认无未提交的 deals 改动，脚本结束后再编辑。** 双会话并行期同样适用（爬虫线也写 deals.json，撞车时以 verified_at/内容新旧做语义合并，禁 git 层面机械取舍）
+
 ## 项目现状
 - tokenmost.com 生产运行（香港服务器 HTTPS + GitHub Pages 镜像），deals.json 共 212 条（published 145，verified 126）；sites 70 站（agent 层 22）
 - 服务器 30 分钟 cron 自动 git pull；GitHub push 即部署 Pages
