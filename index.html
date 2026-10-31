@@ -90,6 +90,10 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .stat{font-size:.75rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.875rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
+/* 数据自动同步气泡 */
+#syncToast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(16px);background:#101828;color:#fff;font-size:.8rem;padding:8px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:all .3s;z-index:80;box-shadow:0 4px 14px rgba(16,24,40,.3)}
+#syncToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(min-width:861px){#syncToast{bottom:24px}}
 /* ===== 顶部扫码入群条（v2.19 老板令：顶部扫码入群，每天分享 token 折扣码） ===== */
 #wxTopBar{display:flex;align-items:center;gap:12px;background:rgba(210,153,34,.07);border:1px solid rgba(210,153,34,.35);border-radius:10px;padding:8px 16px;margin:12px 0 0;cursor:pointer;transition:border-color .12s,background .12s;min-height:40px;box-sizing:border-box}
 #wxTopBar:hover{border-color:rgba(210,153,34,.65);background:rgba(210,153,34,.11)}
@@ -1562,11 +1566,40 @@ function calcGlobalBanner(){
   document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
   document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
 }
+/* ============ 网页端数据自动同步（v2.21 老板令「网页端要同步啊」） ============ */
+/* 开着页面也每 5 分钟自动拉新数据：内容有变就原地重渲染 + 轻提示，免手动刷新 */
+let lastSyncSig='';
+function syncSig(d){return d.length+'|'+JSON.stringify(d.map(x=>[x.id,x.verify_status,x.published,dailyOf(x)])).length}
+function dailyOf(x){return x.daily_wan||0}
+function toast(msg){
+  let t=document.getElementById('syncToast');
+  if(!t){t=document.createElement('div');t.id='syncToast';document.body.appendChild(t)}
+  t.textContent=msg;t.classList.add('show');clearTimeout(t._h);
+  t._h=setTimeout(()=>t.classList.remove('show'),2600);
+}
+async function pollData(){
+  try{
+    const [st,sd]=await Promise.all([
+      fetch('sites.json?nocache='+Date.now(),{cache:'no-store'}),
+      fetch('deals.json?nocache='+Date.now(),{cache:'no-store'})
+    ]);
+    const dj=await sd.json();
+    const sig=syncSig(dj);
+    if(!lastSyncSig){lastSyncSig=sig;return}
+    if(sig!==lastSyncSig){
+      lastSyncSig=sig;
+      DEALS=dj;SITES=await st.json();
+      renderNav();render();vRender();calcGlobalBanner();
+      toast('🔄 数据已自动同步 · '+DEALS.length+' 条情报');
+    }
+  }catch(_){}
+}
+setInterval(pollData,5*60*1000);
 Promise.all([
   fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
   fetch('deals.json?ts='+Date.now()).then(r=>r.json())
 ]).then(([sites,deals])=>{
-  SITES=sites;DEALS=deals;
+  SITES=sites;DEALS=deals;lastSyncSig=syncSig(deals);
   renderNav();vInit();render();vRender();calcGlobalBanner();
   authRefreshUI();loadShared();
 }).catch(()=>{
