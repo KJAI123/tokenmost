@@ -71,3 +71,20 @@
 - 📰 标题雷达 [AI 编程 白嫖] 白嫖谷歌最强 AI 绘画?移动端随时写代码?这 5 个良心黑科技千万别错过!
 - 📰 标题雷达 [AI 编程 白嫖] 王炸更新:GLM-5.1来了,还能白嫖7天AI编程
 - 📰 标题雷达 [AI 编程 白嫖] 免费白嫖小米最强AI模型!MiMo-V2-Pro 编程试用教程
+
+## 2026-10-30 19:36 UTC（轮 40，查询：大模型 体验卡）
+- 🆕 公众号新文 [?] 滴~国庆卡 |科技模型体验活动来袭,赶紧上车 → https://mp.weixin.qq.com/s?src=11&timestamp=1793389009&ver=7
+- 📰 标题雷达 [大模型 体验卡] Sora偷偷留了体验卡,国内3大厂视频模型还有多远追上?
+- 📰 标题雷达 [大模型 体验卡] 手慢无!AI 大模型启蒙 + 足球机器人体验,4.3 带娃解锁科技新玩法
+- 📰 标题雷达 [大模型 体验卡] 一张卡装下大模型
+- 📰 标题雷达 [大模型 体验卡] 大模型点睛之笔,AndesGPT深入系统级应用生态、赋能终端体验
+
+## 2026-10-31 01:33 UTC（轮 41，查询：Claude Code 折扣）
+- 🆕 公众号新文 [AI世创云] Claude Code 5折接入DeepSeek-V4.1-Flash → https://mp.weixin.qq.com/s?src=11&timestamp=1793410310&ver=7
+
+## 2026-10-31 05:25 UTC（轮 42，查询：免费 claude）
+- 🆕 公众号新文 [大众软件] Anthropic向免费Claude用户开放多项高级功能 → https://mp.weixin.qq.com/s?src=11&timestamp=1793424319&ver=7
+- 📰 标题雷达 [免费 claude] 免费用Claude 3!无需魔法!无需注册!
+- 📰 标题雷达 [免费 claude] Claude Max免费提供开源维护者:6个月20x配额,10,000名额先到先得
+- 📰 标题雷达 [免费 claude] GPT-6全员免费,Claude开始&ldquo;24小时打工&rdquo;:10月这场AI暗战,信号比你想的大
+- 📰 标题雷达 [免费 claude] 永久免费使用 Claude Code的最终解(OpenRouter)

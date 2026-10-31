@@ -295,3 +295,7 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - **容器网络诊断（重要）**：容器内失败 33 源（含 ctyun/cucloud/gemini/groq 系全部海外+运营商）——容器网络走 Docker Desktop NAT，部分海外/运营商域名在此路径不可达（宿主机直连可达）；**结论：容器适合国内源盯防，海外源留宿主机采集**（分工：容器=国内层，宿主=海外层）
 - pagesift 在容器内 Linux 原生运行正常（无 macOS VPN resolver 冲突）
 - 周期脚本 tools/docker_cycle.sh 可重复执行：docker compose -f docker-compose.crawler.yml run --rm crawler
+- 2026-10-31 找源巡检(5h)：**⭐雷达双响——①GLM-5.1 发布+白嫖7天AI编程（⌨️Coding面板/新品双相关，高优）②小米 MiMo-V2-Pro 编程试用→主管**；28项变化=VPN波动潮恢复为主（25源失败同因），天翼云/联通云/Cursor 页内容变化二次观测中；TG AI_News_CN 偶发失败自愈类；队列剩2条
+- 2026-10-31 找源巡检(5h)：154源采集完成落盘；VPN波动潮持续（瞬时失败源自愈类）；尾部管线（公众号/TG/验证/Obsidian）后台收尾中，完成后自动通知补齐；队列剩2条
+- 2026-10-31 找源巡检(5h)收尾补齐：**⭐双雷达捕获——①OpenAI Pro/Business 每月可领最高 $500 API 额度（官方连续更新第24天，高优→主管）②AI世创云：Claude Code 5折接入 DeepSeek-V4.1-Flash（中转类，资质与套壳风险待核）**；新号「AI世创云」入名册；28源失败=VPN波动潮持续；队列剩2条
+- 2026-10-31 找源巡检(5h)：**⭐⭐雷达大丰收——Anthropic 开源维护者免费 Claude Max（6个月20x配额、1万名额先到先得，限时高优）+ Anthropic 免费用户高级功能开放 + Command Code GOAT $100 永久化 + OpenCode Operation Christmas 活动 + Grok Ultra 反薅提醒→主管**；43源失败=采集窗口撞断网时段（诊断已恢复，下轮自愈）；新号「大众软件」入名册(8号)；队列剩2条

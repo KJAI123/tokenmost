@@ -152,3 +152,48 @@ Requesty 在 88 个真实 Go 后端任务上测试了基于 DeepSeek V4.1 Flash 
  在花 🎗️ 科技圈 : 
 
 ChatGPT Pro 和 Business 用户每月可领取最高 500 美元 API 额度 OpenAI 在连续 28 天更新的第 24 天更新：符合条件的 ChatGPT Pro 
+
+## 2026-10-31 05:25 UTC
+- 🆕 [v2ex_notice] 【分享创造】Blob0 更新： Mac 上的 R2 / S3 客户端现在单连接永久免费[送 Pro 码]
+- 🆕 [linuxdoit] 【PM 公益站】Free 组上线 Deepseek V4.1 1017 
+
+公益推广在主帖，勿举报
+
+ 【PM&amp;公益】许愿帖 
+ 希望可以有free的dsv4.1f蹬 
+ 【PM&amp;公益】许愿帖 
+ 许愿deepseek4.1flash 
+ 【PM&amp;公益】许愿帖 
+ 许愿有免费
+- 🆕 [linuxdoit] 中国银行微信立减金羊毛2026 2026中银财富节 
+
+在中国银行app里搜索：2026中银财富节
+
+下滑找到”求知“板块，答题即可抽奖领红包，可以用ai辅助答题
+
+一共七次答题，共七次抽奖机会
+
+答案 AD CB BA CB CB CC DB
+
+21 个帖子 - 20 位参与者
+
+ 阅读完整话题 
+- 🆕 [linuxdoit] 正价PLUS好牢 
+
+ 🫠 正价PLUS越来越牢了，汤都喝不上，年底要合并chat额度，PLUS额度本来就不高，那PLUS一点优势也没有，6.1sol防御性编程+慢的要死+不会说人话，想不到有续费的理由。首字慢可能是我网关因为原服务器流量跑完了，所以放在一个小鸡上了
+
+ 🤣 chat聊天也不如哈基米
+- 🆕 [linuxdo_tg] 主 题： OpenCode 提额 DeepSeek V4.1 Flash 至 100 美元，Command Code 跟进 
+发 布 者： KennethCC 
+标签分类： 人工智能 快讯 
+时 间：2026-10-31 12:57:38
+内容预览： OpenCode 推出「Operation Ch
+- 🆕 [linuxdo_tg] 主 题： 白嫖了苹果7天grok ulta试用的，记得关了订阅，不然会被反薅 
+发 布 者： Xuzhu 
+标签分类： 纯水 
+时 间：2026-10-31 13:15:22
+内容预览： 最好的办法是换个0刀卡，有挽留期，可以多嫖几天 
+直达链接： https://linux.do/t/topic/
+- 🆕 [AI_News_CN] Command Code 将 &#036;10 GOAT 计划的 &#036;100 用量额度永久化 
+
+Command Code 宣布其 &#036;10/月 GOAT 计划中的 &#036;100 用量额度已永久化，覆盖 DeepSeek V4.1 Flash 1017 与 GLM 5.3 Fl
