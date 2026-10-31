@@ -101,13 +101,19 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 /* 加倍领取说明条 */
 .double-note{background:rgba(210,153,34,.06);border:1px solid rgba(210,153,34,.3);border-radius:10px;padding:10px 14px;font-size:.82rem;color:#475467;margin:10px 12px;line-height:1.6}
 .double-note b{color:var(--amber)}
-/* 免费模型目录块（纯免费 API 站展开明细） */
-.fm-wrap{grid-column:1/-1;margin-top:6px;padding:8px 10px;background:var(--bg);border:1px solid var(--border);border-radius:10px}
-.fm-head{font-size:.7rem;color:var(--muted);font-weight:600;margin-bottom:6px}
-.fm-grid{display:flex;flex-wrap:wrap;gap:6px}
+/* 免费模型目录块（v2.20 默认折叠成一行高亮条，点开看清单；老板令「不要占这么大，做展开，高亮免费模型特点」） */
+.fm-wrap{grid-column:1/-1;margin-top:6px;border:1px solid rgba(5,150,105,.35);background:rgba(5,150,105,.05);border-radius:10px;overflow:hidden}
+.fm-head{display:flex;align-items:center;gap:8px;width:100%;background:none;border:none;padding:8px 12px;cursor:pointer;font-size:.78rem;text-align:left;color:var(--text)}
+.fm-head:hover{background:rgba(5,150,105,.09)}
+.fm-head .fm-badge{font-size:.6rem;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:1px 6px;letter-spacing:.5px;flex:none}
+.fm-head b{color:var(--accent);font-weight:700}
+.fm-head i{margin-left:auto;font-style:normal;font-size:.7rem;color:var(--muted);white-space:nowrap}
+.fm-grid{display:flex;flex-wrap:wrap;gap:6px;padding:2px 12px 10px}
+.fm-grid[hidden]{display:none}
 .fm-chip{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-size:.72rem;cursor:help}
 .fm-chip b{color:var(--text);font-weight:600;font-family:ui-monospace,monospace;font-size:.7rem}
 .fm-chip i{font-style:normal;color:var(--muted);font-size:.66rem;white-space:nowrap}
+.chip.fm-flag{color:var(--accent);border-color:rgba(5,150,105,.4);background:rgba(5,150,105,.06);font-weight:600}
 /* ===== 工具条 ===== */
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 12px}
 .tabs{display:flex;gap:6px;flex-wrap:wrap;row-gap:6px}
@@ -377,10 +383,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   article.row:has(.fm-wrap)>.r-ops{grid-row:1;grid-column:3}
   article.row:has(.fm-wrap)>div:nth-child(2){grid-row:2;grid-column:1/-1}
   article.row:has(.fm-wrap) .r-state{grid-row:3;grid-column:1/-1}
-  .fm-wrap{margin:8px -10px -4px;padding:8px 10px;border-radius:0;border-left:none;border-right:none}
+  .fm-wrap{margin:8px -10px -4px;border-radius:0;border-left:none;border-right:none}
   .fm-chip{font-size:.66rem;padding:2px 7px}
   .fm-chip b{font-size:.64rem}
-  .fm-head{font-size:.66rem}
+  .fm-head{font-size:.7rem;padding:6px 10px}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
@@ -734,6 +740,13 @@ function safeUrl(u){return /^https?:/i.test(String(u||''))?u:'#'}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
+/* 免费模型目录折叠开关（v2.20） */
+function fmToggle(btn){
+  const g=btn.parentElement.querySelector('.fm-grid');
+  const open=g.hasAttribute('hidden');
+  if(open){g.removeAttribute('hidden');btn.setAttribute('aria-expanded','true');btn.querySelector('i').textContent='▴ 收起清单';}
+  else{g.setAttribute('hidden','');btn.setAttribute('aria-expanded','false');btn.querySelector('i').textContent='▾ 展开看清单';}
+}
 /* ============ 导航区渲染（侧边栏紧凑版 + 底部完整版） ============ */
 function renderNav(){
   const order=['official_cn','official_global','maas','agent','compute','reseller'];
@@ -832,9 +845,10 @@ function render(){
         <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
         ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
         ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
+        ${d.free_models&&d.free_models.length?`<span class="chip fm-flag">🆓 ${d.free_models.length} 款免费模型</span>`:''}
         <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
       </div>
-      ${d.free_models&&d.free_models.length?`<div class="fm-wrap"><div class="fm-head">🆓 免费模型目录（${d.free_models.length} 款 · 全 $0 · 展开看备注）</div><div class="fm-grid">${d.free_models.map(m=>`<span class="fm-chip" title="${esc(m.note||'')}"><b>${esc(m.id)}</b>${m.ctx?`<i>${esc(m.ctx)}</i>`:''}</span>`).join('')}</div></div>`:''}
+      ${d.free_models&&d.free_models.length?`<div class="fm-wrap"><button class="fm-head" onclick="fmToggle(this)" aria-expanded="false"><span class="fm-badge">FREE</span><b>${d.free_models.length} 款免费模型 · 全 $0</b><i>▾ 展开看清单</i></button><div class="fm-grid" hidden>${d.free_models.map(m=>`<span class="fm-chip" title="${esc(m.note||'')}"><b>${esc(m.id)}</b>${m.ctx?`<i>${esc(m.ctx)}</i>`:''}</span>`).join('')}</div></div>`:''}
     </div>
     <div class="r-state">${freshness(d)}${dl}</div>
     <div class="r-ops">
