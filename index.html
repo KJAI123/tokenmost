@@ -1023,10 +1023,12 @@ async function apiFetch(path,opts={}){
   return j;
 }
 function authRefreshUI(){
+  // v2.25 登录/供码 UI 已下线：按钮元素已移除，仅刷新卡片供码按钮显隐
   const t=auth?auth.phone+' · 我的码':'登录 / 供码';
-  document.getElementById('authBtn').textContent=t;
-  document.getElementById('authBtnSide').textContent=auth?'🔐 '+auth.phone:'🔐 登录 / 供码';
-  render();  // 卡片上的「供码」按钮显隐随登录态
+  const b1=document.getElementById('authBtn'),b2=document.getElementById('authBtnSide');
+  if(b1)b1.textContent=t;
+  if(b2)b2.textContent=auth?'🔐 '+auth.phone:'🔐 登录 / 供码';
+  if(typeof render==='function')render();  // 卡片上的「供码」按钮显隐随登录态
 }
 async function loadShared(){
   if(!API)return;
@@ -1623,7 +1625,9 @@ Promise.all([
   window.LOGOS=lg||{};
   SITES=sites;DEALS=deals;lastSyncSig=syncSig(deals);
   renderNav();vInit();render();vRender();calcGlobalBanner();
-  authRefreshUI();loadShared();
+  // 防护：数据渲染完成后，后续可选功能（登录态/共享码）抛错不得清空主板块
+  try{authRefreshUI()}catch(_){}
+  try{loadShared()}catch(_){}
 }).catch(()=>{
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
 });
