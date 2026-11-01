@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] ZCode 折扣链接挂载（2026-11-01，老板令+提供专属邀请链，0918b57）：zcode-daily-1e8 通用链接→zcode.z.ai/invite/L5BLKJE7（站长专属链，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，拉新「每天 1 亿」机制保留（老板亲测口径）
 - [x] v2.23.0 logo 系统升级+DeepSeek 复核（2026-11-01，老板令「有些logo还没有，好好丰富，deepseek/trae」，dc592ca）：
   - **根因**：行内图标链=icon.horse（境外，限流+墙内不稳）→Google s2（境内被墙）→隐藏——DeepSeek/Trae 等 icon.horse 未收录或限流的域名直接消失
   - **治理**：双轮探测 72 域名（官网 favicon.ico 34 可用+www 变体捞回 12 含 www.deepseek.com/favicon.ico）→ assets/logos.json 46 条官方直连图标；行内链升级四级 LOGOS 覆盖→官网 favicon→icon.horse→s2→隐藏；侧边栏同步接入；pages.yml assets 部署已具备
