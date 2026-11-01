@@ -90,6 +90,8 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .stat{font-size:.75rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.875rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
+/* 横幅链接加成小徽章（v2.25.1 修丑：.global-banner b 的 1.35rem 巨字规则会命中嵌套 b，必须用专属 class 全量重置） */
+.global-banner .gb-pill{font-size:.7rem;font-weight:700;font-family:inherit;color:#b45309;background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.38);border-radius:999px;padding:1px 10px;margin-left:2px;line-height:1.6;letter-spacing:normal;font-variant-numeric:normal;white-space:nowrap;vertical-align:1px}
 /* 数据自动同步气泡 */
 #syncToast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(16px);background:#101828;color:#fff;font-size:.8rem;padding:8px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:all .3s;z-index:80;box-shadow:0 4px 14px rgba(16,24,40,.3)}
 #syncToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -1567,7 +1569,7 @@ function calcGlobalBanner(){
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
   document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
-  document.getElementById('gbSub').innerHTML='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · <b style="color:#b45309;background:rgba(210,153,34,.14);border:1.5px solid rgba(210,153,34,.45);border-radius:999px;padding:2px 12px;margin-left:4px;font-weight:800;white-space:nowrap">🪙 经折扣/邀请链接注册额外可叠加 '+f(linkBonus)+'</b> · 点击看明细';
+  document.getElementById('gbSub').innerHTML='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · <span class="gb-pill">🪙 折扣链接注册额外叠加 '+f(linkBonus)+'</span> · 点击看明细';
 }
 // 侧边栏折叠（OpenRouter 式）
 document.getElementById('side').addEventListener('click',e=>{
