@@ -4267,5 +4267,22 @@
   "group": "LibTV",
   "notes": "⭐AI 视频赛道首批条目（老板 11-01 发文指示补充）| 信源：公众号胡图图糊涂实测文（mp.weixin.qq.com/s/DjR9g-PXSevR1scnW9HMoQ，新浪财经/网易AI进化论花生/腾讯网多源 10-29）| 0 积分=付费年卡赠送非纯免费，按付费促销限时活动口径上架（MiniMax 五折先例）；视频积分非 token 不折总账",
   "deadline": "2026-11-02"
+ },
+ {
+  "id": "doubao-pro-invite",
+  "provider": "豆包电脑版",
+  "category": "official_cn",
+  "type": "coupon",
+  "value": "桌面端裂变·Pro 试用邀请：经链接注册/登录豆包电脑版领 Pro 试用期（天数以活动页实领为准），与「天天领额度」激励可叠加",
+  "region": "cn",
+  "url": "https://www.doubao.com/pc/desktop-fission/pro-trial/invited?inviteCode=72Se9znu18",
+  "rule": "被邀请侧经链接进入领取；单账号；Pro 试用时长以实到账为准",
+  "verify_status": "unverified",
+  "verified_at": "2026-11-01T00:00:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "invite",
+  "group": "豆包",
+  "notes": "⭐站长专属邀请渠道（2026-11-01 老板提供，desktop-fission/pro-trial 裂变活动页，含推荐属性）| 与 doubao-daily-quota（天天领额度）同组聚合；试用时长实领截图核后升 verified | 折扣链接金色按钮+加倍领取专区"
  }
 ]

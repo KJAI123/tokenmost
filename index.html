@@ -402,7 +402,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="logo">token<em>most</em></div>
   <div class="tag">薅 token · 一键接入 · 极致省钱</div>
   <nav class="snav">
-    <a class="sitem accent" id="authBtnSide" href="#" onclick="authOpen();return false">🔐 登录 / 供码</a>
     <div class="shead" data-fold="p">工具 <i>▾</i></div>
     <div class="sgroup-body" id="fold-p">
       <a class="sitem gold" id="sumBtnSide" href="#" onclick="return false">💰 白嫖总账</a>
@@ -450,7 +449,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <span class="stat">今日 <b id="n-fresh">–</b></span>
     <span class="stat">站点 <b id="n-sites">–</b></span>
     <span class="stat">更新 <b id="updated">–</b></span>
-    <button id="authBtn" onclick="authOpen()">登录 / 供码</button>
   </div>
 </header>
 <div>
@@ -458,16 +456,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="toolbar">
     <div class="tabs" id="tabs">
       <button class="tab active" data-cat="all">🆓 免费专区</button>
-      <button class="tab" data-cat="official_cn">大模型官方</button>
-      <button class="tab" data-cat="official_global">大模型官方·海外</button>
-      <button class="tab" data-cat="maas">☁️ MaaS</button>
+      <button class="tab" data-cat="official">大模型官方</button>
       <button class="tab" data-cat="agent">Agent 平台</button>
-      <button class="tab" data-cat="compute">算力</button>
-      <button class="tab" data-cat="reseller">中间商</button>
-      <button class="tab" data-cat="coupon" style="border-color:rgba(210,153,34,.5)">🎁 有码</button>
+      <button class="tab" data-cat="infra">☁️ 云与算力</button>
       <button class="tab" data-cat="double" style="border-color:rgba(210,153,34,.5)">🪙 加倍领取</button>
-      <button class="tab" data-cat="hasapi">⚡ 有 API</button>
-      <button class="tab" data-cat="mine">⭐ 已领</button>
       <button class="tab" data-cat="paid">💸 付费区</button>
       <button class="tab" data-cat="warn">⚠️ 避雷</button>
     </div>
@@ -729,6 +721,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </aside>
 <script>
 /* ============ 常量 ============ */
+/* 刷新回到顶部（v2.25 老板令） */
+if('scrollRestoration' in history)history.scrollRestoration='manual';
+window.scrollTo(0,0);
 const LAYER={
  official_cn:{name:'大模型官方（国内）',color:'#00e5a0'},
  maas:{name:'MaaS 平台（云上托管）',color:'#39c5cf'},
@@ -745,6 +740,13 @@ function safeUrl(u){return /^https?:/i.test(String(u||''))?u:'#'}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
+/* 聚合行主操作按钮：组内任一条目带折扣码/折扣链接即亮金色（v2.25 修 Qoder 挂不上的根因——原先只看组内最优条目） */
+function aggGold(g){
+  const ld=g.ds.find(d=>(d.coupon||d.type==='coupon')&&!d.placeholder&&d.url);
+  const tgt=ld||g.best;
+  if(ld)return '<a class="go cgo" href="'+esc(safeUrl(tgt.url))+'" target="_blank" rel="noopener nofollow" data-code="'+esc(tgt.coupon||tgt.url)+'" title="'+(tgt.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开')+'">'+(tgt.coupon?'🎁 券领':'🔗 折扣链接')+'</a>';
+  return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">领取</a>';
+}
 /* 免费模型/权益目录：泛化组件（v2.22 老板令「workbuddy 也做类似 opencode 的展开」）——free_models=FREE 徽章，freebies=免费徽章 */
 function fmMeta(d){
   if(d.free_models&&d.free_models.length)return{n:d.free_models.length,kind:'free',items:d.free_models};
@@ -830,10 +832,9 @@ function render(){
   else if(curCat==='warn'){list=list.filter(d=>d.type==='warning'||d.verify_status==='expired');}
   else{
     list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning'&&d.verify_status!=='expired'&&d.category!=='intel_source');  // 主板块=纯免费且有效；价格进付费区，避雷/失效进避雷区，内部信源不上站
-    if(curCat==='mine')list=list.filter(d=>claimedSet.has(d.id));
-    else if(curCat==='coupon')list=list.filter(d=>d.coupon&&!d.placeholder&&d.verify_status!=='expired');
-    else if(curCat==='double')list=list.filter(isDouble);
-    else if(curCat==='hasapi')list=list.filter(d=>{const s=siteFor(d);return s&&s.api});
+    if(curCat==='double')list=list.filter(isDouble);
+    else if(curCat==='official')list=list.filter(d=>d.category==='official_cn'||d.category==='official_global');
+    else if(curCat==='infra')list=list.filter(d=>['maas','compute','reseller'].includes(d.category));
     else if(curCat!=='all')list=list.filter(d=>d.category===curCat);
   }
   if(curType)list=list.filter(d=>d.type===curType);
@@ -919,7 +920,7 @@ function render(){
     <div class="r-state">${freshness(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
     <div class="r-ops">
       <button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>
-      ${(g.best.coupon||g.best.type==='coupon')&&!g.best.placeholder?`<a class="go cgo" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(g.best.coupon||g.best.url)}" title="${g.best.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${g.best.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(g.best.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
+      ${aggGold(g)}
     </div>
   </article>
   <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
@@ -1566,7 +1567,7 @@ function calcGlobalBanner(){
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
   document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
-  document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 🪙 经折扣/邀请链接注册额外可叠加 '+f(linkBonus)+' · 点击看明细';
+  document.getElementById('gbSub').innerHTML='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · <b style="color:#b45309;background:rgba(210,153,34,.14);border:1.5px solid rgba(210,153,34,.45);border-radius:999px;padding:2px 12px;margin-left:4px;font-weight:800;white-space:nowrap">🪙 经折扣/邀请链接注册额外可叠加 '+f(linkBonus)+'</b> · 点击看明细';
 }
 // 侧边栏折叠（OpenRouter 式）
 document.getElementById('side').addEventListener('click',e=>{
