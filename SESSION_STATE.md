@@ -28,6 +28,14 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.25.0 四连整改（2026-11-02，老板四连令，9a55477）：
+  - **Qoder 折扣链接挂不上的根因**：聚合行金色按钮只看组内最优条目（best），而折扣链接条目非组内收益最高——改为组内任一含折扣码/链接即亮金（新增 aggGold 辅助函数替代深层嵌套 IIFE，顺带消除模板嵌套语法雷：此前内联 IIFE 写错括号触发连环 SYNTAX FAIL，JSC 报错行号有包装偏移需 -2 校正）
+  - **分类收窄 13→7**：免费专区/大模型官方（CN+海外合并 data-cat=official）/Agent 平台/云与算力（MaaS+算力+中间商合并 data-cat=infra）/加倍领取/付费区/避雷
+  - **刷新回顶部**：history.scrollRestoration='manual'+scrollTo(0,0)
+  - **登录/供码下线**：header authBtn+侧边栏 authBtnSide 移除（vault 本地账号库保留）
+  - **横幅 🪙 加成琥珀胶囊高亮**（老板截图指位）：bold+amber+#b45309+pill 边框+nowrap
+  - **doubao-pro-invite 新条目**：老板专属邀请链（desktop-fission/pro-trial 裂变，inviteCode=72Se9znu18，含推荐属性），豆包组聚合金色按钮+加倍专区，unverified 待实领天数
+  - 推版遇 GitHub 断网潮退避 4 次成功；Pages 部署延迟 ~90s 后五项全验证通过
 - [x] v2.24.0 折扣链接加成口径上横幅（2026-11-01，老板令「增加通过折扣链接注册可以额外多拿多少token」+截图指横幅，13e5555/f4ddde1）：横幅叠加公式追加「🪙 经折扣/邀请链接注册额外可叠加 35.55 亿」（加倍领取条目按平台去重首月总量）；白嫖总账新增⑤卡「🪙 折扣链接注册加成 35.10 亿」（verified 口径，标注与分类有交叉）；根因修复=横幅函数重复定义旧版覆盖新版+LB reduce 初始值
 - [x] Qoder 折扣链接挂载（2026-11-01，老板令+提供推荐链，646f297）：deep-qoder-daily-credits 通用链接→qoder.cn/activities 站长推荐链（referral_code，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，每日 100 Credits 机制保留
 - [x] ZCode 折扣链接挂载（2026-11-01，老板令+提供专属邀请链，0918b57）：zcode-daily-1e8 通用链接→zcode.z.ai/invite/L5BLKJE7（站长专属链，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，拉新「每天 1 亿」机制保留（老板亲测口径）
