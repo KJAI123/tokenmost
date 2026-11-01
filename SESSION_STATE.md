@@ -28,6 +28,12 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 🚑 v2.25.2 热修主板块白屏（2026-11-02，老板报「网页主板块也挂了」，485c96a）：
+  - **根因**：v2.25 砍登录/供码删了 authBtn/authBtnSide 元素，但 boot 链仍调 authRefreshUI 写 null.textContent → 抛错 → **boot 的 .catch 把已渲染好的 127 行整个清成「数据加载失败」**（banner/导航在抛错前已渲染所以看起来"半死不活"）
+  - **修复**：①authRefreshUI 元素守卫 ②boot 链 authRefreshUI/loadShared 改 try/catch 隔离——**数据渲染完成后可选功能抛错不得清空主板块**
+  - 定位方法：IAB 打开线上站逐函数 try/catch（renderNav/render/vRender/calcGlobalBanner/loadShared 全 OK，唯独 authRefreshUI THROW）
+  - Pages 热修后 127 行恢复验证 ✓；主域 30 分钟 cron 跟进
+  - **⚠️ 铁律新增：砍任何 UI 功能时，必须 grep 全部 getElementById 引用并同步清理；boot 链可选步骤一律 try/catch 隔离，绝不让 catch 覆盖已渲染内容**
 - [x] v2.25.1 横幅徽章重设计（2026-11-02，老板令「做的太丑了」，39a19d9）：根因=.global-banner b 的 1.35rem 巨字规则命中嵌套裸 <b> 致胶囊巨大；改专属 .gb-pill class（0.7rem/20px 高小 chip，琥珀描边浅底），文案精简「🪙 折扣链接注册额外叠加 35.55 亿」；⚠️ 事故=上轮未提交修改被爬虫线定时 git checkout 清掉（mtime 00:20），重做并立即提交——**共享仓库铁律：改完即 commit，未提交改动随时会被并行会话清掉**
 - [x] v2.25.0 四连整改（2026-11-02，老板四连令，9a55477）：
   - **Qoder 折扣链接挂不上的根因**：聚合行金色按钮只看组内最优条目（best），而折扣链接条目非组内收益最高——改为组内任一含折扣码/链接即亮金（新增 aggGold 辅助函数替代深层嵌套 IIFE，顺带消除模板嵌套语法雷：此前内联 IIFE 写错括号触发连环 SYNTAX FAIL，JSC 报错行号有包装偏移需 -2 校正）
