@@ -155,6 +155,7 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .r-tok.dead .num{color:var(--red);font-size:.875rem}
 .r-line1{display:flex;align-items:baseline;gap:8px;min-width:0}
 .r-provider{font-weight:600;font-size:.875rem;white-space:nowrap}
+.rowfavi{width:15px;height:15px;border-radius:3px;margin-right:6px;vertical-align:-2.5px;background:var(--hover)}
 .r-value{font-size:.875rem;color:#475467;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
 .r-line2{display:flex;align-items:center;gap:8px;font-size:.75rem;color:var(--muted);min-width:0}
 .chip{font-size:.75rem;color:var(--muted);background:var(--hover);border:1px solid var(--border);border-radius:5px;padding:0 8px;white-space:nowrap}
@@ -853,7 +854,7 @@ function render(){
     <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
     <div>
       <div class="r-line1">
-        <span class="r-provider">${esc(d.provider)}</span>
+        <span class="r-provider">${(()=>{const u=(siteFor(d)||{}).url||d.url;const dom=u?u.replace(/^https?:\/\/(www\.)?/,'').split('/')[0]:'';return dom?`<img class="favi rowfavi" src="https://icon.horse/icon/${dom}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=64';}else{this.style.display='none';}">`:''})()}${esc(d.provider)}</span>
         <span class="r-value" title="${esc(d.value)}">${esc(d.value)}</span>
         ${d.coupon?`<span class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">示例</span>':`<button class="copy" data-code="${esc(d.coupon)}">复制</button>`}</span>`:''}
       </div>
@@ -905,7 +906,7 @@ function render(){
     <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
     <div>
       <div class="r-line1">
-        <span class="r-provider">${esc(g.p)}</span>
+        <span class="r-provider">${(()=>{const u=(siteFor(g.best)||{}).url||g.best.url;const dom=u?u.replace(/^https?:\/\/(www\.)?/,'').split('/')[0]:'';return dom?`<img class="favi rowfavi" src="https://icon.horse/icon/${dom}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=64';}else{this.style.display='none';}">`:''})()}${esc(g.p)}</span>
         <span class="r-value" title="${esc(g.best.value)}">${esc(g.best.value)}</span>
         <span class="chip gold">📎 ${g.ds.length} 条信源</span>
       </div>
