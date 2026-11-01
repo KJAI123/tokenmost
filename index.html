@@ -1483,6 +1483,10 @@ function sumRender(){
   const agg=rows=>({t:rows.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
   const R=agg(live.filter(d=>d.via==='register')),I=agg(live.filter(d=>d.via==='invite')),S=agg(live.filter(d=>d.via==='student'));
   const freeN=live.filter(d=>d.via==='free'||d.type==='free_tier').length;
+  /* 🪙 折扣/邀请链接加成：加倍领取条目按平台去重（v2.24 老板令） */
+  const lg={};
+  live.filter(isDouble).forEach(d=>{const k=d.group||d.provider;(lg[k]=lg[k]||[]).push(d)});
+  const LB={t:Object.values(lg).reduce((s,ds)=>s+Math.round(ds.reduce((a,d)=>a+(d.eq_wan||d.tokens_wan||0),0)+ds.reduce((a,d)=>a+(d.daily_wan||0),0)*30),0),n:Object.keys(lg).length};
   const dailyLive=live.filter(d=>d.daily_wan);
   const DT=dailyLive.reduce((s,d)=>s+d.daily_wan,0);
   const T={t:R.t+I.t+Math.round(DT*30),c:R.c+I.c,u:R.u+I.u};
@@ -1493,6 +1497,7 @@ function sumRender(){
      <div class="sum-card"><b>③ 持续日入（长期免费层）</b><span class="big">${fmtWan(Math.round(DT))} DS Flash等效/天</span><span>${dailyLive.length} 条长期刷新 · 折月 ≈ ${fmtWan(Math.round(DT*30))}</span></div>
      <div class="sum-card"><b>＝ 合计白嫖（首月口径）</b><span class="big accent">${fmtWan(T.t)} DS Flash等效</span><span>一次性 ${fmtWan(R.t+I.t)} ＋ 日入折月 ${fmtWan(Math.round(DT*30))} ＋ ¥${T.c} 券 ＋ $${T.u} ≈ ¥${(T.c+T.u*FX).toFixed(0)} 价值</span></div>
      <div class="sum-card"><b>④ 学生通道再叠加</b><span class="big">$${S.u}</span><span>≈ ¥${(S.u*FX).toFixed(0)}/年 · ${S.n} 条（需学生认证）</span></div>
+     <div class="sum-card"><b>⑤ 🪙 折扣链接注册加成</b><span class="big">${fmtWan(LB.t)} DS Flash等效</span><span>经专属折扣/邀请链接注册在基础赠送之上额外可得 · ${LB.n} 条渠道（加倍领取专区同口径，与上方分类有交叉）</span></div>
    </div>
    <p class="calc-note"><b>📐 等效口径（2026-10-28 老板拍板）</b>：全站 token 统一折算为 <b>DeepSeek V4.1 Flash 等效 token</b>——国内按谷价（空闲 5 折）加权 ¥1.75/百万、国际按牌价加权 $0.525/百万；等效按算力购买力折算而非裸计数：GLM-5.3 ×7.43、DeepSeek V4 Pro ×7.71、Kimi K3 ×11.43、MiniMax-M3 ×2.10，同档 Flash 模型与无牌价免费模型 1:1。通用/多模型额度保守取 1:1。系数表在 tools/eq.json，随牌价更新复核。</p>
    <p class="calc-note">另有 <b>${freeN}</b> 个长期免费层不花钱持续用（GLM-4.7-Flash、讯飞 Lite、ModelScope、Gemini、Groq、OpenRouter :free 等）。口径：每平台<b>单账号</b>官方规则；百炼按领 10 款、TokenHub 按 5 款保守估算；火山方舟（数额控制台才可见）、NVIDIA NIM（1000 credits）、讯飞礼包、Anthropic credits 未计入；自己做邀请人还能继续放大（智谱月上限 2 亿 tokens）。</p>`;
@@ -1554,10 +1559,14 @@ function calcGlobalBanner(){
   const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const monthly=Math.round(once+daily*30);
+  /* 🪙 折扣/邀请链接注册可叠加（v2.24 老板令）：加倍领取条目按平台去重的首月可薅总量 */
+  const gmap={};
+  live.filter(isDouble).forEach(d=>{const k=d.group||d.provider;(gmap[k]=gmap[k]||[]).push(d)});
+  const linkBonus=Object.values(gmap).reduce((s,ds)=>s+Math.round(ds.reduce((a,d)=>a+(d.eq_wan||d.tokens_wan||0),0)+ds.reduce((a,d)=>a+(d.daily_wan||0),0)*30),0);
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
   document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
-  document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
+  document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 🪙 经折扣/邀请链接注册额外可叠加 '+f(linkBonus)+' · 点击看明细';
 }
 // 侧边栏折叠（OpenRouter 式）
 document.getElementById('side').addEventListener('click',e=>{
@@ -1570,16 +1579,7 @@ fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isAr
 fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
 fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
 /* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
-function calcGlobalBanner(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan');
-  const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
-  const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
-  const monthly=Math.round(once+daily*30);
-  const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
-      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
-  document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
-  document.getElementById('gbSub').textContent='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · 点击看明细';
-}
+/* （旧版横幅函数已并入上方 v2.24 带链接加成口径的实现） */
 /* ============ 网页端数据自动同步（v2.21 老板令「网页端要同步啊」） ============ */
 /* 开着页面也每 5 分钟自动拉新数据：内容有变就原地重渲染 + 轻提示，免手动刷新 */
 let lastSyncSig='';
