@@ -28,6 +28,11 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.23.0 logo 系统升级+DeepSeek 复核（2026-11-01，老板令「有些logo还没有，好好丰富，deepseek/trae」，dc592ca）：
+  - **根因**：行内图标链=icon.horse（境外，限流+墙内不稳）→Google s2（境内被墙）→隐藏——DeepSeek/Trae 等 icon.horse 未收录或限流的域名直接消失
+  - **治理**：双轮探测 72 域名（官网 favicon.ico 34 可用+www 变体捞回 12 含 www.deepseek.com/favicon.ico）→ assets/logos.json 46 条官方直连图标；行内链升级四级 LOGOS 覆盖→官网 favicon→icon.horse→s2→隐藏；侧边栏同步接入；pages.yml assets 部署已具备
+  - **DeepSeek 三条复核恢复**：定价页 URL 迁移实锤（/quick_price.html 404→/quick_start/pricing），错峰半价规则原文未变，verified；⚠️ 同页官宣 **Search/Fetch API 11-01 起收费 5 元/千次**——deepseek-searchfree 过期清洗删除；prices.json 缓存命中注记校准 0.02/0.04
+  - 推送遇 GitHub 断网潮（SSL_ERROR_SYSCALL），退避重试第 4 次成功
 - [x] v2.22.1 主板块行内平台 logo（2026-11-01，老板令「主板块需要增加对应的logo」，bd5fee6）：单行/聚合行两模板 provider 前插 15px 圆角 favi（域名取 siteFor 导航站或条目 url，icon.horse+s2 64px+隐藏三级兜底同侧边栏），无站点条目自动跳过；IAB 实测 125 行渲染正常
 - [x] v2.22.0 WorkBuddy 免费权益折叠目录（2026-11-01，老板令「workbuddy 也做类似 opencode 的展开」，447c5fb/9b0f07d）：折叠组件泛化 fmMeta/fmBlock 双类型（free_models=FREE 徽章「N 款免费模型·全 $0」/freebies=免费徽章「N 项免费权益」），chips 常显徽标区分；国内版 5 项（公测 5000/每日 100/教师版/绑卡试用/牌价）+国际版 6 项（Free 100/每日活跃 30/补全 5000/自动任务/全模型限免/试用金）结构化；混元 Hy3/Hy4 过期限免从 value/rule 清理；rebase 撞车语义合并（零重叠：远端 17 改/我方 2 改）
 - [x] v2.21.0 网页端数据自动同步（2026-11-01，老板令「网页端要同步啊」，6d8e346）：开着页面每 5 分钟自动拉 sites/deals（cache:no-store），sig（条数+id/verify/published 签名）变化即原地重渲染+白嫖横幅更新+底部气泡「🔄 数据已自动同步·N 条」；诊断结论=两端线上当时均已是最新（Pages/主域都有 v2.20+217 条），老板见旧版=开着的旧标签页不会自拉——轮询根治；容错静默不扰 UI
