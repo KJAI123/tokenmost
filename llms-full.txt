@@ -16,18 +16,13 @@
 - 内容：deepseek-flash 2/8 元、deepseek-v4-pro 9/27 元每百万（缓存命中低至 0.04/0.30 元）——全网比价基准线
 - 规则：按量计费；deepseek-chat/reasoner 已停售，现售两款模型
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-10-30T11:06:36Z）
+- 状态：已验证（核验时间 2026-11-01T00:00:00Z）
 
 ## DeepSeek｜price_low
 - 内容：错峰半价：空闲时段（北京工作日 9-12、14-18 点以外）全模型一律 5 折——夜间批量任务首选
 - 规则：长期政策，定价页明示两档价
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-10-30T11:06:36Z）
-
-## DeepSeek｜限时活动
-- 内容：Search/Fetch 调用不计费（Harness / Claude Code / Codex 场景经服务端调用）；11-01 起恢复 5 元/千次
-- 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-10-30T11:06:36Z）
+- 状态：已验证（核验时间 2026-11-01T00:00:00Z）
 
 ## Kimi 开放平台｜注册赠送
 - 内容：新用户实名认证后自动发放 15 元代金券（3 个月内有效，自动优先扣减）——注意不能用于 K3 模型
