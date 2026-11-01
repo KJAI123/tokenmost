@@ -744,6 +744,19 @@ function safeUrl(u){return /^https?:/i.test(String(u||''))?u:'#'}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
 function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||'[]'))}catch(_){return new Set()}}
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
+/* 免费模型/权益目录：泛化组件（v2.22 老板令「workbuddy 也做类似 opencode 的展开」）——free_models=FREE 徽章，freebies=免费徽章 */
+function fmMeta(d){
+  if(d.free_models&&d.free_models.length)return{n:d.free_models.length,kind:'free',items:d.free_models};
+  if(d.freebies&&d.freebies.length)return{n:d.freebies.length,kind:'gift',items:d.freebies};
+  return null;
+}
+function fmBlock(m){
+  const label=m.kind==='free'?m.n+' 款免费模型 · 全 $0':m.n+' 项免费权益';
+  const badge=m.kind==='free'?'FREE':'免费';
+  const flagN=m.kind==='free'?m.n+' 款免费模型':m.n+' 项免费权益';
+  return {flag:`<span class="chip fm-flag">🆓 ${flagN}</span>`,
+    block:`<div class="fm-wrap"><button class="fm-head" onclick="fmToggle(this)" aria-expanded="false"><span class="fm-badge">${badge}</span><b>${label}</b><i>▾ 展开看清单</i></button><div class="fm-grid" hidden>${m.items.map(it=>`<span class="fm-chip" title="${esc(it.note||'')}"><b>${esc(it.name||it.id)}</b>${it.ctx?`<i>${esc(it.ctx)}</i>`:''}</span>`).join('')}</div></div>`};
+}
 /* 免费模型目录折叠开关（v2.20） */
 function fmToggle(btn){
   const g=btn.parentElement.querySelector('.fm-grid');
@@ -849,10 +862,10 @@ function render(){
         <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
         ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
         ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
-        ${d.free_models&&d.free_models.length?`<span class="chip fm-flag">🆓 ${d.free_models.length} 款免费模型</span>`:''}
+        ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).flag:''}
         <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
       </div>
-      ${d.free_models&&d.free_models.length?`<div class="fm-wrap"><button class="fm-head" onclick="fmToggle(this)" aria-expanded="false"><span class="fm-badge">FREE</span><b>${d.free_models.length} 款免费模型 · 全 $0</b><i>▾ 展开看清单</i></button><div class="fm-grid" hidden>${d.free_models.map(m=>`<span class="fm-chip" title="${esc(m.note||'')}"><b>${esc(m.id)}</b>${m.ctx?`<i>${esc(m.ctx)}</i>`:''}</span>`).join('')}</div></div>`:''}
+      ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
     </div>
     <div class="r-state">${freshness(d)}${dl}</div>
     <div class="r-ops">
