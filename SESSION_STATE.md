@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.24.0 折扣链接加成口径上横幅（2026-11-01，老板令「增加通过折扣链接注册可以额外多拿多少token」+截图指横幅，13e5555/f4ddde1）：横幅叠加公式追加「🪙 经折扣/邀请链接注册额外可叠加 35.55 亿」（加倍领取条目按平台去重首月总量）；白嫖总账新增⑤卡「🪙 折扣链接注册加成 35.10 亿」（verified 口径，标注与分类有交叉）；根因修复=横幅函数重复定义旧版覆盖新版+LB reduce 初始值
 - [x] Qoder 折扣链接挂载（2026-11-01，老板令+提供推荐链，646f297）：deep-qoder-daily-credits 通用链接→qoder.cn/activities 站长推荐链（referral_code，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，每日 100 Credits 机制保留
 - [x] ZCode 折扣链接挂载（2026-11-01，老板令+提供专属邀请链，0918b57）：zcode-daily-1e8 通用链接→zcode.z.ai/invite/L5BLKJE7（站长专属链，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，拉新「每天 1 亿」机制保留（老板亲测口径）
 - [x] v2.23.0 logo 系统升级+DeepSeek 复核（2026-11-01，老板令「有些logo还没有，好好丰富，deepseek/trae」，dc592ca）：
