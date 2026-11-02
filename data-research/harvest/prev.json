@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-02T11:26:51Z",
+  "harvested_at": "2026-11-02T23:08:50Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -733,10 +733,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -826,6 +822,10 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -837,124 +837,124 @@
       "hits": 30,
       "findings": [
         {
-          "match": "免费开始构建，享受宽裕的额度",
-          "context": "eveloper API 价格                                                                                                         免费开始构建，享受宽裕的额度；待应用可用于生产用途后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   ch"
+          "match": "$2.00 through November 30, 2026.   ",
+          "context": "d\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $2.00 through November 30, 2026.   $4.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through N"
         },
         {
-          "match": "免费输入和输出 token",
-          "context": "后，可先选用预付费模式，再按需切换为随用随付模式进行扩容。          免费   适用于刚开始使用 Gemini API 的开发者和小型项目。     check_circle 对特定模型的访问权限有限   check_circle 免费输入和输出 token   check_circle Google AI Studio 访问权限   check_circle 内容会用于改进 Google 产品 *     免费开始使用       付费   适用于需要更高调用量和高级功能的生产级应用。"
+          "match": "$4.00 starting December 1, 2026.   ",
+          "context": "ee Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $2.00 through November 30, 2026.   $4.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through November 30, 2026.   $20.00 starting"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "码生成而打造。   注意 ： Gemini 4 Argon 不适用于免费层级。模型处理的每个 token 都会被统计并计费，包括思考 token、内部工具系统指令以及使用接地功能时的函数声明。   标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 2.00 美元。 2026 年 12 月 1 日起为 4.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+          "match": "$10.00 through November 30, 2026.   ",
+          "context": "ber 30, 2026.   $4.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through November 30, 2026.   $20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026."
         },
         {
-          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "次免费搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       依托 Google 地图进行接地   不可用   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   不可用   否          * 客户向 Gemini 提交的请求可能会触发一次或多次 Google 搜索查询。每一次搜索查询都将单独计费。   批量"
+          "match": "$20.00 starting December 1, 2026.   ",
+          "context": "ber 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through November 30, 2026.   $20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026.   $0.20 starting December 1, 2026."
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "用于改进 Google 产品   不可用   否          * 客户向 Gemini 提交的请求可能会触发一次或多次 Google 搜索查询。每一次搜索查询都将单独计费。   批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 11 月 30 日前为 1.00 美元。 2026 年 12 月 1 日起为 2.00 美元。       输出价格（包括思考 Token）   不可用   2026 年 11"
+          "match": "$0.10 through November 30, 2026.   ",
+          "context": "0.00 through November 30, 2026.   $20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026.   $0.20 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with G"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token） *           输入价格   不可用   $1.00       输出价格（包括思考 Token）   不可用   5.00 美元       上下文缓存价格   不可用   $0.05 仅隐式缓存（不支持显式缓存）。"
+          "match": "$0.20 starting December 1, 2026.   ",
+          "context": "20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026.   $0.20 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Google Search{% sup %}*{% /sup %}  *"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "flash         在 Google AI Studio 中试用        Google 旗下最智能的 Flash 模型，专为长期软件工程、自主智能体和复杂的企业工作流而设计。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+          "match": "$14 per 1,000 requests (subject t",
+          "context": "% /sup %}  * Not available  * 5,000 free search requests per month (shared across all Gemini 3 and newer models),  then $14 per 1,000 requests (subject to a [daily cap](/docs/pricing#pricing-for-tools) of 1,500 requests per day).   ---   * Grounding with Google Maps  * Not"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+          "match": "$14 / 1,000  search queries.   --",
+          "context": "with Google Maps  * Not available  * 5,000 requests per month (free, shared across all Gemini 3 and newer models), then $14 / 1,000  search queries.   ---   * Used to improve our products  * Not available  * [No](/docs/terms)  {% /table %}   {% sup %}*{% /sup %} A customer"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+          "match": "$1.00 through November 30, 2026.   ",
+          "context": "h\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $1.00 through November 30, 2026.   $2.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through No"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "2 月 31 日之前）。 1.00 美元/100 万个 token/小时（存储价格）（2027 年 1 月 1 日起）。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+          "match": "$5.00 through November 30, 2026.   ",
+          "context": "ber 30, 2026.   $2.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through November 30, 2026.   $10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026."
         },
         {
-          "match": "免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次",
-          "context": "搜索请求（在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       依托 Google 地图进行接地   不适用 **   每月 5,000 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         贡献者 注意 ： Gemini API 贡献者层级以非公开预览版的形式提供，仅限受邀者使用。速度和可靠性与 标准层级推断 相当。符合条件的"
+          "match": "$10.00 starting December 1, 2026.   ",
+          "context": "mber 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through November 30, 2026.   $10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026.   $0.10 starting December 1, 2026."
         },
         {
-          "match": "免费   0.375 美元       输出价格（包括思考 Token",
-          "context": "性与 标准层级推断 相当。符合条件的用户会收到电子邮件邀请，并在 AI Studio 中看到醒目提示。                     免费层级   付费层级（美元/100 万个 token） *           输入价格   免费   0.375 美元       输出价格（包括思考 Token）   免费   $1.875       上下文缓存价格   免费   0.0375 美元 0.50 美元/100 万个 token/小时（存储价格）       用于改进 Google 产品   是   是          * 折扣和"
+          "match": "$0.05 through November 30, 2026.   ",
+          "context": "5.00 through November 30, 2026.   $10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026.   $0.10 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Used to improve"
         },
         {
-          "match": "免费   0.0375 美元 0.50 美元/100 万个 token",
-          "context": "免费层级   付费层级（美元/100 万个 token） *           输入价格   免费   0.375 美元       输出价格（包括思考 Token）   免费   $1.875       上下文缓存价格   免费   0.0375 美元 0.50 美元/100 万个 token/小时（存储价格）       用于改进 Google 产品   是   是          * 折扣和模型可用性可能会发生变化。         Gemini 3.6 Flash   gemini-3.6-flash         在"
+          "match": "$0.10 starting December 1, 2026.   ",
+          "context": "10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026.   $0.10 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Used to improve our products  * Not available  * [N"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "6-flash         在 Google AI Studio 中试用        Google 的上一代 Flash 模型，在一般性智能体任务和日常任务中兼顾了速度和多模态功能。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 0.75 美元。 2027 年 1 月 1 日起为 1.50 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+          "match": "$1.00 through November 30, 2026.   ",
+          "context": "x\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $1.00 through November 30, 2026.   $2.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through No"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "0 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2026 年 12 月 31 日之前为 0.375 美元。 2027 年 1 月 1 日起为 0.75 美元。       输出价格（包括思考 Token）   不可用   2026 年 1"
+          "match": "$3.60 through November 30, 2026.   ",
+          "context": "y\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $3.60 through November 30, 2026.   $7.20 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $18.00 through N"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "00 个请求（免费，在所有 Gemini 3 及更新的模型中共享），超出后按每 1,000 次搜索查询 14 美元计费。       用于改进 Google 产品   是   否         优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2026 年 12 月 31 日之前为 1.35 美元。 2027 年 1 月 1 日起为 2.70 美元。       输出价格（包括思考 Token）   免费   2026 年 12 月"
+          "match": "$18.00 through November 30, 2026.   ",
+          "context": "ber 30, 2026.   $7.20 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $18.00 through November 30, 2026.   $36.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.18 through November 30, 2026."
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "view       在 Google AI Studio 中试用        我们的低延迟音频转音频模型，针对实时语音智能体和实时对话场景进行了优化，包括通过扩展思考提供后台推理支持。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.75 美元（文本） 3.00 美元或 0.005 美元/分钟（音频） 1.00 美元或 0.002 美元/分钟（图片/视频）       输出价格（包括思考 Token）   免费   4"
+          "match": "$0.18 through November 30, 2026.   ",
+          "context": "8.00 through November 30, 2026.   $36.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.18 through November 30, 2026.   $0.36 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with G"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "3.5-live-translate-preview         在 Google AI Studio 中试用        我们的低延迟实时语音转语音翻译模型，支持 70 多种语言。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.0053 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.0315 美元/分钟 * （音频）       用"
+          "match": "$0.36 starting December 1, 2026.   ",
+          "context": "36.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.18 through November 30, 2026.   $0.36 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Google Search{% sup %}*{% /sup %}  *"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ibe-live         在 Google AI Studio 中试用        Google 的低延迟、实时语音转文字模型，可通过 WebSocket 实现双向流式音频转写。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   3.50 美元或 0.005 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   21.00 美元或 0.004 美元/分钟 * （文本）       依托"
+          "match": "$1.00   ---   * Output price (inclu",
+          "context": "* Feature  * Free Tier  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}   ---   * Input price  * Not available  * $1.00   ---   * Output price (including thinking tokens)  * Not available  * $5.00   ---   * Context caching price  * Not available  * $0.05   Implicit cac"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "3.5-transcribe         在 Google AI Studio 中试用        我们的语音转文字模型，支持自动检测语言、讲话人区分、字词级时间戳和自定义词汇偏好。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   2.00 美元或 0.003 美元/分钟 * （音频）       输出价格（包括思考 Token）   免费   12.00 美元或 0.002 美元/分钟 * （文本）       依托"
+          "match": "$5.00   ---   * Context caching pri",
+          "context": "---   * Input price  * Not available  * $1.00   ---   * Output price (including thinking tokens)  * Not available  * $5.00   ---   * Context caching price  * Not available  * $0.05   Implicit caching only (explicit caching is not supported).   ---   * Used to improve our"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ni-3.5-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.30 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   免费   $2.50       上下文缓存价格   不可用   0.03 美元 1.0"
+          "match": "$0.05   Implicit caching only (expl",
+          "context": "Output price (including thinking tokens)  * Not available  * $5.00   ---   * Context caching price  * Not available  * $0.05   Implicit caching only (explicit caching is not supported).   ---   * Used to improve our products  * Not available  * [Yes](/docs/logs-policy#contr"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "* 客户向 Gemini 提交的请求可能会触发一次或多次 Google 搜索查询。每一次搜索查询都将单独计费。    ** 可以在 Google AI Studio 中进行测试。   批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/1"
+          "match": "$0.75 through December 31, 2026.   ",
+          "context": "\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Free of charge  * $0.75 through December 31, 2026.   $1.50 starting January 1, 2027.   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75 through De"
         },
         {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "询。每一次搜索查询都将单独计费。    ** 可以在 Google AI Studio 中进行测试。   批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+          "match": "$1.50 starting January 1, 2027.   -",
+          "context": "e Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Free of charge  * $0.75 through December 31, 2026.   $1.50 starting January 1, 2027.   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75 through December 31, 2026.   $7.50 starting J"
         },
         {
-          "match": "免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "每一次搜索查询都将单独计费。    ** 可以在 Google AI Studio 中进行测试。   Flex                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.15 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $1.25       上下文缓存价格   不可用   0.02 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+          "match": "$3.75 through December 31, 2026.   ",
+          "context": "ber 31, 2026.   $1.50 starting January 1, 2027.   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75 through December 31, 2026.   $7.50 starting January 1, 2027.   ---   * Context caching price  * Free of charge  * $0.075 through December 31, 2026."
         },
         {
-          "match": "免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token",
-          "context": "。每一次搜索查询都将单独计费。    ** 可以在 Google AI Studio 中进行测试。   优先级                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.54 美元（文本/图片/视频/音频）       输出价格（包括思考 Token）   免费   $4.50       上下文缓存价格   不可用   0.05 美元 1.00 美元/100 万个 token/小时（存储价格）       依托 Google 搜索进行接地 *   不适用 **   每月 5,000"
+          "match": "$7.50 starting January 1, 2027.   -",
+          "context": "ary 1, 2027.   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75 through December 31, 2026.   $7.50 starting January 1, 2027.   ---   * Context caching price  * Free of charge  * $0.075 through December 31, 2026.   $0.15 starting January 1, 2027."
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ni-3.1-flash-lite         在 Google AI Studio 中试用        一款经济高效的模型，针对高调用量智能体任务、翻译和简单的数据处理进行了优化。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   免费   0.25 美元（文本 / 图片 / 视频） 0.50 美元（音频）       输出价格（包括思考 Token）   免费   $1.50       上下文缓存价格   不可用   0.02"
+          "match": "$0.075 through December 31, 2026.   ",
+          "context": "$3.75 through December 31, 2026.   $7.50 starting January 1, 2027.   ---   * Context caching price  * Free of charge  * $0.075 through December 31, 2026.   $0.15 starting January 1, 2027.   $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026.   $1.00 /"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "ash         在 Google AI Studio 中试用        Google 的新一代视频生成和编辑模型，现已面向使用 Gemini API 付费层级的开发者正式推出。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本 / 图片 / 视频 / 音频）       输出价格（包括思考 Token）   不可用   9.00 美元（文本） 17.50 美元（视频） *       用于改进"
+          "match": "$0.15 starting January 1, 2027.   $",
+          "context": "7.50 starting January 1, 2027.   ---   * Context caching price  * Free of charge  * $0.075 through December 31, 2026.   $0.15 starting January 1, 2027.   $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026.   $1.00 / 1,000,000 tokens per hour (storage"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "eview-customtools         在 Google AI Studio 中试用        我们的第三代 Pro 模型，专为多模态理解能力、智能体功能和氛围编程而打造。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   2.00 美元：提示 <= 20 万个 token 4.00 美元：提示 > 20 万个 token       输出价格（包括思考 Token）   不可用   12.00 美元：提示 <"
+          "match": "$1.00 / 1,000,000 tokens per hour (",
+          "context": "026.   $0.15 starting January 1, 2027.   $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026.   $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027.   ---   * Grounding with Google Search  * Not available  * 5,000 free search re"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "1 Flash Image) 的更新版本，专为高效图片生成和对话式编辑而打造，在 1K、2K 和 4K 分辨率下，视觉质量、多轮角色一致性、准确的文本渲染以及基于搜索的生成能力均有所提升。     标准                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   1.50 美元（文本/图片/视频）       输出价格   不可用   7.50 美元（文本和思考）   30.00 美元（图片）   相当于每张 1K 图片 0.0336 美元 * 、"
+          "match": "$14 per 1,000 requests (subject t",
+          "context": "le Search  * Not available  * 5,000 free search requests per month (shared across all Gemini 3 and newer models),  then $14 per 1,000 requests (subject to a [daily cap](/docs/pricing#pricing-for-tools) of 1,500 requests per day).   ---   * Grounding with Google Maps  * Not"
         },
         {
-          "match": "免费层级   付费层级（美元/100 万个 token",
-          "context": "中共享），超出后针对基于文本和图片的接地，按每 1,000 次请求 14 美元计费（ 每日上限 为 1,500 次请求）。       用于改进 Google 产品   是   否         批量                   免费层级   付费层级（美元/100 万个 token）           输入价格   不可用   0.75 美元（文本/图片/视频）       输出价格   不可用   3.75 美元（文本和思考）   15.00 美元（图片）   相当于每张 1K 图片 0.0168 美元 * 、"
+          "match": "$1.875 through December 31, 2026.   ",
+          "context": "mber 31, 2026.   $0.75 starting January 1, 2027.   ---   * Output price (including thinking tokens)  * Not available  * $1.875 through December 31, 2026.   $3.75 starting January 1, 2027.   ---   * Context caching price  * Not available  * $0.0375 through December 31, 2026."
         }
       ]
     },
@@ -1092,55 +1092,71 @@
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
       "status": "ok",
-      "hits": 12,
+      "hits": 16,
       "findings": [
         {
-          "match": "$10       第 2 层级   $50       第 3 ",
-          "context": "。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用"
+          "match": "$10 | | **Tier 2** | $200 | | **T",
+          "context": "account standing.  | Usage tier | Spend rate limit (per 10 minutes) | | :--- | :--- | | **Free** | N/A | | **Tier 1** | $10 | | **Tier 2** | $200 | | **Tier 3** | $200 |  If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this"
         },
         {
-          "match": "$200          如果您达到基于支出的速率限制，API 会",
-          "context": "于您的账单历史记录和账号信誉。          使用层   支出速率限制（每 10 分钟）            免费   不适用       第 1 层级   $10       第 2 层级   $50       第 3 层级   $200          如果您达到基于支出的速率限制，API 会返回 429 RESOURCE_EXHAUSTED 错误。如需解决此问题，请执行以下操作：      等待片刻，然后重试 。   降低高成本请求的速率 ，例如使用较小的上下文窗口或较短的输出。   如果您在正常使用期间始终达到此限制，请 申"
+          "match": "$200 |  If you hit a spend-based r",
+          "context": "e limit (per 10 minutes) | | :--- | :--- | | **Free** | N/A | | **Tier 1** | $10 | | **Tier 2** | $200 | | **Tier 3** | $200 |  If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this:  * Wait and retry after a short period. *"
         },
         {
-          "match": "$250       第 2 层级   已支付 100 美元 + 自",
-          "context": "务（包括但不限于 Gemini API）上的累计总支出。          使用层   资格赛   结算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批"
+          "match": "$250 | | **Tier 2** | Paid $100 + ",
+          "context": "ojects) or free trial | N/A | | **Tier 1** | [Set up and link an active billing account](/docs/billing#setup-billing) | $250 | | **Tier 2** | Paid $100 + 3 days from first successful payment | $2,000 | | **Tier 3** | Paid $1,000 + 30 days from first successful payment | $20"
         },
         {
-          "match": "$2,000       第 3 层级   已支付 1,000 ",
-          "context": "算层级上限            免费   活跃项目 或免费试用   不适用       第 1 层级   设置并关联有效的结算账号   $250       第 2 层级   已支付 100 美元 + 自首次成功付款时起已满 3 天   $2,000       第 3 层级   已支付 1,000 美元 + 自首次成功付款时起已满 30 天   20,000 - 100,000+ 美元          虽然满足所述资格条件通常足以获得批准，但在极少数情况下，升级请求可能会因审核过程中发现的其他因素而被拒绝。    此系统有助于维护"
+          "match": "$2,000 | | **Tier 3** | Paid $1,",
+          "context": "illing account](/docs/billing#setup-billing) | $250 | | **Tier 2** | Paid $100 + 3 days from first successful payment | $2,000 | | **Tier 3** | Paid $1,000 + 30 days from first successful payment | $20,000 - $100,000+ |  While meeting the stated qualification criteria is"
         },
         {
-          "match": "每日 token",
-          "context": "D ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)。 内置工具也有特定的速率限制。例如，在 Gemini 3 及更新的模型上，依托 Google 搜索进行接地功能在 Gemini Developer API 上每个项目每天默认最多可发出 1,500 个请求 (RPD)"
+          "match": "$20,000 - $100,000+ |  While meet",
+          "context": "+ 3 days from first successful payment | $2,000 | | **Tier 3** | Paid $1,000 + 30 days from first successful payment | $20,000 - $100,000+ |  While meeting the stated qualification criteria is generally sufficient for approval, in rare cases an upgrade request may be deni"
         },
         {
-          "match": "RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RP",
-          "context": "发出的请求数量。这些限制有助于维护公平使用、防范滥用行为，并帮助所有用户保持系统性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非"
+          "match": "Requests per minute (**RPM**) * Tokens per minute (input) (",
+          "context": "## How rate limits work {% id=\"how-rate-limits-work\" %}  Rate limits are usually measured across three dimensions:  * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**)  Your usage is evaluated against each limit, and exceeding any of them will trigge"
         },
         {
-          "match": "RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请",
-          "context": "个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够"
+          "match": "Requests per day (**RPD**)  Your usage is evaluated agai",
+          "context": "are usually measured across three dimensions:  * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**)  Your usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example, if your RPM limit is 20, making"
         },
         {
-          "match": "RPD ) 配额会在美国太平洋时间零点重置",
-          "context": "的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按 API 密钥）应用的。每日请求数 ( RPD ) 配额会在美国太平洋时间零点重置。    限制因所使用的具体模型而异，并且某些限制仅适用于特定模型。例如，每分钟图片数 (IPM) 仅针对能够生成图片的模型 (Nano Banana) 计算，但在概念上与 TPM 类似。其他模型可能有每日 token 数量限制 (TPD)"
+          "match": "RPM limit is 20, making 21 requests within ",
+          "context": "usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example, if your RPM limit is 20, making 21 requests within a minute will result in an error, even if you haven't exceeded your TPM or other limits.  Rate limits are applied per pr"
         },
         {
-          "match": "RPD)（请参阅 依托 Google 搜索进行接地 ）",
-          "context": "oken 数量限制 (TPD)。 内置工具也有特定的速率限制。例如，在 Gemini 3 及更新的模型上，依托 Google 搜索进行接地功能在 Gemini Developer API 上每个项目每天默认最多可发出 1,500 个请求 (RPD)（请参阅 依托 Google 搜索进行接地 ）。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这"
+          "match": "Requests per day (**RPD**) quotas reset at midnight Paci",
+          "context": "an error, even if you haven't exceeded your TPM or other limits.  Rate limits are applied per project, not per API key. Requests per day (**RPD**) quotas reset at midnight Pacific time.  Limits vary depending on the specific model being used, and some limits only apply to specific models. For ex"
         },
         {
-          "match": "RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强",
-          "context": "Developer API 上每个项目每天默认最多可发出 1,500 个请求 (RPD)（请参阅 依托 Google 搜索进行接地 ）。    实验性模型和预览版模型的速率限制更为严格。    基于支出的速率限制    除了每分钟请求数 (RPM) 和每分钟 token 数 (TPM) 限制之外，Gemini API 还会强制执行基于支出的速率限制，以防止产生意外费用。这些限额是否适用于您的账号取决于您的结算历史记录和 用量层级 。    下表显示了每个 用量层级 基于支出的速率限制。这些限制在 10 分钟的滚动窗口中进行评估。这些限制是否适用于您的账号取决于"
+          "match": "requests per day (RPD) per project on the Gemini Develop",
+          "context": "e limits. For example, Grounding with Google Search on Gemini 3 and newer models is subject to a default limit of 1,500 requests per day (RPD) per project on the Gemini Developer API (see [Grounding with Google Search](/docs/google-search#pricing)).  Rate limits are more restricted for experimen"
         },
         {
-          "match": "RPM）",
-          "context": "升级到下一层级。从免费层级升级到第 1 层级通常会立即生效，后续层级升级将在 10 分钟内生效。前往 AI Studio 中的 “项目”页面 ，查看您的层级。    申请提高速率限制    每个模型变体都有一个关联的速率限制（每分钟请求数，RPM）。 如需详细了解这些速率限制，请参阅 AI Studio 速率限制 页面。    申请提高付费层级速率限制    我们不保证一定会提高您的速率限制，但会尽力审核您的请求。"
+          "match": "requests per minute (RPM) and tokens per minute (TPM) limit",
+          "context": "stricted for experimental and preview models.  ### Spend-based rate limits {% id=\"spend-rate-limits\" %}  In addition to requests per minute (RPM) and tokens per minute (TPM) limits, the Gemini API enforces spend-based rate limits to protect against unexpected charges. Whether these limits apply to"
+        },
+        {
+          "match": "requests per minute, RPM). For details on those rate limits",
+          "context": "equest a rate limit increase {% id=\"request-rate-limit-increase\" %}  Each model variation has an associated rate limit (requests per minute, RPM). For details on those rate limits, see the [AI Studio Rate Limit](https://aistudio.google.com/rate-limit) page.  {% button href=\"https://forms.gle/ETzX94"
+        },
+        {
+          "match": "Free tier",
+          "context": "%}  {% /tabs %}  ## How to upgrade to the next tier {% id=\"how-to-upgrade-to-the-next-tier\" %}  To transition from the Free tier to a paid tier, you must first [set up billing in AI Studio](/docs/billing).  Once your project meets the [specified cr"
         },
         {
           "match": "RPD",
-          "context": "性能。    在 AI Studio 中查看有效的速率限制    速率限制的运作方式    速率限制通常从以下三个维度进行衡量：      每分钟请求数 ( RPM )   每分钟 token 数（输入）( TPM )   每日请求数 ( RPD )      系统会根据每个限制评估您的用量，超出其中任何一个限制都会触发速率限制错误。例如，如果您的 RPM 限额为 20，那么即使您未超出 TPM 或其他限额，在一分钟内发出 21 个请求也会导致错误。    速率限制是按项目（而非按"
+          "context": "d across three dimensions:  * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**)  Your usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example,"
+        },
+        {
+          "match": "RPD",
+          "context": "u haven't exceeded your TPM or other limits.  Rate limits are applied per project, not per API key. Requests per day (**RPD**) quotas reset at midnight Pacific time.  Limits vary depending on the specific model being used, and some limits only"
+        },
+        {
+          "match": "RPD",
+          "context": "ple, Grounding with Google Search on Gemini 3 and newer models is subject to a default limit of 1,500 requests per day (RPD) per project on the Gemini Developer API (see [Grounding with Google Search](/docs/google-search#pricing)).  Rate limit"
         }
       ]
     },
@@ -1304,8 +1320,86 @@
       "id": "sambanova-rate-limits",
       "name": "SambaNova 限流",
       "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
-      "status": "error",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "status": "ok",
+      "hits": 19,
+      "findings": [
+        {
+          "match": "RPM: Requests per minute   RPD: Requests pe",
+          "context": "y limit how many times each user can call the SambaNova API within a given interval.   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPD: Tokens per day (Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You"
+        },
+        {
+          "match": "RPM or RPD) depending on which one you reac",
+          "context": "(Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You can hit either limit type (RPM or RPD) depending on which one you reach first   You will be notified in every request response what the status of your rate limits are ( see rate limit respon"
+        },
+        {
+          "match": "Requests per minute (RPM) Requests per day (RPD) DeepSeek D",
+          "context": "n environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b 60 12000 Developer Model ID RPM RPD"
+        },
+        {
+          "match": "RPM RPD TPD DeepSeek DeepSeek-V3.1 20 20 20",
+          "context": "pSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.1 20 20 200000 Meta Meta-Llama-3.3-70B-Instruct 20 20 200000 OpenAI gpt-oss-120b 20 20 200000     ​ Preview model rate limits   Pr"
+        },
+        {
+          "match": "Requests per minute (RPM) Requests per day (RPD) DeepSeek D",
+          "context": "s. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 200000"
+        },
+        {
+          "match": "RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 20",
+          "context": "r minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD DeepSeek DeepSeek-V3.2 20 20 200000 Google gemma-4-31B-it 20 20 200000     ​ Rate limit response headers   These headers are found in every request res"
+        },
+        {
+          "match": "RPM (Requests per minute)     x-ratelimit-l",
+          "context": "hese headers are found in every request response and give information about the current status of rate limit usage.   ​ RPM (Requests per minute)     x-ratelimit-limit-requests – Maximum requests allowed per minute   x-ratelimit-remaining-requests – Remaining requests in current min"
+        },
+        {
+          "match": "RPD (Requests per day)     x-ratelimit-limi",
+          "context": "telimit-remaining-requests – Remaining requests in current minute   x-ratelimit-reset-requests – Time until reset     ​ RPD (Requests per day)     x-ratelimit-limit-requests-day – Maximum requests allowed per day   x-ratelimit-remaining-requests-day – Remaining requests in current d"
+        },
+        {
+          "match": "Free tier",
+          "context": "en interval.   Rate limits are measured in:     RPM: Requests per minute   RPD: Requests per day   TPD: Tokens per day (Free tier only)     ​ Basics     A request is defined by a call to the SambaNova API   You can hit either limit type (RPM or RPD)"
+        },
+        {
+          "match": "Free Tier",
+          "context": "the administrator.   ​ SambaCloud rate limit tiers   SambaNova provides a few different rate limit tier offerings:     Free Tier : Applied when there is no payment method linked with your account   Developer Tier : Applied when a payment method is"
+        },
+        {
+          "match": "Free Tier",
+          "context": "intended for use in production environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3"
+        },
+        {
+          "match": "Free Tier",
+          "context": "sed in production environments. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "different rate limit tier offerings:     Free Tier : Applied when there is no payment method linked with your account   Developer Tier : Applied when a payment method is linked with your account     For higher rate limit access, please contact the SambaN"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "ss, please contact the SambaNova sales team .   Please see the Billing page to link a payment method to your account.   Developer Tier accounts are limited to 20M tokens per day across all models.     ​ Production model rate limits   Production models ar"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "ion models are intended for use in production environments and meet SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta"
+        },
+        {
+          "match": "Developer Tier",
+          "context": "should not be used in production environments. These models have limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google ge"
+        },
+        {
+          "match": "RPM",
+          "context": "et SambaNova’s high standards for speed and quality.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.1 60 12000 Meta Meta-Llama-3.3-70B-Instruct 240 48000 OpenAI gpt-oss-120b"
+        },
+        {
+          "match": "RPM",
+          "context": "limited capacity and may be removed at short notice.   Developer Tier Free Tier Developer Model ID Requests per minute (RPM) Requests per day (RPD) DeepSeek DeepSeek-V3.2 60 12000 Google gemma-4-31B-it 60 12000 Developer Model ID RPM RPD TPD D"
+        },
+        {
+          "match": "20M",
+          "context": "team .   Please see the Billing page to link a payment method to your account.   Developer Tier accounts are limited to 20M tokens per day across all models.     ​ Production model rate limits   Production models are intended for use in produc"
+        }
+      ]
     },
     {
       "id": "together-pricing",
@@ -2330,27 +2424,27 @@
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "text+image+video->text qwen/qwen3.6-35b-a3b 262K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.24/$1.20 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video"
+          "context": "text+image+video->text qwen/qwen3.6-35b-a3b 262K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.24/$1.20 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+i"
         },
         {
-          "match": "$0.24/$1.20 text->text qwen/qwen3.5",
-          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.24/$1.20 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+im"
-        },
-        {
-          "match": "$0.32/$2.56 text+image+video->text ",
-          "context": "1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.24/$1.20 text->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+i"
+          "match": "$0.24/$1.20 text->text qwen/qwen3-v",
+          "context": "t+image+video->text qwen/qwen3.6-plus 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.24/$1.20 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+vi"
         },
         {
           "match": "$0.20/$0.88 text+image->text qwen/q",
-          "context": "->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text"
+          "context": "image+video->text qwen/qwen3-coder-flash 1000K ctx · $0.24/$1.20 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1024K ctx · $0.40/$2.40 text+image+video"
+        },
+        {
+          "match": "$0.32/$2.56 text+image+video->text ",
+          "context": "0 text->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1024K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video"
         },
         {
           "match": "$0.40/$2.40 text+image+video->text ",
-          "context": "image+video->text qwen/qwen3-vl-235b-a22b-instruct 262K ctx · $0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text"
+          "context": "0.88 text+image->text qwen/qwen3.5-122b-a10b 262K ctx · $0.32/$2.56 text+image+video->text qwen/qwen3.8-27b 1024K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text"
         },
         {
           "match": "$0.48/$2.88 text+image+video->text ",
-          "context": "0.20/$0.88 text+image->text qwen/qwen3.8-27b 1000K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
+          "context": "2.56 text+image+video->text qwen/qwen3.8-27b 1024K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.6-27b 262K ctx · $0.48/$2.88 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings"
         },
         {
           "match": "$1.60/$4.80 text->text qwen/qwen3-e",
@@ -2378,23 +2472,23 @@
         },
         {
           "match": "$0.15/$0.60 text+image->text qwen/q",
-          "context": "0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text"
+          "context": "0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen"
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->"
+          "context": "0 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->"
+        },
+        {
+          "match": "$0.30/$1.00 text->text qwen/qwen3.5",
+          "context": ".60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->tex"
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "age->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen"
-        },
-        {
-          "match": "$0.30/$1.00 text->text qwen/qwen-2.",
-          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro"
+          "context": "/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-"
         },
         {
           "match": "$0.36/$0.40 text->text qwen/qwen-im",
-          "context": "30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image Google google/gemini-4-argon"
+          "context": "xt->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image Google google/gemini-4-argon"
         }
       ]
     },
@@ -2462,9 +2556,8 @@
       "id": "cloud-apis",
       "name": "API Keys",
       "url": "https://cloud.sambanova.ai/apis",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "id": "cloud-accountak",
@@ -2703,11 +2796,11 @@
         },
         {
           "match": "free",
-          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 112 内容"
+          "context": "绍 2022-04-27 432 2分33秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
-          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 112 内容 103 讨论 1 进入专区 精选文章 不写代码，用Lighthouse轻松搭建知识库"
+          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支持文生图,也可作为视频等多模态视觉生成基础。 粉丝 3 内容 17 讨论 10 进入"
         }
       ]
     },
@@ -4061,7 +4154,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 12.5k  ( 12.5k ) Star 83.8k  ( 83.8k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "on settings Fork 12.6k  ( 12.6k ) Star 84k  ( 84k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4291,7 +4384,7 @@
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 昨天 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户"
+          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 2 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4299,11 +4392,11 @@
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "度 100 积分/天 核实 2026-10-27 6 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 29 天"
+          "context": "度 100 积分/天 核实 2026-10-27 6 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 28 天"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 29 天 额度 100000000 Tokens/天 核实 2026-10-27 6 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 28 天 额度 100000000 Tokens/天 核实 2026-10-27 6 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
         },
         {
           "match": "免费层 每日 1500 次",
@@ -4311,7 +4404,7 @@
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-02 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-03 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 4",
@@ -4585,7 +4678,7 @@
       "name": "Warp",
       "url": "https://www.warp.dev/pricing",
       "status": "ok",
-      "hits": 20,
+      "hits": 21,
       "findings": [
         {
           "match": "$0 /month For developers who wan",
@@ -4648,8 +4741,12 @@
           "context": "your GitHub code forge ○ Attribution controls and multiple admins Purchase additional agent usage Business Recommended $50 /user /month For teams scaling factories across production workflows. Start today Everything in Build, plus: ○ SAML-based SSO ○ Team telemetry and co"
         },
         {
-          "match": "rpm Red Hat, Fedora, SUSE .deb x64 ARM64 .r",
-          "context": "experimental features with Warp Preview Mac macOS Version 10.14+ $ brew install --cask warp Linux .deb Debian, Ubuntu .rpm Red Hat, Fedora, SUSE .deb x64 ARM64 .rpm x64 ARM64 .tar.zst Arch Linux x64 ARM64 AppImage x64 ARM64 Windows .exe Windows 11/10 x64 .exe Windows 11/10 ARM64 $"
+          "match": "rpm Red Hat, Fedora, SUSE x64 .deb x64 ARM6",
+          "context": "erimental features with Warp Preview Mac macOS Version 10.14+ $ brew install --cask warp Linux .deb Debian, Ubuntu x64 .rpm Red Hat, Fedora, SUSE x64 .deb x64 ARM64 .rpm x64 ARM64 .tar.zst Arch Linux x64 ARM64 AppImage x64 ARM64 Windows .exe Windows 11/10 x64 .exe Windows 11/10 ARM6"
+        },
+        {
+          "match": "rpm x64 ARM64 .tar.zst Arch Linux x64 ARM64",
+          "context": "Version 10.14+ $ brew install --cask warp Linux .deb Debian, Ubuntu x64 .rpm Red Hat, Fedora, SUSE x64 .deb x64 ARM64 .rpm x64 ARM64 .tar.zst Arch Linux x64 ARM64 AppImage x64 ARM64 Windows .exe Windows 11/10 x64 .exe Windows 11/10 ARM64 $ winget install Warp.Warp .exe x64 ARM64 Pr"
         },
         {
           "match": "Free",
@@ -5890,19 +5987,19 @@
       "findings": [
         {
           "match": "100 万 token",
-          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存"
+          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存"
         },
         {
-          "match": "$0.20 muse-spark-1.3-contributor $0",
-          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
+          "match": "$0.20 muse-spark-1.3-contributor $1",
+          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入"
         },
         {
           "match": "$1.20 deepseek-v4-flash-vision-exp ",
-          "context": "没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-sp"
+          "context": "没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-sp"
         },
         {
           "match": "$0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOK",
-          "context": "成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.1"
+          "context": "成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contributor 0% test 0% jev-1.1"
         },
         {
           "match": "每日 01 deepseek-v4-flash 0B token",
@@ -5954,11 +6051,11 @@
         },
         {
           "match": "deepseek",
-          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比"
+          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比"
         },
         {
           "match": "deepseek",
-          "context": "产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek"
+          "context": "产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek"
         },
         {
           "match": "deepseek",
@@ -5994,7 +6091,11 @@
         },
         {
           "match": "$1.20",
-          "context": "00 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contribut"
+          "context": "话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 to"
+        },
+        {
+          "match": "$1.20",
+          "context": "00 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.20 deepseek-v4-flash $1.20 deepseek-v4-flash-vision-exp 输入 $0.30 输出 $1.20 已缓存 $0.0060 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% deepseek-v4-flash 22% muse-spark-1.3-contribut"
         },
         {
           "match": "Token",
@@ -6003,10 +6104,6 @@
         {
           "match": "token",
           "context": "8日 10月28日 , UTC 12:45 UTC 12:45 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年10月28日，过去 7 天内 DeepSeek V4 Flash 以 0 token 领跑 OpenCode 使用量，其次是 Muse Spark 1.3 Contributor（0）和 test（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 3 SEP 3 0B SEP 4 SEP 4"
-        },
-        {
-          "match": "token",
-          "context": "0B 0B OCT 26 0B 0B 0B 0B 0B 0B 0B OCT 27 0B 0B 0B 0B 0B 0B 0B OCT 28 0B 0B 0B 0B 0B 0B 0B 每周 每日 01 deepseek-v4-flash 0B token DeepSeek 新 02 muse-spark-1.3-contributor 0B token Meta -96% 较上周 03 test 0B token -99% 较上周 04 jev-1.13 0B token 新 05 dee"
         }
       ]
     },
@@ -6249,15 +6346,15 @@
         },
         {
           "match": "pricing",
+          "context": "xt\",\"input_modalities\":[\"text\",\"image\",\"video\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000037\",\"completion\":\"0.00000125\",\"input_cache_read\":\"0.000000075\"},\"top_provider\":{\"context_length\":10"
+        },
+        {
+          "match": "pricing",
           "context": "mage->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000005\",\"completion\":\"0.0000005\",\"input_cache_read\":\"0.000000003\"},\"top_provider\":{\"context_length\":104"
         },
         {
           "match": "pricing",
           "context": ">text\",\"input_modalities\":[\"file\",\"image\",\"text\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"GPT\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000001\",\"completion\":\"0.000005\",\"web_search\":\"0.01\",\"input_cache_read\":\"0.00000005\",\"input_cache_write\":\""
-        },
-        {
-          "match": "pricing",
-          "context": "xt\",\"input_modalities\":[\"text\",\"image\",\"video\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000002\",\"completion\":\"0.00001\",\"input_cache_read\":\"0.0000002\"},\"top_provider\":{\"context_length\":1048576,\""
         },
         {
           "match": "pricing",
@@ -6578,7 +6675,7 @@
       "findings": [
         {
           "match": "Pricing",
-          "context": "valuate Models Evaluate model accuracy End-to-end examples Administration Account Management Single Sign-On Billing and Pricing Trust & security Trust center Security overview Data Controls Data retention and model training On this page Back to to"
+          "context": "aluate model accuracy End-to-end examples Administration Account Management Temporary tokens Single Sign-On Billing and Pricing Trust & security Trust center Security overview Data Controls Data retention and model training On this page Back to to"
         }
       ]
     },
@@ -6590,12 +6687,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 57 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 57 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 60 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 60 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 57 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. All featured models r"
+          "context": "ed · 60 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. All featured models r"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -6789,7 +6886,7 @@
       "name": "Quickstart - DeepL Docum",
       "url": "https://www.deepl.com/docs-api",
       "status": "ok",
-      "hits": 15,
+      "hits": 16,
       "findings": [
         {
           "match": "Free",
@@ -6846,6 +6943,10 @@
         {
           "match": "Pricing",
           "context": "alse},\"background\":{\"color\":{\"light\":\"#ffffff\"}},\"navbar\":{\"links\":[{\"href\":\"https://www.deepl.com/en/pro#api\",\"label\":\"Pricing\"}],\"primary\":{\"type\":\"button\",\"label\":\"Free API Key\",\"href\":\"https://www.deepl.com/en/checkout?is_api=true\"}},\"footer\":"
+        },
+        {
+          "match": "pricing",
+          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"a"
         },
         {
           "match": "pricing",
@@ -7667,7 +7768,7 @@
         },
         {
           "match": "Pricing",
-          "context": "nClaw Grok Build API keys & credits Try Tavily Without an API Key API Key Management Headers & Authentication Credits & Pricing Rate Limits Best practices Search Extract Crawl Research Help Frequently Asked Questions Help Center Get started Connec"
+          "context": "nClaw Grok Build API keys & credits Try Tavily Without an API Key API Key Management Headers & Authentication Credits & Pricing Rate Limits Best practices Search Extract Crawl Research Company Data Help Frequently Asked Questions Help Center Get s"
         },
         {
           "match": "pricing",
@@ -8169,21 +8270,8 @@
       "name": "Limits and Plans | Jules",
       "url": "https://jules.google/docs/usage-limits/",
       "status": "ok",
-      "hits": 3,
-      "findings": [
-        {
-          "match": "$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE",
-          "context": "\b\u0000\u0000\u0000\u0000\u0000\u0002}rFSL*L\b\u001fD9>bo$\u001bR>\u0010 @\u0001@J}\u0000Tr$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE[ \u0004߼s?'#/u'G\u001aS/QKnK$vNY+ ʑ:\u001c^pgꍼ$ne ʦ~\u001cy,'qUT/2?B󠟍}\u0016|U\u0010\u0005YNBۤF 8RE}\u001c\u0003J;\u001fO\u000f7a\u0018Dg*nEq\u0014\u001a%[\u0019e$ln 0ُ{4\u0013rۛ٢471mHy ^Rl\u001eFa\u0016\u001e`Ц"
-        },
-        {
-          "match": "$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ",
-          "context": "? }EJ\b^\\R\u000f\u0010EX\u0005\u0007o^`bTBo\u0002YѕB[\u0014 \u0012* \u0019+ĉ%D3\u001aE#JJ\u0004\u0000bI\u0004+$UC ɅVT\u001aR\u000fiRce & 6\u0003\u00140^R\u00110\u001a\u0003\u0012\u001b^ cXm^\b82~(\u0006\u0006Hګ[\u0007F0Nh=(-P\u0013n\u0000AOh$WLc2\u00042^zo\u000e$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ_$\u0014yK a\u0013\u001cJ se~\u0006?&Q\u001eVh\u0016\u000e\u0006I\"f2BvV%g3\u0014\u0003'q/\u000e\u0018{\u001bd5P^ j!\u0010 O\u0012:v\u000e},71K~$h\u001e\u001c~1,`@ \u0005 /\u0019=r°\u0011ُK*#u+! 7\u000fRx!\u0007\u0016zXeǭc2|t (xN˺5f]\"4Fe׵\u0017Ѩp"
-        },
-        {
-          "match": "$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19",
-          "context": ")x1%C,\u001c!V#crB`q L\u0012.5\u0014`\u0016\u000f^\u00120Gct\b \u000faLLX\u0010lB\u001bȉ\u000fҧ\u0000q+I䲴vȚϽ3S:\\\u0019P]?_H(\u0013%|\u0005>pP\u000e=b\u0015 w22@\"]\u0003\u0005br@i o_M\u000eC\u00021܎\u0000q\u0000\u0016sXP\u0006\"/nb 2\u001cA\\V ` pDS$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19:\u001d'm4sʰJu\u0013_G/\u0001\u0011ar1D$A)\u0000\u00003Uq0:W?\u0006!n'\u0016\u0019ESή(\u0002hX\u001f8\u0003TR\u00101hſ@Nƴ\u0016\u0017_W \\\u0006\u0013\\\u0010\u0006\u001eypQm]Cg?Y Ap\u0018\u0015erݵsopsw\u0011n\u0011\u0003MV\u001cG\\\u00101+hpeަp{8\u001f\u0005 p'\u0001\u0002RO3"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "kiro-pricing",
