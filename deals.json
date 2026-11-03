@@ -3987,7 +3987,7 @@
   "region": "cn",
   "url": "https://qiniu.com/ai/free-models/conatus-2026",
   "rule": "需登录+实名+未受风控；每日重置，额度用尽直接报错不扣费；部分模型仅限消耗活动额度",
-  "notes": "官方活动页直核；新用户另送 1000 万 Token+邀请好友各 300 万；年中囤货季企业 Token 套餐闲时低至 1.2 折；行业对比：腾讯混元 100 万/年、千帆 100 万/3 月、百炼 100 万永久——每日亿级领先",
+  "notes": "官方活动页直核；新用户另送 1000 万 Token+邀请好友各 300 万；年中囤货季企业 Token 套餐闲时低至 1.2 折；行业对比：腾讯混元 100 万/年、千帆 100 万/3 月、百炼 100 万永久——每日亿级领先 | 2026-11-04 爬虫线定位细则：0 点重置不结转、限时至 11-30 23:59（harvest 源直核）",
   "verify_status": "verified",
   "verified_at": "2026-10-29T18:45:00Z",
   "difficulty": 1,
@@ -3995,7 +3995,8 @@
   "via": "register",
   "daily_wan": 10000,
   "daily_note": "实名每日 1 亿，充值 100 元后 10 亿/天（总账按 1 亿保守）",
-  "group": "七牛云"
+  "group": "七牛云",
+  "deadline": "2026-11-30"
  },
  {
   "id": "zenmux-gifts",
@@ -4321,5 +4322,39 @@
   "group": "美团 CatPaw",
   "notes": "信源：美团技术团队博客（2026-07-28 正式发布）+凤凰科技（2025-11 公测）+官网下载页多源互证 | 公测期初始 500 次对话额度口径已由积分制取代（2026 积分体系）| LongCat-2.0 限时免费与站内 longcat-daily-free（每日 5000 万 API 额度）同门不同渠道 | 折扣链接矩阵位预留：有专属邀请链发我即挂金色按钮",
   "deadline": ""
+ },
+ {
+  "id": "claude-for-oss",
+  "provider": "Anthropic",
+  "category": "official_global",
+  "type": "limited_promo",
+  "value": "Claude for OSS 开源维护者计划：合格开源维护者免费领 6 个月 Claude Max 20x（≈$1,200 价值），无需绑卡；名额 1 万先到先得",
+  "region": "global",
+  "url": "https://claude.com/contact-sales/claude-for-oss",
+  "rule": "条件（满足其一）：核心开源项目主要维护者+项目 5000+ Star / NPM 月下载 100 万+ / 关键基础设施项目可特批；申请入口=contact-sales 表单",
+  "verify_status": "verified",
+  "verified_at": "2026-11-04T00:00:00Z",
+  "difficulty": 3,
+  "published": true,
+  "via": "free",
+  "group": "Anthropic",
+  "notes": "⭐爬虫线官方口径全核（2026-11-03 巡检：申请入口/条件/名额修正 1 万/价值≈$1200 全核）| 人群限定：仅合格开源维护者；名额先到先得抢完即止 | Anthropic 同门：deep-anthropic-startup（初创 $1,000+Team 一年）为另一通道"
+ },
+ {
+  "id": "azure-startups-5k",
+  "provider": "Microsoft",
+  "category": "official_global",
+  "type": "limited_promo",
+  "value": "Azure Startups 初创额度 $5,000：$1,000 即时到账 + $4,000 资质验证后发放（Founders Hub 流程）",
+  "region": "global",
+  "url": "https://www.microsoft.com/en-us/startups",
+  "rule": "新初创账号注册即得 $1K；完成资质验证（公司信息/创始背景）后解锁剩余 $4K；额度用于 Azure 全服务（含 Azure OpenAI/Foundry）",
+  "verify_status": "unverified",
+  "verified_at": "2026-11-04T00:00:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "register",
+  "group": "初创额度",
+  "notes": "信源：爬虫线 1111 预热价格潮 harvest diff（官方定价/活动页集体更新时捕获，2026-11-01）| 初创区同门：aws-activate（$200K）/google-startups（$200K）/deep-anthropic-startup（$1K+Team）| 保守不入总账现金折算，避免初创额度虚高先例"
  }
 ]
