@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.26.1 右上角入群指引强化（2026-11-03，老板令「补充扫码进群第一时间了解折扣信息+删顶部通知+做醒目指引」，0676bc4）：顶部通知条删除（wxTopBar HTML+CSS 全清）；二维码上方加琥珀指引标「第一时间了解折扣信息↓」+箭头弹跳动效；移动端保留二维码（≤480 缩 40px）；桌面/移动双端实测
 - [x] v2.26.0 入群二维码直挂头部右上角（2026-11-03，老板令「直接挂在右上角，直接一些」，9d38264/80e2b44）：sips 从群海报裁 760×760 正方码 assets/wechat-qr.jpg（三定位角完整，两轮校偏）；header .stats 尾部 .wx-corner=46px 圆角小码+「扫码进群」金字标，hover 放大、点击开大图弹窗，≤480 隐藏（移动端顶部条保留）；GitHub 断网 13 连败后网络恢复推送成功
 - [x] TRAE 码力裂变折扣链接挂载（2026-11-03，老板令+提供专属邀请链，cd69203）：trae-code-fission 新建（type=coupon，经链接注册+登录桌面端一次性得 3000 积分叠加 Free 档 500/月；trae.cn/events/code-fission 站长渠道含推荐属性；verified=boss 口径）；金色折扣链接+加倍专区+Trae 国内版组聚合+trae-free-tier 交叉引用；总库 220 条/155 发布
   - ⚠️ 事故复盘：本轮 rebase 解算时 `git checkout --ours` 把语义合并后的 deals.json 一并覆盖（丢 Trae 条目），推后发现重打——**教训：rebase 解算 checkout --ours 必须点名文件，严禁对未冲突/已手工合并文件批量 checkout**
