@@ -4292,18 +4292,52 @@
   "provider": "智云新疆 AI Store",
   "category": "maas",
   "type": "signup_bonus",
-  "value": "中国电信新疆 AI Store：新用户注册送 200 积分券（自动进券包，手动兑换成积分），调用站内模型 API——模型市场含 GLM/Kimi/DeepSeek/Qwen/MiniMax 等接口",
+  "value": "电信新疆 AI Store 注册送 200 积分券——官网明码标价 1 积分=100 万 Token（deepseek-v4-flash 档），**券折 2 亿 tokens**（GLM-5.2 档 2500 万/Kimi K3 档 1000 万）；模型市场 glm-5.2/kimi-k3/deepseek-v4-flash/minimax-m3/qwen3.7-max 等，另有在线体验免费",
   "region": "cn",
   "url": "https://ai.xj.189.cn/activities",
   "rule": "注册→「我的券码/券包」领 200 积分券→站内兑换成积分→模型市场/服务接入建服务组管 API Key 调用；活动至 2026-11-30 23:59",
-  "verify_status": "unverified",
-  "verified_at": "2026-11-03T00:00:00Z",
+  "verify_status": "verified",
+  "verified_at": "2026-11-04T00:00:00Z",
   "difficulty": 2,
   "published": true,
   "via": "register",
   "group": "运营商云",
-  "notes": "⚠️ 三重风险标注：①AI优惠雷达社区票 56% 认为已失效（16 票：7 有效/9 失效）②linux.do 10 月舆情：输出疑似简单字符串替换被质疑「假鸡蛋」，质量存疑 ③本机网络不可达（区域电信网限制），官网以 DNS 实证（202.107.178.138 电信新疆）+信源页交叉，待老板侧复核 | 信源：AI优惠雷达 promo 页直抓（aipromonow.com/promos/telecom-xinjiang-aistore-new-user-200-points-nov30-2026）+ nodeloc.com/t/topic/111652 | 积分制不折总账；与天翼云息壤同属电信系（运营商云组）",
-  "deadline": "2026-11-30"
+  "notes": "⚠️ 三重风险标注：①AI优惠雷达社区票 56% 认为已失效（16 票：7 有效/9 失效）②linux.do 10 月舆情：输出疑似简单字符串替换被质疑「假鸡蛋」，质量存疑 ③本机网络不可达（区域电信网限制），官网以 DNS 实证（202.107.178.138 电信新疆）+信源页交叉，待老板侧复核 | 信源：AI优惠雷达 promo 页直抓（aipromonow.com/promos/telecom-xinjiang-aistore-new-user-200-points-nov30-2026）+ nodeloc.com/t/topic/111652 | 积分制不折总账；与天翼云息壤同属电信系（运营商云组） | 2026-11-04 官网首页 webReader 直核：积分/token 换算全公开（glm-5.2 8/kimi-k3 20/deepseek-v4-flash 1/minimax-m3 2.1/qwen3.7-max 12/emb 0.5 积分每百万），活动中心在 ai.xj.189.cn/activities | ⚠️质量舆情与社区失效票保留：实测一条 DeepSeek 接口确认质量后再加大投入",
+  "deadline": "2026-11-30",
+  "tokens_wan": 20000,
+  "eq_note": "200 积分×100 万 Token/积分（deepseek-v4-flash 1 积分/百万官方首页直核）=2 亿；DS Flash 同款 1:1",
+  "free_models": [
+   {
+    "id": "deepseek-v4-flash-0731",
+    "ctx": "1积分/百万",
+    "note": "全场最低价——200 积分券按此折 2 亿 tokens"
+   },
+   {
+    "id": "glm-5.2",
+    "ctx": "8积分/百万",
+    "note": "智谱旗舰 1M 上下文/128K 输出；券折 2500 万"
+   },
+   {
+    "id": "kimi-k3",
+    "ctx": "20积分/百万",
+    "note": "3T 开源旗舰 100M 上下文；券折 1000 万"
+   },
+   {
+    "id": "minimax-m3",
+    "ctx": "2.1积分/百万",
+    "note": "MSA 稀疏注意力，最高输出 512K"
+   },
+   {
+    "id": "qwen3.7-max",
+    "ctx": "12积分/百万",
+    "note": "Qwen Max 新一代旗舰"
+   },
+   {
+    "id": "text-embedding-v4",
+    "ctx": "0.5积分/百万",
+    "note": "向量化模型"
+   }
+  ]
  },
  {
   "id": "catpaw-meituan",
