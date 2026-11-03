@@ -91,26 +91,22 @@ header .tagline{font-size:.75rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.875rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
 /* 右上角入群二维码（v2.26 老板令：直接挂右上角，可见即扫） */
-.wx-corner{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;flex:none}
+.wx-corner{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;flex:none;position:relative;padding-top:26px}
+.wx-callout{position:absolute;top:-4px;right:-6px;font-style:normal;font-size:.68rem;font-weight:700;color:#b45309;background:rgba(210,153,34,.12);border:1px solid rgba(210,153,34,.4);border-radius:8px;padding:2px 8px;white-space:nowrap;box-shadow:0 2px 6px rgba(210,153,34,.15)}
+.wx-callout b{display:inline-block;margin-left:2px;animation:wxBounce 1.4s ease-in-out infinite;color:var(--amber)}
+@keyframes wxBounce{0%,100%{transform:translateY(-1px)}50%{transform:translateY(3px)}}
 .wx-corner img{width:46px;height:46px;border-radius:8px;border:2px solid rgba(210,153,34,.45);background:#111;display:block;transition:transform .12s,border-color .12s}
 .wx-corner:hover img{transform:scale(1.06);border-color:rgba(210,153,34,.85)}
-.wx-corner i{font-style:normal;font-size:.62rem;color:var(--amber);font-weight:700;white-space:nowrap}
+.wx-corner .wx-qr-label{font-style:normal;font-size:.62rem;color:var(--amber);font-weight:700;white-space:nowrap}
 .wx-corner:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:10px}
-@media(max-width:480px){.wx-corner{display:none}}
+@media(max-width:480px){.wx-corner img{width:40px;height:40px}.wx-callout{font-size:.6rem;right:-2px}}
 /* 横幅链接加成小徽章（v2.25.1 修丑：.global-banner b 的 1.35rem 巨字规则会命中嵌套 b，必须用专属 class 全量重置） */
 .global-banner .gb-pill{font-size:.7rem;font-weight:700;font-family:inherit;color:#b45309;background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.38);border-radius:999px;padding:1px 10px;margin-left:2px;line-height:1.6;letter-spacing:normal;font-variant-numeric:normal;white-space:nowrap;vertical-align:1px}
 /* 数据自动同步气泡 */
 #syncToast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(16px);background:#101828;color:#fff;font-size:.8rem;padding:8px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:all .3s;z-index:80;box-shadow:0 4px 14px rgba(16,24,40,.3)}
 #syncToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(min-width:861px){#syncToast{bottom:24px}}
-/* ===== 顶部扫码入群条（v2.19 老板令：顶部扫码入群，每天分享 token 折扣码） ===== */
-#wxTopBar{display:flex;align-items:center;gap:12px;background:rgba(210,153,34,.07);border:1px solid rgba(210,153,34,.35);border-radius:10px;padding:8px 16px;margin:12px 0 0;cursor:pointer;transition:border-color .12s,background .12s;min-height:40px;box-sizing:border-box}
-#wxTopBar:hover{border-color:rgba(210,153,34,.65);background:rgba(210,153,34,.11)}
-#wxTopBar .wx-qtext{font-size:.82rem;color:#475467}
-#wxTopBar .wx-qtext b{color:var(--amber)}
-#wxTopBar .wx-qgo{margin-left:auto;font-size:.8rem;font-weight:700;color:var(--amber);white-space:nowrap}
-#wxTopBar:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
-@media(max-width:640px){#wxTopBar{padding:7px 12px}#wxTopBar .wx-qtext{font-size:.75rem}#wxTopBar .wx-qgo{font-size:.75rem}}
+
 /* 加倍领取说明条 */
 .double-note{background:rgba(210,153,34,.06);border:1px solid rgba(210,153,34,.3);border-radius:10px;padding:10px 14px;font-size:.82rem;color:#475467;margin:10px 12px;line-height:1.6}
 .double-note b{color:var(--amber)}
@@ -442,11 +438,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <p>聚合五层来源的 token 羊毛情报（每日核验）：智谱 BigModel（每日 3 亿 tokens 放量）、DeepSeek（谷峰价与缓存低价）、Kimi（15 元 API 券）、讯飞星火（免费资源包）、MiniMax（M3 永久五折）、阿里云百炼（新人多模型免费额度）、美团 LongCat（每日 5000 万）、天翼云息壤（新用户 2500 万）、小米 MiMo（新客 ¥5 赠金+邀请各 ¥10）等；海外有 Google AI Studio 免费层、Mistral、Cohere、Anthropic、xAI 等。全部额度统一折算 DeepSeek V4.1 Flash 等效 token 横向可比。启用 JavaScript 可查看实时情报流、用量比价器与折扣码；领取攻略见 <a href="/guides/bailian-70.html">百炼免费额度攻略</a>、<a href="/guides/kimi-guide.html">Kimi 攻略</a>、<a href="/guides/free-tier-survival.html">海外免费层生存指南</a>、<a href="/guides/coding-plan-guide.html">Coding Plan 选购攻略</a> 等 10 篇。订阅 <a href="/rss.xml">RSS 情报流</a>。</p>
   </section>
 </noscript>
-<!-- ============ 顶部扫码入群条（每天分享 token 折扣码） ============ -->
-<div id="wxTopBar" role="button" tabindex="0" aria-label="扫码加入微信群，每天分享 token 折扣码" onclick="openWx()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openWx()}">
-  <span class="wx-qtext">📥 扫码进微信群 · <b>每天分享 token 折扣码</b>与限时羊毛速报</span>
-  <span class="wx-qgo">免费入群 →</span>
-</div>
 <header>
   <h1 class="hlogo">token<em>most</em></h1>  <span class="tagline">只关注免费 · 花 1 分钱买 token 都是原罪</span>
   <span class="tagline">📐 全站计量基准：DeepSeek V4.1 Flash 等效（国内谷价 ¥1.75/百万 · 国际 $0.525/百万 · 旗舰按牌价折算力）</span>
@@ -459,8 +450,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <span class="stat">站点 <b id="n-sites">–</b></span>
     <span class="stat">更新 <b id="updated">–</b></span>
     <span class="wx-corner" role="button" tabindex="0" title="微信群二维码 7 天轮换 · 点击看大图" onclick="openWx()" onkeydown="if(event.key==='Enter'){openWx()}">
+      <i class="wx-callout">第一时间了解折扣信息<b>↓</b></i>
       <img src="/assets/wechat-qr.jpg" alt="微信群二维码">
-      <i>扫码进群</i>
+      <i class="wx-qr-label">扫码进群</i>
     </span>
   </div>
 </header>
