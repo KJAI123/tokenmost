@@ -28,6 +28,8 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] TRAE 码力裂变折扣链接挂载（2026-11-03，老板令+提供专属邀请链，cd69203）：trae-code-fission 新建（type=coupon，经链接注册+登录桌面端一次性得 3000 积分叠加 Free 档 500/月；trae.cn/events/code-fission 站长渠道含推荐属性；verified=boss 口径）；金色折扣链接+加倍专区+Trae 国内版组聚合+trae-free-tier 交叉引用；总库 220 条/155 发布
+  - ⚠️ 事故复盘：本轮 rebase 解算时 `git checkout --ours` 把语义合并后的 deals.json 一并覆盖（丢 Trae 条目），推后发现重打——**教训：rebase 解算 checkout --ours 必须点名文件，严禁对未冲突/已手工合并文件批量 checkout**
 - [x] 🚑 v2.25.2 热修主板块白屏（2026-11-02，老板报「网页主板块也挂了」，485c96a）：
   - **根因**：v2.25 砍登录/供码删了 authBtn/authBtnSide 元素，但 boot 链仍调 authRefreshUI 写 null.textContent → 抛错 → **boot 的 .catch 把已渲染好的 127 行整个清成「数据加载失败」**（banner/导航在抛错前已渲染所以看起来"半死不活"）
   - **修复**：①authRefreshUI 元素守卫 ②boot 链 authRefreshUI/loadShared 改 try/catch 隔离——**数据渲染完成后可选功能抛错不得清空主板块**
