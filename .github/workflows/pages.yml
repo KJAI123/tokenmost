@@ -25,8 +25,9 @@ jobs:
         run: |
           mkdir -p _site/guides _site/platform
           cp index.html sites.json deals.json prices.json usage.json plans.json rss.xml robots.txt sitemap.xml manifest.webmanifest llms.txt llms-full.txt _site/
-          mkdir -p _site/assets
-          cp assets/* _site/assets/ 2>/dev/null || true
+          mkdir -p _site/assets/logos
+          cp assets/*.* _site/assets/ 2>/dev/null || true
+          cp assets/logos/* _site/assets/logos/ 2>/dev/null || true
           cp guides/* _site/guides/ 2>/dev/null || true
           cp platform/* _site/platform/ 2>/dev/null || true
       - uses: actions/configure-pages@v5
