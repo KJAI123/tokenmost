@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<!-- OneTrust Cookies Consent Notice start for workbuddy.ai -->
+<script type="text/javascript" src="https://cdn-ukwest.onetrust.com/consent/019e6370-22e6-7742-863d-1372f0f68fb4/OtAutoBlock.js"></script>
+<script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="019e6370-22e6-7742-863d-1372f0f68fb4"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<script type="text/javascript">
+(function () {
+  function revealOneTrustControls() {
+    if (!window.OneTrust || typeof window.OneTrust.ToggleInfoDisplay !== 'function') {
+      return;
+    }
+
+    document.querySelectorAll('[data-onetrust-control]').forEach(function (control) {
+      control.hidden = false;
+    });
+  }
+
+  function closeOneTrustUi(event) {
+    var target = event.target;
+    if (!target || typeof target.closest !== 'function' || !target.closest('#close-pc-btn-handler')) {
+      return;
+    }
+
+    window.setTimeout(function () {
+      if (window.OneTrust && typeof window.OneTrust.Close === 'function') {
+        window.OneTrust.Close();
+      }
+    }, 0);
+  }
+
+  document.addEventListener('DOMContentLoaded', revealOneTrustControls);
+  window.addEventListener('OneTrustGroupsUpdated', revealOneTrustControls);
+  document.addEventListener('click', closeOneTrustUi, true);
+})();
+</script>
+<!-- OneTrust Cookies Consent Notice end for workbuddy.ai -->
+
+    <script data-wb-injected="runtime-env">window.__toCdnUrl = (url) => {
+  const BASE_URL = '//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f';
+  return (/__.*?__$/.test(BASE_URL) ? '' : BASE_URL) + '/' + url;
+};
+window.RUN_ENV = 'prod';
+window.APP_EDITION = '__APP_EDITION__';
+window.IS_INTERNATIONAL_EDITION = 'true';</script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/logo.svg" />
+    <!-- 字体预加载 -->
+    <!-- 字体走 @font-face swap 加载，preload 会抢占首屏带宽，已移除；COS 域名预连接以省 TCP/TLS -->
+    <link rel="preconnect" href="https://acc-1258344699.cos.accelerate.myqcloud.com" crossorigin />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,shrink-to-fit=no"
+    />
+    <meta name="baidu-site-verification" content="codeva-9u4CEfRSzv" />
+    <meta name="google-site-verification" content="FLzxWYFG80Hk_XLvVz6GpBdsY-f7fdNfnucHDWWCr7k" />
+    <meta name="google-site-verification" content="oz-pUuCn52C2OdUYw04qECMabu6t3Q0OeQDvlML3q7w" />
+    <!-- title / keywords / description / og:title / og:description / twitter:title / twitter:description
+         / og:url / canonical 由 workbuddy-inject-common-html 注入：出口A 静态 SEO（dev 真实值 /
+         prod __SEO_*__ 占位符经 html.sh sed）供爬虫读，出口B 运行时 bootstrap 按 brand×region 覆盖
+         （page=home）。此处仅保留不随四态变化的静态 meta。 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WorkBuddy" />
+    <meta name="twitter:card" content="summary" />
+    <title>WorkBuddy - AI Agent for Everyday Office Work</title>
+    <meta name="keywords" content="WorkBuddy,AI Office,AI Agent,AI productivity assistant,CodeBuddy">
+    <meta name="description" content="Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.">
+    <meta property="og:title" content="WorkBuddy - AI Agent for Everyday Office Work">
+    <meta property="og:description" content="Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.">
+    <meta name="twitter:title" content="WorkBuddy - AI Agent for Everyday Office Work">
+    <meta name="twitter:description" content="Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.">
+    <meta property="og:url" content="https://www.workbuddy.ai/">
+    <link rel="canonical" href="https://www.workbuddy.ai/">
+    <script type="application/ld+json" data-wb-injected="structured-data">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.workbuddy.ai/#publisher",
+            "name": "Tencent Cloud",
+            "url": "https://www.workbuddy.ai/"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.workbuddy.ai/#website",
+            "url": "https://www.workbuddy.ai/",
+            "name": "WorkBuddy",
+            "description": "Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.",
+            "inLanguage": "en-US",
+            "publisher": {
+                "@id": "https://www.workbuddy.ai/#publisher"
+            }
+        },
+        {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.workbuddy.ai/#software",
+            "name": "WorkBuddy",
+            "alternateName": "Tencent WorkBuddy",
+            "url": "https://www.workbuddy.ai/",
+            "description": "Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Windows, macOS",
+            "featureList": [
+                "Runs on a folder you choose and reads the PDF, Word, Excel and image files inside",
+                "Produces finished deliverables as Word, Excel, PowerPoint, PDF or Markdown",
+                "Analyzes CSV and spreadsheet data and generates charts",
+                "Schedules recurring tasks hourly, daily, weekly or once at a set time",
+                "Accepts tasks remotely from messaging apps and runs them on your computer",
+                "Extends through installable skills and Model Context Protocol (MCP) servers",
+                "Runs under permission modes that pause high-risk operations for confirmation"
+            ],
+            "downloadUrl": "https://www.workbuddy.ai/",
+            "inLanguage": "en-US",
+            "publisher": {
+                "@id": "https://www.workbuddy.ai/#publisher"
+            },
+            "softwareHelp": {
+                "@type": "CreativeWork",
+                "url": "https://www.workbuddy.ai/docs/workbuddy/"
+            }
+        }
+    ]
+}</script>
+    <script data-wb-injected="head-bootstrap">(function(){
+  try {
+    var DATA = {"tkd":{"codebuddy":{"cn":{"title":"WorkBuddy - AI Agent 办公新范式","keywords":"WorkBuddy,AI办公,AI Agent,智能办公助手,腾讯云代码助手,CodeBuddy","description":"WorkBuddy 是腾讯云代码助手推出的 AI Agent 办公工具，自主规划并交付多模态复杂任务结果，支持多 Agents 并行工作，极致提效。","ogUrl":"https://www.workbuddy.cn/"},"intl":{"title":"WorkBuddy - AI Agent for Everyday Office Work","keywords":"WorkBuddy,AI Office,AI Agent,AI productivity assistant,CodeBuddy","description":"Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.","ogUrl":"https://www.workbuddy.ai/"}},"workbuddy":{"cn":{"title":"WorkBuddy - AI Agent 办公新范式","keywords":"WorkBuddy,AI办公,AI Agent,智能办公助手,腾讯云代码助手,CodeBuddy","description":"WorkBuddy 是腾讯云代码助手推出的 AI Agent 办公工具，自主规划并交付多模态复杂任务结果，支持多 Agents 并行工作，极致提效。","ogUrl":"https://www.workbuddy.cn/"},"intl":{"title":"WorkBuddy - AI Agent for Everyday Office Work","keywords":"WorkBuddy,AI Office,AI Agent,AI productivity assistant,CodeBuddy","description":"Download for Mac or Windows and start free — describe a task in one sentence and get back finished reports, decks, and spreadsheets, built from your own files.","ogUrl":"https://www.workbuddy.ai/"}}},"favicon":{"codebuddy":{"icon":"assets/logo.svg","appleTouch":"apple-touch-icon.png"},"workbuddy":{"icon":"assets/logo.svg","appleTouch":"apple-touch-icon.png"}},"lang":{"cn":"zh-CN","intl":"en-US"},"isDev":false,"useToCdnUrl":true};
+    var host = window.location.hostname;
+    var search = window.location.search;
+
+    var overrideAllowed = DATA.isDev
+      || host.indexOf('staging') !== -1
+      || host.indexOf('test') !== -1
+      || host === 'localhost'
+      || host.indexOf('127.') === 0
+      || host.indexOf('192.168.') === 0;
+
+    var brand = null;
+    if (overrideAllowed) {
+      try {
+        var q = new URLSearchParams(search).get('brand');
+        if (q === 'codebuddy' || q === 'workbuddy') {
+          brand = q;
+          try { window.localStorage.setItem('cb_brand_override', q); } catch (e) {}
+        }
+      } catch (e) {}
+      if (!brand) {
+        try {
+          var s = window.localStorage.getItem('cb_brand_override');
+          if (s === 'codebuddy' || s === 'workbuddy') { brand = s; }
+        } catch (e) {}
+      }
+    }
+    if (!brand) { brand = host.indexOf('.workbuddy.') !== -1 ? 'workbuddy' : 'codebuddy'; }
+
+    var flag = window.IS_INTERNATIONAL_EDITION;
+    var region = 'cn';
+    if (flag === true) {
+      region = 'intl';
+    } else if (typeof flag === 'string' && !/__.*?__$/.test(flag) && (flag === 'true' || flag === '1')) {
+      region = 'intl';
+    }
+
+    var brandData = DATA.tkd[brand] || DATA.tkd.codebuddy || DATA.tkd.workbuddy;
+    var tkd = brandData ? brandData[region] : null;
+    var lang = DATA.lang[region];
+
+    if (lang) { document.documentElement.lang = lang; }
+    if (tkd) {
+      if (tkd.title) { document.title = tkd.title; }
+      setMeta('name', 'keywords', tkd.keywords);
+      setMeta('name', 'description', tkd.description);
+      setMeta('property', 'og:title', tkd.title);
+      setMeta('property', 'og:description', tkd.description);
+      if (tkd.ogUrl) {
+        setMeta('property', 'og:url', tkd.ogUrl);
+        setLink('canonical', tkd.ogUrl);
+      }
+    }
+
+    var fav = DATA.favicon[brand];
+    if (fav && fav.icon) {
+      var iconHref = fav.icon;
+      if (DATA.useToCdnUrl && typeof window.__toCdnUrl === 'function') {
+        try { iconHref = window.__toCdnUrl(fav.icon); } catch (e) {}
+      } else {
+        iconHref = '/' + fav.icon;
+      }
+      setLink('icon', iconHref);
+    }
+
+    function setMeta(attr, key, content) {
+      if (!content) { return; }
+      var el = document.querySelector('meta[' + attr + '="' + key + '"]');
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', content);
+    }
+    function setLink(rel, href) {
+      if (!href) { return; }
+      var el = document.querySelector('link[rel="' + rel + '"]');
+      if (!el) {
+        el = document.createElement('link');
+        el.setAttribute('rel', rel);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('href', href);
+    }
+  } catch (e) { /* 判定失败留给 React 侧 resolveHead 兜底 */ }
+})();</script>
+    <script data-wb-injected="gtag-bootstrap">(function () {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+
+  var isInternational =
+    window.IS_INTERNATIONAL_EDITION === true ||
+    window.IS_INTERNATIONAL_EDITION === 'true' ||
+    /workbuddy\.ai|tencentcloud\.com/i.test(window.location.hostname);
+  var googleAdsId = isInternational ? 'AW-18319947891' : 'AW-17806298785';
+
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + googleAdsId;
+  document.head.appendChild(script);
+
+  // Only install the global tag here; conversion events require per-action labels.
+  window.gtag('js', new Date());
+  window.gtag('config', googleAdsId);
+})();</script>
+    <script type="module" crossorigin src="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-DppksLv-.js"></script>
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/const-CtDbB-iA.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/vendor-react-CNm-hu5E.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/preload-helper-PPVm8Dsz.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/vendor-utils-B4NJYydS.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/vendor-ui-DGdJ-paR.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/accountClient-DXzpojAO.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/store-DCH9VxC6.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/i18next-4KZcn6jV.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/common-BMVtj3iS.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/upload-BIM_GfTM.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/LoginIframeDialog-D3aTX-sF.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/vendor-monitoring-BWppzVEB.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/analytics-BW2u8I4E.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-DK0SGcrC.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/performance-detector-CFY7b1On.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/i18nInstance-C81hCH34.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/useTranslation-CCh7cYuQ.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/App-DMHbmj5P.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-DpnIRpfb.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/main-Bps3fYZ5.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/workbuddy-logo-aN2mCdqr.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-BjFVBU-l.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/intl-subscribe-analytics-BzQABdKV.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/vendor-animation--CyZRTjI.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-BKftm3Kn.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/download-BWbWuQGT.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/qrcode-DUEDTJWM.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/download-qr-CKWq96tg.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/download-anchors-CH3CoK18.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/availability-Ce8k7or2.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-BPOwlchA.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-CB4b6lcw.js">
+    <link rel="modulepreload" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-BMfNu-xd.js">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/vendor-ui-BJssqkvB.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/LoginIframeDialog-BtfDy8he.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/main-5nz5ZqZK.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-ML-Kn4JN.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/intl-subscribe-analytics-CYwYXWcL.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-DigJz21x.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-CyzhW6th.css">
+    <link rel="stylesheet" crossorigin href="//download.codebuddy.ai/web/workbuddy/170b416d2eccaaf590ea40cd918d5a6b4f07178f/assets/index-CdkaHiYv.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

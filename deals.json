@@ -4303,5 +4303,23 @@
   "group": "运营商云",
   "notes": "⚠️ 三重风险标注：①AI优惠雷达社区票 56% 认为已失效（16 票：7 有效/9 失效）②linux.do 10 月舆情：输出疑似简单字符串替换被质疑「假鸡蛋」，质量存疑 ③本机网络不可达（区域电信网限制），官网以 DNS 实证（202.107.178.138 电信新疆）+信源页交叉，待老板侧复核 | 信源：AI优惠雷达 promo 页直抓（aipromonow.com/promos/telecom-xinjiang-aistore-new-user-200-points-nov30-2026）+ nodeloc.com/t/topic/111652 | 积分制不折总账；与天翼云息壤同属电信系（运营商云组）",
   "deadline": "2026-11-30"
+ },
+ {
+  "id": "catpaw-meituan",
+  "provider": "美团 CatPaw",
+  "category": "agent",
+  "type": "signup_bonus",
+  "value": "美团首款 AI 编程 IDE「妙手 CatPaw」：首次登录送 1000 Credits 见面礼+每日登录领积分；LongCat-2.0 模型限时免费（1.6T 参数/1M 上下文）；桌面/移动/云端多端运行，云端任务持续跑",
+  "region": "cn",
+  "url": "https://catpaw.meituan.com",
+  "rule": "登录即得见面礼 Credits；「登录领积分」持续获取额度；积分消耗规则以站内为准",
+  "verify_status": "unverified",
+  "verified_at": "2026-11-04T00:00:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "register",
+  "group": "美团 CatPaw",
+  "notes": "信源：美团技术团队博客（2026-07-28 正式发布）+凤凰科技（2025-11 公测）+官网下载页多源互证 | 公测期初始 500 次对话额度口径已由积分制取代（2026 积分体系）| LongCat-2.0 限时免费与站内 longcat-daily-free（每日 5000 万 API 额度）同门不同渠道 | 折扣链接矩阵位预留：有专属邀请链发我即挂金色按钮",
+  "deadline": ""
  }
 ]
