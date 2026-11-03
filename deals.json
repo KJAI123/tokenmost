@@ -383,23 +383,6 @@
   "eq_note": "¥16 券/额度 ×40 万 tok/元 ≈ 640 万当量（全站统一折算口径）"
  },
  {
-  "id": "302ai-signup",
-  "provider": "302.AI",
-  "category": "reseller",
-  "type": "signup_bonus",
-  "value": "按量计费聚合平台，0 月费先充后用；新用户赠送官方未公示",
-  "region": "cn",
-  "url": "https://302.ai",
-  "coupon": "TM-302",
-  "placeholder": true,
-  "verify_status": "verified",
-  "verified_at": "2026-10-29T13:30:00Z",
-  "difficulty": 2,
-  "published": true,
-  "notes": "⚠️ coupon 占位，替换真实码；网传「邀请码送 $1」来自第三方训练营，非官方，不收；10-29 二次恢复：注册赠送长期有效（bot 旧基线回滚所致，非权益消失）",
-  "group": "302.AI"
- },
- {
   "id": "openrouter-free",
   "provider": "OpenRouter",
   "category": "reseller",

@@ -94,11 +94,6 @@
 - 链接：https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp
 - 状态：已验证（核验时间 2026-11-02T23:01:56Z）
 
-## 302.AI｜注册赠送
-- 内容：按量计费聚合平台，0 月费先充后用；新用户赠送官方未公示
-- 链接：https://302.ai
-- 状态：已验证（核验时间 2026-10-29T13:30:00Z）
-
 ## OpenRouter｜长期免费
 - 内容：:free 模型 14 个（recursive/flint-v1.0:free、xingchen-agi/xing4.0-29b-a4b:free、nvidia/nemotron-3.5-super-vl:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
