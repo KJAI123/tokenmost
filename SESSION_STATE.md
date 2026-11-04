@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.29.0 版面紧凑化（2026-11-05，老板令「版面紧凑一些」+截图指 header 空档，5355012）：header 重构两行制（行1 logo+标语/行2 .hrow=横幅+统计+二维码同排 margin-left:auto 靠右），header 高 280→**145px**；横幅瘦身（5px 12px/主字 1.12rem）、统计 gap10/.7rem、二维码卡片 44px 紧凑、工具条 margin 10px、行 padding 9px 14px、主区 padding 20px；≤1360 隐更新日期/≤1150 隐第二条标语；桌面+移动双端实测 130 行正常
 - [x] v2.28.0 侧边栏可收起（2026-11-05，老板令「侧边栏要可收起」，be57d67）：桌面左上角固定开关（展开态显示 ⟨ 收起符、折叠态 ☰），点击切 body.side-folded 隐藏 #side，localStorage tm_side_fold_v1 跨刷新记忆；≤860 移动端不受影响；全链路实测（折叠→记忆→刷新保持→展开）
 - [x] v2.27.0 扫码进群指引再突出（2026-11-04，老板令「再更突出一些」，9cba718/4f016de）：二维码整块升级金色卡片（琥珀浅底+金描边+2.4s 脉冲光晕 wxGlow 动画，hover 上浮）；指引标「第一时间了解折扣信息↓」桌面恢复+全端常显（箭头弹跳）；码 52px/移动 44px；卡片内聚 header 流（区别于 v2.26.2 被毙的悬浮飘字）；GitHub 长时段断网（推送重试 20+ 次跨 40 分钟）后恢复推送
 - [x] 智云新疆羊毛大升级（2026-11-04，老板令「我要他们的token羊毛信息」，9f57f0a）：官网首页 webReader 直核——**积分/token 换算官方全公开**（deepseek-v4-flash 1 积分/百万全场最低/glm-5.2 8/kimi-k3 20/minimax-m3 2.1/qwen3.7-max 12/emb 0.5）→200 积分券按 DeepSeek 档折 **2 亿 tokens**（tokens_wan 20000 入总账）；unverified→verified（官网直核）；free_models 6 模型挂折叠组件；⚠️质量舆情/社区失效票注记保留（实测一条接口确认质量再加大投入）
