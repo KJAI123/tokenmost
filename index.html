@@ -47,6 +47,12 @@ a{color:var(--link);text-decoration:none}
 button{font-family:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 /* ===== 侧边栏 ===== */
+/* 侧边栏收起（v2.28 老板令「侧边栏要可收起」）：桌面点开关折叠/展开，localStorage 记忆 */
+#sideToggle{position:fixed;top:10px;left:10px;z-index:55;width:34px;height:34px;border-radius:8px;background:var(--card);border:1px solid var(--border);color:var(--muted);cursor:pointer;font-size:1rem;line-height:1;display:none;align-items:center;justify-content:center;box-shadow:var(--shadow);transition:color .12s,border-color .12s}
+#sideToggle:hover{color:var(--accent);border-color:var(--accent)}
+@media(min-width:861px){#sideToggle{display:flex}}
+body.side-folded #side{display:none}
+body.side-folded #sideToggle{left:12px}
 #side{width:216px;flex-shrink:0;border-right:1px solid var(--border);background:var(--card);padding:16px 12px;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;gap:4px}
 #side .logo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px;margin-bottom:4px}
 #side .logo em{font-style:normal;color:var(--accent)}
@@ -404,6 +410,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </head>
 <body>
 <!-- ============ 侧边栏（桌面）：工具 + 五层导航 ============ -->
+<button id="sideToggle" title="收起/展开侧边栏" aria-label="收起或展开侧边栏">☰</button>
 <aside id="side">
   <div class="logo">token<em>most</em></div>
   <div class="tag">薅 token · 一键接入 · 极致省钱</div>
@@ -727,6 +734,15 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </aside>
 <script>
 /* ============ 常量 ============ */
+/* 侧边栏收起/展开（v2.28） */
+const SIDE_KEY='tm_side_fold_v1';
+if(localStorage.getItem(SIDE_KEY)==='1')document.body.classList.add('side-folded');
+function sideToggle(){
+  const folded=document.body.classList.toggle('side-folded');
+  localStorage.setItem(SIDE_KEY,folded?'1':'0');
+  const b=document.getElementById('sideToggle');
+  if(b)b.textContent=folded?'☰':'⟨';
+}
 /* 刷新回到顶部（v2.25 老板令） */
 if('scrollRestoration' in history)history.scrollRestoration='manual';
 window.scrollTo(0,0);
@@ -1338,6 +1354,7 @@ document.getElementById('listhead').addEventListener('click',e=>{
   sortKey=b.dataset.sort;render();
 });
 /* 底部导航（移动端） */
+document.getElementById('sideToggle').addEventListener('click',sideToggle);
 document.getElementById('bottomNav').addEventListener('click',e=>{
   const b=e.target.closest('[data-bn]');if(!b)return;
   document.querySelectorAll('#bottomNav button').forEach(x=>x.classList.toggle('on',x===b));
