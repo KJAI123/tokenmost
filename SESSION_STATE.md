@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.27.0 扫码进群指引再突出（2026-11-04，老板令「再更突出一些」，9cba718/4f016de）：二维码整块升级金色卡片（琥珀浅底+金描边+2.4s 脉冲光晕 wxGlow 动画，hover 上浮）；指引标「第一时间了解折扣信息↓」桌面恢复+全端常显（箭头弹跳）；码 52px/移动 44px；卡片内聚 header 流（区别于 v2.26.2 被毙的悬浮飘字）；GitHub 长时段断网（推送重试 20+ 次跨 40 分钟）后恢复推送
 - [x] 智云新疆羊毛大升级（2026-11-04，老板令「我要他们的token羊毛信息」，9f57f0a）：官网首页 webReader 直核——**积分/token 换算官方全公开**（deepseek-v4-flash 1 积分/百万全场最低/glm-5.2 8/kimi-k3 20/minimax-m3 2.1/qwen3.7-max 12/emb 0.5）→200 积分券按 DeepSeek 档折 **2 亿 tokens**（tokens_wan 20000 入总账）；unverified→verified（官网直核）；free_models 6 模型挂折叠组件；⚠️质量舆情/社区失效票注记保留（实测一条接口确认质量再加大投入）
 - [x] 爬虫线雷达落地四连（2026-11-04，老板令「看下爬虫助理TK新发现」，2411054）：①qiniu-conatus-1e8 补 deadline 11-30+细则 ②claude-for-oss 新建 verified（6 个月 Max 20x≈$1200，1 万名额）③azure-startups-5k 新建 unverified（$1K+$4K）④plans.json 百炼 Coding Essential ¥39.5；积压发现记待办池：OpenAI Pro/Business 月领 $500（待官方页复核）、Perplexity Education $10/月、魔搭 36h GPU+250 魔粒/天、Command Code GOAT $100 永久化、中转站蒸馏掺假避坑内容位、OpenAI ChatGPT↔Codex 额度共享
 - [x] CatPaw（美团妙手）入流+logo 本地包（2026-11-04，老板令「增加 catpew 信源」=CatPaw 同音，de41f0f/3f6d8ed）：
