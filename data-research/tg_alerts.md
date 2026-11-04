@@ -465,3 +465,38 @@ DeepSeek 开源大规模推理框架 DeepInfer 10 月 20 日，DeepSeek 开源�
 - 🆕 [AI_News_CN] 算力成本高昂难以承受？传SpaceX悄悄削减Grok Bot配额，马斯克坦言营利失衡 
 
 近日，据外媒报道，多名用户在社交平台上反映，SpaceX 在上周末悄然对旗下热门的 Grok Bot 进行了用量配额调整，不少用户的额度直接被缩减了一半。针对用户的抱怨与质疑，埃隆·马斯克（Elon Musk）
+
+## 2026-11-03 18:26 UTC
+- 🆕 [v2ex_notice] 【分享创造】喜欢刷 X 的兄弟有福了： TweeTok iOS 正式上架， Android 开始内测，测试期 Pro 全免费
+- 🆕 [linuxdoit] 福利羊毛 - 2026年11月4日00:00摘要 (近24小时) 
+
+综合摘要生成失败，以下是各批次内容：
+
+第 1 批处理失败: HTTP 404: Not Found
+ ---
+第 2 批处理失败: HTTP 404: Not Found
+
+via LINUX DO 每日摘要 - 福利羊毛 (a
+- 🆕 [linuxdo_tg] 主 题： Google Play 订阅的 OpenAI 可以领积分了 
+发 布 者： zklcdc 
+标签分类： ChatGPT OpenAI Codex 福利羊毛 
+时 间：2026-11-04 01:21:31
+内容预览： 已到账 
+直达链接： https://linux.do/t/topic/
+- 🆕 [linuxdo_tg] 主 题： 原来Pixel11Pro赠送的半年GeminiAIPro居然这么不耐用 
+发 布 者： Syl 
+标签分类： 纯水 快问快答 人工智能 Gemini 
+时 间：2026-11-04 01:50:53
+内容预览： 如题，提问了四轮 Argon 就没额度了，要等待重置还是说我的号不纯被降额了 
+- 🆕 [linuxdo_tg] 主 题： 大概理解 kiro 渠道的 opus 褒贬不一的原因了，为之前自己蠢到反复测试的 token 不值 
+发 布 者： Belope 
+标签分类： 纯水 人工智能 Kiro opus 
+时 间：2026-11-04 02:02:00
+内容预览： 最近A/杀疯了，搞了个 kiro 耍耍。理解为何
+
+## 2026-11-03 23:24 UTC
+- 🆕 [linuxdo_tg] 主 题： gpt菲区x20最新降智情况怎么样？ 
+发 布 者： ilovecheat 
+标签分类： 快问快答 人工智能 ChatGPT 
+时 间：2026-11-04 03:58:58
+内容预览： 用它赠送的api额度一下就解决了我的问题，直接跑订阅，感觉就跟傻子一样，一直解决不了。但鹦鹉测试也正常

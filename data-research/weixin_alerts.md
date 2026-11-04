@@ -130,3 +130,12 @@
 
 ## 2026-11-03 16:07 UTC（轮 50，查询：大模型 领额度）
 - 📰 标题雷达 [大模型 领额度] 讯飞大模型免费领取!快来!
+
+## 2026-11-03 18:26 UTC（轮 51，查询：白嫖 API）
+- 🆕 公众号新文 [注册那些事儿] 不务正业的RA:如何零代码白嫖API,手把手教你的&ldquo;小龙虾&rdquo;免费画画! → https://mp.weixin.qq.com/s?src=11&timestamp=1793730384&ver=7
+
+## 2026-11-03 23:24 UTC（轮 52，查询：GLM 免费）
+- 🆕 公众号新文 [AI新玩家] 不用配Key免费使用GLM-5.3:华为DevEco Code新增模型详解 → https://mp.weixin.qq.com/s?src=11&timestamp=1793748248&ver=7
+- 📰 标题雷达 [GLM 免费] 实测nvidia提供的免费GLM-4.7、minimax2.1、kimi-k2.5在claude code cli里面的表现
+- 📰 标题雷达 [GLM 免费] Claude Code cli免费接入glm5、qwen3.5-397b-a17b,珍惜nvidia发的福利
+- 📰 标题雷达 [GLM 免费] 龙虾Token自由?官方免费的glm模型接入Openclaw手把手教程
