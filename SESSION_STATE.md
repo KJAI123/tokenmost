@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 商汤小浣熊折扣链接挂载（2026-11-05，老板令+提供专属邀请链，8f74610）：deep-sensenova-xiaohuanxiong url→xiaohuanxiong.com/events/refer 站长专属链（code=a59b9f5d…，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，6300 积分实测口径保留；rebase 撞车语义合并（叠加 1 条零重叠）
 - [x] GLM 又送 token 更新（2026-11-05，老板令「更新新内容+glm 又送 token」，9e48c52/4eb42a1）：官方 promotion 页 webReader 直核——①zhipu-1111-coding-7zhe 新建 verified（GLM Coding Plan 年付 7 折 11-01~11-15 全档，2 月+30%/7 月积分制改版后首次官方降价窗口）②deep-zhipu-weekend-3yi/zhipu-weekend-build 复核在营（每人每周 3 亿，周日 23:00 清零）verified_at 刷新；rebase 撞车语义合并零重叠（远端 18 改/我方 3 改）
 - [x] v2.29.0 版面紧凑化（2026-11-05，老板令「版面紧凑一些」+截图指 header 空档，5355012）：header 重构两行制（行1 logo+标语/行2 .hrow=横幅+统计+二维码同排 margin-left:auto 靠右），header 高 280→**145px**；横幅瘦身（5px 12px/主字 1.12rem）、统计 gap10/.7rem、二维码卡片 44px 紧凑、工具条 margin 10px、行 padding 9px 14px、主区 padding 20px；≤1360 隐更新日期/≤1150 隐第二条标语；桌面+移动双端实测 130 行正常
 - [x] v2.28.0 侧边栏可收起（2026-11-05，老板令「侧边栏要可收起」，be57d67）：桌面左上角固定开关（展开态显示 ⟨ 收起符、折叠态 ☰），点击切 body.side-folded 隐藏 #side，localStorage tm_side_fold_v1 跨刷新记忆；≤860 移动端不受影响；全链路实测（折叠→记忆→刷新保持→展开）
