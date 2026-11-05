@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] Kimi 会员助力折扣链接挂载（2026-11-05，老板令+提供专属邀请链，96aff78/9e22657）：kimi-subscribe-invite 新建（type=coupon，经链接完成会员订阅双方 100% 拿奖/最高 1 年会员等值权益，需付费订阅完成口径同拼好模先例；kimi-bot.com/activities 站长渠道含推荐属性，unverified 待实领）；金色折扣链接+加倍专区+Kimi 组聚合；总库 229 条/164 发布
 - [x] 爬虫线数据全量消化（2026-11-05，老板令「看下TK的数据都更新吧」，5f58e73）：五条落地——①openai-pro-api-credits verified（官方帮助文档：Pro 月领 $100/$200/$500、Business 每席 $20/$100，订阅福利不折总账）②modelscope-gpu-free compute 层 verified（36h GPU+AMD 1000h+edu+200 魃粒/天）③modelscope-free-infer 补魔粒 ④ecom-token-store-1111 reseller 内容位 verified（五源：天猫 AI 空间站/京东充值馆/0.01 元直播包，⚠️补贴力度小防夸大）⑤api-relay-distill-warning 避雷（187 篇论文蒸馏掺假 83%→37%，中转永不收录立场重申）；总库 228 条/163 发布；遗留待核：GLM-5.1 白嫖 7 天（单源）、龙虾 7.9 元 Coding Plan（单源）、Command Code GOAT $100（待核）
 - [x] 商汤小浣熊折扣链接挂载（2026-11-05，老板令+提供专属邀请链，8f74610）：deep-sensenova-xiaohuanxiong url→xiaohuanxiong.com/events/refer 站长专属链（code=a59b9f5d…，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，6300 积分实测口径保留；rebase 撞车语义合并（叠加 1 条零重叠）
 - [x] GLM 又送 token 更新（2026-11-05，老板令「更新新内容+glm 又送 token」，9e48c52/4eb42a1）：官方 promotion 页 webReader 直核——①zhipu-1111-coding-7zhe 新建 verified（GLM Coding Plan 年付 7 折 11-01~11-15 全档，2 月+30%/7 月积分制改版后首次官方降价窗口）②deep-zhipu-weekend-3yi/zhipu-weekend-build 复核在营（每人每周 3 亿，周日 23:00 清零）verified_at 刷新；rebase 撞车语义合并零重叠（远端 18 改/我方 3 改）
