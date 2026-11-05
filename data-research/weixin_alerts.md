@@ -139,3 +139,7 @@
 - 📰 标题雷达 [GLM 免费] 实测nvidia提供的免费GLM-4.7、minimax2.1、kimi-k2.5在claude code cli里面的表现
 - 📰 标题雷达 [GLM 免费] Claude Code cli免费接入glm5、qwen3.5-397b-a17b,珍惜nvidia发的福利
 - 📰 标题雷达 [GLM 免费] 龙虾Token自由?官方免费的glm模型接入Openclaw手把手教程
+
+## 2026-11-04 19:25 UTC（轮 53，查询：Coding Plan 折扣）
+- 📰 标题雷达 [Coding Plan 折扣] 主流API、TokenPlan每日低价速览:多项优惠活动到期(2026.10.30)
+- 📰 标题雷达 [Coding Plan 折扣] &ldquo;龙虾&rdquo;玩不动?7.9元起!Coding Plan轻松玩转AI智能体
