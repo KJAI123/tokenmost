@@ -28,6 +28,10 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 🚑 logo 本地包 20 个损坏文件修复（2026-11-06，老板令「很多logo也没补充」，544372d）：
+  - **根因**：首轮图标下载器只验字节>200 未验图片格式——部分站点 favicon.ico 返回的是 HTML 错误页（200+text/html）被存成 .ico，浏览器解码失败→onerror 落外链→icon.horse/s2 境内又慢又被墙→表现为「logo 缺失」（智谱/火山/豆包/千问/LongCat/WorkBuddy 等约 20 个域名）
+  - **修复**：全量 magic-bytes 校验（ICO/PNG/JPEG/SVG 四格式头）+四源重下（官网 favicon→icon.horse→s2→www 变体），修复 20 个（.ico→.png/.svg 换扩展名），孤儿 19 个清理，复验零无效
+  - Pages 三个样本验证 200（doubao.png/open.bigmodel.cn.png/longcat.chat.svg）；**教训：下载图片必须验 magic bytes，200+字节数不够**
 - [x] Kimi 会员助力折扣链接挂载（2026-11-05，老板令+提供专属邀请链，96aff78/9e22657）：kimi-subscribe-invite 新建（type=coupon，经链接完成会员订阅双方 100% 拿奖/最高 1 年会员等值权益，需付费订阅完成口径同拼好模先例；kimi-bot.com/activities 站长渠道含推荐属性，unverified 待实领）；金色折扣链接+加倍专区+Kimi 组聚合；总库 229 条/164 发布
 - [x] 爬虫线数据全量消化（2026-11-05，老板令「看下TK的数据都更新吧」，5f58e73）：五条落地——①openai-pro-api-credits verified（官方帮助文档：Pro 月领 $100/$200/$500、Business 每席 $20/$100，订阅福利不折总账）②modelscope-gpu-free compute 层 verified（36h GPU+AMD 1000h+edu+200 魃粒/天）③modelscope-free-infer 补魔粒 ④ecom-token-store-1111 reseller 内容位 verified（五源：天猫 AI 空间站/京东充值馆/0.01 元直播包，⚠️补贴力度小防夸大）⑤api-relay-distill-warning 避雷（187 篇论文蒸馏掺假 83%→37%，中转永不收录立场重申）；总库 228 条/163 发布；遗留待核：GLM-5.1 白嫖 7 天（单源）、龙虾 7.9 元 Coding Plan（单源）、Command Code GOAT $100（待核）
 - [x] 商汤小浣熊折扣链接挂载（2026-11-05，老板令+提供专属邀请链，8f74610）：deep-sensenova-xiaohuanxiong url→xiaohuanxiong.com/events/refer 站长专属链（code=a59b9f5d…，含推荐属性），type→coupon 升金色折扣链接按钮+加倍领取专区，6300 积分实测口径保留；rebase 撞车语义合并（叠加 1 条零重叠）
