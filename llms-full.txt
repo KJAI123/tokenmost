@@ -60,9 +60,9 @@
 - 状态：待复核（核验时间 2026-10-28T00:36:17Z）
 
 ## 魔搭 ModelScope｜长期免费
-- 内容：API-Inference 每日 2000 次免费调用：当前 37 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
+- 内容：API-Inference 每日 2000 次免费调用：当前 37 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点；每天登录另送 200 魔粒（可抵 API 调用）
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
-- 日均：2000 次/天 × ~4K tok/次 ≈800 万/天（估算）
+- 日均：2000 次/天 × ~4K tok/次 ≈800 万/天（估算）+200 魔粒/天
 - 链接：https://modelscope.cn
 - 状态：已验证（核验时间 2026-11-04T23:07:23Z）
 
@@ -960,5 +960,30 @@
 - 内容：1111 大促：GLM Coding Plan **年付 7 折**（11-01 至 11-15 官方 promotion 页直核），Lite/Pro/Max 全档参与——低价 Coding Plan 收缩期罕见的官方折扣窗口
 - 规则：年付一次性支付享 7 折；活动窗口 11-01 至 11-15（11-15 后恢复原价）；叠加拼好模 9 折邀请通道规则以活动页为准
 - 链接：https://docs.bigmodel.cn/cn/update/promotion
+- 状态：已验证（核验时间 2026-11-05T00:00:00Z）
+
+## OpenAI｜subscription_bonus
+- 内容：ChatGPT Pro/Business 订阅月月白送 API 额度：Pro 按档每月领 $100/$200/$500；Business 标准席每席 $20、高级席每席 $100（工作空间共享）——额度约等于订阅费，等于 API 白嫖
+- 规则：领取：网页版 ChatGPT 设置→账单→关联 OpenAI 开发者账号组织后每月领取；仅限符合条件的 Pro/Business 订阅
+- 链接：https://help.openai.com/zh-hans-cn/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions
+- 状态：已验证（核验时间 2026-11-05T00:00:00Z）
+
+## 魔搭 ModelScope｜长期免费
+- 内容：魔搭免费 GPU 算力全家桶：新用户 36 小时免费 GPU+100 小时 CPU；AMD 联合激励计划可叠至 1000+ 小时免费 GPU 算力；高校 edu 邮箱另有学生专属算力；每天登录送 200 魔粒（调用模型 API）
+- 规则：魔粒每日登录自动到账（API 调用消耗，单次约 1 魔粒起，模型越大消耗越高）；AMD 算力券在 developer.amd.com.cn 用积分兑换；edu 学生通道需学校邮箱
+- 日均：每天登录送 200 魔粒≈200 万 token 等效（1 魔粒≈1 万 token 保守口径）
+- 链接：https://www.modelscope.cn/my/microservice
+- 状态：已验证（核验时间 2026-11-05T00:00:00Z）
+
+## 电商 Token 店｜限时活动
+- 内容：Token 首次登上电商双 11 货架（人民网/新华网/凤凰/36氪 四源佐证）：天猫「AI 空间站」（阿里云/智谱/Kimi/MiniMax/DeepSeek 官方入驻）+京东「AI 软件充值馆」（智谱官方旗舰店/DeepSeek/火山引擎）+京东 3C 直播间 Token 包低至 0.01 元（半小时售出 2 万亿 Token）+拼多多百亿补贴延至 11 月底
+- 规则：⚠️ 36氪实测补贴力度小（智谱月卡仅减 1.1 元）——官方渠道保真但折扣有限，防「五折买 Token」夸大宣传；下单前对比官网价
+- 链接：https://www.tmall.com
+- 状态：已验证（核验时间 2026-11-05T00:00:00Z）
+
+## API 中转站｜warning
+- 内容：⚠️ 避雷：API 中转站「蒸馏掺假」风暴——斯坦福系 187 篇论文实测，用盗版中转 API 生成的数据训练模型，准确率从 83% 暴跌至 37%（模型学到的是假分布）。超低价 DeepSeek/Claude 中转 Key 大概率是套壳/蒸馏/降智接口
+- 规则：识别特征：价格低于官方 5 折、不支持官方功能（缓存/函数调用）、模型名模糊（如 deepseek-v4 无后缀）、无官方授权声明。本站只收录官方/授权渠道优惠，中转折扣一律不上架
+- 链接：https://www.nodeloc.com
 - 状态：已验证（核验时间 2026-11-05T00:00:00Z）
 
