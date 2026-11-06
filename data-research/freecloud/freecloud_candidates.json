@@ -1,0 +1,705 @@
+{
+  "updated_at": "2026-11-06T15:55:04Z",
+  "items": {
+    "https://cloud.google.com": {
+      "url": "https://cloud.google.com",
+      "text": "Google Cloud Platform",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://colab.research.google.com": {
+      "url": "https://colab.research.google.com",
+      "text": "Google Colab",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 405,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.kaggle.com/docs/notebooks#technical-specifications": {
+      "url": "https://www.kaggle.com/docs/notebooks#technical-specifications",
+      "text": "Technical Specifications",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 404,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://aws.amazon.com/cloudfront": {
+      "url": "https://aws.amazon.com/cloudfront",
+      "text": "CloudFront",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://aws.amazon.com/cloudwatch": {
+      "url": "https://aws.amazon.com/cloudwatch",
+      "text": "CloudWatch",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://azure.microsoft.com/services/active-directory/external-identities/b2c": {
+      "url": "https://azure.microsoft.com/services/active-directory/external-identities/b2c",
+      "text": "Active Directory B2C",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://azure.microsoft.com/services/kubernetes-service": {
+      "url": "https://azure.microsoft.com/services/kubernetes-service",
+      "text": "Azure Kubernetes Service",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.oracle.com/cloud": {
+      "url": "https://www.oracle.com/cloud",
+      "text": "Oracle Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 403,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm#compute__idleinstances": {
+      "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm#compute__idleinstances",
+      "text": "deemed idle",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.ibm.com/cloud/free": {
+      "url": "https://www.ibm.com/cloud/free",
+      "text": "IBM Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudflare.com": {
+      "url": "https://www.cloudflare.com",
+      "text": "Cloudflare",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudflare.com/plans": {
+      "url": "https://www.cloudflare.com/plans",
+      "text": "Application Services",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudflare.com/plans/zero-trust-services": {
+      "url": "https://www.cloudflare.com/plans/zero-trust-services",
+      "text": "Zero Trust & SASE",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudflare.com/products/tunnel": {
+      "url": "https://www.cloudflare.com/products/tunnel",
+      "text": "Cloudflare Tunnel",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare": {
+      "url": "https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare",
+      "text": "Quick Tunnels",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudflare.com/products/zero-trust": {
+      "url": "https://www.cloudflare.com/products/zero-trust",
+      "text": "Zero Trust",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/workers": {
+      "url": "https://developers.cloudflare.com/workers",
+      "text": "Workers",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/kv": {
+      "url": "https://developers.cloudflare.com/kv",
+      "text": "Workers KV",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/r2": {
+      "url": "https://developers.cloudflare.com/r2",
+      "text": "R2",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/d1": {
+      "url": "https://developers.cloudflare.com/d1",
+      "text": "D1",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/pages": {
+      "url": "https://developers.cloudflare.com/pages",
+      "text": "Pages",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/queues": {
+      "url": "https://developers.cloudflare.com/queues",
+      "text": "Queues",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/calls/turn": {
+      "url": "https://developers.cloudflare.com/calls/turn",
+      "text": "TURN",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://catalyst.zoho.com/free-tier.html": {
+      "url": "https://catalyst.zoho.com/free-tier.html",
+      "text": "free tier",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://zoho.com/notebook": {
+      "url": "https://zoho.com/notebook",
+      "text": "Notebook",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloud66.com": {
+      "url": "https://www.cloud66.com",
+      "text": "Cloud 66",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cca.dragonfractal.com": {
+      "url": "https://cca.dragonfractal.com",
+      "text": "Cloud Cost Analyzer",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.bigdatacloud.com": {
+      "url": "https://www.bigdatacloud.com",
+      "text": "BigDataCloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloudmersive.com": {
+      "url": "https://cloudmersive.com",
+      "text": "Cloudmersive",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloud.invantive.com": {
+      "url": "https://cloud.invantive.com",
+      "text": "Invantive Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 405,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://json2video.com": {
+      "url": "https://json2video.com",
+      "text": "JSON2Video",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://openapidesigner.com": {
+      "url": "https://openapidesigner.com",
+      "text": "OpenAPI3 Designer",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.prefect.io/cloud": {
+      "url": "https://www.prefect.io/cloud",
+      "text": "PrefectCloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 308,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://preset.io": {
+      "url": "https://preset.io",
+      "text": "Preset Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.tiny.cloud": {
+      "url": "https://www.tiny.cloud",
+      "text": "TinyMCE",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://squidex.io": {
+      "url": "https://squidex.io",
+      "text": "Squidex",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://sonarcloud.io": {
+      "url": "https://sonarcloud.io",
+      "text": "sonarcloud.io",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://nx.dev/ci": {
+      "url": "https://nx.dev/ci",
+      "text": "Nx Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://lastest.cloud": {
+      "url": "https://lastest.cloud",
+      "text": "Lastest",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://requestly.com/products/mock-server": {
+      "url": "https://requestly.com/products/mock-server",
+      "text": "Mock Server",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.crawlably.com/ssr-checker": {
+      "url": "https://www.crawlably.com/ssr-checker",
+      "text": "SSR (Server-side Rendering) Checker",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://certobserver.com/ct-search": {
+      "url": "https://certobserver.com/ct-search",
+      "text": "CertObserver CT Search",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 405,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://himitsushell.com": {
+      "url": "https://himitsushell.com",
+      "text": "HimitsuShell",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloudintel.himanshuanand.com": {
+      "url": "https://cloudintel.himanshuanand.com",
+      "text": "Public Cloud Threat Intelligence",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": "URLError",
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloud-iam.com": {
+      "url": "https://www.cloud-iam.com",
+      "text": "Cloud-IAM",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://zitadel.com": {
+      "url": "https://zitadel.com",
+      "text": "ZITADEL Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://runcloud.io": {
+      "url": "https://runcloud.io",
+      "text": "runcloud.io",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://serveravatar.com": {
+      "url": "https://serveravatar.com",
+      "text": "serveravatar.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://xcloud.host": {
+      "url": "https://xcloud.host",
+      "text": "xcloud.host",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudamqp.com": {
+      "url": "https://www.cloudamqp.com",
+      "text": "cloudamqp.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.hivemq.com/mqtt-cloud-broker": {
+      "url": "https://www.hivemq.com/mqtt-cloud-broker",
+      "text": "HiveMQ",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 308,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.manageengine.com/cloud-siem": {
+      "url": "https://www.manageengine.com/cloud-siem",
+      "text": "ManageEngine Log360 Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://economize.cloud": {
+      "url": "https://economize.cloud",
+      "text": "economize.cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://grafana.com/products/cloud": {
+      "url": "https://grafana.com/products/cloud",
+      "text": "Grafana Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 308,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://incidenthub.cloud": {
+      "url": "https://incidenthub.cloud",
+      "text": "incidenthub.cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.netdata.cloud": {
+      "url": "https://www.netdata.cloud",
+      "text": "netdata.cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://servervana.com": {
+      "url": "https://servervana.com",
+      "text": "Servervana",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://dicloud.net/sweetuptime-server-uptime-monitoring": {
+      "url": "https://dicloud.net/sweetuptime-server-uptime-monitoring",
+      "text": "SweetUptime",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://uptimeobserver.com": {
+      "url": "https://uptimeobserver.com",
+      "text": "UptimeObserver.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloudcertprep.io": {
+      "url": "https://cloudcertprep.io",
+      "text": "CloudCertPrep",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.khanacademy.org/computing/computer-programming": {
+      "url": "https://www.khanacademy.org/computing/computer-programming",
+      "text": "Khan Academy",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.antideo.com": {
+      "url": "https://www.antideo.com",
+      "text": "Antideo",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://clever.cloud": {
+      "url": "https://clever.cloud",
+      "text": "Clever Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://domcloud.co": {
+      "url": "https://domcloud.co",
+      "text": "domcloud.co",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 403,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://thevibehosting.com": {
+      "url": "https://thevibehosting.com",
+      "text": "The Vibe Hosting",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloud.wundergraph.com": {
+      "url": "https://cloud.wundergraph.com",
+      "text": "WunderGraph",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://leancloud.app": {
+      "url": "https://leancloud.app",
+      "text": "LeanCloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/1.1.1.1": {
+      "url": "https://developers.cloudflare.com/1.1.1.1",
+      "text": "1.1.1.1",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families": {
+      "url": "https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families",
+      "text": "to block adult & malware content",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://developers.cloudflare.com/1.1.1.1/encrypted-dns/dns-over-https/make-api-requests": {
+      "url": "https://developers.cloudflare.com/1.1.1.1/encrypted-dns/dns-over-https/make-api-requests",
+      "text": "via API",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cloudns.net": {
+      "url": "https://www.cloudns.net",
+      "text": "cloudns.net",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.huaweicloud.com/intl/en-us/product/dns.html": {
+      "url": "https://www.huaweicloud.com/intl/en-us/product/dns.html",
+      "text": "huaweicloud.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cockroachlabs.com/pricing": {
+      "url": "https://www.cockroachlabs.com/pricing",
+      "text": "CockroachDB Cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 308,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.cockroachlabs.com/docs/cockroachcloud/metrics-request-units.html": {
+      "url": "https://www.cockroachlabs.com/docs/cockroachcloud/metrics-request-units.html",
+      "text": "What's the Request Units",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://crate.io/lp-crfree": {
+      "url": "https://crate.io/lp-crfree",
+      "text": "Free Tier CRFREE",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.mongodb.com/cloud/atlas": {
+      "url": "https://www.mongodb.com/cloud/atlas",
+      "text": "MongoDB Atlas",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 308,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://neo4j.com/cloud/aura": {
+      "url": "https://neo4j.com/cloud/aura",
+      "text": "Neo4j Aura",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://conveyor.cloud": {
+      "url": "https://conveyor.cloud",
+      "text": "conveyor.cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloudcraft.co": {
+      "url": "https://cloudcraft.co",
+      "text": "Cloudcraft",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.jetbrains.com/youtrack/buy/#edition=incloud": {
+      "url": "https://www.jetbrains.com/youtrack/buy/#edition=incloud",
+      "text": "YouTrack",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://cloudinary.com": {
+      "url": "https://cloudinary.com",
+      "text": "cloudinary.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://getpantry.cloud": {
+      "url": "https://getpantry.cloud",
+      "text": "getpantry.cloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://packagecloud.io": {
+      "url": "https://packagecloud.io",
+      "text": "packagecloud.io",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.pcloud.com": {
+      "url": "https://www.pcloud.com",
+      "text": "pcloud.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://pinata.cloud": {
+      "url": "https://pinata.cloud",
+      "text": "Pinata IPFS",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.maptiler.com/cloud": {
+      "url": "https://www.maptiler.com/cloud",
+      "text": "maptiler.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 308,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://copr.fedorainfracloud.org": {
+      "url": "https://copr.fedorainfracloud.org",
+      "text": "copr.fedorainfracloud.org",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://workspaces.openshift.com": {
+      "url": "https://workspaces.openshift.com",
+      "text": "workspaces.openshift.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://getvm.io": {
+      "url": "https://getvm.io",
+      "text": "GetVM",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 403,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.jetbrains.com/idea": {
+      "url": "https://www.jetbrains.com/idea",
+      "text": "IntelliJ IDEA",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://www.lazarus-ide.org": {
+      "url": "https://www.lazarus-ide.org",
+      "text": "Lazarus",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://paiza.cloud/en": {
+      "url": "https://paiza.cloud/en",
+      "text": "Paiza",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://phpsandbox.io": {
+      "url": "https://phpsandbox.io",
+      "text": "PHPSandbox",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://runmat.com/sandbox": {
+      "url": "https://runmat.com/sandbox",
+      "text": "RunMat",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://dicloud.net/trackwith-privacy-focused-analytics": {
+      "url": "https://dicloud.net/trackwith-privacy-focused-analytics",
+      "text": "TrackWith Dicloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://container-registry.com": {
+      "url": "https://container-registry.com",
+      "text": "Container Registry Service",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://hub.docker.com": {
+      "url": "https://hub.docker.com",
+      "text": "Docker Hub",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://PhantomJsCloud.com": {
+      "url": "https://PhantomJsCloud.com",
+      "text": "PhantomJsCloud",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://sandbox.httpsms.com": {
+      "url": "https://sandbox.httpsms.com",
+      "text": "sandbox.httpsms.com",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    },
+    "https://vpssnaps.com": {
+      "url": "https://vpssnaps.com",
+      "text": "VPS Snaps",
+      "found_in": "free-for-dev（ripienaar，73k+ star 免费开发者资源总表）",
+      "status": 200,
+      "added_at": "2026-11-06T15:55:04Z"
+    }
+  }
+}

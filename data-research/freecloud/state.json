@@ -1,0 +1,215 @@
+{
+  "baseline": {
+    "instabox-pricing": {
+      "fp": "d3c1e47ee3f8993f2b26c403d6d09b7dc8095b095b91e8c1d47e2434d0633b23",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 60
+    },
+    "e2b-pricing": {
+      "fp": "4aa3ae981b35e6b6b851364ca8b0fbc0fde680b455a92e77895687a28f8d00d3",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 22
+    },
+    "daytona-pricing": {
+      "fp": "33330658f360487b942098c5beff062ff0d01738b0c5da7eaf9a6575fef9f4ba",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 17
+    },
+    "modal-pricing": {
+      "fp": "a9525253ad74e06b2863057f0cda3402a2ff2ef5696e61c0a4cf81e5004cbcb0",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 28
+    },
+    "oracle-free": {
+      "fp": "e3d8367f4e59ccfc5dd78ca40014e86f9eebd8ade8a75983a795806394d6b014",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 57
+    },
+    "google-free": {
+      "fp": "8ad828d9e72938af99690d4a24d6165ab6d35d7e29848d926c1e69d51e768deb",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 106
+    },
+    "aws-free": {
+      "fp": "bfb991b6afa44b815d31a4c518b3df74686b900766e2185e76ae9789cbeb4806",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 30
+    },
+    "azure-free": {
+      "fp": "54fc9463d2495ac28b072545b607cffc2be47c7fd97e08730cdefba68024c293",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 9
+    },
+    "fly-pricing": {
+      "fp": "ca8b7a0a9fea0cd7132c647adb3582b40cd121d6fc2d8b1d51961e9693952734",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 23
+    },
+    "render-pricing": {
+      "fp": "ffd509b6d1ea20a82c440bb58958390227ed8ed538914b0517c1a6cd51d82a91",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 169
+    },
+    "koyeb-pricing": {
+      "fp": "f6ba76da66d8a97fb80f227bdf3e095bdefd043dfde4a10445dcf556de08aa89",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 180
+    },
+    "railway-pricing": {
+      "fp": "ae50698a70fdf44d5e4db6fe971d3868fe49097f32c3523f3c42b2635e82b7e1",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 43
+    },
+    "codespaces-pricing": {
+      "fp": "ef9361b48fbf3936913688c04f996a80abaa05e5fc03671b03c5c86502a2a50d",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 11
+    },
+    "cloudflare-workers": {
+      "fp": "bc419c7861d628de8fdf39bb46212071b4d6d737a1822389bb9a44562fd6a8d9",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 79
+    },
+    "hf-spaces": {
+      "fp": "1951bbb6fc5c5e0b3f0912f5be46891d2ea20d5e92689a7f9815e89e7e8fe4b6",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 101
+    },
+    "kaggle-notebooks": {
+      "fp": "b6fdcee72978e24ad2561717d9d660e1b56ddbcc710100115abcba797ed3c5d8",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 45
+    },
+    "aliyun-free": {
+      "fp": "8d53a40dbe4ae0aa44a0485fbf85b4352c1ced16c864a52a3b4bad67083235bb",
+      "ts": "2026-11-06T15:21:28Z",
+      "n_hits": 36
+    },
+    "ona-pricing": {
+      "fp": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 0
+    },
+    "replit-pricing": {
+      "fp": "acb015fc60931f050551080d7bf7d364b0fe7235cf4c49b33bb115d3187b8369",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 4
+    },
+    "bolt-new": {
+      "fp": "e65945e1a9534c732ae41243cdd457b3dbf2515646e139fc732427ad8a714bc0",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 1
+    },
+    "firebase-studio": {
+      "fp": "4745508e636b4e0c3b0149137964a79959bf422329d2360e49353841b91bb27d",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 6
+    },
+    "stackblitz-pricing": {
+      "fp": "d2e4b3dad84cbf80042501a76991c4ad5281dc4639b5aef3c55a20c6b7e41fe3",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 4
+    },
+    "browserbase-pricing": {
+      "fp": "35ec3e443d386b128314f82a3c956b8885ae840c8637c55a5a3bc4bad1f6d3f3",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 12
+    },
+    "hyperbrowser-pricing": {
+      "fp": "cb3af798787a82374ad80122c5cf530694856319e25b0cace10b0c4d57d99662",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 43
+    },
+    "steel-pricing": {
+      "fp": "12766938ae8ccd063004522c58d695083ea0c2c8f308702c03b6de79e6da0d48",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 1
+    },
+    "serv00-home": {
+      "fp": "d3d521ed6ee1830337e3be4f77b3c14cba3cdea1b1624374e40414877685280c",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 36
+    },
+    "euserv-home": {
+      "fp": "fe43df51a2f6b55087a1151ff0d1c9e060ef1672daf7bffd737b2445468a012b",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 1
+    },
+    "scaleway-pricing": {
+      "fp": "ce90577a2f7ceee5f4451a85fb62640c4c5f2640b2b8a41abffaed0a9640bcd7",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 1
+    },
+    "upcloud-pricing": {
+      "fp": "fae1097698807794d2aaec6ad21a1269c40a5ec18a67a00c33bec8b803a3f503",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 137
+    },
+    "digitalocean-pricing": {
+      "fp": "9f36add018634676a04cf85a7030184feec1c4c13ad5378a1537a4c508acb5f6",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 24
+    },
+    "vercel-pricing": {
+      "fp": "018d5e9bc2051a5b9dc5321747280038765f9617b991f3c219d9b30ff1e6f48c",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 76
+    },
+    "netlify-pricing": {
+      "fp": "eed5f0f5bd4f53ff1b28c335cea7118dc3117183718ee006538f1e44f5617fa1",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 53
+    },
+    "deno-deploy": {
+      "fp": "b0e785038bd8d7545a010cb0b6638f51b4c389c96105559e4c97f3cd6b3c5821",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 3
+    },
+    "valtown-pricing": {
+      "fp": "62d40a805dfb42f483be68296eefad61b94d0db503c5dc4ab3485e12e9e80f69",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 11
+    },
+    "northflank-pricing": {
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 56
+    },
+    "colab-faq": {
+      "fp": "8fb9bc89f7f067f4d6c53bc979a9e0a6ba4186922f5d432fb925fcde8f29d09b",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 67
+    },
+    "lightning-pricing": {
+      "fp": "ceefc1237dd0a1c3e4cc39afa9e3b10f67789af36126d8ba7b5a6d6142f27b79",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 63
+    },
+    "paperspace-pricing": {
+      "fp": "66a992e2195ff5ad1385721f0619d7faefe68407d062be10c5a3c033f06efa6a",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 273
+    },
+    "replicate-pricing": {
+      "fp": "78f78ac9deb35a20ac2233a45d85b739eb4930d99c49d8a317e9badd53119aed",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 29
+    },
+    "fal-pricing": {
+      "fp": "6b7068689d81424930f1ed64d9b76726c087a82a9efc91476d163fe211f6e6e0",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 14
+    },
+    "lowendbox-feed": {
+      "fp": "8c4000fce8666f330297c0930caae8d97109f6663903e42cbff94c118e524298",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 35
+    },
+    "baidu-free": {
+      "fp": "0168974dede73532b58d1bb95e9e4d3c9a48ee0205c2d605950c1f7aa34f08b7",
+      "ts": "2026-11-06T15:52:20Z",
+      "n_hits": 292
+    }
+  },
+  "pending": {}
+}

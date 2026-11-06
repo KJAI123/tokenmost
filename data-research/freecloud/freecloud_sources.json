@@ -1,0 +1,319 @@
+{
+  "line": "freecloud",
+  "desc": "薅免费云服务器管线——盯防免费云服务器/云电脑/Agent 沙盒官方免费档（vCPU/GiB/快照/流量/试用金）",
+  "created": "2026-11-06",
+  "origin": "老板令 2026-11-06：以公众号「数字生命斯派克」InstaBox 文章为样例开线；采集内核=pagesift（自带 robots.txt/限速）；扩源=老板令「疯狂扩大数据源」同日执行，19→44 源",
+  "sources": [
+    {
+      "id": "instabox-pricing",
+      "name": "InstaBox 定价（Agent 云电脑·文章样例主角）",
+      "url": "https://instabox.sh/pricing",
+      "patterns": ["Free \\d", "snapshot", "max run", "egress", "idle pause"],
+      "note": "免费档 $0：1 台/4C8G/5 快照/200GiB 存储/空闲30min暂停/max run 480min；2026-11-06 官方页直核 verified"
+    },
+    {
+      "id": "e2b-pricing",
+      "name": "E2B 定价（Agent 沙盒）",
+      "url": "https://e2b.dev/pricing",
+      "patterns": ["sandbox", "concurrent", "vCPU", "GiB"]
+    },
+    {
+      "id": "daytona-pricing",
+      "name": "Daytona 定价（Agent 沙盒）",
+      "url": "https://daytona.io/pricing",
+      "patterns": ["sandbox", "concurrent", "vCPU"]
+    },
+    {
+      "id": "modal-pricing",
+      "name": "Modal 定价（每月免费金）",
+      "url": "https://modal.com/pricing",
+      "patterns": ["\\$30", "credits", "free"]
+    },
+    {
+      "id": "ona-pricing",
+      "name": "Ona 定价（Gitpod 改名，云 IDE 免费 credits）",
+      "url": "https://ona.com/pricing",
+      "patterns": ["free", "credits", "hours"],
+      "note": "扩源2026-11-06：gitpod.io 已改名 Ona；免费档月度 credits 口径盯防"
+    },
+    {
+      "id": "replit-pricing",
+      "name": "Replit 定价（云 IDE+Agent）",
+      "url": "https://replit.com/pricing",
+      "patterns": ["Starter", "free", "Agent"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "bolt-new",
+      "name": "bolt.new（StackBlitz 旗下 AI 全栈云开发）",
+      "url": "https://bolt.new/",
+      "patterns": ["free", "tokens", "daily"],
+      "note": "扩源2026-11-06：免费档每日 token 口径"
+    },
+    {
+      "id": "firebase-studio",
+      "name": "Firebase Studio（原 Project IDX，Google 免费 cloud IDE）",
+      "url": "https://firebase.studio/",
+      "patterns": ["free", "workspace", "Gemini"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "stackblitz-pricing",
+      "name": "StackBlitz 定价（云 IDE 免费档）",
+      "url": "https://stackblitz.com/pricing",
+      "patterns": ["free", "Projects"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "browserbase-pricing",
+      "name": "Browserbase 定价（Agent 浏览器沙盒）",
+      "url": "https://www.browserbase.com/pricing",
+      "patterns": ["free", "hours", "concurrent"],
+      "note": "扩源2026-11-06：免费档小时数/并发口径"
+    },
+    {
+      "id": "hyperbrowser-pricing",
+      "name": "Hyperbrowser 定价（Agent 浏览器沙盒）",
+      "url": "https://hyperbrowser.ai/pricing",
+      "patterns": ["free", "sessions"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "steel-pricing",
+      "name": "Steel 定价（开源 Agent 浏览器云）",
+      "url": "https://steel.dev/pricing",
+      "patterns": ["free", "sessions"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "serv00-home",
+      "name": "Serv00（波兰免费主机·白嫖圈热门）",
+      "url": "https://serv00.com/",
+      "patterns": ["free", "darmowy", "WWW", "GB"],
+      "note": "扩源2026-11-06：免费 SSH 主机/免费域名热点；波兰语 darmowy=免费"
+    },
+    {
+      "id": "euserv-home",
+      "name": "EUserv（德国免费 IPv6 VPS 申领）",
+      "url": "https://www.euserv.com/en/",
+      "patterns": ["free", "kostenlos", "vRootServer", "IPv6"],
+      "note": "扩源2026-11-06：白嫖圈长期经典（德语 kostenlos=免费）"
+    },
+    {
+      "id": "scaleway-pricing",
+      "name": "Scaleway 定价（法国云，免费档+试用）",
+      "url": "https://www.scaleway.com/en/pricing/",
+      "patterns": ["free", "trial", "credits"],
+      "note": "扩源2026-11-06：curl 被 CF 挡，pagesift 浏览器引擎实抓通过"
+    },
+    {
+      "id": "upcloud-pricing",
+      "name": "UpCloud 定价（试用金）",
+      "url": "https://www.upcloud.com/pricing/",
+      "patterns": ["trial", "\\$", "free"],
+      "note": "扩源2026-11-06：curl 被挡，pagesift 通过"
+    },
+    {
+      "id": "digitalocean-pricing",
+      "name": "DigitalOcean 定价（$200/60天 试用观察）",
+      "url": "https://www.digitalocean.com/pricing",
+      "patterns": ["\\$200", "60-day", "trial"],
+      "note": "扩源2026-11-06：无永久免费层只盯试用金变化；专属试用页路径待核（/try/free-trial 已 404）"
+    },
+    {
+      "id": "vercel-pricing",
+      "name": "Vercel 定价（Hobby 免费档）",
+      "url": "https://vercel.com/pricing",
+      "patterns": ["Hobby", "free", "included"],
+      "note": "扩源2026-11-06：Hobby 非商用免费额度盯防"
+    },
+    {
+      "id": "netlify-pricing",
+      "name": "Netlify 定价（免费 100GB 带宽档）",
+      "url": "https://www.netlify.com/pricing/",
+      "patterns": ["Free", "100GB", "bandwidth"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "deno-deploy",
+      "name": "Deno Deploy（免费层）",
+      "url": "https://deno.com/deploy",
+      "patterns": ["free", "million", "requests"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "valtown-pricing",
+      "name": "Val Town 定价（免费云函数）",
+      "url": "https://val.town/pricing",
+      "patterns": ["free", "runs"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "northflank-pricing",
+      "name": "Northflank 定价（免费 sandbox 服务）",
+      "url": "https://northflank.com/pricing",
+      "patterns": ["free", "sandbox", "services"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "colab-faq",
+      "name": "Google Colab FAQ（免费档 GPU/runtime 口径）",
+      "url": "https://research.google.com/colaboratory/faq.html",
+      "patterns": ["free", "GPU", "runtime"],
+      "note": "扩源2026-11-06：官方 FAQ=免费层限额最稳口径源"
+    },
+    {
+      "id": "lightning-pricing",
+      "name": "Lightning AI 定价（每月免费 credits）",
+      "url": "https://lightning.ai/pricing",
+      "patterns": ["free", "credits", "monthly"],
+      "note": "扩源2026-11-06：Free 档每月 credits（历史口径 15/月）"
+    },
+    {
+      "id": "paperspace-pricing",
+      "name": "Paperspace 定价（DO 旗下，Gradient 免费档现状）",
+      "url": "https://www.paperspace.com/pricing",
+      "patterns": ["free", "Gradient", "GPU"],
+      "note": "扩源2026-11-06：免费 GPU 档是否还活着盯防"
+    },
+    {
+      "id": "replicate-pricing",
+      "name": "Replicate 定价（免费额度收回观察）",
+      "url": "https://replicate.com/pricing",
+      "patterns": ["free", "trial", "credits"],
+      "note": "扩源2026-11-06：Together 先例——免费试用取消类避雷盯防"
+    },
+    {
+      "id": "fal-pricing",
+      "name": "fal.ai 定价（生成式 AI 云免费额度）",
+      "url": "https://fal.ai/pricing",
+      "patterns": ["free", "credits"],
+      "note": "扩源2026-11-06"
+    },
+    {
+      "id": "lowendbox-feed",
+      "name": "LowEndBox RSS（免费 VPS 帖聚合雷达）",
+      "url": "https://lowendbox.com/feed/",
+      "patterns": ["free", "VPS"],
+      "note": "扩源2026-11-06：白嫖圈低价/免费 VPS 第一情报地，新帖=diff 告警"
+    },
+    {
+      "id": "baidu-free",
+      "name": "百度智能云免费试用",
+      "url": "https://cloud.baidu.com/campaign/free/index.html",
+      "patterns": ["免费试用", "云服务器", "ECS", "试用"],
+      "note": "扩源2026-11-06：curl 200 直连可达"
+    },
+    {
+      "id": "oracle-free",
+      "name": "Oracle Cloud 免费层（Always Free 白嫖之王）",
+      "url": "https://www.oracle.com/cloud/free/",
+      "patterns": ["Arm", "A1", "OCPU", "Always Free", "试用"],
+      "note": "盯防重点：ARM A1 4 OCPU/24GiB 永久免费额度口径变化（白嫖圈核心资产）"
+    },
+    {
+      "id": "google-free",
+      "name": "Google Cloud 免费层",
+      "url": "https://cloud.google.com/free",
+      "patterns": ["e2-micro", "\\$300", "free tier"]
+    },
+    {
+      "id": "aws-free",
+      "name": "AWS Free Tier",
+      "url": "https://aws.amazon.com/free/",
+      "patterns": ["12 months", "t3\\.micro|t2\\.micro", "credits"]
+    },
+    {
+      "id": "azure-free",
+      "name": "Azure 免费服务",
+      "url": "https://azure.microsoft.com/en-us/pricing/free-services",
+      "patterns": ["\\$200", "12 months", "free services"]
+    },
+    {
+      "id": "fly-pricing",
+      "name": "Fly.io 定价（免费层收缩观察）",
+      "url": "https://fly.io/pricing",
+      "patterns": ["free allowances", "allowance", "machines"],
+      "note": "Fly 已对新组织取消免费层——盯它是否回归/彻底移除"
+    },
+    {
+      "id": "render-pricing",
+      "name": "Render 定价（免费 Web 服务）",
+      "url": "https://render.com/pricing",
+      "patterns": ["free instance", "750 hours", "spin down"],
+      "note": "2026-11-06 二轮观测到指纹抖动——动态页观察中，两次观测确认制盯防"
+    },
+    {
+      "id": "koyeb-pricing",
+      "name": "Koyeb 定价（免费层）",
+      "url": "https://www.koyeb.com/pricing",
+      "patterns": ["free", "web service", "instance"]
+    },
+    {
+      "id": "railway-pricing",
+      "name": "Railway 定价（试用金观察）",
+      "url": "https://railway.com/pricing",
+      "patterns": ["trial", "\\$5", "usage"]
+    },
+    {
+      "id": "codespaces-pricing",
+      "name": "GitHub Codespaces（免费 120 core-hours/月）",
+      "url": "https://github.com/features/codespaces",
+      "patterns": ["core hours", "120", "free"]
+    },
+    {
+      "id": "cloudflare-workers",
+      "name": "Cloudflare Workers 定价（免费 10 万请求/天）",
+      "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+      "patterns": ["100,000", "requests per day", "free"]
+    },
+    {
+      "id": "hf-spaces",
+      "name": "HuggingFace 定价（Spaces 免费 CPU 档）",
+      "url": "https://huggingface.co/pricing",
+      "patterns": ["CPU Basic", "free", "Space"]
+    },
+    {
+      "id": "kaggle-notebooks",
+      "name": "Kaggle Notebooks（每周 30h 免费 GPU）",
+      "url": "https://www.kaggle.com/docs/notebooks",
+      "patterns": ["GPU", "hours", "weekly"]
+    },
+    {
+      "id": "aliyun-free",
+      "name": "阿里云免费试用",
+      "url": "https://free.aliyun.com",
+      "patterns": ["ECS", "云服务器", "试用", "个月"]
+    },
+    {
+      "id": "tencent-free",
+      "name": "腾讯云免费试用",
+      "url": "https://cloud.tencent.com/act/free",
+      "patterns": ["轻量", "云服务器", "试用", "免费"],
+      "disabled": true,
+      "disabled_reason": "2026-11-06 首跑定性：活动页 JS 渲染空壳（200 但 0 字节，同火山 CSR 壳类）→ 转真浏览器/人工盯"
+    },
+    {
+      "id": "huawei-free",
+      "name": "华为云免费试用",
+      "url": "https://activity.huaweicloud.com/free_test/index.html",
+      "patterns": ["ECS", "弹性云服务器", "试用"],
+      "disabled": true,
+      "disabled_reason": "2026-11-06 首跑定性：robots.txt 拒绝抓取（pagesift 合规遵守，不绕过）→ 转人工/真浏览器盯"
+    }
+  ],
+  "candidates_pool": {
+    "desc": "硬墙候选池——挑战页/网络不可达，不绕反爬（红线），转容器分工或人工",
+    "items": [
+      {"url": "https://www.vultr.com/promo/", "reason": "CF challenge（pagesift 亦拒）", "note": "Vultr $250/30天 试用——转真浏览器核"},
+      {"url": "https://www.linode.com/pricing", "reason": "Akamai block", "note": "Linode/Akamai $100 试用——转真浏览器核"},
+      {"url": "https://codesandbox.io/pricing", "reason": "CF challenge", "note": "CodeSandbox 免费 VM 档——转真浏览器核"},
+      {"url": "https://www.blaxel.com/pricing", "reason": "DNS 失败（宿主机路径）", "note": "Blaxel agent hosting——容器/换网核"},
+      {"url": "https://ecloud.10086.cn/", "reason": "网络不可达（宿主机）", "note": "移动云免费试用——国内源容器分工"},
+      {"url": "https://www.jdcloud.com/cn/active/free", "reason": "网络不可达（宿主机）", "note": "京东云免费试用——国内源容器分工"},
+      {"url": "https://www.ovhcloud.com/en/free-trial/", "reason": "404", "note": "OVH 试用真实路径待找"},
+      {"url": "https://www.digitalocean.com/try/free-trial", "reason": "404", "note": "DO 试用真实路径待找（暂盯 pricing 页）"},
+      {"url": "https://research.google/programs/tpu/", "reason": "404", "note": "Google TPU Research Cloud 新路径待找（申请制免费 TPU）"}
+    ]
+  }
+}
