@@ -286,6 +286,55 @@
       "patterns": ["ECS", "云服务器", "试用", "个月"]
     },
     {
+      "id": "oracle-alwaysfree-docs",
+      "name": "Oracle Always Free 资源明细页（官方文档级口径）",
+      "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+      "patterns": ["A1", "OCPU", "Arm", "deemed idle", "blocks"],
+      "note": "晋级2026-11-07：免费池官方资源明细+空闲回收政策页（白嫖圈核心资产的权威口径源）"
+    },
+    {
+      "id": "openshift-workspaces",
+      "name": "OpenShift Dev Spaces（红帽免费云 IDE 工作区）",
+      "url": "https://workspaces.openshift.com/",
+      "patterns": ["free", "workspace", "hours"],
+      "note": "晋级2026-11-07：free-for-dev 候选池挖出"
+    },
+    {
+      "id": "paizacloud-free",
+      "name": "paizaCloud（日本免费云 IDE）",
+      "url": "https://paiza.cloud/en/",
+      "patterns": ["free", "server", "plan"],
+      "note": "晋级2026-11-07：候选池挖出"
+    },
+    {
+      "id": "zoho-catalyst",
+      "name": "Zoho Catalyst（免费云函数/Serverless）",
+      "url": "https://catalyst.zoho.com/free-tier.html",
+      "patterns": ["free", "tier", "invocations"],
+      "note": "晋级2026-11-07：候选池挖出"
+    },
+    {
+      "id": "clever-cloud",
+      "name": "Clever Cloud（法国 PaaS 免费额度）",
+      "url": "https://clever.cloud/",
+      "patterns": ["free", "trial", "credits"],
+      "note": "晋级2026-11-07：候选池挖出"
+    },
+    {
+      "id": "cloudflare-pages",
+      "name": "Cloudflare Pages（免费静态托管 500 build/月）",
+      "url": "https://developers.cloudflare.com/pages/",
+      "patterns": ["free", "builds", "requests", "bandwidth"],
+      "note": "晋级2026-11-07：候选池挖出（与 Workers 盯防互补）"
+    },
+    {
+      "id": "himitsushell",
+      "name": "HimitsuShell（免费 Linux Shell 账号）",
+      "url": "https://himitsushell.com/",
+      "patterns": ["free", "shell", "account"],
+      "note": "晋级2026-11-07：候选池挖出（免费 shell 类小众线）"
+    },
+    {
       "id": "tencent-free",
       "name": "腾讯云免费试用",
       "url": "https://cloud.tencent.com/act/free",

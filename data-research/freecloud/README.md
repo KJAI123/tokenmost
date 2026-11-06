@@ -5,11 +5,21 @@
 
 ## 结构
 
-- `freecloud_sources.json` — 源注册表（官方定价/免费层页，现役 19 源）
-- `freecloud_harvest.py` — 采集器（pagesift 内核·零 token·指纹 diff）
-- `harvest/` — 快照输出（freecloud-YYYY-MM-DD.md + latest.json）
-- `state.json` — 指纹基线（首跑建基线，之后变化才告警）
+- `freecloud_sources.json` — 盯防表（官方定价/免费层页，2026-11-07 扩至 44 源=42 活跃+2 转人工，附 9 条硬墙候选池）
+- `freecloud_harvest.py` — 盯防采集器（pagesift 内核·零 token·指纹 diff·两次观测确认制）
+- `freecloud_expand.py` — 挖矿器 v2（W1 直挖聚合页→W2 GitHub 搜索 API 找聚合仓→W3 递归挖仓 README；探活累积进候选池，旧候选永不丢失）
+- `freecloud_candidates.json` — 候选池（累积式；分类 official/doc/repo/article 供挑选）
+- `freecloud_crawl.py` — 全池爬取器（对池内 200 可达候选 pagesift 实爬，抽标题/关键词密度/Top5 情报片段，jsonl 增量可续爬 + report md）
+- `harvest/` — 盯防快照（freecloud-YYYY-MM-DD.md + latest.json）
+- `freecloud_crawl/` — 爬取产出（crawl-YYYYMMDD.jsonl + report-YYYYMMDD.md）
+- `state.json` — 盯防指纹基线（首跑建基线，之后变化才告警）
 - `findings/` — 情报条目（带来源+核实时间）
+
+## 分层盯防设计
+
+- **T1 盯防表**（44 源）：官方免费档页，harvest.py 全量关键词+指纹 diff，变化才告警
+- **T2 候选池**（目标 3000+）：expand.py 挖矿+探活，crawl.py 实爬抽情报信号，高价值者晋级 T1
+- **T3 硬墙池**：挑战页/网络不可达（CF/Akamai/DNS），不绕反爬（红线），转容器分工或人工
 
 ## 用法
 

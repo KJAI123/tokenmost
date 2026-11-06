@@ -993,3 +993,9 @@
 - 链接：https://kimi-bot.com/activities/zh-cn/invite/share?scenario=subscribe&from=share_poster&invitation_code=FYUH2Z
 - 状态：待复核（核验时间 2026-11-05T00:00:00Z）
 
+## InstaBox｜长期免费
+- 内容：免费 Agent 云电脑（常设计划非试用）：1 台 4C8G Firecracker microVM+20GiB 持久盘+5 个快照+200GiB 存储+100GiB/月出网；自带桌面+Chromium+Docker，16 个端口可发布公网 HTTPS
+- 规则：免费档单机最长连跑 480 分钟（长任务走 nohup/tmux 或 suspend/resume）；空闲 30 分钟自动暂停（暂停免费只算存储）；exec 单条 10 分钟上限；单次上传 10MiB
+- 链接：https://instabox.sh/pricing
+- 状态：已验证（核验时间 2026-11-06T00:00:00Z）
+
