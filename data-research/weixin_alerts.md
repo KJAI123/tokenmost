@@ -148,3 +148,10 @@
 - 📰 标题雷达 [AI 编程 白嫖] 白嫖党收藏:11 家 AI 编程工具每日签到积分,一个月能攒多少
 - 📰 标题雷达 [AI 编程 白嫖] 白嫖党收藏:11 家 AI 编程工具每日签到积
 - 📰 标题雷达 [AI 编程 白嫖] 尝试&ldquo;白嫖&rdquo; AI 写代码,最后发现终极 Agent 竟然是我自己
+
+## 2026-11-05 20:25 UTC（轮 55，查询：注册送 tokens）
+- 🆕 公众号新文 [三慧网络] 美团LongCat API上线,注册赠1000万Tokens → https://mp.weixin.qq.com/s?src=11&timestamp=1793910329&ver=7
+- 📰 标题雷达 [注册送 tokens] 注册白送3亿Tokens!齐俊元新作「Today」炸场,白嫖3个月Pro会员!先到先得,手慢无!!!
+- 📰 标题雷达 [注册送 tokens] Today AI 中国版开放注册:送 3 亿 Tokens、3 个月 Pro,基础版永久免费
+- 📰 标题雷达 [注册送 tokens] 【AI大模型】一个新的AI模型,注册送100,000,000 Tokens,API兼容OpenAI和Claude接口
+- 📰 标题雷达 [注册送 tokens] 注册立送千万Tokens,活动期间低至0.1元/百万Tokens!
