@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 自托管访问统计上线（2026-11-06，老板问「访问数据量如何」，882430c）：结论=此前站点零统计（无第三方脚本/服务器日志 SSH 够不着/GSC 未验证）——装了自托管计数：server/app.py +POST /api/hit（SQLite pageviews）+GET /api/stats（今日/昨日/7 日/总量），index.html 生产域名（含 Pages 跨域上报主域）加载后静默上报；⚠️生效需 systemd 重启一次 tokenmost-api（git cron 只拉代码不重启）——老板宝塔面板点一下即可；历史流量可查宝塔→网站日志（nginx 日志）
 - [x] v2.29.3 侧边栏开关位置重做（2026-11-06，老板令「位置按钮不太行」+截图指悬浮按钮压 logo，0aaecb7/7cfd2e3）：展开态=按钮内嵌侧边栏右上角（fixed top16/left174 与 logo 同行右端，logo 加 padding-right 避让），折叠态=左上角浮钮（12,10）；折叠/展开循环+近景截图确认视觉无碰撞；此前 10 次推送失败实为远端竞态非网络（先查 fast-forward 再怪网络）
 - [x] 🚑 logo 本地包 20 个损坏文件修复（2026-11-06，老板令「很多logo也没补充」，544372d）：
   - **根因**：首轮图标下载器只验字节>200 未验图片格式——部分站点 favicon.ico 返回的是 HTML 错误页（200+text/html）被存成 .ico，浏览器解码失败→onerror 落外链→icon.horse/s2 境内又慢又被墙→表现为「logo 缺失」（智谱/火山/豆包/千问/LongCat/WorkBuddy 等约 20 个域名）
