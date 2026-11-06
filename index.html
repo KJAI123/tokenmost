@@ -742,6 +742,11 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </aside>
 <script>
 /* ============ 常量 ============ */
+/* 访问统计上报（v0.11 自托管计数，仅生产域名，失败静默） */
+if(['tokenmost.com','www.tokenmost.com','kjai123.github.io'].includes(location.hostname)){
+  const hitApi=location.hostname==='kjai123.github.io'?'https://tokenmost.com':'';
+  fetch(hitApi+'/api/hit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:location.pathname})}).catch(()=>{});
+}
 /* 侧边栏收起/展开（v2.28） */
 const SIDE_KEY='tm_side_fold_v1';
 if(localStorage.getItem(SIDE_KEY)==='1')document.body.classList.add('side-folded');

@@ -23,7 +23,7 @@ import urllib.request
 import datetime
 from typing import Any, Dict, List, Optional
 
-from fastapi import FastAPI, HTTPException, Depends, Query, Header
+from fastapi import FastAPI, HTTPException, Depends, Query, Header, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
 
@@ -86,6 +86,8 @@ def startup():
     cols = [r[1] for r in c.execute("PRAGMA table_info(coupons)").fetchall()]
     if "kind" not in cols:
         c.execute("ALTER TABLE coupons ADD COLUMN kind TEXT NOT NULL DEFAULT 'code'")
+    c.execute("CREATE TABLE IF NOT EXISTS pageviews(ts INTEGER, path TEXT, ua TEXT)")
+    c.commit()
     c.close()
 
 # ---------------- 认证（标准库实现） ----------------
@@ -222,6 +224,39 @@ def health():
         return {"status": "ok", "version": APP_VERSION, "flash": bool(ZHIPU_API_KEY)}
     except Exception as e:
         raise HTTPException(503, str(e))
+
+# ---------------- 访问统计（v0.11 自托管计数） ----------------
+
+@app.post("/api/hit")
+def api_hit(request: Request, body: Optional[Dict[str, Any]] = None):
+    try:
+        c = conn()
+        c.execute("INSERT INTO pageviews VALUES(?,?,?)",
+                  (int(datetime.datetime.utcnow().timestamp() * 1000),
+                   ((body or {}).get("path") or "/")[:120],
+                   (request.headers.get("user-agent") or "")[:120]))
+        c.commit()
+        c.close()
+        return {"ok": True}
+    except Exception:
+        raise HTTPException(500, "hit failed")
+
+@app.get("/api/stats")
+def api_stats():
+    c = conn()
+    day = 86400000
+    now = int(datetime.datetime.utcnow().timestamp() * 1000)
+    d0 = now - now % day
+    def rng(f, t):
+        return c.execute("SELECT COUNT(*) FROM pageviews WHERE ts BETWEEN ? AND ?", (f, t)).fetchone()[0]
+    out = {
+        "today": rng(d0, now + 1),
+        "yesterday": rng(d0 - day, d0),
+        "total": c.execute("SELECT COUNT(*) FROM pageviews").fetchone()[0],
+        "last7d": [rng(d0 - (6 - i) * day, d0 - (5 - i) * day) for i in range(7)],
+    }
+    c.close()
+    return out
 
 @app.post("/api/auth/register")
 def register(body: AuthBody):
