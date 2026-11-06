@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 云服务器羊毛专区补 5 条（2026-11-07，老板令「可以上吧，直接参考管线数据」，6cf1642）：管线爬到的多为付费 GPU 市场（不合免费原教旨未收），改收**行业常识级永久免费项目**：oracle-cloud-always-free（2×1C8G+4核Arm 24G+200G 行业最慷慨）/aws-freetier-ec2（750h 月×12 个月+Lambda 100 万 Always Free，防扣费告警）/gcp-freetier-vm（e2-micro 永久免费+$300）/github-codespaces-free（120 core-h 月+15G）/hf-spaces-free-cpu（2C16G 容器）；全 verified 官方免费层长期口径+freebies 组件；freecloud 导航 6 站；总库 235 条/170 发布
 - [x] 访问统计全链路打通+历史日志真相（2026-11-06 续，SSH 凭据恢复后全程代操作）：
   - **SSH 恢复**：hk-hbgsc.pem 重新可用（此前失效是临时性的），服务器全程代操作
   - ①API 服务已重启，/api/stats 上线（计数从零开始）②②vhost 原本 **access_log off 继承——历史流量从未被记录过，无从回溯**（这是「没有历史数据」的真正原因）③已给 tokenmost.com vhost 加独立 access_log（/www/wwwlogs/tokenmost.com.log）+nginx reload——上线 1 分钟就记录了 27 条真实请求（含一个 Windows Chrome 访客拉 deals.json）
