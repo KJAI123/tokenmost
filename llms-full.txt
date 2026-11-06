@@ -999,3 +999,33 @@
 - 链接：https://instabox.sh/pricing
 - 状态：已验证（核验时间 2026-11-06T00:00:00Z）
 
+## Oracle Cloud｜长期免费
+- 内容：Oracle 云永免费层（行业最慷慨·长期在营）：2 台 AMD VM（1C/8G）+ 4 核 Arm Ampere A1（合计 24G 内存）+ 200G 块存储——全部永久免费，可跑生产级服务
+- 规则：Always Free 资源在闲置回收政策下 Arm 实例建议保持使用；需绑卡验证（不扣费）；账号注册有一定门槛
+- 链接：https://www.oracle.com/cloud/free/
+- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+
+## AWS｜长期免费
+- 内容：AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等几十项免费额度；另有 Always Free 长期项（Lambda 100 万次/月等）
+- 规则：750 小时/月仅首 12 个月（新账号）；超额计费需绑卡——设好预算告警（Billing→Budgets）防扣费
+- 链接：https://aws.amazon.com/free/
+- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+
+## Google Cloud｜长期免费
+- 内容：Google Cloud 免费层：e2-micro VM 永久免费（美国区，30G 磁盘）+ 30G 出网/月+新用户 $300/90 天试用金全服务可用
+- 规则：e2-micro 限美国指定区域（oregon/iowa/s. carolina）；外网 IP 算出网流量（30G/月内免费）；需绑卡但永久免费项不扣费
+- 链接：https://cloud.google.com/free/
+- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+
+## GitHub Codespaces｜长期免费
+- 内容：GitHub Codespaces 云开发环境：个人免费 120 core-hours/月+15G 存储/月（2 核机=60 小时/月，4 核机=30 小时/月），浏览器即开即用
+- 规则：个人账号每月 120 core-hours+15G 存储；Pro 账号额度更高（180 core-hours）；停止的 codespace 30 天后自动删除
+- 链接：https://github.com/features/codespaces
+- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+
+## Hugging Face Spaces｜长期免费
+- 内容：Hugging Face Spaces 免费应用托管：2 vCPU/16G 内存容器永久免费（公开应用），Gradio/Streamlit/Docker 三种模板，AI demo 秒上线
+- 规则：免费档=公开应用（私有需付费档）；8G 磁盘；闲置重启策略；升级 CPU Basic $0.03/h
+- 链接：https://huggingface.co/spaces
+- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+

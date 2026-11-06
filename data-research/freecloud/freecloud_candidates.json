@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T16:31:19Z",
+  "updated_at": "2026-11-06T17:27:25Z",
   "items": {
     "https://cloud.google.com": {
       "url": "https://cloud.google.com",
@@ -30636,6 +30636,3038 @@
       "found_in": "W3-recursive",
       "added_at": "2026-11-06T16:21:17Z",
       "status": 403
+    },
+    "https://99xt.github.io/serverless-delivery-framework/": {
+      "url": "https://99xt.github.io/serverless-delivery-framework/",
+      "text": "*Introduction*",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://99xt.github.io/serverless-delivery-framework": {
+      "url": "https://99xt.github.io/serverless-delivery-framework",
+      "text": "read more",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://www.npmjs.com/package/serverless-dynamodb-local": {
+      "url": "https://www.npmjs.com/package/serverless-dynamodb-local",
+      "text": "NPM Registry",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://youtu.be/D6qB7MEFOe0": {
+      "url": "https://youtu.be/D6qB7MEFOe0",
+      "text": "Video 01 - Hosting a website on AWS with S3, CloudFront and Route53",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://youtu.be/f20XOaQ3JDA": {
+      "url": "https://youtu.be/f20XOaQ3JDA",
+      "text": "Video 02 - Hosting Angular, React and Vue.js applications on AWS",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html",
+      "text": "CloudWatch AnomalyDetection",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html": {
+      "url": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://acloud.guru": {
+      "url": "https://acloud.guru",
+      "text": "A Cloud Guru",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/SumoLogic/sumologic-aws-lambda/tree/master/cloudwatchlogs/README.md": {
+      "url": "https://github.com/SumoLogic/sumologic-aws-lambda/tree/master/cloudwatchlogs/README.md",
+      "text": "readme",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://help.sumologic.com/03Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs": {
+      "url": "https://help.sumologic.com/03Send-Data/Collect-from-Other-Data-Sources/Amazon-CloudWatch-Logs",
+      "text": "here",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/ACloudGuru/serverless-plugin-sumologic/blob/master/LICENSE": {
+      "url": "https://github.com/ACloudGuru/serverless-plugin-sumologic/blob/master/LICENSE",
+      "text": "MIT license",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/credentials": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/credentials",
+      "text": "Setup your AWS credentials",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/pull/2743": {
+      "url": "https://github.com/serverless/serverless/pull/2743",
+      "text": "merge",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/issues/2780": {
+      "url": "https://github.com/serverless/serverless/issues/2780",
+      "text": "bug",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/issues/2683": {
+      "url": "https://github.com/serverless/serverless/issues/2683",
+      "text": "bug",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://aws.amazon.com/blogs/aws/amazon-cloudwatch-update-extended-metrics-retention-user-interface-update": {
+      "url": "https://aws.amazon.com/blogs/aws/amazon-cloudwatch-update-extended-metrics-retention-user-interface-update",
+      "text": "AWS extended its CloudWatch Metrics to allow for storing 15 months of historical data since November 2016",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://serverless-stack.com": {
+      "url": "http://serverless-stack.com",
+      "text": "Serverless Stack",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://demo2.serverless-stack.com": {
+      "url": "http://demo2.serverless-stack.com",
+      "text": "note taking app",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-stack/serverless-stack": {
+      "url": "https://github.com/serverless-stack/serverless-stack",
+      "text": "SST",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/AnomalyInnovations/serverless-stack-demo-client": {
+      "url": "https://github.com/AnomalyInnovations/serverless-stack-demo-client",
+      "text": "frontend React client that connects to this as well",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless-stack.com": {
+      "url": "https://serverless-stack.com",
+      "text": "Serverless Stack",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://medium.com/@ayoub.edakhly/a-dummy-guide-to-building-your-first-api-using-serverless-typescript-and-graphql-5802d13874a0": {
+      "url": "https://medium.com/@ayoub.edakhly/a-dummy-guide-to-building-your-first-api-using-serverless-typescript-and-graphql-5802d13874a0",
+      "text": "Medium article containing all the steps to build this project (~15k reads)",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://yarnpkg.com/lang/en/docs/workspaces": {
+      "url": "https://yarnpkg.com/lang/en/docs/workspaces",
+      "text": "Yarn Workspaces",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/CloudSnorkel/lovage": {
+      "url": "https://github.com/CloudSnorkel/lovage",
+      "text": "Lovage",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.datadoghq.com/serverless/configuration": {
+      "url": "https://docs.datadoghq.com/serverless/configuration",
+      "text": "advanced options",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.datadoghq.com/serverless/guide/serverless_tracing_and_webpack": {
+      "url": "https://docs.datadoghq.com/serverless/guide/serverless_tracing_and_webpack",
+      "text": "Serverless Tracing and Webpack",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.datadoghq.com/api/latest/monitors/": {
+      "url": "https://docs.datadoghq.com/api/latest/monitors/",
+      "text": "Datadog Monitors API",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/DataDog/serverless-plugin-datadog/releases/tag/v5.0.0": {
+      "url": "https://github.com/DataDog/serverless-plugin-datadog/releases/tag/v5.0.0",
+      "text": "**v5.0.0**",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/DataDog/serverless-plugin-datadog/releases/tag/v4.0.0": {
+      "url": "https://github.com/DataDog/serverless-plugin-datadog/releases/tag/v4.0.0",
+      "text": "**v4.0.0**",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/events/apigateway/": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/events/apigateway/",
+      "text": "HTTP Proxy",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://github.com/DianaIonita/serverless-api-gateway-throttling/issues/16": {
+      "url": "https://github.com/DianaIonita/serverless-api-gateway-throttling/issues/16",
+      "text": "in this issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://www.dieproduktmacher.com/introducing-serverless-env-generator": {
+      "url": "http://www.dieproduktmacher.com/introducing-serverless-env-generator",
+      "text": "introducing serverless-env-generator",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://jacob-meacham.github.io/serverless-plugin-aws-resolvers": {
+      "url": "https://jacob-meacham.github.io/serverless-plugin-aws-resolvers",
+      "text": "webpage",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html",
+      "text": "access log",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless-optimizer-plugin": {
+      "url": "https://github.com/serverless/serverless-optimizer-plugin",
+      "text": "serverless-optimizer-plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/FidelLimited/serverless-plugin-optimize/issues/32": {
+      "url": "https://github.com/FidelLimited/serverless-plugin-optimize/issues/32",
+      "text": "#32",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/FormidableLabs/serverless-jetpack/pull/68": {
+      "url": "https://github.com/FormidableLabs/serverless-jetpack/pull/68",
+      "text": "last",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/prisma-labs/serverless-plugin-typescript": {
+      "url": "https://github.com/prisma-labs/serverless-plugin-typescript",
+      "text": "`serverless-plugin-typescript`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/FormidableLabs/serverless-jetpack/issues/74": {
+      "url": "https://github.com/FormidableLabs/serverless-jetpack/issues/74",
+      "text": "#74",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-heaven/serverless-webpack/blob/21393845fb173a6f806b0bc2bee0be7daf0adc86/lib/packageModules.js": {
+      "url": "https://github.com/serverless-heaven/serverless-webpack/blob/21393845fb173a6f806b0bc2bee0be7daf0adc86/lib/packageModules.js",
+      "text": "`packageModules.js`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/plugins/serverless-app-client-credentials-to-ssm": {
+      "url": "https://www.serverless.com/plugins/serverless-app-client-credentials-to-ssm",
+      "text": "Serverless plugin",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/guides/plugins/creating-plugins": {
+      "url": "https://www.serverless.com/framework/docs/guides/plugins/creating-plugins",
+      "text": "Serverless \"hook\"",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/aws-serverless-express": {
+      "url": "https://www.npmjs.com/package/aws-serverless-express",
+      "text": "aws-serverless-express",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://nodei.co/npm/serverless-aws-lambda.png?compact=true": {
+      "url": "https://nodei.co/npm/serverless-aws-lambda.png?compact=true",
+      "text": "![NPM",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Inqnuam/serverless-aws-lambda-documentdb-streams": {
+      "url": "https://github.com/Inqnuam/serverless-aws-lambda-documentdb-streams",
+      "text": "DocumentDB Local Streams",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/Inqnuam/serverless-aws-lambda-ddb-streams": {
+      "url": "https://github.com/Inqnuam/serverless-aws-lambda-ddb-streams",
+      "text": "DynamoDB Local Streams",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Inqnuam/serverless-aws-lambda-jest": {
+      "url": "https://github.com/Inqnuam/serverless-aws-lambda-jest",
+      "text": "Jest",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Inqnuam/serverless-aws-lambda-vitest": {
+      "url": "https://github.com/Inqnuam/serverless-aws-lambda-vitest",
+      "text": "Vitest",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/events/apigateway": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/events/apigateway",
+      "text": "Request Schema Validators",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html": {
+      "url": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html",
+      "text": "AWS documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Jimdo/serverless-dynamodb-ttl/blob/master/LICENSE.md": {
+      "url": "https://github.com/Jimdo/serverless-dynamodb-ttl/blob/master/LICENSE.md",
+      "text": "MIT license",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/domain-register.html": {
+      "url": "https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/domain-register.html",
+      "text": "AWS Route53 에서 구입한 도메인",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/ko_kr/acm/latest/userguide/gs-acm-request.html": {
+      "url": "https://docs.aws.amazon.com/ko_kr/acm/latest/userguide/gs-acm-request.html",
+      "text": "AWS Certificate 에서 발급받은 인증서",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md": {
+      "url": "https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md",
+      "text": "AWS Credentials",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/quick-start": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/quick-start",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/AndrewChubatiuk/serverless-import-plugin": {
+      "url": "https://github.com/AndrewChubatiuk/serverless-import-plugin",
+      "text": "serverless-import-plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/getting-started": {
+      "url": "https://serverless.com/framework/docs/getting-started",
+      "text": "Serverless",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://app.localstack.cloud": {
+      "url": "https://app.localstack.cloud",
+      "text": "LocalStack",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.localstack.cloud/user-guide/tools/lambda-tools/hot-reloading": {
+      "url": "https://docs.localstack.cloud/user-guide/tools/lambda-tools/hot-reloading",
+      "text": "Hot Reloading",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html",
+      "text": "Serving Compressed Files",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PriceClass.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PriceClass.html",
+      "text": "PriceClass",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ViewerCertificate.html": {
+      "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ViewerCertificate.html",
+      "text": "protocol version",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://medium.com/99xtechnology/full-stack-serverless-web-apps-with-aws-189d87da024a": {
+      "url": "https://medium.com/99xtechnology/full-stack-serverless-web-apps-with-aws-189d87da024a",
+      "text": "**Full Stack Serverless Web Apps with AWS**",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/variables/": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/variables/",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://v26mdkczs6.execute-api.us-east-1.amazonaws.com/dev/image?url=https%3A%2F%2Fgithub.com%2FRafalWilinski%2Fserverless-medium-text-to-speech": {
+      "url": "https://v26mdkczs6.execute-api.us-east-1.amazonaws.com/dev/image?url=https%3A%2F%2Fgithub.com%2FRafalWilinski%2Fserverless-medium-text-to-speech",
+      "text": "![",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://github.com/awslabs/serverless-application-model": {
+      "url": "https://github.com/awslabs/serverless-application-model",
+      "text": "Serverless Application Model (SAM)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/nordcloud/serverless-mocha-plugin": {
+      "url": "https://github.com/nordcloud/serverless-mocha-plugin",
+      "text": "serverless-mocha-plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/elastic-coders/serverless-webpack": {
+      "url": "https://github.com/elastic-coders/serverless-webpack",
+      "text": "serverless-webpack",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/nordcloud/serverless-kms-secrets": {
+      "url": "https://github.com/nordcloud/serverless-kms-secrets",
+      "text": "serverless-kms-secrets",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/serverless-plugin-custom-roles": {
+      "url": "https://www.npmjs.com/package/serverless-plugin-custom-roles",
+      "text": "serverless-plugin-custom-roles",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/nordcloud/serverless-boilerplate/issues": {
+      "url": "https://github.com/nordcloud/serverless-boilerplate/issues",
+      "text": "issue tracker",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.nordcloud.com": {
+      "url": "https://www.nordcloud.com",
+      "text": "Nordcloud",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://nordcloud.com": {
+      "url": "https://nordcloud.com",
+      "text": "Nordcloud",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/sc5/serverless-jest-plugin": {
+      "url": "https://github.com/sc5/serverless-jest-plugin",
+      "text": "serverless-jest-plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/nordcloud/lambda-wrapper": {
+      "url": "https://github.com/nordcloud/lambda-wrapper",
+      "text": "lambda-wrapper",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/cli-reference/invoke-local": {
+      "url": "https://serverless.com/framework/docs/providers/aws/cli-reference/invoke-local",
+      "text": "`sls invoke local`",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://serverless.com": {
+      "url": "http://serverless.com",
+      "text": "serverless framework",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.docker.com/engine/installation": {
+      "url": "https://docs.docker.com/engine/installation",
+      "text": "Docker",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://exchange.stackstorm.org/": {
+      "url": "https://exchange.stackstorm.org/",
+      "text": "`serverless`",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://d3ujodob71n39b.cloudfront.net": {
+      "url": "https://d3ujodob71n39b.cloudfront.net",
+      "text": "Demo & Docs",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://github.com/serverless/serverless/releases/tag/v4.22.0": {
+      "url": "https://github.com/serverless/serverless/releases/tag/v4.22.0",
+      "text": "Serverless Framework v4.22.0+",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/guide/python": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/guide/python",
+      "text": "Serverless Framework – Python packaging guide",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/blog/serverless-python-packaging": {
+      "url": "https://serverless.com/blog/serverless-python-packaging",
+      "text": "this post on the Serverless Blog",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-image-repositories.html": {
+      "url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-image-repositories.html",
+      "text": "official AWS build",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.docker.com/engine/reference/commandline/build": {
+      "url": "https://docs.docker.com/engine/reference/commandline/build",
+      "text": "docker build",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.docker.com/engine/reference/run": {
+      "url": "https://docs.docker.com/engine/reference/run",
+      "text": "docker run",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.docker.com/docker-for-mac/install": {
+      "url": "https://docs.docker.com/docker-for-mac/install",
+      "text": "Install Docker",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://forums.docker.com/t/docker-data-volumes-and-windows-mounts/31499/2": {
+      "url": "https://forums.docker.com/t/docker-data-volumes-and-windows-mounts/31499/2",
+      "text": "Enabling shared volume in Windows Docker Taskbar settings",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4": {
+      "url": "https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4",
+      "text": "Installing the Docker client on Windows Subsystem for Linux (Ubuntu)",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://www.scaleway.com/en/serverless-functions": {
+      "url": "https://www.scaleway.com/en/serverless-functions",
+      "text": "Scaleway",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://nodei.co/npm/serverless-shell.png?mini=true": {
+      "url": "https://nodei.co/npm/serverless-shell.png?mini=true",
+      "text": "![npm",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://travis-ci.com/UnlyEd/serverless-plugin-dynamodb-backups.svg?branch=master": {
+      "url": "https://travis-ci.com/UnlyEd/serverless-plugin-dynamodb-backups.svg?branch=master",
+      "text": "![Build Status",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/events/schedule": {
+      "url": "https://serverless.com/framework/docs/providers/aws/events/schedule",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/oss-serverless/osls": {
+      "url": "https://github.com/oss-serverless/osls",
+      "text": "osls",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/issues/12922": {
+      "url": "https://github.com/serverless/serverless/issues/12922",
+      "text": "requires upgrading to Serverless Framework v4",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/activescott/serverless-aws-static-file-handler/issues": {
+      "url": "https://github.com/activescott/serverless-aws-static-file-handler/issues",
+      "text": "open an issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/activescott/serverless-aws-static-file-handler/actions": {
+      "url": "https://github.com/activescott/serverless-aws-static-file-handler/actions",
+      "text": "tested",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/activescott/serverless-http-invoker/blob/master/LICENSE": {
+      "url": "https://github.com/activescott/serverless-http-invoker/blob/master/LICENSE",
+      "text": "MIT",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/activescott/serverless-http-invoker/issues": {
+      "url": "https://github.com/activescott/serverless-http-invoker/issues",
+      "text": "open an issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/activescott/serverless-http-invoker/actions": {
+      "url": "https://github.com/activescott/serverless-http-invoker/actions",
+      "text": "tested",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/activescott/serverless-http-invoker/blob/main/LICENSE": {
+      "url": "https://github.com/activescott/serverless-http-invoker/blob/main/LICENSE",
+      "text": "MIT",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html",
+      "text": "AWS documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/agutoli/serverless-layers/blob/master/src/runtimes/nodejs.js": {
+      "url": "https://github.com/agutoli/serverless-layers/blob/master/src/runtimes/nodejs.js",
+      "text": "check",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/agutoli/serverless-layers/blob/master/src/runtimes/ruby.js": {
+      "url": "https://github.com/agutoli/serverless-layers/blob/master/src/runtimes/ruby.js",
+      "text": "check",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/agutoli/serverless-layers/blob/master/src/runtimes/python.js": {
+      "url": "https://github.com/agutoli/serverless-layers/blob/master/src/runtimes/python.js",
+      "text": "check",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/ConduitVC/aws-utils/tree/appsync/packages/appsync-emulator-serverless": {
+      "url": "https://github.com/ConduitVC/aws-utils/tree/appsync/packages/appsync-emulator-serverless",
+      "text": "AppSync Emulator",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-appsync/serverless-appsync-simulator": {
+      "url": "https://github.com/serverless-appsync/serverless-appsync-simulator",
+      "text": "serverless-appsync-simulator",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/aheissenberger/serverless-appsync-offline/issues": {
+      "url": "https://github.com/aheissenberger/serverless-appsync-offline/issues",
+      "text": "find a bug or want a new feature",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/dherault/serverless-offline/issues/304": {
+      "url": "https://github.com/dherault/serverless-offline/issues/304",
+      "text": "this issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/dherault/serverless-offline/tree/serverless_0.5": {
+      "url": "https://github.com/dherault/serverless-offline/tree/serverless_0.5",
+      "text": "this branch",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/serverless/serverless-runtime-babel": {
+      "url": "https://github.com/serverless/serverless-runtime-babel",
+      "text": "Serverless-runtime-babel",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/installation": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/installation",
+      "text": "serverless",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/amplify-education/serverless-domain-manager/issues/57": {
+      "url": "https://github.com/amplify-education/serverless-domain-manager/issues/57",
+      "text": "#57",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/amplify-education/serverless-domain-manager/issues/43": {
+      "url": "https://github.com/amplify-education/serverless-domain-manager/issues/43",
+      "text": "#43",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/amplify-education/serverless-domain-manager/pull/47": {
+      "url": "https://github.com/amplify-education/serverless-domain-manager/pull/47",
+      "text": "#47",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/events/http-api": {
+      "url": "https://serverless.com/framework/docs/providers/aws/events/http-api",
+      "text": "httpApi event",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/guide/functions": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/guide/functions",
+      "text": "official documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://hands-on.cloud/serverless-framework-run-your-kubernetes-workloads-on-amazon-ec-2-spot-instances-with-amazon-eks-part-1": {
+      "url": "https://hands-on.cloud/serverless-framework-run-your-kubernetes-workloads-on-amazon-ec-2-spot-instances-with-amazon-eks-part-1",
+      "text": "Serverless Framework - Run your Kubernetes Workloads on Amazon EC2 Spot Instances with Amazon EKS - Part 1",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://hands-on.cloud/serverless-framework-run-your-kubernetes-workloads-on-amazon-ec-2-spot-instances-with-amazon-eks-part-2": {
+      "url": "https://hands-on.cloud/serverless-framework-run-your-kubernetes-workloads-on-amazon-ec-2-spot-instances-with-amazon-eks-part-2",
+      "text": "Serverless Framework - Run your Kubernetes Workloads on Amazon EC2 Spot Instances with Amazon EKS - Part 2",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://hands-on.cloud": {
+      "url": "https://hands-on.cloud",
+      "text": "Hands-On.Cloud",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://hands-on.cloud/serverless-framework-building-web-app-using-aws-lambda-amazon-api-gateway-s-3-dynamo-db-and-cognito-part-1": {
+      "url": "https://hands-on.cloud/serverless-framework-building-web-app-using-aws-lambda-amazon-api-gateway-s-3-dynamo-db-and-cognito-part-1",
+      "text": "Serverless Framework - Building Web App Using AWS Lambda, Amazon API Gateway S3 DynamoDB And Cognito - Part-1",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://hands-on.cloud/serverless-framework-building-web-app-using-aws-lambda-amazon-api-gateway-s-3-dynamo-db-and-cognito-part-2": {
+      "url": "https://hands-on.cloud/serverless-framework-building-web-app-using-aws-lambda-amazon-api-gateway-s-3-dynamo-db-and-cognito-part-2",
+      "text": "Serverless Framework - Building Web App Using AWS Lambda, Amazon API Gateway S3 DynamoDB And Cognito - Part-2",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://github.com/andrewcurioso/raml-serverless/milestones": {
+      "url": "https://github.com/andrewcurioso/raml-serverless/milestones",
+      "text": "Feature Roadmap",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/plugins/": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/plugins/",
+      "text": "Serverless docs",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://github.com/andrewcurioso/raml-serverless/issues": {
+      "url": "https://github.com/andrewcurioso/raml-serverless/issues",
+      "text": "/andrewcurioso/raml-serverless/issues",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://redis.io/topics/quickstart": {
+      "url": "https://redis.io/topics/quickstart",
+      "text": "Redis server",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/redis-server": {
+      "url": "https://www.npmjs.com/package/redis-server",
+      "text": "redis-server",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/ar90n/serverless-s3-local/tree/v0.9.0": {
+      "url": "https://github.com/ar90n/serverless-s3-local/tree/v0.9.0",
+      "text": "`v0.9.X`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/SC5/serverless-plugin-additional-stacks": {
+      "url": "https://github.com/SC5/serverless-plugin-additional-stacks",
+      "text": "serverless-plugin-additional-stacks",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/serverless-plugin-existing-s3": {
+      "url": "https://www.npmjs.com/package/serverless-plugin-existing-s3",
+      "text": "serverless-plugin-existing-s3",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/guide/variables": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/guide/variables",
+      "text": "variable resolution",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://aws.amazon.com/serverless/sam": {
+      "url": "https://aws.amazon.com/serverless/sam",
+      "text": "AWS Serverless Application Model",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/arabold/serverless-sentry-lib": {
+      "url": "https://github.com/arabold/serverless-sentry-lib",
+      "text": "serverless-sentry-lib",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/arabold/serverless-sentry-lib/blob/master/README.md": {
+      "url": "https://github.com/arabold/serverless-sentry-lib/blob/master/README.md",
+      "text": "README.md",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://forum.serverless.com/t/conditional-serverless-yml-based-on-stage/1763": {
+      "url": "https://forum.serverless.com/t/conditional-serverless-yml-based-on-stage/1763",
+      "text": "Serverless variable resolutions trick",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/arabold/serverless-sentry-lib/issues/63": {
+      "url": "https://github.com/arabold/serverless-sentry-lib/issues/63",
+      "text": "#63",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://adastradev.github.io/serverless-discovery": {
+      "url": "https://adastradev.github.io/serverless-discovery",
+      "text": "Ad Astra Serverless Discovery",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://travis-ci.com/aronim/serverless-plugin-colocate.svg?branch=master": {
+      "url": "https://travis-ci.com/aronim/serverless-plugin-colocate.svg?branch=master",
+      "text": "![Build Status",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/aws/amazon-network-policy-controller-k8s/issues/224": {
+      "url": "https://github.com/aws/amazon-network-policy-controller-k8s/issues/224",
+      "text": "issue #224",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/awslabs/aws-amplify-serverless-plugin/issues": {
+      "url": "https://github.com/awslabs/aws-amplify-serverless-plugin/issues",
+      "text": "issues tab",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights-extension-versions.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights-extension-versions.html",
+      "text": "see Layer Details and Versions",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights-extension-versionsx86-64.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights-extension-versionsx86-64.html",
+      "text": "AWS documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/99x/serverless-dynamodb-local": {
+      "url": "https://github.com/99x/serverless-dynamodb-local",
+      "text": "serverless-dynamodb-local",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/nodkz/mongodb-memory-server": {
+      "url": "https://github.com/nodkz/mongodb-memory-server",
+      "text": "mongodb-memory-server",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/apollographql/graphql-server/tree/master/packages/graphql-server-lambda": {
+      "url": "https://github.com/apollographql/graphql-server/tree/master/packages/graphql-server-lambda",
+      "text": "graphql-server-lambda",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html",
+      "text": "DependsOn",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/lambci/docker-lambda": {
+      "url": "https://github.com/lambci/docker-lambda",
+      "text": "@docker-lambda",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.docker.com/engine/installation/mac": {
+      "url": "https://docs.docker.com/engine/installation/mac",
+      "text": "docker",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cfchou/serverless-python-individually-demo": {
+      "url": "https://github.com/cfchou/serverless-python-individually-demo",
+      "text": "demo",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cfchou/serverless-python-individually/blob/master/requirements.py": {
+      "url": "https://github.com/cfchou/serverless-python-individually/blob/master/requirements.py",
+      "text": "requirement installer",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework": {
+      "url": "https://serverless.com/framework",
+      "text": "Serverless",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/claygregory/serverless-prune-plugin/issues/21": {
+      "url": "https://github.com/claygregory/serverless-prune-plugin/issues/21",
+      "text": "this thread",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/guide/functions/": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/guide/functions/",
+      "text": "versioning can be disabled",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://developers.cloudflare.com/workers/kv": {
+      "url": "https://developers.cloudflare.com/workers/kv",
+      "text": "KV Storage",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://lists.cloudfoundry.org/pipermail/cf-bosh": {
+      "url": "https://lists.cloudfoundry.org/pipermail/cf-bosh",
+      "text": "cf-bosh",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://lists.cloudfoundry.org/pipermail/cf-dev": {
+      "url": "https://lists.cloudfoundry.org/pipermail/cf-dev",
+      "text": "cf-dev",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/docs-bosh": {
+      "url": "https://github.com/cloudfoundry/docs-bosh",
+      "text": "Documentation source (docs-bosh)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-cli": {
+      "url": "https://github.com/cloudfoundry/bosh-cli",
+      "text": "CLI v2 (bosh-cli)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-deployment": {
+      "url": "https://github.com/cloudfoundry/bosh-deployment",
+      "text": "bosh-deployment",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-linux-stemcell-builder": {
+      "url": "https://github.com/cloudfoundry/bosh-linux-stemcell-builder",
+      "text": "bosh-linux-stemcell-builder",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder",
+      "text": "bosh-windows-stemcell-builder",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/aws-light-stemcell-builder": {
+      "url": "https://github.com/cloudfoundry-incubator/aws-light-stemcell-builder",
+      "text": "aws-light-stemcell-builder",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-aws-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-aws-cpi-release",
+      "text": "AWS",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-azure-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-azure-cpi-release",
+      "text": "Azure",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-google-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-google-cpi-release",
+      "text": "Google",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-openstack-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-openstack-cpi-release",
+      "text": "OpenStack",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-rackhd-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-rackhd-cpi-release",
+      "text": "RackHD",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-softlayer-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-softlayer-cpi-release",
+      "text": "SoftLayer",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-vsphere-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-vsphere-cpi-release",
+      "text": "vSphere",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry-incubator/bosh-vcloud-cpi-release": {
+      "url": "https://github.com/cloudfoundry-incubator/bosh-vcloud-cpi-release",
+      "text": "vCloud",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-agent": {
+      "url": "https://github.com/cloudfoundry/bosh-agent",
+      "text": "Agent (bosh-agent)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-davcli": {
+      "url": "https://github.com/cloudfoundry/bosh-davcli",
+      "text": "bosh-davcli",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-s3cli": {
+      "url": "https://github.com/cloudfoundry/bosh-s3cli",
+      "text": "bosh-s3cli",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-gcscli": {
+      "url": "https://github.com/cloudfoundry/bosh-gcscli",
+      "text": "bosh-gcscli",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-azure-storage-cli": {
+      "url": "https://github.com/cloudfoundry/bosh-azure-storage-cli",
+      "text": "bosh-azure-storage-cli",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-cpi-ruby": {
+      "url": "https://github.com/cloudfoundry/bosh-cpi-ruby",
+      "text": "bosh-cpi-ruby",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-utils": {
+      "url": "https://github.com/cloudfoundry/bosh-utils",
+      "text": "Go common packages (bosh-utils)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh/blob/master/CONTRIBUTING.md": {
+      "url": "https://github.com/cloudfoundry/bosh/blob/master/CONTRIBUTING.md",
+      "text": "contributors' guide",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html": {
+      "url": "https://docs.cloudfoundry.org/concepts/diego/diego-architecture.html",
+      "text": "Diego",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/diego-release": {
+      "url": "https://github.com/cloudfoundry/diego-release",
+      "text": "source code",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/tree/main": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/tree/main",
+      "text": "`main`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/tree/develop": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/tree/develop",
+      "text": "`develop`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/blob/main/PULL_REQUEST_TEMPLATE.md": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/blob/main/PULL_REQUEST_TEMPLATE.md",
+      "text": "PR Template",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/releases": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/releases",
+      "text": "latest release of cf-deployment",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-acceptance-tests/releases": {
+      "url": "https://github.com/cloudfoundry/cf-acceptance-tests/releases",
+      "text": "CAT's",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/blob/main/ops-file-promotion-workflow.md": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/blob/main/ops-file-promotion-workflow.md",
+      "text": "Ops-file workflows",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh/releases": {
+      "url": "https://github.com/cloudfoundry/bosh/releases",
+      "text": "BOSH",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://bosh.io/docs/cloud-config.html": {
+      "url": "https://bosh.io/docs/cloud-config.html",
+      "text": "cloud-config",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/tree/main/iaas-support": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/tree/main/iaas-support",
+      "text": "`iaas-support`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://bosh.io/docs/dns": {
+      "url": "https://bosh.io/docs/dns",
+      "text": "BOSH DNS",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-deployment/blob/main/runtime-configs/dns.yml": {
+      "url": "https://github.com/cloudfoundry/bosh-deployment/blob/main/runtime-configs/dns.yml",
+      "text": "bosh-deployment",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-bootloader/releases/tag/v6.10.0": {
+      "url": "https://github.com/cloudfoundry/bosh-bootloader/releases/tag/v6.10.0",
+      "text": "BBL v6.10.0",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/releases/tag/v3.0.0": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/releases/tag/v3.0.0",
+      "text": "`cf-deployment` v3.0",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.cloudfoundry.org/api/credhub": {
+      "url": "https://docs.cloudfoundry.org/api/credhub",
+      "text": "CredHub CLI",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/credhub/blob/master/docs/operator-quick-start.md": {
+      "url": "https://github.com/cloudfoundry/credhub/blob/master/docs/operator-quick-start.md",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/bosh-backup-and-restore": {
+      "url": "https://github.com/cloudfoundry/bosh-backup-and-restore",
+      "text": "BOSH Backup and Restore",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://concourse.wg-ard.ci.cloudfoundry.org": {
+      "url": "https://concourse.wg-ard.ci.cloudfoundry.org",
+      "text": "ci",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment/blob/develop/ci/pipelines/cf-deployment.yml": {
+      "url": "https://github.com/cloudfoundry/cf-deployment/blob/develop/ci/pipelines/cf-deployment.yml",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cloudfoundry/cf-deployment-transition": {
+      "url": "https://github.com/cloudfoundry/cf-deployment-transition",
+      "text": "cf-deployment-transition repo",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/neverendingqs/serverless-dotenv-plugin/discussions/155": {
+      "url": "https://github.com/neverendingqs/serverless-dotenv-plugin/discussions/155",
+      "text": "this discussion thread",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/environment-variables": {
+      "url": "https://www.serverless.com/framework/docs/environment-variables",
+      "text": "`useDotenv: true` in the configuration",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/neverendingqs/serverless-dotenv-example": {
+      "url": "https://github.com/neverendingqs/serverless-dotenv-example",
+      "text": "wire up `dotenv` yourself",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/neverendingqs/serverless-dotenv-plugin/blob/master/CHANGELOG.md": {
+      "url": "https://github.com/neverendingqs/serverless-dotenv-plugin/blob/master/CHANGELOG.md",
+      "text": "on GitHub",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/pull/8987": {
+      "url": "https://github.com/serverless/serverless/pull/8987",
+      "text": "serverless/serverless#8987",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/issues/8364": {
+      "url": "https://github.com/serverless/serverless/issues/8364",
+      "text": "serverless/serverless#8364",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/deprecations/": {
+      "url": "https://www.serverless.com/framework/docs/deprecations/",
+      "text": "deprecation code `UNSUPPORTED_CLI_OPTIONS` for more details",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://github.com/serverless/serverless/pull/9171": {
+      "url": "https://github.com/serverless/serverless/pull/9171",
+      "text": "serverless/serverless#9171",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/neverendingqs/serverless-dotenv-plugin/issues/52": {
+      "url": "https://github.com/neverendingqs/serverless-dotenv-plugin/issues/52",
+      "text": "#52",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/neverendingqs/serverless-dotenv-plugin/issues/38": {
+      "url": "https://github.com/neverendingqs/serverless-dotenv-plugin/issues/38",
+      "text": "#38",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html": {
+      "url": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html",
+      "text": "AWS::Cloudformation::Stack",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/rootless-containers/rootlesskit": {
+      "url": "https://github.com/rootless-containers/rootlesskit",
+      "text": "RootlessKit",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/containerd/containerd/tree/main/cmd/ctr": {
+      "url": "https://github.com/containerd/containerd/tree/main/cmd/ctr",
+      "text": "`ctr`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/alibaba/pouch": {
+      "url": "https://github.com/alibaba/pouch",
+      "text": "PouchContainer (abandoned?)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/containerd/project/blob/master/GOVERNANCE.md": {
+      "url": "https://github.com/containerd/project/blob/master/GOVERNANCE.md",
+      "text": "Project governance",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/containerd/project/blob/master/MAINTAINERS": {
+      "url": "https://github.com/containerd/project/blob/master/MAINTAINERS",
+      "text": "Maintainers",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/containerd/project/blob/master/CONTRIBUTING.md": {
+      "url": "https://github.com/containerd/project/blob/master/CONTRIBUTING.md",
+      "text": "Contributing guidelines",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html": {
+      "url": "http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://craftship.io/open/source/serverless/private/npm/registry/yith/2016/09/26/serverless-yith.html": {
+      "url": "https://craftship.io/open/source/serverless/private/npm/registry/yith/2016/09/26/serverless-yith.html",
+      "text": "Blog (Previously named Yith)",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html",
+      "text": "Cloudwatch filter pattern syntax",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-components": {
+      "url": "https://github.com/serverless-components",
+      "text": "serverless component",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js",
+      "text": "features",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/releases": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/releases",
+      "text": "Releases",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://nextjs.org/blog/next-8": {
+      "url": "https://nextjs.org/blog/next-8",
+      "text": "serverless mode",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/deprecated/serverless-plugin": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/deprecated/serverless-plugin",
+      "text": "serverless plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/101": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/101",
+      "text": "next 9 support",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/59": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/59",
+      "text": "better development experience",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/17": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/17",
+      "text": "the 200 CloudFormation resource limit",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/13": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/13",
+      "text": "performance",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/@sls-next/serverless-component?activeTab=versions": {
+      "url": "https://www.npmjs.com/package/@sls-next/serverless-component?activeTab=versions",
+      "text": "alpha version",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/new?template=bug_report.md": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/new?template=bug_report.md",
+      "text": "submit a bug report",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/new?template=feature_request.md": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/new?template=feature_request.md",
+      "text": "new issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://nextjs.org/docs/basic-features/data-fetching": {
+      "url": "https://nextjs.org/docs/basic-features/data-fetching",
+      "text": "Server side rendered pages at the Edge",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix": {
+      "url": "https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix",
+      "text": "Client assets",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://www.npmjs.com/package/@sls-next/serverless-component": {
+      "url": "https://www.npmjs.com/package/@sls-next/serverless-component",
+      "text": "here",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/serverless-components/aws-cloudfront": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/serverless-components/aws-cloudfront",
+      "text": "aws-cloudfront inputs",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/serverless-components/nextjs-component/examples/app-with-custom-caching-config": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/serverless-components/nextjs-component/examples/app-with-custom-caching-config",
+      "text": "this",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-components/aws-lambda": {
+      "url": "https://github.com/serverless-components/aws-lambda",
+      "text": "aws-lambda serverless component",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html",
+      "text": "25 per distribution",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-components/aws-cloudfront": {
+      "url": "https://github.com/serverless-components/aws-cloudfront",
+      "text": "aws-cloudfront",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html",
+      "text": "reference",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless-nextjs.com/docs/cdkconstruct": {
+      "url": "https://serverless-nextjs.com/docs/cdkconstruct",
+      "text": "Documentation can be found here.",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://serverless.com/blog/what-are-serverless-components-how-use": {
+      "url": "https://serverless.com/blog/what-are-serverless-components-how-use",
+      "text": "serverless components",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-requirements-limits.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-requirements-limits.html",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/611": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/611",
+      "text": "GitHub Issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/serverless-components/nextjs-component/examples": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/tree/master/packages/serverless-components/nextjs-component/examples",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues/328": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues/328",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://simonecarletti.com/blog/2016/08/redirect-domain-https-amazon-cloudfront/": {
+      "url": "https://simonecarletti.com/blog/2016/08/redirect-domain-https-amazon-cloudfront/",
+      "text": "here",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/blob/master/packages/libs/lambda-at-edge/src/build/third-party/README.md": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/blob/master/packages/libs/lambda-at-edge/src/build/third-party/README.md",
+      "text": "README",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/issues": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/issues",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/wiki/Debugging-Issues": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/wiki/Debugging-Issues",
+      "text": "debugging wiki",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-nextjs/serverless-next.js/security/policy": {
+      "url": "https://github.com/serverless-nextjs/serverless-next.js/security/policy",
+      "text": "security policy",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://opencollective.com/serverless-nextjs-plugin/contribute": {
+      "url": "https://opencollective.com/serverless-nextjs-plugin/contribute",
+      "text": "[Contribute",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/lambda/latest/dg/automating-updates-to-serverless-apps.html": {
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/automating-updates-to-serverless-apps.html",
+      "text": "AWS CodeDeploy",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html",
+      "text": "CodeDeploy TriggerConfiguration Documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications-create-trigger.html": {
+      "url": "https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications-create-trigger.html",
+      "text": "this CodeDeploy notifications guide",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html",
+      "text": "CodeDeploy DeploymentGroup",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/events": {
+      "url": "https://serverless.com/framework/docs/providers/aws/events",
+      "text": "More events",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/deep-security/serverless-kms-grants/issues": {
+      "url": "https://github.com/deep-security/serverless-kms-grants/issues",
+      "text": "open an issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/HyperBrain/serverless-models-plugin": {
+      "url": "https://github.com/HyperBrain/serverless-models-plugin",
+      "text": "this plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/resources": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/resources",
+      "text": "resource naming",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html",
+      "text": "request parameters",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/digitalmaas/serverless-plugin-browserifier/issues/8": {
+      "url": "https://github.com/digitalmaas/serverless-plugin-browserifier/issues/8",
+      "text": "this issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html": {
+      "url": "http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html",
+      "text": "more details in the AWS docs",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://fishshell.com": {
+      "url": "https://fishshell.com",
+      "text": "Fish Shell",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/serverless-apigw-binary": {
+      "url": "https://www.npmjs.com/package/serverless-apigw-binary",
+      "text": "serverless-apigw-binary",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://upstash.com/": {
+      "url": "https://upstash.com/",
+      "text": "Start for free in 30 seconds!",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://genezio.com/deploy-nodejs-express-on-genezio-serverless": {
+      "url": "https://genezio.com/deploy-nodejs-express-on-genezio-serverless",
+      "text": "Genezio",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 308
+    },
+    "https://github.com/pharindoko/json-server-less-lambda": {
+      "url": "https://github.com/pharindoko/json-server-less-lambda",
+      "text": "json-server-less-λ",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/dougmoscrop/serverless-plugin-common-excludes/blob/master/common-excludes.js": {
+      "url": "https://github.com/dougmoscrop/serverless-plugin-common-excludes/blob/master/common-excludes.js",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html": {
+      "url": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html",
+      "text": "CloudFormation Custom Resource",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/plugins/serverless-python-requirements": {
+      "url": "https://serverless.com/plugins/serverless-python-requirements",
+      "text": "serverless-python-requirements plugin",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/events/http-api": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/events/http-api",
+      "text": "httpApi event docs",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/examples/tree/v3/aws-node-http-api": {
+      "url": "https://github.com/serverless/examples/tree/v3/aws-node-http-api",
+      "text": "aws-node-http-api",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://medium.com/@dzimine/exploring-serverless-with-python-stepfunctions-and-web-front-end-8e0bf7203d4b": {
+      "url": "https://medium.com/@dzimine/exploring-serverless-with-python-stepfunctions-and-web-front-end-8e0bf7203d4b",
+      "text": "Exploring Serverless with Python, StepFunctions, and Web Front-end Serverless",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/serverless/serverless/issues/3947": {
+      "url": "https://github.com/serverless/serverless/issues/3947",
+      "text": "bug #3947",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/sdd/serverless-apig-s3/issues/11": {
+      "url": "https://github.com/sdd/serverless-apig-s3/issues/11",
+      "text": "apig-s3 bug",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://travis-ci.com/epsagon/serverless-package-external.svg?branch=master": {
+      "url": "https://travis-ci.com/epsagon/serverless-package-external.svg?branch=master",
+      "text": "![Build Status",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://travis-ci.com/epsagon/serverless-plugin-epsagon.svg?branch=master": {
+      "url": "https://travis-ci.com/epsagon/serverless-plugin-epsagon.svg?branch=master",
+      "text": "![Build Status",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html",
+      "text": "injects some headers",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/deliveryhero/serverless-aws-documentation/issues/175": {
+      "url": "https://github.com/deliveryhero/serverless-aws-documentation/issues/175",
+      "text": "provider integration issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html",
+      "text": "AWS Documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html": {
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html",
+      "text": "AWS Documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/releases": {
+      "url": "https://github.com/fernando-mc/serverless-finch/releases",
+      "text": "Releases",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/102": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/102",
+      "text": "Pull 102",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/101": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/101",
+      "text": "Pull 101",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/96": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/96",
+      "text": "Pull 96",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/91": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/91",
+      "text": "Pull 91",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/75": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/75",
+      "text": "Pull 75",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/76": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/76",
+      "text": "Pull 76",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/87": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/87",
+      "text": "Pull 87",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/issues/63": {
+      "url": "https://github.com/fernando-mc/serverless-finch/issues/63",
+      "text": "Issue 63",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/issues/24": {
+      "url": "https://github.com/fernando-mc/serverless-finch/issues/24",
+      "text": "Issue 24",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/23": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/23",
+      "text": "Pull 23",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/28/files": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/28/files",
+      "text": "Pull 28",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/20": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/20",
+      "text": "Pull 20",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/12": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/12",
+      "text": "Pull 12",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/13": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/13",
+      "text": "Pull 13",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/14": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/14",
+      "text": "Pull 14",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/18": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/18",
+      "text": "Pull 18",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/fernando-mc/serverless-finch/pull/10": {
+      "url": "https://github.com/fernando-mc/serverless-finch/pull/10",
+      "text": "Pull 10",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless-client-s3": {
+      "url": "https://github.com/serverless/serverless-client-s3",
+      "text": "**serverless-client-s3**",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.amazon.com/gp/search?ie=UTF8&tag=floydspace-20&linkCode=ur2&linkId=3c35aeea87e6a2d913a5f2110d6a2620&camp=1789&creative=9325&index=books&keywords=Serverless+Framework": {
+      "url": "https://www.amazon.com/gp/search?ie=UTF8&tag=floydspace-20&linkCode=ur2&linkId=3c35aeea87e6a2d913a5f2110d6a2620&camp=1789&creative=9325&index=books&keywords=Serverless+Framework",
+      "text": "Serverless Framework",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 503
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/guide/packaging": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/guide/packaging",
+      "text": "Serverless Package Configuration",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/floydspace/serverless-esbuild/issues/168": {
+      "url": "https://github.com/floydspace/serverless-esbuild/issues/168",
+      "text": "issue #168",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/adriencaccia/serverless-analyze-bundle-plugin": {
+      "url": "https://github.com/adriencaccia/serverless-analyze-bundle-plugin",
+      "text": "`serverless-analyze-bundle-plugin`",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/floydspace/serverless-esbuild/commits?author=floydspace": {
+      "url": "https://github.com/floydspace/serverless-esbuild/commits?author=floydspace",
+      "text": "⚠️",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverlessrepo.aws.amazon.com/applications/eu-west-1/949339270388/slic-watch-app": {
+      "url": "https://serverlessrepo.aws.amazon.com/applications/eu-west-1/949339270388/slic-watch-app",
+      "text": "SLIC Watch in the Serverless Application Repository",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://aws.amazon.com/cloudwatch/pricing": {
+      "url": "https://aws.amazon.com/cloudwatch/pricing",
+      "text": "CloudWatch Pricing",
+      "cat": "official",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/serverless-plugin-aws-alerts": {
+      "url": "https://www.npmjs.com/package/serverless-plugin-aws-alerts",
+      "text": "serverless-plugin-aws-alerts",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/awslabs/realworld-serverless-application/wiki/Serverless-Operations": {
+      "url": "https://github.com/awslabs/realworld-serverless-application/wiki/Serverless-Operations",
+      "text": "Real World Serverless Application - Serverless Operations",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/cdk-patterns/serverless/blob/main/the-cloudwatch-dashboard/README.md": {
+      "url": "https://github.com/cdk-patterns/serverless/blob/main/the-cloudwatch-dashboard/README.md",
+      "text": "CDK Patterns - The CloudWatch Dashboard",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html": {
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html",
+      "text": "AWS Well Architected Serverless Applications Lens",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://lumigo.io/serverless-monitoring-guide/how-to-monitor-lambda-with-cloudwatch-metrics": {
+      "url": "https://lumigo.io/serverless-monitoring-guide/how-to-monitor-lambda-with-cloudwatch-metrics",
+      "text": "How to Monitor Lambda with CloudWatch Metrics - Yan Cui",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://freeotp.github.io": {
+      "url": "https://freeotp.github.io",
+      "text": "FreeOTP",
+      "cat": "official",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/functionalone/serverless-iam-roles-per-function/issues/new": {
+      "url": "https://github.com/functionalone/serverless-iam-roles-per-function/issues/new",
+      "text": "issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/functionalone/serverless-iam-roles-per-function/compare": {
+      "url": "https://github.com/functionalone/serverless-iam-roles-per-function/compare",
+      "text": "PR",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/serverless-iam-roles-per-function?activeTab=versions": {
+      "url": "https://www.npmjs.com/package/serverless-iam-roles-per-function?activeTab=versions",
+      "text": "nmpjs",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://medium.com/@glicht/serverless-framework-defining-per-function-iam-roles-c678fa09f46d": {
+      "url": "https://medium.com/@glicht/serverless-framework-defining-per-function-iam-roles-c678fa09f46d",
+      "text": "Serverless Framework: Defining Per-Function IAM Roles",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/iam": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/iam",
+      "text": "here",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/gertjvr/serverless-plugin-simulate/tree/master/examples": {
+      "url": "https://github.com/gertjvr/serverless-plugin-simulate/tree/master/examples",
+      "text": "examples folder",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-community-labs/serverless-plugin-simulate/contributors": {
+      "url": "https://github.com/serverless-community-labs/serverless-plugin-simulate/contributors",
+      "text": "contributors",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/oss-serverless/serverless": {
+      "url": "https://github.com/oss-serverless/serverless",
+      "text": "Serverless Framework",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/providers/aws/guide/resources": {
+      "url": "https://www.serverless.com/framework/docs/providers/aws/guide/resources",
+      "text": "`resources` section of serverless.yml",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/packaging": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/packaging",
+      "text": "Exclude/Include",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Enase/serverless-ses-template": {
+      "url": "https://github.com/Enase/serverless-ses-template",
+      "text": "6.x",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/releases/tag/v3.2.0": {
+      "url": "https://github.com/serverless/serverless/releases/tag/v3.2.0",
+      "text": "v3.2.0",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Enase/serverless-ses-template/tree/5.1.0": {
+      "url": "https://github.com/Enase/serverless-ses-template/tree/5.1.0",
+      "text": "5.x",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/Enase/serverless-ses-template/tree/4.0.7": {
+      "url": "https://github.com/Enase/serverless-ses-template/tree/4.0.7",
+      "text": "v4.0.7",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://travis-ci.com/henhal/serverless-plugin-layer-manager.svg?branch=master": {
+      "url": "https://travis-ci.com/henhal/serverless-plugin-layer-manager.svg?branch=master",
+      "text": "![Build Status",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html",
+      "text": "integration response",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/blob/main/lib/plugins/aws/package/compile/events/api-gateway/lib/rest-api.js": {
+      "url": "https://github.com/serverless/serverless/blob/main/lib/plugins/aws/package/compile/events/api-gateway/lib/rest-api.js",
+      "text": "settings",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/serverless-operations/serverless-apigateway-service-proxy/blob/9f41894cd2e458263d3128116aa6af19ec2b333b/lib/index.js": {
+      "url": "https://github.com/serverless-operations/serverless-apigateway-service-proxy/blob/9f41894cd2e458263d3128116aa6af19ec2b333b/lib/index.js",
+      "text": "called",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html",
+      "text": "AWS::ApiGateway::Method docs",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/issues/3366": {
+      "url": "https://github.com/serverless/serverless/issues/3366",
+      "text": "this serverless issue (#3366)",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/iopipe/serverless-newrelic-lambda-layers": {
+      "url": "https://github.com/iopipe/serverless-newrelic-lambda-layers",
+      "text": "New Relic Serverless plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://dashboard.iopipe.com/install": {
+      "url": "https://dashboard.iopipe.com/install",
+      "text": "free IOpipe token",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": "URLError"
+    },
+    "https://github.com/iopipe/serverless-iopipe-layers/tree/master/examples/serverless-webpack": {
+      "url": "https://github.com/iopipe/serverless-iopipe-layers/tree/master/examples/serverless-webpack",
+      "text": "here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/enterprise-plugin": {
+      "url": "https://github.com/serverless/enterprise-plugin",
+      "text": "Serverless Enterprise Plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://travis-ci.com/is2ei/serverless-plugin-typetalk.svg?branch=master": {
+      "url": "https://travis-ci.com/is2ei/serverless-plugin-typetalk.svg?branch=master",
+      "text": "![Build Status",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/is2ei/serverless-plugin-typetalk-example": {
+      "url": "https://github.com/is2ei/serverless-plugin-typetalk-example",
+      "text": "this repository",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/janders223/serverless-offline-ssm/blob/master/CONTRIBUTING.md": {
+      "url": "https://github.com/janders223/serverless-offline-ssm/blob/master/CONTRIBUTING.md",
+      "text": "contributing",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/janders223/serverless-offline-ssm/blob/master/LICENSE": {
+      "url": "https://github.com/janders223/serverless-offline-ssm/blob/master/LICENSE",
+      "text": "MIT",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/flocasts/serverless-offline-step-functions": {
+      "url": "https://github.com/flocasts/serverless-offline-step-functions",
+      "text": "flocasts/serverless-offline-step-functions",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/jeremydaly/serverless-cloudside-plugin/issues": {
+      "url": "https://github.com/jeremydaly/serverless-cloudside-plugin/issues",
+      "text": "issues",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.jeremydaly.com/reuse-database-connections-aws-lambda": {
+      "url": "https://www.jeremydaly.com/reuse-database-connections-aws-lambda",
+      "text": "here",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/jeremydaly/serverless-mysql/issues": {
+      "url": "https://github.com/jeremydaly/serverless-mysql/issues",
+      "text": "issues",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://serverless.com/framework/docs/providers/tencent/guide/plugins": {
+      "url": "https://serverless.com/framework/docs/providers/tencent/guide/plugins",
+      "text": "serverless events",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/functions": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/functions",
+      "text": "Serverless VPC configuration",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html": {
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutRetentionPolicy.html",
+      "text": "AWS documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless/serverless/issues/10229": {
+      "url": "https://github.com/serverless/serverless/issues/10229",
+      "text": "ability to disable or remove the API Gateway Request Validator on Serverless v2",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.serverless.com/framework/docs/guides/plugins/cli-output": {
+      "url": "https://www.serverless.com/framework/docs/guides/plugins/cli-output",
+      "text": "new logging interface",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/k8snetworkplumbingwg/sriov-network-device-plugin": {
+      "url": "https://github.com/k8snetworkplumbingwg/sriov-network-device-plugin",
+      "text": "SR-IOV device plugin",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/k8snetworkplumbingwg/sriov-network-device-plugin/blob/master/docs/vf-setup.md": {
+      "url": "https://github.com/k8snetworkplumbingwg/sriov-network-device-plugin/blob/master/docs/vf-setup.md",
+      "text": "More information about allocating VFs on different NICs can be found here",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/configuration.md": {
+      "url": "https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/configuration.md",
+      "text": "Multus configuration reference document.",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/containernetworking/plugins/tree/master/plugins/ipam/dhcp": {
+      "url": "https://github.com/containernetworking/plugins/tree/master/plugins/ipam/dhcp",
+      "text": "DHCP",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/kandsten/serverless-plugin-1password/issues": {
+      "url": "https://github.com/kandsten/serverless-plugin-1password/issues",
+      "text": "raise issues",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/kandsten/serverless-plugin-dot-template/issues": {
+      "url": "https://github.com/kandsten/serverless-plugin-dot-template/issues",
+      "text": "raise issues",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/clearcontainers/runtime": {
+      "url": "https://github.com/clearcontainers/runtime",
+      "text": "Intel® Clear Containers",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://katacontainers.io/community": {
+      "url": "https://katacontainers.io/community",
+      "text": "Community pages",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "http://lists.katacontainers.io": {
+      "url": "http://lists.katacontainers.io",
+      "text": "mailing list",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://katacontainers.slack.com": {
+      "url": "https://katacontainers.slack.com",
+      "text": "join us on Slack",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://github.com/kata-containers/kata-containers/blob/main/docs/install/README.md": {
+      "url": "https://github.com/kata-containers/kata-containers/blob/main/docs/install/README.md",
+      "text": "Kata Containers installation user guides",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/kata-containers/community/wiki/Areas-of-interest": {
+      "url": "https://github.com/kata-containers/community/wiki/Areas-of-interest",
+      "text": "Areas of Interest",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/orgs/kata-containers/teams/kata-containers-committer": {
+      "url": "https://github.com/orgs/kata-containers/teams/kata-containers-committer",
+      "text": "kata-containers-committer team",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/kata-containers/community/issues/413": {
+      "url": "https://github.com/kata-containers/community/issues/413",
+      "text": "issue #413",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/orgs/kata-containers/teams/kata-containers-admin": {
+      "url": "https://github.com/orgs/kata-containers/teams/kata-containers-admin",
+      "text": "kata-containers-admin team",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs": {
+      "url": "https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs",
+      "text": "here",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://launchpad.net/katacontainers.io": {
+      "url": "https://launchpad.net/katacontainers.io",
+      "text": "Kata Containers launchpad",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/kata-containers/katacontainers.io-netlify/issues": {
+      "url": "https://github.com/kata-containers/katacontainers.io-netlify/issues",
+      "text": "submit an issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://github.com/kata-containers/katacontainers.io-netlify/pulls": {
+      "url": "https://github.com/kata-containers/katacontainers.io-netlify/pulls",
+      "text": "submit a pull request",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://serverless.com/framework/docs/providers/aws/guide/workflow": {
+      "url": "https://serverless.com/framework/docs/providers/aws/guide/workflow",
+      "text": "serverless workflow command",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 404
+    },
+    "https://www.serverless.com/framework/docs": {
+      "url": "https://www.serverless.com/framework/docs",
+      "text": "Serverless framework",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/serverless-heaven/serverless-webpack/issues/274": {
+      "url": "https://github.com/serverless-heaven/serverless-webpack/issues/274",
+      "text": "it isn't work to use webpack.DefinePlugin to declare the environment variable",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/lakshmantgld/aws-ses-serverless-example/tree/sesIAMRole": {
+      "url": "https://github.com/lakshmantgld/aws-ses-serverless-example/tree/sesIAMRole",
+      "text": "sesIAMRole",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://www.npmjs.com/package/serverless-api-stage": {
+      "url": "https://www.npmjs.com/package/serverless-api-stage",
+      "text": "Install the plugin via npm",
+      "cat": "article",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 403
+    },
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-methodsetting.html": {
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-methodsetting.html",
+      "text": "AWS CloudFormation documentation",
+      "cat": "doc",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/leftclickben/serverless-api-stage/pulls": {
+      "url": "https://github.com/leftclickben/serverless-api-stage/pulls",
+      "text": "pull request",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/leftclickben/serverless-api-stage/issues": {
+      "url": "https://github.com/leftclickben/serverless-api-stage/issues",
+      "text": "issue",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
+    },
+    "https://github.com/leftclickben/serverless-api-stage/milestone/1": {
+      "url": "https://github.com/leftclickben/serverless-api-stage/milestone/1",
+      "text": "v2",
+      "cat": "repo",
+      "found_in": "W3-recursive",
+      "added_at": "2026-11-06T17:22:00Z",
+      "status": 200
     }
   }
 }

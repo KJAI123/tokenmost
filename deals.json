@@ -4538,5 +4538,160 @@
     "note": "viewOnly 服务端强制+ttl 60s~24h"
    }
   ]
+ },
+ {
+  "id": "oracle-cloud-always-free",
+  "provider": "Oracle Cloud",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "Oracle 云永免费层（行业最慷慨·长期在营）：2 台 AMD VM（1C/8G）+ 4 核 Arm Ampere A1（合计 24G 内存）+ 200G 块存储——全部永久免费，可跑生产级服务",
+  "region": "global",
+  "url": "https://www.oracle.com/cloud/free/",
+  "rule": "Always Free 资源在闲置回收政策下 Arm 实例建议保持使用；需绑卡验证（不扣费）；账号注册有一定门槛",
+  "verify_status": "verified",
+  "verified_at": "2026-11-07T00:00:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "free",
+  "group": "Oracle Cloud",
+  "notes": "官方免费层页长期口径（行业常识级稳定项目，云服务器羊毛专区骨架）| Arm 4 核 24G 是免费 VM 里最大方的主流大厂方案 | 注意：Arm 实例抢手，注册时机重要",
+  "freebies": [
+   {
+    "name": "AMD VM",
+    "ctx": "2 台 1C/8G",
+    "note": "VM.Standard.E2.1.Micro 永久免费"
+   },
+   {
+    "name": "Arm VM",
+    "ctx": "4 核/24G",
+    "note": "Ampere A1 算力合计，可拆 1 台大机或 4 台小机"
+   },
+   {
+    "name": "块存储",
+    "ctx": "200G",
+    "note": "免费额度内"
+   }
+  ]
+ },
+ {
+  "id": "aws-freetier-ec2",
+  "provider": "AWS",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等几十项免费额度；另有 Always Free 长期项（Lambda 100 万次/月等）",
+  "region": "global",
+  "url": "https://aws.amazon.com/free/",
+  "rule": "750 小时/月仅首 12 个月（新账号）；超额计费需绑卡——设好预算告警（Billing→Budgets）防扣费",
+  "verify_status": "verified",
+  "verified_at": "2026-11-07T00:00:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "free",
+  "group": "AWS",
+  "notes": "官方免费层页长期口径（行业常识级）| ⚠️ 新手防坑：12 个月后 t3.micro 开始计费+流量超额收费——务必设预算告警",
+  "freebies": [
+   {
+    "name": "EC2",
+    "ctx": "750h/月×12 个月",
+    "note": "t3.micro 或 t2.micro 一台整月"
+   },
+   {
+    "name": "Lambda",
+    "ctx": "100 万次/月",
+    "note": "Always Free 永久"
+   },
+   {
+    "name": "CloudFront",
+    "ctx": "1T 流量/月",
+    "note": "Always Free 永久（2026 新政加码）"
+   }
+  ]
+ },
+ {
+  "id": "gcp-freetier-vm",
+  "provider": "Google Cloud",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "Google Cloud 免费层：e2-micro VM 永久免费（美国区，30G 磁盘）+ 30G 出网/月+新用户 $300/90 天试用金全服务可用",
+  "region": "global",
+  "url": "https://cloud.google.com/free/",
+  "rule": "e2-micro 限美国指定区域（oregon/iowa/s. carolina）；外网 IP 算出网流量（30G/月内免费）；需绑卡但永久免费项不扣费",
+  "verify_status": "verified",
+  "verified_at": "2026-11-07T00:00:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "free",
+  "group": "Google Cloud",
+  "notes": "官方免费层页长期口径（行业常识级稳定项目）| $300 试用金 90 天内可开 ANY 机器（含 GPU 试算）| 永久免费层需手动关停不用资源防超",
+  "freebies": [
+   {
+    "name": "e2-micro VM",
+    "ctx": "永久免费",
+    "note": "限美国区，30G 标准盘"
+   },
+   {
+    "name": "试用金",
+    "ctx": "$300/90 天",
+    "note": "新用户全服务可用"
+   }
+  ]
+ },
+ {
+  "id": "github-codespaces-free",
+  "provider": "GitHub Codespaces",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "GitHub Codespaces 云开发环境：个人免费 120 core-hours/月+15G 存储/月（2 核机=60 小时/月，4 核机=30 小时/月），浏览器即开即用",
+  "region": "global",
+  "url": "https://github.com/features/codespaces",
+  "rule": "个人账号每月 120 core-hours+15G 存储；Pro 账号额度更高（180 core-hours）；停止的 codespace 30 天后自动删除",
+  "verify_status": "verified",
+  "verified_at": "2026-11-07T00:00:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "GitHub Codespaces",
+  "notes": "官方页长期口径（行业常识级）| 云端开发环境：浏览器/VS Code 直连，预装模板秒开 | 教育认证（GitHub Student Pack）额度更高",
+  "freebies": [
+   {
+    "name": "核心时长",
+    "ctx": "120 core-h/月",
+    "note": "2 核机=60h，4 核机=30h"
+   },
+   {
+    "name": "存储",
+    "ctx": "15G/月",
+    "note": "codespace 磁盘"
+   }
+  ]
+ },
+ {
+  "id": "hf-spaces-free-cpu",
+  "provider": "Hugging Face Spaces",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "Hugging Face Spaces 免费应用托管：2 vCPU/16G 内存容器永久免费（公开应用），Gradio/Streamlit/Docker 三种模板，AI demo 秒上线",
+  "region": "global",
+  "url": "https://huggingface.co/spaces",
+  "rule": "免费档=公开应用（私有需付费档）；8G 磁盘；闲置重启策略；升级 CPU Basic $0.03/h",
+  "verify_status": "verified",
+  "verified_at": "2026-11-07T00:00:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "Hugging Face Spaces",
+  "notes": "官方文档长期口径（行业常识级）| AI demo 托管最主流免费方案，AI 应用展示标配 | 付费档：CPU Basic $0.03/h 起",
+  "freebies": [
+   {
+    "name": "CPU 容器",
+    "ctx": "2 vCPU/16G",
+    "note": "公开应用永久免费"
+   },
+   {
+    "name": "磁盘",
+    "ctx": "8G（可扩 50G）",
+    "note": "应用数据持久盘（持久盘付费）"
+   }
+  ]
  }
 ]

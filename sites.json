@@ -577,6 +577,31 @@
     "url": "https://instabox.sh",
     "desc": "免费 4C8G Agent 云电脑（Firecracker microVM）",
     "free": "常设免费档"
+   },
+   {
+    "name": "Oracle Cloud",
+    "url": "https://www.oracle.com/cloud/free/",
+    "desc": "永免费层 2×1C8G+4核Arm 24G+200G"
+   },
+   {
+    "name": "AWS 免费层",
+    "url": "https://aws.amazon.com/free/",
+    "desc": "EC2 750h/月×12 个月+Always Free"
+   },
+   {
+    "name": "Google Cloud 免费层",
+    "url": "https://cloud.google.com/free/",
+    "desc": "e2-micro 永久免费+\\$300 试用"
+   },
+   {
+    "name": "GitHub Codespaces",
+    "url": "https://github.com/features/codespaces",
+    "desc": "云端开发环境 120 core-h/月"
+   },
+   {
+    "name": "HF Spaces",
+    "url": "https://huggingface.co/spaces",
+    "desc": "AI demo 免费托管 2C16G"
    }
   ]
  }
