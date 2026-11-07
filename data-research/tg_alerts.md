@@ -734,3 +734,22 @@ LiteLLM 合并了多项更新，包括 Bedrock Opus 5 和 Opus 4.8 使用原生 
  Status: Identified 
 
 Investigating — We’re seeing payment declines on some U.S. business Mastercards, includin
+
+## 2026-11-07 02:29 UTC
+- 🆕 [v2ex_notice] 【Google Gemini】Gemini 额度刚刚重置了？
+- 🆕 [linuxdo_tg] 主 题： 给大家分享一个自建节点 
+发 布 者： oin_T 
+标签分类： 
+时 间：2026-11-07 10:05:22
+内容预览： 订阅链接 https://testadmin-b57.pages.dev/sub?token=869f612853940613f8bfe2f00ba6166c 
+
+- 🆕 [AI_News_CN] OpenRouter 十月数据回顾：790T token，较一月增长 25 倍 
+
+OpenRouter 十月回顾显示处理了 790T token，较一月增长 25 倍，Together 在开放权重推理提供商中领先，DeepSeek 重返第二。
+
+ 内容详情 · 原文链接 
+
+via AI情报局 |
+- 🆕 [AI_News_CN] DeepSeek V4.1 Flash 1017 Ultrafast 登陆 Command Code 
+
+Command Code 上线 DeepSeek V4.1 Flash 1017 Ultrafast，支持 100 万 token 上下文窗口和超过 1000 TPS，面向 GOAT 及以上套餐
