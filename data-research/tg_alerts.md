@@ -753,3 +753,53 @@ via AI情报局 |
 - 🆕 [AI_News_CN] DeepSeek V4.1 Flash 1017 Ultrafast 登陆 Command Code 
 
 Command Code 上线 DeepSeek V4.1 Flash 1017 Ultrafast，支持 100 万 token 上下文窗口和超过 1000 TPS，面向 GOAT 及以上套餐
+
+## 2026-11-07 07:40 UTC
+- 🆕 [v2ex_notice] 【分享邀请码】分享一个 muse 的邀请码， 10 亿 token 快来薅羊毛
+- 🆕 [v2ex_notice] 【推广】 🎁 送点原生住宅 IP ✅ 自选国家 免费领用 ✅ 新用户五折 充值七折
+- 🆕 [v2ex_notice] 【推广】 🐈 全球家宽住宅 IP，无 AFF！ AI 注册养号爬虫通吃——（最新 IP 池送免费节点）
+- 🆕 [linuxdoit] 链趣公益站正式上线 生图+7款游戏+短剧（后面上线）+多模型可以调用 
+
+本帖使用社区公益推广，符合推广要求。我申明并遵循社区要求的以下内容：
+我的项目是免费使用的，无收费（变相收费、赞助）部分： 是
+我的帖子已经打上 公益推广 标签： 是
+我的项目属于个人项目，与公司或商业机构无关： 是
+我的项目
+- 🆕 [linuxdoit] 字节trae老用户羊毛，相当于99元套餐，马上3级 各位佬友多多助力 
+
+大家缺少ai 可以登录字节的trae试试看
+好久未用，今天打开发现有一个老用户4000积分相当于一个月99元的套餐了
+反代的话 貌似 magpie 可以
+
+36 个帖子 - 31 位参与者
+
+ 阅读完整话题 
+
+via LIN
+- 🆕 [linuxdoit] 自建agent网络搜索引擎功能 支持抓文总结 搜索 深度调研 语音转文字 ，MCP接入 或者skills，可白嫖 
+
+接入地址 https://api.cctv.mba 
+
+12 个帖子 - 10 位参与者
+
+ 阅读完整话题 
+
+via LINUX DO - 热门话题 (author: Cigar)
+- 🆕 [linuxdo_tg] 主 题： 甲骨文开实例配置问题，有老用户解答下么？ 
+发 布 者： Winkle 
+标签分类： 快问快答 
+时 间：2026-11-07 15:25:52
+内容预览： 我去查了一下 Oracle 官方文档现状， * 在 Always Free Resources（freetier_topic-Alw
+- 🆕 [linuxdo_tg] 主 题： 【抽奖】10个免费gpt账号 
+发 布 者： biliee 
+标签分类： 抽奖 账号 
+时 间：2026-11-07 15:34:01
+内容预览： 抽奖主题：来 L 站也有快半年了，得到了很多帮助，现回馈 10 个 GPT free 账号如果本贴违规请管理员删帖 奖品详情：[奖品]：10 
+- 🆕 [linuxdo_tg] 主 题： GPT额度到底有多少呀，感觉越来越少了 
+发 布 者： shunshi 
+标签分类： 纯水 快问快答 
+时 间：2026-11-07 15:34:43
+内容预览： GPT现在的额度到底是多少刀呀，我现在开了pro 10x，纯用Astra,CCS统计用了64刀，codex额度掉了8%,所以是
+- 🆕 [AI_News_CN] DeepSeek V4.1 Flash 在 Command Code 上线，速度达 1000 TPS 
+
+Command Code 上线 DeepSeek V4.1 Flash 1017 Ultrafast，支持 100 万 token 上下文窗口，吞吐超过每秒 1000 token；同时提供 50
