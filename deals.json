@@ -4868,5 +4868,22 @@
   "via": "free",
   "group": "Cloudflare Workers",
   "notes": "行业常识级长期稳定免费层（官方文档口径）| AI 用途：部署 AI API 代理/网关（配合各家免费 token）是最经典白嫖玩法 | 云服务器羊毛专区：边缘算力位"
+ },
+ {
+  "id": "workbuddy-invite-reward",
+  "provider": "WorkBuddy 国内版",
+  "category": "agent",
+  "type": "coupon",
+  "value": "WorkBuddy 邀请有礼：经邀请链接注册并登录桌面端，邀请双方均可获积分奖励（具体档位以活动页实领为准，与每日 100 积分/公测 5000 Credits 可叠加）",
+  "region": "cn",
+  "url": "https://www.workbuddy.cn/events/invite?inviteCode=rks938c6qw3ctwn",
+  "rule": "新用户经邀请链接注册→登录桌面端→双方发奖；单账号；奖励档位以活动页实时为准",
+  "verify_status": "unverified",
+  "verified_at": "2026-11-08T00:00:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "invite",
+  "group": "腾讯 WorkBuddy",
+  "notes": "⭐站长专属邀请渠道（2026-11-08 老板提供，workbuddy.cn/events/invite 裂变活动页，含推荐属性）| 与 workbuddy-free（公测 5000 Credits+每日 100 积分）同组聚合；实领档位截图核后升 verified | 折扣链接金色按钮+加倍领取专区"
  }
 ]
