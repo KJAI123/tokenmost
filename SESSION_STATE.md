@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] AutoClaw 双十一 50M Tokens 上架（2026-11-06/07，老板令「补充信源」+官方博客直核，7d113b3）：deep-autoclaw-promos 重新上架（此前「无羊毛属性」判据过时——智谱官方每周登录发 50M 已规律化连续两周）+autoclaw-double11-50m 新建 verified（**11-09 00:00~11-15 23:59 登录即领 50M** 每账号限领一次，积分 11-15 过期，deadline 倒计时）；autoclaw-free 组归一智谱 AutoClaw+groups.json；IndexNow 新页提交 200；总库 244 条/180 发布
 - [x] 全网收录+外链基建（2026-11-07，老板令「SEO/GEO 彻底优化+外链，免费token 全网搜到」，IndexNow 202 受理/GitHub 仓库+Pages 上线）：
   - **IndexNow 即时收录**：密钥文件部署主域根（200）+ 98 URL 提交 api.indexnow.org（202 受理）——Bing/Yandex/Naver/Seznam 抓取队列生效，免账号
   - **GitHub 数据仓外链**：KJAI123/free-ai-tokens 公开仓（README 中英双语+CC BY 4.0+数据集 deals.json/llms.txt/llms-full/rss/sitemap）+ GitHub Pages 上线（kjai123.github.io/free-ai-tokens 200）——GitHub 域是 AI 引擎高权重爬取面，README 大外链
