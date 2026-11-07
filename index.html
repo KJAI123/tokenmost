@@ -102,16 +102,16 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.8rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
 /* 右上角入群卡片（v2.27 老板令「指引再更突出一些」：金色卡片+脉冲光效，桌面移动都醒目） */
-.wx-corner{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;flex:none;position:relative;padding:4px 8px 3px;background:rgba(210,153,34,.07);border:1.5px solid rgba(210,153,34,.45);border-radius:10px;animation:wxGlow 2.4s ease-in-out infinite;transition:transform .12s}
+.wx-corner{display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;flex:none;position:relative;padding:5px 9px 4px;background:rgba(210,153,34,.1);border:2px solid rgba(210,153,34,.6);border-radius:12px;animation:wxGlow 2s ease-in-out infinite;transition:transform .12s}
 .wx-corner:hover{transform:translateY(-1px);border-color:rgba(210,153,34,.8)}
-@keyframes wxGlow{0%,100%{box-shadow:0 0 0 0 rgba(210,153,34,.0)}50%{box-shadow:0 0 0 5px rgba(210,153,34,.16)}}
-.wx-callout{position:static;font-style:normal;font-size:.62rem;font-weight:800;color:#b45309;background:none;border:none;padding:0;white-space:nowrap}
+@keyframes wxGlow{0%,100%{box-shadow:0 0 0 0 rgba(210,153,34,.05)}50%{box-shadow:0 0 0 8px rgba(210,153,34,.22)}}
+.wx-callout{position:static;font-style:normal;font-size:.66rem;font-weight:800;color:#b45309;background:none;border:none;padding:0;white-space:nowrap}
 .wx-callout b{display:inline-block;margin-left:2px;animation:wxBounce 1.4s ease-in-out infinite;color:var(--amber)}
 @keyframes wxBounce{0%,100%{transform:translateY(-1px)}50%{transform:translateY(3px)}}
-.wx-corner img{width:44px;height:44px;border-radius:6px;border:1.5px solid rgba(210,153,34,.5);background:#111;display:block}
-.wx-corner .wx-qr-label{font-style:normal;font-size:.62rem;color:#b45309;font-weight:800;white-space:nowrap}
+.wx-corner img{width:56px;height:56px;border-radius:8px;border:2px solid rgba(210,153,34,.6);background:#111;display:block}
+.wx-corner .wx-qr-label{font-style:normal;font-size:.68rem;color:#b45309;font-weight:800;white-space:nowrap}
 .wx-corner:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:12px}
-@media(max-width:480px){.wx-corner{padding:5px 8px 4px}.wx-corner img{width:44px;height:44px}.wx-callout{font-size:.6rem}}
+@media(max-width:480px){.wx-corner{padding:4px 7px 3px}.wx-corner img{width:48px;height:48px}.wx-callout{font-size:.62rem}}
 /* 横幅链接加成小徽章（v2.25.1 修丑：.global-banner b 的 1.35rem 巨字规则会命中嵌套 b，必须用专属 class 全量重置） */
 .global-banner .gb-pill{font-size:.7rem;font-weight:700;font-family:inherit;color:#b45309;background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.38);border-radius:999px;padding:1px 10px;margin-left:2px;line-height:1.6;letter-spacing:normal;font-variant-numeric:normal;white-space:nowrap;vertical-align:1px}
 /* 云服务器羊毛独立版面（token 羊毛下方） */
@@ -661,7 +661,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <h3>📥 微信交流群</h3>
   <p class="sub">羊毛情报第一时间推送 · 群友互助答疑</p>
   <img id="wxQrImg" alt="微信群二维码" style="display:none">
-  <p id="wxExpiry" style="display:none;font-size:.72rem;color:var(--muted);margin:0 0 6px">微信群二维码 7 天轮换 · 本码 11-07 前有效，过期请以最新为准</p>
+  <p id="wxExpiry" style="display:none;font-size:.72rem;color:var(--muted);margin:0 0 6px">微信群二维码 7 天轮换 · 本码 11-15 前有效，过期请以最新为准</p>
   <div class="wx-miss" id="wxMiss">二维码加载失败，请刷新重试；或通过页面底部 RSS 订阅获取羊毛速报。</div>
   <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日 token 折扣码与羊毛速报不错过</p>
 </div>

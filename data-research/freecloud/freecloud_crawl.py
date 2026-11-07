@@ -79,8 +79,8 @@ def main() -> int:
     OUTDIR.mkdir(parents=True, exist_ok=True)
     out = OUTDIR / f"crawl-{date.today().isoformat()}.jsonl"
     done: set[str] = set()
-    if out.exists():
-        for line in out.read_text(encoding="utf-8").splitlines():
+    for prev in sorted(OUTDIR.glob("crawl-*.jsonl")):  # 断点缓存跨天累计（修复：原先只认当天文件）
+        for line in prev.read_text(encoding="utf-8").splitlines():
             try:
                 done.add(json.loads(line)["url"])
             except Exception:
@@ -129,13 +129,19 @@ def _now() -> str:
 
 
 def write_report(n_ok: int, n_err: int) -> None:
-    out = OUTDIR / f"crawl-{date.today().isoformat()}.jsonl"
     recs = []
-    for line in out.read_text(encoding="utf-8").splitlines():
-        try:
-            recs.append(json.loads(line))
-        except Exception:
-            pass
+    for prev in sorted(OUTDIR.glob("crawl-*.jsonl")):
+        for line in prev.read_text(encoding="utf-8").splitlines():
+            try:
+                recs.append(json.loads(line))
+            except Exception:
+                pass
+    # 跨天去重：同 URL 保留最新一条
+    by_url: dict[str, dict] = {}
+    for r in recs:
+        by_url[r["url"]] = r  # 后写覆盖先写=最新
+    recs = list(by_url.values())
+    out_path = sorted(OUTDIR.glob("crawl-*.jsonl"))[-1]
     good = [r for r in recs if "md_len" in r]
     errs = [r for r in recs if "error_code" in r]
     top = sorted(good, key=lambda r: (r["n_signal"], r["n_free"]), reverse=True)[:40]

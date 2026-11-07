@@ -803,3 +803,28 @@ via LINUX DO - 热门话题 (author: Cigar)
 - 🆕 [AI_News_CN] DeepSeek V4.1 Flash 在 Command Code 上线，速度达 1000 TPS 
 
 Command Code 上线 DeepSeek V4.1 Flash 1017 Ultrafast，支持 100 万 token 上下文窗口，吞吐超过每秒 1000 token；同时提供 50
+
+## 2026-11-07 17:33 UTC
+- 🆕 [v2ex_notice] 【OpenAI】ChatGPT 额度用完之后，用 Dots 加上 Pro 可以继续开发
+- 🆕 [linuxdoit] 福利羊毛 - 2026年11月8日00:00摘要 (近24小时) 
+
+第 1 批处理失败: HTTP 404: Not Found
+
+via LINUX DO 每日摘要 - 福利羊毛 (author: AI bot)
+- 🆕 [linuxdoit] gpt封号潮与灰黑产的思考 
+
+看了一些封号邮件反馈，出现了一些新的东西，如连坐，地区不支持（站内佬友的反馈）
+
+结合我自己被封过2个200刀pro和数不清的plus经验来看，我觉得本次封号可能有几个过往一直没有被重视的因素
+1.ip连坐，我本人的两个20x被封号就是因为用了赔钱机场的梯子乱切ip（
+- 🆕 [linuxdo_tg] 主 题： 分享一个1000刀apikey点点关注后续还会有 
+发 布 者： uon 
+标签分类： 纯水 快问快答 人工智能 ChatGPT 病友 树洞 OpenAI 福利羊毛 
+时 间：2026-11-08 01:03:45
+内容预览： gpt的直接接入就可以用额度用完就删帖 
+直达链接： http
+- 🆕 [linuxdo_tg] 主 题： 试了下ds4.1f攻击自己博客...3M token 直接攻进去了... 
+发 布 者： OuOumm 
+标签分类： 网络安全 
+时 间：2026-11-08 01:03:58
+内容预览： wtf，我真的震惊瘫坐在地…全程不到半个小时啊，这真的吓死人啊…我靠…全自动化啊，我就写了句对我的博
