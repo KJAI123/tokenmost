@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.30.1 云服务器羊毛独立版面+白屏修复（2026-11-07，老板令「token 羊毛专区下面单独开版面不要放最上面」，7c8fcdd/c328497）：①主 tabs 移除 🖥️ 按钮+主板块过滤排除 freecloud ②token 板块下方 #freecloudArea 独立版面（fc-head+同款行渲染）③🚑隐藏雷：renderFreecloud 顶层调 rowHtml（render 内部 const）→ReferenceError→boot catch 清主板块——rowHtml 提升顶层+claimedSet 顶层变量修复；总库 235 条，主板块 135 行排除 freecloud+独立版面 6 条双验证
 - [x] 云服务器羊毛专区补 5 条（2026-11-07，老板令「可以上吧，直接参考管线数据」，6cf1642）：管线爬到的多为付费 GPU 市场（不合免费原教旨未收），改收**行业常识级永久免费项目**：oracle-cloud-always-free（2×1C8G+4核Arm 24G+200G 行业最慷慨）/aws-freetier-ec2（750h 月×12 个月+Lambda 100 万 Always Free，防扣费告警）/gcp-freetier-vm（e2-micro 永久免费+$300）/github-codespaces-free（120 core-h 月+15G）/hf-spaces-free-cpu（2C16G 容器）；全 verified 官方免费层长期口径+freebies 组件；freecloud 导航 6 站；总库 235 条/170 发布
 - [x] 访问统计全链路打通+历史日志真相（2026-11-06 续，SSH 凭据恢复后全程代操作）：
   - **SSH 恢复**：hk-hbgsc.pem 重新可用（此前失效是临时性的），服务器全程代操作
