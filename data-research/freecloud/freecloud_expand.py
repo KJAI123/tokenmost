@@ -64,6 +64,9 @@ MINING = [
     {"name": "itsfree.dev（聚合站）", "url": "https://itsfree.dev/"},
     {"name": "cloudcredits.io（云试用金聚合站）", "url": "https://cloudcredits.io/"},
     {"name": "free-for.dev（站点版）", "url": "https://free-for.dev/"},
+    {"name": "cloud-gpus.com（GPU 云对比雷达·爬取战果反哺）", "url": "https://cloud-gpus.com"},
+    {"name": "cheapvpsfinder.com（低价 VPS 雷达·爬取战果反哺）", "url": "https://cheapvpsfinder.com"},
+    {"name": "vps234 免费VPS（中文测评站）", "url": "https://www.vps234.com/free-vps/"},
 ]
 
 GH_SEARCH_QUERIES = [
@@ -83,16 +86,22 @@ GH_SEARCH_QUERIES = [
     "cheap+vps+deals+list",
     "awesome+vagrant+boxes",
     "free+docker+hosting",
+    "free+cloud+vps",
+    "awesome+free+paas",
+    "free+hosting+2026",
+    "aws+activate+credits+list",
+    "free+server+hosting",
+    "awesome+free+services",
 ]
 GH_TOPICS = ["free-tier", "free-cloud", "free-vps", "free-hosting", "student-pack",
              "free-resources", "awesome-free", "cloud-credits", "freebies", "paas",
-             "free-shell", "trial-credits", "serverless"]
+             "free-shell", "trial-credits", "serverless", "aws-credits", "free-credits"]
 
 
 def gitee_repos() -> list[str]:
     """Gitee 搜索：中文免费云聚合仓。"""
     repos: list[str] = []
-    for q in ["免费云", "免费vps", "白嫖云服务器", "免费主机"]:
+    for q in ["免费云", "免费vps", "白嫖云服务器", "免费主机", "免费服务器", "云电脑", "免费算力"]:
         try:
             req = urllib.request.Request(
                 f"https://gitee.com/api/v5/search/repositories?q={urllib.parse.quote(q)}&sort=stars_count&per_page=10",
@@ -107,6 +116,24 @@ def gitee_repos() -> list[str]:
         except Exception as e:
             print(f"[gt!] {q} {type(e).__name__}")
     return sorted(set(repos))
+
+
+def crawl_hot(cap: int = 150) -> list[str]:
+    """W6：从爬取战果里挑高信号页反哺挖矿（聚合文章里挖源）。"""
+    files = sorted((HERE / "freecloud_crawl").glob("crawl-*.jsonl"))
+    if not files:
+        return []
+    urls: list[tuple[int, str]] = []
+    for f in files:
+        for line in f.read_text(encoding="utf-8").splitlines():
+            try:
+                r = json.loads(line)
+            except Exception:
+                continue
+            if r.get("n_signal", 0) >= 8 and r.get("cat") in ("article", "official"):
+                urls.append((r["n_signal"], r["url"]))
+    urls = sorted(set(urls), reverse=True)
+    return [u for _, u in urls[:cap]]
 
 
 def fetch(url: str, timeout: int = 20) -> str:
@@ -284,7 +311,7 @@ def main() -> int:
     # W1 直挖聚合页
     print("== W1 直挖聚合页 ==")
     cands = mine_urls([m["url"] for m in MINING], "W1-aggregate", existing, seen)
-    leb = lowendbox_sitemap(parts_max=30, cap=4500)
+    leb = lowendbox_sitemap(parts_max=45, cap=6000)
     print(f"[leb] 站点图文章 {len(leb)} 篇")
     for u in leb:
         if u not in seen and u.rstrip("/") not in existing:
@@ -313,6 +340,20 @@ def main() -> int:
     print(f"递归目标仓 {len(repos)} 个")
     added = flush(mine_urls(repos, "W3-recursive", existing, seen))
     print(f"W3 +{added}（池 {len(pool['items'])}）")
+    save_pool(pool)
+
+    # W6 爬取战果反哺：高信号聚合页再挖一层
+    print("== W6 高信号页反哺挖矿 ==")
+    hot = crawl_hot()
+    print(f"高信号页 {len(hot)} 个")
+    added = flush(mine_urls(hot, "W6-crawl-hot", existing, seen))
+    print(f"W6 +{added}（池 {len(pool['items'])}）")
+    save_pool(pool)
+
+    # 池优化：'?' 分类回填
+    for c in pool["items"].values():
+        if "cat" not in c:
+            c["cat"] = classify(c["url"], c.get("text", ""))
     save_pool(pool)
 
     # 探活（只探新条目）

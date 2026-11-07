@@ -2654,18 +2654,19 @@
   "provider": "智谱 AutoClaw",
   "category": "agent",
   "type": "limited_promo",
-  "value": "AutoClaw 活动组合：登录领 2 亿 tokens（v2.1.0 福利，7天有效，10/15-21）+ 每日登录 500 credits（10/19-25 整期6000万）——均已过窗；长期档：新用户注册长期送约 2 亿 tokens（多源清单口径）",
+  "value": "AutoClaw（智谱官方金融 AI）token 羊毛：**每周登录领 50M Tokens**（已连续两周：11-02~08、11-09~15，规律化）+ 双十一加码 11-09~15 登录再领 50M（每账号限领一次）+ 新用户注册长期送 tokens + 升级 2.2.0 领 5000 积分（≈5000 万 tokens，7 天有效）",
   "region": "cn",
   "url": "https://autoclaw.zhipuai.cn",
   "rule": "国内站 autoclaw.zhipuai.cn 与国际站 autoclaw.z.ai 规则不同勿混淆；日签额当天24:00过期；官方客户端活动卡发放",
   "verify_status": "verified",
-  "verified_at": "2026-10-27T00:00:00Z",
+  "verified_at": "2026-11-08T00:00:00Z",
   "difficulty": 1,
-  "published": false,
+  "published": true,
   "tokens_wan": 20000,
   "via": "client",
-  "notes": "smzdm 清单帖直核（高）；活动已过窗存档——AutoClaw 长期 2 亿注册礼值得作为新条目人工复核后发布",
-  "group": "智谱 AutoClaw"
+  "notes": "smzdm 清单帖直核（高）；活动已过窗存档——AutoClaw 长期 2 亿注册礼值得作为新条目人工复核后发布 | 2026-11-08 官方博客直核（autoclaw.zhipuai.cn/blog/news/M11W2）：双十一 11-09 00:00~11-15 23:59 登录即领 50M Tokens 每账号限领一次+积分有效期至 11-15；周福利已规律化（连续两周 50M/周）——此前「无 token 羊毛属性」下架判据过时，重新上架 | 积分消耗规则与 5000 积分升级礼同源",
+  "group": "智谱 AutoClaw",
+  "deadline": "2026-11-15"
  },
  {
   "id": "deep-workbuddy-oct-promos",
@@ -3777,13 +3778,13 @@
   "region": "global",
   "url": "https://autoclaw.ai",
   "rule": "自部署接免费模型 Key 即零成本",
-  "notes": "收录基础盘（10-29 截图指令）；数额待官网核；2026-10-29 老板指令下架（自部署类无平台方 token 羊毛属性）",
+  "notes": "收录基础盘（10-29 截图指令）；数额待官网核；2026-10-29 老板指令下架（自部署类无平台方 token 羊毛属性） | 2026-11-08：官方云档每周登录发 50M Tokens（见 deep-autoclaw-promos 重新上架），开源自部署属性不变",
   "verify_status": "unverified",
   "verified_at": "2026-10-29T14:20:00Z",
   "difficulty": 2,
   "published": false,
   "via": "free",
-  "group": "AutoClaw"
+  "group": "智谱 AutoClaw"
  },
  {
   "id": "trae-free-tier",
@@ -4885,5 +4886,23 @@
   "via": "invite",
   "group": "腾讯 WorkBuddy",
   "notes": "⭐站长专属邀请渠道（2026-11-08 老板提供，workbuddy.cn/events/invite 裂变活动页，含推荐属性）| 与 workbuddy-free（公测 5000 Credits+每日 100 积分）同组聚合；实领档位截图核后升 verified | 折扣链接金色按钮+加倍领取专区"
+ },
+ {
+  "id": "autoclaw-double11-50m",
+  "provider": "智谱 AutoClaw",
+  "category": "agent",
+  "type": "limited_promo",
+  "value": "双十一福利：**11-09（周一）00:00 起**登录 AutoClaw 即领 **50M Tokens**（每账号限领一次），积分有效期至 11-15 23:59——独立于每周福利的加码窗口",
+  "region": "cn",
+  "url": "https://autoclaw.zhipuai.cn/blog/news/M11W2",
+  "rule": "活动窗口 11-09 00:00 至 11-15 23:59；登录即到账每账号限领一次；积分 11-15 23:59 过期作废；不与每周福利冲突可同领",
+  "verify_status": "verified",
+  "verified_at": "2026-11-08T00:00:00Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "智谱 AutoClaw",
+  "notes": "⭐官方博客直核（2026-11-06 文，AutoClaw Team）| 与 deep-autoclaw-promos 每周 50M 分列：本条=1111 专属加码窗口（11-09 起 7 天）| 智谱官方产品（autoclaw.zhipuai.cn，金融 AI）",
+  "deadline": "2026-11-15"
  }
 ]

@@ -335,6 +335,69 @@
       "note": "晋级2026-11-07：候选池挖出（免费 shell 类小众线）"
     },
     {
+      "id": "idrive-e2",
+      "name": "iDrive E2 对象存储（1TB $40/yr 低价存储线）",
+      "url": "https://www.idrive.com/object-storage-e2/pricing",
+      "patterns": ["TB", "\\$", "free"],
+      "note": "晋级2026-11-08：爬取信号 s351；对象存储低价线盯防"
+    },
+    {
+      "id": "shakticloud",
+      "name": "ShaktiCloud（Yotta GPU 云定价）",
+      "url": "https://shakticloud.ai/pricing.html",
+      "patterns": ["GPU", "free", "credits", "\\$"],
+      "note": "晋级2026-11-08：爬取信号 s290"
+    },
+    {
+      "id": "cloudzy",
+      "name": "Cloudzy（VPS/GPU/裸金属定价）",
+      "url": "https://cloudzy.com/pricing",
+      "patterns": ["VPS", "GPU", "free", "\\$"],
+      "note": "晋级2026-11-08：爬取信号 s276"
+    },
+    {
+      "id": "aliyun-bailian-freequota",
+      "name": "阿里云百炼新人免费额度（官方帮助中心规则页）",
+      "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+      "patterns": ["免费额度", "新人", "用完即停", "百万"],
+      "note": "晋级2026-11-08：官方规则页 s111/f130；与 token 线百炼条目互证"
+    },
+    {
+      "id": "ctyun-trial",
+      "name": "天翼云免费试用中心（运营商层）",
+      "url": "https://www.ctyun.cn/act/trial/central",
+      "patterns": ["免费试用", "云服务器", "ECS", "个月"],
+      "note": "晋级2026-11-08：爬取 f55；运营商免费试用盯防"
+    },
+    {
+      "id": "atlascloud",
+      "name": "Atlas Cloud（GPU/Agent 云）",
+      "url": "https://www.atlascloud.ai",
+      "patterns": ["GPU", "free", "credits", "vCPU"],
+      "note": "晋级2026-11-08：爬取信号 s662"
+    },
+    {
+      "id": "gpunz",
+      "name": "GPU.nz（新西兰 GPU 云定价）",
+      "url": "https://gpu.nz/en/pricing",
+      "patterns": ["GPU", "free", "\\$", "hour"],
+      "note": "晋级2026-11-08：爬取信号 s489"
+    },
+    {
+      "id": "kiro-pricing",
+      "name": "Kiro（AWS 旗下 AI IDE，免费档）",
+      "url": "https://kiro.dev/pricing",
+      "patterns": ["Free", "credits", "workspace"],
+      "note": "晋级2026-11-08：爬取 s56；agent 云 IDE 免费档盯防"
+    },
+    {
+      "id": "freedb",
+      "name": "FreeDB.tech（免费 MySQL 托管）",
+      "url": "https://freedb.tech",
+      "patterns": ["free", "MySQL", "database"],
+      "note": "晋级2026-11-08：爬取 f55；免费数据库小众线"
+    },
+    {
       "id": "tencent-free",
       "name": "腾讯云免费试用",
       "url": "https://cloud.tencent.com/act/free",
