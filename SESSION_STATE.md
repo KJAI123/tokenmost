@@ -28,6 +28,12 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] 全网收录+外链基建（2026-11-07，老板令「SEO/GEO 彻底优化+外链，免费token 全网搜到」，IndexNow 202 受理/GitHub 仓库+Pages 上线）：
+  - **IndexNow 即时收录**：密钥文件部署主域根（200）+ 98 URL 提交 api.indexnow.org（202 受理）——Bing/Yandex/Naver/Seznam 抓取队列生效，免账号
+  - **GitHub 数据仓外链**：KJAI123/free-ai-tokens 公开仓（README 中英双语+CC BY 4.0+数据集 deals.json/llms.txt/llms-full/rss/sitemap）+ GitHub Pages 上线（kjai123.github.io/free-ai-tokens 200）——GitHub 域是 AI 引擎高权重爬取面，README 大外链
+  - **页脚互链**：「数据开源」入口↔GitHub 仓（站内↔外链双向）
+  - **llms.txt/GEO 底子确认**：llms.txt 自动重建含 85+ 平台页链接、llms-full 全量、sitemap 99 URL、FAQPage/WebSite JSON-LD ✓
+  - **待老板动作**：①GSC 验证码（Google 收录提交）②百度站长平台验证（百度收录——无备案收录慢但可提）③知乎/CSDN/linux.do 用他的账号发文（最强外链，我不会代发他的身份）④可选：阿里云安全组开 3001 端口装 umami（服务器 3.5G 内存装不动 docker+pg，暂用自托管 /api/stats+nginx 日志替代）
 - [x] 管线新发现批量入流（2026-11-07，老板令「看下管线数据丰富起来」，44d991d）：四条落地——①today-ai-free agent 层 verified 多源（中国版 todayai.cn 注册送 **3 亿 Token+3 个月 Pro**，到期回落永久免费基础版，DeepSeek Flash 1:1 折总账；⚠️云电脑宣传与实际有出入用户评价保留）②gemini-code-assist-individuals-sunsets 避雷 verified（官方弃用公告：个人免费版 2026-10-09 起弃用迁 Antigravity，曾 18 万补全/月羊毛通道关闭，2026 免费大退潮+1）③cf-workers-free freecloud 层（Workers 10 万请求/天+Pages 不限请求，边缘算力位）④openai-pro-api-credits 补 Codex 砍 75% 警示；总库 242 条/177 发布
 - [x] 云服务器羊毛专区+4（2026-11-07，老板令「直接参考管线数据」，ddd4a10）：TK 盯防表 T1 五平台官方 pricing 直抓核验——①modal-free-credits（**每月白送 \$30 compute credits** 月月刷新 GPU 可用+1TiB 出网，年化 \$360 大毛）②e2b-hobby-free（Agent 沙鼻祖免费层 10 并发无需绑卡）③daytona-startup-50k（初创自助申请最高 \$50k）④replit-free-mode（30h AI 对话/月+60 项目+\$20 模型抵用金）；Ona JS 渲染无文本待核不入；freecloud 导航 10 站；总库 239 条/174 发布
 - [x] v2.30.1 云服务器羊毛独立版面+白屏修复（2026-11-07，老板令「token 羊毛专区下面单独开版面不要放最上面」，7c8fcdd/c328497）：①主 tabs 移除 🖥️ 按钮+主板块过滤排除 freecloud ②token 板块下方 #freecloudArea 独立版面（fc-head+同款行渲染）③🚑隐藏雷：renderFreecloud 顶层调 rowHtml（render 内部 const）→ReferenceError→boot catch 清主板块——rowHtml 提升顶层+claimedSet 顶层变量修复；总库 235 条，主板块 135 行排除 freecloud+独立版面 6 条双验证
