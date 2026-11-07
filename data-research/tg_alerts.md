@@ -716,3 +716,21 @@ via LINUX DO 每日摘要 - 福利羊毛 (a
 - 🆕 [AI_News_CN] LiteLLM 合并多项修复：Bedrock 结构化输出、Gemini 续写、提示缓存与网页搜索路由 
 
 LiteLLM 合并了多项更新，包括 Bedrock Opus 5 和 Opus 4.8 使用原生 JSON schema 进行结构化输出、Gemini Interactions 支持 cont
+
+## 2026-11-06 21:24 UTC
+- 🆕 [linuxdo_tg] 主 题： 华为码道codearts被反薅了 
+发 布 者： huangbaoleng 
+标签分类： 快问快答 人工智能 
+时 间：2026-11-07 02:31:24
+内容预览： 用magpie插件薅的羊毛但是不知道为啥开通了按量计费显示modelarts tokens按量计费成功已经被反薅几块钱
+- 🆕 [AI_News_CN] B.AI 国产模型 Token 周榜：MiniMax 升至第二，DeepSeek 占比 89.70% 稳居榜首 
+
+ B.AI 发布 10 月 30 日至 11 月 5 日国产模型 Token 周榜：MiniMax 排名连升 2 位至第二，Qwen 环比动能回升 35.91 个百分点，DeepSee
+- 🆕 [AI_News_CN] B.AI 模型 Token 周榜：MiniMax 升至第二，DeepSeek 占比 89.70% 
+
+ B.AI 公布 10 月 30 日至 11 月 5 日模型 Token 周榜：MiniMax 连升两位至第二，Qwen 环比动能回升 35.91 个百分点，DeepSeek 以 89.70% 的 
+- 🆕 [AI_News_CN] Elevated error rates with Brex Cards 
+
+ Status: Identified 
+
+Investigating — We’re seeing payment declines on some U.S. business Mastercards, includin

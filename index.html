@@ -114,6 +114,10 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 @media(max-width:480px){.wx-corner{padding:5px 8px 4px}.wx-corner img{width:44px;height:44px}.wx-callout{font-size:.6rem}}
 /* 横幅链接加成小徽章（v2.25.1 修丑：.global-banner b 的 1.35rem 巨字规则会命中嵌套 b，必须用专属 class 全量重置） */
 .global-banner .gb-pill{font-size:.7rem;font-weight:700;font-family:inherit;color:#b45309;background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.38);border-radius:999px;padding:1px 10px;margin-left:2px;line-height:1.6;letter-spacing:normal;font-variant-numeric:normal;white-space:nowrap;vertical-align:1px}
+/* 云服务器羊毛独立版面（token 羊毛下方） */
+.fc-head{display:flex;align-items:baseline;gap:10px;margin:18px 0 8px;font-size:1rem;font-weight:800}
+.fc-head span{font-size:.75rem;color:var(--muted);font-weight:400}
+.fcbox{border:1px solid var(--border);border-radius:var(--r);background:var(--card);box-shadow:var(--shadow);overflow:hidden;margin-bottom:24px}
 /* 数据自动同步气泡 */
 #syncToast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(16px);background:#101828;color:#fff;font-size:.8rem;padding:8px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:all .3s;z-index:80;box-shadow:0 4px 14px rgba(16,24,40,.3)}
 #syncToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -480,7 +484,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="official">大模型官方</button>
       <button class="tab" data-cat="agent">Agent 平台</button>
       <button class="tab" data-cat="infra">☁️ 云与算力</button>
-      <button class="tab" data-cat="freecloud" style="border-color:rgba(224,90,109,.5)">🖥️ 云服务器</button>
       <button class="tab" data-cat="double" style="border-color:rgba(210,153,34,.5)">🪙 加倍领取</button>
       <button class="tab" data-cat="paid">💸 付费区</button>
       <button class="tab" data-cat="warn">⚠️ 避雷</button>
@@ -515,6 +518,8 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
   </main>
 </div>
+<!-- ============ 云服务器羊毛专区（token 羊毛下方独立版面） ============ -->
+<section id="freecloudArea" aria-label="云服务器羊毛"></section>
 <!-- 导航区（完整版，放页面底部） -->
 <section id="navArea"></section>
 <!-- ============ SEO FAQ（可见内容 + FAQPage 结构化数据同步） ============ -->
@@ -783,6 +788,16 @@ function aggGold(g){
   if(ld)return '<a class="go cgo" href="'+esc(safeUrl(tgt.url))+'" target="_blank" rel="noopener nofollow" data-code="'+esc(tgt.coupon||tgt.url)+'" title="'+(tgt.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开')+'">'+(tgt.coupon?'🎁 券领':'🔗 折扣链接')+'</a>';
   return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">领取</a>';
 }
+/* 云服务器羊毛独立版面（v2.30 老板令：token 羊毛下方单独版面） */
+function renderFreecloud(){
+  const box=document.getElementById('freecloudArea');
+  if(!box)return;
+  const list=DEALS.filter(d=>d.published!==false&&d.category==='freecloud'&&d.verify_status!=='expired');
+  if(!list.length){box.innerHTML='';return}
+  const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
+  box.innerHTML='<div class="fc-head"><b>🖥️ 云服务器羊毛</b><span>AI Agent 云工位 · 常设免费档 · 非 token 折算单独展示</span></div>'
+    +'<div class="fcbox">'+list.map(rowHtml).join('')+'</div>';
+}
 /* 免费模型/权益目录：泛化组件（v2.22 老板令「workbuddy 也做类似 opencode 的展开」）——free_models=FREE 徽章，freebies=免费徽章 */
 function fmMeta(d){
   if(d.free_models&&d.free_models.length)return{n:d.free_models.length,kind:'free',items:d.free_models};
@@ -861,7 +876,7 @@ function isDouble(d){return (d.coupon&&!d.placeholder)||d.type==='coupon'||d.typ
 const DOUBLE_NOTE='<div class="double-note">🪙 <b>加倍领取</b>：以下平台的福利可经<b>折扣码 / 邀请链接</b>加成领取——点「领取 / 券领」复制码，注册或订阅时填入（或直接经邀请链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠 / 折扣 / 翻倍）。链接即码的条目点领取就自动带上邀请关系，无需手动填。</div>';
 function render(){
   if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
-  let list=DEALS.filter(d=>d.published!==false);
+  let list=DEALS.filter(d=>d.published!==false&&d.category!=='freecloud');
   const claimedSet=getClaimed();
   const PAID=new Set(['price_low','pricing_plan']);
   if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
@@ -964,6 +979,7 @@ function render(){
   }else{
     box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+list.map(rowHtml).join('');
   }
+  renderFreecloud();
   document.querySelectorAll('#listhead .sortbtn').forEach(b=>{
     const on=b.dataset.sort===sortKey;
     b.classList.toggle('on',on);
