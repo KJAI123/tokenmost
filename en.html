@@ -107,7 +107,7 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.8rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
 /* 顶部滚播：最新羊毛动态 + 收藏（v2.34） */
-#newsTicker{display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,#ecfdf5,#f0fdf4);border-bottom:1px solid rgba(5,150,105,.25);padding:7px 16px;overflow:hidden}
+#newsTicker{display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,#ecfdf5,#f0fdf4);border:1px solid rgba(5,150,105,.25);border-radius:10px;padding:7px 16px;overflow:hidden;margin:14px 0 10px}
 #newsTicker .ntk-label{font-size:.72rem;font-weight:800;color:var(--accent);white-space:nowrap;flex:none}
 #newsTicker .ntk-scroll{flex:1;overflow:hidden;white-space:nowrap;mask-image:linear-gradient(90deg,#000 92%,transparent)}
 #newsTicker .ntk-items{display:inline-block;white-space:nowrap;animation:ntkMove 40s linear infinite}
@@ -437,13 +437,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <body>
 <!-- ============ 侧边栏（桌面）：Tools + 五层导航 ============ -->
 <button id="sideToggle" title="收起/展开侧边栏" aria-label="收起或展开侧边栏">☰</button>
-<!-- 顶部滚播：最新 token 羊毛动态（自动取最新核验条目） -->
-<div id="newsTicker" aria-label="latest deals ticker">
-  <span class="ntk-label">📡 Live deals</span>
-  <div class="ntk-scroll"><span id="ntkItems" class="ntk-items">…</span></div>
-  <button id="bmBtn" title="Bookmark TokenMost">⭐ Bookmark</button>
-  <button id="installBtn">📲 Install</button>
-</div>
 <aside id="side">
   <div class="logo">token<em>most</em></div>
   <div class="tag">Free tokens · one-click API · max savings</div>
@@ -473,6 +466,13 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </style>
 <!-- ============ 主区 ============ -->
 <div id="main">
+<!-- 顶部滚播：最新 token 羊毛动态（自动取最新核验条目） -->
+<div id="newsTicker" aria-label="latest deals ticker">
+  <span class="ntk-label">📡 Live deals</span>
+  <div class="ntk-scroll"><span id="ntkItems" class="ntk-items">…</span></div>
+  <button id="bmBtn" title="Bookmark TokenMost">⭐ Bookmark</button>
+  <button id="installBtn">📲 Install</button>
+</div>
 <noscript>
   <section style="border:1px solid #e5e8ee;border-radius:10px;background:#fff;padding:16px;margin:12px 0;font-size:.9rem;line-height:1.7">
     <h2 style="font-size:1.05rem;margin-bottom:8px">tokenmost.com — AI 大模型Free额度与Discount码情报站</h2>
