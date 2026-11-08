@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.32.1 en.html 重做为完整镜像站（2026-11-08，老板令「照着中文版翻译+重新排版」，d6a2213）：全站结构同中文版（hero+统计+7 tabs+情报行+独立版面+FAQ+footer），UI 全英文化（Free Zone/LLM Providers/Agent Platforms/Cloud & Compute/Bonus Multipliers/Paid Zone/Warnings/Students）；fmt 单位英文化（×100M/×10K）；数据字段保持中文（244 条逐条翻译工程量大，v1 接受混排——provider 名为品牌名可读）；141 行渲染实测
 - [x] AMD Token Factory 入流（2026-11-08，老板令「补充信源」——Dify 认证插件页，29e6bab）：freecloud 层新条目 verified（开源模型 API 每日免费额度重置：MiMo-V2.6-Flash/DeepSeek-V4 Flash/GLM Flash/MiniCPM，OpenAI+Anthropic 双兼容 developer.amd.com.cn/radeon/api/v1，20 RPM）；⚠️每日上限 \$1（插件页）vs \$10（社区口径）两说→以 Model Usage 页实测为准；AMD GPU 算力白嫖不折 token 总账；freecloud 导航 86 站；总库 247 条/183 发布
 - [x] v2.32.0 英文版上线（2026-11-07，老板令「再做一个英文版」，c8863f0/dc51f15）：en.html 全英文落地页（SEO 面向 free AI tokens/free LLM API credits 词组）——hero 实时计数拉 deals.json/Top offers 6 卡/云算力 6 卡/付费折扣表/FAQ（数据新鲜度+无中转立场+开源数据集）；hreflang en/zh/x-default 双向+canonical；中文 footer+「English」互链；pages.yml cp 白名单补 en.html（漏加致首推 404 教训：新增根文件必须同步 workflow cp 清单）；主域+Pages 双端 200
 - [x] v2.31.1 🎓 学生教师专区（2026-11-08，老板令「token羊毛板块开辟学生教师专区」，5028b77）：tab 栏蓝描边按钮+render 过滤（type=student 或 via=student）聚合展示：Perplexity Education Pro/AutoDL 教育邮箱/GitHub Student Pack/阿里云云工开物/Google AI Pro 学生 12 个月免费共 5 条；浏览器实测全渲染零报错
