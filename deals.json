@@ -4940,5 +4940,39 @@
   "notes": "多源直核（赛博鸡蛋详情页+Reddit r/CommandCode『GOAT just made \\$100 credits PERMANENT』+知乎对比文）| 与 OpenCode Go（\\$10=80 配额）同类倍率订阅竞品 | 付费订阅口径进付费区，不折总账",
   "usd": 10,
   "eq_note": "\\$100 额度×300 万 tok/\\$≈3 亿当量（10 倍杠杆为官方倍率模型折扣所致）"
+ },
+ {
+  "id": "amd-token-factory",
+  "provider": "AMD Token Factory",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "AMD AI 开发者平台 Token Factory（Dify 官方认证插件/Cherry Studio 可直连）：开源模型 API **每日免费额度重置**——社区口径每日约 \\$10 上限（Dify 插件页标注 \\$1/天，因账号而异），覆盖 MiMo-V2.6-Flash/DeepSeek-V4 Flash/GLM Flash 等；其他模型经 Fireworks AI credit 通道调用",
+  "region": "global",
+  "url": "https://developer.amd.com.cn/radeon",
+  "rule": "OpenAI 兼容接口 https://developer.amd.com.cn/radeon/api/v1（也兼容 Anthropic）；需注册 AMD AI 开发者账号拿 Key；免费额度用 pts 统计，实际限额因账号而异——Model Usage 页可查每日上限与重置时间",
+  "verify_status": "verified",
+  "verified_at": "2026-11-08T00:00:00Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "free",
+  "group": "AMD Token Factory",
+  "notes": "信源：老板提供的 Dify 插件页直核（amdtokenfactory/amdtokenfactory，Dify 合作伙伴认证）+X/知乎/Cherry Studio 多源交叉（部分模型完全免费每日约 \\$10 上限，含 GLM/MiniCPM/MiMo-V2.6-Flash/DeepSeek V4 Flash）| 免费额度为 AMD GPU 托管（Radeon Cloud Public Free Model APIs）| ⚠️ 每日上限存在 \\$1（插件页）与 \\$10（社区口径）两说，以 Model Usage 页实测为准 | 20 次/分钟频率限制 | 算力为 AMD GPU 白嫖不折 token 总账",
+  "freebies": [
+   {
+    "name": "每日免费额度",
+    "ctx": "重置",
+    "note": "pts 统计消耗，上限因账号而异（\\$1/\\$10 两说，以 Model Usage 页为准）"
+   },
+   {
+    "name": "免费模型",
+    "ctx": "MiMo-V2.6-Flash 等",
+    "note": "DeepSeek-V4 Flash/GLM Flash/MiniCPM 等 AMD GPU 托管"
+   },
+   {
+    "name": "接口",
+    "ctx": "OpenAI+Anthropic 双兼容",
+    "note": "developer.amd.com.cn/radeon/api/v1，Dify/Cherry Studio 直连"
+   }
+  ]
  }
 ]
