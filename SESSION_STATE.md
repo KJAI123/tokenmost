@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.33.0 收尾合并（2026-11-08，网络断线积压轮，bc507dd）：①footer 访问统计展示（/api/stats 今日/近7日/累计）②en.html 专门英文排版重做（1396 处中文残留清零，curated 英文 offer 卡）③语言自动识别+中英双向切换 ④五条管线新条目全量消化（OpenAI \$500/魔搭 GPU/电商 Token 店/中转掺假避雷/Perplexity Edu/Command Code GOAT/qiniu-invite/WorkBuddy/TRAE/商汤/Kimi/ZCode/智云新疆/OpenDesign）；rebase 竞态 5 轮语义合并零丢失
 - [x] v2.32.4 EN 页双向切换修复（2026-11-08，老板报「手动切换中文版也不行」+「中文版不见了」，a64d5c7）：
   - **中文版消失根因**：index 语言识别「非 CN IP→强制英文版」把老板自己弹走（测试网络出口非 CN）——修正=非 CN IP 且英文浏览器才进英文版，CN IP 或中文浏览器一律留中文版（1931118）
   - **手动切换失效根因**：镜像站头部遗留自指 🌐EN 按钮（点击=刷新英文页）且无中文版入口——改为 🇨🇳 中文版按钮（./ + onclick 写偏好 zh）
