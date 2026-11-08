@@ -232,9 +232,7 @@ footer{border-top:1px solid var(--border);padding:24px 0 48px;color:var(--muted)
 .site span{font-size:.75rem;color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .site .free{color:var(--green);font-size:.75rem}
 /* ===== 账号库抽屉 ===== */
-#vaultBtn{position:fixed;right:16px;bottom:72px;background:var(--accent);color:#fff;border:none;border-radius:50%;width:48px;height:48px;font-size:1.25rem;cursor:pointer;box-shadow:0 4px 14px rgba(5,150,105,.35);z-index:50}
-@media(min-width:861px){#vaultBtn{bottom:24px}}
-#vaultBtn:hover{filter:brightness(1.08)}
+
 #vaultOverlay{position:fixed;inset:0;background:rgba(16,24,40,.45);z-index:60;display:none}
 #vault{position:fixed;top:0;right:-460px;width:min(440px,100vw);height:100vh;background:var(--card);border-left:1px solid var(--border);z-index:61;transition:right .25s,visibility 0s .25s;overflow-y:auto;padding:24px;visibility:hidden}
 #vault.open{right:0;visibility:visible;transition:right .25s}
@@ -718,7 +716,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </div>
 </div>
 <!-- ============ 账号库（本地存储，绝不联网） ============ -->
-<button id="vaultBtn" title="我的账号库">🔐</button>
+
 <div id="vaultOverlay"></div>
 <aside id="vault">
   <button id="vaultClose">✕</button>
@@ -1310,7 +1308,7 @@ function vaultToggle(open){
   vault.classList.toggle('open',open);ov.classList.toggle('open',open);
   if(open)vRender();
 }
-document.getElementById('vaultBtn').addEventListener('click',()=>vaultToggle(true));
+
 document.getElementById('vaultClose').addEventListener('click',()=>vaultToggle(false));
 ov.addEventListener('click',()=>vaultToggle(false));
 document.getElementById('v-more').addEventListener('click',e=>{e.preventDefault();vaultToggle(false)});
