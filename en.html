@@ -106,6 +106,19 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 .stat{font-size:.7rem;color:var(--muted)}
 .stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.8rem;font-variant-numeric:tabular-nums}
 .stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
+/* 顶部滚播：最新羊毛动态 + 收藏（v2.34） */
+#newsTicker{display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,#ecfdf5,#f0fdf4);border-bottom:1px solid rgba(5,150,105,.25);padding:7px 16px;overflow:hidden}
+#newsTicker .ntk-label{font-size:.72rem;font-weight:800;color:var(--accent);white-space:nowrap;flex:none}
+#newsTicker .ntk-scroll{flex:1;overflow:hidden;white-space:nowrap;mask-image:linear-gradient(90deg,#000 92%,transparent)}
+#newsTicker .ntk-items{display:inline-block;white-space:nowrap;animation:ntkMove 40s linear infinite}
+#newsTicker:hover .ntk-items{animation-play-state:paused}
+@keyframes ntkMove{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+#newsTicker .ntk-item{display:inline-block;margin-right:26px;font-size:.8rem;color:#134e4a}
+#newsTicker .ntk-item b{color:var(--accent)}
+#newsTicker .ntk-item .ntk-date{color:var(--muted);font-size:.7rem;margin-left:4px}
+#bmBtn{flex:none;background:var(--card);border:1px solid rgba(217,119,6,.5);color:var(--amber);border-radius:8px;padding:4px 10px;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap}
+#bmBtn:hover{background:rgba(217,119,6,.1)}
+#installBtn{flex:none;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:4px 12px;font-size:.72rem;font-weight:700;cursor:pointer;display:none}
 /* 右上角入群卡片（v2.27 老板令「指引再更突出一些」：金色卡片+脉冲光效，桌面移动都醒目） */
 .wx-corner{display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;flex:none;position:relative;padding:5px 9px 4px;background:rgba(210,153,34,.1);border:2px solid rgba(210,153,34,.6);border-radius:12px;animation:wxGlow 2s ease-in-out infinite;transition:transform .12s}
 .wx-corner:hover{transform:translateY(-1px);border-color:rgba(210,153,34,.8)}
@@ -424,6 +437,13 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <body>
 <!-- ============ 侧边栏（桌面）：Tools + 五层导航 ============ -->
 <button id="sideToggle" title="收起/展开侧边栏" aria-label="收起或展开侧边栏">☰</button>
+<!-- 顶部滚播：最新 token 羊毛动态（自动取最新核验条目） -->
+<div id="newsTicker" aria-label="latest deals ticker">
+  <span class="ntk-label">📡 Live deals</span>
+  <div class="ntk-scroll"><span id="ntkItems" class="ntk-items">…</span></div>
+  <button id="bmBtn" title="Bookmark TokenMost">⭐ Bookmark</button>
+  <button id="installBtn">📲 Install</button>
+</div>
 <aside id="side">
   <div class="logo">token<em>most</em></div>
   <div class="tag">Free tokens · one-click API · max savings</div>
@@ -1407,6 +1427,36 @@ document.getElementById('listhead').addEventListener('click',e=>{
 });
 /* 底部导航（移动端） */
 document.getElementById('sideToggle').addEventListener('click',sideToggle);
+// 收藏本站 + PWA 安装 + 顶部滚播刷新（v2.34）
+let installEvt=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installEvt=e;
+  var b=document.getElementById('installBtn');if(b)b.style.display='inline-block';});
+function doBookmark(){
+  var url='https://tokenmost.com/',title='TokenMost — Free AI tokens & cloud deals';
+  if(navigator.share){navigator.share({title:title,url:url}).catch(function(){});return;}
+  try{
+    var ta=document.createElement('textarea');ta.value=url;ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();
+  }catch(_){}
+  alert('Link copied!\n\nPress Ctrl+D (Mac: \u2300+D) to bookmark TokenMost');
+}
+window.tickerRefresh=function(){
+  try{
+    if(!window.DEALS||!DEALS.length)return;
+    var tk=[...DEALS].filter(d=>d.published!==false&&d.verify_status!=='expired').sort(function(a,b){return new Date(b.verified_at)-new Date(a.verified_at)}).slice(0,6);
+    var items=tk.map(function(d){
+      var v=(d.value||'').replace(/<[^>]*>/g,'').slice(0,40);
+      return '<span class="ntk-item"><b>'+(d.provider||'').slice(0,16)+'</b> '+v+'<span class="ntk-date">'+new Date(d.verified_at).toLocaleDateString('zh-CN')+'</span></span>';
+    }).join('');
+    var el=document.getElementById('ntkItems');
+    if(el&&items)el.innerHTML=items+items;
+  }catch(_){}
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var b=document.getElementById('bmBtn');if(b)b.addEventListener('click',doBookmark);
+  var i=document.getElementById('installBtn');if(i)i.addEventListener('click',function(){
+    if(installEvt){installEvt.prompt();installEvt=null;}});
+});
 document.getElementById('bottomNav').addEventListener('click',e=>{
   const b=e.target.closest('[data-bn]');if(!b)return;
   document.querySelectorAll('#bottomNav button').forEach(x=>x.classList.toggle('on',x===b));
@@ -1701,6 +1751,7 @@ Promise.all([
   // 防护：数据渲染完成后，后续可选功能（登录态/共享码）抛错不得清空主板块
   try{authRefreshUI()}catch(_){}
   try{loadShared()}catch(_){}
+  try{tickerRefresh()}catch(_){}
 }).catch(()=>{
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
 });
