@@ -24,8 +24,10 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/
 QUERIES = ["token 免费额度", "AI 编程 折扣", "大模型 领额度", "白嫖 API",
            "GLM 免费", "Coding Plan 折扣", "AI 编程 白嫖", "注册送 tokens",
            "大模型 体验卡", "Claude Code 折扣", "免费 claude", "API 中转 折扣",
-           "大模型 限免", "agent 免费 额度", "算力 白嫖", "inference 免费"]
-SEEDS_MIN = ["https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg"]  # 神秘喵星人
+           "大模型 限免", "agent 免费 额度", "算力 白嫖", "inference 免费",
+           "免费 云电脑", "免费 云服务器"]
+SEEDS_MIN = ["https://mp.weixin.qq.com/s/7mSCNv7ZumV8urTr37eKrg",  # 神秘喵星人
+             "https://mp.weixin.qq.com/s/qMabG5jASD-QcFx41Y14qg"]  # 数字生命斯派克（freecloud 线，TK 推荐 2026-11-08）
 
 _CJ = http.cookiejar.CookieJar()
 _OP = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_CJ))

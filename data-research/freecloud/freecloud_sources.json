@@ -398,6 +398,15 @@
       "note": "晋级2026-11-08：爬取 f55；免费数据库小众线"
     },
     {
+      "id": "weixin-sogou-freecloud-radar",
+      "name": "搜狗微信查询位（云电脑/云服务器新文雷达，由 weixin_pipeline 代跑）",
+      "url": "https://weixin.sogou.com/weixin?type=2&query=云电脑 免费 Agent",
+      "patterns": ["云电脑", "云服务器", "免费", "沙盒", "InstaBox", "白嫖"],
+      "disabled": true,
+      "disabled_reason": "2026-11-08 TK 实测：weixin.sogou.com robots.txt 全站 Disallow（旧记录「仅限自家蜘蛛」过时）+结果页 token 轮转会使指纹 diff 常态误报 → 不直抓，由 weixin_pipeline 雷达轨代盯（QUERIES 已加「免费 云电脑」「免费 云服务器」两查询位）",
+      "note": "公众号源接线（TK 推荐）：首推号「数字生命斯派克」（freecloud 立项样例作者，Agent 实操+白嫖云资源定位，周更；已入 weixin_state.json accounts+seeds）；次推观察位「小6玩AI」（云电脑专题系列）「赛博尝鲜局」（曾发千问云电脑免费档线索）；证据与抓取实测详见 data-research/findings/weixin-freecloud-source.md"
+    },
+    {
       "id": "tencent-free",
       "name": "腾讯云免费试用",
       "url": "https://cloud.tencent.com/act/free",
