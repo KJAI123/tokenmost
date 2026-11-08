@@ -1,3 +1,11 @@
+## 最新断点
+### 2026-11-09 v2.34.0 已上线（commit 9dbe037，主域+Pages 双端已验证）
+- 顶部滚播条：📡 最新 6 条核验羊毛自动滚动（render 尾部 tickerRefresh()，hover 暂停，数据从 DEALS 实时取）
+- ⭐ 一键收藏按钮：复制网址+Ctrl+D 提示（手机走 navigator.share）；PWA 安装按钮预留（beforeinstallprompt）
+- EN 镜像完全同步（英文标签 Live deals / Bookmark / Link copied）
+- /api/stats 访问统计在线：今日 21 / 近 7 日 / 累计 148（自托管，持续累积）
+- opendesign-free 已在库（bc507dd 入库，249 条）；Perch $20/月=付费套餐额度不收录（决策已定）
+
 # SESSION_STATE — 断点状态文件（断线重连后必读）
 
 > 最后更新：2026-10-30 深夜（v2.17.0 手机端专项整修已推版）
