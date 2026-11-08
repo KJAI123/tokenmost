@@ -951,6 +951,8 @@ function render(){
   if(curQ)list=list.filter(d=>(d.provider+d.value+d.notes+d.id).toLowerCase().includes(curQ.toLowerCase()));
   if(sortKey==='tokens')list.sort((a,b)=>tokSort(b)-tokSort(a));
   else list.sort((a,b)=>{
+    const pa=(a.type==='coupon')?0:1,pb=(b.type==='coupon')?0:1;
+    if(pa!==pb)return pa-pb;
     const ra=a.verify_status==='verified'?0:1,rb=b.verify_status==='verified'?0:1;
     if(ra!==rb)return ra-rb;
     return new Date(b.verified_at)-new Date(a.verified_at);
@@ -969,6 +971,9 @@ function render(){
       return {ds,once,daily,best,p:best.group||best.provider};
     }).sort((a,b)=>{
       if(sortKey==='tokens')return (b.once+b.daily*30)-(a.once+a.daily*30);
+      const ca=a.ds.some(d=>d.type==='coupon')?0:1;
+      const cb=b.ds.some(d=>d.type==='coupon')?0:1;
+      if(ca!==cb)return ca-cb;
       const va=a.ds.filter(d=>d.verify_status==='verified').length/a.ds.length;
       const vb=b.ds.filter(d=>d.verify_status==='verified').length/b.ds.length;
       if(vb!==va)return vb-va;
