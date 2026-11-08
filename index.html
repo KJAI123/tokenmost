@@ -471,7 +471,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <span class="stat">今日 <b id="n-fresh">–</b></span>
       <span class="stat">站点 <b id="n-sites">–</b></span>
       <span class="stat">更新 <b id="updated">–</b></span>
-    <a class="lang-switch" href="en.html" title="English version">🌐 EN</a>
+    <a class="lang-switch" href="en.html" title="English version" onclick="localStorage.setItem('tm_lang_pref','en')">🌐 EN</a>
     </div>
     <span class="wx-corner" role="button" tabindex="0" title="微信群二维码 7 天轮换 · 点击看大图" onclick="openWx()" onkeydown="if(event.key==='Enter'){openWx()}">
       <i class="wx-callout">第一时间了解折扣信息<b>↓</b></i>
@@ -753,18 +753,26 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </aside>
 <script>
 /* ============ 常量 ============ */
-/* 语言自动识别（v2.32.1 老板令「根据 IP 识别+切换功能」）：浏览器语言=英文 且 首次访问 → 跳 en.html；手动偏好记忆不再打扰 */
+/* 语言自动识别 v2.32.3：IP 国别优先(ipwho.is 免费无key HTTPS)+浏览器语言兜底+偏好记忆；CN→中文版，非 CN→英文版；失败静默 */
 (function(){
   const KEY='tm_lang_pref';
   if(localStorage.getItem(KEY))return;
-  const en=['en','en-US','en-GB'];
-  const lang=(navigator.language||'en');
-  const isZhHost=location.hostname==='tokenmost.com'||location.hostname==='www.tokenmost.com';
-  const onZhPage=!location.pathname.includes('en.html');
-  if(en.includes(lang)&&isZhHost&&onZhPage){
-    localStorage.setItem(KEY,'en');
-    location.href='https://tokenmost.com/en.html';
-  }
+  if(!/^(tokenmost\.com|www\.tokenmost\.com|kjai123\.github\.io)$/.test(location.hostname))return;
+  if(location.pathname.includes('en.html')){localStorage.setItem(KEY,'en');return;}
+  const nav=(navigator.language||'zh').toLowerCase();
+  function go(en){localStorage.setItem(KEY,en?'en':'zh');if(en)location.href='en.html';}
+  (async()=>{
+    try{
+      const ctl=new AbortController();setTimeout(function(){ctl.abort()},2500);
+      const r=await fetch('https://ipwho.is/',{signal:ctl.signal});
+      const j=await r.json();
+      const cc=(j.country_code||'').toUpperCase();
+      if(cc==='CN'){localStorage.setItem(KEY,'zh');return;}
+      if(cc&&!nav.startsWith('zh')){go(true);return;}
+      localStorage.setItem(KEY,'zh');return;
+    }catch(_){}
+    go(false);
+  })();
 })();
 /* 访问统计上报（v0.11 自托管计数，仅生产域名，失败静默） */
 if(['tokenmost.com','www.tokenmost.com','kjai123.github.io'].includes(location.hostname)){
