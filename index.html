@@ -981,7 +981,11 @@ function render(){
       const tb=Math.max(...b.ds.map(d=>Date.parse(d.verified_at)||0));
       return tb-ta;
     });
-    box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+groups.map(g=>{
+    // 置顶混合：折扣链接组×3 → 国外组×2 → 其余按核验（防满屏折扣链接）
+    const cq=groups.filter(g=>g.ds.some(d=>d.type==='coupon')).slice(0,3);
+    const gl=groups.filter(g=>!cq.includes(g)&&g.ds.some(d=>d.region==='global')).slice(0,2);
+    const ordered=[...cq,...gl,...groups.filter(g=>!cq.includes(g)&&!gl.includes(g))];
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+ordered.map(g=>{
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
