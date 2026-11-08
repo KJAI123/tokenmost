@@ -1015,6 +1015,16 @@ function render(){
   });
   stats();
   loadShared();
+  // 访问量展示（自托管 /api/stats）
+  if(/^(tokenmost\.com|www\.tokenmost\.com|kjai123\.github\.io)$/.test(location.hostname)){
+    fetch('/api/stats').then(r=>r.json()).then(function(st){
+      var el=document.getElementById('visitStats');
+      if(!el)return;
+      var wk=st.last7d.reduce(function(a,b){return a+b},0);
+      el.style.display='block';
+      el.innerHTML='📊 访问统计：今日 <b style="color:var(--accent)">'+st.today+'</b> · 近 7 日 <b style="color:var(--accent)">'+wk+'</b> · 累计 <b style="color:var(--accent)">'+st.total+'</b> 次页面打开';
+    }).catch(function(){});
+  }
 }
 const PAID_TYPES=new Set(['price_low','pricing_plan']);
 function stats(){
