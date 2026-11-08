@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] TK 待核声明核实+2 新条（2026-11-08，老板令「TK数据都更新」，45522cb/8233db3）：①perplexity-education-pro verified（官方学生页：学生/教师 \$10 月=Pro 5 折，部分认证首月免费，SheerID 认证；付费订阅口径不折总账）②command-code-goat verified（\$10/月=最高 \$100 额度官宣永久政策，10 倍杠杆倍率订阅，Reddit 官宣+赛博鸡蛋+知乎三源，付费区）；千问云电脑免费档单源未定位官方页挂 HANDOFF 待核不入；总库 246 条/176 发布
 - [x] AutoClaw 双十一 50M Tokens 上架（2026-11-06/07，老板令「补充信源」+官方博客直核，7d113b3）：deep-autoclaw-promos 重新上架（此前「无羊毛属性」判据过时——智谱官方每周登录发 50M 已规律化连续两周）+autoclaw-double11-50m 新建 verified（**11-09 00:00~11-15 23:59 登录即领 50M** 每账号限领一次，积分 11-15 过期，deadline 倒计时）；autoclaw-free 组归一智谱 AutoClaw+groups.json；IndexNow 新页提交 200；总库 244 条/180 发布
 - [x] 全网收录+外链基建（2026-11-07，老板令「SEO/GEO 彻底优化+外链，免费token 全网搜到」，IndexNow 202 受理/GitHub 仓库+Pages 上线）：
   - **IndexNow 即时收录**：密钥文件部署主域根（200）+ 98 URL 提交 api.indexnow.org（202 受理）——Bing/Yandex/Naver/Seznam 抓取队列生效，免账号
