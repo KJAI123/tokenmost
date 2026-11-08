@@ -575,6 +575,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 {"@type":"Question","name":"数据多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"自动采集与人工Verified双轨更新：官方定价与活动页自动盯防，情报人工复核后上架，过期信息自动清洗；订阅 RSS 可第一时间获取更新。"}}
 ]}
 </script>
+<div id="visitStats" style="max-width:1080px;margin:0 auto 8px;text-align:center;font-size:.78rem;color:var(--muted);display:none"></div>
 <footer>
   <p>Auto+manual daily updates · offers subject to official pages</p>
   <p class="disclaim">⚠️ Disclaimer: independent aggregator，not affiliated with listed platforms. Verify on official pages before acting. Not financial advice.</p>
@@ -1703,6 +1704,17 @@ Promise.all([
 }).catch(()=>{
   document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
 });
+</script>
+<script>
+if(/^(tokenmost\.com|www\.tokenmost\.com|kjai123\.github\.io)$/.test(location.hostname)){
+  fetch('/api/stats').then(r=>r.json()).then(function(st){
+    var el=document.getElementById('visitStats');
+    if(!el)return;
+    var wk=st.last7d.reduce(function(a,b){return a+b},0);
+    el.style.display='block';
+    el.innerHTML='📊 Visitors: <b style="color:#059669">'+st.today+'</b> today · <b style="color:#059669">'+wk+'</b> last 7 days · <b style="color:#059669">'+st.total+'</b> total page views';
+  }).catch(function(){});
+}
 </script>
 </body>
 </html>
