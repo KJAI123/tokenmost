@@ -794,6 +794,7 @@ const LAYER={
 const TYPE={signup_bonus:'Signup bonus',free_tier:'Free tier',coupon:'Coupon',student:'Student',limited_promo:'Limited event',price_low:'Low price',free_model:'Free models',pricing_plan:'Subscription',recurring_promo:'Ongoing活动',warning:'Warning',tool_integration:'Tools接入',invite_bonus:'Invite bonus',subscription_bonus:'Subscription perk',info:'Intel'};
 const VKEY='tm_vault_v1',CKEY='tm_claimed_v1';
 let SITES=[],DEALS=[],claimedSet=new Set(),curCat='all',curQ='',curType='';
+function fmtEN(w){const t=w*1e4;return t>=1e9?(t/1e9).toFixed(2)+'B':t>=1e6?(t/1e6).toFixed(0)+'M':t>=1e3?(t/1e3).toFixed(0)+'K':Math.round(t)+'';}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeUrl(u){return /^https?:/i.test(String(u||''))?u:'#'}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
@@ -812,7 +813,7 @@ function renderFreecloud(){
   if(!box)return;
   const list=DEALS.filter(d=>d.published!==false&&d.category==='freecloud'&&d.verify_status!=='expired');
   if(!list.length){box.innerHTML='';return}
-  const f=w=>w>=10000?(w/10000).toFixed(2)+'×100M':Math.round(w)+'×10K';
+  const f=w=>fmtEN(w);
   box.innerHTML='<div class="fc-head"><b>🖥️ Cloud Server Freebies</b><span>AI Agent 云工位 · 常设Free档 · 非 token 折算单独展示</span></div>'
     +'<div class="fcbox">'+list.map(rowHtml).join('')+'</div>';
 }
@@ -901,14 +902,14 @@ function freshness(d){
 }
 /* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
 function tokCell(d,ov){
-  if(ov){const total=Math.round(ov.once+ov.daily*30),fw=w=>w>=10000?(w/10000).toFixed(2)+'×100M':Math.round(w)+'×10K';
+  if(ov){const total=Math.round(ov.once+ov.daily*30),fw=w=>fmtEN(w);
     if(!total)return'<span title="该条为机制/口径说明，平台未公布可折算的具体 token 数额">Free<span class="unit" style="display:block;font-size:.68rem;margin-top:1px">额度未公布</span></span>';
-    return`<span title="该平台全部信源按 DS4.1 Flash 等效的First-month haul总量 = 一次性 ${fw(ov.once)} ＋ 日均 ${fw(ov.daily)}×30 天（与Sort同口径）"><span class="num">${fw(total)}</span><span class="unit">First-month haul</span>${ov.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${ov.once?fw(ov.once)+'＋':''}日均${ov.daily>=10000?(ov.daily/10000).toFixed(1)+'×100M':'~'+Math.round(ov.daily)+'×10K'}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span>`;}
+    return`<span title="该平台全部信源按 DS4.1 Flash 等效的First-month haul总量 = 一次性 ${fw(ov.once)} ＋ 日均 ${fw(ov.daily)}×30 天（与Sort同口径）"><span class="num">${fw(total)}</span><span class="unit">First-month haul</span>${ov.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${ov.once?fw(ov.once)+'＋':''}daily ${fmtEN(ov.daily)}/day</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span>`;}
   if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
-  if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${eq>=10000?(eq/10000).toFixed(2)+'×100M':Math.round(eq)+'×10K'}</span><span class="unit">DS Flash equiv</span></span>`;}
+  if(d.tokens_wan){const eq=d.eq_wan||d.tokens_wan;return`<span title="${esc(d.eq_note||'全站计量口径：DeepSeek V4.1 Flash 等效 token（谷价基准，通用额度 1:1、旗舰按牌价折算力）')}"><span class="num">${fmtEN(eq)}</span><span class="unit">DS Flash equiv</span></span>`;}
   if(d.usd)return`<span class="num">$${d.usd}</span><span class="unit">credits</span>`;
   if(d.cny)return`<span class="num">¥${d.cny}</span><span class="unit">额度</span>`;
-  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均${d.daily_wan>=10000?(d.daily_wan/10000).toFixed(1)+'×100M':'~'+Math.round(d.daily_wan)+'×10K'}</span><span class="unit">DS Flash equiv/天</span></span>`;
+  if(d.daily_wan)return`<span title="${esc(d.daily_note||'')}"><span class="num">daily ${fmtEN(d.daily_wan)}</span><span class="unit">DS Flash equiv/天</span></span>`;
   if(d.daily_calls)return`<span title="${esc(d.daily_note||'')}"><span class="num">日均~${d.daily_calls>=10000?(d.daily_calls/10000).toFixed(1)+'万':d.daily_calls}</span><span class="unit">次/天</span></span>`;
   if(d.type==='free_tier'||d.via==='free')return'<span class="num">Free</span><span class="unit">Ongoing</span>';
   if(d.type==='price_low')return'<span class="num">Low price</span><span class="unit">Ongoing</span>';
@@ -970,8 +971,8 @@ function render(){
     });
     box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+groups.map(g=>{
       const total=Math.round(g.once+g.daily*30);
-      const f=w=>w>=10000?(w/10000).toFixed(2)+'×100M':Math.round(w)+'×10K';
-      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+'×100M':(Math.round(yi*10)/10)+'×100M'};
+      const f=w=>fmtEN(w);
+      const f2=w=>fmtEN(w);
       const s=siteFor(g.best);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}">
@@ -1552,8 +1553,8 @@ document.getElementById('calcFilters').addEventListener('click',e=>{const b=e.ta
 document.getElementById('calcCache').addEventListener('input',calcRender);
 document.getElementById('calcOffpeak').addEventListener('change',calcRender);
 /* ============ 羊毛总账 & 极致预算 ============ */
-function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+'×100M':Math.round(w)+'×10K'}
-function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+'×100M':Math.round(million*100)+'×10K'}
+function fmtWan(w){return fmtEN(w)}
+function fmtYi(m){return m>=1?m.toFixed(2)+'M ¥':Math.round(m*100)+'K ¥'}
 function sumRender(){
   const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan');
   const agg=rows=>({t:rows.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
@@ -1639,8 +1640,8 @@ function calcGlobalBanner(){
   const gmap={};
   live.filter(isDouble).forEach(d=>{const k=d.group||d.provider;(gmap[k]=gmap[k]||[]).push(d)});
   const linkBonus=Object.values(gmap).reduce((s,ds)=>s+Math.round(ds.reduce((a,d)=>a+(d.eq_wan||d.tokens_wan||0),0)+ds.reduce((a,d)=>a+(d.daily_wan||0),0)*30),0);
-  const f=w=>w>=10000?(w/10000).toFixed(2)+'×100M':Math.round(w)+'×10K';
-      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+'×100M':(Math.round(yi*10)/10)+'×100M'};
+  const f=w=>fmtEN(w);
+      const f2=w=>fmtEN(w);
   document.getElementById('gbNum').textContent='🌍 全球羊毛 First-month haul ≈ '+f(monthly)+' DS Flash equiv';
   document.getElementById('gbSub').innerHTML='Formula: one-time '+f(once)+' + daily '+f(daily)+'/day × 30 · '+live.length+' 条 · <span class="gb-pill">🪙 Discount链接注册额外叠加 '+f(linkBonus)+'</span> · 点击看明细';
 }
