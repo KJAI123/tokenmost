@@ -28,6 +28,7 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.32.0 英文版上线（2026-11-07，老板令「再做一个英文版」，c8863f0/dc51f15）：en.html 全英文落地页（SEO 面向 free AI tokens/free LLM API credits 词组）——hero 实时计数拉 deals.json/Top offers 6 卡/云算力 6 卡/付费折扣表/FAQ（数据新鲜度+无中转立场+开源数据集）；hreflang en/zh/x-default 双向+canonical；中文 footer+「English」互链；pages.yml cp 白名单补 en.html（漏加致首推 404 教训：新增根文件必须同步 workflow cp 清单）；主域+Pages 双端 200
 - [x] v2.31.1 🎓 学生教师专区（2026-11-08，老板令「token羊毛板块开辟学生教师专区」，5028b77）：tab 栏蓝描边按钮+render 过滤（type=student 或 via=student）聚合展示：Perplexity Education Pro/AutoDL 教育邮箱/GitHub Student Pack/阿里云云工开物/Google AI Pro 学生 12 个月免费共 5 条；浏览器实测全渲染零报错
 - [x] TK 待核声明核实+2 新条（2026-11-08，老板令「TK数据都更新」，45522cb/8233db3）：①perplexity-education-pro verified（官方学生页：学生/教师 \$10 月=Pro 5 折，部分认证首月免费，SheerID 认证；付费订阅口径不折总账）②command-code-goat verified（\$10/月=最高 \$100 额度官宣永久政策，10 倍杠杆倍率订阅，Reddit 官宣+赛博鸡蛋+知乎三源，付费区）；千问云电脑免费档单源未定位官方页挂 HANDOFF 待核不入；总库 246 条/176 发布
 - [x] AutoClaw 双十一 50M Tokens 上架（2026-11-06/07，老板令「补充信源」+官方博客直核，7d113b3）：deep-autoclaw-promos 重新上架（此前「无羊毛属性」判据过时——智谱官方每周登录发 50M 已规律化连续两周）+autoclaw-double11-50m 新建 verified（**11-09 00:00~11-15 23:59 登录即领 50M** 每账号限领一次，积分 11-15 过期，deadline 倒计时）；autoclaw-free 组归一智谱 AutoClaw+groups.json；IndexNow 新页提交 200；总库 244 条/180 发布
