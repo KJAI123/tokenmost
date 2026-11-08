@@ -28,6 +28,10 @@
 - 后端 server/app.py（FastAPI+Flash 初审）systemd 常驻
 
 ## 当前任务队列
+- [x] v2.32.4 EN 页双向切换修复（2026-11-08，老板报「手动切换中文版也不行」+「中文版不见了」，a64d5c7）：
+  - **中文版消失根因**：index 语言识别「非 CN IP→强制英文版」把老板自己弹走（测试网络出口非 CN）——修正=非 CN IP 且英文浏览器才进英文版，CN IP 或中文浏览器一律留中文版（1931118）
+  - **手动切换失效根因**：镜像站头部遗留自指 🌐EN 按钮（点击=刷新英文页）且无中文版入口——改为 🇨🇳 中文版按钮（./ + onclick 写偏好 zh）
+  - 双向闭环：手动选择永远优先于自动识别；三端同步验证 ✓
 - [x] v2.32.2 en.html 完整镜像站（2026-11-08，老板令「基于中文版页面翻译+复刻英文版，不要简化落地页」，d7fe04e）：推翻独立落地页方案，en.html = index.html 完整复制+UI 全英文化（141 行渲染/8 tabs 英文/统计条/横幅/FAQ/footer），fmt 单位 ×100M/×10K；EN 页去除语言跳转脚本；数据内容保持中文（provider 名为品牌名可读）
 - [x] v2.32.2 en.html 专门英文排版重做（2026-11-08，老板令「全页英文本地化+专门排版，完全不行」，636eb85）：审计三问题（1396 处中文残留/数据层直渲染中文 deals/布局照抄中文 DOM）→重做为**专门英文设计**：Inter 风格+hero「Every free AI token offer, verified daily.」+统计侧卡（live offers/total haul 实时拉 deals.json 计数）+英文 offer 卡 Top 9+Free cloud 6 卡+付费折扣表+FAQ 5 问；桌面渲染验证通过
 - [x] v2.32.1 en.html 重做为完整镜像站（2026-11-08，老板令「照着中文版翻译+重新排版」，d6a2213）：全站结构同中文版（hero+统计+7 tabs+情报行+独立版面+FAQ+footer），UI 全英文化（Free Zone/LLM Providers/Agent Platforms/Cloud & Compute/Bonus Multipliers/Paid Zone/Warnings/Students）；fmt 单位英文化（×100M/×10K）；数据字段保持中文（244 条逐条翻译工程量大，v1 接受混排——provider 名为品牌名可读）；141 行渲染实测
