@@ -97,6 +97,8 @@ header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 0 6px
 header .hlogo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px}
 header .hlogo em{font-style:normal;color:var(--accent)}
 header .tagline{font-size:.7rem;color:var(--muted)}
+.lang-switch{display:inline-flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--border);border-radius:999px;padding:4px 12px;font-size:.75rem;font-weight:700;color:var(--accent);text-decoration:none;transition:all .12s}
+.lang-switch:hover{border-color:var(--accent);background:rgba(5,150,105,.06)}
 .stats{display:flex;gap:10px;margin-left:auto;flex-wrap:wrap;align-items:center}
 .global-banner{display:inline-flex;flex-direction:column;gap:1px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1.5px solid var(--accent);border-radius:10px;padding:5px 12px;margin-left:8px;cursor:pointer;box-shadow:0 1px 5px rgba(5,150,105,.2)}
 .global-banner b{font-size:1.12rem;color:var(--accent);font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums;line-height:1.15}
@@ -469,6 +471,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <span class="stat">今日 <b id="n-fresh">–</b></span>
       <span class="stat">站点 <b id="n-sites">–</b></span>
       <span class="stat">更新 <b id="updated">–</b></span>
+    <a class="lang-switch" href="en.html" title="English version">🌐 EN</a>
     </div>
     <span class="wx-corner" role="button" tabindex="0" title="微信群二维码 7 天轮换 · 点击看大图" onclick="openWx()" onkeydown="if(event.key==='Enter'){openWx()}">
       <i class="wx-callout">第一时间了解折扣信息<b>↓</b></i>
@@ -750,6 +753,19 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </aside>
 <script>
 /* ============ 常量 ============ */
+/* 语言自动识别（v2.32.1 老板令「根据 IP 识别+切换功能」）：浏览器语言=英文 且 首次访问 → 跳 en.html；手动偏好记忆不再打扰 */
+(function(){
+  const KEY='tm_lang_pref';
+  if(localStorage.getItem(KEY))return;
+  const en=['en','en-US','en-GB'];
+  const lang=(navigator.language||'en');
+  const isZhHost=location.hostname==='tokenmost.com'||location.hostname==='www.tokenmost.com';
+  const onZhPage=!location.pathname.includes('en.html');
+  if(en.includes(lang)&&isZhHost&&onZhPage){
+    localStorage.setItem(KEY,'en');
+    location.href='https://tokenmost.com/en.html';
+  }
+})();
 /* 访问统计上报（v0.11 自托管计数，仅生产域名，失败静默） */
 if(['tokenmost.com','www.tokenmost.com','kjai123.github.io'].includes(location.hostname)){
   const hitApi=location.hostname==='kjai123.github.io'?'https://tokenmost.com':'';

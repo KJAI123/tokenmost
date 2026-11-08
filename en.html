@@ -110,5 +110,8 @@ fetch('/deals.json?nc='+Date.now()).then(r=>r.json()).then(d=>{
   document.getElementById('offerCount').textContent=live.length;
 }).catch(()=>{});
 </script>
+<script>
+if(!localStorage.getItem('tm_lang_pref'))localStorage.setItem('tm_lang_pref','en');
+</script>
 </body>
 </html>
