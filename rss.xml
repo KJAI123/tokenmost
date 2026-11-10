@@ -1169,11 +1169,11 @@
       <description>长期免费 · 规则：免费档单机最长连跑 480 分钟（长任务走 nohup/tmux 或 suspend/resume）；空闲 30 分钟自动暂停（暂停免费只算存储）；exec 单条 10 分钟上限；单次上传 10MiB（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Oracle Cloud：Oracle 云永免费层（行业最慷慨·长期在营）：2 台 AMD VM（1C/8G）+ 4 核 Arm Ampere A</title>
+      <title>Oracle Cloud：Oracle 云永免费层：2 台 AMD 微型机（1C/1G）+ Ampere A1 ARM **纯免费号 2 核 12</title>
       <link>https://www.oracle.com/cloud/free/</link>
       <guid isPermaLink="false">oracle-cloud-always-free</guid>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：Always Free 资源在闲置回收政策下 Arm 实例建议保持使用；需绑卡验证（不扣费）；账号注册有一定门槛（优惠以官方页面为准）</description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：注册须实体双币卡验证（拒虚拟卡/预付卡，$1 预授权可退）；主区域选定永久不可改，免费资源只能在主区开；⚠️ 纯免费号闲置回收：7 天内 CPU/网络 95 分位 &lt;20% 判闲置停机（PAYG 账号豁免）；升级 PAYG 后立即建 $1 预算提醒防误扣费（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>AWS：AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等</title>
@@ -1328,6 +1328,55 @@
       <guid isPermaLink="false">agentscope-qwenpaw-free</guid>
       <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：免费注册（Free Register）；Beta 期免费试用空间；实测口径 2 核/4GB/60GB 盘、闲置 48 小时休眠（二手实测，以官方为准）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 AutoClaw：邀好友无上限积分风暴：新用户注册填码**最高得 4800 积分**</title>
+      <link>https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&amp;channel=fission&amp;source_location=sidebar&amp;target_app=autoclaw&amp;target_app_version=2.3.0&amp;os=mac&amp;IC=7WHSTDYA</link>
+      <guid isPermaLink="false">autoclaw-invite-fission</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>折扣码 · 规则：登录环节填邀请码（须 AutoClaw 桌面端完成，移动端暂不支持）；邀请者每邀 1 人注册并发起成功任务得 1000 积分（活动期上限 15 人=15000）；邀请奖励积分 7 天有效、购买奖励 30 天有效；活动下线邀请码失效（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>AgentRouter：注册送 **$100** + 首次签到 $25（首日到手 $125，经邀请链接注册再 +$50 → 首日最高 **$17</title>
+      <link>https://agentrouter.org/</link>
+      <guid isPermaLink="false">agentrouter-signup</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：仅支持 GitHub 账号登录，且 GitHub 注册须早于 2025-12；站内无充值入口（纯免费）；OpenAI/Anthropic 双协议兼容，可接 Claude Code/Codex/Cherry Studio/Open WebUI（改 Base URL 即可）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Simular Box：免费 AI 云电脑：每账号 1 台云端 Linux 桌面（实测 4 核/7.7GB/40GB，Ubuntu 24.04，</title>
+      <link>https://box.simular.ai/</link>
+      <guid isPermaLink="false">simular-box-free</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：Box 本身免费，模型调用烧每日 credits（数额未公开，以账号后台显示为准）；⚠️ 连续休眠 14 天整台删除（含全部文件）；高峰期唤醒可能排队；定位是 AI 电脑不是服务器——无端口发布/对外服务能力（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Northwest：首个域名真免费（一级 .com 等 ≤$25 价值，非试用）</title>
+      <link>https://www.northwestregisteredagent.com/domains</link>
+      <guid isPermaLink="false">northwest-first-com-free</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：仅免首个且 ≤$25 的域名；首单最多可注 20 个（免费的只有第一个）；域名转出则免费续费失效；结账页是否要卡以实际为准（页面未明确要求）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>CodeHost：免费领一个 .cv 一级域名（佛得角国别后缀，个人简历域名定位）：含 WHOIS 隐私+自定义 NS+EPP 转出码+防</title>
+      <link>https://codehost.in/free-cv-for-everyone/</link>
+      <guid isPermaLink="false">codehost-cv-free</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：结账页优惠码 CODEHOST（应用后 $0）；每人限 1 个；域名须对应本人姓名（FirstName.cv / FirstLast.cv），通用词/品牌词/随机串不符合；溢价域名除外；续费按届时标准价（官网未写明免费期几年，社区实测多称 1 年）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>DNSHE：免费二级域名（新加坡非营利团队，累计服务 10 万+用户）：后缀 .de5.net / .us.ci / .cc.cd </title>
+      <link>https://www.dnshe.com/</link>
+      <guid isPermaLink="false">dnshe-free-domains</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：注册默认 1 年有效，到期前 180 天内免费续期；功能中心可好友助力升级永久有效；⚠️ 所有权在平台手里：禁钓鱼/欺诈/代理/翻墙规避/转售，违规删记录封号；别放重要业务（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>DigitalPlat FreeDomain：免费二级域名 dpdns.org（非营利开源项目，50 万+域名在营，GitHub 207k stars）：自定义 NS</title>
+      <link>https://dash.domain.digitalplat.org/</link>
+      <guid isPermaLink="false">digitalplat-dpdns-free</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：默认每账号 1 个；注册需长期邮箱+真实姓名+有效电话+完整地址；域名不可手动删除只能等过期；有效期/续费规则以 Dashboard 为唯一可信来源（官方未写死）（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>

@@ -46,7 +46,7 @@
 - 内容：新人免费体验包：hy3-preview / DeepSeek-V4-Pro/Flash / GLM-5 / MiniMax-M2.7 及全部多模态理解模型，每模型 100 万 tokens、1 年有效，模型广场领取
 - 规则：每主账号限一次；原混元平台 2026-09-30 已停服，这是官方迁移后的新平台
 - 链接：https://cloud.tencent.com/document/product/1823/130053
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## MiniMax 开放平台｜price_low
 - 内容：MiniMax-M3 永久五折：2.1/8.4 元每百万；M3.1-Flash 1/4 元
@@ -64,7 +64,7 @@
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 日均：2000 次/天 × ~4K tok/次 ≈800 万/天（估算）+200 魔粒/天
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
@@ -76,12 +76,12 @@
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## 共绩算力｜hardware_bundle
 - 内容：个人开发者支持计划：新手进群+填表领 50 元算力体验积分（≈4090 单卡 24 小时）；深度支持审核制每月 200 元起、累计最高 1500 元
@@ -92,14 +92,14 @@
 ## 硅基流动｜限时活动
 - 内容：「推荐官」：本人实名认证领 16 元全平台通用券；邀好友注册+实名，双方各得 16 元券，人数不限（券 180 天有效，可用于 Pro/高速模型）
 - 链接：https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## OpenRouter｜长期免费
 - 内容：:free 模型 13 个（thinkingmachines/inkling-2-small:free、liquid/lfm-3-1.7b:free、recursive/flint-v1.0:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 日均：充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## NVIDIA NIM｜注册赠送
 - 内容：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可
@@ -116,12 +116,12 @@
 - 内容：67 个 $0 免费模型（Nemotron 3.5 Super VL 等），无需信用卡
 - 日均：长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)
 - 链接：https://aihubmix.com/pricing
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## Google AI Studio｜学生通道
 - 内容：Google AI Pro 学生 12 个月免费（价值 $240；美区 18+ 高校，2025 领过的可再领；部分地区为 AI Plus 一年）
@@ -133,13 +133,13 @@
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
 - 日均：1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）
 - 链接：https://console.groq.com
-- 状态：已验证（核验时间 2026-11-10T11:14:22Z）
+- 状态：已验证（核验时间 2026-11-10T23:02:43Z）
 
 ## 智谱 ZCode｜限时活动
 - 内容：ZCode 客户端周期性送 GLM-5.3-Flash 大礼包：周末计划 3 亿、1024 节 5 亿（20 万份）——官方活动页 real 实锤，打开客户端活动卡片即领
@@ -1006,10 +1006,10 @@
 - 状态：已验证（核验时间 2026-11-06T00:00:00Z）
 
 ## Oracle Cloud｜长期免费
-- 内容：Oracle 云永免费层（行业最慷慨·长期在营）：2 台 AMD VM（1C/8G）+ 4 核 Arm Ampere A1（合计 24G 内存）+ 200G 块存储——全部永久免费，可跑生产级服务
-- 规则：Always Free 资源在闲置回收政策下 Arm 实例建议保持使用；需绑卡验证（不扣费）；账号注册有一定门槛
+- 内容：Oracle 云永免费层：2 台 AMD 微型机（1C/1G）+ Ampere A1 ARM **纯免费号 2 核 12G**（2026-06 新规砍半；升级 PAYG 账号可能保留 4 核 24G，因人而异官方无承诺）+ 200G 块存储 + 10TB/月出站——ARM+AMD 两份额度独立
+- 规则：注册须实体双币卡验证（拒虚拟卡/预付卡，$1 预授权可退）；主区域选定永久不可改，免费资源只能在主区开；⚠️ 纯免费号闲置回收：7 天内 CPU/网络 95 分位 <20% 判闲置停机（PAYG 账号豁免）；升级 PAYG 后立即建 $1 预算提醒防误扣费
 - 链接：https://www.oracle.com/cloud/free/
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-10T16:46:21Z）
 
 ## AWS｜长期免费
 - 内容：AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等几十项免费额度；另有 Always Free 长期项（Lambda 100 万次/月等）
@@ -1143,4 +1143,46 @@
 - 规则：免费注册（Free Register）；Beta 期免费试用空间；实测口径 2 核/4GB/60GB 盘、闲置 48 小时休眠（二手实测，以官方为准）
 - 链接：https://platform.agentscope.io/
 - 状态：已验证（核验时间 2026-11-10T16:21:37Z）
+
+## 智谱 AutoClaw｜coupon
+- 内容：邀好友无上限积分风暴：新用户注册填码**最高得 4800 积分**；好友付费双方共享返积分——¥29 月卡双方各 +400、¥109 各 +2,760、¥499 各 +14,400、¥999 各 +28,800（8%~12% 比例），**购买奖励无上限**
+- 规则：登录环节填邀请码（须 AutoClaw 桌面端完成，移动端暂不支持）；邀请者每邀 1 人注册并发起成功任务得 1000 积分（活动期上限 15 人=15000）；邀请奖励积分 7 天有效、购买奖励 30 天有效；活动下线邀请码失效
+- 链接：https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=fission&source_location=sidebar&target_app=autoclaw&target_app_version=2.3.0&os=mac&IC=7WHSTDYA
+- 状态：已验证（核验时间 2026-11-10T16:24:59Z）
+
+## AgentRouter｜注册赠送
+- 内容：注册送 **$100** + 首次签到 $25（首日到手 $125，经邀请链接注册再 +$50 → 首日最高 **$175**）；此后每日签到 +$25（退出重登即算一次签到）——可跑 GPT-6 代模型（gpt-5.6-sol / gpt-6-astra / gpt-6.1-sol）
+- 规则：仅支持 GitHub 账号登录，且 GitHub 注册须早于 2025-12；站内无充值入口（纯免费）；OpenAI/Anthropic 双协议兼容，可接 Claude Code/Codex/Cherry Studio/Open WebUI（改 Base URL 即可）
+- 链接：https://agentrouter.org/
+- 状态：待复核（核验时间 2026-11-10T16:28:41Z）
+
+## Simular Box｜长期免费
+- 内容：免费 AI 云电脑：每账号 1 台云端 Linux 桌面（实测 4 核/7.7GB/40GB，Ubuntu 24.04，Chrome+Python3.12+Node24+git+LibreOffice+sudo 预装）——通过 MCP 交给 Claude Code/Codex/Cursor/OpenClaw 远程指挥，真 Chrome 浏览可过验证；闲置休眠、AI 连上约 1 秒唤醒、文件状态保留，`npx @simular-ai/box connect` 一键接入全家桶
+- 规则：Box 本身免费，模型调用烧每日 credits（数额未公开，以账号后台显示为准）；⚠️ 连续休眠 14 天整台删除（含全部文件）；高峰期唤醒可能排队；定位是 AI 电脑不是服务器——无端口发布/对外服务能力
+- 链接：https://box.simular.ai/
+- 状态：已验证（核验时间 2026-11-10T16:30:39Z）
+
+## Northwest｜限时活动
+- 内容：首个域名真免费（一级 .com 等 ≤$25 价值，非试用）——续费也由 Northwest 承担（域名保留在它家期间），WHOIS 隐私免费；真正归属于你的顶级域名
+- 规则：仅免首个且 ≤$25 的域名；首单最多可注 20 个（免费的只有第一个）；域名转出则免费续费失效；结账页是否要卡以实际为准（页面未明确要求）
+- 链接：https://www.northwestregisteredagent.com/domains
+- 状态：已验证（核验时间 2026-11-10T16:46:21Z）
+
+## CodeHost｜限时活动
+- 内容：免费领一个 .cv 一级域名（佛得角国别后缀，个人简历域名定位）：含 WHOIS 隐私+自定义 NS+EPP 转出码+防盗锁，免卡——⏰ 活动 2026-08-17~11-17 截止
+- 规则：结账页优惠码 CODEHOST（应用后 $0）；每人限 1 个；域名须对应本人姓名（FirstName.cv / FirstLast.cv），通用词/品牌词/随机串不符合；溢价域名除外；续费按届时标准价（官网未写明免费期几年，社区实测多称 1 年）
+- 链接：https://codehost.in/free-cv-for-everyone/
+- 状态：已验证（核验时间 2026-11-10T16:46:21Z）
+
+## DNSHE｜长期免费
+- 内容：免费二级域名（新加坡非营利团队，累计服务 10 万+用户）：后缀 .de5.net / .us.ci / .cc.cd / .bot.cd，免绑卡无广告，**支持改 NS 托管 Cloudflare**（PSL 口径），全记录类型+DNSSEC+REST API
+- 规则：注册默认 1 年有效，到期前 180 天内免费续期；功能中心可好友助力升级永久有效；⚠️ 所有权在平台手里：禁钓鱼/欺诈/代理/翻墙规避/转售，违规删记录封号；别放重要业务
+- 链接：https://www.dnshe.com/
+- 状态：已验证（核验时间 2026-11-10T16:46:21Z）
+
+## DigitalPlat FreeDomain｜长期免费
+- 内容：免费二级域名 dpdns.org（非营利开源项目，50 万+域名在营，GitHub 207k stars）：自定义 NS 接任意 DNS 服务商（Cloudflare 等），A/AAAA/CNAME/MX/TXT 全外部管理
+- 规则：默认每账号 1 个；注册需长期邮箱+真实姓名+有效电话+完整地址；域名不可手动删除只能等过期；有效期/续费规则以 Dashboard 为唯一可信来源（官方未写死）
+- 链接：https://dash.domain.digitalplat.org/
+- 状态：已验证（核验时间 2026-11-10T16:46:21Z）
 
