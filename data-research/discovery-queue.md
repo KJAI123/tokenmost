@@ -21,3 +21,5 @@
 - [x] 34家白嫖神 ✅ 2026-10-28 定位=OmniRoute(diegosouzapw/OmniRoute 3.7万Star)：本地网关+免费额度仪表盘；已入采集器，站点工具区收录建议→主管
 - [ ] weixin 雷达第3周查询词轮换 | — | 公众号管道
 - [x] 智谱每日一亿 ✅ 2026-10-28：入口定位=bigmodel.cn/activity/trial-card 页族（8+ 体验卡页）；数额登录核→主管
+- [ ] 免卡小 VPS 批量核验（码上AI记 2026-11 VPS 指南二手）：Vyce.Cloud（英 2G 纯IPv6 GitHub登录每日续期）/ Woiden.id（德 NAT TG登录3天续）/ Openworld.eu.org（洪都拉斯 1C512M Discord 7天续）/ ASCS Cloud（加 2C2G LXC 30天）/ nat.freecloud.ltd（港德 NAT 签到）/ vipserver.cloud（洛杉矶 2C2G 独立IPv4 社区续期） | 平台名+free vps 续期规则 | freecloud 线核验后立条
+- [ ] FFxF console.ffxf.net 优惠码 TRY10=10 CAD 赠金核验（免绑卡 KVM 按量） | FFxF TRY10 promo code | freecloud 线
