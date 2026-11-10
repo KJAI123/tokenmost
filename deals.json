@@ -5148,5 +5148,22 @@
   "via": "free",
   "group": "AgentRouter",
   "notes": "⚠️ 2026-11-11 核验状态：官方站 WAF+滑块验证+未登录页面空壳，额度未能直核——条款来自「码上AI记」11-11 实测文章（含到账截图），TK 线登录复核后转 verified | 模型名站方自标、实际路由渠道不透明（文章原话：重要任务先拿小量试）| 免费站随时可能调整规则，及时用"
+ },
+ {
+  "id": "simular-box-free",
+  "provider": "Simular Box",
+  "category": "freecloud",
+  "type": "free_tier",
+  "value": "免费 AI 云电脑：每账号 1 台云端 Linux 桌面（实测 4 核/7.7GB/40GB，Ubuntu 24.04，Chrome+Python3.12+Node24+git+LibreOffice+sudo 预装）——通过 MCP 交给 Claude Code/Codex/Cursor/OpenClaw 远程指挥，真 Chrome 浏览可过验证；闲置休眠、AI 连上约 1 秒唤醒、文件状态保留，`npx @simular-ai/box connect` 一键接入全家桶",
+  "region": "global",
+  "url": "https://box.simular.ai/",
+  "rule": "Box 本身免费，模型调用烧每日 credits（数额未公开，以账号后台显示为准）；⚠️ 连续休眠 14 天整台删除（含全部文件）；高峰期唤醒可能排队；定位是 AI 电脑不是服务器——无端口发布/对外服务能力",
+  "verify_status": "verified",
+  "verified_at": "2026-11-10T16:30:39Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "Simular Box",
+  "notes": "2026-11-11 官方页直核（box itself is free / one cloud desktop per account / 14-day asleep deletion / MCP mcp.box.simular.ai/mcp）| 出品方 Simular Inc.（Palo Alto，前 Google DeepMind 团队，2025-12 Felicis 领投 $2150 万 A 轮；开源 Agent S 框架 OSWorld 评测达人类基线 72.6%）| 规格来自「码上AI记」11-11 实测；付费档 $50/月 5 万 credits（最多 5 台）/$500 月不限量为二手口径 | MCP 地址 11-04 刚更换过，老用户需重接"
  }
 ]
