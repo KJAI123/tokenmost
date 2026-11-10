@@ -18,6 +18,7 @@ import json
 import hmac
 import hashlib
 import sqlite3
+import threading
 import base64
 import urllib.request
 import datetime
@@ -27,7 +28,7 @@ from fastapi import FastAPI, HTTPException, Depends, Query, Header, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
 
-APP_VERSION = "0.9.0"
+APP_VERSION = "0.10.0"
 DB_PATH = os.environ.get("TM_DB", os.path.join(os.path.dirname(__file__), "tokenmost.db"))
 SECRET = os.environ.get("TM_SECRET", "dev-secret-change-me")
 ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "")
@@ -87,8 +88,10 @@ def startup():
     if "kind" not in cols:
         c.execute("ALTER TABLE coupons ADD COLUMN kind TEXT NOT NULL DEFAULT 'code'")
     c.execute("CREATE TABLE IF NOT EXISTS pageviews(ts INTEGER, path TEXT, ua TEXT)")
+    c.execute("CREATE TABLE IF NOT EXISTS news(ts INTEGER, lang TEXT, source TEXT, title TEXT, url TEXT UNIQUE)")
     c.commit()
     c.close()
+    threading.Thread(target=_news_loop, daemon=True).start()
 
 # ---------------- 认证（标准库实现） ----------------
 
@@ -257,6 +260,76 @@ def api_stats():
     }
     c.close()
     return out
+
+# ---------------- AI 行业新闻（v0.10 顶部滚播数据源） ----------------
+
+NEWS_FEEDS = {
+    "zh": [("量子位", "https://www.qbitai.com/feed"),
+           ("InfoQ", "https://www.infoq.cn/feed.xml"),
+           ("雷峰网", "https://www.leiphone.com/feed")],
+    "en": [("TechCrunch AI", "https://techcrunch.com/category/artificial-intelligence/feed/"),
+           ("The Verge AI", "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"),
+           ("Hacker News", "https://hnrss.org/front_page")],
+}
+NEWS_KEEP = 12          # 每语言保留条数
+NEWS_INTERVAL = 1800    # 抓取间隔 30 分钟
+
+def _news_grab():
+    """抓全部 RSS/Atom 源，解析入库（url 去重），全程静默。"""
+    import urllib.request
+    import xml.etree.ElementTree as ET
+    for lang, feeds in NEWS_FEEDS.items():
+        items = []
+        for src, url in feeds:
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 tokenmost/0.10"})
+                raw = urllib.request.urlopen(req, timeout=15).read()
+                root = ET.fromstring(raw)
+                for n in root.findall('.//{*}item')[:20] + root.findall('.//{*}entry')[:20]:
+                    title = (n.findtext('{*}title') or '').strip()
+                    link = ''
+                    ln = n.find('{*}link')
+                    if ln is not None:
+                        link = (ln.get('href') or ln.text or '').strip()
+                    if not title or not link:
+                        continue
+                    ts = int(datetime.datetime.utcnow().timestamp() * 1000)
+                    for dt in ('{*}pubDate', '{*}published', '{*}updated'):
+                        d = n.findtext(dt)
+                        if d:
+                            try:
+                                from email.utils import parsedate_to_datetime
+                                ts = int(parsedate_to_datetime(d).timestamp() * 1000)
+                            except Exception:
+                                pass
+                            break
+                    items.append((ts, lang, src, title[:140], link[:300]))
+            except Exception:
+                continue
+        try:
+            c = conn()
+            c.executemany("INSERT OR IGNORE INTO news(ts,lang,source,title,url) VALUES(?,?,?,?,?)", items)
+            # 每语言只保留最新 KEEP 条
+            c.execute("DELETE FROM news WHERE lang=? AND ts NOT IN (SELECT ts FROM news WHERE lang=? ORDER BY ts DESC LIMIT ?)",
+                      (lang, lang, NEWS_KEEP))
+            c.commit(); c.close()
+        except Exception:
+            pass
+
+def _news_loop():
+    threading.Event().wait(2)     # 启动后 2s 首抓
+    while True:
+        _news_grab()
+        threading.Event().wait(NEWS_INTERVAL)
+
+@app.get("/api/news")
+def api_news(lang: str = "zh"):
+    lang = lang if lang in ("zh", "en") else "zh"
+    c = conn()
+    rows = c.execute("SELECT ts,source,title,url FROM news WHERE lang=? ORDER BY ts DESC LIMIT ?",
+                     (lang, NEWS_KEEP)).fetchall()
+    c.close()
+    return {"lang": lang, "items": [dict(r) for r in rows]}
 
 @app.post("/api/auth/register")
 def register(body: AuthBody):

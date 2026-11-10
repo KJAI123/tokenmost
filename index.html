@@ -1468,16 +1468,32 @@ function doBookmark(){
   alert('已复制网址\n\n按 Ctrl+D（Mac：⌘+D）即可收藏 TokenMost');
 }
 window.tickerRefresh=function(){
-  try{
+  // 顶部滚播：优先 AI 行业新闻（自托管 /api/news），无数据回退站内最新羊毛
+  var PROD=/^(tokenmost\.com|www\.tokenmost\.com|kjai123\.github\.io)$/.test(location.hostname);
+  function dealTicker(){
     if(typeof DEALS==='undefined'||!DEALS.length)return;
-    var tk=[...DEALS].filter(d=>d.published!==false&&d.verify_status!=='expired').sort(function(a,b){return new Date(b.verified_at)-new Date(a.verified_at)}).slice(0,6);
-    var items=tk.map(function(d){
-      var v=(d.value||'').replace(/<[^>]*>/g,'').slice(0,40);
-      return '<span class="ntk-item"><b>'+(d.provider||'').slice(0,16)+'</b> '+v+'<span class="ntk-date">'+new Date(d.verified_at).toLocaleDateString('zh-CN')+'</span></span>';
-    }).join('');
-    var el=document.getElementById('ntkItems');
-    if(el&&items)el.innerHTML=items+items;
-  }catch(_){}
+    try{
+      var tk=[...DEALS].filter(d=>d.published!==false&&d.verify_status!=='expired').sort(function(a,b){return new Date(b.verified_at)-new Date(a.verified_at)}).slice(0,6);
+      var items=tk.map(function(d){
+        var v=(d.value||'').replace(/<[^>]*>/g,'').slice(0,40);
+        return '<span class="ntk-item"><b>'+(d.provider||'').slice(0,16)+'</b> '+v+'<span class="ntk-date">'+new Date(d.verified_at).toLocaleDateString('zh-CN')+'</span></span>';
+      }).join('');
+      var el=document.getElementById('ntkItems');
+      if(el&&items)el.innerHTML=items+items;
+    }catch(_){}
+  }
+  if(!PROD){dealTicker();return;}
+  try{
+    fetch('/api/news?lang=zh').then(r=>r.json()).then(function(j){
+      var its=(j&&j.items)||[];
+      if(!its.length){dealTicker();return;}
+      var items=its.map(function(n){
+        return '<span class="ntk-item"><b>['+esc(n.source||'')+']</b> '+esc(n.title||'')+'<span class="ntk-date">'+new Date(n.ts).toLocaleDateString('zh-CN')+'</span></span>';
+      }).join('');
+      var el=document.getElementById('ntkItems');
+      if(el&&items)el.innerHTML=items+items;
+    }).catch(function(){dealTicker()});
+  }catch(_){dealTicker()}
 }
 document.addEventListener('DOMContentLoaded',function(){
   var b=document.getElementById('bmBtn');if(b)b.addEventListener('click',doBookmark);
