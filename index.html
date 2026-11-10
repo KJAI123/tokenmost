@@ -159,8 +159,8 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 .chip.fm-flag{color:var(--accent);border-color:rgba(5,150,105,.4);background:rgba(5,150,105,.06);font-weight:600}
 /* ===== 工具条 ===== */
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 8px}
-.tabs{display:flex;gap:6px;flex-wrap:wrap;row-gap:6px}
-.tab{background:var(--card);border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:5px 11px;font-size:.78rem;cursor:pointer;transition:all .12s;min-height:30px;white-space:nowrap}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.tab{background:var(--card);border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:4px 6px;font-size:.75rem;cursor:pointer;transition:all .12s;min-height:28px;text-align:center;white-space:nowrap}
 .tab:hover{color:var(--text);border-color:#d0d5dd}
 .tab.active{border-color:var(--accent);color:var(--accent);background:rgba(5,150,105,.06);font-weight:600}
 #search{background:var(--card);border:1.5px solid rgba(5,150,105,.45);border-radius:999px;padding:9px 16px;color:var(--text);outline:none;font-size:.95rem;font-weight:600;width:250px;min-height:40px;box-shadow:0 2px 10px rgba(5,150,105,.15);transition:box-shadow .15s,border-color .15s}
@@ -367,7 +367,7 @@ table.price tr.tier td:first-child{padding-left:24px}
 #sharePanel .sub,#subPanel .sub,#authPanel .sub{font-size:.875rem;color:var(--muted);margin-bottom:12px}
 footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 @media(min-width:861px){#apiPanel,#calcPanel,#sumPanel,#planPanel,#sharePanel,#subPanel,#authPanel{left:calc(50% + 108px)}}
-@media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%;flex:1;min-width:0}.tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}}
+@media(max-width:640px){.toolbar{flex-direction:column;align-items:stretch}#search{width:100%;flex:1;min-width:0}.tabs{display:flex;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}}
 /* ===== 手机端专项（老板令「手机端比例失调很严重」v2.17） ===== */
 @media(max-width:860px){
   #side{display:none}
