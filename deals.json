@@ -5131,5 +5131,22 @@
   "via": "free",
   "group": "智谱 AutoClaw",
   "notes": "2026-11-11 活动页直核（autoglm.zhipuai.cn autoclaw_fission 裂变活动）| 金链接=站主专属邀请码 IC=7WHSTDYA | 与 deep-autoclaw-promos（每周登录 50M token）分列：本条=邀请裂变积分线 | 8%~12% 返佣档：100 元以下 8%、100 元及以上 12%"
+ },
+ {
+  "id": "agentrouter-signup",
+  "provider": "AgentRouter",
+  "category": "reseller",
+  "type": "signup_bonus",
+  "value": "注册送 **$100** + 首次签到 $25（首日到手 $125，经邀请链接注册再 +$50 → 首日最高 **$175**）；此后每日签到 +$25（退出重登即算一次签到）——可跑 GPT-6 代模型（gpt-5.6-sol / gpt-6-astra / gpt-6.1-sol）",
+  "region": "global",
+  "url": "https://agentrouter.org/",
+  "rule": "仅支持 GitHub 账号登录，且 GitHub 注册须早于 2025-12；站内无充值入口（纯免费）；OpenAI/Anthropic 双协议兼容，可接 Claude Code/Codex/Cherry Studio/Open WebUI（改 Base URL 即可）",
+  "verify_status": "unverified",
+  "verified_at": "2026-11-10T16:28:41Z",
+  "difficulty": 2,
+  "published": true,
+  "via": "free",
+  "group": "AgentRouter",
+  "notes": "⚠️ 2026-11-11 核验状态：官方站 WAF+滑块验证+未登录页面空壳，额度未能直核——条款来自「码上AI记」11-11 实测文章（含到账截图），TK 线登录复核后转 verified | 模型名站方自标、实际路由渠道不透明（文章原话：重要任务先拿小量试）| 免费站随时可能调整规则，及时用"
  }
 ]
