@@ -1469,7 +1469,7 @@ function doBookmark(){
 }
 window.tickerRefresh=function(){
   try{
-    if(!window.DEALS||!DEALS.length)return;
+    if(typeof DEALS==='undefined'||!DEALS.length)return;
     var tk=[...DEALS].filter(d=>d.published!==false&&d.verify_status!=='expired').sort(function(a,b){return new Date(b.verified_at)-new Date(a.verified_at)}).slice(0,6);
     var items=tk.map(function(d){
       var v=(d.value||'').replace(/<[^>]*>/g,'').slice(0,40);
