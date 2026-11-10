@@ -1,4 +1,15 @@
 ## 最新断点
+### 2026-11-11 全线状态（最新 commit b81b9a8，库 256 条 / guides 11 篇 / 公众号盯防 17 个）
+- **顶部滚播=AI 行业新闻**：后端 /api/news v0.10（RSS 30min 轮询：量子位/InfoQ/雷峰网+TechCrunch AI/Verge AI/HN，存 news 表按语言分组），前端 tickerRefresh 新闻优先、失败回退羊毛，title 走 esc 转义
+- **滚播/收藏 v2.34.x 系列**：v2.34.2 修 window.DEALS 守护（let 不挂 window）；v2.34.4 分类标签回单排紧凑（26px 高，8 chip 单排 658px）
+- **今日新增条目**：azure-free-trial（$200/30天直核）/ vultr-trial-250（$250，反爬未直核 notes 声明）/ agentscope-qwenpaw-free（Beta 工作空间+200 Credits 直核）/ autoclaw-invite-fission（老板金链接 IC=7WHSTDYA，type=coupon 金按钮+置顶组）/ agentrouter-signup（⚠️unverified：WAF+滑块过了但未登录空壳，条款来自码上AI记实测，TK 登录复核后转 verified）/ simular-box-free（verified：AI 云电脑+14天休眠删除硬规则）
+- **新攻略**：guides/cloud-mail-email（0元无限邮箱，收信免费/发信需域名，noRecipient 等四坑）
+- **信源**：码上AI记（作者 zero）已盯防——两天 4 篇硬货全部消化（VPS 指南/AgentRouter/Simular Box/cloud-mail）；免费模型日报（账号「信息技术和课程整合」）在盯防
+- **待办池**：7 个免卡小 VPS+FFxF TRY10 在 discovery-queue 待 TK 核验；Perch 不收录（付费套餐额度）；GSC/百度验证码等老板；知乎/CSDN 发文文案已备
+- **坑备忘**：微信文章抓取必须走 webReader（WebFetch 被环境验证拦）；WAF 滑块用浏览器 cua.drag 过；push 竞态标准流程=stash→pull --rebase→push→pop，deals.json 冲突语义合并（远端基+我方独有），llms/rss 产物冲突取 stash 版
+- **AgentRouter 浏览器 tab**：老板浏览器开着 agentrouter.org（已过滑块带 token），若老板注册了可让他提供控制台截图直核额度
+
+## 最新断点
 ### 2026-11-09 v2.34.0 已上线（commit 9dbe037，主域+Pages 双端已验证）
 - 顶部滚播条：📡 最新 6 条核验羊毛自动滚动（render 尾部 tickerRefresh()，hover 暂停，数据从 DEALS 实时取）
 - ⭐ 一键收藏按钮：复制网址+Ctrl+D 提示（手机走 navigator.share）；PWA 安装按钮预留（beforeinstallprompt）
