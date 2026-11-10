@@ -5114,5 +5114,22 @@
   "via": "free",
   "group": "AgentScope",
   "notes": "2026-11-11 官方页渲染直核（Beta is live / Get isolated workspace upon registration / 200 Credits）| AgentScope=阿里通义开源 Agent 框架生态（QwenPaw/ReMe，钉钉群+Discord）| 规格细节来自「码上AI记」2026 免费 VPS 指南实测"
+ },
+ {
+  "id": "autoclaw-invite-fission",
+  "provider": "智谱 AutoClaw",
+  "category": "agent",
+  "type": "coupon",
+  "value": "邀好友无上限积分风暴：新用户注册填码**最高得 4800 积分**；好友付费双方共享返积分——¥29 月卡双方各 +400、¥109 各 +2,760、¥499 各 +14,400、¥999 各 +28,800（8%~12% 比例），**购买奖励无上限**",
+  "region": "cn",
+  "url": "https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=fission&source_location=sidebar&target_app=autoclaw&target_app_version=2.3.0&os=mac&IC=7WHSTDYA",
+  "rule": "登录环节填邀请码（须 AutoClaw 桌面端完成，移动端暂不支持）；邀请者每邀 1 人注册并发起成功任务得 1000 积分（活动期上限 15 人=15000）；邀请奖励积分 7 天有效、购买奖励 30 天有效；活动下线邀请码失效",
+  "verify_status": "verified",
+  "verified_at": "2026-11-10T16:24:59Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "智谱 AutoClaw",
+  "notes": "2026-11-11 活动页直核（autoglm.zhipuai.cn autoclaw_fission 裂变活动）| 金链接=站主专属邀请码 IC=7WHSTDYA | 与 deep-autoclaw-promos（每周登录 50M token）分列：本条=邀请裂变积分线 | 8%~12% 返佣档：100 元以下 8%、100 元及以上 12%"
  }
 ]
