@@ -6,10 +6,10 @@
 - [ ] 搜狗 /link 加密跳转解析（需 SNUID cookie 方案，低优先） | — | 提升公众号文章直达率
 - [x] 「每天10亿token·含K3」聚合平台定位 ✅ 2026-11-11（AutoClaw接管轮）：定位=七牛云模型广场（qiniu-conatus-1e8 日领1亿/充值日领10亿 + qiniu-invite-3m 已在库）；新增量=Kimi K3 免费版上架 moonshotai/kimi-k3-free（1M 上下文·免费不计费，OSCHINA 10-21 三方佐证）→ ⏳主管直核官方页后建条，详见 findings/2026-11-11-qiniu-kimi-k3-free.md
 - [ ] 千问云电脑免费档官方页定位（赛博尝鲜局 11-05 文提及；11-11 已试 3 组搜索词未中官方页，Qwen Book=硬件体验官计划已排除；疑似千问 App 内嵌入口站外不可索引） | 千问 云电脑 免费 4核8G；建议走 weixin 管线搜狗主题词「千问 云电脑」 | freecloud 线核验后立条
-- [ ] 阿里云「千问AI双11」官方活动页直核（11-05 启动：Token Plan 新客首月 5 折 19.5 元起 11500 Credits/千问办公个人版首月 29.9/云服务器新客免费试用最长 12 个月/AI 体验额度超 1 亿 tokens） | 千问AI双11 官方 activity 页 | 直核后→主管建条（1111 时点，deadline 类）
+- [x] 阿里云「千问AI双11」官方活动页直核 ✅ 2026-11-11（AutoClaw接管轮）：官方页=aliyun.com/activity/hub/qianwenai1111（本机 fetch 直核在线）；页面口径：Token Plan 个人版提额 78%·新客低至 5 折（Lite 2 万 Credits/月·Essential 4.5 万 Credits/月——与 11500→提额 78%≈2 万互证，月价页面未直出）、千问办公 29.9 元起、Qoder 低至 19.9 元、新认证企业至高 2728 元 AI 礼包、150+ 模型通享节省计划新客低至 4.5 折（20/60/100 元档）、OPC 助力计划 Token 补贴 1000 元~100 万；19.5 元首月=developer.aliyun.com 文章口径待登录核；⚠️ deadline 类：活动 11-02 启动、三方称 11-11/12 截止，过期转 expired → ⏳主管建条
 - [x] 智谱实名2亿 ✅ 2026-10-28：未证实（降级）；意外收获=官方 promotion 页现已列 Weekend Build 3亿/ZCode 1亿/1024节5亿——zcode-linuxdo 可升级
 - [x] 小米 MiMo ✅ 2026-10-28：100T 免费计划已领完（5月中旬），转永久降价 99% 常态化；MiMo-2.5 低价条目候选→主管
-- [ ] 讯飞星辰 Qwen 不限量 Token 官方页 | 讯飞星辰 Qwen 不限量 2026 | 线索→主管
+- [x] 讯飞星辰 Qwen 不限量 Token 官方页 ✅ 2026-11-11（AutoClaw接管轮）：定位=maas.xfyun.cn/modelSquare 模型集市（模型提供方可筛「阿里巴巴」）；线索证实=2026-06 起多源一致（知乎/segmentfault/163/腾讯云开发者社区/einkcn 汇总）：Qwen3.6-35B-A3B+Qwen3.5-35B-A3B 0 元/百万 Token，「不限量」为社区口径、官方口径=0 元定价档无明确额度；直核受阻=模型集市 SPA 静态抓取 0 模型（价格需登录渲染）→ ⏳主管登录核 0 元档现势后建条；注意 xfyun.cn/doc/spark/TokenPlan.html=企业包月订阅另一物勿混淆
 - [x] MonkeyCode/TRAE ✅ 2026-10-28 定位完成：长亭科技 monkeycode.cn（文档/仓库已入采集器）；数额多源出入（标准1000万/日·活动期3000万·7天试用·历史促销500亿+¥200）→⏳主管按控制台口径核实；TRAE 五档 Free/$8/$20/$60/$200
 - [x] Google Antigravity ✅ 2026-10-28：免费档 250→20 RPD(-92%)、RPM 10→5；积分制（Pro 1000/月·Ultra 25000/月·不滚存）；7天锁机制；负情报，无收录价值
 - [x] 每日登录类 ✅ 2026-10-28：各平台无统一签到中心；智谱「每日一亿领取」单源线索→主管；其余=注册赠送+邀请奖励模式
@@ -26,5 +26,4 @@
 - [ ] 免卡小 VPS 批量核验（码上AI记 2026-11 VPS 指南二手）：Vyce.Cloud（英 2G 纯IPv6 GitHub登录每日续期）/ Woiden.id（德 NAT TG登录3天续）/ Openworld.eu.org（洪都拉斯 1C512M Discord 7天续）/ ASCS Cloud（加 2C2G LXC 30天）/ nat.freecloud.ltd（港德 NAT 签到）/ vipserver.cloud（洛杉矶 2C2G 独立IPv4 社区续期） | 平台名+free vps 续期规则 | freecloud 线核验后立条
 - [ ] FFxF console.ffxf.net 优惠码 TRY10=10 CAD 赠金核验（免绑卡 KVM 按量） | FFxF TRY10 promo code | freecloud 线
 - [ ] 免费域名其余渠道批量核验（码上AI记 10-31 全搜罗）：Gname eu.cc（3 张全额券 30 天过期，续费只走 gname.vip 推广页）/ eu.org（人工审核常以月计，先配 NS 再申请）/ is-a.dev+js.org（GitHub PR）/ .pp.ua（名义免费但下单须绑卡+手机激活，同号 30 天限 3 次）/ 多姿态 duozitai.cc（QQ 微信登录，仅厂商自述口径）/ KataBump kdns.fr（托管附赠，免费档 4 天续期）/ Stackryze（细节未核实，单页宣传站）| 各平台名 | freecloud 线
-- [ ] FFxF console.ffxf.net 优惠码 TRY10=10 CAD 赠金核验（免绑卡 KVM 按量） | FFxF TRY10 promo code | freecloud 线
 - [ ] CodeHost .cv 截止提醒：2026-11-17 活动截止，站内 codehost-cv-free 条目需在截止后标注（过期转 expired）| CodeHost cv deadline | freecloud 线
