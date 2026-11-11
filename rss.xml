@@ -14,6 +14,13 @@
       <description>限时活动 · 规则：每月最多邀 10 人；勘误（R7 复核）：GLM-5.3-Flash 为付费模型（0.8/2.8 元/百万），「限时免费」仅指缓存存储费（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>火山方舟：新用户每模型免费推理额度（数额以控制台「开通管理」为准），支持「安心体验模式」只耗免费额度防超支</title>
+      <link>https://www.volcengine.com/product/ark</link>
+      <guid isPermaLink="false">volc-ark-signup</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：主账号（含子账号）共享；仅抵扣按 token 后付费的在线推理（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>阿里云百炼：每模型约 100 万 tokens、90 天有效，开通即自动发放</title>
       <link>https://bailian.aliyun.com</link>
       <guid isPermaLink="false">bailian-signup</guid>
@@ -112,6 +119,13 @@
       <description>hardware_bundle · 规则：领取：活动页扫码进微信群→填申请表（附项目简要说明）→领 50 元积分；深度支持另审核（优先：产品月活 1 万+/GitHub 100 star+/单篇万阅或粉丝 1 万+，每月 200 元起持续发放）；⚠️ 赠送积分不可折现仅抵算力；平台模型 API 另有 DeepSeek V4 Flash 1/2 元低价（比官方错峰还低）（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>硅基流动：注册赠送额度（官方计费 FAQ 载 14 元，以控制台到账为准）+ 免费模型池：Embedding / OCR / 语音</title>
+      <link>https://siliconflow.cn</link>
+      <guid isPermaLink="false">siliconflow-signup</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：免费清单动态变化，以定价页为准；当前免费池不含 Qwen/DeepSeek/GLM 对话主力（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>硅基流动：「推荐官」：本人实名认证领 16 元全平台通用券</title>
       <link>https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp</link>
       <guid isPermaLink="false">siliconflow-referral</guid>
@@ -154,6 +168,13 @@
       <description>长期低价（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>Google AI Studio：Gemini API 免费层：Gemini 3.8 Flash / 3.5 Flash-Lite / 2.5 系等多款（</title>
+      <link>https://aistudio.google.com</link>
+      <guid isPermaLink="false">google-ai-studio</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>Google AI Studio：Google AI Pro 学生 12 个月免费（价值 $240</title>
       <link>https://gemini.google/students</link>
       <guid isPermaLink="false">google-student</guid>
@@ -168,6 +189,13 @@
       <description>学生通道 · 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>Azure for Students：$100 额度 / 12 个月，免信用卡、年年可续，含 Azure OpenAI 访问</title>
+      <link>https://azure.microsoft.com/en-us/free/students</link>
+      <guid isPermaLink="false">azure-student</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>学生通道（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>Groq：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日</title>
       <link>https://console.groq.com</link>
       <guid isPermaLink="false">groq-free</guid>
@@ -175,11 +203,32 @@
       <description>长期免费（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>SambaNova：免费层无需绑卡：DeepSeek-V3.1 / Llama-3.3-70B / gpt-oss-120b（20 RPM、</title>
+      <link>https://cloud.sambanova.ai</link>
+      <guid isPermaLink="false">sambanova-free</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：绑卡可升 Developer Tier（2000 万 tokens/日）（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Anthropic：Console 注册送 $5 API credits（需手机验证）</title>
+      <link>https://platform.claude.com/docs/en/about-claude/pricing</link>
+      <guid isPermaLink="false">anthropic-credits</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>智谱 ZCode：ZCode 客户端周期性送 GLM-5.3-Flash 大礼包：周末计划 3 亿、1024 节 5 亿（20 万份）</title>
       <link>https://bigmodel.cn/activity/glm-coding-1024</link>
       <guid isPermaLink="false">zcode-linuxdo</guid>
       <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
       <description>限时活动（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>火山方舟：每日单模型最高 500 万免费 tokens：官方公告确认为长期常态化政策（至少至 2027 年底）</title>
+      <link>https://www.volcengine.com/article/260593</link>
+      <guid isPermaLink="false">ark-daily-5m</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：数据授权一经提交永久不可撤回（官方文档原文）——介意数据用途的别碰（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>智谱 BigModel：8 款模型长期免费（输入输出全免）：GLM-4.7-Flash(200K)/GLM-4-Flash-250414/GLM</title>
@@ -357,6 +406,13 @@
       <description>套餐订阅 · 规则：credits→token官方未公布；模型分层：Pro含Claude Haiku/Sonnet+GPT-5.3-Codex+Gemini+Grok+Kimi，Opus/GPT-6仅Pro+/Max；Free/Student仅自动选模；教师与热门开源维护者免费Pro（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>文心快码 Comate：Auto-Free 限时不限量至 2026-12-31（多源一致）：高速层额度用完后自动切 Auto-Free 兜底不限</title>
+      <link>https://comate.baidu.com/zh/news?tab=news</link>
+      <guid isPermaLink="false">deep-comate-autofree</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：「不限量的Auto」绑定旗舰版；官方定价文档更新于2026-07-15（知乎引用）；测试版限免最高37天无需邀请码；⚠️ 2026-09报道称并入百度智能体平台DuMate，产品归属待核 · 截止 2026-12-31T23:59:59+08:00（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>Google Gemini API：Gemini API 免费层：⚠️ 官方已不再公布各模型 RPM/TPM/RPD 数字表，改为 AI Studio 内查</title>
       <link>https://ai.google.dev/gemini-api/docs/rate-limits</link>
       <guid isPermaLink="false">deep-gemini-free-tier</guid>
@@ -427,6 +483,13 @@
       <description>限时活动 · 规则：⚠️ 官方公告：首购特惠已于2026-03-17 0点起暂停、恢复刊例；但2026-10活动页仍挂「限时9.9元起」与2.5折续/升（前2月≈¥49.5）——疑普惠季重启，需登录核实；不支持退款（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>火山方舟：官方文章口径：Doubao-Seed-2.1-pro 每日500万tokens免费、每日自动申领、所有注册用户无捆绑、定</title>
+      <link>https://www.volcengine.com/article/2605938</link>
+      <guid isPermaLink="false">deep-volc-21pro-daily</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：⚠️ 与协作奖励计划文档矛盾：Seed-2.1-pro 已于2026-10-08退出每日奖励名单——「每日500万」实为协作奖励计划口径（数据授权换取），2.1-pro已出局（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>讯飞星辰 MaaS：1024 开发者节：每人免费领 10 亿 tokens（Spark-X2.6 系额度），手机号注册+实名即领，每人限 1</title>
       <link>https://maas.xfyun.cn</link>
       <guid isPermaLink="false">deep-xunfei-1024-10yi</guid>
@@ -462,6 +525,20 @@
       <description>工具接入 · 规则：官方提供 OpenClaw/Claude Code/Cursor/OpenCode 配置模板；每套餐独立 API Key，勿混用两条 Base URL（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>智谱 BigModel：周末计划 WEEKEND BUILD：每人 3 亿 GLM-5.3-Flash tokens，新老用户均可领、不要求订阅</title>
+      <link>https://zcode.z.ai</link>
+      <guid isPermaLink="false">deep-zhipu-weekend-3yi</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：入口=ZCode 桌面端 v3.10+ 左下角活动卡片；窗口约 38-61 小时（第I期周五20:00→周一9:00；第IV期周六9:00→周日23:00）；无卡片先升级客户端；新用户首次登录另送 1 亿可叠加（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：夜间 Global Build：每晚 23:00–次日 09:00 ZCode 内 GLM-5.3-Flash 消耗归零</title>
+      <link>https://post.smzdm.com/p/aqrx263p</link>
+      <guid isPermaLink="false">deep-zhipu-night-global</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：活动期 2026-09-03 至 09-20；仅付费套餐用户 · 截止 2026-09-20T09:00:00+08:00（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>智谱 BigModel：ZCode Start Plan 新用户体验包：登录 ZCode 即领数百万级 tokens</title>
       <link>https://zcode.z.ai</link>
       <guid isPermaLink="false">deep-zhipu-start-plan</guid>
@@ -488,6 +565,13 @@
       <guid isPermaLink="false">deep-zhipu-invite-tokens</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>邀请奖励 · 规则：共享 Tokens 活动每月最多邀 10 人、每月最高 2 亿 tokens；拼好模好友需 72h 内注册并订阅；每人仅一次首单立减（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：8 款模型长期免费（无截止日）：GLM-4.7-Flash(200K)/GLM-4-Flash-250414/GLM-Z</title>
+      <link>https://docs.bigmodel.cn/cn/guide/start/pricing</link>
+      <guid isPermaLink="false">deep-zhipu-free-models</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>免费模型 · 规则：免费含缓存命中；限免随时可能收回，以定价页实时状态为准（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Trae 国内版：官方五档积分制：Free ¥0=500积分/月</title>
@@ -530,6 +614,13 @@
       <guid isPermaLink="false">deep-codegeex-free</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：长期免费策略；无公开额度上限（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Fitten Code（非十科技）：个人免费（官方宣传终身免费），主打低延迟</title>
+      <link>https://code.fittentech.com</link>
+      <guid isPermaLink="false">deep-fitten-free</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：免费额度足够个人日常（第三方口径）；企业/私有化另计（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>潞晨云：官方福利四件套：首充≥10元送10元券(30天)</title>
@@ -609,6 +700,13 @@
       <description>邀请奖励 · 规则：端内邀请活动（与 bigmodel 文档侧「推荐有礼·共享Tokens」并行）；HighSpeed 为订阅用户随机体验权益；具体邀请数额以客户端活动页为准（优惠以官方页面为准）</description>
     </item>
     <item>
+      <title>智谱 BigModel：GLM Coding Plan 7 天体验卡可由老用户向好友赠送（邀请文案原文：「免费送5张GLM Coding Pla</title>
+      <link>https://t.me/s/linuxdoit/256191</link>
+      <guid isPermaLink="false">deep-zhipu-trial-card-gift-r2</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>邀请奖励 · 规则：每位订阅用户可赠送多张（示例文案5张）；被赠人无需付费；每张2000积分（官方FAQ）（优惠以官方页面为准）</description>
+    </item>
+    <item>
       <title>智谱 BigModel：⚠️ 风险警示：淘宝出现第三方「GLM-5.3 Coding Plan 月卡 ¥79.9 不限 token」代充/共享服</title>
       <link>https://docs.bigmodel.cn/cn/coding-plan/usage-notes</link>
       <guid isPermaLink="false">deep-zhipu-taobao-resale-warning</guid>
@@ -628,6 +726,13 @@
       <guid isPermaLink="false">deep-anthropic-code-limits-r4</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>套餐订阅 · 规则：绝对额度官方保密=确定性结论（第二官方页交叉）；Settings&gt;Usage 进度条为唯一官方口径（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Anthropic：口径更新：2026-10-07 起 Max 与 Team 计划包含月度 API credits，覆盖 Agent SDK</title>
+      <link>https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan</link>
+      <guid isPermaLink="false">deep-anthropic-sub-credits-r4</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>订阅赠送 · 规则：⚠️ 底册「订阅满7天可领」未获官方复现——修正为「Max/Team 现含月度 API credits（灰度）」，7天条件未证实；另有历史一次性赠礼口径 Pro $50/Max $250（第三方，低）（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>GitHub Copilot：定案：PRU（premium request units）正式废弃、旧 1x/10x 模型倍率表已从 docs 删除</title>
@@ -656,6 +761,13 @@
       <guid isPermaLink="false">deep-autoclaw-promos</guid>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description>限时活动 · 规则：国内站 autoclaw.zhipuai.cn 与国际站 autoclaw.z.ai 规则不同勿混淆；日签额当天24:00过期；官方客户端活动卡发放 · 截止 2026-11-15（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>腾讯云 TokenHub：新人包可用至 12/31 + 每模型 100 万 tokens（1年有效）+ 混元 Lite 长期免费</title>
+      <link>https://cloud.tencent.com/product/tokenhub</link>
+      <guid isPermaLink="false">deep-tencent-tokenhub</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：活动新人包以活动页为准；混元 Lite 免费为长期口径（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Qoder CN（阿里）：口径更新：CN 站每天 10:00 领 100 Credits（30天有效）</title>
@@ -705,6 +817,13 @@
       <guid isPermaLink="false">deep-kimi-k25-offline-r6</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>避雷 · 规则：开放平台现役模型：K3（旗舰）/K2.7-Code（含高速版）；K2 系（2026-05）与 kimi-latest 均已下线；⚠️ 第三方聚合（百炼/讯飞等）的 kimi-k2.5 托管快照与其开放平台下线无关（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 BigModel：ZCode 体验套餐（¥0 / 5 天免费试用，官方客户端直核）：GLM-5.3 每日 300 万 + GLM-5.3-</title>
+      <link>https://zcode.z.ai</link>
+      <guid isPermaLink="false">deep-zhipu-startplan-r6</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：5 天自激活起算；GLM-5.3-Flash 现为限免口径（定价页为准）（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>腾讯元器：【官方文档直核·口径修正】元器免费额度=每月 100 万 token（原句：「新元器提供每个月100w token的模型</title>
