@@ -13,7 +13,7 @@
 - [x] MonkeyCode/TRAE ✅ 2026-10-28 定位完成：长亭科技 monkeycode.cn（文档/仓库已入采集器）；数额多源出入（标准1000万/日·活动期3000万·7天试用·历史促销500亿+¥200）→⏳主管按控制台口径核实；TRAE 五档 Free/$8/$20/$60/$200
 - [x] Google Antigravity ✅ 2026-10-28：免费档 250→20 RPD(-92%)、RPM 10→5；积分制（Pro 1000/月·Ultra 25000/月·不滚存）；7天锁机制；负情报，无收录价值
 - [x] 每日登录类 ✅ 2026-10-28：各平台无统一签到中心；智谱「每日一亿领取」单源线索→主管；其余=注册赠送+邀请奖励模式
-- [ ] smzdm 最新 AI 免费权益聚合帖（替代每周人肉翻） | smzdm AI 免费权益 2026 | 社区→总表
+- [x] smzdm 最新 AI 免费权益聚合帖 ✅ 2026-11-12（AutoClaw接管轮）：定位两稳定产出帖——post.smzdm.com/p/awwdxlwp（11-09「每天白赚几百AI大模型免费薅羊毛」：豆包/DeepSeek/GLM/Kimi/GPT-6 Astra/Opus 5.5 渠道汇总）+ /p/arzrqn2w（10-17「全网AI产品免费权益清单」）；⚠️帖内「腾讯元器新用户直送1亿Token」与库内官方直核条目 deep-tencent-yuanqi-verified-r6（每月100万token，官方文档口径）冲突→不采信帖口径；Today AI/腾讯TokenHub 帖中线索均已在库（today-ai-free/deep-tencent-tokenhub）；smzdm 站内搜索 ajax 化反爬严，直抓入采集器前需先核 robots → 主管裁量是否列入周翻源
 - [x] v2ex 摸底 ✅ 2026-10-28：竞品站 token.pencilai.top⭐+MiMo 重置50倍修正+快手/美团线索；掘金/即刻下轮
 - [x] 学生认证补全 ✅ 2026-10-28：GitHub Copilot 学生免费 3-12 终止+Student 计划 4 月暂停——⏳主管复核主数据 github-student-pack 条目；Copilot Free 层仍有效
 - [x] OpenRouter API 快照 ✅ 2026-10-28：主会话 sources.json 已含 api/v1/models——不重复建源，闭环
@@ -24,6 +24,6 @@
 - [ ] weixin 雷达第3周查询词轮换 | — | 公众号管道
 - [x] 智谱每日一亿 ✅ 2026-10-28：入口定位=bigmodel.cn/activity/trial-card 页族（8+ 体验卡页）；数额登录核→主管
 - [ ] 免卡小 VPS 批量核验（码上AI记 2026-11 VPS 指南二手）：Vyce.Cloud（英 2G 纯IPv6 GitHub登录每日续期）/ Woiden.id（德 NAT TG登录3天续）/ Openworld.eu.org（洪都拉斯 1C512M Discord 7天续）/ ASCS Cloud（加 2C2G LXC 30天）/ nat.freecloud.ltd（港德 NAT 签到）/ vipserver.cloud（洛杉矶 2C2G 独立IPv4 社区续期） | 平台名+free vps 续期规则 | freecloud 线核验后立条
-- [ ] FFxF console.ffxf.net 优惠码 TRY10=10 CAD 赠金核验（免绑卡 KVM 按量） | FFxF TRY10 promo code | freecloud 线
+- [x] FFxF console.ffxf.net 优惠码 TRY10=10 CAD 赠金核验 ✅ 2026-11-12（AutoClaw接管轮）：官方自证=ffxf.net/blog/newsletter-october-2026.html（2026-10-05 月刊原文「10 CAD of free credit with code TRY10，long-time customer or brand new 均可」）——代码存在性与新老客户适用官方确认；10-05 月刊距今 5 周，当前时效建议 console 实测下单页确认后立条 → freecloud 线
 - [ ] 免费域名其余渠道批量核验（码上AI记 10-31 全搜罗）：Gname eu.cc（3 张全额券 30 天过期，续费只走 gname.vip 推广页）/ eu.org（人工审核常以月计，先配 NS 再申请）/ is-a.dev+js.org（GitHub PR）/ .pp.ua（名义免费但下单须绑卡+手机激活，同号 30 天限 3 次）/ 多姿态 duozitai.cc（QQ 微信登录，仅厂商自述口径）/ KataBump kdns.fr（托管附赠，免费档 4 天续期）/ Stackryze（细节未核实，单页宣传站）| 各平台名 | freecloud 线
 - [ ] CodeHost .cv 截止提醒：2026-11-17 活动截止，站内 codehost-cv-free 条目需在截止后标注（过期转 expired）| CodeHost cv deadline | freecloud 线
