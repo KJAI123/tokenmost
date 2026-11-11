@@ -168,3 +168,11 @@
 - 📰 标题雷达 [大模型 限免] 小米神秘大模型MiMo-V2限时免费,性能比肩Claude
 - 📰 标题雷达 [大模型 限免] 小米大模型 MiMo-V2 再限免 1 周:为 OpenClaw 用户续命
 - 📰 标题雷达 [大模型 限免] MiMo-V2-Pro限免两周!小米大模型全球霸榜,开发者白嫖机会别错过
+
+## 2026-11-11 17:13 UTC（轮 61，查询：注册送 tokens）
+- 🆕 公众号新文 [?] Today AI:新用户注册送 3 亿 Tokens + 3 个月 Pro → https://mp.weixin.qq.com/s?src=11&timestamp=1794417173&ver=7
+- 📰 标题雷达 [注册送 tokens] 智谱新人注册送得2000万Tokens,有羊毛你得薅啊!附workbuddy配置流程
+
+## 2026-11-11 17:13 UTC（轮 61，查询：注册送 tokens）
+- 🆕 公众号新文 [?] Today AI:新用户注册送 3 亿 Tokens + 3 个月 Pro → https://mp.weixin.qq.com/s?src=11&timestamp=1794417174&ver=7
+- 📰 标题雷达 [注册送 tokens] 智谱新人注册送得2000万Tokens,有羊毛你得薅啊!附workbuddy配置流程

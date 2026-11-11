@@ -32,6 +32,8 @@ for d in deals:
     # type/via 为自由标识符（主管产线可扩展），只校验格式
     if not re.match(r"^[a-z_]{2,30}$", str(d.get("type", ""))): errors.append(f"{d['id']} type 格式非法: {d['type']}")
     if d.get("via") and not re.match(r"^[a-z_]{2,30}$", str(d["via"])): errors.append(f"{d['id']} via 格式非法: {d['via']}")
+    if d.get("api_via") and str(d["api_via"]) not in ("api","client_only","agent_tool","gateway","unknown"):
+        errors.append(f"{d['id']} api_via 非法: {d['api_via']} (允许: api/client_only/agent_tool/gateway/unknown)")
     if not re.match(r"^https?://", d.get("url", "")): errors.append(f"{d['id']} url 非 http(s): {d['url']}")
     if d.get("coupon") and not d.get("published", True) and not d.get("placeholder"):
         warns.append(f"{d['id']} 有 coupon 且未发布但无 placeholder 标记")

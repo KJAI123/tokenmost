@@ -17,7 +17,8 @@
   "tokens_wan": 4500,
   "via": "invite",
   "group": "智谱 BigModel",
-  "stale_reason": "源 zhipu-promotion 页面于 2026-11-11 变更（连续 2 次观测一致）"
+  "stale_reason": "源 zhipu-promotion 页面于 2026-11-11 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "volc-ark-signup",
@@ -35,7 +36,8 @@
   "notes": "💡 另有协作奖励计划每日 50 万/模型；编程模型每日 500 万见独立条目",
   "verify_by": "auto",
   "group": "字节跳动",
-  "stale_reason": "源 ark-freequota 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)"
+  "stale_reason": "源 ark-freequota 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)",
+  "api_via": "api"
  },
  {
   "id": "bailian-signup",
@@ -54,7 +56,8 @@
   "tokens_wan": 1000,
   "via": "register",
   "group": "阿里云",
-  "stale_reason": "源 bailian-quota 页面于 2026-11-05 变更（连续 2 次观测一致）"
+  "stale_reason": "源 bailian-quota 页面于 2026-11-05 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "deepseek-price",
@@ -72,7 +75,8 @@
   "verify_by": "auto",
   "group": "DeepSeek",
   "stale_reason": "源 deepseek-pricing 页面于 2026-11-05 变更（连续 2 次观测一致）",
-  "notes": " | 2026-10-31 官方定价页直核恢复（URL 迁移 /quick_price.html→/quick_start/pricing，IAB 实测旧页 404）；⚠️ 同页官宣 Search/Fetch API 2026-11-01 起按次收费 5 元/千次——deepseek-searchfree 条目已按过期清洗删除"
+  "notes": " | 2026-10-31 官方定价页直核恢复（URL 迁移 /quick_price.html→/quick_start/pricing，IAB 实测旧页 404）；⚠️ 同页官宣 Search/Fetch API 2026-11-01 起按次收费 5 元/千次——deepseek-searchfree 条目已按过期清洗删除",
+  "api_via": "unknown"
  },
  {
   "id": "deepseek-offpeak",
@@ -92,7 +96,8 @@
   "eq_wan": 5000,
   "eq_note": "空闲5折=同等预算多薅1倍；按月1亿用量基准省出5千万当量(口径展示)",
   "stale_reason": "源 deepseek-pricing 页面于 2026-11-05 变更（连续 2 次观测一致）",
-  "notes": " | 2026-10-31 直核：空闲=高峰半价规则原文未变（高峰=周一至五 9-12/14-18，其余含周末节假日全天空闲）"
+  "notes": " | 2026-10-31 直核：空闲=高峰半价规则原文未变（高峰=周一至五 9-12/14-18，其余含周末节假日全天空闲）",
+  "api_via": "unknown"
  },
  {
   "id": "kimi-voucher",
@@ -114,7 +119,8 @@
   "group": "Kimi（月之暗面）",
   "eq_wan": 600,
   "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）",
-  "stale_reason": "源 kimi-trial 页面于 2026-11-08 变更（连续 2 次观测一致）"
+  "stale_reason": "源 kimi-trial 页面于 2026-11-08 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "kimi-k2-deadline",
@@ -131,7 +137,8 @@
   "published": false,
   "verify_by": "auto",
   "group": "Kimi（月之暗面）",
-  "stale_reason": "截止 2026-10-31 已过（2026-11-01 自动标失效）"
+  "stale_reason": "截止 2026-10-31 已过（2026-11-01 自动标失效）",
+  "api_via": "api"
  },
  {
   "id": "qianfan-signup",
@@ -151,7 +158,8 @@
   "via": "register",
   "group": "百度",
   "notes": "TK 10-29：千帆模型清单已进入文心 5.1/DeepSeek-V4/GLM-5 时代（新户额度随清单更新）",
-  "stale_reason": "源 qianfan-quota 页面于 2026-11-07 变更（连续 2 次观测一致）"
+  "stale_reason": "源 qianfan-quota 页面于 2026-11-07 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "xinghuo-signup",
@@ -170,7 +178,8 @@
   "group": "讯飞",
   "daily_wan": 1000,
   "daily_note": "长期免费层月当量 30000 万 ÷30 折日均（每天可薅）；Spark Lite 长期免费+新用户礼包；按讯飞波谷价折算保守3亿/月当量(估算)",
-  "stale_reason": "源 xfyun-spark-docs 页面于 2026-11-09 变更（连续 2 次观测一致）"
+  "stale_reason": "源 xfyun-spark-docs 页面于 2026-11-09 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "tencenthub-signup",
@@ -188,7 +197,8 @@
   "verify_by": "auto",
   "tokens_wan": 500,
   "via": "register",
-  "group": "腾讯"
+  "group": "腾讯",
+  "api_via": "api"
  },
  {
   "id": "minimax-m3-half",
@@ -207,7 +217,8 @@
   "group": "MiniMax 开放平台",
   "eq_wan": 5000,
   "eq_note": "永久五折=多薅1倍；按月1亿用量省5千万当量(口径展示)",
-  "stale_reason": "源 minimax-pricing 页面于 2026-11-06 变更（连续 2 次观测一致）"
+  "stale_reason": "源 minimax-pricing 页面于 2026-11-06 变更（连续 2 次观测一致）",
+  "api_via": "unknown"
  },
  {
   "id": "coze-free",
@@ -225,7 +236,8 @@
   "verify_by": "auto",
   "group": "字节跳动",
   "stale_reason": "源 coze-edition 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
-  "notes": "TK 巡检确认：旧版 500 点/天口径已过时，本条 10-26 实测口径为权威"
+  "notes": "TK 巡检确认：旧版 500 点/天口径已过时，本条 10-26 实测口径为权威",
+  "api_via": "api"
  },
  {
   "id": "dify-selfhost",
@@ -243,7 +255,8 @@
   "verify_by": "auto",
   "group": "Dify 自部署",
   "notes": "复核(03:52):官网实锤 Community Edition 开源自部署 Docker 仍在,页面改版误伤已恢复；自部署工具不折 token（上限=所接 Key 额度，不进总账）",
-  "stale_reason": "源 dify-pricing 页面于 2026-11-05 变更（连续 2 次观测一致）"
+  "stale_reason": "源 dify-pricing 页面于 2026-11-05 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "modelscope-free-infer",
@@ -262,7 +275,8 @@
   "verify_by": "auto",
   "daily_wan": 800,
   "daily_note": "2000 次/天 × ~4K tok/次 ≈800 万/天（估算）+200 魔粒/天",
-  "group": "阿里云"
+  "group": "阿里云",
+  "api_via": "api"
  },
  {
   "id": "scnet-coupon",
@@ -283,7 +297,8 @@
   "via": "register",
   "notes": "💡 官方活动中心核实；付费套餐（0.1 元档等）已按站规移出免费视野，见付费区",
   "group": "SCNet",
-  "stale_reason": "截止 2026-11-10 已过（2026-11-11 自动标失效）"
+  "stale_reason": "截止 2026-11-10 已过（2026-11-11 自动标失效）",
+  "api_via": "unknown"
  },
  {
   "id": "autodl-student",
@@ -300,7 +315,8 @@
   "published": true,
   "verify_by": "auto",
   "group": "AutoDL",
-  "notes": "；GPU 算力非 token 不折对标"
+  "notes": "；GPU 算力非 token 不折对标",
+  "api_via": "unknown"
  },
  {
   "id": "gpushare-invite",
@@ -319,7 +335,8 @@
   "via": "invite",
   "group": "恒源云",
   "eq_wan": 400,
-  "eq_note": "¥10 券/额度 ×40 万 tok/元 ≈ 400 万当量（全站统一折算口径）"
+  "eq_note": "¥10 券/额度 ×40 万 tok/元 ≈ 400 万当量（全站统一折算口径）",
+  "api_via": "unknown"
  },
  {
   "id": "gongji-subsidy",
@@ -337,7 +354,8 @@
   "group": "共绩算力",
   "via": "free",
   "rule": "领取：活动页扫码进微信群→填申请表（附项目简要说明）→领 50 元积分；深度支持另审核（优先：产品月活 1 万+/GitHub 100 star+/单篇万阅或粉丝 1 万+，每月 200 元起持续发放）；⚠️ 赠送积分不可折现仅抵算力；平台模型 API 另有 DeepSeek V4 Flash 1/2 元低价（比官方错峰还低）",
-  "cny": 50
+  "cny": 50,
+  "api_via": "unknown"
  },
  {
   "id": "siliconflow-signup",
@@ -361,7 +379,8 @@
   "group": "硅基流动",
   "stale_reason": "源 siliconflow-billing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
   "eq_wan": 560,
-  "eq_note": "¥14 券/额度 ×40 万 tok/元 ≈ 560 万当量（全站统一折算口径）"
+  "eq_note": "¥14 券/额度 ×40 万 tok/元 ≈ 560 万当量（全站统一折算口径）",
+  "api_via": "api"
  },
  {
   "id": "siliconflow-referral",
@@ -381,7 +400,8 @@
   "via": "register",
   "group": "硅基流动",
   "eq_wan": 640,
-  "eq_note": "¥16 券/额度 ×40 万 tok/元 ≈ 640 万当量（全站统一折算口径）"
+  "eq_note": "¥16 券/额度 ×40 万 tok/元 ≈ 640 万当量（全站统一折算口径）",
+  "api_via": "api"
  },
  {
   "id": "openrouter-free",
@@ -497,7 +517,8 @@
     "ctx": "262K",
     "note": ""
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "nvidia-nim",
@@ -515,7 +536,8 @@
   "verify_by": "auto",
   "group": "NVIDIA NIM",
   "notes": "复核(04:41):「一年免费不限总量」社区流传官方未确认——credits 试用性质(1000-5000 封顶)，免费速率默认较低可申请提至 200RPM | 2026-10-30 复核复活：NVIDIA 开发者论坛+搜索互证「注册 1000/上限 5000 credits」口径未变——10-28 降级系 build.nvidia.com 页面改版误伤（非政策变化），stale_reason 清除",
-  "stale_reason": "源 nvidia-build 页面于 2026-11-10 变更（连续 2 次观测一致）"
+  "stale_reason": "源 nvidia-build 页面于 2026-11-10 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "ohmygpt-referral",
@@ -535,7 +557,8 @@
   "group": "OhMyGPT",
   "eq_wan": 6000,
   "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）",
-  "stale_reason": "源 ohmygpt-pricing 页面于 2026-11-08 变更（连续 2 次观测一致）"
+  "stale_reason": "源 ohmygpt-pricing 页面于 2026-11-08 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "aihubmix-free",
@@ -552,7 +575,8 @@
   "verify_by": "auto",
   "group": "AIHubMix",
   "daily_wan": 167,
-  "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)"
+  "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)",
+  "api_via": "api"
  },
  {
   "id": "dmxapi-discount",
@@ -569,7 +593,8 @@
   "verify_by": "auto",
   "group": "DMXAPI",
   "eq_wan": 3000,
-  "eq_note": "官方价7折=多薅43%；按月1亿用量省3千万当量(口径展示)"
+  "eq_note": "官方价7折=多薅43%；按月1亿用量省3千万当量(口径展示)",
+  "api_via": "unknown"
  },
  {
   "id": "google-ai-studio",
@@ -586,7 +611,8 @@
   "notes": "💡 辟谣：Google Cloud $300 试用金不能用于 Gemini API / Vertex 生成式模型（官方文档 2026-10-22），别被教程带偏；📈 免费档持续收紧（2025-12 曾 250→约 20 RPD），限额以 AI Studio 内实时显示为准；⚠️ Gemini CLI 已于 2026-06-18 被 Antigravity CLI 取代并停免费层（官方博客直核），免费 1000/天说法已过时",
   "verify_by": "auto",
   "group": "Google",
-  "stale_reason": "源 gemini-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(07:22)"
+  "stale_reason": "源 gemini-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(07:22)",
+  "api_via": "api"
  },
  {
   "id": "google-student",
@@ -608,7 +634,8 @@
   "group": "Google",
   "eq_wan": 72000,
   "eq_note": "$240 credits ×300 万 tok/$ ≈ 72000 万当量（$1≈300万口径）",
-  "stale_reason": "源 gemini-students 页面于 2026-11-10 变更（连续 2 次观测一致）"
+  "stale_reason": "源 gemini-students 页面于 2026-11-10 变更（连续 2 次观测一致）",
+  "api_via": "unknown"
  },
  {
   "id": "github-student-pack",
@@ -627,7 +654,8 @@
   "group": "GitHub",
   "notes": "复核(05:2x):GitHub Community #197753 确认暂停新注册——学生总账中 Copilot 部分新用户暂不可领",
   "tokens_wan": 30000,
-  "eq_note": "Azure $100/年+Copilot Free；$100×300万tok/$≈3亿 tokens/年一次性（$1≈300万排序口径）"
+  "eq_note": "Azure $100/年+Copilot Free；$100×300万tok/$≈3亿 tokens/年一次性（$1≈300万排序口径）",
+  "api_via": "unknown"
  },
  {
   "id": "azure-student",
@@ -647,7 +675,8 @@
   "group": "Azure for Students",
   "stale_reason": "源 azure-students 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
   "eq_wan": 30000,
-  "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）"
+  "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）",
+  "api_via": "unknown"
  },
  {
   "id": "groq-free",
@@ -665,7 +694,8 @@
   "verify_by": "auto",
   "daily_wan": 400,
   "daily_note": "1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）",
-  "group": "Groq"
+  "group": "Groq",
+  "api_via": "api"
  },
  {
   "id": "sambanova-free",
@@ -684,7 +714,8 @@
   "daily_wan": 20,
   "daily_note": "官方 TPD 20 万 tokens 硬顶",
   "group": "SambaNova",
-  "stale_reason": "源 sambanova-limits 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(07:22)"
+  "stale_reason": "源 sambanova-limits 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(07:22)",
+  "api_via": "api"
  },
  {
   "id": "anthropic-credits",
@@ -704,7 +735,8 @@
   "stale_reason": "源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）清洗机制:stale不宜挂主板块",
   "group": "Anthropic",
   "eq_wan": 1500,
-  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）",
+  "api_via": "api"
  },
  {
   "id": "zcode-linuxdo",
@@ -721,7 +753,8 @@
   "notes": "⚠️ 主管深挖核实：1024 轮已于 10-26 09:00 失效、周末计划暂无新一轮——周期性活动（约每月 1-2 轮，下一节点预测 1111），盯 ZCode 客户端活动卡片；多号玩法拒绝收录；10-29 二次恢复：历史事件条目由 deep-zhipu-* 承载，恢复为 info 参考（bot 旧基线回滚所致，非权益消失）",
   "group": "ZCode",
   "verify_by": "auto",
-  "stale_reason": "源 zcode-changelog 页面于 2026-11-04 变更（连续 2 次观测一致）"
+  "stale_reason": "源 zcode-changelog 页面于 2026-11-04 变更（连续 2 次观测一致）",
+  "api_via": "client_only"
  },
  {
   "id": "aliyun-100coupon",
@@ -736,7 +769,8 @@
   "difficulty": 2,
   "published": false,
   "notes": "TODO：登录确认适用范围与有效期",
-  "group": "阿里云"
+  "group": "阿里云",
+  "api_via": "api"
  },
  {
   "id": "ark-daily-5m",
@@ -756,7 +790,8 @@
   "daily_wan": 500,
   "daily_note": "官方口径：单模型每日 500 万 tokens",
   "group": "字节跳动",
-  "stale_reason": "源 ark-collab 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)"
+  "stale_reason": "源 ark-collab 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52)",
+  "api_via": "api"
  },
  {
   "id": "zhipu-flash-free",
@@ -775,7 +810,8 @@
   "group": "智谱 BigModel",
   "daily_wan": 6667,
   "daily_note": "长期免费层月当量 200000 万 ÷30 折日均（每天可薅）；GLM-4.7-Flash 长期免费无硬上限；按Flash牌价0.8/2.8加权1.3元/百万、参考每日500万 Fla",
-  "stale_reason": "源 bigmodel-pricing 页面于 2026-10-31 变更（连续 2 次观测一致）"
+  "stale_reason": "源 bigmodel-pricing 页面于 2026-10-31 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "deepseek-cache",
@@ -792,7 +828,8 @@
   "group": "DeepSeek",
   "eq_wan": 4000,
   "eq_note": "缓存命中输入0.04元=原价1/50；按长会话场景月省4千万当量(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "kimi-filefree",
@@ -809,7 +846,8 @@
   "group": "Kimi（月之暗面）",
   "eq_wan": 500,
   "eq_note": "文件解析接口限时免费；折月500万当量(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "minimax-mplan",
@@ -826,7 +864,8 @@
   "group": "MiniMax 开放平台",
   "eq_wan": 2000,
   "eq_note": "M Plan首月五折省一半月费；折2千万当量(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "siliconflow-freemodels",
@@ -845,7 +884,8 @@
   "group": "硅基流动",
   "daily_wan": 100,
   "daily_note": "长期免费层月当量 3000 万 ÷30 折日均（每天可薅）；向量/语音/OCR/Kolors生图免费；按调用量折月3000万当量(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "scnet-maas",
@@ -863,7 +903,8 @@
   "group": "SCNet",
   "eq_wan": 8000,
   "eq_note": "旗舰套餐0.1元起=1元抵百万级；按月8千万当量(口径展示)",
-  "stale_reason": "截止 2026-11-10 已过（2026-11-11 自动标失效）"
+  "stale_reason": "截止 2026-11-10 已过（2026-11-11 自动标失效）",
+  "api_via": "unknown"
  },
  {
   "id": "gpushare-nov",
@@ -880,7 +921,8 @@
   "published": true,
   "group": "恒源云",
   "tokens_wan": 50,
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "fastgpt-free",
@@ -898,7 +940,8 @@
   "group": "FastGPT",
   "daily_wan": 7,
   "daily_note": "长期免费层月当量 200 万 ÷30 折日均（每天可薅）；商业版免费档100 AI Credits；按1 credit≈0.01元×40万tok/元折算月200万级(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "n8n-selfhost",
@@ -914,7 +957,8 @@
   "difficulty": 2,
   "published": false,
   "group": "n8n",
-  "notes": "自部署工具不折 token（上限=所接 Key 额度，不进总账）；2026-10-29 老板指令下架"
+  "notes": "自部署工具不折 token（上限=所接 Key 额度，不进总账）；2026-10-29 老板指令下架",
+  "api_via": "api"
  },
  {
   "id": "github-copilot-free",
@@ -934,7 +978,8 @@
   "daily_note": "月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）",
   "group": "GitHub",
   "notes": "复核(03:40):官方页实锤 Free 档仍在(2000 补全/月),URL 迁移致降级,已修正",
-  "stale_reason": "源 copilot-plans 页面于 2026-11-11 变更（连续 2 次观测一致）"
+  "stale_reason": "源 copilot-plans 页面于 2026-11-11 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "302ai-payg",
@@ -951,7 +996,8 @@
   "group": "302.AI",
   "eq_wan": 1000,
   "eq_note": "0月费纯按量=无浪费；折1千万当量基准(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "ohmygpt-glmfree",
@@ -969,7 +1015,8 @@
   "group": "OhMyGPT",
   "daily_wan": 500,
   "daily_note": "长期免费层月当量 15000 万 ÷30 折日均（每天可薅）；$0标价模型转发；按GLM-4.7-Flash口径月1.5亿保守(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "mistral-free",
@@ -987,7 +1034,8 @@
   "group": "Mistral",
   "daily_wan": 333,
   "daily_note": "长期免费层月当量 10000 万 ÷30 折日均（每天可薅）；免费档月内含用量；第三方参考10亿tokens/月口径×保守折扣=1亿(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "cohere-trial",
@@ -1006,7 +1054,8 @@
   "daily_wan": 13,
   "daily_note": "1000 次/月 ÷30 ×~4K tok/次 ≈13 万/天（估算）",
   "group": "Cohere",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "cerebras-credits",
@@ -1027,7 +1076,8 @@
   "group": "Cerebras",
   "eq_wan": 1500,
   "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "kimi-cache",
@@ -1044,7 +1094,8 @@
   "group": "Kimi（月之暗面）",
   "eq_wan": 3000,
   "eq_note": "缓存命中$0.30=原价1/10；按长文档场景月省3千万当量(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "openrouter-boost",
@@ -1061,7 +1112,8 @@
   "group": "OpenRouter",
   "eq_wan": 12000,
   "eq_note": "充$10解锁日限50→1000次/天×4K×30≈月1.2亿当量(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "sensenova-lite",
@@ -1080,7 +1132,8 @@
   "daily_calls": 7200,
   "daily_wan": 1440,
   "daily_note": "积分池翻倍后 12万/5h×4.8≈57.6万积分/天，按 1 元=5000 积分折 ≈115 元/天≈4600万 tok 当量——保守取 1440 万/天（此前口径 720 万）",
-  "group": "商汤"
+  "group": "商汤",
+  "api_via": "api"
  },
  {
   "id": "xfyun-offpeak",
@@ -1099,7 +1152,8 @@
   "group": "讯飞",
   "eq_wan": 2000,
   "eq_note": "波谷0.8系数=省20%；按月1亿用量省2千万当量(口径展示)",
-  "stale_reason": "源 xfyun-coding-plan 页面于 2026-11-09 变更（连续 2 次观测一致）"
+  "stale_reason": "源 xfyun-coding-plan 页面于 2026-11-09 变更（连续 2 次观测一致）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-bailian-newuser-quota",
@@ -1118,7 +1172,8 @@
   "via": "register",
   "notes": "官方帮助文档逐字（高）；70+模型合计7000万+口径由价格页模型清单支撑（中高）",
   "group": "阿里云",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-bailian-quota-detail",
@@ -1135,7 +1190,8 @@
   "published": false,
   "via": "register",
   "notes": "官方价格页逐字（高）；async向量2000万是额度最大的单项；明细子条（总量已计入 bailian-signup），归档防双计",
-  "group": "阿里云"
+  "group": "阿里云",
+  "api_via": "api"
  },
  {
   "id": "deep-bailian-limited-free",
@@ -1155,7 +1211,8 @@
   "group": "阿里云",
   "daily_wan": 333,
   "daily_note": "长期免费层月当量 10000 万 ÷30 折日均（每天可薅）；限时免费模型(decision-preview/R1蒸馏等)；按开放期月1千万当量保守(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-bailian-pricing",
@@ -1173,7 +1230,8 @@
   "via": "api",
   "notes": "官方价格页逐字（高）",
   "group": "阿里云",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-kimi-membership",
@@ -1194,7 +1252,8 @@
   "group": "Kimi（月之暗面）",
   "eq_wan": 600,
   "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-minimax-mplan",
@@ -1214,7 +1273,8 @@
   "notes": "官方页仅补充包价格（高）；人民币档位与71亿token口径=GitHub yacuo/ai-coding-plan（中）；Starter¥29首促未见官方原文；10-29 二次恢复：M Plan 首月五折长期（bot 旧基线回滚所致，非权益消失）",
   "group": "MiniMax",
   "eq_wan": 1500,
-  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-claude-pro-max",
@@ -1235,7 +1295,8 @@
   "group": "Anthropic",
   "eq_wan": 6000,
   "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-copilot-ai-credits",
@@ -1257,7 +1318,8 @@
   "group": "GitHub",
   "eq_wan": 4500,
   "eq_note": "$15 credits ×300 万 tok/$ ≈ 4500 万当量（$1≈300万口径）",
-  "stale_reason": "源 copilot-plans 页面于 2026-11-11 变更（连续 2 次观测一致）"
+  "stale_reason": "源 copilot-plans 页面于 2026-11-11 变更（连续 2 次观测一致）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-comate-autofree",
@@ -1275,7 +1337,8 @@
   "published": false,
   "via": "install",
   "notes": "多第三方交叉（掘金/知乎/腾讯云，中）；官方页price 404需JS，官方原文未直核——published=false待人工核后可发布",
-  "group": "百度"
+  "group": "百度",
+  "api_via": "api"
  },
  {
   "id": "deep-gemini-free-tier",
@@ -1295,7 +1358,8 @@
   "group": "Google",
   "daily_wan": 167,
   "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；免费层数字已不公开；历史口径~20RPD×4K×30≈月500万保守(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-anthropic-trial-5usd",
@@ -1315,7 +1379,8 @@
   "notes": "多第三方交叉（pricepertoken/getaiperks 2026-04 vs Reddit/klymentiev 报告不一致，中）",
   "group": "Anthropic",
   "eq_wan": 1500,
-  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）"
+  "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）",
+  "api_via": "api"
  },
  {
   "id": "deep-anthropic-startup",
@@ -1335,7 +1400,8 @@
   "notes": "搜索摘要口径（中高）；资格门槛高、非个人羊毛",
   "group": "Anthropic",
   "eq_wan": 300000,
-  "eq_note": "$1000 credits ×300 万 tok/$ ≈ 300000 万当量（$1≈300万口径）"
+  "eq_note": "$1000 credits ×300 万 tok/$ ≈ 300000 万当量（$1≈300万口径）",
+  "api_via": "api"
  },
  {
   "id": "deep-anthropic-sub-credits",
@@ -1352,7 +1418,8 @@
   "published": false,
   "via": "subscribe",
   "notes": "搜索两源印证（中）；⚠️ R4 复核：『满 7 天』条款未获官方证实——Max/Team 含月度 API credits（10-07 起，灰度）为现行口径",
-  "group": "Anthropic"
+  "group": "Anthropic",
+  "api_via": "api"
  },
  {
   "id": "deep-cerebras-free-trial",
@@ -1373,7 +1440,8 @@
   "group": "Cerebras",
   "eq_wan": 1500,
   "eq_note": "$5 credits ×300 万 tok/$ ≈ 1500 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-scnet-ycjh-100cardhours",
@@ -1392,7 +1460,8 @@
   "via": "register",
   "notes": "官方活动页+官方邀测文档 help/docs/mainsite/activity/invite/quick-test（高）；活动页JS渲染需登录看余量",
   "group": "SCNet",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-scnet-openclaw-10m",
@@ -1411,7 +1480,8 @@
   "tokens_wan": 1000,
   "via": "client",
   "notes": "来源=OSCHINA/东方财富报道（中高）；活动窗口已过但 openclaw 入口页仍在（当前可领性需登录核实）；0.1元/百万续购价为官宣口径（中高）；10-29 二次恢复：SCNet OpenClaw 1000 万活动（bot 旧基线回滚所致，非权益消失）",
-  "group": "SCNet"
+  "group": "SCNet",
+  "api_via": "unknown"
  },
  {
   "id": "deep-scnet-30m-promo",
@@ -1430,7 +1500,8 @@
   "tokens_wan": 3000,
   "via": "register",
   "notes": "存档用于节奏预测；来源腾讯云开发者教程（中）",
-  "group": "SCNet"
+  "group": "SCNet",
+  "api_via": "unknown"
  },
  {
   "id": "deep-scnet-token-plan",
@@ -1451,7 +1522,8 @@
   "group": "SCNet",
   "eq_wan": 1200,
   "eq_note": "¥30 券/额度 ×40 万 tok/元 ≈ 1200 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "client_only"
  },
  {
   "id": "deep-scnet-deepseek-price",
@@ -1471,7 +1543,8 @@
   "notes": "官方文档示例推算（高）+官宣续购价（中高）；免费对话=官方快速开始文档（中高）；10-29 二次恢复：SCNet DeepSeek 价格锚（bot 旧基线回滚所致，非权益消失）",
   "group": "SCNet",
   "eq_wan": 4,
-  "eq_note": "¥0.1 券/额度 ×40 万 tok/元 ≈ 4 万当量（全站统一折算口径）"
+  "eq_note": "¥0.1 券/额度 ×40 万 tok/元 ≈ 4 万当量（全站统一折算口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-volc-collab-reward",
@@ -1490,7 +1563,8 @@
   "via": "none",
   "notes": "官方文档2026-10-12更新（高）。每日500万=每日奖励包上限，非无条件赠送；活动期原至2026-09-30（文档仍挂，疑已续期）；抵扣优先级：免费额度包>协作奖励包",
   "group": "字节跳动",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "client_only"
  },
  {
   "id": "deep-volc-free-quota",
@@ -1509,7 +1583,8 @@
   "via": "register",
   "notes": "官方文档2026-08-24更新（高）；50万为aipromonow/linux.do交叉口径（中）",
   "group": "字节跳动",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-volc-coding-plan",
@@ -1530,7 +1605,8 @@
   "group": "字节跳动",
   "eq_wan": 1600,
   "eq_note": "¥40 券/额度 ×40 万 tok/元 ≈ 1600 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "client_only"
  },
  {
   "id": "deep-volc-coding-promo",
@@ -1552,7 +1628,8 @@
   "eq_wan": 396,
   "eq_note": "¥9.9 券/额度 ×40 万 tok/元 ≈ 396 万当量（全站统一折算口径）",
   "verify_by": "auto",
-  "stale_reason": "源 volc-ai618 页面于 2026-11-06 变更（连续 2 次观测一致）"
+  "stale_reason": "源 volc-ai618 页面于 2026-11-06 变更（连续 2 次观测一致）",
+  "api_via": "api"
  },
  {
   "id": "deep-volc-21pro-daily",
@@ -1570,7 +1647,8 @@
   "tokens_wan": 500,
   "via": "none",
   "notes": "来源为官方域名文章（软文性质，中）；矛盾两口径均存档，合并时以控制台实时为准",
-  "group": "字节跳动"
+  "group": "字节跳动",
+  "api_via": "api"
  },
  {
   "id": "deep-xunfei-1024-10yi",
@@ -1589,7 +1667,8 @@
   "tokens_wan": 100000,
   "via": "register",
   "notes": "31天倒计时推定截止≈11-24。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + X实测帖（数额/步骤多源一致=中高）；官方页面 JS 渲染未能直核（需登录）；31天规则与官方 Token Plan 文档一致（高）；10-29 二次恢复：讯飞 1024 十亿活动（10-27 确认在线）（bot 旧基线回滚所致，非权益消失）",
-  "group": "讯飞"
+  "group": "讯飞",
+  "api_via": "api"
  },
  {
   "id": "deep-xunfei-token-plan",
@@ -1610,7 +1689,8 @@
   "group": "讯飞",
   "eq_wan": 8000,
   "eq_note": "¥200 券/额度 ×40 万 tok/元 ≈ 8000 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-xunfei-coding-plan",
@@ -1632,7 +1712,8 @@
   "group": "讯飞",
   "eq_wan": 7960,
   "eq_note": "¥199 券/额度 ×40 万 tok/元 ≈ 7960 万当量（全站统一折算口径）",
-  "stale_reason": "源 xfyun-coding-plan 页面于 2026-11-09 变更（连续 2 次观测一致）"
+  "stale_reason": "源 xfyun-coding-plan 页面于 2026-11-09 变更（连续 2 次观测一致）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-xunfei-39-crash",
@@ -1650,7 +1731,8 @@
   "via": "subscribe",
   "notes": "风险情报（中-高，smzdm复盘+新浪/知乎报道交叉；官方公告原文缺失）。收录纪律：¥3.9历史价只可作避雷存档，不得作为可领取羊毛收录；订阅类建议按月勿囤年卡",
   "group": "讯飞",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-xunfei-claude-code",
@@ -1670,7 +1752,8 @@
   "group": "讯飞",
   "eq_wan": 20000,
   "eq_note": "免费额度接Claude Code；额度本体在讯飞星辰条目,工具接入折月2千万当量(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-1024-5yi",
@@ -1689,7 +1772,8 @@
   "tokens_wan": 50000,
   "via": "client",
   "notes": "已失效（存档用于预测下一轮节奏：智谱大礼包≈每月1-2轮，下一节点1111）。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + smzdm post.smzdm.com/p/ak8lw7xk + 官方活动页存在（JS）。20万份为搜索摘要数字（中）；数额/截止时间多源一致（高）",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-weekend-3yi",
@@ -1707,7 +1791,8 @@
   "tokens_wan": 30000,
   "via": "client",
   "notes": "周期性活动，扫描日未见新一轮（待盯）。来源：smzdm post.smzdm.com/p/aqrx263p（高，含各期窗口明细）+ 知乎教程。新用户 1 亿叠加为中置信单源 | 2026-11-05 官方 promotion 页复核：Weekend Build 机制在营（每人每周 3 亿 GLM-5.3-Flash，周日 23:00 清零先到先得），新一轮周末照常发放；1111 大促预热同页官宣",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-night-global",
@@ -1725,7 +1810,8 @@
   "published": false,
   "via": "client",
   "notes": "已失效。夜间免费型活动可能复刻，作节奏参考。来源：smzdm+搜索摘要（中-高）",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-start-plan",
@@ -1745,7 +1831,8 @@
   "notes": "⏰ 中置信（官方活动页 JS 渲染），10-28 23:59 截止——最后的窗口，尽快领",
   "tokens_wan": 300,
   "group": "ZCode",
-  "stale_reason": "截止 2026-10-28 已过（2026-10-29 自动标失效）"
+  "stale_reason": "截止 2026-10-28 已过（2026-10-29 自动标失效）",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-trial-card",
@@ -1765,7 +1852,8 @@
   "group": "ZCode",
   "eq_wan": 800,
   "eq_note": "7天体验卡2000积分；按官方积分公式折约800万(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-coding-plan-points",
@@ -1786,7 +1874,8 @@
   "group": "智谱 BigModel",
   "eq_wan": 3776,
   "eq_note": "¥94.4 券/额度 ×40 万 tok/元 ≈ 3776 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-zhipu-invite-tokens",
@@ -1805,7 +1894,8 @@
   "via": "invite",
   "notes": "官方推广文档 mdx 原文（高），页面最后更新 2026-10-21。与 deals.json zhipu-signup 条一致，此为逐字复核版",
   "group": "智谱 BigModel",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-free-models",
@@ -1824,7 +1914,8 @@
   "notes": "官方定价页 .md 直出（高）。⚠️ deals.json 旧条目「GLM-5.3-Flash 不免费」与定价页「限免」矛盾，合并时以定价页为准复核；与 zhipu-flash-free 同事实重复，归档防双计",
   "group": "智谱",
   "eq_wan": 200000,
-  "eq_note": "同 zhipu-flash-free 口径(8款免费模型月当量保守2亿)"
+  "eq_note": "同 zhipu-flash-free 口径(8款免费模型月当量保守2亿)",
+  "api_via": "api"
  },
  {
   "id": "deep-trae-cn-pricing",
@@ -1845,7 +1936,8 @@
   "group": "Trae 国内版",
   "eq_wan": 1960,
   "eq_note": "¥49 券/额度 ×40 万 tok/元 ≈ 1960 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-trae-intl-pricing",
@@ -1865,7 +1957,8 @@
   "notes": "2026-10-30 官方口径重核：旧「600 次快速请求」计费已作废；GitHub issue #2318 争议对应旧制；新定价曾配 14 天 Pro 试用（现是否在售待核，不写入 value）；不支持退款",
   "group": "Trae 国际版",
   "eq_wan": 6000,
-  "eq_note": "Pro 含 $20 使用额度×300 万 tok/$=6000 万当量（$1≈300 万口径；实付 $10/月）"
+  "eq_note": "Pro 含 $20 使用额度×300 万 tok/$=6000 万当量（$1≈300 万口径；实付 $10/月）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-qoder-cn-free",
@@ -1885,7 +1978,8 @@
   "group": "Qoder（阿里）",
   "daily_wan": 67,
   "daily_note": "长期免费层月当量 2000 万 ÷30 折日均（每天可薅）；社区版300+100Credits/月；1 credit≈0.01元折月2000万（估算,限额未公布）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-qoder-cn-paid",
@@ -1906,7 +2000,8 @@
   "group": "Qoder（阿里）",
   "eq_wan": 2360,
   "eq_note": "¥59 券/额度 ×40 万 tok/元 ≈ 2360 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-codebuddy-free-kimi",
@@ -1926,7 +2021,8 @@
   "group": "腾讯",
   "daily_wan": 17,
   "daily_note": "长期免费层月当量 500 万 ÷30 折日均（每天可薅）；体验版500 Credits/月+Kimi-K2.5免费(排队)；折算月500万(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-codebuddy-pricing",
@@ -1946,7 +2042,8 @@
   "notes": "多源聚合（dayuyun/新浪财经/官方公告报道，中）；登录 codebuddy.cn 复核后可升verified",
   "group": "腾讯",
   "eq_wan": 2320,
-  "eq_note": "¥58 券/额度 ×40 万 tok/元 ≈ 2320 万当量（全站统一折算口径）"
+  "eq_note": "¥58 券/额度 ×40 万 tok/元 ≈ 2320 万当量（全站统一折算口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-codegeex-free",
@@ -1966,7 +2063,8 @@
   "group": "CodeGeeX（智谱系）",
   "daily_wan": 167,
   "daily_note": "长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；个人版全功能免费；按补全场景月500万当量保守(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-fitten-free",
@@ -1983,7 +2081,8 @@
   "published": false,
   "via": "client",
   "notes": "官网宣传口径（中）；额度数字未能核实，published=false",
-  "group": "Fitten Code（非十科技）"
+  "group": "Fitten Code（非十科技）",
+  "api_via": "api"
  },
  {
   "id": "deep-luchentech-welfare",
@@ -2004,7 +2103,8 @@
   "group": "潞晨云",
   "eq_wan": 2000,
   "eq_note": "¥50 券/额度 ×40 万 tok/元 ≈ 2000 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-luchentech-opensource",
@@ -2025,7 +2125,8 @@
   "group": "潞晨云",
   "eq_wan": 20000,
   "eq_note": "¥500 券/额度 ×40 万 tok/元 ≈ 20000 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-wuwenqiong-status",
@@ -2042,7 +2143,8 @@
   "published": false,
   "via": "register",
   "notes": "网易/腾讯新闻2026-10报道交叉（中高）；从可领清单移除",
-  "group": "无问芯穹"
+  "group": "无问芯穹",
+  "api_via": "unknown"
  },
  {
   "id": "deep-paratera-trial",
@@ -2059,7 +2161,8 @@
   "published": false,
   "via": "register",
   "notes": "官网新闻页（中）；具体数额未核实不发布",
-  "group": "并行智算（并行科技）"
+  "group": "并行智算（并行科技）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-invocloud-4090",
@@ -2076,7 +2179,8 @@
   "published": false,
   "via": "register",
   "notes": "公开搜索无果（低）；不发布",
-  "group": "英博云"
+  "group": "英博云",
+  "api_via": "unknown"
  },
  {
   "id": "deep-aigalaxy-4090",
@@ -2096,7 +2200,8 @@
   "notes": "知乎实测文（中）；价格可参考、新人礼不发布",
   "group": "智星云",
   "eq_wan": 54,
-  "eq_note": "¥1.35 券/额度 ×40 万 tok/元 ≈ 54 万当量（全站统一折算口径）"
+  "eq_note": "¥1.35 券/额度 ×40 万 tok/元 ≈ 54 万当量（全站统一折算口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-autodl-student",
@@ -2113,7 +2218,8 @@
   "published": false,
   "via": "register",
   "notes": "官方文档结构存在（中）+第三方折扣数字（低中）——需人工注册核实后再发布",
-  "group": "AutoDL"
+  "group": "AutoDL",
+  "api_via": "unknown"
  },
  {
   "id": "deep-gpushare-student",
@@ -2130,7 +2236,8 @@
   "published": false,
   "via": "register",
   "notes": "知乎/CSDN教程交叉（中）；实名时序坑点值得收录（先实名再充值）",
-  "group": "恒源云 GpuShare"
+  "group": "恒源云 GpuShare",
+  "api_via": "unknown"
  },
  {
   "id": "deep-comate-autofree-r2",
@@ -2152,7 +2259,8 @@
   "group": "百度",
   "eq_wan": 7960,
   "eq_note": "¥199 券/额度 ×40 万 tok/元 ≈ 7960 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-comate-signup",
@@ -2173,7 +2281,8 @@
   "group": "百度",
   "eq_wan": 400,
   "eq_note": "¥10 券/额度 ×40 万 tok/元 ≈ 400 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-laozhang-pricing",
@@ -2194,7 +2303,8 @@
   "group": "laozhang.ai（老张）",
   "eq_wan": 132,
   "eq_note": "$0.44 credits ×300 万 tok/$ ≈ 132 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-deepbricks-status",
@@ -2211,7 +2321,8 @@
   "published": false,
   "via": "api",
   "notes": "实测直核（高）",
-  "group": "Deepbricks"
+  "group": "Deepbricks",
+  "api_via": "unknown"
  },
  {
   "id": "deep-dmxapi-free-models",
@@ -2228,7 +2339,8 @@
   "published": false,
   "via": "api",
   "notes": "搜狐推广文（中）；7折不发布（未能核实）",
-  "group": "DMXAPI"
+  "group": "DMXAPI",
+  "api_via": "api"
  },
  {
   "id": "deep-gemini-cli-free",
@@ -2248,7 +2360,8 @@
   "daily_wan": 400,
   "daily_note": "官方宣传 1000 请求/天 ×~4K ≈400 万/天；Pro 档实领更少（估算）",
   "group": "Google",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-cursor-x-subscription",
@@ -2269,7 +2382,8 @@
   "group": "Cursor",
   "eq_wan": 2400,
   "eq_note": "$8 credits ×300 万 tok/$ ≈ 2400 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-windsurf-devin",
@@ -2289,7 +2403,8 @@
   "notes": "官方页直核（高）；底册Windsurf独立条目需改挂Devin口径；迁移细节补全(21:5x):更名 Devin Desktop,设置/扩展自动保留;积分→配额制多源(whichaicoder/tokenplan)交叉",
   "group": "Windsurf（并入Devin/Cognition）",
   "eq_wan": 6000,
-  "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）"
+  "eq_note": "$20 credits ×300 万 tok/$ ≈ 6000 万当量（$1≈300万口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-xai-grok-code-status",
@@ -2307,7 +2422,8 @@
   "via": "subscribe",
   "notes": "x.ai官方新闻页（高）+R1底册口径（中）",
   "group": "xAI",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-xunfei-1024-10yi-r2",
@@ -2327,7 +2443,8 @@
   "via": "register",
   "notes": "升级为verified：三源交叉（网易转载IT时代网/公众号卢斯克 2026-10-26 19:35 实测文 www.163.com/dy/article/LA6K9DKK05527PMU.html + X帖 + 知乎教程），活动确认在线；官方页面JS无法直核原文，31天口径保持中置信。替代第一轮 partial 条目 deep-xunfei-1024-10yi",
   "group": "讯飞",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-xunfei-wechat-miniapp",
@@ -2346,7 +2463,8 @@
   "tokens_wan": 100000,
   "via": "register",
   "notes": "新发现活动（smzdm单源，中置信）；需登录讯飞开放平台小程序专区核实入口",
-  "group": "讯飞"
+  "group": "讯飞",
+  "api_via": "api"
  },
  {
   "id": "deep-xunfei-workbuddy",
@@ -2363,7 +2481,8 @@
   "published": false,
   "via": "api",
   "notes": "2026-10-26 实测文（中高）；workbuddy 同时出现在智谱 Coding Plan 支持工具清单——跨厂客户端工具，收录时注意区分计费体系",
-  "group": "讯飞"
+  "group": "讯飞",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-start-plan-r2",
@@ -2382,7 +2501,8 @@
   "tokens_wan": 300,
   "via": "client",
   "notes": "证据链补全：CSDN实测文（5天免费）blog.csdn.net/jiangfuofu555/article/details/162196304 + linux.do 社区（约300万，俗称免费鸡蛋）+ 官方changelog搜索摘要含Start Plan字样；维持partial、published=false，明日截止前需人工登录核",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-zcode-invite-r2",
@@ -2402,7 +2522,8 @@
   "group": "ZCode",
   "eq_wan": 2000,
   "eq_note": "客户端邀请活动权益;对标API侧2000万/人(估算,待数额公布)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-trial-card-gift-r2",
@@ -2419,7 +2540,8 @@
   "published": false,
   "via": "invite",
   "notes": "linux.do/Telegram 推送文案（中）；与官方FAQ「每天限量1万张」互为补充——老用户邀请是发放通道之一",
-  "group": "智谱"
+  "group": "智谱",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-ban-case-r2",
@@ -2436,7 +2558,8 @@
   "published": false,
   "via": "subscribe",
   "notes": "社区案例（中）；收录站应提示：单人单环境使用、避免账号共享场景",
-  "group": "智谱"
+  "group": "智谱",
+  "api_via": "unknown"
  },
  {
   "id": "deep-zhipu-zcode-free-tier-r2",
@@ -2453,7 +2576,8 @@
   "published": false,
   "via": "client",
   "notes": "官方changelog直核免费层存在（高）；数额未知；「¥70标准版」仅搜索摘要单源（低）不收录数字",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "deep-sensenova-tokenplan-beta",
@@ -2470,7 +2594,8 @@
   "published": false,
   "via": "register",
   "notes": "CSDN攻略×3交叉（2026-05~09，中）；官方页证书校验异常未能直核——主会话可安排浏览器登录核实后发布",
-  "group": "商汤"
+  "group": "商汤",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-taobao-resale-warning",
@@ -2488,7 +2613,8 @@
   "via": "subscribe",
   "notes": "淘宝商品页实存（中高）+官方红线条款（高）；作为避雷条目发布",
   "group": "智谱 BigModel",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-stepfun-step5-preview-price",
@@ -2510,7 +2636,8 @@
   "group": "阶跃星辰 StepFun",
   "stale_reason": "源 stepfun-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
   "eq_wan": 280,
-  "eq_note": "¥7 券/额度 ×40 万 tok/元 ≈ 280 万当量（全站统一折算口径）"
+  "eq_note": "¥7 券/额度 ×40 万 tok/元 ≈ 280 万当量（全站统一折算口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-stepfun-neo-phone",
@@ -2530,7 +2657,8 @@
   "notes": "新浪/腾讯/Binance Square 报道交叉（中高）；1200亿 token 版为微博单源（低）",
   "group": "阶跃星辰 StepFun",
   "eq_wan": 159960,
-  "eq_note": "¥3999 券/额度 ×40 万 tok/元 ≈ 159960 万当量（全站统一折算口径）"
+  "eq_note": "¥3999 券/额度 ×40 万 tok/元 ≈ 159960 万当量（全站统一折算口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-zhipu-qingyan-status",
@@ -2547,7 +2675,8 @@
   "published": false,
   "via": "register",
   "notes": "搜索无官方限时会员活动页（低价值确认）",
-  "group": "智谱清言（App）"
+  "group": "智谱清言（App）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-xai-grok-code-status-r3",
@@ -2567,7 +2696,8 @@
   "group": "xAI",
   "eq_wan": 1000,
   "eq_note": "Grok Code现状参考:免费/低价并入X订阅;折月1千万当量(口径展示)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-anthropic-code-limits-r4",
@@ -2587,7 +2717,8 @@
   "group": "Anthropic",
   "eq_wan": 8000,
   "eq_note": "Claude Code Pro档折算≈$20/月×购买力≈8千万当量(口径展示,官方不公布token数)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-anthropic-sub-credits-r4",
@@ -2607,7 +2738,8 @@
   "notes": "Reddit 官方公告转述+we0.ai 等多源（中高）；具体数额与7天条件需登录 Settings 核实",
   "group": "Anthropic",
   "eq_wan": 30000,
-  "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）"
+  "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）",
+  "api_via": "api"
  },
  {
   "id": "deep-copilot-ai-credits-r4",
@@ -2628,7 +2760,8 @@
   "group": "GitHub",
   "eq_wan": 3000,
   "eq_note": "$10 credits ×300 万 tok/$ ≈ 3000 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-gemini-cli-retired-r4",
@@ -2646,7 +2779,8 @@
   "via": "register",
   "notes": "官方博客+README+GitHub discussion 27274 直核（高）；free-tier-survival.md 已同步更正；主数据 Gemini CLI 条目需加停服注脚",
   "group": "Google",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-chatglm-status-r4",
@@ -2663,7 +2797,8 @@
   "published": false,
   "via": "register",
   "notes": "两次直抓失败定案（低价值确认）；浏览器登录可破但非本轮配额优先项",
-  "group": "智谱清言 chatglm.cn"
+  "group": "智谱清言 chatglm.cn",
+  "api_via": "unknown"
  },
  {
   "id": "deep-cursor-x-subscription-r4",
@@ -2684,7 +2819,8 @@
   "group": "Cursor",
   "eq_wan": 2400,
   "eq_note": "$8 credits ×300 万 tok/$ ≈ 2400 万当量（$1≈300万口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-smzdm-list-series",
@@ -2701,7 +2837,8 @@
   "published": false,
   "via": "wechat_repost",
   "notes": "本轮最高价值发现；10-21版全文直核（高）；内部信源不上站（老板指令）",
-  "group": "smzdm 权益清单系列（情报源）"
+  "group": "smzdm 权益清单系列（情报源）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-autoclaw-promos",
@@ -2720,7 +2857,8 @@
   "via": "client",
   "notes": "⭐ 2026-11-11 官方博客直核（autoclaw.z.ai/blog/news/M11W2：'Log in to claim 100 million Tokens'，one claim per account，奖励 11-15 过期）| 历史各期：10-12~16 最高 132M、10-26~11-1 40M、10-31~11-8 万圣节最高 80M——**是每期额度不同的系列活动，非固定每周 50M**（旧口径已修正）| smzdm 线报的「每周 50M+双 11 加码 50M」拆分口径与官方 100M 合计一致，以官方为准 | 官方博客已挂 harvest_sources.json 自动盯防（下期公告自动抓）",
   "group": "智谱 AutoClaw",
-  "deadline": "2026-11-15"
+  "deadline": "2026-11-15",
+  "api_via": "api"
  },
  {
   "id": "deep-workbuddy-oct-promos",
@@ -2737,7 +2875,8 @@
   "published": false,
   "via": "client",
   "notes": "smzdm 清单帖直核（中高）；Hy 系限免至 10/31 仍可冲；教师版值得单列人群条目",
-  "group": "腾讯 WorkBuddy"
+  "group": "腾讯 WorkBuddy",
+  "api_via": "api"
  },
  {
   "id": "deep-tencent-tokenhub",
@@ -2755,7 +2894,8 @@
   "tokens_wan": 100,
   "via": "register",
   "notes": "smzdm 清单帖口径（中）；需登录控制台复核",
-  "group": "腾讯"
+  "group": "腾讯",
+  "api_via": "api"
  },
  {
   "id": "deep-tmall-1111-token",
@@ -2776,7 +2916,8 @@
   "notes": "smzdm 清单帖11月预热段（中）；11月主战场，主会话可作双11攻略素材",
   "group": "多厂商（天猫旗舰店）",
   "eq_wan": 1560,
-  "eq_note": "¥38.99 券/额度 ×40 万 tok/元 ≈ 1560 万当量（全站统一折算口径）"
+  "eq_note": "¥38.99 券/额度 ×40 万 tok/元 ≈ 1560 万当量（全站统一折算口径）",
+  "api_via": "api"
  },
  {
   "id": "deep-deepseek-search-free",
@@ -2794,7 +2935,8 @@
   "published": false,
   "via": "api",
   "notes": "smzdm 清单帖口径（中）",
-  "group": "DeepSeek"
+  "group": "DeepSeek",
+  "api_via": "api"
  },
  {
   "id": "deep-qoder-daily-credits",
@@ -2813,7 +2955,8 @@
   "notes": "smzdm 清单帖直核（中高）；与R2口径互补，以控制台实显为准 | 2026-11-01 站长专属推荐链接挂载（qoder.cn/activities referral_code，含推荐属性）；金色折扣链接按钮+加倍领取专区；此链接同 serves 社区版注册 300 Credits 流程",
   "group": "Qoder（阿里）",
   "daily_wan": 40,
-  "daily_note": "长期免费层月当量 1200 万 ÷30 折日均（每天可薅）；每日100 Credits×30天同上≈1200万/月(估算)"
+  "daily_note": "长期免费层月当量 1200 万 ÷30 折日均（每天可薅）；每日100 Credits×30天同上≈1200万/月(估算)",
+  "api_via": "api"
  },
  {
   "id": "deep-intern-inkpoint",
@@ -2833,7 +2976,8 @@
   "group": "书生·端砚（上海AI实验室）",
   "tokens_wan": 1250,
   "eq_wan": 1250,
-  "eq_note": "保守口径：10 墨点×实测混合（100 万输入+25 万输出）≈1250 万/月，按 DS Flash 等效 1:1；缓存命中上限口径 5 亿/月不采信防总账虚高"
+  "eq_note": "保守口径：10 墨点×实测混合（100 万输入+25 万输出）≈1250 万/月，按 DS Flash 等效 1:1；缓存命中上限口径 5 亿/月不采信防总账虚高",
+  "api_via": "api"
  },
  {
   "id": "deep-amd-tokenfactory",
@@ -2850,7 +2994,8 @@
   "published": false,
   "via": "register",
   "notes": "smzdm 清单帖口径（中）",
-  "group": "AMD Token Factory"
+  "group": "AMD Token Factory",
+  "api_via": "api"
  },
  {
   "id": "deep-xfyun-twinsplan",
@@ -2868,7 +3013,8 @@
   "tokens_wan": 10000000,
   "via": "register",
   "notes": "转载单源（中）；需讯飞开放平台官方页核实报名入口——若属实为面向团队的最大额公开活动",
-  "group": "讯飞"
+  "group": "讯飞",
+  "api_via": "api"
  },
  {
   "id": "deep-siliconflow-guide-r5",
@@ -2887,7 +3033,8 @@
   "via": "invite",
   "notes": "攻略已写盘 guides/siliconflow-guide.md；免费池取消为重要口径变化",
   "group": "硅基流动",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-kimi-voucher-r5",
@@ -2908,7 +3055,8 @@
   "group": "Kimi（月之暗面）",
   "eq_wan": 600,
   "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-grok-codefast-price",
@@ -2928,7 +3076,8 @@
   "notes": "第三方 tracker 交叉（中）；官方页未直核现价",
   "group": "xAI",
   "eq_wan": 60,
-  "eq_note": "$0.2 credits ×300 万 tok/$ ≈ 60 万当量（$1≈300万口径）"
+  "eq_note": "$0.2 credits ×300 万 tok/$ ≈ 60 万当量（$1≈300万口径）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-cohere-commanda-r5",
@@ -2948,7 +3097,8 @@
   "group": "Cohere",
   "daily_wan": 43,
   "daily_note": "长期免费层月当量 1300 万 ÷30 折日均（每天可薅）；trial key月1000次×4K≈1300万/月(同cohere-trial口径,估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-together-nofree-r5",
@@ -2967,7 +3117,8 @@
   "via": "register",
   "notes": "官方文档口径+社区报告交叉（中高）",
   "group": "Together AI",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-wechat-watchlist",
@@ -2984,7 +3135,8 @@
   "published": false,
   "via": "wechat_repost",
   "notes": "供老板人工关注；每周与 smzdm 清单帖 diff 一次；内部信源不上站（老板指令）",
-  "group": "公众号关注清单（运营情报）"
+  "group": "公众号关注清单（运营情报）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-kimi-k25-offline-r6",
@@ -3002,7 +3154,8 @@
   "via": "api",
   "notes": "官方 changelog 逐字直核（高）；kimi-guide.md 已同步修正；主数据涉及 K2.5 开放平台口径的条目建议标注下线",
   "group": "Kimi（月之暗面）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-zhipu-startplan-r6",
@@ -3022,7 +3175,8 @@
   "notes": "💡 老板 2026-10-27 亲测官方客户端「升级套餐」页截图直核——此前『约 300 万』估算作废，实测口径大 13 倍；与 r7 定版重复，已归档防重复计账（等效口径 v2.4）",
   "eq_wan": 13645,
   "eq_note": "同 r7 口径（体验套餐双条目同折）",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "deep-tencent-yuanqi-verified-r6",
@@ -3041,7 +3195,8 @@
   "via": "register",
   "notes": "官方指南页逐字（高）；修正 deep-r5 的 1 亿口径（smzdm 单源有误）；长期月度型额度仍有收录价值",
   "group": "腾讯",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-xfyun-twinsplan-r6",
@@ -3059,7 +3214,8 @@
   "tokens_wan": 10000000,
   "via": "register",
   "notes": "❌ 老板 2026-10-27 裁决：『1000 亿 tokens』纯属扯淡，下架——R6 所核 startup 孵化口径系申请制营销话术，非一般用户可领补贴，勿当羊毛传播",
-  "group": "讯飞"
+  "group": "讯飞",
+  "api_via": "api"
  },
  {
   "id": "deep-xfyun-spark-freepack-r6",
@@ -3078,7 +3234,8 @@
   "via": "register",
   "notes": "官方活动页直核（高）；免费包真实性高但页面年代待控制台验证",
   "group": "讯飞",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-sensenova-status-r6",
@@ -3095,7 +3252,8 @@
   "published": false,
   "via": "register",
   "notes": "三路尝试已尽（工具侧限制非情报缺失）；建议老板人工浏览器核一次即可升级",
-  "group": "商汤"
+  "group": "商汤",
+  "api_via": "unknown"
  },
  {
   "id": "deep-grok-codefast-r6",
@@ -3114,7 +3272,8 @@
   "via": "api",
   "notes": "官方模型页直核（高）；R5 的第三方 Code Fast 价格锚点作废",
   "group": "xAI",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-intern-inkstone-r6",
@@ -3131,7 +3290,8 @@
   "published": false,
   "via": "register",
   "notes": "JS 壳+登录墙待人工核；2026-10-30 公众号专文补全细则（10 墨点/月+双协议），主条 deep-intern-inkpoint 已复活上架，本条仅留诊断记录",
-  "group": "书生·端砚（上海AI实验室）"
+  "group": "书生·端砚（上海AI实验室）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-zhipu-trialplan-r7",
@@ -3151,7 +3311,8 @@
   "notes": "取代 R3/R6 的「约300万」社区估算（实测大13倍）；zhipu-weekly.md 已更新；历史 1024 新人包窗口与体验套餐为两回事",
   "group": "ZCode",
   "eq_note": "GLM-5.3 1500万×7.43 + Flash 2500万×1.0（¥0/5 天窗口总量，非月度流水）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-zhipu-flash-correction-r7",
@@ -3169,7 +3330,8 @@
   "via": "api",
   "notes": "官方定价页 .md 直核（高）；zhipu-weekly.md 已同步勘误",
   "group": "智谱 BigModel",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-kimi-trial-r7",
@@ -3189,7 +3351,8 @@
   "notes": "7 天试用=Reddit 单源（低-中）；token 折算为估算不发布",
   "group": "Kimi（月之暗面）",
   "eq_wan": 600,
-  "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）"
+  "eq_note": "¥15 券/额度 ×40 万 tok/元 ≈ 600 万当量（全站统一折算口径）",
+  "api_via": "api"
  },
  {
   "id": "deep-minimax-trial-r7",
@@ -3206,7 +3369,8 @@
   "published": false,
   "via": "subscribe",
   "notes": "检索无果定案（低价值确认）",
-  "group": "MiniMax"
+  "group": "MiniMax",
+  "api_via": "unknown"
  },
  {
   "id": "deep-lingma-qoder-merge-r7",
@@ -3227,7 +3391,8 @@
   "group": "Qoder（阿里）",
   "eq_wan": 2360,
   "eq_note": "¥59 券/额度 ×40 万 tok/元 ≈ 2360 万当量（全站统一折算口径）",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "unknown"
  },
  {
   "id": "deep-trae-free-usage-r7",
@@ -3247,7 +3412,8 @@
   "group": "Trae 国内版",
   "daily_wan": 17,
   "daily_note": "长期免费层月当量 500 万 ÷30 折日均（每天可薅）；Free档500积分/月；官方未公布换算,按1积分≈0.01元折500万(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-copilot-free-r7",
@@ -3267,7 +3433,8 @@
   "group": "GitHub",
   "daily_wan": 13,
   "daily_note": "长期免费层月当量 400 万 ÷30 折日均（每天可薅）；月2000补全+50聊天；同github-copilot-free口径≈400万/月(估算)",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "api_via": "api"
  },
  {
   "id": "deep-trial-tier-matrix-r7",
@@ -3284,7 +3451,8 @@
   "published": false,
   "via": "client",
   "notes": "横评综合 R1-R7 各 verified 条目；单家细节见对应 deep 条目与 guides/；2026-10-29 老板指令下架",
-  "group": "全行业体验档横评"
+  "group": "全行业体验档横评",
+  "api_via": "unknown"
  },
  {
   "id": "cline-pass-deepseek",
@@ -3303,7 +3471,8 @@
   "via": "wechat_article",
   "group": "Cline",
   "eq_wan": 70000,
-  "eq_note": "$9.99/月实测60-70亿V4.1 Flash(社区口径)；等效按7千万/月保守展示(国际基准)"
+  "eq_note": "$9.99/月实测60-70亿V4.1 Flash(社区口径)；等效按7千万/月保守展示(国际基准)",
+  "api_via": "unknown"
  },
  {
   "id": "intel-miaowu",
@@ -3319,7 +3488,8 @@
   "difficulty": 1,
   "published": false,
   "via": "boss_direct",
-  "group": "神秘喵星人（公众号）"
+  "group": "神秘喵星人（公众号）",
+  "api_via": "unknown"
  },
  {
   "id": "cline-free-tier",
@@ -3338,7 +3508,8 @@
   "via": "supervisor",
   "group": "Cline",
   "daily_wan": 667,
-  "daily_note": "长期免费层月当量 20000 万 ÷30 折日均（每天可薅）；登录即用V4.1 Flash/K3/GLM5.3免费档；按Cline官方免费档口径月2千万保守(估算)"
+  "daily_note": "长期免费层月当量 20000 万 ÷30 折日均（每天可薅）；登录即用V4.1 Flash/K3/GLM5.3免费档；按Cline官方免费档口径月2千万保守(估算)",
+  "api_via": "api"
  },
  {
   "id": "opencode-go-deepseek",
@@ -3357,7 +3528,8 @@
   "via": "supervisor",
   "group": "OpenCode",
   "eq_wan": 15200,
-  "eq_note": "$10/月含$80配额；按国际基准$0.525/百万≈1.52亿当量/月(口径展示)"
+  "eq_note": "$10/月含$80配额；按国际基准$0.525/百万≈1.52亿当量/月(口径展示)",
+  "api_via": "unknown"
  },
  {
   "id": "opencode-zen-free",
@@ -3428,7 +3600,8 @@
     "ctx": "—",
     "note": "TypeSafe AI（System One 端点）；非聊天模型——输出结构化判定/打分/选择题结果"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "qoder-deepseek-free",
@@ -3447,7 +3620,8 @@
   "via": "supervisor",
   "group": "Qoder（阿里）",
   "daily_wan": 67,
-  "daily_note": "长期免费层月当量 2000 万 ÷30 折日均（每天可薅）；IDE 免费调 V4.1-Flash-1017 限额未公布；保守月2000万当量（估算）"
+  "daily_note": "长期免费层月当量 2000 万 ÷30 折日均（每天可薅）；IDE 免费调 V4.1-Flash-1017 限额未公布；保守月2000万当量（估算）",
+  "api_via": "api"
  },
  {
   "id": "unisound-u2flash-free",
@@ -3471,7 +3645,8 @@
   "daily_wan": 20000,
   "daily_note": "500 万 TPM 上限折算：满速理论值远高，保守按 2000 万/天窗口内（10-31 止）",
   "tokens_wan": 50000,
-  "stale_reason": "截止 2026-10-31 已过（2026-11-01 自动标失效）"
+  "stale_reason": "截止 2026-10-31 已过（2026-11-01 自动标失效）",
+  "api_via": "api"
  },
  {
   "id": "doubao-daily-quota",
@@ -3490,7 +3665,8 @@
   "via": "register",
   "group": "豆包",
   "eq_wan": 2000,
-  "eq_note": "每日签到+任务领额度(数额以活动页为准)；按同类活动折日均200万(估算,待客户端实锤)"
+  "eq_note": "每日签到+任务领额度(数额以活动页为准)；按同类活动折日均200万(估算,待客户端实锤)",
+  "api_via": "api"
  },
  {
   "id": "xiaomi-mimo-compute",
@@ -3506,7 +3682,8 @@
   "verified_at": "2026-10-29T15:58:00Z",
   "difficulty": 2,
   "published": false,
-  "via": "register"
+  "via": "register",
+  "api_via": "unknown"
  },
  {
   "id": "zhipu-weekend-build",
@@ -3526,7 +3703,8 @@
   "eq_note": "GLM-5.3-Flash 牌价 0.8/2.8 加权 1.3 元/百万低于 DS 谷价 1.75，保守 1:1 计 3 亿/周",
   "daily_wan": 30000,
   "daily_note": "每日 3 亿（老板用户侧亲测第一手）；演变线：9 月周末 3 亿档(smzdm/人人都是产品经理)→CSDN 10-17 报 5 亿加码帖→10 月底每日化（老板口径），公开搜索滞后于客户端活动（本项目已知规律）",
-  "group": "智谱 BigModel"
+  "group": "智谱 BigModel",
+  "api_via": "api"
  },
  {
   "id": "zhipu-pinhaomo",
@@ -3547,7 +3725,8 @@
   "notes_caveat": "比例型权益无固定 token 数",
   "eq_wan": 2000,
   "eq_note": "比例型权益:邀请返10%赠金;按月2万订阅基准返2千万当量(口径展示,随订阅额浮动)",
-  "group": "智谱 BigModel"
+  "group": "智谱 BigModel",
+  "api_via": "api"
  },
  {
   "id": "longcat-daily-free",
@@ -3565,7 +3744,8 @@
   "published": true,
   "via": "register",
   "daily_wan": 5000,
-  "daily_note": "每日免费额度 5000 万 tokens（知乎 2026-02 报道，早期 10 万→大幅加码）；数额以控制台实时为准"
+  "daily_note": "每日免费额度 5000 万 tokens（知乎 2026-02 报道，早期 10 万→大幅加码）；数额以控制台实时为准",
+  "api_via": "api"
  },
  {
   "id": "zcode-daily-1e8",
@@ -3584,7 +3764,8 @@
   "via": "invite",
   "daily_wan": 10000,
   "daily_note": "每日 1 亿 token 池滚动放量（老板亲测口径）+ZCode 3.0 每日 500 万",
-  "group": "ZCode"
+  "group": "ZCode",
+  "api_via": "api"
  },
  {
   "id": "workbuddy-free",
@@ -3633,7 +3814,8 @@
     "ctx": "2000=¥100",
     "note": "消耗随模型倍率浮动（Kimi K3 1.6x）；积分不可提现转让"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "monkeycode-daily",
@@ -3653,7 +3835,8 @@
   "group": "MonkeyCode",
   "daily_wan": 1000,
   "tokens_wan": 90000,
-  "daily_note": "免费档每日 1000-3000 万（保守 1000 万）；注册 9 亿为一次性（tokens_wan 90000 万）"
+  "daily_note": "免费档每日 1000-3000 万（保守 1000 万）；注册 9 亿为一次性（tokens_wan 90000 万）",
+  "api_via": "api"
  },
  {
   "id": "novita-freetostart",
@@ -3670,7 +3853,8 @@
   "difficulty": 2,
   "published": true,
   "via": "register",
-  "group": "Novita"
+  "group": "Novita",
+  "api_via": "api"
  },
  {
   "id": "fireworks-payg",
@@ -3688,7 +3872,8 @@
   "published": true,
   "via": "register",
   "group": "Fireworks AI",
-  "cny": 7.2
+  "cny": 7.2,
+  "api_via": "unknown"
  },
  {
   "id": "deepinfra-payg",
@@ -3705,7 +3890,8 @@
   "difficulty": 2,
   "published": true,
   "via": "register",
-  "group": "DeepInfra"
+  "group": "DeepInfra",
+  "api_via": "unknown"
  },
  {
   "id": "stepfun-75d",
@@ -3724,7 +3910,8 @@
   "published": true,
   "via": "register",
   "tokens_wan": 7500,
-  "eq_note": "99 元/月套餐×2.5 月≈¥250 价值×40 万 tok/元≈1 亿当量，保守 7500 万（估算）"
+  "eq_note": "99 元/月套餐×2.5 月≈¥250 价值×40 万 tok/元≈1 亿当量，保守 7500 万（估算）",
+  "api_via": "api"
  },
  {
   "id": "qoder-boost-r4",
@@ -3745,7 +3932,8 @@
   "deadline": "2026-10-30",
   "tokens_wan": 12000,
   "eq_note": "12288 Credits×0.01 元×40 万 tok/元≈1.2 亿当量（折算参考）",
-  "stale_reason": "截止 2026-10-30 已过（2026-10-31 自动标失效）"
+  "stale_reason": "截止 2026-10-30 已过（2026-10-31 自动标失效）",
+  "api_via": "api"
  },
  {
   "id": "scnet-night-free",
@@ -3764,7 +3952,8 @@
   "published": true,
   "via": "register",
   "deadline": "2026-10-30",
-  "stale_reason": "截止 2026-10-30 已过（2026-10-31 自动标失效）"
+  "stale_reason": "截止 2026-10-30 已过（2026-10-31 自动标失效）",
+  "api_via": "unknown"
  },
  {
   "id": "volc-k27-alias-warning",
@@ -3781,7 +3970,8 @@
   "verified_at": "2026-10-29T11:00:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "free"
+  "via": "free",
+  "api_via": "unknown"
  },
  {
   "id": "anti-charge-checklist",
@@ -3798,7 +3988,8 @@
   "verified_at": "2026-10-29T11:00:00Z",
   "difficulty": 1,
   "published": true,
-  "via": "free"
+  "via": "free",
+  "api_via": "unknown"
  },
  {
   "id": "codex-free",
@@ -3817,7 +4008,8 @@
   "via": "free",
   "group": "Codex",
   "eq_wan": 6000,
-  "eq_note": "订阅内含量折算（$20×300万/$口径，非白嫖）"
+  "eq_note": "订阅内含量折算（$20×300万/$口径，非白嫖）",
+  "api_via": "api"
  },
  {
   "id": "openclaw-free",
@@ -3834,7 +4026,8 @@
   "difficulty": 2,
   "published": false,
   "via": "free",
-  "group": "OpenClaw"
+  "group": "OpenClaw",
+  "api_via": "api"
  },
  {
   "id": "autoclaw-free",
@@ -3851,7 +4044,8 @@
   "difficulty": 2,
   "published": false,
   "via": "free",
-  "group": "智谱 AutoClaw"
+  "group": "智谱 AutoClaw",
+  "api_via": "api"
  },
  {
   "id": "trae-free-tier",
@@ -3870,7 +4064,8 @@
   "via": "free",
   "group": "Trae 国内版",
   "eq_wan": 500,
-  "eq_note": "500 积分×0.01 元×40 万 tok/元≈500 万当量（估算，官方未公布换算）"
+  "eq_note": "500 积分×0.01 元×40 万 tok/元≈500 万当量（估算，官方未公布换算）",
+  "api_via": "api"
  },
  {
   "id": "xiaomi-mimo-free5",
@@ -3890,7 +4085,8 @@
   "cny": 5,
   "eq_wan": 200,
   "eq_note": "¥5 赠金 ×40 万 tok/元 ≈ 200 万 DS Flash 等效（全站统一口径）",
-  "group": "小米 MiMo"
+  "group": "小米 MiMo",
+  "api_via": "api"
  },
  {
   "id": "xiaomi-mimo-refer",
@@ -3910,7 +4106,8 @@
   "cny": 10,
   "eq_wan": 400,
   "eq_note": "单次绑定 ¥10 ×40 万 ≈ 400 万 DS Flash 等效；上限 ¥300=1.2 亿（不计入总账防虚高）",
-  "group": "小米 MiMo"
+  "group": "小米 MiMo",
+  "api_via": "api"
  },
  {
   "id": "ecloud-tianyi-25m",
@@ -3930,7 +4127,8 @@
   "tokens_wan": 2500,
   "eq_wan": 2500,
   "eq_note": "平台通用 token 1:1 折 DS Flash 等效（平台模型以 DeepSeek 系为主）",
-  "group": "运营商云"
+  "group": "运营商云",
+  "api_via": "api"
  },
  {
   "id": "unicom-cloud-6m",
@@ -3950,7 +4148,8 @@
   "tokens_wan": 600,
   "eq_wan": 600,
   "eq_note": "1:1 保守折算",
-  "group": "运营商云"
+  "group": "运营商云",
+  "api_via": "api"
  },
  {
   "id": "comet-free",
@@ -3970,7 +4169,8 @@
   "usd": 10,
   "eq_wan": 3000,
   "eq_note": "邀请现金 $10 ×300 万 tok/$ ≈ 3000 万 DS Flash 等效（国际基准）",
-  "group": "AI 浏览器"
+  "group": "AI 浏览器",
+  "api_via": "api"
  },
  {
   "id": "aws-activate",
@@ -3990,7 +4190,8 @@
   "usd": 1000,
   "eq_wan": 30000,
   "eq_note": "按自助档下限 $1,000 ×300 万 ≈ 3 亿当量（$200K 封顶需背书不计量防虚高）",
-  "group": "初创额度"
+  "group": "初创额度",
+  "api_via": "unknown"
  },
  {
   "id": "google-startups",
@@ -4010,7 +4211,8 @@
   "usd": 2000,
   "eq_wan": 60000,
   "eq_note": "起步档 $2,000 ×300 万 ≈ 6 亿当量（封顶 $200K 不计量防虚高）",
-  "group": "初创额度"
+  "group": "初创额度",
+  "api_via": "unknown"
  },
  {
   "id": "qwen-app-5h-limit",
@@ -4027,7 +4229,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "group": "千问"
+  "group": "千问",
+  "api_via": "api"
  },
  {
   "id": "zai-subscribe-coupon",
@@ -4045,7 +4248,8 @@
   "difficulty": 1,
   "published": true,
   "via": "coupon",
-  "group": "智谱 BigModel"
+  "group": "智谱 BigModel",
+  "api_via": "api"
  },
  {
   "id": "qiniu-conatus-1e8",
@@ -4065,7 +4269,8 @@
   "daily_wan": 10000,
   "daily_note": "实名每日 1 亿，充值 100 元后 10 亿/天（总账按 1 亿保守）",
   "group": "七牛云",
-  "deadline": "2026-11-30"
+  "deadline": "2026-11-30",
+  "api_via": "api"
  },
  {
   "id": "zenmux-gifts",
@@ -4082,7 +4287,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "group": "ZenMux"
+  "group": "ZenMux",
+  "api_via": "api"
  },
  {
   "id": "poe-daily-points",
@@ -4099,7 +4305,8 @@
   "difficulty": 1,
   "published": true,
   "via": "register",
-  "group": "Poe"
+  "group": "Poe",
+  "api_via": "api"
  },
  {
   "id": "baseten-starter-30",
@@ -4119,7 +4326,8 @@
   "usd": 30,
   "eq_wan": 9000,
   "eq_note": "$30 ×300 万 tok/$ ≈ 0.9 亿 DS Flash 等效",
-  "group": "Baseten"
+  "group": "Baseten",
+  "api_via": "api"
  },
  {
   "id": "aimlapi-startup-10m",
@@ -4139,7 +4347,8 @@
   "tokens_wan": 1000,
   "eq_wan": 1000,
   "eq_note": "1:1 保守折算",
-  "group": "AI/ML API"
+  "group": "AI/ML API",
+  "api_via": "api"
  },
  {
   "id": "deep-sensenova-xiaohuanxiong",
@@ -4157,7 +4366,8 @@
   "published": true,
   "notes": "⭐老板实测截图直核（2026-10-31）：桌面端资源用量 6300 积分=网页 3000+桌面 3000+当日签到 300，与官方积分规则完全吻合；模型选择器实锤 DeepSeek-V4.1-Flash-1017 免费（含深度思考档） | 信源：公众号果核原文+官方积分规则（搜索互证：网页 3000 新老用户皆可领，积分体系上线前老用户首次登录自动到账） | 积分制非 token 计量不折总账防口径污染（poe 先例）；商汤出品与日日新同门 | 2026-11-05 站长专属邀请链接挂载（xiaohuanxiong.com/events/refer code=a59b9f5d4890401ca96d63fbdc6d802c，含推荐属性）；金色折扣链接按钮+加倍领取专区",
   "group": "商汤",
-  "verify_by": "boss"
+  "verify_by": "boss",
+  "api_via": "api"
  },
  {
   "id": "xiaomi-mimo-code",
@@ -4174,7 +4384,8 @@
   "published": true,
   "via": "free",
   "group": "小米 MiMo",
-  "notes": "官方 docs+搜索互证（MIT 开源/OpenCode 二开，2026-10-30）；内置 V2.5 初期限免期已于 2026-06 前后结束，勿再当免费模型宣传；Token Plan 兼容 OpenAI/Anthropic 双协议可接 Claude Code/Cursor/OpenCode 等"
+  "notes": "官方 docs+搜索互证（MIT 开源/OpenCode 二开，2026-10-30）；内置 V2.5 初期限免期已于 2026-06 前后结束，勿再当免费模型宣传；Token Plan 兼容 OpenAI/Anthropic 双协议可接 Claude Code/Cursor/OpenCode 等",
+  "api_via": "api"
  },
  {
   "id": "xiaomi-mimo-tokenplan",
@@ -4192,7 +4403,8 @@
   "via": "subscribe",
   "group": "小米 MiMo",
   "notes": "官方定价页 webReader 直核（2026-10-30）：四档价格+首购/包年 88 折+夜间 0.8x+TTS 限免；双协议可接 Claude Code/Cursor 等 10+ 工具；另有团队版+批量推理 Batch API",
-  "cny": 39
+  "cny": 39,
+  "api_via": "unknown"
  },
  {
   "id": "workbuddy-intl-free",
@@ -4243,7 +4455,8 @@
     "ctx": "25 credits",
     "note": "90 天有效至 12-31（第三方口径待核）"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "workbuddy-intl-pro",
@@ -4263,7 +4476,8 @@
   "notes": "官方定价页 webReader 直核（2026-09-30 build）；与国内版 Pro 体系（¥ 牌价 2000 Credits=¥100）完全独立",
   "usd": 10,
   "eq_wan": 3000,
-  "eq_note": "2,000 credits×$0.005=$10×300 万 tok/$=3000 万当量（首月 $7 更低；每日 50 限时赠未计）"
+  "eq_note": "2,000 credits×$0.005=$10×300 万 tok/$=3000 万当量（首月 $7 更低；每日 50 限时赠未计）",
+  "api_via": "unknown"
  },
  {
   "id": "huawei-codearts-daily",
@@ -4282,7 +4496,8 @@
   "group": "华为云码道 CodeArts",
   "notes": "⭐官方 changelog 直核+搜索互证（每日登录领 1000 万 Token 限时福利，codearts.huaweicloud.com/changelog.html）| 🔗折扣链接=站长邀请渠道（source=dmzntgwlb，含推荐属性）| 新用户 4000 积分/学生认证档为开发者论坛口径待控制台实核 | 华为云全家首条：ModelArts Studio 千万 Token（华东二限定）与开发者空间百万券为同门线索待核",
   "daily_wan": 1000,
-  "daily_note": "每日登录客户端领 1000 万 Token（当日有效）——码道平台通用额度按 1:1 保守折 DS 等效"
+  "daily_note": "每日登录客户端领 1000 万 Token（当日有效）——码道平台通用额度按 1:1 保守折 DS 等效",
+  "api_via": "api"
  },
  {
   "id": "aliyun-yungongkaiwu-student",
@@ -4301,7 +4516,8 @@
   "group": "阿里云",
   "notes": "信源：公众号 YING《阿里云高校优惠》官方页整理直抓（mp.weixin.qq.com/s/yHDiGG1arATehqH56OYUtQ，作者声明未实测）| 学生券规则存在两种官方读法（相同商品仅抵扣一次 vs 可查剩余额度），以下单页为准 | 百炼 300 元抵扣金活动 2025-11-11 至 2027-03-31 | 现金抵扣券非直发 token，总账口径保守",
   "cny": 300,
-  "deadline": "2027-03-31"
+  "deadline": "2027-03-31",
+  "api_via": "unknown"
  },
  {
   "id": "libtv-double11-zeropoints",
@@ -4320,7 +4536,8 @@
   "group": "LibTV",
   "notes": "⭐AI 视频赛道首批条目（老板 11-01 发文指示补充）| 信源：公众号胡图图糊涂实测文（mp.weixin.qq.com/s/DjR9g-PXSevR1scnW9HMoQ，新浪财经/网易AI进化论花生/腾讯网多源 10-29）| 0 积分=付费年卡赠送非纯免费，按付费促销限时活动口径上架（MiniMax 五折先例）；视频积分非 token 不折总账",
   "deadline": "2026-11-02",
-  "stale_reason": "截止 2026-11-02 已过（2026-11-03 自动标失效）"
+  "stale_reason": "截止 2026-11-02 已过（2026-11-03 自动标失效）",
+  "api_via": "api"
  },
  {
   "id": "doubao-pro-invite",
@@ -4337,7 +4554,8 @@
   "published": true,
   "via": "invite",
   "group": "豆包",
-  "notes": "⭐站长专属邀请渠道（2026-11-01 老板提供，desktop-fission/pro-trial 裂变活动页，含推荐属性）| 与 doubao-daily-quota（天天领额度）同组聚合；试用时长实领截图核后升 verified | 折扣链接金色按钮+加倍领取专区"
+  "notes": "⭐站长专属邀请渠道（2026-11-01 老板提供，desktop-fission/pro-trial 裂变活动页，含推荐属性）| 与 doubao-daily-quota（天天领额度）同组聚合；试用时长实领截图核后升 verified | 折扣链接金色按钮+加倍领取专区",
+  "api_via": "api"
  },
  {
   "id": "trae-code-fission",
@@ -4354,7 +4572,8 @@
   "published": true,
   "via": "invite",
   "group": "Trae 国内版",
-  "notes": "⭐站长专属邀请渠道（2026-11-03 老板提供，trae.cn/events/code-fission 裂变活动页，含推荐属性）| 3000 积分为老板转述活动页口径，实到账以客户端为准 | 与 trae-free-tier（Free 档 500 积分/月）同组聚合；折扣链接金色按钮+加倍领取专区"
+  "notes": "⭐站长专属邀请渠道（2026-11-03 老板提供，trae.cn/events/code-fission 裂变活动页，含推荐属性）| 3000 积分为老板转述活动页口径，实到账以客户端为准 | 与 trae-free-tier（Free 档 500 积分/月）同组聚合；折扣链接金色按钮+加倍领取专区",
+  "api_via": "api"
  },
  {
   "id": "zhiyun-xj-aistore",
@@ -4406,7 +4625,8 @@
     "ctx": "0.5积分/百万",
     "note": "向量化模型"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "catpaw-meituan",
@@ -4424,7 +4644,8 @@
   "via": "register",
   "group": "美团 CatPaw",
   "notes": "信源：美团技术团队博客（2026-07-28 正式发布）+凤凰科技（2025-11 公测）+官网下载页多源互证 | 公测期初始 500 次对话额度口径已由积分制取代（2026 积分体系）| LongCat-2.0 限时免费与站内 longcat-daily-free（每日 5000 万 API 额度）同门不同渠道 | 折扣链接矩阵位预留：有专属邀请链发我即挂金色按钮",
-  "deadline": ""
+  "deadline": "",
+  "api_via": "api"
  },
  {
   "id": "claude-for-oss",
@@ -4441,7 +4662,8 @@
   "published": true,
   "via": "free",
   "group": "Anthropic",
-  "notes": "⭐爬虫线官方口径全核（2026-11-03 巡检：申请入口/条件/名额修正 1 万/价值≈$1200 全核）| 人群限定：仅合格开源维护者；名额先到先得抢完即止 | Anthropic 同门：deep-anthropic-startup（初创 $1,000+Team 一年）为另一通道"
+  "notes": "⭐爬虫线官方口径全核（2026-11-03 巡检：申请入口/条件/名额修正 1 万/价值≈$1200 全核）| 人群限定：仅合格开源维护者；名额先到先得抢完即止 | Anthropic 同门：deep-anthropic-startup（初创 $1,000+Team 一年）为另一通道",
+  "api_via": "api"
  },
  {
   "id": "azure-startups-5k",
@@ -4458,7 +4680,8 @@
   "published": true,
   "via": "register",
   "group": "初创额度",
-  "notes": "信源：爬虫线 1111 预热价格潮 harvest diff（官方定价/活动页集体更新时捕获，2026-11-01）| 初创区同门：aws-activate（$200K）/google-startups（$200K）/deep-anthropic-startup（$1K+Team）| 保守不入总账现金折算，避免初创额度虚高先例"
+  "notes": "信源：爬虫线 1111 预热价格潮 harvest diff（官方定价/活动页集体更新时捕获，2026-11-01）| 初创区同门：aws-activate（$200K）/google-startups（$200K）/deep-anthropic-startup（$1K+Team）| 保守不入总账现金折算，避免初创额度虚高先例",
+  "api_via": "api"
  },
  {
   "id": "zhipu-1111-coding-7zhe",
@@ -4475,7 +4698,8 @@
   "published": true,
   "via": "free",
   "group": "智谱 BigModel",
-  "notes": "⭐官方 promotion 页 webReader 直核（2026-11-05）| 背景：智谱 2 月结构性+30%、7 月积分制改版 Lite 49→118/Pro 149→538——7 折年付是改版后首次官方降价窗口，比 618 更深 | 折扣链接矩阵位预留（有邀请链发我即挂金色）"
+  "notes": "⭐官方 promotion 页 webReader 直核（2026-11-05）| 背景：智谱 2 月结构性+30%、7 月积分制改版 Lite 49→118/Pro 149→538——7 折年付是改版后首次官方降价窗口，比 618 更深 | 折扣链接矩阵位预留（有邀请链发我即挂金色）",
+  "api_via": "api"
  },
  {
   "id": "openai-pro-api-credits",
@@ -4492,7 +4716,8 @@
   "published": true,
   "via": "subscribe",
   "group": "OpenAI",
-  "notes": "⭐官方帮助文档直核（help.openai.com 中文页）+社区公告互证（2026-10-28 上线，爬虫线连续跟踪 24 天）| 订阅专属福利非纯免费，不折白嫖总账（付费口径）| 注意区分已结束的 'Business Premium Seats' 推广（另一项目） | ⚠️ 2026-11 爬虫线：OpenAI 大砍 Codex 免费额度（周期周改月、砍 75%）——OpenAI 免费口径收紧趋势再+1"
+  "notes": "⭐官方帮助文档直核（help.openai.com 中文页）+社区公告互证（2026-10-28 上线，爬虫线连续跟踪 24 天）| 订阅专属福利非纯免费，不折白嫖总账（付费口径）| 注意区分已结束的 'Business Premium Seats' 推广（另一项目） | ⚠️ 2026-11 爬虫线：OpenAI 大砍 Codex 免费额度（周期周改月、砍 75%）——OpenAI 免费口径收紧趋势再+1",
+  "api_via": "api"
  },
  {
   "id": "modelscope-gpu-free",
@@ -4511,7 +4736,8 @@
   "group": "阿里云",
   "notes": "⭐多源互证（知乎 AMD 计划 2.0/白嫖 192G 显存文/阿里云开发者 edu 文/CSDN 新用户体验）| 爬虫线雷达轮 47 捕获 | GPU 卡时是算力非 token 不折总账；200 魔粒/天归入 modelscope-free-infer 条目口径",
   "daily_wan": 200,
-  "daily_note": "每天登录送 200 魔粒≈200 万 token 等效（1 魔粒≈1 万 token 保守口径）"
+  "daily_note": "每天登录送 200 魔粒≈200 万 token 等效（1 魔粒≈1 万 token 保守口径）",
+  "api_via": "unknown"
  },
  {
   "id": "ecom-token-store-1111",
@@ -4528,7 +4754,8 @@
   "published": true,
   "via": "free",
   "group": "电商 Token 店",
-  "notes": "⭐爬虫线里程碑级捕获（2026-11-01~03 多轮深挖：人民网/新华网/凤凰/36氪/东方财富 五源）| 全部为品牌官方店铺入驻（章程合规·官方渠道）| 1111 窗口限时，电商价随时波动以页面为准 | 折扣链接矩阵位预留"
+  "notes": "⭐爬虫线里程碑级捕获（2026-11-01~03 多轮深挖：人民网/新华网/凤凰/36氪/东方财富 五源）| 全部为品牌官方店铺入驻（章程合规·官方渠道）| 1111 窗口限时，电商价随时波动以页面为准 | 折扣链接矩阵位预留",
+  "api_via": "api"
  },
  {
   "id": "api-relay-distill-warning",
@@ -4545,7 +4772,8 @@
   "published": true,
   "via": "free",
   "group": "避雷通用",
-  "notes": "信源：爬虫线雷达轮 43（187 篇论文风暴，多源）| 站点合规立场重申：中转/套壳类永不收录（AI世创云等中转线索持续拒收）| 配合站内「避雷」标签教育位"
+  "notes": "信源：爬虫线雷达轮 43（187 篇论文风暴，多源）| 站点合规立场重申：中转/套壳类永不收录（AI世创云等中转线索持续拒收）| 配合站内「避雷」标签教育位",
+  "api_via": "unknown"
  },
  {
   "id": "kimi-subscribe-invite",
@@ -4562,7 +4790,8 @@
   "published": true,
   "via": "invite",
   "group": "Kimi（月之暗面）",
-  "notes": "⭐站长专属邀请渠道（2026-11-05 老板提供，kimi-bot.com/activities 裂变活动页，含推荐属性）| 需完成付费订阅（付费叠加口径，同拼好模先例）| 实际奖池等级待实领核 | 折扣链接金色按钮+加倍领取专区"
+  "notes": "⭐站长专属邀请渠道（2026-11-05 老板提供，kimi-bot.com/activities 裂变活动页，含推荐属性）| 需完成付费订阅（付费叠加口径，同拼好模先例）| 实际奖池等级待实领核 | 折扣链接金色按钮+加倍领取专区",
+  "api_via": "api"
  },
  {
   "id": "instabox-free-agent-vm",
@@ -4606,7 +4835,8 @@
     "ctx": "可分享",
     "note": "viewOnly 服务端强制+ttl 60s~24h"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "oracle-cloud-always-free",
@@ -4640,7 +4870,8 @@
     "ctx": "200G",
     "note": "免费额度内"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "aws-freetier-ec2",
@@ -4674,7 +4905,8 @@
     "ctx": "1T 流量/月",
     "note": "Always Free 永久（2026 新政加码）"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "gcp-freetier-vm",
@@ -4703,7 +4935,8 @@
     "ctx": "$300/90 天",
     "note": "新用户全服务可用"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "github-codespaces-free",
@@ -4732,7 +4965,8 @@
     "ctx": "15G/月",
     "note": "codespace 磁盘"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "hf-spaces-free-cpu",
@@ -4761,7 +4995,8 @@
     "ctx": "8G（可扩 50G）",
     "note": "应用数据持久盘（持久盘付费）"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "modal-free-credits",
@@ -4795,7 +5030,8 @@
     "ctx": "100+10 GPU",
     "note": "Starter 档并发上限"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "e2b-hobby-free",
@@ -4824,7 +5060,8 @@
     "ctx": "10GiB",
     "note": "沙盒持久存储"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "daytona-startup-50k",
@@ -4848,7 +5085,8 @@
     "ctx": "最高 \\$50k",
     "note": "Startups 计划自助申请"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "replit-free-mode",
@@ -4882,7 +5120,8 @@
     "ctx": "\\$20",
     "note": "更强模型调用"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "today-ai-free",
@@ -4901,7 +5140,8 @@
   "group": "Today AI",
   "notes": "多源核对（2026-10-24 核对文+用户晒单+X 帖，中国版为加码后新政：早期国际版仅 1 亿+1 个月）| ⚠️ 用户评价「24 小时云电脑」宣传与实际有出入 | 3 亿按 DeepSeek Flash 1:1 折算；用 GLM 5.3 则 4 倍消耗≈7500 万",
   "tokens_wan": 30000,
-  "eq_note": "3 亿 Token 按 DeepSeek V4.1 Flash 1:1 折 DS Flash 等效"
+  "eq_note": "3 亿 Token 按 DeepSeek V4.1 Flash 1:1 折 DS Flash 等效",
+  "api_via": "api"
  },
  {
   "id": "gemini-code-assist-individuals-sunsets",
@@ -4918,7 +5158,8 @@
   "published": true,
   "via": "free",
   "group": "Google",
-  "notes": "官方弃用公告直核（developers.google.com）| 曾是免费补全最大方方案（18 万次/月 vs Copilot 免费 2000 次/月）——2026 免费大退潮再+1 | 替代路径：Antigravity 免费档（额度口径待官方明确）"
+  "notes": "官方弃用公告直核（developers.google.com）| 曾是免费补全最大方方案（18 万次/月 vs Copilot 免费 2000 次/月）——2026 免费大退潮再+1 | 替代路径：Antigravity 免费档（额度口径待官方明确）",
+  "api_via": "unknown"
  },
  {
   "id": "cf-workers-free",
@@ -4935,7 +5176,8 @@
   "published": true,
   "via": "free",
   "group": "Cloudflare Workers",
-  "notes": "行业常识级长期稳定免费层（官方文档口径）| AI 用途：部署 AI API 代理/网关（配合各家免费 token）是最经典白嫖玩法 | 云服务器羊毛专区：边缘算力位"
+  "notes": "行业常识级长期稳定免费层（官方文档口径）| AI 用途：部署 AI API 代理/网关（配合各家免费 token）是最经典白嫖玩法 | 云服务器羊毛专区：边缘算力位",
+  "api_via": "api"
  },
  {
   "id": "workbuddy-invite-reward",
@@ -4952,7 +5194,8 @@
   "published": true,
   "via": "invite",
   "group": "腾讯 WorkBuddy",
-  "notes": "⭐站长专属邀请渠道（2026-11-08 老板提供，workbuddy.cn/events/invite 裂变活动页，含推荐属性）| 与 workbuddy-free（公测 5000 Credits+每日 100 积分）同组聚合；实领档位截图核后升 verified | 折扣链接金色按钮+加倍领取专区"
+  "notes": "⭐站长专属邀请渠道（2026-11-08 老板提供，workbuddy.cn/events/invite 裂变活动页，含推荐属性）| 与 workbuddy-free（公测 5000 Credits+每日 100 积分）同组聚合；实领档位截图核后升 verified | 折扣链接金色按钮+加倍领取专区",
+  "api_via": "api"
  },
  {
   "id": "autoclaw-double11-50m",
@@ -4971,7 +5214,8 @@
   "group": "智谱 AutoClaw",
   "notes": "⭐官方博客直核（2026-11-06 文，AutoClaw Team）| 与 deep-autoclaw-promos 每周 50M 分列：本条=1111 专属加码窗口（11-09 起 7 天）| 智谱官方产品（autoclaw.zhipuai.cn，金融 AI） | 2026-11-11 官方博客已将本周（11-09~15）福利合并宣传为 Weekly Perk 100M（见 deep-autoclaw-promos），本条保留加码窗口历史记录 ｜换算口径：50M Tokens 实数=5000 万",
   "deadline": "2026-11-15",
-  "tokens_wan": 5000
+  "tokens_wan": 5000,
+  "api_via": "api"
  },
  {
   "id": "perplexity-education-pro",
@@ -4988,7 +5232,8 @@
   "published": true,
   "via": "student",
   "group": "Perplexity",
-  "notes": "官方学生页+帮助中心双源直核（2026-11-08，TK 雷达轮捕获）| 与 comet-free（浏览器全面免费）同门不同产品线 | 付费订阅 5 折口径，不折白嫖总账"
+  "notes": "官方学生页+帮助中心双源直核（2026-11-08，TK 雷达轮捕获）| 与 comet-free（浏览器全面免费）同门不同产品线 | 付费订阅 5 折口径，不折白嫖总账",
+  "api_via": "unknown"
  },
  {
   "id": "command-code-goat",
@@ -5007,7 +5252,8 @@
   "group": "Command Code",
   "notes": "多源直核（赛博鸡蛋详情页+Reddit r/CommandCode『GOAT just made \\$100 credits PERMANENT』+知乎对比文）| 与 OpenCode Go（\\$10=80 配额）同类倍率订阅竞品 | 付费订阅口径进付费区，不折总账",
   "usd": 10,
-  "eq_note": "\\$100 额度×300 万 tok/\\$≈3 亿当量（10 倍杠杆为官方倍率模型折扣所致）"
+  "eq_note": "\\$100 额度×300 万 tok/\\$≈3 亿当量（10 倍杠杆为官方倍率模型折扣所致）",
+  "api_via": "unknown"
  },
  {
   "id": "amd-token-factory",
@@ -5041,7 +5287,8 @@
     "ctx": "OpenAI+Anthropic 双兼容",
     "note": "developer.amd.com.cn/radeon/api/v1，Dify/Cherry Studio 直连"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "qiniu-invite-3m",
@@ -5070,7 +5317,8 @@
     "ctx": "双方",
     "note": "邀请人与被邀请人均有 Token 奖励"
    }
-  ]
+  ],
+  "api_via": "unknown"
  },
  {
   "id": "opendesign-free",
@@ -5099,7 +5347,8 @@
     "ctx": "搭配 Gemini CLI",
     "note": "用免费额度驱动设计生成"
    }
-  ]
+  ],
+  "api_via": "api"
  },
  {
   "id": "fiimeopc-token",
@@ -5129,7 +5378,8 @@
    }
   ],
   "group": "FiimeOPC",
-  "notes": "⚠️ 11-09 官方站核验：主体重庆数序星人工智能科技有限公司（ICP 备案齐全），官方成长指南第 05 步「领取算力」在；但官方运营 11-08 公告——限供排队模式（日均在线 2000+ 有脚本刷量）、上游厂商被薅退中、已发放 token「碰运气用」：领后可用性不稳定，当补充额度勿押关键业务；模型为马甲路由不公示（当额度池用）；Token 榜需装桌面客户端（Windows 版注册计划任务，介意可跳过）"
+  "notes": "⚠️ 11-09 官方站核验：主体重庆数序星人工智能科技有限公司（ICP 备案齐全），官方成长指南第 05 步「领取算力」在；但官方运营 11-08 公告——限供排队模式（日均在线 2000+ 有脚本刷量）、上游厂商被薅退中、已发放 token「碰运气用」：领后可用性不稳定，当补充额度勿押关键业务；模型为马甲路由不公示（当额度池用）；Token 榜需装桌面客户端（Windows 版注册计划任务，介意可跳过）",
+  "api_via": "api"
  },
  {
   "id": "azure-free-trial",
@@ -5147,7 +5397,8 @@
   "via": "free",
   "group": "Microsoft Azure",
   "notes": "2026-11-11 官方 free 页直核；站内另有 azure-student（学生通道）与 azure-startups-5k，本条为普通新用户通道 | 公众号「码上AI记」2026 免费 VPS 指南交叉 ｜换算口径：$200 赠金 ÷ $0.525/M ≈ 3.81 亿 tokens 购买力上限（赠金亦可用于 VM 等非模型资源）",
-  "tokens_wan": 38100
+  "tokens_wan": 38100,
+  "api_via": "api"
  },
  {
   "id": "vultr-trial-250",
@@ -5165,7 +5416,8 @@
   "via": "free",
   "group": "Vultr",
   "notes": "⚠️ 2026-11-11 核验方式：官方页 Cloudflare 反爬未能直核，条款来自「码上AI记」2026-10 实测指南+多年稳定公开政策，TK 下轮盯防复核 | 适合短期测试与多区域网络验证 ｜换算口径：$250 赠金 ÷ $0.525/M ≈ 4.76 亿 tokens 购买力上限（Vultr 主业是云服务器，赠金亦可开 GPU/VM 实例）",
-  "tokens_wan": 47600
+  "tokens_wan": 47600,
+  "api_via": "api"
  },
  {
   "id": "agentscope-qwenpaw-free",
@@ -5182,7 +5434,8 @@
   "published": true,
   "via": "free",
   "group": "AgentScope",
-  "notes": "2026-11-11 官方页渲染直核（Beta is live / Get isolated workspace upon registration / 200 Credits）| AgentScope=阿里通义开源 Agent 框架生态（QwenPaw/ReMe，钉钉群+Discord）| 规格细节来自「码上AI记」2026 免费 VPS 指南实测"
+  "notes": "2026-11-11 官方页渲染直核（Beta is live / Get isolated workspace upon registration / 200 Credits）| AgentScope=阿里通义开源 Agent 框架生态（QwenPaw/ReMe，钉钉群+Discord）| 规格细节来自「码上AI记」2026 免费 VPS 指南实测",
+  "api_via": "api"
  },
  {
   "id": "autoclaw-invite-fission",
@@ -5200,7 +5453,8 @@
   "via": "free",
   "group": "智谱 AutoClaw",
   "notes": "2026-11-11 活动页直核（autoglm.zhipuai.cn autoclaw_fission 裂变活动）| 金链接=站主专属邀请码 IC=7WHSTDYA | 与 deep-autoclaw-promos（每周登录 50M token）分列：本条=邀请裂变积分线 | 8%~12% 返佣档：100 元以下 8%、100 元及以上 12% ｜换算口径：官方锚点 100M Tokens worth 10,000 credits → 1 积分=1 万 tokens；新户最高 4800 积分=4800 万 tokens（付费返佣部分按实际充值另计）",
-  "tokens_wan": 4800
+  "tokens_wan": 4800,
+  "api_via": "api"
  },
  {
   "id": "agentrouter-signup",
@@ -5218,7 +5472,8 @@
   "via": "free",
   "group": "AgentRouter",
   "notes": "⚠️ 2026-11-11 核验状态：官方站 WAF+滑块验证+未登录页面空壳，额度未能直核——条款来自「码上AI记」11-11 实测文章（含到账截图），TK 线登录复核后转 verified | 模型名站方自标、实际路由渠道不透明（文章原话：重要任务先拿小量试）| 免费站随时可能调整规则，及时用 ｜换算口径：首日最高 $175 ÷ DS V4.1 Flash 国际价 $0.525/M ≈ 3.33 亿 tokens 购买力等效（站跑 GPT-6 代，按 GPT 官方价则少一个量级）",
-  "tokens_wan": 33300
+  "tokens_wan": 33300,
+  "api_via": "api"
  },
  {
   "id": "simular-box-free",
@@ -5235,7 +5490,8 @@
   "published": true,
   "via": "free",
   "group": "Simular Box",
-  "notes": "2026-11-11 官方页直核（box itself is free / one cloud desktop per account / 14-day asleep deletion / MCP mcp.box.simular.ai/mcp）| 出品方 Simular Inc.（Palo Alto，前 Google DeepMind 团队，2025-12 Felicis 领投 $2150 万 A 轮；开源 Agent S 框架 OSWorld 评测达人类基线 72.6%）| 规格来自「码上AI记」11-11 实测；付费档 $50/月 5 万 credits（最多 5 台）/$500 月不限量为二手口径 | MCP 地址 11-04 刚更换过，老用户需重接"
+  "notes": "2026-11-11 官方页直核（box itself is free / one cloud desktop per account / 14-day asleep deletion / MCP mcp.box.simular.ai/mcp）| 出品方 Simular Inc.（Palo Alto，前 Google DeepMind 团队，2025-12 Felicis 领投 $2150 万 A 轮；开源 Agent S 框架 OSWorld 评测达人类基线 72.6%）| 规格来自「码上AI记」11-11 实测；付费档 $50/月 5 万 credits（最多 5 台）/$500 月不限量为二手口径 | MCP 地址 11-04 刚更换过，老用户需重接",
+  "api_via": "api"
  },
  {
   "id": "northwest-first-com-free",
@@ -5252,7 +5508,8 @@
   "published": true,
   "via": "free",
   "group": "Northwest",
-  "notes": "2026-11-11 官方页直核（'Your first domain is free up to a $25 value and we'll also cover your renewal'）| 账户创建步骤最易卡住，无报错无成功时换时间重试勿连点 | 来源：码上AI记 免费域名全搜罗（10-31 对照官网核实版）"
+  "notes": "2026-11-11 官方页直核（'Your first domain is free up to a $25 value and we'll also cover your renewal'）| 账户创建步骤最易卡住，无报错无成功时换时间重试勿连点 | 来源：码上AI记 免费域名全搜罗（10-31 对照官网核实版）",
+  "api_via": "api"
  },
  {
   "id": "codehost-cv-free",
@@ -5269,7 +5526,8 @@
   "published": true,
   "via": "free",
   "group": "CodeHost",
-  "notes": "⚠️ 2026-11-11 复查活动页 403（反爬），条款以码上AI记 10-31 官网直核为准（官网原话 'No credit card is needed!'）——TK 截止前（11-17）复核 | 注册局 OlaCV 可能抽查：信息不实/倒卖/批量薅会被复核处理 | 第二年续费价官网未公示，领前想好是否长期持有"
+  "notes": "⚠️ 2026-11-11 复查活动页 403（反爬），条款以码上AI记 10-31 官网直核为准（官网原话 'No credit card is needed!'）——TK 截止前（11-17）复核 | 注册局 OlaCV 可能抽查：信息不实/倒卖/批量薅会被复核处理 | 第二年续费价官网未公示，领前想好是否长期持有",
+  "api_via": "api"
  },
  {
   "id": "dnshe-free-domains",
@@ -5286,7 +5544,8 @@
   "published": true,
   "via": "free",
   "group": "DNSHE",
-  "notes": "2026-11-11 官方页直核（'域名注册完全免费，无需绑定信用卡' / '支持修改 NS…托管到第三方 DNS' / '1 年…180 天内免费续期'）| 社区帖称 2026-01-01 后新注册非永久（永久要助力任务），规则常变以官网当日为准 | 与 dpdns.org 并列 0 元链路主力（域名→Cloudflare→InstaBox/cloud-mail）"
+  "notes": "2026-11-11 官方页直核（'域名注册完全免费，无需绑定信用卡' / '支持修改 NS…托管到第三方 DNS' / '1 年…180 天内免费续期'）| 社区帖称 2026-01-01 后新注册非永久（永久要助力任务），规则常变以官网当日为准 | 与 dpdns.org 并列 0 元链路主力（域名→Cloudflare→InstaBox/cloud-mail）",
+  "api_via": "api"
  },
  {
   "id": "digitalplat-dpdns-free",
@@ -5303,7 +5562,8 @@
   "published": true,
   "via": "free",
   "group": "DigitalPlat",
-  "notes": "2026-11-11 GitHub 直核（50 万域名/custom nameservers/AGPL-3.0）| ⚠️ 前后缀变动史：.us.kg/.xx.kg 已因滥用停新注、.qzz.io 转付费，仅 dpdns.org 开放（10 月下旬社区实测）| ⚠️ 官方原 Telegram 账号/群已被盗，仅信官网+GitHub | 先在 Cloudflare 建好 zone 拿 NS 再注册 | 来源：码上AI记 10-31 核实版"
+  "notes": "2026-11-11 GitHub 直核（50 万域名/custom nameservers/AGPL-3.0）| ⚠️ 前后缀变动史：.us.kg/.xx.kg 已因滥用停新注、.qzz.io 转付费，仅 dpdns.org 开放（10 月下旬社区实测）| ⚠️ 官方原 Telegram 账号/群已被盗，仅信官网+GitHub | 先在 Cloudflare 建好 zone 拿 NS 再注册 | 来源：码上AI记 10-31 核实版",
+  "api_via": "api"
  },
  {
   "id": "wx-miniprogram-growth-1b",
@@ -5321,7 +5581,8 @@
   "via": "free",
   "group": "微信云开发",
   "notes": "⚠️ 2026-11-11 收录：官方活动需登录小程序后台核验，站方未能直核（unverified），TK 复核后转 verified | 需已有小程序账号（个人/企业均可报名路径）| 额度托管在微信云开发，非通用 API 额度池 ｜换算口径：官方明示 10 亿 Tokens 实数（微信云开发托管模型），tokens_wan=100000",
-  "tokens_wan": 100000
+  "tokens_wan": 100000,
+  "api_via": "api"
  },
  {
   "id": "modelscope-amd-gpu-100h",
@@ -5349,6 +5610,7 @@
     "title": "魔搭官方活动页（SPA）"
    }
   ],
-  "tokens_wan": 54000
+  "tokens_wan": 54000,
+  "api_via": "api"
  }
 ]

@@ -46,8 +46,8 @@
       "n_hits": 23
     },
     "render-pricing": {
-      "fp": "ffd509b6d1ea20a82c440bb58958390227ed8ed538914b0517c1a6cd51d82a91",
-      "ts": "2026-11-06T15:52:20Z",
+      "fp": "665e391db74f4965285a45c2d72e456c8aa882c6b1741c2b2d00f799eca0c191",
+      "ts": "2026-11-11T17:14:24Z",
       "n_hits": 169
     },
     "koyeb-pricing": {
@@ -56,9 +56,9 @@
       "n_hits": 180
     },
     "railway-pricing": {
-      "fp": "ae50698a70fdf44d5e4db6fe971d3868fe49097f32c3523f3c42b2635e82b7e1",
-      "ts": "2026-11-06T15:21:28Z",
-      "n_hits": 43
+      "fp": "5acc53912b0d97cc457eaa9d91fdaafc7e5ed2339fbae7e047ff7b2e363e39cb",
+      "ts": "2026-11-11T17:14:24Z",
+      "n_hits": 40
     },
     "codespaces-pricing": {
       "fp": "ef9361b48fbf3936913688c04f996a80abaa05e5fc03671b03c5c86502a2a50d",
@@ -161,8 +161,8 @@
       "n_hits": 53
     },
     "deno-deploy": {
-      "fp": "b0e785038bd8d7545a010cb0b6638f51b4c389c96105559e4c97f3cd6b3c5821",
-      "ts": "2026-11-06T15:52:20Z",
+      "fp": "39b122e50481409ad72d2001cf6ea9332388b73549c40801aa3129c8ed0e2814",
+      "ts": "2026-11-11T17:14:24Z",
       "n_hits": 3
     },
     "valtown-pricing": {
@@ -293,28 +293,68 @@
   },
   "pending": {
     "instabox-pricing": {
-      "fp": "aac666e683fce0cabdf55ce712eab551ac289a943585c5c5b46832baacb7f89a",
-      "ts": "2026-11-07T17:27:12Z",
-      "count": 1
-    },
-    "deno-deploy": {
-      "fp": "39b122e50481409ad72d2001cf6ea9332388b73549c40801aa3129c8ed0e2814",
-      "ts": "2026-11-07T17:27:12Z",
+      "fp": "1c6025d9205b198d834189a8d86a5c80acfc45ce37ad8f0551f2e598c765c43f",
+      "ts": "2026-11-11T17:14:24Z",
       "count": 1
     },
     "lowendbox-feed": {
-      "fp": "b65549a45b875716bbc2b0af6a6ddd6b636166edc311030ef94c5492768ff62d",
-      "ts": "2026-11-07T17:27:12Z",
+      "fp": "3266ea46b2ad9a1a096d54e2808505327e251596d184a4266b213b44049149f2",
+      "ts": "2026-11-11T17:14:24Z",
       "count": 1
     },
-    "render-pricing": {
-      "fp": "665e391db74f4965285a45c2d72e456c8aa882c6b1741c2b2d00f799eca0c191",
-      "ts": "2026-11-07T17:27:12Z",
+    "e2b-pricing": {
+      "fp": "a07a31db7f1bb17667e0f28a363736b79b6ae80404c56535948445030f619085",
+      "ts": "2026-11-11T17:14:24Z",
       "count": 1
     },
-    "railway-pricing": {
-      "fp": "5acc53912b0d97cc457eaa9d91fdaafc7e5ed2339fbae7e047ff7b2e363e39cb",
-      "ts": "2026-11-07T17:27:12Z",
+    "steel-pricing": {
+      "fp": "fe82694ac9c0665eb886f8c4f230146d2b75c070ca02e4b0254d0364704dd906",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "upcloud-pricing": {
+      "fp": "568585db8ea9fe23e59e81378d1f1c352d780b0c29413a615d02742fb46fcf13",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "netlify-pricing": {
+      "fp": "4e37e85500e7c4841648d20a1923023e8abd1948421845c820445610e00e7be6",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "valtown-pricing": {
+      "fp": "fafd7f9a58f17d31e74acf08106ea31feedb1935a0bae9a32d60363d41b022b8",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "google-free": {
+      "fp": "c8db435214dd9516ce819e81a8524575f49e9cfa64c19c63f4dcffd050199fb7",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "himitsushell": {
+      "fp": "e1ae26f2302f7785b82a3c31049c1042bd8c80d77bd843494212f60079765b30",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "shakticloud": {
+      "fp": "bc58720e31ea9ec2b41cd3e758c57691dce79cc5551609df0094a690e91740aa",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "atlascloud": {
+      "fp": "8741d65f1e0759189b4dc213f2f82c769d02d4066c5edb91695144b0f73927a6",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "gpunz": {
+      "fp": "6225598b4dc602ced49cd17060ec4e886936e681466bb5f85c2f52cd91756418",
+      "ts": "2026-11-11T17:14:24Z",
+      "count": 1
+    },
+    "freedb": {
+      "fp": "8efc8585a858d88f34293091b3271f98fe3fa32ef60699db375cfc2ef5fd3878",
+      "ts": "2026-11-11T17:14:24Z",
       "count": 1
     }
   }

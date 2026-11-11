@@ -868,7 +868,7 @@ const rowHtml=(d,ov)=>{
     </div>
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
-  <div class="r-state">${freshness(d)}${dl}</div>
+  <div class="r-state">${freshness(d)}${apiBadge(d)}${dl}</div>
   <div class="r-ops">
     ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="一键接入">⚡</button>`:''}
     <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
@@ -918,6 +918,14 @@ function renderNav(){
   document.getElementById('n-sites').textContent=SITES.reduce((n,g)=>n+g.sites.length,0);
 }
 /* ============ 卡片渲染 ============ */
+function apiBadge(d){
+  const v=d.api_via;
+  if(v==='api')return '<span class="chip" style="border-color:rgba(5,150,105,.4);color:var(--accent)" title="支持 API 直连：可直接 OpenAI 兼容调用">🔌 API</span>';
+  if(v==='client_only')return '<span class="chip" style="border-color:rgba(220,38,38,.4);color:#dc2626" title="仅限官方客户端交互使用，不支持 API 调用">🚫 仅客户端</span>';
+  if(v==='gateway')return '<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb" title="经第三方网关接入（如 AgentRouter/中转站）">🛰 网关</span>';
+  if(v==='agent_tool')return '<span class="chip" style="border-color:rgba(217,119,6,.4);color:var(--amber)" title="Agent/MCP 工具接入">🤖 Agent</span>';
+  return '';
+}
 function freshness(d){
   if(d.verify_status==='expired')return'<span class="badge b-red">❌ 已失效</span>';
   if(d.verify_status!=='verified')return'<span class="badge b-amber">⚠️ 待复核</span>';
@@ -1026,7 +1034,7 @@ function render(){
         <span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>
       </div>
     </div>
-    <div class="r-state">${freshness(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
+    <div class="r-state">${freshness(g.best)}${apiBadge(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
     <div class="r-ops">
       <button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>
       ${aggGold(g)}
@@ -1479,7 +1487,7 @@ window.tickerRefresh=function(){
         return '<span class="ntk-item"><b>'+(d.provider||'').slice(0,16)+'</b> '+v+'<span class="ntk-date">'+new Date(d.verified_at).toLocaleDateString('zh-CN')+'</span></span>';
       }).join('');
       var el=document.getElementById('ntkItems');
-      if(el&&items)el.innerHTML=items+items;
+      if(el&&items){el.innerHTML=items+items;el.style.animationDuration=Math.max(60,Math.round(el.scrollWidth/55))+'s';}
     }catch(_){}
   }
   if(!PROD){dealTicker();return;}
@@ -1491,7 +1499,7 @@ window.tickerRefresh=function(){
         return '<span class="ntk-item"><b>['+esc(n.source||'')+']</b> '+esc(n.title||'')+'<span class="ntk-date">'+new Date(n.ts).toLocaleDateString('zh-CN')+'</span></span>';
       }).join('');
       var el=document.getElementById('ntkItems');
-      if(el&&items)el.innerHTML=items+items;
+      if(el&&items){el.innerHTML=items+items;el.style.animationDuration=Math.max(60,Math.round(el.scrollWidth/55))+'s';}
     }).catch(function(){dealTicker()});
   }catch(_){dealTicker()}
 }
