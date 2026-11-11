@@ -4969,8 +4969,9 @@
   "published": true,
   "via": "free",
   "group": "智谱 AutoClaw",
-  "notes": "⭐官方博客直核（2026-11-06 文，AutoClaw Team）| 与 deep-autoclaw-promos 每周 50M 分列：本条=1111 专属加码窗口（11-09 起 7 天）| 智谱官方产品（autoclaw.zhipuai.cn，金融 AI） | 2026-11-11 官方博客已将本周（11-09~15）福利合并宣传为 Weekly Perk 100M（见 deep-autoclaw-promos），本条保留加码窗口历史记录",
-  "deadline": "2026-11-15"
+  "notes": "⭐官方博客直核（2026-11-06 文，AutoClaw Team）| 与 deep-autoclaw-promos 每周 50M 分列：本条=1111 专属加码窗口（11-09 起 7 天）| 智谱官方产品（autoclaw.zhipuai.cn，金融 AI） | 2026-11-11 官方博客已将本周（11-09~15）福利合并宣传为 Weekly Perk 100M（见 deep-autoclaw-promos），本条保留加码窗口历史记录 ｜换算口径：50M Tokens 实数=5000 万",
+  "deadline": "2026-11-15",
+  "tokens_wan": 5000
  },
  {
   "id": "perplexity-education-pro",
@@ -5145,7 +5146,8 @@
   "published": true,
   "via": "free",
   "group": "Microsoft Azure",
-  "notes": "2026-11-11 官方 free 页直核；站内另有 azure-student（学生通道）与 azure-startups-5k，本条为普通新用户通道 | 公众号「码上AI记」2026 免费 VPS 指南交叉"
+  "notes": "2026-11-11 官方 free 页直核；站内另有 azure-student（学生通道）与 azure-startups-5k，本条为普通新用户通道 | 公众号「码上AI记」2026 免费 VPS 指南交叉 ｜换算口径：$200 赠金 ÷ $0.525/M ≈ 3.81 亿 tokens 购买力上限（赠金亦可用于 VM 等非模型资源）",
+  "tokens_wan": 38100
  },
  {
   "id": "vultr-trial-250",
@@ -5162,7 +5164,8 @@
   "published": true,
   "via": "free",
   "group": "Vultr",
-  "notes": "⚠️ 2026-11-11 核验方式：官方页 Cloudflare 反爬未能直核，条款来自「码上AI记」2026-10 实测指南+多年稳定公开政策，TK 下轮盯防复核 | 适合短期测试与多区域网络验证"
+  "notes": "⚠️ 2026-11-11 核验方式：官方页 Cloudflare 反爬未能直核，条款来自「码上AI记」2026-10 实测指南+多年稳定公开政策，TK 下轮盯防复核 | 适合短期测试与多区域网络验证 ｜换算口径：$250 赠金 ÷ $0.525/M ≈ 4.76 亿 tokens 购买力上限（Vultr 主业是云服务器，赠金亦可开 GPU/VM 实例）",
+  "tokens_wan": 47600
  },
  {
   "id": "agentscope-qwenpaw-free",
@@ -5196,7 +5199,8 @@
   "published": true,
   "via": "free",
   "group": "智谱 AutoClaw",
-  "notes": "2026-11-11 活动页直核（autoglm.zhipuai.cn autoclaw_fission 裂变活动）| 金链接=站主专属邀请码 IC=7WHSTDYA | 与 deep-autoclaw-promos（每周登录 50M token）分列：本条=邀请裂变积分线 | 8%~12% 返佣档：100 元以下 8%、100 元及以上 12%"
+  "notes": "2026-11-11 活动页直核（autoglm.zhipuai.cn autoclaw_fission 裂变活动）| 金链接=站主专属邀请码 IC=7WHSTDYA | 与 deep-autoclaw-promos（每周登录 50M token）分列：本条=邀请裂变积分线 | 8%~12% 返佣档：100 元以下 8%、100 元及以上 12% ｜换算口径：官方锚点 100M Tokens worth 10,000 credits → 1 积分=1 万 tokens；新户最高 4800 积分=4800 万 tokens（付费返佣部分按实际充值另计）",
+  "tokens_wan": 4800
  },
  {
   "id": "agentrouter-signup",
@@ -5213,7 +5217,8 @@
   "published": true,
   "via": "free",
   "group": "AgentRouter",
-  "notes": "⚠️ 2026-11-11 核验状态：官方站 WAF+滑块验证+未登录页面空壳，额度未能直核——条款来自「码上AI记」11-11 实测文章（含到账截图），TK 线登录复核后转 verified | 模型名站方自标、实际路由渠道不透明（文章原话：重要任务先拿小量试）| 免费站随时可能调整规则，及时用"
+  "notes": "⚠️ 2026-11-11 核验状态：官方站 WAF+滑块验证+未登录页面空壳，额度未能直核——条款来自「码上AI记」11-11 实测文章（含到账截图），TK 线登录复核后转 verified | 模型名站方自标、实际路由渠道不透明（文章原话：重要任务先拿小量试）| 免费站随时可能调整规则，及时用 ｜换算口径：首日最高 $175 ÷ DS V4.1 Flash 国际价 $0.525/M ≈ 3.33 亿 tokens 购买力等效（站跑 GPT-6 代，按 GPT 官方价则少一个量级）",
+  "tokens_wan": 33300
  },
  {
   "id": "simular-box-free",
@@ -5315,7 +5320,8 @@
   "published": true,
   "via": "free",
   "group": "微信云开发",
-  "notes": "⚠️ 2026-11-11 收录：官方活动需登录小程序后台核验，站方未能直核（unverified），TK 复核后转 verified | 需已有小程序账号（个人/企业均可报名路径）| 额度托管在微信云开发，非通用 API 额度池"
+  "notes": "⚠️ 2026-11-11 收录：官方活动需登录小程序后台核验，站方未能直核（unverified），TK 复核后转 verified | 需已有小程序账号（个人/企业均可报名路径）| 额度托管在微信云开发，非通用 API 额度池 ｜换算口径：官方明示 10 亿 Tokens 实数（微信云开发托管模型），tokens_wan=100000",
+  "tokens_wan": 100000
  },
  {
   "id": "modelscope-amd-gpu-100h",
@@ -5332,7 +5338,7 @@
   "published": true,
   "via": "free",
   "group": "魔搭 ModelScope",
-  "notes": "2026-11-11 收录：Today羊毛 实测全记录（含到账控制台截图），活动页 SPA 未能文本直核 | **算力加码通道**：研习社原创文章 +25h/篇（上限 50h）、灵感流 Notebook +50h/篇（上限 150h）、创空间开源应用 +700h 起——最高可叠 **1000+ 小时** | ⚠️ 三条线勿混：AMD 站「100 分」是站内积分非算力；「兑取算力」按钮走的是 Radeon Cloud 不进魔搭 | 与站内 amd-token-factory（Token 工厂）是不同产品线",
+  "notes": "2026-11-11 收录：Today羊毛 实测全记录（含到账控制台截图），活动页 SPA 未能文本直核 | **算力加码通道**：研习社原创文章 +25h/篇（上限 50h）、灵感流 Notebook +50h/篇（上限 150h）、创空间开源应用 +700h 起——最高可叠 **1000+ 小时** | ⚠️ 三条线勿混：AMD 站「100 分」是站内积分非算力；「兑取算力」按钮走的是 Radeon Cloud 不进魔搭 | 与站内 amd-token-factory（Token 工厂）是不同产品线 ｜换算口径：100h × MI300 跑 70B AWQ 输出吞吐 ~1500 tok/s ≈ 5.4 亿 tokens 产出估（保守值；实际随模型/并发浮动）",
   "sources": [
    {
     "url": "https://mp.weixin.qq.com/s/MbE3qDeo34mTeVSP37dt0A",
@@ -5342,6 +5348,7 @@
     "url": "https://modelscope.cn/events/247",
     "title": "魔搭官方活动页（SPA）"
    }
-  ]
+  ],
+  "tokens_wan": 54000
  }
 ]
