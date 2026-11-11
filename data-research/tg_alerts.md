@@ -920,3 +920,65 @@ ChatGPT Pro 用户现在可以每月领取等额 API 额度，该额度失效时
 披露的数据约 5%-7% 是封号收入，大概对应 16.5 亿–23.1 亿美元，也就是一百多亿人民币。
 
 而且这
+
+## 2026-11-11 21:27 UTC
+- 🆕 [linuxdo_tg] 主 题： Azure的claude-fable-5-2有500 RPM / 500,000 TPM，怎么突然给额度了，受宠若惊 
+发 布 者： fengnuoyiman 
+标签分类： 纯水 Claude 
+时 间：2026-11-12 02:42:54
+内容预览： 权限太低，请手动打开查看 
+直达链
+- 🆕 [linuxdo_tg] 主 题： 谷歌发布 Gemini Decision 1, Gemini的首个决策模型 
+发 布 者： baysonfox 
+标签分类： 人工智能 Gemini 
+时 间：2026-11-12 03:08:03
+内容预览： 0.1USD/M Tok 输入，输出免费原生支持图片，视频，音频与PDF输入2
+- 🆕 [linuxdo_tg] 主 题： Claude似乎会考虑用户的订阅额度，动态调整其投入程度，导致Pro订阅有时质量不如Max订阅 
+发 布 者： Amxr 
+标签分类： 纯水 Claude 
+时 间：2026-11-12 03:13:30
+内容预览： Fable5.2出来后，做了几次视频来测试其能力，都是用的High，发现
+- 🆕 [linuxdo_tg] 主 题： 不知道是不是错觉，我感觉现在claude给的量少了 
+发 布 者： jxms 
+标签分类： 纯水 人工智能 
+时 间：2026-11-12 03:51:48
+内容预览： RT，最近这两天感觉claude pro给的token少了很多，原来的5h额度是用opus能在单会话、消息间隔不超过1h
+- 🆕 [linuxdo_tg] 主 题： Fable5.2 blender 复刻攻壳机动队SAC 开场3D 打印人物效果 
+发 布 者： SeASnAkE 
+标签分类： 人工智能 Claude 
+时 间：2026-11-12 03:58:38
+内容预览： 中等推理等级，一个 5 小时对话窗口额度， P1 纯 fable5.2 ，P
+- 🆕 [AI_News_CN] OpenRouter 新路由算法让 GLM 5.3 Flash 延迟降 40%、价格降 17% 
+
+OpenRouter 表示其新路由算法会把更多流量分配给推理表现好的供应商。过去一个月，GLM 5.3 Flash 用户的首字延迟下降 40%，吞吐量提升 10%，每百万 token 成本下降 17%
+
+## 2026-11-11 21:27 UTC
+- 🆕 [linuxdo_tg] 主 题： Azure的claude-fable-5-2有500 RPM / 500,000 TPM，怎么突然给额度了，受宠若惊 
+发 布 者： fengnuoyiman 
+标签分类： 纯水 Claude 
+时 间：2026-11-12 02:42:54
+内容预览： 权限太低，请手动打开查看 
+直达链
+- 🆕 [linuxdo_tg] 主 题： 谷歌发布 Gemini Decision 1, Gemini的首个决策模型 
+发 布 者： baysonfox 
+标签分类： 人工智能 Gemini 
+时 间：2026-11-12 03:08:03
+内容预览： 0.1USD/M Tok 输入，输出免费原生支持图片，视频，音频与PDF输入2
+- 🆕 [linuxdo_tg] 主 题： Claude似乎会考虑用户的订阅额度，动态调整其投入程度，导致Pro订阅有时质量不如Max订阅 
+发 布 者： Amxr 
+标签分类： 纯水 Claude 
+时 间：2026-11-12 03:13:30
+内容预览： Fable5.2出来后，做了几次视频来测试其能力，都是用的High，发现
+- 🆕 [linuxdo_tg] 主 题： 不知道是不是错觉，我感觉现在claude给的量少了 
+发 布 者： jxms 
+标签分类： 纯水 人工智能 
+时 间：2026-11-12 03:51:48
+内容预览： RT，最近这两天感觉claude pro给的token少了很多，原来的5h额度是用opus能在单会话、消息间隔不超过1h
+- 🆕 [linuxdo_tg] 主 题： Fable5.2 blender 复刻攻壳机动队SAC 开场3D 打印人物效果 
+发 布 者： SeASnAkE 
+标签分类： 人工智能 Claude 
+时 间：2026-11-12 03:58:38
+内容预览： 中等推理等级，一个 5 小时对话窗口额度， P1 纯 fable5.2 ，P
+- 🆕 [AI_News_CN] OpenRouter 新路由算法让 GLM 5.3 Flash 延迟降 40%、价格降 17% 
+
+OpenRouter 表示其新路由算法会把更多流量分配给推理表现好的供应商。过去一个月，GLM 5.3 Flash 用户的首字延迟下降 40%，吞吐量提升 10%，每百万 token 成本下降 17%
