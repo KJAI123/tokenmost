@@ -185,3 +185,8 @@
 
 ## 2026-11-12 02:33 UTC（轮 63，查询：Claude Code 折扣）
 - 📰 标题雷达 [Claude Code 折扣] claude code和codex多轮讨论AI自主研究话题
+
+## 2026-11-12 16:28 UTC（轮 64，查询：免费 claude）
+- 📰 标题雷达 [免费 claude] Anthropic「免费发Claude架构师认证」?德勤要&ldquo;考证&rdquo;15000人,这场AI交付军备竞赛有多狠?!
+- 📰 标题雷达 [免费 claude] Claude免费做PPT,为什么还有付费版
+- 📰 标题雷达 [免费 claude] 「免费半年Claude Max」开源开发者狂喜

@@ -1,12 +1,13 @@
 {
-  "harvested_at": "2026-11-12T02:34:08Z",
+  "harvested_at": "2026-11-12T16:29:18Z",
   "changed": [
-    "deno-deploy",
-    "render-pricing"
+    "northflank-pricing"
   ],
   "watching": [
-    "northflank-pricing",
+    "lowendbox-feed",
+    "kaggle-notebooks",
     "himitsushell",
+    "atlascloud",
     "gpunz"
   ],
   "new_baseline": [],
@@ -4451,11 +4452,11 @@
       "name": "LowEndBox RSS（免费 VPS 帖聚合雷达）",
       "url": "https://lowendbox.com/feed/",
       "status": "ok",
-      "md_len": 11795,
+      "md_len": 11910,
       "hits": [
         {
           "m": "2GB KVM VPS for $1",
-          "ctx": ", hosting deals, and industry news - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it"
+          "ctx": "8230; appeared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it"
         },
         {
           "m": "2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:0",
@@ -4535,7 +4536,7 @@
         },
         {
           "m": "/Month First Year!](https://lowendbox",
-          "ctx": "industry news - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-"
+          "ctx": "on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-"
         },
         {
           "m": "/Month First Year! appeared first on LowEndBox ",
@@ -4587,11 +4588,11 @@
         },
         {
           "m": "VPS",
-          "ctx": "# LowEndBox The home of cheap VPS, hosting deals, and industry news - [If You Missed the Godlike.Host Offer in October – It’s Back!"
+          "ctx": "# LowEndBox The home of cheap VPS, hosting deals, and industry news - [Should You Give X Your Money for a Fat 6% APY? Read the Fine"
         },
         {
           "m": "VPS",
-          "ctx": "g deals, and industry news - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-oct"
+          "ctx": "peared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-oct"
         },
         {
           "m": "VPS",
@@ -9184,7 +9185,7 @@
       "name": "Kaggle Notebooks（每周 30h 免费 GPU）",
       "url": "https://www.kaggle.com/docs/notebooks",
       "status": "ok",
-      "md_len": 37652,
+      "md_len": 38265,
       "hits": [
         {
           "m": "20 GBs of output from a Notebook may be saved to disk in /kaggle/w",
@@ -9201,6 +9202,10 @@
         {
           "m": "suspend the Promotion at any time, with or without notice",
           "ctx": "Account via the settings page at any time. **Legal Terms** - Kaggle reserves the right to end or suspend the Promotion at any time, with or without notice, at its sole discretion. The end date of the Promotion may not be publicly announced and can occur"
+        },
+        {
+          "m": "/models)",
+          "ctx": "nsor Processing Units (TPUs)](https://www.kaggle.com/docs/tpu) [Models](https://www.kaggle.com/docs/models) [Competitions Setup](https://www.kaggle.com/docs/competitions-setup) [Organizations](https://www."
         },
         {
           "m": "/modify-project) GCP account to query any data that i",
@@ -10876,15 +10881,15 @@
         },
         {
           "m": "shell",
-          "ctx": "& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794450837814) OS-Level Logging & Hooking Protection Executes shell scr"
+          "ctx": "& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794500950336) OS-Level Logging & Hooking Protection Executes shell scr"
         },
         {
           "m": "shell",
-          "ctx": "itsushell.com/img/features_os.png?v=1794450837814) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She"
+          "ctx": "itsushell.com/img/features_os.png?v=1794500950336) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She"
         },
         {
           "m": "shell",
-          "ctx": "794450837814) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS"
+          "ctx": "794500950336) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS"
         },
         {
           "m": "shell",
@@ -10892,39 +10897,39 @@
         },
         {
           "m": "shell",
-          "ctx": "logging and hooking (auditd, bpftrace). ![Ghidra analysis results for HimitsuShell](https://himitsushell.com/img/features_encryption.png?v=1794450837814) String & Constant Encryption All strings and con"
+          "ctx": "logging and hooking (auditd, bpftrace). ![Ghidra analysis results for HimitsuShell](https://himitsushell.com/img/features_encryption.png?v=1794500950336) String & Constant Encryption All strings and con"
         },
         {
           "m": "shell",
-          "ctx": "more difficult (e.g., IDA, Ghidra). ![Debugger detection results for HimitsuShell](https://himitsushell.com/img/features_debugger.png?v=1794450837814) Debugger Detection Continuously detects debuggers"
+          "ctx": "more difficult (e.g., IDA, Ghidra). ![Debugger detection results for HimitsuShell](https://himitsushell.com/img/features_debugger.png?v=1794500950336) Debugger Detection Continuously detects debuggers"
         },
         {
           "m": "shell",
-          "ctx": "(e.g., gdb, ptrace, strace). ![Ghidra’s control flow graph (CFG) for HimitsuShell](https://himitsushell.com/img/features_obfuscation.png?v=1794450837814) Advanced Obfuscation Techniques Features instru"
+          "ctx": "(e.g., gdb, ptrace, strace). ![Ghidra’s control flow graph (CFG) for HimitsuShell](https://himitsushell.com/img/features_obfuscation.png?v=1794500950336) Advanced Obfuscation Techniques Features instru"
         },
         {
           "m": "shell",
-          "ctx": "asic block splitting, function annotations, and bogus control flow. ![simple usage](https://himitsushell.com/img/features_simple.png?v=1794450837814) Simple Usage Use HimitsuShell with just a few comman"
+          "ctx": "asic block splitting, function annotations, and bogus control flow. ![simple usage](https://himitsushell.com/img/features_simple.png?v=1794500950336) Simple Usage Use HimitsuShell with just a few comman"
         },
         {
           "m": "shell",
-          "ctx": "794450837814) Simple Usage Use HimitsuShell with just a few commands. ![og-image](https://himitsushell.com/img/features_license.png?v=1794450837814) Expiration Date Verification Automatically blocks s"
+          "ctx": "794500950336) Simple Usage Use HimitsuShell with just a few commands. ![og-image](https://himitsushell.com/img/features_license.png?v=1794500950336) Expiration Date Verification Automatically blocks s"
         },
         {
           "m": "shell",
-          "ctx": "l.com/img/features_license.png?v=1794450837814) Expiration Date Verification Automatically blocks shell script execution after the expiration date. ![](https://himitsushell.com/img/background-logo.png?v"
+          "ctx": "l.com/img/features_license.png?v=1794500950336) Expiration Date Verification Automatically blocks shell script execution after the expiration date. ![](https://himitsushell.com/img/background-logo.png?v"
         },
         {
           "m": "shell",
-          "ctx": "ication Automatically blocks shell script execution after the expiration date. ![](https://himitsushell.com/img/background-logo.png?v=1794450837815) Compared to shc ![logo](https://himitsushell.com/img"
+          "ctx": "ication Automatically blocks shell script execution after the expiration date. ![](https://himitsushell.com/img/background-logo.png?v=1794500950336) Compared to shc ![logo](https://himitsushell.com/img"
         },
         {
           "m": "shell",
-          "ctx": "/himitsushell.com/img/background-logo.png?v=1794450837815) Compared to shc ![logo](https://himitsushell.com/img/logo.png?v=1794450837815) shc OS-Level Logging & Hooking Protection ✓ Dynamic Library H"
+          "ctx": "/himitsushell.com/img/background-logo.png?v=1794500950336) Compared to shc ![logo](https://himitsushell.com/img/logo.png?v=1794500950336) shc OS-Level Logging & Hooking Protection ✓ Dynamic Library H"
         },
         {
           "m": "shell",
-          "ctx": "er Detection ✓ ✓ Advanced Obfuscation Techniques ✓ View Technical Analysis ![](https://himitsushell.com/img/background-logo.png?v=1794450837815) Products Community Edition Free for personal use O"
+          "ctx": "er Detection ✓ ✓ Advanced Obfuscation Techniques ✓ View Technical Analysis ![](https://himitsushell.com/img/background-logo.png?v=1794500950337) Products Community Edition Free for personal use O"
         },
         {
           "m": "shell",
@@ -10996,11 +11001,11 @@
         },
         {
           "m": "shell",
-          "ctx": "Yes. See HimitsuObfuscator (https://github.com/HimitsuShell/HimitsuObfuscator) ![](https://himitsushell.com/img/background-logo.png?v=1794450837817) Contact We welcome all inquiries. Email us below,"
+          "ctx": "Yes. See HimitsuObfuscator (https://github.com/HimitsuShell/HimitsuObfuscator) ![](https://himitsushell.com/img/background-logo.png?v=1794500950338) Contact We welcome all inquiries. Email us below,"
         },
         {
           "m": "shell",
-          "ctx": "inquiries. Email us below, and we’ll respond within 24 hours. [[email protected]](https://himitsushell.com/cdn-cgi/l/email-protection#c4acaebdb1aa84a9b1b7acb7b3eaa7aba9)"
+          "ctx": "inquiries. Email us below, and we’ll respond within 24 hours. [[email protected]](https://himitsushell.com/cdn-cgi/l/email-protection#284042515d4668455d5b405b5f064b4745)"
         }
       ]
     },
@@ -15798,7 +15803,7 @@
       "name": "Atlas Cloud（GPU/Agent 云）",
       "url": "https://www.atlascloud.ai",
       "status": "ok",
-      "md_len": 192844,
+      "md_len": 195298,
       "hits": [
         {
           "m": "free credits to start",
@@ -16001,20 +16006,24 @@
           "ctx": "ay-as-you-go pricing at $0.044 per image. Start building today. [Explore](https://www.atlascloud.ai/models/hidream) Model Classification ![HiDream O1 1.5 Text-to-Image](https://www.atlascloud.ai/_next/image?url=ht"
         },
         {
-          "m": "/models/wand-vega-video-1",
-          "ctx": "png&w=2048&q=75) Model Series ### Tencent WAND Vega Video 1.5 [Explore](https://www.atlascloud.ai/models/wand-vega-video-1.5) Model Classification ![Tencent WAND Vega Video 1.5-pro Reference To Video](https://www.atlascl"
+          "m": "/models/elevenlabs-v4)",
+          "ctx": "-a9c994c38dc5.png&w=2048&q=75) Model Series ### Elevenlabs V4 [Explore](https://www.atlascloud.ai/models/elevenlabs-v4) Model Classification ![ElevenLabs v4 Text-to-Speech](https://www.atlascloud.ai/_next/image?url=ht"
         },
         {
           "m": "/models/wand-vega-video-1",
-          "ctx": "png&w=2048&q=75) Model Series ### Tencent WAND Vega Video 1.0 [Explore](https://www.atlascloud.ai/models/wand-vega-video-1.0) Model Classification ![Tencent WAND Vega Video 1.0-pro-mini Reference To Video](https://www.at"
+          "ctx": "utput second for lite and $0.093 for pro. Start building today. [Explore](https://www.atlascloud.ai/models/wand-vega-video-1.5) Model Classification ![Tencent WAND Vega Video 1.5-pro Reference To Video](https://www.atlascl"
+        },
+        {
+          "m": "/models/wand-vega-video-1",
+          "ctx": "ng point for estimating generation costs. Start building today. [Explore](https://www.atlascloud.ai/models/wand-vega-video-1.0) Model Classification ![Tencent WAND Vega Video 1.0-pro-mini Reference To Video](https://www.at"
         },
         {
           "m": "/models/wand-vega-image-1",
-          "ctx": "png&w=2048&q=75) Model Series ### Tencent WAND Vega Image 1.5 [Explore](https://www.atlascloud.ai/models/wand-vega-image-1.5) Model Classification ![Tencent WAND Vega Image 1.5-pro Edit](https://www.atlascloud.ai/_next/i"
+          "ctx": "int for budgeting generation and editing. Start building today. [Explore](https://www.atlascloud.ai/models/wand-vega-image-1.5) Model Classification ![Tencent WAND Vega Image 1.5-pro Edit](https://www.atlascloud.ai/_next/i"
         },
         {
           "m": "/models/wand-vega-image-1",
-          "ctx": "png&w=2048&q=75) Model Series ### Tencent WAND Vega Image 1.0 [Explore](https://www.atlascloud.ai/models/wand-vega-image-1.0) Model Classification ![Tencent WAND Vega Image 1.0-pro Edit](https://www.atlascloud.ai/_next/i"
+          "ctx": "p developers budget for image production. Start building today. [Explore](https://www.atlascloud.ai/models/wand-vega-image-1.0) Model Classification ![Tencent WAND Vega Image 1.0-pro Edit](https://www.atlascloud.ai/_next/i"
         },
         {
           "m": "/models/heygen-avatar-v-digital-twin)",
@@ -16298,7 +16307,7 @@
         },
         {
           "m": "/models/list/llm)",
-          "ctx": "models across DeepSeek, Moonshot, Qwen, GLM, MiniMax and more. [Explore](https://www.atlascloud.ai/models/list/llm) Model Classification H Hy4 $0.834/2.501/M$0.417/1.25/M ![DeepSeek V4.1 Flash 1017](https://www"
+          "ctx": "models across DeepSeek, Moonshot, Qwen, GLM, MiniMax and more. [Explore](https://www.atlascloud.ai/models/list/llm) Model Classification H Hy4 $0.834/2.501/M$0.417/1.25/M ![Gemini 4 Carbon](https://www.atlasclo"
         },
         {
           "m": "/moonshot",
@@ -16363,467 +16372,467 @@
       "name": "GPU.nz（新西兰 GPU 云定价）",
       "url": "https://gpu.nz/en/pricing",
       "status": "ok",
-      "md_len": 13482,
+      "md_len": 13467,
       "hits": [
         {
           "m": "8 GB+ | $0",
-          "ctx": "e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5"
+          "ctx": "e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21"
         },
         {
           "m": "24 GB+ | $0",
-          "ctx": "| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88"
+          "ctx": "-- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41"
         },
         {
           "m": "48 GB+ | $0",
-          "ctx": ".58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88"
+          "ctx": ".44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41"
         },
         {
           "m": "80 GB+ | $0",
-          "ctx": "| $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability come from the live catalog and update au"
+          "ctx": "| $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live catalog and update au"
         },
         {
-          "m": "288gb) | 288 GB | $21",
-          "ctx": ", $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.01/h | $22.98/h | 7 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h | 2"
+          "m": "288gb) | 288 GB | $20",
+          "ctx": ", $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $20.94/h | 9 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 1"
         },
         {
-          "m": "180gb) | 180 GB | $12",
-          "ctx": "/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.01/h | $22.98/h | 7 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93/h"
+          "m": "180gb) | 180 GB | $15",
+          "ctx": "/gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $20.94/h | 9 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 19 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57/h"
         },
         {
-          "m": "141gb) | 141 GB | $4",
-          "ctx": "nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $10."
+          "m": "141gb) | 141 GB | $5",
+          "ctx": "nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 19 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.40/h | $10."
         },
         {
-          "m": "141gb) | 141 GB | $7",
-          "ctx": "en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $10.16/h | 30 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87/"
-        },
-        {
-          "m": "80gb) | 80 GB | $5",
-          "ctx": "pu/h200-nvl-141gb) | 141 GB | $7.26/h | $10.16/h | 30 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87/h | 12 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/h"
-        },
-        {
-          "m": "94gb) | 94 GB | $5",
-          "ctx": "n/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87/h | 12 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/h | 7 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45/"
+          "m": "141gb) | 141 GB | $8",
+          "ctx": "en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.40/h | $10.16/h | 25 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56/"
         },
         {
           "m": "80gb) | 80 GB | $4",
-          "ctx": "/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/h | 7 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45/h | 4 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65/"
+          "ctx": "pu/h200-nvl-141gb) | 141 GB | $8.40/h | $10.16/h | 25 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/h"
+        },
+        {
+          "m": "94gb) | 94 GB | $4",
+          "ctx": "n/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/h | 5 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64/"
         },
         {
           "m": "80gb) | 80 GB | $2",
-          "ctx": "gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45/h | 4 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65/h | 11 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.36"
+          "ctx": "/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/h | 5 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64/h | 13 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.819/h | $1.3"
         },
         {
           "m": "40gb) | 40 GB | $0",
-          "ctx": "pu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65/h | 11 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.36/h | 26 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.21"
+          "ctx": "pu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64/h | 13 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.819/h | $1.36/h | 28 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2.1"
         },
         {
           "m": "80gb) | 80 GB | $2",
-          "ctx": "pu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.36/h | 26 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.21/h | 14 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.44"
+          "ctx": "u/a100-sxm4-40gb) | 40 GB | $0.819/h | $1.36/h | 28 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2.19/h | 7 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61/"
         },
         {
           "m": "40gb) | 40 GB | $1",
-          "ctx": "pu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.21/h | 14 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.44/h | 20 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05"
+          "ctx": "gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2.19/h | 7 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61/h | 28 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05"
         },
         {
           "m": "80gb) | 80 GB | $1",
-          "ctx": "pu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.44/h | 20 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | |"
+          "ctx": "pu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61/h | 28 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | |"
         },
         {
           "m": "48gb) | 48 GB | $1",
-          "ctx": "gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | |"
+          "ctx": "gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | |"
         },
         {
           "m": "48gb) | 48 GB | $0",
-          "ctx": "tps://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | ["
+          "ctx": "tps://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | ["
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "(https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 |"
+          "ctx": "(https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | |"
         },
         {
-          "m": "48gb) | 48 GB | $0",
-          "ctx": "ttps://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10 |"
+          "m": "48gb) | 48 GB | $1",
+          "ctx": "ttps://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | [T"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "tps://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.218/h |"
+          "ctx": "https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.217/h | $0."
         },
         {
           "m": "32gb) | 32 GB | $0",
-          "ctx": "/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.218/h | $0.38/h | 108 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.327/h |"
+          "ctx": "/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.217/h | $0.435/h | 118 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.228/h |"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "sla-v100-32gb) | 32 GB | $0.218/h | $0.38/h | 108 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.327/h | $0.369/h | 18 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.102/h | $0.3"
+          "ctx": "la-v100-32gb) | 32 GB | $0.217/h | $0.435/h | 118 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.228/h | $0.397/h | 12 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.304/h | $0.3"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "u/tesla-v100-16gb) | 16 GB | $0.327/h | $0.369/h | 18 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.102/h | $0.314/h | 10 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.9"
+          "ctx": "u/tesla-v100-16gb) | 16 GB | $0.228/h | $0.397/h | 12 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.304/h | $0.313/h | 8 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.76"
         },
         {
           "m": "96gb) | 96 GB | $1",
-          "ctx": "4-16gb) | 16 GB | $0.102/h | $0.314/h | 10 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.93/h | $3.23/h | 53 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB |"
+          "ctx": "t4-16gb) | 16 GB | $0.304/h | $0.313/h | 8 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.76/h | $3.02/h | 36 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB |"
         },
         {
           "m": "96gb) | 96 GB | $2",
-          "ctx": "gb) | 96 GB | $1.93/h | $3.23/h | 53 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.37/h | $3.31/h | 87 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB"
+          "ctx": "gb) | 96 GB | $1.76/h | $3.02/h | 36 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.90/h | $3.35/h | 26 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB"
         },
         {
           "m": "96gb) | 96 GB | $1",
-          "ctx": "| 96 GB | $2.37/h | $3.31/h | 87 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.47/h | $3.08/h | 60 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.03/h |"
+          "ctx": "| 96 GB | $2.90/h | $3.35/h | 26 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.46/h | $3.33/h | 45 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.02/h |"
         },
         {
           "m": "72gb) | 72 GB | $1",
-          "ctx": "-max-q-96gb) | 96 GB | $1.47/h | $3.08/h | 60 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.03/h | $1.78/h | 7 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.774/h |"
+          "ctx": "-max-q-96gb) | 96 GB | $1.46/h | $3.33/h | 45 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.02/h | $1.67/h | 8 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.783/h |"
         },
         {
           "m": "48gb) | 48 GB | $0",
-          "ctx": "ro-5000-72gb) | 72 GB | $1.03/h | $1.78/h | 7 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.774/h | $1.53/h | 45 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.761/h"
+          "ctx": "ro-5000-72gb) | 72 GB | $1.02/h | $1.67/h | 8 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.783/h | $1.51/h | 29 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.759/h"
         },
         {
           "m": "32gb) | 32 GB | $0",
-          "ctx": "-5000-48gb) | 48 GB | $0.774/h | $1.53/h | 45 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.761/h | $0.853/h | 9 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.466/h"
+          "ctx": "-5000-48gb) | 48 GB | $0.783/h | $1.51/h | 29 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.759/h | $0.852/h | 8 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.464/h"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "-4500-32gb) | 32 GB | $0.761/h | $0.853/h | 9 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.466/h | $0.604/h | 61 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.10/h"
+          "ctx": "-4500-32gb) | 32 GB | $0.759/h | $0.852/h | 8 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.464/h | $0.608/h | 46 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.29/h"
         },
         {
           "m": "48gb) | 48 GB | $1",
-          "ctx": "-4000-24gb) | 24 GB | $0.466/h | $0.604/h | 61 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.10/h | $1.31/h | 17 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.70/h |"
+          "ctx": "-4000-24gb) | 24 GB | $0.464/h | $0.608/h | 46 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.29/h | $1.34/h | 12 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.81/h |"
         },
         {
           "m": "48gb) | 48 GB | $1",
-          "ctx": "6000ada-48gb) | 48 GB | $1.10/h | $1.31/h | 17 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.70/h | $1.80/h | 6 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.895/h |"
+          "ctx": "6000ada-48gb) | 48 GB | $1.29/h | $1.34/h | 12 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.81/h | $1.81/h | 1 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.831/h |"
         },
         {
           "m": "32gb) | 32 GB | $0",
-          "ctx": "-5880ada-48gb) | 48 GB | $1.70/h | $1.80/h | 6 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.895/h | $0.925/h | 8 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.774/h"
+          "ctx": "-5880ada-48gb) | 48 GB | $1.81/h | $1.81/h | 1 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.831/h | $0.916/h | 7 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.722/h"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "000ada-32gb) | 32 GB | $0.895/h | $0.925/h | 8 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.774/h | $0.835/h | 3 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.399/h"
+          "ctx": "000ada-32gb) | 32 GB | $0.831/h | $0.916/h | 7 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.722/h | $0.801/h | 5 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.398/h"
         },
         {
           "m": "20gb) | 20 GB | $0",
-          "ctx": "500ada-24gb) | 24 GB | $0.774/h | $0.835/h | 3 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.399/h | $0.507/h | 11 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.29/h"
+          "ctx": "500ada-24gb) | 24 GB | $0.722/h | $0.801/h | 5 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.398/h | $0.537/h | 10 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.301/h"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "00ada-20gb) | 20 GB | $0.399/h | $0.507/h | 11 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.29/h | $0.29/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.971"
+          "ctx": "00ada-20gb) | 20 GB | $0.398/h | $0.537/h | 10 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.301/h | $0.301/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.819/h | $0."
         },
         {
           "m": "48gb) | 48 GB | $0",
-          "ctx": "u/rtx-2000ada-16gb) | 16 GB | $0.29/h | $0.29/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.971/h | 27 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.399/h | $0."
+          "ctx": "rtx-2000ada-16gb) | 16 GB | $0.301/h | $0.301/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.819/h | $0.951/h | 9 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.463/h | $0."
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "u/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.971/h | 27 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.399/h | $0.564/h | 28 | | [RTX A4500](https://gpu.nz/en/gpu/rtx-a4500-20gb) | 20 GB | $0.308/h | $0"
-        },
-        {
-          "m": "20gb) | 20 GB | $0",
-          "ctx": "/rtx-a5000-24gb) | 24 GB | $0.399/h | $0.564/h | 28 | | [RTX A4500](https://gpu.nz/en/gpu/rtx-a4500-20gb) | 20 GB | $0.308/h | $0.317/h | 2 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0."
+          "ctx": "u/rtx-a6000-48gb) | 48 GB | $0.819/h | $0.951/h | 9 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.463/h | $0.517/h | 18 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "u/rtx-a4500-20gb) | 20 GB | $0.308/h | $0.317/h | 2 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 86 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.556/h | $0."
+          "ctx": "/rtx-a5000-24gb) | 24 GB | $0.463/h | $0.517/h | 18 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 74 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-12gb) | 12 GB | $0.325/h | $0."
+        },
+        {
+          "m": "12gb) | 12 GB | $0",
+          "ctx": "u/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 74 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-12gb) | 12 GB | $0.325/h | $0.325/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.554/h | $0."
         },
         {
           "m": "11gb) | 11 GB | $0",
-          "ctx": "u/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 86 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.556/h | $0.556/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.33"
+          "ctx": "u/rtx-a2000-12gb) | 12 GB | $0.325/h | $0.325/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.554/h | $0.554/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.337"
         },
         {
           "m": "6gb) | 6 GB | $0",
-          "ctx": "u/rtx-a2000-11gb) | 11 GB | $0.556/h | $0.556/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.338/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.40"
+          "ctx": "u/rtx-a2000-11gb) | 11 GB | $0.554/h | $0.554/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.337/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.42"
         },
         {
           "m": "32gb) | 32 GB | $0",
-          "ctx": "/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.338/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.40/h | 625 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.386/h | $0.54"
+          "ctx": "n/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.337/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.42/h | 400 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0.9"
+        },
+        {
+          "m": "24gb) | 24 GB | $0",
+          "ctx": "gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.42/h | 400 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0.903/h | 1 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.383/h | $0.56"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.40/h | 625 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.386/h | $0.544/h | 153 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.306/h"
+          "ctx": "/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0.903/h | 1 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.383/h | $0.566/h | 123 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.316/h"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "-5080-16gb) | 16 GB | $0.386/h | $0.544/h | 153 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.306/h | $0.507/h | 137 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.253/h | $0."
+          "ctx": "-5080-16gb) | 16 GB | $0.383/h | $0.566/h | 123 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.316/h | $0.524/h | 84 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.283/h | $0.3"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "rtx-5070-ti-16gb) | 16 GB | $0.306/h | $0.507/h | 137 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.253/h | $0.354/h | 54 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.218/h"
+          "ctx": "/rtx-5070-ti-16gb) | 16 GB | $0.316/h | $0.524/h | 84 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.283/h | $0.349/h | 51 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.205/h"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "x-5070-12gb) | 12 GB | $0.253/h | $0.354/h | 54 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.218/h | $0.302/h | 208 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h |"
+          "ctx": "x-5070-12gb) | 12 GB | $0.283/h | $0.349/h | 51 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.205/h | $0.301/h | 161 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.216/h |"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "60-ti-16gb) | 16 GB | $0.218/h | $0.302/h | 208 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h | $0.278/h | 18 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265/"
+          "ctx": "60-ti-16gb) | 16 GB | $0.205/h | $0.301/h | 161 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.216/h | $0.289/h | 24 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.228"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h | $0.278/h | 18 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1.2"
+          "ctx": "pu/rtx-5060-ti-8gb) | 8 GB | $0.216/h | $0.289/h | 24 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.228/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1.1"
         },
         {
           "m": "48gb) | 48 GB | $0",
-          "ctx": "n/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1.27/h | 75 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01/"
+          "ctx": "n/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.228/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1.10/h | 54 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.99"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1.27/h | 75 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01/h | 505 | | [RTX 4090 D](https://gpu.nz/en/gpu/rtx-4090d-24gb) | 24 GB | $0.895/h | $0"
+          "ctx": "/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1.10/h | 54 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.994/h | 293 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-16gb) | 16 GB | $0.614/h | $0."
         },
         {
-          "m": "24gb) | 24 GB | $0",
-          "ctx": "u/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01/h | 505 | | [RTX 4090 D](https://gpu.nz/en/gpu/rtx-4090d-24gb) | 24 GB | $0.895/h | $0.895/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.49/h |"
+          "m": "16gb) | 16 GB | $0",
+          "ctx": "pu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.994/h | 293 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-16gb) | 16 GB | $0.614/h | $0.614/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.488/h"
         },
         {
           "m": "32gb) | 32 GB | $0",
-          "ctx": "-4090d-24gb) | 24 GB | $0.895/h | $0.895/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.49/h | $0.625/h | 8 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.411/h |"
+          "ctx": "x-4090-16gb) | 16 GB | $0.614/h | $0.614/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.488/h | $0.497/h | 4 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.481/h"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "x-4080s-32gb) | 32 GB | $0.49/h | $0.625/h | 8 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.411/h | $0.58/h | 22 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.78"
+          "ctx": "-4080s-32gb) | 32 GB | $0.488/h | $0.497/h | 4 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.481/h | $0.566/h | 21 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0.7"
         },
         {
           "m": "32gb) | 32 GB | $0",
-          "ctx": "gpu/rtx-4080s-16gb) | 16 GB | $0.411/h | $0.58/h | 22 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.787/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.374/h | $0.53"
+          "ctx": "pu/rtx-4080s-16gb) | 16 GB | $0.481/h | $0.566/h | 21 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0.784/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.373/h | $0.54"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.787/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.374/h | $0.532/h | 29 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0"
+          "ctx": "/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0.784/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.373/h | $0.542/h | 21 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "16gb) | 16 GB | $0.374/h | $0.532/h | 29 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $0.411/h | 49 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.287/h"
+          "ctx": "16gb) | 16 GB | $0.373/h | $0.542/h | 21 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $0.398/h | 39 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.272/h"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "70s-ti-16gb) | 16 GB | $0.151/h | $0.411/h | 49 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.287/h | $0.302/h | 13 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.185/h"
+          "ctx": "70s-ti-16gb) | 16 GB | $0.151/h | $0.398/h | 39 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.272/h | $0.283/h | 16 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.196/h"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "70-ti-12gb) | 12 GB | $0.287/h | $0.302/h | 13 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.185/h | $0.241/h | 51 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.205/h | $0.3"
+          "ctx": "70-ti-12gb) | 12 GB | $0.272/h | $0.283/h | 16 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.196/h | $0.235/h | 61 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.228/h | $0.3"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "pu/rtx-4070s-12gb) | 12 GB | $0.185/h | $0.241/h | 51 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.205/h | $0.351/h | 21 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.175/h"
+          "ctx": "pu/rtx-4070s-12gb) | 12 GB | $0.196/h | $0.235/h | 61 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.228/h | $0.349/h | 17 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.223/h"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "x-4070-12gb) | 12 GB | $0.205/h | $0.351/h | 21 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.175/h | $0.302/h | 51 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h |"
+          "ctx": "x-4070-12gb) | 12 GB | $0.228/h | $0.349/h | 17 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.223/h | $0.325/h | 35 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h |"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "060-ti-16gb) | 16 GB | $0.175/h | $0.302/h | 51 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h | $0.35/h | 6 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/h"
+          "ctx": "060-ti-16gb) | 16 GB | $0.223/h | $0.325/h | 35 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h | $0.349/h | 4 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.126/h | $0.183/"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h | $0.35/h | 6 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/h | 9 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.386/h |"
+          "ctx": "gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h | $0.349/h | 4 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.126/h | $0.183/h | 12 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.457/h"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/h | 9 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.386/h | $0.519/h | 13 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.253/h | $0.6"
+          "ctx": "rtx-4060-8gb) | 8 GB | $0.126/h | $0.183/h | 12 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.457/h | $0.614/h | 6 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.252/h | $0.59"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "/rtx-3090-ti-24gb) | 24 GB | $0.386/h | $0.519/h | 13 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.253/h | $0.604/h | 316 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.193/h"
+          "ctx": "u/rtx-3090-ti-24gb) | 24 GB | $0.457/h | $0.614/h | 6 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.252/h | $0.59/h | 201 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.216/h"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "-3090-24gb) | 24 GB | $0.253/h | $0.604/h | 316 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.193/h | $0.374/h | 68 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0.2"
+          "ctx": "x-3090-24gb) | 24 GB | $0.252/h | $0.59/h | 201 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.216/h | $0.38/h | 46 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.23"
         },
         {
           "m": "20gb) | 20 GB | $0",
-          "ctx": "/rtx-3080-ti-12gb) | 12 GB | $0.193/h | $0.374/h | 68 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0.272/h | 7 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.191/h | $0.31"
+          "ctx": "u/rtx-3080-ti-12gb) | 12 GB | $0.216/h | $0.38/h | 46 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.235/h | 4 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.193/h | $0.30"
         },
         {
           "m": "10gb) | 10 GB | $0",
-          "ctx": "/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0.272/h | 7 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.191/h | $0.314/h | 75 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h |"
+          "ctx": "/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.235/h | 4 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.193/h | $0.301/h | 63 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h |"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "x-3080-10gb) | 10 GB | $0.191/h | $0.314/h | 75 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h | $0.357/h | 7 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.217/"
+          "ctx": "x-3080-10gb) | 10 GB | $0.193/h | $0.301/h | 63 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h | $0.364/h | 6 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.216/"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h | $0.357/h | 7 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.217/h | 43 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.066/h |"
+          "ctx": "gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h | $0.364/h | 6 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.216/h | 31 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h | $"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "rtx-3070-8gb) | 8 GB | $0.165/h | $0.217/h | 43 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.066/h | $0.217/h | 40 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.086/h | $0.1"
+          "ctx": "rtx-3070-8gb) | 8 GB | $0.165/h | $0.216/h | 31 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h | $0.204/h | 38 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.099/h | $0.16"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "pu/rtx-3060-ti-8gb) | 8 GB | $0.066/h | $0.217/h | 40 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.086/h | $0.175/h | 210 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.296/h | $"
+          "ctx": "gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h | $0.204/h | 38 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.099/h | $0.169/h | 131 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.295/h | $"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "/rtx-3060-12gb) | 12 GB | $0.086/h | $0.175/h | 210 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.296/h | $0.447/h | 11 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.545"
+          "ctx": "/rtx-3060-12gb) | 12 GB | $0.099/h | $0.169/h | 131 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.295/h | $0.445/h | 7 | | [Titan V](https://gpu.nz/en/gpu/titan-v-12gb) | 12 GB | $0.307/h | $0.316/"
+        },
+        {
+          "m": "12gb) | 12 GB | $0",
+          "ctx": "n/gpu/titan-rtx-24gb) | 24 GB | $0.295/h | $0.445/h | 7 | | [Titan V](https://gpu.nz/en/gpu/titan-v-12gb) | 12 GB | $0.307/h | $0.316/h | 4 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.578/"
         },
         {
           "m": "48gb) | 48 GB | $0",
-          "ctx": "rtx-24gb) | 24 GB | $0.296/h | $0.447/h | 11 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.545/h | $0.559/h | 6 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.278/"
+          "ctx": "an-v-12gb) | 12 GB | $0.307/h | $0.316/h | 4 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.578/h | $0.59/h | 2 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.349/h"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "8000-48gb) | 48 GB | $0.545/h | $0.559/h | 6 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.278/h | $0.351/h | 3 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.241/"
+          "ctx": "-8000-48gb) | 48 GB | $0.578/h | $0.59/h | 2 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.349/h | $0.349/h | 2 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.24/h"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "6000-24gb) | 24 GB | $0.278/h | $0.351/h | 3 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.241/h | $0.241/h | 1 | | [Quadro RTX 4000](https://gpu.nz/en/gpu/q-rtx-4000-8gb) | 8 GB | $0.265/h"
-        },
-        {
-          "m": "8gb) | 8 GB | $0",
-          "ctx": "5000-16gb) | 16 GB | $0.241/h | $0.241/h | 1 | | [Quadro RTX 4000](https://gpu.nz/en/gpu/q-rtx-4000-8gb) | 8 GB | $0.265/h | $0.265/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.137/h |"
+          "ctx": "6000-24gb) | 24 GB | $0.349/h | $0.349/h | 2 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.24/h | $0.24/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.145/h | $"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "-rtx-4000-8gb) | 8 GB | $0.265/h | $0.265/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.137/h | $0.175/h | 22 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h"
+          "ctx": "-rtx-5000-16gb) | 16 GB | $0.24/h | $0.24/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.145/h | $0.204/h | 18 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h"
         },
         {
           "m": "11gb) | 11 GB | $0",
-          "ctx": "080-ti-24gb) | 24 GB | $0.137/h | $0.175/h | 22 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.217/h | 19 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h |"
+          "ctx": "080-ti-24gb) | 24 GB | $0.145/h | $0.204/h | 18 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.228/h | 15 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h |"
         },
         {
           "m": "16gb) | 16 GB | $0",
-          "ctx": "-2080-ti-11gb) | 11 GB | $0.169/h | $0.217/h | 19 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.241/h | 9 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.194/h | $"
+          "ctx": "-2080-ti-11gb) | 11 GB | $0.169/h | $0.228/h | 15 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.232/h | 6 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.202/h | $"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "esla-p100-16gb) | 16 GB | $0.109/h | $0.241/h | 9 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.194/h | $0.20/h | 6 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.224/h | $0.2"
+          "ctx": "esla-p100-16gb) | 16 GB | $0.109/h | $0.232/h | 6 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.202/h | $0.202/h | 1 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0.2"
         },
         {
           "m": "24gb) | 24 GB | $0",
-          "ctx": "u/tesla-p100-12gb) | 12 GB | $0.194/h | $0.20/h | 6 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.224/h | $0.241/h | 3 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.519/h | $0."
+          "ctx": "/tesla-p100-12gb) | 12 GB | $0.202/h | $0.202/h | 1 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0.24/h | 1 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.81"
         },
         {
           "m": "64gb) | 64 GB | $0",
-          "ctx": "u/tesla-p40-24gb) | 24 GB | $0.224/h | $0.241/h | 3 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.519/h | $0.78/h | 44 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0."
+          "ctx": "gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0.24/h | 1 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.819/h | 19 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.853/h | $0"
         },
         {
           "m": "40gb) | 40 GB | $0",
-          "ctx": "u/cmp-170hx-64gb) | 64 GB | $0.519/h | $0.78/h | 44 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0.87/h | 19 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.085/h | $0.11"
+          "ctx": "/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.819/h | 19 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.853/h | $0.939/h | 15 | | [RTX 4080 Laptop](https://gpu.nz/en/gpu/rtx-4080-laptop-12gb) | 12 GB | $"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0.87/h | 19 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.085/h | $0.113/h | 27 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $"
+          "ctx": "0gb) | 40 GB | $0.853/h | $0.939/h | 15 | | [RTX 4080 Laptop](https://gpu.nz/en/gpu/rtx-4080-laptop-12gb) | 12 GB | $0.638/h | $0.638/h | 1 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "2gb) | 12 GB | $0.085/h | $0.113/h | 27 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.136/h | $0.181/h | 35 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.142/h | $0.1"
+          "ctx": "12gb) | 12 GB | $0.638/h | $0.638/h | 1 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.264/h | $0.264/h | 1 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.204/h | $0.20"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "-3060-laptop-12gb) | 12 GB | $0.136/h | $0.181/h | 35 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.142/h | $0.169/h | 24 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.105/h"
+          "ctx": "x-3060-laptop-12gb) | 12 GB | $0.264/h | $0.264/h | 1 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.204/h | $0.204/h | 1 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.108/h |"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "x-2060-12gb) | 12 GB | $0.142/h | $0.169/h | 24 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.105/h | $0.105/h | 1 | | [RTX A3000 Laptop](https://gpu.nz/en/gpu/rtx-a3000-laptop-12gb) | 12 GB |"
+          "ctx": "tx-2060-12gb) | 12 GB | $0.204/h | $0.204/h | 1 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.108/h | $0.144/h | 3 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.088/h | $0.12"
         },
         {
           "m": "12gb) | 12 GB | $0",
-          "ctx": "gb) | 12 GB | $0.105/h | $0.105/h | 1 | | [RTX A3000 Laptop](https://gpu.nz/en/gpu/rtx-a3000-laptop-12gb) | 12 GB | $0.169/h | $0.169/h | 1 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.139/h |"
+          "ctx": "u/gtx-titan-x-12gb) | 12 GB | $0.108/h | $0.144/h | 3 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.088/h | $0.12/h | 24 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.151/h |"
         },
         {
           "m": "11gb) | 11 GB | $0",
-          "ctx": "-laptop-12gb) | 12 GB | $0.169/h | $0.169/h | 1 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.139/h | $0.169/h | 9 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.3"
+          "ctx": "itan-xp-12gb) | 12 GB | $0.088/h | $0.12/h | 24 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.151/h | $0.18/h | 4 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.132/h |"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "11gb) | 11 GB | $0.139/h | $0.169/h | 9 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.362/h | $0.362/h | 1 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.157/h |"
+          "ctx": "080-ti-11gb) | 11 GB | $0.151/h | $0.18/h | 4 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.132/h | $0.156/h | 7 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h |"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "0-laptop-8gb) | 8 GB | $0.362/h | $0.362/h | 1 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.157/h | $0.163/h | 2 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.2"
+          "ctx": "ro-p4000-8gb) | 8 GB | $0.132/h | $0.156/h | 7 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h | $0.234/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.117/h | $0.126/"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "s-8gb) | 8 GB | $0.157/h | $0.163/h | 2 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.253/h | $0.362/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.113/h | $0.121/"
+          "ctx": "n/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h | $0.234/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.117/h | $0.126/h | 14 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h |"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "rtx-4060-laptop-8gb) | 8 GB | $0.253/h | $0.362/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.113/h | $0.121/h | 20 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.111/h |"
+          "ctx": "gtx-1080-8gb) | 8 GB | $0.117/h | $0.126/h | 14 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h | $0.132/h | 4 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.104/h | $0.12/h"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "gtx-1080-8gb) | 8 GB | $0.113/h | $0.121/h | 20 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.111/h | $0.121/h | 16 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.117"
+          "ctx": "gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h | $0.132/h | 4 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.104/h | $0.12/h | 5 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.25"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "pu/gtx-1070-ti-8gb) | 8 GB | $0.111/h | $0.121/h | 16 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.117/h | 7 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.139/h | $0.157/"
+          "ctx": "70-8gb) | 8 GB | $0.104/h | $0.12/h | 5 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.252/h | $0.361/h | 2 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.3"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.117/h | 7 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.139/h | $0.157/h | 7 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h |"
+          "ctx": "p-8gb) | 8 GB | $0.252/h | $0.361/h | 2 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.361/h | $0.361/h | 1 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h | $"
+        },
+        {
+          "m": "8gb) | 8 GB | $1",
+          "ctx": "0-laptop-8gb) | 8 GB | $0.361/h | $0.361/h | 1 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h | $1.34/h | 1 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h"
         },
         {
           "m": "8gb) | 8 GB | $0",
-          "ctx": "rtx-2070-8gb) | 8 GB | $0.139/h | $0.157/h | 7 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h | $0.157/h | 12 | | [RTX 2080](https://gpu.nz/en/gpu/rtx-2080-8gb) | 8 GB | $0.241/h | $0.241"
+          "ctx": "/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h | $1.34/h | 1 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h | 1 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h"
         },
         {
-          "m": "8gb) | 8 GB | $0",
-          "ctx": "/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h | $0.157/h | 12 | | [RTX 2080](https://gpu.nz/en/gpu/rtx-2080-8gb) | 8 GB | $0.241/h | $0.241/h | 1 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.133/h |"
-        },
-        {
-          "m": "8gb) | 8 GB | $0",
-          "ctx": "tx-2080-8gb) | 8 GB | $0.241/h | $0.241/h | 1 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.133/h | $0.157/h | 13 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h |"
+          "m": "6gb) | 6 GB | $1",
+          "ctx": "en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h | 1 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h | 1 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.101/h | $0.168/h"
         },
         {
           "m": "6gb) | 6 GB | $0",
-          "ctx": "ro-p4000-8gb) | 8 GB | $0.133/h | $0.157/h | 13 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h | $0.132/h | 3 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846/"
+          "ctx": "z/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h | 1 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.101/h | $0.168/h | 3 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.0"
         },
         {
           "m": "6gb) | 6 GB | $0",
-          "ctx": "gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h | $0.132/h | 3 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846/h | 4 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.117/h | $0."
+          "ctx": "0-6gb) | 6 GB | $0.101/h | $0.168/h | 3 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.166/h | 8 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.116/h | $0."
         },
         {
           "m": "6gb) | 6 GB | $0",
-          "ctx": "pu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846/h | 4 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.117/h | $0.13/h | 6 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.05"
+          "ctx": "3060-laptop-6gb) | 6 GB | $0.058/h | $0.166/h | 8 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.116/h | $0.126/h | 9 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.094/h | $"
         },
         {
           "m": "6gb) | 6 GB | $0",
-          "ctx": "-s-6gb) | 6 GB | $0.117/h | $0.13/h | 6 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.061/h | 5 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187/"
+          "ctx": "tx-1660-s-6gb) | 6 GB | $0.116/h | $0.126/h | 9 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.094/h | $0.163/h | 5 | | [Quadro P2000](https://gpu.nz/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h |"
         },
         {
-          "m": "6gb) | 6 GB | $0",
-          "ctx": "rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.061/h | 5 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187/h | 2 | | [GTX 1650](https://gpu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132/"
+          "m": "5gb) | 5 GB | $0",
+          "ctx": "1660-ti-6gb) | 6 GB | $0.094/h | $0.163/h | 5 | | [Quadro P2000](https://gpu.nz/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h | $0.072/h | 5 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h"
         },
         {
-          "m": "4gb) | 4 GB | $0",
-          "ctx": "en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187/h | 2 | | [GTX 1650](https://gpu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132/h | 1 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h"
-        },
-        {
-          "m": "180gb) | 180 GB | $17",
-          "ctx": "pu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132/h | 1 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h | 15 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h | 1"
+          "m": "180gb) | 180 GB | $18",
+          "ctx": "z/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h | $0.072/h | 5 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h | 9 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.517/h | $1.11/h | 13"
         },
         {
           "m": "128gb) | 128 GB | $0",
-          "ctx": "pu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h | 15 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h | 16 | | [RTX 6000D](https://gpu.nz/en/gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3.2"
+          "ctx": "gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h | 9 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.517/h | $1.11/h | 13 | | [Tesla V100 Super](https://gpu.nz/en/gpu/tesla-v100s-32gb) | 32 GB | $0.83"
         },
         {
-          "m": "80gb) | 80 GB | $3",
-          "ctx": "/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h | 16 | | [RTX 6000D](https://gpu.nz/en/gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3.26/h | 3 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/"
+          "m": "32gb) | 32 GB | $0",
+          "ctx": "-128gb) | 128 GB | $0.517/h | $1.11/h | 13 | | [Tesla V100 Super](https://gpu.nz/en/gpu/tesla-v100s-32gb) | 32 GB | $0.831/h | $0.837/h | 2 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1.5"
         },
         {
           "m": "32gb) | 32 GB | $1",
-          "ctx": "gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3.26/h | 3 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/h | 5 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | ["
-        },
-        {
-          "m": "16gb) | 16 GB | $0",
-          "ctx": "//gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/h | 5 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | ["
-        },
-        {
-          "m": "16gb) | 16 GB | $0",
-          "ctx": "(https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | |"
+          "ctx": "tesla-v100s-32gb) | 32 GB | $0.831/h | $0.837/h | 2 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1.59/h | 2 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A"
         },
         {
           "m": "16gb) | 16 GB | $2",
-          "ctx": "ttps://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.181/h | $8.82/h |"
+          "ctx": "//gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1.59/h | 2 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | |"
+        },
+        {
+          "m": "16gb) | 16 GB | $0",
+          "ctx": "https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | |"
+        },
+        {
+          "m": "16gb) | 16 GB | $0",
+          "ctx": "https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409/"
+        },
+        {
+          "m": "8gb) | 8 GB | $0",
+          "ctx": ".nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.18/h | $8.79/h"
         },
         {
           "m": "6gb) | 6 GB | $0",
-          "ctx": "u.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.181/h | $8.82/h | 3 | Prices and availability come from the live catalog and update automatically"
+          "ctx": "en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.18/h | $8.79/h | 4 | Prices and availability come from the live catalog and update automatically"
         },
         {
           "m": "Traffic per gigabyte**",
@@ -16847,15 +16856,15 @@
         },
         {
           "m": "GPU",
-          "ctx": ". Below are all GPUs with prices from the live catalog and worked examples. In short gpu.nz bills GPU rental per minute from your balance: the cheapest server right now is from $0.066 per hour for one"
+          "ctx": ". Below are all GPUs with prices from the live catalog and worked examples. In short gpu.nz bills GPU rental per minute from your balance: the cheapest server right now is from $0.06 per hour for one G"
         },
         {
           "m": "GPU",
-          "ctx": "rental per minute from your balance: the cheapest server right now is from $0.066 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU, but its disk is. ## How"
+          "ctx": "U rental per minute from your balance: the cheapest server right now is from $0.06 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU, but its disk is. ## How"
         },
         {
           "m": "GPU",
-          "ctx": "m $0.066 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU, but its disk is. ## How billing works **Billed per minute** A server is billed per minute while"
+          "ctx": "om $0.06 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU, but its disk is. ## How billing works **Billed per minute** A server is billed per minute while"
         },
         {
           "m": "GPU",
@@ -16867,23 +16876,23 @@
         },
         {
           "m": "GPU",
-          "ctx": "| 1 minute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.1"
+          "ctx": "| 1 minute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109"
         },
         {
           "m": "GPU",
-          "ctx": "-- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 |"
+          "ctx": "| --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 |"
         },
         {
           "m": "GPU",
-          "ctx": ".066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248"
+          "ctx": "0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259"
         },
         {
           "m": "GPU",
-          "ctx": "| $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability come from the live cata"
+          "ctx": "| $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live cata"
         },
         {
           "m": "GPU",
-          "ctx": "495 | $11.88 | Prices and availability come from the live catalog and update automatically ## All GPUs and prices ## Questions and answers **How do I know the exact price before renting?** The catal"
+          "ctx": "517 | $12.41 | Prices and availability come from the live catalog and update automatically ## All GPUs and prices ## Questions and answers **How do I know the exact price before renting?** The catal"
         },
         {
           "m": "GPU",
@@ -16931,71 +16940,71 @@
         },
         {
           "m": "$",
-          "ctx": "short gpu.nz bills GPU rental per minute from your balance: the cheapest server right now is from $0.066 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU"
+          "ctx": "short gpu.nz bills GPU rental per minute from your balance: the cheapest server right now is from $0.06 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU,"
         },
         {
           "m": "$",
-          "ctx": "inutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $"
+          "ctx": "inutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.2"
         },
         {
           "m": "$",
-          "ctx": "hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | G"
+          "ctx": "1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB1"
         },
         {
           "m": "$",
-          "ctx": "day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 G"
+          "ctx": "A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GB"
         },
         {
           "m": "$",
-          "ctx": "h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with"
+          "ctx": "24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with"
         },
         {
           "m": "$",
-          "ctx": "060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88"
+          "ctx": "X 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41"
         },
         {
           "m": "$",
-          "ctx": "BGPU with 8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10"
+          "ctx": "8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10"
         },
         {
           "m": "$",
-          "ctx": "8 GB+ | $0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU"
+          "ctx": "ith 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU"
         },
         {
           "m": "$",
-          "ctx": "$0.0011 | $0.033 | $0.066 | $1.58 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80"
+          "ctx": "| $0.001 | $0.03 | $0.06 | $1.44 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80"
         },
         {
           "m": "$",
-          "ctx": "esla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.8"
+          "ctx": "esla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.4"
         },
         {
           "m": "$",
-          "ctx": "32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Price"
+          "ctx": "32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Price"
         },
         {
           "m": "$",
-          "ctx": "with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and ava"
+          "ctx": "with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and ava"
         },
         {
           "m": "$",
-          "ctx": "B+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability"
+          "ctx": "B+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability"
         },
         {
           "m": "$",
-          "ctx": "| GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability come from the live catalog and update a"
+          "ctx": "| GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live catalog and update a"
         },
         {
           "m": "$",
-          "ctx": "8 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability come from the live catalog and update automatical"
+          "ctx": "8 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live catalog and update automatical"
         },
         {
           "m": "$",
-          "ctx": "ith 48 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability come from the live catalog and update automatically ## Al"
+          "ctx": "ith 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live catalog and update automatically ## Al"
         },
         {
           "m": "$",
-          "ctx": "+ | $0.0083 | $0.248 | $0.495 | $11.88 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.495 | $11.88 | Prices and availability come from the live catalog and update automatically ## All GPUs an"
+          "ctx": "+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live catalog and update automatically ## All GPUs an"
         },
         {
           "m": "$",
@@ -17007,895 +17016,895 @@
         },
         {
           "m": "$",
-          "ctx": "h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.01/h | $22.98/h | 7 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h |"
+          "ctx": "h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $20.94/h | 9 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h |"
         },
         {
           "m": "$",
-          "ctx": "| | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.01/h | $22.98/h | 7 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h | 21 | | [H2"
+          "ctx": "| | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $20.94/h | 9 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 19 | | [H2"
         },
         {
           "m": "$",
-          "ctx": "0-288gb) | 288 GB | $21.01/h | $22.98/h | 7 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93"
+          "ctx": "0-288gb) | 288 GB | $20.89/h | $20.94/h | 9 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 19 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57"
         },
         {
           "m": "$",
-          "ctx": "288 GB | $21.01/h | $22.98/h | 7 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.54/h | $20.01/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93/h | 24 | |"
+          "ctx": "288 GB | $20.89/h | $20.94/h | 9 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 19 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57/h | 16 | |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 180 GB | $12.54/h | $20.01/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $10"
+          "ctx": "gb) | 180 GB | $15.02/h | $19.99/h | 19 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.40/h | $10"
         },
         {
           "m": "$",
-          "ctx": "GB | $12.54/h | $20.01/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.25/h | $11.93/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $10.16/h | 30"
+          "ctx": "GB | $15.02/h | $19.99/h | 19 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.29/h | $12.57/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.40/h | $10.16/h | 25"
         },
         {
           "m": "$",
-          "ctx": "| 141 GB | $4.25/h | $11.93/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $10.16/h | 30 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87"
+          "ctx": "| 141 GB | $5.29/h | $12.57/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.40/h | $10.16/h | 25 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56"
         },
         {
           "m": "$",
-          "ctx": "| $4.25/h | $11.93/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $10.16/h | 30 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87/h | 12 |"
+          "ctx": "| $5.29/h | $12.57/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.40/h | $10.16/h | 25 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56/h | 26 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 141 GB | $7.26/h | $10.16/h | 30 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87/h | 12 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/"
+          "ctx": "b) | 141 GB | $8.40/h | $10.16/h | 25 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/"
         },
         {
           "m": "$",
-          "ctx": "B | $7.26/h | $10.16/h | 30 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $5.35/h | $6.87/h | 12 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/h | 7 | |"
+          "ctx": "B | $8.40/h | $10.16/h | 25 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $4.56/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/h | 5 | |"
         },
         {
           "m": "$",
-          "ctx": "0gb) | 80 GB | $5.35/h | $6.87/h | 12 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/h | 7 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45"
+          "ctx": "0gb) | 80 GB | $4.41/h | $4.56/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/h | 5 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64"
         },
         {
           "m": "$",
-          "ctx": "GB | $5.35/h | $6.87/h | 12 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.64/h | $5.96/h | 7 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45/h | 4 | |"
+          "ctx": "GB | $4.41/h | $4.56/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.94/h | 5 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64/h | 13 |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 94 GB | $5.64/h | $5.96/h | 7 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45/h | 4 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65"
+          "ctx": "gb) | 94 GB | $4.70/h | $5.94/h | 5 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64/h | 13 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.819/h | $1."
         },
         {
           "m": "$",
-          "ctx": "B | $5.64/h | $5.96/h | 7 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.45/h | 4 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65/h | 11 |"
+          "ctx": "B | $4.70/h | $5.94/h | 5 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.15/h | $2.64/h | 13 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.819/h | $1.36/h | 28"
         },
         {
           "m": "$",
-          "ctx": "gb) | 80 GB | $4.30/h | $6.45/h | 4 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65/h | 11 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.3"
+          "ctx": "b) | 80 GB | $2.15/h | $2.64/h | 13 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.819/h | $1.36/h | 28 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2."
         },
         {
           "m": "$",
-          "ctx": "B | $4.30/h | $6.45/h | 4 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-80gb) | 80 GB | $2.19/h | $2.65/h | 11 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.36/h | 26 |"
+          "ctx": "| $2.15/h | $2.64/h | 13 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.819/h | $1.36/h | 28 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2.19/h | 7 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 80 GB | $2.19/h | $2.65/h | 11 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.36/h | 26 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.2"
+          "ctx": ") | 40 GB | $0.819/h | $1.36/h | 28 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2.19/h | 7 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61"
         },
         {
           "m": "$",
-          "ctx": "| $2.19/h | $2.65/h | 11 | | [A100 SXM4](https://gpu.nz/en/gpu/a100-sxm4-40gb) | 40 GB | $0.95/h | $1.36/h | 26 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.21/h | 14 |"
+          "ctx": "| $0.819/h | $1.36/h | 28 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.18/h | $2.19/h | 7 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61/h | 28 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 40 GB | $0.95/h | $1.36/h | 26 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.21/h | 14 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.4"
+          "ctx": "gb) | 80 GB | $2.18/h | $2.19/h | 7 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61/h | 28 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.0"
         },
         {
           "m": "$",
-          "ctx": "| $0.95/h | $1.36/h | 26 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-80gb) | 80 GB | $2.19/h | $2.21/h | 14 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.44/h | 20 |"
+          "ctx": "B | $2.18/h | $2.19/h | 7 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.02/h | $1.61/h | 28 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 80 GB | $2.19/h | $2.21/h | 14 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.44/h | 20 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.0"
+          "ctx": "b) | 40 GB | $1.02/h | $1.61/h | 28 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 |"
         },
         {
           "m": "$",
-          "ctx": "| $2.19/h | $2.21/h | 14 | | [A100 PCIe](https://gpu.nz/en/gpu/a100-pcie-40gb) | 40 GB | $1.03/h | $1.44/h | 20 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 |"
+          "ctx": "| $1.02/h | $1.61/h | 28 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](ht"
         },
         {
           "m": "$",
-          "ctx": "b) | 40 GB | $1.03/h | $1.44/h | 20 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 |"
+          "ctx": "00-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | |"
         },
         {
           "m": "$",
-          "ctx": "| $1.03/h | $1.44/h | 20 | | [A800 PCIe](https://gpu.nz/en/gpu/a800-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](ht"
+          "ctx": "gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](http"
         },
         {
           "m": "$",
-          "ctx": "00-pcie-80gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | |"
+          "ctx": "gpu/l40s-48gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 80 GB | $1.04/h | $1.05/h | 2 | | [L40S](https://gpu.nz/en/gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](http"
+          "ctx": "8gb) | 48 GB | $1.33/h | $2.32/h | 27 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](http"
         },
         {
           "m": "$",
-          "ctx": "gpu/l40s-48gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | |"
+          "ctx": "en/gpu/l40-48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 48 GB | $1.37/h | $2.41/h | 50 | | [L40](https://gpu.nz/en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https"
+          "ctx": "48gb) | 48 GB | $0.82/h | $0.843/h | 3 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](http"
         },
         {
           "m": "$",
-          "ctx": "en/gpu/l40-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 |"
+          "ctx": "/gpu/l4-24gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | ["
         },
         {
           "m": "$",
-          "ctx": "-48gb) | 48 GB | $0.778/h | $0.81/h | 6 | | [L4](https://gpu.nz/en/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](h"
+          "ctx": "gb) | 24 GB | $0.337/h | $1.00/h | 14 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | [Tesla V100"
         },
         {
           "m": "$",
-          "ctx": "/gpu/l4-24gb) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10"
+          "ctx": "n/gpu/a40-48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.217/h | $0"
         },
         {
           "m": "$",
-          "ctx": "b) | 24 GB | $0.35/h | $0.856/h | 12 | | [A40](https://gpu.nz/en/gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10 | | [Tesla"
+          "ctx": "48gb) | 48 GB | $1.04/h | $1.31/h | 5 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.53/h | $1.14/h | 4 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.217/h | $0.435/h | 1"
         },
         {
           "m": "$",
-          "ctx": "gpu/a40-48gb) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.218/h |"
+          "ctx": ") | 24 GB | $0.53/h | $1.14/h | 4 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.217/h | $0.435/h | 118 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.228/h"
         },
         {
           "m": "$",
-          "ctx": "b) | 48 GB | $0.556/h | $1.44/h | 22 | | [A10](https://gpu.nz/en/gpu/a10-24gb) | 24 GB | $0.507/h | $0.532/h | 10 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.218/h | $0.38/h |"
+          "ctx": "$0.53/h | $1.14/h | 4 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.217/h | $0.435/h | 118 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.228/h | $0.397/h"
         },
         {
           "m": "$",
-          "ctx": "24 GB | $0.507/h | $0.532/h | 10 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.218/h | $0.38/h | 108 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.327/h |"
+          "ctx": "32 GB | $0.217/h | $0.435/h | 118 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.228/h | $0.397/h | 12 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.304/h | $0."
         },
         {
           "m": "$",
-          "ctx": ".507/h | $0.532/h | 10 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-32gb) | 32 GB | $0.218/h | $0.38/h | 108 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.327/h | $0.369/h |"
+          "ctx": "217/h | $0.435/h | 118 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.228/h | $0.397/h | 12 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.304/h | $0.313/h | 8 |"
         },
         {
           "m": "$",
-          "ctx": "32 GB | $0.218/h | $0.38/h | 108 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.327/h | $0.369/h | 18 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.102/h | $0."
+          "ctx": "b) | 16 GB | $0.228/h | $0.397/h | 12 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.304/h | $0.313/h | 8 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.7"
         },
         {
           "m": "$",
-          "ctx": ".218/h | $0.38/h | 108 | | [Tesla V100](https://gpu.nz/en/gpu/tesla-v100-16gb) | 16 GB | $0.327/h | $0.369/h | 18 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.102/h | $0.314/h | 10"
+          "ctx": "| $0.228/h | $0.397/h | 12 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.304/h | $0.313/h | 8 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.76/h | $3.02"
         },
         {
           "m": "$",
-          "ctx": "b) | 16 GB | $0.327/h | $0.369/h | 18 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.102/h | $0.314/h | 10 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1."
+          "ctx": "| $0.304/h | $0.313/h | 8 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.76/h | $3.02/h | 36 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB |"
         },
         {
           "m": "$",
-          "ctx": "| $0.327/h | $0.369/h | 18 | | [Tesla T4](https://gpu.nz/en/gpu/tesla-t4-16gb) | 16 GB | $0.102/h | $0.314/h | 10 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.93/h | $3.2"
+          "ctx": "h | $0.313/h | 8 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.76/h | $3.02/h | 36 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.90/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.102/h | $0.314/h | 10 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.93/h | $3.23/h | 53 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB |"
+          "ctx": ".76/h | $3.02/h | 36 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.90/h | $3.35/h | 26 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 G"
         },
         {
           "m": "$",
-          "ctx": "| $0.314/h | 10 | | [RTX PRO 6000](https://gpu.nz/en/gpu/rtx-pro-6000-ws-96gb) | 96 GB | $1.93/h | $3.23/h | 53 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.37/h |"
+          "ctx": ".02/h | 36 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.90/h | $3.35/h | 26 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.46/"
         },
         {
           "m": "$",
-          "ctx": ".93/h | $3.23/h | 53 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.37/h | $3.31/h | 87 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 G"
+          "ctx": "/h | $3.35/h | 26 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.46/h | $3.33/h | 45 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.02/h"
         },
         {
           "m": "$",
-          "ctx": ".23/h | 53 | | [RTX PRO 6000 Server](https://gpu.nz/en/gpu/rtx-pro-6000-s-96gb) | 96 GB | $2.37/h | $3.31/h | 87 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.47/"
+          "ctx": "/h | 26 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.46/h | $3.33/h | 45 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.02/h | $1.67/h"
         },
         {
           "m": "$",
-          "ctx": "/h | $3.31/h | 87 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.47/h | $3.08/h | 60 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.03/h"
+          "ctx": "6 GB | $1.46/h | $3.33/h | 45 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.02/h | $1.67/h | 8 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.783/h"
         },
         {
           "m": "$",
-          "ctx": "/h | 87 | | [RTX PRO 6000 Max-Q](https://gpu.nz/en/gpu/rtx-pro-6000-max-q-96gb) | 96 GB | $1.47/h | $3.08/h | 60 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.03/h | $1.78/h"
+          "ctx": "46/h | $3.33/h | 45 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.02/h | $1.67/h | 8 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.783/h | $1.51/h"
         },
         {
           "m": "$",
-          "ctx": "6 GB | $1.47/h | $3.08/h | 60 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.03/h | $1.78/h | 7 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.774/h"
+          "ctx": "72 GB | $1.02/h | $1.67/h | 8 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.783/h | $1.51/h | 29 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.759/"
         },
         {
           "m": "$",
-          "ctx": "47/h | $3.08/h | 60 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-72gb) | 72 GB | $1.03/h | $1.78/h | 7 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.774/h | $1.53/h"
+          "ctx": "02/h | $1.67/h | 8 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.783/h | $1.51/h | 29 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.759/h | $0.852/"
         },
         {
           "m": "$",
-          "ctx": "72 GB | $1.03/h | $1.78/h | 7 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.774/h | $1.53/h | 45 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.761/"
+          "ctx": "GB | $0.783/h | $1.51/h | 29 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.759/h | $0.852/h | 8 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.464/"
         },
         {
           "m": "$",
-          "ctx": "03/h | $1.78/h | 7 | | [RTX PRO 5000](https://gpu.nz/en/gpu/rtx-pro-5000-48gb) | 48 GB | $0.774/h | $1.53/h | 45 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.761/h | $0.853/"
+          "ctx": "3/h | $1.51/h | 29 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.759/h | $0.852/h | 8 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.464/h | $0.608/"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.774/h | $1.53/h | 45 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.761/h | $0.853/h | 9 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.466/"
+          "ctx": "GB | $0.759/h | $0.852/h | 8 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.464/h | $0.608/h | 46 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.29/h"
         },
         {
           "m": "$",
-          "ctx": "4/h | $1.53/h | 45 | | [RTX PRO 4500](https://gpu.nz/en/gpu/rtx-pro-4500-32gb) | 32 GB | $0.761/h | $0.853/h | 9 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.466/h | $0.604/"
+          "ctx": "9/h | $0.852/h | 8 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.464/h | $0.608/h | 46 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.29/h | $1.34/h"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.761/h | $0.853/h | 9 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.466/h | $0.604/h | 61 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.10/h"
+          "ctx": "GB | $0.464/h | $0.608/h | 46 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.29/h | $1.34/h | 12 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.81/h |"
         },
         {
           "m": "$",
-          "ctx": "1/h | $0.853/h | 9 | | [RTX PRO 4000](https://gpu.nz/en/gpu/rtx-pro-4000-24gb) | 24 GB | $0.466/h | $0.604/h | 61 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.10/h | $1.31/h"
+          "ctx": "64/h | $0.608/h | 46 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.29/h | $1.34/h | 12 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.81/h | $1.81/h |"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.466/h | $0.604/h | 61 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.10/h | $1.31/h | 17 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.70/h |"
+          "ctx": "48 GB | $1.29/h | $1.34/h | 12 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.81/h | $1.81/h | 1 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.831/h |"
         },
         {
           "m": "$",
-          "ctx": "66/h | $0.604/h | 61 | | [RTX 6000 Ada](https://gpu.nz/en/gpu/rtx-6000ada-48gb) | 48 GB | $1.10/h | $1.31/h | 17 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.70/h | $1.80/h |"
+          "ctx": ".29/h | $1.34/h | 12 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.81/h | $1.81/h | 1 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.831/h | $0.916/h"
         },
         {
           "m": "$",
-          "ctx": "48 GB | $1.10/h | $1.31/h | 17 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.70/h | $1.80/h | 6 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.895/h |"
+          "ctx": "48 GB | $1.81/h | $1.81/h | 1 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.831/h | $0.916/h | 7 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.722/h"
         },
         {
           "m": "$",
-          "ctx": ".10/h | $1.31/h | 17 | | [RTX 5880 Ada](https://gpu.nz/en/gpu/rtx-5880ada-48gb) | 48 GB | $1.70/h | $1.80/h | 6 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.895/h | $0.925/h"
+          "ctx": ".81/h | $1.81/h | 1 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.831/h | $0.916/h | 7 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.722/h | $0.801/h"
         },
         {
           "m": "$",
-          "ctx": "48 GB | $1.70/h | $1.80/h | 6 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.895/h | $0.925/h | 8 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.774/h"
+          "ctx": "2 GB | $0.831/h | $0.916/h | 7 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.722/h | $0.801/h | 5 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.398/h"
         },
         {
           "m": "$",
-          "ctx": ".70/h | $1.80/h | 6 | | [RTX 5000 Ada](https://gpu.nz/en/gpu/rtx-5000ada-32gb) | 32 GB | $0.895/h | $0.925/h | 8 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.774/h | $0.835/h"
+          "ctx": "31/h | $0.916/h | 7 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.722/h | $0.801/h | 5 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.398/h | $0.537/h"
         },
         {
           "m": "$",
-          "ctx": "2 GB | $0.895/h | $0.925/h | 8 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.774/h | $0.835/h | 3 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.399/h"
+          "ctx": "4 GB | $0.722/h | $0.801/h | 5 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.398/h | $0.537/h | 10 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.301/"
         },
         {
           "m": "$",
-          "ctx": "95/h | $0.925/h | 8 | | [RTX 4500 Ada](https://gpu.nz/en/gpu/rtx-4500ada-24gb) | 24 GB | $0.774/h | $0.835/h | 3 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.399/h | $0.507/h"
+          "ctx": "22/h | $0.801/h | 5 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.398/h | $0.537/h | 10 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.301/h | $0.301/"
         },
         {
           "m": "$",
-          "ctx": "4 GB | $0.774/h | $0.835/h | 3 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.399/h | $0.507/h | 11 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.29/h"
+          "ctx": "GB | $0.398/h | $0.537/h | 10 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.301/h | $0.301/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.819/h | $0"
         },
         {
           "m": "$",
-          "ctx": "74/h | $0.835/h | 3 | | [RTX 4000 Ada](https://gpu.nz/en/gpu/rtx-4000ada-20gb) | 20 GB | $0.399/h | $0.507/h | 11 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.29/h | $0.29/h"
+          "ctx": "8/h | $0.537/h | 10 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.301/h | $0.301/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.819/h | $0.951/h | 9"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.399/h | $0.507/h | 11 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.29/h | $0.29/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.97"
+          "ctx": ") | 16 GB | $0.301/h | $0.301/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.819/h | $0.951/h | 9 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.463/h | $0"
         },
         {
           "m": "$",
-          "ctx": "99/h | $0.507/h | 11 | | [RTX 2000 Ada](https://gpu.nz/en/gpu/rtx-2000ada-16gb) | 16 GB | $0.29/h | $0.29/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.971/h | 27 |"
+          "ctx": "$0.301/h | $0.301/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.819/h | $0.951/h | 9 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.463/h | $0.517/h | 18"
         },
         {
           "m": "$",
-          "ctx": "gb) | 16 GB | $0.29/h | $0.29/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.971/h | 27 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.399/h | $0"
+          "ctx": ") | 48 GB | $0.819/h | $0.951/h | 9 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.463/h | $0.517/h | 18 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $"
         },
         {
           "m": "$",
-          "ctx": "B | $0.29/h | $0.29/h | 1 | | [RTX A6000](https://gpu.nz/en/gpu/rtx-a6000-48gb) | 48 GB | $0.64/h | $0.971/h | 27 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.399/h | $0.564/h | 2"
+          "ctx": "$0.819/h | $0.951/h | 9 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.463/h | $0.517/h | 18 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 74"
         },
         {
           "m": "$",
-          "ctx": ") | 48 GB | $0.64/h | $0.971/h | 27 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.399/h | $0.564/h | 28 | | [RTX A4500](https://gpu.nz/en/gpu/rtx-a4500-20gb) | 20 GB | $0.308/h | $"
+          "ctx": "| 24 GB | $0.463/h | $0.517/h | 18 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 74 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-12gb) | 12 GB | $0.325/h | $0"
         },
         {
           "m": "$",
-          "ctx": "$0.64/h | $0.971/h | 27 | | [RTX A5000](https://gpu.nz/en/gpu/rtx-a5000-24gb) | 24 GB | $0.399/h | $0.564/h | 28 | | [RTX A4500](https://gpu.nz/en/gpu/rtx-a4500-20gb) | 20 GB | $0.308/h | $0.317/h | 2"
+          "ctx": "$0.463/h | $0.517/h | 18 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 74 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-12gb) | 12 GB | $0.325/h | $0.325/h | 1"
         },
         {
           "m": "$",
-          "ctx": "| 24 GB | $0.399/h | $0.564/h | 28 | | [RTX A4500](https://gpu.nz/en/gpu/rtx-a4500-20gb) | 20 GB | $0.308/h | $0.317/h | 2 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0"
+          "ctx": ") | 16 GB | $0.157/h | $0.25/h | 74 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-12gb) | 12 GB | $0.325/h | $0.325/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.554/h | $0"
         },
         {
           "m": "$",
-          "ctx": "$0.399/h | $0.564/h | 28 | | [RTX A4500](https://gpu.nz/en/gpu/rtx-a4500-20gb) | 20 GB | $0.308/h | $0.317/h | 2 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 86"
+          "ctx": "$0.157/h | $0.25/h | 74 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-12gb) | 12 GB | $0.325/h | $0.325/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.554/h | $0.554/h | 1"
         },
         {
           "m": "$",
-          "ctx": ") | 20 GB | $0.308/h | $0.317/h | 2 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 86 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.556/h | $0"
+          "ctx": ") | 12 GB | $0.325/h | $0.325/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.554/h | $0.554/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.33"
         },
         {
           "m": "$",
-          "ctx": "$0.308/h | $0.317/h | 2 | | [RTX A4000](https://gpu.nz/en/gpu/rtx-a4000-16gb) | 16 GB | $0.157/h | $0.25/h | 86 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.556/h | $0.556/h | 1"
+          "ctx": "$0.325/h | $0.325/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.554/h | $0.554/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.337/h | 16 |"
         },
         {
           "m": "$",
-          "ctx": ") | 16 GB | $0.157/h | $0.25/h | 86 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.556/h | $0.556/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.3"
+          "ctx": "gb) | 11 GB | $0.554/h | $0.554/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.337/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.4"
         },
         {
           "m": "$",
-          "ctx": "$0.157/h | $0.25/h | 86 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-11gb) | 11 GB | $0.556/h | $0.556/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.338/h | 16 |"
+          "ctx": "B | $0.554/h | $0.554/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.08/h | $0.337/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.42/h | 400"
         },
         {
           "m": "$",
-          "ctx": "gb) | 11 GB | $0.556/h | $0.556/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.338/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.4"
+          "ctx": "6gb) | 6 GB | $0.08/h | $0.337/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.42/h | 400 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0."
         },
         {
           "m": "$",
-          "ctx": "| $0.556/h | $0.556/h | 1 | | [RTX A2000](https://gpu.nz/en/gpu/rtx-a2000-6gb) | 6 GB | $0.077/h | $0.338/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.40/h | 625 |"
+          "ctx": "| $0.08/h | $0.337/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.765/h | $1.42/h | 400 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0.903/h | 1 |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 6 GB | $0.077/h | $0.338/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.40/h | 625 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.386/h | $0.5"
+          "ctx": "b) | 32 GB | $0.765/h | $1.42/h | 400 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0.903/h | 1 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.383/h | $0.5"
         },
         {
           "m": "$",
-          "ctx": "| $0.077/h | $0.338/h | 16 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-32gb) | 32 GB | $0.64/h | $1.40/h | 625 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.386/h | $0.544/h | 153"
+          "ctx": "| $0.765/h | $1.42/h | 400 | | [RTX 5090](https://gpu.nz/en/gpu/rtx-5090-24gb) | 24 GB | $0.903/h | $0.903/h | 1 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.383/h | $0.566/h | 123"
         },
         {
           "m": "$",
-          "ctx": "gb) | 32 GB | $0.64/h | $1.40/h | 625 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.386/h | $0.544/h | 153 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.306/"
+          "ctx": "gb) | 24 GB | $0.903/h | $0.903/h | 1 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.383/h | $0.566/h | 123 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.316/"
         },
         {
           "m": "$",
-          "ctx": "| $0.64/h | $1.40/h | 625 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.386/h | $0.544/h | 153 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.306/h | $0.507/"
+          "ctx": "| $0.903/h | $0.903/h | 1 | | [RTX 5080](https://gpu.nz/en/gpu/rtx-5080-16gb) | 16 GB | $0.383/h | $0.566/h | 123 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.316/h | $0.524/"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.386/h | $0.544/h | 153 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.306/h | $0.507/h | 137 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.253/h | $0"
+          "ctx": "GB | $0.383/h | $0.566/h | 123 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.316/h | $0.524/h | 84 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.283/h | $0."
         },
         {
           "m": "$",
-          "ctx": "6/h | $0.544/h | 153 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.306/h | $0.507/h | 137 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.253/h | $0.354/h | 54"
+          "ctx": "3/h | $0.566/h | 123 | | [RTX 5070 Ti](https://gpu.nz/en/gpu/rtx-5070-ti-16gb) | 16 GB | $0.316/h | $0.524/h | 84 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.283/h | $0.349/h | 51"
         },
         {
           "m": "$",
-          "ctx": ") | 16 GB | $0.306/h | $0.507/h | 137 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.253/h | $0.354/h | 54 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.218/h"
+          "ctx": "b) | 16 GB | $0.316/h | $0.524/h | 84 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.283/h | $0.349/h | 51 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.205/h"
         },
         {
           "m": "$",
-          "ctx": "$0.306/h | $0.507/h | 137 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.253/h | $0.354/h | 54 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.218/h | $0.302/h"
+          "ctx": "| $0.316/h | $0.524/h | 84 | | [RTX 5070](https://gpu.nz/en/gpu/rtx-5070-12gb) | 12 GB | $0.283/h | $0.349/h | 51 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.205/h | $0.301/h"
         },
         {
           "m": "$",
-          "ctx": "2 GB | $0.253/h | $0.354/h | 54 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.218/h | $0.302/h | 208 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h |"
+          "ctx": "2 GB | $0.283/h | $0.349/h | 51 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.205/h | $0.301/h | 161 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.216/h"
         },
         {
           "m": "$",
-          "ctx": "53/h | $0.354/h | 54 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.218/h | $0.302/h | 208 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h | $0.278/h |"
+          "ctx": "83/h | $0.349/h | 51 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-16gb) | 16 GB | $0.205/h | $0.301/h | 161 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.216/h | $0.289/h"
         },
         {
           "m": "$",
-          "ctx": "16 GB | $0.218/h | $0.302/h | 208 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h | $0.278/h | 18 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265"
+          "ctx": "16 GB | $0.205/h | $0.301/h | 161 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.216/h | $0.289/h | 24 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.22"
         },
         {
           "m": "$",
-          "ctx": ".218/h | $0.302/h | 208 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.23/h | $0.278/h | 18 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265/h | 11 |"
+          "ctx": "205/h | $0.301/h | 161 | | [RTX 5060 Ti](https://gpu.nz/en/gpu/rtx-5060-ti-8gb) | 8 GB | $0.216/h | $0.289/h | 24 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.228/h | 11 |"
         },
         {
           "m": "$",
-          "ctx": "i-8gb) | 8 GB | $0.23/h | $0.278/h | 18 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1."
+          "ctx": "-8gb) | 8 GB | $0.216/h | $0.289/h | 24 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.228/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1."
         },
         {
           "m": "$",
-          "ctx": "GB | $0.23/h | $0.278/h | 18 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.205/h | $0.265/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1.27/h | 75 |"
+          "ctx": "B | $0.216/h | $0.289/h | 24 | | [RTX 5060](https://gpu.nz/en/gpu/rtx-5060-8gb) | 8 GB | $0.204/h | $0.228/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1.10/h | 54 |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 8 GB | $0.205/h | $0.265/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1.27/h | 75 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01"
+          "ctx": "gb) | 8 GB | $0.204/h | $0.228/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1.10/h | 54 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.9"
         },
         {
           "m": "$",
-          "ctx": "| $0.205/h | $0.265/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.823/h | $1.27/h | 75 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01/h | 505 |"
+          "ctx": "| $0.204/h | $0.228/h | 11 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-48gb) | 48 GB | $0.831/h | $1.10/h | 54 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.994/h | 293"
         },
         {
           "m": "$",
-          "ctx": "gb) | 48 GB | $0.823/h | $1.27/h | 75 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01/h | 505 | | [RTX 4090 D](https://gpu.nz/en/gpu/rtx-4090d-24gb) | 24 GB | $0.895/h | $"
+          "ctx": "gb) | 48 GB | $0.831/h | $1.10/h | 54 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.994/h | 293 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-16gb) | 16 GB | $0.614/h | $0"
         },
         {
           "m": "$",
-          "ctx": "B | $0.823/h | $1.27/h | 75 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.29/h | $1.01/h | 505 | | [RTX 4090 D](https://gpu.nz/en/gpu/rtx-4090d-24gb) | 24 GB | $0.895/h | $0.895/h |"
+          "ctx": "| $0.831/h | $1.10/h | 54 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-24gb) | 24 GB | $0.289/h | $0.994/h | 293 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-16gb) | 16 GB | $0.614/h | $0.614/h | 1"
         },
         {
           "m": "$",
-          "ctx": "| 24 GB | $0.29/h | $1.01/h | 505 | | [RTX 4090 D](https://gpu.nz/en/gpu/rtx-4090d-24gb) | 24 GB | $0.895/h | $0.895/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.49/h"
+          "ctx": ") | 24 GB | $0.289/h | $0.994/h | 293 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-16gb) | 16 GB | $0.614/h | $0.614/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.488/h"
         },
         {
           "m": "$",
-          "ctx": "$0.29/h | $1.01/h | 505 | | [RTX 4090 D](https://gpu.nz/en/gpu/rtx-4090d-24gb) | 24 GB | $0.895/h | $0.895/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.49/h | $0.625/h"
+          "ctx": "$0.289/h | $0.994/h | 293 | | [RTX 4090](https://gpu.nz/en/gpu/rtx-4090-16gb) | 16 GB | $0.614/h | $0.614/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.488/h | $0.497/h"
         },
         {
           "m": "$",
-          "ctx": "4 GB | $0.895/h | $0.895/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.49/h | $0.625/h | 8 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.411/h"
+          "ctx": "6 GB | $0.614/h | $0.614/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.488/h | $0.497/h | 4 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.481/h"
         },
         {
           "m": "$",
-          "ctx": "895/h | $0.895/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.49/h | $0.625/h | 8 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.411/h | $0.58/h"
+          "ctx": "14/h | $0.614/h | 1 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-32gb) | 32 GB | $0.488/h | $0.497/h | 4 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.481/h | $0.566/h"
         },
         {
           "m": "$",
-          "ctx": "32 GB | $0.49/h | $0.625/h | 8 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.411/h | $0.58/h | 22 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.7"
+          "ctx": "2 GB | $0.488/h | $0.497/h | 4 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.481/h | $0.566/h | 21 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0."
         },
         {
           "m": "$",
-          "ctx": "49/h | $0.625/h | 8 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.411/h | $0.58/h | 22 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.787/h | 3 |"
+          "ctx": "88/h | $0.497/h | 4 | | [RTX 4080 Super](https://gpu.nz/en/gpu/rtx-4080s-16gb) | 16 GB | $0.481/h | $0.566/h | 21 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0.784/h | 3 |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 16 GB | $0.411/h | $0.58/h | 22 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.787/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.374/h | $0.5"
+          "ctx": "b) | 16 GB | $0.481/h | $0.566/h | 21 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0.784/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.373/h | $0.5"
         },
         {
           "m": "$",
-          "ctx": "| $0.411/h | $0.58/h | 22 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.784/h | $0.787/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.374/h | $0.532/h | 29 |"
+          "ctx": "| $0.481/h | $0.566/h | 21 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-32gb) | 32 GB | $0.781/h | $0.784/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.373/h | $0.542/h | 21 |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 32 GB | $0.784/h | $0.787/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.374/h | $0.532/h | 29 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $"
+          "ctx": "gb) | 32 GB | $0.781/h | $0.784/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.373/h | $0.542/h | 21 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $"
         },
         {
           "m": "$",
-          "ctx": "| $0.784/h | $0.787/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.374/h | $0.532/h | 29 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $"
+          "ctx": "| $0.781/h | $0.784/h | 3 | | [RTX 4080](https://gpu.nz/en/gpu/rtx-4080-16gb) | 16 GB | $0.373/h | $0.542/h | 21 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $"
         },
         {
           "m": "$",
-          "ctx": "$0.374/h | $0.532/h | 29 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $0.411/h | 49 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.287/h"
+          "ctx": "$0.373/h | $0.542/h | 21 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $0.398/h | 39 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.272/h"
         },
         {
           "m": "$",
-          "ctx": "$0.532/h | 29 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $0.411/h | 49 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.287/h | $0.302/h"
+          "ctx": "$0.542/h | 21 | | [RTX 4070 Ti Super](https://gpu.nz/en/gpu/rtx-4070s-ti-16gb) | 16 GB | $0.151/h | $0.398/h | 39 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.272/h | $0.283/h"
         },
         {
           "m": "$",
-          "ctx": "6 GB | $0.151/h | $0.411/h | 49 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.287/h | $0.302/h | 13 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.185/"
+          "ctx": "6 GB | $0.151/h | $0.398/h | 39 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.272/h | $0.283/h | 16 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.196/"
         },
         {
           "m": "$",
-          "ctx": "51/h | $0.411/h | 49 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.287/h | $0.302/h | 13 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.185/h | $0.241/"
+          "ctx": "51/h | $0.398/h | 39 | | [RTX 4070 Ti](https://gpu.nz/en/gpu/rtx-4070-ti-12gb) | 12 GB | $0.272/h | $0.283/h | 16 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.196/h | $0.235/"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.287/h | $0.302/h | 13 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.185/h | $0.241/h | 51 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.205/h | $0."
+          "ctx": "GB | $0.272/h | $0.283/h | 16 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.196/h | $0.235/h | 61 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.228/h | $0."
         },
         {
           "m": "$",
-          "ctx": "7/h | $0.302/h | 13 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.185/h | $0.241/h | 51 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.205/h | $0.351/h | 21"
+          "ctx": "2/h | $0.283/h | 16 | | [RTX 4070 Super](https://gpu.nz/en/gpu/rtx-4070s-12gb) | 12 GB | $0.196/h | $0.235/h | 61 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.228/h | $0.349/h | 17"
         },
         {
           "m": "$",
-          "ctx": "b) | 12 GB | $0.185/h | $0.241/h | 51 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.205/h | $0.351/h | 21 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.175/h"
+          "ctx": "b) | 12 GB | $0.196/h | $0.235/h | 61 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.228/h | $0.349/h | 17 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.223/h"
         },
         {
           "m": "$",
-          "ctx": "| $0.185/h | $0.241/h | 51 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.205/h | $0.351/h | 21 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.175/h | $0.302/h"
+          "ctx": "| $0.196/h | $0.235/h | 61 | | [RTX 4070](https://gpu.nz/en/gpu/rtx-4070-12gb) | 12 GB | $0.228/h | $0.349/h | 17 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.223/h | $0.325/h"
         },
         {
           "m": "$",
-          "ctx": "2 GB | $0.205/h | $0.351/h | 21 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.175/h | $0.302/h | 51 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h |"
+          "ctx": "2 GB | $0.228/h | $0.349/h | 17 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.223/h | $0.325/h | 35 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h |"
         },
         {
           "m": "$",
-          "ctx": "05/h | $0.351/h | 21 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.175/h | $0.302/h | 51 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h | $0.35/h |"
+          "ctx": "28/h | $0.349/h | 17 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-16gb) | 16 GB | $0.223/h | $0.325/h | 35 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h | $0.349/h |"
         },
         {
           "m": "$",
-          "ctx": "16 GB | $0.175/h | $0.302/h | 51 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h | $0.35/h | 6 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/"
+          "ctx": "16 GB | $0.223/h | $0.325/h | 35 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h | $0.349/h | 4 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.126/h | $0.183"
         },
         {
           "m": "$",
-          "ctx": ".175/h | $0.302/h | 51 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.253/h | $0.35/h | 6 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/h | 9 | | ["
+          "ctx": ".223/h | $0.325/h | 35 | | [RTX 4060 Ti](https://gpu.nz/en/gpu/rtx-4060-ti-8gb) | 8 GB | $0.192/h | $0.349/h | 4 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.126/h | $0.183/h | 12 | |"
         },
         {
           "m": "$",
-          "ctx": "ti-8gb) | 8 GB | $0.253/h | $0.35/h | 6 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/h | 9 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.386/h"
+          "ctx": "i-8gb) | 8 GB | $0.192/h | $0.349/h | 4 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.126/h | $0.183/h | 12 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.457/h"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.253/h | $0.35/h | 6 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.127/h | $0.175/h | 9 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.386/h | $0.519/h"
+          "ctx": "GB | $0.192/h | $0.349/h | 4 | | [RTX 4060](https://gpu.nz/en/gpu/rtx-4060-8gb) | 8 GB | $0.126/h | $0.183/h | 12 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.457/h | $0.614/h"
         },
         {
           "m": "$",
-          "ctx": "8 GB | $0.127/h | $0.175/h | 9 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.386/h | $0.519/h | 13 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.253/h | $0."
+          "ctx": "8 GB | $0.126/h | $0.183/h | 12 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.457/h | $0.614/h | 6 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.252/h | $0.5"
         },
         {
           "m": "$",
-          "ctx": "127/h | $0.175/h | 9 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.386/h | $0.519/h | 13 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.253/h | $0.604/h | 316"
+          "ctx": "26/h | $0.183/h | 12 | | [RTX 3090 Ti](https://gpu.nz/en/gpu/rtx-3090-ti-24gb) | 24 GB | $0.457/h | $0.614/h | 6 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.252/h | $0.59/h | 201 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 24 GB | $0.386/h | $0.519/h | 13 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.253/h | $0.604/h | 316 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.193/"
+          "ctx": "gb) | 24 GB | $0.457/h | $0.614/h | 6 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.252/h | $0.59/h | 201 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.216/h"
         },
         {
           "m": "$",
-          "ctx": "| $0.386/h | $0.519/h | 13 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.253/h | $0.604/h | 316 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.193/h | $0.374/"
+          "ctx": "| $0.457/h | $0.614/h | 6 | | [RTX 3090](https://gpu.nz/en/gpu/rtx-3090-24gb) | 24 GB | $0.252/h | $0.59/h | 201 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.216/h | $0.38/h"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.253/h | $0.604/h | 316 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.193/h | $0.374/h | 68 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0."
+          "ctx": "4 GB | $0.252/h | $0.59/h | 201 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.216/h | $0.38/h | 46 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.2"
         },
         {
           "m": "$",
-          "ctx": "3/h | $0.604/h | 316 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.193/h | $0.374/h | 68 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0.272/h | 7 |"
+          "ctx": "52/h | $0.59/h | 201 | | [RTX 3080 Ti](https://gpu.nz/en/gpu/rtx-3080-ti-12gb) | 12 GB | $0.216/h | $0.38/h | 46 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.235/h | 4 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 12 GB | $0.193/h | $0.374/h | 68 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0.272/h | 7 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.191/h | $0.3"
+          "ctx": "gb) | 12 GB | $0.216/h | $0.38/h | 46 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.235/h | 4 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.193/h | $0.3"
         },
         {
           "m": "$",
-          "ctx": "| $0.193/h | $0.374/h | 68 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.188/h | $0.272/h | 7 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.191/h | $0.314/h | 75 |"
+          "ctx": "| $0.216/h | $0.38/h | 46 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-20gb) | 20 GB | $0.192/h | $0.235/h | 4 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.193/h | $0.301/h | 63 |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 20 GB | $0.188/h | $0.272/h | 7 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.191/h | $0.314/h | 75 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h |"
+          "ctx": "gb) | 20 GB | $0.192/h | $0.235/h | 4 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.193/h | $0.301/h | 63 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.188/h | $0.272/h | 7 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.191/h | $0.314/h | 75 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h | $0.357/h |"
+          "ctx": "| $0.192/h | $0.235/h | 4 | | [RTX 3080](https://gpu.nz/en/gpu/rtx-3080-10gb) | 10 GB | $0.193/h | $0.301/h | 63 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h | $0.364/h |"
         },
         {
           "m": "$",
-          "ctx": "10 GB | $0.191/h | $0.314/h | 75 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h | $0.357/h | 7 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.217"
+          "ctx": "10 GB | $0.193/h | $0.301/h | 63 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h | $0.364/h | 6 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.216"
         },
         {
           "m": "$",
-          "ctx": ".191/h | $0.314/h | 75 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.242/h | $0.357/h | 7 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.217/h | 43 | |"
+          "ctx": ".193/h | $0.301/h | 63 | | [RTX 3070 Ti](https://gpu.nz/en/gpu/rtx-3070-ti-8gb) | 8 GB | $0.228/h | $0.364/h | 6 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.216/h | 31 | |"
         },
         {
           "m": "$",
-          "ctx": "i-8gb) | 8 GB | $0.242/h | $0.357/h | 7 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.217/h | 43 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.066/h |"
+          "ctx": "i-8gb) | 8 GB | $0.228/h | $0.364/h | 6 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.216/h | 31 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h |"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.242/h | $0.357/h | 7 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.217/h | 43 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.066/h | $0.217/h |"
+          "ctx": "GB | $0.228/h | $0.364/h | 6 | | [RTX 3070](https://gpu.nz/en/gpu/rtx-3070-8gb) | 8 GB | $0.165/h | $0.216/h | 31 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h | $0.204/h |"
         },
         {
           "m": "$",
-          "ctx": "| 8 GB | $0.165/h | $0.217/h | 43 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.066/h | $0.217/h | 40 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.086/h | $0."
+          "ctx": "| 8 GB | $0.165/h | $0.216/h | 31 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h | $0.204/h | 38 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.099/h | $0.1"
         },
         {
           "m": "$",
-          "ctx": ".165/h | $0.217/h | 43 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.066/h | $0.217/h | 40 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.086/h | $0.175/h | 210"
+          "ctx": "0.165/h | $0.216/h | 31 | | [RTX 3060 Ti](https://gpu.nz/en/gpu/rtx-3060-ti-8gb) | 8 GB | $0.06/h | $0.204/h | 38 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.099/h | $0.169/h | 131"
         },
         {
           "m": "$",
-          "ctx": "gb) | 8 GB | $0.066/h | $0.217/h | 40 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.086/h | $0.175/h | 210 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.296/h |"
+          "ctx": "8gb) | 8 GB | $0.06/h | $0.204/h | 38 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.099/h | $0.169/h | 131 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.295/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.066/h | $0.217/h | 40 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.086/h | $0.175/h | 210 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.296/h | $0.447/h |"
+          "ctx": "| $0.06/h | $0.204/h | 38 | | [RTX 3060](https://gpu.nz/en/gpu/rtx-3060-12gb) | 12 GB | $0.099/h | $0.169/h | 131 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.295/h | $0.445/h |"
         },
         {
           "m": "$",
-          "ctx": "| 12 GB | $0.086/h | $0.175/h | 210 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.296/h | $0.447/h | 11 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.54"
+          "ctx": "| 12 GB | $0.099/h | $0.169/h | 131 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.295/h | $0.445/h | 7 | | [Titan V](https://gpu.nz/en/gpu/titan-v-12gb) | 12 GB | $0.307/h | $0.316"
         },
         {
           "m": "$",
-          "ctx": "0.086/h | $0.175/h | 210 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.296/h | $0.447/h | 11 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.545/h | $0.55"
+          "ctx": "0.099/h | $0.169/h | 131 | | [Titan RTX](https://gpu.nz/en/gpu/titan-rtx-24gb) | 24 GB | $0.295/h | $0.445/h | 7 | | [Titan V](https://gpu.nz/en/gpu/titan-v-12gb) | 12 GB | $0.307/h | $0.316/h | 4 | |"
         },
         {
           "m": "$",
-          "ctx": "B | $0.296/h | $0.447/h | 11 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.545/h | $0.559/h | 6 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.278"
+          "ctx": "24gb) | 24 GB | $0.295/h | $0.445/h | 7 | | [Titan V](https://gpu.nz/en/gpu/titan-v-12gb) | 12 GB | $0.307/h | $0.316/h | 4 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.578"
         },
         {
           "m": "$",
-          "ctx": "h | $0.447/h | 11 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.545/h | $0.559/h | 6 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.278/h | $0.351"
+          "ctx": "GB | $0.295/h | $0.445/h | 7 | | [Titan V](https://gpu.nz/en/gpu/titan-v-12gb) | 12 GB | $0.307/h | $0.316/h | 4 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.578/h | $0.59/"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.545/h | $0.559/h | 6 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.278/h | $0.351/h | 3 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.241"
+          "ctx": "GB | $0.307/h | $0.316/h | 4 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.578/h | $0.59/h | 2 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.349/"
         },
         {
           "m": "$",
-          "ctx": "/h | $0.559/h | 6 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.278/h | $0.351/h | 3 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.241/h | $0.241"
+          "ctx": "/h | $0.316/h | 4 | | [Quadro RTX 8000](https://gpu.nz/en/gpu/q-rtx-8000-48gb) | 48 GB | $0.578/h | $0.59/h | 2 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.349/h | $0.349/"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.278/h | $0.351/h | 3 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.241/h | $0.241/h | 1 | | [Quadro RTX 4000](https://gpu.nz/en/gpu/q-rtx-4000-8gb) | 8 GB | $0.265/h"
+          "ctx": "GB | $0.578/h | $0.59/h | 2 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.349/h | $0.349/h | 2 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.24/"
         },
         {
           "m": "$",
-          "ctx": "/h | $0.351/h | 3 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.241/h | $0.241/h | 1 | | [Quadro RTX 4000](https://gpu.nz/en/gpu/q-rtx-4000-8gb) | 8 GB | $0.265/h | $0.265/h"
+          "ctx": "8/h | $0.59/h | 2 | | [Quadro RTX 6000](https://gpu.nz/en/gpu/q-rtx-6000-24gb) | 24 GB | $0.349/h | $0.349/h | 2 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.24/h | $0.24/h"
         },
         {
           "m": "$",
-          "ctx": "6 GB | $0.241/h | $0.241/h | 1 | | [Quadro RTX 4000](https://gpu.nz/en/gpu/q-rtx-4000-8gb) | 8 GB | $0.265/h | $0.265/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.137/h"
+          "ctx": "GB | $0.349/h | $0.349/h | 2 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.24/h | $0.24/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.145/h |"
         },
         {
           "m": "$",
-          "ctx": "41/h | $0.241/h | 1 | | [Quadro RTX 4000](https://gpu.nz/en/gpu/q-rtx-4000-8gb) | 8 GB | $0.265/h | $0.265/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.137/h | $0.175/h"
+          "ctx": "9/h | $0.349/h | 2 | | [Quadro RTX 5000](https://gpu.nz/en/gpu/q-rtx-5000-16gb) | 16 GB | $0.24/h | $0.24/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.145/h | $0.204/h |"
         },
         {
           "m": "$",
-          "ctx": "8 GB | $0.265/h | $0.265/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.137/h | $0.175/h | 22 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h"
+          "ctx": "| 16 GB | $0.24/h | $0.24/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.145/h | $0.204/h | 18 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h"
         },
         {
           "m": "$",
-          "ctx": "265/h | $0.265/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.137/h | $0.175/h | 22 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.217/h"
+          "ctx": "0.24/h | $0.24/h | 1 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-24gb) | 24 GB | $0.145/h | $0.204/h | 18 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.228/h"
         },
         {
           "m": "$",
-          "ctx": "4 GB | $0.137/h | $0.175/h | 22 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.217/h | 19 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h |"
+          "ctx": "4 GB | $0.145/h | $0.204/h | 18 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.228/h | 15 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h |"
         },
         {
           "m": "$",
-          "ctx": "37/h | $0.175/h | 22 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.217/h | 19 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.241/h |"
+          "ctx": "45/h | $0.204/h | 18 | | [RTX 2080 Ti](https://gpu.nz/en/gpu/rtx-2080-ti-11gb) | 11 GB | $0.169/h | $0.228/h | 15 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.232/h |"
         },
         {
           "m": "$",
-          "ctx": "11 GB | $0.169/h | $0.217/h | 19 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.241/h | 9 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.194/h |"
+          "ctx": "11 GB | $0.169/h | $0.228/h | 15 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.232/h | 6 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.202/h |"
         },
         {
           "m": "$",
-          "ctx": ".169/h | $0.217/h | 19 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.241/h | 9 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.194/h | $0.20/h | 6"
+          "ctx": ".169/h | $0.228/h | 15 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-16gb) | 16 GB | $0.109/h | $0.232/h | 6 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.202/h | $0.202/h |"
         },
         {
           "m": "$",
-          "ctx": "| 16 GB | $0.109/h | $0.241/h | 9 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.194/h | $0.20/h | 6 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.224/h | $0."
+          "ctx": "| 16 GB | $0.109/h | $0.232/h | 6 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.202/h | $0.202/h | 1 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0."
         },
         {
           "m": "$",
-          "ctx": "0.109/h | $0.241/h | 9 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.194/h | $0.20/h | 6 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.224/h | $0.241/h | 3 |"
+          "ctx": "0.109/h | $0.232/h | 6 | | [Tesla P100](https://gpu.nz/en/gpu/tesla-p100-12gb) | 12 GB | $0.202/h | $0.202/h | 1 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0.24/h | 1 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 12 GB | $0.194/h | $0.20/h | 6 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.224/h | $0.241/h | 3 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.519/h | $0"
+          "ctx": ") | 12 GB | $0.202/h | $0.202/h | 1 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0.24/h | 1 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.8"
         },
         {
           "m": "$",
-          "ctx": "| $0.194/h | $0.20/h | 6 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.224/h | $0.241/h | 3 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.519/h | $0.78/h | 44"
+          "ctx": "| $0.202/h | $0.202/h | 1 | | [Tesla P40](https://gpu.nz/en/gpu/tesla-p40-24gb) | 24 GB | $0.24/h | $0.24/h | 1 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.819/h | 19"
         },
         {
           "m": "$",
-          "ctx": ") | 24 GB | $0.224/h | $0.241/h | 3 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.519/h | $0.78/h | 44 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0"
+          "ctx": "gb) | 24 GB | $0.24/h | $0.24/h | 1 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.819/h | 19 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.853/h | $"
         },
         {
           "m": "$",
-          "ctx": "$0.224/h | $0.241/h | 3 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.519/h | $0.78/h | 44 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0.87/h | 19"
+          "ctx": "| $0.24/h | $0.24/h | 1 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-64gb) | 64 GB | $0.517/h | $0.819/h | 19 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.853/h | $0.939/h | 1"
         },
         {
           "m": "$",
-          "ctx": ") | 64 GB | $0.519/h | $0.78/h | 44 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0.87/h | 19 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.085/h | $0.1"
+          "ctx": "| 64 GB | $0.517/h | $0.819/h | 19 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.853/h | $0.939/h | 15 | | [RTX 4080 Laptop](https://gpu.nz/en/gpu/rtx-4080-laptop-12gb) | 12 GB |"
         },
         {
           "m": "$",
-          "ctx": "$0.519/h | $0.78/h | 44 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.496/h | $0.87/h | 19 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.085/h | $0.113/h | 27 |"
+          "ctx": "$0.517/h | $0.819/h | 19 | | [CMP 170HX](https://gpu.nz/en/gpu/cmp-170hx-40gb) | 40 GB | $0.853/h | $0.939/h | 15 | | [RTX 4080 Laptop](https://gpu.nz/en/gpu/rtx-4080-laptop-12gb) | 12 GB | $0.638/h |"
         },
         {
           "m": "$",
-          "ctx": "gb) | 40 GB | $0.496/h | $0.87/h | 19 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.085/h | $0.113/h | 27 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB |"
+          "ctx": "0.853/h | $0.939/h | 15 | | [RTX 4080 Laptop](https://gpu.nz/en/gpu/rtx-4080-laptop-12gb) | 12 GB | $0.638/h | $0.638/h | 1 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $"
         },
         {
           "m": "$",
-          "ctx": "| $0.496/h | $0.87/h | 19 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.085/h | $0.113/h | 27 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.136/h |"
+          "ctx": "0.939/h | 15 | | [RTX 4080 Laptop](https://gpu.nz/en/gpu/rtx-4080-laptop-12gb) | 12 GB | $0.638/h | $0.638/h | 1 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.264/h | $"
         },
         {
           "m": "$",
-          "ctx": "0.085/h | $0.113/h | 27 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.136/h | $0.181/h | 35 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.142/h | $0."
+          "ctx": "$0.638/h | $0.638/h | 1 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.264/h | $0.264/h | 1 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.204/h | $0.2"
         },
         {
           "m": "$",
-          "ctx": "0.113/h | 27 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.136/h | $0.181/h | 35 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.142/h | $0.169/h | 24"
+          "ctx": "$0.638/h | 1 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-12gb) | 12 GB | $0.264/h | $0.264/h | 1 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.204/h | $0.204/h | 1 |"
         },
         {
           "m": "$",
-          "ctx": "b) | 12 GB | $0.136/h | $0.181/h | 35 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.142/h | $0.169/h | 24 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.105/h"
+          "ctx": "gb) | 12 GB | $0.264/h | $0.264/h | 1 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.204/h | $0.204/h | 1 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.108/h"
         },
         {
           "m": "$",
-          "ctx": "| $0.136/h | $0.181/h | 35 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.142/h | $0.169/h | 24 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.105/h | $0.105/h"
+          "ctx": "| $0.264/h | $0.264/h | 1 | | [RTX 2060](https://gpu.nz/en/gpu/rtx-2060-12gb) | 12 GB | $0.204/h | $0.204/h | 1 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.108/h | $0.144/h"
         },
         {
           "m": "$",
-          "ctx": "2 GB | $0.142/h | $0.169/h | 24 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.105/h | $0.105/h | 1 | | [RTX A3000 Laptop](https://gpu.nz/en/gpu/rtx-a3000-laptop-12gb) | 12 GB |"
+          "ctx": "12 GB | $0.204/h | $0.204/h | 1 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.108/h | $0.144/h | 3 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.088/h | $0.1"
         },
         {
           "m": "$",
-          "ctx": "42/h | $0.169/h | 24 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.105/h | $0.105/h | 1 | | [RTX A3000 Laptop](https://gpu.nz/en/gpu/rtx-a3000-laptop-12gb) | 12 GB | $0.169/h |"
+          "ctx": "204/h | $0.204/h | 1 | | [GTX TITAN X](https://gpu.nz/en/gpu/gtx-titan-x-12gb) | 12 GB | $0.108/h | $0.144/h | 3 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.088/h | $0.12/h | 24 |"
         },
         {
           "m": "$",
-          "ctx": ".105/h | $0.105/h | 1 | | [RTX A3000 Laptop](https://gpu.nz/en/gpu/rtx-a3000-laptop-12gb) | 12 GB | $0.169/h | $0.169/h | 1 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.139/h"
+          "ctx": "gb) | 12 GB | $0.108/h | $0.144/h | 3 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.088/h | $0.12/h | 24 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.151/h"
         },
         {
           "m": "$",
-          "ctx": ".105/h | 1 | | [RTX A3000 Laptop](https://gpu.nz/en/gpu/rtx-a3000-laptop-12gb) | 12 GB | $0.169/h | $0.169/h | 1 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.139/h | $0.169/h"
+          "ctx": "| $0.108/h | $0.144/h | 3 | | [Titan Xp](https://gpu.nz/en/gpu/titan-xp-12gb) | 12 GB | $0.088/h | $0.12/h | 24 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.151/h | $0.18/h |"
         },
         {
           "m": "$",
-          "ctx": "12 GB | $0.169/h | $0.169/h | 1 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.139/h | $0.169/h | 9 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0."
+          "ctx": "12 GB | $0.088/h | $0.12/h | 24 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.151/h | $0.18/h | 4 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.132/h |"
         },
         {
           "m": "$",
-          "ctx": "169/h | $0.169/h | 1 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.139/h | $0.169/h | 9 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.362/h | $0."
+          "ctx": "088/h | $0.12/h | 24 | | [GTX 1080 Ti](https://gpu.nz/en/gpu/gtx-1080-ti-11gb) | 11 GB | $0.151/h | $0.18/h | 4 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.132/h | $0.156/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.139/h | $0.169/h | 9 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.362/h | $0.362/h | 1 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.157/h |"
+          "ctx": "11 GB | $0.151/h | $0.18/h | 4 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.132/h | $0.156/h | 7 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.169/h | 9 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.362/h | $0.362/h | 1 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.157/h | $0.163/h |"
+          "ctx": ".151/h | $0.18/h | 4 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.132/h | $0.156/h | 7 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h | $0.234/h |"
         },
         {
           "m": "$",
-          "ctx": "| 8 GB | $0.362/h | $0.362/h | 1 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.157/h | $0.163/h | 2 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0."
+          "ctx": "| 8 GB | $0.132/h | $0.156/h | 7 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h | $0.234/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.117/h | $0.126"
         },
         {
           "m": "$",
-          "ctx": ".362/h | $0.362/h | 1 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.157/h | $0.163/h | 2 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.253/h | $0."
+          "ctx": ".132/h | $0.156/h | 7 | | [RTX 2060 Super](https://gpu.nz/en/gpu/rtx-2060s-8gb) | 8 GB | $0.168/h | $0.234/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.117/h | $0.126/h | 14 | |"
         },
         {
           "m": "$",
-          "ctx": "| $0.157/h | $0.163/h | 2 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.253/h | $0.362/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.113/h | $0.121"
+          "ctx": "s-8gb) | 8 GB | $0.168/h | $0.234/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.117/h | $0.126/h | 14 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.163/h | 2 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.253/h | $0.362/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.113/h | $0.121/h | 20 | |"
+          "ctx": "GB | $0.168/h | $0.234/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.117/h | $0.126/h | 14 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h | $0.132/h |"
         },
         {
           "m": "$",
-          "ctx": "p-8gb) | 8 GB | $0.253/h | $0.362/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.113/h | $0.121/h | 20 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.111/h |"
+          "ctx": "| 8 GB | $0.117/h | $0.126/h | 14 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h | $0.132/h | 4 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.104/h | $0.12/"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.253/h | $0.362/h | 2 | | [GTX 1080](https://gpu.nz/en/gpu/gtx-1080-8gb) | 8 GB | $0.113/h | $0.121/h | 20 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.111/h | $0.121/h |"
+          "ctx": ".117/h | $0.126/h | 14 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.132/h | $0.132/h | 4 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.104/h | $0.12/h | 5 | | ["
         },
         {
           "m": "$",
-          "ctx": "| 8 GB | $0.113/h | $0.121/h | 20 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.111/h | $0.121/h | 16 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.11"
+          "ctx": "i-8gb) | 8 GB | $0.132/h | $0.132/h | 4 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.104/h | $0.12/h | 5 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.2"
         },
         {
           "m": "$",
-          "ctx": ".113/h | $0.121/h | 20 | | [GTX 1070 Ti](https://gpu.nz/en/gpu/gtx-1070-ti-8gb) | 8 GB | $0.111/h | $0.121/h | 16 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.117/h | 7 | |"
+          "ctx": "GB | $0.132/h | $0.132/h | 4 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.104/h | $0.12/h | 5 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.252/h | $0.3"
         },
         {
           "m": "$",
-          "ctx": "-8gb) | 8 GB | $0.111/h | $0.121/h | 16 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.117/h | 7 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.139/h | $0.157"
+          "ctx": "| $0.104/h | $0.12/h | 5 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.252/h | $0.361/h | 2 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0."
         },
         {
           "m": "$",
-          "ctx": "B | $0.111/h | $0.121/h | 16 | | [GTX 1070](https://gpu.nz/en/gpu/gtx-1070-8gb) | 8 GB | $0.089/h | $0.117/h | 7 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.139/h | $0.157/h | 7 | |"
+          "ctx": "| $0.12/h | 5 | | [RTX 4060 Laptop](https://gpu.nz/en/gpu/rtx-4060-laptop-8gb) | 8 GB | $0.252/h | $0.361/h | 2 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.361/h | $0."
         },
         {
           "m": "$",
-          "ctx": "0-8gb) | 8 GB | $0.089/h | $0.117/h | 7 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.139/h | $0.157/h | 7 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h |"
+          "ctx": "| $0.252/h | $0.361/h | 2 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.361/h | $0.361/h | 1 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h |"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.089/h | $0.117/h | 7 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.139/h | $0.157/h | 7 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h | $0.157/h |"
+          "ctx": "| $0.361/h | 2 | | [RTX 4070 Laptop](https://gpu.nz/en/gpu/rtx-4070-laptop-8gb) | 8 GB | $0.361/h | $0.361/h | 1 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h | $1.34/h | 1"
         },
         {
           "m": "$",
-          "ctx": "| 8 GB | $0.139/h | $0.157/h | 7 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h | $0.157/h | 12 | | [RTX 2080](https://gpu.nz/en/gpu/rtx-2080-8gb) | 8 GB | $0.241/h | $0.24"
+          "ctx": "| 8 GB | $0.361/h | $0.361/h | 1 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h | $1.34/h | 1 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h"
         },
         {
           "m": "$",
-          "ctx": ".139/h | $0.157/h | 7 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $0.148/h | $0.157/h | 12 | | [RTX 2080](https://gpu.nz/en/gpu/rtx-2080-8gb) | 8 GB | $0.241/h | $0.241/h | 1 | |"
+          "ctx": "0.361/h | $0.361/h | 1 | | [RTX 2070 Super](https://gpu.nz/en/gpu/rtx-2070s-8gb) | 8 GB | $1.34/h | $1.34/h | 1 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h | 1 | | ["
         },
         {
           "m": "$",
-          "ctx": "-8gb) | 8 GB | $0.148/h | $0.157/h | 12 | | [RTX 2080](https://gpu.nz/en/gpu/rtx-2080-8gb) | 8 GB | $0.241/h | $0.241/h | 1 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.133/h"
+          "ctx": "70s-8gb) | 8 GB | $1.34/h | $1.34/h | 1 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h | 1 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h"
         },
         {
           "m": "$",
-          "ctx": "B | $0.148/h | $0.157/h | 12 | | [RTX 2080](https://gpu.nz/en/gpu/rtx-2080-8gb) | 8 GB | $0.241/h | $0.241/h | 1 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.133/h | $0.157/h"
+          "ctx": "8 GB | $1.34/h | $1.34/h | 1 | | [RTX 2070](https://gpu.nz/en/gpu/rtx-2070-8gb) | 8 GB | $0.102/h | $0.102/h | 1 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h | 1 | | [G"
         },
         {
           "m": "$",
-          "ctx": "8 GB | $0.241/h | $0.241/h | 1 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.133/h | $0.157/h | 13 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h |"
+          "ctx": "0-8gb) | 8 GB | $0.102/h | $0.102/h | 1 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h | 1 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.101/h | $0.168/h"
         },
         {
           "m": "$",
-          "ctx": "241/h | $0.241/h | 1 | | [Quadro P4000](https://gpu.nz/en/gpu/quadro-p4000-8gb) | 8 GB | $0.133/h | $0.157/h | 13 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h | $0.132/h |"
+          "ctx": "GB | $0.102/h | $0.102/h | 1 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $1.57/h | $1.57/h | 1 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.101/h | $0.168/h | 3 | | ["
         },
         {
           "m": "$",
-          "ctx": "| 8 GB | $0.133/h | $0.157/h | 13 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h | $0.132/h | 3 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846"
+          "ctx": "660-6gb) | 6 GB | $1.57/h | $1.57/h | 1 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.101/h | $0.168/h | 3 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0."
         },
         {
           "m": "$",
-          "ctx": ".133/h | $0.157/h | 13 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.113/h | $0.132/h | 3 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846/h | 4 | |"
+          "ctx": "6 GB | $1.57/h | $1.57/h | 1 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.101/h | $0.168/h | 3 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0."
         },
         {
           "m": "$",
-          "ctx": "i-6gb) | 6 GB | $0.113/h | $0.132/h | 3 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846/h | 4 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.117/h | $0"
+          "ctx": "| $0.101/h | $0.168/h | 3 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.166/h | 8 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.116/h | $0"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.113/h | $0.132/h | 3 | | [GTX 1660](https://gpu.nz/en/gpu/gtx-1660-6gb) | 6 GB | $0.118/h | $0.846/h | 4 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.117/h | $0.13/h | 6 |"
+          "ctx": "| $0.168/h | 3 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.166/h | 8 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.116/h | $0.126/h | 9"
         },
         {
           "m": "$",
-          "ctx": "b) | 6 GB | $0.118/h | $0.846/h | 4 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.117/h | $0.13/h | 6 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.0"
+          "ctx": "b) | 6 GB | $0.058/h | $0.166/h | 8 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.116/h | $0.126/h | 9 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.094/h |"
         },
         {
           "m": "$",
-          "ctx": "$0.118/h | $0.846/h | 4 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.117/h | $0.13/h | 6 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.0"
+          "ctx": "$0.058/h | $0.166/h | 8 | | [GTX 1660 S](https://gpu.nz/en/gpu/gtx-1660-s-6gb) | 6 GB | $0.116/h | $0.126/h | 9 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.094/h | $0.163/h |"
         },
         {
           "m": "$",
-          "ctx": "| $0.117/h | $0.13/h | 6 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.061/h | 5 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187"
+          "ctx": "| 6 GB | $0.116/h | $0.126/h | 9 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.094/h | $0.163/h | 5 | | [Quadro P2000](https://gpu.nz/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h"
         },
         {
           "m": "$",
-          "ctx": "| $0.13/h | 6 | | [RTX 3060 Laptop](https://gpu.nz/en/gpu/rtx-3060-laptop-6gb) | 6 GB | $0.058/h | $0.061/h | 5 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187/h | 2 | |"
+          "ctx": "0.116/h | $0.126/h | 9 | | [GTX 1660 Ti](https://gpu.nz/en/gpu/gtx-1660-ti-6gb) | 6 GB | $0.094/h | $0.163/h | 5 | | [Quadro P2000](https://gpu.nz/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h | $0.072/h"
         },
         {
           "m": "$",
-          "ctx": "p-6gb) | 6 GB | $0.058/h | $0.061/h | 5 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187/h | 2 | | [GTX 1650](https://gpu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132"
+          "ctx": "6 GB | $0.094/h | $0.163/h | 5 | | [Quadro P2000](https://gpu.nz/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h | $0.072/h | 5 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.058/h | $0.061/h | 5 | | [GTX 1060](https://gpu.nz/en/gpu/gtx-1060-6gb) | 6 GB | $0.169/h | $0.187/h | 2 | | [GTX 1650](https://gpu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132/h | 1 | |"
+          "ctx": "094/h | $0.163/h | 5 | | [Quadro P2000](https://gpu.nz/en/gpu/quadro-p2000-5gb) | 5 GB | $0.066/h | $0.072/h | 5 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h | 9 | | [G"
         },
         {
           "m": "$",
-          "ctx": "0-6gb) | 6 GB | $0.169/h | $0.187/h | 2 | | [GTX 1650](https://gpu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132/h | 1 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h"
+          "ctx": "000-5gb) | 5 GB | $0.066/h | $0.072/h | 5 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h | 9 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.517/h | $1.11/h |"
         },
         {
           "m": "$",
-          "ctx": "GB | $0.169/h | $0.187/h | 2 | | [GTX 1650](https://gpu.nz/en/gpu/gtx-1650-4gb) | 4 GB | $0.132/h | $0.132/h | 1 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h | 15 | | ["
+          "ctx": "5 GB | $0.066/h | $0.072/h | 5 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $18.41/h | $19.64/h | 9 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.517/h | $1.11/h | 13 | | [Tes"
         },
         {
           "m": "$",
-          "ctx": "650-4gb) | 4 GB | $0.132/h | $0.132/h | 1 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h | 15 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h |"
+          "ctx": "0-180gb) | 180 GB | $18.41/h | $19.64/h | 9 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.517/h | $1.11/h | 13 | | [Tesla V100 Super](https://gpu.nz/en/gpu/tesla-v100s-32gb) | 32 GB | $0.8"
         },
         {
           "m": "$",
-          "ctx": "4 GB | $0.132/h | $0.132/h | 1 | | [GB200](https://gpu.nz/en/gpu/gb200-180gb) | 180 GB | $17.09/h | $19.71/h | 15 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h | 16 | | [RT"
+          "ctx": "180 GB | $18.41/h | $19.64/h | 9 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.517/h | $1.11/h | 13 | | [Tesla V100 Super](https://gpu.nz/en/gpu/tesla-v100s-32gb) | 32 GB | $0.831/h | $0.8"
         },
         {
           "m": "$",
-          "ctx": "-180gb) | 180 GB | $17.09/h | $19.71/h | 15 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h | 16 | | [RTX 6000D](https://gpu.nz/en/gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3."
+          "ctx": "| $0.517/h | $1.11/h | 13 | | [Tesla V100 Super](https://gpu.nz/en/gpu/tesla-v100s-32gb) | 32 GB | $0.831/h | $0.837/h | 2 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1."
         },
         {
           "m": "$",
-          "ctx": "80 GB | $17.09/h | $19.71/h | 15 | | [GB10](https://gpu.nz/en/gpu/gb10-128gb) | 128 GB | $0.495/h | $1.02/h | 16 | | [RTX 6000D](https://gpu.nz/en/gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3.26/h | 3 |"
+          "ctx": "| $1.11/h | 13 | | [Tesla V100 Super](https://gpu.nz/en/gpu/tesla-v100s-32gb) | 32 GB | $0.831/h | $0.837/h | 2 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1.59/h | 2 |"
         },
         {
           "m": "$",
-          "ctx": "| 128 GB | $0.495/h | $1.02/h | 16 | | [RTX 6000D](https://gpu.nz/en/gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3.26/h | 3 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43"
+          "ctx": ") | 32 GB | $0.831/h | $0.837/h | 2 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1.59/h | 2 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | ["
         },
         {
           "m": "$",
-          "ctx": "| $0.495/h | $1.02/h | 16 | | [RTX 6000D](https://gpu.nz/en/gpu/rtx-6000d-80gb) | 80 GB | $3.24/h | $3.26/h | 3 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/h | 5 | |"
+          "ctx": "| $0.831/h | $0.837/h | 2 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.50/h | $1.59/h | 2 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https"
         },
         {
           "m": "$",
-          "ctx": "gb) | 80 GB | $3.24/h | $3.26/h | 3 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/h | 5 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | |"
+          "ctx": "rtx-5090d-32gb) | 32 GB | $1.50/h | $1.59/h | 2 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | |"
         },
         {
           "m": "$",
-          "ctx": "B | $3.24/h | $3.26/h | 3 | | [RTX 5090D](https://gpu.nz/en/gpu/rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/h | 5 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https"
+          "ctx": "32gb) | 32 GB | $1.50/h | $1.59/h | 2 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](http"
         },
         {
           "m": "$",
-          "ctx": "rtx-5090d-32gb) | 32 GB | $1.42/h | $1.43/h | 5 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | |"
+          "ctx": "n/gpu/t4g-16gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | |"
         },
         {
           "m": "$",
-          "ctx": "32gb) | 32 GB | $1.42/h | $1.43/h | 5 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](http"
+          "ctx": "6gb) | 16 GB | $2.88/h | $2.88/h | 1 | | [A16](https://gpu.nz/en/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | | [RTX 3050]"
         },
         {
           "m": "$",
-          "ctx": "en/gpu/a16-16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | |"
+          "ctx": "n/gpu/a16-16gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409"
         },
         {
           "m": "$",
-          "ctx": "16gb) | 16 GB | $0.30/h | $0.302/h | 5 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050]"
+          "ctx": "6gb) | 16 GB | $0.301/h | $0.313/h | 3 | | [A2](https://gpu.nz/en/gpu/a2-16gb) | 16 GB | $0.349/h | $0.349/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409/h | 1 | |"
         },
         {
           "m": "$",
-          "ctx": "/gpu/a2-16gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.181/h | $8.82/h"
+          "ctx": "16gb) | 16 GB | $0.349/h | $0.349/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.18/h | $8.79/h"
         },
         {
           "m": "$",
-          "ctx": "gb) | 16 GB | $0.447/h | $0.447/h | 1 | | [T4G](https://gpu.nz/en/gpu/t4g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.181/h | $8.82/h | 3 | Pri"
+          "ctx": "GB | $0.349/h | $0.349/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-8gb) | 8 GB | $0.409/h | $0.409/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.18/h | $8.79/h | 4 | Pri"
         },
         {
           "m": "$",
-          "ctx": "g-16gb) | 16 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.181/h | $8.82/h | 3 | Prices and availability come from the live catalog and update automatically"
+          "ctx": "0-8gb) | 8 GB | $0.409/h | $0.409/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.18/h | $8.79/h | 4 | Prices and availability come from the live catalog and update automatically"
         },
         {
           "m": "$",
-          "ctx": "6 GB | $2.90/h | $2.90/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.181/h | $8.82/h | 3 | Prices and availability come from the live catalog and update automatically [Pick a s"
+          "ctx": "GB | $0.409/h | $0.409/h | 1 | | [RTX 3050](https://gpu.nz/en/gpu/rtx-3050-6gb) | 6 GB | $0.18/h | $8.79/h | 4 | Prices and availability come from the live catalog and update automatically [Pick a s"
         },
         {
           "m": "hour",
-          "ctx": ".nz bills GPU rental per minute from your balance: the cheapest server right now is from $0.066 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU, but its disk"
+          "ctx": "u.nz bills GPU rental per minute from your balance: the cheapest server right now is from $0.06 per hour for one GPU. The price is fixed at launch; a stopped server is not billed for the GPU, but its disk"
         },
         {
           "m": "hour",
@@ -17911,7 +17920,7 @@
         },
         {
           "m": "hour",
-          "ctx": "s are issued only where the law requires them. ## Cost examples | GPU | 1 minute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.03"
+          "ctx": "s are issued only where the law requires them. ## Cost examples | GPU | 1 minute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03"
         },
         {
           "m": "hour",

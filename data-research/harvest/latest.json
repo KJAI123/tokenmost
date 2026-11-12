@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-12T02:32:46Z",
+  "harvested_at": "2026-11-12T16:28:11Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -877,10 +877,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -942,6 +938,10 @@
         {
           "match": "会员",
           "context": "s 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Co"
+        },
+        {
+          "match": "会员",
+          "context": "时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Co"
         }
       ]
     },
@@ -1371,15 +1371,15 @@
         },
         {
           "match": "¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.3",
-          "context": ":`缓存命中`}),width:`22%`}],rows:[[_jsx(_components.a,{href:`/guide/kimi-k2-7-code-quickstart`,children:`kimi-k2.7-code`}),`¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.30 / MTok`],[_jsx(_components.a,{href:`/guide/kimi-k2-7-code-quickstart`,children:`kimi-k2.7-code-highspeed`}),`¥13.00 /"
+          "context": ",{title:_jsx(Tooltip,{tip:`命中缓存的请求前缀按此价格计费，命中后缓存有效期（TTL）自动续期。`,children:`缓存命中`}),width:`22%`}],rows:[[`kimi-k2.7-code`,`¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.30 / MTok`],[`kimi-k2.7-code-highspeed`,`¥13.00 / MTok`,`¥54.00 / MTok`,`¥2.60 / MTok`],[`kimi-k2.6`,`¥6.50 / MTok`,`¥27."
         },
         {
           "match": "¥13.00 / MTok`,`¥54.00 / MTok`,`¥2.6",
-          "context": "ok`,`¥1.30 / MTok`],[_jsx(_components.a,{href:`/guide/kimi-k2-7-code-quickstart`,children:`kimi-k2.7-code-highspeed`}),`¥13.00 / MTok`,`¥54.00 / MTok`,`¥2.60 / MTok`],[_jsx(_components.a,{href:`/guide/kimi-k2-6-quickstart`,children:`kimi-k2.6`}),`¥6.50 / MTok`,`¥27.00 / MTok`"
+          "context": "命中`}),width:`22%`}],rows:[[`kimi-k2.7-code`,`¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.30 / MTok`],[`kimi-k2.7-code-highspeed`,`¥13.00 / MTok`,`¥54.00 / MTok`,`¥2.60 / MTok`],[`kimi-k2.6`,`¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.10 / MTok`]]})}),`\\n`,_jsx(_components.p,{children:`此处 1 MTok"
         },
         {
           "match": "¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.1",
-          "context": "/ MTok`,`¥54.00 / MTok`,`¥2.60 / MTok`],[_jsx(_components.a,{href:`/guide/kimi-k2-6-quickstart`,children:`kimi-k2.6`}),`¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.10 / MTok`]]})}),`\\n`,_jsx(_components.p,{children:`此处 1 MTok = 1,000,000 tokens，表格中的价格代表每消耗 1 MTok 的价格。`}),`\\n`,_jsx(Hea"
+          "context": "27.00 / MTok`,`¥1.30 / MTok`],[`kimi-k2.7-code-highspeed`,`¥13.00 / MTok`,`¥54.00 / MTok`,`¥2.60 / MTok`],[`kimi-k2.6`,`¥6.50 / MTok`,`¥27.00 / MTok`,`¥1.10 / MTok`]]})}),`\\n`,_jsx(_components.p,{children:`此处 1 MTok = 1,000,000 tokens，表格中的价格代表每消耗 1 MTok 的价格。`}),`\\n`,_jsx(Hea"
         },
         {
           "match": "免费",
@@ -1669,124 +1669,124 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$3.00 $0.30  (cached) $15.00 GLM-5.",
-          "context": "hing went wrong while submitting the form. Price per 1M tokens Batch API price Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached)"
+          "match": "$0.15 $0.015  (cached) $0.60 DeepSe",
+          "context": "rong while submitting the form. Price per 1M tokens Batch API price Model       Input     output     MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 Deep"
         },
         {
-          "match": "$1.40 $0.26  (cached) $4.40 GLM-5.3",
-          "context": "form. Price per 1M tokens Batch API price Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0."
+          "match": "$0.30 $0.006  (cached) $1.20 Kimi K",
+          "context": "tch API price Model       Input     output     MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 GLM-5.3 $"
         },
         {
-          "match": "$0.15 $0.03  (cached) $0.50 Muse Sp",
-          "context": "Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached"
+          "match": "$2.00 $0.20  (cached) $10.00 Qwen3.",
+          "context": "MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0"
+        },
+        {
+          "match": "$0.32 $1.28 DeepSeek V4 Pro 0813 $1",
+          "context": "ed) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0"
+        },
+        {
+          "match": "$0.13  (cached) $3.96 GLM-5.3 $1.40",
+          "context": "0 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1."
+        },
+        {
+          "match": "$0.26  (cached) $4.40 GLM-5.3-Flash",
+          "context": "ro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Exp"
+        },
+        {
+          "match": "$0.15 $0.03  (cached) $0.50 Qwen3.8",
+          "context": "3.7-Plus $0.32 $1.28 DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B"
+        },
+        {
+          "match": "$0.15 $0.47 Muse Spark Open 816B A4",
+          "context": "$1.32 $0.13  (cached) $3.96 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 NVIDIA N"
         },
         {
           "match": "$1.25 $0.15  (cached) $4.25 Tev1 4B",
-          "context": "(cached) $15.00 GLM-5.3 $1.40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.6"
+          "context": ".40 $0.26  (cached) $4.40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cac"
         },
         {
           "match": "$0.042 $0.00 Beam 1.0 501B A23B $0.4",
-          "context": "40 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached)"
+          "context": "03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached"
         },
         {
-          "match": "$0.04  (cached) $1.20 MiniMax M3.1 ",
-          "context": "$0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cac"
-        },
-        {
-          "match": "$0.15 $0.015  (cached) $0.60 DeepSe",
-          "context": ".15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-"
-        },
-        {
-          "match": "$0.30 $0.006  (cached) $1.20 Kimi K",
-          "context": "Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Fre"
-        },
-        {
-          "match": "$2.00 $0.20  (cached) $10.00 Qwen3.",
-          "context": ".20 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free DeepSeek V4 Pro 0813 $1.32 $0.13  (c"
-        },
-        {
-          "match": "$0.32 $1.28 GLM-5.2 $1.40 $0.26  (c",
-          "context": "ed) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVI"
-        },
-        {
-          "match": "$4.40 Ternary Bonsai 27B Free Free ",
-          "context": "0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (ca"
-        },
-        {
-          "match": "$1.32 $0.13  (cached) $3.96 Qwen3.8",
-          "context": ") $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0."
-        },
-        {
-          "match": "$0.15 $0.47 NVIDIA Nemotron 3.5 Sup",
-          "context": "$1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50"
+          "match": "$0.04  (cached) $1.20 NVIDIA Nemotr",
+          "context": "$0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cac"
         },
         {
           "match": "$0.15 $0.02  (cached) $0.50 Ripple-",
-          "context": "i 27B Free Free DeepSeek V4 Pro 0813 $1.32 $0.13  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cache"
+          "context": "ed) $4.25 Tev1 4B Experimental $0.042 $0.00 Beam 1.0 501B A23B $0.40 $0.04  (cached) $1.20 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cache"
         },
         {
           "match": "$0.20 $0.02  (cached) $0.60 Qwen3.7",
-          "context": "3  (cached) $3.96 Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached)"
+          "context": "m 1.0 501B A23B $0.40 $0.04  (cached) $1.20 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 GLM-5.2 $1.40 $0.26  (cached) $4.40 Te"
         },
         {
           "match": "$2.50 $0.50  (cached) $7.50 DeepSee",
-          "context": ".47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5"
+          "context": ".20 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free Muse Glimmer"
         },
         {
-          "match": "$0.30 $0.006  (cached) $1.20 Muse G",
-          "context": "ached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Rnj-1 Instruct $0.15 $0.15 Qwen3."
+          "match": "$0.30 $0.006  (cached) $1.20 GLM-5.",
+          "context": "ached) $0.50 Ripple-65B Preview $0.20 $0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0."
+        },
+        {
+          "match": "$1.40 $0.26  (cached) $4.40 Ternary",
+          "context": "$0.02  (cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Kimi"
         },
         {
           "match": "$0.35 $0.04  (cached) $1.50 gpt-oss",
-          "context": "cached) $0.60 Qwen3.7-Max $2.50 $0.50  (cached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $"
+          "context": ".1 Flash $0.30 $0.006  (cached) $1.20 GLM-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0"
         },
         {
           "match": "$0.15 $0.60 Qwen3.5 9B $0.17 $0.25 ",
-          "context": "ached) $7.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Displayed prices refer to the"
+          "context": "-5.2 $1.40 $0.26  (cached) $4.40 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30"
+        },
+        {
+          "match": "$3.00 $0.30  (cached) $15.00 Rnj-1 ",
+          "context": "nsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Displayed prices refer to the lowest"
         },
         {
           "match": "$0.15 $0.15 Qwen3.6-Plus $0.50 $3.0",
-          "context": "ched) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Displayed prices refer to the lowest resolution/duration settings. Actual prices"
+          "context": ".04  (cached) $1.50 gpt-oss-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Displayed prices refer to the lowest resolution/duration settings. Actual prices"
         },
         {
           "match": "$0.30 $0.30 Displayed prices refer ",
-          "context": "s-120B $0.15 $0.60 Qwen3.5 9B $0.17 $0.25 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Displayed prices refer to the lowest resolution/duration settings. Actual prices might vary. Price per 1M tokens Model       Input     output"
-        },
-        {
-          "match": "$3.00 $0.30  (cached) $15.00 GLM-5.",
-          "context": "st resolution/duration settings. Actual prices might vary. Price per 1M tokens Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.01"
-        },
-        {
-          "match": "$0.15 $0.03  (cached) $0.50 Muse Sp",
-          "context": "ces might vary. Price per 1M tokens Model       Input     output     Kimi K3 $3.00 $0.30  (cached) $15.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017"
-        },
-        {
-          "match": "$1.25 $0.15  (cached) $4.25 MiniMax",
-          "context": "output     Kimi K3 $3.00 $0.30  (cached) $15.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20"
+          "context": "0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Rnj-1 Instruct $0.15 $0.15 Qwen3.6-Plus $0.50 $3.00 Qwen2.5 7B Instruct Turbo $0.30 $0.30 Displayed prices refer to the lowest resolution/duration settings. Actual prices might vary. Price per 1M tokens Model       Input     output"
         },
         {
           "match": "$0.15 $0.015  (cached) $0.60 DeepSe",
-          "context": "5.00 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 Tern"
+          "context": "on/duration settings. Actual prices might vary. Price per 1M tokens Model       Input     output     MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-"
         },
         {
           "match": "$0.30 $0.006  (cached) $1.20 Kimi K",
-          "context": "ark Open 816B A42B $1.25 $0.15  (cached) $4.25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 Ternary Bonsai 27B Free Free Qwen3.8 Flash $0.15 $0.47 NVI"
+          "context": "per 1M tokens Model       Input     output     MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0"
         },
         {
-          "match": "$2.00 $0.20  (cached) $10.00 Qwen3.",
-          "context": ".25 MiniMax M3.1 Flash $0.15 $0.015  (cached) $0.60 DeepSeek V4.1 Flash 1017 $0.30 $0.006  (cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 Ternary Bonsai 27B Free Free Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cac"
+          "match": "$0.50 Qwen3.8 Flash $0.15 $0.47 Mus",
+          "context": "(cached) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4."
         },
         {
-          "match": "$0.15 $0.47 NVIDIA Nemotron 3.5 Sup",
-          "context": "d) $1.20 Kimi K3.1 Pro $2.00 $0.20  (cached) $10.00 Qwen3.7-Plus $0.32 $1.28 Ternary Bonsai 27B Free Free Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached"
+          "match": "$1.25 $0.15  (cached) $4.25 NVIDIA ",
+          "context": "Qwen3.7-Plus $0.32 $1.28 GLM-5.3-Flash $0.15 $0.03  (cached) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Ternary Bonsai 27B Fr"
         },
         {
           "match": "$0.15 $0.02  (cached) $0.50 DeepSee",
-          "context": "ed) $10.00 Qwen3.7-Plus $0.32 $1.28 Ternary Bonsai 27B Free Free Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen3.5 9B $0.17 $0.25 Qwen3.6-Pl"
+          "context": "hed) $0.50 Qwen3.8 Flash $0.15 $0.47 Muse Spark Open 816B A42B $1.25 $0.15  (cached) $4.25 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen"
         },
         {
-          "match": "$0.30 $0.006  (cached) $1.20 Muse G",
-          "context": "ai 27B Free Free Qwen3.8 Flash $0.15 $0.47 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen3.5 9B $0.17 $0.25 Qwen3.6-Plus $0.50 $3.00 Displayed prices refer to the low"
+          "match": "$0.30 $0.006  (cached) $1.20 Ternar",
+          "context": "Open 816B A42B $1.25 $0.15  (cached) $4.25 NVIDIA Nemotron 3.5 Super VL $0.15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached)"
+        },
+        {
+          "match": "$0.35 $0.04  (cached) $1.50 Qwen3.5",
+          "context": "15 $0.02  (cached) $0.50 DeepSeek V4.1 Flash $0.30 $0.006  (cached) $1.20 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.6-Plus $0.50 $3.00 Displayed prices refer to the lowest resol"
+        },
+        {
+          "match": "$0.17 $0.25 Kimi K3 $3.00 $0.30  (c",
+          "context": "Flash $0.30 $0.006  (cached) $1.20 Ternary Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.6-Plus $0.50 $3.00 Displayed prices refer to the lowest resolution/duration settings. Actual prices"
+        },
+        {
+          "match": "$15.00 Qwen3.6-Plus $0.50 $3.00 Disp",
+          "context": "Bonsai 27B Free Free Muse Glimmer 30B $0.35 $0.04  (cached) $1.50 Qwen3.5 9B $0.17 $0.25 Kimi K3 $3.00 $0.30  (cached) $15.00 Qwen3.6-Plus $0.50 $3.00 Displayed prices refer to the lowest resolution/duration settings. Actual prices might vary. Model       Price per mp     Pr"
         }
       ]
     },
@@ -2817,51 +2817,79 @@
       "name": "千帆大模型平台-企业级一站式大模型开发及应用开发",
       "url": "https://cloud.baidu.com/product/wenxinworkshop",
       "status": "ok",
-      "hits": 11,
+      "hits": 18,
       "findings": [
         {
-          "match": "￥0.006-0.01/ 千tokens 输出价格 ￥0.024-0.0",
-          "context": "视觉理解 文心5.0是原生全模态大模型，基础能力全面升级，具备更强深度思考、视觉理解能力，在多模态理解、指令遵循、创意写作、事实性、智能体规划与工具应用等表现尤其出色。 模型接入点 ernie-5.0 上下文 119k，64k 输入价格 ￥0.006-0.01/ 千tokens 输出价格 ￥0.024-0.04/ 千tokens 立即体验 ERNIE X1.1 Preview 全新升级，效果提升 深度推理 问答、工具调用、智能体、指令遵循、逻辑推理、数学、代码任务的效果显著提升，事实性显著提升。支持64K上下文长度，兼顾响应速度与长链路推理连贯"
+          "match": "¥0.001         输出 （元/千tokens）     8:",
+          "context": "-Flash-Preview       自研旗舰   文本生成   联网搜索     文心系列最新基础模型，全面优化了编程、智能体、知识工作、深度研究等方面能力       输入 （元/千tokens）     8:00-22:00 ｜ ¥0.001         输出 （元/千tokens）     8:00-22:00 ｜ ¥0.004         立即体验            ERNIE-Light-DT-1.0       轻量上下文   最大输出 128K   思考模式可开可关     基于百度闪电大模型与自研 BSA 稀疏注"
         },
         {
-          "match": "¥0.001/ 千tokens 输出价格 ¥0.004/ 千tokens",
-          "context": "问答、工具调用、智能体、指令遵循、逻辑推理、数学、代码任务的效果显著提升，事实性显著提升。支持64K上下文长度，兼顾响应速度与长链路推理连贯性。 模型接入点 ernie-x1.1-preview 上下文 64k,55K+64K 输入价格 ¥0.001/ 千tokens 输出价格 ¥0.004/ 千tokens 立即体验 ERNIE 4.5 Turbo VL 多模态 图像理解 图片理解、创作、翻译、代码等能力显著提升，支持128K上下文长度，首Token时延显著降低。 模型接入点 ernie-4.5-turbo-vl 上下文 128K,123K+"
+          "match": "¥0.004         立即体验            ERNIE",
+          "context": "列最新基础模型，全面优化了编程、智能体、知识工作、深度研究等方面能力       输入 （元/千tokens）     8:00-22:00 ｜ ¥0.001         输出 （元/千tokens）     8:00-22:00 ｜ ¥0.004         立即体验            ERNIE-Light-DT-1.0       轻量上下文   最大输出 128K   思考模式可开可关     基于百度闪电大模型与自研 BSA 稀疏注意力，借助反馈式历史压缩削减 KV 成本，高效支持超长上下文       输入 （元/百万to"
         },
         {
-          "match": "¥0.003/ 千tokens 输出价格 ¥0.009/ 千tokens",
-          "context": "E 4.5 Turbo VL 多模态 图像理解 图片理解、创作、翻译、代码等能力显著提升，支持128K上下文长度，首Token时延显著降低。 模型接入点 ernie-4.5-turbo-vl 上下文 128K,123K+ 16K 输入价格 ¥0.003/ 千tokens 输出价格 ¥0.009/ 千tokens 立即体验 ERNIE 4.5 Turbo 文本生成 文心4.5 Turbo在去幻觉、逻辑推理和代码能力等方面也有着明显增强。对比文心4.5，速度更快、价格更低。 模型接入点 ernie-4.5-turbo-128k 上下文 128K,12"
+          "match": "¥8         输出 （元/百万tokens）     —",
+          "context": "轻量上下文   最大输出 128K   思考模式可开可关     基于百度闪电大模型与自研 BSA 稀疏注意力，借助反馈式历史压缩削减 KV 成本，高效支持超长上下文       输入 （元/百万tokens）     — ｜ ¥8         输出 （元/百万tokens）     — ｜ ¥28         立即体验            ERNIE-Wizshot-ME       视频生成   1080p   0.7 元 / 秒     AI 视频生成大模型，驱动图中人物自然开口演绎，无需实拍，产出 4–15s"
         },
         {
-          "match": "¥0.0008/ 千tokens 输出价格 ¥0.0032/ 千token",
-          "context": ".5 Turbo 文本生成 文心4.5 Turbo在去幻觉、逻辑推理和代码能力等方面也有着明显增强。对比文心4.5，速度更快、价格更低。 模型接入点 ernie-4.5-turbo-128k 上下文 128K,123K+ 12K 输入价格 ¥0.0008/ 千tokens 输出价格 ¥0.0032/ 千tokens 立即体验 ERNIE-5.0-Thinking-Preview 深度推理 视觉理解 文心5.0是原生全模态大模型，基础能力全面升级，多模态理解、指令遵循、创意写作、事实性、智能体规划与工具应用等表现尤其出色 模型接入点 ernie-5."
+          "match": "¥28         立即体验            ERNIE",
+          "context": "基于百度闪电大模型与自研 BSA 稀疏注意力，借助反馈式历史压缩削减 KV 成本，高效支持超长上下文       输入 （元/百万tokens）     — ｜ ¥8         输出 （元/百万tokens）     — ｜ ¥28         立即体验            ERNIE-Wizshot-ME       视频生成   1080p   0.7 元 / 秒     AI 视频生成大模型，驱动图中人物自然开口演绎，无需实拍，产出 4–15s、1080p 高清真人视频       视频生成 （元/秒）     刊"
         },
         {
-          "match": "¥0.006-0.01/ 千tokens 输出价格 ¥0.024-0.0",
-          "context": "理 视觉理解 文心5.0是原生全模态大模型，基础能力全面升级，多模态理解、指令遵循、创意写作、事实性、智能体规划与工具应用等表现尤其出色 模型接入点 ernie-5.0-thinking-preview 上下文 119k，64k 输入价格 ¥0.006-0.01/ 千tokens 输出价格 ¥0.024-0.04/ 千tokens 立即体验 ERNIE-4.5-VL-28B-A3B 多模融合,全新升级 多模态 深度推理 文心4.5中的多模态开源模型，采用MoE架构，具备 280 亿总参数量，激活参数为 30 亿，支持切换思考和非思考两种模式。 模"
+          "match": "¥0.7         API文档            Deep",
+          "context": "hot-ME       视频生成   1080p   0.7 元 / 秒     AI 视频生成大模型，驱动图中人物自然开口演绎，无需实拍，产出 4–15s、1080p 高清真人视频       视频生成 （元/秒）     刊例价 ｜ ¥0.7         API文档            DeepSeek-V4.1-Flash-1017       文本生成 视觉理解 极速推理     全新模型结构系列中尺寸最小的模型，原生多模态视觉理解，推理更快、吞吐更大       输入 （元/百万tokens）     8:00-22:00"
         },
         {
-          "match": "¥0.001/ 千tokens 输出价格 ¥0.01/ 千tokens ",
-          "context": "多模态 深度推理 文心4.5中的多模态开源模型，采用MoE架构，具备 280 亿总参数量，激活参数为 30 亿，支持切换思考和非思考两种模式。 模型接入点 ernie-4.5-vl-28b-a3b 上下文 32K,30K+8K 输入价格 ¥0.001/ 千tokens 输出价格 ¥0.01/ 千tokens 立即体验 探索更多大模型 独家优质Skill与精选MCP服务 百度搜索 免费试用 独家 Skill MCP 百度搜索（BaiduSearch）服务基于百度搜索能力与AI技术，专为生成式AI提供全网实时信息检索服务，具备海量内容站点、高权威性"
+          "match": "¥2   22:00-8:00 ｜ ¥1         输出 ",
+          "context": "ek-V4.1-Flash-1017       文本生成 视觉理解 极速推理     全新模型结构系列中尺寸最小的模型，原生多模态视觉理解，推理更快、吞吐更大       输入 （元/百万tokens）     8:00-22:00 ｜ ¥2   22:00-8:00 ｜ ¥1         输出 （元/百万tokens）     8:00-22:00 ｜ ¥8   22:00-8:00 ｜ ¥4         立即体验            GLM-5.3       文本生成   编程   网络安全     智谱最新旗舰模型，编"
         },
         {
-          "match": "免费",
-          "context": "模型接入点 ernie-4.5-vl-28b-a3b 上下文 32K,30K+8K 输入价格 ¥0.001/ 千tokens 输出价格 ¥0.01/ 千tokens 立即体验 探索更多大模型 独家优质Skill与精选MCP服务 百度搜索 免费试用 独家 Skill MCP 百度搜索（BaiduSearch）服务基于百度搜索能力与AI技术，专为生成式AI提供全网实时信息检索服务，具备海量内容站点、高权威性，强时效性，提供全新的搜索体验。 了解更多 智能搜索生成 免费试用 独家 M"
+          "match": "¥8   22:00-8:00 ｜ ¥4         立即体",
+          "context": "生多模态视觉理解，推理更快、吞吐更大       输入 （元/百万tokens）     8:00-22:00 ｜ ¥2   22:00-8:00 ｜ ¥1         输出 （元/百万tokens）     8:00-22:00 ｜ ¥8   22:00-8:00 ｜ ¥4         立即体验            GLM-5.3       文本生成   编程   网络安全     智谱最新旗舰模型，编程体验较前代提升 50%，网络安全能力持平 Mythos 5       输入 （元/百万tokens）     — ｜ ¥"
         },
         {
-          "match": "免费",
-          "context": "务 百度搜索 免费试用 独家 Skill MCP 百度搜索（BaiduSearch）服务基于百度搜索能力与AI技术，专为生成式AI提供全网实时信息检索服务，具备海量内容站点、高权威性，强时效性，提供全新的搜索体验。 了解更多 智能搜索生成 免费试用 独家 MCP 智能搜索生成（AI总结）基于百度搜索与AI技术，在搜索结果基础上融合大模型能力，提供高质量内容总结，助力用户快速获取关键信息，省去繁琐的信息筛选与整合。支持智能改写与扩写、灵活的模型配置以及可定制的安全策略，全面满足多场"
+          "match": "¥8         输出 （元/百万tokens）     —",
+          "context": "体验            GLM-5.3       文本生成   编程   网络安全     智谱最新旗舰模型，编程体验较前代提升 50%，网络安全能力持平 Mythos 5       输入 （元/百万tokens）     — ｜ ¥8         输出 （元/百万tokens）     — ｜ ¥28         立即体验            Unlimited-OCR-2       视觉语言   无限视界解析   轻量可部署     基于稀疏参考滑动窗口注意力（SR-SWA）实现近乎恒定算力与显存下的「无限长度」一"
         },
         {
-          "match": "免费",
-          "context": "百度搜索与AI技术，在搜索结果基础上融合大模型能力，提供高质量内容总结，助力用户快速获取关键信息，省去繁琐的信息筛选与整合。支持智能改写与扩写、灵活的模型配置以及可定制的安全策略，全面满足多场景下的信息获取与处理需求。 了解更多 百度百科 免费试用 独家 Skill MCP 百度百科提供百科官方内容检索服务，帮助用户快速、全面地获取权威的百科信息。支持百科词条义项查询、词条详情查询以及秒懂百科视频获取。适用于AI问答、内容创作、教育教学、知识检索等场景，为模型提供可信的知识支撑。"
+          "match": "¥28         立即体验            Unlim",
+          "context": "编程   网络安全     智谱最新旗舰模型，编程体验较前代提升 50%，网络安全能力持平 Mythos 5       输入 （元/百万tokens）     — ｜ ¥8         输出 （元/百万tokens）     — ｜ ¥28         立即体验            Unlimited-OCR-2       视觉语言   无限视界解析   轻量可部署     基于稀疏参考滑动窗口注意力（SR-SWA）实现近乎恒定算力与显存下的「无限长度」一站式长文档解析，并在数十页至百页级评测上达到领先水平       输入"
         },
         {
-          "match": "免费",
-          "context": "度百科提供百科官方内容检索服务，帮助用户快速、全面地获取权威的百科信息。支持百科词条义项查询、词条详情查询以及秒懂百科视频获取。适用于AI问答、内容创作、教育教学、知识检索等场景，为模型提供可信的知识支撑。 了解更多 百度网盘AI视频笔记 免费试用 独家 Skill MCP 百度网盘AI视频笔记是百度网盘推出的一款基于大模型的视频内容理解工具，支持用户通过输入视频文件的公网下载链接，自动生成对应的视频摘要、重点笔记与结构化知识，帮助用户快速理解和整理视频信息。 了解更多 百度文库"
+          "match": "¥0.001         输出 （元/千tokens）     — ",
+          "context": "言   无限视界解析   轻量可部署     基于稀疏参考滑动窗口注意力（SR-SWA）实现近乎恒定算力与显存下的「无限长度」一站式长文档解析，并在数十页至百页级评测上达到领先水平       输入 （元/千tokens）     — ｜ ¥0.001         输出 （元/千tokens）     — ｜ ¥0.004         立即体验                   控制台快速接入模型 获取 API Key → 选择模型 → 接入服务 在千帆控制台「快速接入」页面获取 API Key、选择模型、复制示例代码，三步跑通首次调用"
         },
         {
-          "match": "免费",
-          "context": "Skill MCP 百度网盘AI视频笔记是百度网盘推出的一款基于大模型的视频内容理解工具，支持用户通过输入视频文件的公网下载链接，自动生成对应的视频摘要、重点笔记与结构化知识，帮助用户快速理解和整理视频信息。 了解更多 百度文库AI绘本 免费试用 独家 Skill MCP 百度文库AI绘本是百度文库推出的一项基于人工智能的辅助绘本制作服务，旨在帮助内容创作者解决因缺乏专业绘画技能而无法快速创作高质量绘本的问题。无论是在儿童教育、亲子互动、品牌营销，还是在社交媒体内容创作等领域，"
+          "match": "¥0.004         立即体验                 ",
+          "context": "R-SWA）实现近乎恒定算力与显存下的「无限长度」一站式长文档解析，并在数十页至百页级评测上达到领先水平       输入 （元/千tokens）     — ｜ ¥0.001         输出 （元/千tokens）     — ｜ ¥0.004         立即体验                   控制台快速接入模型 获取 API Key → 选择模型 → 接入服务 在千帆控制台「快速接入」页面获取 API Key、选择模型、复制示例代码，三步跑通首次调用，并支持在线调试。 立即快速接入 我们能提供 获取 API Key Toke"
+        },
+        {
+          "match": "￥ 4.9 /月 1,400积分/月 限时取消7天限额 集成主流国产模",
+          "context": "Code 等 Agent 用量与体检 查询各模型调用次数、成功失败与 token 消耗，doctor 一键体检 Token Plan 订阅 一个订阅，多模型共享统一额度，按需切换 个人版 企业版 Mini 限时5折特惠 新手尝鲜 入门首选 ￥ 4.9 /月 1,400积分/月 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Lite 双11·首月5折 日常开发，高性价比之选 ￥ 19.9 /月 11,500积分/月 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Standard 上新 进阶开"
+        },
+        {
+          "match": "￥ 19.9 /月 11,500积分/月 限时取消7天限额 集成主流国产",
+          "context": "额度，按需切换 个人版 企业版 Mini 限时5折特惠 新手尝鲜 入门首选 ￥ 4.9 /月 1,400积分/月 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Lite 双11·首月5折 日常开发，高性价比之选 ￥ 19.9 /月 11,500积分/月 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Standard 上新 进阶开发，用量更从容 ￥ 49.9 /月 22,000+首月赠1,760积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Pro 双11·首月"
+        },
+        {
+          "match": "￥ 49.9 /月 22,000+首月赠1,760积分 限时取消7天限额",
+          "context": "和AI编程工具 立即订阅 Lite 双11·首月5折 日常开发，高性价比之选 ￥ 19.9 /月 11,500积分/月 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Standard 上新 进阶开发，用量更从容 ￥ 49.9 /月 22,000+首月赠1,760积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Pro 双11·首月5折 高频开发，持续创作无压力 ¥ 99.9 /月 45,000+首月赠4,500积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅"
+        },
+        {
+          "match": "¥ 99.9 /月 45,000+首月赠4,500积分 限时取消7天限额",
+          "context": "立即订阅 Standard 上新 进阶开发，用量更从容 ￥ 49.9 /月 22,000+首月赠1,760积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Pro 双11·首月5折 高频开发，持续创作无压力 ¥ 99.9 /月 45,000+首月赠4,500积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Max 双11·首月5折 重度开发，释放AI生产力 ¥ 299.9 /月 165,000+首月赠19,800积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即"
+        },
+        {
+          "match": "¥ 299.9 /月 165,000+首月赠19,800积分 限时取消7天",
+          "context": "订阅 Pro 双11·首月5折 高频开发，持续创作无压力 ¥ 99.9 /月 45,000+首月赠4,500积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Max 双11·首月5折 重度开发，释放AI生产力 ¥ 299.9 /月 165,000+首月赠19,800积分 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅           全链路模型服务，一站式覆盖                   全链路模型服务，一站式覆盖   从数据管理、模型精调、蒸馏、评估到在线调用，一套服务体系覆盖模"
+        },
+        {
+          "match": "额度",
+          "context": "+connect 把千帆 Skills 装进 Comate、Claude Code 等 Agent 用量与体检 查询各模型调用次数、成功失败与 token 消耗，doctor 一键体检 Token Plan 订阅 一个订阅，多模型共享统一额度，按需切换 个人版 企业版 Mini 限时5折特惠 新手尝鲜 入门首选 ￥ 4.9 /月 1,400积分/月 限时取消7天限额 集成主流国产模型 兼容主流龙虾和AI编程工具 立即订阅 Lite 双11·首月5折 日常开发，高性价比之选 ￥"
+        },
+        {
+          "match": "额度",
+          "context": "把千帆 Skills 装进 Comate、Claude Code 等 Agent ##### 用量与体检 查询各模型调用次数、成功失败与 token 消耗，doctor 一键体检 ## Token Plan 订阅 一个订阅，多模型共享统一额度，按需切换 ## Mini 新手尝鲜 入门首选 ## Lite 日常开发，高性价比之选 ## Standard 进阶开发，用量更从容 ## Pro 高频开发，持续创作无压力 ## Max 重度开发，释放AI生产力 ## 全链路模型服务，一站"
         }
       ]
     },
@@ -3210,7 +3238,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "ogonew.svg)](https://www.huaweicloud.com/) 开发者 - 开发 - 活动 - Programs - 社区 - 学堂 - 大赛 - 支持 - 茶思屋 清空最近搜索 热门搜索 - 云耀云服务器L实例 - 免费试用 - 云服务器 - 域名 - 云速建站 “”的所有结果 - [华为云码道0](https://developer.huaweicloud.com/codeartsco.html/?source=dmznteducation&source"
+          "context": "ogonew.svg)](https://www.huaweicloud.com/) 开发者 - 开发 - 活动 - Programs - 社区 - 学堂 - 大赛 - 支持 - 茶思屋 清空最近搜索 热门搜索 - 云耀云服务器L实例 - 免费试用 - 云服务器 - 域名 - 云速建站 “”的所有结果 - [华为云码道0](https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmznteducation&sourcead"
         },
         {
           "match": "免费",
@@ -3926,9 +3954,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -3951,11 +3978,11 @@
         },
         {
           "match": "Free",
-          "context": "atch Size : 25 samples Output Dimensions : 1024 dimensions Try this model Image Generation stable-diffusion-xl-base-v10 Free Licence : OpenRail++ Parameters : 3.5B Quantization : fp32 Try this model Text To Speech nvr-tts-de-de Free Licence : R"
+          "context": "samples Output Dimensions : 1024 dimensions Try this model Image Generation Being retired stable-diffusion-xl-base-v10 Free Licence : OpenRail++ Parameters : 3.5B Quantization : fp32 End of life on Feb 10, 2027 Try this model Text To Speech nv"
         },
         {
           "match": "Free",
-          "context": "xl-base-v10 Free Licence : OpenRail++ Parameters : 3.5B Quantization : fp32 Try this model Text To Speech nvr-tts-de-de Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-es-es Free Licence : Riva license Quan"
+          "context": "penRail++ Parameters : 3.5B Quantization : fp32 End of life on Feb 10, 2027 Try this model Text To Speech nvr-tts-de-de Free Licence : Riva license Quantization : fp32 Try this model Text To Speech nvr-tts-es-es Free Licence : Riva license Quan"
         },
         {
           "match": "Free",
@@ -3983,11 +4010,11 @@
         },
         {
           "match": "Free",
-          "context": ":** 25 samples **Output Dimensions :** 1024 dimensions Try this model Image Generation ### stable-diffusion-xl-base-v10 Free **Licence :** OpenRail++ **Parameters :** 3.5B **Quantization :** fp32 Try this model Text To Speech ### nvr-tts-de-de"
+          "context": "s **Output Dimensions :** 1024 dimensions Try this model Image GenerationBeing retired ### stable-diffusion-xl-base-v10 Free **Licence :** OpenRail++ **Parameters :** 3.5B **Quantization :** fp32 End of life on Feb 10, 2027Try this model Text T"
         },
         {
           "match": "Free",
-          "context": "**Licence :** OpenRail++ **Parameters :** 3.5B **Quantization :** fp32 Try this model Text To Speech ### nvr-tts-de-de Free **Licence :** Riva license **Quantization :** fp32 Try this model Text To Speech ### nvr-tts-es-es Free **Licence :** R"
+          "context": "*Parameters :** 3.5B **Quantization :** fp32 End of life on Feb 10, 2027Try this model Text To Speech ### nvr-tts-de-de Free **Licence :** Riva license **Quantization :** fp32 Try this model Text To Speech ### nvr-tts-es-es Free **Licence :** R"
         },
         {
           "match": "Free",
@@ -4419,20 +4446,24 @@
       "hits": 30,
       "findings": [
         {
+          "match": "免费模型按 IP 限流 200 次",
+          "context": "模型（严格按可见 $0.00 价格卡片为 16 款：12 款 $0.00/1M + 4 款仅标 free；含 2 个仅有 URL / 名称标记候选为 18 款）；名单动态轮换，以实时目录为准 注意 官方 gateway 文档：未登录匿名访问免费模型按 IP 限流 200 次/小时；带 API Key 调用的限额官方未公布；官方页未公布 RPM / TPM 数值 获取方式 CLI 跑 kilo → /models 输入 free 过滤；或直接请求 api.kilo.ai/api/gateway/chat/com"
+        },
+        {
           "match": "免费模型目录 ↗ 免费 API 额度",
-          "context": "S Code / JetBrains / CLI）。 官方 kilo.ai/models?price=free + kilo.ai/pricing 核验 · 2026-11-07（可见 $0 模型 16/18 口径，20 款未能复现） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别"
+          "context": "ls?price=free + kilo.ai/pricing + kilo.ai/docs/gateway/authentication 核验 · 2026-11-12（18 款 $0 口径不变；新增官方匿名限流 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别"
         },
         {
           "match": "免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度",
-          "context": "/ CLI）。 官方 kilo.ai/models?price=free + kilo.ai/pricing 核验 · 2026-11-07（可见 $0 模型 16/18 口径，20 款未能复现） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens"
+          "context": "o.ai/pricing + kilo.ai/docs/gateway/authentication 核验 · 2026-11-12（18 款 $0 口径不变；新增官方匿名限流 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens"
         },
         {
           "match": "免费推理额度",
-          "context": ".ai/pricing 核验 · 2026-11-07（可见 $0 模型 16/18 口径，20 款未能复现） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度"
+          "context": "ication 核验 · 2026-11-12（18 款 $0 口径不变；新增官方匿名限流 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度"
         },
         {
           "match": "免费推理试用额度，用于零成本体验模型推理服务；免费推理额度",
-          "context": "8 口径，20 款未能复现） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度。适用范围：仅抵扣按 token 后付费的在线推理费用（含缓存命中 / 未命中与输出 token），不能抵扣插件 / 知识库费用"
+          "context": "匿名限流 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度。适用范围：仅抵扣按 token 后付费的在线推理费用（含缓存命中 / 未命中与输出 token），不能抵扣插件 / 知识库费用"
         },
         {
           "match": "免费推理额度为 500（k token",
@@ -4447,20 +4478,16 @@
           "context": "仅给示例、无统一数值，以控制台「开通管理」查询为准 注意 仅抵扣在线推理；批量推理 / 插件 / 知识库 / 缓存存储不适用；以控制台「开通管理」实时查询为准 获取方式 注册火山引擎并完成实名 → 控制台「开通管理」开通方舟与目标模型、查看免费额度 → 创建 API Key，将 OpenAI 兼容端点配入本地 harness。 官方 volcengine 文档 + 11.11 活动页核验 · 2026-10-31（单模型 50 万 / 累计 2,500 万） 查看官方文档 ↗ Age"
         },
         {
-          "match": "免费档 免费期限 · 体验版长期免费 · 1000 万 Token",
-          "context": "ey，将 OpenAI 兼容端点配入本地 harness。 官方 volcengine 文档 + 11.11 活动页核验 · 2026-10-31（单模型 50 万 / 累计 2,500 万） 查看官方文档 ↗ Agent Harness 免费档 免费期限 · 体验版长期免费 · 1000 万 Token/日已核实 华为 CodeArts · 个人体验版免费（含每日 1000 万 Token 福利） ¥ 0/月 华为 CodeArts 码道体验版 ¥0 长期免费，含码道代码智能体 Web Agent（Beta）、需求管理、代码托管/检查/构"
-        },
-        {
-          "match": "免费（含每日 1000 万 Token",
-          "context": "核验 · 2026-10-31（单模型 50 万 / 累计 2,500 万） 查看官方文档 ↗ Agent Harness 免费档 免费期限 · 体验版长期免费 · 1000 万 Token/日已核实 华为 CodeArts · 个人体验版免费（含每日 1000 万 Token 福利） ¥ 0/月 华为 CodeArts 码道体验版 ¥0 长期免费，含码道代码智能体 Web Agent（Beta）、需求管理、代码托管/检查/构建/部署各 10G、各 1 并发。2026-08 起上线 DeepSeek V4 系列并"
+          "match": "免费续期，续期次",
+          "context": "有效期 30 天）」；各档另有「限时每日领 100 / 150 / 200 积分」，需在码道客户端或控制台「限时福利 → 每日签到领积分」领取，每日 1 次、当天有效。官方用户指南写明体验版「订阅有效期为 1 个月，套餐到期后系统会自动为你免费续期，续期次数不限」。上一轮记录的「每日 1000 万 Token 福利」在官方任何页面均无法复现——旧 Token 制口径为体验版每月 500 万 Tokens（包年包月计费页原文），并非「每日 1000 万」，故本轮改为积分制口径。积分与 Toke"
         },
         {
           "match": "免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度",
-          "context": "录 → 每日签到自动发放积分；模型界面选「限时福利」分类下的模型免费使用。 官方 huaweicloud.com + CSDN + 华为云社区核验 · 2026-11-04（1000 万 Token/日已核实） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼新用户免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重"
+          "context": "icloud.com/pricing + support.huaweicloud.com 计费与用户指南核验 · 2026-11-12（积分制，500 积分/月；旧「每日 1000 万 Token」口径已更正） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼新用户免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重"
         },
         {
           "match": "免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token",
-          "context": "icloud.com + CSDN + 华为云社区核验 · 2026-11-04（1000 万 Token/日已核实） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼新用户免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重复领；Token Plan / Coding Plan 专属 Key 不消耗免费额度；未认证用户用完即停"
+          "context": "费与用户指南核验 · 2026-11-12（积分制，500 积分/月；旧「每日 1000 万 Token」口径已更正） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼新用户免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重复领；Token Plan / Coding Plan 专属 Key 不消耗免费额度；未认证用户用完即停"
         },
         {
           "match": "免费额度",
@@ -4531,12 +4558,12 @@
           "context": "接把 base URL 改到任意 OpenAI 兼容的本地 harness（Cline、Roo Code、OpenCode 等）。上下文 524,288 token，韩 / 英双语，reasoning_effort 默认 max。官方未公布免费额度、限流与结束日期，以官方页面与账户显示为准。 门槛 A 级 · 注册并获取 EXAONE API Key 额度 官方仅写「currently available free of charge」，未公布具体额度、限流与结束日期 注意 2026"
         },
         {
-          "match": "免费额度",
-          "context": "rization: Bearer <key>` 认证。 官方 docs.exaone.ai changelog + quick-start + k-exaone-2.5 文档核验 · 2026-11-11 查看官方 changelog ↗ 免费额度 免费期限 · 免费期限 · 以官方页面为准（未公布截止日） 云知声 · U Plan Free 档（每周 2,500 积分） ¥ 0 云知声 Token Hub 上线 U Plan 订阅，Free 档注册后可点「立即领取」免费获得：每周"
+          "match": "免费模型 免费期限 · ◷促销至 2026-11-24 00:00 PT（月额度",
+          "context": "rization: Bearer <key>` 认证。 官方 docs.exaone.ai changelog + quick-start + k-exaone-2.5 文档核验 · 2026-11-11 查看官方 changelog ↗ 免费模型 免费期限 · ◷促销至 2026-11-24 00:00 PT（月额度每月 1 日重置） IteraCompute · Auto 免费档（30M tokens/月，免卡） ¥ 0 IteraCompute 官方免费页（iteracompute.com/free/，价格核对时间 2026-11-12 13:07"
         },
         {
-          "match": "免费使用」，Hy4 限免自此获得官方确认、今天仍在有效期内（至 11-15）；免费额度",
-          "context": "站同源同口径，仍为 2026-10-01 至 2026-12-31。 【2026-11-11 核验】腾讯官网 Hy4 发布稿原文「WorkBuddy/CodeBuddy 将在 11 月 4 日至 11 月 15 日期间，为用户提供一定额度的免费使用」，Hy4 限免自此获得官方确认、今天仍在有效期内（至 11-15）；免费额度用尽后可继续消耗积分、繁忙时段排队，生成图片 / 视频会切换多模态模型按正常规则计费。Hy3 的限免延期未在该官方稿中出现，仍以客户端实际显示为准。 门槛 B 级 · 登录免 key 额度 500 积分/月；补全 5,000 次/月（限免无"
+          "match": "免费档（30M tokens",
+          "context": "+ k-exaone-2.5 文档核验 · 2026-11-11 查看官方 changelog ↗ 免费模型 免费期限 · ◷促销至 2026-11-24 00:00 PT（月额度每月 1 日重置） IteraCompute · Auto 免费档（30M tokens/月，免卡） ¥ 0 IteraCompute 官方免费页（iteracompute.com/free/，价格核对时间 2026-11-12 13:07 UTC）原文：「Get 30M free tokens per month with"
         }
       ]
     },
@@ -4885,7 +4912,7 @@
         },
         {
           "match": "$0 to start with 150+ free tiers",
-          "context": "et is available. Six pillars: resilient fallback across 389 providers · up to 95% token savings on eligible workloads · $0 to start with 150+ free tiers and 52 recurring/keyless free-forever providers · 39 CLI/agent integrations through one config · OpenAI, Claude, Gemini"
+          "context": "et is available. Six pillars: resilient fallback across 393 providers · up to 95% token savings on eligible workloads · $0 to start with 150+ free tiers and 52 recurring/keyless free-forever providers · 39 CLI/agent integrations through one config · OpenAI, Claude, Gemini"
         },
         {
           "match": "$100 free credits** on signup (fre",
@@ -4937,7 +4964,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 13.2k  ( 13.2k ) Star 86.6k  ( 86.6k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 13.3k  ( 13.3k ) Star 86.8k  ( 86.8k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4965,7 +4992,7 @@
         },
         {
           "match": "free",
-          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 465 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
+          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 466 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
         },
         {
           "match": "free",
@@ -5155,43 +5182,43 @@
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
+          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 16 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
+          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 16 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
         },
         {
           "match": "免费 API Token 专区 注册赠送、每日/每月额度",
-          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
+          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 16 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
         },
         {
           "match": "免费档 API 每天 1000 次",
-          "context": "度 见官方说明 核实 2026-10-27 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
+          "context": "度 见官方说明 核实 2026-10-27 16 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
+          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 16 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 4 天前 点赞 收藏 需注册 查看详情 直接去官方领取 百度智能云千帆 进行中 百度千帆：新用户注册送 20 元代金券（体验主流大模型） 百度智能云千帆平台新用户首次注册即送 20 元代金券，可用于"
+          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 5 天前 点赞 收藏 需注册 查看详情 直接去官方领取 百度智能云千帆 进行中 百度千帆：新用户注册送 20 元代金券（体验主流大模型） 百度智能云千帆平台新用户首次注册即送 20 元代金券，可用于"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 11 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个"
+          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 12 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 15 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus"
+          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 16 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus"
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "100 积分/天 核实 2026-10-27 15 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 19 天"
+          "context": "100 积分/天 核实 2026-10-27 16 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 18 天"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 19 天 额度 100000000 Tokens/天 核实 2026-10-27 15 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 18 天 额度 100000000 Tokens/天 核实 2026-10-27 16 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
         },
         {
           "match": "免费额度",
@@ -5211,7 +5238,7 @@
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-12 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-13 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "免费福利与资源 汇聚全球 AI 大厂，收录可领的免费额度",
@@ -5227,9 +5254,8 @@
       "id": "lingyiwanwu-pricing",
       "name": "零一万物平台",
       "url": "https://platform.lingyiwanwu.com/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
     },
     {
       "id": "moonshot-global-pricing",
@@ -6965,11 +6991,11 @@
       "findings": [
         {
           "match": "免费tokens    AI创作平台套餐    Token",
-          "context": "n按量调用 · GPU算力租用 · 一站式全栈AI解决方案，赋能全行业低成本落地     AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上即享预置模板化创作工具，支持多类"
+          "context": "n按量调用 · GPU算力租用 · 一站式全栈AI解决方案，赋能全行业低成本落地     AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上影视模块化创作工具，联合火山引擎"
         },
         {
           "match": "免费tokens",
-          "context": "天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上即享预置模板化创作工具，支持多类模型调用，随心随地开启 AI 内容生产。   【帮助文档】    AI创作平台（天翼云DramaFlow)基础会员  一站式AI内容"
+          "context": "天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens    AI创作平台套餐    Token Plan套餐订购    OpenClaw    天翼AI云电脑    解决方案    能力优势及资质    50万免费tokens  AI创作平台（天翼云DramaFlow)套餐低至32.67元/年起 云上影视模块化创作工具，联合火山引擎全球首发 Seedream 5.5，开启AI内容生产新纪元。   【了解产品】    AI创作平台（天翼云DramaFlow)基础会"
         },
         {
           "match": "免费领取Tokens",
@@ -6988,8 +7014,8 @@
           "context": "产。   产品优势  享有积分：1600 批量创作，8个并发任务 集成Seedance-2.5、MiniMax-H3等高阶模型 支持团队项目管理能力，账号席位5个 可生成Seedance2.0视频约34s（720P），具体以实际消耗为准  新用户享体验价(每个新用户限领取1次)，订购后不退不换  订购后不退不换 快速上手 尝鲜体验   32    .67  元/年   立省：66.33元/年  已抢购0%   立即订购    已抢购0%  新客专享   AI创作平台（天翼云DramaFlow)基础会员  一站式AI内容创作工具，云上赋能多场景内容高效生产。   产品优势  享有积"
         },
         {
-          "match": "新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    【配置指引】    Toke",
-          "context": "久固定提供任一指定模型。 AI工程师 高频AI开发   699    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠 展开更多 收起 Token Plan套餐订购专区 Token与GPU算力支持按需定制、灵活采购，新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    【配置指引】    Token Plan 基础版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM"
+          "match": "新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    Token Plan 基础版",
+          "context": "久固定提供任一指定模型。 AI工程师 高频AI开发   699    .00  元/月 已抢购0%   立即订购    已抢购0%  限时特惠 展开更多 收起 Token Plan套餐订购专区 Token与GPU算力支持按需定制、灵活采购，新用户立享低价，大幅降低决策门槛，按需开通、弹性扩容   【活动规则】    Token Plan 基础版  200K 上下文，更长记忆，主打智能体构建与复杂工程任务。面向开发者/中小企业，适用于项目开发迭代，大幅提升编码效率与代码质量   产品优势  包月固定高额请求额度、模型免费畅用、全编码工具无缝接入 支持模型：GLM5 支持工具：Tel"
         },
         {
           "match": "新用户享体验价(每个新用户限领取1次)，订购后不退不换 订购后不退不换 快速上手 尝鲜体验 32 .67 ",
@@ -7576,12 +7602,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 65 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 64 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 64 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
+          "context": "ed · 64 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -7621,19 +7647,19 @@
         },
         {
           "match": "$0.03 per 1M tokens Input $0.30 per",
-          "context": "text 262K Est. cost $0.037 for your workload DeepSeek-V4.1-Flash-1017 deepseek-ai/DeepSeek-V4.1-Flash-1017 Cached input $0.03 per 1M tokens Input $0.30 per 1M tokens Output $1.20 per 1M tokens Context - Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cac"
+          "context": "text 262K Est. cost $0.037 for your workload DeepSeek-V4.1-Flash-1017 deepseek-ai/DeepSeek-V4.1-Flash-1017 Cached input $0.03 per 1M tokens Input $0.30 per 1M tokens Output $1.20 per 1M tokens Context 1.0M Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE"
         },
         {
-          "match": "$1.20 per 1M tokens Context - Est. ",
-          "context": "-V4.1-Flash-1017 deepseek-ai/DeepSeek-V4.1-Flash-1017 Cached input $0.03 per 1M tokens Input $0.30 per 1M tokens Output $1.20 per 1M tokens Context - Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cached input $0.025 per 1M tokens Input $0.25 per 1M tok"
+          "match": "$1.20 per 1M tokens Context 1.0M Es",
+          "context": "-V4.1-Flash-1017 deepseek-ai/DeepSeek-V4.1-Flash-1017 Cached input $0.03 per 1M tokens Input $0.30 per 1M tokens Output $1.20 per 1M tokens Context 1.0M Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cached input $0.025 per 1M tokens Input $0.25 per 1M"
         },
         {
           "match": "$0.0384 for your workload Qwen3.6-27B",
-          "context": ".1-Flash-1017 Cached input $0.03 per 1M tokens Input $0.30 per 1M tokens Output $1.20 per 1M tokens Context - Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cached input $0.025 per 1M tokens Input $0.25 per 1M tokens Output $2.00 per 1M tokens Context 262"
+          "context": "Flash-1017 Cached input $0.03 per 1M tokens Input $0.30 per 1M tokens Output $1.20 per 1M tokens Context 1.0M Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cached input $0.025 per 1M tokens Input $0.25 per 1M tokens Output $2.00 per 1M tokens Context 262"
         },
         {
           "match": "$0.025 per 1M tokens Input $0.25 per",
-          "context": "Output $1.20 per 1M tokens Context - Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cached input $0.025 per 1M tokens Input $0.25 per 1M tokens Output $2.00 per 1M tokens Context 262K Est. cost $0.044 for your workload DeepSeek-V4-Flash-0731 deepseek-ai"
+          "context": "tput $1.20 per 1M tokens Context 1.0M Est. cost $0.0384 for your workload Qwen3.6-27B Qwen/Qwen3.6-27B-TEE Cached input $0.025 per 1M tokens Input $0.25 per 1M tokens Output $2.00 per 1M tokens Context 262K Est. cost $0.044 for your workload DeepSeek-V4-Flash-0731 deepseek-ai"
         },
         {
           "match": "$2.00 per 1M tokens Context 262K Es",
@@ -7665,23 +7691,23 @@
         },
         {
           "match": "$0.0528 for your workload Hy4 tencent",
-          "context": "-K2.6-TEE Cached input $0.039 per 1M tokens Input $0.39 per 1M tokens Output $1.80 per 1M tokens Context 262K Est. cost $0.0528 for your workload Hy4 tencent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context - Est. cost $0.06"
+          "context": "-K2.6-TEE Cached input $0.039 per 1M tokens Input $0.39 per 1M tokens Output $1.80 per 1M tokens Context 262K Est. cost $0.0528 for your workload Hy4 tencent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context 1.0M Est. cost $0"
         },
         {
           "match": "$0.025 per 1M tokens Input $0.525 pe",
-          "context": "per 1M tokens Output $1.80 per 1M tokens Context 262K Est. cost $0.0528 for your workload Hy4 tencent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context - Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-T"
+          "context": "per 1M tokens Output $1.80 per 1M tokens Context 262K Est. cost $0.0528 for your workload Hy4 tencent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context 1.0M Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17"
         },
         {
-          "match": "$1.5625 per 1M tokens Context - Est. ",
-          "context": "Est. cost $0.0528 for your workload Hy4 tencent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context - Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-TEE Cached input $0.045 per 1M tokens Input $0.45 per 1M"
+          "match": "$1.5625 per 1M tokens Context 1.0M Es",
+          "context": "Est. cost $0.0528 for your workload Hy4 tencent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context 1.0M Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-TEE Cached input $0.045 per 1M tokens Input $0.45 per"
         },
         {
           "match": "$0.0608 for your workload Qwen 3.5 Qw",
-          "context": "ncent/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context - Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-TEE Cached input $0.045 per 1M tokens Input $0.45 per 1M tokens Output $3.00 per 1M tokens Context"
+          "context": "nt/Hy4 Cached input $0.025 per 1M tokens Input $0.525 per 1M tokens Output $1.5625 per 1M tokens Context 1.0M Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-TEE Cached input $0.045 per 1M tokens Input $0.45 per 1M tokens Output $3.00 per 1M tokens Context"
         },
         {
           "match": "$0.045 per 1M tokens Input $0.45 per",
-          "context": "ut $1.5625 per 1M tokens Context - Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-TEE Cached input $0.045 per 1M tokens Input $0.45 per 1M tokens Output $3.00 per 1M tokens Context 262K Est. cost $0.072 for your workload DeepSeek-V3.2 deepseek-ai/DeepSeek"
+          "context": "$1.5625 per 1M tokens Context 1.0M Est. cost $0.0608 for your workload Qwen 3.5 Qwen/Qwen3.5-397B-A17B-TEE Cached input $0.045 per 1M tokens Input $0.45 per 1M tokens Output $3.00 per 1M tokens Context 262K Est. cost $0.072 for your workload DeepSeek-V3.2 deepseek-ai/DeepSeek"
         },
         {
           "match": "$3.00 per 1M tokens Context 262K Es",
@@ -7787,8 +7813,17 @@
       "name": "IBM Cloud Pak for Data",
       "url": "https://dataplatform.cloud.ibm.com/registration/stepone",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 2,
+      "findings": [
+        {
+          "match": "免费",
+          "context": "sentinel Focus sentinel               [IBM Cloud Pak for Data](https://dataplatform.cloud.ibm.com/home2?context=cpdaas) 免费试用 IBM Cloud Pak for Data Cloud Pak for Data 的免费试用入门。 了解 IBM 如何将您的业务转变为数据驱动型企业。 为了获得最佳试用体验，请使用笔记本电脑或台式机设备。 选择区域 选择最接近您或您"
+        },
+        {
+          "match": "免费",
+          "context": "Pak for Data](https://dataplatform.cloud.ibm.com/home2?context=cpdaas) 免费试用 IBM Cloud Pak for Data Cloud Pak for Data 的免费试用入门。 了解 IBM 如何将您的业务转变为数据驱动型企业。 为了获得最佳试用体验，请使用笔记本电脑或台式机设备。 选择区域 选择最接近您或您计划托管数据和服务的区域。 如果您已有数据存储器，请选择该区域。 达拉斯 (us-south)"
+        }
+      ]
     },
     {
       "id": "deepl-docsapi",
@@ -8986,7 +9021,7 @@
         },
         {
           "match": "free",
-          "context": "SearXNG Documentation (2026.11.11+626105eec) # Welcome to SearXNG¶ > *Search without being tracked.* SearXNG is a free internet metasearch engine which aggregates results from up to 260 [search services](https://docs.searxng.org/user/conf"
+          "context": "SearXNG Documentation (2026.11.12+de722ab1b) # Welcome to SearXNG¶ > *Search without being tracked.* SearXNG is a free internet metasearch engine which aggregates results from up to 260 [search services](https://docs.searxng.org/user/conf"
         }
       ]
     },
@@ -9451,12 +9486,16 @@
       "hits": 30,
       "findings": [
         {
+          "match": "$0.39615 / $1.187975 per 1M tokens 每百万",
+          "context": "per generated second and may vary by resolution. 文本模型按每百万输入/输出 Token 展示费率；图片按生成张数计费；视频按生成秒数计费，并按分辨率显示对应单价。 hy4 Tencent $0.39615 / $1.187975 per 1M tokens 每百万 Token glm-5.3-flashx-legal GLM / Z.ai $0.3515 / $1.1875 per 1M tokens 每百万 Token google/gemini-4-carbon Google $1.9 / $9"
+        },
+        {
           "match": "$0.3515 / $1.1875 per 1M tokens 每百万 T",
-          "context": "d and may vary by resolution. 文本模型按每百万输入/输出 Token 展示费率；图片按生成张数计费；视频按生成秒数计费，并按分辨率显示对应单价。 glm-5.3-flashx-legal GLM / Z.ai $0.3515 / $1.1875 per 1M tokens 每百万 Token google/gemini-4-carbon Google $1.9 / $9.5 per 1M tokens 每百万 Token Cache write: $0.178125/1M 缓存写入：$0.178125/百万 Token"
+          "context": "按生成张数计费；视频按生成秒数计费，并按分辨率显示对应单价。 hy4 Tencent $0.39615 / $1.187975 per 1M tokens 每百万 Token glm-5.3-flashx-legal GLM / Z.ai $0.3515 / $1.1875 per 1M tokens 每百万 Token google/gemini-4-carbon Google $1.9 / $9.5 per 1M tokens 每百万 Token Cache write: $0.178125/1M 缓存写入：$0.178125/百万 Token"
         },
         {
           "match": "$1.9 / $9.5 per 1M tokens 每百万 Toke",
-          "context": "计费，并按分辨率显示对应单价。 glm-5.3-flashx-legal GLM / Z.ai $0.3515 / $1.1875 per 1M tokens 每百万 Token google/gemini-4-carbon Google $1.9 / $9.5 per 1M tokens 每百万 Token Cache write: $0.178125/1M 缓存写入：$0.178125/百万 Token anthropic/claude-fable-5.2 Anthropic $7.6 / $38 per 1M tokens 每百万 To"
+          "context": "okens 每百万 Token glm-5.3-flashx-legal GLM / Z.ai $0.3515 / $1.1875 per 1M tokens 每百万 Token google/gemini-4-carbon Google $1.9 / $9.5 per 1M tokens 每百万 Token Cache write: $0.178125/1M 缓存写入：$0.178125/百万 Token anthropic/claude-fable-5.2 Anthropic $7.6 / $38 per 1M tokens 每百万 To"
         },
         {
           "match": "$0.178125/1M 缓存写入：$0.178125/百万 Token an",
@@ -9565,10 +9604,6 @@
         {
           "match": "$0.59375/1M, 1h cache write $0.95/1M 缓",
           "context": "write: $0.11875/1M · 1h cache write: $0.19/1M · Input > 100,000 tokens: $0.475 / $2.375 per 1M · This tier: cache write $0.59375/1M, 1h cache write $0.95/1M 缓存写入：$0.11875/百万 Token · 1小时缓存写入：$0.19/百万 Token · 输入超过 100,000 Token：$0.475 / $2.375 / 百万 Token · 该档： 缓存写入 $0.59375/百万 To"
-        },
-        {
-          "match": "$0.11875/百万 Token · 1小时缓存写入：$0.19/百万 T",
-          "context": "/1M · Input > 100,000 tokens: $0.475 / $2.375 per 1M · This tier: cache write $0.59375/1M, 1h cache write $0.95/1M 缓存写入：$0.11875/百万 Token · 1小时缓存写入：$0.19/百万 Token · 输入超过 100,000 Token：$0.475 / $2.375 / 百万 Token · 该档： 缓存写入 $0.59375/百万 Token，1小时缓存写入 $0.95/百万 Token anthropic/claud"
         }
       ]
     },
@@ -9775,21 +9810,8 @@
       "name": "Limits and Plans | Jules",
       "url": "https://jules.google/docs/usage-limits/",
       "status": "ok",
-      "hits": 3,
-      "findings": [
-        {
-          "match": "$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE",
-          "context": "\b\u0000\u0000\u0000\u0000\u0000\u0002}rFSL*L\b\u001fD9>bo$\u001bR>\u0010 @\u0001@J}\u0000Tr$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE[ \u0004߼s?'#/u'G\u001aS/QKnK$vNY+ ʑ:\u001c^pgꍼ$ne ʦ~\u001cy,'qUT/2?B󠟍}\u0016|U\u0010\u0005YNBۤF 8RE}\u001c\u0003J;\u001fO\u000f7a\u0018Dg*nEq\u0014\u001a%[\u0019e$ln 0ُ{4\u0013rۛ٢471mHy ^Rl\u001eFa\u0016\u001e`Ц"
-        },
-        {
-          "match": "$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ",
-          "context": "? }EJ\b^\\R\u000f\u0010EX\u0005\u0007o^`bTBo\u0002YѕB[\u0014 \u0012* \u0019+ĉ%D3\u001aE#JJ\u0004\u0000bI\u0004+$UC ɅVT\u001aR\u000fiRce & 6\u0003\u00140^R\u00110\u001a\u0003\u0012\u001b^ cXm^\b82~(\u0006\u0006Hګ[\u0007F0Nh=(-P\u0013n\u0000AOh$WLc2\u00042^zo\u000e$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ_$\u0014yK a\u0013\u001cJ se~\u0006?&Q\u001eVh\u0016\u000e\u0006I\"f2BvV%g3\u0014\u0003'q/\u000e\u0018{\u001bd5P^ j!\u0010 O\u0012:v\u000e},71K~$h\u001e\u001c~1,`@ \u0005 /\u0019=r°\u0011ُK*#u+! 7\u000fRx!\u0007\u0016zXeǭc2|t (xN˺5f]\"4Fe׵\u0017Ѩp"
-        },
-        {
-          "match": "$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19",
-          "context": ")x1%C,\u001c!V#crB`q L\u0012.5\u0014`\u0016\u000f^\u00120Gct\b \u000faLLX\u0010lB\u001bȉ\u000fҧ\u0000q+I䲴vȚϽ3S:\\\u0019P]?_H(\u0013%|\u0005>pP\u000e=b\u0015 w22@\"]\u0003\u0005br@i o_M\u000eC\u00021܎\u0000q\u0000\u0016sXP\u0006\"/nb 2\u001cA\\V ` pDS$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19:\u001d'm4sʰJu\u0013_G/\u0001\u0011ar1D$A)\u0000\u00003Uq0:W?\u0006!n'\u0016\u0019ESή(\u0002hX\u001f8\u0003TR\u00101hſ@Nƴ\u0016\u0017_W \\\u0006\u0013\\\u0010\u0006\u001eypQm]Cg?Y Ap\u0018\u0015erݵsopsw\u0011n\u0011\u0003MV\u001cG\\\u00101+hpeަp{8\u001f\u0005 p'\u0001\u0002RO3"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "kiro-pricing",
@@ -10142,52 +10164,72 @@
           "context": "i-k2.6 后不太稳定容易死循环（有待观察）,429 错误频繁         💻 团队开发推荐： GLM Coding Plan Pro (￥149/月)     特点 ：模型代码能力国内最强   劣势 ：GLM 5.1 不支持多模态，¥49 套餐毫无性价比，¥149 套餐倍率也较差，算力紧缺，429 错误频繁，同时也很难抢到           📊 数据对比 (TL;DR)         厂商   价格(mo)   官方说明   TPS   模型请求数/Tokens(5h)   额度价值(5h)   额度倍率(5h)   模型请求数"
         },
         {
-          "match": "$20.00   2026-5-6 后 5h 额度翻倍, 5-13 至 ",
-          "context": "(w)   额度价值(w)   额度倍率(w)   模型请求数/Tokens(mo)   💰额度价值(mo)   ⏫额度倍率(mo)           Claude Pro (Claude Code claude-opus-4.8)   $20.00   2026-5-6 后 5h 额度翻倍, 5-13 至 8-31 周额度增加 50%（统计数据为额度增加后的统计数据）   /   359/3966万   $31.84   1.59   3590/3.97亿   $318.4   15.9   14360/15.88亿   $1273.6"
+          "match": "$20.00   More usage than Free   /   ",
+          "context": "额度倍率(w)   模型请求数/Tokens(mo)   💰额度价值(mo)   ⏫额度倍率(mo)           Claude Pro (Claude Code claude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Claude Pro (Claude Code claude-fabel-5.2 更新于"
         },
         {
-          "match": "$31.84   1.59   3590/3.97亿   $318.4 ",
-          "context": "o (Claude Code claude-opus-4.8)   $20.00   2026-5-6 后 5h 额度翻倍, 5-13 至 8-31 周额度增加 50%（统计数据为额度增加后的统计数据）   /   359/3966万   $31.84   1.59   3590/3.97亿   $318.4   15.9   14360/15.88亿   $1273.6   63.6       Claude Pro (Claude Code claude-fabel-5.2 更新于 2026-11-11)   $20.00   More us"
+          "match": "$40.73   2   7.64亿   $302.57   15   ",
+          "context": "度倍率(mo)           Claude Pro (Claude Code claude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Claude Pro (Claude Code claude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free"
         },
         {
-          "match": "$1273.6   63.6       Claude Pro (Clau",
-          "context": "倍, 5-13 至 8-31 周额度增加 50%（统计数据为额度增加后的统计数据）   /   359/3966万   $31.84   1.59   3590/3.97亿   $318.4   15.9   14360/15.88亿   $1273.6   63.6       Claude Pro (Claude Code claude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况   /   262"
+          "match": "$1210.28   60.5       Claude Pro (Clau",
+          "context": "ude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Claude Pro (Claude Code claude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况,仅供参考   /"
         },
         {
           "match": "$20.00   More usage than Free fabel ",
-          "context": "/3.97亿   $318.4   15.9   14360/15.88亿   $1273.6   63.6       Claude Pro (Claude Code claude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况   /   2625万   $17.45   0.8725   9722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9"
+          "context": "2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Claude Pro (Claude Code claude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况,仅供参考   /   2625万   $17.45   0.8725   9722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52"
         },
         {
           "match": "$17.45   0.8725   9722万（50% 周额度）   $",
-          "context": "de claude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况   /   2625万   $17.45   0.8725   9722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rat"
+          "context": "aude-fabel-5.2 更新于 2026-11-11)   $20.00   More usage than Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况,仅供参考   /   2625万   $17.45   0.8725   9722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rat"
         },
         {
           "match": "$258.52   12.9       Google AI Pro (A",
-          "context": "han Free fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况   /   2625万   $17.45   0.8725   9722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6"
+          "context": "ree fabel 只有 50% 周额度 该结果只评估仅用 fabel 的额度情况,仅供参考   /   2625万   $17.45   0.8725   9722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6"
         },
         {
           "match": "$19.99   More rate limits   /       ",
-          "context": "722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Ultra 5x (Antigravity gemini-4-carbon)   ₺1989.99"
+          "context": "722万（50% 周额度）   $64.63   3.23   3.89亿   $258.52   12.9       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Pro (Antigravity gemini-4-hydrogen)   $19.99   Mor"
         },
         {
           "match": "$30   1.5   1.6亿   $120   6      ",
-          "context": "oogle AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Ultra 5x (Antigravity gemini-4-carbon)   ₺1989.99 ($39.99)   Even more rate limits   /         2亿（gemini-4-ca"
+          "context": "oogle AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Pro (Antigravity gemini-4-hydrogen)   $19.99   More rate limits   /                         Google AI Ultra 5"
         },
         {
-          "match": "$39.99)   Even more rate limits   / ",
-          "context": "4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Ultra 5x (Antigravity gemini-4-carbon)   ₺1989.99 ($39.99)   Even more rate limits   /         2亿（gemini-4-carbon）   $150   3.75   8亿   $600   15       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Loca"
+          "match": "$19.99   More rate limits   /       ",
+          "context": "s   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Pro (Antigravity gemini-4-hydrogen)   $19.99   More rate limits   /                         Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Eve"
         },
         {
-          "match": "$150   3.75   8亿   $600   15      ",
-          "context": "AI Ultra 5x (Antigravity gemini-4-carbon)   ₺1989.99 ($39.99)   Even more rate limits   /         2亿（gemini-4-carbon）   $150   3.75   8亿   $600   15       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Messages* / 5h   /   /   /   /   2190/1.54亿   $109.12   5.46"
+          "match": "$39.99，美区 $99.99)   Even more rate l",
+          "context": "rate limits   /                         Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   1.27亿   $97.71   2.44   4.44亿   $342   8.55   17.77亿   $1368   34.2（如果按美区价格 $99.99 为 13.68）       Google AI"
+        },
+        {
+          "match": "$97.71   2.44   4.44亿   $342   8.55 ",
+          "context": "5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   1.27亿   $97.71   2.44   4.44亿   $342   8.55   17.77亿   $1368   34.2（如果按美区价格 $99.99 为 13.68）       Google AI Ultra 5x (Antigravity claude-opus-5.5 更新于 2026-11-12)"
+        },
+        {
+          "match": "$1368   34.2（如果按美区价格 $99.99 为 13.68",
+          "context": ")   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   1.27亿   $97.71   2.44   4.44亿   $342   8.55   17.77亿   $1368   34.2（如果按美区价格 $99.99 为 13.68）       Google AI Ultra 5x (Antigravity claude-opus-5.5 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rat"
+        },
+        {
+          "match": "$39.99，美区 $99.99)   Even more rate l",
+          "context": "368   34.2（如果按美区价格 $99.99 为 13.68）       Google AI Ultra 5x (Antigravity claude-opus-5.5 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   2473万   $11.83   0.2958   4947万   $23.66   0.5916   1.98亿   $94.64   2.37（如果按美区价格 $99.99 为 0.95）       ChatG"
+        },
+        {
+          "match": "$11.83   0.2958   4947万   $23.66   0",
+          "context": "5x (Antigravity claude-opus-5.5 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   2473万   $11.83   0.2958   4947万   $23.66   0.5916   1.98亿   $94.64   2.37（如果按美区价格 $99.99 为 0.95）       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Mess"
+        },
+        {
+          "match": "$94.64   2.37（如果按美区价格 $99.99 为 0.95）",
+          "context": "1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   2473万   $11.83   0.2958   4947万   $23.66   0.5916   1.98亿   $94.64   2.37（如果按美区价格 $99.99 为 0.95）       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Messages* / 5h   /   /   /   /   2190/1.54亿   $109.12"
         },
         {
           "match": "$20.00   45-225 Local Messages* / 5h",
-          "context": "ore rate limits   /         2亿（gemini-4-carbon）   $150   3.75   8亿   $600   15       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Messages* / 5h   /   /   /   /   2190/1.54亿   $109.12   5.46   8760/6.16亿   $436.48   21.82       X Premium (grok grok-4.7 更新于 2026-11"
+          "context": ".2958   4947万   $23.66   0.5916   1.98亿   $94.64   2.37（如果按美区价格 $99.99 为 0.95）       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Messages* / 5h   /   /   /   /   2190/1.54亿   $109.12   5.46   8760/6.16亿   $436.48   21.82       X Premium (grok grok-4.7 更新于 2026-11"
         },
         {
           "match": "$109.12   5.46   8760/6.16亿   $436.48",
-          "context": "$600   15       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Messages* / 5h   /   /   /   /   2190/1.54亿   $109.12   5.46   8760/6.16亿   $436.48   21.82       X Premium (grok grok-4.7 更新于 2026-11-3)   $30.00   4x more usage compared to Plus   /   /   /   /   2.94亿"
+          "context": "99 为 0.95）       ChatGPT Plus (Codex gpt-5.6-sol)   $20.00   45-225 Local Messages* / 5h   /   /   /   /   2190/1.54亿   $109.12   5.46   8760/6.16亿   $436.48   21.82       X Premium (grok grok-4.7 更新于 2026-11-3)   $30.00   4x more usage compared to Plus   /   /   /   /   2.94亿"
         },
         {
           "match": "$30.00   4x more usage compared to P",
@@ -10200,26 +10242,6 @@
         {
           "match": "$20   includes $60 of monthly usa",
           "context": "$30.00   4x more usage compared to Plus   /   /   /   /   2.94亿   $231   7.7   11.76亿   $924   30.8       Ollama Pro   $20   includes $60 of monthly usage   /   /   /   /   /   /   /   /   $60   3       OpenCode Go   $10.00 (首月 $5)   包含 GLM-5.1, Kimi K2.6, MiMo-V2.5-Pro,"
-        },
-        {
-          "match": "$60   3       OpenCode Go   $10.0",
-          "context": "1   7.7   11.76亿   $924   30.8       Ollama Pro   $20   includes $60 of monthly usage   /   /   /   /   /   /   /   /   $60   3       OpenCode Go   $10.00 (首月 $5)   包含 GLM-5.1, Kimi K2.6, MiMo-V2.5-Pro, DeepSeek V4 Pro, Qwen3.6 Plus 和 MiniMax M2.7 等   /   /   $12   1.2   /"
-        },
-        {
-          "match": "$5)   包含 GLM-5.1, Kimi K2.6, MiM",
-          "context": "lama Pro   $20   includes $60 of monthly usage   /   /   /   /   /   /   /   /   $60   3       OpenCode Go   $10.00 (首月 $5)   包含 GLM-5.1, Kimi K2.6, MiMo-V2.5-Pro, DeepSeek V4 Pro, Qwen3.6 Plus 和 MiniMax M2.7 等   /   /   $12   1.2   /   $30   3   /   $60   6       OpenRou"
-        },
-        {
-          "match": "$12   1.2   /   $30   3   /   $60",
-          "context": "de Go   $10.00 (首月 $5)   包含 GLM-5.1, Kimi K2.6, MiMo-V2.5-Pro, DeepSeek V4 Pro, Qwen3.6 Plus 和 MiniMax M2.7 等   /   /   $12   1.2   /   $30   3   /   $60   6       OpenRouter   部分模型限免 50 reqs/day   hy3-preview/minimax-m2.5/qwen3-coder 等模型限免                           NVIDIA"
-        },
-        {
-          "match": "￥49.00   1500次模型调用 / 5 小时（目前已改套餐，该数据",
-          "context": "seek-v4-flash/minimax-m2.7 等开源模型 Up to 40 rpm 不限量使用                           MiniMax Coding Plan Plus （minimax-m2.7）   ￥49.00   1500次模型调用 / 5 小时（目前已改套餐，该数据为老数据）   52.6   1360/6000万   ￥108.60   2.22   13600/6亿   ￥1086   22.2   54400/24亿   ￥4344   88.65       Kimi Code Andante"
-        },
-        {
-          "match": "￥108.60   2.22   13600/6亿   ￥1086   2",
-          "context": "MiniMax Coding Plan Plus （minimax-m2.7）   ￥49.00   1500次模型调用 / 5 小时（目前已改套餐，该数据为老数据）   52.6   1360/6000万   ￥108.60   2.22   13600/6亿   ￥1086   22.2   54400/24亿   ￥4344   88.65       Kimi Code Andante （kimi-k2.5）   ￥49.00   Kimi Code 可调用   27.98   359/1500万   ￥21.4"
         }
       ]
     },
@@ -10242,15 +10264,15 @@
       "name": "AutoClaw 官方博客福利公告",
       "url": "https://autoclaw.z.ai/blog/news",
       "status": "ok",
-      "hits": 23,
+      "hits": 30,
       "findings": [
         {
           "match": "Token",
-          "context": ", GLM model, and industry application updates. All Model Product News No matching articles News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI in Finance"
+          "context": "ating first, rewrite only the rest, then check differences only. AutoClaw Team Nov 12 2026 News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI in Finance"
         },
         {
           "match": "Token",
-          "context": "matching articles News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI in Finance Pilot to Daily Use: 3 Deciding Conditions Financial AI often works once b"
+          "context": "Team Nov 12 2026 News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI in Finance Pilot to Daily Use: 3 Deciding Conditions Financial AI often works once b"
         },
         {
           "match": "Token",
@@ -10293,12 +10315,64 @@
           "context": "tier. All times below are UTC+8. AutoClaw Team Oct 10 2026 News Get 100M+ Free Tokens: Daily Login Event Get 100M+ Free Tokens, just by logging in! AutoClaw Team Oct 16 2026 View More Experience AutoClaw Download AutoClaw Getting Started What is"
         },
         {
+          "match": "Token",
+          "context": "action, prior value and rating first, rewrite only the rest, then check differences only. - ## [Weekly Perk: Claim 100M Tokens !](https://autoclaw.z.ai/blog/news/M11W2/) Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. - #"
+        },
+        {
+          "match": "Token",
+          "context": "100M Tokens !](https://autoclaw.z.ai/blog/news/M11W2/) Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. - ## [AI in Finance Pilot to Daily Use: 3 Deciding Conditions](https://autoclaw.z.ai/blog/news/autoclaw-finance-obser"
+        },
+        {
+          "match": "Token",
+          "context": "k all three. The fix isn't a smarter model but making all three hold at once. - ## [Halloween Surprise: Claim Up to 80M Tokens!](https://autoclaw.z.ai/blog/news/M11W1/) From October 31 to November 8 , log in to AutoClaw and get 40 million Tokens"
+        },
+        {
+          "match": "Token",
+          "context": "Tokens!](https://autoclaw.z.ai/blog/news/M11W1/) From October 31 to November 8 , log in to AutoClaw and get 40 million Tokens ! - ## [Weekly Perk : 40M Tokens Login to claim](https://autoclaw.z.ai/blog/news/M10W4/) From October 26 to November 1"
+        },
+        {
+          "match": "Token",
+          "context": "log/news/M11W1/) From October 31 to November 8 , log in to AutoClaw and get 40 million Tokens ! - ## [Weekly Perk : 40M Tokens Login to claim](https://autoclaw.z.ai/blog/news/M10W4/) From October 26 to November 1 , log in to AutoClaw and get 40"
+        },
+        {
+          "match": "Token",
+          "context": "to claim](https://autoclaw.z.ai/blog/news/M10W4/) From October 26 to November 1 , log in to AutoClaw and get 40 million Tokens. - ## [Get 85M Tokens: Daily Login Event](https://autoclaw.z.ai/blog/news/M10W3/) Get 85M Tokens, just by logging in!"
+        },
+        {
+          "match": "Token",
+          "context": "claw.z.ai/blog/news/M10W4/) From October 26 to November 1 , log in to AutoClaw and get 40 million Tokens. - ## [Get 85M Tokens: Daily Login Event](https://autoclaw.z.ai/blog/news/M10W3/) Get 85M Tokens, just by logging in! - ## [AutoClaw Weekly"
+        },
+        {
+          "match": "Token",
+          "context": "law and get 40 million Tokens. - ## [Get 85M Tokens: Daily Login Event](https://autoclaw.z.ai/blog/news/M10W3/) Get 85M Tokens, just by logging in! - ## [AutoClaw Weekly Perks: 132M Tokens, Plus Member Rewards](https://autoclaw.z.ai/blog/news/We"
+        },
+        {
+          "match": "Token",
+          "context": "in Event](https://autoclaw.z.ai/blog/news/M10W3/) Get 85M Tokens, just by logging in! - ## [AutoClaw Weekly Perks: 132M Tokens, Plus Member Rewards](https://autoclaw.z.ai/blog/news/Weekly-Perks-M10W2/) From October 12 to 16, log in to AutoClaw t"
+        },
+        {
+          "match": "Token",
+          "context": ".z.ai/blog/news/Weekly-Perks-M10W2/) From October 12 to 16, log in to AutoClaw to claim up to 132 Million GLM-5.3-Flash Tokens. Paid members can also unlock an additional daily reward based on their active membership tier. All times below are UT"
+        },
+        {
+          "match": "Token",
+          "context": "nlock an additional daily reward based on their active membership tier. All times below are UTC+8. - ## [Get 100M+ Free Tokens: Daily Login Event](https://autoclaw.z.ai/blog/news/free-token-event/) Get 100M+ Free Tokens, just by logging in!"
+        },
+        {
+          "match": "token",
+          "context": "p tier. All times below are UTC+8. - ## [Get 100M+ Free Tokens: Daily Login Event](https://autoclaw.z.ai/blog/news/free-token-event/) Get 100M+ Free Tokens, just by logging in!"
+        },
+        {
+          "match": "Token",
+          "context": "TC+8. - ## [Get 100M+ Free Tokens: Daily Login Event](https://autoclaw.z.ai/blog/news/free-token-event/) Get 100M+ Free Tokens, just by logging in!"
+        },
+        {
           "match": "Claim",
-          "context": "ai AI Agent, GLM model, and industry application updates. All Model Product News No matching articles News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI"
+          "context": "value and rating first, rewrite only the rest, then check differences only. AutoClaw Team Nov 12 2026 News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI"
         },
         {
           "match": "claim",
-          "context": "ct News No matching articles News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI in Finance Pilot to Daily Use: 3 Deciding Conditions Financial AI often w"
+          "context": "y. AutoClaw Team Nov 12 2026 News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 News AI in Finance Pilot to Daily Use: 3 Deciding Conditions Financial AI often w"
         },
         {
           "match": "Claim",
@@ -10311,30 +10385,6 @@
         {
           "match": "claim",
           "context": "m Oct 19 2026 News AutoClaw Weekly Perks: 132M Tokens, Plus Member Rewards From October 12 to 16, log in to AutoClaw to claim up to 132 Million GLM-5.3-Flash Tokens. Paid members can also unlock an additional daily reward based on their active m"
-        },
-        {
-          "match": "Weekly",
-          "context": "AutoClaw, Z.ai AI Agent, GLM model, and industry application updates. All Model Product News No matching articles News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2"
-        },
-        {
-          "match": "Weekly",
-          "context": "0M Tokens! From October 31 to November 8 , log in to AutoClaw and get 40 million Tokens ! AutoClaw Team Nov 3 2026 News Weekly Perk : 40M Tokens Login to claim From October 26 to November 1 , log in to AutoClaw and get 40 million Tokens. AutoClaw"
-        },
-        {
-          "match": "Weekly",
-          "context": "2026 News Get 85M Tokens: Daily Login Event Get 85M Tokens, just by logging in! AutoClaw Team Oct 19 2026 News AutoClaw Weekly Perks: 132M Tokens, Plus Member Rewards From October 12 to 16, log in to AutoClaw to claim up to 132 Million GLM-5.3-Fl"
-        },
-        {
-          "match": "Perk",
-          "context": "aw, Z.ai AI Agent, GLM model, and industry application updates. All Model Product News No matching articles News Weekly Perk: Claim 100M Tokens ! Log in to AutoClaw from November 9 to November 15 to claim 100M Tokens. AutoClaw Team Nov 6 2026 N"
-        },
-        {
-          "match": "Perk",
-          "context": "ns! From October 31 to November 8 , log in to AutoClaw and get 40 million Tokens ! AutoClaw Team Nov 3 2026 News Weekly Perk : 40M Tokens Login to claim From October 26 to November 1 , log in to AutoClaw and get 40 million Tokens. AutoClaw Team"
-        },
-        {
-          "match": "Perk",
-          "context": "ws Get 85M Tokens: Daily Login Event Get 85M Tokens, just by logging in! AutoClaw Team Oct 19 2026 News AutoClaw Weekly Perks: 132M Tokens, Plus Member Rewards From October 12 to 16, log in to AutoClaw to claim up to 132 Million GLM-5.3-Flash T"
         }
       ]
     },
@@ -10368,11 +10418,11 @@
         },
         {
           "match": "$590per workspace / year [Start Bu",
-          "context": "Bill Annually Save 17% ### Professional Popular For independent developers and small teams building production AI apps. $590per workspace / year [Start Building](https://cloud.dify.ai/?pricing=open) - 5,000 message credits / month Message credits are provided to help you ea"
+          "context": "Bill Annually Save 17% ### Professional Popular For independent developers and small teams building production AI apps. $590per workspace / year [Start Building](https://cloud.dify.ai/?pricing=open) - 5,000 message credits / monthMessage credits are provided to help you eas"
         },
         {
           "match": "$1590per workspace / year [Get Star",
-          "context": "mited Log History - No Dify API Rate Limit ### Team For medium-sized teams needing collaboration and higher throughput. $1590per workspace / year [Get Started](https://cloud.dify.ai/?pricing=open) - 10,000 message credits / month Message credits are provided to help you easi"
+          "context": "mited Log History - No Dify API Rate Limit ### Team For medium-sized teams needing collaboration and higher throughput. $1590per workspace / year [Get Started](https://cloud.dify.ai/?pricing=open) - 10,000 message credits / monthMessage credits are provided to help you easil"
         },
         {
           "match": "Free",
@@ -10392,11 +10442,11 @@
         },
         {
           "match": "Free",
-          "context": "le only in Chat apps) - Unlimited Log History - No Dify API Rate Limit ### Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message credits Message credits are provided to help you easily try out"
+          "context": "le only in Chat apps) - Unlimited Log History - No Dify API Rate Limit ### Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message creditsMessage credits are provided to help you easily try out d"
         },
         {
           "match": "Free",
-          "context": "apps) - Unlimited Log History - No Dify API Rate Limit ### Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message credits Message credits are provided to help you easily try out different models"
+          "context": "apps) - Unlimited Log History - No Dify API Rate Limit ### Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message creditsMessage credits are provided to help you easily try out different models"
         },
         {
           "match": "Free",
@@ -10436,27 +10486,27 @@
         },
         {
           "match": "credit",
-          "context": "ding production AI apps. $590per workspace / year [Start Building](https://cloud.dify.ai/?pricing=open) - 5,000 message credits / month Message credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI,"
+          "context": "ding production AI apps. $590per workspace / year [Start Building](https://cloud.dify.ai/?pricing=open) - 5,000 message credits / monthMessage credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, T"
         },
         {
           "match": "credit",
-          "context": "$590per workspace / year [Start Building](https://cloud.dify.ai/?pricing=open) - 5,000 message credits / month Message credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in Dify. Credits"
+          "context": ". $590per workspace / year [Start Building](https://cloud.dify.ai/?pricing=open) - 5,000 message credits / monthMessage credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in Dify. Credits"
         },
         {
           "match": "credit",
-          "context": "on and higher throughput. $1590per workspace / year [Get Started](https://cloud.dify.ai/?pricing=open) - 10,000 message credits / month Message credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI,"
+          "context": "on and higher throughput. $1590per workspace / year [Get Started](https://cloud.dify.ai/?pricing=open) - 10,000 message credits / monthMessage credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, T"
         },
         {
           "match": "credit",
-          "context": ". $1590per workspace / year [Get Started](https://cloud.dify.ai/?pricing=open) - 10,000 message credits / month Message credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in Dify. Credits"
+          "context": "t. $1590per workspace / year [Get Started](https://cloud.dify.ai/?pricing=open) - 10,000 message credits / monthMessage credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in Dify. Credits"
         },
         {
           "match": "credit",
-          "context": "Rate Limit ### Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message credits Message credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi i"
+          "context": "Rate Limit ### Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message creditsMessage credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in"
         },
         {
           "match": "credit",
-          "context": "andbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message credits Message credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in Dify. Credits"
+          "context": "Sandbox For trying out Dify's core features. Free [Start for Free](https://cloud.dify.ai/) - 200 message creditsMessage credits are provided to help you easily try out different models from OpenAI, Anthropic, Gemini, xAI, Tongyi in Dify. Credits"
         },
         {
           "match": "Sandbox",
@@ -11744,6 +11794,135 @@
         {
           "match": "Trial",
           "context": "ndled under our SLA. - **Enterprise:** Full SLA coverage with dedicated support on top of our standard commitments. - **Trials and beta use:** Community support only; our SLA does not apply to trials or beta usage. [Read the full SLA and Support"
+        }
+      ]
+    },
+    {
+      "id": "commandcode-official",
+      "name": "Command Code 官方定价/文档",
+      "url": "https://commandcode.ai/pricing",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费 典型请求量 近似值，取决于所选模型 ~9K 充值额度",
+          "context": "存储在本地 随时取消 Go $1/月 用量 每月额度 $10 MiniMax M3 等效用量 额度最高可多用 2× $8 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~9K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源模型，所有套餐均可使用 其他所有高级模型（Claude、GPT、Gemini） Claude Opus 4.8 tast"
+        },
+        {
+          "match": "免费 典型请求量 近似值，取决于所选模型 ~75K 充值额度",
+          "context": "GOAT $10/月 用量 每月额度 最高 100 美元 MiniMax M3 等效用量 额度最高可多用 2× $47 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~75K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源模型，所有套餐均可使用 其他所有高级模型（Claude、GPT、Gemini） Claude Opus 4.8 tast"
+        },
+        {
+          "match": "免费 典型请求量 近似值，取决于所选模型 ~100K 充值额度",
+          "context": "消 Pro $20/月 用量 每月额度 最高 110 美元 MiniMax M3 等效用量 额度最高可多用 2× $57 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~100K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源模型，所有套餐均可使用 其他所有高级模型（Claude、GPT、Gemini） Claude Opus 4.8 tast"
+        },
+        {
+          "match": "免费 典型请求量 近似值，取决于所选模型 ~219K 充值额度",
+          "context": "ax 10× $100/月 用量 每月额度 $150 MiniMax M3 等效用量 额度最高可多用 2× ~ $300 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~219K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源模型，所有套餐均可使用 其他所有高级模型（Claude、GPT、Gemini） Claude Opus 4.8 tast"
+        },
+        {
+          "match": "免费 典型请求量 近似值，取决于所选模型 ~437K 充值额度",
+          "context": "ax 20× $200/月 用量 每月额度 $300 MiniMax M3 等效用量 额度最高可多用 2× ~ $600 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~437K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源模型，所有套餐均可使用 其他所有高级模型（Claude、GPT、Gemini） Claude Opus 4.8 tast"
+        },
+        {
+          "match": "$ 1 /月 + 处理费 10 美元额度 已包含 最高 ~$ 15",
+          "context": "GOAT 中文 注册 每种编程方式，都有合适的套餐。 选择你的套餐。 价格透明。零加价。随时取消。 // 个人套餐 你好，Command Code。 从每月一美元到全模型火力全开。随时切换、升级或取消。 ✦ placeholder Go $ 1 /月 + 处理费 10 美元额度 已包含 最高 ~$ 15 等效用量，含 优惠 一美元，写很多代码。 订阅 包含内容 约 9K 次请求 taste-1 模型访问权限 按模型分配额度 $ 10 可用于 GLM-5.2 $ 10 可用于 Tencent Hy3 $ 10 可用于 Qwen 3.8 27"
+        },
+        {
+          "match": "$ 10 可用于 GLM-5.2 $ 10 可用于 Tencent ",
+          "context": "、升级或取消。 ✦ placeholder Go $ 1 /月 + 处理费 10 美元额度 已包含 最高 ~$ 15 等效用量，含 优惠 一美元，写很多代码。 订阅 包含内容 约 9K 次请求 taste-1 模型访问权限 按模型分配额度 $ 10 可用于 GLM-5.2 $ 10 可用于 Tencent Hy3 $ 10 可用于 Qwen 3.8 27B $ 10 可用于 Qwen 3.7 Max $ 10 可用于 Qwen 3.7 Plus $ 10 可用于 DeepSeek V4.1 Flash + 另外 18 个模型：Kimi, De"
+        },
+        {
+          "match": "$ 10 可用于 Qwen 3.8 27B $ 10 可用于 Qwe",
+          "context": "10 美元额度 已包含 最高 ~$ 15 等效用量，含 优惠 一美元，写很多代码。 订阅 包含内容 约 9K 次请求 taste-1 模型访问权限 按模型分配额度 $ 10 可用于 GLM-5.2 $ 10 可用于 Tencent Hy3 $ 10 可用于 Qwen 3.8 27B $ 10 可用于 Qwen 3.7 Max $ 10 可用于 Qwen 3.7 Plus $ 10 可用于 DeepSeek V4.1 Flash + 另外 18 个模型：Kimi, DeepSeek, MiniMax, Qwen, MiMo, Grok, GLM"
+        },
+        {
+          "match": "$ 10 可用于 Qwen 3.7 Plus $ 10 可用于 De",
+          "context": "包含内容 约 9K 次请求 taste-1 模型访问权限 按模型分配额度 $ 10 可用于 GLM-5.2 $ 10 可用于 Tencent Hy3 $ 10 可用于 Qwen 3.8 27B $ 10 可用于 Qwen 3.7 Max $ 10 可用于 Qwen 3.7 Plus $ 10 可用于 DeepSeek V4.1 Flash + 另外 18 个模型：Kimi, DeepSeek, MiniMax, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 有限的用量分析 Discord 社区支持 ✦ 全新"
+        },
+        {
+          "match": "$ 10 /月 + 处理费 最高 100 美元额度 已包含 最高 ~",
+          "context": "V4.1 Flash + 另外 18 个模型：Kimi, DeepSeek, MiniMax, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 有限的用量分析 Discord 社区支持 ✦ 全新 GOAT $ 10 /月 + 处理费 最高 100 美元额度 已包含 最高 ~$ 100 等效用量，含 优惠 市场上最超值的订阅。 订阅 包含内容 约 75K 次请求 taste-1 模型访问权限 API 访问 按模型分配额度 $ 100 可用于 Ling 3.1 Flash $ 100 可用于 DeepSeek V"
+        },
+        {
+          "match": "$ 100 等效用量，含 优惠 市场上最超值的订阅",
+          "context": "Seek, MiniMax, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 有限的用量分析 Discord 社区支持 ✦ 全新 GOAT $ 10 /月 + 处理费 最高 100 美元额度 已包含 最高 ~$ 100 等效用量，含 优惠 市场上最超值的订阅。 订阅 包含内容 约 75K 次请求 taste-1 模型访问权限 API 访问 按模型分配额度 $ 100 可用于 Ling 3.1 Flash $ 100 可用于 DeepSeek V4.1 Flash $ 100 可用于 GLM-5"
+        },
+        {
+          "match": "$ 100 可用于 Ling 3.1 Flash $ 100 可用于 ",
+          "context": "✦ 全新 GOAT $ 10 /月 + 处理费 最高 100 美元额度 已包含 最高 ~$ 100 等效用量，含 优惠 市场上最超值的订阅。 订阅 包含内容 约 75K 次请求 taste-1 模型访问权限 API 访问 按模型分配额度 $ 100 可用于 Ling 3.1 Flash $ 100 可用于 DeepSeek V4.1 Flash $ 100 可用于 GLM-5.3 Flash $ 70 可用于 Tencent Hy3 $ 70 可用于 Qwen 3.8 27B + 另外 33 个模型：Kimi, DeepSeek, MiniM"
+        },
+        {
+          "match": "$ 100 可用于 GLM-5.3 Flash $ 70 可用于 Te",
+          "context": "，含 优惠 市场上最超值的订阅。 订阅 包含内容 约 75K 次请求 taste-1 模型访问权限 API 访问 按模型分配额度 $ 100 可用于 Ling 3.1 Flash $ 100 可用于 DeepSeek V4.1 Flash $ 100 可用于 GLM-5.3 Flash $ 70 可用于 Tencent Hy3 $ 70 可用于 Qwen 3.8 27B + 另外 33 个模型：Kimi, DeepSeek, MiniMax, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 用量分析 Discor"
+        },
+        {
+          "match": "$ 70 可用于 Qwen 3.8 27B + 另外 33 个模型：",
+          "context": "访问权限 API 访问 按模型分配额度 $ 100 可用于 Ling 3.1 Flash $ 100 可用于 DeepSeek V4.1 Flash $ 100 可用于 GLM-5.3 Flash $ 70 可用于 Tencent Hy3 $ 70 可用于 Qwen 3.8 27B + 另外 33 个模型：Kimi, DeepSeek, MiniMax, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 用量分析 Discord 社区支持 Pro $20 Max 10× Max 20× Max $ 100 /月"
+        },
+        {
+          "match": "$20 Max 10× Max 20× Max $ 100 /月 ",
+          "context": "70 可用于 Qwen 3.8 27B + 另外 33 个模型：Kimi, DeepSeek, MiniMax, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 用量分析 Discord 社区支持 Pro $20 Max 10× Max 20× Max $ 100 /月 + 处理费 150 美元额度 已包含 最高 $ 300 等效用量，含 优惠 每天交付，如同魔法。 开始使用 包含内容 约 219K 次请求 taste-1 模型访问权限 API 访问 开源模型与高级模型 $300 可用于 MiniMax M"
+        },
+        {
+          "match": "$ 300 等效用量，含 优惠 每天交付，如同魔法",
+          "context": "x, Qwen, MiMo, Grok, GLM… Glyph Cluster 免费 用量分析 Discord 社区支持 Pro $20 Max 10× Max 20× Max $ 100 /月 + 处理费 150 美元额度 已包含 最高 $ 300 等效用量，含 优惠 每天交付，如同魔法。 开始使用 包含内容 约 219K 次请求 taste-1 模型访问权限 API 访问 开源模型与高级模型 $300 可用于 MiniMax M3 Glyph Cluster 免费 用量分析 更高的速率限制 优先支持 // API 构建者"
+        },
+        {
+          "match": "$300 可用于 MiniMax M3 Glyph Cluster ",
+          "context": "20× Max $ 100 /月 + 处理费 150 美元额度 已包含 最高 $ 300 等效用量，含 优惠 每天交付，如同魔法。 开始使用 包含内容 约 219K 次请求 taste-1 模型访问权限 API 访问 开源模型与高级模型 $300 可用于 MiniMax M3 Glyph Cluster 免费 用量分析 更高的速率限制 优先支持 // API 构建者 全新 Provider。 API 套餐。 兼容任何 OpenAI 或 Anthropic 客户端。零加价，所有优惠自动应用。 $15 /月 + 处理费 按量付费 零加价 ✦ 所"
+        },
+        {
+          "match": "$15 /月 + 处理费 按量付费 零加价 ✦ 所有优惠均适用 只",
+          "context": "MiniMax M3 Glyph Cluster 免费 用量分析 更高的速率限制 优先支持 // API 构建者 全新 Provider。 API 套餐。 兼容任何 OpenAI 或 Anthropic 客户端。零加价，所有优惠自动应用。 $15 /月 + 处理费 按量付费 零加价 ✦ 所有优惠均适用 只为实际请求付费。充值额度可结转且永不过期。 订阅 包含内容 API ：兼容 OpenAI 和 Anthropic 的端点 开源模型与高级模型 逐请求用量分析 Discord 社区支持 阅读 API 文档 // 团队套餐 一起用，更出色。 共"
+        },
+        {
+          "match": "$ 40 /月 + 处理费   一个团队，一个额度池",
+          "context": "和 Anthropic 的端点 开源模型与高级模型 逐请求用量分析 Discord 社区支持 阅读 API 文档 // 团队套餐 一起用，更出色。 共享用量，共享账单。团队所有成员共用一个额度池。 ✦ placeholder Teams $ 40 /月 + 处理费   一个团队，一个额度池。 订阅 包含内容 约 35K 次请求 taste-1 模型访问权限 API 访问 开源模型与高级模型 团队协作与管理 共享账单与集中管理 优先支持 ✦ placeholder Enterprise 定制 为你的组织量身定制 为你的组织量身"
+        },
+        {
+          "match": "$1 /月 选择 Go GOAT $10 /月 选择 GOAT ",
+          "context": "全部功能，另加 定制额度与席位 无限团队席位 API 访问 专属支持工程师 SLA 保证与可用性 优先基础设施 定制培训与上手支持 // 对比 所有套餐，并排对比。 每项功能、每个限制、每种模型。清楚了解各套餐包含的全部内容。 功能 Go $1 /月 选择 Go GOAT $10 /月 选择 GOAT Pro $20 /月 选择 Pro Max 10× $100 /月 选择 Max 10× Max 20× $200 /月 选择 Max 20× 用量 每月额度 $10 最高 100 美元 最高 110 美元 $150 $300 MiniMa"
+        },
+        {
+          "match": "$20 /月 选择 Pro Max 10× $100 /月 选择 ",
+          "context": "师 SLA 保证与可用性 优先基础设施 定制培训与上手支持 // 对比 所有套餐，并排对比。 每项功能、每个限制、每种模型。清楚了解各套餐包含的全部内容。 功能 Go $1 /月 选择 Go GOAT $10 /月 选择 GOAT Pro $20 /月 选择 Pro Max 10× $100 /月 选择 Max 10× Max 20× $200 /月 选择 Max 20× 用量 每月额度 $10 最高 100 美元 最高 110 美元 $150 $300 MiniMax M3 等效用量 额度最高可多用 2× $8 $47 $57 ~ $30"
+        },
+        {
+          "match": "$200 /月 选择 Max 20× 用量 每月额度 $10 最高 ",
+          "context": "功能、每个限制、每种模型。清楚了解各套餐包含的全部内容。 功能 Go $1 /月 选择 Go GOAT $10 /月 选择 GOAT Pro $20 /月 选择 Pro Max 10× $100 /月 选择 Max 10× Max 20× $200 /月 选择 Max 20× 用量 每月额度 $10 最高 100 美元 最高 110 美元 $150 $300 MiniMax M3 等效用量 额度最高可多用 2× $8 $47 $57 ~ $300 ~ $600 Glyph Cluster 等效用量 请求不消耗额度 while the stea"
+        },
+        {
+          "match": "$150 $300 MiniMax M3 等效用量 额度最高可多用 ",
+          "context": "$10 /月 选择 GOAT Pro $20 /月 选择 Pro Max 10× $100 /月 选择 Max 10× Max 20× $200 /月 选择 Max 20× 用量 每月额度 $10 最高 100 美元 最高 110 美元 $150 $300 MiniMax M3 等效用量 额度最高可多用 2× $8 $47 $57 ~ $300 ~ $600 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 免费 免费 免费 免费 典型请求量 近似值，取决于所选模型"
+        },
+        {
+          "match": "$8 $47 $57 ~ $300 ~ $600 Glyph C",
+          "context": "10× $100 /月 选择 Max 10× Max 20× $200 /月 选择 Max 20× 用量 每月额度 $10 最高 100 美元 最高 110 美元 $150 $300 MiniMax M3 等效用量 额度最高可多用 2× $8 $47 $57 ~ $300 ~ $600 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 免费 免费 免费 免费 典型请求量 近似值，取决于所选模型 ~9K ~75K ~100K ~219K ~437K 充值额度可结转"
+        },
+        {
+          "match": "$0.10 /小时 $0.10 /小时 $0.10 /小时 $0.10",
+          "context": "opic 的端点，除 Go 外所有套餐均可使用 限制与性能 速率限制 标准 标准 标准 较高 最高 上下文窗口 最高 1M 最高 1M 最高 1M 最高 1M 最高 1M 按 API 成本自动充值 云端访问 按秒计费，除 Go 外所有套餐 $0.10 /小时 $0.10 /小时 $0.10 /小时 $0.10 /小时 分析与支持 用量分析 有限 每次请求的成本与 Token Discord 社区支持 优先支持 隐私与安全 Taste 仅存储在本地 随时取消 Go $1/月 用量 每月额度 $10 MiniMax M3 等效用量 额度最高可多用"
+        },
+        {
+          "match": "$1/月 用量 每月额度 $10 MiniMax M3 等效用量",
+          "context": "外所有套餐 $0.10 /小时 $0.10 /小时 $0.10 /小时 $0.10 /小时 分析与支持 用量分析 有限 每次请求的成本与 Token Discord 社区支持 优先支持 隐私与安全 Taste 仅存储在本地 随时取消 Go $1/月 用量 每月额度 $10 MiniMax M3 等效用量 额度最高可多用 2× $8 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~9K 充值额度可结转 模型 开源模型 精选高级模"
+        },
+        {
+          "match": "$8 Glyph Cluster 等效用量 请求不消耗额度 wh",
+          "context": "时 分析与支持 用量分析 有限 每次请求的成本与 Token Discord 社区支持 优先支持 隐私与安全 Taste 仅存储在本地 随时取消 Go $1/月 用量 每月额度 $10 MiniMax M3 等效用量 额度最高可多用 2× $8 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~9K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源模"
+        },
+        {
+          "match": "$10/月 用量 每月额度 最高 100 美元 MiniMax M",
+          "context": "文窗口 最高 1M 按 API 成本自动充值 云端访问 按秒计费，除 Go 外所有套餐 分析与支持 用量分析 有限 每次请求的成本与 Token Discord 社区支持 优先支持 隐私与安全 Taste 仅存储在本地 随时取消 GOAT $10/月 用量 每月额度 最高 100 美元 MiniMax M3 等效用量 额度最高可多用 2× $47 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~75K 充值额度可结转 模型 开源"
+        },
+        {
+          "match": "$47 Glyph Cluster 等效用量 请求不消耗额度 wh",
+          "context": "量分析 有限 每次请求的成本与 Token Discord 社区支持 优先支持 隐私与安全 Taste 仅存储在本地 随时取消 GOAT $10/月 用量 每月额度 最高 100 美元 MiniMax M3 等效用量 额度最高可多用 2× $47 Glyph Cluster 等效用量 请求不消耗额度 while the stealth preview lasts 免费 典型请求量 近似值，取决于所选模型 ~75K 充值额度可结转 模型 开源模型 精选高级模型 GPT-5.6 Luna、Grok 4.5、Qwen Max 与 Plus——闭源"
+        },
+        {
+          "match": "$0.10 /小时 分析与支持 用量分析 每次请求的成本与 Token",
+          "context": "学习并应用你的编程品味 API 访问 兼容 OpenAI 和 Anthropic 的端点，除 Go 外所有套餐均可使用 限制与性能 速率限制 标准 上下文窗口 最高 1M 按 API 成本自动充值 云端访问 按秒计费，除 Go 外所有套餐 $0.10 /小时 分析与支持 用量分析 每次请求的成本与 Token Discord 社区支持 优先支持 隐私与安全 Taste 仅存储在本地 随时取消 Pro $20/月 用量 每月额度 最高 110 美元 MiniMax M3 等效用量 额度最高可多用 2× $57 Glyph Cluster 等效用量"
         }
       ]
     }

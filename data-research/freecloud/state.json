@@ -171,8 +171,8 @@
       "n_hits": 11
     },
     "northflank-pricing": {
-      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
-      "ts": "2026-11-06T15:52:20Z",
+      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
+      "ts": "2026-11-12T16:29:18Z",
       "n_hits": 56
     },
     "colab-faq": {
@@ -293,18 +293,28 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "43b57e0738d3f044e4328f197e8d271c89833f750706ff04b6840d57c5974ae9",
-      "ts": "2026-11-12T02:34:08Z",
+      "fp": "1ad7e63648a630e24359865c9b8099a74695ecd92663efb923a727c5910c5a4a",
+      "ts": "2026-11-12T16:29:18Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "bfe968a54329461d421cf37b46c634354b411a0eb5d3b5892770c08692ad4846",
-      "ts": "2026-11-12T02:34:08Z",
+      "fp": "3b64b476486790f080070385b95b8ca098754b062131e5c8ec671ff44aa729a7",
+      "ts": "2026-11-12T16:29:18Z",
       "count": 1
     },
-    "northflank-pricing": {
-      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
-      "ts": "2026-11-12T02:34:08Z",
+    "lowendbox-feed": {
+      "fp": "f7d333f16e8f24f1e02fbf448a63357e6f44998429605e6073ec6510366a9c27",
+      "ts": "2026-11-12T16:29:18Z",
+      "count": 1
+    },
+    "kaggle-notebooks": {
+      "fp": "a84dff1a78657f12e242be9035c419ff070abf5f12809651e25d923c52bf3f4f",
+      "ts": "2026-11-12T16:29:18Z",
+      "count": 1
+    },
+    "atlascloud": {
+      "fp": "4a29ee74d8d19ccff0be54efaa9bd1017c7769e1eef0340f73db7f377b6978ed",
+      "ts": "2026-11-12T16:29:18Z",
       "count": 1
     }
   }
