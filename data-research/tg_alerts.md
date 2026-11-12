@@ -982,3 +982,40 @@ OpenRouter 表示其新路由算法会把更多流量分配给推理表现好的
 - 🆕 [AI_News_CN] OpenRouter 新路由算法让 GLM 5.3 Flash 延迟降 40%、价格降 17% 
 
 OpenRouter 表示其新路由算法会把更多流量分配给推理表现好的供应商。过去一个月，GLM 5.3 Flash 用户的首字延迟下降 40%，吞吐量提升 10%，每百万 token 成本下降 17%
+
+## 2026-11-12 02:33 UTC
+- 🆕 [linuxdoit] ios 终端软件Termini 永久 Pro 限免，点击就送，速速领取 
+
+打开 App Store，搜索「Termini」，本体双区免费，永久Pro 美区与国区均为 0 元
+
+17 个帖子 - 16 位参与者
+
+ 阅读完整话题 
+
+via LINUX DO - 热门话题 (author: 乖乖龙)
+- 🆕 [linuxdoit] [Aether API] Payload 红包？ 
+
+ [&#33;warning]
+需要 Aether API 账户（通过 Linux.DO OAuth 登录）才能领，领的是公益站额度不是 LDC 【拼手气红包 · 300 份】
+ / 🧧 / 🥉 👏 🍡 🚐 💒 🎄 🚡 💭 🦏 🌠 👝 🤫 🚐 ☕
+- 🆕 [linuxdo_tg] 主 题： 我们不生产 Token，我们只是 Token 的搬运工 
+发 布 者： lip_io 
+标签分类： 纯水 摸鱼 
+时 间：2026-11-12 10:25:48
+内容预览： 每天的工作就是token搬运工、每个时代都有自己的搬运工是不是有点可悲 
+直达链接： https://linux.d
+- 🆕 [linuxdo_tg] 主 题： Token2U双十一活动继续！评论ID领2刀相当于老站14刀！多档位首充震撼来袭！ 
+发 布 者： kimmaro 
+标签分类： 人工智能 软件开发 ChatGPT Claude 高级推广 
+时 间：2026-11-12 10:26:45
+内容预览： 点此处注册 Token2U · AI 
+- 🆕 [linuxdo_tg] 主 题： 【富可敌国】【OpenLux】11/12｜Gemini 4 Carbon、Claude Fable 5.2 上新，留 ID 送 3.5 元 
+发 布 者： Nope 
+标签分类： 人工智能 OpenAI Claude Gemini 高级推广 gpt AI绘画 api中转 
+时 间：2026
+- 🆕 [AI_News_CN] 谷歌推出 Gemini Decisions API 快速多模态决策 
+
+谷歌发布 Gemini Decisions API，基于新模型 Gemini Decision 1，面向工具选择、策略检查、模型路由等封闭式决策。它支持文本、图像、音频、视频和 PDF，单次最多可对 1000 个问题打分，返回概
+- 🆕 [AI_News_CN] 告别冗长文本！谷歌发布 Gemini Decisions API：单次前向传递打分，端到端延迟压至 150 毫秒 
+
+人工智能技术的演进正在从单纯的“生成内容”加速向“高效决策”转变。谷歌近日正式推出了全新的 Gemini Decisions API，这是一个由其底层的 Gemini Decisio
