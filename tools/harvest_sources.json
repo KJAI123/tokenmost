@@ -2190,6 +2190,36 @@
     "模型"
    ],
    "note": "长期源自动并入 2026-11-12：$1/$10 档积分口径与 Glyph 免费预览期盯防"
+  },
+  {
+   "id": "autoclaw-invite-guide",
+   "name": "AutoClaw 官方邀请码指南",
+   "url": "https://autoclaw.zhipuai.cn/blog/news/autoclaw-invite-code-guide",
+   "patterns": [
+    "邀请码",
+    "社群",
+    "公众号",
+    "合作",
+    "发放",
+    "积分",
+    "Token"
+   ],
+   "note": "长期源自动并入 2026-11-12：四类官方渠道/合作机构专属码变更盯防"
+  },
+  {
+   "id": "autoclaw-blog-all",
+   "name": "AutoClaw 官方博客全分类",
+   "url": "https://autoclaw.z.ai/blog",
+   "patterns": [
+    "Token",
+    "Claim",
+    "Perk",
+    "免费",
+    "福利",
+    "Product",
+    "Tutorial"
+   ],
+   "note": "长期源自动并入 2026-11-12：全分类(Model/Product/Tutorial/News)，福利文不只发 News"
   }
  ]
 }
