@@ -201,8 +201,8 @@
       "n_hits": 14
     },
     "lowendbox-feed": {
-      "fp": "3266ea46b2ad9a1a096d54e2808505327e251596d184a4266b213b44049149f2",
-      "ts": "2026-11-11T21:28:14Z",
+      "fp": "f7d333f16e8f24f1e02fbf448a63357e6f44998429605e6073ec6510366a9c27",
+      "ts": "2026-11-12T21:27:03Z",
       "n_hits": 60
     },
     "baidu-free": {
@@ -293,28 +293,43 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "1ad7e63648a630e24359865c9b8099a74695ecd92663efb923a727c5910c5a4a",
-      "ts": "2026-11-12T16:29:18Z",
+      "fp": "c736380ecdb1152d3d39dbaee055699ee10ae5b16f7d50ab6236369f543dd5a5",
+      "ts": "2026-11-12T21:27:03Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "3b64b476486790f080070385b95b8ca098754b062131e5c8ec671ff44aa729a7",
-      "ts": "2026-11-12T16:29:18Z",
-      "count": 1
-    },
-    "lowendbox-feed": {
-      "fp": "f7d333f16e8f24f1e02fbf448a63357e6f44998429605e6073ec6510366a9c27",
-      "ts": "2026-11-12T16:29:18Z",
-      "count": 1
-    },
-    "kaggle-notebooks": {
-      "fp": "a84dff1a78657f12e242be9035c419ff070abf5f12809651e25d923c52bf3f4f",
-      "ts": "2026-11-12T16:29:18Z",
+      "fp": "b62468377ddc1bc3d78e27a72bc74e02a2135bd7e702261d454eb684f3c5354f",
+      "ts": "2026-11-12T21:27:03Z",
       "count": 1
     },
     "atlascloud": {
-      "fp": "4a29ee74d8d19ccff0be54efaa9bd1017c7769e1eef0340f73db7f377b6978ed",
-      "ts": "2026-11-12T16:29:18Z",
+      "fp": "b833d9ebd50953f71dd42b41fee1c258b26156e519409c52b6700cd522bf3168",
+      "ts": "2026-11-12T21:27:03Z",
+      "count": 1
+    },
+    "deno-deploy": {
+      "fp": "1a5a54635b108243179948a2fa429e29415cd8d4f753bcb7a3d6b107fec6682b",
+      "ts": "2026-11-12T21:27:03Z",
+      "count": 1
+    },
+    "northflank-pricing": {
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-12T21:27:03Z",
+      "count": 1
+    },
+    "render-pricing": {
+      "fp": "b39545992169b315fe0876b88c1bf04f42e97a2f729d4f598215658fe5ca2faf",
+      "ts": "2026-11-12T21:27:03Z",
+      "count": 1
+    },
+    "railway-pricing": {
+      "fp": "8530ff5002d5f895b937c4c61cb6262af2a5b91e65b2b72dd5d32608807df7c2",
+      "ts": "2026-11-12T21:27:03Z",
+      "count": 1
+    },
+    "kiro-pricing": {
+      "fp": "92cebc48586e2bd7a7ad9fbe4869fec40badd6b860797437f0e3269b2a8ba2f1",
+      "ts": "2026-11-12T21:27:03Z",
       "count": 1
     }
   }

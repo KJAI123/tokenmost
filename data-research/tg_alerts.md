@@ -1062,3 +1062,18 @@ LiteLLM 网关现已通过 /v1/decisions 端点支持 Gemini Decision 1，可对
 - 🆕 [AI_News_CN] AI办公竞争从模型能力转向成本与选择权:豆包工作开放第三方模型接入 
 
 豆包工作11月12日更新，接入多款第三方大模型并推出限时特惠计划。用户在豆包2.1Lite与Pro两款自研模型之外，新增可选Kimi K3.1Pro、GLM5.3、DeepSeek V4.1Flash等模型，选择范围由自研体系扩
+
+## 2026-11-12 21:26 UTC
+- 🆕 [v2ex_notice] 【推广】 🔥 Crab AI｜ OpenAI 官渠 - Cheap 渠道倍率低至 0.07x｜开启高缓低价超性价比 ｜ 试用额度免费领
+- 🆕 [linuxdoit] 【结束等下次】刚才没加公益推广，重新发布一下，公益免费爽蹬GPT 
+
+ 【Mazal】公益站，Free号大量出没，Free号池 
+ 本帖使用社区公益推广，符合推广要求。我申明并遵循社区要求的以下内容 （点击了解更多详细信息） 
+ ● 我的项目是免费使用的，无收费（变相收费、赞助）部分： 是
+ ● 我
+- 🆕 [AI_News_CN] Gemini 4 Hydrogen 现已登陆 Cursor，CursorBench 得分 54.3% 
+
+Gemini 4 Hydrogen 现已登陆 Cursor，默认 effort 下 CursorBench 得分 54.3%（Gemini 3.8 Flash 为 39.6%），定价为输入 &#
+- 🆕 [AI_News_CN] Gemini 4 Hydrogen 发布：公布定价与基准，LiteLLM 已支持 
+
+Google DeepMind 的 Gemini 4 Hydrogen 定价为每百万输入 token 1.50 美元、每百万输出 token 7.50 美元，提供 100 万上下文窗口，速度比 3.8 Flash 
