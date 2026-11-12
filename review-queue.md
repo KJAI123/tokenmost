@@ -3,7 +3,7 @@
 机器不能判断的事都在这里：官方页面有变、来源失联、超期未复核、RSS 草稿。
 处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:"verified"；不实→删）。
 
-- **待复核** `zhipu-signup`（智谱 BigModel）：源 zhipu-promotion 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `zhipu-signup`（智谱 BigModel）：源 bigmodel-pricing 页面于 2026-11-12 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `volc-ark-signup`（火山方舟）：源 ark-freequota 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52) → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `bailian-signup`（阿里云百炼）：源 bailian-quota 页面于 2026-11-05 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deepseek-price`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-05 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -13,17 +13,17 @@
 - **待复核** `xinghuo-signup`（讯飞星火）：源 xfyun-spark-docs 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `minimax-m3-half`（MiniMax 开放平台）：源 minimax-pricing 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `dify-selfhost`（Dify 自部署）：源 dify-pricing 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-billing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52) → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-billing 页面于 2026-11-12 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-08 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-ai-studio`（Google AI Studio）：源 gemini-pricing 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(07:22) → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-student`（Google AI Studio）：源 gemini-students 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `azure-student`（Azure for Students）：源 azure-students 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52) → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `sambanova-free`（SambaNova）：源 sambanova-limits 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(07:22) → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `sambanova-free`（SambaNova）：源 sambanova-limits 页面于 2026-11-12 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `anthropic-credits`（Anthropic）：源 anthropic-pricing 页面于 2026-10-26 变更（连续 2 次观测一致）清洗机制:stale不宜挂主板块 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zcode-linuxdo`（智谱 ZCode）：源 bigmodel-activity 页面于 2026-11-11 变更（连续 3 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ark-daily-5m`（火山方舟）：源 ark-collab 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52) → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `zhipu-flash-free`（智谱 BigModel）：源 bigmodel-pricing 页面于 2026-10-31 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `zhipu-flash-free`（智谱 BigModel）：源 bigmodel-pricing 页面于 2026-11-12 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deepseek-cache`（DeepSeek）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `kimi-filefree`（Kimi 开放平台）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `minimax-mplan`（MiniMax 开放平台）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -103,4 +103,9 @@
 - **待复核** `deep-lingma-qoder-merge-r7`（通义灵码→Qoder CN）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-trae-free-usage-r7`（Trae 国内版）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-copilot-free-r7`（GitHub Copilot）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 38 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **待复核** `cline-pass-deepseek`（Cline）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `opencode-go-deepseek`（OpenCode）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `qoder-deepseek-free`（Qoder）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `doubao-daily-quota`（豆包）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `zhipu-pinhaomo`（智谱 BigModel）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **源失联** `linuxdo-rss`：连续 39 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
