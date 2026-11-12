@@ -5656,5 +5656,24 @@
   "via": "free",
   "group": "Command Code",
   "notes": "2026-11-12 官方 pricing 页直核 | 定价页唯一标 Free 的项目 | 预览期结束即恢复计费，用趁早"
+ },
+ {
+  "id": "clixad-free",
+  "provider": "clixad",
+  "category": "agent",
+  "type": "free_tier",
+  "value": "终端 coding agent 免费用（无 API key/无订阅/免信用卡）：**每天 5 款模型共享免费池**——GPT-5 Nano / Gemini 2.5 Flash-Lite / **Claude Haiku 5.5** / DeepSeek V4 Flash / Gemini 3.5 Flash-Lite；名义 6 万 credits/天，**beta 期翻倍 12 万/天**（≈600 万~1200 万 tokens/天），每天 UTC 0 点重置",
+  "region": "global",
+  "url": "https://www.npmjs.com/package/clixad",
+  "rule": "GitHub 账号设备码登录即可（不填邮箱不复制 token）；模型调用走官方网关（其持有 OpenAI/Anthropic/Google key）；免费池用完可做问卷/任务墙赚 credits 或次日再来；注册奖励钱包（25,200 起+连续登录奖励）与免费池独立，免费池消耗不扣钱包",
+  "verify_status": "unverified",
+  "verified_at": "2026-11-12T17:44:58Z",
+  "difficulty": 1,
+  "published": true,
+  "api_via": "client_only",
+  "daily_wan": 600,
+  "daily_note": "名义 6 万 credits/天 ≈ 600 万 tokens（1 credit≈100 token 推算，标题口径）；beta 期翻倍 12 万 credits ≈ 1200 万/天；每天 UTC 0 点重置",
+  "group": "clixad",
+  "notes": "⚠️ 2026-11-12 收录：AIWave 实测文（14 轮任务跑通、钱包 25,200 未扣、免费池 120,000→92,462 截图）——官方站待 TK 直核（unverified）| 适合小活：git commit message/CSV 清洗/读代码/一次性脚本/报错定位；低成本快速模型多步推理弱，不适合通宵大批量任务 |credits 用尽也可问卷/任务墙赚取"
  }
 ]
