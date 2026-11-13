@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-13T15:16:38Z",
+  "harvested_at": "2026-11-13T17:01:42Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -461,8 +461,118 @@
       "id": "siliconflow-faq",
       "name": "硅基流动计费规则",
       "url": "https://docs.siliconflow.com/cn/faqs/billing-rules",
-      "status": "error",
-      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+      "status": "ok",
+      "hits": 27,
+      "findings": [
+        {
+          "match": "免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens",
+          "context": "Chat 32K 免费 THUDM/glm-4-9b-chat 32K 免费 THUDM/chatglm3-6b 32K 免费 01-ai/Yi-1.5-9B-Chat-16K 16K 免费 01-ai/Yi-1.5-6B-Chat 4K 免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥"
+        },
+        {
+          "match": "免费额度 (相当于 2 千万 Qwen1.5-14B Tokens",
+          "context": "价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 立即体验。 SiliconFlow home page x linkedin discord Models Images Video LLM Audio Products Inference Fine-tuning Rese"
+        },
+        {
+          "match": "免费额度 (相当于 2 千万 Qwen1.5-14B Tokens",
+          "context": "京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。`}),`\\n`,_jsx(_components.p,{children:_jsxs(_components.strong,{children:[`新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/models/text/chat`,children:`点此链接`}),`立即体验。`]})})]})}function"
+        },
+        {
+          "match": "赠送额度中进行扣减",
+          "context": "-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   扣费规则   平台根据 Input 和 Output 的 Token 总数计费。   费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1"
+        },
+        {
+          "match": "新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 ",
+          "context": "en 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 立即体验。 SiliconFlow home page x linkedin discord Models Images Video LLM Audio Products Inference Fine-tuning Reserved GPU"
+        },
+        {
+          "match": "赠送额度中进行扣减",
+          "context": "nts.p,{children:`平台根据 Input 和 Output 的 Token 总数计费。`}),`\\n`,_jsx(_components.p,{children:`费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。`}),`\\n`,_jsxs(_components.p,{children:[`详情请点击`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/account/expense"
+        },
+        {
+          "match": "新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx",
+          "context": "以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。`}),`\\n`,_jsx(_components.p,{children:_jsxs(_components.strong,{children:[`新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/models/text/chat`,children:`点此链接`}),`立即体验。`]})})]})}function MDXCont"
+        },
+        {
+          "match": "¥4.13/1M tokens Qwen/Qwen2-57B-A14B",
+          "context": "32K 免费 THUDM/chatglm3-6b 32K 免费 01-ai/Yi-1.5-9B-Chat-16K 16K 免费 01-ai/Yi-1.5-6B-Chat 4K 免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/"
+        },
+        {
+          "match": "¥1.26/1M tokens Qwen/Qwen1.5-110B-C",
+          "context": "Chat-16K 16K 免费 01-ai/Yi-1.5-6B-Chat 4K 免费 Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/D"
+        },
+        {
+          "match": "¥4.13/1M tokens Qwen/Qwen1.5-32B-Ch",
+          "context": "Qwen/Qwen2-72B-Instruct 32K ¥4.13/1M tokens Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M toke"
+        },
+        {
+          "match": "¥1.26/1M tokens Qwen/Qwen1.5-14B-Ch",
+          "context": "s Qwen/Qwen2-57B-A14B-Instruct 32K ¥1.26/1M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/"
+        },
+        {
+          "match": "¥0.7/1M tokens deepseek-ai/DeepSee",
+          "context": "M tokens Qwen/Qwen1.5-110B-Chat 32K ¥4.13/1M tokens Qwen/Qwen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-ch"
+        },
+        {
+          "match": "¥1.33/1M tokens deepseek-ai/DeepSee",
+          "context": "wen1.5-32B-Chat 32K ¥1.26/1M tokens Qwen/Qwen1.5-14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M t"
+        },
+        {
+          "match": "¥1.33/1M tokens deepseek-ai/deepsee",
+          "context": "14B-Chat 32K ¥0.7/1M tokens deepseek-ai/DeepSeek-Coder-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   扣费规则   平台根据 Input 和 Output 的 Token 总数计费。"
+        },
+        {
+          "match": "¥1/1M tokens 01-ai/Yi-1.5-34B-Ch",
+          "context": "r-V2-Instruct 32K ¥1.33/1M tokens deepseek-ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   扣费规则   平台根据 Input 和 Output 的 Token 总数计费。   费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点"
+        },
+        {
+          "match": "¥1.26/1M tokens   扣费规则   平台根据 Input",
+          "context": "ai/DeepSeek-V2-Chat 32K ¥1.33/1M tokens deepseek-ai/deepseek-Ilm-67b-chat 4K ¥1/1M tokens 01-ai/Yi-1.5-34B-Chat-16K 16K ¥1.26/1M tokens   扣费规则   平台根据 Input 和 Output 的 Token 总数计费。   费用 = Token 消耗量 × 模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅"
+        },
+        {
+          "match": "¥4.13/1M tokens`})]}),_jsxs(_compon",
+          "context": "Qwen/Qwen2-72B-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥4.13/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen2-57B-A14B-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":"
+        },
+        {
+          "match": "¥1.26/1M tokens`})]}),_jsxs(_compon",
+          "context": "Qwen2-57B-A14B-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.26/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen1.5-110B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`"
+        },
+        {
+          "match": "¥4.13/1M tokens`})]}),_jsxs(_compon",
+          "context": "`Qwen/Qwen1.5-110B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥4.13/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen1.5-32B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,"
+        },
+        {
+          "match": "¥1.26/1M tokens`})]}),_jsxs(_compon",
+          "context": ":`Qwen/Qwen1.5-32B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.26/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`Qwen/Qwen1.5-14B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,"
+        },
+        {
+          "match": "¥0.7/1M tokens`})]}),_jsxs(_compon",
+          "context": ":`Qwen/Qwen1.5-14B-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥0.7/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`deepseek-ai/DeepSeek-Coder-V2-Instruct`}),_jsx(_components.td,{\\\"data-"
+        },
+        {
+          "match": "¥1.33/1M tokens`})]}),_jsxs(_compon",
+          "context": "pSeek-Coder-V2-Instruct`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.33/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`deepseek-ai/DeepSeek-V2-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":"
+        },
+        {
+          "match": "¥1.33/1M tokens`})]}),_jsxs(_compon",
+          "context": "eek-ai/DeepSeek-V2-Chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`32K`}),_jsx(_components.td,{children:`¥1.33/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`deepseek-ai/deepseek-Ilm-67b-chat`}),_jsx(_components.td,{\\\"data-numer"
+        },
+        {
+          "match": "¥1/1M tokens`})]}),_jsxs(_compon",
+          "context": "ai/deepseek-Ilm-67b-chat`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`4K`}),_jsx(_components.td,{children:`¥1/1M tokens`})]}),_jsxs(_components.tr,{children:[_jsx(_components.td,{children:`01-ai/Yi-1.5-34B-Chat-16K`}),_jsx(_components.td,{\\\"data-numeric\\\":`tr"
+        },
+        {
+          "match": "¥1.26/1M tokens`})]})]})]}),`\\n`,_j",
+          "context": "-ai/Yi-1.5-34B-Chat-16K`}),_jsx(_components.td,{\\\"data-numeric\\\":`true`,children:`16K`}),_jsx(_components.td,{children:`¥1.26/1M tokens`})]})]})]}),`\\n`,_jsx(Heading,{level:`2`,id:`扣费规则`,children:`扣费规则`}),`\\n`,_jsx(_components.p,{children:`平台根据 Input 和 Output 的 Token 总数计费。`}"
+        },
+        {
+          "match": "14 元",
+          "context": "模型单价，对应的费用将优先从赠送额度中进行扣减。   详情请点击 SiliconFlow 账单 查看。   “模型价格”页面可以查看当前的价格情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。   新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)， 点此链接 立即体验。 SiliconFlow home page x linkedin discord Models Images Video LLM Audio Pr"
+        },
+        {
+          "match": "14 元",
+          "context": "情况，北京硅基流动科技有限公司保留修改价格的权利，请以页面的最新价格为准。`}),`\\n`,_jsx(_components.p,{children:_jsxs(_components.strong,{children:[`新用户注册即得 14 元免费额度 (相当于 2 千万 Qwen1.5-14B Tokens)，`,_jsx(_components.a,{href:`https://cloud.siliconflow.com/models/text/chat`,children:"
+        }
+      ]
     },
     {
       "id": "volc-ark-collab",
@@ -597,8 +707,114 @@
       "id": "openrouter-limits",
       "name": "OpenRouter 限流文档",
       "url": "https://openrouter.ai/docs/api_reference/limits",
-      "status": "error",
-      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+      "status": "ok",
+      "hits": 26,
+      "findings": [
+        {
+          "match": "$52.00 of $50.00 used; resets 2026-1",
+          "context": "\"error\" : {   \"code\" : 403 ,   \"message\" : \"Org member budget limit exceeded (weekly limit). Contact your org admin. $52.00 of $50.00 used; resets 2026-10-12T00:00:00.000Z.\" ,   \"metadata\" : {   \"limit_source\" : \"openrouter_guardrail_budget\" ,   \"remedy_hint\" : \"Wait for t"
+        },
+        {
+          "match": "$52.00 of $50.00 used; resets 2026-1",
+          "context": "A3069`,\\\"--shiki-dark\\\":`#CE9178`},children:`\\\"Org member budget limit exceeded (weekly limit). Contact your org admin. $52.00 of $50.00 used; resets 2026-10-12T00:00:00.000Z.\\\"`}),_jsx(_components.span,{style:{color:`#1F2328`,\\\"--shiki-dark\\\":`#D4D4D4`},children:`,`})]}),`\\n"
+        },
+        {
+          "match": "Requests per minute Requests per day Less than At least   T",
+          "context": "u’re using a free model variant (with an ID ending in : ), the following limits apply:     Credits purchased (all time) Requests per minute Requests per day Less than At least   The free_model_daily_requests field in the GET /api/v1/key response above reports the daily counter and ceiling that gate"
+        },
+        {
+          "match": "requests per day by default, and it resets at 00:00 UTC.",
+          "context": "eleting API keys with a management key count toward a daily limit for your account or organization. The limit is 10,000 requests per day by default, and it resets at 00:00 UTC.     POST /api/v1/keys , PATCH /api/v1/keys/{hash} (including disabling a key), and DELETE /api/v1/keys/{hash} all count"
+        },
+        {
+          "match": "requests per minute or per day, key-management requests per",
+          "context": "}   }     A error can come from two places:     OpenRouter , when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection).   The upstream provider , when the provider serving your request is rate"
+        },
+        {
+          "match": "Requests per minute`}),_jsx(_components.th,{children:`Reque",
+          "context": "_components.tr,{children:[_jsx(_components.th,{children:`Credits purchased (all time)`}),_jsx(_components.th,{children:`Requests per minute`}),_jsx(_components.th,{children:`Requests per day`})]})}),_jsxs(_components.tbody,{children:[_jsxs(_components.tr,{children:[_jsxs(_components.td,{children:[`"
+        },
+        {
+          "match": "requests per day by default, and it resets at 00:00 UTC.",
+          "context": "pi-keys`,children:`management key`}),` count toward a daily limit for your account or organization. The limit is 10,000 requests per day by default, and it resets at 00:00 UTC.`]}),`\\n`,_jsxs(_components.ul,{children:[`\\n`,_jsxs(_components.li,{children:[_jsx(_components.code,{children:`POST /ap"
+        },
+        {
+          "match": "requests per minute or per day, key-management requests per",
+          "context": "children:[_jsx(_components.strong,{children:`OpenRouter`}),`, when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection).`]}),`\\n`,_jsxs(_components.li,{children:[_jsx(_components.strong,{childr"
+        },
+        {
+          "match": "Requests per minute | Requests per day | | --- | --- | --- ",
+          "context": "’re using a free model variant (with an ID ending in `:`), the following limits apply: | Credits purchased (all time) | Requests per minute | Requests per day | | --- | --- | --- | | Less than | | | | At least | | | The `free_model_daily_requests` field in the `GET /api/v1/key` response above repor"
+        },
+        {
+          "match": "requests per day by default, and it resets at 00:00 UTC.",
+          "context": "des/overview/auth/management-api-keys) count toward a daily limit for your account or organization. The limit is 10,000 requests per day by default, and it resets at 00:00 UTC. - `POST /api/v1/keys`, `PATCH /api/v1/keys/{hash}` (including disabling a key), and `DELETE /api/v1/keys/{hash}` all co"
+        },
+        {
+          "match": "requests per minute or per day, key-management requests per",
+          "context": "ugging): A error can come from two places: 1. **OpenRouter**, when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection). 2. **The upstream provider**, when the provider serving your request is"
+        },
+        {
+          "match": ":FREE",
+          "context": "tr,{children:[_jsxs(_components.td,{children:[`Less than `,FREE_MODEL_CREDITS_THRESHOLD]}),_jsx(_components.td,{children:FREE_MODEL_RATE_LIMIT_RPM}),_jsx(_components.td,{children:FREE_MODEL_NO_CREDITS_RPD})]}),_jsxs(_components.tr,{children:[_js"
+        },
+        {
+          "match": ":FREE",
+          "context": ",FREE_MODEL_CREDITS_THRESHOLD]}),_jsx(_components.td,{children:FREE_MODEL_RATE_LIMIT_RPM}),_jsx(_components.td,{children:FREE_MODEL_NO_CREDITS_RPD})]}),_jsxs(_components.tr,{children:[_jsxs(_components.td,{children:[`At least `,FREE_MODEL_CREDIT"
+        },
+        {
+          "match": ":FREE",
+          "context": ".tr,{children:[_jsxs(_components.td,{children:[`At least `,FREE_MODEL_CREDITS_THRESHOLD]}),_jsx(_components.td,{children:FREE_MODEL_RATE_LIMIT_RPM}),_jsx(_components.td,{children:FREE_MODEL_HAS_CREDITS_RPD})]})]})]}),`\\n`,_jsxs(_components.p,{ch"
+        },
+        {
+          "match": "per day",
+          "context": "nt (with an ID ending in : ), the following limits apply:     Credits purchased (all time) Requests per minute Requests per day Less than At least   The free_model_daily_requests field in the GET /api/v1/key response above reports the daily counte"
+        },
+        {
+          "match": "per day",
+          "context": "PI keys with a management key count toward a daily limit for your account or organization. The limit is 10,000 requests per day by default, and it resets at 00:00 UTC.     POST /api/v1/keys , PATCH /api/v1/keys/{hash} (including disabling a key),"
+        },
+        {
+          "match": "per day",
+          "context": "come from two places:     OpenRouter , when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection).   The upstream provider , when the provider"
+        },
+        {
+          "match": "per day",
+          "context": "ter , when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection).   The upstream provider , when the provider serving your request is rate lim"
+        },
+        {
+          "match": "per day",
+          "context": "s purchased (all time)`}),_jsx(_components.th,{children:`Requests per minute`}),_jsx(_components.th,{children:`Requests per day`})]})}),_jsxs(_components.tbody,{children:[_jsxs(_components.tr,{children:[_jsxs(_components.td,{children:[`Less than `"
+        },
+        {
+          "match": "per day",
+          "context": "children:`management key`}),` count toward a daily limit for your account or organization. The limit is 10,000 requests per day by default, and it resets at 00:00 UTC.`]}),`\\n`,_jsxs(_components.ul,{children:[`\\n`,_jsxs(_components.li,{children:[_"
+        },
+        {
+          "match": "per day",
+          "context": "nts.strong,{children:`OpenRouter`}),`, when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection).`]}),`\\n`,_jsxs(_components.li,{children:[_j"
+        },
+        {
+          "match": "per day",
+          "context": "}),`, when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection).`]}),`\\n`,_jsxs(_components.li,{children:[_jsx(_components.strong,{children:`"
+        },
+        {
+          "match": "per day",
+          "context": "(with an ID ending in `:`), the following limits apply: | Credits purchased (all time) | Requests per minute | Requests per day | | --- | --- | --- | | Less than | | | | At least | | | The `free_model_daily_requests` field in the `GET /api/v1/key`"
+        },
+        {
+          "match": "per day",
+          "context": "iew/auth/management-api-keys) count toward a daily limit for your account or organization. The limit is 10,000 requests per day by default, and it resets at 00:00 UTC. - `POST /api/v1/keys`, `PATCH /api/v1/keys/{hash}` (including disabling a key),"
+        },
+        {
+          "match": "per day",
+          "context": "me from two places: 1. **OpenRouter**, when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection). 2. **The upstream provider**, when the prov"
+        },
+        {
+          "match": "per day",
+          "context": "er**, when you hit one of the platform limits above (free-model requests per minute or per day, key-management requests per day, per-IP burst limits, or DDoS protection). 2. **The upstream provider**, when the provider serving your request is rate"
+        }
+      ]
     },
     {
       "id": "kimi-membership",
@@ -658,10 +874,6 @@
         {
           "match": "¥3,360/年**",
           "context": "| ¥699/月 | ¥6,708/年 | ¥559/月 | | Ultra | ¥1,399/月 | ¥13,428/年 | ¥1,119/月 | 年付价格为一次支付的全年总额，折合每月价格仅用于比较，并非按月扣费。连续包年最高可省 **¥3,360/年**。 ## 如何选择套餐 - **Go**：日常文档、PPT、深度研究和网站部署，不包含 Kimi Code。 - **Plus**：需要 Kimi Code 和 Agent 集群的用户。 - **Pro**：需要目标模式、专属 Kimi C"
-        },
-        {
-          "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
         },
         {
           "match": "会员",
@@ -726,6 +938,10 @@
         {
           "match": "会员",
           "context": "s 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Co"
+        },
+        {
+          "match": "会员",
+          "context": "时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Co"
         }
       ]
     },
@@ -733,8 +949,130 @@
       "id": "gemini-pricing",
       "name": "Gemini API 定价",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "status": "error",
-      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$2.00 through November 30, 2026.   ",
+          "context": "d\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $2.00 through November 30, 2026.   $4.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through N"
+        },
+        {
+          "match": "$4.00 starting December 1, 2026.   ",
+          "context": "ee Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $2.00 through November 30, 2026.   $4.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through November 30, 2026.   $20.00 starting"
+        },
+        {
+          "match": "$10.00 through November 30, 2026.   ",
+          "context": "ber 30, 2026.   $4.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through November 30, 2026.   $20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026."
+        },
+        {
+          "match": "$20.00 starting December 1, 2026.   ",
+          "context": "ber 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $10.00 through November 30, 2026.   $20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026.   $0.20 starting December 1, 2026."
+        },
+        {
+          "match": "$0.10 through November 30, 2026.   ",
+          "context": "0.00 through November 30, 2026.   $20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026.   $0.20 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with G"
+        },
+        {
+          "match": "$0.20 starting December 1, 2026.   ",
+          "context": "20.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.10 through November 30, 2026.   $0.20 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Google Search{% sup %}*{% /sup %}  *"
+        },
+        {
+          "match": "$14 per 1,000 requests (subject t",
+          "context": "% /sup %}  * Not available  * 5,000 free search requests per month (shared across all Gemini 3 and newer models),  then $14 per 1,000 requests (subject to a [daily cap](/docs/pricing#pricing-for-tools) of 1,500 requests per day).   ---   * Grounding with Google Maps  * Not"
+        },
+        {
+          "match": "$14 / 1,000  search queries.   --",
+          "context": "with Google Maps  * Not available  * 5,000 requests per month (free, shared across all Gemini 3 and newer models), then $14 / 1,000  search queries.   ---   * Used to improve our products  * Not available  * [No](/docs/terms)  {% /table %}   {% sup %}*{% /sup %} A customer"
+        },
+        {
+          "match": "$1.00 through November 30, 2026.   ",
+          "context": "h\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $1.00 through November 30, 2026.   $2.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through No"
+        },
+        {
+          "match": "$5.00 through November 30, 2026.   ",
+          "context": "ber 30, 2026.   $2.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through November 30, 2026.   $10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026."
+        },
+        {
+          "match": "$10.00 starting December 1, 2026.   ",
+          "context": "mber 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through November 30, 2026.   $10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026.   $0.10 starting December 1, 2026."
+        },
+        {
+          "match": "$0.05 through November 30, 2026.   ",
+          "context": "5.00 through November 30, 2026.   $10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026.   $0.10 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Used to improve"
+        },
+        {
+          "match": "$0.10 starting December 1, 2026.   ",
+          "context": "10.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.05 through November 30, 2026.   $0.10 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Used to improve our products  * Not available  * [N"
+        },
+        {
+          "match": "$1.00 through November 30, 2026.   ",
+          "context": "x\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $1.00 through November 30, 2026.   $2.00 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $5.00 through No"
+        },
+        {
+          "match": "$3.60 through November 30, 2026.   ",
+          "context": "y\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Not available  * $3.60 through November 30, 2026.   $7.20 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $18.00 through N"
+        },
+        {
+          "match": "$18.00 through November 30, 2026.   ",
+          "context": "ber 30, 2026.   $7.20 starting December 1, 2026.   ---   * Output price (including thinking tokens)  * Not available  * $18.00 through November 30, 2026.   $36.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.18 through November 30, 2026."
+        },
+        {
+          "match": "$0.18 through November 30, 2026.   ",
+          "context": "8.00 through November 30, 2026.   $36.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.18 through November 30, 2026.   $0.36 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with G"
+        },
+        {
+          "match": "$0.36 starting December 1, 2026.   ",
+          "context": "36.00 starting December 1, 2026.   ---   * Context caching price  * Not available  * $0.18 through November 30, 2026.   $0.36 starting December 1, 2026.   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Google Search{% sup %}*{% /sup %}  *"
+        },
+        {
+          "match": "$1.00   ---   * Output price (inclu",
+          "context": "* Feature  * Free Tier  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}   ---   * Input price  * Not available  * $1.00   ---   * Output price (including thinking tokens)  * Not available  * $5.00   ---   * Context caching price  * Not available  * $0.05   Implicit cac"
+        },
+        {
+          "match": "$5.00   ---   * Context caching pri",
+          "context": "---   * Input price  * Not available  * $1.00   ---   * Output price (including thinking tokens)  * Not available  * $5.00   ---   * Context caching price  * Not available  * $0.05   Implicit caching only (explicit caching is not supported).   ---   * Used to improve our"
+        },
+        {
+          "match": "$0.05   Implicit caching only (expl",
+          "context": "Output price (including thinking tokens)  * Not available  * $5.00   ---   * Context caching price  * Not available  * $0.05   Implicit caching only (explicit caching is not supported).   ---   * Used to improve our products  * Not available  * [Yes](/docs/logs-policy#contr"
+        },
+        {
+          "match": "$1.50   ---   * Output price (inclu",
+          "context": "\" %}  {% table %}  * Feature  * Free Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Free of charge  * $1.50   ---   * Output price (including thinking tokens)  * Free of charge  * $7.50   ---   * Context caching price  * Free of charge  * $0.075   Implicit"
+        },
+        {
+          "match": "$7.50   ---   * Context caching pri",
+          "context": "---   * Input price  * Free of charge  * $1.50   ---   * Output price (including thinking tokens)  * Free of charge  * $7.50   ---   * Context caching price  * Free of charge  * $0.075   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Goo"
+        },
+        {
+          "match": "$0.075   Implicit caching only (expl",
+          "context": "utput price (including thinking tokens)  * Free of charge  * $7.50   ---   * Context caching price  * Free of charge  * $0.075   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Google Search{% sup %}*{% /sup %}  * Not available  * 5,000 fre"
+        },
+        {
+          "match": "$3.75   ---   * Context caching pri",
+          "context": "---   * Input price  * Not available  * $0.75   ---   * Output price (including thinking tokens)  * Not available  * $3.75   ---   * Context caching price  * Not available  * $0.0375   Implicit caching only (explicit caching is not supported).   ---   * Used to improve ou"
+        },
+        {
+          "match": "$13.50   ---   * Context caching pri",
+          "context": "---   * Input price  * Free of charge  * $2.70   ---   * Output price (including thinking tokens)  * Free of charge  * $13.50   ---   * Context caching price  * Free of charge  * $0.135   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Goo"
+        },
+        {
+          "match": "$0.135   Implicit caching only (expl",
+          "context": "tput price (including thinking tokens)  * Free of charge  * $13.50   ---   * Context caching price  * Free of charge  * $0.135   Implicit caching only (explicit caching is not supported).   ---   * Grounding with Google Search{% sup %}*{% /sup %}  * Not available  * 5,000 fre"
+        },
+        {
+          "match": "$0.75   ---   * Output price (inclu",
+          "context": "Feature  * Free Tier  * Paid Tier, per 1M tokens in USD{% sup %}*{% /sup %}   ---   * Input price  * Free of charge  * $0.75   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75   ---   * Context caching price  * Free of charge  * $0.0375   Implicit"
+        },
+        {
+          "match": "$3.75   ---   * Context caching pri",
+          "context": "---   * Input price  * Free of charge  * $0.75   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75   ---   * Context caching price  * Free of charge  * $0.0375   Implicit caching only (explicit caching is not supported).   ---   * Used to improve o"
+        },
+        {
+          "match": "$1.50 starting January 1, 2027.   -",
+          "context": "e Tier  * Paid Tier, per 1M tokens in USD   ---   * Input price  * Free of charge  * $0.75 through December 31, 2026.   $1.50 starting January 1, 2027.   ---   * Output price (including thinking tokens)  * Free of charge  * $3.75 through December 31, 2026.   $7.50 starting J"
+        }
+      ]
     },
     {
       "id": "azure-students",
@@ -869,8 +1207,130 @@
       "id": "gemini-rate-limits",
       "name": "Gemini API 限流",
       "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
-      "status": "error",
-      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$10 | | **Tier 2** | $200 | | **T",
+          "context": "account standing.  | Usage tier | Spend rate limit (per 10 minutes) | | :--- | :--- | | **Free** | N/A | | **Tier 1** | $10 | | **Tier 2** | $200 | | **Tier 3** | $200 |  If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this"
+        },
+        {
+          "match": "$200 |  If you hit a spend-based r",
+          "context": "e limit (per 10 minutes) | | :--- | :--- | | **Free** | N/A | | **Tier 1** | $10 | | **Tier 2** | $200 | | **Tier 3** | $200 |  If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this:  * Wait and retry after a short period. *"
+        },
+        {
+          "match": "$250 | | **Tier 2** | Paid $100 + ",
+          "context": "](/docs/verification) | N/A | | **Tier 1** | [Set up and link an active billing account](/docs/billing#setup-billing) | $250 | | **Tier 2** | Paid $100 + 3 days from first successful payment | $2,000 | | **Tier 3** | Paid $1,000 + 30 days from first successful payment | $20"
+        },
+        {
+          "match": "$2,000 | | **Tier 3** | Paid $1,",
+          "context": "illing account](/docs/billing#setup-billing) | $250 | | **Tier 2** | Paid $100 + 3 days from first successful payment | $2,000 | | **Tier 3** | Paid $1,000 + 30 days from first successful payment | $20,000 - $100,000+ |  While meeting the stated qualification criteria is"
+        },
+        {
+          "match": "$20,000 - $100,000+ |  While meet",
+          "context": "+ 3 days from first successful payment | $2,000 | | **Tier 3** | Paid $1,000 + 30 days from first successful payment | $20,000 - $100,000+ |  While meeting the stated qualification criteria is generally sufficient for approval, in rare cases an upgrade request may be deni"
+        },
+        {
+          "match": "$10 | | **Tier 2** | $200 | | **T",
+          "context": "account standing. | Usage tier | Spend rate limit (per 10 minutes) | | :--- | :--- | | **Free** | N/A | | **Tier 1** | $10 | | **Tier 2** | $200 | | **Tier 3** | $200 | If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this:"
+        },
+        {
+          "match": "Requests per minute (**RPM**) * Tokens per minute (input) (",
+          "context": "## How rate limits work {% id=\"how-rate-limits-work\" %}  Rate limits are usually measured across three dimensions:  * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**)  Your usage is evaluated against each limit, and exceeding any of them will trigge"
+        },
+        {
+          "match": "Requests per day (**RPD**)  Your usage is evaluated agai",
+          "context": "are usually measured across three dimensions:  * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**)  Your usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example, if your RPM limit is 20, making"
+        },
+        {
+          "match": "RPM limit is 20, making 21 requests within ",
+          "context": "usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example, if your RPM limit is 20, making 21 requests within a minute will result in an error, even if you haven't exceeded your TPM or other limits.  Rate limits are applied per pr"
+        },
+        {
+          "match": "Requests per day (**RPD**) quotas reset at midnight Paci",
+          "context": "an error, even if you haven't exceeded your TPM or other limits.  Rate limits are applied per project, not per API key. Requests per day (**RPD**) quotas reset at midnight Pacific time.  Limits vary depending on the specific model being used, and some limits only apply to specific models. For ex"
+        },
+        {
+          "match": "requests per day (RPD) per project on the Gemini Develop",
+          "context": "e limits. For example, Grounding with Google Search on Gemini 3 and newer models is subject to a default limit of 1,500 requests per day (RPD) per project on the Gemini Developer API (see [Grounding with Google Search](/docs/google-search#pricing)).  Rate limits are more restricted for experimen"
+        },
+        {
+          "match": "requests per minute (RPM) and tokens per minute (TPM) limit",
+          "context": "stricted for experimental and preview models.  ### Spend-based rate limits {% id=\"spend-rate-limits\" %}  In addition to requests per minute (RPM) and tokens per minute (TPM) limits, the Gemini API enforces spend-based rate limits to protect against unexpected charges. Whether these limits apply to"
+        },
+        {
+          "match": "Requests per minute (RPM)  * Requests per day (RPD)   ---  ",
+          "context": "teractive rate limits apply to [`gemini-omni-1.2-flash`](/docs/models/gemini-omni-flash):  {% table %}  * Usage tier  * Requests per minute (RPM)  * Requests per day (RPD)   ---   * Free  * Not supported  * Not supported   ---   * Tier 1  * 8  * 40   ---   * Tier 2  * 16  * 200   ---   * Tier 3  *"
+        },
+        {
+          "match": "Requests per minute (RPM)  * Tokens per minute (TPM)  * Req",
+          "context": "Decision 1](/docs/models/gemini-decision-1) on the [Decisions API](/docs/decisions-api):  {% table %}  * Usage tier  * Requests per minute (RPM)  * Tokens per minute (TPM)  * Requests per day (RPD)   ---   * Free  * 200  * 50,000  * 10,000   ---   * Tier 1  * 1,500  * 1,000,000  * 50,000   ---   *"
+        },
+        {
+          "match": "RPD)   ---   * Free  * 200  * 50,000  * 10,",
+          "context": "decisions-api):  {% table %}  * Usage tier  * Requests per minute (RPM)  * Tokens per minute (TPM)  * Requests per day (RPD)   ---   * Free  * 200  * 50,000  * 10,000   ---   * Tier 1  * 1,500  * 1,000,000  * 50,000   ---   * Tier 2  * 5,000  * 4,000,000  * Unlimited   ---   * Tier"
+        },
+        {
+          "match": "requests per minute, RPM). For details on those rate limits",
+          "context": "equest a rate limit increase {% id=\"request-rate-limit-increase\" %}  Each model variation has an associated rate limit (requests per minute, RPM). For details on those rate limits, see the [AI Studio Rate Limit](https://aistudio.google.com/rate-limit) page.  {% button href=\"https://forms.gle/ETzX94"
+        },
+        {
+          "match": "Requests per minute (**RPM**) * Tokens per minute (input) (",
+          "context": "%} ## How rate limits work {% id=\"how-rate-limits-work\" %} Rate limits are usually measured across three dimensions: * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**) Your usage is evaluated against each limit, and exceeding any of them will trigger"
+        },
+        {
+          "match": "Requests per day (**RPD**) Your usage is evaluated again",
+          "context": "s are usually measured across three dimensions: * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**) Your usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example, if your RPM limit is 20, making 2"
+        },
+        {
+          "match": "requests per minute (RPM) and tokens per minute (TPM) limit",
+          "context": "restricted for experimental and preview models. ### Spend-based rate limits {% id=\"spend-rate-limits\" %} In addition to requests per minute (RPM) and tokens per minute (TPM) limits, the Gemini API enforces spend-based rate limits to protect against unexpected charges. Whether these limits apply to"
+        },
+        {
+          "match": "Requests per minute (RPM) * Requests per day (RPD) --- * Fr",
+          "context": "interactive rate limits apply to [`gemini-omni-1.2-flash`](/docs/models/gemini-omni-flash): {% table %} * Usage tier * Requests per minute (RPM) * Requests per day (RPD) --- * Free * Not supported * Not supported --- * Tier 1 * 8 * 40 --- * Tier 2 * 16 * 200 --- * Tier 3 * 40 * 2,000 {% /table %}"
+        },
+        {
+          "match": "Requests per minute (RPM) * Tokens per minute (TPM) * Reque",
+          "context": "ini Decision 1](/docs/models/gemini-decision-1) on the [Decisions API](/docs/decisions-api): {% table %} * Usage tier * Requests per minute (RPM) * Tokens per minute (TPM) * Requests per day (RPD) --- * Free * 200 * 50,000 * 10,000 --- * Tier 1 * 1,500 * 1,000,000 * 50,000 --- * Tier 2 * 5,000 * 4,"
+        },
+        {
+          "match": "RPD) --- * Free * 200 * 50,000 * 10,000 ---",
+          "context": "docs/decisions-api): {% table %} * Usage tier * Requests per minute (RPM) * Tokens per minute (TPM) * Requests per day (RPD) --- * Free * 200 * 50,000 * 10,000 --- * Tier 1 * 1,500 * 1,000,000 * 50,000 --- * Tier 2 * 5,000 * 4,000,000 * Unlimited --- * Tier 3 * 15,000 * 10,000,000 *"
+        },
+        {
+          "match": "requests per minute, RPM). For details on those rate limits",
+          "context": "Request a rate limit increase {% id=\"request-rate-limit-increase\" %} Each model variation has an associated rate limit (requests per minute, RPM). For details on those rate limits, see the [AI Studio Rate Limit](https://aistudio.google.com/rate-limit) page. {% button href=\"https://forms.gle/ETzX94k"
+        },
+        {
+          "match": "Free tier",
+          "context": "%}  {% /tabs %}  ## How to upgrade to the next tier {% id=\"how-to-upgrade-to-the-next-tier\" %}  To transition from the Free tier to a paid tier, you must first [set up billing in AI Studio](/docs/billing).  Once your project meets the [specified cr"
+        },
+        {
+          "match": "Free tier",
+          "context": "tab %} {% /tabs %} ## How to upgrade to the next tier {% id=\"how-to-upgrade-to-the-next-tier\" %} To transition from the Free tier to a paid tier, you must first [set up billing in AI Studio](/docs/billing). Once your project meets the [specified cri"
+        },
+        {
+          "match": "RPD",
+          "context": "d across three dimensions:  * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**)  Your usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example,"
+        },
+        {
+          "match": "RPD",
+          "context": "u haven't exceeded your TPM or other limits.  Rate limits are applied per project, not per API key. Requests per day (**RPD**) quotas reset at midnight Pacific time.  Limits vary depending on the specific model being used, and some limits only"
+        },
+        {
+          "match": "RPD",
+          "context": "ple, Grounding with Google Search on Gemini 3 and newer models is subject to a default limit of 1,500 requests per day (RPD) per project on the Gemini Developer API (see [Grounding with Google Search](/docs/google-search#pricing)).  Rate limit"
+        },
+        {
+          "match": "RPD",
+          "context": "2-flash`](/docs/models/gemini-omni-flash):  {% table %}  * Usage tier  * Requests per minute (RPM)  * Requests per day (RPD)   ---   * Free  * Not supported  * Not supported   ---   * Tier 1  * 8  * 40   ---   * Tier 2  * 16  * 200   ---   * T"
+        },
+        {
+          "match": "RPD",
+          "context": "ed across three dimensions: * Requests per minute (**RPM**) * Tokens per minute (input) (**TPM**) * Requests per day (**RPD**) Your usage is evaluated against each limit, and exceeding any of them will trigger a rate limit error. For example,"
+        }
+      ]
     },
     {
       "id": "groq-rate-limits",
@@ -1500,8 +1960,130 @@
       "id": "cohere-rate-limits",
       "name": "Cohere 限流",
       "url": "https://docs.cohere.com/docs/rate-limits",
-      "status": "error",
-      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "1,000",
+          "context": "you intend to use those models in production.   Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contac"
+        },
+        {
+          "match": "1,000",
+          "context": "2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (anything not covered above)"
+        },
+        {
+          "match": "1,000",
+          "context": "if you intend to use those models in production. Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month. ## Chat API (per model) | Model | Trial rate limit | Production rate limit | | --- | --- | --- | | C"
+        },
+        {
+          "match": "1,000",
+          "context": "erence/embed-jobs) | 5 req / min | 50 req / min | | [Rerank](https://docs.cohere.com/reference/rerank) | 10 req / min | 1,000 req / min | | [Tokenize](https://docs.cohere.com/reference/tokenize) | 100 req / min | 2,000 req / min | | [Parse](http"
+        },
+        {
+          "match": "trial",
+          "context": "valuation keys (free but limited in usage), and production keys (paid and much less limited in usage). You can create a trial or production key on the API keys page . For more details on pricing please see our pricing docs .   Prod keys work lik"
+        },
+        {
+          "match": "trial",
+          "context": "r production key on the API keys page . For more details on pricing please see our pricing docs .   Prod keys work like trial keys for newer model variants such as Command A Reasoning. Please contact sales@cohere.com if you intend to use those m"
+        },
+        {
+          "match": "Trial",
+          "context": "ariants such as Command A Reasoning. Please contact sales@cohere.com if you intend to use those models in production.   Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Mode"
+        },
+        {
+          "match": "Trial",
+          "context": "eys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Cont"
+        },
+        {
+          "match": "Trial",
+          "context": "min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@cohere.com Embed 2,000 inputs / min 2,0"
+        },
+        {
+          "match": "trial",
+          "context": "ricing please see our [pricing docs](https://docs.cohere.com/v2/docs/how-does-cohere-pricing-work). Prod keys work like trial keys for newer model variants such as Command A Reasoning. Please contact [sales@cohere.com](mailto:sales@cohere.com) i"
+        },
+        {
+          "match": "Trial",
+          "context": "Reasoning. Please contact [sales@cohere.com](mailto:sales@cohere.com) if you intend to use those models in production. Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month. ## Chat API (per model) | Mod"
+        },
+        {
+          "match": "Trial",
+          "context": "(and prod keys on newer Chat model variants) are limited to 1,000 API calls a month. ## Chat API (per model) | Model | Trial rate limit | Production rate limit | | --- | --- | --- | | Command A+ | 20 req / min | Contact [sales@cohere.com](mailt"
+        },
+        {
+          "match": "Trial",
+          "context": "| 20 req / min | 500 req / min | | North Mini Code | 20 req / min | 500 req / min | ## Other API Endpoints | Endpoint | Trial rate limit | Production rate limit | | --- | --- | --- | | [Audio Transcriptions](https://docs.cohere.com/v2/reference/"
+        },
+        {
+          "match": "req / min",
+          "context": "limited to 1,000 API calls a month.   Chat API (per model)   Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Con"
+        },
+        {
+          "match": "req / min",
+          "context": "Model Trial rate limit Production rate limit Command A+ 20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contac"
+        },
+        {
+          "match": "req / min",
+          "context": "20 req / min Contact sales@cohere.com Command A Reasoning 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Co"
+        },
+        {
+          "match": "req / min",
+          "context": "ing 20 req / min Contact sales@cohere.com Command A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req /"
+        },
+        {
+          "match": "req / min",
+          "context": "d A Translate 20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 r"
+        },
+        {
+          "match": "req / min",
+          "context": "20 req / min Contact sales@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North"
+        },
+        {
+          "match": "req / min",
+          "context": "es@cohere.com Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min"
+        },
+        {
+          "match": "req / min",
+          "context": "Command A Vision 20 req / min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min"
+        },
+        {
+          "match": "req / min",
+          "context": "/ min Contact sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints"
+        },
+        {
+          "match": "req / min",
+          "context": "sales@cohere.com Command A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Tria"
+        },
+        {
+          "match": "req / min",
+          "context": "A 20 req / min 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production r"
+        },
+        {
+          "match": "req / min",
+          "context": "n 500 req / min Command R+ 20 req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audi"
+        },
+        {
+          "match": "req / min",
+          "context": "req / min 500 req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min"
+        },
+        {
+          "match": "req / min",
+          "context": "req / min Command R 20 req / min 500 req / min Command R7B 20 req / min 500 req / min North Mini Code 20 req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@"
+        },
+        {
+          "match": "req / min",
+          "context": "req / min 500 req / min   Other API Endpoints   Endpoint Trial rate limit Production rate limit Audio Transcriptions 5 req / min Contact sales@cohere.com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min Emb"
+        },
+        {
+          "match": "req / min",
+          "context": "sales@cohere.com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / m"
+        },
+        {
+          "match": "req / min",
+          "context": ".com Embed 2,000 inputs / min 2,000 inputs / min Embed (Images) 5 inputs / min 400 inputs / min EmbedJob 5 req / min 50 req / min Rerank 10 req / min 1,000 req / min Tokenize 100 req / min 2,000 req / min Parse 500 req / min 500 req / min Default (a"
+        }
+      ]
     },
     {
       "id": "zcode-changelog",
@@ -1961,11 +2543,59 @@
       "name": "AI for Software Developm",
       "url": "https://aws.amazon.com/q/developer/pricing/",
       "status": "ok",
-      "hits": 18,
+      "hits": 30,
       "findings": [
         {
           "match": "$19/mo. per user                 ",
           "context": "Free Tier: Advanced capabilities at zero cost         Pro Tier: Expanded limits $19/mo. per user                 摘要             每月的代理请求次数有限   可访问最新的 Claude 模型   可在 IDE 或 CLI 中使用             免费套餐中包含的所有内容，以及     提高了代理请求限额   提高了 Java 和"
+        },
+        {
+          "match": "$.003 per line of code submitted. *",
+          "context": "es of code per month | 4,000 lines of code per month per user pooled at account level. Extra lines of code available at $.003 per line of code submitted. * | | | | | | | No | Yes | | | | | | | Yes | Yes | | | Yes | Yes | | | Opt-out available | Automatically opted out | | |"
+        },
+        {
+          "match": "$0.003 per LOC submitted. Amazon Q D",
+          "context": "t 400,000 LOC per month for upgrades before incurring additional charges. Usage that exceeds this allocation is charged $0.003 per LOC submitted. Amazon Q Developer offers a perpetual Free Tier with monthly limits available to users logged in as an AWS Identity and Access Man"
+        },
+        {
+          "match": "$19 Pro plan with approximately 3",
+          "context": "ption usage for Amazon Q Developer is measured as a fraction of the month summed across all users. For example, for the $19 Pro plan with approximately 30 days in a month, one user would appear as 0.0333 of a user on a given day (1/30 of a month). Their daily bill would be"
+        },
+        {
+          "match": "$19 * 0.0333 = $0.63 (totaling $1",
+          "context": "days in a month, one user would appear as 0.0333 of a user on a given day (1/30 of a month). Their daily bill would be $19 * 0.0333 = $0.63 (totaling $19 per month). For an example with 10 users on a daily bill: Daily Users: 10 Daily User Fraction: 10 * 0.0333 = 0.333 Dai"
+        },
+        {
+          "match": "$19 per user-month = $6.33 So for",
+          "context": "an example with 10 users on a daily bill: Daily Users: 10 Daily User Fraction: 10 * 0.0333 = 0.333 Daily Cost: 0.333 * $19 per user-month = $6.33 So for 10 users, the estimated daily bill would show: Daily Users: 0.333 Daily Cost: $6.33 To calculate the monthly cost: Mont"
+        },
+        {
+          "match": "$6.33 To calculate the monthly cost",
+          "context": "0.333 * $19 per user-month = $6.33 So for 10 users, the estimated daily bill would show: Daily Users: 0.333 Daily Cost: $6.33 To calculate the monthly cost: Monthly Users: 0.333 * 30 days = 10 (essentially 10 users for the full month) Monthly Cost: $6.333 * 30 days = $190 (o"
+        },
+        {
+          "match": "$6.333 * 30 days = $190 (or 10 users",
+          "context": "calculate the monthly cost: Monthly Users: 0.333 * 30 days = 10 (essentially 10 users for the full month) Monthly Cost: $6.333 * 30 days = $190 (or 10 users x $19 fee per month) #### What happens if I cancel my Amazon Q Developer Pro subscription mid-month? - If you choose to"
+        },
+        {
+          "match": "$19 fee per month) #### What happ",
+          "context": "rs: 0.333 * 30 days = 10 (essentially 10 users for the full month) Monthly Cost: $6.333 * 30 days = $190 (or 10 users x $19 fee per month) #### What happens if I cancel my Amazon Q Developer Pro subscription mid-month? - If you choose to cancel a user's Amazon Q Developer"
+        },
+        {
+          "match": "$0.003 per LOC submitted for transfo",
+          "context": "ggregated at the AWS payer-account level every month. Usage exceeding the Q Developer Pro Tier allocation is charged at $0.003 per LOC submitted for transformation. Your bill will show the total LOC usage for transformation and any applicable discounts based on your Q Develop"
+        },
+        {
+          "match": "$0.003/LOC, which is $30. Your bill ",
+          "context": "get 40,000 LOC (10 x 4,000) included per month. If your total usage is 50,000 LOC, you'll be charged for 10,000 LOC at $0.003/LOC, which is $30. Your bill will clearly show the 50,000 LOC usage, the Bundled discount of $120 based on your 10 subscriptions (10 users * 4K lines"
+        },
+        {
+          "match": "$120 based on your 10 subscription",
+          "context": "d for 10,000 LOC at $0.003/LOC, which is $30. Your bill will clearly show the 50,000 LOC usage, the Bundled discount of $120 based on your 10 subscriptions (10 users * 4K lines of code * $.003 =$120), and the $30 overage charge. #### How can I manage my usage to avoid overa"
+        },
+        {
+          "match": "$.003 =$120), and the $30 overage c",
+          "context": "y show the 50,000 LOC usage, the Bundled discount of $120 based on your 10 subscriptions (10 users * 4K lines of code * $.003 =$120), and the $30 overage charge. #### How can I manage my usage to avoid overage charges for Amazon Q Developer agents for transformation? - Curre"
         },
         {
           "match": "免费",
@@ -2050,41 +2680,8 @@
       "name": "大模型服务平台百炼控制台",
       "url": "https://bailian.console.aliyun.com/",
       "status": "ok",
-      "hits": 8,
-      "findings": [
-        {
-          "match": "免费额度 查看和领取模型免费额度",
-          "context": "vg) Token Plan 购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用 ## 模型. 覆盖文本"
-        },
-        {
-          "match": "¥29.5/ 月（仅限新客首购）¥49 轻量创作性价比之选，适合在Ha",
-          "context": "，为智能体持续扩展能力边界。 RAG RAG 连接企业知识与检索增强能力，让智能体回答有据可依、结果可追溯。 Memory Memory 沉淀长期与短期记忆，为智能体提供连贯、个性化的上下文体验。 ## 订阅. 灵活选择 模型工具轻体验包 ¥29.5/ 月（仅限新客首购）¥49 轻量创作性价比之选，适合在Hackathon、创作比赛中使用。 20,000Credits / 月 百炼自研工具节省计划 配套免费 Skills 任务指引 支持在兼容的 Agent 中接入使用 个人版 Essential 套餐 ¥39.5/ 月（仅限新客首购）¥120"
-        },
-        {
-          "match": "¥39.5/ 月（仅限新客首购）¥120 进阶实战，适用于已完成入门验",
-          "context": "购）¥49 轻量创作性价比之选，适合在Hackathon、创作比赛中使用。 20,000Credits / 月 百炼自研工具节省计划 配套免费 Skills 任务指引 支持在兼容的 Agent 中接入使用 个人版 Essential 套餐 ¥39.5/ 月（仅限新客首购）¥120 进阶实战，适用于已完成入门验证、需稳定承接日常单智能体任务的开发者与创作者 45,000Credits / 月 文本、视觉等多模态模型 联网搜索等 Harness 工具 可同时支持 2-3 个 Agent 并发运行 个人版 Standard 套餐 ¥139/ 月¥18"
-        },
-        {
-          "match": "¥139/ 月¥180 效率升级，适用日常高频调用、需要多智能体并行",
-          "context": "，适用于已完成入门验证、需稳定承接日常单智能体任务的开发者与创作者 45,000Credits / 月 文本、视觉等多模态模型 联网搜索等 Harness 工具 可同时支持 2-3 个 Agent 并发运行 个人版 Standard 套餐 ¥139/ 月¥180 效率升级，适用日常高频调用、需要多智能体并行协作的开发者与业务用户 80,000Credits / 月 享受Essential套餐所有权益 4x Lite 套餐用量 可同时支持 3-4 个 Agent 并发运行 ## 更多客户选择百炼 来自开发者、初创企业及大型企业的真实客户故事——"
-        },
-        {
-          "match": "免费",
-          "context": "an 购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用 ## 模型. 覆盖"
-        },
-        {
-          "match": "免费",
-          "context": "提供连贯、个性化的上下文体验。 ## 订阅. 灵活选择 模型工具轻体验包 ¥29.5/ 月（仅限新客首购）¥49 轻量创作性价比之选，适合在Hackathon、创作比赛中使用。 20,000Credits / 月 百炼自研工具节省计划 配套免费 Skills 任务指引 支持在兼容的 Agent 中接入使用 个人版 Essential 套餐 ¥39.5/ 月（仅限新客首购）¥120 进阶实战，适用于已完成入门验证、需稳定承接日常单智能体任务的开发者与创作者 45,000Credit"
-        },
-        {
-          "match": "额度",
-          "context": ") Token Plan 购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用"
-        },
-        {
-          "match": "额度",
-          "context": "购买和管理服务 ![](https://img.alicdn.com/imgextra/i3/O1CN01oME4Nd1zKpECjJ9ZK_!!6000000006696-55-tps-54-54.svg) 免费额度 查看和领取模型免费额度 ![](https://img.alicdn.com/imgextra/i3/O1CN01gVS3jB1bycrtTj0eD_!!6000000003534-55-tps-54-54.svg) 应用 开发及管理应用 ## 模型. 覆盖文本"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "bazaarlink-docsapi",
@@ -2323,9 +2920,8 @@
       "id": "cloud-accountak",
       "name": "硅基流动统一登录",
       "url": "https://cloud.siliconflow.cn/account/ak",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
     },
     {
       "id": "cloud-producthunyuan",
@@ -2417,30 +3013,8 @@
       "id": "codeium-docs",
       "name": "Discord",
       "url": "https://codeium.com/docs",
-      "status": "ok",
-      "hits": 5,
-      "findings": [
-        {
-          "match": "free",
-          "context": "lugin Get started using Windsurf Plugin in your preferred JetBrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analysis, and more. Changelog Check out our change"
-        },
-        {
-          "match": "Pricing",
-          "context": "Products Enterprise Pricing Blog Resources Company Download This page does not exist Sorry, we couldn&#x27;t find the page you&#x27;re looking for."
-        },
-        {
-          "match": "Pricing",
-          "context": "- the most powerful AI IDE. Install Windsurf Plugin Get started using Windsurf Plugin in your preferred JetBrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analys"
-        },
-        {
-          "match": "pricing",
-          "context": "I IDE. Install Windsurf Plugin Get started using Windsurf Plugin in your preferred JetBrains IDE. Pricing Check out our pricing. Individuals are free! Blog Check out our blog for the latest product updates, competitive analysis, and more. Changelo"
-        },
-        {
-          "match": "Pricing",
-          "context": "tiktok Twitter twitter Discord discord Discord LinkedIn linkedin Reddit reddit YouTube youtube Product Windsurf Editor Pricing Windsurf for Enterprise Capabilities Cascade Tab JetBrains Plugin Company About Us Blog Careers Support Contact Partner"
-        }
-      ]
+      "status": "error",
+      "error": "URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
     },
     {
       "id": "console-main",
@@ -2612,7 +3186,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "例如：企业微信智能机器人、QQ、飞书、钉钉等）、自动决策与任务执行能力、预设的技能（Skills）能力。它能控制您的终端执行操作，而不是只出主意。 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -2620,11 +3194,11 @@
         },
         {
           "match": "免费",
-          "context": "s）能力。它能控制您的终端执行操作，而不是只出主意。 [进入专区](https://developer.cloud.tencent.com/zone/adp) ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
+          "context": "快讯文章归档 关键词归档 开发者手册归档 开发者手册 Section 归档 领券  文章/答案/技术大牛 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
         },
         {
           "match": "free",
-          "context": "速 2024-07-04 693 2分20秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
+          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
@@ -3356,9 +3930,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -4565,15 +5138,15 @@
         },
         {
           "match": "免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token",
-          "context": "放 进入专区 腾讯混元（Hunyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 9 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新"
+          "context": "放 进入专区 腾讯混元（Hunyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 9 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公"
+          "context": "云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan"
         },
         {
           "match": "免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token",
-          "context": "n。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 9 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公测期完全免费：手机号注册即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova"
+          "context": "。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公测期完全免费：手机号注册即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4604,8 +5177,8 @@
           "context": "度 见官方说明 核实 2026-11-07 6 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
         },
         {
-          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 49 天 额度",
-          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 49 天 额度 1000000000 Token 核实 2026-11-12 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条 完整"
+          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 48 天 额度",
+          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 48 天 额度 1000000000 Token 核实 2026-11-12 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条 完整"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4617,11 +5190,11 @@
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "100 积分/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 18 天"
+          "context": "100 积分/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 17 天"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 18 天 额度 100000000 Tokens/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 17 天 额度 100000000 Tokens/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
         },
         {
           "match": "免费额度",
@@ -4641,7 +5214,7 @@
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-13 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-14 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "免费福利与资源 汇聚全球 AI 大厂，收录可领的免费额度",
@@ -7006,12 +7579,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 65 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0021 charged · 47 live instances P",
+          "context": "-H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"google/gemma-4-31B-turbo-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0021 charged · 47 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
+          "context": "ed · 47 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -8691,11 +9264,103 @@
       "name": "Pricing — Electron Hub",
       "url": "https://www.electronhub.ai/pricing",
       "status": "ok",
-      "hits": 3,
+      "hits": 26,
       "findings": [
         {
           "match": "$10 a month, DevPass for coding a",
           "context": "b                                                                     Pay how you build. Plans with weekly credits from $10 a month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs"
+        },
+        {
+          "match": "$0.25 of weekly credits and no card",
+          "context": "anent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in **2d 04h 05m** **Core** covers it for $3"
+        },
+        {
+          "match": "$31 a month, billed yearly. You k",
+          "context": "rd. Upgrade when they run short, and change or cancel any time. Credits refill in **2d 04h 05m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 1"
+        },
+        {
+          "match": "$59**. ## Starter For your first ",
+          "context": "ange or cancel any time. Credits refill in **2d 04h 05m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 10 requests a minute ## Core For profess"
+        },
+        {
+          "match": "$15 a month, **Business** $103 a ",
+          "context": "Everything in Core - Audit logs and standard guardrails - 50 proxy keys, 30 requests a minute Also available: **Plus** $15 a month, **Business** $103 a month, **Enterprise** $199 a month, with more credits, SSO and higher rate limits. Compare all plans ## Compare plans |"
+        },
+        {
+          "match": "$199 a month, with more credits, S",
+          "context": "s - 50 proxy keys, 30 requests a minute Also available: **Plus** $15 a month, **Business** $103 a month, **Enterprise** $199 a month, with more credits, SSO and higher rate limits. Compare all plans ## Compare plans | Feature | Free | Starter | Plus | Core | Pro | Business"
+        },
+        {
+          "match": "$0** | **$8**$96 a year | **$15*",
+          "context": "re | Pro | Business | Enterprise | Custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Price a month | **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](ma"
+        },
+        {
+          "match": "$182 a year | **$31**$374 a year |",
+          "context": "| Custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Price a month | **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Cr"
+        },
+        {
+          "match": "$55**$662 a year | **$103**$1,238",
+          "context": "--- | --- | --- | --- | --- | | Price a month | **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly cre"
+        },
+        {
+          "match": "$199**$2,390 a year | [Talk to us]",
+          "context": "| **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $"
+        },
+        {
+          "match": "$0.25 | $8 | $15 | $30 | $50 | $100",
+          "context": "| **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free |"
+        },
+        {
+          "match": "$200 | Custom | | Free models, 200",
+          "context": "](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 |"
+        },
+        {
+          "match": "$0.13 | $4 | $7.50 | $15 | $25 | $5",
+          "context": "ls, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not included | Included | Included | Included | Included | Included | Included"
+        },
+        {
+          "match": "$100 | Custom | | Permanent credit",
+          "context": "ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not included | Included | Included | Included | Included | Included | Included | Included | | Limits | | | | | | | |"
+        },
+        {
+          "match": "free",
+          "context": "dits, permanent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in"
+        },
+        {
+          "match": "Free",
+          "context": "nterprise** $199 a month, with more credits, SSO and higher rate limits. Compare all plans ## Compare plans | Feature | Free | Starter | Plus | Core | Pro | Business | Enterprise | Custom | | --- | --- | --- | --- | --- | --- | --- | --- | ---"
+        },
+        {
+          "match": "Free",
+          "context": "lectronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet c"
+        },
+        {
+          "match": "free",
+          "context": "| | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50"
+        },
+        {
+          "match": "free",
+          "context": "y credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | C"
+        },
+        {
+          "match": "free",
+          "context": "| $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | |"
+        },
+        {
+          "match": "free",
+          "context": "$8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent"
+        },
+        {
+          "match": "free",
+          "context": "$30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits |"
+        },
+        {
+          "match": "free",
+          "context": "| $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not includ"
+        },
+        {
+          "match": "free",
+          "context": "$200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not included | Inclu"
         },
         {
           "match": "Pricing",
@@ -8703,7 +9368,7 @@
         },
         {
           "match": "Pricing",
-          "context": "month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs"
+          "context": "month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs                               # Pay how you build. Steady weekly credits, permanent top-ups, or a flat rate for co"
         }
       ]
     },

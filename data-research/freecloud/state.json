@@ -31,8 +31,8 @@
       "n_hits": 103
     },
     "aws-free": {
-      "fp": "bfb991b6afa44b815d31a4c518b3df74686b900766e2185e76ae9789cbeb4806",
-      "ts": "2026-11-06T15:21:28Z",
+      "fp": "f852065469f37f56874ece188312fe06b922b106497357ffcca715b7696cc14b",
+      "ts": "2026-11-13T17:03:36Z",
       "n_hits": 30
     },
     "azure-free": {
@@ -66,8 +66,8 @@
       "n_hits": 11
     },
     "cloudflare-workers": {
-      "fp": "bc419c7861d628de8fdf39bb46212071b4d6d737a1822389bb9a44562fd6a8d9",
-      "ts": "2026-11-06T15:21:28Z",
+      "fp": "98a4211ea444353195a88a0176a60062a6a44fadf1d52eb2224204fd8db59c00",
+      "ts": "2026-11-13T17:03:36Z",
       "n_hits": 79
     },
     "hf-spaces": {
@@ -261,13 +261,13 @@
       "n_hits": 256
     },
     "aliyun-bailian-freequota": {
-      "fp": "10e764d81d1cb085cbc9f836e87db05e5d62afd618e2a7a346bc9a5a467f62c0",
-      "ts": "2026-11-07T17:27:12Z",
+      "fp": "bcd0f34faaf2acd1f5a78bf15771a894238798a0452f1fda4d8589164b26a721",
+      "ts": "2026-11-13T17:03:36Z",
       "n_hits": 228
     },
     "ctyun-trial": {
-      "fp": "b4700274cb8de3aa3ce3a4728c93b380e8dac609312ad765b7bf2bf69a7c7b0e",
-      "ts": "2026-11-07T17:27:12Z",
+      "fp": "218b9af6a9a3aeb89118875053b0396e4ed8e14abcdefc48621b35c4e4586e62",
+      "ts": "2026-11-13T17:03:36Z",
       "n_hits": 45
     },
     "atlascloud": {
@@ -293,43 +293,28 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "64b233d49e1292c06e0e9d57bf5910d7391e4805417d30ebe9a57e05e855494b",
-      "ts": "2026-11-13T15:18:26Z",
+      "fp": "bacc0253231683cb6c2b54724a9d2231728ef8fdc294df7da8750f4e970cb4b6",
+      "ts": "2026-11-13T17:03:36Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "36743bd3a3d9dfb50da82ca7b6351afafab9b54dac2dd2a13f6ebd29d098167d",
-      "ts": "2026-11-13T15:18:26Z",
+      "fp": "2cfbb66375d646c2fd2204750762582bc1b168a273ed3b3484eb29b890d8f7a8",
+      "ts": "2026-11-13T17:03:36Z",
       "count": 1
     },
     "atlascloud": {
-      "fp": "9f40ddfdccea1ebd4a63318a41a884b25fd9f54904a8a5b6afda5c06038d8c17",
-      "ts": "2026-11-13T15:18:26Z",
+      "fp": "5f51c6be9ec3e7dcd7620fdce3d93b59f463ad62a862c5c5f86e16012429151f",
+      "ts": "2026-11-13T17:03:36Z",
       "count": 1
     },
-    "aws-free": {
-      "fp": "f852065469f37f56874ece188312fe06b922b106497357ffcca715b7696cc14b",
-      "ts": "2026-11-13T15:18:26Z",
+    "northflank-pricing": {
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-13T17:03:36Z",
       "count": 1
     },
-    "railway-pricing": {
-      "fp": "8530ff5002d5f895b937c4c61cb6262af2a5b91e65b2b72dd5d32608807df7c2",
-      "ts": "2026-11-13T15:18:26Z",
-      "count": 1
-    },
-    "cloudflare-workers": {
-      "fp": "98a4211ea444353195a88a0176a60062a6a44fadf1d52eb2224204fd8db59c00",
-      "ts": "2026-11-13T15:18:26Z",
-      "count": 1
-    },
-    "aliyun-bailian-freequota": {
-      "fp": "bcd0f34faaf2acd1f5a78bf15771a894238798a0452f1fda4d8589164b26a721",
-      "ts": "2026-11-13T15:18:26Z",
-      "count": 1
-    },
-    "ctyun-trial": {
-      "fp": "218b9af6a9a3aeb89118875053b0396e4ed8e14abcdefc48621b35c4e4586e62",
-      "ts": "2026-11-13T15:18:26Z",
+    "render-pricing": {
+      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
+      "ts": "2026-11-13T17:03:36Z",
       "count": 1
     }
   }
