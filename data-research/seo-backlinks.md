@@ -31,7 +31,10 @@
   - ✅ ai-coding-welfare **Issue #63**（1316⭐，2026-11-14）：https://github.com/panxunying/ai-coding-welfare/issues/63 ——该仓 README 明文「Issue 区就是免费推广位」，走官方钦定通道；[收录申请] 标题格式对齐其惯例
   - ✅ linktre-tools **PR #49**（616⭐，2026-11-14）：https://github.com/PennyJoly/linktre-tools/pull/49 ——「国内热门AI产品」表新增一行（对齐 momoai/aitoolsradar 同类行式）
   - ✅ AI-Catalog **PR #205**（505⭐，2026-11-14）：https://github.com/mehmetkahya0/AI-Catalog/pull/205 ——Developer Tools 节英文条目（Contributing.md 格式：🆓 徽标+≤100 字符描述）
-  - 跳过记录：liuda30201/AI-Coding（608⭐）=全自动化仓（每 3h workflow 重生成 README，PR 必被覆盖）；YD4223/aihub=App 项目非清单；QAInsights/awesome-ai-tools=34⭐ 拉伸匹配，宁缺毋滥
+  - ✅ awesome-ai-coding **PR #171**（47⭐，2026-11-14）：https://github.com/dalisoft/awesome-ai-coding/pull/171 ——「Subscription plan trackers」表加行（TokenMost 就是 plan tracker，精准落点）
+  - ✅ ai-megalist **PR #81**（88⭐，2026-11-14）：https://github.com/IrtezaAsadRizvi/ai-megalist/pull/81 ——新建 tools/tokenmost.md 实测风 writeup + Model APIs 表加行（其 Contributing 明文要求 one writeup per tool）
+  - ✅ wool-gathering **Issue #1**（19⭐，2026-11-14）：https://github.com/jiuyuan233/wool-gathering/issues/1 ——其 README 由 Actions 每日重写，故走 Issue 申请进「社区整理的免费资源」表（AI/LLM 节加 tokenmost+free-ai-tokens 两行）
+  - 跳过记录：liuda30201/AI-Coding（608⭐）=全自动化仓（每 3h workflow 重生成 README，PR 必被覆盖）；YD4223/aihub=App 项目非清单；QAInsights/awesome-ai-tools=34⭐ 拉伸匹配，宁缺毋滥；agentdeals=MCP 插件仓非清单
 - ✅ **B12. tokenmost 仓库自身可发现性**（新增完成）：description+homepage+14 个 topics（ai-tools/free-tokens/llm/price-comparison 等）已设——GitHub topic 搜索与生成引擎引用面扩大
 - ✅ **B3. 知乎相关问题回答**：已完成——问题「有哪些网站，一旦知道，你就离不开了？」（关注者 14.2 万/被浏览 8562 万，3,546 答）
   - 回答 URL：https://www.zhihu.com/question/398193048/answer/2104731980583678667
@@ -54,10 +57,20 @@
 - **4 篇发射就绪**（`data-research/seo/zhihu-answers/`，全条带核实日期+tokenmost 自然植入+避坑节+互动结尾）：
   - a1 学生党（11-15 发，最肥问题打头）→ a2 哪个平台最多（11-16）→ a3 token不够用（11-17）→ a4 免费薅大模型（11-18）
 - **频率铁律：知乎 2 条/天**（账号 AI-Tokenmost 为新号，B3+B5 已占 11-14 配额；批量灌水=判广告封号风险）
+- **备稿延长线（2026-11-14 深夜二轮）**：a5 API 送额度（11-19）→ a6 中科大每日 1 亿热点题（11-20）→ a7 免费 AI 工具 8 个（11-21）——**跑道 7 篇排到 11-21**；B7 CSDN 分发稿成稿（`data-research/seo/b7-csdn-draft.md`，按场景重构非复制，待登录发布）
 
 ### P2 低优（长尾）
 
-- ⬜ **B9. RSS 提交**：RSS 聚合器（Feedly/Inoreader 可发现性 + 中文 RSS 站）
+- ⬜ **B9. RSS 提交**：✅ 探测结案（2026-11-14）——feedx.net 仅登录通道、Feedly/Inoreader 靠自动发现无需提交、无值得做的匿名聚合器；RSS 增值=IndexNow（已做）+ 数据仓 README 挂 rss 链（已做），**结案不再投入**
+
+## ⚠️ GEO 重大发现：全网零收录（2026-11-14 侦察）
+
+- **site:tokenmost.com → Google 0 条 / Bing 0 条**；site:kjai123.github.io → 0 条；GitHub 仓页也未入索引——**整个 KJAI123 集群对搜索引擎完全不可见**
+- 已排除技术原因：Googlebot/Bingbot UA 直测全 200、robots.txt Allow all + sitemap、sitemap.xml 124 URL 正常——纯粹是**新域（10-27 上线）无外链 → 无抓取路径**
+- IndexNow 两次提交（98+120 URL，均 202 受理）只进队列不保证抓取
+- **修复优先级 #1 = GSC 验证**（URL Inspection→Request Indexing 是最快的合法强制收录通道）——⚠️实测老板 Chrome 的 Google 会话**未登录**（此前「谷歌已登陆」仅当时有效）：需老板登一次 Google，验证方式建议 HTML 文件（我 scp 到服务器根目录即成）
+- 结构性修复=外链线本身：PR 合并后 GitHub 被收录仓上的链接即成抓取路径，与矩阵推进互为因果
+- 百度：站长平台验证同为老板动作池（低优）
 - ⬜ **B10. 公众号文章底部挂 tokenmost.com**：若老板运营公众号，每篇文末带链接
 - ⬜ **B11. 问答平台长尾**：百度知道/爱发电等低质但量大的长尾问答（谨慎，优先级最低）
 
