@@ -1077,3 +1077,25 @@ Gemini 4 Hydrogen 现已登陆 Cursor，默认 effort 下 CursorBench 得分 54.
 - 🆕 [AI_News_CN] Gemini 4 Hydrogen 发布：公布定价与基准，LiteLLM 已支持 
 
 Google DeepMind 的 Gemini 4 Hydrogen 定价为每百万输入 token 1.50 美元、每百万输出 token 7.50 美元，提供 100 万上下文窗口，速度比 3.8 Flash 
+
+## 2026-11-13 02:26 UTC
+- 🆕 [v2ex_notice] 【推广】gemini-4-carbon 补开一天免费
+- 🆕 [linuxdo_tg] 主 题： 小红书 300块 包3000万token 
+发 布 者： mumaya 
+标签分类： 纯水 
+时 间：2026-11-13 10:18:37
+内容预览： 佬友们这人跟我买过哈基米成品号，我想着说这么聪明的一个人，能把账算成这种地步，为啥就算不出300包3000不是很贵吗？就感觉我俩各讲各的
+- 🆕 [AI_News_CN] Google 在搜索、Gemini 应用和 Chrome 中推出 Gemini 4 Hydrogen 
+
+Google 发布 Gemini 4 Hydrogen，这是继 Argon 和 Carbon 之后 Gemini 4 系列的第三个模型，在全球桌面端、移动端和网页端上线，免费用户可通过自动模型选
+- 🆕 [AI_News_CN] 谷歌发布Gemini 4 Hydrogen模型 
+
+当地时间周四，美国谷歌公司发布Gemini 4 Hydrogen模型。与Gemini 3.8 Flash模型相比，新模型在默认高推理档位下完成任务的速度达到2.5倍，Terminal-Bench 4.1测试得分从18.2%升至57%，虚构陈述显著减
+- 🆕 [AI_News_CN] Google推出Gemini4Hydrogen，全球Search迎来最大模型升级 
+
+Google宣布推出Gemini4Hydrogen，并将其引入全球Google Search，重点提升搜索引擎处理多部分、复杂细节及拼写错误问题的能力。Google称，这是迄今为止Search最大规模的一次模型升级
+- 🆕 [AI_News_CN] Meta开放Muse AI电话代办功能，面向所有付费用户推出 
+
+Meta宣布，旗下消费级AI助手Muse的电话代办功能现已向所有付费订阅用户开放。该功能允许Muse代表用户拨打美国企业电话，此前于今年9月启动小范围测试，仅向部分申请获得权限的早期用户开放。
+
+Meta希望通过电话代办能力，将AI助
