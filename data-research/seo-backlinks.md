@@ -25,10 +25,13 @@
   > 执行方式=OCR-CDP-RPA 三合一（tools/rpa_browser.py）：OCR 验登录态→真实输入管线回帖→截图多模态复核。**待 v2ex 登录**。
 
 - ⬜ **B1. v2ex 帖 1247809 回帖/跟帖**：该帖已提 token.pencilai.top（竞品），以真实用户身份补充「还有 tokenmost.com，更新勤」类对比体验（注意 v2ex 规则：新号发链接易被判定广告，需老号或先参与讨论）——**2026-11-14 实测：浏览器 v2ex 未登录（头部=注册/登录，此前 logged 判断为误报）待老板登录后执行；经验：CF 盾在后台标签卡死，需 /json/activate 激活到前台才放行**
-- 🔄 **B2. GitHub awesome 清单 PR**（2/3 已提交）：
-  - ✅ FreeLLM-API-KeyHub **PR #13 已建**：https://github.com/guihuashaoxiang/FreeLLM-API-KeyHub/pull/13（推荐工具节加 TokenMost 行）——待维护者审核
-  - ✅ awesome-coding-plan **PR #44 已建**：https://github.com/mahonzhan/awesome-coding-plan/pull/44（新增「额度追踪与折扣情报」小节）——待维护者审核
-  - ⬜ awesome-free-llm-apis（mnfst）：收录标准=永久免费层 API 提供商，聚合站可能不符——低优尝试
+- 🔄 **B2. GitHub awesome 清单 PR/Issue 矩阵**（5 发在途）：
+  - ✅ FreeLLM-API-KeyHub **PR #13**：https://github.com/guihuashaoxiang/FreeLLM-API-KeyHub/pull/13 ——待审（11-14 复查 open 无留言）
+  - ✅ awesome-coding-plan **PR #44**：https://github.com/mahonzhan/awesome-coding-plan/pull/44 ——待审（11-14 复查 open 无留言）
+  - ✅ ai-coding-welfare **Issue #63**（1316⭐，2026-11-14）：https://github.com/panxunying/ai-coding-welfare/issues/63 ——该仓 README 明文「Issue 区就是免费推广位」，走官方钦定通道；[收录申请] 标题格式对齐其惯例
+  - ✅ linktre-tools **PR #49**（616⭐，2026-11-14）：https://github.com/PennyJoly/linktre-tools/pull/49 ——「国内热门AI产品」表新增一行（对齐 momoai/aitoolsradar 同类行式）
+  - ✅ AI-Catalog **PR #205**（505⭐，2026-11-14）：https://github.com/mehmetkahya0/AI-Catalog/pull/205 ——Developer Tools 节英文条目（Contributing.md 格式：🆓 徽标+≤100 字符描述）
+  - 跳过记录：liuda30201/AI-Coding（608⭐）=全自动化仓（每 3h workflow 重生成 README，PR 必被覆盖）；YD4223/aihub=App 项目非清单；QAInsights/awesome-ai-tools=34⭐ 拉伸匹配，宁缺毋滥
 - ✅ **B12. tokenmost 仓库自身可发现性**（新增完成）：description+homepage+14 个 topics（ai-tools/free-tokens/llm/price-comparison 等）已设——GitHub topic 搜索与生成引擎引用面扩大
 - ✅ **B3. 知乎相关问题回答**：已完成——问题「有哪些网站，一旦知道，你就离不开了？」（关注者 14.2 万/被浏览 8562 万，3,546 答）
   - 回答 URL：https://www.zhihu.com/question/398193048/answer/2104731980583678667
@@ -36,7 +39,7 @@
   - 无加粗排版（Draft.js 编辑器拒绝非真人格式操作，内容完整性优先）；后续可点赞自热 + 观察曝光
   - **2026-11-14 凌晨追加导流（已执行）**：回答末尾已追加「完整版整理成了专栏文章（28 条全带核实日期）：https://zhuanlan.zhihu.com/p/2104748941581538042」并「提交修改」成功（编辑器 747→819 字符精确闸门；页面双关键字验证含导流句与专栏链接）
 - **2026-11-14 二次改稿（老板指导：先学高赞结构再写）**：拆解问题页三大高赞（891/14.8万/718 赞）共性=钩子开头+纯编号清单+网站名带域名+一句话说人话+口语温度+互动结尾；旧稿「白嫖派三分法」像行业报告已替换为「8 个编号条目」版（智谱干货打头建信任，TokenMost 第 2 条以「追不过来所以我用什么」自然出场，杜绝新号广告感）
-- ⬜ **B4. 竞品反向**：token.pencilai.top / aiyangmao.xyz 若有友链页或「相关站点」区，申请互链（同生态非直接竞对关系可谈）
+- 🔄 **B4. 竞品反向**：token.pencilai.top **站长邮箱已定位**（me@pencilai.top，首页联系入口 2026-11-14 探查）——邮件稿成稿 `data-research/seo/b4-pencilai-friendlink-email.md`，**待老板确认发送**（对外邮件=外向动作，须点头）；aiyangmao.xyz 无明面联系通道低优
 
 ### P1 中优（需新建内容载体）
 
@@ -44,6 +47,13 @@
 - ✅ **B6. GitHub 自建仓库**：`awesome-free-ai-tokens-cn` 已上线（2026-11-14）——https://github.com/KJAI123/awesome-free-ai-tokens-cn ；MIT+9 topics+homepage 挂 tokenmost.com；README=四大分区 40+ 条目全官方入口链接+截至日期+避坑节+TokenMost 数据源双链；free-ai-tokens 数据仓已回加互链（commit 0b91e361）
 - ⬜ **B7. CSDN/腾讯云社区发文**：同 B5 内容改写分发（一稿多投，每平台独立改写避免重复内容惩罚）——等 B5 发布后开工
 - 🔄 **B8. 导航站收录申请**：**物料包已备**（data-research/seo/nav-directory-kit.md：标准提交字段+7 目标站通道+白帽纪律+回执表）——提交动作需账号/浏览器登录态（toolify/ai-bot.cn/aibase 等均非匿名表单，ai-bot.cn 本机网络层不可达）；待老板浏览器会话逐条快填——**2026-11-14 实测：toolify.ai 未登录（Login 按钮在场）**
+
+### P1 补充：知乎答案矩阵（2026-11-14 立项，上一会话末老板令「高效大范围推广」的落地载体）
+
+- 🔄 **B13. 知乎答案矩阵**：候选问题池 **29 个**已锚定（`data-research/seo/zhihu-question-pool.json`，真实浏览器搜索抓取）；流量 Top：**学生党无力支付token费用怎么办（1805 关注/160.6 万浏览）** ≫ token不够用怎么办（102/2 万）> 哪个平台的免费token最多啊（52/3 万）> 大家都在用哪家的API（75/4.2K）
+- **4 篇发射就绪**（`data-research/seo/zhihu-answers/`，全条带核实日期+tokenmost 自然植入+避坑节+互动结尾）：
+  - a1 学生党（11-15 发，最肥问题打头）→ a2 哪个平台最多（11-16）→ a3 token不够用（11-17）→ a4 免费薅大模型（11-18）
+- **频率铁律：知乎 2 条/天**（账号 AI-Tokenmost 为新号，B3+B5 已占 11-14 配额；批量灌水=判广告封号风险）
 
 ### P2 低优（长尾）
 
@@ -68,3 +78,5 @@
 - 2026-11-14 凌晨（老板令「OCR-CDP-RPA 模式结合搞，注意植入 tokenmost」）：**三合一工具包落地**——tools/rpa_browser.py（Tab.connect/activate/wait_cf/click/type_text/截图）+ tools/rpa_ocr.js（macOS Vision 零安装 OCR，含坐标定位）；已在 B5 专栏页实测：OCR 命中 tokenmost 4 处（含末段植入）+ 多模态读图确认发布渲染完美（标题/作者 AI-Tokenmost/正文超链接全对）。**Vision CJK 边界**：本机中文识别模型未下载→中文行发花，拉丁关键词（tokenmost/Login/URL/CF 复选框）定位=准；中文内容验证走多模态读图。植入铁律+三合一纪律已写入角色定义。JXA 踩坑沉淀：initWithURL:options:→initWithURLOptions；NSArray 用 .count 非 .length；截图 retina 2x 须按 PNG 头尺寸除 DPR。
 - 2026-11-14 凌晨（老板开浏览器会话）：**B5 发布成功 + B3 导流追加成功**。流程：CDP 9222 接老板真实 Chrome → 新标签 zhuanlan.zhihu.com/write → 恢复弹窗处理 → 标题+43 行正文逐行 Input.insertText+Enter 拆段 → 闸门（titleLen 29/29、bodyLen 2503±15%、无星号）→ 发布按钮直发（无话题弹窗）→ 三重验证。**坑沉淀**：①「修改」按钮文本含零宽字符 \u200b，匹配前必须归一化 ②`.Editable` 选择器误中「创作助手」面板文案——真编辑器用 `[contenteditable=true]`+内容锚点定位 ③后台标签 CF 盾卡死→先 /json/activate 到前台 ④编辑器点击失败主因=末块在视口外，scrollIntoView 与测量须同轮完成 ⑤按钮用 JS click 即可，仅正文输入需要真实管线。
 - 2026-11-14 深夜（接管轮，主会话直做）：①PR #13/#44 复查=均 open 待审无留言（建仓次日属正常审核期）②**B6 落地**：自建仓 awesome-free-ai-tokens-cn 上线（40+ 条目四大分区全官方链接、MIT、9 topics、homepage 挂主站、数据仓互链闭环）③B12 扩展：free-ai-tokens 数据仓补 homepage+9 topics（此前两个都没有）④**B5 专栏草稿成稿**（28 条目+避坑+互动结尾，全带日期；待老板账号发布）⑤B8 物料包备妥（7 目标站通道表+提交字段+回执制；提交需登录态）⑥G3/G4 转实践固化。**待老板动作池：知乎账号发 B5 专栏、导航站提交（物料已备）、v2ex 老号回帖 B1、竞品友链洽谈 B4**。
+
+- 2026-11-14 深夜二轮（大范围分发轮，承接 sess_bf0ebf77 断点「高效大范围推广」）：①**GitHub 矩阵三连发**——ai-coding-welfare Issue #63（1316⭐，官方钦定 Issue 通道）+ linktre-tools PR #49（616⭐，国内热门AI产品表）+ AI-Catalog PR #205（505⭐，英文 Developer Tools 节）；候选筛 8 提 3（自动化仓/App 项目/拉伸匹配全跳过，宁缺毋滥）②**自有阵地**：KJAI123 profile README 上线（TokenMost 项目索引+数据 feed 清单）+ GitHub bio 植入 tokenmost.com ③IndexNow 重提 120 URL（平台页 11-13 重生成后首次重提，200）④**知乎答案矩阵立项**：真实浏览器扫 5 组查询锚定 **29 个候选问题池**（含流量数据），4 篇发射就绪稿+错峰日历 11-15~18，频率铁律 2 条/天 ⑤B4 友链通道定位=pencilai 站长邮箱，邮件稿成稿待老板点头 ⑥B7 CSDN=安全验证墙+未登录→老板动作池。**工程坑：Tab.ev 返回值本身非 dict（isinstance 判断错误会静默吞结果）；知乎搜索页需等 6s+scroll 触发懒加载；stats 正则要对齐「关注者 数字」格式。**
