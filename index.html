@@ -957,7 +957,7 @@ function tokCell(d,ov){
 }
 /* 排序：DS Flash等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
-let sortKey='fresh';
+let sortKey='tokens';
 /* 🪙 加倍领取：用折扣码/邀请链接在平台基础赠送之上额外加成的条目（v2.18，老板令「通过折扣加倍领取」） */
 function isDouble(d){return (d.coupon&&!d.placeholder)||d.type==='coupon'||d.type==='invite_bonus'||d.via==='invite'}
 const DOUBLE_NOTE='<div class="double-note">🪙 <b>加倍领取</b>：以下平台的福利可经<b>折扣码 / 邀请链接</b>加成领取——点「领取 / 券领」复制码，注册或订阅时填入（或直接经邀请链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠 / 折扣 / 翻倍）。链接即码的条目点领取就自动带上邀请关系，无需手动填。</div>';

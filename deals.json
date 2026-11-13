@@ -1773,7 +1773,7 @@
   "published": false,
   "tokens_wan": 50000,
   "via": "client",
-  "notes": "已失效（存档用于预测下一轮节奏：智谱大礼包≈每月1-2轮，下一节点1111）。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + smzdm post.smzdm.com/p/ak8lw7xk + 官方活动页存在（JS）。20万份为搜索摘要数字（中）；数额/截止时间多源一致（高）",
+  "notes": "已失效（存档用于预测下一轮节奏：智谱大礼包≈每月1-2轮，下一节点1111）。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + smzdm post.smzdm.com/p/ak8lw7xk + 官方活动页存在（JS）。20万份为搜索摘要数字（中）；数额/截止时间多源一致（高）｜2026-11-13 第二轮 5 亿已至（见 zcode-5yi-nov），节奏预测命中",
   "group": "ZCode",
   "api_via": "api"
  },
@@ -5675,5 +5675,25 @@
   "daily_note": "名义 6 万 credits/天 ≈ 600 万 tokens（1 credit≈100 token 推算，标题口径）；beta 期翻倍 12 万 credits ≈ 1200 万/天；每天 UTC 0 点重置",
   "group": "clixad",
   "notes": "⚠️ 2026-11-12 收录：AIWave 实测文（14 轮任务跑通、钱包 25,200 未扣、免费池 120,000→92,462 截图）——官方站待 TK 直核（unverified）| 适合小活：git commit message/CSV 清洗/读代码/一次性脚本/报错定位；低成本快速模型多步推理弱，不适合通宵大批量任务 |credits 用尽也可问卷/任务墙赚取"
+ },
+ {
+  "id": "zcode-5yi-nov",
+  "provider": "智谱 BigModel",
+  "category": "agent",
+  "type": "limited_promo",
+  "value": "ZCode 新一轮大礼包（11-13 起）：每人 **5 亿 tokens**（GLM-5.3 + GLM-5.3-Flash 额度）——客户端活动卡领取",
+  "region": "cn",
+  "url": "https://bigmodel.cn/activity/glm-coding-1024",
+  "rule": "入口=ZCode 客户端左下角活动卡；参照 1024 轮节奏额度使用窗口约 3 天（本轮以客户端活动卡倒计时为准，过期作废）；先到先得",
+  "deadline": "以客户端活动卡倒计时为准",
+  "verify_status": "verified",
+  "verified_at": "2026-11-13T11:49:41Z",
+  "difficulty": 1,
+  "published": true,
+  "tokens_wan": 50000,
+  "via": "client",
+  "api_via": "client_only",
+  "group": "ZCode",
+  "notes": "⭐ 2026-11-13 站主客户端直击（一手情报）——1024 节（10-24，20 万份）后的第二轮 5 亿，验证「智谱大礼包≈每月 1-2 轮」节奏预测 | 领取后立即用（1024 轮窗口仅 3 天）| 与 deep-zhipu-weekend-3yi（周末计划）、night-global（夜间场）互不冲突可叠加"
  }
 ]
