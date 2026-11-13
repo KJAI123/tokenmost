@@ -1,9 +1,9 @@
 # freecloud 采集快照 2026-11-13
 
-- 采集时间: 2026-11-13T02:27:05Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: deno-deploy, kiro-pricing | 👀观察中: instabox-pricing, vercel-pricing, render-pricing, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-13T15:18:26Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: instabox-pricing, vercel-pricing, render-pricing | 👀观察中: aws-free, railway-pricing, cloudflare-workers, himitsushell, aliyun-bailian-freequota, ctyun-trial, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: 无
 
-## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
+## 🔔 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
 - 🔎 **1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (** `output fail with a broken pipe. Exec output is UTF-8 text: without streaming each stream is cut at 1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (`invalidUtf8`), so read files with `GET /v1/machines/{id}/files/content` or `instabox pull`/`cp`, no`
 - 🔎 **4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` an** `cker microVM, Debian 13 (trixie) amd64 (`ci`: Ubuntu 24.04; `omarchy`: Arch Linux), kernel 6.18.60, 4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` and `orca`, 24 GiB on `omarchy`) and a 20 GiB persistent disk at `/data` (home is `/data/home`). Pytho`
@@ -165,7 +165,7 @@
 - 🔎 **credit will be fully utilized, and your card will be charged only ** `account. If you spend $3 in that timeframe, your card will not be charged. If you spend $10, the $5 credit will be fully utilized, and your card will be charged only $5. Since the credit is valid for 90 days, you won't be able to use any remaining credit after the 9`
 - 🔎 **credit is valid for 90 days, you won't be able to use any remainin** `u spend $10, the $5 credit will be fully utilized, and your card will be charged only $5. Since the credit is valid for 90 days, you won't be able to use any remaining credit after the 90-day period expires. We charge you for the underlying compute on which the 1-C`
 
-## 👀 Vercel 定价（Hobby 免费档）（vercel-pricing）
+## 🔔 Vercel 定价（Hobby 免费档）（vercel-pricing）
 - 状态: ok | https://vercel.com/pricing
 - 🔎 **1 GB / month included** `per 1M Custom 1K included per project $50 / month per 25K redirects Custom Blob Storage Size 1 GB / month included $0.023 per GB Custom Blob Simple Operations 10K / month included $0.40 per 1M Custom Blob Ad`
 - 🔎 **10 GB / month included** `r 1M Custom Blob Advanced Operations 2K / month included $5 per 1M Custom Blob Data Transfer 10 GB / month included Included in Flat Rate CDN Custom Image Optimization Transformation 5K / month included Startin`
@@ -191,7 +191,7 @@
 - 🔎 **credits for production deploys, compute, form submissions, bandwidt** `| --- | --- | | Features | | | | | | Usage credits | Usage credits | | | | | Includes usage credits for production deploys, compute, form submissions, bandwidth, and web requests. | 300 credit limit | 1,000 credits included | Starting with 3,000 credits per m`
 - 🔎 **credit limit | 1,000 credits included | Starting with 3,000 credit** `usage credits for production deploys, compute, form submissions, bandwidth, and web requests. | 300 credit limit | 1,000 credits included | Starting with 3,000 credits per month, choose a Pro tier up to 20,000 credits per month. | Custom | | Additional credits are a`
 
-## 🔔 Deno Deploy（免费层）（deno-deploy）
+##    Deno Deploy（免费层）（deno-deploy）
 - 状态: ok | https://deno.com/deploy
 - 🔎 **free tier, and gracefully scale up or down as needed, automatically** `t times than lambda functions or virtual machines. #### Elastic scalability Start with a generous free tier, and gracefully scale up or down as needed, automatically. #### Runs on Deno Deno Deploy runs on Deno under the hood, so you get better speed and security,`
 - 🔎 **free** `t times than lambda functions or virtual machines. #### Elastic scalability Start with a generous free tier, and gracefully scale up or down as needed, automatically. #### Runs on Deno Deno Deploy run`
@@ -340,10 +340,10 @@
 - 🔎 **8 vCPU Enterprise Plus instance, 64 GB of memory, and 100 GB of st** `SQL Free Trial Instance Start a 30-day [Cloud SQL](https://cloud.google.com/sql) free trial with an 8 vCPU Enterprise Plus instance, 64 GB of memory, and 100 GB of storage. Plus, new Google Cloud customers get [$300 in free credits](https://docs.cloud.google.com/sql`
 - 🔎 **10 GB of storage at no cost** `ner Free Trial Create a 90-day [Spanner](https://cloud.google.com/spanner) free trial instance with 10 GB of storage at no cost. Plus, new Google Cloud customers get [$300 in free credits](https://console.cloud.google.com/freet`
 
-##    AWS Free Tier（aws-free）
+## 👀 AWS Free Tier（aws-free）
 - 状态: ok | https://aws.amazon.com/free/
 - 🔎 **Always free** `te the service, and any eligible credits automatically apply to usage beyond the trial limits. ### Always free ![Illustration of a document, gear, and cloud with code symbols, representing cloud-based coding o`
-- 🔎 **always free within monthly usage limits on both the Free and ** `vices-gear-document-icon-560x258.3d9731b98f2f92c30d61d8bf5b6f4af42ec9d06e.png) 30+ AWS services are always free within monthly usage limits on both the Free and Paid plans. If you go beyond these limits or access paid features, credits are automatically applied`
+- 🔎 **always free within monthly usage limits on both the Free and ** `vices-gear-document-icon-560x258.bdc52734b1317300377c7e723b674137b1170d30.png) 30+ AWS services are always free within monthly usage limits on both the Free and Paid plans. If you go beyond these limits or access paid features, credits are automatically applied`
 - 🔎 **Free Tier Categories** `- [Overview](https://aws.amazon.com/free/?p=ft&z=subnav&loc=2) - Free Tier Categories - Featured Offers for Business - [Terms and Conditions](https://aws.amazon.com/free/terms/?p=ft&z=s`
 - 🔎 **Free Tier** `ness - [Terms and Conditions](https://aws.amazon.com/free/terms/?p=ft&z=subnav&loc=6) - More # AWS Free Tier Get started for free with up to $200 in credits [Create a free account](https://signin.aws.amazon`
 - 🔎 **Free Tier account, you get $100 in credits immediately** `mazon.com/console/home/) ## Get up to $200 in credits for new customers When you create a new AWS Free Tier account, you get $100 in credits immediately. As you explore key services, you can earn up to $100 more. That's up to $200 over 6 months to buil`
@@ -378,7 +378,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-## 👀 Render 定价（免费 Web 服务）（render-pricing）
+## 🔔 Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -404,7 +404,7 @@
 - 🔎 **32GB** `ice per RTX-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM`
 - 🔎 **160GB** `-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM 64GB Disk`
 
-##    Railway 定价（试用金观察）（railway-pricing）
+## 👀 Railway 定价（试用金观察）（railway-pricing）
 - 状态: ok | https://railway.com/pricing
 - 🔎 **1 vCPU / 0** `small apps on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### H`
 - 🔎 **5 GB RAM per service** `on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### Hobby $5minimum usage`
@@ -430,7 +430,7 @@
 - 🔎 **free** `ice anytime, from any machine via LinkedIn. These courses will be unlocked on LinkedIn Learning for free through Feb. 2023. Learn more about LinkedIn Learning and GitHub Codespaces here. #### How do I en`
 - 🔎 **free** `### How do I enable Codespaces on GitHub? Codespaces is on by default for developers with a GitHub free account. If you belong to an organization, there may be a policy that prevents cloning—but if you c`
 
-##    Cloudflare Workers 定价（免费 10 万请求/天）（cloudflare-workers）
+## 👀 Cloudflare Workers 定价（免费 10 万请求/天）（cloudflare-workers）
 - 状态: ok | https://developers.cloudflare.com/workers/platform/pricing/
 - 🔎 **1 GB | 1 GB, + $0** `$5.00/million | | List requests | 1,000 / day | 1 million/month, + $5.00/million | | Stored data | 1 GB | 1 GB, + $0.50/ GB-month | | Namespaces | 1,000 | Unlimited, with a default limit of 1,000. First 1,000 include`
 - 🔎 **1 GB-month | 1 GB-month included + $0** `lliseconds included per month + $0.02 per additional million CPU milliseconds | | Storage (GB-mo) | 1 GB-month | 1 GB-month included + $0.20/ GB-month | | Steps | 3,000 per day | 500,000 included per month + $0.80/ additional 100,000 per`
@@ -546,9 +546,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794536816352) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794536816352) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794536816352) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794583090640) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794583090640) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794583090640) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -589,7 +589,7 @@
 - 🔎 **24 GB DDR5 | 8 vCPU | 12 TB · **40 Gbps** | 450 GB **NVMe** | $69** `/mo $99.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=16&os=ubuntu)14-day money-back | | 24 GB DDR5 | 8 vCPU | 12 TB · **40 Gbps** | 450 GB **NVMe** | $69.98 /mo $139.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=24&os=ubuntu)14-day money-back`
 - 🔎 **32 GB DDR5 | 12 vCPU | 12 TB · **40 Gbps** | 750 GB **NVMe** | $1** `/mo $139.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=24&os=ubuntu)14-day money-back | | 32 GB DDR5 | 12 vCPU | 12 TB · **40 Gbps** | 750 GB **NVMe** | $109.98 /mo $219.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=32&os=ubuntu)14-day money-bac`
 
-##    阿里云百炼新人免费额度（官方帮助中心规则页）（aliyun-bailian-freequota）
+## 👀 阿里云百炼新人免费额度（官方帮助中心规则页）（aliyun-bailian-freequota）
 - 状态: ok | https://help.aliyun.com/zh/model-studio/new-free-quota
 - 🔎 **免费额度** `当您首次开通阿里云百炼时，平台会自动为您发放各模型的新人专属免费额度。 ## 规则说明 ### 有效期 免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）。额度到期或耗尽后，继续调用模型推理服务将[产生计费](htt`
 - 🔎 **免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）** `当您首次开通阿里云百炼时，平台会自动为您发放各模型的新人专属免费额度。 ## 规则说明 ### 有效期 免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）。额度到期或耗尽后，继续调用模型推理服务将[产生计费](https://help.aliyun.com/zh/model-studio/billing-for-model-studio)。 **重要`
@@ -602,16 +602,16 @@
 - 🔎 **免费额度为100万Token** `再次领取新人免费额度。 ### 适用范围 免费额度仅抵扣模型**实时推理**（调用）产生的费用。 ### 注意事项 阿里云主账号与其RAM子账号共享免费额度。 > 例如：qwen-max的总免费额度为100万Token。主账号消耗了10万Token，RAM子账号消耗了20万Token，qwen-max的剩余免费额度为70万Token。 不同模型（含同一模型的不同快照版本）的免费额度相互独立，不互通、不共享。 -`
 - 🔎 **免费额度为70万Token** `项 阿里云主账号与其RAM子账号共享免费额度。 > 例如：qwen-max的总免费额度为100万Token。主账号消耗了10万Token，RAM子账号消耗了20万Token，qwen-max的剩余免费额度为70万Token。 不同模型（含同一模型的不同快照版本）的免费额度相互独立，不互通、不共享。 - 每个模型均有独立的免费额度（通常为 100 万 Token），不能跨模型合并或转移使用。 - 带日期后缀的快照版本`
 
-##    天翼云免费试用中心（运营商层）（ctyun-trial）
+## 👀 天翼云免费试用中心（运营商层）（ctyun-trial）
 - 状态: ok | https://www.ctyun.cn/act/trial/central
 - 🔎 **50GB** `dbc0fba11be7458eb037db363af8aa76.svg) 个人认证 云硬盘 高性能、高可靠、弹性扩展的块存储服务，适用于企业上云、云上虚拟化和数据库等场景 规格 通用型SSD 50GB 免费试用1个月 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/b2847`
 - 🔎 **100GB** `b2847d2c8ccc4f2bb7056a2ed14b792d.svg) 企业认证 云硬盘 高性能、高可靠、弹性扩展的块存储服务，适用于企业上云、云上虚拟化和数据库等场景 规格 通用型SSD 100GB 免费试用1个月 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/dbc0f`
 - 🔎 **200GB** `vity_media/dbc0fba11be7458eb037db363af8aa76.svg) 个人认证 云硬盘 具有更高的数据可靠性、更高的I/O吞吐能力和更加简单易用等特点 规格 高IO 200GB 免费试用1个月 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/b2847`
 - 🔎 **500GB** `vity_media/b2847d2c8ccc4f2bb7056a2ed14b792d.svg) 企业认证 云硬盘 具有更高的数据可靠性、更高的I/O吞吐能力和更加简单易用等特点 规格 高IO 500GB 免费试用1个月 试用教程 试用教程 立即试用 立即试用 学习与使用 ![](https://ctyun-portal-test.gdoss.xstore.ctyun.cn/activity`
 - 🔎 **免费试用中心** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认`
-- 🔎 **免费试用， 快来开启云上之旅** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认证个人认证 产品类别 计算存储网络人工智能安全及管理容器与中间件 ![](https:`
-- 🔎 **免费试用** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认证个人认证 产品类别 计算存储网络人工智能安全及管理容器与中间件 ![](https://ctyu`
-- 🔎 **免费试用，数量有限，领完为止** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认证个人认证 产品类别 计算存储网络人工智能安全及管理容器与中间件 ![](https://ctyun-portal.gdoss.xstore`
+- 🔎 **免费试用， 快来开启云上之旅** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认证个人认证 产品类别 计算存储网络人工智能安全及管理容器与中间件数据库 ![](htt`
+- 🔎 **免费试用** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认证个人认证 产品类别 计算存储网络人工智能安全及管理容器与中间件数据库 ![](https://c`
+- 🔎 **免费试用，数量有限，领完为止** `免费试用中心 注册并完成实名认证，最高可得2000元试用体验金，多款云产品免费试用， 快来开启云上之旅 免费试用 精选云产品免费试用，数量有限，领完为止 筛选条件 清除筛选条件 用户认证类型 企业认证个人认证 产品类别 计算存储网络人工智能安全及管理容器与中间件数据库 ![](https://ctyun-portal.gdoss.xst`
 - 🔎 **免费试用7天** `14b792d.svg) 企业认证 经济型e实例 实例共享宿主机CPU，性价比更高，适用于对成本比较敏感、对性能抖动容忍度较高的场景 规格 4核8G 系统盘 60G 带宽 3Mbps 免费试用7天 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/b2847d2c8ccc4f`
 - 🔎 **免费试用7天** `) 企业认证 FS1飞腾通用型云主机-1C1G 搭载飞腾处理器，实例间无CPU争抢，适用于对安全、可控、合规有严格要求的核心业务场景 规格 1核1G 系统盘 40G 带宽 1Mbps 免费试用7天 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/b2847d2c8ccc4f`
 
@@ -630,18 +630,18 @@
 
 ## 👀 GPU.nz（新西兰 GPU 云定价）（gpunz）
 - 状态: ok | https://gpu.nz/en/pricing
-- 🔎 **8 GB+ | $0** `ute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 12 GBGPU with 8 GB+ | $0.0017 | $0.05 | $0.099 | $2.38 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.`
-- 🔎 **24 GB+ | $0** `-- | | RTX 3060 12 GBGPU with 8 GB+ | $0.0017 | $0.05 | $0.099 | $2.38 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41`
-- 🔎 **48 GB+ | $0** `.38 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.217 | $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41`
-- 🔎 **80 GB+ | $0** `| $5.21 | | GB10 128 GBGPU with 48 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | | GB10 128 GBGPU with 80 GB+ | $0.0086 | $0.259 | $0.517 | $12.41 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $20.98/h | 6 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $14.08/h | $20.37/h | 1`
-- 🔎 **180gb) | 180 GB | $14** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $20.98/h | 6 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $14.08/h | $20.37/h | 10 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.04/h | $7.66/h`
-- 🔎 **141gb) | 141 GB | $5** `nz/en/gpu/b200-180gb) | 180 GB | $14.08/h | $20.37/h | 10 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $5.04/h | $7.66/h | 17 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.38/h | $8.80`
-- 🔎 **141gb) | 141 GB | $8** `/en/gpu/h200-141gb) | 141 GB | $5.04/h | $7.66/h | 17 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $8.38/h | $8.80/h | 15 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $5.35/h`
-- 🔎 **80gb) | 80 GB | $4** `gpu/h200-nvl-141gb) | 141 GB | $8.38/h | $8.80/h | 15 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $5.35/h | 15 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $6.07/h`
-- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $4.41/h | $5.35/h | 15 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $6.07/h | 8 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $6.93/h | $6.93/`
+- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.031 | $0.061 | $1.46 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.11 | $0.219 | $5.2`
+- 🔎 **24 GB+ | $0** `| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.031 | $0.061 | $1.46 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.11 | $0.219 | $5.26 | | GB10 128 GBGPU with 48 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 |`
+- 🔎 **48 GB+ | $0** `1.46 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.11 | $0.219 | $5.26 | | GB10 128 GBGPU with 48 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 | | GB10 128 GBGPU with 80 GB+ | $0.0087 | $0.262 | $0.523 | $12.55`
+- 🔎 **80 GB+ | $0** `| $5.26 | | GB10 128 GBGPU with 48 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 | | GB10 128 GBGPU with 80 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 | Prices and availability come from the live catalog and update au`
+- 🔎 **288gb) | 288 GB | $23** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $23.74/h | $26.53/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $17.69/h | $22.75/h | 2`
+- 🔎 **180gb) | 180 GB | $17** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $23.74/h | $26.53/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $17.69/h | $22.75/h | 22 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.02/h | $9.07/h`
+- 🔎 **141gb) | 141 GB | $4** `nz/en/gpu/b200-180gb) | 180 GB | $17.69/h | $22.75/h | 22 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.02/h | $9.07/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.31/h | $8.52`
+- 🔎 **141gb) | 141 GB | $7** `/en/gpu/h200-141gb) | 141 GB | $4.02/h | $9.07/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.31/h | $8.52/h | 20 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.63/h | $5.39/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $7.31/h | $8.52/h | 20 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.63/h | $5.39/h | 27 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $3.41/h | $5.78/h`
+- 🔎 **94gb) | 94 GB | $3** `n/gpu/h100-sxm-80gb) | 80 GB | $3.63/h | $5.39/h | 27 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $3.41/h | $5.78/h | 9 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $6.54/h | $6.54/`
 
-## 🔔 Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
+##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
 - 🔎 **Free trial: when you first upgrade to Pro, you’ll get the rest of the ** `# Pricing Free trial: when you first upgrade to Pro, you’ll get the rest of the month free, plus 500 trial credits to use within 12 months. ## KIRO FREE $0 per month - 50 credi`
 - 🔎 **free trial work?** `### How does Kiro pricing work? ### Which models does Kiro use under the hood? ### How does the free trial work? ### What can I use credits for? ### How can I track my credit usage? ### How do Kiro workflows a`

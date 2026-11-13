@@ -1099,3 +1099,54 @@ Google宣布推出Gemini4Hydrogen，并将其引入全球Google Search，重点�
 Meta宣布，旗下消费级AI助手Muse的电话代办功能现已向所有付费订阅用户开放。该功能允许Muse代表用户拨打美国企业电话，此前于今年9月启动小范围测试，仅向部分申请获得权限的早期用户开放。
 
 Meta希望通过电话代办能力，将AI助
+
+## 2026-11-13 15:17 UTC
+- 🆕 [v2ex_notice] 【OpenAI】ChatGPT plus 打着免费一个月的旗号也太狗了吧
+- 🆕 [linuxdoit] 【哔哩公益站】这波亏大了，再发500Mtoken 
+
+公益发帖模板 （点击了解更多详细信息） 
+
+公益站主贴：
+ 【哔哩公益站】(试运行) deepseek-4.1-flash狂欢 福利羊毛 
+ play_button 公益发帖模板 半年前刚入站时就是吃的早期大佬的公益token长大，如今有了资源想
+- 🆕 [linuxdo_tg] 主 题： Antigravity免费用户将获得Gemini 4 hydrogen使用权限 
+发 布 者： Unreal_Tale 
+标签分类： 
+时 间：2026-11-13 22:56:37
+内容预览： Google Antigravity Docs Choose a model | Google
+- 🆕 [linuxdo_tg] 主 题： Gemini 白嫖24个月被收回后 重新尝试订阅被扣钱然后被退款收回Pro 
+发 布 者： Ntacou 
+标签分类： 人工智能 Google Google-Gemini 
+时 间：2026-11-13 22:59:41
+内容预览： 昨天Google狂杀24月的Gemini会员，提示试用期
+- 🆕 [linuxdo_tg] 主 题： 【富可敌国】星驰公益每天放福利啦 送1000刀 送1000刀 无任何充值 
+发 布 者： gogogoggo 
+标签分类： 人工智能 ChatGPT OpenAI Codex 高级推广 中转站 福利羊毛 
+时 间：2026-11-13 23:00:06
+内容预览： 星驰公益各位佬友每天14
+- 🆕 [linuxdo_tg] 主 题： claude 5h 额度怎么还会变的 
+发 布 者： lanfunoe 
+标签分类： 纯水 人工智能 
+时 间：2026-11-13 23:01:35
+内容预览： 每天都只用了一个5h额度，有时15刀有时30刀 
+直达链接： https://linux.do/t/topic/3173249
+- 🆕 [linuxdo_tg] 主 题： 【富可敌国】嘀嘀嘀 AI 免费周卡可再领一次 
+发 布 者： mndlr 
+标签分类： 人工智能 ChatGPT 高级推广 福利羊毛 
+时 间：2026-11-13 23:08:49
+内容预览： 此前免费周卡上线后，使用需求增长，高峰时段服务器等资源承受了更大压力。11 月 13 日出现的
+- 🆕 [linuxdo_tg] 主 题： 【6.2Astra正式版测评】OpenAI又跳票？那就我来提前替OpenAI发布6.2Astra这个模型 
+发 布 者： ferret 
+标签分类： 人工智能 ChatGPT OpenAI 
+时 间：2026-11-13 23:09:07
+内容预览： 前排提醒：本人独家渠道，非市面泄露的A
+- 🆕 [AI_News_CN] B.AI 升级模型折扣矩阵：GLM-5.3-Flash 降至 6 折，Hy4 限时 5 折 
+
+ B.AI 公布托管模型折扣矩阵更新：GLM-5.3-Flash 折扣由 7 折降至 6 折，Hy4 限时 5 折，DeepSeek-V4.1-Flash 6 折，Qwen3.8-Flash 8 折，并介
+- 🆕 [AI_News_CN] 微软服务大面积故障时发帖征集AI建议 网友高赞回复：先确保产品别再宕机 
+
+Microsoft Learn于11月12日在社交平台X发文询问“AI初学者应该尽早养成什么习惯”，但发帖时微软的Exchange Online已经出现故障，Outlook、Teams、SharePoint、Copilot等
+- 🆕 [AI_News_CN] DeepSeek 通过 API 开放 App 全部能力，含 OCR、ASR 与 TTS 
+
+DeepSeek 将消费端 App 背后的能力通过 API 开放，涵盖搜索、文件、链接、安全与语音，并提供独立的 OCR、ASR、TTS 接口及开源前端演示。扩展能力在 token 费用之外另收工具使用费。
+

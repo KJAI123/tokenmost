@@ -1,8 +1,8 @@
 {
   "baseline": {
     "instabox-pricing": {
-      "fp": "1c6025d9205b198d834189a8d86a5c80acfc45ce37ad8f0551f2e598c765c43f",
-      "ts": "2026-11-11T21:28:14Z",
+      "fp": "87bac648e555bd84f1df2f3f9c40f1fd530b0059ee6343b2c0d29963ac0be917",
+      "ts": "2026-11-13T15:18:26Z",
       "n_hits": 60
     },
     "e2b-pricing": {
@@ -46,9 +46,9 @@
       "n_hits": 23
     },
     "render-pricing": {
-      "fp": "d1cc01526418206f5b65b564ed34e34989360881faea26ce64b458e6c7d201c8",
-      "ts": "2026-11-12T02:34:08Z",
-      "n_hits": 169
+      "fp": "e614e422419fb737a1aee12276937611e95cbb7b3a73c85e507f8e988cab2374",
+      "ts": "2026-11-13T15:18:26Z",
+      "n_hits": 168
     },
     "koyeb-pricing": {
       "fp": "f6ba76da66d8a97fb80f227bdf3e095bdefd043dfde4a10445dcf556de08aa89",
@@ -151,9 +151,9 @@
       "n_hits": 24
     },
     "vercel-pricing": {
-      "fp": "018d5e9bc2051a5b9dc5321747280038765f9617b991f3c219d9b30ff1e6f48c",
-      "ts": "2026-11-06T15:52:20Z",
-      "n_hits": 76
+      "fp": "0905a6ae9ba840cc63b7e857a3a71b1e84cfd66675971ae584e5204fc0d9a208",
+      "ts": "2026-11-13T15:18:26Z",
+      "n_hits": 77
     },
     "netlify-pricing": {
       "fp": "4e37e85500e7c4841648d20a1923023e8abd1948421845c820445610e00e7be6",
@@ -293,33 +293,43 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "5c3a278cb8d5cf9a7265a190f72d33a8255d57956c2e906df3813880386b97bc",
-      "ts": "2026-11-13T02:27:05Z",
+      "fp": "64b233d49e1292c06e0e9d57bf5910d7391e4805417d30ebe9a57e05e855494b",
+      "ts": "2026-11-13T15:18:26Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "195bcb4fd012dbec58ef79c4bda671df957fc0c0a74052e07e259d48724f13de",
-      "ts": "2026-11-13T02:27:05Z",
+      "fp": "36743bd3a3d9dfb50da82ca7b6351afafab9b54dac2dd2a13f6ebd29d098167d",
+      "ts": "2026-11-13T15:18:26Z",
       "count": 1
     },
     "atlascloud": {
-      "fp": "a9eab2ad1626bfccf073e34d77df07dc1566e6ce5a412520b601519779c5253c",
-      "ts": "2026-11-13T02:27:05Z",
+      "fp": "9f40ddfdccea1ebd4a63318a41a884b25fd9f54904a8a5b6afda5c06038d8c17",
+      "ts": "2026-11-13T15:18:26Z",
       "count": 1
     },
-    "render-pricing": {
-      "fp": "e614e422419fb737a1aee12276937611e95cbb7b3a73c85e507f8e988cab2374",
-      "ts": "2026-11-13T02:27:05Z",
+    "aws-free": {
+      "fp": "f852065469f37f56874ece188312fe06b922b106497357ffcca715b7696cc14b",
+      "ts": "2026-11-13T15:18:26Z",
       "count": 1
     },
-    "instabox-pricing": {
-      "fp": "87bac648e555bd84f1df2f3f9c40f1fd530b0059ee6343b2c0d29963ac0be917",
-      "ts": "2026-11-13T02:27:05Z",
+    "railway-pricing": {
+      "fp": "8530ff5002d5f895b937c4c61cb6262af2a5b91e65b2b72dd5d32608807df7c2",
+      "ts": "2026-11-13T15:18:26Z",
       "count": 1
     },
-    "vercel-pricing": {
-      "fp": "0905a6ae9ba840cc63b7e857a3a71b1e84cfd66675971ae584e5204fc0d9a208",
-      "ts": "2026-11-13T02:27:05Z",
+    "cloudflare-workers": {
+      "fp": "98a4211ea444353195a88a0176a60062a6a44fadf1d52eb2224204fd8db59c00",
+      "ts": "2026-11-13T15:18:26Z",
+      "count": 1
+    },
+    "aliyun-bailian-freequota": {
+      "fp": "bcd0f34faaf2acd1f5a78bf15771a894238798a0452f1fda4d8589164b26a721",
+      "ts": "2026-11-13T15:18:26Z",
+      "count": 1
+    },
+    "ctyun-trial": {
+      "fp": "218b9af6a9a3aeb89118875053b0396e4ed8e14abcdefc48621b35c4e4586e62",
+      "ts": "2026-11-13T15:18:26Z",
       "count": 1
     }
   }
