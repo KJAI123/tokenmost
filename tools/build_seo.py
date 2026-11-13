@@ -96,6 +96,29 @@ def esc_quote(s):
     return html.escape(str(s or ""), quote=True)
 
 
+COLL_TPL = """<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="https://tokenmost.com/{slug}.html">
+<meta property="og:title" content="{title} — tokenmost">
+<meta property="og:description" content="{desc}">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{ld_item}</script>
+<script type="application/ld+json">{ld_faq}</script>
+<style>body{{font-family:-apple-system,"PingFang SC",sans-serif;max-width:900px;margin:0 auto;padding:24px 16px;line-height:1.7;color:#1a2b22}}h1{{color:#059669;font-size:1.5rem}}h2{{font-size:1.15rem;margin-top:28px;border-left:4px solid #059669;padding-left:10px}}table{{border-collapse:collapse;width:100%;font-size:.9rem}}td,th{{border:1px solid #d8e4dd;padding:8px 10px;text-align:left}}th{{background:#ecfdf5}}a{{color:#059669}}.up{{font-size:.78rem;color:#6b7280}}.faq h3{{font-size:1rem;margin:18px 0 6px}}</style>
+</head><body>
+<p class="up"><a href="/">← tokenmost 免费羊毛情报站</a> · 数据每日核验 · {updated} 更新</p>
+<h1>{h1}</h1>
+<p>{intro}</p>
+<h2>一图看懂：{n} 个平台怎么选</h2>
+<table><tr><th>平台</th><th>免费给什么</th><th>关键限制</th><th>详情</th></tr>{rows}</table>
+<h2>常见问题</h2>
+<div class="faq">{faq}</div>
+<p>更多品类：<a href="/guides/cloud-mail-email.html">0 元搭无限邮箱</a> · <a href="/guides/free-tier-survival.html">海外免费层生存指南</a> · <a href="/">每日 token 羊毛情报流</a>（RSS 可订阅）</p>
+</body></html>"""
+
 def main():
     deals = json.load(open(ROOT / "deals.json", encoding="utf-8"))
     guides = json.load(open(GDIR / "index.json", encoding="utf-8")) if (GDIR / "index.json").exists() else []
@@ -184,9 +207,53 @@ def main():
         full.append(f"- 状态：{'已验证' if d.get('verify_status')=='verified' else '待复核'}（核验时间 {d.get('verified_at','—')}）\n")
     (ROOT / "llms-full.txt").write_text("\n".join(full) + "\n", encoding="utf-8")
 
+
+    # ===== 品类聚合页（长尾词 landing）：免费云服务器/域名/GPU =====
+    coll_specs = [
+        ("free-cloud-servers", "免费云服务器大全 2026：{n} 个平台可白嫖（长期免费+注册赠送）",
+         "免费云服务器怎么选？本文聚合 {n} 个真实可领的平台：Oracle/Azure/GCP/AWS 大厂免费层、免卡 VPS、免费域名、AI 云电脑与 192G 显存 GPU，全部标注限制与续期规则，每日核验。",
+         "freecloud"),
+    ]
+    for slug, t_tpl, d_tpl, cat in coll_specs:
+        cd = [d for d in deals if d.get("category") == cat and d.get("published", True) and d.get("verify_status") != "expired"]
+        if len(cd) < 5:
+            continue
+        n = len(cd)
+        title = t_tpl.format(n=n); desc = d_tpl.format(n=n)
+        h1 = "免费云服务器与免费域名大全（2026 实测 " + str(n) + " 平台）"
+        intro = "免费云服务器真正的门槛不是能不能领，而是能不能稳定用。本文只收录当前仍可申请的平台，统一标注配置、续期规则与隐藏成本；数据每日核验，失效自动下架。搭配 <a href='/guides/cloud-mail-email.html'>0 元无限邮箱</a> 与 <a href='/guides/free-tier-survival.html'>海外免费层生存指南</a> 使用效果最佳。"
+        rows = ""
+        for d in sorted(cd, key=lambda x: -(x.get("eq_wan") or x.get("tokens_wan") or 0)):
+            lim = (d.get("rule") or "详见平台")[:60].replace("|", "·")
+            u = d.get("url", "#"); nm = d.get("provider", "")
+            rows += "<tr><td><a href='" + u + "' rel='nofollow noopener' target='_blank'>" + html.escape(str(nm)) + "</a></td><td>" + html.escape(str(d.get("value", ""))[:80]) + "</td><td>" + html.escape(lim) + "</td><td><a href='https://tokenmost.com/platform/" + html.escape(slugify(str(d.get('group') or d.get('provider','')))) + ".html'>详情</a></td></tr>"
+        faq = (
+            "<h3>免费云服务器真的永久免费吗？</h3><p>Oracle Always Free、Azure 12 个月免费服务等「Always Free/长期免费」档在账号存续期有效，但 Oracle 2026 年已把 A1 配额砍半（4核24G→2核12G），且纯免费账号有闲置回收（7 天利用率低于 20% 会被停）——不要把重要数据只存一份在免费机上。</p>"
+            "<h3>免绑卡的免费 VPS 靠谱吗？</h3><p>免卡、免费、长期可用是三个独立条件。纯 IPv6/NAT 小鸡适合练手，注册商随时可能改规则（deSEC 2026-10 已停新注册）；正经业务请上大厂免费层或付费。</p>"
+            "<h3>怎么把免费服务器用出价值？</h3><p>推荐 0 元链路：免费域名托管 Cloudflare（免费 DNS/CDN/证书）→ 服务跑 InstaBox/Oracle 免费机 → 邮箱用 <a href='/guides/cloud-mail-email.html'>cloud-mail 无限邮箱</a>（Cloudflare Email Routing 免费收信）→ 监控走免费额度。全链路 0 元。</p>")
+        ld_item = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
+                              "name": title, "itemListElement": [
+                                  {"@type": "ListItem", "position": i + 1, "name": html.escape(str(d.get("provider", ""))),
+                                   "description": html.escape(str(d.get("value", ""))[:100])}
+                                  for i, d in enumerate(sorted(cd, key=lambda x: -(x.get("eq_wan") or x.get("tokens_wan") or 0)))]},
+                             ensure_ascii=False)
+        ld_faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q.split("？")[0] + "？", "acceptedAnswer": {"@type": "Answer", "text": a[:200]}}
+            for q, a in [("免费云服务器真的永久免费吗？", "Oracle Always Free 等长期档在账号存续期有效，但 2026 年配额已砍半且有闲置回收规则。"),
+                          ("免绑卡的免费 VPS 靠谱吗？", "免卡/免费/长期可用是三个独立条件，适合练手不适合业务。"),
+                          ("怎么 0 元搭一套服务？", "免费域名+Cloudflare+免费算力机+cloud-mail 邮箱，全链路 0 元。")]]},
+                           ensure_ascii=False)
+        page = COLL_TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug,
+                               h1=esc_quote(h1), intro=intro, n=n, rows=rows, faq=faq,
+                               ld_item=ld_item, ld_faq=ld_faq, updated=today)
+        (ROOT / (slug + ".html")).write_text(page, encoding="utf-8")
+        print(f"品类聚合页: {slug}.html（{n} 平台）")
+
     # sitemap 并入 platform 页
     sm = ['<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    urls = [("https://tokenmost.com/", today, "daily", "1.0")]
+    urls = [("https://tokenmost.com/", today, "daily", "1.0"),
+            ("https://tokenmost.com/en.html", today, "daily", "0.9"),
+            ("https://tokenmost.com/free-cloud-servers.html", today, "daily", "0.9")]
     urls += [(p["url"], today, "daily", "0.9") for p in sorted(pages, key=lambda x: -x["n"])]
     urls += [(f"https://tokenmost.com/guides/{g['id']}.html", today, "weekly", "0.8") for g in guides]
     urls += [("https://tokenmost.com/llms.txt", today, "daily", "0.5"),

@@ -1198,10 +1198,10 @@
 - 状态：已验证（核验时间 2026-11-08T00:00:00Z）
 
 ## Command Code｜pricing_plan
-- 内容：Command Code GOAT：\$10/月=**最高 \$100 用量额度（官方已确认永久政策）**，30~50+ 开源与闭源顶级模型可选——「市场最便宜的代理编码 AI 计划」；另有 Go 档 \$1/月起
+- 内容：Command Code GOAT：$10/月=**最高 $100 credits**（官方 Up to 口径：Ling 3.1 Flash / DeepSeek V4.1 Flash / GLM-5.3 Flash 各 $100，Tencent Hy3 / Qwen3.8-27B 各 $70，29+ 模型共享）——积分按底层 API 原价消耗零加价、滚存永不过期；含 API 访问 + 约 75K 请求
 - 规则：GOAT \$10/月含最高 \$100 用量额度（10 倍杠杆，靠开源模型批量折扣实现）；早期为 \$70 后提升 \$100 并官宣永久；倍率型订阅——用闭源旗舰模型消耗更快
 - 链接：https://saibodan.com/deals/commandcode-goat-plan
-- 状态：已验证（核验时间 2026-11-08T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-12T15:41:12Z）
 
 ## AMD Token Factory｜长期免费
 - 内容：AMD AI 开发者平台 Token Factory（Dify 官方认证插件/Cherry Studio 可直连）：开源模型 API **每日免费额度重置**——社区口径每日约 \$10 上限（Dify 插件页标注 \$1/天，因账号而异），覆盖 MiMo-V2.6-Flash/DeepSeek-V4 Flash/GLM Flash 等；其他模型经 Fireworks AI credit 通道调用
@@ -1250,7 +1250,7 @@
 - 内容：邀好友无上限积分风暴：新用户注册填码**最高得 4800 积分**；好友付费双方共享返积分——¥29 月卡双方各 +400、¥109 各 +2,760、¥499 各 +14,400、¥999 各 +28,800（8%~12% 比例），**购买奖励无上限**
 - 规则：登录环节填邀请码（须 AutoClaw 桌面端完成，移动端暂不支持）；邀请者每邀 1 人注册并发起成功任务得 1000 积分（活动期上限 15 人=15000）；邀请奖励积分 7 天有效、购买奖励 30 天有效；活动下线邀请码失效
 - 链接：https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=fission&source_location=sidebar&target_app=autoclaw&target_app_version=2.3.0&os=mac&IC=7WHSTDYA
-- 状态：已验证（核验时间 2026-11-10T16:24:59Z）
+- 状态：已验证（核验时间 2026-11-12T17:39:22Z）
 
 ## AgentRouter｜注册赠送
 - 内容：注册送 **$100** + 首次签到 $25（首日到手 $125，经邀请链接注册再 +$50 → 首日最高 **$175**）；此后每日签到 +$25（退出重登即算一次签到）——可跑 GPT-6 代模型（gpt-5.6-sol / gpt-6-astra / gpt-6.1-sol）
@@ -1299,4 +1299,29 @@
 - 规则：入口：魔搭「我的 Notebook」顶部横幅 → AMD 官网 developer.amd.com.cn 魔搭账号一键授权 → 完善资料（工作单位可填「个人开发者」）→ 审核通过**自动充入魔搭账户**（AMD 页无领取按钮）；首次启动须绑实名阿里云账号；单次开机约 8 小时上限（长任务加 checkpoint）；⚠️ 只有 /mnt/workspace 目录持久化，其余重启清空；高峰期启动失败不扣时长
 - 链接：https://modelscope.cn/events/247
 - 状态：已验证（核验时间 2026-11-11T17:06:34Z）
+
+## Command Code｜pricing_plan
+- 内容：Go 入门档：$1/月=**$10 credits**（含优惠最高 ~$15 用量）——GLM-5.2 / Tencent Hy3 / Qwen 系列 / DeepSeek V4.1 Flash 各 $10 独立额度 + 18+ 开源模型，约 9K 请求；积分零加价滚存不过期
+- 规则：$1/月另收 processing fee；不含 API 访问与云访问（其余档位均含）；用量分析受限、仅社区支持
+- 链接：https://commandcode.ai/pricing
+- 状态：已验证（核验时间 2026-11-12T15:41:12Z）
+
+## Command Code｜长期免费
+- 内容：Glyph Cluster 隐形预览期**完全免费**：请求不消耗任何 credits（'Requests cost no credits while the stealth preview lasts'）——所有 Command Code 用户可用
+- 规则：预览期限时免费（官方未公布截止）；隐形预览产品，功能与正式版可能有差异
+- 链接：https://commandcode.ai/pricing
+- 状态：已验证（核验时间 2026-11-12T15:41:12Z）
+
+## clixad｜长期免费
+- 内容：终端 coding agent 免费用（无 API key/无订阅/免信用卡）：**每天 5 款模型共享免费池**——GPT-5 Nano / Gemini 2.5 Flash-Lite / **Claude Haiku 5.5** / DeepSeek V4 Flash / Gemini 3.5 Flash-Lite；名义 6 万 credits/天，**beta 期翻倍 12 万/天**（≈600 万~1200 万 tokens/天），每天 UTC 0 点重置
+- 规则：GitHub 账号设备码登录即可（不填邮箱不复制 token）；模型调用走官方网关（其持有 OpenAI/Anthropic/Google key）；免费池用完可做问卷/任务墙赚 credits 或次日再来；注册奖励钱包（25,200 起+连续登录奖励）与免费池独立，免费池消耗不扣钱包
+- 日均：名义 6 万 credits/天 ≈ 600 万 tokens（1 credit≈100 token 推算，标题口径）；beta 期翻倍 12 万 credits ≈ 1200 万/天；每天 UTC 0 点重置
+- 链接：https://www.npmjs.com/package/clixad
+- 状态：待复核（核验时间 2026-11-12T17:44:58Z）
+
+## 智谱 BigModel｜限时活动
+- 内容：ZCode 新一轮大礼包（11-13 起）：每人 **5 亿 tokens**（GLM-5.3 + GLM-5.3-Flash 额度）——客户端活动卡领取
+- 规则：入口=ZCode 客户端左下角活动卡；参照 1024 轮节奏额度使用窗口约 3 天（本轮以客户端活动卡倒计时为准，过期作废）；先到先得
+- 链接：https://bigmodel.cn/activity/glm-coding-1024
+- 状态：已验证（核验时间 2026-11-13T11:49:41Z）
 

@@ -9,6 +9,7 @@
 <meta name="description" content="聚合国内大模型官方、Agent 平台、MaaS 云、算力中心与 token 中间商五层来源的免费额度、折扣码与低价情报：智谱、DeepSeek、Kimi、讯飞、MiniMax、阿里云百炼等每日核验，统一折算 DS Flash 等效 token，附用量比价器与 10 篇领取攻略。">
 <meta name="keywords" content="AI 大模型免费额度,token 羊毛,大模型折扣码,免费 API,DeepSeek 价格,智谱 GLM 免费额度,Kimi 免费,讯飞星火免费 tokens,阿里云百炼免费额度,API 比价,白嫖大模型">
 <link rel="canonical" href="https://tokenmost.com/">
+<link rel="preload" href="/deals.json" as="fetch">
 <meta property="og:url" content="https://tokenmost.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="tokenmost.com">
@@ -433,6 +434,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternate_name":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
 <!-- ============ 侧边栏（桌面）：工具 + 五层导航 ============ -->
@@ -957,6 +959,8 @@ function tokCell(d,ov){
 }
 /* 排序：DS Flash等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
+const _q=new URLSearchParams(location.search).get('q');
+if(_q){curQ=_q;history.replaceState(null,'','/');}
 let sortKey='tokens';
 /* 🪙 加倍领取：用折扣码/邀请链接在平台基础赠送之上额外加成的条目（v2.18，老板令「通过折扣加倍领取」） */
 function isDouble(d){return (d.coupon&&!d.placeholder)||d.type==='coupon'||d.type==='invite_bonus'||d.via==='invite'}
@@ -1798,7 +1802,9 @@ Promise.all([
 ]).then(([lg,[sites,deals]])=>{
   window.LOGOS=lg||{};
   SITES=sites;DEALS=deals;lastSyncSig=syncSig(deals);
-  renderNav();vInit();render();vRender();calcGlobalBanner();
+  renderNav();vInit();
+  if(typeof _q!=='undefined'&&_q){curQ=_q;var _se=document.getElementById('search');if(_se)_se.value=_q;}
+  render();vRender();calcGlobalBanner();
   // 防护：数据渲染完成后，后续可选功能（登录态/共享码）抛错不得清空主板块
   try{authRefreshUI()}catch(_){}
   try{loadShared()}catch(_){}
