@@ -1,0 +1,34 @@
+{
+ "name": "TokenMost",
+ "slug": "tokenmost",
+ "domain": "tokenmost.com",
+ "url": "https://tokenmost.com",
+ "tagline_40": "AI token 折扣码与免费额度情报站",
+ "title_60": "TokenMost - AI 大模型免费额度与折扣码情报站",
+ "description_160": "TokenMost 每日人工核验各 AI 平台的免费额度、折扣码与试用活动。覆盖国产与海外大模型官方、聚合平台、算力服务，一键接入代码即复制即用。数据均标注核实日期与来源链接。",
+ "description_500": "TokenMost 是一个 AI 大模型免费额度与折扣情报站，每日人工核验各平台的免费 Token 额度、折扣码与试用活动。覆盖国产大模型官方平台（智谱、DeepSeek、Kimi、通义、豆包等）、海外官方（OpenAI、Anthropic、Gemini、Groq 等）、聚合平台、算力服务与运营商云。每条情报标注来源链接与核实日期，过期条目自动下架。站点提供一键接入代码生成（cURL/Python/Node），复制即可调用对应平台 API；内置额度比价计算器与本地账号托管面板。数据文件（deals.json）以开放格式发布，可被其他工具直接引用。",
+ "pricing_model": "free",
+ "pricing_note": "完全免费，无需注册，无付费墙",
+ "category_primary": "AI Tools / Developer Resources",
+ "category_secondary": "AI Aggregator / Information Site",
+ "tags": [
+  "AI",
+  "LLM",
+  "free tier",
+  "tokens",
+  "discount",
+  "Chinese AI models",
+  "API",
+  "aggregator"
+ ],
+ "replaces": [
+  "手动逐个平台查官网",
+  "社群口口相传的折扣信息"
+ ],
+ "contact": "hello@tokenmost.com",
+ "contact_url": "https://tokenmost.com",
+ "github": "见站点页脚仓库链接",
+ "llms_txt": "https://tokenmost.com/llms.txt",
+ "rss": "https://tokenmost.com/rss.xml",
+ "assets_note": "favicon/OG图/截图待主会话产出后补入此 manifest"
+}

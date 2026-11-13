@@ -1,6 +1,10 @@
-# tokenmost.com
+# [TokenMost](https://tokenmost.com) — AI 大模型免费额度与折扣码情报站
 
-五层来源 AI token 折扣情报站：大模型官方（国内）/ Agent 平台 / 算力 / Token 中间商 / 大模型官方（海外）。
+**🔗 在线访问: [https://tokenmost.com](https://tokenmost.com)** · 每日人工核验 · 数据开源（deals.json 可直接引用）
+
+> 聚合智谱、DeepSeek、Kimi、通义、豆包、OpenAI、Gemini、Groq 等平台的免费额度、折扣码与试用活动。每条情报标注来源链接与核实日期，过期自动下架。站点提供一键接入代码生成、额度比价计算器与本地账号托管。
+
+五层来源：大模型官方（国内）/ Agent 平台 / 算力 / Token 中间商 / 大模型官方（海外）。
 
 ## 三层信息结构
 
