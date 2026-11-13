@@ -359,3 +359,11 @@ harvest 源清单 JS 渲染页（bailian、kimi 新域名）pattern 调优 → f
 - 技术栈说明：GitHub API 用本机 keychain 存的 KJAI123 token（git push 同源凭据），fork→branch→PR 全 API 流程无需 gh CLI
 - 2026-11-13 23:25 找源巡检(5h·AutoClaw·手动触发积压合并15:00/20:00未执行)：**⚠️撞上主会话 merge 事故并已修复——merge 7f789f0（已推远端）误将带冲突标记的 data-research/harvest/latest.json+prev.json 合入（<<<<<<< HEAD 标记入库；deals.json 由 4f1a81e 修复但 harvest 两 JSON 漏网）→ 本轮 harvest_diff RC=1（JSON 解析崩），已从 420065c 的 latest.json 恢复 prev.json 基线并重跑 diff=25 源变化（10:25→23:16 追平）RC=0；本轮 harvest 173 源全绿、latest.json 已被本轮新写覆盖修复；⚠️提请主会话：①7f789f0 已推送的历史里 latest/prev 为损坏 blob（服务端不用 data-research，建议知悉即可，不Rewrite历史）②巡检 22:42-23:18 跑批期间发生 merge/restore 类操作，险些二次污染——建议大 git 操作前留意定时管线窗口**；其余：管线 7绿+diff 补跑=实质 8/8；轮67（agent免费额度）4 条→「终身免费不限额度AI语音Agent（大厂）」⏳主管核实，Agent2API 类 2 条=灰色工具存档向（8856010 先例）、桌面Agent盘点=二手；TG 11 条→实质 5 入表（哔哩公益站500M/Antigravity免费层获Hydrogen/星驰公益$1000口径未核/嘀嘀嘀AI周卡再领/B.AI折扣矩阵更新→均⏳主管）；不入：Gemini杀24月会员（负情报避坑素材候选）、ChatGPT Plus免费月吐槽、6.2Astra"独家测评"（疑营销）、DeepSeek App能力API化（付费功能动态）、微软宕机梗、claude 5h波动纯水；发现日志+5 行（131→136）；队列 5 条不变（免卡小VPS 剩余4家完成搜索级核：ASCS/vipserver 无公开佐证需实测，c9c698e）；待主管事项累计：+哔哩公益站/Antigravity翻新/星驰公益/嘀嘀嘀AI/B.AI折扣/终身免费语音Agent；本轮产物已自提交
 - 2026-11-14 01:05 找源巡检(5h·AutoClaw)：**管线 8/8 全绿（首轮 harvest 20 分钟零输出疑似解析死循环已 TERM 重跑，python3 -u 无缓冲后全程正常；verify RC=0 待验证0 累计 relevant 1401/weak 149/offtopic 476/dead 52）**；轮68（算力白嫖）1 条=腾讯 Hy4 全网限免 echo（11-08 WorkBuddy 接入限免已录，合并观察不重复入表）；TG 4 条皆弱不入表：CodeEdge（macOS AI 额度监控 app，v2ex 分享创造→⏳主管工具区候选）、白嫖1000刀水帖（无平台数额）、muse 提示词帖（教学向）；⚠️管线健康：linuxdoit 每日摘要 HTTP 404 第 4 连发（11-11/12/13/14），端点修复仍待主管/TK；队列 5 条不变（免卡小VPS/免费域名两批量条目搜索级扫描收官已提交 fe9429a，余动作=注册实测；CodeHost .cv 11-17 截止）；本轮产物已自提交
+
+## ⭐SEO 外链接管轮（2026-11-14 深夜，主会话接管 TK SEO 线）
+- **PR 复查**：FreeLLM-API-KeyHub#13 / awesome-coding-plan#44 均 open 待审无留言（次日属正常审核期，暂不催）
+- **B6 自建仓落地**：KJAI123/awesome-free-ai-tokens-cn 上线（MIT、9 topics、homepage=tokenmost.com）——README 四大分区 40+ 条目全官方入口+截至 2026-11-14 核实+避坑节；free-ai-tokens 数据仓回加互链（0b91e361）并补 homepage+topics（此前全空）
+- **B5 知乎专栏草稿成稿**：data-research/seo/zhihu-column-draft.md（28 编号条目/避坑节/互动结尾，按老板高赞结构纪律）——待老板账号发布，发布后回 B3 回答挂链导流
+- **B8 物料包**：data-research/seo/nav-directory-kit.md（7 目标站通道+标准提交字段+回执制）——各站均需登录态，待老板浏览器
+- G3（全条带核实日期）/G4（实体统一 TokenMost）已固化实践；台账全量更新
+- **待老板动作池**：发 B5 专栏 / 导航站提交（物料已备）/ v2ex 老号回帖（B1）/ 竞品友链洽谈（B4）

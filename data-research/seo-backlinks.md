@@ -35,10 +35,10 @@
 
 ### P1 中优（需新建内容载体）
 
-- ⬜ **B5. 知乎专栏发文**：《2026 白嫖 AI Token 完全指南》结构化长文（清单式+数额+核实日期+tokenmost.com 作为追踪工具自然植入）——GEO 核心动作：生成式引擎最爱引用知乎结构化内容
-- ⬜ **B6. GitHub 自建仓库**：`awesome-free-ai-tokens-cn`（国内免费额度清单，MIT，README 以 tokenmost.com 为更新源+挂链）——自建靶点，可被别人反向收录
-- ⬜ **B7. CSDN/腾讯云社区发文**：同 B5 内容改写分发（一稿多投，每平台独立改写避免重复内容惩罚）
-- ⬜ **B8. 导航站收录申请**：AI 工具导航站（ai-bot.cn、AI导航集、toolify 等）逐个提交 tokenmost.com
+- 🔄 **B5. 知乎专栏发文**：《2026 白嫖 AI Token 完全指南（附核实日期）》——**草稿已成**（data-research/seo/zhihu-column-draft.md，28 条编号条目全带核实日期+避坑节+互动结尾，按高赞结构纪律）；⬜ 发布需老板知乎账号/浏览器（发布后回 B3 回答挂专栏链接导流）
+- ✅ **B6. GitHub 自建仓库**：`awesome-free-ai-tokens-cn` 已上线（2026-11-14）——https://github.com/KJAI123/awesome-free-ai-tokens-cn ；MIT+9 topics+homepage 挂 tokenmost.com；README=四大分区 40+ 条目全官方入口链接+截至日期+避坑节+TokenMost 数据源双链；free-ai-tokens 数据仓已回加互链（commit 0b91e361）
+- ⬜ **B7. CSDN/腾讯云社区发文**：同 B5 内容改写分发（一稿多投，每平台独立改写避免重复内容惩罚）——等 B5 发布后开工
+- 🔄 **B8. 导航站收录申请**：**物料包已备**（data-research/seo/nav-directory-kit.md：标准提交字段+7 目标站通道+白帽纪律+回执表）——提交动作需账号/浏览器登录态（toolify/ai-bot.cn/aibase 等均非匿名表单，ai-bot.cn 本机网络层不可达）；待老板浏览器会话逐条快填
 
 ### P2 低优（长尾）
 
@@ -49,9 +49,9 @@
 ## 三、GEO（生成式引擎优化）专项
 
 - ✅ **G1. llms.txt**：已有（AI 引擎可读站点摘要）
-- ⬜ **G2. 维基类平台结构化内容**：知乎专栏/B站专栏/博客园——生成式引擎训练与检索高频源（与 B5 联动）
-- ⬜ **G3. 数据引用习惯**：所有对外内容带「截至 YYYY-MM-DD 核实」字样+来源链接——生成式引擎偏好引用带时间戳的数据源
-- ⬜ **G4. 实体一致性**：全网统一名称「TokenMost」（避免 Token羊毛铺/TokenMost 羊毛党混用——生成引擎实体消歧需要）
+- 🔄 **G2. 维基类平台结构化内容**：知乎专栏稿已就绪（B5），发布即落地；B站专栏/博客园随 B7 排
+- ✅ **G3. 数据引用习惯**：已实践固化——B3 回答「数据截至 2026-11 核实」、awesome 仓 README 全条带截至日期、B5 专栏每节带日期
+- ✅ **G4. 实体一致性**：全网统一「TokenMost」——主仓/数据仓/awesome 仓 description 与 README 全部一致；LICENSE 版权署名 TokenMost
 
 ## 四、进度日志
 
@@ -59,3 +59,5 @@
 
 - 2026-11-13：**首批外链实弹发射**——GitHub PR×2（FreeLLM-API-KeyHub#13、awesome-coding-plan#44）+ tokenmost 仓库 description/topics 优化。待审中。
 - 2026-11-14：**B3 知乎回答发布**（超流量问题 8562 万浏览）。技术复盘：知乎 Draft.js 编辑器只信任浏览器输入管线（CDP Input.insertText / dispatchMouseEvent / 单键），DOM 级 execCommand 注入与内部 state 脱节导致首次发布带星号残留；二次修复用「DOM 全文选区+真实 Backspace 清空 → insertText 逐行+Enter 拆段 → 闸门校验 → 提交」达成干净上线。经验已沉淀：未来知乎分发一律走真实输入管线。
+
+- 2026-11-14 深夜（接管轮，主会话直做）：①PR #13/#44 复查=均 open 待审无留言（建仓次日属正常审核期）②**B6 落地**：自建仓 awesome-free-ai-tokens-cn 上线（40+ 条目四大分区全官方链接、MIT、9 topics、homepage 挂主站、数据仓互链闭环）③B12 扩展：free-ai-tokens 数据仓补 homepage+9 topics（此前两个都没有）④**B5 专栏草稿成稿**（28 条目+避坑+互动结尾，全带日期；待老板账号发布）⑤B8 物料包备妥（7 目标站通道表+提交字段+回执制；提交需登录态）⑥G3/G4 转实践固化。**待老板动作池：知乎账号发 B5 专栏、导航站提交（物料已备）、v2ex 老号回帖 B1、竞品友链洽谈 B4**。
