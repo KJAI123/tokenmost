@@ -663,6 +663,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <button class="tab" data-sc="0.03,0.01">💬 轻聊 4万/天</button>
     <button class="tab" data-sc="1.1,0.4">⌨️ 重度编程 150万/天</button>
     <button class="tab" data-sc="11,4">🏭 批量处理 1500万/天</button>
+    <button class="tab" data-sc="8,3">🤖 Agent 重度 1100万/天</button>
     <label style="font-size:.78rem;color:var(--muted)">缓存命中 <input id="calcCache" type="range" min="0" max="90" value="0" style="vertical-align:middle;width:90px"> <b id="cacheV" class="mono">0%</b></label>
     <label style="font-size:.78rem;color:var(--muted)"><input id="calcOffpeak" type="checkbox"> 走错峰空闲价</label>
   </div>
@@ -715,7 +716,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <button id="planClose">✕</button>
   <h3>⌨️ Coding Plan 量化对照（包月 vs 按量）</h3>
   <p class="sub">各家编程订阅套餐折算成 tokens/月 与 ¥/百万 token，与最低按量价同台比价</p>
-  <div id="planHero"></div>
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap"><label style="font-size:.85rem">我的月预算 ¥<input id="planBudget" type="number" min="0" step="10" value="30" style="width:90px;margin-left:6px;padding:4px 8px;border:1px solid var(--border);border-radius:8px"></label><div id="planBudgetOut" style="flex:1;min-width:0"></div></div><div id="planHero"></div>
   <div style="overflow-x:auto"><table class="price" id="planTable"></table></div>
   <p class="calc-note" id="planNote"></p>
 </div>
@@ -1023,7 +1024,7 @@ function render(){
     const cq=groups.filter(g=>g.ds.some(d=>d.type==='coupon')).slice(0,3);
     const gl=groups.filter(g=>!cq.includes(g)&&g.ds.some(d=>d.region==='global')).slice(0,2);
     const ordered=[...cq,...gl,...groups.filter(g=>!cq.includes(g)&&!gl.includes(g))];
-    box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+ordered.map(g=>{
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+ordered.map(g=>{
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
@@ -1052,7 +1053,7 @@ function render(){
   <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
     }).join('');
   }else{
-    box.innerHTML=(curCat==='double'?DOUBLE_NOTE:'')+list.map(rowHtml).join('');
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+list.map(rowHtml).join('');
   }
   renderFreecloud();
   document.querySelectorAll('#listhead .sortbtn').forEach(b=>{
@@ -1459,7 +1460,7 @@ const wf=document.getElementById('wxFootLink');if(wf)wf.addEventListener('click'
 document.getElementById('vaultBtnSide').addEventListener('click',()=>vaultToggle(true));
 document.getElementById('planBtnSide').addEventListener('click',()=>{planRender();openPanel('#planOverlay','#planPanel')});
 document.getElementById('sumBtnSide').addEventListener('click',()=>{sumRender();openPanel('#sumOverlay','#sumPanel')});
-document.getElementById('calcBtnSide').addEventListener('click',()=>{calcRender();openPanel('#calcOverlay','#calcPanel')});
+document.getElementById('calcBtnSide').addEventListener('click',()=>{calcRestore();calcRender();openPanel('#calcOverlay','#calcPanel')});
 document.getElementById('doubleBtnSide').addEventListener('click',()=>{
   document.querySelectorAll('#tabs .tab').forEach(t=>t.classList.toggle('active',t.dataset.cat==='double'));
   curCat='double';render();window.scrollTo({top:0,behavior:'smooth'});
@@ -1659,10 +1660,12 @@ document.getElementById('calcFilters').addEventListener('click',e=>{
 });function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.getElementById('calcPanel').classList.remove('open')}
 document.getElementById('calcClose').addEventListener('click',closeCalc);
 document.getElementById('calcOverlay').addEventListener('click',closeCalc);
-['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',calcRender));
+['calcIn','calcOut'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{calcRender();calcPersist();}));
 document.getElementById('calcFilters').addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)return;const [a,o]=b.dataset.sc.split(',');document.getElementById('calcIn').value=a;document.getElementById('calcOut').value=o;calcRender();});
 document.getElementById('calcCache').addEventListener('input',calcRender);
+document.getElementById('calcCache').addEventListener('input',calcPersist);
 document.getElementById('calcOffpeak').addEventListener('change',calcRender);
+document.getElementById('calcOffpeak').addEventListener('change',calcPersist);
 /* ============ 羊毛总账 & 极致预算 ============ */
 function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万'}
 function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+' 亿':Math.round(million*100)+' 万'}
@@ -1689,7 +1692,7 @@ function sumRender(){
    </div>
    <p class="calc-note"><b>📐 等效口径（2026-10-28 老板拍板）</b>：全站 token 统一折算为 <b>DeepSeek V4.1 Flash 等效 token</b>——国内按谷价（空闲 5 折）加权 ¥1.75/百万、国际按牌价加权 $0.525/百万；等效按算力购买力折算而非裸计数：GLM-5.3 ×7.43、DeepSeek V4 Pro ×7.71、Kimi K3 ×11.43、MiniMax-M3 ×2.10，同档 Flash 模型与无牌价免费模型 1:1。通用/多模型额度保守取 1:1。系数表在 tools/eq.json，随牌价更新复核。</p>
    <p class="calc-note">另有 <b>${freeN}</b> 个长期免费层不花钱持续用（GLM-4.7-Flash、讯飞 Lite、ModelScope、Gemini、Groq、OpenRouter :free 等）。口径：每平台<b>单账号</b>官方规则；百炼按领 10 款、TokenHub 按 5 款保守估算；火山方舟（数额控制台才可见）、NVIDIA NIM（1000 credits）、讯飞礼包、Anthropic credits 未计入；自己做邀请人还能继续放大（智谱月上限 2 亿 tokens）。</p>`;
-  sumCalc();
+  sumCalc();sumChecklist();
 }
 function sumCalc(){
   const B=parseFloat(document.getElementById('sumBudget').value)||0;
@@ -1712,6 +1715,114 @@ function closeSum(){document.getElementById('sumOverlay').classList.remove('open
 document.getElementById('sumClose').addEventListener('click',closeSum);
 document.getElementById('sumOverlay').addEventListener('click',closeSum);
 document.getElementById('sumBudget').addEventListener('input',sumCalc);
+window._L={"check_title": "✅ 今日动手清单（勾选记进度，第二天自动重置）", "check_done": "已完成", "claim": "去领", "daily_tag": "每日", "limit_tag": "限时", "budget_label": "我的月预算 ¥", "budget_hint": "预算内性价比 Top3（官方可折算套餐，¥/百万越低越划算）", "over": "预算内没有包月套餐（最低 {min}/月）——白嫖层+按量付费更合适，或提高预算", "agent_preset": "🤖 Agent 重度 1100万/天", "roadmap_title": "🪙 注册路线图：同一平台，走对链接多拿一份", "roadmap_th": ["平台", "走折扣链接可得", "直达"], "roadmap_hint": "经专属链接注册 = 平台基础赠送 + 链接加成两份叠加（限时条目以官方页为准）"};
+
+/* ===== 实用化升级 v2.35：清单/用量记忆/路线图/预算推荐 ===== */
+function _dayKey(){return 'tm_claimed_'+new Date().toISOString().slice(0,10)}
+function sumChecklist(){
+  var el=document.getElementById('sumBody');if(!el)return;
+  var L=window._L||{};
+  var live=DEALS.filter(function(d){return d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan'&&d.url&&(d.type==='signup_bonus'||d.type==='limited_promo'||d.type==='recurring_promo'||d.type==='coupon'||d.daily_wan)});
+  live.sort(function(a,b){return ((b.eq_wan||b.tokens_wan||0)+(b.daily_wan||0)*30)-((a.eq_wan||a.tokens_wan||0)+(a.daily_wan||0)*30)});
+  var items=live.slice(0,8);
+  if(!items.length)return;
+  var done=JSON.parse(localStorage.getItem(_dayKey())||'[]');
+  var prev=el.querySelector('.tm-claim-block');if(prev)prev.remove();
+  var html='<div class="tm-claim-block" style="margin-top:14px;border-top:1px dashed var(--border);padding-top:10px"><b style="font-size:.9rem">'+(L.check_title||'')+'</b><div style="margin-top:8px;display:flex;flex-direction:column;gap:6px">';
+  items.forEach(function(d){
+    var chk=done.indexOf(d.id)>=0;
+    var tag=d.daily_wan?(L.daily_tag||'每日'):(d.type==='coupon'?(L.limit_tag||'限时'):'');
+    html+='<label style="display:flex;align-items:center;gap:8px;font-size:.85rem;cursor:pointer">'
+      +'<input type="checkbox" data-claim="'+esc(d.id)+'" '+(chk?'checked':'')+' style="accent-color:var(--accent)">'
+      +'<span style="'+(chk?'text-decoration:line-through;color:var(--muted)':'')+'flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'
+      +(tag?'<span class="chip" style="font-size:.68rem;margin-right:4px">'+tag+'</span>':'')+esc(d.provider)+' · '+esc((d.value||'').replace(/<[^>]*>/g,'').slice(0,38))+'</span>'
+      +'<a href="'+esc(d.url)+'" target="_blank" rel="noopener nofollow" class="go" style="padding:4px 10px;font-size:.75rem" onclick="event.stopPropagation()">'+(L.claim||'去领')+' ↗</a></label>';
+  });
+  var dn=done.filter(function(id){return items.some(function(d){return d.id===id})}).length;
+  html+='</div><p style="font-size:.72rem;color:var(--muted);margin-top:6px">'+dn+'/'+items.length+' '+(L.check_done||'已完成')+'</p></div>';
+  el.insertAdjacentHTML('beforeend',html);
+  if(!document.getElementById('sumPanel').dataset.claimBound){
+    document.getElementById('sumPanel').dataset.claimBound='1';
+    document.getElementById('sumPanel').addEventListener('change',function(e){
+      var cb=e.target.closest('[data-claim]');if(!cb)return;
+      var arr=JSON.parse(localStorage.getItem(_dayKey())||'[]');
+      if(cb.checked){if(arr.indexOf(cb.dataset.claim)<0)arr.push(cb.dataset.claim)}
+      else{arr=arr.filter(function(x){return x!==cb.dataset.claim})}
+      localStorage.setItem(_dayKey(),JSON.stringify(arr));
+      sumRender();
+    });
+  }
+}
+var _calcSaveT=null;
+function calcPersist(){
+  clearTimeout(_calcSaveT);
+  _calcSaveT=setTimeout(function(){
+    try{localStorage.setItem('tm_calc',JSON.stringify({
+      i:document.getElementById('calcIn').value,o:document.getElementById('calcOut').value,
+      c:document.getElementById('calcCache').value,p:document.getElementById('calcOffpeak')&&document.getElementById('calcOffpeak').checked?1:0}))}catch(_){}
+  },250);
+}
+function calcRestore(){
+  try{
+    var s=JSON.parse(localStorage.getItem('tm_calc')||'null');if(!s)return;
+    if(s.i!=null)document.getElementById('calcIn').value=s.i;
+    if(s.o!=null)document.getElementById('calcOut').value=s.o;
+    if(s.c!=null){document.getElementById('calcCache').value=s.c;var cv=document.getElementById('cacheV');if(cv)cv.textContent=s.c+'%'}
+    if(s.p&&document.getElementById('calcOffpeak'))document.getElementById('calcOffpeak').checked=true;
+  }catch(_){}
+}
+function dblRoadmapHTML(){
+  var L=window._L||{};
+  var live=DEALS.filter(function(d){return d.published!==false&&d.verify_status!=='expired'&&isDouble(d)&&d.url});
+  var gmap={};
+  live.forEach(function(d){var k=d.group||d.provider;(gmap[k]=gmap[k]||[]).push(d)});
+  var rows=Object.keys(gmap).map(function(k){
+    var ds=gmap[k];
+    var monthly=ds.reduce(function(s,d){return s+(d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30},0);
+    return{k:k,monthly:monthly,url:ds[0].url,n:ds.length};
+  }).sort(function(a,b){return b.monthly-a.monthly}).slice(0,10);
+  if(!rows.length)return '';
+  var th=L.roadmap_th||[];
+  var h='<div style="border:1px solid rgba(217,119,6,.4);background:rgba(217,119,6,.06);border-radius:12px;padding:14px;margin:0 0 14px">'
+    +'<b style="font-size:.95rem">'+(L.roadmap_title||'')+'</b>'
+    +'<p style="font-size:.78rem;color:var(--muted);margin:4px 0 10px">'+(L.roadmap_hint||'')+'</p>'
+    +'<div style="display:flex;flex-direction:column;gap:6px">';
+  rows.forEach(function(r){
+    h+='<div style="display:flex;align-items:center;gap:10px;font-size:.85rem;flex-wrap:wrap">'
+      +'<b style="min-width:110px">'+esc(r.k)+'</b>'
+      +'<span class="mono" style="color:var(--amber);font-weight:700">'+fmtWan(Math.round(r.monthly))+'</span>'
+      +'<span style="color:var(--muted);font-size:.75rem">· '+r.n+'</span>'
+      +'<a href="'+esc(r.url)+'" target="_blank" rel="noopener nofollow" class="go" style="padding:5px 14px;font-size:.78rem;margin-left:auto">'+(th[2]||'Go')+' ↗</a></div>';
+  });
+  return h+'</div></div>';
+}
+function planBudgetRender(){
+  var inp=document.getElementById('planBudget');
+  if(!inp)return;
+  var B=parseFloat(inp.value)||0;
+  try{localStorage.setItem('tm_plan_budget',inp.value)}catch(_){}
+  var conv=PLANS.filter(function(p){return p.quota_kind==='official_tokens'}).map(function(p){
+    var cny=p.price*(p.currency==='USD'?FX:1);
+    return{p:p,cny:cny,pm:cny/((p.tokens_wan||0)/100)};
+  }).filter(function(x){return x.pm!==null&&!isNaN(x.pm)&&x.pm>0}).sort(function(a,b){return a.pm-b.pm});
+  var L=window._L||{};
+  var box=document.getElementById('planBudgetOut');
+  if(!box)return;
+  if(B<=0||!conv.length){box.innerHTML='';return}
+  var inb=conv.filter(function(x){return x.cny<=B}).slice(0,3);
+  var minCny=conv[conv.length-1].cny;
+  if(!inb.length){
+    box.innerHTML='<div class="plan-hero" style="border-color:var(--amber)">'+(L.over||'').replace('{min}','¥'+Math.ceil(minCny))+'</div>';
+    return;
+  }
+  var h='<div class="plan-hero" style="text-align:left;flex-direction:column;align-items:stretch;gap:8px"><b>'+(L.budget_hint||'')+'</b>';
+  inb.forEach(function(x,i){
+    h+='<div style="display:flex;align-items:center;gap:8px;font-size:.85rem;flex-wrap:wrap"><b>'+(i===0?'🏆':(i+1)+'.')+'</b><span style="flex:1;min-width:0">'+esc(x.p.provider)+' · '+esc(x.p.plan)+'</span><span class="mono">¥'+x.cny.toFixed(0)+'/月</span><span class="mono" style="color:var(--accent)">¥'+x.pm.toFixed(2)+'/百万</span></div>';
+  });
+  h+='</div>';
+  box.innerHTML=h;
+}
+
 /* ============ Coding Plan 量化对照 ============ */
 let PLANS=[];
 function planPerM(p){const wan=p.tokens_wan||0;return wan>0?(p.price*(p.currency==='USD'?FX:1))/(wan/100):null}
@@ -1738,7 +1849,9 @@ function planRender(){
     +(convRows?`<tr><td colspan="6" style="background:var(--hover);color:var(--muted);font-size:.75rem">▼ 可折算组（官方公布 token 数/官方折算公式，参与排名）</td></tr>`+convRows:'')
     +(refRows?`<tr><td colspan="6" style="background:var(--hover);color:var(--muted);font-size:.75rem">▼ 参考组（积分/次数/会话制，官方未公布折算——不做假换算）</td></tr>`+refRows:'');
   document.getElementById('planNote').textContent='诚实口径：只有官方公布 token 数或官方折算公式的套餐参与排名（智谱/SCNet）；其余积分、次数、会话制套餐不换算不排名。DeepSeek 空闲半价、缓存命中另见「🧮 比价」。USD 按 1:7.2。';
-}function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
+  try{planBudgetRender()}catch(_){}
+}document.getElementById('planBudget').addEventListener('input',planBudgetRender);
+function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
 document.getElementById('planClose').addEventListener('click',closePlan);
 document.getElementById('planOverlay').addEventListener('click',closePlan);
 /* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
