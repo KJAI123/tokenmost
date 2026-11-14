@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-13T23:13:35Z",
+  "harvested_at": "2026-11-14T11:17:20Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -789,10 +789,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -882,6 +878,10 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
+        },
+        {
+          "match": "会员",
+          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -2628,31 +2628,31 @@
         },
         {
           "match": "$0.07/$0.26 text+image+video->text ",
-          "context": "· $0.07/$0.00 text->embeddings qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
+          "context": "· $0.07/$0.00 text->embeddings qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->t"
         },
         {
-          "match": "$0.12/$0.80 text->text qwen/qwen3-v",
-          "context": ".00 text->text qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text"
+          "match": "$0.12/$0.80 text->text qwen/qwen3-c",
+          "context": ".00 text->text qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image"
+        },
+        {
+          "match": "$0.07/$0.28 text->text qwen/qwen3-v",
+          "context": "+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+vi"
         },
         {
           "match": "$0.15/$0.60 text+image->text qwen/q",
-          "context": "ext+image+video->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image"
-        },
-        {
-          "match": "$0.07/$0.28 text->text qwen/qwen3.5",
-          "context": "ext qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image"
+          "context": "ext->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text"
         },
         {
           "match": "$0.26/$1.56 text+image+video->text ",
-          "context": "ext+image->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0."
+          "context": "8 text->text qwen/qwen3-vl-30b-a3b-instruct 262K ctx · $0.15/$0.60 text+image->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0."
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "ext->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-"
+          "context": "age->text qwen/qwen3.5-plus-02-15 1000K ctx · $0.26/$1.56 text+image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-"
         },
         {
           "match": "$0.36/$0.40 text->text qwen/qwen-im",
-          "context": "eo->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image Google google/gemini-4-argon"
+          "context": "eo->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image Google google/gemini-4-hydro"
         }
       ]
     },
@@ -2985,7 +2985,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "例如：企业微信智能机器人、QQ、飞书、钉钉等）、自动决策与任务执行能力、预设的技能（Skills）能力。它能控制您的终端执行操作，而不是只出主意。 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -2993,11 +2993,11 @@
         },
         {
           "match": "free",
-          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容"
+          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
-          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容 103 讨论 1 进入专区 精选文章 不写代码，用Lighthouse轻松搭建知识库"
+          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支持文生图,也可作为视频等多模态视觉生成基础。 粉丝 3 内容 17 讨论 10 进入"
         }
       ]
     },
@@ -4375,7 +4375,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 13.3k  ( 13.3k ) Star 87.2k  ( 87.2k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 13.4k  ( 13.4k ) Star 87.3k  ( 87.3k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4573,35 +4573,27 @@
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
+          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
+          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
         },
         {
           "match": "免费 API Token 专区 注册赠送、每日/每月额度",
-          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
+          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
         },
         {
           "match": "免费档 API 每天 1000 次",
-          "context": "度 见官方说明 核实 2026-10-27 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
+          "context": "度 见官方说明 核实 2026-10-27 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
+          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 6 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免"
-        },
-        {
-          "match": "免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token",
-          "context": "度 见官方说明 核实 2026-11-07 6 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
-        },
-        {
-          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 48 天 额度",
-          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 48 天 额度 1000000000 Token 核实 2026-11-12 昨天 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条 完整"
+          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 7 天前 点赞 收藏 需注册 查看详情 直接去官方领取 百度智能云千帆 进行中 百度千帆：新用户注册送 20 元代金券（体验主流大模型） 百度智能云千帆平台新用户首次注册即送 20 元代金券，可用于"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4609,19 +4601,19 @@
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus"
+          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 18 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus"
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "100 积分/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 17 天"
+          "context": "100 积分/天 核实 2026-10-27 18 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 17 天"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 17 天 额度 100000000 Tokens/天 核实 2026-10-27 17 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 17 天 额度 100000000 Tokens/天 核实 2026-10-27 18 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
         },
         {
           "match": "免费额度",
-          "context": "合作 最近更新记录 自动复查与人工复核的变更轨迹 Qoder：Qwen4-Max 预览版（原 Qoduck）限时 2 折，0.1× Credits Qoduck 于 11/11 由 Qoder 官方揭晓为 Qwen4-Max 预览版；匿名期免费额度结束、改为限时 2 折（0.1×），同步卡片标题/正文/奖励明细/披露，free_type 由 limited_time 改为 discount。 2026-11-11 20:10 商汤小浣熊：9000 积分三端领满 + 每天 300 11"
+          "context": "6100 积分 2026-11-14 13:49 Qoder：Qwen4-Max 预览版（原 Qoduck）限时 2 折，0.1× Credits Qoduck 于 11/11 由 Qoder 官方揭晓为 Qwen4-Max 预览版；匿名期免费额度结束、改为限时 2 折（0.1×），同步卡片标题/正文/奖励明细/披露，free_type 由 limited_time 改为 discount。 2026-11-11 20:10 商汤小浣熊：9000 积分三端领满 + 每天 300 11"
         },
         {
           "match": "免费额度",
@@ -4646,6 +4638,14 @@
         {
           "match": "新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding To",
           "context": "unyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑"
+        },
+        {
+          "match": "赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免",
+          "context": "8+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 R"
+        },
+        {
+          "match": "新用户注册送 20 元代金券（体验主流大模型） 百度智能云千帆平台新用户首次注册即送 20 元代金券，可用",
+          "context": "自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 7 天前 点赞 收藏 需注册 查看详情 直接去官方领取 百度智能云千帆 进行中 百度千帆：新用户注册送 20 元代金券（体验主流大模型） 百度智能云千帆平台新用户首次注册即送 20 元代金券，可用于体验 DeepSeek-V4.1、GLM-5.3 等主流大模型，适配 Coding、视频生成、Agent 构建等场景。属于千帆「智聚 11.11 年终钜惠」（2026.10.20–11.30）。 Token 额度 注册赠送 厂商页 开始"
         }
       ]
     },
@@ -6246,63 +6246,63 @@
       "findings": [
         {
           "match": "100 万 token",
-          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓"
+          "context": "complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提"
         },
         {
-          "match": "$0.20 muse-spark-1.3-contributor $0",
-          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-sp"
+          "match": "$0.20 muse-spark-1.3-contributor $1",
+          "context": "eek is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spar"
         },
         {
-          "match": "$0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOK",
-          "context": "符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contributor 31% deepseek-v4-flash 0% jev-1.13 缓存比例 0"
+          "match": "$0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN",
+          "context": "符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contributor 35% deepseek-v4-flash 0% jev-1.13 缓存比例 0%"
         },
         {
           "match": "每日 01 muse-spark-1.3-contributor 1B token",
-          "context": "B 0B 0B NOV 9 0B 0B 0B 0B 0B NOV 10 0B 0B 0B 0B 0B NOV 11 0B 0B 0B 0B 0B NOV 12 0B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contribut"
+          "context": "0B 0B NOV 10 0B 0B 0B 0B 0B NOV 11 0B 0B 0B 0B 0B NOV 12 0B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B NOV 14 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contribut"
         },
         {
           "match": "DeepSeek",
-          "context": "查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年11月13日，过去 7 天内 Muse Spark 1.3 Contributor 以 1B token 领跑 OpenCode 使用量，其次是 DeepSeek V4 Flash（0）和 jev-1.13（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 19 SEP 19 0B SEP 20 SEP 20 0B SEP 21 SEP 21 0B SEP 22 SEP"
+          "context": "查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年11月14日，过去 7 天内 Muse Spark 1.3 Contributor 以 1B token 领跑 OpenCode 使用量，其次是 DeepSeek V4 Flash（0）和 jev-1.13（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 20 SEP 20 0B SEP 21 SEP 21 0B SEP 22 SEP 22 0B SEP 23 SEP"
         },
         {
           "match": "deepseek",
-          "context": "NOV 9 NOV 9 0B NOV 10 NOV 10 0B NOV 11 NOV 11 0B NOV 12 NOV 12 0B NOV 13 NOV 13 热门模型用量堆叠图 日期 muse-spark-1.3-contributor deepseek-v4-flash jev-1.13 Other 总计 SEP 19 0B 0B 0B 0B 0B SEP 20 0B 0B 0B 0B 0B SEP 21 0B 0B 0B 0B 0B SEP 22 0B 0B 0B 0B 0B SEP"
+          "context": "V 10 NOV 10 0B NOV 11 NOV 11 0B NOV 12 NOV 12 0B NOV 13 NOV 13 0B NOV 14 NOV 14 热门模型用量堆叠图 日期 muse-spark-1.3-contributor deepseek-v4-flash jev-1.13 Other 总计 SEP 20 0B 0B 0B 0B 0B SEP 21 0B 0B 0B 0B 0B SEP 22 0B 0B 0B 0B 0B SEP 23 0B 0B 0B 0B 0B SEP"
         },
         {
           "match": "deepseek",
-          "context": "B 0B 0B 0B 0B NOV 12 0B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周"
+          "context": "B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B NOV 14 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周"
         },
         {
           "match": "DeepSeek",
-          "context": "0B 0B 0B NOV 13 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B tok"
+          "context": "0B 0B 0B NOV 14 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B tok"
         },
         {
           "match": "deepseek",
-          "context": "-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 1 SEP 19"
+          "context": "-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 0 SEP 20"
         },
         {
           "match": "DeepSeek",
-          "context": "5% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 1 SEP 19 SEP 19 0 SEP 20 SEP 20 2 S"
+          "context": "6% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 0 SEP 20 SEP 20 2 SEP 21 SEP 21 0 S"
         },
         {
           "match": "deepseek",
-          "context": "OV 7 NOV 7 0 NOV 8 NOV 8 0 NOV 9 NOV 9 0 NOV 10 NOV 10 0 NOV 11 NOV 11 0 NOV 12 NOV 12 0 NOV 13 NOV 13 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor jev-1.13 Other 总计 SEP 19 0 0 0 1 1 SEP 20 0 0 0 0 0 SEP 21 1 0 0 1 2 SEP 22 0 0 0 0"
+          "context": "8 NOV 8 0 NOV 9 NOV 9 0 NOV 10 NOV 10 0 NOV 11 NOV 11 0 NOV 12 NOV 12 0 NOV 13 NOV 13 0 NOV 14 NOV 14 按模型显示的独立用户堆叠图 日期 deepseek-v4-flash muse-spark-1.3-contributor jev-1.13 Other 总计 SEP 20 0 0 0 0 0 SEP 21 1 0 0 1 2 SEP 22 0 0 0 0 0 SEP 23 1 0 0 1"
         },
         {
           "match": "deepseek",
-          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-cont"
+          "context": "每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contri"
         },
         {
           "match": "deepseek",
-          "context": "$0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contributor 31% deepseek-v4-flash 0% jev-1.13 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 19 SEP 19 0 SEP 21 SEP 21 0 SEP"
+          "context": "输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contributor 35% deepseek-v4-flash 0% jev-1.13 缓存比例 0% 已缓存 0B 未缓存 0B 了解更多 缓存比例 ▸ # 市场份额 . 按模型作者比较 token 份额。 0 SEP 21 SEP 21 0 SEP 23 SEP 23 1M SE"
         },
         {
           "match": "DeepSeek",
-          "context": "NOV 8 NOV 8 233M NOV 9 NOV 9 176M NOV 10 NOV 10 81M NOV 11 NOV 11 102M NOV 12 NOV 12 81M NOV 13 NOV 13 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 19 96.8% 0.0% 3.2% 0.0% SEP 21 100.0% 0.0% 0.0% 0.0% SEP 23 100.0% 0.0% 0.0% 0.0% SEP 25 98.7% 1."
+          "context": "NOV 9 NOV 9 176M NOV 10 NOV 10 81M NOV 11 NOV 11 102M NOV 12 NOV 12 81M NOV 13 NOV 13 44M NOV 14 NOV 14 按模型作者显示的市场份额 日期 DeepSeek Meta Other OpenAI SEP 21 100.0% 0.0% 0.0% 0.0% SEP 23 100.0% 0.0% 0.0% 0.0% SEP 25 98.7% 1.3% 0.0% 0.0% SEP 28 100.0% 0"
         },
         {
           "match": "DeepSeek",
-          "context": "0% 0.0% NOV 11 3.0% 97.0% 0.0% 0.0% NOV 12 2.4% 97.6% 0.0% 0.0% NOV 13 3.1% 96.9% 0.0% 0.0% 01 Meta 79M token 96.9 % 02 DeepSeek 2M token 3.1 % [*] NOV 13 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 44% 02 美国 2.2B token 27% 03 韩国 1.4B token 18% 04 印度尼"
+          "context": "0% 0.0% NOV 12 2.4% 97.6% 0.0% 0.0% NOV 13 3.1% 96.9% 0.0% 0.0% NOV 14 4.7% 95.3% 0.0% 0.0% 01 Meta 42M token 95.3 % 02 DeepSeek 2M token 4.7 % [*] NOV 14 2026 了解更多 市场份额 ▸ # 地理分布 01 日本 3.6B token 43% 02 美国 2.3B token 28% 03 韩国 1.4B token 17% 04 印度尼"
         },
         {
           "match": "deepseek",
@@ -6322,47 +6322,47 @@
         },
         {
           "match": "Token",
-          "context": "AI 模型使用排名 | OpenCode 数据 Data 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 试用 OpenCode 立即试用 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 已更新 11月13日, UTC 20:06 已更新 11月13日 11月13日 , UTC"
+          "context": "AI 模型使用排名 | OpenCode 数据 Data 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 试用 OpenCode 立即试用 热门模型 排行榜 会话成本 Token 成本 缓存比例 市场份额 地理分布 已更新 11月14日, UTC 11:06 已更新 11月14日 11月14日 , UTC"
         },
         {
           "match": "token",
-          "context": ", UTC 20:06 UTC 20:06 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年11月13日，过去 7 天内 Muse Spark 1.3 Contributor 以 1B token 领跑 OpenCode 使用量，其次是 DeepSeek V4 Flash（0）和 jev-1.13（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 19 SEP 19 0B SEP 20 SEP 20 0"
+          "context": ", UTC 11:06 UTC 11:06 模型数据 查看哪些模型正在赢得真实使用量、使用组合如何变化，以及这对成本意味着什么。 截至 2026年11月14日，过去 7 天内 Muse Spark 1.3 Contributor 以 1B token 领跑 OpenCode 使用量，其次是 DeepSeek V4 Flash（0）和 jev-1.13（0）。 # 热门模型 . OpenCode 中各模型的使用情况。 0B SEP 20 SEP 20 0B SEP 21 SEP 21 0"
         },
         {
           "match": "token",
-          "context": "0B 0B 0B 0B 0B NOV 11 0B 0B 0B 0B 0B NOV 12 0B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contribut"
+          "context": "0B 0B 0B 0B 0B NOV 12 0B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B NOV 14 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contribut"
         },
         {
           "match": "token",
-          "context": "0B 0B 0B 0B 0B NOV 13 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-fla"
+          "context": "0B 0B 0B 0B 0B NOV 14 0B 0B 0B 0B 0B 每周 每日 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-fla"
         },
         {
           "match": "token",
-          "context": "每日 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1."
+          "context": "每日 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1."
         },
         {
           "match": "token",
-          "context": "+64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的"
+          "context": "-16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的"
         },
         {
           "match": "token",
-          "context": "eek -55% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 1 SEP 19 SEP 19 0 SEP 20 S"
+          "context": "eek -56% 较上周 03 jev-1.13 0B token -62% 较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 0 SEP 20 SEP 20 2 SEP 21 S"
         },
         {
           "match": "token",
-          "context": "较上周 01 muse-spark-1.3-contributor 1B token Meta +64% 较上周 02 deepseek-v4-flash 0B token DeepSeek -55% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 1 SEP 19 SEP 19 0 SEP 20 SEP 20 2 SEP 21 SEP 21 0 SEP 22 SEP 22 2"
+          "context": "较上周 01 muse-spark-1.3-contributor 1B token Meta -16% 较上周 02 deepseek-v4-flash 0B token DeepSeek -56% 较上周 03 jev-1.13 0B token -62% 较上周 了解更多 热门模型 ▸ # 独立用户 . 按模型显示的每日 OpenCode 独立用户。 0 SEP 20 SEP 20 2 SEP 21 SEP 21 0 SEP 22 SEP 22 2 SEP 23 SEP 23 0"
         },
         {
           "match": "Token",
-          "context": "ears after a complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOK"
+          "context": "ears after a complete return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN"
         },
         {
           "match": "token",
-          "context": "te return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓"
+          "context": "te return week is available. 了解更多 热门模型 ▸ # 会话成本 . 每次会话的平均成本。 无会话成本数据 没有符合该产品且包含会话的模型行。 了解更多 会话成本 ▸ # Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提"
         },
         {
           "match": "TOKEN",
-          "context": "ken 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash 输入 $0.22 输出 $0.66 已缓存 $0.0070 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contributor 31% deepseek-v4-flash 0% jev-1.13 缓存比例 0%"
+          "context": "Token 成本 . 每 100 万 token 的价格。 $0.20 muse-spark-1.3-contributor $1.32 deepseek-v4-flash 输入 $0.44 输出 $1.32 已缓存 $0.44 了解更多 TOKEN 成本 ▸ # 缓存比例 . 从缓存提供的输入 token 占比。 比例 模型 0-100% 95% muse-spark-1.3-contributor 35% deepseek-v4-flash 0% jev-1.13 缓存比例 0%"
         }
       ]
     },
@@ -6930,11 +6930,15 @@
       "name": "AssemblyAI Documentation",
       "url": "https://www.assemblyai.com/docs",
       "status": "ok",
-      "hits": 4,
+      "hits": 5,
       "findings": [
         {
           "match": "Pricing",
           "context": "aluate model accuracy End-to-end examples Administration Account Management Temporary tokens Single Sign-On Billing and Pricing Trust & security Trust center Security overview Data Controls Data retention and model training On this page Back to to"
+        },
+        {
+          "match": "pricing",
+          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"a"
         },
         {
           "match": "Pricing",
@@ -6958,12 +6962,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 65 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 58 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 58 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
+          "context": "ed · 58 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -7541,7 +7545,7 @@
       "name": "Account quotas - Firewor",
       "url": "https://docs.fireworks.ai/guides/quotas_usage/account-quotas",
       "status": "ok",
-      "hits": 11,
+      "hits": 10,
       "findings": [
         {
           "match": "$50 Tier 2 Spend or add $50 in cr",
@@ -7578,10 +7582,6 @@
         {
           "match": "free",
           "context": "you have enough credits.   If a job is rejected with HTTP 403 quota_exceeded or tier_required , add a payment method or free unused GPUs of that type, then resubmit.   Need more than 32 GPUs of a type? Reach out for enterprise support and we’ll"
-        },
-        {
-          "match": "Pricing",
-          "context": "uld I use? Concepts Serverless Inference Overview Serverless Modes Specialized Model Inference on Serverless Serverless Pricing Reserved Throughput Serverless Rate Limits US-only Serverless Deployments Deployments Overview Autoscaling Custom model"
         },
         {
           "match": "Pricing",
@@ -9076,7 +9076,7 @@
         },
         {
           "match": "Token",
-          "context": "tier. All times below are UTC+8. AutoClaw Team Oct 10 2026 News Get 100M+ Free Tokens: Daily Login Event Get 100M+ Free Tokens, just by logging in! AutoClaw Team Oct 16 2026 View More Experience AutoClaw Download AutoClaw Getting Started What is"
+          "context": "tier. All times below are UTC+8. AutoClaw Team Oct 10 2026 News Get 100M+ Free Tokens: Daily Login Event Get 100M+ Free Tokens, just by logging in! AutoClaw Team Oct 16 2026 View More Experience AutoClaw Download AutoClaw View all downloads Gett"
         },
         {
           "match": "Claim",
@@ -10655,15 +10655,15 @@
         },
         {
           "match": "Product",
-          "context": "AutoClaw Blog | Product Updates, Tutorials & News     Skip to content AutoClaw English 简体中文 English Home Blog Changelog Docs Models Download Bl"
+          "context": "AutoClaw Blog | Product Updates, Tutorials & News       Skip to content AutoClaw Home Blog Changelog Docs Models 中文 Blog Product updates, tutor"
         },
         {
           "match": "Product",
-          "context": "dates, Tutorials & News     Skip to content AutoClaw English 简体中文 English Home Blog Changelog Docs Models Download Blog Product updates, tutorials and industry insights to help you use AutoClaw better Product How to Schedule AI Tasks with AutoClaw"
+          "context": "utoClaw Blog | Product Updates, Tutorials & News       Skip to content AutoClaw Home Blog Changelog Docs Models 中文 Blog Product updates, tutorials and industry insights to help you use AutoClaw better Product How to Schedule AI Tasks with AutoClaw"
         },
         {
           "match": "Product",
-          "context": "og Changelog Docs Models Download Blog Product updates, tutorials and industry insights to help you use AutoClaw better Product How to Schedule AI Tasks with AutoClaw Schedule AI tasks in AutoClaw through conversation. Set one-time reminders or re"
+          "context": "ome Blog Changelog Docs Models 中文 Blog Product updates, tutorials and industry insights to help you use AutoClaw better Product How to Schedule AI Tasks with AutoClaw Schedule AI tasks in AutoClaw through conversation. Set one-time reminders or re"
         },
         {
           "match": "Product",
