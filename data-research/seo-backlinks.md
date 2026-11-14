@@ -125,3 +125,11 @@
 - 技术侧全绿排除嫌疑：HTTP/2 200 / content-type text/xml / XML 严格校验通过（80 条）/ www 变体也 200——我方无任何拦截
 - **已强制重新提交**（添加输入框同名重提=触发重新抓取）：「已发现网页 124」是瘦身前旧缓存，Google 下次读取（changefreq=daily，已重提加速）后计数会更新为 80；44 个 noindex 薄页会随之退出
 - 结论：sitemap 通道全通，无需再盯；此后新页面靠 IndexNow 即时推送 + sitemap 每日自动重抓双保险
+
+## 🚀 全渠道并行轮（2026-11-15 凌晨，老板令「继续全渠道多线并行seo吧！！」）
+
+1. **GSC 强制收录扩量 ×6 全 REQUESTED** ✅：free-cloud-servers / coding-plan-guide / zhipu-weekly / 智谱-bigmodel / 讯飞 / 主页刷新——今日 URL Inspection 配额（~10-12/天）已用 6-7 发，其余页面靠 sitemap 每日重抓覆盖。技术坑：批量循环的轮询窗口会漏检已翻转状态（coding-plan/讯飞实际早已提交成功），**逐个+面板文本终验才可靠**
+2. **GitHub 三轮双发**（在途累计 **10 发**=7 PR+3 Issue）：free-llm-intel **Issue #7**（59⭐，机生 README 走 Issue，定位「厂商动态巡检×额度情报聚合」上下游互补）+ awesome-free-ai-tools **PR #83**（23⭐，走其 Contributing 明文的「propose a new category」新增 Free-tier trackers & deal feeds 小节）
+3. **主动跳过**（白帽纪律）：awesome-free-llm-api（222⭐，收录门槛=「必须 API Key 免费调用」，TokenMost 不合其标准，硬提=垃圾 PR）；tokenation（53⭐，纯自动评分榜 PR 必被覆盖）
+4. **性能线**：nginx gzip 已开（HTML/JSON 均 content-encoding: gzip），性能合格无需动
+5. **两条小尾巴**：GitHub profile pin=无官方 API（UI 专属功能）放弃；Gist=token 缺 gist scope（老板若要：GitHub token 加 gist 权限即可，低优）
