@@ -133,3 +133,9 @@
 3. **主动跳过**（白帽纪律）：awesome-free-llm-api（222⭐，收录门槛=「必须 API Key 免费调用」，TokenMost 不合其标准，硬提=垃圾 PR）；tokenation（53⭐，纯自动评分榜 PR 必被覆盖）
 4. **性能线**：nginx gzip 已开（HTML/JSON 均 content-encoding: gzip），性能合格无需动
 5. **两条小尾巴**：GitHub profile pin=无官方 API（UI 专属功能）放弃；Gist=token 缺 gist scope（老板若要：GitHub token 加 gist 权限即可，低优）
+
+## 📊 周末晚轮（2026-11-14 20:xx，老板令「继续seo吧」）
+
+1. **在途 10 发普查**：7 PR 全 open 待审（正常审核期）；⚠️ awesome-ai-coding #171 被 PR Spam Guard bot 标记（账号 27 天新号/0 粉丝——内容合规无法加速，静待维护者判断）；❌ free-llm-intel #7 被站长 not_planned 关闭（无留言）——**不合适就体面退出，不重投不追问**
+2. **GSC 配额拉满收官**：今日 URL Inspection 累计 ~11-12 发用尽——**REQUESTED 8 页**（free-cloud/coding-plan/zhipu-weekly/智谱大页/讯飞/阿里云/字节/bailian-70）+ **实证已索引**（主页/en/kimi 平台页/xunfei-10yi 攻略）。技术坑：面板状态行在 320 字符窗口外，轮询报 no-confirm 系窗口过短——终验须 ≥600 字符切片
+3. **关键词侦察**：品牌词「tokenmost AI token 情报站」**Google 排名第一** ✅（收录+GSC 工作直接回报）；通用词「AI 羊毛 免费 token」未露头（18 天新域正常），竞品=免费 token 集中营/tokens.best/token-fbi/AItop 搜+知乎竞品专栏 p/2014053076936438015——内容+外链双线继续喂
