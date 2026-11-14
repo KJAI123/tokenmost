@@ -517,6 +517,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button class="tab" data-cat="infra">☁️ Cloud & Compute</button>
       <button class="tab" data-cat="double" style="border-color:rgba(210,153,34,.5)">🪙 Bonus Multipliers</button>
       <button class="tab" data-cat="student" style="border-color:rgba(37,99,235,.5)">🎓 Students</button>
+      <button class="tab" data-cat="gated">🎓 Gated</button>
       <button class="tab" data-cat="paid">💸 Paid Zone</button>
       <button class="tab" data-cat="warn">⚠️ Warnings</button>
     </div>
@@ -844,6 +845,7 @@ const rowHtml=(d,ov)=>{
       <span class="chip">${LAYER[d.category]?LAYER[d.category].name:d.category}</span>
       <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
       ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
+        ${d.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb">${(window._GATES&&window._GATES[d.gate])||d.gate}</span>`:''}
       ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ Claimed</span>':''}
       ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).flag:''}
       <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
@@ -921,6 +923,7 @@ function freshness(d){
 /* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
 function tokCell(d,ov){
   if(ov){const total=Math.round(ov.once+ov.daily*30),fw=w=>fmtEN(w);
+    if(d.unit==='tool')return'<span title="Free open-source software; AI usage via your own API key — not platform credits, excluded from totals">🧰<span class="unit" style="display:block;font-size:.68rem;margin-top:1px">Tool</span></span>';
     if(!total)return'<span title="该条为机制/口径说明，平台未公布可折算的具体 token 数额">Free<span class="unit" style="display:block;font-size:.68rem;margin-top:1px">额度未公布</span></span>';
     return`<span title="该平台全部信源按 DS4.1 Flash 等效的First-month haul总量 = 一次性 ${fw(ov.once)} ＋ 日均 ${fw(ov.daily)}×30 天（与Sort同口径）"><span class="num">${fw(total)}</span><span class="unit">First-month haul</span>${ov.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${ov.once?fw(ov.once)+'＋':''}daily ${fmtEN(ov.daily)}/day</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span>`;}
   if(d.verify_status==='expired')return'<span class="num">已失效</span><span class="unit">—</span>';
@@ -951,9 +954,11 @@ function render(){
   claimedSet=getClaimed();
   const PAID=new Set(['price_low','pricing_plan']);
   if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
+  else if(curCat==='gated'){list=list.filter(d=>d.gate&&!PAID.has(d.type)&&d.verify_status!=='expired');}
   else if(curCat==='warn'){list=list.filter(d=>d.type==='warning'||d.verify_status==='expired');}
   else{
     list=list.filter(d=>!PAID.has(d.type)&&d.type!=='warning'&&d.verify_status!=='expired'&&d.category!=='intel_source');  // 主板块=纯Free且有效；价格进付费区，避雷/失效进避雷区，内部信源不上站
+    if(curCat==='all')list=list.filter(d=>!d.gate);  // gated entries listed in 🎓 tab only
     if(curCat==='double')list=list.filter(isDouble);
     else if(curCat==='student')list=list.filter(d=>d.type==='student'||d.via==='student');
     else if(curCat==='official')list=list.filter(d=>d.category==='official_cn'||d.category==='official_global');
@@ -1006,6 +1011,7 @@ function render(){
       <div class="r-line2">
         <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
         ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
+        ${g.best.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb">${(window._GATES&&window._GATES[g.best.gate])||g.best.gate}</span>`:''}
         <span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>
       </div>
     </div>

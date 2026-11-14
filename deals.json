@@ -51,13 +51,14 @@
   "verify_status": "stale",
   "verified_at": "2026-10-28T00:36:17Z",
   "difficulty": 2,
-  "published": true,
+  "published": false,
   "verify_by": "auto",
   "tokens_wan": 1000,
   "via": "register",
   "group": "阿里云",
   "stale_reason": "源 bailian-quota 页面于 2026-11-05 变更（连续 2 次观测一致）",
-  "api_via": "api"
+  "api_via": "api",
+  "notes": "｜2026-11-15 查重下架：与 deep-bailian-newuser-quota 重复(覆盖模型清单更全者保留)"
  },
  {
   "id": "deepseek-price",
@@ -256,7 +257,8 @@
   "group": "Dify 自部署",
   "notes": "复核(03:52):官网实锤 Community Edition 开源自部署 Docker 仍在,页面改版误伤已恢复；自部署工具不折 token（上限=所接 Key 额度，不进总账）",
   "stale_reason": "源 dify-pricing 页面于 2026-11-13 变更（连续 2 次观测一致）",
-  "api_via": "api"
+  "api_via": "api",
+  "unit": "tool"
  },
  {
   "id": "modelscope-free-infer",
@@ -316,7 +318,9 @@
   "verify_by": "auto",
   "group": "AutoDL",
   "notes": "；GPU 算力非 token 不折对标",
-  "api_via": "unknown"
+  "api_via": "unknown",
+  "gate": "student",
+  "gate_label": "🎓 学生认证"
  },
  {
   "id": "gpushare-invite",
@@ -357,7 +361,9 @@
   "cny": 50,
   "api_via": "unknown",
   "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
-  "tokens_wan": 2857
+  "tokens_wan": 2857,
+  "gate": "audit",
+  "gate_label": "🛡 审核制"
  },
  {
   "id": "siliconflow-signup",
@@ -637,7 +643,9 @@
   "eq_wan": 72000,
   "eq_note": "$240 credits ×300 万 tok/$ ≈ 72000 万当量（$1≈300万口径）",
   "stale_reason": "源 gemini-students 页面于 2026-11-11 变更（连续 2 次观测一致）",
-  "api_via": "unknown"
+  "api_via": "unknown",
+  "gate": "student",
+  "gate_label": "🎓 学生认证"
  },
  {
   "id": "github-student-pack",
@@ -657,7 +665,9 @@
   "notes": "复核(05:2x):GitHub Community #197753 确认暂停新注册——学生总账中 Copilot 部分新用户暂不可领",
   "tokens_wan": 30000,
   "eq_note": "Azure $100/年+Copilot Free；$100×300万tok/$≈3亿 tokens/年一次性（$1≈300万排序口径）",
-  "api_via": "unknown"
+  "api_via": "unknown",
+  "gate": "student",
+  "gate_label": "🎓 学生认证"
  },
  {
   "id": "azure-student",
@@ -678,7 +688,9 @@
   "stale_reason": "源 azure-students 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52)",
   "eq_wan": 30000,
   "eq_note": "$100 credits ×300 万 tok/$ ≈ 30000 万当量（$1≈300万口径）",
-  "api_via": "unknown"
+  "api_via": "unknown",
+  "gate": "student",
+  "gate_label": "🎓 学生认证"
  },
  {
   "id": "groq-free",
@@ -1671,10 +1683,10 @@
   "verify_status": "stale",
   "verified_at": "2026-10-29T13:30:00Z",
   "difficulty": 2,
-  "published": true,
+  "published": false,
   "tokens_wan": 100000,
   "via": "register",
-  "notes": "31天倒计时推定截止≈11-24。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + X实测帖（数额/步骤多源一致=中高）；官方页面 JS 渲染未能直核（需登录）；31天规则与官方 Token Plan 文档一致（高）；10-29 二次恢复：讯飞 1024 十亿活动（10-27 确认在线）（bot 旧基线回滚所致，非权益消失）",
+  "notes": "31天倒计时推定截止≈11-24。来源：知乎顾北教程 zhuanlan.zhihu.com/p/2097344549374914581 + X实测帖（数额/步骤多源一致=中高）；官方页面 JS 渲染未能直核（需登录）；31天规则与官方 Token Plan 文档一致（高）；10-29 二次恢复：讯飞 1024 十亿活动（10-27 确认在线）（bot 旧基线回滚所致，非权益消失）｜2026-11-15 查重下架：与 r2(确认在线+领路细节版)重复,保 r2",
   "group": "讯飞",
   "api_via": "api",
   "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
@@ -1899,10 +1911,10 @@
   "verify_status": "stale",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true,
+  "published": false,
   "tokens_wan": 2000,
   "via": "invite",
-  "notes": "官方推广文档 mdx 原文（高），页面最后更新 2026-10-21。与 deals.json zhipu-signup 条一致，此为逐字复核版",
+  "notes": "官方推广文档 mdx 原文（高），页面最后更新 2026-10-21。与 deals.json zhipu-signup 条一致，此为逐字复核版｜2026-11-15 查重下架：与 zhipu-signup 同一活动(推荐有礼 2000万+2500万),信息较少者下架",
   "group": "智谱 BigModel",
   "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
   "api_via": "api"
@@ -3441,9 +3453,9 @@
   "verify_status": "stale",
   "verified_at": "2026-10-27T00:00:00Z",
   "difficulty": 1,
-  "published": true,
+  "published": false,
   "via": "client",
-  "notes": "官方 plans 页 2000 completions 直核（高）+上线报道交叉；Pro 试用=第三方/官方活动口径（中）",
+  "notes": "官方 plans 页 2000 completions 直核（高）+上线报道交叉；Pro 试用=第三方/官方活动口径（中）｜2026-11-15 查重下架：与 github-copilot-free 同为 Copilot Free 档,保正式条目",
   "group": "GitHub",
   "daily_wan": 13,
   "daily_note": "长期免费层月当量 400 万 ÷30 折日均（每天可薅）；月2000补全+50聊天；同github-copilot-free口径≈400万/月(估算)",
@@ -4224,7 +4236,9 @@
   "eq_note": "按自助档下限 $1,000 ×300 万 ≈ 3 亿当量（$200K 封顶需背书不计量防虚高）",
   "group": "初创额度",
   "api_via": "unknown",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "gate": "startup",
+  "gate_label": "🚀 初创资质"
  },
  {
   "id": "google-startups",
@@ -4246,7 +4260,9 @@
   "eq_note": "起步档 $2,000 ×300 万 ≈ 6 亿当量（封顶 $200K 不计量防虚高）",
   "group": "初创额度",
   "api_via": "unknown",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "gate": "startup",
+  "gate_label": "🚀 初创资质"
  },
  {
   "id": "qwen-app-5h-limit",
@@ -4424,7 +4440,8 @@
   "group": "小米 MiMo",
   "notes": "官方 docs+搜索互证（MIT 开源/OpenCode 二开，2026-10-30）；内置 V2.5 初期限免期已于 2026-06 前后结束，勿再当免费模型宣传；Token Plan 兼容 OpenAI/Anthropic 双协议可接 Claude Code/Cursor/OpenCode 等",
   "api_via": "api",
-  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）"
+  "stale_reason": "超过 14 天未被任何数据源自动续期（源失联或未配置监控）",
+  "unit": "tool"
  },
  {
   "id": "xiaomi-mimo-tokenplan",
@@ -4558,7 +4575,9 @@
   "cny": 300,
   "deadline": "2027-03-31",
   "api_via": "unknown",
-  "tokens_wan": 34286
+  "tokens_wan": 34286,
+  "gate": "student",
+  "gate_label": "🎓 学生认证"
  },
  {
   "id": "libtv-double11-zeropoints",
@@ -4704,7 +4723,9 @@
   "via": "free",
   "group": "Anthropic",
   "notes": "⭐爬虫线官方口径全核（2026-11-03 巡检：申请入口/条件/名额修正 1 万/价值≈$1200 全核）| 人群限定：仅合格开源维护者；名额先到先得抢完即止 | Anthropic 同门：deep-anthropic-startup（初创 $1,000+Team 一年）为另一通道",
-  "api_via": "api"
+  "api_via": "api",
+  "gate": "oss",
+  "gate_label": "🧑‍💻 开源维护者"
  },
  {
   "id": "azure-startups-5k",
@@ -4723,7 +4744,9 @@
   "group": "初创额度",
   "notes": "信源：爬虫线 1111 预热价格潮 harvest diff（官方定价/活动页集体更新时捕获，2026-11-01）| 初创区同门：aws-activate（$200K）/google-startups（$200K）/deep-anthropic-startup（$1K+Team）| 保守不入总账现金折算，避免初创额度虚高先例｜换算口径：$5,000 ÷ $0.525/M ≈ 95.2 亿 tokens 购买力上限（$1000 即时+$4000 验证后；可开支票/VM/模型各资源）",
   "api_via": "api",
-  "tokens_wan": 952381
+  "tokens_wan": 952381,
+  "gate": "startup",
+  "gate_label": "🚀 初创资质"
  },
  {
   "id": "zhipu-1111-coding-7zhe",
@@ -5130,7 +5153,9 @@
     "note": "Startups 计划自助申请"
    }
   ],
-  "api_via": "api"
+  "api_via": "api",
+  "gate": "startup",
+  "gate_label": "🚀 初创资质"
  },
  {
   "id": "replit-free-mode",
@@ -5278,7 +5303,9 @@
   "via": "student",
   "group": "Perplexity",
   "notes": "官方学生页+帮助中心双源直核（2026-11-08，TK 雷达轮捕获）| 与 comet-free（浏览器全面免费）同门不同产品线 | 付费订阅 5 折口径，不折白嫖总账",
-  "api_via": "unknown"
+  "api_via": "unknown",
+  "gate": "student",
+  "gate_label": "🎓 学生认证"
  },
  {
   "id": "command-code-goat",
@@ -5394,7 +5421,8 @@
     "note": "用免费额度驱动设计生成"
    }
   ],
-  "api_via": "api"
+  "api_via": "api",
+  "unit": "tool"
  },
  {
   "id": "fiimeopc-token",
@@ -5691,7 +5719,8 @@
   "published": true,
   "via": "free",
   "group": "Command Code",
-  "notes": "2026-11-12 官方 pricing 页直核 | 定价页唯一标 Free 的项目 | 预览期结束即恢复计费，用趁早"
+  "notes": "2026-11-12 官方 pricing 页直核 | 定价页唯一标 Free 的项目 | 预览期结束即恢复计费，用趁早",
+  "unit": "tool"
  },
  {
   "id": "clixad-free",
