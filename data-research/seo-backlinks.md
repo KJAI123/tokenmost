@@ -93,3 +93,19 @@
 - 2026-11-14 深夜（接管轮，主会话直做）：①PR #13/#44 复查=均 open 待审无留言（建仓次日属正常审核期）②**B6 落地**：自建仓 awesome-free-ai-tokens-cn 上线（40+ 条目四大分区全官方链接、MIT、9 topics、homepage 挂主站、数据仓互链闭环）③B12 扩展：free-ai-tokens 数据仓补 homepage+9 topics（此前两个都没有）④**B5 专栏草稿成稿**（28 条目+避坑+互动结尾，全带日期；待老板账号发布）⑤B8 物料包备妥（7 目标站通道表+提交字段+回执制；提交需登录态）⑥G3/G4 转实践固化。**待老板动作池：知乎账号发 B5 专栏、导航站提交（物料已备）、v2ex 老号回帖 B1、竞品友链洽谈 B4**。
 
 - 2026-11-14 深夜二轮（大范围分发轮，承接 sess_bf0ebf77 断点「高效大范围推广」）：①**GitHub 矩阵三连发**——ai-coding-welfare Issue #63（1316⭐，官方钦定 Issue 通道）+ linktre-tools PR #49（616⭐，国内热门AI产品表）+ AI-Catalog PR #205（505⭐，英文 Developer Tools 节）；候选筛 8 提 3（自动化仓/App 项目/拉伸匹配全跳过，宁缺毋滥）②**自有阵地**：KJAI123 profile README 上线（TokenMost 项目索引+数据 feed 清单）+ GitHub bio 植入 tokenmost.com ③IndexNow 重提 120 URL（平台页 11-13 重生成后首次重提，200）④**知乎答案矩阵立项**：真实浏览器扫 5 组查询锚定 **29 个候选问题池**（含流量数据），4 篇发射就绪稿+错峰日历 11-15~18，频率铁律 2 条/天 ⑤B4 友链通道定位=pencilai 站长邮箱，邮件稿成稿待老板点头 ⑥B7 CSDN=安全验证墙+未登录→老板动作池。**工程坑：Tab.ev 返回值本身非 dict（isinstance 判断错误会静默吞结果）；知乎搜索页需等 6s+scroll 触发懒加载；stats 正则要对齐「关注者 数字」格式。**
+
+## 🎉 GSC 全线打通（2026-11-14 深夜，老板登 Google 后「全部搞起来」）
+
+- ✅ **GSC 资源创建**：网址前缀 https://tokenmost.com/ （新 UI 弹窗：输入框 aria-label=添加资源；⚠️坐标法踩坑：Material 隐藏副本输入框 rect 为负，截图目检后改 DOM 定位可见输入框）
+- ✅ **HTML 文件验证通过**：googlea7b39f6ad342b458.html 已 scp 至服务器根目录+入 git 库（Pages 镜像同步覆盖）；curl 实测 200 返回验证串；⚠️第一次点错到「域名提供商」法的验证按钮（需 DNS TXT）报失败——每个验证法各有自己的验证按钮，点前必须 elementsFromPoint 核对上下文
+- ✅ **sitemap.xml 已提交**（「无法抓取」=刚提交暂时态，Googlebot UA 实测 200/124 URL 正常）
+- ✅ **收录实况（URL Inspection 实证，修正此前 site: 侦察误判）**：主页「网址已收录到 Google/网页已编入索引」✅、en.html 已收录 ✅——**site: 查询有滞后/盲区，URL Inspection 才是真相源**；free-cloud-servers.html=「已发现-尚未编入索引」→ **已请求编入索引（进优先抓取队列）**✅
+- ✅ **关键工程坑**：①Tab.key 参数是 (code字符串, vk数字)——key(13,13) 是错的，正确 key('Enter',13) ②insertText 的 \n 不产生真换行（知乎 Draft.js 与 CSDN contenteditable 同款）——多行输入必须逐行 insertText+真实 Enter ③CSDN 列表自动续 bullet：连续列表行要跳过 "- " 前缀否则出 "- -" ④系统剪贴板+合成 Cmd+V 也会被拍扁（此路不通） ⑤execCommand insertText 会被编辑器模型回滚（StackEdit 类）——唯一可靠=逐行真实键入
+
+## B7 CSDN：内容全就位，发布被账号状态拦（2026-11-14 深夜）
+
+- ✅ 标题/正文（35 行干净 Markdown：标题渲染/单层 bullet/TokenMost 蓝链×3）/标签（人工智能+语言模型+云计算；**CSDN 已存在「TokenMost」博主绑定标签但点选报「博主不存在」**）全部就位
+- ✅ **草稿已保存**（编辑器+草稿箱双保险，重载验证 1512 字符在位）
+- ❌ 发布被拦：「博主不存在」toast 复现 3 次——账号 bosscrab366 的博客空间存在（blog.csdn.net/bosscrab366 返回 200）但发布 API 解析不了博主身份，疑似会话 token 失效或账号未初始化博客身份
+- **交老板**：①浏览器里重登一次 CSDN（或用手机 App 发一次激活）②然后告诉我，我从草稿箱直接发；或老板自己在 草稿箱 点发布（标题/标签都配好了）
+- v2ex/toolify 仍未登录——B1/B8 维持挂起
