@@ -1193,3 +1193,45 @@ Command Code 将其 GOAT 计划中 GLM-5.3 的额度从 20 美元提升至 70 �
 - 🆕 [AI_News_CN] Command Code GOAT 每月10美元套餐现含70美元GLM 5.3与100美元GLM 5.3 Flash额度 
 
 Command Code 将其每月10美元 GOAT 套餐中的 GLM-5.3 额度从20美元提升至70美元，同时该套餐还包含100美元的 GLM 5.3 Flash 与10
+
+## 2026-11-14 02:31 UTC
+- 🆕 [v2ex_notice] 【中转站】GPT 官 Key 免费用。蹬完即止
+- 🆕 [linuxdoit] Antigravity免费用户将获得Gemini 4 hydrogen使用权限 
+
+ Google Antigravity Docs 
+
+ Choose a model | Google Antigravity Docs 
+
+Antigravity gives you access to leadi
+- 🆕 [linuxdoit] 【白嫖雷达】可自部署：一个全网限免、兑换码、AI 资源、游戏与各种白嫖福利的自托管聚合筛选雷达站，内含64个源。妈妈再也不用担心错过白嫖资源啦 
+
+ 本帖使用社区开源推广，符合推广要求。我申明并遵循社区要求的以下内容： 
+
+ ● 我的帖子已经打上 开源推广 标签： 是
+ ● 我的开源项目完整开源，无
+- 🆕 [linuxdo_tg] 主 题： Google AI Pro学生优惠持续4年值得开吗 
+发 布 者： tudouhaha 
+标签分类： 纯水 快问快答 ChatGPT Google-Gemini 
+时 间：2026-11-14 09:59:42
+内容预览： 过了学生认证，发现免费的是Google AI plus，用不了Ge
+- 🆕 [linuxdo_tg] 主 题： 不降智GPT 免费用 
+发 布 者： Pixcook.ai 
+标签分类： 
+时 间：2026-11-14 10:05:24
+内容预览： 周末没人上班，Token 用不完。送给佬免费用，用完即止。 https://pixcook.aisk-6810902ebc0f3256989f528a87
+- 🆕 [linuxdo_tg] 主 题： 多余的token可以做哪些有意义的事 
+发 布 者： youzi2025 
+标签分类： 纯水 
+时 间：2026-11-14 10:05:35
+内容预览： 今天Gemini突然重置了，导致我现在有两个满额度的哈基米20x和1个GPT20x，还有一个100美刀的grokbot，感觉有点用不完
+- 🆕 [linuxdo_tg] 主 题： 记录下昨晚到今早2个号的GCP 300&#036;赠金开通糟心历程 
+发 布 者： xmk2025 
+标签分类： 纯水 
+时 间：2026-11-14 10:08:20
+内容预览： 之前一直担心被咕嘎反薅，但是11月16号开始领了也不能用API了，所以计划赶在尾巴节点去薅一把。首先要感谢大
+- 🆕 [linuxdo_tg] 主 题： 质量人的神仙网站（寻求白嫖方案） 
+发 布 者： binbaba 
+标签分类： 纯水 快问快答 
+时 间：2026-11-14 10:13:53
+内容预览： 权限太低，请手动打开查看 
+直达链接： https://linux.do/t/topic/3174468
