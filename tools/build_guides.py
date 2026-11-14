@@ -14,6 +14,11 @@ TEMPLATE = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title} — tokenmost 攻略</title>
 <meta name="description" content="{desc}">
+<meta property="og:title" content="{title} — tokenmost">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tokenmost.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tokenmost.com/og-image.png">
 <link rel="canonical" href="https://tokenmost.com/guides/{gid}.html">
 <meta property="og:title" content="{title} — tokenmost 攻略">
 <meta property="og:description" content="{desc}">

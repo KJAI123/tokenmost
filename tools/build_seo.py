@@ -29,7 +29,11 @@ TPL = """<!DOCTYPE html>
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tokenmost.com/platform/{slug}.html">
-<meta name="twitter:card" content="summary">
+{robots}<meta property="og:image" content="https://tokenmost.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tokenmost.com/og-image.png">
 <script type="application/ld+json">{ld_web}</script>
 <script type="application/ld+json">{ld_faq}</script>
 <style>
@@ -105,6 +109,12 @@ COLL_TPL = """<!DOCTYPE html>
 <meta property="og:title" content="{title} — tokenmost">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://tokenmost.com/{slug}.html">
+<meta property="og:image" content="https://tokenmost.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tokenmost.com/og-image.png">
 <script type="application/ld+json">{ld_item}</script>
 <script type="application/ld+json">{ld_faq}</script>
 <style>body{{font-family:-apple-system,"PingFang SC",sans-serif;max-width:900px;margin:0 auto;padding:24px 16px;line-height:1.7;color:#1a2b22}}h1{{color:#059669;font-size:1.5rem}}h2{{font-size:1.15rem;margin-top:28px;border-left:4px solid #059669;padding-left:10px}}table{{border-collapse:collapse;width:100%;font-size:.9rem}}td,th{{border:1px solid #d8e4dd;padding:8px 10px;text-align:left}}th{{background:#ecfdf5}}a{{color:#059669}}.up{{font-size:.78rem;color:#6b7280}}.faq h3{{font-size:1rem;margin:18px 0 6px}}</style>
@@ -175,18 +185,27 @@ def main():
                              "mainEntity": [{"@type": "Question", "name": it["q"],
                                              "acceptedAnswer": {"@type": "Answer", "text": it["a"]}} for it in faq_items]},
                             ensure_ascii=False)
-        page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, h1=h1,
+        robots_meta = '<meta name="robots" content="noindex,follow">\n' if (verified == 0 and len(ds) < 3) else ''
+        page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, h1=h1, robots=robots_meta,
                           updated=today, layer=layer, n=len(ds), intro=intro,
                           deals="\n".join(blocks), faq="\n".join(faq_blocks),
                           name=esc_quote(name), ld_web=ld_web, ld_faq=ld_faq)
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
-        pages.append({"slug": slug, "name": name, "n": len(ds), "total": total_s,
+        pages.append({"slug": slug, "name": name, "n": len(ds), "verified": verified, "total": total_s,
                       "url": f"https://tokenmost.com/platform/{slug}.html",
                       "title": title, "desc": desc})
 
     # llms.txt（AI 搜索站点地图）
     lines = ["# tokenmost.com", "",
-             "> AI 大模型免费额度与折扣码情报站：聚合大模型官方、Agent 平台、MaaS 云、算力中心与 token 中间商的免费额度情报，每日核验，统一折算 DeepSeek V4.1 Flash 等效 token。", ""]
+             "> AI 大模型免费额度与折扣码情报站：聚合大模型官方、Agent 平台、MaaS 云、算力中心与 token 中间商的免费额度情报，每日核验，统一折算 DeepSeek V4.1 Flash 等效 token。", "",
+             "## Entity", "",
+             "- Name: TokenMost",
+             "- URL: https://tokenmost.com/",
+             "- Type: AI token deals intelligence site",
+             "- Data freshness: verified daily (per-offer verification dates; expired offers auto-removed)",
+             "- Metric: all offers normalized to DeepSeek V4.1 Flash equivalent tokens",
+             "- Open data: deals.json / llms-full.txt / rss.xml",
+             "- Contact: no signup required, site is fully public", ""]
     lines += ["## 平台免费额度页", ""]
     for p in sorted(pages, key=lambda x: -x["n"]):
         lines.append(f"- [{p['name']}免费额度（{p['total']}可薅，{p['n']} 条信源）]({p['url']}): {p['desc'][:80]}")
@@ -254,7 +273,8 @@ def main():
     urls = [("https://tokenmost.com/", today, "daily", "1.0"),
             ("https://tokenmost.com/en.html", today, "daily", "0.9"),
             ("https://tokenmost.com/free-cloud-servers.html", today, "daily", "0.9")]
-    urls += [(p["url"], today, "daily", "0.9") for p in sorted(pages, key=lambda x: -x["n"])]
+    sm_pages = [p for p in pages if not (p["verified"] == 0 and p["n"] < 3)]
+    urls += [(p["url"], today, "daily", "0.9") for p in sorted(sm_pages, key=lambda x: -x["n"])]
     urls += [(f"https://tokenmost.com/guides/{g['id']}.html", today, "weekly", "0.8") for g in guides]
     urls += [("https://tokenmost.com/llms.txt", today, "daily", "0.5"),
              ("https://tokenmost.com/llms-full.txt", today, "daily", "0.5"),
