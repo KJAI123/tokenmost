@@ -118,3 +118,10 @@
 4. **llms.txt GEO 实体块**：Entity 区块（Name/URL/Type/Data freshness/Metric/Open data）——AI 引擎实体识别强化
 5. **工程**：COLL_TPL 补 og:url；生成器改动持久化（build_seo.py/build_guides.py），check.py 流水线每次运行自动保持
 6. **服务器代操作**：SSH 拉 server git pull 被未跟踪验证文件挡（文件已入 git 成冲突源）→ rm 后 141 文件同步落地；主域 en og:image=3/sitemap=80/GSC 文件 200 全链验证
+
+## ✅ GSC sitemap「无法抓取」结案（2026-11-14 深夜，老板贴链接令「先重点搞下这个」）
+
+- **状态已翻绿**：GSC sitemaps 详情页实证「**已成功处理站点地图**」（上次读取 2026/11/14）——此前「无法抓取」是新资源验证后的抓取队列暂时态，一小时内自愈
+- 技术侧全绿排除嫌疑：HTTP/2 200 / content-type text/xml / XML 严格校验通过（80 条）/ www 变体也 200——我方无任何拦截
+- **已强制重新提交**（添加输入框同名重提=触发重新抓取）：「已发现网页 124」是瘦身前旧缓存，Google 下次读取（changefreq=daily，已重提加速）后计数会更新为 80；44 个 noindex 薄页会随之退出
+- 结论：sitemap 通道全通，无需再盯；此后新页面靠 IndexNow 即时推送 + sitemap 每日自动重抓双保险
