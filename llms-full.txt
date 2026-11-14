@@ -12,12 +12,6 @@
 - 链接：https://www.volcengine.com/product/ark
 - 状态：待复核（核验时间 2026-10-27T11:03:32Z）
 
-## 阿里云百炼｜注册赠送
-- 内容：每模型约 100 万 tokens、90 天有效，开通即自动发放——无需实名认证即可领取
-- 规则：仅北京地域控制台发放；仅抵扣实时推理；同实名换号不能再领；建议打开「用完即停」开关
-- 链接：https://bailian.aliyun.com
-- 状态：待复核（核验时间 2026-10-28T00:36:17Z）
-
 ## DeepSeek｜price_low
 - 内容：deepseek-flash 2/8 元、deepseek-v4-pro 9/27 元每百万（缓存命中低至 0.04/0.30 元）——全网比价基准线
 - 规则：按量计费；deepseek-chat/reasoner 已停售，现售两款模型
@@ -52,7 +46,7 @@
 - 内容：新人免费体验包：hy3-preview / DeepSeek-V4-Pro/Flash / GLM-5 / MiniMax-M2.7 及全部多模态理解模型，每模型 100 万 tokens、1 年有效，模型广场领取
 - 规则：每主账号限一次；原混元平台 2026-09-30 已停服，这是官方迁移后的新平台
 - 链接：https://cloud.tencent.com/document/product/1823/130053
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## MiniMax 开放平台｜price_low
 - 内容：MiniMax-M3 永久五折：2.1/8.4 元每百万；M3.1-Flash 1/4 元
@@ -70,7 +64,7 @@
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 日均：2000 次/天 × ~4K tok/次 ≈800 万/天（估算）+200 魔粒/天
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
@@ -82,12 +76,12 @@
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## 共绩算力｜hardware_bundle
 - 内容：个人开发者支持计划：新手进群+填表领 50 元算力体验积分（≈4090 单卡 24 小时）；深度支持审核制每月 200 元起、累计最高 1500 元
@@ -104,14 +98,14 @@
 ## 硅基流动｜限时活动
 - 内容：「推荐官」：本人实名认证领 16 元全平台通用券；邀好友注册+实名，双方各得 16 元券，人数不限（券 180 天有效，可用于 Pro/高速模型）
 - 链接：https://www.siliconflow.cn/developer-talk/od7wj9rr23p95uhihmhrombp
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## OpenRouter｜长期免费
 - 内容：:free 模型 14 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、thinkingmachines/inkling-2-small:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 日均：充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## NVIDIA NIM｜注册赠送
 - 内容：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可
@@ -128,12 +122,12 @@
 - 内容：67 个 $0 免费模型（Nemotron 3.5 Super VL 等），无需信用卡
 - 日均：长期免费层月当量 5000 万 ÷30 折日均（每天可薅）；67个$0模型聚合转发；按各底座牌价加权月5千万保守(估算,限速同底座)
 - 链接：https://aihubmix.com/pricing
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## Google AI Studio｜长期免费
 - 内容：Gemini API 免费层：Gemini 3.8 Flash / 3.5 Flash-Lite / 2.5 系等多款（4 系无免费层）；限额登录 AI Studio 查看
@@ -150,7 +144,7 @@
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## Azure for Students｜学生通道
 - 内容：$100 额度 / 12 个月，免信用卡、年年可续，含 Azure OpenAI 访问；另有 Speech/Translator 等 AI 免费层
@@ -161,7 +155,7 @@
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
 - 日均：1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）
 - 链接：https://console.groq.com
-- 状态：已验证（核验时间 2026-11-14T11:07:51Z）
+- 状态：已验证（核验时间 2026-11-14T22:58:03Z）
 
 ## SambaNova｜长期免费
 - 内容：免费层无需绑卡：DeepSeek-V3.1 / Llama-3.3-70B / gpt-oss-120b（20 RPM、每日 20 请求、20 万 tokens/日）
@@ -399,12 +393,6 @@
 - 链接：https://www.volcengine.com/article/2605938
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
-## 讯飞星辰 MaaS｜限时活动
-- 内容：1024 开发者节：每人免费领 10 亿 tokens（Spark-X2.6 系额度），手机号注册+实名即领，每人限 1 次
-- 规则：领取日起 31 天有效（非自然月）；入口=官网首页领取弹窗；⚠️ 领取弹窗底部默认勾选（可能绑付费套餐）必须先取消再确认，否则误订扣费；可接 Claude Code/Cursor/CC Switch/OpenClaw
-- 链接：https://maas.xfyun.cn
-- 状态：待复核（核验时间 2026-10-29T13:30:00Z）
-
 ## 讯飞星辰 MaaS｜pricing_plan
 - 内容：Astron Token Plan 订阅：标准 ¥200/月 2万积分（限时8折¥160）、高级 ¥600/月 6万积分（7折¥420）、尊享 ¥2000/月 20万积分（6折¥1200）；官方公布积分→token折算：每百万token耗积分（Spark-X2-Flash 输入100/输出200，GLM-5.2 800/2800，DeepSeek-V4-Pro 1200/2400，Kimi-K2.6 650/2700）
 - 规则：31天有效；TPM 200万/300万/500万；附赠¥168 AstronClaw基础版月卡；错峰0.8倍（工作日8-22点1.0倍）；不退不换、不可升降级、可叠加购买（每份独立Key）；Flash档2万积分≈输出1亿tokens
@@ -451,12 +439,6 @@
 - 内容：GLM Coding Plan 积分制：Lite 2000积分/5h+10000/周（首月¥94.4，原价¥118）；Pro 12000+60000（¥430.4/¥538）；Max 28000+140000（¥862.4/¥1078）；官方公布折算公式：消耗积分=(输入×系数+缓存×系数+输出×系数)/10000，GLM-5.3 系数 6.9/1.7/24、Flash 2.3/0.56/8、MCP 1.2/次；非高峰（工作日14-18点外）按 50% 抵扣
 - 规则：5h 额度动态刷新；周额度自下单起 7 天周期；升级立即刷新；Lite≈Flash 输出 1250 万 token/周（高峰口径）；官方称较 API 标准价最高省 92%；ZCode/AutoClaw 内 1.5 倍用量；V2 老次数制用户（¥49/149/469）到期前可按老价续订
 - 链接：https://docs.bigmodel.cn/cn/coding-plan/overview
-- 状态：待复核（核验时间 2026-10-27T00:00:00Z）
-
-## 智谱 BigModel｜邀请奖励
-- 内容：推荐有礼·共享 Tokens：每邀 1 位新用户注册+实名，双方各得 2000 万 GLM-4.5-Air Tokens（刊例 58 元）；被邀人另得 2500 万新用户礼包；拼好模·邀请有礼（订阅向）另算：受邀首单 9 折，邀请者获首单实付 10% 赠金、累计 30 位再叠加、无限叠加
-- 规则：共享 Tokens 活动每月最多邀 10 人、每月最高 2 亿 tokens；拼好模好友需 72h 内注册并订阅；每人仅一次首单立减
-- 链接：https://docs.bigmodel.cn/cn/update/promotion
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
 ## Trae 国内版｜pricing_plan
@@ -569,12 +551,6 @@
 - 内容：【官方changelog直核】ZCode 3.15.1（2026-10-12）：「邀请好友·免费蹬蹬，共得权益活动上线」+「支持订阅用户随机获得 GLM HighSpeed 体验」
 - 规则：端内邀请活动（与 bigmodel 文档侧「推荐有礼·共享Tokens」并行）；HighSpeed 为订阅用户随机体验权益；具体邀请数额以客户端活动页为准
 - 链接：https://zcode.z.ai/cn/changelog
-- 状态：待复核（核验时间 2026-10-27T00:00:00Z）
-
-## 智谱 BigModel｜邀请奖励
-- 内容：GLM Coding Plan 7 天体验卡可由老用户向好友赠送（邀请文案原文：「免费送5张GLM Coding Plan体验卡-先到先得……赠送你1张7天AI Coding体验卡，一起来用」）
-- 规则：每位订阅用户可赠送多张（示例文案5张）；被赠人无需付费；每张2000积分（官方FAQ）
-- 链接：https://t.me/s/linuxdoit/256191
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
 ## 智谱 BigModel｜warning
@@ -716,13 +692,6 @@
 - 规则：积分为火山系跨产品通用；签到可得加成（会员签到 3000 为付费档权益）
 - 日均：长期免费层月当量 500 万 ÷30 折日均（每天可薅）；Free档500积分/月；官方未公布换算,按1积分≈0.01元折500万(估算)
 - 链接：https://www.trae.cn/pricing
-- 状态：待复核（核验时间 2026-10-27T00:00:00Z）
-
-## GitHub Copilot｜长期免费
-- 内容：Copilot Free 档细则：每月 2000 次代码补全 + 50 次聊天（2024-12 上线口径）+ 有限 AI Credits + 仅自动模型选择（不能用 Claude/GPT 等指定模型）；Copilot Pro 另有移动端一个月免费试用（周期性活动）
-- 规则：Free 档够干嘛：日常补全够用、Agent/多文件任务不够（credits 有限+模型受限）；教师/热门开源维护者可免费用 Pro
-- 日均：长期免费层月当量 400 万 ÷30 折日均（每天可薅）；月2000补全+50聊天；同github-copilot-free口径≈400万/月(估算)
-- 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
 ## Cline｜price_low
@@ -1006,10 +975,10 @@
 - 状态：待复核（核验时间 2026-11-01T00:00:00Z）
 
 ## 豆包电脑版｜coupon
-- 内容：邀请你和我一起用豆包电脑版——现在下载还能**免费领取高级权益**（Pro 试用）：经链接注册/登录豆包电脑版即领，与「天天领额度」激励可叠加
+- 内容：邀请你和我一起用豆包电脑版——**现在下载可领免费额度，新用户还可享 30 天免费体验套餐**（Pro 试用）：经链接注册/登录豆包电脑版即领，与「天天领额度」激励可叠加
 - 规则：被邀请侧经链接进入领取；单账号；Pro 试用时长以实到账为准
 - 链接：https://www.doubao.com/pc/desktop-fission/pro-trial/invited?inviteCode=72Se9znu18
-- 状态：待复核（核验时间 2026-11-01T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-14T14:59:59Z）
 
 ## Trae 国内版｜coupon
 - 内容：码力裂变·新用户专享：经链接注册并登录 Trae 桌面端，一次性获得 3,000 积分（叠加 Free 档每月 500 积分基础额度）
@@ -1050,6 +1019,7 @@
 ## OpenAI｜subscription_bonus
 - 内容：ChatGPT Pro/Business 订阅月月白送 API 额度：Pro 按档每月领 $100/$200/$500；Business 标准席每席 $20、高级席每席 $100（工作空间共享）——额度约等于订阅费，等于 API 白嫖
 - 规则：领取：网页版 ChatGPT 设置→账单→关联 OpenAI 开发者账号组织后每月领取；仅限符合条件的 Pro/Business 订阅
+- 日均：保守口径 Pro100 档：$100/月 API credits ÷ $0.525/M ≈ 1.9 亿/月 ≈ 635 万/天（$200/$500 档按 2×/5× 放大）
 - 链接：https://help.openai.com/zh-hans-cn/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions
 - 状态：已验证（核验时间 2026-11-05T00:00:00Z）
 

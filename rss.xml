@@ -21,13 +21,6 @@
       <description>注册赠送 · 规则：主账号（含子账号）共享；仅抵扣按 token 后付费的在线推理（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>阿里云百炼：每模型约 100 万 tokens、90 天有效，开通即自动发放</title>
-      <link>https://bailian.aliyun.com</link>
-      <guid isPermaLink="false">bailian-signup</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：仅北京地域控制台发放；仅抵扣实时推理；同实名换号不能再领；建议打开「用完即停」开关（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>DeepSeek：deepseek-flash 2/8 元、deepseek-v4-pro 9/27 元每百万（缓存命中低至 0.04/0</title>
       <link>https://api-docs.deepseek.com/zh-cn/quick_start/pricing</link>
       <guid isPermaLink="false">deepseek-price</guid>
@@ -483,13 +476,6 @@
       <description>长期活动 · 规则：⚠️ 与协作奖励计划文档矛盾：Seed-2.1-pro 已于2026-10-08退出每日奖励名单——「每日500万」实为协作奖励计划口径（数据授权换取），2.1-pro已出局（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>讯飞星辰 MaaS：1024 开发者节：每人免费领 10 亿 tokens（Spark-X2.6 系额度），手机号注册+实名即领，每人限 1</title>
-      <link>https://maas.xfyun.cn</link>
-      <guid isPermaLink="false">deep-xunfei-1024-10yi</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：领取日起 31 天有效（非自然月）；入口=官网首页领取弹窗；⚠️ 领取弹窗底部默认勾选（可能绑付费套餐）必须先取消再确认，否则误订扣费；可接 Claude Code/Cursor/CC Switch/OpenClaw · 截止 2026-11-24T00:00:00+08:00（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>讯飞星辰 MaaS：Astron Token Plan 订阅：标准 ¥200/月 2万积分（限时8折¥160）、高级 ¥600/月 6万积分</title>
       <link>https://www.xfyun.cn/doc/spark/TokenPlan.html</link>
       <guid isPermaLink="false">deep-xunfei-token-plan</guid>
@@ -544,13 +530,6 @@
       <guid isPermaLink="false">deep-zhipu-coding-plan-points</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>套餐订阅 · 规则：5h 额度动态刷新；周额度自下单起 7 天周期；升级立即刷新；Lite≈Flash 输出 1250 万 token/周（高峰口径）；官方称较 API 标准价最高省 92%；ZCode/AutoClaw 内 1.5 倍用量；V2 老次数制用户（¥49/149/469）到期前可按老价续订（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：推荐有礼·共享 Tokens：每邀 1 位新用户注册+实名，双方各得 2000 万 GLM-4.5-Air Tokens</title>
-      <link>https://docs.bigmodel.cn/cn/update/promotion</link>
-      <guid isPermaLink="false">deep-zhipu-invite-tokens</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>邀请奖励 · 规则：共享 Tokens 活动每月最多邀 10 人、每月最高 2 亿 tokens；拼好模好友需 72h 内注册并订阅；每人仅一次首单立减（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Trae 国内版：官方五档积分制：Free ¥0=500积分/月</title>
@@ -677,13 +656,6 @@
       <guid isPermaLink="false">deep-zhipu-zcode-invite-r2</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>邀请奖励 · 规则：端内邀请活动（与 bigmodel 文档侧「推荐有礼·共享Tokens」并行）；HighSpeed 为订阅用户随机体验权益；具体邀请数额以客户端活动页为准（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：GLM Coding Plan 7 天体验卡可由老用户向好友赠送（邀请文案原文：「免费送5张GLM Coding Pla</title>
-      <link>https://t.me/s/linuxdoit/256191</link>
-      <guid isPermaLink="false">deep-zhipu-trial-card-gift-r2</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>邀请奖励 · 规则：每位订阅用户可赠送多张（示例文案5张）；被赠人无需付费；每张2000积分（官方FAQ）（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>智谱 BigModel：⚠️ 风险警示：淘宝出现第三方「GLM-5.3 Coding Plan 月卡 ¥79.9 不限 token」代充/共享服</title>
@@ -845,13 +817,6 @@
       <guid isPermaLink="false">deep-trae-free-usage-r7</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：积分为火山系跨产品通用；签到可得加成（会员签到 3000 为付费档权益）（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>GitHub Copilot：Copilot Free 档细则：每月 2000 次代码补全 + 50 次聊天（2024-12 上线口径）+ 有限 AI</title>
-      <link>https://docs.github.com/en/copilot/get-started/plans-for-github-copilot</link>
-      <guid isPermaLink="false">deep-copilot-free-r7</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：Free 档够干嘛：日常补全够用、Agent/多文件任务不够（credits 有限+模型受限）；教师/热门开源维护者可免费用 Pro（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Cline：Cline Pass 订阅 $9.99/月，含 13 个开源模型托管额度（Kimi K3、DeepSeek V4 Pro</title>
@@ -1172,7 +1137,7 @@
       <title>豆包电脑版：邀请你和我一起用豆包电脑版</title>
       <link>https://www.doubao.com/pc/desktop-fission/pro-trial/invited?inviteCode=72Se9znu18</link>
       <guid isPermaLink="false">doubao-pro-invite</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
       <description>折扣码 · 规则：被邀请侧经链接进入领取；单账号；Pro 试用时长以实到账为准（优惠以官方页面为准）</description>
     </item>
     <item>
