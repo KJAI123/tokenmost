@@ -109,3 +109,12 @@
 - ❌ 发布被拦：「博主不存在」toast 复现 3 次——账号 bosscrab366 的博客空间存在（blog.csdn.net/bosscrab366 返回 200）但发布 API 解析不了博主身份，疑似会话 token 失效或账号未初始化博客身份
 - **交老板**：①浏览器里重登一次 CSDN（或用手机 App 发一次激活）②然后告诉我，我从草稿箱直接发；或老板自己在 草稿箱 点发布（标题/标签都配好了）
 - v2ex/toolify 仍未登录——B1/B8 维持挂起
+
+## 🏗️ 站点侧 SEO 全面优化（2026-11-14 深夜五轮，老板令「其他的全部seo也全部并行地去优化一下」，推版 bf706b4）
+
+1. **og:image/twitter:image 全站从 0→全覆盖**：index/en/free-cloud/107 platform/11 guides 全部挂 1200×630 og-image.png（twitter:card 升级 summary_large_image）——社媒分享与 AI 引擎引用面补齐
+2. **en.html 中英混排三连修**：meta description 重写为地道英文（原文是「Free额度、Discount码」式机器混排）；JSON-LD FAQPage 8 问全英文化；可见 FAQ 区 6 问整段英文化；alternate_name→alternateName 规范化（index 同修）
+3. **薄页治理**：52 个「0 条已验证」平台页中 44 个超薄页（<3 条且 0 验证）打 noindex,follow（数据充实后随生成器自动恢复收录）；sitemap 同步排除薄页 124→80 URL——防薄内容拖累整站质量信号
+4. **llms.txt GEO 实体块**：Entity 区块（Name/URL/Type/Data freshness/Metric/Open data）——AI 引擎实体识别强化
+5. **工程**：COLL_TPL 补 og:url；生成器改动持久化（build_seo.py/build_guides.py），check.py 流水线每次运行自动保持
+6. **服务器代操作**：SSH 拉 server git pull 被未跟踪验证文件挡（文件已入 git 成冲突源）→ rm 后 141 文件同步落地；主域 en og:image=3/sitemap=80/GSC 文件 200 全链验证
