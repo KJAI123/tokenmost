@@ -1,9 +1,9 @@
 # freecloud 采集快照 2026-11-14
 
-- 采集时间: 2026-11-14T02:32:11Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: lowendbox-feed, railway-pricing | 👀观察中: instabox-pricing, fly-pricing, render-pricing, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: euserv-home
+- 采集时间: 2026-11-14T13:31:06Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: instabox-pricing, fly-pricing | 👀观察中: himitsushell, aliyun-bailian-freequota, gpunz | 🌱首跑基线: 0 | 失败: 无
 
-## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
+## 🔔 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
 - 🔎 **1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (** `output fail with a broken pipe. Exec output is UTF-8 text: without streaming each stream is cut at 1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (`invalidUtf8`), so read files with `GET /v1/machines/{id}/files/content` or `instabox pull`/`cp`, no`
 - 🔎 **4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` an** `cker microVM, Debian 13 (trixie) amd64 (`ci`: Ubuntu 24.04; `omarchy`: Arch Linux), kernel 6.18.60, 4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` and `orca`, 24 GiB on `omarchy`) and a 20 GiB persistent disk at `/data` (home is `/data/home`). Pytho`
@@ -132,8 +132,8 @@
 - 🔎 **transfer, and support for up to 100 websites and 16 databases – **al** `om** is an innovative free web hosting platform offering **3 GB of SSD disk space**, unlimited data transfer, and support for up to 100 websites and 16 databases – **all without ads or fees for the user**. Account registration is very simple and free, and today the pl`
 
 ##    EUserv（德国免费 IPv6 VPS 申领）（euserv-home）
-- 状态: error | https://www.euserv.com/en/
-- ❌ TIMEOUT: DNS timeout
+- 状态: ok | https://www.euserv.com/en/
+- 🔎 **per month if not displayed different, additional one time s** `dex.php) \*)\*\*)\*\*\*) All prices are included VAT depending on selected country, price tags are per month if not displayed different, additional one time setup fee may apply starting at 0,- EUR. Please watch full description, details and pricing of servic`
 
 ##    Scaleway 定价（法国云，免费档+试用）（scaleway-pricing）
 - 状态: ok | https://www.scaleway.com/en/pricing/
@@ -288,7 +288,7 @@
 - 🔎 **credits** `rations Price $0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1`
 - 🔎 **credits** `$0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits U`
 
-## 🔔 LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
+##    LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
 - 状态: ok | https://lowendbox.com/feed/
 - 🔎 **2GB KVM VPS for $1** `8230; appeared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it`
 - 🔎 **2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:0** `th First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:00:12 +0000 Godlike.Host is back with some great pricing for our readers. You'll need our special c`
@@ -365,7 +365,7 @@
 - 🔎 **free services** `ailable only to new customers who have not previously had an Azure account or received 12 months of free services. It is not currently available to customers who sign up directly for pay as you go in China and Ind`
 - 🔎 **free services** `tomers who try Azure free must move to pay as you go within 30 days to continue receiving 12 months free services. [![](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/acom_social_icon_azure) Explor`
 
-## 👀 Fly.io 定价（免费层收缩观察）（fly-pricing）
+## 🔔 Fly.io 定价（免费层收缩观察）（fly-pricing）
 - 状态: ok | https://fly.io/pricing
 - 🔎 **1GB | $0** `ed-cpu-1x · 256MB | $0.0030 | $2.19 | | shared-cpu-2x · 512MB | $0.0061 | $4.39 | | shared-cpu-4x · 1GB | $0.0122 | $8.78 | | shared-cpu-6x · 1.5GB | $0.0183 | $13.16 | | shared-cpu-8x · 2GB | $0.0244 | $17.5`
 - 🔎 **1.5GB | $0** `ared-cpu-2x · 512MB | $0.0061 | $4.39 | | shared-cpu-4x · 1GB | $0.0122 | $8.78 | | shared-cpu-6x · 1.5GB | $0.0183 | $13.16 | | shared-cpu-8x · 2GB | $0.0244 | $17.55 | | performance-1x · 2GB | $0.0458 | $33.0`
@@ -378,7 +378,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-## 👀 Render 定价（免费 Web 服务）（render-pricing）
+##    Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -404,7 +404,7 @@
 - 🔎 **32GB** `ice per RTX-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM`
 - 🔎 **160GB** `-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM 64GB Disk`
 
-## 🔔 Railway 定价（试用金观察）（railway-pricing）
+##    Railway 定价（试用金观察）（railway-pricing）
 - 状态: ok | https://railway.com/pricing
 - 🔎 **1 vCPU / 0** `small apps on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### H`
 - 🔎 **5 GB RAM per service** `on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### Hobby $5minimum usage`
@@ -546,9 +546,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794623515958) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794623515958) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794623515958) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794663054719) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794663054719) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794663054719) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -589,7 +589,7 @@
 - 🔎 **24 GB DDR5 | 8 vCPU | 12 TB · **40 Gbps** | 450 GB **NVMe** | $69** `/mo $99.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=16&os=ubuntu)14-day money-back | | 24 GB DDR5 | 8 vCPU | 12 TB · **40 Gbps** | 450 GB **NVMe** | $69.98 /mo $139.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=24&os=ubuntu)14-day money-back`
 - 🔎 **32 GB DDR5 | 12 vCPU | 12 TB · **40 Gbps** | 750 GB **NVMe** | $1** `/mo $139.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=24&os=ubuntu)14-day money-back | | 32 GB DDR5 | 12 vCPU | 12 TB · **40 Gbps** | 750 GB **NVMe** | $109.98 /mo $219.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=32&os=ubuntu)14-day money-bac`
 
-##    阿里云百炼新人免费额度（官方帮助中心规则页）（aliyun-bailian-freequota）
+## 👀 阿里云百炼新人免费额度（官方帮助中心规则页）（aliyun-bailian-freequota）
 - 状态: ok | https://help.aliyun.com/zh/model-studio/new-free-quota
 - 🔎 **免费额度** `当您首次开通阿里云百炼时，平台会自动为您发放各模型的新人专属免费额度。 ## 规则说明 ### 有效期 免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）。额度到期或耗尽后，继续调用模型推理服务将[产生计费](htt`
 - 🔎 **免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）** `当您首次开通阿里云百炼时，平台会自动为您发放各模型的新人专属免费额度。 ## 规则说明 ### 有效期 免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）。额度到期或耗尽后，继续调用模型推理服务将[产生计费](https://help.aliyun.com/zh/model-studio/billing-for-model-studio)。 **重要`
@@ -630,16 +630,16 @@
 
 ## 👀 GPU.nz（新西兰 GPU 云定价）（gpunz）
 - 状态: ok | https://gpu.nz/en/pricing
-- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0012 | $0.037 | $0.073 | $1.75 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5`
-- 🔎 **24 GB+ | $0** `| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0012 | $0.037 | $0.073 | $1.75 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0087 | $0.262 | $0.523 | $12.55`
-- 🔎 **48 GB+ | $0** `.75 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0036 | $0.109 | $0.218 | $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 | | GB10 128 GBGPU with 80 GB+ | $0.0087 | $0.262 | $0.523 | $12.55`
-- 🔎 **80 GB+ | $0** `| $5.23 | | GB10 128 GBGPU with 48 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 | | GB10 128 GBGPU with 80 GB+ | $0.0087 | $0.262 | $0.523 | $12.55 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $22.56/h | 4 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.00/h | $21.49/h | 1`
-- 🔎 **180gb) | 180 GB | $13** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $22.56/h | 4 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.00/h | $21.49/h | 17 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.18/h | $9.31/h`
-- 🔎 **141gb) | 141 GB | $4** `nz/en/gpu/b200-180gb) | 180 GB | $13.00/h | $21.49/h | 17 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $4.18/h | $9.31/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.30/h | $8.68`
-- 🔎 **141gb) | 141 GB | $7** `/en/gpu/h200-141gb) | 141 GB | $4.18/h | $9.31/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.30/h | $8.68/h | 37 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.57/h | $6.84/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $7.30/h | $8.68/h | 37 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.57/h | $6.84/h | 13 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.84/h | $5.63/h`
-- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.57/h | $6.84/h | 13 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.84/h | $5.63/h | 6 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.09/h | $7.01/`
+- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0012 | $0.037 | $0.074 | $1.78 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5`
+- 🔎 **24 GB+ | $0** `| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0012 | $0.037 | $0.074 | $1.78 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
+- 🔎 **48 GB+ | $0** `.78 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
+- 🔎 **80 GB+ | $0** `| $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | Prices and availability come from the live catalog and update au`
+- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $22.35/h | 13 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.18/h | $20.21/h |`
+- 🔎 **180gb) | 180 GB | $15** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $22.35/h | 13 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.18/h | $20.21/h | 30 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $3.98/h | $10.30/h`
+- 🔎 **141gb) | 141 GB | $3** `nz/en/gpu/b200-180gb) | 180 GB | $15.18/h | $20.21/h | 30 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $3.98/h | $10.30/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.77/h | $8.5`
+- 🔎 **141gb) | 141 GB | $7** `en/gpu/h200-141gb) | 141 GB | $3.98/h | $10.30/h | 24 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.77/h | $8.57/h | 35 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.69/h | $5.40/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $7.77/h | $8.57/h | 35 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.69/h | $5.40/h | 14 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $5.66/h`
+- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.69/h | $5.40/h | 14 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $5.66/h | 8 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.09/h | $6.81/`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing

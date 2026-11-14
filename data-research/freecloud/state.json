@@ -1,8 +1,8 @@
 {
   "baseline": {
     "instabox-pricing": {
-      "fp": "87bac648e555bd84f1df2f3f9c40f1fd530b0059ee6343b2c0d29963ac0be917",
-      "ts": "2026-11-13T15:18:26Z",
+      "fp": "99c5328506bad2a715ee4c076052a50c503c1ecee1aa24c3ae2d93c5c67258fc",
+      "ts": "2026-11-14T13:31:06Z",
       "n_hits": 60
     },
     "e2b-pricing": {
@@ -41,9 +41,9 @@
       "n_hits": 9
     },
     "fly-pricing": {
-      "fp": "ca8b7a0a9fea0cd7132c647adb3582b40cd121d6fc2d8b1d51961e9693952734",
-      "ts": "2026-11-06T15:21:28Z",
-      "n_hits": 23
+      "fp": "41ad671dc163e92feaeea094504c4d2087145cedcafd91ae3426d151f74b0176",
+      "ts": "2026-11-14T13:31:06Z",
+      "n_hits": 22
     },
     "render-pricing": {
       "fp": "e614e422419fb737a1aee12276937611e95cbb7b3a73c85e507f8e988cab2374",
@@ -293,28 +293,18 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "c916d00c3b0f4606b745ad4664f4b308a209b2a6ec501c17be93810cace7d437",
-      "ts": "2026-11-14T02:32:11Z",
+      "fp": "015e7a6b77bf87ab1f224eb11ffadd4c66cdf3dbf6c8331f18e27a313fc1fde3",
+      "ts": "2026-11-14T13:31:06Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "2650b81bb71c4e4802c7fac2aa87b2dac4da0d108bc0b18b15ac576b4ec1b89f",
-      "ts": "2026-11-14T02:32:11Z",
+      "fp": "5294ada3334d0f7196dec24e7b2948896777f403f0850c85aeb659d5d81da4c4",
+      "ts": "2026-11-14T13:31:06Z",
       "count": 1
     },
-    "instabox-pricing": {
-      "fp": "99c5328506bad2a715ee4c076052a50c503c1ecee1aa24c3ae2d93c5c67258fc",
-      "ts": "2026-11-14T02:32:11Z",
-      "count": 1
-    },
-    "fly-pricing": {
-      "fp": "41ad671dc163e92feaeea094504c4d2087145cedcafd91ae3426d151f74b0176",
-      "ts": "2026-11-14T02:32:11Z",
-      "count": 1
-    },
-    "render-pricing": {
-      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
-      "ts": "2026-11-14T02:32:11Z",
+    "aliyun-bailian-freequota": {
+      "fp": "8b15e172636c29ca3f366c89e2a0aec91fa0246ad43d75d17ad3d5199d01ef74",
+      "ts": "2026-11-14T13:31:06Z",
       "count": 1
     }
   }
