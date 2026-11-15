@@ -1449,3 +1449,34 @@ via LINUX DO - 热门话题 (author: 皮蛋)
 - 🆕 [AI_News_CN] Command Code GOAT 套餐每月 10 美元提供 100 美元 GLM-5.3 Flash 与 70 美元 GLM 额度 
 
 Command Code 表示其每月 10 美元的 GOAT 套餐包含 100 美元的 GLM-5.3 Flash 用量，以及各 70 美元的 GLM-5.3 和
+
+## 2026-11-15 12:30 UTC
+- 🆕 [v2ex_notice] 【分享创造】Agenton 更新：加了个贴边悬浮栏，Claude / Codex 等工具的额度一起看
+- 🆕 [linuxdo_tg] 主 题： 谷/的学生pro不能在反重力里面用新模型吗？ 
+发 布 者： smip 
+标签分类： 快问快答 
+时 间：2026-11-15 19:58:53
+内容预览： 求问求问老哥，有能用的吗？我之前白嫖的那个0元pro的能用，但是掉了 
+直达链接： https://linux.do/t/topic
+- 🆕 [linuxdo_tg] 主 题： 腾讯版Muse（新用户可免费体验1个月） 
+发 布 者： xiaogang829 
+标签分类： 人工智能 福利羊毛 muse 
+时 间：2026-11-15 20:07:08
+内容预览： 这是网站界面：免费套餐详情：领取：点击此处领取 
+直达链接： https://linux.do/t/t
+- 🆕 [linuxdo_tg] 主 题： 【免费福利】USCN.SI 大模型和GPU资源交易平台内测，Codex Pro 200 7天免费额度，随时更新 
+发 布 者： beijingcao 
+标签分类： 人工智能 ChatGPT 
+时 间：2026-11-15 20:10:59
+内容预览： 大家好，我的大模型交易平台 uscn.
+- 🆕 [linuxdo_tg] 主 题： 腾讯版Muse（新用户可试用1个月） 
+发 布 者： xiaogang829 
+标签分类： 人工智能 福利羊毛 
+时 间：2026-11-15 20:12:50
+内容预览： 这是网站界面：免费套餐详情：领取：点击此处领取 
+直达链接： https://linux.do/t/topic/31
+- 🆕 [linuxdo_tg] 主 题： Gemini 20x的订阅目前价格大概是多少呢? 然后如果梭哈用carbon是否可以畅用呢? 
+发 布 者： Yiyabo 
+标签分类： 人工智能 
+时 间：2026-11-15 20:19:30
+内容预览： 如题, carbon 给我留下了相当不错的印象, 我甚至认为在大部分情况它比fa
