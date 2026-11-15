@@ -237,9 +237,8 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 .empty b{display:block;font-size:1rem;color:var(--text);margin-bottom:4px;font-weight:600}
 .empty span{font-size:.875rem}
 /* ===== 底部导航 ===== */
-.r-notes{flex:1;min-width:0;text-align:right;color:var(--muted);font-size:.75rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.r-sub{font-size:.72rem;color:var(--muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:7px;opacity:.95}
-.r-hint{flex:1;min-width:0;text-align:right;color:var(--muted);font-size:.75rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* v2.37 浓缩：主列表隐藏信源摘要链（展开明细仍可见），信息密度提升 */
+.r-notes{display:none}
 #bottomNav{display:none;position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--border);z-index:40;padding:4px 8px calc(4px + env(safe-area-inset-bottom))}
 #bottomNav .brow{display:flex;justify-content:space-around}
 #bottomNav button{background:none;border:none;color:var(--muted);font-size:.75rem;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 12px;cursor:pointer;min-height:44px;min-width:56px}
@@ -874,12 +873,10 @@ const rowHtml=(d,ov)=>{
       <span class="chip">${LAYER[d.category]?LAYER[d.category].name:d.category}</span>
       <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
       ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
-      ${d.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb">${(window._GATES&&window._GATES[d.gate])||d.gate}</span>`:''}
       ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
       ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).flag:''}
       <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
     </div>
-    ${(d.rule||d.notes)?`<div class="r-sub">${esc(subOf(d))}</div>`:''}
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
   <div class="r-state">${freshness(d)}${apiBadge(d)}${dl}</div>
@@ -892,22 +889,6 @@ const rowHtml=(d,ov)=>{
   </div>
 </article>`};
 
-function hintOf(d){
-  var r=String(d.rule||'').replace(/<[^>]*>/g,'').replace(/\*\*/g,'').replace(/；/g,' · ').trim();
-  var dl=d.deadline?('⏰ '+String(d.deadline).slice(0,26)):'';
-  var out=dl+(r?' · '+r:'');
-  return out.length>70?out.slice(0,68)+'…':out;
-}
-function subOf(d){
-  var n=String(d.notes||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
-  if(!n)return '';
-  n=n.replace(/^[\u2B50\u26A0\uD83D\uDCA1\u2705\uDD34\s]*/,'');
-  n=n.replace(/^20\d\d-\d\d-\d\d[^\uff5c]*\uff5c/,'');
-  var seg=n.split('\uff5c')[0];
-  if(seg.length<14&&n.indexOf('\uff5c')>0)seg=(n.split('\uff5c')[1]||seg);
-  seg=seg.replace(/^\d+\.\s*/,'');
-  return seg.length>60?seg.slice(0,58)+'…':seg;
-}
 function fmMeta(d){
   if(d.free_models&&d.free_models.length)return{n:d.free_models.length,kind:'free',items:d.free_models};
   if(d.freebies&&d.freebies.length)return{n:d.freebies.length,kind:'gift',items:d.freebies};
@@ -1071,9 +1052,8 @@ function render(){
         <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
         ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
         ${g.best.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb" title="需${''}">${(window._GATES&&window._GATES[g.best.gate])||g.best.gate}</span>`:''}
-        <span class="r-hint">📋 ${esc(hintOf(g.best))}</span>
+        <span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>
       </div>
-      <div class="r-sub">${esc(subOf(g.best))}</div>
     </div>
     <div class="r-state">${freshness(g.best)}${apiBadge(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
     <div class="r-ops">
