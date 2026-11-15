@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-15T12:29:46Z",
+  "harvested_at": "2026-11-15T16:31:07Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -877,10 +877,6 @@
         },
         {
           "match": "会员",
-          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
-        },
-        {
-          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -942,6 +938,10 @@
         {
           "match": "会员",
           "context": "s 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Co"
+        },
+        {
+          "match": "会员",
+          "context": "时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Co"
         }
       ]
     },
@@ -3254,11 +3254,11 @@
         },
         {
           "match": "free",
-          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容"
+          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
-          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容 103 讨论 1 进入专区 精选文章 不写代码，用Lighthouse轻松搭建知识库"
+          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支持文生图,也可作为视频等多模态视觉生成基础。 粉丝 3 内容 17 讨论 10 进入"
         },
         {
           "match": "free",
@@ -3986,9 +3986,8 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "RemoteDisconnected: Remote end closed connection without response"
     },
     {
       "id": "endpoints-main",
@@ -4459,15 +4458,11 @@
       "name": "MonkeyCode 官方文档",
       "url": "https://monkeycode.docs.baizhi.cloud",
       "status": "ok",
-      "hits": 2,
+      "hits": 1,
       "findings": [
         {
-          "match": "赠送额度调整公告（11月11日起） MonkeyCode AI 智能问答 ​ 在线使用 GitHub 使",
-          "context": "MonkeyCode AI - MonkeyCode 每日赠送额度调整公告（11月11日起） MonkeyCode AI 智能问答 ​ 在线使用 GitHub 使用指南 套餐活动 更新日志 常见问题 目录 🔔 MonkeyCode 每日赠送额度调整公告（11月11日起） 🌟 MonkeyCode介绍 🔥 上手指南-在线版本 🔦 上手指南-私有化部署 🗂️ 上手指南-本地work版本 🎉 个人用户注册"
-        },
-        {
           "match": "额度",
-          "context": "de 每日赠送额度调整公告（11月11日起） 🌟 MonkeyCode介绍 🔥 上手指南-在线版本 🔦 上手指南-私有化部署 🗂️ 上手指南-本地work版本 🎉 个人用户注册 💰 MonkeyCode 积分说明 🎁 MonkeyCode 额度说明 💫 上手指南-从零到一实践案例 👥 团队版 👉 配置说明 内容摘要 MonkeyCode AI MonkeyCode 不是 AI 编程工具，是对传统研发模式的变革，是全新的 AI 编程体验，让你的研发团队效率 Max。 相关产品 Pa"
+          "context": "yCode 积分活动结束公告（11月7日起） 🌟 MonkeyCode介绍 🔥 上手指南-在线版本 🔦 上手指南-私有化部署 🗂️ 上手指南-本地work版本 🎉 个人用户注册 💰 MonkeyCode 积分说明 🎁 MonkeyCode 额度说明 💫 上手指南-从零到一实践案例 👥 团队版 👉 配置说明 内容摘要 MonkeyCode AI MonkeyCode 不是 AI 编程工具，是对传统研发模式的变革，是全新的 AI 编程体验，让你的研发团队效率 Max。 相关产品 Pa"
         }
       ]
     },
@@ -4480,27 +4475,23 @@
       "findings": [
         {
           "match": "免费模型网关 免费期限 · 以官方页面实时状态为准（匿名 200 次",
-          "context": "重置 0   刚结束 49     /           没有匹配内容，试试其他关键词。         01   HARNESS FIRST · ZERO FRICTION FIRST 免费模型 / 方案     72 项     免费模型网关 免费期限 · 以官方页面实时状态为准（匿名 200 次/小时） Kilo Code · 免费模型网关（16 个 $0 模型 ID） ¥ 0 Kilo Code 官方网关模型接口（ai-gateway.kilo.ai/api/v1/models，2026-11-13 实拉）目录共 472 个模型"
-        },
-        {
-          "match": "免费模型按 IP 限流 200 次",
-          "context": "lash (free) 等带 free 标识条目，页面口径合计约 18 款，与网关零价 ID 计数不完全一致，以实时目录为准。官方文档（kilo.ai/docs/gateway/models-and-providers）明确：未登录匿名调用免费模型按 IP 限流 200 次/小时，超出返回 429；带 API Key 的限额官方未公布。Auto Free 可能路由到会记录 prompt / output 并用于改进服务的供应商（NVIDIA 免费端点明确「仅试用，勿传机密」）。接入：VS Code / Jet"
+          "context": "重置 1   刚结束 48     /           没有匹配内容，试试其他关键词。         01   HARNESS FIRST · ZERO FRICTION FIRST 免费模型 / 方案     79 项     免费模型网关 免费期限 · 以官方页面实时状态为准（匿名 200 次/小时） Kilo Code · 免费模型网关（17 个 $0 模型 ID） ¥ 0 Kilo 官方网关实拉（ai-gateway.kilo.ai/api/v1/models，2026-11-15 核验）：467 个模型 ID 中输入与输出"
         },
         {
           "match": "免费模型目录 ↗ 免费 API 额度",
-          "context": "/v1/models 实拉 + kilo.ai/models?price=free + /docs/gateway/models-and-providers 核验 · 2026-11-13（16 个零价 ID，匿名 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别"
+          "context": "）+ kilo.ai/docs/gateway/models-and-providers + kilo.ai/pricing 核验 · 2026-11-15（16 → 17 个零价 ID，新增 ling-3.2-flash:free） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别"
         },
         {
           "match": "免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度",
-          "context": "o.ai/models?price=free + /docs/gateway/models-and-providers 核验 · 2026-11-13（16 个零价 ID，匿名 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens"
+          "context": "eway/models-and-providers + kilo.ai/pricing 核验 · 2026-11-15（16 → 17 个零价 ID，新增 ling-3.2-flash:free） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens"
         },
         {
           "match": "免费推理额度",
-          "context": "ls-and-providers 核验 · 2026-11-13（16 个零价 ID，匿名 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度"
+          "context": "核验 · 2026-11-15（16 → 17 个零价 ID，新增 ling-3.2-flash:free） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度"
         },
         {
           "match": "免费推理试用额度，用于零成本体验模型推理服务；免费推理额度",
-          "context": "D，匿名 200 次/小时） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度。适用范围：仅抵扣按 token 后付费的在线推理费用（含缓存命中 / 未命中与输出 token），不能抵扣插件 / 知识库费用"
+          "context": ".2-flash:free） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度。适用范围：仅抵扣按 token 后付费的在线推理费用（含缓存命中 / 未命中与输出 token），不能抵扣插件 / 知识库费用"
         },
         {
           "match": "免费推理额度为 500（k token",
@@ -4520,47 +4511,55 @@
         },
         {
           "match": "免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度",
-          "context": "icloud.com/pricing + support.huaweicloud.com 计费与用户指南核验 · 2026-11-12（积分制，500 积分/月；旧「每日 1000 万 Token」口径已更正） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼新用户免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重"
-        },
-        {
-          "match": "免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token",
-          "context": "费与用户指南核验 · 2026-11-12（积分制，500 积分/月；旧「每日 1000 万 Token」口径已更正） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼新用户免费额度（官方帮助文档 10-20 更新）：每模型通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重复领；Token Plan / Coding Plan 专属 Key 不消耗免费额度；未认证用户用完即停"
+          "context": "icloud.com/pricing + support.huaweicloud.com 计费与用户指南核验 · 2026-11-12（积分制，500 积分/月；旧「每日 1000 万 Token」口径已更正） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼官方文档《新人免费额度》（页面更新 2026-11-14 16:49:49，2026-11-15 核验）规则：首次开通百炼时系统自动发放各模型新人免费额度，「每模型通常 100 万 Token」、有效期 90 天（从开通"
         },
         {
           "match": "免费额度",
-          "context": "通常 100 万 Token、相互独立，有效期 90 天（自开通百炼 / 模型发布 / 申请通过取较晚者）；仅华北 2（北京）；无需实名即可领取；同一实名主体不可重复领；Token Plan / Coding Plan 专属 Key 不消耗免费额度；未认证用户用完即停。可在支持 OpenAI 兼容端点的本地 harness 中直接配置 dashscope API Key 使用。口径更新：官方 FAQ（10-20 更新）重新确认「OAuth 认证提供独立的免费额度（每天 2,000 次"
+          "context": "指南核验 · 2026-11-12（积分制，500 积分/月；旧「每日 1000 万 Token」口径已更正） 查看免费开通 ↗ 新用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼官方文档《新人免费额度》（页面更新 2026-11-14 16:49:49，2026-11-15 核验）规则：首次开通百炼时系统自动发放各模型新人免费额度，「每模型通常 100 万 Token」、有效期 90 天（从开通、模型发布或申请通过之日起算，以较晚者为准"
         },
         {
-          "match": "免费额度（每天 2,000 次调用），与百炼控制台的 API Key 免费额度",
-          "context": "专属 Key 不消耗免费额度；未认证用户用完即停。可在支持 OpenAI 兼容端点的本地 harness 中直接配置 dashscope API Key 使用。口径更新：官方 FAQ（10-20 更新）重新确认「OAuth 认证提供独立的免费额度（每天 2,000 次调用），与百炼控制台的 API Key 免费额度体系相互独立……页面无相关记录并不表示 OAuth 认证的免费额度失效」——上轮曾将「OAuth 每日 2,000 次」判为 Qwen Code 旧口径（4-15 关停）并不再采信，本轮官方 FAQ 重新确认该额度存在；但适用产品、限流与期"
+          "match": "免费额度，「每模型通常 100 万 Token",
+          "context": "用户礼 免费期限 · 开通后 90 天有效 阿里云百炼 · 新用户免费额度 ¥ 0 阿里云百炼官方文档《新人免费额度》（页面更新 2026-11-14 16:49:49，2026-11-15 核验）规则：首次开通百炼时系统自动发放各模型新人免费额度，「每模型通常 100 万 Token」、有效期 90 天（从开通、模型发布或申请通过之日起算，以较晚者为准）。本轮重要变化：官方说明新增「开通阿里云百炼需先完成实名认证，未完成实名认证不发放免费额度」，门槛由原先的免实名改为需实名；且「仅华北2（北京）地域模型享有免费额度」。"
         },
         {
-          "match": "免费额度失效」——上轮曾将「OAuth 每日 2,000 次",
-          "context": "e API Key 使用。口径更新：官方 FAQ（10-20 更新）重新确认「OAuth 认证提供独立的免费额度（每天 2,000 次调用），与百炼控制台的 API Key 免费额度体系相互独立……页面无相关记录并不表示 OAuth 认证的免费额度失效」——上轮曾将「OAuth 每日 2,000 次」判为 Qwen Code 旧口径（4-15 关停）并不再采信，本轮官方 FAQ 重新确认该额度存在；但适用产品、限流与期限细节官方未说明，是否等同 Qwen Code 免费层恢复待核。 本轮（2026-10-31）复核 new-free-"
-        },
-        {
-          "match": "免费额度",
-          "context": "期限细节官方未说明，是否等同 Qwen Code 免费层恢复待核。 本轮（2026-10-31）复核 new-free-quota 页（10-30 更新）：主体规则不变（每模型约 100 万 Token、90 天、仅华北2），新增「已下架的免费额度」章节。 门槛 A 级 · 注册阿里云（免实名） 额度 每模型 100 万 Token，开通后 90 天有效；OAuth 认证另有独立免费额度（官方 FAQ 称每天 2,000 次调用，细节待核） 注意 2026-10-29 起 qwen-"
-        },
-        {
-          "match": "免费额度（官方 FAQ 称每天 2,000 次",
-          "context": "30 更新）：主体规则不变（每模型约 100 万 Token、90 天、仅华北2），新增「已下架的免费额度」章节。 门槛 A 级 · 注册阿里云（免实名） 额度 每模型 100 万 Token，开通后 90 天有效；OAuth 认证另有独立免费额度（官方 FAQ 称每天 2,000 次调用，细节待核） 注意 2026-10-29 起 qwen-max / qwen-plus / qwen-turbo、deepseek、glm、wanx 等大批模型的新人免费额度已下架，新用户不再获得；老用户已发放额度可用至到期或耗尽 获取"
-        },
-        {
-          "match": "免费额度已下架，新用户不再获得；老用户已发放额度",
-          "context": "OAuth 认证另有独立免费额度（官方 FAQ 称每天 2,000 次调用，细节待核） 注意 2026-10-29 起 qwen-max / qwen-plus / qwen-turbo、deepseek、glm、wanx 等大批模型的新人免费额度已下架，新用户不再获得；老用户已发放额度可用至到期或耗尽 获取方式 开通百炼对应地域 → 完善信息并同意协议 → 创建通用 API Key → 实时调用自动抵扣。 官方 help.aliyun.com/zh/model-studio/new-free-quota 核验 · 202"
+          "match": "免费额度」，门槛由原先的免实名改为需实名；且「仅华北2（北京）地域模型享有免费额度",
+          "context": "则：首次开通百炼时系统自动发放各模型新人免费额度，「每模型通常 100 万 Token」、有效期 90 天（从开通、模型发布或申请通过之日起算，以较晚者为准）。本轮重要变化：官方说明新增「开通阿里云百炼需先完成实名认证，未完成实名认证不发放免费额度」，门槛由原先的免实名改为需实名；且「仅华北2（北京）地域模型享有免费额度」。额度过期后不支持补发、延期或重置，同一实名主体重新注册账号不可再次领取。已下架免费额度的模型清单持续扩大（2026-10-29 与 2026-11-13 两批，含 qwen-max / qwen-plus / qwen-turbo、de"
         },
         {
           "match": "免费额度",
-          "context": "信息并同意协议 → 创建通用 API Key → 实时调用自动抵扣。 官方 help.aliyun.com/zh/model-studio/new-free-quota 核验 · 2026-10-31（10-29 起部分模型额度下架） 查看免费额度说明 ↗ 新用户礼 免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度 ¥ 0 官方计费 FAQ 明确：新用户注册即得 14 元免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Toke"
+          "context": "重要变化：官方说明新增「开通阿里云百炼需先完成实名认证，未完成实名认证不发放免费额度」，门槛由原先的免实名改为需实名；且「仅华北2（北京）地域模型享有免费额度」。额度过期后不支持补发、延期或重置，同一实名主体重新注册账号不可再次领取。已下架免费额度的模型清单持续扩大（2026-10-29 与 2026-11-13 两批，含 qwen-max / qwen-plus / qwen-turbo、deepseek、glm、wanx 等大批型号），新用户不再获得；老用户已发放额度可用至到期或"
+        },
+        {
+          "match": "免费额度（官方 FAQ 称每天 2,000 次调用），与 API Key 的 Token",
+          "context": "0-29 与 2026-11-13 两批，含 qwen-max / qwen-plus / qwen-turbo、deepseek、glm、wanx 等大批型号），新用户不再获得；老用户已发放额度可用至到期或耗尽。另：OAuth 认证有独立免费额度（官方 FAQ 称每天 2,000 次调用），与 API Key 的 Token 额度体系相互独立、不在控制台免费额度页显示。 门槛 A 级 · 阿里云账号 + 完成实名认证（官方 11-14 更新：未实名不发放免费额度） 额度 每模型通常 100 万 Token，开通后 90 天有效；仅华北 2（北京）地域；OAut"
+        },
+        {
+          "match": "免费额度",
+          "context": "epseek、glm、wanx 等大批型号），新用户不再获得；老用户已发放额度可用至到期或耗尽。另：OAuth 认证有独立免费额度（官方 FAQ 称每天 2,000 次调用），与 API Key 的 Token 额度体系相互独立、不在控制台免费额度页显示。 门槛 A 级 · 阿里云账号 + 完成实名认证（官方 11-14 更新：未实名不发放免费额度） 额度 每模型通常 100 万 Token，开通后 90 天有效；仅华北 2（北京）地域；OAuth 认证另有独立额度（每天 2,000"
+        },
+        {
+          "match": "免费额度） 额度 每模型通常 100 万 Token",
+          "context": "Auth 认证有独立免费额度（官方 FAQ 称每天 2,000 次调用），与 API Key 的 Token 额度体系相互独立、不在控制台免费额度页显示。 门槛 A 级 · 阿里云账号 + 完成实名认证（官方 11-14 更新：未实名不发放免费额度） 额度 每模型通常 100 万 Token，开通后 90 天有效；仅华北 2（北京）地域；OAuth 认证另有独立额度（每天 2,000 次调用，不经控制台免费额度页） 注意 2026-10-29 与 11-13 两批模型的新人免费额度已下架（qwen-max / plus / t"
+        },
+        {
+          "match": "免费额度页） 注意 2026-10-29 与 11-13 两批模型的新人免费额度",
+          "context": "级 · 阿里云账号 + 完成实名认证（官方 11-14 更新：未实名不发放免费额度） 额度 每模型通常 100 万 Token，开通后 90 天有效；仅华北 2（北京）地域；OAuth 认证另有独立额度（每天 2,000 次调用，不经控制台免费额度页） 注意 2026-10-29 与 11-13 两批模型的新人免费额度已下架（qwen-max / plus / turbo、deepseek、glm、wanx 等），新用户不再获得；老用户已发额度可用至到期或耗尽；到期不补发、同实名主体重注册不可再领 获取方式 注册阿里云账号并完成实名认证 → 登录百炼控制"
+        },
+        {
+          "match": "免费额度」页确认目标模型是否在发额度",
+          "context": "turbo、deepseek、glm、wanx 等），新用户不再获得；老用户已发额度可用至到期或耗尽；到期不补发、同实名主体重注册不可再领 获取方式 注册阿里云账号并完成实名认证 → 登录百炼控制台自动开通（通常 2 小时内到账）→ 在「免费额度」页确认目标模型是否在发额度之列 → 用主账号或具 `AliyunBailianFullAccess` 权限的 RAM 账号创建 API Key 调用。 官方 help.aliyun.com/zh/model-studio/new-free-quota（页面更新 20"
+        },
+        {
+          "match": "免费额度",
+          "context": "un.com/zh/model-studio/new-free-quota（页面更新 2026-11-14 16:49:49）核验 · 2026-11-15（新增「需先完成实名认证」门槛，10-29 与 11-13 两批模型额度下架） 查看免费额度说明 ↗ 新用户礼 免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度 ¥ 0 官方计费 FAQ 明确：新用户注册即得 14 元免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Toke"
         },
         {
           "match": "免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度",
-          "context": "API Key → 实时调用自动抵扣。 官方 help.aliyun.com/zh/model-studio/new-free-quota 核验 · 2026-10-31（10-29 起部分模型额度下架） 查看免费额度说明 ↗ 新用户礼 免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度 ¥ 0 官方计费 FAQ 明确：新用户注册即得 14 元免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Tokens」）。注意「2000 万 tokens」只是按该模型单价折算的示例，不是全模型通用的 2000 万"
+          "context": "l-studio/new-free-quota（页面更新 2026-11-14 16:49:49）核验 · 2026-11-15（新增「需先完成实名认证」门槛，10-29 与 11-13 两批模型额度下架） 查看免费额度说明 ↗ 新用户礼 免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度 ¥ 0 官方计费 FAQ 明确：新用户注册即得 14 元免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Tokens」）。注意「2000 万 tokens」只是按该模型单价折算的示例，不是全模型通用的 2000 万"
         },
         {
           "match": "免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Tokens",
-          "context": "核验 · 2026-10-31（10-29 起部分模型额度下架） 查看免费额度说明 ↗ 新用户礼 免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度 ¥ 0 官方计费 FAQ 明确：新用户注册即得 14 元免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Tokens」）。注意「2000 万 tokens」只是按该模型单价折算的示例，不是全模型通用的 2000 万 token 额度；实际可用量随所选模型单价变化。定价页未列该数额。 本轮（2026-10-31）复核 docs.siliconflow.co"
+          "context": "成实名认证」门槛，10-29 与 11-13 两批模型额度下架） 查看免费额度说明 ↗ 新用户礼 免费期限 · 期限待核实 · 以官方页面为准 硅基流动 · 新用户 14 元免费额度 ¥ 0 官方计费 FAQ 明确：新用户注册即得 14 元免费额度（文档原文并折算为「相当于 2 千万 Qwen1.5-14B Tokens」）。注意「2000 万 tokens」只是按该模型单价折算的示例，不是全模型通用的 2000 万 token 额度；实际可用量随所选模型单价变化。定价页未列该数额。 本轮（2026-10-31）复核 docs.siliconflow.co"
         },
         {
           "match": "免费额度（约 2 千万 Qwen1.5-14B Tokens",
@@ -4593,10 +4592,6 @@
         {
           "match": "免费额度",
           "context": "接把 base URL 改到任意 OpenAI 兼容的本地 harness（Cline、Roo Code、OpenCode 等）。上下文 524,288 token，韩 / 英双语，reasoning_effort 默认 max。官方未公布免费额度、限流与结束日期，以官方页面与账户显示为准。 门槛 A 级 · 注册并获取 EXAONE API Key 额度 官方仅写「currently available free of charge」，未公布具体额度、限流与结束日期 注意 2026"
-        },
-        {
-          "match": "免费模型 免费期限 · ◷促销至 2026-11-24 00:00 PT（月额度",
-          "context": "rization: Bearer <key>` 认证。 官方 docs.exaone.ai changelog + quick-start + k-exaone-2.5 文档核验 · 2026-11-11 查看官方 changelog ↗ 免费模型 免费期限 · ◷促销至 2026-11-24 00:00 PT（月额度每月 1 日重置） IteraCompute · Auto 免费档（30M tokens/月，免卡） ¥ 0 IteraCompute 官方免费页（iteracompute.com/free/，价格核对时间 2026-11-12 13:07"
         }
       ]
     },
@@ -4997,7 +4992,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 13.4k  ( 13.4k ) Star 87.6k  ( 87.6k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 13.4k  ( 13.4k ) Star 87.7k  ( 87.7k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -5231,7 +5226,7 @@
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 14 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个"
+          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 15 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -5239,11 +5234,11 @@
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "100 积分/天 核实 2026-10-27 19 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 16 天"
+          "context": "100 积分/天 核实 2026-10-27 19 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 15 天"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 16 天 额度 100000000 Tokens/天 核实 2026-10-27 19 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 15 天 额度 100000000 Tokens/天 核实 2026-10-27 19 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 白嫖云"
         },
         {
           "match": "免费额度",
@@ -5263,7 +5258,7 @@
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-15 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-16 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "免费福利与资源 汇聚全球 AI 大厂，收录可领的免费额度",
@@ -7636,12 +7631,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 65 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 59 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 59 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
+          "context": "ed · 59 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -7838,9 +7833,8 @@
       "id": "console-main",
       "name": "Claude Platform",
       "url": "https://console.anthropic.com/",
-      "status": "ok",
-      "hits": 0,
-      "findings": []
+      "status": "error",
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "id": "dataplatform-registrationst",
@@ -9334,15 +9328,15 @@
         },
         {
           "match": "$0.25 of weekly credits and no card",
-          "context": "anent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in **8h 36m** **Core** covers it for $31 a"
+          "context": "anent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in **4h 35m** **Core** covers it for $31 a"
         },
         {
           "match": "$31 a month, billed yearly. You k",
-          "context": "o card. Upgrade when they run short, and change or cancel any time. Credits refill in **8h 36m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 1"
+          "context": "o card. Upgrade when they run short, and change or cancel any time. Credits refill in **4h 35m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 1"
         },
         {
           "match": "$59**. ## Starter For your first ",
-          "context": "d change or cancel any time. Credits refill in **8h 36m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 10 requests a minute ## Core For profess"
+          "context": "d change or cancel any time. Credits refill in **4h 35m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 10 requests a minute ## Core For profess"
         },
         {
           "match": "$15 a month, **Business** $103 a ",
