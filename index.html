@@ -861,7 +861,7 @@ const rowHtml=(d,ov)=>{
   const s=siteFor(d),pname=s?s.name:d.provider;
   const dl=d.deadline?`<span style="color:var(--red)">📅 ${esc(d.deadline)}</span>`:((d.type==='free_tier'||d.type==='price_low'||d.via==='free')?'<span style="color:var(--green)">♾️ 长期</span>':'');
   return`
-<article class="row" data-id="${esc(d.id)}">
+<article class="row" data-id="${esc(d.id)}" data-layer="${dealLayer(d)}">
   <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
   <div>
     <div class="r-line1">
@@ -971,6 +971,40 @@ function tokCell(d,ov){
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
 const _q=new URLSearchParams(location.search).get('q');
 if(_q){curQ=_q;history.replaceState(null,'','/');}
+function dealLayer(d){
+  var dl=d.deadline&&!String(d.deadline).startsWith('长期');
+  if(d.type==='limited_promo'||d.type==='coupon'||dl)return 'L0';
+  if(d.daily_wan)return 'L1';
+  if(d.type==='free_tier'||d.type==='free_model'||d.type==='recurring_promo'||d.type==='subscription_bonus'||d.type==='signup_bonus')return 'L2';
+  return 'L3';
+}
+var LAYER_TXT={"L0": ["⏰ 限时必领", "截至即失效/先到先得，现在就动手"], "L1": ["🔁 每日可刷", "长期每日刷新，每天顺手领"], "L2": ["♾️ 长期白嫖", "常驻免费层，随时可用不急"], "L3": ["📦 其他权益", "订阅加成/邀请奖励/工具类"]};
+function layerReorder(box){
+  if(!(curCat==='all'&&!curQ&&!curType))return;
+  var tops=[].slice.call(box.children);
+  var b={L0:[],L1:[],L2:[],L3:[]},other=[];
+  tops.forEach(function(el){
+    var k=el.getAttribute&&el.getAttribute('data-layer');
+    if(k&&(k==='L0'||k==='L1'||k==='L2'||k==='L3')&&el.tagName==='ARTICLE')b[k].push(el);
+    else other.push(el);
+  });
+  var txt=location.pathname.endsWith('en.html')?{L0:['⏰ Claim now','Expiring soon — act now'],L1:['🔁 Daily refresh','Resets daily — claim on the go'],L2:['♾️ Always free','Standing free tier'],L3:['📦 Others','Subscription perks / invites / tools']}:{L0:['⏰ 限时必领','截至即失效/先到先得，现在就动手'],L1:['🔁 每日可刷','长期每日刷新，每天顺手领'],L2:['♾️ 长期白嫖','常驻免费层，随时可用不急'],L3:['📦 其他权益','订阅加成/邀请奖励/工具类']};
+  box.innerHTML='';
+  ['L0','L1','L2','L3'].forEach(function(k){
+    var arr=b[k];if(!arr.length)return;
+    var head=document.createElement('div');
+    head.style.cssText='display:flex;align-items:baseline;gap:10px;margin:22px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--accent)';
+    head.innerHTML='<span style="font-size:1.05rem;font-weight:800;color:var(--accent)">'+txt[k][0]+'</span><span style="font-size:.78rem;color:var(--muted)">'+txt[k][1]+'</span><span class="chip" style="margin-left:auto">'+arr.length+' 个平台</span>';
+    box.appendChild(head);
+    arr.forEach(function(el){box.appendChild(el);
+      var nx=el.nextElementSibling;
+      var det=nx&&nx.classList&&nx.classList.contains('agg-detail')?nx:null;
+      if(det)box.appendChild(det);
+    });
+  });
+  var mw=document.getElementById('moreWrap');
+  if(mw)box.appendChild(mw);
+}
 let sortKey='tokens';
 let shownGroups=30,PAGE_SIZE=30;
 /* 🪙 加倍领取：用折扣码/邀请链接在平台基础赠送之上额外加成的条目（v2.18，老板令「通过折扣加倍领取」） */
@@ -1040,7 +1074,7 @@ function render(){
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
       const s=siteFor(g.best);
       return g.ds.length>1?`
-  <article class="row agg" data-agg="${esc(g.p)}">
+  <article class="row agg" data-agg="${esc(g.p)}" data-layer="${dealLayer(g.best)}">
     <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
     <div>
       <div class="r-line1">
@@ -1061,9 +1095,10 @@ function render(){
       ${aggGold(g)}
     </div>
   </article>
-  <div class="agg-detail" data-detail="${esc(g.p)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
+  <div class="agg-detail" data-detail="${esc(g.p)}" data-layer="${dealLayer(g.best)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
     }).join('')
     +(ordered.length>shownGroups?'<div id="moreWrap" style="text-align:center;padding:14px 0"><button class="tab" id="moreBtn" onclick="loadMore()">'+"↓ 加载更多平台（还有 {n} 家）".replace('{n}',ordered.length-shownGroups)+'</button></div>':'');
+  if(window.layerReorder)layerReorder(box);
   }else{
     box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+list.map(rowHtml).join('');
   }
