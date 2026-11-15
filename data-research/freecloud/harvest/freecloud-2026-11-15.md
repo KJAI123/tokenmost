@@ -1,7 +1,7 @@
 # freecloud 采集快照 2026-11-15
 
-- 采集时间: 2026-11-15T02:26:01Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: 无 | 👀观察中: himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-15T08:59:31Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: 无 | 👀观察中: lowendbox-feed, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
 
 ##    InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
@@ -288,15 +288,15 @@
 - 🔎 **credits** `rations Price $0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1`
 - 🔎 **credits** `$0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits U`
 
-##    LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
+## 👀 LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
 - 状态: ok | https://lowendbox.com/feed/
 - 🔎 **2GB KVM VPS for $1** `8230; appeared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it`
 - 🔎 **2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:0** `th First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:00:12 +0000 Godlike.Host is back with some great pricing for our readers. You'll need our special c`
 - 🔎 **2GB KVM VPS for $1** `get these deals! The post If You Missed the Godlike.Host Offer in October &#8211; It&#8217;s Back! 2GB KVM VPS for $1.83/Month First Year! appeared first on LowEndBox . - [Felware’s Limited Time Holiday Sale Starts NO`
-- 🔎 **4GB VPS!](https://lowendbox** `on LowEndBox . - [GenixNode: Amazing Low Prizes in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS!](https://lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/) —`
+- 🔎 **4GB VPS!](https://lowendbox** `on LowEndBox . - [GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS!](https://lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/) —`
 - 🔎 **4gb-vps/) — Mon, 09 Nov 2026 12:00:26 +0000** `//lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/) — Mon, 09 Nov 2026 12:00:26 +0000 GenixNode is a VPS provider with deals in 14 different locations around the world. From Dallas to`
-- 🔎 **4GB VPS! The post GenixNode: Amazing Low Prizes in 14 Locations** `want to be. Prices vary by location but prices start as low as $2.39/month on annual contract for a 4GB VPS! The post GenixNode: Amazing Low Prizes in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for R`
-- 🔎 **4GB VPS! appeared first on LowEndBox ** `4GB VPS! The post GenixNode: Amazing Low Prizes in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for RackNerd’s Fall Giveaway! Win a Meta Quest 3, a Synology NAS, a Gaming Moni`
+- 🔎 **4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations** `want to be. Prices vary by location but prices start as low as $2.39/month on annual contract for a 4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for R`
+- 🔎 **4GB VPS! appeared first on LowEndBox ** `4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for RackNerd’s Fall Giveaway! Win a Meta Quest 3, a Synology NAS, a Gaming Moni`
 - 🔎 **4GB VPS with 1TB Bandwidth!](https://lowendbox** `appeared first on LowEndBox . - [Great Singapore Deals from Kainode! Starting at $5.99/Month for a 4GB VPS with 1TB Bandwidth!](https://lowendbox.com/blog/great-singapore-deals-from-kainode-starting-at-5-99-month-for-a-4gb-vps-with-1tb-bandwidth`
 - 🔎 **4gb-vps-with-1tb-bandwidth/) — Sat, 07 Nov 2026 12:00:46 +0000** `dwidth!](https://lowendbox.com/blog/great-singapore-deals-from-kainode-starting-at-5-99-month-for-a-4gb-vps-with-1tb-bandwidth/) — Sat, 07 Nov 2026 12:00:46 +0000 Offers in Singapore are always popular. It's not easy to find a true "low end" provider there bec`
 - 🔎 **4GB VPS for only $5** `k centers like Dallas or Amsterdam. But Kainode has brought us some good deals today: you can get a 4GB VPS for only $5.99/month! The post Great Singapore Deals from Kainode! Starting at $5.99/Month for a 4GB VPS with 1`
@@ -546,9 +546,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794709553344) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794709553344) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794709553344) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794733161937) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794733161937) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794733161937) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -634,12 +634,12 @@
 - 🔎 **24 GB+ | $0** `| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0011 | $0.034 | $0.067 | $1.61 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0038 | $0.113 | $0.225 | $5.40 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
 - 🔎 **48 GB+ | $0** `.61 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0038 | $0.113 | $0.225 | $5.40 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
 - 🔎 **80 GB+ | $0** `| $5.40 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $21.69/h | 10 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $20.22/h |`
-- 🔎 **180gb) | 180 GB | $15** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $21.69/h | 10 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $20.22/h | 46 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $2.93/h | $9.32/h`
-- 🔎 **141gb) | 141 GB | $2** `nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $20.22/h | 46 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $2.93/h | $9.32/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.65/h | $8.40`
-- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $2.93/h | $9.32/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.65/h | $8.40/h | 52 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.36/h | $6.74/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.65/h | $8.40/h | 52 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.36/h | $6.74/h | 28 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $5.80/h`
-- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.36/h | $6.74/h | 28 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $5.80/h | 15 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $6.11`
+- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $22.33/h | 13 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.04/h | $21.28/h |`
+- 🔎 **180gb) | 180 GB | $15** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $22.33/h | 13 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.04/h | $21.28/h | 23 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.12/h | $10.55/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $15.04/h | $21.28/h | 23 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.12/h | $10.55/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $9.3`
+- 🔎 **141gb) | 141 GB | $7** `en/gpu/h200-141gb) | 141 GB | $7.12/h | $10.55/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $9.33/h | 60 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.36/h | $6.75/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $7.26/h | $9.33/h | 60 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.36/h | $6.75/h | 23 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $6.19/h`
+- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.36/h | $6.75/h | 23 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $6.19/h | 15 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.10/h | $5.65`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
