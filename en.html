@@ -874,13 +874,14 @@ function hintOf(d){
   return out.length>70?out.slice(0,68)+'…':out;
 }
 function subOf(d){
-  var clean=function(t){return String(t||'').replace(/<[^>]*>/g,'').replace(/\*\*/g,'').replace(/\s+/g,' ').trim()};
-  var parts=[];
-  var r=clean(d.rule);if(r)parts.push('📐 '+r);
-  var n=clean(d.notes);
-  if(n&&!/^(⚠️|💡|TODO)/.test(n))parts.push('💡 '+n);
-  var out=parts.join('　');
-  return out.length>170?out.slice(0,168)+'…':out;
+  var n=String(d.notes||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+  if(!n)return '';
+  n=n.replace(/^[\u2B50\u26A0\uD83D\uDCA1\u2705\uDD34\s]*/,'');
+  n=n.replace(/^20\d\d-\d\d-\d\d[^\uff5c]*\uff5c/,'');
+  var seg=n.split('\uff5c')[0];
+  if(seg.length<14&&n.indexOf('\uff5c')>0)seg=(n.split('\uff5c')[1]||seg);
+  seg=seg.replace(/^\d+\.\s*/,'');
+  return seg.length>60?seg.slice(0,58)+'…':seg;
 }
 function fmMeta(d){
   if(d.free_models&&d.free_models.length)return{n:d.free_models.length,kind:'free',items:d.free_models};
