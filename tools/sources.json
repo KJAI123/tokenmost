@@ -379,6 +379,15 @@
    "confirm_runs": 2
   },
   {
+   "id": "opendesign-go-referral",
+   "type": "watch",
+   "url": "https://go.open-design.ai/",
+   "deals": [
+    "opendesign-reset-card-invite"
+   ],
+   "auto_verify": false
+  },
+  {
    "id": "kilo-gateway-free-policy",
    "type": "watch",
    "url": "https://kilo.ai/docs/gateway/models-and-providers",
