@@ -1,8 +1,8 @@
 {
   "baseline": {
     "instabox-pricing": {
-      "fp": "99c5328506bad2a715ee4c076052a50c503c1ecee1aa24c3ae2d93c5c67258fc",
-      "ts": "2026-11-14T13:31:06Z",
+      "fp": "92c50392cf1a95fecf1196673119627fe6fc3d0ce4619526ff842f3903979629",
+      "ts": "2026-11-16T02:24:10Z",
       "n_hits": 60
     },
     "e2b-pricing": {
@@ -171,8 +171,8 @@
       "n_hits": 11
     },
     "northflank-pricing": {
-      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
-      "ts": "2026-11-13T21:26:10Z",
+      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
+      "ts": "2026-11-16T02:24:10Z",
       "n_hits": 56
     },
     "colab-faq": {
@@ -191,9 +191,9 @@
       "n_hits": 273
     },
     "replicate-pricing": {
-      "fp": "78f78ac9deb35a20ac2233a45d85b739eb4930d99c49d8a317e9badd53119aed",
-      "ts": "2026-11-06T15:52:20Z",
-      "n_hits": 29
+      "fp": "63c714aa75402a8ac9c96f4f47aa2ad54a399aadac591de2e626eaa7fe752414",
+      "ts": "2026-11-16T02:24:10Z",
+      "n_hits": 27
     },
     "fal-pricing": {
       "fp": "6b7068689d81424930f1ed64d9b76726c087a82a9efc91476d163fe211f6e6e0",
@@ -201,9 +201,9 @@
       "n_hits": 14
     },
     "lowendbox-feed": {
-      "fp": "93a2835cff81ca003a792a0fb86d1dc1e1b359d255999a3c75ec11d2f9b8097f",
-      "ts": "2026-11-15T12:31:08Z",
-      "n_hits": 60
+      "fp": "db97cf9b94fa63b713ec70d3892a498a28864355406c264a42325b999cb25383",
+      "ts": "2026-11-16T02:24:10Z",
+      "n_hits": 63
     },
     "baidu-free": {
       "fp": "0168974dede73532b58d1bb95e9e4d3c9a48ee0205c2d605950c1f7aa34f08b7",
@@ -293,33 +293,18 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "7595bdcfde196e43bed683d8dd7fa105eb9283ca4954ac55583142cad0a88226",
-      "ts": "2026-11-15T21:20:58Z",
+      "fp": "4b6f800747f95be771740edeec1ba1ab7b9f05c38db302e7f05d63be6caba105",
+      "ts": "2026-11-16T02:24:10Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "5853d2935d53188fc1c9d59982baf584ffcb92f37da38bfd5af4f61a793e8f35",
-      "ts": "2026-11-15T21:20:58Z",
+      "fp": "b356a530c8168d32b30d3dc335b11746fee076c249fda913a9a19308631a433d",
+      "ts": "2026-11-16T02:24:10Z",
       "count": 1
     },
-    "instabox-pricing": {
-      "fp": "92c50392cf1a95fecf1196673119627fe6fc3d0ce4619526ff842f3903979629",
-      "ts": "2026-11-15T21:20:58Z",
-      "count": 1
-    },
-    "northflank-pricing": {
-      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
-      "ts": "2026-11-15T21:20:58Z",
-      "count": 1
-    },
-    "replicate-pricing": {
-      "fp": "63c714aa75402a8ac9c96f4f47aa2ad54a399aadac591de2e626eaa7fe752414",
-      "ts": "2026-11-15T21:20:58Z",
-      "count": 1
-    },
-    "lowendbox-feed": {
-      "fp": "db97cf9b94fa63b713ec70d3892a498a28864355406c264a42325b999cb25383",
-      "ts": "2026-11-15T21:20:58Z",
+    "render-pricing": {
+      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
+      "ts": "2026-11-16T02:24:10Z",
       "count": 1
     }
   }

@@ -254,3 +254,6 @@
 
 ## 2026-11-15 21:20 UTC（轮 78，查询：AI 编程 白嫖）
 - 📰 标题雷达 [AI 编程 白嫖] 最强AI编程模型Claude Opus 4.6发布,居然还能免费使用(附白嫖教程)?!
+
+## 2026-11-16 02:23 UTC（轮 79，查询：注册送 tokens）
+- 🆕 公众号新文 [?] 注册就送 1 亿 tokens:Inception 的 Mercury 3 免费额度 → https://mp.weixin.qq.com/s?src=11&timestamp=1794795790&ver=7
