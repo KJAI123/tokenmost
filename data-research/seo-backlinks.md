@@ -213,3 +213,10 @@
 3. **CSDN 2/2 ✅**：c4=免费云服务器 5 平台（article/170860376，2 标签）/ c5=0 元域名+无限邮箱链路（article/170860439，2 标签，新稿当日产当日发）
 4. **⚠️ 无头浏览器新坑**：①CSDN 标题 input 隐藏（w=0 不可聚焦）——**React 原生 setter 法**：`Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(inp, 文本)+dispatchEvent(input)` 直接写值成功 ②固定坐标在无头默认视口失效（ creator 页 897,208 点不中）——**全部改 DOM 文本定位+JS click** ③评论框失焦收起工具行的坑复现，发布前 gate 必验
 5. **待修**：自动化 06:40 触发后台账/git 步骤未落（今晨无 seo commit）——下次触发时需先查 git log 判断是否已发避免重复；考虑把「防重复」逻辑写入 prompt（connect 问题页先 hasMine 检查）
+
+## 📰 知乎专栏第 2 篇（2026-11-16，老板令「继续发一下文章」；CSDN 额度 2/2 已满转专栏）
+
+- ✅ 《0 元搭一套 AI 开发环境：免费 token + 免费云 + 免费域名全链路》发布：https://zhuanlan.zhihu.com/p/2105724801918751333 （1452 字，模型层/算力层/域名邮箱层/组合建议/情报层五段结构，tokenmost.com 植入）
+- 无头浏览器专栏管线验证通过：zhuanlan/write → 标题 placeholder focus → Draft 逐行 → 「发布」按钮（文案=发布/发布文章）→ URL 变 /p/
+- 坑：写作页标签会在脚本间被关——**专栏发布全程单脚本一气呵成**；草稿自动保存不可靠（重开后标题空）
+- GEO 价值：专栏=知乎域长权重页面，与 B5 第 1 篇（28 条完全指南）形成系列；后续 c4/c5 内容均可改写为专栏
