@@ -31,7 +31,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"tokenmost.com","alternateName":"TokenMost 羊毛铺","url":"https://tokenmost.com/","description":"AI 大模型免费额度与折扣码情报站：聚合大模型官方、Agent 平台、MaaS 云、算力中心与 token 中间商的免费额度与折扣情报，每日核验，统一折算 DeepSeek V4.1 Flash 等效 token。","inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}
 </script>
-<meta name="theme-color" content="#f3f5f7">
+<meta name="theme-color" content="#f2f3ee">
 <link rel="manifest" href="manifest.webmanifest">
 <meta property="og:title" content="TokenMost — AI token 折扣情报与导航">
 <meta property="og:description" content="折扣码一键复制 · 每日人工核验 · 账号本地托管">
@@ -335,7 +335,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   /* 情报行：token 82px + 操作列固定 80px（flex max-content 会把全部按钮加总撑爆列宽，必须定宽列内换行），中栏拿回 ~168px */
   .row{grid-template-columns:82px minmax(0,1fr) 80px;grid-template-rows:auto auto;gap:3px 8px;padding:12px 10px}
   .row:hover{background:var(--card)}
-  .row>div:nth-child(2){grid-row:1;grid-column:2;min-width:0}
+  .row>.r-content{grid-row:1;grid-column:2;min-width:0}
   .r-tok{grid-row:1/span 2;grid-column:1}
   .agg-detail .row{padding-left:16px}
   .r-tok .num{font-size:1.02rem;letter-spacing:-.2px}
@@ -368,7 +368,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   article.row:has(.fm-wrap){grid-template-rows:auto auto auto}
   article.row:has(.fm-wrap)>.r-tok{grid-row:1;grid-column:1}
   article.row:has(.fm-wrap)>.r-ops{grid-row:1;grid-column:3}
-  article.row:has(.fm-wrap)>div:nth-child(2){grid-row:2;grid-column:1/-1}
+  article.row:has(.fm-wrap)>.r-content{grid-row:2;grid-column:1/-1}
   article.row:has(.fm-wrap) .r-state{grid-row:3;grid-column:1/-1}
   .fm-wrap{margin:8px -10px -4px;border-radius:0;border-left:none;border-right:none}
   .fm-chip{font-size:.66rem;padding:2px 7px}
@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261117-3">
+<link rel="stylesheet" href="assets/workbench.css?v=20261117-4">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -447,7 +447,11 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </noscript>
 <div class="topbar">
   <a class="mobile-brand" href="./"><span class="brand-mark"><svg class="ui-icon" aria-hidden="true"><use href="#tm-mark"/></svg></span><span>token<span class="brand-accent">most</span></span></a>
-  <div class="breadcrumb"><span>TokenMost</span><span class="crumb-divider" aria-hidden="true">/</span><b>情报库</b></div>
+  <nav class="top-nav" aria-label="快捷导航">
+    <a class="top-feed" href="#feed">情报流</a>
+    <a href="#navArea">平台导航</a>
+    <button type="button" onclick="openGuides()">领取攻略</button>
+  </nav>
   <div class="top-actions">
     <button type="button" id="bmBtn" title="收藏本站" aria-label="收藏本站"><svg class="ui-icon" aria-hidden="true"><use href="#tm-bookmark"/></svg></button>
     <button type="button" class="community-btn" onclick="openWx()" aria-label="微信交流群"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>交流群</span></button>
@@ -456,31 +460,33 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </div>
 </div>
 <header class="market-hero">
-  <div class="hero-copy">
-    <h1>AI 免费额度情报站</h1>
-    <p>免费 API、模型额度与折扣</p>
+  <div class="hero-main">
+    <div class="hero-copy">
+      <h1>AI Token 情报台</h1>
+      <p>免费 API、模型额度与折扣</p>
+    </div>
+    <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
+      <span class="gb-label">首月等效额度</span>
+      <b id="gbNum">—</b>
+      <span class="gb-unit">DeepSeek Flash 等效 Token</span>
+      <span class="gb-link">查看总账 <span aria-hidden="true">↗</span></span>
+    </button>
+    <button type="button" class="hero-qr" onclick="openWx()" aria-label="放大微信群二维码">
+      <img id="heroQrImage" src="assets/wechat-qr-20261124.png" width="112" height="112" alt="微信群入群二维码" fetchpriority="high">
+      <span class="hero-qr-copy">
+        <strong>微信扫码进群</strong>
+        <span>点击放大</span>
+        <time datetime="2026-11-24">11 月 24 日前有效</time>
+      </span>
+    </button>
   </div>
-  <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
-    <span class="gb-label">全球首月额度估算</span>
-    <b id="gbNum">—</b>
-    <span class="gb-unit">DeepSeek Flash 等效 Token</span>
-    <span class="gb-link">额度总账 <span aria-hidden="true">↗</span></span>
-  </button>
-  <button type="button" class="hero-qr" onclick="openWx()" aria-label="放大微信群二维码">
-    <img id="heroQrImage" src="assets/wechat-qr-20261124.png" width="104" height="104" alt="微信群入群二维码" fetchpriority="high">
-    <span class="hero-qr-copy">
-      <strong>微信扫码进群</strong>
-      <span>点击放大</span>
-      <time datetime="2026-11-24">11 月 24 日前有效</time>
-    </span>
-  </button>
+  <div class="stats" aria-label="情报库概况">
+    <div class="stat"><span>已核验情报</span><b id="n-deals">—</b></div>
+    <div class="stat"><span>24 小时核验</span><b id="n-fresh">—</b></div>
+    <div class="stat"><span>收录站点</span><b id="n-sites">—</b></div>
+    <div class="stat"><span>最近核验</span><b id="updated">—</b></div>
+  </div>
 </header>
-<div class="stats" aria-label="情报库概况">
-  <div class="stat"><span>已核验情报</span><b id="n-deals">—</b></div>
-  <div class="stat"><span>近 24 小时核验</span><b id="n-fresh">—</b></div>
-  <div class="stat"><span>收录站点</span><b id="n-sites">—</b></div>
-  <div class="stat"><span>最近核验</span><b id="updated">—</b></div>
-</div>
 <div id="newsTicker" aria-label="最新动态">
   <span class="ntk-label"><span class="signal-dot"></span>最新动态</span>
   <div class="ntk-scroll" aria-live="polite"><span id="ntkItems" class="ntk-items">…</span></div>
@@ -521,8 +527,8 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     </div>
   </div>
   <div class="lhead" id="listhead">
-    <button class="sortbtn" data-sort="tokens">额度</button>
     <span class="lbl">平台 / 福利内容</span>
+    <button class="sortbtn" data-sort="tokens">额度</button>
     <button class="sortbtn on" data-sort="fresh">核验</button>
     <span class="lbl">操作</span>
   </div>
@@ -845,8 +851,7 @@ const rowHtml=(d,ov)=>{
   const s=siteFor(d),pname=s?s.name:d.provider;
   return`
 <article class="row" data-id="${esc(d.id)}" data-layer="${dealLayer(d)}">
-  <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
-  <div>
+  <div class="r-content">
     <div class="r-line1">
       <span class="r-provider">${Workbench.offerLogo(d,s)}${esc(d.provider)}</span>
       <span class="r-value" title="${esc(Workbench.offerValue(d))}">${esc(Workbench.headline(d))}</span>
@@ -864,6 +869,7 @@ const rowHtml=(d,ov)=>{
     </div>
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
+  <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
   <div class="r-state">${Workbench.freshness(d)}${apiBadge(d)}${Workbench.timing(d)}</div>
   <div class="r-ops">
     ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="一键接入">⚡</button>`:''}
@@ -1023,8 +1029,7 @@ function render(){
       const summaries=Workbench.groupSummary(g.best,g.ds);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}" data-layer="${dealLayer(g.best)}">
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'未折算'}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
-    <div>
+    <div class="r-content">
       <div class="r-line1">
         <span class="r-provider">${Workbench.offerLogo(g.best,siteFor(g.best),g.p)}${esc(g.p)}</span>
         <span class="r-value" title="${esc(Workbench.offerValue(g.best))}">${esc(Workbench.headline(g.best))}</span>
@@ -1037,6 +1042,7 @@ function render(){
         <span class="r-notes" title="${esc(summaries)}">${esc(summaries)}</span>
       </div>
     </div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'未折算'}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
     <div class="r-state">${Workbench.freshness(g.best)}${apiBadge(g.best)}${Workbench.timing(g.best)}</div>
     <div class="r-ops">
       <button type="button" class="aggToggle" data-agg="${esc(g.p)}" data-count="${g.ds.length}" aria-expanded="${open}" aria-controls="${detailId}">${Workbench.groupLabel(open,g.ds.length)}</button>

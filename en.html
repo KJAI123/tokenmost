@@ -31,7 +31,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"tokenmost.com","alternateName":"TokenMost 羊毛铺","url":"https://tokenmost.com/","description":"AI 大模型Free额度与Discount码情报站：聚合LLM Providers、Agent 平台、MaaS 云、算力中心与 token 中间商的Free额度与Discount情报，每日Verified，统一折算 DeepSeek V4.1 Flash 等效 token。","inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}
 </script>
-<meta name="theme-color" content="#f3f5f7">
+<meta name="theme-color" content="#f2f3ee">
 <link rel="manifest" href="manifest.webmanifest">
 <meta property="og:title" content="TokenMost — AI token Discount情报与导航">
 <meta property="og:description" content="Discount码一键复制 · 每日人工Verified · 账号本地托管">
@@ -335,7 +335,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   /* 情报行：token 82px + 操作列固定 80px（flex max-content 会把全部按钮加总撑爆列宽，必须定宽列内换行），中栏拿回 ~168px */
   .row{grid-template-columns:82px minmax(0,1fr) 80px;grid-template-rows:auto auto;gap:3px 8px;padding:12px 10px}
   .row:hover{background:var(--card)}
-  .row>div:nth-child(2){grid-row:1;grid-column:2;min-width:0}
+  .row>.r-content{grid-row:1;grid-column:2;min-width:0}
   .r-tok{grid-row:1/span 2;grid-column:1}
   .agg-detail .row{padding-left:16px}
   .r-tok .num{font-size:1.02rem;letter-spacing:-.2px}
@@ -368,7 +368,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   article.row:has(.fm-wrap){grid-template-rows:auto auto auto}
   article.row:has(.fm-wrap)>.r-tok{grid-row:1;grid-column:1}
   article.row:has(.fm-wrap)>.r-ops{grid-row:1;grid-column:3}
-  article.row:has(.fm-wrap)>div:nth-child(2){grid-row:2;grid-column:1/-1}
+  article.row:has(.fm-wrap)>.r-content{grid-row:2;grid-column:1/-1}
   article.row:has(.fm-wrap) .r-state{grid-row:3;grid-column:1/-1}
   .fm-wrap{margin:8px -10px -4px;border-radius:0;border-left:none;border-right:none}
   .fm-chip{font-size:.66rem;padding:2px 7px}
@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261117-3">
+<link rel="stylesheet" href="assets/workbench.css?v=20261117-4">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -447,7 +447,11 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </noscript>
 <div class="topbar">
   <a class="mobile-brand" href="en.html"><span class="brand-mark"><svg class="ui-icon" aria-hidden="true"><use href="#tm-mark"/></svg></span><span>token<span class="brand-accent">most</span></span></a>
-  <div class="breadcrumb"><span>TokenMost</span><span class="crumb-divider" aria-hidden="true">/</span><b>Offers</b></div>
+  <nav class="top-nav" aria-label="Quick navigation">
+    <a class="top-feed" href="#feed">Offers</a>
+    <a href="#navArea">Platforms</a>
+    <button type="button" onclick="openGuides()">Guides</button>
+  </nav>
   <div class="top-actions">
     <button type="button" id="bmBtn" title="Bookmark site" aria-label="Bookmark site"><svg class="ui-icon" aria-hidden="true"><use href="#tm-bookmark"/></svg></button>
     <button type="button" class="community-btn" onclick="openWx()" aria-label="WeChat community"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>Community</span></button>
@@ -456,31 +460,33 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </div>
 </div>
 <header class="market-hero">
-  <div class="hero-copy">
-    <h1>Free AI tokens</h1>
-    <p>Free APIs, credits and deals</p>
+  <div class="hero-main">
+    <div class="hero-copy">
+      <h1>AI Token Desk</h1>
+      <p>Free APIs, model credits and deals</p>
+    </div>
+    <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
+      <span class="gb-label">Est. first-month credits</span>
+      <b id="gbNum">—</b>
+      <span class="gb-unit">DeepSeek Flash equivalent tokens</span>
+      <span class="gb-link">Credit breakdown <span aria-hidden="true">↗</span></span>
+    </button>
+    <button type="button" class="hero-qr" onclick="openWx()" aria-label="Enlarge WeChat group QR code">
+      <img id="heroQrImage" src="assets/wechat-qr-20261124.png" width="112" height="112" alt="WeChat group invitation QR code" fetchpriority="high">
+      <span class="hero-qr-copy">
+        <strong>Join on WeChat</strong>
+        <span>Tap to enlarge</span>
+        <time datetime="2026-11-24">Valid before Nov 24</time>
+      </span>
+    </button>
   </div>
-  <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
-    <span class="gb-label">Est. first-month credits</span>
-    <b id="gbNum">—</b>
-    <span class="gb-unit">DeepSeek Flash equivalent tokens</span>
-    <span class="gb-link">Credit breakdown <span aria-hidden="true">↗</span></span>
-  </button>
-  <button type="button" class="hero-qr" onclick="openWx()" aria-label="Enlarge WeChat group QR code">
-    <img id="heroQrImage" src="assets/wechat-qr-20261124.png" width="104" height="104" alt="WeChat group invitation QR code" fetchpriority="high">
-    <span class="hero-qr-copy">
-      <strong>Join on WeChat</strong>
-      <span>Tap to enlarge</span>
-      <time datetime="2026-11-24">Valid before Nov 24</time>
-    </span>
-  </button>
+  <div class="stats" aria-label="Directory statistics">
+    <div class="stat"><span>Verified</span><b id="n-deals">—</b></div>
+    <div class="stat"><span>24h checks</span><b id="n-fresh">—</b></div>
+    <div class="stat"><span>Listed sites</span><b id="n-sites">—</b></div>
+    <div class="stat"><span>Last verified</span><b id="updated">—</b></div>
+  </div>
 </header>
-<div class="stats" aria-label="Directory statistics">
-  <div class="stat"><span>Verified offers</span><b id="n-deals">—</b></div>
-  <div class="stat"><span>Verified in 24h</span><b id="n-fresh">—</b></div>
-  <div class="stat"><span>Listed sites</span><b id="n-sites">—</b></div>
-  <div class="stat"><span>Last verified</span><b id="updated">—</b></div>
-</div>
 <div id="newsTicker" aria-label="Latest updates">
   <span class="ntk-label"><span class="signal-dot"></span>Latest updates</span>
   <div class="ntk-scroll" aria-live="polite"><span id="ntkItems" class="ntk-items">…</span></div>
@@ -521,8 +527,8 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     </div>
   </div>
   <div class="lhead" id="listhead">
-    <button class="sortbtn" data-sort="tokens">Credits</button>
     <span class="lbl">Platform / Offer</span>
+    <button class="sortbtn" data-sort="tokens">Credits</button>
     <button class="sortbtn on" data-sort="fresh">Verification</button>
     <span class="lbl">Actions</span>
   </div>
@@ -819,8 +825,7 @@ const rowHtml=(d,ov)=>{
   const s=siteFor(d),pname=s?s.name:d.provider;
   return`
 <article class="row" data-id="${esc(d.id)}" data-layer="${dealLayer(d)}">
-  <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
-  <div>
+  <div class="r-content">
     <div class="r-line1">
       <span class="r-provider">${Workbench.offerLogo(d,s)}${esc(d.provider)}</span>
       <span class="r-value" title="${esc(Workbench.offerValue(d))}">${esc(Workbench.headline(d))}</span>
@@ -838,6 +843,7 @@ const rowHtml=(d,ov)=>{
     </div>
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
+  <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
   <div class="r-state">${Workbench.freshness(d)}${apiBadge(d)}${Workbench.timing(d)}</div>
   <div class="r-ops">
     ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="API setup">⚡</button>`:''}
@@ -992,8 +998,7 @@ function render(){
       const summaries=Workbench.groupSummary(g.best,g.ds);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}" data-layer="${dealLayer(g.best)}">
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的First-month haul总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'—'}</span><span class="unit">First-month haul</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+' + ':''}${f2(g.daily)}/day</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">One-time credits</span>'}</span></div>
-    <div>
+    <div class="r-content">
       <div class="r-line1">
         <span class="r-provider">${Workbench.offerLogo(g.best,siteFor(g.best),g.p)}${esc(g.p)}</span>
         <span class="r-value" title="${esc(Workbench.offerValue(g.best))}">${esc(Workbench.headline(g.best))}</span>
@@ -1006,6 +1011,7 @@ function render(){
         <span class="r-notes" title="${esc(summaries)}">${esc(summaries)}</span>
       </div>
     </div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的First-month haul总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'—'}</span><span class="unit">First-month haul</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+' + ':''}${f2(g.daily)}/day</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">One-time credits</span>'}</span></div>
     <div class="r-state">${Workbench.freshness(g.best)}${apiBadge(g.best)}${Workbench.timing(g.best)}</div>
     <div class="r-ops">
       <button type="button" class="aggToggle" data-agg="${esc(g.p)}" data-count="${g.ds.length}" aria-expanded="${open}" aria-controls="${detailId}">${Workbench.groupLabel(open,g.ds.length)}</button>
