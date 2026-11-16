@@ -136,7 +136,39 @@ body.side-folded .topbar{padding-left:26px}
 .row .r-tok .unit[style]{white-space:normal!important;font-size:10px!important}
 .r-line1{align-items:center;gap:6px 8px;flex-wrap:wrap}
 .r-provider{line-height:1.35;color:var(--text);font-size:13px;font-weight:730;max-width:100%;overflow-wrap:anywhere;white-space:normal}
-.rowfavi{margin-right:5px;vertical-align:-2px}
+.provider-icon {
+  --logo-size: 18px;
+  display: inline-grid;
+  place-items: center;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  line-height: 1;
+  flex: none;
+  white-space: nowrap;
+}
+.provider-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+.provider-initial {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #e2eeed;
+  color: #27594f;
+  font-size: 10px;
+  font-weight: 750;
+}
+.provider-initial::before { content: attr(data-initial); }
+.provider-icon img + .provider-initial { display: none; }
+.provider-icon--row { margin-inline-end: 6px; vertical-align: -4px; }
+.provider-icon--side { --logo-size: 14px; }
+.provider-icon--nav { --logo-size: 16px; margin-inline-end: 5px; vertical-align: -3px; }
 .r-value{color:var(--muted);font-size:12px;min-width:min(100%,10ch)}
 .r-line2{display:flex;flex-wrap:wrap;gap:3px 5px;margin-top:3px}
 .row .chip,.row .badge{font-size:10px;line-height:1.4;padding:1px 5px}

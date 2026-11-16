@@ -37,6 +37,37 @@ const Workbench = (() => {
     box.replaceChildren(batch);
   }
 
+  const editorialHosts = new Set(['github.com', 'npmjs.com', 't.me', 'post.smzdm.com', 'aihot.news', 'mp.weixin.qq.com']);
+
+  function logoHostname(value) {
+    try {
+      const url = new URL(value);
+      if (url.protocol === 'https:' || url.protocol === 'http:') return url.hostname.replace(/^www\./, '');
+    } catch (_) {
+      // The local monogram covers entries without a provider website.
+    }
+    return '';
+  }
+
+  function providerLogo(name, url, variant, alternateUrl, alternateName) {
+    const logos = window.LOGOS || {};
+    const hostname = logoHostname(url);
+    const alternateHost = logoHostname(alternateUrl);
+    const local = logos['provider:' + name] || logos['provider:' + alternateName]
+      || (!editorialHosts.has(hostname) && logos[hostname])
+      || (!editorialHosts.has(alternateHost) && logos[alternateHost]);
+    const path = typeof local === 'string' && /^assets\/logos\/[\w.-]+\.(?:png|svg|ico|webp)$/i.test(local) ? local : '';
+    const initial = name.match(/[\p{L}\p{N}]/u)?.[0]?.toUpperCase() || '·';
+    return '<span class="provider-icon provider-icon--' + variant + '" aria-hidden="true">'
+      + (path ? '<img src="' + esc(path) + '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '')
+      + '<span class="provider-initial" data-initial="' + esc(initial) + '"></span></span>';
+  }
+
+  function offerLogo(deal, site, name = deal.provider) {
+    if (name === '初创额度') return providerLogo(name, '', 'row');
+    return providerLogo(name, site?.url, 'row', deal.url, deal.provider);
+  }
+
   function sourceLinks(deal) {
     const explicit = Array.isArray(deal.sources) ? deal.sources : [];
     const links = new Map();
@@ -217,5 +248,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();
