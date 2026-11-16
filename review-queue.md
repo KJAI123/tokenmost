@@ -21,7 +21,7 @@
 - **待复核** `google-student`（Google AI Studio）：源 gemini-students 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `azure-student`（Azure for Students）：源 azure-students 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(05:52) → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `sambanova-free`（SambaNova）：源 sambanova-limits 页面于 2026-11-15 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `anthropic-credits`（Anthropic）：源 anthropic-pricing 页面于 2026-11-15 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `anthropic-credits`（Anthropic）：源 anthropic-pricing 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ark-daily-5m`（火山方舟）：源 ark-collab 页面于 2026-10-27 变更（连续 2 次观测一致）sync降级自动归档(02:52) → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zhipu-flash-free`（智谱 BigModel）：源 bigmodel-pricing 页面于 2026-11-12 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deepseek-cache`（DeepSeek）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -91,6 +91,7 @@
 - **待复核** `deep-gemini-cli-retired-r4`（Google Gemini CLI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-cursor-x-subscription-r4`（Cursor（X Subscription））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-tencent-tokenhub`（腾讯云 TokenHub）：原因见 sync 运行摘要 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-qoder-daily-credits`（Qoder CN（阿里））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-siliconflow-guide-r5`（硅基流动）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-kimi-voucher-r5`（Kimi（月之暗面））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-cohere-commanda-r5`（Cohere）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -111,6 +112,7 @@
 - **待复核** `doubao-daily-quota`（豆包）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zhipu-pinhaomo`（智谱 BigModel）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `longcat-daily-free`（美团 LongCat）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `zcode-daily-1e8`（智谱 BigModel）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `workbuddy-free`（腾讯 WorkBuddy）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `monkeycode-daily`（MonkeyCode）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `fireworks-payg`（Fireworks AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -134,4 +136,4 @@
 - **待复核** `workbuddy-intl-free`（WorkBuddy 国际版）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `workbuddy-intl-pro`（WorkBuddy 国际版）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `huawei-codearts-daily`（华为云码道 CodeArts）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 46 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `linuxdo-rss`：连续 47 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
