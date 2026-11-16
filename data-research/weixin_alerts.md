@@ -263,3 +263,6 @@
 
 ## 2026-11-16 12:30 UTC（轮 81，查询：Claude Code 折扣）
 - 🆕 公众号新文 [?] Claude Code 成本砍三成,微软开源插件 → https://mp.weixin.qq.com/s?src=11&timestamp=1794832222&ver=7
+
+## 2026-11-16 21:22 UTC（轮 83，查询：API 中转 折扣）
+- 📰 标题雷达 [API 中转 折扣] API中转站能自定义模型别名吗?实测结果让我惊了

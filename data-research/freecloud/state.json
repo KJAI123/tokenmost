@@ -141,8 +141,8 @@
       "n_hits": 1
     },
     "upcloud-pricing": {
-      "fp": "568585db8ea9fe23e59e81378d1f1c352d780b0c29413a615d02742fb46fcf13",
-      "ts": "2026-11-11T21:28:14Z",
+      "fp": "195d6256c1351ff8be097bb53b7025230a36ad9dae5737c5bf806396ba610c3f",
+      "ts": "2026-11-16T21:23:36Z",
       "n_hits": 141
     },
     "digitalocean-pricing": {
@@ -171,8 +171,8 @@
       "n_hits": 11
     },
     "northflank-pricing": {
-      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
-      "ts": "2026-11-16T02:24:10Z",
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-16T21:23:36Z",
       "n_hits": 56
     },
     "colab-faq": {
@@ -201,8 +201,8 @@
       "n_hits": 14
     },
     "lowendbox-feed": {
-      "fp": "db97cf9b94fa63b713ec70d3892a498a28864355406c264a42325b999cb25383",
-      "ts": "2026-11-16T02:24:10Z",
+      "fp": "6eb24e7906a2c5c8f51fa3c0eec8e80d3945da55c2a9e8a329b3a6cfd8e6bdfc",
+      "ts": "2026-11-16T21:23:36Z",
       "n_hits": 63
     },
     "baidu-free": {
@@ -293,28 +293,23 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "0ef39b68f57be6baa4ed58a4c11a5895787d3dc55fa0e06a3805112d475070e5",
-      "ts": "2026-11-16T16:32:08Z",
+      "fp": "4a253b6a422fa01517e1fa51e97f19b63607e33475c03bd1677a116f4c3ba434",
+      "ts": "2026-11-16T21:23:36Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "6b10e653ae9bc04a1ebb399615f520632c37199a708a7f41561361c18b0acb22",
-      "ts": "2026-11-16T16:32:08Z",
+      "fp": "219e736bf38b228c95f5bc0071927e29846c3fbf55745ef9d487278a093f3dba",
+      "ts": "2026-11-16T21:23:36Z",
       "count": 1
     },
-    "upcloud-pricing": {
-      "fp": "195d6256c1351ff8be097bb53b7025230a36ad9dae5737c5bf806396ba610c3f",
-      "ts": "2026-11-16T16:32:08Z",
+    "render-pricing": {
+      "fp": "e614e422419fb737a1aee12276937611e95cbb7b3a73c85e507f8e988cab2374",
+      "ts": "2026-11-16T21:23:36Z",
       "count": 1
     },
-    "northflank-pricing": {
-      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
-      "ts": "2026-11-16T16:32:08Z",
-      "count": 1
-    },
-    "lowendbox-feed": {
-      "fp": "6eb24e7906a2c5c8f51fa3c0eec8e80d3945da55c2a9e8a329b3a6cfd8e6bdfc",
-      "ts": "2026-11-16T16:32:08Z",
+    "kaggle-notebooks": {
+      "fp": "a84dff1a78657f12e242be9035c419ff070abf5f12809651e25d923c52bf3f4f",
+      "ts": "2026-11-16T21:23:36Z",
       "count": 1
     }
   }
