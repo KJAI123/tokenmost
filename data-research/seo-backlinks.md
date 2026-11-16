@@ -205,3 +205,11 @@
 - **根源**：管线的 tab.activate() 会把标签切到前台抢屏
 - **修复**：①自动化改为每日 06:40 循环（automation-7b46f7e4 已转 recurring，prompt 明文禁 activate——CDP 对后台标签的 JS/输入完全可用，activate 仅 CF 盾必需）②interactive 会话此后不再主动弹标签，能后台就后台 ③检测到老板前台操作冲突时立即暂停该发顺延
 - **每日队列**：data-research/seo/daily-queue.md（知乎回答排期至 11-19+CSDN 主题轮换+打卡四件套清单）
+
+## 🤖 11-16 定时任务补跑（自动化 06:40 部分执行+主会话续完）
+
+1. **知乎今晨已发（06:40 自动化）**：a4=还有哪些可以免费薅的大模型（answer/2104739647003935353，11-14 老板已答过同题 TokenMost 版所以今日实际未重复——经查页面上现有答案为 11-14 版）+ a5=大家都在用哪家的API（hasMine 验证已发）；**主会话续发自答**：自家提问 question/2105414405605406687 → answer/2105649851874684952（846 字三类盘点）
+2. **打卡四件套（无头浏览器完成）**：想法 ✅（148 字周末羊毛快讯）/ 评论转想法 ✅（李明殊 289 赞回答下真实评论+勾选+pins 验证）/ 收藏 ✅（自家 c4 文章页）/ 提问（昨日已做，今日隔日跳过）
+3. **CSDN 2/2 ✅**：c4=免费云服务器 5 平台（article/170860376，2 标签）/ c5=0 元域名+无限邮箱链路（article/170860439，2 标签，新稿当日产当日发）
+4. **⚠️ 无头浏览器新坑**：①CSDN 标题 input 隐藏（w=0 不可聚焦）——**React 原生 setter 法**：`Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(inp, 文本)+dispatchEvent(input)` 直接写值成功 ②固定坐标在无头默认视口失效（ creator 页 897,208 点不中）——**全部改 DOM 文本定位+JS click** ③评论框失焦收起工具行的坑复现，发布前 gate 必验
+5. **待修**：自动化 06:40 触发后台账/git 步骤未落（今晨无 seo commit）——下次触发时需先查 git log 判断是否已发避免重复；考虑把「防重复」逻辑写入 prompt（connect 问题页先 hasMine 检查）
