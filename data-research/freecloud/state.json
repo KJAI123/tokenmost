@@ -11,8 +11,8 @@
       "n_hits": 22
     },
     "daytona-pricing": {
-      "fp": "33330658f360487b942098c5beff062ff0d01738b0c5da7eaf9a6575fef9f4ba",
-      "ts": "2026-11-06T15:21:28Z",
+      "fp": "be8c696e0fd322c4cbed78089aae04767948af3c3a430ccaff3680826a4ef121",
+      "ts": "2026-11-16T16:32:08Z",
       "n_hits": 17
     },
     "modal-pricing": {
@@ -71,9 +71,9 @@
       "n_hits": 79
     },
     "hf-spaces": {
-      "fp": "1951bbb6fc5c5e0b3f0912f5be46891d2ea20d5e92689a7f9815e89e7e8fe4b6",
-      "ts": "2026-11-06T15:21:28Z",
-      "n_hits": 101
+      "fp": "8e936f9a5ac470e197c896a913ddf4f11d39a26db3eb3a74ebfb3b2e1d9159b0",
+      "ts": "2026-11-16T16:32:08Z",
+      "n_hits": 97
     },
     "kaggle-notebooks": {
       "fp": "b6fdcee72978e24ad2561717d9d660e1b56ddbcc710100115abcba797ed3c5d8",
@@ -293,23 +293,28 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "944e4b502150d970ce492277da75ca0dda3b5e39084d2348e01cd728e2233136",
-      "ts": "2026-11-16T12:31:43Z",
+      "fp": "0ef39b68f57be6baa4ed58a4c11a5895787d3dc55fa0e06a3805112d475070e5",
+      "ts": "2026-11-16T16:32:08Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "206f1296289692eb1d06e60ccda9e12bfaadc3c8bb9e5bcd8a22376820150dc6",
-      "ts": "2026-11-16T12:31:43Z",
+      "fp": "6b10e653ae9bc04a1ebb399615f520632c37199a708a7f41561361c18b0acb22",
+      "ts": "2026-11-16T16:32:08Z",
       "count": 1
     },
-    "daytona-pricing": {
-      "fp": "be8c696e0fd322c4cbed78089aae04767948af3c3a430ccaff3680826a4ef121",
-      "ts": "2026-11-16T12:31:43Z",
+    "upcloud-pricing": {
+      "fp": "195d6256c1351ff8be097bb53b7025230a36ad9dae5737c5bf806396ba610c3f",
+      "ts": "2026-11-16T16:32:08Z",
       "count": 1
     },
-    "hf-spaces": {
-      "fp": "8e936f9a5ac470e197c896a913ddf4f11d39a26db3eb3a74ebfb3b2e1d9159b0",
-      "ts": "2026-11-16T12:31:43Z",
+    "northflank-pricing": {
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-16T16:32:08Z",
+      "count": 1
+    },
+    "lowendbox-feed": {
+      "fp": "6eb24e7906a2c5c8f51fa3c0eec8e80d3945da55c2a9e8a329b3a6cfd8e6bdfc",
+      "ts": "2026-11-16T16:32:08Z",
       "count": 1
     }
   }
