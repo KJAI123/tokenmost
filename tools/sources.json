@@ -58,16 +58,18 @@
    "type": "watch",
    "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
    "deals": [
-    "bailian-signup"
-   ]
+    "deep-bailian-newuser-quota"
+   ],
+   "auto_verify": false
   },
   {
    "id": "ark-freequota",
    "type": "watch",
    "url": "https://docs.volcengine.com/docs/ark/free-inference-quota",
    "deals": [
-    "volc-ark-signup"
-   ]
+    "deep-volc-free-quota"
+   ],
+   "auto_verify": false
   },
   {
    "id": "kimi-trial",
@@ -99,7 +101,8 @@
    "url": "https://cloud.tencent.com/document/product/1823/130053",
    "deals": [
     "tencenthub-signup"
-   ]
+   ],
+   "auto_verify": false
   },
   {
    "id": "coze-edition",
@@ -352,9 +355,10 @@
    "type": "watch",
    "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
    "deals": [
-    "ark-daily-5m"
+    "deep-volc-collab-reward"
    ],
-   "confirm_runs": 2
+   "confirm_runs": 2,
+   "auto_verify": false
   },
   {
    "id": "copilot-plans",
@@ -451,7 +455,8 @@
    "type": "watch",
    "url": "https://www.rime.ai/pricing",
    "deals": [
-    "rime-monthly-50usd"
+    "rime-monthly-50usd",
+    "rime-stt-free-nov19"
    ],
    "auto_verify": false
   },
@@ -479,6 +484,33 @@
    "url": "https://zed.dev/education",
    "deals": [
     "zed-student-10usd"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "qiniu-conatus-rule",
+   "type": "watch",
+   "url": "https://www.qiniu.com/ai/free-models/conatus-2026",
+   "deals": [
+    "qiniu-conatus-1e8"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "qiniu-kimi-free-faq",
+   "type": "watch",
+   "url": "https://developer.qiniu.com/aitokenapi/kb/13462/aitoken-use-faq",
+   "deals": [
+    "qiniu-kimi-k3-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "antigravity-cli-plans",
+   "type": "watch",
+   "url": "https://antigravity.google/docs/plans",
+   "deals": [
+    "google-antigravity-cli-free"
    ],
    "auto_verify": false
   }

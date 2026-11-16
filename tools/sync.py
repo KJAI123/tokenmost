@@ -69,6 +69,21 @@ def dump_lines(path: Path, arr: list):
     path.write_text("[\n" + ",\n".join("  " + json.dumps(x, ensure_ascii=False) for x in arr) + "\n]\n", encoding="utf-8")
 
 
+def deadline_passed(value, now):
+    if not isinstance(value, str):
+        return False
+    china_time = datetime.timezone(datetime.timedelta(hours=8))
+    try:
+        if len(value) == 10:
+            return datetime.date.fromisoformat(value) < now.astimezone(china_time).date()
+        end = datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if end.tzinfo is None:
+            end = end.replace(tzinfo=china_time)
+        return now > end
+    except ValueError:
+        return False
+
+
 def main() -> int:
     cfg = json.loads((ROOT / "tools" / "sources.json").read_text())
     state_path = ROOT / ".sync-state.json"
@@ -238,15 +253,11 @@ def main() -> int:
     # ---- 规则引擎 1：截止日自动失效 ----
     for d in deals:
         dl = d.get("deadline")
-        if dl and d.get("verify_status") != "expired":
-            try:
-                if datetime.date.fromisoformat(dl) < TODAY:
-                    d["verify_status"] = "expired"
-                    d["stale_reason"] = f"截止 {dl} 已过（{TODAY} 自动标失效）"
-                    deals_dirty = True
-                    summary.append(f"EXPIRE {d['id']}: deadline {dl} 已过")
-            except ValueError:
-                pass
+        if d.get("verify_status") != "expired" and deadline_passed(dl, NOW):
+            d["verify_status"] = "expired"
+            d["stale_reason"] = f"截止 {dl} 已过（自动标失效）"
+            deals_dirty = True
+            summary.append(f"EXPIRE {d['id']}: deadline {dl} 已过")
 
     # ---- 规则引擎 2：超期未复核自动降级 ----
     stale_days = cfg.get("stale_days", 14)

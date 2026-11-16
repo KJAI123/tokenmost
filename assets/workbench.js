@@ -52,16 +52,64 @@ const Workbench = (() => {
       + msg('信源 ', 'Sources ') + links.size
       + '</summary><ul>' + Array.from(links, ([url, label]) =>
         '<li><a href="' + esc(url) + '" target="_blank" rel="noopener nofollow">' + esc(label) + '</a></li>'
-      ).join('') + '</ul>' + (offerNotes(deal) ? '<p>' + esc(offerNotes(deal)) + '</p>' : '') + '</details>';
+      ).join('') + '</ul><p>' + esc(offerValue(deal)) + '</p>'
+      + (offerNotes(deal) ? '<p>' + esc(offerNotes(deal)) + '</p>' : '') + '</details>';
+  }
+
+  function cleanCopy(value) {
+    return String(value || '').replace(/\*\*|`/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function offerValue(deal) {
+    return cleanCopy(zh ? deal.value : deal.value_en || deal.value);
+  }
+
+  function shortCopy(value, limit) {
+    const text = cleanCopy(value).replace(/^【[^】]+】\s*/, '');
+    const parts = text.split(/[；;。]|\s+\|\s+|\s+——\s*/);
+    const lead = parts[0].trim();
+    if (!lead) return '';
+    if (Array.from(lead).length <= limit) return lead;
+    const clipped = Array.from(lead).slice(0, limit).join('');
+    const wordEnd = clipped.lastIndexOf(' ');
+    return (wordEnd > limit * .7 ? clipped.slice(0, wordEnd) : clipped).trimEnd() + '…';
+  }
+
+  function headline(deal) {
+    return shortCopy(offerValue(deal), msg(67, 108));
+  }
+
+  function summary(deal) {
+    const rule = zh ? deal.rule : deal.rule_en || deal.rule;
+    const notes = zh ? deal.notes : deal.notes_en || deal.notes;
+    const editorial = zh ? deal.summary : deal.summary_en;
+    return shortCopy(editorial || rule || (notes && !/^(TODO|⚠️)/.test(notes) ? notes : ''), msg(48, 90));
+  }
+
+  function groupSummary(best, deals) {
+    const lead = summary(best);
+    return lead || deals.filter(deal => deal !== best).slice(0, 2)
+      .map(deal => shortCopy(offerValue(deal), msg(21, 34))).filter(Boolean).join(' · ');
   }
 
   function offerNotes(d) {
     const rule = zh ? d.rule : d.rule_en || d.rule;
     const notes = zh ? d.notes : d.notes_en || d.notes;
     return [
-      rule && msg('规则：', 'Rules: ') + rule,
-      notes && !/^(TODO|⚠️)/.test(notes) && msg('备注：', 'Notes: ') + notes,
+      rule && msg('规则：', 'Rules: ') + cleanCopy(rule),
+      notes && !/^(TODO|⚠️)/.test(notes) && msg('备注：', 'Notes: ') + cleanCopy(notes),
     ].filter(Boolean).join(' · ');
+  }
+
+  function gateLabel(deal) {
+    const labels = {
+      verify: msg('需实名', 'ID verification'),
+      student: msg('学生认证', 'Student verification'),
+      startup: msg('初创资质', 'Startup eligibility'),
+      audit: msg('需审核', 'Application review'),
+      oss: msg('开源维护者', 'Open-source maintainers'),
+    };
+    return labels[deal.gate] || deal.gate_label || deal.gate;
   }
 
   function timing(d) {
@@ -169,5 +217,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, sourceLinks, offerNotes, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();

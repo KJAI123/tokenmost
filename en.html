@@ -382,7 +382,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css">
+<link rel="stylesheet" href="assets/workbench.css?v=20261117-2">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -462,17 +462,22 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </div>
 <header class="market-hero">
   <div class="hero-copy">
-    <p class="hero-kicker"><span class="signal-dot"></span> TOKENMOST / TOKEN RADAR</p>
-    <h1>The free AI token radar</h1>
-    <p>Find free model credits, API access and discounts, with sources and claim rules in one place.</p>
-    <a class="hero-cta" href="#feed">Explore free offers<svg class="ui-icon" aria-hidden="true"><use href="#tm-arrow"/></svg></a>
+    <h1>Free AI tokens</h1>
+    <p>Free APIs, credits and deals</p>
   </div>
   <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
-    <span class="gb-label">EST. WORLDWIDE FIRST MONTH</span>
+    <span class="gb-label">Est. first-month credits</span>
     <b id="gbNum">—</b>
-    <span class="gb-unit">DeepSeek V4.1 Flash equivalent tokens</span>
-    <span id="gbSub"></span>
-    <span class="gb-link">View credit breakdown<svg class="ui-icon" aria-hidden="true"><use href="#tm-arrow"/></svg></span>
+    <span class="gb-unit">DeepSeek Flash equivalent tokens</span>
+    <span class="gb-link">Credit breakdown <span aria-hidden="true">↗</span></span>
+  </button>
+  <button type="button" class="hero-qr" onclick="openWx()" aria-label="Enlarge WeChat group QR code">
+    <img id="heroQrImage" src="assets/wechat-qr-20261124.png" width="104" height="104" alt="WeChat group invitation QR code" fetchpriority="high">
+    <span class="hero-qr-copy">
+      <strong>Join on WeChat</strong>
+      <span>Tap to enlarge</span>
+      <time datetime="2026-11-24">Valid before Nov 24</time>
+    </span>
   </button>
 </header>
 <div class="stats" aria-label="Directory statistics">
@@ -493,7 +498,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="feed-heading">
     <div>
       <h2 id="feedTitle">Free offer directory</h2>
-      <p>Scan verification dates, claim rules and source summaries.</p>
     </div>
     <span id="resultCount" role="status"></span>
   </div>
@@ -661,7 +665,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <h3>📥 WeChat group</h3>
   <p class="sub">羊毛情报第一时间推送 · 群友互助答疑</p>
   <img id="wxQrImg" alt="微信群二维码" style="display:none">
-  <p id="wxExpiry" style="display:none;font-size:.72rem;color:var(--muted);margin:0 0 6px">WeChat QR rotates every 7 days · valid until Nov 15</p>
+  <p id="wxExpiry" class="wx-expiry">The group QR code is valid before November 24.</p>
   <div class="wx-miss" id="wxMiss">二维码加载失败，请刷新重试；或通过页面底部 RSS 订阅获取羊毛速报。</div>
   <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日 token Discount码与羊毛速报不错过</p>
 </div>
@@ -746,7 +750,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/workbench.js"></script>
+<script src="assets/workbench.js?v=20261117-2"></script>
 <script>
 /* ============ 常量 ============ */
 /* 语言自动识别（v2.32.1 老板令「根据 IP 识别+切换功能」）：浏览器语言=英文 且 首次访问 → 跳 en.html；手动偏好记忆不再打扰 */
@@ -801,9 +805,8 @@ function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
 /* 聚合行主操作按钮：组内任一条目带Discount码/Discount链接即亮金色（v2.25 修 Qoder 挂不上的根因——原先只看组内最优条目） */
 function aggGold(g){
-  const ld=g.ds.find(d=>(d.coupon||d.type==='coupon')&&!d.placeholder&&d.url);
-  const tgt=ld||g.best;
-  if(ld)return '<a class="go cgo" href="'+esc(safeUrl(tgt.url))+'" target="_blank" rel="noopener nofollow" data-code="'+esc(tgt.coupon||tgt.url)+'" title="'+(tgt.coupon?'Copy code and open offer':'Copy link and open offer')+'">'+(tgt.coupon?'Coupon':'Get offer')+'</a>';
+  const tgt=g.best;
+  if((tgt.coupon||tgt.type==='coupon')&&!tgt.placeholder&&tgt.url)return '<a class="go cgo" href="'+esc(safeUrl(tgt.url))+'" target="_blank" rel="noopener nofollow" data-code="'+esc(tgt.coupon||tgt.url)+'" title="'+(tgt.coupon?'Copy code and open offer':'Copy link and open offer')+'">'+(tgt.coupon?'Coupon':'Get offer')+'</a>';
   return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">Claim</a>';
 }
 /* 云服务器羊毛独立版面（v2.30 老板令：token 羊毛下方单独版面） */
@@ -825,18 +828,18 @@ const rowHtml=(d,ov)=>{
   <div>
     <div class="r-line1">
       <span class="r-provider">${(()=>{const u=(siteFor(d)||{}).url||d.url;const dom=u?u.replace(/^https?:\/\/(www\.)?/,'').split('/')[0]:'';return dom?`<img class="favi rowfavi" src="${(window.LOGOS&&window.LOGOS[dom])||('https://icon.horse/icon/'+dom)}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://${dom}/favicon.ico';}else if(this.dataset.f==1){this.dataset.f=2;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=64';}else{this.style.display='none';}">`:''})()}${esc(d.provider)}</span>
-      <span class="r-value" title="${esc(d.value_en||d.value)}">${esc(d.value_en||d.value)}</span>
+      <span class="r-value" title="${esc(Workbench.offerValue(d))}">${esc(Workbench.headline(d))}</span>
       ${d.coupon?`<span class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">Example</span>':`<button class="copy" data-code="${esc(d.coupon)}">Copy</button>`}</span>`:''}
     </div>
     <div class="r-line2">
       <span class="chip">${LAYER[d.category]?LAYER[d.category].name:d.category}</span>
       <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
       ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
-        ${d.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb">${(window._GATES&&window._GATES[d.gate])||d.gate}</span>`:''}
+        ${d.gate?`<span class="chip gate-chip">${esc(Workbench.gateLabel(d))}</span>`:''}
       ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ Claimed</span>':''}
       ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).flag:''}
       ${Workbench.sourceLinks(d)}
-      <span class="r-notes" title="${esc(Workbench.offerNotes(d))}">${esc(Workbench.offerNotes(d))}</span>
+      <span class="r-notes" title="${esc(Workbench.offerNotes(d))}">${esc(Workbench.summary(d))}</span>
     </div>
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
@@ -991,20 +994,20 @@ function render(){
       const f2=w=>fmtEN(w);
       const open=Workbench.expanded.has(g.p);
       const detailId='offer-group-'+encodeURIComponent(g.p);
-      const summaries=g.ds.filter(d=>d!==g.best).map(d=>d.provider+': '+(d.value_en||d.value)).join(' · ');
+      const summaries=Workbench.groupSummary(g.best,g.ds);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}" data-layer="${dealLayer(g.best)}">
     <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的First-month haul总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'—'}</span><span class="unit">First-month haul</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+' + ':''}${f2(g.daily)}/day</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">One-time credits</span>'}</span></div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${(()=>{const u=(siteFor(g.best)||{}).url||g.best.url;const dom=u?u.replace(/^https?:\/\/(www\.)?/,'').split('/')[0]:'';return dom?`<img class="favi rowfavi" src="${(window.LOGOS&&window.LOGOS[dom])||('https://icon.horse/icon/'+dom)}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://${dom}/favicon.ico';}else if(this.dataset.f==1){this.dataset.f=2;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=64';}else{this.style.display='none';}">`:''})()}${esc(g.p)}</span>
-        <span class="r-value" title="${esc(g.best.value_en||g.best.value)}">${esc(g.best.value_en||g.best.value)}</span>
+        <span class="r-value" title="${esc(Workbench.offerValue(g.best))}">${esc(Workbench.headline(g.best))}</span>
         <span class="chip gold">📎 ${g.ds.length} sources</span>
       </div>
       <div class="r-line2">
         <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
         ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
-        ${g.best.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb">${(window._GATES&&window._GATES[g.best.gate])||g.best.gate}</span>`:''}
+        ${g.best.gate?`<span class="chip gate-chip">${esc(Workbench.gateLabel(g.best))}</span>`:''}
         <span class="r-notes" title="${esc(summaries)}">${esc(summaries)}</span>
       </div>
     </div>
@@ -1386,7 +1389,6 @@ async function openGuides(){
 function openPanel(o,p){document.querySelector(o).classList.add('open');document.querySelector(p).classList.add('open')}
 
 /* ============ 兑换方式弹窗 & 微信群弹窗 ============ */
-const WECHAT_QR='/assets/wechat-group.jpg';
 let rdCtx={code:'',url:''};
 function openRedeem(el){
   rdCtx={code:el.dataset.code||'',url:el.href||el.getAttribute('href')||''};
@@ -1409,9 +1411,9 @@ document.getElementById('redeemClose').addEventListener('click',closeRedeem);
 document.getElementById('redeemOverlay').addEventListener('click',closeRedeem);
 function openWx(){
   const img=document.getElementById('wxQrImg'),miss=document.getElementById('wxMiss');
-  img.src=WECHAT_QR+'?v='+Date.now();
-  img.onload=()=>{img.style.display='block';document.getElementById('wxExpiry').style.display='block';miss.style.display='none'};
+  img.onload=()=>{img.style.display='block';miss.style.display='none'};
   img.onerror=()=>{img.style.display='none';miss.style.display='block'};
+  img.src=document.getElementById('heroQrImage').src;
   openPanel('#wxOverlay','#wxPanel');
 }
 function closeWx(){document.getElementById('wxOverlay').classList.remove('open');document.getElementById('wxPanel').classList.remove('open')}
@@ -1797,7 +1799,6 @@ function calcGlobalBanner(){
   const monthly=Math.round(once+daily*30);
   const f=w=>fmtEN(w);
   document.getElementById('gbNum').textContent=f(monthly);
-  document.getElementById('gbSub').textContent=f(once)+' one-time + '+f(daily)+' daily × 30 days';
 }
 // 侧边栏折叠（OpenRouter 式）
 document.getElementById('side').addEventListener('click',e=>{
