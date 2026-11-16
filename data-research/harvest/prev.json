@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-16T02:23:09Z",
+  "harvested_at": "2026-11-16T07:27:02Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -377,43 +377,31 @@
         },
         {
           "match": "¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org",
-          "context": "1-Terminus deepseek-ai/DeepSeek-V3.1-Terminus ¥ 4.00 ¥ 12.00 ¥ 0.40 展开更多 7 个模型 Z-ai GLM-5.3-Flash zai-org/GLM-5.3-Flash ¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5V zai-org/GLM-4.5V ¥ 1.00 ¥ 6.00 - G"
+          "context": "1-Terminus deepseek-ai/DeepSeek-V3.1-Terminus ¥ 4.00 ¥ 12.00 ¥ 0.40 展开更多 7 个模型 Z-ai GLM-5.3-Flash zai-org/GLM-5.3-Flash ¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6."
         },
         {
           "match": "¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-or",
-          "context": "¥ 4.00 ¥ 12.00 ¥ 0.40 展开更多 7 个模型 Z-ai GLM-5.3-Flash zai-org/GLM-5.3-Flash ¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5V zai-org/GLM-4.5V ¥ 1.00 ¥ 6.00 - GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00"
+          "context": "¥ 4.00 ¥ 12.00 ¥ 0.40 展开更多 7 个模型 Z-ai GLM-5.3-Flash zai-org/GLM-5.3-Flash ¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1."
         },
         {
-          "match": "¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5V zai-o",
-          "context": "-Flash zai-org/GLM-5.3-Flash ¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5V zai-org/GLM-4.5V ¥ 1.00 ¥ 6.00 - GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥"
-        },
-        {
-          "match": "¥ 1.00 ¥ 6.00 - GLM-4.5-Air zai-org/",
-          "context": "3 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5V zai-org/GLM-4.5V ¥ 1.00 ¥ 6.00 - GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - 展开更多 2 个模型 hunyuan Hy4 preview tencent/H"
+          "match": "¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5-Air za",
+          "context": "-Flash zai-org/GLM-5.3-Flash ¥ 0.80 ¥ 2.80 ¥ 0.23 GLM-5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - GLM-Z1-9B-0414 THUDM/GLM-Z1-9B-041"
         },
         {
           "match": "¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM",
-          "context": "GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5V zai-org/GLM-4.5V ¥ 1.00 ¥ 6.00 - GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - 展开更多 2 个模型 hunyuan Hy4 preview tencent/Hy4-preview ¥ 6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B t"
+          "context": "5.3 zai-org/GLM-5.3 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-5.2 zai-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - GLM-Z1-9B-0414 THUDM/GLM-Z1-9B-0414 免费 免费 - 展开更多 1 个模型 hunyuan Hy4 preview tencent/Hy4-p"
         },
         {
-          "match": "¥ 1.89 ¥ 1.89 - 展开更多 2 个模型 hunyuan H",
-          "context": "5V zai-org/GLM-4.5V ¥ 1.00 ¥ 6.00 - GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - 展开更多 2 个模型 hunyuan Hy4 preview tencent/Hy4-preview ¥ 6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B tencent/Hunyuan-MT-7B 免费 免费 - Hunyuan-A13B-Instruct t"
+          "match": "¥ 1.89 ¥ 1.89 - GLM-Z1-9B-0414 THUDM",
+          "context": "i-org/GLM-5.2 ¥ 8.00 ¥ 28.00 ¥ 2.00 GLM-4.5-Air zai-org/GLM-4.5-Air ¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - GLM-Z1-9B-0414 THUDM/GLM-Z1-9B-0414 免费 免费 - 展开更多 1 个模型 hunyuan Hy4 preview tencent/Hy4-preview ¥ 6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B tencent/H"
         },
         {
           "match": "¥ 6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B ",
-          "context": "¥ 1.00 ¥ 6.00 - GLM-4-32B-0414 THUDM/GLM-4-32B-0414 ¥ 1.89 ¥ 1.89 - 展开更多 2 个模型 hunyuan Hy4 preview tencent/Hy4-preview ¥ 6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B tencent/Hunyuan-MT-7B 免费 免费 - Hunyuan-A13B-Instruct tencent/Hunyuan-A13B-Instruct 费用发生时段: 9点～18点 ¥ 1.00 费用发生时段: 9点～18点 ¥"
-        },
-        {
-          "match": "¥ 1.00 费用发生时段: 9点～18点 ¥ 4.00 - 费用发生时",
-          "context": "0 ¥ 0.30 Hunyuan-MT-7B tencent/Hunyuan-MT-7B 免费 免费 - Hunyuan-A13B-Instruct tencent/Hunyuan-A13B-Instruct 费用发生时段: 9点～18点 ¥ 1.00 费用发生时段: 9点～18点 ¥ 4.00 - 费用发生时段: 0点～9点/18点～24点 ¥ 0.80 费用发生时段: 0点～9点/18点～24点 ¥ 3.20 - meituan-longcat LongCat-2.0 meituan-longcat/LongCat-2.0 ¥ 5.00 ¥"
-        },
-        {
-          "match": "¥ 0.80 费用发生时段: 0点～9点/18点～24点 ¥ 3.20 ",
-          "context": "Hunyuan-A13B-Instruct tencent/Hunyuan-A13B-Instruct 费用发生时段: 9点～18点 ¥ 1.00 费用发生时段: 9点～18点 ¥ 4.00 - 费用发生时段: 0点～9点/18点～24点 ¥ 0.80 费用发生时段: 0点～9点/18点～24点 ¥ 3.20 - meituan-longcat LongCat-2.0 meituan-longcat/LongCat-2.0 ¥ 5.00 ¥ 20.00 ¥ 0.10 Kimi Kimi-K2.7-Code moonshotai/Kimi-K2.7"
+          "context": "32B-0414 ¥ 1.89 ¥ 1.89 - GLM-Z1-9B-0414 THUDM/GLM-Z1-9B-0414 免费 免费 - 展开更多 1 个模型 hunyuan Hy4 preview tencent/Hy4-preview ¥ 6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B tencent/Hunyuan-MT-7B 免费 免费 - meituan-longcat LongCat-2.0 meituan-longcat/LongCat-2.0 ¥ 5.00 ¥ 20.00 ¥ 0.10 Kimi Kimi-K2"
         },
         {
           "match": "¥ 5.00 ¥ 20.00 ¥ 0.10 Kimi Kimi-K2.7",
-          "context": "0 - 费用发生时段: 0点～9点/18点～24点 ¥ 0.80 费用发生时段: 0点～9点/18点～24点 ¥ 3.20 - meituan-longcat LongCat-2.0 meituan-longcat/LongCat-2.0 ¥ 5.00 ¥ 20.00 ¥ 0.10 Kimi Kimi-K2.7-Code moonshotai/Kimi-K2.7-Code ¥ 6.50 ¥ 27.00 ¥ 1.30 Kimi-K2.6 (Pro) Pro/moonshotai/Kimi-K2.6 ¥ 6.50 ¥ 27.00 ¥ 1.10 Qwe"
+          "context": "6.00 ¥ 18.00 ¥ 0.30 Hunyuan-MT-7B tencent/Hunyuan-MT-7B 免费 免费 - meituan-longcat LongCat-2.0 meituan-longcat/LongCat-2.0 ¥ 5.00 ¥ 20.00 ¥ 0.10 Kimi Kimi-K2.7-Code moonshotai/Kimi-K2.7-Code ¥ 6.50 ¥ 27.00 ¥ 1.30 Kimi-K2.6 (Pro) Pro/moonshotai/Kimi-K2.6 ¥ 6.50 ¥ 27.00 ¥ 1.10 Qwe"
         },
         {
           "match": "¥ 6.50 ¥ 27.00 ¥ 1.30 Kimi-K2.6 (Pro",
@@ -425,35 +413,47 @@
         },
         {
           "match": "¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwe",
-          "context": "¥ 6.50 ¥ 27.00 ¥ 1.30 Kimi-K2.6 (Pro) Pro/moonshotai/Kimi-K2.6 ¥ 6.50 ¥ 27.00 ¥ 1.10 Qwen Qwen3.8-27B Qwen/Qwen3.8-27B ¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwen/Qwen3.6-35B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-122B-A10B Qwen/Qwen3.5-122B-A10"
+          "context": "¥ 6.50 ¥ 27.00 ¥ 1.30 Kimi-K2.6 (Pro) Pro/moonshotai/Kimi-K2.6 ¥ 6.50 ¥ 27.00 ¥ 1.10 Qwen Qwen3.8-27B Qwen/Qwen3.8-27B ¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwen/Qwen3.6-35B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入"
         },
         {
           "match": "¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qw",
-          "context": "Kimi-K2.6 ¥ 6.50 ¥ 27.00 ¥ 1.10 Qwen Qwen3.8-27B Qwen/Qwen3.8-27B ¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwen/Qwen3.6-35B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-122B-A10B Qwen/Qwen3.5-122B-A10B 输入 [0, 128k) ¥ 0.80 输入 [0, 128k) ¥ 6.40 - 输入 [128k,"
+          "context": "Kimi-K2.6 ¥ 6.50 ¥ 27.00 ¥ 1.10 Qwen Qwen3.8-27B Qwen/Qwen3.8-27B ¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwen/Qwen3.6-35B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞)"
         },
         {
-          "match": "¥ 3.00 ¥ 18.00 - Qwen3.5-122B-A10B Q",
-          "context": "7B Qwen/Qwen3.8-27B ¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwen/Qwen3.6-35B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-122B-A10B Qwen/Qwen3.5-122B-A10B 输入 [0, 128k) ¥ 0.80 输入 [0, 128k) ¥ 6.40 - 输入 [128k, +∞) ¥ 2.00 输入 [128k, +∞) ¥ 16.00 - Qwen3.5-35B"
-        },
-        {
-          "match": "¥ 0.80 输入 [0, 128k) ¥ 6.40 - 输入 [128",
-          "context": "3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-122B-A10B Qwen/Qwen3.5-122B-A10B 输入 [0, 128k) ¥ 0.80 输入 [0, 128k) ¥ 6.40 - 输入 [128k, +∞) ¥ 2.00 输入 [128k, +∞) ¥ 16.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入"
-        },
-        {
-          "match": "¥ 2.00 输入 [128k, +∞) ¥ 16.00 - Qwen3",
-          "context": "6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-122B-A10B Qwen/Qwen3.5-122B-A10B 输入 [0, 128k) ¥ 0.80 输入 [0, 128k) ¥ 6.40 - 输入 [128k, +∞) ¥ 2.00 输入 [128k, +∞) ¥ 16.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Q"
+          "match": "¥ 3.00 ¥ 18.00 - Qwen3.5-35B-A3B Qwe",
+          "context": "7B Qwen/Qwen3.8-27B ¥ 3.00 ¥ 12.00 - Qwen3.6-35B-A3B Qwen/Qwen3.6-35B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwe"
         },
         {
           "match": "¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128",
-          "context": "80 输入 [0, 128k) ¥ 6.40 - 输入 [128k, +∞) ¥ 2.00 输入 [128k, +∞) ¥ 16.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +"
+          "context": "5B-A3B ¥ 1.80 ¥ 10.80 - Qwen3.6-27B Qwen/Qwen3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +"
         },
         {
           "match": "¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3",
-          "context": "00 输入 [128k, +∞) ¥ 16.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - 展开更多 30 个"
+          "context": "en3.6-27B ¥ 3.00 ¥ 18.00 - Qwen3.5-35B-A3B Qwen/Qwen3.5-35B-A3B 输入 [0, 128k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - Qwen3.5-9"
         },
         {
           "match": "¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128",
-          "context": "8k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - 展开更多 30 个模型 ChinaTelecom Xing4.0-29B XingChenAGI/Xing4.0-29B 免费 免费 - Baidu PaddleO"
+          "context": "8k) ¥ 0.40 输入 [0, 128k) ¥ 3.20 - 输入 [128k, +∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - Qwen3.5-9B Qwen/Qwen3.5-9B 输入 [0, 128k) ¥ 0.50 输入 [0, 128k) ¥ 4.00 - 输入 [128k, +∞)"
+        },
+        {
+          "match": "¥ 1.80 输入 [128k, +∞) ¥ 14.40 - Qwen3",
+          "context": "+∞) ¥ 1.60 输入 [128k, +∞) ¥ 12.80 - Qwen3.5-27B Qwen/Qwen3.5-27B 输入 [0, 128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - Qwen3.5-9B Qwen/Qwen3.5-9B 输入 [0, 128k) ¥ 0.50 输入 [0, 128k) ¥ 4.00 - 输入 [128k, +∞) ¥ 1.50 输入 [128k, +∞) ¥ 12.00 - 展开更多 28 个模型"
+        },
+        {
+          "match": "¥ 0.50 输入 [0, 128k) ¥ 4.00 - 输入 [128",
+          "context": "128k) ¥ 0.60 输入 [0, 128k) ¥ 4.80 - 输入 [128k, +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - Qwen3.5-9B Qwen/Qwen3.5-9B 输入 [0, 128k) ¥ 0.50 输入 [0, 128k) ¥ 4.00 - 输入 [128k, +∞) ¥ 1.50 输入 [128k, +∞) ¥ 12.00 - 展开更多 28 个模型 ChinaTelecom Xing4.0-29B XingChenAGI/Xing4.0-29B 免费 免费 - Baidu PaddleO"
+        },
+        {
+          "match": "¥ 1.50 输入 [128k, +∞) ¥ 12.00 - 展开更多 ",
+          "context": ", +∞) ¥ 1.80 输入 [128k, +∞) ¥ 14.40 - Qwen3.5-9B Qwen/Qwen3.5-9B 输入 [0, 128k) ¥ 0.50 输入 [0, 128k) ¥ 4.00 - 输入 [128k, +∞) ¥ 1.50 输入 [128k, +∞) ¥ 12.00 - 展开更多 28 个模型 ChinaTelecom Xing4.0-29B XingChenAGI/Xing4.0-29B 免费 免费 - Baidu PaddleOCR-VL-1.5 PaddlePaddle/PaddleOCR-VL-1.5 免费"
+        },
+        {
+          "match": "¥ 1.00 ¥ 4.00 - ByteDance Seed-OSS-3",
+          "context": "免费 - Baidu PaddleOCR-VL-1.5 PaddlePaddle/PaddleOCR-VL-1.5 免费 免费 - inclusionAI Ling-flash-2.0 inclusionAI/Ling-flash-2.0 ¥ 1.00 ¥ 4.00 - ByteDance Seed-OSS-36B-Instruct ByteDance-Seed/Seed-OSS-36B-Instruct ¥ 1.50 ¥ 4.00 - BAAI bge-m3 BAAI/bge-m3 免费 - - bge-reranker-v2-m3 BAAI/"
+        },
+        {
+          "match": "¥ 1.50 ¥ 4.00 - BAAI bge-m3 BAAI/bge",
+          "context": "ash-2.0 inclusionAI/Ling-flash-2.0 ¥ 1.00 ¥ 4.00 - ByteDance Seed-OSS-36B-Instruct ByteDance-Seed/Seed-OSS-36B-Instruct ¥ 1.50 ¥ 4.00 - BAAI bge-m3 BAAI/bge-m3 免费 - - bge-reranker-v2-m3 BAAI/bge-reranker-v2-m3 免费 - - bge-large-zh-v1.5 BAAI/bge-large-zh-v1.5 免费 - - bge-large-e"
         }
       ]
     },
@@ -3242,7 +3242,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "例如：企业微信智能机器人、QQ、飞书、钉钉等）、自动决策与任务执行能力、预设的技能（Skills）能力。它能控制您的终端执行操作，而不是只出主意。 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -3250,15 +3250,15 @@
         },
         {
           "match": "免费",
-          "context": "快讯文章归档 关键词归档 开发者手册归档 开发者手册 Section 归档 领券  文章/答案/技术大牛 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
+          "context": "s）能力。它能控制您的终端执行操作，而不是只出主意。 [进入专区](https://developer.cloud.tencent.com/zone/adp) ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 17 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
         },
         {
           "match": "free",
-          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容"
+          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
-          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容 103 讨论 1 进入专区 精选文章 不写代码，用Lighthouse轻松搭建知识库"
+          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支持文生图,也可作为视频等多模态视觉生成基础。 粉丝 3 内容 17 讨论 10 进入"
         },
         {
           "match": "free",
@@ -4459,11 +4459,15 @@
       "name": "MonkeyCode 官方文档",
       "url": "https://monkeycode.docs.baizhi.cloud",
       "status": "ok",
-      "hits": 1,
+      "hits": 2,
       "findings": [
         {
           "match": "额度",
-          "context": "yCode 积分活动结束公告（11月7日起） 🌟 MonkeyCode介绍 🔥 上手指南-在线版本 🔦 上手指南-私有化部署 🗂️ 上手指南-本地work版本 🎉 个人用户注册 💰 MonkeyCode 积分说明 🎁 MonkeyCode 额度说明 💫 上手指南-从零到一实践案例 👥 团队版 👉 配置说明 内容摘要 MonkeyCode AI MonkeyCode 不是 AI 编程工具，是对传统研发模式的变革，是全新的 AI 编程体验，让你的研发团队效率 Max。 相关产品 Pa"
+          "context": "MonkeyCode AI - MonkeyCode 会员额度调整公告（11月11日起） MonkeyCode AI 智能问答 ​ 在线使用 GitHub 使用指南 套餐活动 更新日志 常见问题 目录 🔔 MonkeyCode 会员额度调整公告（11月11日起） 🌟 MonkeyCode介绍 🔥 上手"
+        },
+        {
+          "match": "额度",
+          "context": "Code 会员额度调整公告（11月11日起） 🌟 MonkeyCode介绍 🔥 上手指南-在线版本 🔦 上手指南-私有化部署 🗂️ 上手指南-本地work版本 🎉 个人用户注册 💰 MonkeyCode 积分说明 🎁 MonkeyCode 额度说明 💫 上手指南-从零到一实践案例 👥 团队版 👉 配置说明 内容摘要 MonkeyCode AI MonkeyCode 不是 AI 编程工具，是对传统研发模式的变革，是全新的 AI 编程体验，让你的研发团队效率 Max。 相关产品 Pa"
         }
       ]
     },
@@ -4993,7 +4997,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 13.5k  ( 13.5k ) Star 87.8k  ( 87.8k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 13.5k  ( 13.5k ) Star 87.9k  ( 87.9k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -5174,16 +5178,8 @@
           "context": "模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 7 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 8 OpenRouter 免费模型池：每日 50 次，买过 $10 永久升到 1000 3 OpenRouter · Token 额度 50 次/天 9 AMD Radeon Cloud Token Factory：免费公共模型 API（ROCm 底层，免绑卡） 3 AMD（Radeon C"
         },
         {
-          "match": "免费额度",
-          "context": "）首发上线，同时接入阿里 Token Plan、千问办公、千问 App、QwenStudio 等入口。计费上，Qoder 限时 2 折，Credits 计费系数由匿名期的 0.5× 降至 0.1×；早几天的匿名期曾给个人用户每日 0.0× 免费额度，现已结束，结束时间另行通知。这是目前唯一公开的 Qwen4 能力抢先体验入口，正式版将于不久后发布。 Qwen4 预览版 Qoder 限时 2 折 编程 Agent 站内 Qoder Qwen4-Max-Preview（原 Qoduck）"
-        },
-        {
-          "match": "免费额度",
-          "context": "一公开的 Qwen4 能力抢先体验入口，正式版将于不久后发布。 Qwen4 预览版 Qoder 限时 2 折 编程 Agent 站内 Qoder Qwen4-Max-Preview（原 Qoduck）限时 2 折活动；匿名期每日 0.0× 免费额度已结束。 Agent 助手实测 同样号称免费，额度能差几十倍——谁真能白嫖，谁用几下就得充钱 全部 10 款 WorkBuddy 宽裕 说需求，它把活干完——文档、表格、PPT、批量文件 能长期白嫖 签到 100 积分 Codex 紧张 把"
-        },
-        {
           "match": "免费，额度",
-          "context": "于不久后发布。 Qwen4 预览版 Qoder 限时 2 折 编程 Agent 站内 Qoder Qwen4-Max-Preview（原 Qoduck）限时 2 折活动；匿名期每日 0.0× 免费额度已结束。 Agent 助手实测 同样号称免费，额度能差几十倍——谁真能白嫖，谁用几下就得充钱 全部 10 款 WorkBuddy 宽裕 说需求，它把活干完——文档、表格、PPT、批量文件 能长期白嫖 签到 100 积分 Codex 紧张 把开发任务交给它跑完，但额度是按小时掐的 跑几个任务"
+          "context": "4K）与最多 10 张参考图保持人物/商品/风格一致；正陆续在即梦、豆包、豆包工作、火山方舟上线。官方模型 ID doubao-seedream-5-5-261028。 图像模型 多轮编辑 原生透明 文字渲染 Agent 助手实测 同样号称免费，额度能差几十倍——谁真能白嫖，谁用几下就得充钱 全部 10 款 WorkBuddy 宽裕 说需求，它把活干完——文档、表格、PPT、批量文件 能长期白嫖 签到 100 积分 Codex 紧张 把开发任务交给它跑完，但额度是按小时掐的 跑几个任务"
         },
         {
           "match": "免费（输入输出均 ¥0/M token",
@@ -5203,23 +5199,23 @@
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
+          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 20 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
+          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 20 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
         },
         {
           "match": "免费 API Token 专区 注册赠送、每日/每月额度",
-          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
+          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 20 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
         },
         {
           "match": "免费档 API 每天 1000 次",
-          "context": "度 见官方说明 核实 2026-10-27 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
+          "context": "度 见官方说明 核实 2026-10-27 20 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
+          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 20 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -5235,11 +5231,15 @@
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 15 天 额度 100000000 Tokens/天 核实 2026-10-27 19 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qod"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 15 天 额度 100000000 Tokens/天 核实 2026-10-27 20 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qod"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 19 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名"
+          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 20 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名"
+        },
+        {
+          "match": "免费 + 11/16–11/22 登录领 1 亿 Tokens",
+          "context": "在这里投广告？大模型 / 云厂商 / Agent 都欢迎 信息位、板块推荐、内容合作均可。留言对接，站长 1~2 个工作日内回复报价与排期。 广告合作 最近更新记录 自动复查与人工复核的变更轨迹 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/16–11/22 登录领 1 亿 Tokens 巡检更新：AutoClaw 周福利 M11W3 翻倍至 1 亿，替换过期的 M11W2 口径 2026-11-16 10:42 中国电信 TeleAgent 限时免费：送 4 核 8G 云电脑 + 6100 积分 新增：中国电信 Tele"
         },
         {
           "match": "免费额度",
@@ -5251,11 +5251,15 @@
         },
         {
           "match": "免费领 + AI 应用限免 11/11 巡检：官方专题页已上线 1 亿 Tokens",
-          "context": "叠加） 11/11 巡检：官方帮助页当前原文与站内「无需实名 / 需逐个领取」冲突，按官方原文纠正，并补 90 天有效期与华北2 地域限制 2026-11-11 10:12 国家超算互联网 11.11 年终钜惠：新人 1 亿 Tokens 免费领 + AI 应用限免 11/11 巡检：官方专题页已上线 1 亿 Tokens 领取步骤，撤销 11/10 的「暂未开放领取」纠偏 2026-11-11 10:12 AutoClaw（智谱澳龙）：内置 GLM-4.7-Flash 完全免费 + 双 11 登录领 50M Tokens 11/11 巡检：官方 M11W2"
+          "context": "叠加） 11/11 巡检：官方帮助页当前原文与站内「无需实名 / 需逐个领取」冲突，按官方原文纠正，并补 90 天有效期与华北2 地域限制 2026-11-11 10:12 国家超算互联网 11.11 年终钜惠：新人 1 亿 Tokens 免费领 + AI 应用限免 11/11 巡检：官方专题页已上线 1 亿 Tokens 领取步骤，撤销 11/10 的「暂未开放领取」纠偏 2026-11-11 10:12 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/16–11/22 登录领 1 亿 Tokens 11/11 巡检：官方 M11W2 上线，替"
         },
         {
-          "match": "免费 + 双 11 登录领 50M Tokens",
-          "context": "免费领 + AI 应用限免 11/11 巡检：官方专题页已上线 1 亿 Tokens 领取步骤，撤销 11/10 的「暂未开放领取」纠偏 2026-11-11 10:12 AutoClaw（智谱澳龙）：内置 GLM-4.7-Flash 完全免费 + 双 11 登录领 50M Tokens 11/11 巡检：官方 M11W2 上线，替换已失效的 M11W1 周福利口径并更新 official_url 2026-11-11 10:12 国家超算互联网 11.11 年终钜惠：新人 1 亿 Tokens 免费领 + AI 应用限免"
+          "match": "免费 + 11/16–11/22 登录领 1 亿 Tokens",
+          "context": "1 亿 Tokens 免费领 + AI 应用限免 11/11 巡检：官方专题页已上线 1 亿 Tokens 领取步骤，撤销 11/10 的「暂未开放领取」纠偏 2026-11-11 10:12 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/16–11/22 登录领 1 亿 Tokens 11/11 巡检：官方 M11W2 上线，替换已失效的 M11W1 周福利口径并更新 official_url 2026-11-11 10:12 国家超算互联网 11.11 年终钜惠：新人 1 亿 Tokens 免费领 + AI 应用限免"
+        },
+        {
+          "match": "免费 + 11/16–11/22 登录领 1 亿 Tokens",
+          "context": "无截止标「长期」 全部 1 阶跃星辰 StepAudio 3 语音系列：限免延至 11 月 17 日 11:59（12:00 起计费） 阶跃星辰（StepFun） · 模型体验 剩 1 天 2 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/16–11/22 登录领 1 亿 Tokens AutoClaw（智谱） · 模型体验 剩 7 天 3 L LibTV 双11：Wan3 / Kling4.0 / Minimax H3 三大视频模型最长 30 天 0 积分无限用 LibTV（哩布哩布） · 工具试用 剩 12 天 4"
         },
         {
           "match": "免费 Token/API 额度",
@@ -5263,7 +5267,7 @@
         },
         {
           "match": "免费福利与资源 汇聚全球 AI 大厂，收录可领的免费额度",
-          "context": "0 独立访客 页面访问 0 页面种类 0 本年 0 独立访客 页面访问 0 页面种类 0 © 2026 AI 羊毛情报站 · 活动信息以厂商官方页面为准 aiyangmao.xyz 复制网址    # AI 羊毛情报站 发现最新的 AI 免费福利与资源 汇聚全球 AI 大厂，收录可领的免费额度、试用机会与模型资源，帮你省时省钱用好 AI。 官网aiyangmao.xyz数据更新于2026-11-14 ## 口碑榜 · 模型动态 左边按口碑与稳定性排 · 右边是近两个月的模型发布 [全部](https://aiyangmao.xy"
+          "context": "0 独立访客 页面访问 0 页面种类 0 本年 0 独立访客 页面访问 0 页面种类 0 © 2026 AI 羊毛情报站 · 活动信息以厂商官方页面为准 aiyangmao.xyz 复制网址    # AI 羊毛情报站 发现最新的 AI 免费福利与资源 汇聚全球 AI 大厂，收录可领的免费额度、试用机会与模型资源，帮你省时省钱用好 AI。 官网aiyangmao.xyz数据更新于2026-11-16 ## 口碑榜 · 模型动态 左边按口碑与稳定性排 · 右边是近两个月的模型发布 [全部](https://aiyangmao.xy"
         },
         {
           "match": "免费（含图像与视频生成）4智谱 AI·模型体验Tokens",
@@ -5424,85 +5428,8 @@
       "name": "小米 MiMo 开放平台",
       "url": "https://platform.xiaomimimo.com/",
       "status": "ok",
-      "hits": 19,
-      "findings": [
-        {
-          "match": "¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Pro 专业",
-          "context": "持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Pro 专业开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 4560 亿 Credits = 9.3 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费"
-        },
-        {
-          "match": "¥10 首单返 10% · 邀请人为 Max / Standard",
-          "context": "80 /年 专属龙虾 · 金山办公 · 多任务并行 邀好友首单 9 折 ，您最高返实付 20% 邀好友首单 9 折 ，您最高返实付 20% 首单返 10% · 邀请人为 Max / Standard 年费会员，所有比例再翻倍 · 注册各得 ¥10 首单返 10% · 邀请人为 Max / Standard 年费会员，所有比例再翻倍 · 注册各得 ¥10 快速开始 订阅套餐 选择适合你的套餐并完成订阅 安装编程工具 下载并安装你常用的编程工具 配置套餐 配置模型、专属 API Key 和 Base URL 开始使用 释放你的生产力 常见问题"
-        },
-        {
-          "match": "¥10 快速开始 订阅套餐 选择适合你的套餐并完成订阅 安装编程工",
-          "context": "9 折 ，您最高返实付 20% 首单返 10% · 邀请人为 Max / Standard 年费会员，所有比例再翻倍 · 注册各得 ¥10 首单返 10% · 邀请人为 Max / Standard 年费会员，所有比例再翻倍 · 注册各得 ¥10 快速开始 订阅套餐 选择适合你的套餐并完成订阅 安装编程工具 下载并安装你常用的编程工具 配置套餐 配置模型、专属 API Key 和 Base URL 开始使用 释放你的生产力 常见问题 目前 Token Plan 有哪些订阅优惠？ - 首购优惠：个人版首次购买享 88 折，每个账号仅享受 1"
-        },
-        {
-          "match": "免费",
-          "context": "Max 高强度开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 9840 亿 Credits = 20 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Pro 专业开发 按年计费 支持"
-        },
-        {
-          "match": "免费",
-          "context": "高强度开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 9840 亿 Credits = 20 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Pro 专业开发 按年计费 支持 V2.6"
-        },
-        {
-          "match": "免费",
-          "context": "Pro 专业开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 4560 亿 Credits = 9.3 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Standard 日常办公 按年"
-        },
-        {
-          "match": "免费",
-          "context": "专业开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 4560 亿 Credits = 9.3 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Standard 日常办公 按年计费 支持"
-        },
-        {
-          "match": "免费",
-          "context": "dard 日常办公 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 1320 亿 Credits = 2.7 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Lite 轻量体验 按年计费 支"
-        },
-        {
-          "match": "免费",
-          "context": "日常办公 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 1320 亿 Credits = 2.7 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Lite 轻量体验 按年计费 支持 V2."
-        },
-        {
-          "match": "免费",
-          "context": "· 多任务并行 Lite 轻量体验 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 492 亿 Credits 套餐年总量 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 邀好友首单 9 折 ，您最高返实"
-        },
-        {
-          "match": "免费",
-          "context": "并行 Lite 轻量体验 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 492 亿 Credits 套餐年总量 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 邀好友首单 9 折 ，您最高返实付 20%"
-        },
-        {
-          "match": "Credits",
-          "context": "# Xiaomi MiMo 开放平台 \\<MiMo-V2.6> 全新旗舰一眼抢鲜，<团队版订阅> 重磅上新！新实力，放开用。 Max 高强度开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 9840 亿 Credits = 20 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限额"
-        },
-        {
-          "match": "Credits",
-          "context": "+8 畅快使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Pro 专业开发 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 4560 亿 Credits = 9.3 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限"
-        },
-        {
-          "match": "Credits",
-          "context": "使用 无周限额 · 无 5 小时限额 加购 MiMo Claw ¥233.80 /年 专属龙虾 · 金山办公 · 多任务并行 Standard 日常办公 按年计费 支持 V2.6 全新旗舰模型 文本模型 / 全模态 / 语音 1320 亿 Credits = 2.7 x Lite 支持主流编程框架 OpenClaw / Codex / MiMo Claw 等 TTS 模型免费 限时免费使用 夜间 0.8x 消耗 00:00—08:00 · UTC+8 畅快使用 无周限额 · 无 5 小时限"
-        },
-        {
-          "match": "Token",
-          "context": "会员，所有比例再翻倍 · 注册各得 ¥10 快速开始 订阅套餐 选择适合你的套餐并完成订阅 安装编程工具 下载并安装你常用的编程工具 配置套餐 配置模型、专属 API Key 和 Base URL 开始使用 释放你的生产力 常见问题 目前 Token Plan 有哪些订阅优惠？ - 首购优惠：个人版首次购买享 88 折，每个账号仅享受 1 次；团队版不参与该优惠。 - 连续包年：个人版和团队版相比连续包月享 88 折优惠，首购优惠不参与包年； - 夜间优惠速率：非高峰期（北京时间 0:"
-        },
-        {
-          "match": "Token",
-          "context": "与该优惠。 - 连续包年：个人版和团队版相比连续包月享 88 折优惠，首购优惠不参与包年； - 夜间优惠速率：非高峰期（北京时间 0:00-8:00，即 UTC 16:00-24:00） 0.8x 消耗系数。 套餐是否支持自动续费和退款？ Token Plan 支持哪些模型？ 如何在编程工具中使用 Token Plan？ 购买 Token Plan 后，可以在 MiMo 桌面端中使用吗？Token Plan 和 Desktop 会员有什么区别？"
-        },
-        {
-          "match": "Token",
-          "context": "折优惠，首购优惠不参与包年； - 夜间优惠速率：非高峰期（北京时间 0:00-8:00，即 UTC 16:00-24:00） 0.8x 消耗系数。 套餐是否支持自动续费和退款？ Token Plan 支持哪些模型？ 如何在编程工具中使用 Token Plan？ 购买 Token Plan 后，可以在 MiMo 桌面端中使用吗？Token Plan 和 Desktop 会员有什么区别？"
-        },
-        {
-          "match": "Token",
-          "context": "- 夜间优惠速率：非高峰期（北京时间 0:00-8:00，即 UTC 16:00-24:00） 0.8x 消耗系数。 套餐是否支持自动续费和退款？ Token Plan 支持哪些模型？ 如何在编程工具中使用 Token Plan？ 购买 Token Plan 后，可以在 MiMo 桌面端中使用吗？Token Plan 和 Desktop 会员有什么区别？"
-        },
-        {
-          "match": "Token",
-          "context": "即 UTC 16:00-24:00） 0.8x 消耗系数。 套餐是否支持自动续费和退款？ Token Plan 支持哪些模型？ 如何在编程工具中使用 Token Plan？ 购买 Token Plan 后，可以在 MiMo 桌面端中使用吗？Token Plan 和 Desktop 会员有什么区别？"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "tiangong-modelplatform",
@@ -6759,8 +6686,9 @@
       "id": "ov-iteracompute",
       "name": "IteraCompute",
       "url": "https://platform.iteracompute.com/api-keys",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "ov-upstage",
@@ -7279,7 +7207,7 @@
         },
         {
           "match": ":free",
-          "context": "{\"data\":[{\"id\":\"inclusionai/ling-3.2-flash:free\",\"canonical_slug\":\"inclusionai/ling-3.2-flash-20261113\",\"hugging_face_id\":\"inclusionAI/Ling-3.2-flash\",\"name\":\"inclusio"
+          "context": "bled\":true,\"supported_efforts\":[\"xhigh\",\"high\",\"low\",\"none\"],\"default_effort\":\"high\"}},{\"id\":\"inclusionai/ling-3.2-flash:free\",\"canonical_slug\":\"inclusionai/ling-3.2-flash-20261113\",\"hugging_face_id\":\"inclusionAI/Ling-3.2-flash\",\"name\":\"inclusio"
         },
         {
           "match": ":free",
@@ -7708,12 +7636,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 66 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 66 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 59 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 59 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 66 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
+          "context": "ed · 59 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -9406,15 +9334,15 @@
         },
         {
           "match": "$0.25 of weekly credits and no card",
-          "context": "anent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in **6d 18h 41m** **Core** covers it for $3"
+          "context": "anent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in **6d 13h 38m** **Core** covers it for $3"
         },
         {
           "match": "$31 a month, billed yearly. You k",
-          "context": "rd. Upgrade when they run short, and change or cancel any time. Credits refill in **6d 18h 41m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 1"
+          "context": "rd. Upgrade when they run short, and change or cancel any time. Credits refill in **6d 13h 38m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 1"
         },
         {
           "match": "$59**. ## Starter For your first ",
-          "context": "ange or cancel any time. Credits refill in **6d 18h 41m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 10 requests a minute ## Core For profess"
+          "context": "ange or cancel any time. Credits refill in **6d 13h 38m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 10 requests a minute ## Core For profess"
         },
         {
           "match": "$15 a month, **Business** $103 a ",
@@ -9892,8 +9820,21 @@
       "name": "Limits and Plans | Jules",
       "url": "https://jules.google/docs/usage-limits/",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 3,
+      "findings": [
+        {
+          "match": "$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE",
+          "context": "\b\u0000\u0000\u0000\u0000\u0000\u0002}rFSL*L\b\u001fD9>bo$\u001bR>\u0010 @\u0001@J}\u0000Tr$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE[ \u0004߼s?'#/u'G\u001aS/QKnK$vNY+ ʑ:\u001c^pgꍼ$ne ʦ~\u001cy,'qUT/2?B󠟍}\u0016|U\u0010\u0005YNBۤF 8RE}\u001c\u0003J;\u001fO\u000f7a\u0018Dg*nEq\u0014\u001a%[\u0019e$ln 0ُ{4\u0013rۛ٢471mHy ^Rl\u001eFa\u0016\u001e`Ц"
+        },
+        {
+          "match": "$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ",
+          "context": "? }EJ\b^\\R\u000f\u0010EX\u0005\u0007o^`bTBo\u0002YѕB[\u0014 \u0012* \u0019+ĉ%D3\u001aE#JJ\u0004\u0000bI\u0004+$UC ɅVT\u001aR\u000fiRce & 6\u0003\u00140^R\u00110\u001a\u0003\u0012\u001b^ cXm^\b82~(\u0006\u0006Hګ[\u0007F0Nh=(-P\u0013n\u0000AOh$WLc2\u00042^zo\u000e$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ_$\u0014yK a\u0013\u001cJ se~\u0006?&Q\u001eVh\u0016\u000e\u0006I\"f2BvV%g3\u0014\u0003'q/\u000e\u0018{\u001bd5P^ j!\u0010 O\u0012:v\u000e},71K~$h\u001e\u001c~1,`@ \u0005 /\u0019=r°\u0011ُK*#u+! 7\u000fRx!\u0007\u0016zXeǭc2|t (xN˺5f]\"4Fe׵\u0017Ѩp"
+        },
+        {
+          "match": "$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19",
+          "context": ")x1%C,\u001c!V#crB`q L\u0012.5\u0014`\u0016\u000f^\u00120Gct\b \u000faLLX\u0010lB\u001bȉ\u000fҧ\u0000q+I䲴vȚϽ3S:\\\u0019P]?_H(\u0013%|\u0005>pP\u000e=b\u0015 w22@\"]\u0003\u0005br@i o_M\u000eC\u00021܎\u0000q\u0000\u0016sXP\u0006\"/nb 2\u001cA\\V ` pDS$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19:\u001d'm4sʰJu\u0013_G/\u0001\u0011ar1D$A)\u0000\u00003Uq0:W?\u0006!n'\u0016\u0019ESή(\u0002hX\u001f8\u0003TR\u00101hſ@Nƴ\u0016\u0017_W \\\u0006\u0013\\\u0010\u0006\u001eypQm]Cg?Y Ap\u0018\u0015erݵsopsw\u0011n\u0011\u0003MV\u001cG\\\u00101+hpeަp{8\u001f\u0005 p'\u0001\u0002RO3"
+        }
+      ]
     },
     {
       "id": "kiro-pricing",

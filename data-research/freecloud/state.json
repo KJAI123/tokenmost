@@ -46,8 +46,8 @@
       "n_hits": 22
     },
     "render-pricing": {
-      "fp": "e614e422419fb737a1aee12276937611e95cbb7b3a73c85e507f8e988cab2374",
-      "ts": "2026-11-13T15:18:26Z",
+      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
+      "ts": "2026-11-16T07:28:21Z",
       "n_hits": 168
     },
     "koyeb-pricing": {
@@ -293,18 +293,23 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "4b6f800747f95be771740edeec1ba1ab7b9f05c38db302e7f05d63be6caba105",
-      "ts": "2026-11-16T02:24:10Z",
+      "fp": "91952db18c67a4f3ac6dd473b92aa19b18bc4dd3b6f2ab079034be68e4f31163",
+      "ts": "2026-11-16T07:28:21Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "b356a530c8168d32b30d3dc335b11746fee076c249fda913a9a19308631a433d",
-      "ts": "2026-11-16T02:24:10Z",
+      "fp": "8ce0d4303162120428d6c35ad6e8f8c63472115202a79cd1d560c640b98fcc80",
+      "ts": "2026-11-16T07:28:21Z",
       "count": 1
     },
-    "render-pricing": {
-      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
-      "ts": "2026-11-16T02:24:10Z",
+    "northflank-pricing": {
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-16T07:28:21Z",
+      "count": 1
+    },
+    "aliyun-bailian-freequota": {
+      "fp": "08d35d8dbc87b082f19ed4a8e3dc3f2c950c2ec6e44d83ecc9c16c1186f9d042",
+      "ts": "2026-11-16T07:28:21Z",
       "count": 1
     }
   }
