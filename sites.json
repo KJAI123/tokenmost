@@ -260,6 +260,18 @@
     "name": "智云新疆",
     "url": "https://ai.xj.189.cn",
     "desc": "中国电信新疆 AI Store，注册送 200 积分券调模型 API"
+   },
+   {
+    "name": "Cloudflare Workers AI",
+    "url": "https://developers.cloudflare.com/workers-ai/",
+    "desc": "边缘模型推理",
+    "free": "10,000 Neurons／天"
+   },
+   {
+    "name": "Hugging Face Inference",
+    "url": "https://huggingface.co/docs/inference-providers/index",
+    "desc": "第三方模型推理入口",
+    "free": "每月 $0.10"
    }
   ]
  },
@@ -413,6 +425,18 @@
     "name": "美团 CatPaw",
     "url": "https://catpaw.meituan.com",
     "desc": "美团 AI 编程 IDE 妙手，首登送 1000 Credits"
+   },
+   {
+    "name": "Atlassian Rovo Dev",
+    "url": "https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/",
+    "desc": "Jira 站点的编程助手",
+    "free": "每人每站点 350 credits／月"
+   },
+   {
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "desc": "代码补全与编程助手",
+    "free": "每月 2,000 次补全"
    }
   ]
  },
@@ -535,12 +559,14 @@
    {
     "name": "Kilo Code",
     "url": "https://kilo.ai",
-    "desc": "聚合路由，Auto Free 免费模型层"
+    "desc": "代码助手与统一模型网关",
+    "free": "Auto Free"
    },
    {
     "name": "llm7.io",
     "url": "https://llm7.io",
-    "desc": "免费聚合 API（llm7 free tier）"
+    "desc": "OpenAI 兼容推理网关",
+    "free": "10 万 tokens／24h（免费 Token）"
    },
    {
     "name": "TaoToken",
@@ -571,6 +597,12 @@
     "name": "DeepInfra",
     "url": "https://deepinfra.com",
     "desc": "纯按量低价推理聚合"
+   },
+   {
+    "name": "Vercel AI Gateway",
+    "url": "https://vercel.com/ai-gateway",
+    "desc": "多提供商模型网关",
+    "free": "每月 $5（指定模型）"
    }
   ]
  },
@@ -632,6 +664,12 @@
     "name": "AMD Token Factory",
     "url": "https://developer.amd.com.cn/radeon",
     "desc": "AMD GPU 托管开源模型免费 API，每日额度重置"
+   },
+   {
+    "name": "Lightning AI Studio",
+    "url": "https://studio.lightning.ai/",
+    "desc": "浏览器里的云端开发环境",
+    "free": "1 个基础 CPU Studio"
    }
   ]
  }

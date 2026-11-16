@@ -361,8 +361,7 @@
    "type": "watch",
    "url": "https://docs.github.com/en/copilot/get-started/plans",
    "deals": [
-    "deep-copilot-ai-credits",
-    "github-copilot-free"
+    "deep-copilot-ai-credits"
    ],
    "confirm_runs": 2
   },
@@ -374,6 +373,114 @@
     "deep-stepfun-step5-preview-price"
    ],
    "confirm_runs": 2
+  },
+  {
+   "id": "kilo-gateway-free-policy",
+   "type": "watch",
+   "url": "https://kilo.ai/docs/gateway/models-and-providers",
+   "deals": [
+    "kilo-gateway-auto-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "llm7-free-policy",
+   "type": "watch",
+   "url": "https://docs.llm7.io/limits",
+   "deals": [
+    "llm7-free-token"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "cloudflare-ai-free-policy",
+   "type": "watch",
+   "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+   "deals": [
+    "cloudflare-workers-ai-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "hf-inference-credit-policy",
+   "type": "watch",
+   "url": "https://huggingface.co/docs/inference-providers/pricing",
+   "deals": [
+    "huggingface-inference-free-credits"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "vercel-gateway-free-policy",
+   "type": "watch",
+   "url": "https://vercel.com/docs/ai-gateway/pricing",
+   "deals": [
+    "vercel-ai-gateway-free-credits"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "rovo-dev-credit-policy",
+   "type": "watch",
+   "url": "https://support.atlassian.com/rovo/docs/view-your-rovo-dev-credit-usage/",
+   "deals": [
+    "atlassian-rovo-dev-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "lightning-studio-free-policy",
+   "type": "watch",
+   "url": "https://studio.lightning.ai/pricing/",
+   "deals": [
+    "lightning-ai-studio-free-cpu"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "copilot-free-policy",
+   "type": "watch",
+   "url": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing",
+   "deals": [
+    "github-copilot-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "rime-credit-policy",
+   "type": "watch",
+   "url": "https://www.rime.ai/pricing",
+   "deals": [
+    "rime-monthly-50usd"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "livekit-inference-credit-policy",
+   "type": "watch",
+   "url": "https://docs.livekit.io/deploy/admin/quotas-and-limits/",
+   "deals": [
+    "livekit-monthly-2.5usd"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "elevenlabs-free-credit-policy",
+   "type": "watch",
+   "url": "https://elevenlabs.io/pricing",
+   "deals": [
+    "elevenlabs-free-10k"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "zed-student-credit-policy",
+   "type": "watch",
+   "url": "https://zed.dev/education",
+   "deals": [
+    "zed-student-10usd"
+   ],
+   "auto_verify": false
   }
  ]
 }

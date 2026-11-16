@@ -33,11 +33,11 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"tokenmost.com","alternateName":"TokenMost 羊毛铺","url":"https://tokenmost.com/","description":"AI 大模型免费额度与折扣码情报站：聚合大模型官方、Agent 平台、MaaS 云、算力中心与 token 中间商的免费额度与折扣情报，每日核验，统一折算 DeepSeek V4.1 Flash 等效 token。","inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}
 </script>
-<meta name="theme-color" content="#f6f8fa">
+<meta name="theme-color" content="#f3f5f7">
 <link rel="manifest" href="manifest.webmanifest">
 <meta property="og:title" content="TokenMost — AI token 折扣情报与导航">
 <meta property="og:description" content="折扣码一键复制 · 每日人工核验 · 账号本地托管">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ffffff'/><text x='50' y='68' font-size='55' font-weight='bold' text-anchor='middle' fill='%23059669' font-family='monospace'>tM</text></svg>">
+<link rel="icon" type="image/svg+xml" href="assets/tokenmost-mark.svg">
 <style>
 /* ============ 设计系统（frontend-design skill 纪律） ============
    间距：4px 基数倍数（4/8/12/16/24/32/48）
@@ -94,50 +94,6 @@ body.side-folded #sideToggle{top:10px;left:12px;width:34px;height:34px;backgroun
 #authBtn{background:var(--accent)!important;color:#fff!important;border:none!important;font-weight:600;text-align:center!important}
 /* ===== 主区 ===== */
 #main{flex:1;min-width:0;padding:0 20px 64px}
-header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 0 6px;border-bottom:1px solid var(--border)}
-.hrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%}
-.hrow .stats{margin-left:auto}
-@media(max-width:1150px){header .tagline:nth-of-type(2){display:none}}
-@media(max-width:1360px){.hrow .stat:nth-child(4){display:none}}
-.wx-corner{margin-left:auto}
-header .hlogo{font-size:1.25rem;font-weight:800;letter-spacing:-.5px}
-header .hlogo em{font-style:normal;color:var(--accent)}
-header .tagline{font-size:.7rem;color:var(--muted)}
-.lang-switch{display:inline-flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--border);border-radius:999px;padding:4px 12px;font-size:.75rem;font-weight:700;color:var(--accent);text-decoration:none;transition:all .12s}
-.lang-switch:hover{border-color:var(--accent);background:rgba(5,150,105,.06)}
-.stats{display:flex;gap:10px;margin-left:auto;flex-wrap:wrap;align-items:center}
-.global-banner{display:inline-flex;flex-direction:column;gap:1px;background:linear-gradient(135deg,#ecfdf5,#d1fae5);border:1.5px solid var(--accent);border-radius:10px;padding:5px 12px;margin-left:8px;cursor:pointer;box-shadow:0 1px 5px rgba(5,150,105,.2)}
-.global-banner b{font-size:1.12rem;color:var(--accent);font-family:ui-monospace,monospace;font-variant-numeric:tabular-nums;line-height:1.15}
-.global-banner i{font-style:normal;font-size:.68rem;color:#065f46;white-space:nowrap}
-.stat{font-size:.7rem;color:var(--muted)}
-.stat b{color:var(--accent);font-family:ui-monospace,monospace;font-size:.8rem;font-variant-numeric:tabular-nums}
-.stats #authBtn{padding:6px 12px;font-size:.875rem;min-height:32px;border-radius:8px}
-/* 顶部滚播：最新羊毛动态 + 收藏（v2.34） */
-#newsTicker{display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,#ecfdf5,#f0fdf4);border:1px solid rgba(5,150,105,.25);border-radius:10px;padding:7px 16px;overflow:hidden;margin:14px 0 10px}
-#newsTicker .ntk-label{font-size:.72rem;font-weight:800;color:var(--accent);white-space:nowrap;flex:none}
-#newsTicker .ntk-scroll{flex:1;overflow:hidden;white-space:nowrap;mask-image:linear-gradient(90deg,#000 92%,transparent)}
-#newsTicker .ntk-items{display:inline-block;white-space:nowrap;animation:ntkMove 40s linear infinite}
-#newsTicker:hover .ntk-items{animation-play-state:paused}
-@keyframes ntkMove{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-#newsTicker .ntk-item{display:inline-block;margin-right:26px;font-size:.8rem;color:#134e4a}
-#newsTicker .ntk-item b{color:var(--accent)}
-#newsTicker .ntk-item .ntk-date{color:var(--muted);font-size:.7rem;margin-left:4px}
-#bmBtn{flex:none;background:var(--card);border:1px solid rgba(217,119,6,.5);color:var(--amber);border-radius:8px;padding:4px 10px;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap}
-#bmBtn:hover{background:rgba(217,119,6,.1)}
-#installBtn{flex:none;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:4px 12px;font-size:.72rem;font-weight:700;cursor:pointer;display:none}
-/* 右上角入群卡片（v2.27 老板令「指引再更突出一些」：金色卡片+脉冲光效，桌面移动都醒目） */
-.wx-corner{display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;flex:none;position:relative;padding:5px 9px 4px;background:rgba(210,153,34,.1);border:2px solid rgba(210,153,34,.6);border-radius:12px;animation:wxGlow 2s ease-in-out infinite;transition:transform .12s}
-.wx-corner:hover{transform:translateY(-1px);border-color:rgba(210,153,34,.8)}
-@keyframes wxGlow{0%,100%{box-shadow:0 0 0 0 rgba(210,153,34,.05)}50%{box-shadow:0 0 0 8px rgba(210,153,34,.22)}}
-.wx-callout{position:static;font-style:normal;font-size:.66rem;font-weight:800;color:#b45309;background:none;border:none;padding:0;white-space:nowrap}
-.wx-callout b{display:inline-block;margin-left:2px;animation:wxBounce 1.4s ease-in-out infinite;color:var(--amber)}
-@keyframes wxBounce{0%,100%{transform:translateY(-1px)}50%{transform:translateY(3px)}}
-.wx-corner img{width:56px;height:56px;border-radius:8px;border:2px solid rgba(210,153,34,.6);background:#111;display:block}
-.wx-corner .wx-qr-label{font-style:normal;font-size:.68rem;color:#b45309;font-weight:800;white-space:nowrap}
-.wx-corner:focus-visible{outline:2px solid var(--amber);outline-offset:2px;border-radius:12px}
-@media(max-width:480px){.wx-corner{padding:4px 7px 3px}.wx-corner img{width:48px;height:48px}.wx-callout{font-size:.62rem}}
-/* 横幅链接加成小徽章（v2.25.1 修丑：.global-banner b 的 1.35rem 巨字规则会命中嵌套 b，必须用专属 class 全量重置） */
-.global-banner .gb-pill{font-size:.7rem;font-weight:700;font-family:inherit;color:#b45309;background:rgba(210,153,34,.1);border:1px solid rgba(210,153,34,.38);border-radius:999px;padding:1px 10px;margin-left:2px;line-height:1.6;letter-spacing:normal;font-variant-numeric:normal;white-space:nowrap;vertical-align:1px}
 /* 云服务器羊毛独立版面（token 羊毛下方） */
 .fc-head{display:flex;align-items:baseline;gap:10px;margin:18px 0 8px;font-size:1rem;font-weight:800}
 .fc-head span{font-size:.75rem;color:var(--muted);font-weight:400}
@@ -237,7 +193,6 @@ header .tagline{font-size:.7rem;color:var(--muted)}
 .empty b{display:block;font-size:1rem;color:var(--text);margin-bottom:4px;font-weight:600}
 .empty span{font-size:.875rem}
 /* ===== 底部导航 ===== */
-/* v2.37 浓缩：主列表隐藏信源摘要链（展开明细仍可见），信息密度提升 */
 .r-notes{flex:1;min-width:0;text-align:right;color:var(--muted);font-size:.75rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #bottomNav{display:none;position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--border);z-index:40;padding:4px 8px calc(4px + env(safe-area-inset-bottom))}
 #bottomNav .brow{display:flex;justify-content:space-around}
@@ -381,18 +336,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   #side{display:none}
   #bottomNav{display:block}
   #main{padding:0 12px calc(76px + env(safe-area-inset-bottom))}
-  header{gap:8px;padding:12px 0 10px}
-  header .hlogo{font-size:1.1rem}
-  header .tagline{display:none}
-  /* 统计条：数字小一号+间距收紧，尽量一行放下 */
-  .stats{gap:8px;width:100%}
-  .stat{font-size:.68rem}
-  .stat b{font-size:.78rem}
-  .stats #authBtn{padding:5px 10px;font-size:.78rem;min-height:30px;margin-left:auto}
-  /* 全球羊毛横幅：全宽+缩字号+允许换行，根治溢出截断 */
-  .global-banner{width:100%;margin-left:0;padding:6px 12px;gap:1px}
-  .global-banner b{font-size:.95rem;line-height:1.3;white-space:normal}
-  .global-banner i{font-size:.62rem;white-space:normal;line-height:1.4}
   .lhead{display:none}
   /* 情报行：token 82px + 操作列固定 80px（flex max-content 会把全部按钮加总撑爆列宽，必须定宽列内换行），中栏拿回 ~168px */
   .row{grid-template-columns:82px minmax(0,1fr) 80px;grid-template-rows:auto auto;gap:3px 8px;padding:12px 10px}
@@ -424,8 +367,6 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 }
 /* 超窄屏（≤480）：再收一层 */
 @media(max-width:480px){
-  .stat:nth-child(4){display:none}
-  .stats{gap:6px}
   .row{grid-template-columns:78px minmax(0,1fr) 78px}
   .skel{grid-template-columns:78px minmax(0,1fr) 78px}
   /* 🆓 模型目录行（:has 支持处）：目录块独占全宽一行，不再挤进窄中栏（老浏览器优雅降级为嵌套布局） */
@@ -441,30 +382,58 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
+<link rel="stylesheet" href="assets/workbench.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
+<svg class="ui-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<symbol id="tm-mark" viewBox="0 0 24 24"><path d="M3 14h4l3-8 4 12 3-7h4"/></symbol>
+<symbol id="tm-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+<symbol id="tm-chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16M8 15l4-4 4 2 5-6"/></symbol>
+<symbol id="tm-calc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8m-8 4h1m6 0h1m-8 4h1m6 0h1m-8 3h1m6 0h1"/></symbol>
+<symbol id="tm-ticket" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 1 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 1 0 0-4Z"/><path d="M14 9v1m0 4v1"/></symbol>
+<symbol id="tm-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18"/></symbol>
+<symbol id="tm-box" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a3 3 0 0 1 6 0v2m-3 5v3"/></symbol>
+<symbol id="tm-book" viewBox="0 0 24 24"><path d="M12 6a8 8 0 0 0-9-2v15a8 8 0 0 1 9 2 8 8 0 0 1 9-2V4a8 8 0 0 0-9 2v15"/></symbol>
+<symbol id="tm-chat" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 1-8 8H5l1.5-3A8 8 0 1 1 20 11Z"/><path d="M8.5 11h.1m3.4 0h.1m3.4 0h.1"/></symbol>
+<symbol id="tm-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 1 1 5 2c-1 .8-2 1.3-2 2.5m0 3h.01"/></symbol>
+<symbol id="tm-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+<symbol id="tm-bookmark" viewBox="0 0 24 24"><path d="M6 5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16l-6-4-6 4Z"/></symbol>
+<symbol id="tm-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+<symbol id="tm-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+<symbol id="tm-right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+<symbol id="tm-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></symbol>
+<symbol id="tm-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="tm-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/></symbol>
+<symbol id="tm-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-3-3.5-5-6-5a5 5 0 1 0 0 10c2.5 0 4-2 6-5s3.5-5 6-5a5 5 0 1 1 0 10c-2.5 0-4-2-6-5Z"/></symbol>
+<symbol id="tm-stack" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+<symbol id="tm-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></symbol>
+<symbol id="tm-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+</svg>
+<a class="skip-link" href="#main">跳到主要内容</a>
 <!-- ============ 侧边栏（桌面）：工具 + 五层导航 ============ -->
-<button id="sideToggle" title="收起/展开侧边栏" aria-label="收起或展开侧边栏">☰</button>
+<button id="sideToggle" type="button" aria-controls="side" aria-expanded="true" title="收起或展开侧边栏" aria-label="收起或展开侧边栏"><svg class="ui-icon" aria-hidden="true"><use href="#tm-panel"/></svg></button>
 <aside id="side">
-  <div class="logo">token<em>most</em></div>
-  <div class="tag">薅 token · 一键接入 · 极致省钱</div>
-  <nav class="snav">
-    <div class="shead" data-fold="p">工具 <i>▾</i></div>
+  <a class="logo" href="./"><span class="brand-mark"><svg class="ui-icon" aria-hidden="true"><use href="#tm-mark"/></svg></span><span>token<span class="brand-accent">most</span></span></a>
+  <nav class="snav" aria-label="站点导航">
+    <a class="sitem current" href="#feed"><svg class="ui-icon" aria-hidden="true"><use href="#tm-grid"/></svg>情报库</a>
+    <a class="sitem" href="#navArea"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>平台导航</a>
+    <button type="button" class="shead" data-fold="p" aria-expanded="true" aria-controls="fold-p">研究工具 <i aria-hidden="true">▾</i></button>
     <div class="sgroup-body" id="fold-p">
-      <a class="sitem gold" id="sumBtnSide" href="#" onclick="return false">💰 白嫖总账</a>
-      <a class="sitem" id="calcBtnSide" href="#" onclick="return false">🧮 用量比价</a>
-      <a class="sitem gold" id="doubleBtnSide" href="#" onclick="return false">🪙 加倍领取</a>
-      <a class="sitem violet" id="planBtnSide" href="#" onclick="return false">⌨️ Coding 比价</a>
+      <a class="sitem" id="sumBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chart"/></svg>额度总账</a>
+      <a class="sitem" id="calcBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-calc"/></svg>用量比价</a>
+      <a class="sitem" id="doubleBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-ticket"/></svg>加倍领取</a>
+      <a class="sitem" id="planBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-code"/></svg>Coding 比价</a>
     </div>
-    <div class="shead" data-fold="m">我的 <i>▾</i></div>
+    <button type="button" class="shead" data-fold="m" aria-expanded="true" aria-controls="fold-m">资源与账号 <i aria-hidden="true">▾</i></button>
     <div class="sgroup-body" id="fold-m">
-      <a class="sitem" id="vaultBtnSide" href="#" onclick="return false">🗂 账号库</a>
-      <a class="sitem" id="guideBtnSide" href="#" onclick="return false">📖 领取攻略</a>
-      <a class="sitem" id="wxBtnSide" href="#" onclick="return false">📥 微信交流群</a>
-      <a class="sitem" href="#faq">❓ 常见问题</a>
+      <a class="sitem" id="vaultBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-box"/></svg>账号库</a>
+      <a class="sitem" id="guideBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-book"/></svg>领取攻略</a>
+      <a class="sitem" id="wxBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>微信交流群</a>
+      <a class="sitem" href="#faq"><svg class="ui-icon" aria-hidden="true"><use href="#tm-help"/></svg>常见问题</a>
     </div>
   </nav>
+  <div class="side-caption">快速访问</div>
   <div id="sideNav"></div>
 </aside>
 <style>
@@ -474,83 +443,98 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 #side a.slink{padding:3px 10px 3px 16px}
 </style>
 <!-- ============ 主区 ============ -->
-<div id="main">
-<!-- 顶部滚播：最新 token 羊毛动态（自动取最新核验条目） -->
-<div id="newsTicker" aria-label="latest deals ticker">
-  <span class="ntk-label">📡 最新动态</span>
-  <div class="ntk-scroll"><span id="ntkItems" class="ntk-items">…</span></div>
-  <button id="bmBtn" title="收藏本站">⭐ 收藏</button>
-  <button id="installBtn">📲 Install</button>
-</div>
+<main id="main" tabindex="-1">
 <noscript>
   <section style="border:1px solid #e5e8ee;border-radius:10px;background:#fff;padding:16px;margin:12px 0;font-size:.9rem;line-height:1.7">
     <h2 style="font-size:1.05rem;margin-bottom:8px">tokenmost.com — AI 大模型免费额度与折扣码情报站</h2>
     <p>聚合五层来源的 token 羊毛情报（每日核验）：智谱 BigModel（每日 3 亿 tokens 放量）、DeepSeek（谷峰价与缓存低价）、Kimi（15 元 API 券）、讯飞星火（免费资源包）、MiniMax（M3 永久五折）、阿里云百炼（新人多模型免费额度）、美团 LongCat（每日 5000 万）、天翼云息壤（新用户 2500 万）、小米 MiMo（新客 ¥5 赠金+邀请各 ¥10）等；海外有 Google AI Studio 免费层、Mistral、Cohere、Anthropic、xAI 等。全部额度统一折算 DeepSeek V4.1 Flash 等效 token 横向可比。启用 JavaScript 可查看实时情报流、用量比价器与折扣码；领取攻略见 <a href="/guides/bailian-70.html">百炼免费额度攻略</a>、<a href="/guides/kimi-guide.html">Kimi 攻略</a>、<a href="/guides/free-tier-survival.html">海外免费层生存指南</a>、<a href="/guides/coding-plan-guide.html">Coding Plan 选购攻略</a> 等 10 篇。订阅 <a href="/rss.xml">RSS 情报流</a>。</p>
   </section>
 </noscript>
-<header>
-  <h1 class="hlogo">token<em>most</em></h1>  <span class="tagline">只关注免费 · 花 1 分钱买 token 都是原罪</span>
-  <span class="tagline">📐 全站计量基准：DeepSeek V4.1 Flash 等效（国内谷价 ¥1.75/百万 · 国际 $0.525/百万 · 旗舰按牌价折算力）</span>
-  <div class="hrow">
-    <span class="global-banner" id="globalBanner" title="全球全平台免费羊毛按 DS4.1 Flash 等效加总：一次性可领 + 每日刷新（点击打开白嫖总账看明细）" onclick="document.getElementById('sumBtnSide').click()">
-      <b id="gbNum">…</b><i id="gbSub"></i>
-    </span>
-    <div class="stats">
-      <span class="stat">羊毛 <b id="n-deals">–</b></span>
-      <span class="stat">今日 <b id="n-fresh">–</b></span>
-      <span class="stat">站点 <b id="n-sites">–</b></span>
-      <span class="stat">更新 <b id="updated">–</b></span>
-    <a class="lang-switch" href="en.html" title="English version" onclick="localStorage.setItem('tm_lang_pref','en')">🌐 EN</a>
-    </div>
-    <span class="wx-corner" role="button" tabindex="0" title="微信群二维码 7 天轮换 · 点击看大图" onclick="openWx()" onkeydown="if(event.key==='Enter'){openWx()}">
-      <i class="wx-callout">第一时间了解折扣信息<b>↓</b></i>
-      <img src="/assets/wechat-qr.jpg" alt="微信群二维码">
-      <i class="wx-qr-label">扫码进群</i>
-    </span>
+<div class="topbar">
+  <a class="mobile-brand" href="./"><span class="brand-mark"><svg class="ui-icon" aria-hidden="true"><use href="#tm-mark"/></svg></span><span>token<span class="brand-accent">most</span></span></a>
+  <div class="breadcrumb"><span>TokenMost</span><span class="crumb-divider" aria-hidden="true">/</span><b>情报库</b></div>
+  <div class="top-actions">
+    <button type="button" id="bmBtn" title="收藏本站" aria-label="收藏本站"><svg class="ui-icon" aria-hidden="true"><use href="#tm-bookmark"/></svg></button>
+    <button type="button" class="community-btn" onclick="openWx()" aria-label="微信交流群"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>交流群</span></button>
+    <a class="lang-switch" href="en.html" lang="en" hreflang="en" onclick="localStorage.setItem('tm_lang_pref','en')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>EN</a>
+    <button type="button" id="installBtn">安装</button>
   </div>
+</div>
+<header class="market-hero">
+  <div class="hero-copy">
+    <p class="hero-kicker"><span class="signal-dot"></span> TOKENMOST / TOKEN RADAR</p>
+    <h1>AI 免费额度情报站</h1>
+    <p>查找可领的模型额度、免费 API 和折扣，快速比较领取方式。</p>
+    <a class="hero-cta" href="#feed">浏览免费情报<svg class="ui-icon" aria-hidden="true"><use href="#tm-arrow"/></svg></a>
+  </div>
+  <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
+    <span class="gb-label">全球首月额度估算</span>
+    <b id="gbNum">—</b>
+    <span class="gb-unit">DeepSeek V4.1 Flash 等效 Token</span>
+    <span id="gbSub"></span>
+    <span class="gb-link">查看额度总账<svg class="ui-icon" aria-hidden="true"><use href="#tm-arrow"/></svg></span>
+  </button>
 </header>
-<div>
-  <!-- ============ 折扣情报流 ============ -->
-  <div class="toolbar">
-    <div class="tabs" id="tabs">
-      <button class="tab active" data-cat="all">🆓 免费专区</button>
-      <button class="tab" data-cat="official">大模型官方</button>
-      <button class="tab" data-cat="agent">Agent 平台</button>
-      <button class="tab" data-cat="infra">☁️ 云与算力</button>
-      <button class="tab" data-cat="double" style="border-color:rgba(210,153,34,.5)">🪙 加倍领取</button>
-      <button class="tab" data-cat="student" style="border-color:rgba(37,99,235,.5)">🎓 学生教师</button>
-      
+<div class="stats" aria-label="情报库概况">
+  <div class="stat"><span>已核验情报</span><b id="n-deals">—</b></div>
+  <div class="stat"><span>近 24 小时核验</span><b id="n-fresh">—</b></div>
+  <div class="stat"><span>收录站点</span><b id="n-sites">—</b></div>
+  <div class="stat"><span>最近核验</span><b id="updated">—</b></div>
+</div>
+<div id="newsTicker" aria-label="最新动态">
+  <span class="ntk-label"><span class="signal-dot"></span>最新动态</span>
+  <div class="ntk-scroll" aria-live="polite"><span id="ntkItems" class="ntk-items">…</span></div>
+  <div class="ntk-controls">
+    <button type="button" data-news-step="-1" aria-label="上一条动态"><svg class="ui-icon" aria-hidden="true"><use href="#tm-left"/></svg></button>
+    <button type="button" data-news-step="1" aria-label="下一条动态"><svg class="ui-icon" aria-hidden="true"><use href="#tm-right"/></svg></button>
+  </div>
+</div>
+<section id="feed" aria-labelledby="feedTitle">
+  <div class="feed-heading">
+    <div>
+      <h2 id="feedTitle">免费额度库</h2>
+      <p>核验日期、领取条件与信源摘要，一次看清。</p>
     </div>
-    <span style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-left:auto">
-      <select id="typeFilter" style="box-shadow:var(--shadow)">
+    <span id="resultCount" role="status"></span>
+  </div>
+  <div class="toolbar">
+    <div class="tabs" id="tabs" role="group" aria-label="情报分类">
+      <button type="button" class="tab active" data-cat="all" aria-pressed="true">全部免费</button>
+      <button type="button" class="tab" data-cat="official" aria-pressed="false">大模型官方</button>
+      <button type="button" class="tab" data-cat="agent" aria-pressed="false">Agent 平台</button>
+      <button type="button" class="tab" data-cat="infra" aria-pressed="false">云与算力</button>
+      <button type="button" class="tab" data-cat="double" aria-pressed="false">加倍领取</button>
+      <button type="button" class="tab" data-cat="student" aria-pressed="false">学生教师</button>
+    </div>
+    <div class="filter-controls">
+      <select id="typeFilter" aria-label="情报类型">
         <option value="">全部类型</option>
         <option value="signup_bonus">注册赠送</option>
         <option value="free_tier">长期免费</option>
         <option value="coupon">折扣码</option>
         <option value="student">学生通道</option>
         <option value="limited_promo">限时活动</option>
-        <option value="price_low">长期低价</option>
-        <option value="pricing_plan">套餐订阅</option>
-        <option value="warning">避雷</option>
         <option value="invite_bonus">邀请奖励</option>
       </select>
-      <input id="search" type="search" placeholder="🔍 搜索平台 / 关键词">
-    </span>
+      <label class="search-box">
+        <svg class="ui-icon" aria-hidden="true"><use href="#tm-search"/></svg><input id="search" type="search" aria-label="搜索平台或关键词" placeholder="搜索平台 / 关键词"><kbd>/</kbd>
+      </label>
+    </div>
   </div>
   <div class="lhead" id="listhead">
-    <button class="sortbtn" data-sort="tokens">收益 ⇅</button>
+    <button class="sortbtn" data-sort="tokens">额度</button>
     <span class="lbl">平台 / 福利内容</span>
-    <button class="sortbtn on" data-sort="fresh">核验 ↓</button>
+    <button class="sortbtn on" data-sort="fresh">核验</button>
     <span class="lbl">操作</span>
   </div>
-  <main id="cards">
+  <div id="cards" aria-busy="true">
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
-  </main>
-</div>
+  </div>
+</section>
 <!-- ============ 云服务器羊毛专区（token 羊毛下方独立版面） ============ -->
 <section id="freecloudArea" aria-label="云服务器羊毛"></section>
 <!-- 导航区（完整版，放页面底部） -->
@@ -609,15 +593,15 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p class="disclaim">⚠️ 免责声明：本站为独立情报聚合站，与所列平台无关；所有优惠以各平台官方页面为准，请自行核实后再操作，本站不构成消费建议。</p>
   <p><a href="#" id="wxFootLink">微信交流群</a> · <a href="rss.xml">RSS 订阅</a> · <a href="https://github.com/KJAI123/free-ai-tokens" target="_blank" rel="noopener">数据开源</a> · <a href="en.html" target="_blank" rel="noopener">English</a> · © 2026 tokenmost.com</p>
 </footer>
-</div><!-- /main -->
+</main><!-- /main -->
 <!-- ============ 底部导航（移动端） ============ -->
-<nav id="bottomNav">
+<nav id="bottomNav" aria-label="移动端导航">
   <div class="brow">
-    <button class="on" data-bn="feed"><b>📡</b>情报流</button>
-    <button data-bn="nav"><b>🧭</b>导航</button>
-    <button data-bn="guide"><b>📖</b>攻略</button>
-    <button data-bn="tools"><b>🧰</b>工具</button>
-    <button data-bn="mine"><b>🗂</b>我的</button>
+    <button class="on" data-bn="feed"><svg class="ui-icon" aria-hidden="true"><use href="#tm-grid"/></svg>情报库</button>
+    <button data-bn="nav"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>平台导航</button>
+    <button data-bn="guide"><svg class="ui-icon" aria-hidden="true"><use href="#tm-book"/></svg>领取攻略</button>
+    <button data-bn="tools"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chart"/></svg>工具</button>
+    <button data-bn="mine"><svg class="ui-icon" aria-hidden="true"><use href="#tm-box"/></svg>账号库</button>
   </div>
 </nav>
 <!-- ============ 一键接入面板（代码生成器） ============ -->
@@ -781,6 +765,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
+<script src="assets/workbench.js"></script>
 <script>
 /* ============ 常量 ============ */
 /* 语言自动识别 v2.32.3：IP 国别优先(ipwho.is 免费无key HTTPS)+浏览器语言兜底+偏好记忆；CN→中文版，非 CN→英文版；失败静默 */
@@ -811,12 +796,15 @@ if(['tokenmost.com','www.tokenmost.com','kjai123.github.io'].includes(location.h
 }
 /* 侧边栏收起/展开（v2.28） */
 const SIDE_KEY='tm_side_fold_v1';
-if(localStorage.getItem(SIDE_KEY)==='1')document.body.classList.add('side-folded');
+if(localStorage.getItem(SIDE_KEY)==='1'){
+  document.body.classList.add('side-folded');
+  document.getElementById('sideToggle').setAttribute('aria-expanded','false');
+}
 function sideToggle(){
   const folded=document.body.classList.toggle('side-folded');
   localStorage.setItem(SIDE_KEY,folded?'1':'0');
   const b=document.getElementById('sideToggle');
-  if(b)b.textContent=folded?'☰':'⟨';
+  if(b)b.setAttribute('aria-expanded',String(!folded));
 }
 /* 刷新回到顶部（v2.25 老板令） */
 if('scrollRestoration' in history)history.scrollRestoration='manual';
@@ -852,12 +840,11 @@ function renderFreecloud(){
   if(!list.length){box.innerHTML='';return}
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
   box.innerHTML='<div class="fc-head"><b>🖥️ 云服务器羊毛</b><span>AI Agent 云工位 · 常设免费档 · 非 token 折算单独展示</span></div>'
-    +'<div class="fcbox">'+list.map(rowHtml).join('')+'</div>';
+    +'<div class="fcbox">'+list.map(d=>rowHtml(d)).join('')+'</div>';
 }
 /* 免费模型/权益目录：泛化组件（v2.22 老板令「workbuddy 也做类似 opencode 的展开」）——free_models=FREE 徽章，freebies=免费徽章 */
 const rowHtml=(d,ov)=>{
   const s=siteFor(d),pname=s?s.name:d.provider;
-  const dl=d.deadline?`<span style="color:var(--red)">📅 ${esc(d.deadline)}</span>`:((d.type==='free_tier'||d.type==='price_low'||d.via==='free')?'<span style="color:var(--green)">♾️ 长期</span>':'');
   return`
 <article class="row" data-id="${esc(d.id)}" data-layer="${dealLayer(d)}">
   <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
@@ -871,18 +858,20 @@ const rowHtml=(d,ov)=>{
       <span class="chip">${LAYER[d.category]?LAYER[d.category].name:d.category}</span>
       <span class="chip${d.type==='limited_promo'?' gold':''}">${TYPE[d.type]||d.type}</span>
       ${d.region==='cn'?'':'<span class="chip">🌍</span>'}
+      ${d.gate?`<span class="chip gate-chip">${esc((window._GATES&&window._GATES[d.gate])||d.gate)}</span>`:''}
       ${claimedSet.has(d.id)?'<span class="badge b-claimed">⭐ 已领</span>':''}
       ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).flag:''}
-      <span class="r-notes">${d.rule?'📐 '+esc(d.rule):''}${d.notes&&!/^(TODO|⚠️)/.test(d.notes)?' 💡'+esc(d.notes):''}</span>
+      ${Workbench.sourceLinks(d)}
+      <span class="r-notes" title="${esc(Workbench.offerNotes(d))}">${esc(Workbench.offerNotes(d))}</span>
     </div>
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
-  <div class="r-state">${freshness(d)}${apiBadge(d)}${dl}</div>
+  <div class="r-state">${Workbench.freshness(d)}${apiBadge(d)}${Workbench.timing(d)}</div>
   <div class="r-ops">
     ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="一键接入">⚡</button>`:''}
     <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
     <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
-    <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" title="标记/取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
+    <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" aria-pressed="${claimedSet.has(d.id)}" title="标记或取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
     ${(d.coupon||d.type==='coupon')&&!d.placeholder?`<a class="go cgo" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(d.coupon||d.url)}" title="${d.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${d.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
   </div>
 </article>`};
@@ -912,14 +901,14 @@ function renderNav(){
   const SHORT={'official_cn':'大模型官方','maas':'MaaS','agent':'Agent','compute':'算力','reseller':'聚合商','official_global':'大模型官方·海外'};
   document.getElementById('sideNav').innerHTML=order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
-    return`<div class="shead" data-fold="nav-${k}"><span class="dot" style="background:${LAYER[k].color}"></span>${SHORT[k]||LAYER[k].name}<span class="cnt">${g.sites.length}</span><i>▾</i></div>`
+    return`<button type="button" class="shead" data-fold="nav-${k}" aria-controls="fold-nav-${k}" aria-expanded="true"><span class="dot" style="background:${LAYER[k].color}"></span>${SHORT[k]||LAYER[k].name}<span class="cnt">${g.sites.length}</span><i>▾</i></button>`
       +`<div class="sgroup-body" id="fold-nav-${k}">`
       +g.sites.map(s=>{const dom=s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0];return`<a class="slink" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><img class="favi" src="${(window.LOGOS&&window.LOGOS['${dom}'])||('https://icon.horse/icon/${dom}')}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=128';}else{this.style.display='none';}">${esc(s.name)}${s.hot?' <b class="hot">HOT</b>':''}</a>`}).join('')
       +'</div>';
   }).join('');
   const bodies=document.querySelectorAll('#sideNav .sgroup-body');
   bodies.forEach((b,i)=>{if(i>0)b.classList.add('folded')});
-  document.querySelectorAll('#sideNav .shead').forEach((h,i)=>{if(i>0)h.classList.add('folded')});
+  document.querySelectorAll('#sideNav .shead').forEach((h,i)=>{h.setAttribute('aria-expanded',String(!i));if(i>0)h.classList.add('folded')});
   document.getElementById('navArea').innerHTML='<div style="font-size:.8rem;color:var(--muted);margin:18px 0 4px">🧭 全站导航（六层来源 '+SITES.reduce((n,g)=>n+g.sites.length,0)+' 站）</div>'+order.map(k=>{
     const g=SITES.find(s=>s.layer===k);if(!g||!g.sites.length)return'';
     return`<section class="nav-section"><div class="nav-head"><span class="dot" style="background:${LAYER[k].color}"></span><h3>${LAYER[k].name}</h3><span class="cnt">${g.sites.length} 个入口</span></div><div class="nav-grid">${g.sites.map(s=>{const dom=s.url.replace(/^https?:\/\/(www\.)?/,'').split('/')[0];return`<a class="site" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener nofollow" title="${esc(s.desc||'')}"><b><img class="favi" src="${(window.LOGOS&&window.LOGOS['${dom}'])||('https://icon.horse/icon/${dom}')}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=128';}else{this.style.display='none';}">${esc(s.name)}${s.hot?' 🔥':''}</b><span>${esc(s.desc||'')}</span>${s.free?'<span class="free">'+esc(s.free)+'</span>':''}</a>`}).join('')}</div></section>`;
@@ -934,16 +923,6 @@ function apiBadge(d){
   if(v==='gateway')return '<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb" title="经第三方网关接入（如 AgentRouter/中转站）">🛰 网关</span>';
   if(v==='agent_tool')return '<span class="chip" style="border-color:rgba(217,119,6,.4);color:var(--amber)" title="Agent/MCP 工具接入">🤖 Agent</span>';
   return '';
-}
-function freshness(d){
-  if(d.verify_status==='expired')return'<span class="badge b-red">❌ 已失效</span>';
-  if(d.verify_status!=='verified')return'<span class="badge b-amber">⚠️ 待复核</span>';
-  const a=d.verify_by==='auto'?'🤖':'✅';
-  const h=(Date.now()-new Date(d.verified_at))/36e5;
-  if(h<24)return `<span class="badge b-green">${a} ${a==='🤖'?'自动核验':'今日验证'}</span>`;
-  if(h<48)return `<span class="badge b-green">${a} 1天前</span>`;
-  if(h<168)return `<span class="badge b-green">${a} `+Math.floor(h/24)+`天前</span>`;
-  return `<span class="badge b-amber">⚠️ `+Math.floor(h/24)+`天前</span>`;
 }
 /* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
 function tokCell(d,ov){
@@ -968,40 +947,13 @@ function tokCell(d,ov){
 /* 排序：DS Flash等效优先（eq_wan），日均×30 折月同量纲；$1≈300万 tok，¥1≈40万 tok 仅排序口径 */
 function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.usd||0)*300+(d.cny||0)*40}
 const _q=new URLSearchParams(location.search).get('q');
-if(_q){curQ=_q;history.replaceState(null,'','/');}
+if(_q)curQ=_q;
 function dealLayer(d){
   var dl=d.deadline&&!String(d.deadline).startsWith('长期');
   if(d.type==='limited_promo'||d.type==='coupon'||dl)return 'L0';
-  if(d.daily_wan)return 'L1';
+  if(d.daily_wan||d.cadence==='daily')return 'L1';
   if(d.type==='free_tier'||d.type==='free_model'||d.type==='recurring_promo'||d.type==='subscription_bonus'||d.type==='signup_bonus')return 'L2';
   return 'L3';
-}
-var LAYER_TXT={"L0": ["⏰ 限时必领", "截至即失效/先到先得，现在就动手"], "L1": ["🔁 每日可刷", "长期每日刷新，每天顺手领"], "L2": ["♾️ 长期白嫖", "常驻免费层，随时可用不急"], "L3": ["📦 其他权益", "订阅加成/邀请奖励/工具类"]};
-function layerReorder(box){
-  if(!(curCat==='all'&&!curQ&&!curType))return;
-  var tops=[].slice.call(box.children);
-  var b={L0:[],L1:[],L2:[],L3:[]},other=[];
-  tops.forEach(function(el){
-    var k=el.getAttribute&&el.getAttribute('data-layer');
-    if(k&&(k==='L0'||k==='L1'||k==='L2'||k==='L3')&&el.tagName==='ARTICLE')b[k].push(el);
-    else other.push(el);
-  });
-  var txt=location.pathname.endsWith('en.html')?{L0:['⏰ Claim now','Expiring soon — act now'],L1:['🔁 Daily refresh','Resets daily — claim on the go'],L2:['♾️ Always free','Standing free tier'],L3:['📦 Others','Subscription perks / invites / tools']}:{L0:['⏰ 限时必领','截至即失效/先到先得，现在就动手'],L1:['🔁 每日可刷','长期每日刷新，每天顺手领'],L2:['♾️ 长期白嫖','常驻免费层，随时可用不急'],L3:['📦 其他权益','订阅加成/邀请奖励/工具类']};
-  box.innerHTML='';
-  ['L0','L1','L2','L3'].forEach(function(k){
-    var arr=b[k];if(!arr.length)return;
-    var head=document.createElement('div');
-    head.style.cssText='display:flex;align-items:baseline;gap:10px;margin:22px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--accent)';
-    head.innerHTML='<span style="font-size:1.05rem;font-weight:800;color:var(--accent)">'+txt[k][0]+'</span><span style="font-size:.78rem;color:var(--muted)">'+txt[k][1]+'</span><span class="chip" style="margin-left:auto">'+arr.length+' 个平台</span>';
-    box.appendChild(head);
-    arr.forEach(function(el){box.appendChild(el);
-      var nx=el.nextElementSibling;
-      var det=nx&&nx.classList&&nx.classList.contains('agg-detail')?nx:null;
-      if(det)box.appendChild(det);
-    });
-  });
-  var mw=document.getElementById('moreWrap');
-  if(mw)box.appendChild(mw);
 }
 let sortKey='tokens';
 let shownGroups=30,PAGE_SIZE=30;
@@ -1027,7 +979,7 @@ function render(){
     else if(curCat!=='all')list=list.filter(d=>d.category===curCat);
   }
   if(curType)list=list.filter(d=>d.type===curType);
-  if(curQ)list=list.filter(d=>(d.provider+d.value+d.notes+d.id).toLowerCase().includes(curQ.toLowerCase()));
+  if(curQ)list=list.filter(d=>Workbench.matches(d,curQ));
   if(sortKey==='tokens')list.sort((a,b)=>tokSort(b)-tokSort(a));
   else list.sort((a,b)=>{
     const pa=(a.type==='coupon')?0:1,pb=(b.type==='coupon')?0:1;
@@ -1037,7 +989,11 @@ function render(){
     return new Date(b.verified_at)-new Date(a.verified_at);
   });
   const box=document.getElementById('cards');
-  if(!list.length){box.innerHTML='<div class="empty"><b>没有匹配的羊毛</b><span>换个关键词试试，或点上方「🆓 免费专区」查看全部 '+DEALS.filter(d=>d.published!==false&&!PAID_TYPES.has(d.type)).length+' 条免费情报（付费类在「💸 付费区」）</span></div>';return}
+  Workbench.updateFilters(curCat,sortKey,list.length);
+  if(!list.length){
+    box.innerHTML='<div class="empty"><b>没有匹配的情报</b><span>试试其他平台名称，或者重置筛选。</span><button type="button" class="tab" data-reset-filters>重置筛选</button></div>';
+    return;
+  }
   // 官方平台聚合：同 provider 合成一条（主行=收益合计；明细可展开），付费区/避雷/我的/有码保持明细
   const AGG_ON=!['paid','warn','mine','coupon'].includes(curCat);
   if(AGG_ON){
@@ -1060,18 +1016,16 @@ function render(){
       const tb=Math.max(...b.ds.map(d=>Date.parse(d.verified_at)||0));
       return tb-ta;
     });
-    // 置顶混合：折扣链接组×3 → 国外组×2 → 其余按核验（防满屏折扣链接）
-    const cq=groups.filter(g=>g.ds.some(d=>d.type==='coupon')).slice(0,3);
-    const gl=groups.filter(g=>!cq.includes(g)&&g.ds.some(d=>d.region==='global')).slice(0,2);
-    const ordered=[...cq,...gl,...groups.filter(g=>!cq.includes(g)&&!gl.includes(g))];
-    box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+ordered.slice(0,shownGroups).map(g=>{
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+groups.slice(0,shownGroups).map(g=>{
       const total=Math.round(g.once+g.daily*30);
       const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
-      const s=siteFor(g.best);
+      const open=Workbench.expanded.has(g.p);
+      const detailId='offer-group-'+encodeURIComponent(g.p);
+      const summaries=g.ds.filter(d=>d!==g.best).map(d=>d.provider+'：'+d.value).join(' · ');
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}" data-layer="${dealLayer(g.best)}">
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${f(total)}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
+    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'未折算'}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
     <div>
       <div class="r-line1">
         <span class="r-provider">${(()=>{const u=(siteFor(g.best)||{}).url||g.best.url;const dom=u?u.replace(/^https?:\/\/(www\.)?/,'').split('/')[0]:'';return dom?`<img class="favi rowfavi" src="${(window.LOGOS&&window.LOGOS[dom])||('https://icon.horse/icon/'+dom)}" alt="" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://${dom}/favicon.ico';}else if(this.dataset.f==1){this.dataset.f=2;this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=64';}else{this.style.display='none';}">`:''})()}${esc(g.p)}</span>
@@ -1082,28 +1036,23 @@ function render(){
         <span class="chip">${LAYER[g.best.category]?LAYER[g.best.category].name:g.best.category}</span>
         ${g.best.region==='cn'?'':'<span class="chip">🌍</span>'}
         ${g.best.gate?`<span class="chip" style="border-color:rgba(37,99,235,.4);color:#2563eb" title="需${''}">${(window._GATES&&window._GATES[g.best.gate])||g.best.gate}</span>`:''}
-        <span class="r-notes">${esc(g.ds.filter(d=>d!==g.best).slice(0,3).map(d=>'· '+d.provider+'：'+d.value.slice(0,22)+'…').join('  '))}</span>
+        <span class="r-notes" title="${esc(summaries)}">${esc(summaries)}</span>
       </div>
     </div>
-    <div class="r-state">${freshness(g.best)}${apiBadge(g.best)}${g.best.deadline?`<span style="color:var(--red)">📅 ${esc(g.best.deadline)}</span>`:'<span style="color:var(--green)">♾️ 长期</span>'}</div>
+    <div class="r-state">${Workbench.freshness(g.best)}${apiBadge(g.best)}${Workbench.timing(g.best)}</div>
     <div class="r-ops">
-      <button class="aggToggle" data-agg="${esc(g.p)}">▾ 展开 ${g.ds.length} 条</button>
+      <button type="button" class="aggToggle" data-agg="${esc(g.p)}" data-count="${g.ds.length}" aria-expanded="${open}" aria-controls="${detailId}">${Workbench.groupLabel(open,g.ds.length)}</button>
       ${aggGold(g)}
     </div>
   </article>
-  <div class="agg-detail" data-detail="${esc(g.p)}" data-layer="${dealLayer(g.best)}">${g.ds.map(rowHtml).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
+  <div class="agg-detail${open?' open':''}" id="${detailId}" data-detail="${esc(g.p)}" data-layer="${dealLayer(g.best)}">${g.ds.map(d=>rowHtml(d)).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
     }).join('')
-    +(ordered.length>shownGroups?'<div id="moreWrap" style="text-align:center;padding:14px 0"><button class="tab" id="moreBtn" onclick="loadMore()">'+"↓ 加载更多平台（还有 {n} 家）".replace('{n}',ordered.length-shownGroups)+'</button></div>':'');
-  if(window.layerReorder)layerReorder(box);
+    +(groups.length>shownGroups?'<div id="moreWrap" style="text-align:center;padding:14px 0"><button class="tab" id="moreBtn" onclick="loadMore()">'+"↓ 加载更多平台（还有 {n} 家）".replace('{n}',groups.length-shownGroups)+'</button></div>':'');
+    if(curCat==='all'&&!curQ&&!curType)Workbench.groupRows(box);
   }else{
-    box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+list.map(rowHtml).join('');
+    box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+list.map(d=>rowHtml(d)).join('');
   }
   renderFreecloud();
-  document.querySelectorAll('#listhead .sortbtn').forEach(b=>{
-    const on=b.dataset.sort===sortKey;
-    b.classList.toggle('on',on);
-    b.textContent=b.dataset.sort==='tokens'?(on?'收益 ↓':'收益 ⇅'):(on?'核验 ↓':'核验 ⇅');
-  });
   stats();
   loadShared();
   // 访问量展示（自托管 /api/stats）
@@ -1116,7 +1065,6 @@ function render(){
       el.innerHTML='📊 访问统计：今日 <b style="color:var(--accent)">'+st.today+'</b> · 近 7 日 <b style="color:var(--accent)">'+wk+'</b> · 累计 <b style="color:var(--accent)">'+st.total+'</b> 次页面打开';
     }).catch(function(){});
   }
-  try{tickerRefresh()}catch(_){}
 }
 const PAID_TYPES=new Set(['price_low','pricing_plan']);
 function stats(){
@@ -1124,7 +1072,8 @@ function stats(){
   document.getElementById('n-deals').textContent=live.length;
   document.getElementById('n-fresh').textContent=live.filter(d=>(Date.now()-new Date(d.verified_at))<864e5).length;
   const latest=live.reduce((m,d)=>Math.max(m,new Date(d.verified_at)),0);
-  document.getElementById('updated').textContent=new Date(latest).toLocaleDateString('zh-CN');
+  document.getElementById('updated').textContent=latest
+    ? new Intl.DateTimeFormat(Workbench.locale,{month:'short',day:'numeric'}).format(latest) : '—';
 }
 /* ============ 折扣码复制（事件委托） ============ */
 function copyText(t,btn,okTxt,resetTxt){
@@ -1133,10 +1082,17 @@ function copyText(t,btn,okTxt,resetTxt){
     navigator.clipboard.writeText(t).then(done).catch(()=>fallbackCopy(t,done));
   }else fallbackCopy(t,done);
 }
-document.getElementById('cards').addEventListener('click',e=>{
+function handleOfferClick(e){
   const ag=e.target.closest('.aggToggle');
-  if(ag){const det=document.querySelector(`.agg-detail[data-detail="${CSS.escape(ag.dataset.agg)}"]`);
-    if(det){const open=det.classList.toggle('open');ag.textContent=open?'▴ 收起':'▾ 展开';}return}
+  if(ag){Workbench.toggleGroup(ag);return}
+  if(e.target.closest('[data-reset-filters]')){
+    curCat='all';curQ='';curType='';
+    document.getElementById('search').value='';
+    document.getElementById('typeFilter').value='';
+    render();
+    document.getElementById('search').focus();
+    return;
+  }
   const btn=e.target.closest('.copy');
   if(btn){copyText(btn.dataset.code,btn,'✅ 已复制','📋 复制');return}
   const cg=e.target.closest('.cgo');
@@ -1144,7 +1100,9 @@ document.getElementById('cards').addEventListener('click',e=>{
   const cl=e.target.closest('[data-claim]');
   if(cl){const s=getClaimed(),id=cl.dataset.claim;s.has(id)?s.delete(id):s.add(id);
     try{localStorage.setItem(CKEY,JSON.stringify([...s]))}catch(_){}
-    render();return}
+    render();
+    document.querySelector('[data-claim="'+CSS.escape(id)+'"]')?.focus();
+    return}
   const ab=e.target.closest('[data-api]');
   if(ab)openApi(ab.dataset.api);
   const sh=e.target.closest('[data-share]');
@@ -1153,7 +1111,10 @@ document.getElementById('cards').addEventListener('click',e=>{
   if(sp)openSub(sp.dataset.supply);
   const vq=e.target.closest('[data-vq]');
   if(vq){e.preventDefault();quickVault(vq.dataset.vq);}
-});
+}
+for(const id of ['cards','freecloudArea']){
+  document.getElementById(id).addEventListener('click',handleOfferClick);
+}
 /* ============ 一键托管（卡片 🔒 → 预填快速表单） ============ */
 function quickVault(dealId){
   const d=DEALS.find(x=>x.id===dealId);if(!d)return;
@@ -1528,34 +1489,6 @@ function doBookmark(){
   }catch(_){}
   alert('已复制网址\n\n按 Ctrl+D（Mac：⌘+D）即可收藏 TokenMost');
 }
-window.tickerRefresh=function(){
-  // 顶部滚播：优先 AI 行业新闻（自托管 /api/news），无数据回退站内最新羊毛
-  var PROD=/^(tokenmost\.com|www\.tokenmost\.com|kjai123\.github\.io)$/.test(location.hostname);
-  function dealTicker(){
-    if(typeof DEALS==='undefined'||!DEALS.length)return;
-    try{
-      var tk=[...DEALS].filter(d=>d.published!==false&&d.verify_status!=='expired').sort(function(a,b){return new Date(b.verified_at)-new Date(a.verified_at)}).slice(0,6);
-      var items=tk.map(function(d){
-        var v=(d.value||'').replace(/<[^>]*>/g,'').slice(0,40);
-        return '<span class="ntk-item"><b>'+(d.provider||'').slice(0,16)+'</b> '+v+'<span class="ntk-date">'+new Date(d.verified_at).toLocaleDateString('zh-CN')+'</span></span>';
-      }).join('');
-      var el=document.getElementById('ntkItems');
-      if(el&&items){el.innerHTML=items+items;el.style.animationDuration=Math.max(60,Math.round(el.scrollWidth/55))+'s';}
-    }catch(_){}
-  }
-  if(!PROD){dealTicker();return;}
-  try{
-    fetch('/api/news?lang=zh').then(r=>r.json()).then(function(j){
-      var its=(j&&j.items)||[];
-      if(!its.length){dealTicker();return;}
-      var items=its.map(function(n){
-        return '<span class="ntk-item"><b>['+esc(n.source||'')+']</b> '+esc(n.title||'')+'<span class="ntk-date">'+new Date(n.ts).toLocaleDateString('zh-CN')+'</span></span>';
-      }).join('');
-      var el=document.getElementById('ntkItems');
-      if(el&&items){el.innerHTML=items+items;el.style.animationDuration=Math.max(60,Math.round(el.scrollWidth/55))+'s';}
-    }).catch(function(){dealTicker()});
-  }catch(_){dealTicker()}
-}
 document.addEventListener('DOMContentLoaded',function(){
   var b=document.getElementById('bmBtn');if(b)b.addEventListener('click',doBookmark);
   var i=document.getElementById('installBtn');if(i)i.addEventListener('click',function(){
@@ -1573,7 +1506,7 @@ document.getElementById('bottomNav').addEventListener('click',e=>{
 });
 /* ============ 工具条 ============ */
 document.getElementById('tabs').addEventListener('click',e=>{
-  if(e.target.classList.contains('tab')&&e.target.id!=='navCollapse'){
+  if(e.target.matches('button[data-cat]')){
     document.querySelectorAll('#tabs .tab').forEach(t=>t.classList.remove('active'));
     e.target.classList.add('active');curCat=e.target.dataset.cat;render();
   }
@@ -1903,20 +1836,15 @@ function calcGlobalBanner(){
   const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const monthly=Math.round(once+daily*30);
-  /* 🪙 折扣/邀请链接注册可叠加（v2.24 老板令）：加倍领取条目按平台去重的首月可薅总量 */
-  const gmap={};
-  live.filter(isDouble).forEach(d=>{const k=d.group||d.provider;(gmap[k]=gmap[k]||[]).push(d)});
-  const linkBonus=Object.values(gmap).reduce((s,ds)=>s+Math.round(ds.reduce((a,d)=>a+(d.eq_wan||d.tokens_wan||0),0)+ds.reduce((a,d)=>a+(d.daily_wan||0),0)*30),0);
   const f=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
-      const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
-  document.getElementById('gbNum').textContent='🌍 全球羊毛 首月可薅 ≈ '+f(monthly)+' DS Flash等效';
-  document.getElementById('gbSub').innerHTML='叠加公式：一次性 '+f(once)+' ＋ 日均 '+f(daily)+'/天 × 30 · 共 '+live.length+' 条 · <span class="gb-pill">🪙 折扣链接注册额外叠加 '+f(linkBonus)+'</span> · 点击看明细';
+  document.getElementById('gbNum').textContent=f(monthly);
+  document.getElementById('gbSub').textContent='一次性 '+f(once)+' ＋ 每日 '+f(daily)+' × 30 天';
 }
 // 侧边栏折叠（OpenRouter 式）
 document.getElementById('side').addEventListener('click',e=>{
   const h=e.target.closest('.shead,.sgroup-head2');if(!h)return;
   const body=document.getElementById('fold-'+h.dataset.fold)||h.nextElementSibling;
-  if(body){body.classList.toggle('folded');h.classList.toggle('folded');}
+  if(body){const folded=body.classList.toggle('folded');h.classList.toggle('folded',folded);h.setAttribute('aria-expanded',String(!folded));}
 });
 /* ============ 数据加载 ============ */
 fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
@@ -1927,8 +1855,7 @@ fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArra
 /* ============ 网页端数据自动同步（v2.21 老板令「网页端要同步啊」） ============ */
 /* 开着页面也每 5 分钟自动拉新数据：内容有变就原地重渲染 + 轻提示，免手动刷新 */
 let lastSyncSig='';
-function syncSig(d){return d.length+'|'+JSON.stringify(d.map(x=>[x.id,x.verify_status,x.published,dailyOf(x)])).length}
-function dailyOf(x){return x.daily_wan||0}
+function syncSig(d){return JSON.stringify(d)}
 function toast(msg){
   let t=document.getElementById('syncToast');
   if(!t){t=document.createElement('div');t.id='syncToast';document.body.appendChild(t)}
@@ -1947,10 +1874,13 @@ async function pollData(){
     if(sig!==lastSyncSig){
       lastSyncSig=sig;
       DEALS=dj;SITES=await st.json();
-      renderNav();render();vRender();calcGlobalBanner();
+      renderNav();render();vRender();calcGlobalBanner();refreshWorkbenchNews();
       toast('🔄 数据已自动同步 · '+DEALS.length+' 条情报');
     }
   }catch(_){}
+}
+function refreshWorkbenchNews(){
+  Workbench.refreshNews(DEALS,/^(tokenmost\.com|www\.tokenmost\.com|kjai123\.github\.io)$/.test(location.hostname));
 }
 setInterval(pollData,5*60*1000);
 const LOGOS_P=fetch('assets/logos.json?ts='+Date.now()).then(r=>r.json()).catch(()=>({}));
@@ -1965,12 +1895,14 @@ Promise.all([
   SITES=sites;DEALS=deals;lastSyncSig=syncSig(deals);
   renderNav();vInit();
   if(typeof _q!=='undefined'&&_q){curQ=_q;var _se=document.getElementById('search');if(_se)_se.value=_q;}
-  render();vRender();calcGlobalBanner();
+  render();vRender();calcGlobalBanner();refreshWorkbenchNews();
   // 防护：数据渲染完成后，后续可选功能（登录态/共享码）抛错不得清空主板块
   try{authRefreshUI()}catch(_){}
   try{loadShared()}catch(_){}
 }).catch(()=>{
-  document.getElementById('cards').innerHTML='<div class="empty">数据加载失败 — 本地预览请用 python -m http.server（file:// 协议无法 fetch）</div>';
+  const cards=document.getElementById('cards');
+  cards.setAttribute('aria-busy','false');
+  cards.innerHTML='<div class="empty"><b>暂时无法加载情报</b><button type="button" class="tab" onclick="location.reload()">重新加载</button></div>';
 });
 </script>
 </body>

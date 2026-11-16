@@ -295,7 +295,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "bailian-main",
+   "id": "bailian-console-alibabac-4003b676dd",
    "name": "Alibaba Cloud Model Stud",
    "url": "https://bailian.console.alibabacloud.com/?apiKey=1",
    "patterns": [
@@ -308,7 +308,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "bailian-main",
+   "id": "bailian-console-aliyun-c-9d5844067b",
    "name": "大模型服务平台百炼控制台",
    "url": "https://bailian.console.aliyun.com/",
    "patterns": [
@@ -425,7 +425,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "console-main",
+   "id": "console-bce-baidu-com-90d1970c21",
    "name": "百度智能云控制台-管理中心",
    "url": "https://console.bce.baidu.com/",
    "patterns": [
@@ -451,7 +451,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "console-main",
+   "id": "console-upstage-ai-d5c2ca56c4",
    "name": "Upstage Console",
    "url": "https://console.upstage.ai/",
    "patterns": [
@@ -537,7 +537,10 @@
     "赠送",
     "额度",
     "free",
-    "pricing"
+    "pricing",
+    "neurons",
+    "10,000",
+    "reset"
    ],
    "note": "长期源自动并入(分6) 2026-10-28"
   },
@@ -606,7 +609,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-litellm-ai-86982230c9",
    "name": "LiteLLM documentation | ",
    "url": "https://docs.litellm.ai",
    "patterns": [
@@ -627,12 +630,16 @@
     "赠送",
     "额度",
     "free",
-    "pricing"
+    "pricing",
+    "free token",
+    "100,000",
+    "24 hours",
+    "rate"
    ],
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-qoder-com-ab584b0c85",
    "name": "What is Qoder - Qoder",
    "url": "https://docs.qoder.com/",
    "patterns": [
@@ -658,7 +665,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-xkiro-com-3ff72a8622",
    "name": "xKiro API Documentation",
    "url": "https://docs.xkiro.com",
    "patterns": [
@@ -807,7 +814,10 @@
     "赠送",
     "额度",
     "free",
-    "pricing"
+    "pricing",
+    "rate limit",
+    "anonymous",
+    "kilo-auto/free"
    ],
    "note": "长期源自动并入(分6) 2026-10-28"
   },
@@ -1428,7 +1438,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "console-main",
+   "id": "console-anthropic-com-a5915ff048",
    "name": "Claude Platform",
    "url": "https://console.anthropic.com/",
    "patterns": [
@@ -1532,7 +1542,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-aimlapi-com-d816f250d7",
    "name": "Documentation Map | AI/M",
    "url": "https://docs.aimlapi.com",
    "patterns": [
@@ -1558,7 +1568,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-diffbot-com-2d1f6ba8ee",
    "name": "Introduction to Diffbot ",
    "url": "https://docs.diffbot.com",
    "patterns": [
@@ -1610,7 +1620,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-leonardo-ai-adc2e95bd3",
    "name": "Quick Start Guide",
    "url": "https://docs.leonardo.ai",
    "patterns": [
@@ -1623,7 +1633,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-nexusify-co-8be2ddc0fa",
    "name": "Nexusify — Documentation",
    "url": "https://docs.nexusify.co/",
    "patterns": [
@@ -1636,7 +1646,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-nomic-ai-88377f921b",
    "name": "Nomic Platform Documenta",
    "url": "https://docs.nomic.ai",
    "patterns": [
@@ -1675,7 +1685,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-roboflow-com-1180a25f58",
    "name": "Roboflow Documentation |",
    "url": "https://docs.roboflow.com",
    "patterns": [
@@ -1688,7 +1698,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-ros-org-527c31c684",
    "name": "ROS",
    "url": "https://docs.ros.org/",
    "patterns": [
@@ -1714,7 +1724,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-searxng-org-dab0a62148",
    "name": "SearXNG Documentation (2",
    "url": "https://docs.searxng.org",
    "patterns": [
@@ -1727,7 +1737,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-tavily-com-6e2cc84190",
    "name": "Quickstart: connect your",
    "url": "https://docs.tavily.com",
    "patterns": [
@@ -1779,7 +1789,7 @@
    "note": "长期源自动并入(分6) 2026-10-28"
   },
   {
-   "id": "docs-main",
+   "id": "docs-voyageai-com-c990f07175",
    "name": "Introduction",
    "url": "https://docs.voyageai.com",
    "patterns": [
@@ -2235,6 +2245,114 @@
     "每月"
    ],
    "note": "长期源自动并入 2026-11-16：每日/每周/每月免费额度一页聚合（数字生命卡兹克出品，160+信源，官方页核实日期标注）"
+  },
+  {
+   "id": "hf-inference-credit-policy",
+   "name": "Hugging Face Inference 官方规则",
+   "url": "https://huggingface.co/docs/inference-providers/pricing",
+   "patterns": [
+    "credits",
+    "free users",
+    "0.10",
+    "monthly"
+   ],
+   "note": "官方原文：跟踪免费额度、资格或计费规则变化"
+  },
+  {
+   "id": "vercel-gateway-free-policy",
+   "name": "Vercel AI Gateway 官方规则",
+   "url": "https://vercel.com/docs/ai-gateway/pricing",
+   "patterns": [
+    "free tier",
+    "monthly credit",
+    "5/month",
+    "paid tier"
+   ],
+   "note": "官方原文：跟踪免费额度、资格或计费规则变化"
+  },
+  {
+   "id": "rovo-dev-credit-policy",
+   "name": "Atlassian Rovo Dev 官方规则",
+   "url": "https://support.atlassian.com/rovo/docs/view-your-rovo-dev-credit-usage/",
+   "patterns": [
+    "rovo dev free",
+    "350",
+    "per month",
+    "billing cycle"
+   ],
+   "note": "官方原文：跟踪免费额度、资格或计费规则变化"
+  },
+  {
+   "id": "lightning-studio-free-policy",
+   "name": "Lightning AI Studio 官方规则",
+   "url": "https://studio.lightning.ai/pricing/",
+   "patterns": [
+    "studio",
+    "4 hour",
+    "free",
+    "cpu"
+   ],
+   "note": "官方原文：跟踪免费额度、资格或计费规则变化"
+  },
+  {
+   "id": "copilot-free-policy",
+   "name": "GitHub Copilot 官方规则",
+   "url": "https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing",
+   "patterns": [
+    "copilot free",
+    "2,000",
+    "ai credits",
+    "allowance"
+   ],
+   "note": "官方原文：跟踪免费额度、资格或计费规则变化"
+  },
+  {
+   "id": "rime-credit-policy",
+   "name": "Rime 官方语音定价",
+   "url": "https://www.rime.ai/pricing",
+   "patterns": [
+    "free",
+    "credit",
+    "month",
+    "roll over"
+   ],
+   "note": "官方原文：跟踪免费权益与额度变更"
+  },
+  {
+   "id": "livekit-inference-credit-policy",
+   "name": "LiveKit 官方额度与限制",
+   "url": "https://docs.livekit.io/deploy/admin/quotas-and-limits/",
+   "patterns": [
+    "Build",
+    "2.50",
+    "inference",
+    "allowance"
+   ],
+   "note": "官方原文：跟踪免费权益与额度变更"
+  },
+  {
+   "id": "elevenlabs-free-credit-policy",
+   "name": "ElevenLabs 官方套餐定价",
+   "url": "https://elevenlabs.io/pricing",
+   "patterns": [
+    "free",
+    "10,000",
+    "credits",
+    "non-commercial"
+   ],
+   "note": "官方原文：跟踪免费权益与额度变更"
+  },
+  {
+   "id": "zed-student-credit-policy",
+   "name": "Zed 官方教育计划",
+   "url": "https://zed.dev/education",
+   "patterns": [
+    "student",
+    "12 months",
+    "credits",
+    "10/month"
+   ],
+   "note": "官方原文：跟踪免费权益与额度变更"
   }
  ]
 }

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="330" viewBox="0 0 480 330" fill="none">
+  <defs>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0v22" stroke="#9cebd6" stroke-opacity=".09"/></pattern>
+    <radialGradient id="fade"><stop offset=".36" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="beam" x1="293" y1="168" x2="414" y2="57" gradientUnits="userSpaceOnUse"><stop stop-color="#66ffd3" stop-opacity=".28"/><stop offset="1" stop-color="#66ffd3" stop-opacity=".025"/></linearGradient>
+    <mask id="mask"><ellipse cx="287" cy="167" rx="230" ry="166" fill="url(#fade)"/></mask>
+  </defs>
+  <g mask="url(#mask)">
+    <path d="M0 0h480v330H0z" fill="url(#grid)"/>
+    <path d="M287 0v330M72 166h408" stroke="#9cebd6" stroke-opacity=".22" stroke-dasharray="3 5"/>
+    <g stroke="#9cebd6" stroke-opacity=".35"><circle cx="287" cy="166" r="35"/><circle cx="287" cy="166" r="67"/><circle cx="287" cy="166" r="99"/><circle cx="287" cy="166" r="131"/></g>
+    <path d="m287 166 82-102a131 131 0 0 1 47 80Z" fill="url(#beam)"/>
+    <path d="m287 166 82-102" stroke="#66ffd3" stroke-opacity=".55"/>
+    <path d="m179 209 24-33 22 12 23-54 23 17 16 15 28-44 24 16 29-36 34 18" stroke="#82ffdb" stroke-opacity=".53" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#82ffdb"><circle cx="203" cy="176" r="2.5"/><circle cx="287" cy="166" r="3.5"/><circle cx="339" cy="138" r="2.5"/><circle cx="368" cy="102" r="3.5"/></g>
+    <circle cx="368" cy="102" r="9" stroke="#82ffdb" stroke-opacity=".46"/>
+  </g>
+</svg>

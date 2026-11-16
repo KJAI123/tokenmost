@@ -8,7 +8,7 @@
 流程：
   1. 按 tools/sources.json 逐源抓取（json API / watch 页面 / rss）
      - json  : 结构化 API → 按 action 更新 deal 文案 / 比价行，成功即续验证戳（verify_by=auto）
-     - watch : 官方页面哈希监控 → 哈希不变=内容仍成立=自动续验证戳；
+     - watch : 官方页面哈希监控 → 哈希不变时，仅允许已配置自动续期的来源更新核验戳；
                变了=内容可能过期 → 相关 deal 降级「待复核」+ 写入 review-queue.md
      - rss   : linux.do 等社区源 → 关键词白/黑名单过滤 → 只生成 published:false 草稿
   2. 规则引擎：deadline 已过 → 自动标「已失效」；verified_at 超 stale_days → 自动降级待复核
@@ -28,6 +28,7 @@ import urllib.request
 import urllib.error
 from urllib.parse import urljoin
 from pathlib import Path
+from source_audit import evidence_snapshot, lost_evidence
 
 ROOT = Path(__file__).resolve().parent.parent
 UA = {"User-Agent": "Mozilla/5.0 (compatible; tokenmost-sync/1.0; +https://tokenmost.com)"}
@@ -75,6 +76,7 @@ def main() -> int:
     src_state = state.setdefault("sources", {})
 
     deals = json.loads((ROOT / "deals.json").read_text())
+    original_evidence = evidence_snapshot(deals)
     prices = json.loads((ROOT / "prices.json").read_text())
     by_id = {d["id"]: d for d in deals}
     summary = []        # 运行摘要
@@ -157,18 +159,23 @@ def main() -> int:
         # 页面「每次请求都在变」（计数器/轮换 banner/时间戳）会永远误报；只有同一新哈希
         # 连续出现 confirm_runs 次才认定为真实变更。确认前的观测仍续验证戳（抖动≠过期）。
         if styp == "watch":
+            def renew_if_allowed():
+                # A stable document tracks changes; it does not prove an offer was redeemed.
+                if src.get("auto_verify", True):
+                    bump(src.get("deals", []), sid)
+
             prev = st.get("hash")
             st["len"] = len(text)
             confirm_runs = src.get("confirm_runs", 2)
             if prev is None:
                 st["hash"] = h
                 summary.append(f"BASE  {sid}: 首次抓取，建立基线")
-                bump(src.get("deals", []), sid)
+                renew_if_allowed()
                 continue
             if h == prev:
                 st.pop("pending", None)
-                bump(src.get("deals", []), sid)
-                summary.append(f"OK    {sid}: 未变化，{len(src.get('deals', []))} 条已自动续期")
+                renew_if_allowed()
+                summary.append(f"OK    {sid}: 未变化" + ("，已自动续期" if src.get("auto_verify", True) else "，核验日期保持不变"))
                 continue
             pend = st.get("pending") or {}
             if pend.get("hash") == h:
@@ -186,11 +193,11 @@ def main() -> int:
                     summary.append(f"CHANGED {sid}: 连续 {pend['seen']} 次观测到新内容，{len(src.get('deals', []))} 条降级待复核")
                 else:
                     st["pending"] = pend
-                    bump(src.get("deals", []), sid)
+                    renew_if_allowed()
                     summary.append(f"WAIT  {sid}: 新哈希首次复现（{pend['seen']}/{confirm_runs}），待下次确认")
             else:
                 st["pending"] = {"hash": h, "seen": 1}
-                bump(src.get("deals", []), sid)
+                renew_if_allowed()
                 summary.append(f"WAIT  {sid}: 内容与基线不同（可能抖动），进入待确认")
             continue
 
@@ -267,6 +274,12 @@ def main() -> int:
         if st.get("fail_streak", 0) >= 3:
             queue.append(f"- **源失联** `{sid}`：连续 {st['fail_streak']} 次失败（{st.get('last_error', '')}）→ 检查 URL 是否失效，或从 tools/sources.json 移除")
 
+    dropped = lost_evidence(original_evidence, evidence_snapshot(deals))
+    if dropped:
+        for did, links in dropped.items():
+            print(f"ERROR 信源回归 {did}: {' / '.join(links)}")
+        return 1
+
     # ---- 写回 ----
     if DRY:
         print("== DRY RUN，不写文件 ==")
@@ -280,7 +293,7 @@ def main() -> int:
         (ROOT / "review-queue.md").write_text(
             "# 人工复核队列（sync.py 每次运行自动重算；人工修复对应条目后自动消失）\n\n"
             "机器不能判断的事都在这里：官方页面有变、来源失联、超期未复核、RSS 草稿。\n"
-            "处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:\"verified\"；不实→删）。\n\n"
+            "处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:\"verified\"；不实→归档并保留证据）。\n\n"
             + ("\n".join(queue) if queue else "✅ 当前为空 —— 没有待人工处理的事项") + "\n",
             encoding="utf-8")
         rc = subprocess.run([sys.executable, str(ROOT / "tools" / "check.py")]).returncode

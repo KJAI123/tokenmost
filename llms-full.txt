@@ -220,10 +220,10 @@
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
 ## GitHub Copilot｜长期免费
-- 内容：Copilot Free 档：每月 2000 次代码补全 + 50 次聊天，个人零成本
-- 日均：月 2000 补全(~0.5K)+50 聊天(~4K) ÷30 ≈4 万/天（估算）
+- 内容：Copilot Free：每月 2,000 次代码补全，Copilot Chat 使用每月 AI Credits 额度并采用自动模型选择。
+- 规则：适用个人免费账户；聊天按 AI Credits 用量计量，不以固定聊天次数承诺。
 - 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
-- 状态：待复核（核验时间 2026-10-30T17:07:22Z）
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
 
 ## 302.AI｜price_low
 - 内容：0 月费纯按量计费聚合（400+ 模型），充多少用多少，不设最低消费
@@ -1345,10 +1345,10 @@
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
 
 ## Rime｜长期活动
-- 内容：Rime 每月送 **$50 语音模型额度**（所有模型）
-- 规则：每月发放
+- 内容：Rime 每月含 $50 语音模型用量，免费额度适用于 Rime 模型。
+- 规则：未用额度不结转；免费额度用完可等下月续发。开通 Flex 并绑卡后，超额按用量付费。
 - 链接：https://rime.ai
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 状态：已验证（核验时间 2026-11-16T17:15:17Z）
 
 ## Drex｜长期活动
 - 内容：Drex 每月送 **$5 模型调用额度**（Drex 决策系列含 Max v1.1/Max v2 等）
@@ -1357,10 +1357,10 @@
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
 
 ## LiveKit Inference｜长期活动
-- 内容：LiveKit Inference 每月送 **$2.50 模型推理额度**（Gemini/DeepSeek 等支持模型）
-- 规则：每月 1 日刷新，未用额度不结转
+- 内容：LiveKit Build 免费档每月含 $2.50 推理额度，由 LiveKit Inference 模型共享。
+- 规则：Build 档用量达到额度后，继续调用会被拒绝；额度与单个模型的调用速率限制分别计算。
 - 链接：https://livekit.io
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 状态：已验证（核验时间 2026-11-16T17:15:17Z）
 
 ## 蚂蚁百灵｜长期活动
 - 内容：蚂蚁百灵开放平台每月 1 日送 **10 元抵扣券**（平台所有模型按实际计费抵扣）
@@ -1381,16 +1381,16 @@
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
 
 ## ElevenLabs｜长期免费
-- 内容：ElevenLabs 免费档每月 **1 万积分**（Eleven v4/v4 Turbo/v3 等语音模型）
-- 规则：每月免费额度
+- 内容：ElevenLabs 免费档每月含 10,000 credits，可体验语音生成等功能。
+- 规则：文本转语音的免费档适用于个人非商业用途，需署名；每个产品的额度消耗按官方定价表计。
 - 链接：https://elevenlabs.io
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 状态：已验证（核验时间 2026-11-16T17:15:17Z）
 
 ## Zed｜学生通道
-- 内容：Zed 在读大学生每月 **$10 AI 额度，持续一年**（Zed 托管模型中学生档可用部分，如 Claude Sonnet 系）
-- 规则：在读大学生认证；每月到账持续 12 个月
+- 内容：通过学生资格核验后，Zed 学生计划连续 12 个月每月含 $10 AI Token Credits。
+- 规则：资格以 Zed 教育计划要求为准；12 个月后自动降为 Free，模型可用性按当期计划。
 - 链接：https://zed.dev
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 状态：已验证（核验时间 2026-11-16T17:15:17Z）
 
 ## Telnyx｜注册赠送
 - 内容：Telnyx 新用户送 **$25 AI 额度**（含自营 Inference 模型）
@@ -1403,4 +1403,46 @@
 - 规则：新用户注册
 - 链接：https://bailing.antgroup.com
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+
+## Kilo Code｜长期免费
+- 内容：Kilo Gateway 可直接使用免费模型；kilo-auto/free 会在当期免费模型之间自动选型。
+- 规则：匿名访问免费模型每个 IP 每小时最多 200 次；模型可用性随提供商调整。
+- 链接：https://kilo.ai/docs/getting-started/using-kilo-for-free
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+
+## llm7.io｜长期免费
+- 内容：免费 API Token：文本生成合计 10 万 tokens／24 小时，输入和输出一起计量。
+- 规则：文本接口每秒 1 次、每分钟 60 次、每小时 250 次；免费额度可能随负载变化。
+- 链接：https://docs.llm7.io/limits
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+
+## Cloudflare Workers AI｜长期免费
+- 内容：Workers AI 每天 10,000 Neurons 免费，按不同模型的计算消耗扣减。
+- 规则：每天 UTC 00:00 重置；免费档超额报错；部分模型要求付费账号或预付额度。
+- 链接：https://developers.cloudflare.com/workers-ai/
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+
+## Hugging Face Inference｜长期免费
+- 内容：免费账户每月含 $0.10 推理试用额度，可试用 Hugging Face Inference Providers。
+- 规则：需要通过 Hugging Face 转发请求才能抵扣；超额用量需要购买 credits。
+- 链接：https://huggingface.co/docs/inference-providers/index
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+
+## Vercel AI Gateway｜长期免费
+- 内容：免费档每月含 $5 推理额度，从首次请求开始发放。
+- 规则：仅限 Free Tier 模型，且有独立速率限制；购买 AI Gateway Credits 后切换付费档，月度免费额度停止。
+- 链接：https://vercel.com/ai-gateway
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+
+## Atlassian Rovo Dev｜长期免费
+- 内容：Rovo Dev Free：每个已开通的 Jira 站点，每位用户每月 350 credits。
+- 规则：需加入已经启用 Rovo Dev Free 的 Jira 站点；用完后暂停，至下一计费周期恢复。
+- 链接：https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+
+## Lightning AI Studio｜长期免费
+- 内容：免费账户可运行 1 个基础 CPU Studio；官方基础规格为 4 vCPU / 16 GB RAM。
+- 规则：免费 Studio 每 4 小时需重启，注册可能要求手机号；切换付费算力前核对费用。
+- 链接：https://studio.lightning.ai/
+- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
 

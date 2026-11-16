@@ -7,6 +7,7 @@ import json, re, sys
 from pathlib import Path
 from urllib.parse import urlsplit
 from openpyxl import load_workbook
+from source_audit import harvest_source_id, link_key
 
 ROOT = Path(__file__).resolve().parent.parent
 CAND = ROOT / "data-research" / "source_candidates.json"
@@ -35,6 +36,8 @@ def main() -> int:
     # 1) 去重（规范化 URL）
     seen: dict[str, dict] = {}
     for c in cands:
+        if not link_key(c["url"]):
+            continue
         n = norm(c["url"])
         if not n or BAD_PATH.search(n):
             continue
@@ -72,13 +75,9 @@ def main() -> int:
         d = c["domain"]
         if d in have_domains:
             continue
-        if "github.com" in d:
-            pid = "gh-" + re.sub(r"[^a-z0-9]+", "-", c["url"].split("github.com/")[-1].lower())[:28]
-            pats = ["free", "免费", "额度", "pricing"]
-        else:
-            pid = d.split(".")[0][:14] + "-" + (re.sub(r"[^a-z0-9]+", "", urlsplit(c["url"]).path)[:14] or "main")
-            pats = ["免费", "赠送", "额度", "free", "pricing"]
-        cfg["sources"].append({"id": pid[:30], "name": (c.get("title") or d)[:24],
+        pid = harvest_source_id(c["url"])
+        pats = ["免费", "赠送", "额度", "free", "pricing"]
+        cfg["sources"].append({"id": pid, "name": (c.get("title") or d)[:24],
                                "url": c["url"], "patterns": pats,
                                "note": f"长期源自动并入(分{c['score']}) 2026-10-28"})
         have_domains.add(d); added += 1

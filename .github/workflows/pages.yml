@@ -21,10 +21,23 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check source evidence before publishing
+        env:
+          TOKENMOST_BASE: ${{ github.event.before }}
+        run: |
+          if [[ -n "$TOKENMOST_BASE" && ! "$TOKENMOST_BASE" =~ ^0+$ ]]; then
+            baseline="$(mktemp)"
+            git show "$TOKENMOST_BASE:deals.json" > "$baseline"
+            python3 tools/source_audit.py --against "$baseline"
+          else
+            python3 tools/source_audit.py
+          fi
       - name: Assemble site (只发布站点文件，不含 .git/tools/工作流)
         run: |
           mkdir -p _site/guides _site/platform
-          cp index.html en.html sites.json deals.json prices.json usage.json plans.json rss.xml robots.txt sitemap.xml manifest.webmanifest llms.txt llms-full.txt _site/
+          cp index.html en.html free-cloud-servers.html sites.json deals.json prices.json usage.json plans.json rss.xml robots.txt sitemap.xml manifest.webmanifest llms.txt llms-full.txt _site/
           mkdir -p _site/assets/logos
           cp assets/*.* _site/assets/ 2>/dev/null || true
           cp assets/logos/* _site/assets/logos/ 2>/dev/null || true

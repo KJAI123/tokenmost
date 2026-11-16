@@ -2,6 +2,7 @@
 """tokenmost 数据校验 + rss.xml 同步生成。用法：python3 tools/check.py"""
 import json, sys, datetime, html, re
 from pathlib import Path
+from source_audit import evidence_errors, registry_errors
 
 ROOT = Path(__file__).resolve().parent.parent
 LAYERS = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", "compute": "算力平台",
@@ -16,7 +17,9 @@ TYPES = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "coupon": 
 deals = json.loads((ROOT / "deals.json").read_text())
 sites = json.loads((ROOT / "sites.json").read_text())
 prices = json.loads((ROOT / "prices.json").read_text())
-errors, warns = [], []
+errors, warns = list(evidence_errors(deals)), []
+for name in ("tools/sources.json", "tools/harvest_sources.json"):
+    errors.extend(registry_errors(json.loads((ROOT / name).read_text())["sources"], name))
 
 # --- deals 校验 ---
 ids = [d["id"] for d in deals]
@@ -35,6 +38,8 @@ for d in deals:
     if d.get("api_via") and str(d["api_via"]) not in ("api","client_only","agent_tool","gateway","unknown"):
         errors.append(f"{d['id']} api_via 非法: {d['api_via']} (允许: api/client_only/agent_tool/gateway/unknown)")
     if not re.match(r"^https?://", d.get("url", "")): errors.append(f"{d['id']} url 非 http(s): {d['url']}")
+    if "cadence" in d and d["cadence"] not in ("daily", "monthly"):
+        errors.append(f"{d['id']} cadence 非法: {d['cadence']}")
     if d.get("coupon") and not d.get("published", True) and not d.get("placeholder"):
         warns.append(f"{d['id']} 有 coupon 且未发布但无 placeholder 标记")
     for k in ("tokens_wan", "cny", "usd", "daily_wan", "daily_calls", "eq_wan"):

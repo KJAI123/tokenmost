@@ -25,6 +25,7 @@ import sys
 import tempfile
 from datetime import date, datetime, timezone
 from pathlib import Path
+from source_audit import harvest_source_id, link_key
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTDIR = ROOT / "data-research" / "harvest"
@@ -45,7 +46,14 @@ def fingerprint(entry: dict) -> str:
 
 def index_results(state: dict) -> dict:
     """把 latest.json 的 results 转成 {id: entry} 索引。"""
-    return {r["id"]: r for r in state.get("results", [])}
+    # Earlier imports reused these IDs across unrelated hosts. Resolve them by
+    # URL so new IDs compare with the original entries without rewriting old snapshots.
+    legacy_collisions = {"bailian-main", "console-main", "docs-main"}
+    return {
+        (harvest_source_id(r["url"]) if r["id"] in legacy_collisions and link_key(r.get("url"))
+         else r["id"]): r
+        for r in state.get("results", [])
+    }
 
 
 def diff_states(prev: dict, cur: dict) -> list[dict]:
@@ -155,6 +163,12 @@ def selftest() -> int:
     assert by["b"]["kind"] == "changed" and "命中数 1 → 2" in by["b"]["detail"]
     assert by["c"]["kind"] == "changed" and "状态" in by["c"]["detail"]
     assert by["d"]["kind"] == "removed" and by["e"]["kind"] == "added"
+    # A shared legacy ID must retain both sources and compare by their new IDs.
+    urls = ["https://docs.qoder.com/", "https://docs.tavily.com"]
+    old_ids = [{"id": "docs-main", "url": url, "status": "ok"} for url in urls]
+    new_ids = [{**item, "id": harvest_source_id(item["url"])} for item in old_ids]
+    assert len(index_results({"results": old_ids})) == 2
+    assert diff_states({"results": old_ids}, {"results": new_ids}) == []
     # 端到端：临时目录里跑完整流程（建基线 → 有变化写告警 → 基线滚动后 no change）
     with tempfile.TemporaryDirectory() as td:
         out = Path(td)
