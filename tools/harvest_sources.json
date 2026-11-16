@@ -2220,6 +2220,21 @@
     "Tutorial"
    ],
    "note": "长期源自动并入 2026-11-12：全分类(Model/Product/Tutorial/News)，福利文不只发 News"
+  },
+  {
+   "id": "aihot-free-tokens",
+   "name": "AIHOT Token 羊毛聚合页",
+   "url": "https://aihot.news/free-tokens",
+   "patterns": [
+    "Token",
+    "积分",
+    "Credits",
+    "免费",
+    "签到",
+    "每天",
+    "每月"
+   ],
+   "note": "长期源自动并入 2026-11-16：每日/每周/每月免费额度一页聚合（数字生命卡兹克出品，160+信源，官方页核实日期标注）"
   }
  ]
 }

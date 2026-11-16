@@ -5331,7 +5331,17 @@
   "notes": "⭐ 2026-11-12 官方 pricing 页直核（commandcode.ai/pricing）| 'Up to $100' 是各模型优惠叠加的**上限**而非固定发放（第三方口径 ~$70/月为常规值）| MiniMax M3 上 credits 价值 2×（Max 10× 档 $150≈$300 用量）| 价格另收 processing fee | 云访问 $0.10/h | 多源交叉：赛博鸡蛋+Reddit『GOAT made $100 credits PERMANENT』+知乎 | 官方站已挂 harvest_sources.json 盯防",
   "usd": 10,
   "eq_note": "\\$100 额度×300 万 tok/\\$≈3 亿当量（10 倍杠杆为官方倍率模型折扣所致）",
-  "api_via": "unknown"
+  "api_via": "unknown",
+  "sources": [
+   {
+    "url": "https://commandcode.ai/pricing",
+    "title": "Command Code 官方定价页"
+   },
+   {
+    "url": "https://commandcode.ai/docs/plans/goat",
+    "title": "GOAT 文档"
+   }
+  ]
  },
  {
   "id": "amd-token-factory",
@@ -5428,7 +5438,13 @@
    }
   ],
   "api_via": "api",
-  "unit": "tool"
+  "unit": "tool",
+  "sources": [
+   {
+    "url": "https://github.com/opendesign-ai/opendesign",
+    "title": "OpenDesign 开源仓库（Apache 协议）"
+   }
+  ]
  },
  {
   "id": "fiimeopc-token",
@@ -5708,7 +5724,13 @@
   "published": true,
   "via": "free",
   "group": "Command Code",
-  "notes": "2026-11-12 官方 pricing 页直核 | 全网最低门槛的编程订阅之一（$1=$10）| 与 GOAT（$10=最高 $100）同体系，积分按底层 API 原价消耗"
+  "notes": "2026-11-12 官方 pricing 页直核 | 全网最低门槛的编程订阅之一（$1=$10）| 与 GOAT（$10=最高 $100）同体系，积分按底层 API 原价消耗",
+  "sources": [
+   {
+    "url": "https://commandcode.ai/pricing",
+    "title": "Command Code 官方定价页（2026-11-12 直核）"
+   }
+  ]
  },
  {
   "id": "commandcode-glyph-free",
@@ -5726,7 +5748,13 @@
   "via": "free",
   "group": "Command Code",
   "notes": "2026-11-12 官方 pricing 页直核 | 定价页唯一标 Free 的项目 | 预览期结束即恢复计费，用趁早",
-  "unit": "tool"
+  "unit": "tool",
+  "sources": [
+   {
+    "url": "https://commandcode.ai/pricing",
+    "title": "Command Code 官方定价页（2026-11-12 直核）"
+   }
+  ]
  },
  {
   "id": "clixad-free",
@@ -5816,5 +5844,483 @@
     "title": "烧AI的穷学生：Loomy 新人 3 万积分四笔领取全记录（含到账截图）"
    }
   ]
+ },
+ {
+  "id": "tencent-ima-daily",
+  "provider": "腾讯 ima",
+  "category": "agent",
+  "type": "recurring_promo",
+  "value": "腾讯 ima Copilot 每日签到领 **50 算力**（DeepSeek 系内置模型）；每周连续签满 7 天另有随机算力奖励",
+  "region": "global",
+  "url": "https://ima.qq.com",
+  "rule": "ima 客户端「用量统计」→「每日登录福利」签到；部分模型限产品内使用",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "腾讯 ima",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 5
+ },
+ {
+  "id": "astudio-daily-100",
+  "provider": "讯飞 AStudio",
+  "category": "agent",
+  "type": "recurring_promo",
+  "value": "AStudio 体验版每天登录领 **100 积分**（可选内置模型：Spark/DeepSeek/GLM/Kimi/MiniMax 等，不含三方独立服务）；新用户下载登录另领 1000 积分",
+  "region": "global",
+  "url": "https://training.xfyun.cn",
+  "rule": "体验版每日登录自动发放；Mac 端_supported（Apple 芯片）",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "讯飞 AStudio",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 10
+ },
+ {
+  "id": "minimax-code-daily-400",
+  "provider": "MiniMax Code",
+  "category": "agent",
+  "type": "recurring_promo",
+  "value": "MiniMax Code 每天签到领 **400 积分**（平台支持的所有文本和多模态模型通用）",
+  "region": "global",
+  "url": "https://www.minimaxi.com",
+  "rule": "每日签到；仅电脑端；仅个人账号",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "MiniMax Code",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 40
+ },
+ {
+  "id": "wps-lingxi-daily",
+  "provider": "WPS 灵犀",
+  "category": "agent",
+  "type": "recurring_promo",
+  "value": "WPS 灵犀签到领 **100 智点，第 7 天起每天 200**（灵犀专业版体验版专家 Pro/Max 模式，灵犀按任务选内置模型）",
+  "region": "global",
+  "url": "https://lingxi.wps.cn",
+  "rule": "签到领取；体验版（专业版体验版）；部分模型限产品内使用",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "WPS 灵犀",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 10
+ },
+ {
+  "id": "miao-wu-daily-2000",
+  "provider": "秒悟",
+  "category": "official_cn",
+  "type": "recurring_promo",
+  "value": "秒悟每天登录领 **2000 积分**（语言/图像等模型可用）",
+  "region": "cn",
+  "url": "https://miaowu.pro",
+  "rule": "每日登录自动发放",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "秒悟",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 200
+ },
+ {
+  "id": "ace-music-daily-20",
+  "provider": "ACE Music",
+  "category": "official_global",
+  "type": "recurring_promo",
+  "value": "ACE Music 每天 **20 积分，最多生成 10 首歌**（ACE Music v1/v1.1 Preview/ACE-Step v1.5 全模型）",
+  "region": "global",
+  "url": "https://ace-step.ai",
+  "rule": "每天重置，未用积分不累积",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "ACE Music",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 2
+ },
+ {
+  "id": "officeace-daily-100",
+  "provider": "华为果办 OfficeAce",
+  "category": "compute",
+  "type": "recurring_promo",
+  "value": "华为果办 OfficeAce 免费版每天登录送 **100 积分**（果办预置模型如 GLM-5.2，用于站内模型推理）",
+  "region": "global",
+  "url": "https://officeace.cloud",
+  "rule": "个人体验版登录并使用客户端或微信小程序；每天赠送",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "华为果办",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 10
+ },
+ {
+  "id": "codearts-skill-1000",
+  "provider": "华为码道",
+  "category": "agent",
+  "type": "recurring_promo",
+  "value": "华为码道 Skill 创新赛每日签到领 **1000 积分**（内置模型 Kimi K3.1 Pro/GLM-5.3 等）——日常版另有每日 100 积分",
+  "region": "global",
+  "url": "https://www.codearts.cn",
+  "rule": "Skill 创新赛活动期间每日签到",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "华为码道",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 100
+ },
+ {
+  "id": "ernie-5.5-flash-free",
+  "provider": "百度 ERNIE",
+  "category": "official_cn",
+  "type": "limited_promo",
+  "value": "ERNIE 5.5 Flash Preview（baidu/ernie-5.5-flash-preview:free）**限免**：共享每日 50 次/每分钟 20 次",
+  "region": "cn",
+  "url": "https:// yiyan.baidu.com",
+  "rule": "限免期以官方为准；共享额度",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "百度 ERNIE",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ]
+ },
+ {
+  "id": "longcat-2.5-free-2w",
+  "provider": "美团 LongCat",
+  "category": "official_cn",
+  "type": "limited_promo",
+  "value": "**LongCat 2.5 自 11-09 起限免两周**（WorkBuddy 内 Hy4 flash 可用；其他模型及腾讯云 TokenHub 接口不含在本次限免）",
+  "region": "cn",
+  "url": "https://longcat.ai",
+  "rule": "限免至约 11-23；限 WorkBuddy 内指定模型",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "美团 LongCat",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ]
+ },
+ {
+  "id": "rime-monthly-50usd",
+  "provider": "Rime",
+  "category": "official_global",
+  "type": "recurring_promo",
+  "value": "Rime 每月送 **$50 语音模型额度**（所有模型）",
+  "region": "global",
+  "url": "https://rime.ai",
+  "rule": "每月发放",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "Rime",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 190
+ },
+ {
+  "id": "drex-monthly-5usd",
+  "provider": "Drex",
+  "category": "official_global",
+  "type": "recurring_promo",
+  "value": "Drex 每月送 **$5 模型调用额度**（Drex 决策系列含 Max v1.1/Max v2 等）",
+  "region": "global",
+  "url": "https://drexdrexdrex.com",
+  "rule": "每月发放",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "Drex",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 19
+ },
+ {
+  "id": "livekit-monthly-2.5usd",
+  "provider": "LiveKit Inference",
+  "category": "official_global",
+  "type": "recurring_promo",
+  "value": "LiveKit Inference 每月送 **$2.50 模型推理额度**（Gemini/DeepSeek 等支持模型）",
+  "region": "global",
+  "url": "https://livekit.io",
+  "rule": "每月 1 日刷新，未用额度不结转",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "LiveKit",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 9
+ },
+ {
+  "id": "ant-bailing-monthly-10",
+  "provider": "蚂蚁百灵",
+  "category": "official_cn",
+  "type": "recurring_promo",
+  "value": "蚂蚁百灵开放平台每月 1 日送 **10 元抵扣券**（平台所有模型按实际计费抵扣）",
+  "region": "cn",
+  "url": "https://bailing.antgroup.com",
+  "rule": "每月 1 日发放",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "蚂蚁百灵",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "daily_wan": 6
+ },
+ {
+  "id": "edgeone-makers-50w",
+  "provider": "腾讯 EdgeOne Makers",
+  "category": "compute",
+  "type": "recurring_promo",
+  "value": "EdgeOne Makers 每月送 **50 万 Token**（内置 DeepSeek V4 Pro/V4 Flash 等）",
+  "region": "global",
+  "url": "https://edgeone.ai",
+  "rule": "每月发放",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "腾讯 EdgeOne",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "tokens_wan": 50
+ },
+ {
+  "id": "tencent-adp-15k",
+  "provider": "腾讯云 ADP",
+  "category": "compute",
+  "type": "recurring_promo",
+  "value": "腾讯云 ADP 体验版每月送 **15,000 PU**（Auto 模型，不含自定义模型与专属算力）",
+  "region": "global",
+  "url": "https://cloud.tencent.com",
+  "rule": "每月重置，未用完不累计",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "腾讯云 ADP",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ]
+ },
+ {
+  "id": "elevenlabs-free-10k",
+  "provider": "ElevenLabs",
+  "category": "official_global",
+  "type": "free_tier",
+  "value": "ElevenLabs 免费档每月 **1 万积分**（Eleven v4/v4 Turbo/v3 等语音模型）",
+  "region": "global",
+  "url": "https://elevenlabs.io",
+  "rule": "每月免费额度",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "ElevenLabs",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ]
+ },
+ {
+  "id": "zed-student-10usd",
+  "provider": "Zed",
+  "category": "official_global",
+  "type": "student",
+  "value": "Zed 在读大学生每月 **$10 AI 额度，持续一年**（Zed 托管模型中学生档可用部分，如 Claude Sonnet 系）",
+  "region": "global",
+  "url": "https://zed.dev",
+  "rule": "在读大学生认证；每月到账持续 12 个月",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "Zed",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "gate": "student",
+  "gate_label": "🎓 学生认证",
+  "daily_wan": 53
+ },
+ {
+  "id": "telnyx-25usd",
+  "provider": "Telnyx",
+  "category": "official_global",
+  "type": "signup_bonus",
+  "value": "Telnyx 新用户送 **$25 AI 额度**（含自营 Inference 模型）",
+  "region": "global",
+  "url": "https://telnyx.com",
+  "rule": "新用户注册",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "Telnyx",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "tokens_wan": 4762
+ },
+ {
+  "id": "ant-bailing-new-20",
+  "provider": "蚂蚁百灵",
+  "category": "official_cn",
+  "type": "signup_bonus",
+  "value": "蚂蚁百灵新用户送 **20 元 Token 消费券**（平台模型调用抵扣，以券面为准）",
+  "region": "cn",
+  "url": "https://bailing.antgroup.com",
+  "rule": "新用户注册",
+  "verify_status": "verified",
+  "verified_at": "2026-11-16T10:07:36Z",
+  "difficulty": 1,
+  "published": true,
+  "via": "free",
+  "group": "蚂蚁百灵",
+  "notes": "来源：AIHOT（aihot.news）Token 羊毛页，官方页核实于 11-14/15；站主未逐一登录复验",
+  "sources": [
+   {
+    "url": "https://aihot.news/free-tokens",
+    "title": "AIHOT Token 羊毛聚合页"
+   }
+  ],
+  "tokens_wan": 1143
  }
 ]
