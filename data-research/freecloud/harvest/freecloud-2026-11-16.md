@@ -1,7 +1,7 @@
 # freecloud 采集快照 2026-11-16
 
-- 采集时间: 2026-11-16T07:28:21Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: render-pricing | 👀观察中: northflank-pricing, himitsushell, aliyun-bailian-freequota, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-16T12:31:43Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: aliyun-bailian-freequota | 👀观察中: daytona-pricing, hf-spaces, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
 
 ##    InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
@@ -29,10 +29,10 @@
 - 🔎 **sandbox** `oxes10 concurrent sandboxesThe maximum number of sandboxes that can run at the same time. - Default sandbox CPU and RAM [Start for Free](https://console.e2b.dev/sign-up?signup_source=pricing_hobby) $150 /`
 - 🔎 **sandbox** `lator - Everything in Hobby, usage billed by the second - Sessions up to 24 hours - 100 concurrent sandboxes, expandable to 1,100 - Custom sandbox CPU and RAM [Choose Pro](https://console.e2b.dev/sign-up?s`
 
-##    Daytona 定价（Agent 沙盒）（daytona-pricing）
+## 👀 Daytona 定价（Agent 沙盒）（daytona-pricing）
 - 状态: ok | https://daytona.io/pricing
 - 🔎 **12GB GDDR6** `them down just as fast. Use what you need, when you need it. $200 in free compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h`
-- 🔎 **12GB GDDR6** `ree compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h GPU ### Preemptible ($/hour) Nvidia B300 $4.08/h Nvidia B200 $3.59/`
+- 🔎 **12GB GDDR6** `ree compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h GPU ### Preemptible ($/hour) Nvidia B300 $5.17/h Nvidia B200 $4.30/`
 - 🔎 **12GB GDDR6** `t them down just as fast. Use what you need, when you need it. $200 in free compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h`
 - 🔎 **12GB GDDR6** `them down just as fast. Use what you need, when you need it. $200 in free compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 All billing is calculated`
 - 🔎 **12GB GDDR6** `ree compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 All billing is calculated per second. All billing is calculated per second. Sign up for a free t`
@@ -210,7 +210,7 @@
 - 🔎 **runs** `*1 min** wall clock time / run - **Unlimited** public vals - **3 days** log retention - **100,000** runs / day - **Email** yourself Pro For professionals and solopreneurs **$21**/mo Save $50 (2 months`
 - 🔎 **runs** `10 min** wall clock time / run - **2,000** private vals - **10 days** log retention - **1,000,000** runs / day - **Email** anyone Business For collaboration and production use **Starting from** **$16`
 
-## 👀 Northflank 定价（免费 sandbox 服务）（northflank-pricing）
+##    Northflank 定价（免费 sandbox 服务）（northflank-pricing）
 - 状态: ok | https://northflank.com/pricing
 - 🔎 **12 vCPU and 48 GB** `jobs, and 1 database - Up to $20/mo of resources on Northflank Cloud - 1 BYOC cluster, up to 12 vCPU and 48 GB - Always on, no sleeping 2. ## Pay as you go Usage-based From $0.01667 per vCPU hour`
 - 🔎 **140 MiB/s per disk included | $7** `on and service volumes | $0.11657/ GiB / month | Not billed | | Additional IOPSFirst 3,000 IOPS and 140 MiB/s per disk included | $7.37/ 1,000 IOPS / month | Not billed | | Additional throughputFirst 3,000 IOPS and 140 MiB/s per dis`
@@ -378,7 +378,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-## 🔔 Render 定价（免费 Web 服务）（render-pricing）
+##    Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -443,7 +443,7 @@
 - 🔎 **25 GiB-hours/month included +$0** `Memory | CPU | Disk | | --- | --- | --- | --- | | **Free** | N/A | N/A | N/A | | **Workers Paid** | 25 GiB-hours/month included +$0.0000025 per additional GiB-second | 375 vCPU-minutes/month \+ $0.000020 per additional vCPU-second`
 - 🔎 **375 vCPU-minutes/month \+ $0** `/A | N/A | | **Workers Paid** | 25 GiB-hours/month included +$0.0000025 per additional GiB-second | 375 vCPU-minutes/month \+ $0.000020 per additional vCPU-second | 200 GB-hours/month +$0.00000007 per additional GB-second | You`
 
-##    HuggingFace 定价（Spaces 免费 CPU 档）（hf-spaces）
+## 👀 HuggingFace 定价（Spaces 免费 CPU 档）（hf-spaces）
 - 状态: ok | https://huggingface.co/pricing
 - 🔎 **500TB? [Contact sales](https://huggingface** `DN included at no extra cost. AWS S3 $23 Backblaze Overdrive $15 HF Hub $8–12 Need more than 500TB? [Contact sales](https://huggingface.co/contact/sales) for custom pricing. Base $12 /TB/mo Public repositories $18 /TB/mo Private r`
 - 🔎 **50TB+ -20%** `ales) for custom pricing. Base $12 /TB/mo Public repositories $18 /TB/mo Private repositories 50TB+ -20% $10 /TB/mo Public repositories $16 /TB/mo Private repositories 200TB+ -25% $9 /TB/mo Public`
@@ -546,9 +546,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794814090084) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794814090084) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794814090084) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794832292506) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794832292506) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794832292506) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -589,7 +589,7 @@
 - 🔎 **24 GB DDR5 | 8 vCPU | 12 TB · **40 Gbps** | 450 GB **NVMe** | $69** `/mo $99.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=16&os=ubuntu)14-day money-back | | 24 GB DDR5 | 8 vCPU | 12 TB · **40 Gbps** | 450 GB **NVMe** | $69.98 /mo $139.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=24&os=ubuntu)14-day money-back`
 - 🔎 **32 GB DDR5 | 12 vCPU | 12 TB · **40 Gbps** | 750 GB **NVMe** | $1** `/mo $139.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=24&os=ubuntu)14-day money-back | | 32 GB DDR5 | 12 vCPU | 12 TB · **40 Gbps** | 750 GB **NVMe** | $109.98 /mo $219.95 -50% | [Deploy](https://welcome.cloudzy.com/cart?ram=32&os=ubuntu)14-day money-bac`
 
-## 👀 阿里云百炼新人免费额度（官方帮助中心规则页）（aliyun-bailian-freequota）
+## 🔔 阿里云百炼新人免费额度（官方帮助中心规则页）（aliyun-bailian-freequota）
 - 状态: ok | https://help.aliyun.com/zh/model-studio/new-free-quota
 - 🔎 **免费额度** `当您首次开通阿里云百炼时，平台会自动为您发放各模型的新人专属免费额度。 ## 规则说明 ### 有效期 免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）。额度到期或耗尽后，继续调用模型推理服务将[产生计费](htt`
 - 🔎 **免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）** `当您首次开通阿里云百炼时，平台会自动为您发放各模型的新人专属免费额度。 ## 规则说明 ### 有效期 免费额度的有效期为 90 天，从开通阿里云百炼、模型发布或模型申请通过之日起计算（以较晚者为准）。额度到期或耗尽后，继续调用模型推理服务将[产生计费](https://help.aliyun.com/zh/model-studio/billing-for-model-studio)。 **重要`
@@ -630,16 +630,16 @@
 
 ## 👀 GPU.nz（新西兰 GPU 云定价）（gpunz）
 - 状态: ok | https://gpu.nz/en/pricing
-- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.031 | $0.061 | $1.46 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.`
-- 🔎 **24 GB+ | $0** `| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.031 | $0.061 | $1.46 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
-- 🔎 **48 GB+ | $0** `.46 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
-- 🔎 **80 GB+ | $0** `| $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $21** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.88/h | $23.40/h | 4 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $17.51/h | $21.28/h | 2`
-- 🔎 **180gb) | 180 GB | $17** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.88/h | $23.40/h | 4 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $17.51/h | $21.28/h | 27 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $3.46/h | $10.65/h`
-- 🔎 **141gb) | 141 GB | $3** `nz/en/gpu/b200-180gb) | 180 GB | $17.51/h | $21.28/h | 27 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $3.46/h | $10.65/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.77/h | $8.7`
-- 🔎 **141gb) | 141 GB | $6** `en/gpu/h200-141gb) | 141 GB | $3.46/h | $10.65/h | 23 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.77/h | $8.76/h | 51 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.49/h | $3.88/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.77/h | $8.76/h | 51 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.49/h | $3.88/h | 15 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.59/h | $6.86/h`
-- 🔎 **94gb) | 94 GB | $5** `n/gpu/h100-sxm-80gb) | 80 GB | $3.49/h | $3.88/h | 15 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.59/h | $6.86/h | 9 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.14/h | $5.20/`
+- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0013 | $0.038 | $0.075 | $1.80 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0039 | $0.116 | $0.231 | $5`
+- 🔎 **24 GB+ | $0** `| | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0013 | $0.038 | $0.075 | $1.80 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0039 | $0.116 | $0.231 | $5.54 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.237 | $0.474 | $11.38`
+- 🔎 **48 GB+ | $0** `.80 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0039 | $0.116 | $0.231 | $5.54 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.237 | $0.474 | $11.38 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.237 | $0.474 | $11.38`
+- 🔎 **80 GB+ | $0** `| $5.54 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.237 | $0.474 | $11.38 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.237 | $0.474 | $11.38 | Prices and availability come from the live catalog and update au`
+- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $22.33/h | 6 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $20.21/h | 2`
+- 🔎 **180gb) | 180 GB | $15** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $22.33/h | 6 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $20.21/h | 24 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.26/h | $9.32/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $20.21/h | 24 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.26/h | $9.32/h | 14 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.56`
+- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.26/h | $9.32/h | 14 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.56/h | 59 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.49/h | $6.75/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.56/h | 59 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.49/h | $6.75/h | 17 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $6.39/h`
+- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.49/h | $6.75/h | 17 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.75/h | $6.39/h | 4 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.37/h | $5.55/`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
