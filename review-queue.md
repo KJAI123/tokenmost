@@ -1,49 +1,52 @@
 # 人工复核队列（sync.py 每次运行自动重算；人工修复对应条目后自动消失）
 
 机器不能判断的事都在这里：官方页面有变、来源失联、超期未复核、RSS 草稿。
-处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:"verified"；不实→删）。
+处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:"verified"；不实→归档并保留证据）。
 
-- **待复核** `qianfan-signup`（文心千帆）：官方站存在模型赠送资源下线公告，缺新注册后仍送给旧名单中 17 款模型的现行规则。
-- **待复核** `xinghuo-signup`（讯飞星火）：源 xfyun-spark-docs 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `qianfan-signup`（文心千帆）：源 qianfan-quota 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `xinghuo-signup`（讯飞星火）：源 xfyun-spark-docs 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-11-11 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-08 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `google-student`（Google AI Studio）：官网按国家和账号展示资格，未核实统一的 12 月 31 日截止及可重复领取。
+- **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `google-student`（Google AI Studio）：官网按国家和账号展示资格，未核实统一的 12 月 31 日截止及可重复领取。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `sambanova-free`（SambaNova）：源 sambanova-limits 页面于 2026-11-15 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `gpushare-nov`（恒源云）：文档写 11 月但未注明年份，当前活动页未提供可核实条款。
+- **待复核** `gpushare-nov`（恒源云）：文档写 11 月但未注明年份，当前活动页未提供可核实条款。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `302ai-payg`（302.AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ohmygpt-glmfree`（OhMyGPT）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `sensenova-lite`（商汤日日新）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-bailian-limited-free`（阿里云百炼）：现行官方表未找到原条目所列全部模型和区域的限免口径，逐模型查官方活动与价格。
+- **待复核** `xfyun-offpeak`（讯飞星火）：源 xfyun-coding-plan 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-bailian-newuser-quota`（阿里云百炼）：源 bailian-quota 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-bailian-limited-free`（阿里云百炼）：现行官方表未找到原条目所列全部模型和区域的限免口径，逐模型查官方活动与价格。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-minimax-mplan`（MiniMax）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-volc-21pro-daily`（火山方舟）：公开文章的活动口径与协作计划文档无法相互确认，需以当前模型活动页核对。
+- **待复核** `deep-volc-21pro-daily`（火山方舟）：公开文章的活动口径与协作计划文档无法相互确认，需以当前模型活动页核对。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-xunfei-coding-plan`（讯飞星辰 MaaS）：源 xfyun-coding-plan 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xunfei-39-crash`（讯飞星辰 MaaS）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-zhipu-night-global`（智谱 BigModel）：现有记录引用社区内容，未找到当前官方规则确认夜间窗口和翻倍范围。
+- **待复核** `deep-zhipu-night-global`（智谱 BigModel）：现有记录引用社区内容，未找到当前官方规则确认夜间窗口和翻倍范围。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-trae-intl-pricing`（Trae 国际版）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-codebuddy-free-kimi`（CodeBuddy（腾讯））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-codegeex-free`（CodeGeeX（智谱系））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-fitten-free`（Fitten Code（非十科技））：原因见 sync 运行摘要 → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-comate-autofree-r2`（文心快码 Comate）：官方价格页内容未公开呈现，云社区文章只能佐证线索，付费门槛和日期仍需购买页确认。
+- **待复核** `deep-comate-autofree-r2`（文心快码 Comate）：官方价格页内容未公开呈现，云社区文章只能佐证线索，付费门槛和日期仍需购买页确认。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-comate-signup`（文心快码 Comate）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-laozhang-pricing`（laozhang.ai（老张））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-windsurf-devin`（Windsurf（并入Devin/Cognition））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xai-grok-code-status`（xAI（Grok））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-xunfei-1024-10yi-r2`（讯飞星辰 MaaS）：公开入口为页面壳，未找到能确认 10 亿资格与 11 月 24 日截止的现行官方原文，需登录控制台确认。
+- **待复核** `deep-xunfei-1024-10yi-r2`（讯飞星辰 MaaS）：公开入口为页面壳，未找到能确认 10 亿资格与 11 月 24 日截止的现行官方原文，需登录控制台确认。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-zhipu-taobao-resale-warning`（智谱 BigModel）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xai-grok-code-status-r3`（xAI（Grok））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-gemini-cli-retired-r4`（Google Gemini CLI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-qoder-daily-credits`（Qoder CN（阿里））：活动入口需登录，官方账号与订阅页未说明每日 100 Credits。
+- **待复核** `deep-qoder-daily-credits`（Qoder CN（阿里））：活动入口需登录，官方账号与订阅页未说明每日 100 Credits。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-together-nofree-r5`（Together AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-kimi-k25-offline-r6`（Kimi（月之暗面））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xfyun-spark-freepack-r6`（讯飞开放平台）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-grok-codefast-r6`（xAI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-zhipu-trialplan-r7`（智谱 BigModel）：公开套餐页未证实当前 5 天体验的实际资格和额外日额度，须登录客户端。
+- **待复核** `deep-zhipu-trialplan-r7`（智谱 BigModel）：公开套餐页未证实当前 5 天体验的实际资格和额外日额度，须登录客户端。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-zhipu-flash-correction-r7`（智谱 BigModel）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `cline-pass-deepseek`（Cline）：当前 Cline 官方定价页未列该 $9.99 套餐，具体订阅资格需核对。
+- **待复核** `cline-pass-deepseek`（Cline）：当前 Cline 官方定价页未列该 $9.99 套餐，具体订阅资格需核对。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qoder-deepseek-free`（Qoder）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `doubao-daily-quota`（豆包）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `longcat-daily-free`（美团 LongCat）：官方快速开始未列每日 5,000 万 Tokens，需核对最新定价或账户限额。
-- **待复核** `zcode-daily-1e8`（智谱 BigModel）：官方日志只证实邀请活动上线，具体日赠量及期限须在客户端验证。
-- **待复核** `workbuddy-free`（腾讯 WorkBuddy）：公开产品页未确认公测赠送和当前免费档规则，需查国内站结算说明。
+- **待复核** `longcat-daily-free`（美团 LongCat）：官方快速开始未列每日 5,000 万 Tokens，需核对最新定价或账户限额。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `zcode-daily-1e8`（智谱 BigModel）：官方日志只证实邀请活动上线，具体日赠量及期限须在客户端验证。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `workbuddy-free`（腾讯 WorkBuddy）：公开产品页未确认公测赠送和当前免费档规则，需查国内站结算说明。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `monkeycode-daily`（MonkeyCode）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `fireworks-payg`（Fireworks AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `stepfun-75d`（阶跃星辰）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -54,7 +57,7 @@
 - **待复核** `comet-free`（Perplexity Comet）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qwen-app-5h-limit`（千问）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `poe-daily-points`（Poe）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `baseten-starter-30`（Baseten）：当前官方价格页未确认注册即送 $30，需核对 Starter 账户新客权益。
+- **待复核** `baseten-starter-30`（Baseten）：当前官方价格页未确认注册即送 $30，需核对 Starter 账户新客权益。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xiaomi-mimo-code`（小米 MiMo Code）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `huawei-codearts-daily`（华为云码道 CodeArts）：官网入口为登录应用，需确认每日额度、有效期及账号资格。
-- **源失联** `linuxdo-rss`：连续 47 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **待复核** `huawei-codearts-daily`（华为云码道 CodeArts）：官网入口为登录应用，需确认每日额度、有效期及账号资格。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **源失联** `linuxdo-rss`：连续 48 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
