@@ -3,6 +3,33 @@
  "note": "数据源注册表。type: json=结构化API可自动更新内容；watch=哈希监控（页面没变=自动续验证戳，变了=进复核队列+降级待复核）；rss=关键词筛选只生成草稿。新增源往这里加，sync.py 自动生效。",
  "sources": [
   {
+   "id": "zhipu-coding-overview",
+   "type": "watch",
+   "url": "https://docs.bigmodel.cn/cn/coding-plan/overview",
+   "deals": [
+    "deep-zhipu-coding-plan-points"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "zcode-trial-configuration",
+   "type": "watch",
+   "url": "https://zcode.z.ai/cn/docs/configuration",
+   "deals": [
+    "deep-zhipu-trialplan-r7"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "autoclaw-m11w3-official",
+   "type": "watch",
+   "url": "https://autoclaw.zhipuai.cn/blog/news/M11W3/",
+   "deals": [
+    "autoclaw-m11w3-login"
+   ],
+   "auto_verify": false
+  },
+  {
    "id": "microsoft-startups-milestones",
    "type": "watch",
    "url": "https://learn.microsoft.com/en-us/startups/standard-benefits/unlock-more-benefits",
@@ -59,8 +86,10 @@
    "type": "watch",
    "url": "https://docs.bigmodel.cn/cn/update/promotion",
    "deals": [
-    "zhipu-signup"
-   ]
+    "zhipu-signup",
+    "zhipu-pinhaomo"
+   ],
+   "auto_verify": false
   },
   {
    "id": "bailian-quota",
@@ -315,30 +344,34 @@
   {
    "id": "zcode-changelog",
    "type": "watch",
-   "url": "https://zcode.z.ai/changelog",
+   "url": "https://zcode.z.ai/cn/changelog",
    "deals": [
     "zcode-linuxdo"
    ],
-   "confirm_runs": 2
+   "confirm_runs": 2,
+   "auto_verify": false
   },
   {
    "id": "bigmodel-pricing",
    "type": "watch",
    "url": "https://docs.bigmodel.cn/cn/guide/start/pricing.md",
    "deals": [
-    "zhipu-signup",
-    "zhipu-flash-free"
+    "zhipu-flash-free",
+    "deep-zhipu-flash-correction-r7"
    ],
-   "confirm_runs": 2
+   "confirm_runs": 2,
+   "auto_verify": false
   },
   {
    "id": "bigmodel-activity",
    "type": "watch",
    "url": "https://bigmodel.cn/activity/glm-coding-1024",
    "deals": [
-    "zcode-linuxdo"
+    "zcode-linuxdo",
+    "zcode-5yi-nov"
    ],
-   "confirm_runs": 3
+   "confirm_runs": 3,
+   "auto_verify": false
   },
   {
    "id": "xfyun-coding-plan",

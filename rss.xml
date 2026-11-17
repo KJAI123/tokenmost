@@ -11,7 +11,7 @@
       <link>https://docs.bigmodel.cn/cn/update/promotion</link>
       <guid isPermaLink="false">zhipu-signup</guid>
       <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：登录获取邀请链接，邀请方每月最多计 10 位新用户（优惠以官方页面为准）</description>
+      <description>邀请奖励 · 规则：经专属链接邀请新用户完成注册及实名认证。邀请方每月最多计 10 位新用户。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>DeepSeek：DeepSeek 官方高峰价：Flash ¥2/8，V4-Pro ¥9/27（每百万输入/输出）</title>
@@ -203,11 +203,11 @@
       <description>注册赠送 · 规则：公开条款未注明统一金额，实际到账以 Console 为准（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：GLM-4.7-Flash、GLM-4-Flash-250414、GLM-Z1-Flash 输入与输出免费</title>
+      <title>智谱 BigModel：BigModel 定价表列出 8 款免费模型，覆盖文本、视觉、图像与视频生成</title>
       <link>https://docs.bigmodel.cn/cn/guide/start/pricing.md</link>
       <guid isPermaLink="false">zhipu-flash-free</guid>
       <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：GLM-5.3-Flash 仍按输入和输出计费，定价表的限时免费指缓存存储（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：免费文本和视觉模型的输入、输出为 0 元。GLM-5.3-Flash API 按量计费，限免的是缓存存储。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>DeepSeek：DeepSeek Flash 缓存命中输入每百万 ¥0.04，空闲时段 ¥0.02</title>
@@ -448,32 +448,18 @@
       <description>工具接入 · 规则：使用 Coding Plan API Key 和官方文档指定的 Anthropic 兼容端点（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：夜间 Global Build：每晚 23:00–次日 09:00 ZCode 内 GLM-5.3-Flash 消耗归零</title>
-      <link>https://post.smzdm.com/p/aqrx263p</link>
-      <guid isPermaLink="false">deep-zhipu-night-global</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：活动期 2026-09-03 至 09-20；仅付费套餐用户 · 截止 长期·每晚 23:00–次日 09:00（非一次性窗口）（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：ZCode Start Plan 新用户体验包：登录 ZCode 即领数百万级 tokens</title>
-      <link>https://zcode.z.ai</link>
-      <guid isPermaLink="false">deep-zhipu-start-plan</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：仅新用户；2026-10-28 23:59 前有效；入口=客户端活动卡 · 截止 2026-10-28（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：GLM Coding Plan 体验卡每张 2,000 积分，可用 GLM-5.3 和 GLM-5.3-Flash</title>
+      <title>智谱 BigModel：GLM Coding Plan 体验卡每张 2,000 积分，支持 GLM-5.3 和 GLM-5.3-Flash</title>
       <link>https://docs.bigmodel.cn/cn/coding-plan/faq</link>
       <guid isPermaLink="false">deep-zhipu-trial-card</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：须先获得有效体验卡，积分与可用工具以卡和官方说明为准（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：须先取得有效体验卡，再按卡片规则使用。积分用完体验结束。（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：智谱 Coding Plan Lite 每 5 小时 2,000 积分，每周 10,000 积分</title>
+      <title>智谱 BigModel：Coding Plan 五小时／每周积分：Lite 2,000／10,000，Pro 12,000／60,000，Max</title>
       <link>https://docs.bigmodel.cn/cn/coding-plan/overview</link>
       <guid isPermaLink="false">deep-zhipu-coding-plan-points</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>套餐订阅 · 规则：两个上限同时生效，工作日 14:00–18:00 为 UTC+8 高峰，其余时段按半额扣积分（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：两个周期上限同时生效。工作日 14:00–18:00（北京时间）为高峰，其他时段模型积分按 50% 抵扣。仅限支持的工具。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Trae 国内版：TRAE 国内付费档 Lite/Pro/Pro+/Ultra 标价 ¥49/99/239/699 每月</title>
@@ -511,11 +497,11 @@
       <description>免费模型 · 规则：⚠️ 底册「基础版永久免费」需修正：永久免费但限额500 Credits/月；官方 pricing 页 JS 未直核（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>CodeGeeX（智谱系）：个人版完全免费、功能不阉割（补全/注释/翻译/问答全开）</title>
+      <title>CodeGeeX（智谱系）：CodeGeeX IDE 插件免费，提供代码补全、解释和问答</title>
       <link>https://codegeex.cn</link>
       <guid isPermaLink="false">deep-codegeex-free</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：长期免费策略；无公开额度上限（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：从官方插件市场安装，具体模型权限和用量以插件显示为准。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Fitten Code（非十科技）：个人免费（官方宣传终身免费），主打低延迟</title>
@@ -588,18 +574,11 @@
       <description>限时活动 · 规则：⚠️ 领取弹窗上方有勾选框：勾选=免费额度用完自动转按量计费，务必取消勾选再确认；实测消耗极快（作者不到一天用完）；有效期未见官方原文（知乎口径31天，中）；Base URL https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions，Key 形如 ak-xxx；可接 workbuddy（AI 自行配置自定义模型） · 截止 2026-11-24T00:00:00+08:00（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：ZCode 更新日志确认已上线好友邀请活动</title>
-      <link>https://zcode.z.ai/cn/changelog</link>
-      <guid isPermaLink="false">deep-zhipu-zcode-invite-r2</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>邀请奖励 · 规则：当前奖励金额和领取资格在客户端查看（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：⚠️ 风险警示：淘宝出现第三方「GLM-5.3 Coding Plan 月卡 ¥79.9 不限 token」代充/共享服</title>
+      <title>智谱 BigModel：GLM Coding Plan 仅限订阅人使用，禁止共享、倒卖和中转</title>
       <link>https://docs.bigmodel.cn/cn/coding-plan/usage-notes</link>
       <guid isPermaLink="false">deep-zhipu-taobao-resale-warning</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>避雷 · 规则：收录站绝不引流此类商品；官方购买通道仅 bigmodel.cn/glm-coding 与 zcode.z.ai（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>避雷 · 规则：违规可导致限流、冻结或账号封禁。具体处置由平台核查，申诉入口见控制台。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>xAI（Grok）：R3 复核维持 R2 结论：API 注册赠送停发无复辟</title>
@@ -628,13 +607,6 @@
       <guid isPermaLink="false">deep-gemini-cli-retired-r4</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>避雷 · 规则：Antigravity CLI 免费档极紧（社区口径~20 agent请求/天，单源低置信）；与 AI Pro 订阅不共享配额池；API 免费层（AI Studio 实查法）仍是可用主力（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 AutoClaw：AutoClaw（智谱官方金融 AI）周常登录福利系列（连续三期 100M/期）：**本期 11-16~22 登录直接领</title>
-      <link>https://autoclaw.zhipuai.cn</link>
-      <guid isPermaLink="false">deep-autoclaw-promos</guid>
-      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：国内站 autoclaw.zhipuai.cn 与国际站 autoclaw.z.ai 规则不同勿混淆；日签额当天24:00过期；官方客户端活动卡发放 · 截止 2026-11-15（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Qoder CN（阿里）：口径更新：CN 站每天 10:00 领 100 Credits（30天有效）</title>
@@ -679,18 +651,18 @@
       <description>避雷 · 规则：长上下文计费规则：prompt 达阈值整请求按高档计费；grok-4.20+ 不支持 logprobs；羊毛面维持 X Subscription 结论（R2-R4）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：【老板客户端截图直核】ZCode 体验套餐 ¥0/5 天：GLM-5.3 每日 300 万 + GLM-5.3-Flas</title>
-      <link>https://zcode.z.ai</link>
+      <title>ZCode：ZCode 新用户绑定 BigModel，5 天内每天可用 800 万 Tokens</title>
+      <link>https://zcode.z.ai/cn</link>
       <guid isPermaLink="false">deep-zhipu-trialplan-r7</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：入口=ZCode 客户端左下角「升级套餐」页→体验套餐；新用户绑定 BigModel 账号生效；每日刷新制（非一次性总额）；每日 800 万≈中型项目 1-2 轮完整 Agent 会话（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：首次使用起自动发放。每天 GLM-5.3 300 万和 GLM-5.3-Flash 500 万，5 天后结束。（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：【勘误】GLM-5.3-Flash 为付费模型：输入 0.8/输出 2.8 元每百万（缓存命中 0.23）</title>
+      <title>智谱 BigModel：GLM-5.3-Flash API 每百万 Tokens 输入 ¥0.8、输出 ¥2.8、缓存命中 ¥0.23</title>
       <link>https://docs.bigmodel.cn/cn/guide/start/pricing</link>
       <guid isPermaLink="false">deep-zhipu-flash-correction-r7</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>避雷 · 规则：修正对象：deep-zhipu-free-models（R1）「旗舰 GLM-5.3-Flash 限时免费」表述有误——旧 deals.json「GLM-5.3-Flash 不免费（0.8 元/百万起）」反而是对的；跑 5.3-Flash 走体验套餐每日 500 万或按量（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期低价 · 规则：定价表的限时免费仅适用于缓存存储。标准推理价格按实际用量计费。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>通义灵码→Qoder CN：通义灵码（个人）已升级为 Qoder CN，统一 Credits 计量</title>
@@ -749,18 +721,11 @@
       <description>长期活动 · 规则：客户端内领取（网页版仅引导下载）；每笔自发放起 30 天有效；消耗顺序=活动赠送→原有免费→付费（先吃赠送不浪费）；单账号（官方明文禁多号/批量/模拟器）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：智谱每日 3 亿 token（Weekend Build 已升级为每日放量，老板用户侧亲测口径）：GLM-5.3-Fla</title>
-      <link>https://docs.bigmodel.cn/cn/update/promotion</link>
-      <guid isPermaLink="false">zhipu-weekend-build</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：App 每日 19:00 开领，仅 23:00–次日 09:00 可用（窗口极窄，错过作废）；先到先得（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：受邀好友首订 GLM Coding Plan 享九折，邀请方获实付金额 10% 赠金</title>
+      <title>智谱 BigModel：受邀好友首次订阅 GLM Coding Plan 享九折，邀请方获首单实付金额的 10% 赠金</title>
       <link>https://docs.bigmodel.cn/cn/update/promotion</link>
       <guid isPermaLink="false">zhipu-pinhaomo</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>邀请奖励 · 规则：需有效首订，满 30 单另有额外奖励，按活动条款执行（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>邀请奖励 · 规则：面向新用户或从未付费订阅的用户。按官方规则在收到邀请后 72 小时内完成，首单优惠每人一次。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>美团 LongCat：LongCat-Flash-Chat（560B 开源旗舰）API 每日免费额度高达 5000 万 tokens</title>
@@ -768,13 +733,6 @@
       <guid isPermaLink="false">longcat-daily-free</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：每日免费额度（数额待控制台实锤）；开发者注册即用；模型权重已在 GitHub/HuggingFace 开源可自部署（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：ZCode 拉新折扣链接：经此链接注册 ZCode+24 小时内发出首条消息，双方即领「每天 1 亿 token」档拉新</title>
-      <link>https://zcode.z.ai/invite/L5BLKJE7</link>
-      <guid isPermaLink="false">zcode-daily-1e8</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description>折扣码 · 规则：新用户经邀请链接注册→24h 内首条消息→双方到账；每日刷新型，先到先得（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>腾讯 WorkBuddy：WorkBuddy 国内版（workbuddy.cn/腾讯云）：公测期送 5000 Credits + 免费版每月自动发</title>
@@ -917,13 +875,6 @@
       <description>长期免费 · 规则：5 小时窗口制（用量窗口滚动）；窗口内 agent 任务消耗额度较快（实测 6 分 44 秒任务即触发上限提示）；等待重置或订阅后发「继续」续跑（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 BigModel：z.ai 国际版订阅 9 折邀请码：经该链接购买 GLM Coding Plan 首单享 9 折，可与包年 7 折叠加</title>
-      <link>https://z.ai/subscribe?ic=Y2H91IWSU3</link>
-      <guid isPermaLink="false">zai-subscribe-coupon</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>折扣码 · 规则：结账时 ic 邀请码自动生效享 9 折；仅国际版 z.ai 订阅可用，国内 bigmodel.cn 不适用 · 折扣码见站内卡片（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>七牛云：七牛云 Conatus 实名用户每天可用 1 亿 Tokens，活动至 11 月 30 日</title>
       <link>https://qiniu.com/ai/free-models/conatus-2026</link>
       <guid isPermaLink="false">qiniu-conatus-1e8</guid>
@@ -1055,13 +1006,6 @@
       <guid isPermaLink="false">azure-startups-5k</guid>
       <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期活动 · 规则：面向符合条件的早期初创企业。需要符合条件的新 Azure 账号、LinkedIn 身份验证和信用卡；$5,000 档需验证企业已注册，额度最长有效 180 天。（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：1111 大促：GLM Coding Plan **年付 7 折**（11-01 至 11-15 官方 promotio</title>
-      <link>https://docs.bigmodel.cn/cn/update/promotion</link>
-      <guid isPermaLink="false">zhipu-1111-coding-7zhe</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：年付一次性支付享 7 折；活动窗口 11-01 至 11-15（11-15 后恢复原价）；叠加拼好模 9 折邀请通道规则以活动页为准（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>OpenAI：ChatGPT Pro/Business 订阅月月白送 API 额度：Pro 按档每月领 $100/$200/$500</title>
@@ -1197,13 +1141,6 @@
       <description>折扣码 · 规则：新用户经邀请链接注册→登录桌面端→双方发奖；单账号；奖励档位以活动页实时为准（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 AutoClaw：双十一福利：**11-09（周一）00:00 起**登录 AutoClaw 即领 **50M Tokens**（每账号限</title>
-      <link>https://autoclaw.zhipuai.cn/blog/news/M11W2</link>
-      <guid isPermaLink="false">autoclaw-double11-50m</guid>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：活动窗口 11-09 00:00 至 11-15 23:59；登录即到账每账号限领一次；积分 11-15 23:59 过期作废；不与每周福利冲突可同领 · 截止 2026-11-15（优惠以官方页面为准）</description>
-    </item>
-    <item>
       <title>Perplexity：Perplexity Education Pro 学生教育者专享：**\$10/月（Pro \$20 的 5 折）**，</title>
       <link>https://www.perplexity.ai/students</link>
       <guid isPermaLink="false">perplexity-education-pro</guid>
@@ -1274,11 +1211,11 @@
       <description>长期免费 · 规则：免费注册（Free Register）；Beta 期免费试用空间；实测口径 2 核/4GB/60GB 盘、闲置 48 小时休眠（二手实测，以官方为准）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>智谱 AutoClaw：邀好友无上限积分风暴：新用户注册填码**最高得 4800 积分**</title>
+      <title>智谱 AutoClaw：AutoClaw 邀请注册最高 4,800 积分，符合条件的购买可获双方积分奖励</title>
       <link>https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&amp;channel=fission&amp;source_location=sidebar&amp;target_app=autoclaw&amp;target_app_version=2.3.0&amp;os=mac&amp;IC=7WHSTDYA</link>
       <guid isPermaLink="false">autoclaw-invite-fission</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>折扣码 · 规则：登录环节填邀请码（须 AutoClaw 桌面端完成，移动端暂不支持）；邀请者每邀 1 人注册并发起成功任务得 1000 积分（活动期上限 15 人=15000）；邀请奖励积分 7 天有效、购买奖励 30 天有效；活动下线邀请码失效（优惠以官方页面为准）</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>折扣码 · 规则：新用户在桌面端登录时绑码。注册任务成功后邀请方获 1,000 积分；购月卡或加油包按活动档位给双方返积分。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>AgentRouter：注册送 **$100** + 首次签到 $25（首日到手 $125，经邀请链接注册再 +$50 → 首日最高 **$17</title>
@@ -1356,13 +1293,6 @@
       <guid isPermaLink="false">clixad-free</guid>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：GitHub 账号设备码登录即可（不填邮箱不复制 token）；模型调用走官方网关（其持有 OpenAI/Anthropic/Google key）；免费池用完可做问卷/任务墙赚 credits 或次日再来；注册奖励钱包（25,200 起+连续登录奖励）与免费池独立，免费池消耗不扣钱包（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>智谱 BigModel：ZCode 新一轮大礼包（11-13 起）：每人 **5 亿 tokens**（GLM-5.3 + GLM-5.3-Fl</title>
-      <link>https://bigmodel.cn/activity/glm-coding-1024</link>
-      <guid isPermaLink="false">zcode-5yi-nov</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：入口=ZCode 客户端左下角活动卡；参照 1024 轮节奏额度使用窗口约 3 天（本轮以客户端活动卡倒计时为准，过期作废）；先到先得 · 截止 以客户端活动卡倒计时为准（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>free-pi：终端 AI 编程 agent 免费用（GitHub 登录、免 Key 免订阅免信用卡）：**4 款模型限时 Free U</title>
@@ -1587,6 +1517,20 @@
       <guid isPermaLink="false">google-antigravity-cli-free</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：免费个人账户可迁移使用，模型和限额以当前套餐为准（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>智谱 AutoClaw：AutoClaw 本周登录送 1 亿端内 Tokens（10,000 积分）</title>
+      <link>https://autoclaw.zhipuai.cn/blog/news/M11W3/</link>
+      <guid isPermaLink="false">autoclaw-m11w3-login</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：11 月 16 日至 22 日登录客户端，每账号一次，奖励于 11 月 22 日 23:59（北京时间）到期。 · 截止 2026-11-22T23:59:59+08:00（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>ZCode：ZCode 订阅用户可使用闲时任务，执行时无需消耗套餐额度</title>
+      <link>https://zcode.z.ai/cn/docs/idle-time-tasks</link>
+      <guid isPermaLink="false">zcode-idle-tasks</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>订阅赠送 · 规则：向 BigModel 和 Z.ai 个人订阅用户分批开放。队列自动执行免扣额度，主动发消息正常扣积分。（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>
