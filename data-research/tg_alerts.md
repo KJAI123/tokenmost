@@ -1950,3 +1950,37 @@ ultra20tb_12m:
 标签分类： 纯水 人工智能 快问快答 树洞 
 时 间：2026-11-18 00:28:41
 内容预览： RT佬们，今晚L站火热，全在薅羊毛，好奇佬们之前在L站应该也有不少这种薅羊毛BUG注册订阅的
+
+## 2026-11-17 21:23 UTC
+- 🆕 [linuxdo_tg] 主 题： 佬 ，白嫖 Google Ultra 1个月 需要用什么卡呢？ 
+发 布 者： Rana_Pathan 
+标签分类： 软件开发 ChatGPT OpenAI Claude 
+时 间：2026-11-18 03:58:52
+内容预览： 下决心准备领了 反正下个月放的模型据说比 Fable 5
+- 🆕 [linuxdo_tg] 主 题： opencode go 10刀的GLM5.3额度提升到 200刀, 和 glm coding plan lite 哪个更香 
+发 布 者： uptonking 
+标签分类： 
+时 间：2026-11-18 04:40:56
+内容预览： opencode go 10刀 各模型额度ModelP
+- 🆕 [AI_News_CN] Gemini Tasks 在六国免费开放，由 Gemini 4 Hydrogen 驱动 
+
+Google 宣布 Gemini Tasks 面向美国、日本、韩国、加拿大、澳大利亚和印度的合资格用户免费开放，运行于新的 Gemini 4 Hydrogen 模型，并新增代打电话、通过 Google Pay
+- 🆕 [AI_News_CN] Gemini Tasks 免费扩展至六国，新增智能体能力 
+
+Google 将 Gemini Tasks 免费扩展至美国、日本、韩国、加拿大、澳大利亚和印度数亿用户，新增邮件转发、AI 代打电话、Google Pay 结账和密码管理器登录等功能。
+
+ 内容详情 · 原文链接 
+
+via AI情报局 
+- 🆕 [AI_News_CN] ↩️ 🖼 OpenAI 发布 GPT-6.2 Astra 与 Sol 双模型 
+
+ 
+ 在花 🎗️ 科技圈 : 
+
+ 🤖 GPT-6.2 Astra 和 Sol 已上架 Google Cloud GPT-6.2 Astra 和 Sol 现已在 Google Cloud 上架，预计最快明日发布。 X 
+- 🆕 [AI_News_CN] OpenAI 的 GPT-6.2 Astra 与 Sol 现已上线 OpenRouter 
+
+OpenRouter 已上线 OpenAI 的 GPT-6.2 Astra 与 Sol 模型，Astra 定价为每百万输入 token 8 美元、每百万输出 token 40 美元，Sol 为每百万输入 2
+- 🆕 [AI_News_CN] GPT-6.2 Astra 与 Sol 已在 Requesty 上线，并公布新定价 
+
+Requesty 网关新增 GPT-6.2 Astra 与 Sol。Astra 每百万 token 输入 &#036;8、缓存输入 &#036;0.40、输出 &#036;40，比 GPT-6 Astra 低 2

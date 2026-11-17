@@ -46,8 +46,8 @@
       "n_hits": 22
     },
     "render-pricing": {
-      "fp": "e614e422419fb737a1aee12276937611e95cbb7b3a73c85e507f8e988cab2374",
-      "ts": "2026-11-17T12:35:01Z",
+      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
+      "ts": "2026-11-17T21:23:53Z",
       "n_hits": 168
     },
     "koyeb-pricing": {
@@ -56,9 +56,9 @@
       "n_hits": 180
     },
     "railway-pricing": {
-      "fp": "8530ff5002d5f895b937c4c61cb6262af2a5b91e65b2b72dd5d32608807df7c2",
-      "ts": "2026-11-14T02:32:11Z",
-      "n_hits": 42
+      "fp": "5acc53912b0d97cc457eaa9d91fdaafc7e5ed2339fbae7e047ff7b2e363e39cb",
+      "ts": "2026-11-17T21:23:53Z",
+      "n_hits": 40
     },
     "codespaces-pricing": {
       "fp": "ef9361b48fbf3936913688c04f996a80abaa05e5fc03671b03c5c86502a2a50d",
@@ -151,8 +151,8 @@
       "n_hits": 24
     },
     "vercel-pricing": {
-      "fp": "0905a6ae9ba840cc63b7e857a3a71b1e84cfd66675971ae584e5204fc0d9a208",
-      "ts": "2026-11-13T15:18:26Z",
+      "fp": "457e36805ff9ad78fc78f5953aa2a4115e0333c1a1029fcd98ed152fe9c9906f",
+      "ts": "2026-11-17T21:23:53Z",
       "n_hits": 77
     },
     "netlify-pricing": {
@@ -171,8 +171,8 @@
       "n_hits": 11
     },
     "northflank-pricing": {
-      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
-      "ts": "2026-11-16T21:23:36Z",
+      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
+      "ts": "2026-11-17T21:23:53Z",
       "n_hits": 56
     },
     "colab-faq": {
@@ -181,9 +181,9 @@
       "n_hits": 67
     },
     "lightning-pricing": {
-      "fp": "ceefc1237dd0a1c3e4cc39afa9e3b10f67789af36126d8ba7b5a6d6142f27b79",
-      "ts": "2026-11-06T15:52:20Z",
-      "n_hits": 63
+      "fp": "17e4fec310d3b528a465b43d14c91a6d113a5bbd4bb58a5d4312025a59181a6a",
+      "ts": "2026-11-17T21:23:53Z",
+      "n_hits": 57
     },
     "paperspace-pricing": {
       "fp": "66a992e2195ff5ad1385721f0619d7faefe68407d062be10c5a3c033f06efa6a",
@@ -231,9 +231,9 @@
       "n_hits": 105
     },
     "clever-cloud": {
-      "fp": "8d81ea5b147a59c1a3a8e4d2915a06a75a6b7e7e1ba34880a02e30e3376ee163",
-      "ts": "2026-11-07T17:27:12Z",
-      "n_hits": 2
+      "fp": "aeacba8a05ebe72fec98cf447e3e2677d0b4976fc9053820aac5311b2ce4a1d9",
+      "ts": "2026-11-17T21:23:53Z",
+      "n_hits": 3
     },
     "cloudflare-pages": {
       "fp": "41b1c5202a6fe9184fb359f244a01134e919c427fff98b496debea3439827741",
@@ -271,9 +271,9 @@
       "n_hits": 45
     },
     "atlascloud": {
-      "fp": "5f51c6be9ec3e7dcd7620fdce3d93b59f463ad62a862c5c5f86e16012429151f",
-      "ts": "2026-11-13T21:26:10Z",
-      "n_hits": 143
+      "fp": "410b55c97c5f5270605ebba73707a292a88ce8d5639e3badc7bb86211df802a9",
+      "ts": "2026-11-17T21:23:53Z",
+      "n_hits": 145
     },
     "gpunz": {
       "fp": "4f55fce52bfe262816748b6bd0c59b1325a1680ca31bc7fd4adeefa97a7c7c64",
@@ -293,53 +293,33 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "99b584b941651407314d7f09231170d3eb57bb197579f236f91870f76ae1afdf",
-      "ts": "2026-11-17T16:37:15Z",
+      "fp": "5f8528539628ee2a6fffe152845200ea1d8b01e7ff373d18c66df3a71fd86750",
+      "ts": "2026-11-17T21:23:53Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "2405f6eddd2ec5a1915a7ac9173a81a514eca9bc3a228ebc6326f31ebd1261ed",
-      "ts": "2026-11-17T16:37:15Z",
-      "count": 1
-    },
-    "atlascloud": {
-      "fp": "410b55c97c5f5270605ebba73707a292a88ce8d5639e3badc7bb86211df802a9",
-      "ts": "2026-11-17T16:37:15Z",
-      "count": 1
-    },
-    "vercel-pricing": {
-      "fp": "457e36805ff9ad78fc78f5953aa2a4115e0333c1a1029fcd98ed152fe9c9906f",
-      "ts": "2026-11-17T16:37:15Z",
-      "count": 1
-    },
-    "northflank-pricing": {
-      "fp": "a8110fdf81e0b58c63c20cd83f16f959e75b1fb2a4b93f8d93e6b6a5da2dd7cd",
-      "ts": "2026-11-17T16:37:15Z",
-      "count": 1
-    },
-    "lightning-pricing": {
-      "fp": "17e4fec310d3b528a465b43d14c91a6d113a5bbd4bb58a5d4312025a59181a6a",
-      "ts": "2026-11-17T16:37:15Z",
-      "count": 1
-    },
-    "render-pricing": {
-      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
-      "ts": "2026-11-17T16:37:15Z",
-      "count": 1
-    },
-    "railway-pricing": {
-      "fp": "5acc53912b0d97cc457eaa9d91fdaafc7e5ed2339fbae7e047ff7b2e363e39cb",
-      "ts": "2026-11-17T16:37:15Z",
+      "fp": "76bf52bcc2975009f0f6dbdaa63d7357f40496f6ed7b334085d39238cd4d2f43",
+      "ts": "2026-11-17T21:23:53Z",
       "count": 1
     },
     "kaggle-notebooks": {
-      "fp": "b5fc5d3889f164c5e15777753722ee0fd61d3c985f1927ee3f7e6f0ec1475a0a",
-      "ts": "2026-11-17T16:37:15Z",
+      "fp": "a84dff1a78657f12e242be9035c419ff070abf5f12809651e25d923c52bf3f4f",
+      "ts": "2026-11-17T21:23:53Z",
       "count": 1
     },
-    "clever-cloud": {
-      "fp": "aeacba8a05ebe72fec98cf447e3e2677d0b4976fc9053820aac5311b2ce4a1d9",
-      "ts": "2026-11-17T16:37:15Z",
+    "daytona-pricing": {
+      "fp": "80944c10809a9e7b6eeaa31c785497872b4547fcc24c5386bdef47b81dc8a2b2",
+      "ts": "2026-11-17T21:23:53Z",
+      "count": 1
+    },
+    "modal-pricing": {
+      "fp": "993113ba1373e20111b2155012697ceb234f87fdbc6a2b8c6751af07f884aed6",
+      "ts": "2026-11-17T21:23:53Z",
+      "count": 1
+    },
+    "digitalocean-pricing": {
+      "fp": "44b22392f3d8233f4071ab071d7a13e72972d91bd78840464a3a4cb0e33813d7",
+      "ts": "2026-11-17T21:23:53Z",
       "count": 1
     }
   }
