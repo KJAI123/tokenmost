@@ -1,9 +1,9 @@
 # freecloud 采集快照 2026-11-17
 
-- 采集时间: 2026-11-17T07:35:37Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: 无 | 👀观察中: instabox-pricing, render-pricing, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-17T12:35:01Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: instabox-pricing, render-pricing | 👀观察中: upcloud-pricing, lowendbox-feed, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: kaggle-notebooks
 
-## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
+## 🔔 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
 - 🔎 **1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (** `output fail with a broken pipe. Exec output is UTF-8 text: without streaming each stream is cut at 1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (`invalidUtf8`), so read files with `GET /v1/machines/{id}/files/content` or `instabox pull`/`cp`, no`
 - 🔎 **4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` an** `cker microVM, Debian 13 (trixie) amd64 (`ci`: Ubuntu 24.04; `omarchy`: Arch Linux), kernel 6.18.60, 4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` and `orca`, 24 GiB on `omarchy`) and a 20 GiB persistent disk at `/data` (home is `/data/home`). Pytho`
@@ -139,18 +139,18 @@
 - 状态: ok | https://www.scaleway.com/en/pricing/
 - 🔎 **/model-as-a-service/)** `verless - Generative APIs - Dedicated Deployment [View pricing](https://www.scaleway.com/en/pricing/model-as-a-service/) ## Storage ### Storage Discover our versatile storage options: - Object Storage - Scaleway Glac`
 
-##    UpCloud 定价（试用金）（upcloud-pricing）
+## 👀 UpCloud 定价（试用金）（upcloud-pricing）
 - 状态: ok | https://www.upcloud.com/pricing/
-- 🔎 **50 GB** `expensive than previous-generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
-- 🔎 **16 GB** `generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
-- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** |** `lobal price | Memory | CPU cores | Bandwidth | Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB`
-- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** |** `Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB`
-- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** |** `- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 G`
-- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** |** `*** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 G`
-- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** |** `** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16`
-- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16`
-- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Fe`
-- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Features and services specific to Cloud Servers.`
+- 🔎 **50 GB** `25% less expensive than previous-generation while offering 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
+- 🔎 **16 GB** `previous-generation while offering 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
+- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **$3** `rice | Memory | CPU cores | Bandwidth | Storage | Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo`
+- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** |** `Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 G`
+- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** |** `| | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 G`
+- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** |** `** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 G`
+- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** |** `* | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16`
+- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16`
+- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **$32/mo** | Fe`
+- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **$32/mo** | Features and services specific to Cloud Servers.`
 
 ##    DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
 - 状态: ok | https://www.digitalocean.com/pricing
@@ -288,7 +288,7 @@
 - 🔎 **credits** `rations Price $0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1`
 - 🔎 **credits** `$0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits U`
 
-##    LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
+## 👀 LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
 - 状态: ok | https://lowendbox.com/feed/
 - 🔎 **2GB KVM VPS for $1** `8230; appeared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it`
 - 🔎 **2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:0** `th First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:00:12 +0000 Godlike.Host is back with some great pricing for our readers. You'll need our special c`
@@ -378,7 +378,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-## 👀 Render 定价（免费 Web 服务）（render-pricing）
+## 🔔 Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -457,17 +457,8 @@
 - 🔎 **8 vCPU | 30 GB | Nvidia L4 | 24 GB | $0** `40 $288 | | Nvidia T4 - medium | 8 vCPU | 30 GB | Nvidia T4 | 16 GB | $0.60 $432 | | 1x Nvidia L4 | 8 vCPU | 30 GB | Nvidia L4 | 24 GB | $0.80 $576 | | 4x Nvidia L4 | 48 vCPU | 186 GB | Nvidia L4 | 96 GB | $3.80 $2,736 | | 1x Nvidia L40S |`
 
 ##    Kaggle Notebooks（每周 30h 免费 GPU）（kaggle-notebooks）
-- 状态: ok | https://www.kaggle.com/docs/notebooks
-- 🔎 **20 GBs of output from a Notebook may be saved to disk in /kaggle/w** `s. If you don’t, you risk consequences for rule-breaking in the Competition. #### Notebooks Up to 20 GBs of output from a Notebook may be saved to disk in /kaggle/working. This data is saved automatically and you can then reuse that data in any future Notebook: ju`
-- 🔎 **transferable and cannot be exchanged for cash or any other goods or ** `le may terminate the extra GPU hours for their linked Kaggle account. - The extra GPU hours are non-transferable and cannot be exchanged for cash or any other goods or services. - The use of Kaggle's GPU resources is subject to Kaggle's Terms of Use and other applicab`
-- 🔎 **idle time for your interactive session** `el Skylake CPUs. CPU Specifications While editing a Notebook, you are provided with 20 minutes of idle time for your interactive session. If the code is not modified or executed in that time the current interactive session will end. If`
-- 🔎 **suspend the Promotion at any time, with or without notice** `Account via the settings page at any time. **Legal Terms** - Kaggle reserves the right to end or suspend the Promotion at any time, with or without notice, at its sole discretion. The end date of the Promotion may not be publicly announced and can occur`
-- 🔎 **/modify-project) GCP account to query any data that i** `-118720642.1583860775) but requires a [billing-enabled](https://cloud.google.com/billing/docs/how-to/modify-project) GCP account to query any data that isn’t publicly released by BigQuery. You should carefully review the prices of BigQuery before trying`
-- 🔎 **per month)** `are able to use the storage space for any type of data and only pay for used storage space (per GB per month). Google Cloud Storage is a paid service and requires a [billing-enabled](https://cloud.google.com/`
-- 🔎 **/modify-project) GCP account** `rage is a paid service and requires a [billing-enabled](https://cloud.google.com/billing/docs/how-to/modify-project) GCP account. You should carefully review the prices of GCS before trying the integration in Kaggle Notebooks, a`
-- 🔎 **/modify-project) GCP account** `toML is a paid service and requires a [billing-enabled](https://cloud.google.com/billing/docs/how-to/modify-project) GCP account. You should carefully review the prices of AutoML before trying the integration in Kaggle Notebooks`
-- 🔎 **GPU** `nstalled packages, the ability to mount versioned data sources, customizable compute resources like GPUs, and more. #### Notebook Versions and Containers When you create a Notebook version using 'Save`
-- 🔎 **GPU** `still need to have internet disabled to be submitted into select competitions. ##### Adding a free GPU You can add a single NVIDIA Tesla P100 to your Notebook for free. GPU environments have lower CPU`
+- 状态: error | https://www.kaggle.com/docs/notebooks
+- ❌ error: None
 
 ##    阿里云免费试用（aliyun-free）
 - 状态: ok | https://free.aliyun.com
@@ -546,9 +537,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794900927071) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794900927071) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794900927071) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794918884688) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794918884688) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794918884688) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -634,12 +625,12 @@
 - 🔎 **24 GB+ | $0** `--- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | RTX 3090 24 GBGPU with 24 GB+ | $0.0042 | $0.127 | $0.254 | $6.10 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.496 | $11.90`
 - 🔎 **48 GB+ | $0** `$1.44 | | RTX 3090 24 GBGPU with 24 GB+ | $0.0042 | $0.127 | $0.254 | $6.10 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.496 | $11.90 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.496 | $11.90`
 - 🔎 **80 GB+ | $0** `| $6.10 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.496 | $11.90 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.496 | $11.90 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $21** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $22.30/h | 2 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $20.00/h | 2`
-- 🔎 **180gb) | 180 GB | $12** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $22.30/h | 2 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $20.00/h | 26 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.40/h | $9.28/h`
-- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $20.00/h | 26 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.40/h | $9.28/h | 19 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52`
-- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.40/h | $9.28/h | 19 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52/h | 67 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $4.88/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52/h | 67 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $4.88/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.17/h | $8.67/h`
-- 🔎 **94gb) | 94 GB | $6** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $4.88/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.17/h | $8.67/h | 5 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.01/h | $5.11/`
+- 🔎 **288gb) | 288 GB | $21** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $21.89/h | 1 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 3`
+- 🔎 **180gb) | 180 GB | $12** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $21.89/h | 1 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 32 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.31/h | $10.52/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 32 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.31/h | $10.52/h | 33 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.6`
+- 🔎 **141gb) | 141 GB | $6** `en/gpu/h200-141gb) | 141 GB | $7.31/h | $10.52/h | 33 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.60/h | 87 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.30/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.60/h | 87 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.30/h | 24 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.89/h | $5.91/h`
+- 🔎 **94gb) | 94 GB | $5** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.30/h | 24 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $5.89/h | $5.91/h | 4 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.55/h | $5.55/`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
