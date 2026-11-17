@@ -775,7 +775,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/workbench.js?v=20261117-8"></script>
+<script src="assets/workbench.js?v=20261117-9"></script>
 <script>
 /* ============ 常量 ============ */
 /* 语言自动识别 v2.32.3：IP 国别优先(ipwho.is 免费无key HTTPS)+浏览器语言兜底+偏好记忆；CN→中文版，非 CN→英文版；失败静默 */
@@ -837,8 +837,8 @@ function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
 /* 聚合行主操作按钮：组内任一条目带折扣码/折扣链接即亮金色（v2.25 修 Qoder 挂不上的根因——原先只看组内最优条目） */
 function aggGold(g){
-  const tgt=g.best;
-  if((tgt.coupon||tgt.type==='coupon')&&!tgt.placeholder&&tgt.url)return '<a class="go cgo" href="'+esc(safeUrl(tgt.url))+'" target="_blank" rel="noopener nofollow" data-code="'+esc(tgt.coupon||tgt.url)+'" title="'+(tgt.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开')+'">'+(tgt.coupon?'🎁 券领':'🔗 折扣链接')+'</a>';
+  const coupon=Workbench.couponLink(g.best);
+  if(coupon)return coupon;
   return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">领取</a>';
 }
 /* 云服务器羊毛独立版面（v2.30 老板令：token 羊毛下方单独版面） */
@@ -881,7 +881,7 @@ const rowHtml=(d,ov)=>{
     <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
     <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
     <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" aria-pressed="${claimedSet.has(d.id)}" title="标记或取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
-    ${(d.coupon||d.type==='coupon')&&!d.placeholder?`<a class="go cgo" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(d.coupon||d.url)}" title="${d.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${d.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):Workbench.msg('领取','Claim')}</a>`}
+    ${Workbench.couponLink(d) || `<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):Workbench.msg('领取','Claim')}</a>`}
   </div>
 </article>`};
 
@@ -1107,7 +1107,7 @@ function handleOfferClick(e){
   }
   const btn=e.target.closest('.copy');
   if(btn){copyText(btn.dataset.code,btn,'✅ 已复制','📋 复制');return}
-  const cg=e.target.closest('.cgo');
+  const cg=e.target.closest('[data-redeem-code]');
   if(cg){e.preventDefault();openRedeem(cg);return}
   const cl=e.target.closest('[data-claim]');
   if(cl){const s=getClaimed(),id=cl.dataset.claim;s.has(id)?s.delete(id):s.add(id);
@@ -1439,19 +1439,18 @@ async function openGuides(){
 function openPanel(o,p){document.querySelector(o).classList.add('open');document.querySelector(p).classList.add('open')}
 
 /* ============ 兑换方式弹窗 & 微信群弹窗 ============ */
-let rdCtx={code:'',url:''};
 function openRedeem(el){
-  rdCtx={code:el.dataset.code||'',url:el.href||el.getAttribute('href')||''};
-  const isCode=el.textContent.includes('券领');
+  const code=el.dataset.redeemCode;
+  const url=el.href;
   document.getElementById('rdTitle').textContent=(el.closest('article')?.querySelector('.r-provider')?.textContent.trim()||'平台')+'·折扣兑现';
-  document.getElementById('rdSub').textContent=isCode?'复制折扣码或直达领取页，三选一':'折扣链接直达或扫码，二选一';
+  document.getElementById('rdSub').textContent='复制折扣码、打开领取页或扫码';
   const cd=document.getElementById('rdCode');
-  if(isCode){cd.style.display='block';cd.textContent=rdCtx.code}else cd.style.display='none';
-  document.getElementById('rdCopy').style.display=isCode?'flex':'none';
+  cd.style.display='block';
+  cd.textContent=code;
   document.getElementById('redeemQr').style.display='none';
-  document.getElementById('rdQrImg').src='https://api.qrserver.com/v1/create-qr-code/?size=190x190&data='+encodeURIComponent(rdCtx.url);
-  document.getElementById('rdGo').onclick=()=>window.open(rdCtx.url,'_blank','noopener');
-  document.getElementById('rdCopy').onclick=e=>copyText(rdCtx.code,e.currentTarget,'✅ 已复制','📋 复制折扣码');
+  document.getElementById('rdQrImg').src='https://api.qrserver.com/v1/create-qr-code/?size=190x190&data='+encodeURIComponent(url);
+  document.getElementById('rdGo').onclick=()=>window.open(url,'_blank','noopener');
+  document.getElementById('rdCopy').onclick=e=>copyText(code,e.currentTarget,'✅ 已复制','📋 复制折扣码');
   document.getElementById('rdQrBtn').onclick=()=>{const q=document.getElementById('redeemQr');q.style.display=q.style.display==='block'?'none':'block'};
   document.getElementById('rdQrImg').onerror=function(){document.getElementById('rdQrBtn').title='二维码服务暂不可用，请用复制或跳转';};
   openPanel('#redeemOverlay','#redeemPanel');

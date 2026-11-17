@@ -67,6 +67,16 @@ const Workbench = (() => {
     return providerLogo(name, site?.url, 'row', deal.url, deal.provider);
   }
 
+  function couponLink(deal) {
+    if (deal.placeholder || !deal.url || (!deal.coupon && deal.type !== 'coupon')) return '';
+    const code = deal.coupon;
+    const label = code ? msg('🎁 券领', 'Coupon') : msg('🔗 折扣链接', 'Get offer');
+    const title = code ? msg('查看折扣码与领取方式', 'View coupon and redemption options')
+      : msg('打开折扣链接', 'Open discount link');
+    const codeAttribute = code ? ' data-redeem-code="' + esc(code) + '"' : '';
+    return `<a class="go cgo" href="${esc(safeUrl(deal.url))}" target="_blank" rel="noopener nofollow"${codeAttribute} title="${title}">${label}</a>`;
+  }
+
   function sourceLinks(deal) {
     const explicit = Array.isArray(deal.sources) ? deal.sources : [];
     const links = new Map();
@@ -314,5 +324,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, providerLogo, offerLogo, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();
