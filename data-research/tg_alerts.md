@@ -1901,3 +1901,52 @@ OpenAI日前宣布正式扩大面向学术研究人员的ChatGPT 免费使用计
 标签分类： 人工智能 
 时 间：2026-11-17 20:14:28
 内容预览： 一道有意思的数学题豆包 deepseek跟我的答案不一样（我选B）我用的免费的GPT也给出了跟豆包一样的答案1.豆包2.deepseek3.GPT但
+
+## 2026-11-17 16:36 UTC
+- 🆕 [v2ex_notice] 【分享创造】[薅 google 羊毛] Google AI Ultra 订阅，Carbon 免费试用
+- 🆕 [linuxdoit] 福利羊毛 - 2026年11月18日00:00摘要 (近24小时) 
+
+综合摘要生成失败，以下是各批次内容：
+
+第 1 批处理失败: HTTP 404: Not Found
+ ---
+第 2 批处理失败: HTTP 404: Not Found
+
+via LINUX DO 每日摘要 - 福利羊毛 (
+- 🆕 [linuxdoit] 0元购google ultra 
+
+复制下面链接，挂美区IP【转自其他群，非原创】
+
+ https://tokenized.play.google.com/eacquire/multiline?authuser=0&amp;ear=[null%2Cnull%2C[null%2Cnull%2C&quo
+- 🆕 [linuxdoit] 杀疯了！满血GPT低至0.06倍率，缓存90%+，ClaudeCode / Codex稳定通道，新人送6刀额度！ 
+
+ 中转站 cdn.newcodex.cn 
+
+ New API 
+
+Unified AI API gateway and admin dashboard.
+ newcodex.cn 
+- 🆕 [linuxdoit] gemini 0元试用ultra 
+
+ 1个月s.7z (13.1 KB)
+就是最近卡网能见到的那个
+已经被别人先公开了无所谓了
+不要改等级
+
+----------------------
+
+一编:
+有人发了一年的
+担心引流嫌疑我就不发源码了
+ultra20tb_12m:
+ AYrTWi65Jbm3
+- 🆕 [linuxdo_tg] 主 题： 微软发布的token消耗优化插件TokenEconomizer有佬体验过吗 
+发 布 者： Javen_QvQ 
+标签分类： 纯水 人工智能 
+时 间：2026-11-18 00:15:59
+内容预览： GitHub - microsoft/TokenEconomizer: Experie
+- 🆕 [linuxdo_tg] 主 题： 类似于今天的ultra羊毛bug，佬们这种大薅羊的处罚是什么呀 
+发 布 者： lldx 
+标签分类： 纯水 人工智能 快问快答 树洞 
+时 间：2026-11-18 00:28:41
+内容预览： RT佬们，今晚L站火热，全在薅羊毛，好奇佬们之前在L站应该也有不少这种薅羊毛BUG注册订阅的
