@@ -1,9 +1,9 @@
 # freecloud 采集快照 2026-11-17
 
-- 采集时间: 2026-11-17T02:26:35Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: 无 | 👀观察中: railway-pricing, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-17T07:35:37Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: 无 | 👀观察中: instabox-pricing, render-pricing, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: 无
 
-##    InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
+## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
 - 🔎 **1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (** `output fail with a broken pipe. Exec output is UTF-8 text: without streaming each stream is cut at 1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (`invalidUtf8`), so read files with `GET /v1/machines/{id}/files/content` or `instabox pull`/`cp`, no`
 - 🔎 **4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` an** `cker microVM, Debian 13 (trixie) amd64 (`ci`: Ubuntu 24.04; `omarchy`: Arch Linux), kernel 6.18.60, 4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` and `orca`, 24 GiB on `omarchy`) and a 20 GiB persistent disk at `/data` (home is `/data/home`). Pytho`
@@ -12,9 +12,9 @@
 - 🔎 **2 GiB on 2/4, ~4 GiB on 4/8); for big staging set `TMPDIR=$HOME/t** `GiB on 2/4, ~2 GiB on 4/8). Older machines (`echo $TMPDIR` empty): `/tmp` is about half guest RAM (~2 GiB on 2/4, ~4 GiB on 4/8); for big staging set `TMPDIR=$HOME/tmp` (home is `/data/home`; on `agent-browser`, `universal` and `t3` the top of `/data` is the user's`
 - 🔎 **4 GiB (2/4: 4 GiB), listed in `/etc/fstab` so it stays on across ** `e size. - Swap: every machine gets `/data/swapfile` at its first boot, the size of its memory up to 4 GiB (2/4: 4 GiB), listed in `/etc/fstab` so it stays on across stop and start; it is skipped (and the guest agent logs why) when `/data` would keep under 1 GiB, or`
 - 🔎 **1 GiB, or a tenth of the disk, free** `n across stop and start; it is skipped (and the guest agent logs why) when `/data` would keep under 1 GiB, or a tenth of the disk, free. `swapon`, `swapoff` and `mkswap` are on the user PATH (changing swap takes `sudo`). Removed (`sudo`
+- 🔎 **512 MiB burst at full speed (about 1 GiB after a quiet period), so ** `s → Machine specs. - Upload speed: what a VM sends is capped at ~50 Mbit/s per VM (~6 MB/s) after a 512 MiB burst at full speed (about 1 GiB after a quiet period), so past the burst each ~100 MB out (`instabox pull`, a release upload, a public-port response) is ~16 s`
 - 🔎 **20 GiB by default; at create it comes with the size, so leave `per** `topped: resume it, then stop it, which is what `--restart` does). - Disk: one per machine, `/data`, 20 GiB by default; at create it comes with the size, so leave `persistentDiskGiB` out (another size is `400 spec_not_allowed`; `diskGiB` is the TypeScript SDK option`
 - 🔎 **1024 GiB; it grows while running (no restart) or at the next start, ** `x resize <machine> --disk N [--restart]` or `PATCH /v1/machines/{id}` `{"persistentDiskGiB": N}`: 1-1024 GiB; it grows while running (no restart) or at the next start, and shrinks only while stopped when the data plus 10% (at least 1 GiB) fits (else `409 disk_too_smal`
-- 🔎 **1 GiB) fits (else `409 disk_too_small`); at most 200 GiB on Pro, ** `(no restart) or at the next start, and shrinks only while stopped when the data plus 10% (at least 1 GiB) fits (else `409 disk_too_small`); at most 200 GiB on Pro, 500 GiB on Builder, 1024 GiB on Team and Enterprise (`429 quota_exceeded`). The system disk is the t`
 
 ##    E2B 定价（Agent 沙盒）（e2b-pricing）
 - 状态: ok | https://e2b.dev/pricing
@@ -378,7 +378,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-##    Render 定价（免费 Web 服务）（render-pricing）
+## 👀 Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -404,7 +404,7 @@
 - 🔎 **32GB** `ice per RTX-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM`
 - 🔎 **160GB** `-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM 64GB Disk`
 
-## 👀 Railway 定价（试用金观察）（railway-pricing）
+##    Railway 定价（试用金观察）（railway-pricing）
 - 状态: ok | https://railway.com/pricing
 - 🔎 **1 vCPU / 0** `small apps on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### H`
 - 🔎 **5 GB RAM per service** `on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### Hobby $5minimum usage`
@@ -546,9 +546,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794882385925) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794882385925) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794882385925) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794900927071) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794900927071) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794900927071) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -634,12 +634,12 @@
 - 🔎 **24 GB+ | $0** `--- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.001 | $0.03 | $0.06 | $1.44 | | RTX 3090 24 GBGPU with 24 GB+ | $0.0042 | $0.127 | $0.254 | $6.10 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.496 | $11.90`
 - 🔎 **48 GB+ | $0** `$1.44 | | RTX 3090 24 GBGPU with 24 GB+ | $0.0042 | $0.127 | $0.254 | $6.10 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.496 | $11.90 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.496 | $11.90`
 - 🔎 **80 GB+ | $0** `| $6.10 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.248 | $0.496 | $11.90 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.248 | $0.496 | $11.90 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $21** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $23.40/h | 4 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 2`
-- 🔎 **180gb) | 180 GB | $15** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $23.40/h | 4 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.57/h | $9.29/h`
-- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $15.02/h | $19.99/h | 21 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.57/h | $9.29/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52`
-- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.57/h | $9.29/h | 16 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52/h | 74 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.23/h | $3.37/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52/h | 74 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.23/h | $3.37/h | 9 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.17/h | $7.07/h`
-- 🔎 **94gb) | 94 GB | $6** `en/gpu/h100-sxm-80gb) | 80 GB | $3.23/h | $3.37/h | 9 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.17/h | $7.07/h | 5 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.19/h | $5.37/`
+- 🔎 **288gb) | 288 GB | $21** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $22.30/h | 2 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $20.00/h | 2`
+- 🔎 **180gb) | 180 GB | $12** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.89/h | $22.30/h | 2 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $20.00/h | 26 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.40/h | $9.28/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $20.00/h | 26 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.40/h | $9.28/h | 19 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52`
+- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.40/h | $9.28/h | 19 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52/h | 67 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $4.88/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52/h | 67 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $4.88/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.17/h | $8.67/h`
+- 🔎 **94gb) | 94 GB | $6** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $4.88/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.17/h | $8.67/h | 5 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.01/h | $5.11/`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
