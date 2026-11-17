@@ -88,13 +88,17 @@ body.side-folded .topbar{padding-left:26px}
 #newsTicker{display:flex;align-items:center;overflow:hidden;gap:8px;margin:6px 0 13px;padding:2px 3px;min-height:30px;background:transparent}
 #newsTicker .ntk-label{display:flex;white-space:nowrap;flex:none;font-weight:760;align-items:center;gap:8px;color:var(--accent);font-size:11px}
 #newsTicker .ntk-scroll{min-width:0;flex:1;overflow:hidden}
-#newsTicker .ntk-items,#newsTicker .ntk-item{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:none;margin:0;color:var(--muted);font-size:12px}
+#newsTicker .ntk-items,#newsTicker .ntk-item{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0;color:var(--muted);font-size:12px}
 #newsTicker .ntk-item b{color:var(--text)}
+#newsTicker .ntk-item.ntk-enter{animation:ntk-enter .22s ease-out}
+@keyframes ntk-enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 .ntk-controls{display:flex;gap:3px;flex:none}
 .ntk-controls button{display:grid;place-items:center;width:28px;height:28px;border:1px solid var(--border);border-radius:7px;background:var(--card);color:var(--muted);cursor:pointer}
 .ntk-controls button:hover:not(:disabled){color:var(--accent);border-color:var(--line-strong)}
+.ntk-controls button:focus-visible{outline-offset:-3px}
 .ntk-controls button:disabled{opacity:.5}
 .ntk-controls .ui-icon{width:14px;height:14px}
+[data-news-toggle][data-playing="true"] .ntk-play,[data-news-toggle][data-playing="false"] .ntk-pause{display:none}
 #feed,#navArea,#faq{scroll-margin-block-start:12px}
 .feed-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
 .feed-heading h2{font-size:23px;font-weight:760;letter-spacing:-.035em;line-height:1.2}
@@ -270,7 +274,7 @@ body.side-folded .topbar{padding-left:26px}
   .market-hero .stat b{font-size:12px}
   #newsTicker{padding-inline:5px;margin:3px 0 6px;gap:6px;min-height:28px}
   #newsTicker .ntk-label,#newsTicker .ntk-item{font-size:10px}
-  .ntk-controls button{width:23px;height:23px}
+  .ntk-controls button{width:26px;height:26px}
   .feed-heading h2{font-size:19px}
   .lhead{display:flex;gap:16px;justify-content:flex-start;padding:2px 10px;min-height:34px}
   .lhead .lbl{display:none}

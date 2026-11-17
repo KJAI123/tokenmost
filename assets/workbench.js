@@ -205,25 +205,69 @@ const Workbench = (() => {
     });
   }
 
-  let news = [], newsIndex = 0;
-  function showNews() {
+  const ticker = el('newsTicker');
+  const newsItems = el('ntkItems');
+  const newsViewport = ticker.querySelector('.ntk-scroll');
+  const newsToggle = ticker.querySelector('[data-news-toggle]');
+  const newsSteps = ticker.querySelectorAll('[data-news-step]');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const newsInterval = 6000;
+  let news = [], newsIndex = 0, newsTimer;
+  let userRotation = null, newsHovered = false;
+
+  function showNews(animate = false) {
     const item = news[newsIndex];
-    const node = el('ntkItems');
-    node.replaceChildren();
     if (item) {
       const line = document.createElement('span');
-      line.className = 'ntk-item';
+      line.className = animate ? 'ntk-item ntk-enter' : 'ntk-item';
       const title = document.createElement('b');
       title.textContent = item.title;
       line.append(title, ' · ' + item.text);
       line.title = item.title + ' · ' + item.text;
-      node.append(line);
+      newsItems.replaceChildren(line);
     } else {
-      node.textContent = msg('暂无更新', 'No updates yet');
+      newsItems.textContent = msg('暂无更新', 'No updates yet');
     }
-    el('newsTicker').querySelectorAll('[data-news-step]').forEach(b => b.disabled = news.length < 2);
   }
-  function setNews(items) { news = items; newsIndex = 0; showNews(); }
+
+  function rotationEnabled() {
+    return userRotation ?? !reducedMotion.matches;
+  }
+
+  function scheduleNews(focused = ticker.contains(document.activeElement)) {
+    clearTimeout(newsTimer);
+    const enabled = newsToggle && rotationEnabled();
+    const canRotate = enabled && news.length > 1 && !newsHovered && !focused && !document.hidden;
+    if (newsToggle) {
+      const label = enabled ? msg('暂停动态轮播', 'Pause news rotation') : msg('播放动态轮播', 'Play news rotation');
+      newsToggle.dataset.playing = String(enabled);
+      newsToggle.setAttribute('aria-label', label);
+      newsToggle.title = label;
+    }
+    newsViewport.setAttribute('aria-live', canRotate ? 'off' : 'polite');
+    if (canRotate) {
+      newsTimer = setTimeout(() => {
+        stepNews(1);
+        scheduleNews();
+      }, newsInterval);
+    }
+  }
+
+  function stepNews(step) {
+    newsIndex = (newsIndex + step + news.length) % news.length;
+    showNews(true);
+  }
+
+  function setNews(items) {
+    const current = news[newsIndex];
+    const index = items.findIndex(item => item.title === current?.title && item.text === current?.text);
+    news = items;
+    newsIndex = Math.max(0, index);
+    if (newsToggle) newsToggle.disabled = news.length < 2;
+    newsSteps.forEach(button => button.disabled = news.length < 2);
+    scheduleNews();
+    if (index === -1) showNews();
+  }
   function refreshNews(deals, production) {
     const fallback = deals.filter(d => d.published !== false && d.verify_status !== 'expired' && d.category !== 'intel_source')
       .sort((a, b) => new Date(b.verified_at) - new Date(a.verified_at)).slice(0, 6)
@@ -235,12 +279,31 @@ const Workbench = (() => {
       }
     }).catch(() => {});
   }
-  el('newsTicker').addEventListener('click', event => {
+  ticker.addEventListener('click', event => {
+    if (event.target.closest('[data-news-toggle]')) {
+      userRotation = !rotationEnabled();
+      scheduleNews();
+      return;
+    }
     const button = event.target.closest('[data-news-step]');
     if (!button || news.length < 2) return;
-    newsIndex = (newsIndex + Number(button.dataset.newsStep) + news.length) % news.length;
-    showNews();
+    stepNews(Number(button.dataset.newsStep));
+    scheduleNews();
   });
+  ticker.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'touch') return;
+    newsHovered = true;
+    scheduleNews();
+  });
+  ticker.addEventListener('pointerleave', event => {
+    if (event.pointerType === 'touch') return;
+    newsHovered = false;
+    scheduleNews();
+  });
+  ticker.addEventListener('focusin', () => scheduleNews(true));
+  ticker.addEventListener('focusout', event => scheduleNews(ticker.contains(event.relatedTarget)));
+  document.addEventListener('visibilitychange', () => scheduleNews());
+  reducedMotion.addEventListener('change', () => scheduleNews());
   document.addEventListener('keydown', event => {
     if (event.key !== '/' || event.metaKey || event.altKey || event.ctrlKey || event.defaultPrevented
       || event.target.closest('input, textarea, select, [contenteditable]') || document.querySelector('[role="dialog"].open,#vault.open')) return;
