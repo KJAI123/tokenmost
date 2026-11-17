@@ -15,7 +15,6 @@ const Workbench = (() => {
 
   function groupRows(box) {
     const rows = Object.fromEntries(Object.keys(layers).map(key => [key, []]));
-    const more = el('moreWrap');
     for (const row of box.querySelectorAll(':scope > article[data-layer]')) {
       const next = row.nextElementSibling;
       rows[row.dataset.layer].push([row, next?.classList.contains('agg-detail') ? next : null]);
@@ -33,7 +32,6 @@ const Workbench = (() => {
         if (detail) batch.append(detail);
       }
     }
-    if (more) batch.append(more);
     box.replaceChildren(batch);
   }
 

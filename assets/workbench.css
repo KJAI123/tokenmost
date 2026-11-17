@@ -217,9 +217,8 @@ body.side-folded .topbar{padding-left:26px}
 .r-ops .go.cgo:active{transform:translateY(3px);box-shadow:0 1px 0 var(--yellow-edge),0 0 0 2px var(--yellow-soft)}
 .r-ops .apiBtn,.r-ops .claim,.r-ops .couponFlag{min-width:26px;min-height:27px;padding:3px 5px;border-radius:6px}
 .r-ops .claim:hover{color:var(--amber);background:#fef6e6}
-#moreWrap{border-top:1px solid var(--border);background:var(--hover)}
-#moreBtn,.empty .tab{background:var(--card);border-color:var(--border);color:var(--accent)}
-#moreBtn:hover,.empty .tab:hover{background:var(--soft)}
+.empty .tab{background:var(--card);border-color:var(--border);color:var(--accent)}
+.empty .tab:hover{background:var(--soft)}
 .empty{display:grid;justify-items:center;gap:5px;padding:40px 15px}
 .empty button{margin-top:7px}
 #bottomNav{padding-bottom:calc(4px + env(safe-area-inset-bottom))}
