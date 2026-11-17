@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261117-8">
+<link rel="stylesheet" href="assets/workbench.css?v=20261118-1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -426,6 +426,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <a class="sitem" id="vaultBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-box"/></svg>账号库</a>
       <a class="sitem" id="guideBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-book"/></svg>领取攻略</a>
       <a class="sitem" id="wxBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>微信交流群</a>
+      <a class="sitem" onclick="openWx('feishu');return false" href="#" ><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>飞书交流群</a>
       <a class="sitem" href="#faq"><svg class="ui-icon" aria-hidden="true"><use href="#tm-help"/></svg>常见问题</a>
     </div>
   </nav>
@@ -455,7 +456,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </nav>
   <div class="top-actions">
     <button type="button" id="bmBtn" title="收藏本站" aria-label="收藏本站"><svg class="ui-icon" aria-hidden="true"><use href="#tm-bookmark"/></svg></button>
-    <button type="button" class="community-btn" onclick="openWx()" aria-label="微信交流群"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>交流群</span></button>
+    <button type="button" class="community-btn" onclick="openWx()" aria-label="交流社群"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>交流群</span></button>
     <a class="lang-switch" href="en.html" lang="en" hreflang="en" onclick="localStorage.setItem('tm_lang_pref','en')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>EN</a>
     <button type="button" id="installBtn">安装</button>
   </div>
@@ -465,6 +466,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <div class="hero-copy">
       <h1>AI Token<wbr><span>免费羊毛情报站</span></h1>
       <p>免费 API、模型额度与折扣</p>
+      <button type="button" class="hero-feishu" onclick="openWx('feishu')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>飞书交流群<span aria-hidden="true">↗</span></button>
     </div>
     <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
       <span class="gb-label">首月等效额度</span>
@@ -601,7 +603,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <footer>
   <p>数据自动+人工双轨每日更新 · 优惠以各平台官方页面为准</p>
   <p class="disclaim">⚠️ 免责声明：本站为独立情报聚合站，与所列平台无关；所有优惠以各平台官方页面为准，请自行核实后再操作，本站不构成消费建议。</p>
-  <p><a href="#" id="wxFootLink">微信交流群</a> · <a href="rss.xml">RSS 订阅</a> · <a href="https://github.com/KJAI123/free-ai-tokens" target="_blank" rel="noopener">数据开源</a> · <a href="en.html" target="_blank" rel="noopener">English</a> · © 2026 tokenmost.com</p>
+  <p><a href="#" id="wxFootLink">微信交流群</a> · <a href="#" onclick="openWx('feishu');return false">飞书交流群</a> · <a href="rss.xml">RSS 订阅</a> · <a href="https://github.com/KJAI123/free-ai-tokens" target="_blank" rel="noopener">数据开源</a> · <a href="en.html" target="_blank" rel="noopener">English</a> · © 2026 tokenmost.com</p>
 </footer>
 </main><!-- /main -->
 <!-- ============ 底部导航（移动端） ============ -->
@@ -685,14 +687,18 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;line-height:1.6">🪙 <b style="color:var(--amber)">用码加倍</b>：注册/订阅流程中先填此码（或直接经链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠/折扣/翻倍）。</p>
 </div>
 <div id="wxOverlay"></div>
-<div id="wxPanel" role="dialog" aria-modal="true">
-  <button id="wxClose">✕</button>
-  <h3>📥 微信交流群</h3>
-  <p class="sub">羊毛情报第一时间推送 · 群友互助答疑</p>
-  <img id="wxQrImg" alt="微信群二维码" style="display:none">
-  <p id="wxExpiry" class="wx-expiry">入群二维码 11 月 24 日前有效</p>
-  <div class="wx-miss" id="wxMiss">二维码加载失败，请刷新重试；或通过页面底部 RSS 订阅获取羊毛速报。</div>
-  <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日 token 折扣码与羊毛速报不错过</p>
+<div id="wxPanel" role="dialog" aria-modal="true" aria-labelledby="communityTitle">
+  <button id="wxClose" type="button" aria-label="关闭">✕</button>
+  <h3 id="communityTitle">交流社群</h3>
+  <div class="community-options" role="group" aria-label="选择社群">
+    <button type="button" data-community="wechat" aria-pressed="true" onclick="openWx('wechat')">微信群</button>
+    <button type="button" data-community="feishu" aria-pressed="false" onclick="openWx('feishu')">飞书群</button>
+  </div>
+  <p id="communityName" class="sub">AI 羊毛交流</p>
+  <img id="wxQrImg" alt="社群入群二维码" style="display:none">
+  <p id="wxExpiry" class="wx-expiry"></p>
+  <a id="feishuJoinLink" class="community-join" href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=358r1ee1-47ad-402e-9775-c1f44b6d2526&amp;qr_code=true" target="_blank" rel="noopener" hidden>打开飞书加入群聊 <span aria-hidden="true">↗</span></a>
+  <div class="wx-miss" id="wxMiss" hidden>二维码加载失败，请刷新重试。</div>
 </div>
 <div id="sumPanel" role="dialog" aria-modal="true">
   <button id="sumClose">✕</button>
@@ -1458,11 +1464,25 @@ function openRedeem(el){
 function closeRedeem(){document.getElementById('redeemOverlay').classList.remove('open');document.getElementById('redeemPanel').classList.remove('open')}
 document.getElementById('redeemClose').addEventListener('click',closeRedeem);
 document.getElementById('redeemOverlay').addEventListener('click',closeRedeem);
-function openWx(){
+function openWx(group='wechat'){
+  const feishu=group==='feishu';
   const img=document.getElementById('wxQrImg'),miss=document.getElementById('wxMiss');
-  img.onload=()=>{img.style.display='block';miss.style.display='none'};
-  img.onerror=()=>{img.style.display='none';miss.style.display='block'};
-  img.src=document.getElementById('heroQrImage').src;
+  document.querySelectorAll('[data-community]').forEach(button=>{
+    button.setAttribute('aria-pressed',String(button.dataset.community===(feishu?'feishu':'wechat')));
+  });
+  document.getElementById('communityName').textContent=feishu
+    ? Workbench.msg('Tokenmost 的 ai 羊毛交流群 · 飞书个人版','TokenMost AI offers group · Feishu Personal')
+    : Workbench.msg('AI 羊毛交流 · 微信群','AI offers and discussion · WeChat');
+  document.getElementById('wxExpiry').textContent=feishu
+    ? Workbench.msg('仅限企业内部成员加入 · 二维码长期有效','Organization members only · QR code has no expiry')
+    : Workbench.msg('入群二维码 11 月 24 日前有效','Group QR code valid before November 24');
+  document.getElementById('feishuJoinLink').hidden=!feishu;
+  img.alt=feishu?Workbench.msg('飞书群入群二维码','Feishu group QR code'):Workbench.msg('微信群入群二维码','WeChat group QR code');
+  img.style.display='none';
+  miss.hidden=true;
+  img.onload=()=>{img.style.display='block';miss.hidden=true};
+  img.onerror=()=>{img.style.display='none';miss.hidden=false};
+  img.src=feishu?'assets/feishu-group-20261118.png':document.getElementById('heroQrImage').src;
   openPanel('#wxOverlay','#wxPanel');
 }
 function closeWx(){document.getElementById('wxOverlay').classList.remove('open');document.getElementById('wxPanel').classList.remove('open')}

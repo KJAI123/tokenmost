@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261117-8">
+<link rel="stylesheet" href="assets/workbench.css?v=20261118-1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -426,6 +426,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <a class="sitem" id="vaultBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-box"/></svg>Account vault</a>
       <a class="sitem" id="guideBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-book"/></svg>Claim guides</a>
       <a class="sitem" id="wxBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>WeChat group</a>
+      <a class="sitem" onclick="openWx('feishu');return false" href="#" ><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>Feishu group</a>
       <a class="sitem" href="#faq"><svg class="ui-icon" aria-hidden="true"><use href="#tm-help"/></svg>Frequently asked questions</a>
     </div>
   </nav>
@@ -455,7 +456,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   </nav>
   <div class="top-actions">
     <button type="button" id="bmBtn" title="Bookmark site" aria-label="Bookmark site"><svg class="ui-icon" aria-hidden="true"><use href="#tm-bookmark"/></svg></button>
-    <button type="button" class="community-btn" onclick="openWx()" aria-label="WeChat community"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>Community</span></button>
+    <button type="button" class="community-btn" onclick="openWx()" aria-label="Community groups"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg><span>Community</span></button>
     <a class="lang-switch" href="./" lang="zh-CN" hreflang="zh-CN" onclick="localStorage.setItem('tm_lang_pref','zh')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>中文</a>
     <button type="button" id="installBtn">Install</button>
   </div>
@@ -465,6 +466,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <div class="hero-copy">
       <h1>Free AI Token Offers</h1>
       <p>Free APIs, model credits and deals</p>
+      <button type="button" class="hero-feishu" onclick="openWx('feishu')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>Feishu group<span aria-hidden="true">↗</span></button>
     </div>
     <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
       <span class="gb-label">Est. first-month credits</span>
@@ -582,7 +584,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <footer>
   <p>Auto+manual daily updates · offers subject to official pages</p>
   <p class="disclaim">⚠️ Disclaimer: independent aggregator，not affiliated with listed platforms. Verify on official pages before acting. Not financial advice.</p>
-  <p><a href="#" id="wxFootLink">WeChat group</a> · <a href="rss.xml">RSS Feed</a> · <a href="https://github.com/KJAI123/free-ai-tokens" target="_blank" rel="noopener">Open dataset</a> · <a href="en.html" target="_blank" rel="noopener">English</a> · © 2026 tokenmost.com</p>
+  <p><a href="#" id="wxFootLink">WeChat group</a> · <a href="#" onclick="openWx('feishu');return false">Feishu group</a> · <a href="rss.xml">RSS Feed</a> · <a href="https://github.com/KJAI123/free-ai-tokens" target="_blank" rel="noopener">Open dataset</a> · <a href="en.html" target="_blank" rel="noopener">English</a> · © 2026 tokenmost.com</p>
 </footer>
 </main><!-- /main -->
 <!-- ============ 底部导航（移动端） ============ -->
@@ -666,14 +668,18 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;line-height:1.6">🪙 <b style="color:var(--amber)">用码加倍</b>：注册/订阅流程中先填此码（或直接经链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠/Discount/翻倍）。</p>
 </div>
 <div id="wxOverlay"></div>
-<div id="wxPanel" role="dialog" aria-modal="true">
-  <button id="wxClose">✕</button>
-  <h3>📥 WeChat group</h3>
-  <p class="sub">羊毛情报第一时间推送 · 群友互助答疑</p>
-  <img id="wxQrImg" alt="微信群二维码" style="display:none">
-  <p id="wxExpiry" class="wx-expiry">The group QR code is valid before November 24.</p>
-  <div class="wx-miss" id="wxMiss">二维码加载失败，请刷新重试；或通过页面底部 RSS 订阅获取羊毛速报。</div>
-  <p style="font-size:.75rem;color:var(--muted)">扫码入群 · 每日 token Discount码与羊毛速报不错过</p>
+<div id="wxPanel" role="dialog" aria-modal="true" aria-labelledby="communityTitle">
+  <button id="wxClose" type="button" aria-label="Close">✕</button>
+  <h3 id="communityTitle">Community groups</h3>
+  <div class="community-options" role="group" aria-label="Choose a group">
+    <button type="button" data-community="wechat" aria-pressed="true" onclick="openWx('wechat')">WeChat</button>
+    <button type="button" data-community="feishu" aria-pressed="false" onclick="openWx('feishu')">Feishu</button>
+  </div>
+  <p id="communityName" class="sub">AI offers and community discussion</p>
+  <img id="wxQrImg" alt="Group invitation QR code" style="display:none">
+  <p id="wxExpiry" class="wx-expiry"></p>
+  <a id="feishuJoinLink" class="community-join" href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=358r1ee1-47ad-402e-9775-c1f44b6d2526&amp;qr_code=true" target="_blank" rel="noopener" hidden>Open Feishu to join <span aria-hidden="true">↗</span></a>
+  <div class="wx-miss" id="wxMiss" hidden>The QR code could not load. Please refresh and try again.</div>
 </div>
 <div id="sumPanel" role="dialog" aria-modal="true">
   <button id="sumClose">✕</button>
@@ -1417,11 +1423,25 @@ function openRedeem(el){
 function closeRedeem(){document.getElementById('redeemOverlay').classList.remove('open');document.getElementById('redeemPanel').classList.remove('open')}
 document.getElementById('redeemClose').addEventListener('click',closeRedeem);
 document.getElementById('redeemOverlay').addEventListener('click',closeRedeem);
-function openWx(){
+function openWx(group='wechat'){
+  const feishu=group==='feishu';
   const img=document.getElementById('wxQrImg'),miss=document.getElementById('wxMiss');
-  img.onload=()=>{img.style.display='block';miss.style.display='none'};
-  img.onerror=()=>{img.style.display='none';miss.style.display='block'};
-  img.src=document.getElementById('heroQrImage').src;
+  document.querySelectorAll('[data-community]').forEach(button=>{
+    button.setAttribute('aria-pressed',String(button.dataset.community===(feishu?'feishu':'wechat')));
+  });
+  document.getElementById('communityName').textContent=feishu
+    ? Workbench.msg('Tokenmost 的 ai 羊毛交流群 · 飞书个人版','TokenMost AI offers group · Feishu Personal')
+    : Workbench.msg('AI 羊毛交流 · 微信群','AI offers and discussion · WeChat');
+  document.getElementById('wxExpiry').textContent=feishu
+    ? Workbench.msg('仅限企业内部成员加入 · 二维码长期有效','Organization members only · QR code has no expiry')
+    : Workbench.msg('入群二维码 11 月 24 日前有效','Group QR code valid before November 24');
+  document.getElementById('feishuJoinLink').hidden=!feishu;
+  img.alt=feishu?Workbench.msg('飞书群入群二维码','Feishu group QR code'):Workbench.msg('微信群入群二维码','WeChat group QR code');
+  img.style.display='none';
+  miss.hidden=true;
+  img.onload=()=>{img.style.display='block';miss.hidden=true};
+  img.onerror=()=>{img.style.display='none';miss.hidden=false};
+  img.src=feishu?'assets/feishu-group-20261118.png':document.getElementById('heroQrImage').src;
   openPanel('#wxOverlay','#wxPanel');
 }
 function closeWx(){document.getElementById('wxOverlay').classList.remove('open');document.getElementById('wxPanel').classList.remove('open')}
