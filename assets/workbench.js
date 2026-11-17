@@ -8,7 +8,8 @@ const Workbench = (() => {
     L0: ['clock', msg('限时与折扣', 'Promotions & discounts'), msg('留意活动截止日期和名额', 'Check deadlines and availability')],
     L1: ['repeat', msg('每日可领', 'Daily refresh'), msg('每天重置的额度与权益', 'Credits and perks that reset daily')],
     L2: ['infinity', msg('长期免费', 'Always free'), msg('常设免费档和注册权益', 'Standing free tiers and signup offers')],
-    L3: ['stack', msg('其他权益', 'Other perks'), msg('邀请奖励、订阅加成和工具', 'Invites, subscription bonuses and tools')]
+    L3: ['stack', msg('其他权益', 'Other perks'), msg('邀请奖励、订阅加成和工具', 'Invites, subscription bonuses and tools')],
+    L4: ['stack', msg('申请制权益', 'Application-based offers'), msg('需企业资质、项目审核或开源维护者资格', 'Startup, project review or open-source eligibility required')]
   };
   const expanded = new Set();
   const icon = key => '<svg class="ui-icon" aria-hidden="true"><use href="#tm-' + key + '"/></svg>';
@@ -139,6 +140,10 @@ const Workbench = (() => {
       oss: msg('开源维护者', 'Open-source maintainers'),
     };
     return labels[deal.gate] || deal.gate_label || deal.gate;
+  }
+
+  function requiresApplication(deal) {
+    return ['startup', 'audit', 'oss'].includes(deal.gate);
   }
 
   function timing(d) {
@@ -309,5 +314,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, providerLogo, offerLogo, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();

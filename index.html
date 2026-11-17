@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261117-7">
+<link rel="stylesheet" href="assets/workbench.css?v=20261117-8">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -775,7 +775,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/workbench.js?v=20261117-7"></script>
+<script src="assets/workbench.js?v=20261117-8"></script>
 <script>
 /* ============ 常量 ============ */
 /* 语言自动识别 v2.32.3：IP 国别优先(ipwho.is 免费无key HTTPS)+浏览器语言兜底+偏好记忆；CN→中文版，非 CN→英文版；失败静默 */
@@ -881,7 +881,7 @@ const rowHtml=(d,ov)=>{
     <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
     <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
     <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" aria-pressed="${claimedSet.has(d.id)}" title="标记或取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
-    ${(d.coupon||d.type==='coupon')&&!d.placeholder?`<a class="go cgo" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(d.coupon||d.url)}" title="${d.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${d.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">领取</a>`}
+    ${(d.coupon||d.type==='coupon')&&!d.placeholder?`<a class="go cgo" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow" data-code="${esc(d.coupon||d.url)}" title="${d.coupon?'点击复制折扣码并打开领取页':'点击复制折扣链接并打开'}">${d.coupon?'🎁 券领':'🔗 折扣链接'}</a>`:`<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):Workbench.msg('领取','Claim')}</a>`}
   </div>
 </article>`};
 
@@ -935,6 +935,7 @@ function apiBadge(d){
 }
 /* token 数额：表格第一列（全站口径=DeepSeek V4.1 Flash 等效，eq_wan 优先于裸 tokens_wan） */
 function tokCell(d,ov){
+  if(d.verify_status!=='expired'&&Workbench.requiresApplication(d))return `<span class="chip gate-chip application-chip">${Workbench.msg('需申请', 'Application required')}</span>`;
   if(ov){const total=Math.round(ov.once+ov.daily*30),fw=w=>w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万';
     if(d.unit==='tool')return'<span title="开源软件/工具本身免费，AI 额度走你自己的 API Key——非平台赠送额度，不计入全站 token 总账">🧰<span class="unit" style="display:block;font-size:.68rem;margin-top:1px">工具类</span></span>';
     if(!total)return'<span title="该条为机制/口径说明，平台未公布可折算的具体 token 数额">免费<span class="unit" style="display:block;font-size:.68rem;margin-top:1px">额度未公布</span></span>';
@@ -958,6 +959,7 @@ function tokSort(d){return (d.eq_wan||d.tokens_wan||0)+(d.daily_wan||0)*30+(d.us
 const _q=new URLSearchParams(location.search).get('q');
 if(_q)curQ=_q;
 function dealLayer(d){
+  if(Workbench.requiresApplication(d))return 'L4';
   var dl=d.deadline&&!String(d.deadline).startsWith('长期');
   if(d.type==='limited_promo'||d.type==='coupon'||dl)return 'L0';
   if(d.daily_wan||d.cadence==='daily')return 'L1';
@@ -1005,11 +1007,14 @@ function render(){
     const gmap={};
     list.forEach(d=>{(gmap[d.group||d.provider]=gmap[d.group||d.provider]||[]).push(d)});
     const groups=Object.values(gmap).map(ds=>{
-      const once=ds.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
-      const daily=ds.reduce((s,d)=>s+(d.daily_wan||0),0);
-      const best=ds.slice().sort((a,b)=>tokSort(b)-tokSort(a))[0];
-      return {ds,once,daily,best,p:best.group||best.provider};
+      const available=ds.filter(d=>!Workbench.requiresApplication(d));
+      const applicationOnly=available.length===0;
+      const once=available.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
+      const daily=available.reduce((s,d)=>s+(d.daily_wan||0),0);
+      const best=(applicationOnly?ds.slice():available).sort((a,b)=>tokSort(b)-tokSort(a))[0];
+      return {ds,once,daily,best,applicationOnly,p:best.group||best.provider};
     }).sort((a,b)=>{
+      if(a.applicationOnly!==b.applicationOnly)return Number(a.applicationOnly)-Number(b.applicationOnly);
       if(sortKey==='tokens')return (b.once+b.daily*30)-(a.once+a.daily*30);
       const ca=a.ds.some(d=>d.type==='coupon')?0:1;
       const cb=b.ds.some(d=>d.type==='coupon')?0:1;
@@ -1027,13 +1032,16 @@ function render(){
       const f2=w=>{const yi=w/10000;return yi>=10?Math.round(yi)+' 亿':(Math.round(yi*10)/10)+' 亿'};
       const open=Workbench.expanded.has(g.p);
       const detailId='offer-group-'+encodeURIComponent(g.p);
-      const summaries=Workbench.groupSummary(g.best,g.ds);
+      const summaries=g.applicationOnly
+        ? Workbench.msg('按各计划的资质与流程申请', 'Check each program’s eligibility and application terms')
+        : Workbench.groupSummary(g.best,g.ds);
+      const headline=g.applicationOnly ? g.ds.map(d=>d.provider).join(' · ') : Workbench.headline(g.best);
       return g.ds.length>1?`
   <article class="row agg" data-agg="${esc(g.p)}" data-layer="${dealLayer(g.best)}">
     <div class="r-content">
       <div class="r-line1">
         <span class="r-provider">${Workbench.offerLogo(g.best,siteFor(g.best),g.p)}${esc(g.p)}</span>
-        <span class="r-value" title="${esc(Workbench.offerValue(g.best))}">${esc(Workbench.headline(g.best))}</span>
+        <span class="r-value" title="${esc(g.applicationOnly ? headline : Workbench.offerValue(g.best))}">${esc(headline)}</span>
         <span class="chip gold">📎 ${g.ds.length} 条信源</span>
       </div>
       <div class="r-line2">
@@ -1043,11 +1051,11 @@ function render(){
         <span class="r-notes" title="${esc(summaries)}">${esc(summaries)}</span>
       </div>
     </div>
-    <div class="r-tok"><span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'未折算'}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span></div>
+    <div class="r-tok">${g.applicationOnly ? tokCell(g.best) : `<span title="该平台全部信源按 DS4.1 Flash 等效的首月可薅总量 = 一次性 ${f(g.once)} ＋ 日均 ${f(g.daily)}×30 天"><span class="num">${total?f(total):'未折算'}</span><span class="unit">首月可薅</span>${g.daily?`<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">${g.once?f(g.once)+'＋':''}日均${f2(g.daily)}/天</span>`:'<span class="unit" style="display:block;font-size:.68rem;white-space:nowrap;margin-top:1px">一次性到账</span>'}</span>`}</div>
     <div class="r-state">${Workbench.freshness(g.best)}${apiBadge(g.best)}${Workbench.timing(g.best)}</div>
     <div class="r-ops">
       <button type="button" class="aggToggle" data-agg="${esc(g.p)}" data-count="${g.ds.length}" aria-expanded="${open}" aria-controls="${detailId}">${Workbench.groupLabel(open,g.ds.length)}</button>
-      ${aggGold(g)}
+      ${g.applicationOnly?'':aggGold(g)}
     </div>
   </article>
   <div class="agg-detail${open?' open':''}" id="${detailId}" data-detail="${esc(g.p)}" data-layer="${dealLayer(g.best)}">${g.ds.map(d=>rowHtml(d)).join('')}</div>`:rowHtml(g.best,{once:g.once,daily:g.daily});
@@ -1649,7 +1657,7 @@ document.getElementById('calcOffpeak').addEventListener('change',calcPersist);
 function fmtWan(w){return w>=10000?(w/10000).toFixed(2)+' 亿':Math.round(w)+' 万'}
 function fmtYi(million){const yi=million/100;return yi>=1?yi.toFixed(2)+' 亿':Math.round(million*100)+' 万'}
 function sumRender(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan');
+  const live=DEALS.filter(d=>!Workbench.requiresApplication(d)&&d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan');
   const agg=rows=>({t:rows.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0),c:rows.reduce((s,d)=>s+(d.cny||0),0),u:rows.reduce((s,d)=>s+(d.usd||0),0),n:rows.length});
   const R=agg(live.filter(d=>d.via==='register')),I=agg(live.filter(d=>d.via==='invite')),S=agg(live.filter(d=>d.via==='student'));
   const freeN=live.filter(d=>d.via==='free'||d.type==='free_tier').length;
@@ -1680,7 +1688,7 @@ function sumCalc(){
     if(!i&&!o)return null;
     return{...p,bl:((3*i+o)/4)*(p.currency==='USD'?FX:1)};
   }).filter(Boolean).sort((a,b)=>a.bl-b.bl).slice(0,5);
-  const freeWan=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified').reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
+  const freeWan=DEALS.filter(d=>!Workbench.requiresApplication(d)&&d.published!==false&&d.verify_status==='verified').reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const best=rows[0];
   document.getElementById('sumTable').innerHTML=
     '<tr><th>买法（同预算 token 最多）</th><th>综合单价*</th><th>该预算可得</th></tr>'+
@@ -1701,7 +1709,7 @@ function _dayKey(){return 'tm_claimed_'+new Date().toISOString().slice(0,10)}
 function sumChecklist(){
   var el=document.getElementById('sumBody');if(!el)return;
   var L=window._L||{};
-  var live=DEALS.filter(function(d){return d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan'&&d.url&&(d.type==='signup_bonus'||d.type==='limited_promo'||d.type==='recurring_promo'||d.type==='coupon'||d.daily_wan)});
+  var live=DEALS.filter(function(d){return !Workbench.requiresApplication(d)&&d.published!==false&&d.verify_status==='verified'&&d.type!=='price_low'&&d.type!=='pricing_plan'&&d.url&&(d.type==='signup_bonus'||d.type==='limited_promo'||d.type==='recurring_promo'||d.type==='coupon'||d.daily_wan)});
   live.sort(function(a,b){return ((b.eq_wan||b.tokens_wan||0)+(b.daily_wan||0)*30)-((a.eq_wan||a.tokens_wan||0)+(a.daily_wan||0)*30)});
   var items=live.slice(0,8);
   if(!items.length)return;
@@ -1835,7 +1843,7 @@ document.getElementById('planClose').addEventListener('click',closePlan);
 document.getElementById('planOverlay').addEventListener('click',closePlan);
 /* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
 function calcGlobalBanner(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan');
+  const live=DEALS.filter(d=>!Workbench.requiresApplication(d)&&d.published!==false&&d.verify_status!=='expired'&&d.type!=='warning'&&d.type!=='price_low'&&d.type!=='pricing_plan');
   const once=live.reduce((s,d)=>s+(d.eq_wan||d.tokens_wan||0),0);
   const daily=live.reduce((s,d)=>s+(d.daily_wan||0),0);
   const monthly=Math.round(once+daily*30);

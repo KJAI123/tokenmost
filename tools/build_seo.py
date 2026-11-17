@@ -57,11 +57,11 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 </style></head><body>
 <a class="back" href="/">← 回 tokenmost 情报流</a>
 <h1>{h1}</h1>
-<p class="sub">更新于 {updated} · {layer} · 共 {n} 条信源 · 全站计量基准：DeepSeek V4.1 Flash 等效</p>
+<p class="sub">更新于 {updated} · {layer} · 共 {n} 条信源 · {metric}</p>
 <p>{intro}</p>
-<h2>🎁 当前可领额度与羊毛</h2>
+<h2>{offers_heading}</h2>
 {deals}
-<h2>❓ {name}免费额度常见问题</h2>
+<h2>{faq_heading}</h2>
 {faq}
 <div class="rel">继续看：<a href="/">全部平台情报流</a><a href="/guides/coding-plan-guide.html">Coding Plan 选购攻略</a><a href="/guides/free-tier-survival.html">海外免费层生存指南</a><a href="/rss.xml">RSS 订阅</a></div>
 </body></html>"""
@@ -73,6 +73,13 @@ FAQ_GEN = [
      "点击本页各条「立即领取」直达官方页面，按官方规则注册/实名/激活即可；限时活动请留意截止日期。tokenmost 每日核验各条状态，失效信息自动清洗。"),
     ("{name}的免费额度能用多少 token？",
      "tokenmost 按 DS Flash 等效统一计量：一次性额度与每日刷新额度分开标注，「首月可薅总量 = 一次性 + 日均 × 30 天」。本页各条收益列即等效 token 数。"),
+]
+
+APPLICATION_GATES = {"startup", "audit", "oss"}
+APPLICATION_FAQ = [
+    ("有哪些申请制计划？", "本站收录 {n} 项计划，包括 {brief}。"),
+    ("如何申请？", "点击「查看申请」进入官方页面，核对适用对象、审核材料和额度有效期。"),
+    ("额度如何计算？", "各计划按其官方条款和原单位发放额度。"),
 ]
 
 
@@ -149,8 +156,10 @@ def main():
         slug = slugify(g)
         layer = LAYER.get(ds[0]["category"], "")
         verified = sum(1 for d in ds if d.get("verify_status") == "verified")
-        once = sum(d.get("eq_wan") or d.get("tokens_wan") or 0 for d in ds)
-        daily = sum(d.get("daily_wan") or 0 for d in ds)
+        available = [d for d in ds if d.get("gate") not in APPLICATION_GATES]
+        application_only = not available
+        once = sum(d.get("eq_wan") or d.get("tokens_wan") or 0 for d in available)
+        daily = sum(d.get("daily_wan") or 0 for d in available)
         total = once + daily * 30
         total_s = fmt_wan(total) if total else "待公布"
         brief = "、".join(d["provider"] for d in ds[:3])
@@ -160,19 +169,25 @@ def main():
         intro = (f"本页聚合 {name}（{layer}）全部 {len(ds)} 条免费额度情报，其中 {verified} 条已验证。"
                  f"首月可薅总量约 <b>{total_s}</b> DS Flash 等效 token（一次性 {fmt_wan(once) if once else '—'} ＋ 日均 {fmt_wan(daily) if daily else '—'} × 30 天）。"
                  f"tokenmost 每日核验，过期自动清洗。")
+        if application_only:
+            title = f"{name}申请指南（{today} 核验）"
+            h1 = f"{name}申请指南"
+            desc = f"收录 {len(ds)} 项申请制权益，附官方资格、额度和申请入口。"
+            intro = f"本页收录 {len(ds)} 项申请制权益，其中 {verified} 项已核验。请按各计划的官方条件申请。"
         blocks = []
         for d in sorted(ds, key=lambda x: -(x.get("eq_wan") or x.get("tokens_wan") or 0) - (x.get("daily_wan") or 0) * 30):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
             badge = "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
+            action = "查看申请" if d.get("gate") in APPLICATION_GATES else "立即领取"
             blocks.append(
                 f'<div class="deal"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span>{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
-                f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">立即领取 →</a></div>')
+                f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a></div>')
         faq_blocks = []
         faq_items = []
-        for q_t, a_t in FAQ_GEN:
+        for q_t, a_t in APPLICATION_FAQ if application_only else FAQ_GEN:
             q = q_t.format(name=name, updated=today, n=len(ds), brief=brief)
             a = a_t.format(name=name, updated=today, n=len(ds), brief=brief, total=total_s)
             faq_blocks.append(f"<details><summary>{esc_quote(q)}</summary><p>{esc_quote(a)}</p></details>")
@@ -188,12 +203,15 @@ def main():
         robots_meta = '<meta name="robots" content="noindex,follow">\n' if (verified == 0 and len(ds) < 3) else ''
         page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, h1=h1, robots=robots_meta,
                           updated=today, layer=layer, n=len(ds), intro=intro,
+                          metric="额度按官方单位列出" if application_only else "全站计量基准：DeepSeek V4.1 Flash 等效",
+                          offers_heading="申请计划" if application_only else "🎁 当前可领额度与羊毛",
+                          faq_heading="申请常见问题" if application_only else f"❓ {esc_quote(name)}免费额度常见问题",
                           deals="\n".join(blocks), faq="\n".join(faq_blocks),
-                          name=esc_quote(name), ld_web=ld_web, ld_faq=ld_faq)
+                          ld_web=ld_web, ld_faq=ld_faq)
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
         pages.append({"slug": slug, "name": name, "n": len(ds), "verified": verified, "total": total_s,
                       "url": f"https://tokenmost.com/platform/{slug}.html",
-                      "title": title, "desc": desc})
+                      "title": title, "desc": desc, "application_only": application_only})
 
     # llms.txt（AI 搜索站点地图）
     lines = ["# tokenmost.com", "",
@@ -208,7 +226,9 @@ def main():
              "- Contact: no signup required, site is fully public", ""]
     lines += ["## 平台免费额度页", ""]
     for p in sorted(pages, key=lambda x: -x["n"]):
-        lines.append(f"- [{p['name']}免费额度（{p['total']}可薅，{p['n']} 条信源）]({p['url']}): {p['desc'][:80]}")
+        label = (f"{p['name']}申请指南（{p['n']} 项）" if p["application_only"]
+                 else f"{p['name']}免费额度（{p['total']}可薅，{p['n']} 条信源）")
+        lines.append(f"- [{label}]({p['url']}): {p['desc'][:80]}")
     lines += ["", "## 领取攻略", ""]
     for g in guides:
         lines.append(f"- [{g['title']}](https://tokenmost.com/guides/{g['id']}.html): {g.get('desc','')[:80]}")

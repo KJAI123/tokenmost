@@ -131,6 +131,8 @@ body.side-folded .topbar{padding-left:26px}
 .layer-head p{font-size:11px}
 .layer-head .ui-icon{width:15px;height:15px;color:var(--accent)}
 .layer-head.L0 .ui-icon{color:var(--red)}
+.layer-head.L4 .ui-icon{color:var(--amber)}
+.row .r-tok .application-chip{color:var(--amber);background:var(--yellow-soft);border-color:#edd68b}
 .layer-count{font:650 10px var(--mono);margin-left:auto;white-space:nowrap}
 .row,.row.agg{grid-template-rows:auto;background:var(--card);padding-block:8px;min-height:66px;border-bottom-color:var(--border)}
 .row:hover,.row.agg:hover{background:var(--hover)}
