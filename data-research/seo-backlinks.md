@@ -352,3 +352,12 @@
 6. 11-29 前：CSDN SoduWork 项目测评招募可报名（奖金池 10 万+，官方邀请过=合规通道）
 
 **今日有效产出盘点**：知乎 a6+自答+专栏#3+简书 2 篇（IT 专题投稿中）+掘金沸点+GitHub 周更+CSDN c6（已下架=损失）——Learning：营销判定追回机制存在（复审翻案），解禁后重写存货仍可恢复部分
+
+## 🎉 首个外链合并 + 四平台智能体并行轮（2026-11-20）
+
+1. **PR 战报轮查**：
+   - 🎉 **ai-megalist #81 已合并**（2026-11-18 15:08 UTC）——TokenMost 正式进入 IrtezaAsadRizvi/ai-megalist（88⭐）的 Model APIs & dev platforms 索引（含 tools/tokenmost.md 专属 writeup）——**首个被正式收录的外链达成**
+   - ❌ linktre-tools #49 被关（无留言，可能不符合其商业收录标准）——不重投
+   - 其余 8 发 open 待审（FreeLLM-API-KeyHub#13/awesome-coding-plan#44/AI-Catalog#205/awesome-ai-coding#171/awesome-free-ai-tools#83/ai-coding-welfare#63/wool-gathering#1/ai-welfare-hub#12）
+2. **四平台智能体已并行派发**（掘金发布攻坚/知乎解限检查+干货答题/简书第2篇+搜狐探查/百家号封面攻坚+头条流程探查）——全部执行纯干货零植入新策略
+3. 策略 v3 已入册：养号期（1-2 周）纯干货零植入→稳定后 5:1 穿插纯文本提及→成熟后恢复带链汇总文
