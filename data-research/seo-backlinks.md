@@ -305,3 +305,12 @@
 ## GitHub 数据线（并行）
 
 1. **awesome-free-ai-tokens-cn「本周新增」周更 ✅**（2026-11-19，commit 9a8b461）：contents API 全量替换周更段（旧 4 条→新 5 条：七牛云 Conatus 每日 1 亿至 11-30/AutoClaw 登录送 1 亿至 11-22/Simular Box 免费云电脑/OpenCode Go $10 直核/Rime STT 限免至 11-19），条目全部带官方链接+日期更新 2026-11-19——README 周更=搜索引擎重收录信号；注：任务给的「Mercury 3 注册送 1 亿」在 deals.json（301 条）中无对应条目，已按 verified_at 最新+高价值+published 三条件改选；raw.githubusercontent 复验落地 ✅
+
+## 掘金养号线（并行）
+
+1. **首条沸点发布成功 ✅**（2026-11-18，账号「欧美供销仓修谢东」第 0 天）：https://juejin.cn/pin/7709228455338524707 ——内容「盘了点 2026 年底白嫖 AI 算力的路子：智谱每天 3 亿 GLM-Flash 放量、InstaBox 免费 4C8G 云电脑（MCP 能直接被 Claude Code 指挥）、Modal 每月 30 刀 credits 月月刷新……具体清单带核实日期在 tokenmost.com。各位还有什么私藏渠道？」+话题 chip **#新人报道#**（171 字正文，个人主页沸点 tab 已验证在线）
+2. **新人任务链收益**：toast「发布成功！恭喜达成首次发布沸点任务！矿石+5000！」——首次沸点 5000 矿石已拿；下一个节点=首篇文章 10000 矿石（写文章线已解锁，见下）
+3. **关键排障（自动化必读）**：无头浏览器默认视口 ~754px 窄屏时，导航栏「创作者中心」按钮与 /pins 顶部 composer 全部 0x0 隐藏（DOM 在但不可点）——`Emulation.setDeviceMetricsOverride 1440x900` 后全部正常渲染；此前「写文章按钮点击不跳转」的误判根源=窄视口按钮不可见
+4. **写文章复检 ✅ 已解锁**：创作者中心 /creator/home 完整加载（0 粉丝/0 掘力值/在掘金创作第 0 天），「写文章」按钮点击后在**新标签**打开 https://juejin.cn/editor/drafts/new?v=2 ——创作功能正常，判定此前失败=视口问题+新标签模式误判，非权限未解锁
+5. **composer 技术坑**：沸点编辑器（.pin-editor-dialog）跨 CDP 进程会话会自动折叠（display:none）但**内容保留**（React state），任何中途换进程都会丢 UI；正确姿势=导航→输入→话题→发布全流程单会话完成；正文输入用 Input.insertText（真实管线），话题 chip 靠 composer 预置（新用户引导自带 #新人报道#）
+6. **未竟事项**：第二条话题 #AI 编程# 未加上（话题弹层搜索框 placeholder 定位未命中，非硬锁）；沸点圈（圈子）未选（可选项）；下次沸点可换 #AI 编程# / #每天一个知识点# 等话题（弹层候选已探明：#AI用量排行榜#/#每日快讯#/#新人报道#/#JUEJIN FRIENDS 好生活计划#）
