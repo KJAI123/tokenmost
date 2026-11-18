@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-18T07:44:23Z",
+  "harvested_at": "2026-11-18T12:45:13Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -578,8 +578,130 @@
       "id": "volc-ark-collab",
       "name": "火山方舟协作奖励计划",
       "url": "https://docs.volcengine.com/docs/ark/collaboration-reward-program",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "免费推理额度",
+          "context": "接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 系列与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识问答 Agent"
+        },
+        {
+          "match": "免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度",
+          "context": "用户可参与本活动，享受企业权益。 ​ 完成个人实名认证的用户可参与本活动并享受个人权益，可在活动页面完成企业认证，并手动确认升级，享受企业权益。 ​ ​ ​ ​ 活动规则说明 ​ 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过 5M tokens 的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​"
+        },
+        {
+          "match": "免费资源包；未获授权的接入点数据将不予采集，该部分使用量次",
+          "context": "个该模型的冷启动免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过 5M tokens 的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活动页面说明。 ​ 本计划所发放的免费资源包，可用于抵扣在线推理过程中推理输入、推理输"
+        },
+        {
+          "match": "免费资源包，可用于抵扣在线推理过程中推理输入、推理输出以及推理缓存命中的按 token",
+          "context": "源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活动页面说明。 ​ 本计划所发放的免费资源包，可用于抵扣在线推理过程中推理输入、推理输出以及推理缓存命中的按 token 后付费计费用量。目前，暂不支持抵扣批量推理、按模型单元付费、TPM 保障包以及推理缓存存储等计费项的用量。若后续对上述抵扣规则进行调整，将在相关活动页面或文档中予以说明，请予以关注。 ​ 目前平台仅针对部分模型和调用方式进行数据采集，通过"
+        },
+        {
+          "match": "免费资源额度",
+          "context": "期延长至2026年9月30日 ）内，在您订购/使用火山方舟指定模型时（以【 产品活动介绍页 】公示为准）如选择参与本计划，火山方舟将为您提供一份冷启动资源包，同时为您提供每日奖励包（统称“方舟奖励资源包”或“奖励包”）。 ​ （1）奖励包的免费资源额度和种类等，以您开通本计划时火山方舟指定模型在【 产品活动介绍页 】公示的奖励信息为准； ​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （"
+        },
+        {
+          "match": "免费额度资源包奖励，具体奖励额度",
+          "context": "奖励资源包”或“奖励包”）。 ​ （1）奖励包的免费资源额度和种类等，以您开通本计划时火山方舟指定模型在【 产品活动介绍页 】公示的奖励信息为准； ​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 ​ （4）奖"
+        },
+        {
+          "match": "免费额度",
+          "context": "声音、图形、图片、图像、视频、软件或任何其他类似信息（以下称“协作奖励数据”）将授权提供给火山引擎用于火山引擎及其关联公司的模型和算法优化 。 ​ 数据授权说明 ​ 本计划项下授权的协作奖励数据为您参与本计划并按奖励规则启动奖励包计算程序及免费额度期间输入模型和模型输出的所有内容。对于采集的数据，火山方舟平台将在匿名化处理后加密存储用于火山引擎及其关联公司的模型算法和服务优化。 特别说明，对于不在以上采集范围内的数据，火山引擎将不会进行采集和存储 。 ​ 您理解并确认，火山引擎可永久"
+        },
+        {
+          "match": "免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度",
+          "context": "os-cn-i-goo7wpa0wc/bf4f020ebc1e405ba80afa41da2ed664~tplv-goo7wpa0wc-image.image) 活动规则说明 - 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度以【产品活动介绍页】公示为准。 - 调用已获授权的推理接入点，每日将采集每个模型不超过 5M tokens 的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 - 个人"
+        },
+        {
+          "match": "免费资源包；未获授权的接入点数据将不予采集，该部分使用量次",
+          "context": "得一个该模型的冷启动免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度以【产品活动介绍页】公示为准。 - 调用已获授权的推理接入点，每日将采集每个模型不超过 5M tokens 的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 - 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活动页面说明。 - 本计划所发放的免费资源包，可用于抵扣在线推理过程中推理输入、推理输"
+        },
+        {
+          "match": "免费资源包，可用于抵扣在线推理过程中推理输入、推理输出以及推理缓存命中的按 token",
+          "context": "源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 - 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活动页面说明。 - 本计划所发放的免费资源包，可用于抵扣在线推理过程中推理输入、推理输出以及推理缓存命中的按 token 后付费计费用量。目前，暂不支持抵扣批量推理、按模型单元付费、TPM 保障包以及推理缓存存储等计费项的用量。若后续对上述抵扣规则进行调整，将在相关活动页面或文档中予以说明，请予以关注。 - 目前平台仅针对部分模型和调用方式进行数据采集，通过"
+        },
+        {
+          "match": "免费资源额度",
+          "context": "1日，合作期延长至2026年9月30日）内，在您订购/使用火山方舟指定模型时（以【产品活动介绍页】公示为准）如选择参与本计划，火山方舟将为您提供一份冷启动资源包，同时为您提供每日奖励包（统称“方舟奖励资源包”或“奖励包”）。 （1）奖励包的免费资源额度和种类等，以您开通本计划时火山方舟指定模型在【产品活动介绍页】公示的奖励信息为准； （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 （3）每日奖励"
+        },
+        {
+          "match": "免费额度资源包奖励，具体奖励额度",
+          "context": "（统称“方舟奖励资源包”或“奖励包”）。 （1）奖励包的免费资源额度和种类等，以您开通本计划时火山方舟指定模型在【产品活动介绍页】公示的奖励信息为准； （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 （4）奖励包仅可"
+        },
+        {
+          "match": "免费额度",
+          "context": "入的文本、声音、图形、图片、图像、视频、软件或任何其他类似信息（以下称“协作奖励数据”）将授权提供给火山引擎用于火山引擎及其关联公司的模型和算法优化。 数据授权说明 本计划项下授权的协作奖励数据为您参与本计划并按奖励规则启动奖励包计算程序及免费额度期间输入模型和模型输出的所有内容。对于采集的数据，火山方舟平台将在匿名化处理后加密存储用于火山引擎及其关联公司的模型算法和服务优化。特别说明，对于不在以上采集范围内的数据，火山引擎将不会进行采集和存储。 您理解并确认，火山引擎可永久使用您在"
+        },
+        {
+          "match": "每日将采集每个模型不超过 5M tokens 的推理数据，并于次",
+          "context": "企业权益。 ​ ​ ​ ​ 活动规则说明 ​ 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度以【 产品活动介绍页 】公示为准。 ​ 调用已获授权的推理接入点，每日将采集每个模型不超过 5M tokens 的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 ​ 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活"
+        },
+        {
+          "match": "每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次",
+          "context": "​ （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 ​ （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 ​ （4）奖励包仅可用于抵扣按 Token 付费的后付费推理费用； ​ （5）奖励包将在发放到您账号后的 30 个自然日内有效，到期后清零； ​ 您可选择同时使用参与本计划的任意一款或几款"
+        },
+        {
+          "match": "每日将采集每个模型不超过 5M tokens 的推理数据，并于次",
+          "context": "wc-image.image) 活动规则说明 - 首次授权模型及推理接入点参与本计划，可获得一个该模型的冷启动免费资源包，该资源包可用于抵扣按 tokens 后付费用量，奖励额度以【产品活动介绍页】公示为准。 - 调用已获授权的推理接入点，每日将采集每个模型不超过 5M tokens 的推理数据，并于次日发放有效期为30天的等量免费资源包；未获授权的接入点数据将不予采集，该部分使用量次日也不会返还资源包。 - 个人实名认证用户可享有个人权益，完成企业认证升级后可享有企业权益，采集量及免费资源包上限将提升至企业权益对应水平，具体详情请参阅活"
+        },
+        {
+          "match": "每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次",
+          "context": "为准； （2）冷启动资源包的奖励机制为：在您首次成功授权某模型的推理接入点后，您将立即获得该模型免费额度资源包奖励，具体奖励额度以活动页面显示为准。 （3）每日奖励包的奖励机制为：在您授权火山方舟指定模型的推理接入点参与协作奖励计划后，将在每日额度内自动按顺序采集授权模型推理接入点对应的调用数据，次日根据每个模型的前一日采集量返还等量的每日奖励包。 （4）奖励包仅可用于抵扣按 Token 付费的后付费推理费用； （5）奖励包将在发放到您账号后的 30 个自然日内有效，到期后清零； 您可选择同时使用参与本计划的任意一款或几款模型服务，每"
+        },
+        {
+          "match": "协作奖励",
+          "context": "标准流程 模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 系列与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识"
+        },
+        {
+          "match": "协作奖励",
+          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​"
+        },
+        {
+          "match": "协作奖励",
+          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协"
+        },
+        {
+          "match": "协作奖励",
+          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页"
+        },
+        {
+          "match": "协作奖励",
+          "context": "励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页面「立即参与」入口 ​ 您可在 火山方舟控制台-开通管理页 ，点击 立即参与 进入产品活动页面。 ​ ​ ​ ​ 方式二：通过模型广场进入模型详情页，在模型卡片进入 ​ 您可登录 火山方舟控制台 ，"
+        },
+        {
+          "match": "协作奖励",
+          "context": "片进入 ​ 您可登录 火山方舟控制台 ，在左侧导航栏选择 模型广场 ，点击目标模型卡片即可进入模型详情页。点击 火山方舟模型奖励计划 进入活动详情页。 ​ 当前入口支持模型 ： Doubao-Seed-Evolving ​ ​ ​ ​ 进入协作奖励详情页后，您可在当前页面完成协作奖励计划的 授权 或 撤回授权 操作。 ​ ​ ​ ​ ​ ​ ​ 活动参与范围 ​ 完成企业认证的用户可参与本活动，享受企业权益。 ​ 完成个人实名认证的用户可参与本活动并享受个人权益，可在活动页面完成企业"
+        },
+        {
+          "match": "协作奖励",
+          "context": "，在左侧导航栏选择 模型广场 ，点击目标模型卡片即可进入模型详情页。点击 火山方舟模型奖励计划 进入活动详情页。 ​ 当前入口支持模型 ： Doubao-Seed-Evolving ​ ​ ​ ​ 进入协作奖励详情页后，您可在当前页面完成协作奖励计划的 授权 或 撤回授权 操作。 ​ ​ ​ ​ ​ ​ ​ 活动参与范围 ​ 完成企业认证的用户可参与本活动，享受企业权益。 ​ 完成个人实名认证的用户可参与本活动并享受个人权益，可在活动页面完成企业认证，并手动确认升级，享受企业权益。"
+        },
+        {
+          "match": "协作奖励",
+          "context": "计划参与人数较多，资源包下发可能存在延迟，请耐心等待。 ​ 数据安全保障 ​ 隐私无忧：您的授权数据会被严格加密和匿名化处理； ​ 无授权不采集：当您从未授权、撤回授权，或者本计划终止时，您的数据不会被采集； ​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含"
+        },
+        {
+          "match": "协作奖励",
+          "context": "等待。 ​ 数据安全保障 ​ 隐私无忧：您的授权数据会被严格加密和匿名化处理； ​ 无授权不采集：当您从未授权、撤回授权，或者本计划终止时，您的数据不会被采集； ​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发"
+        },
+        {
+          "match": "协作奖励",
+          "context": "无授权不采集：当您从未授权、撤回授权，或者本计划终止时，您的数据不会被采集； ​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发放的奖励包在有效期内仍可正常使用 ，可继续用于对应模型（含本次退出的 9 款模型）"
+        },
+        {
+          "match": "协作奖励",
+          "context": "​ 授权自主：您可以随时在数据协作奖励计划活动页面撤回授权。 ​ 部分模型退出协作奖励计划说明 ​ 2026 年 10 月 8 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发放的奖励包在有效期内仍可正常使用 ，可继续用于对应模型（含本次退出的 9 款模型）。 ​ 仍在协作奖励计划中的模型可正常领取与使用奖励包 。 ​ 退出模型清单"
+        },
+        {
+          "match": "协作奖励",
+          "context": "于 2026 年 10 月 8 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 资源包使用范围 ​ 已发放的奖励包在有效期内仍可正常使用 ，可继续用于对应模型（含本次退出的 9 款模型）。 ​ 仍在协作奖励计划中的模型可正常领取与使用奖励包 。 ​ 退出模型清单 ​ 图片生成模型（1 款）： Doubao-Seedream-5.0-Pro ​ 语言模型（8 款）： Doubao-Seed-2.1-pro 、 Doubao-Seed-2.1-t"
+        },
+        {
+          "match": "协作奖励",
+          "context": "er 、 Doubao-smart-router 、 DeepSeek-V4-Pro正式版 、 DeepSeek-V4-Flash正式版 、 GLM-5.2 、 Kimi-K3 ​ 2026 年 9 月 1 日起退出模型说明 ​ 部分模型的协作奖励计划合作期已于 2026 年 9 月 1 日 到期，相关模型现已退出协作奖励计划，并 停止发放每日奖励包（含冷启动资源包） 。 ​ 调整说明 ​ 模型服务本身不受影响 ，退出后您仍可正常调用，按标准价格计费。 ​ 已发放的奖励包在有效期内仍"
+        }
+      ]
     },
     {
       "id": "openrouter-limits",
@@ -755,6 +877,10 @@
         },
         {
           "match": "会员",
+          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
+        },
+        {
+          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -816,10 +942,6 @@
         {
           "match": "会员",
           "context": "s 及以上可使用，取消周限额，保留滚动 5 小时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Co"
-        },
-        {
-          "match": "会员",
-          "context": "时限额。新老套餐均受月度共享额度池限制。   详情见 Kimi Code 官方会员说明 。   额度说明   会员功能共享月度额度池，按实际用量扣除；某项功能用尽额度，会影响其他功能。包月和包年会员均按月刷新，当期未使用额度不结转。   新会员套餐（Plus 及以上）的 Kimi Code 有滚动 5 小时用量限额，无周限额；旧套餐保留滚动 5 小时限额和周限额。它们是用量限制，不代表每周只能使用 5 小时，且仅作用于 Kimi Code。月度共享额度用尽也会影响 Kimi Co"
         }
       ]
     },
@@ -2686,7 +2808,7 @@
         },
         {
           "match": "$0.30/$1.80 text+image+video->text ",
-          "context": "/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/q"
+          "context": "/$1.56 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-"
         }
       ]
     },
@@ -3091,7 +3213,7 @@
       "findings": [
         {
           "match": "免费",
-          "context": "策略，运行中做好监控和运维管理，想办法降低故障的可能性。 精选直播 畅聊「架构扩展性」：一场不念PPT的真干货流量架构公开课！ 49.3K 回顾中 点击展开 进入专区 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 18 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
+          "context": "区 圈层 工具 MCP广场 文章/答案/技术大牛 搜索 搜索 关闭 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 38 个技术专区 搜索专区 搜索 搜索 关闭 EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 18 内容 15 讨论 1 进入专区 精选文章 EdgeOne Bot 管理 × AI 升级：当攻击者用 AI 伪装成“真人”，防护靠什么分辨真假？ 任何一个有网页业务的网站，流量里都混着两拨\"看起来一样\"的人：一拨是用"
         },
         {
           "match": "免费",
@@ -3099,7 +3221,7 @@
         },
         {
           "match": "免费",
-          "context": "encent.com/salon/live-2387) [进入专区](https://developer.cloud.tencent.com/zone/tm) ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 18 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
+          "context": "快讯文章归档 关键词归档 开发者手册归档 开发者手册 Section 归档 领券  文章/答案/技术大牛 发布 技术专区 链接腾讯云产品团队，掌握产品最新动态 ### EdgeOne AI 安全实战专区 威胁趋势报告 × 行业防护案例 × 免费开启安全防护 粉丝 18 内容 15 讨论 1 [进入专区](https://developer.cloud.tencent.com/zone/edgeoneaisecurity) 精选文章 EdgeOne Bot 管理 × AI 升级：当"
         },
         {
           "match": "free",
@@ -3124,8 +3246,17 @@
       "name": "Developer Events_Develop",
       "url": "https://developer.huaweicloud.com/codeartsco.html?source=dmzntgwltcsdn1&sourcead=dmzntgwltcsdncommunity9",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 2,
+      "findings": [
+        {
+          "match": "免费",
+          "context": "ogonew.svg)](https://www.huaweicloud.com/) 开发者 - 开发 - 活动 - Programs - 社区 - 学堂 - 大赛 - 支持 - 茶思屋 清空最近搜索 热门搜索 - 云耀云服务器L实例 - 免费试用 - 云服务器 - 域名 - 云速建站 “”的所有结果 - [华为云码道0](https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmznteducation&sourcead"
+        },
+        {
+          "match": "免费",
+          "context": "](https://devstation.connect.huaweicloud.com/space/devportal/personal_center) - admin 退出登录 取消 清空最近搜索 热门搜索 - 云耀云服务器L实例 - 免费试用 - 云服务器 - 域名 - 云速建站 - 开发 - 活动 - Programs - 社区 - 学堂 - 大赛 - 支持 - 茶思屋 - 语言 - [开发者空间](https://developer.huaweicloud.com/sp"
+        }
+      ]
     },
     {
       "id": "developers-workersaiplatf",
@@ -3831,8 +3962,9 @@
       "id": "ecloud-main",
       "name": "移动云官网-智能新空间",
       "url": "https://ecloud.10086.cn/",
-      "status": "error",
-      "error": "RemoteDisconnected: Remote end closed connection without response"
+      "status": "ok",
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "endpoints-main",
@@ -3842,8 +3974,44 @@
       "hits": 30,
       "findings": [
         {
+          "match": "$0.0002191 / s Licence : Proprietary (Gl",
+          "context": "ameters (descending) Parameters (ascending) Price (ascending) Price (descending) Speech To Text New solaria-3 Streaming $0.0002191 / s Licence : Proprietary (Gladia) Output Formats : json Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model Text Generation qwen3-vl-30b"
+        },
+        {
+          "match": "$0.15 / Mtoken (input) $0.58 / Mtok",
+          "context": "udio Size : 2048 MB Try this model Text Generation qwen3-vl-30b-a3b Function Calling Streaming Structured Output Vision $0.15 / Mtoken (input) $0.58 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 30B Quantization : int4 Max. context : 32K Try this model Text Generatio"
+        },
+        {
+          "match": "$0.19 / Mtoken (input) $0.57 / Mtok",
+          "context": "t : 32K Try this model Text Generation nemotron3-omni-30b Function Calling Reasoning Streaming Structured Output Vision $0.19 / Mtoken (input) $0.57 / Mtoken ( output ) Licence : NVIDIA Open Model Agreement Parameters : 30B Quantization : int4 Max. context : 128K Try this mo"
+        },
+        {
+          "match": "$0.06 / Mtoken (input) $0.23 / Mtok",
+          "context": "context : 128K Try this model Text Generation nemotron3-nano-30b Function Calling Reasoning Streaming Structured Output $0.06 / Mtoken (input) $0.23 / Mtoken ( output ) Licence : NVIDIA Open Model License Parameters : 30B Quantization : fp4 Max. context : 256K Try this model"
+        },
+        {
+          "match": "$0.20 / Mtoken (input) $1.33 / Mtok",
+          "context": "x. context : 256K Try this model Text Generation qwen3.6-35b-a3b Function Calling Reasoning Streaming Structured Output $0.20 / Mtoken (input) $1.33 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 35B Quantization : fp4 Max. context : 256K Try this model Decision clef-"
+        },
+        {
+          "match": "$0.04 / Mtoken Licence : Apache 2.0",
+          "context": "utput ) Licence : Apache 2.0 Parameters : 35B Quantization : fp4 Max. context : 256K Try this model Decision clef-flash $0.04 / Mtoken Licence : Apache 2.0 Parameters : 9B Quantization : bf16 Max. context : 16K Try this model Text Generation laguna-xs-2.1 Function Calling Re"
+        },
+        {
+          "match": "$0.06 / Mtoken (input) $0.12 / Mtok",
+          "context": "Max. context : 16K Try this model Text Generation laguna-xs-2.1 Function Calling Reasoning Streaming Structured Output $0.06 / Mtoken (input) $0.12 / Mtoken ( output ) Licence : OpenMDW-1.1 Parameters : 33B Quantization : int4 Max. context : 128K Try this model Text Generat"
+        },
+        {
+          "match": "$0.10 / Mtoken (input) $0.41 / Mtok",
+          "context": ": int4 Max. context : 128K Try this model Text Generation gemma-4-26b-a4b Function Calling Streaming Structured Output $0.10 / Mtoken (input) $0.41 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 26B Quantization : fp4 Max. context : 256K Try this model Text Generatio"
+        },
+        {
+          "match": "$0.31 / Mtoken (input) $1.25 / Mtok",
+          "context": "y this model Text Generation New DeepSeek-V4.1-Flash-1017 Function Calling Reasoning Streaming Structured Output Vision $0.31 / Mtoken (input) $1.25 / Mtoken ( output ) Licence : MIT Parameters : 748B Quantization : fp4 Max. context : 1000K Try this model Text Generation New"
+        },
+        {
           "match": "$0.47 / Mtoken (input) $3.19 / Mtok",
-          "context": "nding) Price (descending) Text Generation New Qwen3.8-27B Function Calling Reasoning Streaming Structured Output Vision $0.47 / Mtoken (input) $3.19 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 27B Quantization : fp8 Max. context : 262K Try this model Text Generatio"
+          "context": "xt : 1000K Try this model Text Generation New Qwen3.8-27B Function Calling Reasoning Streaming Structured Output Vision $0.47 / Mtoken (input) $3.19 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 27B Quantization : fp8 Max. context : 262K Try this model Text Generatio"
         },
         {
           "match": "$0.71 / Mtoken (input) $4.25 / Mtok",
@@ -3855,27 +4023,27 @@
         },
         {
           "match": "$0.12 / Mtoken (input) $0.18 / Mtok",
-          "context": "eb 10, 2027 Try this model Text Generation New Qwen3.5-9B Function Calling Reasoning Streaming Structured Output Vision $0.12 / Mtoken (input) $0.18 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 9.7B Quantization : bf16 Max. context : 262K Try this model Embeddings N"
+          "context": "eb 10, 2027 Try this model Text Generation New Qwen3.5-9B Function Calling Reasoning Streaming Structured Output Vision $0.12 / Mtoken (input) $0.18 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 9.7B Quantization : bf16 Max. context : 262K Try this model Embeddings Q"
         },
         {
           "match": "$0.12 / Mtoken Licence : Apache 2.0",
-          "context": ": Apache 2.0 Parameters : 9.7B Quantization : bf16 Max. context : 262K Try this model Embeddings New Qwen3-Embedding-8B $0.12 / Mtoken Licence : Apache 2.0 Parameters : 7.6B Max Sequence Length : 32768 tokens Max Batch Size : 25 samples Output Dimensions : 32 – 4096 dimensio"
-        },
-        {
-          "match": "$0.09 / Mtoken (input) $0.47 / Mtok",
-          "context": "6 Max. context : 32K Try this model Text Generation gpt-oss-120b Function Calling Reasoning Streaming Structured Output $0.09 / Mtoken (input) $0.47 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 117B Quantization : fp4 Max. context : 131K Try this model Text Generati"
+          "context": "nce : Apache 2.0 Parameters : 9.7B Quantization : bf16 Max. context : 262K Try this model Embeddings Qwen3-Embedding-8B $0.12 / Mtoken Licence : Apache 2.0 Parameters : 7.6B Max Sequence Length : 32768 tokens Max Batch Size : 25 samples Output Dimensions : 16 – 4096 dimensio"
         },
         {
           "match": "$0.05 / Mtoken (input) $0.18 / Mtok",
-          "context": "4 Max. context : 131K Try this model Text Generation gpt-oss-20b Function Calling Reasoning Streaming Structured Output $0.05 / Mtoken (input) $0.18 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 21B Quantization : fp4 Max. context : 131K Try this model Speech To Text"
+          "context": "16 Max. context : 32K Try this model Text Generation gpt-oss-20b Function Calling Reasoning Streaming Structured Output $0.05 / Mtoken (input) $0.18 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 21B Quantization : fp4 Max. context : 131K Try this model Text Generatio"
         },
         {
-          "match": "$0.00004516 / s Licence : Apache 2.0 Para",
-          "context": "nce : Apache 2.0 Parameters : 21B Quantization : fp4 Max. context : 131K Try this model Speech To Text whisper-large-v3 $0.00004516 / s Licence : Apache 2.0 Parameters : 1.54B Output Formats : json, verbose_json, text Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model"
+          "match": "$0.09 / Mtoken (input) $0.47 / Mtok",
+          "context": "Max. context : 131K Try this model Text Generation gpt-oss-120b Function Calling Reasoning Streaming Structured Output $0.09 / Mtoken (input) $0.47 / Mtoken ( output ) Licence : Apache 2.0 Parameters : 117B Quantization : fp4 Max. context : 131K Try this model Speech To Tex"
         },
         {
           "match": "$0.00001413 / s Licence : Apache 2.0 Para",
-          "context": "erbose_json, text Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model Speech To Text whisper-large-v3-turbo $0.00001413 / s Licence : Apache 2.0 Parameters : 0.81B Output Formats : json, verbose_json, text Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model"
+          "context": "pache 2.0 Parameters : 117B Quantization : fp4 Max. context : 131K Try this model Speech To Text whisper-large-v3-turbo $0.00001413 / s Licence : Apache 2.0 Parameters : 0.81B Output Formats : json, verbose_json, text Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model"
+        },
+        {
+          "match": "$0.00004516 / s Licence : Apache 2.0 Para",
+          "context": "son, verbose_json, text Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model Speech To Text whisper-large-v3 $0.00004516 / s Licence : Apache 2.0 Parameters : 1.54B Output Formats : json, verbose_json, text Max Audio Duration : 3h Max Audio Size : 2048 MB Try this model"
         },
         {
           "match": "$0.10 / Mtoken (input) $0.31 / Mtok",
@@ -3898,68 +4066,32 @@
           "context": "ty Parameters : 70B Quantization : fp8 Max. context : 131K End of life on Feb 10, 2027 Try this model Embeddings bge-m3 $0.01 / Mtoken Licence : MIT Parameters : 0.567B Max Sequence Length : 8192 tokens Max Batch Size : 25 samples Output Dimensions : 1024 dimensions Try this"
         },
         {
-          "match": "$0.47**/Mtoken (input) **$3.19**/Mt",
-          "context": "Compatible Text GenerationNew ### Qwen3.8-27B - Function Calling - Reasoning - Streaming - Structured Output - Vision **$0.47**/Mtoken (input) **$3.19**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 27B **Quantization :** fp8 **Max. context :** 262K Try this mode"
+          "match": "$0.0002191**/s **Licence :** Proprietary",
+          "context": "y Extraction Multi Language Coding Sentiment AnalysisText Only Compatible Speech To TextNew ### solaria-3 - Streaming **$0.0002191**/s **Licence :** Proprietary (Gladia) **Output Formats :** json **Max Audio Duration :** 3h **Max Audio Size :** 2048 MB Try this model Text Generat"
         },
         {
-          "match": "$0.71**/Mtoken (input) **$4.25**/Mt",
-          "context": "odel Text GenerationNew ### Qwen3.5-397B-A17B - Function Calling - Reasoning - Streaming - Structured Output - Vision **$0.71**/Mtoken (input) **$4.25**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 397B **Quantization :** fp8 **Max. context :** 262K Try this mod"
+          "match": "$0.15**/Mtoken (input) **$0.58**/Mt",
+          "context": "48 MB Try this model Text Generation ### qwen3-vl-30b-a3b - Function Calling - Streaming - Structured Output - Vision **$0.15**/Mtoken (input) **$0.58**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 30B **Quantization :** int4 **Max. context :** 32K Try this mode"
         },
         {
-          "match": "$0.47**/Mtoken (input) **$3.19**/Mt",
-          "context": "Text GenerationBeing retired ### Qwen3.6-27B - Function Calling - Reasoning - Streaming - Structured Output - Vision **$0.47**/Mtoken (input) **$3.19**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 27B **Quantization :** fp8 **Max. context :** 262K End of life o"
+          "match": "$0.19**/Mtoken (input) **$0.57**/Mt",
+          "context": "model Text Generation ### nemotron3-omni-30b - Function Calling - Reasoning - Streaming - Structured Output - Vision **$0.19**/Mtoken (input) **$0.57**/Mtoken (output) **Licence :** NVIDIA Open Model Agreement **Parameters :** 30B **Quantization :** int4 **Max. context :**"
         },
         {
-          "match": "$0.12**/Mtoken (input) **$0.18**/Mt",
-          "context": "this model Text GenerationNew ### Qwen3.5-9B - Function Calling - Reasoning - Streaming - Structured Output - Vision **$0.12**/Mtoken (input) **$0.18**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 9.7B **Quantization :** bf16 **Max. context :** 262K Try this mo"
+          "match": "$0.06**/Mtoken (input) **$0.23**/Mt",
+          "context": "Try this model Text Generation ### nemotron3-nano-30b - Function Calling - Reasoning - Streaming - Structured Output **$0.06**/Mtoken (input) **$0.23**/Mtoken (output) **Licence :** NVIDIA Open Model License **Parameters :** 30B **Quantization :** fp4 **Max. context :** 256"
         },
         {
-          "match": "$0.12**/Mtoken **Licence :** Apache",
-          "context": "rameters :** 9.7B **Quantization :** bf16 **Max. context :** 262K Try this model EmbeddingsNew ### Qwen3-Embedding-8B **$0.12**/Mtoken **Licence :** Apache 2.0 **Parameters :** 7.6B **Max Sequence Length :** 32768 tokens **Max Batch Size :** 25 samples **Output Dimensions :*"
+          "match": "$0.20**/Mtoken (input) **$1.33**/Mt",
+          "context": "56K Try this model Text Generation ### qwen3.6-35b-a3b - Function Calling - Reasoning - Streaming - Structured Output **$0.20**/Mtoken (input) **$1.33**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 35B **Quantization :** fp4 **Max. context :** 256K Try this mode"
         },
         {
-          "match": "$0.09**/Mtoken (input) **$0.47**/Mt",
-          "context": "** 32K Try this model Text Generation ### gpt-oss-120b - Function Calling - Reasoning - Streaming - Structured Output **$0.09**/Mtoken (input) **$0.47**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 117B **Quantization :** fp4 **Max. context :** 131K Try this mod"
+          "match": "$0.04**/Mtoken **Licence :** Apache",
+          "context": "Apache 2.0 **Parameters :** 35B **Quantization :** fp4 **Max. context :** 256K Try this model Decision ### clef-flash **$0.04**/Mtoken **Licence :** Apache 2.0 **Parameters :** 9B **Quantization :** bf16 **Max. context :** 16K Try this model Text Generation ### laguna-xs-2.1"
         },
         {
-          "match": "$0.05**/Mtoken (input) **$0.18**/Mt",
-          "context": "** 131K Try this model Text Generation ### gpt-oss-20b - Function Calling - Reasoning - Streaming - Structured Output **$0.05**/Mtoken (input) **$0.18**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 21B **Quantization :** fp4 **Max. context :** 131K Try this mode"
-        },
-        {
-          "match": "$0.00004516**/s **Licence :** Apache 2.0 ",
-          "context": "*Parameters :** 21B **Quantization :** fp4 **Max. context :** 131K Try this model Speech To Text ### whisper-large-v3 **$0.00004516**/s **Licence :** Apache 2.0 **Parameters :** 1.54B **Output Formats :** json, verbose_json, text **Max Audio Duration :** 3h **Max Audio Size :** 20"
-        },
-        {
-          "match": "$0.00001413**/s **Licence :** Apache 2.0 ",
-          "context": "ext **Max Audio Duration :** 3h **Max Audio Size :** 2048 MB Try this model Speech To Text ### whisper-large-v3-turbo **$0.00001413**/s **Licence :** Apache 2.0 **Parameters :** 0.81B **Output Formats :** json, verbose_json, text **Max Audio Duration :** 3h **Max Audio Size :** 20"
-        },
-        {
-          "match": "$0.10**/Mtoken (input) **$0.31**/Mt",
-          "context": "l Text Generation ### Mistral-Small-3.2-24B-Instruct-2506 - Function Calling - Streaming - Structured Output - Vision **$0.10**/Mtoken (input) **$0.31**/Mtoken (output) **Licence :** Apache 2.0 **Parameters :** 24B **Quantization :** bf16 **Max. context :** 128K Try this mod"
-        },
-        {
-          "match": "$1.01**/Mtoken (input) **$1.01**/Mt",
-          "context": "128K Try this model Text GenerationBeing retired ### Qwen2.5-VL-72B-Instruct - Streaming - Structured Output - Vision **$1.01**/Mtoken (input) **$1.01**/Mtoken (output) **Licence :** Qwen **Parameters :** 72B **Quantization :** fp8 **Max. context :** 32K End of life on Feb 1"
-        },
-        {
-          "match": "$0.01**/Mtoken **Licence :** Gemma ",
-          "context": "**Max. context :** 32K End of life on Feb 10, 2027Try this model EmbeddingsBeing retired ### bge-multilingual-gemma2 **$0.01**/Mtoken **Licence :** Gemma **Parameters :** 0.567B **Max Sequence Length :** 8192 tokens **Max Batch Size :** 25 samples **Output Dimensions :** 35"
-        },
-        {
-          "match": "$0.74**/Mtoken (input) **$0.74**/Mt",
-          "context": "model Text GenerationBeing retired ### Meta-Llama-3_3-70B-Instruct - Function Calling - Streaming - Structured Output **$0.74**/Mtoken (input) **$0.74**/Mtoken (output) **Licence :** Llama 3.3 Community **Parameters :** 70B **Quantization :** fp8 **Max. context :** 131K End"
-        },
-        {
-          "match": "$0.01**/Mtoken **Licence :** MIT **",
-          "context": "** 70B **Quantization :** fp8 **Max. context :** 131K End of life on Feb 10, 2027Try this model Embeddings ### bge-m3 **$0.01**/Mtoken **Licence :** MIT **Parameters :** 0.567B **Max Sequence Length :** 8192 tokens **Max Batch Size :** 25 samples **Output Dimensions :** 1024"
-        },
-        {
-          "match": "free",
-          "context": "Inference Solutions AI Endpoints Catalogue of token-billed models AI Endpoints - Model Catalogue Try all our models for free AI Endpoints - Base API No commitment, standard response times AI Endpoints - Batch API The most economical, your reque"
-        },
-        {
-          "match": "Free",
-          "context": "samples Output Dimensions : 32 – 4096 dimensions Try this model Safety & Moderation Beta Qwen3Guard-Gen-0.6B Streaming Free Licence : Apache 2.0 Parameters : 0.6B Quantization : fp16 Max. context : 32K Try this model Safety & Moderation Beta Q"
+          "match": "$0.06**/Mtoken (input) **$0.12**/Mt",
+          "context": "* 16K Try this model Text Generation ### laguna-xs-2.1 - Function Calling - Reasoning - Streaming - Structured Output **$0.06**/Mtoken (input) **$0.12**/Mtoken (output) **Licence :** OpenMDW-1.1 **Parameters :** 33B **Quantization :** int4 **Max. context :** 128K Try this mo"
         }
       ]
     },
@@ -4257,40 +4389,28 @@
           "context": "Plans  Free$0/month  Pro$20/month  Max$200/month  Team$80/month  EnterpriseLet's talk  Members  1  1  1  Up to 100 users$40/month per full userEach full user includes their own generous quota  Unlimited  Devin Desktop  Tab  Unlimited  Unlimited  Unlimited  Unlimited  Unlim"
         },
         {
-          "match": "$80per month Shared on-demand cre",
-          "context": "imited model availability, unlimited inline edits, and unlimited Tab completions.  # Plans and pricing TeamsRecommended $80per month Shared on-demand credits for up to 100 members [Start with Teams](https://app.devin.ai/signup) - ![](https://devin.ai/_next/image?url=%2Fima"
+          "match": "$0 [Download](https://devin.ai/d",
+          "context": "for your journey [SWE-2, our latest model, is now available →](https://cognition.com/blog/swe-2) INDIVIDUAL PLANS Free $0 [Download](https://devin.ai/download) Light quota to code with agents Limited model availability Unlimited inline edits Unlimited Tab completions Pro"
         },
         {
-          "match": "$0 Light quota to code with agen",
-          "context": "M and role-based access control - Centralized enterprise admin controls - Dedicated deployment option - Devin Bots Free $0 Light quota to code with agents [Download](https://devin.ai/download) - Light quota to code with agents - Limited model availability - Unlimited inli"
+          "match": "$20per month [Select plan](https:",
+          "context": "Light quota to code with agents Limited model availability Unlimited inline edits Unlimited Tab completions ProPOPULAR $20per month [Select plan](https://app.devin.ai/auth/signup) Everything in Free, plus: Increased quotas, including access to frontier models from OpenAI,"
         },
         {
-          "match": "$20per month Full model availabil",
-          "context": "- Light quota to code with agents - Limited model availability - Unlimited inline edits - Unlimited Tab completions Pro $20per month Full model availability and cloud agents [Get Pro](https://app.devin.ai/auth/signup) Everything in Free, plus: - Increased quotas, including"
+          "match": "$200per month [Select plan](https:",
+          "context": "Free use of SWE-2 Access to cloud agents (Devin Cloud) Purchase extra usage at API pricing Use your ChatGPT plan MaxNEW $200per month [Select plan](https://app.devin.ai/signup) Everything in Pro, plus: ![](https://devin.ai/_next/image?url=%2Fimages%2Fpricing%2Fplan-card-bot"
         },
         {
-          "match": "$200per month Significantly higher",
-          "context": "e use of SWE-2 - Access to cloud agents (Devin Cloud) - Purchase extra usage at API pricing - Use your ChatGPT plan Max $200per month Significantly higher quotas [Get Max](https://app.devin.ai/signup) Everything in Pro, plus: - ![](https://devin.ai/_next/image?url=%2Fimages"
+          "match": "$80per month [Select plan](https:",
+          "context": "pl_2QKBm3YFk4XoAtZnH3HGqD2SAmjY)Access to Devin Bots Significantly higher quotas Use your ChatGPT plan TEAM PLANS Teams $80per month [Select plan](https://app.devin.ai/signup) ![](https://devin.ai/_next/image?url=%2Fimages%2Fpricing%2Fplan-card-bot.png&w=48&q=75&dpl=dpl_2Q"
         },
         {
-          "match": "$0/month[Download](https://devin",
-          "context": "(https://devin.ai/images/acp-logos/logo-04.svg) First class support for every major model provider ## Compare plans Free$0/month[Download](https://devin.ai/download) Pro$20/month[Get Pro](https://app.devin.ai/auth/signup) Max$200/month[Get Max](https://app.devin.ai/signup"
+          "match": "$0/month Pro$20/month Max$200/mo",
+          "context": "(https://devin.ai/images/acp-logos/logo-04.svg) First class support for every major model provider ## Compare Plans Free$0/month Pro$20/month Max$200/month Team$80/month EnterpriseLet's talk Members 1 1 1 Up to 100 users Unlimited Devin Desktop Tab Unlimited Unlimited Unl"
         },
         {
-          "match": "$20/month[Get Pro](https://app.de",
-          "context": "irst class support for every major model provider ## Compare plans Free$0/month[Download](https://devin.ai/download) Pro$20/month[Get Pro](https://app.devin.ai/auth/signup) Max$200/month[Get Max](https://app.devin.ai/signup) Teams$80/month[Start](https://app.devin.ai/signu"
-        },
-        {
-          "match": "$200/month[Get Max](https://app.de",
-          "context": "pare plans Free$0/month[Download](https://devin.ai/download) Pro$20/month[Get Pro](https://app.devin.ai/auth/signup) Max$200/month[Get Max](https://app.devin.ai/signup) Teams$80/month[Start](https://app.devin.ai/signup) EnterpriseLet's talk[Get a demo](https://devin.ai/demo"
-        },
-        {
-          "match": "$80/month[Start](https://app.devi",
-          "context": "nload) Pro$20/month[Get Pro](https://app.devin.ai/auth/signup) Max$200/month[Get Max](https://app.devin.ai/signup) Teams$80/month[Start](https://app.devin.ai/signup) EnterpriseLet's talk[Get a demo](https://devin.ai/demo) Seats Members 1 1 1 Up to 100 Unlimited Devin Deskt"
-        },
-        {
-          "match": "$80/month. ## Frequently Asked Qu",
-          "context": "on – – – – Deploy in your virtual private cloud (VPC) – – – – ## Start your team on Devin Teams is self-serve at a flat $80/month. ## Frequently Asked Questions How does usage work? Each paid plan comes with a usage allowance that refreshes automatically on a daily and wee"
+          "match": "$80/month EnterpriseLet's talk Me",
+          "context": "04.svg) First class support for every major model provider ## Compare Plans Free$0/month Pro$20/month Max$200/month Team$80/month EnterpriseLet's talk Members 1 1 1 Up to 100 users Unlimited Devin Desktop Tab Unlimited Unlimited Unlimited Unlimited Unlimited Premium models"
         },
         {
           "match": "Free",
@@ -4330,23 +4450,35 @@
         },
         {
           "match": "Free",
-          "context": "Fk4XoAtZnH3HGqD2SAmjY)Access to Devin Bots - Share and collaborate with multiplayer sessions - 2 concurrent sessions in Free mode per user - SAML/OIDC SSO - Cost controls with 3 usage tiers - Centralized billing - Slack channel support - Use yo"
+          "context": "plan for your journey [SWE-2, our latest model, is now available →](https://cognition.com/blog/swe-2) INDIVIDUAL PLANS Free $0 [Download](https://devin.ai/download) Light quota to code with agents Limited model availability Unlimited inline ed"
         },
         {
           "match": "Free",
-          "context": "- SCIM and role-based access control - Centralized enterprise admin controls - Dedicated deployment option - Devin Bots Free $0 Light quota to code with agents [Download](https://devin.ai/download) - Light quota to code with agents - Limited mo"
+          "context": "e edits Unlimited Tab completions ProPOPULAR $20per month [Select plan](https://app.devin.ai/auth/signup) Everything in Free, plus: Increased quotas, including access to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading op"
         },
         {
           "match": "Free",
-          "context": "ons Pro $20per month Full model availability and cloud agents [Get Pro](https://app.devin.ai/auth/signup) Everything in Free, plus: - Increased quotas, including frontier models from OpenAI, Claude, Gemini, and SpaceXAI - Full model availabilit"
+          "context": "s to frontier models from OpenAI, Claude, Gemini, and SpaceXAI, plus leading open source models Full model availability Free use of SWE-2 Access to cloud agents (Devin Cloud) Purchase extra usage at API pricing Use your ChatGPT plan MaxNEW $200"
         },
         {
           "match": "Free",
-          "context": "us: - Increased quotas, including frontier models from OpenAI, Claude, Gemini, and SpaceXAI - Full model availability - Free use of SWE-2 - Access to cloud agents (Devin Cloud) - Purchase extra usage at API pricing - Use your ChatGPT plan Max $"
+          "context": "GqD2SAmjY)Access to Devin Bots Up to 100 users Share and collaborate with multiplayer sessions 2 concurrent sessions in Free mode per user SAML/OIDC SSO Cost controls with 3 usage tiers Centralized billing Slack channel support Use your ChatGPT"
         },
         {
           "match": "Free",
-          "context": ")![](https://devin.ai/images/acp-logos/logo-04.svg) First class support for every major model provider ## Compare plans Free$0/month[Download](https://devin.ai/download) Pro$20/month[Get Pro](https://app.devin.ai/auth/signup) Max$200/month[Get"
+          "context": ")![](https://devin.ai/images/acp-logos/logo-04.svg) First class support for every major model provider ## Compare Plans Free$0/month Pro$20/month Max$200/month Team$80/month EnterpriseLet's talk Members 1 1 1 Up to 100 users Unlimited Devin Des"
+        },
+        {
+          "match": "Free",
+          "context": "to 100 users Unlimited Devin Desktop Tab Unlimited Unlimited Unlimited Unlimited Unlimited Premium models Fast context Free SWE-2 Slow Devin Cloud Devin Bots DeepWiki Devin API Ask Devin Advanced capabilities Sharing and collaboration Concurre"
+        },
+        {
+          "match": "Free",
+          "context": "lities Sharing and collaboration Concurrent sessions limit Up to 10 Up to 10 Unlimited Unlimited Concurrent sessions in Free mode 2 per user Integrations Slack and Teams Linear and Jira GitHub, GitLab, and Bitbucket Custom git provider support"
+        },
+        {
+          "match": "Free",
+          "context": "ificantly higher usage quotas. It includes everything in Pro, plus significantly higher quotas. What is included in the Free plan? The Free plan includes a light quota to code with agents, limited model availability, unlimited inline edits, and"
         }
       ]
     },
@@ -4812,8 +4944,130 @@
       "id": "omniroute-repo",
       "name": "OmniRoute 白嫖网关(3.7万Star)",
       "url": "https://github.com/diegosouzapw/OmniRoute",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$100 free credits on signup (free ",
+          "context": "ese are public coupons anyone can use.               AgentRouter agentrouter.org       AgentRouter — affiliate signup · $100 free credits on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since v3.8.50 : Chat"
+        },
+        {
+          "match": "$100 →     ⚠️ Affiliate link — Omn",
+          "context": "the OpenAI-compatible path. Available models include claude-opus-4-8 , claude-opus-5 , gpt-5.6-sol and more. Grab your $100 →     ⚠️ Affiliate link — OmniRoute has no sponsorship or partnership with this provider.         Know another provider with a generous free signup c"
+        },
+        {
+          "match": "$0 in cost analytics; budget, qu",
+          "context": "án), RTK filters for Gradle & .NET. → Compression   💸 Honest flat-rate cost — subscription / coding-plan providers read $0 in cost analytics; budget, quota & routing keep estimating. → API Reference   ⚖️ Quota-Share routing — split a shared account's quota fairly across p"
+        },
+        {
+          "match": "$0, no card       OpenCode Zen D",
+          "context": "d 350+ more — every icon resolves live from the dashboard's provider catalog. 📖 Provider Reference     🆓 Free Forever — $0, no card       OpenCode Zen DeepSeek V4, Nemotron 3 No token cap   Kilo Code Auto-router, Tencent Hy3 Free forever   Requesty GPT-OSS 120B, Nemotron"
+        },
+        {
+          "match": "$5 credit; card required   OpenR",
+          "context": "Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md"
+        },
+        {
+          "match": "$10 → higher RPM       📖 Full mac",
+          "context": "NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app,"
+        },
+        {
+          "match": "$0 to start with 150+ free tiers",
+          "context": "et is available. Six pillars: resilient fallback across 394 providers · up to 95% token savings on eligible workloads · $0 to start with 150+ free tiers and 51 recurring/keyless free-forever providers · 39 CLI/agent integrations through one config · OpenAI, Claude, Gemini"
+        },
+        {
+          "match": "$100 free credits** on signup (fre",
+          "context": "LM) **AgentRouter** agentrouter.org **[AgentRouter](https://agentrouter.org/register?aff=70LM)** — affiliate signup · **$100 free credits** on signup (free server, expect higher latency — best for testing, not production). First-class support in OmniRoute since **v3.8.50**:"
+        },
+        {
+          "match": "$100 →](https://agentrouter.org/re",
+          "context": "enAI-compatible path. Available models include `claude-opus-4-8`, `claude-opus-5`, `gpt-5.6-sol` and more. **[Grab your $100 →](https://agentrouter.org/register?aff=70LM)** ⚠️ *Affiliate link — OmniRoute has no sponsorship or partnership with this provider.* Know another pr"
+        },
+        {
+          "match": "$0** in cost analytics; budget, ",
+          "context": "55/docs/compression/COMPRESSION_ENGINES.md) - **💸 Honest flat-rate cost** — subscription / coding-plan providers read **$0** in cost analytics; budget, quota & routing keep estimating. → [API Reference](https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/d"
+        },
+        {
+          "match": "$5 credit; card required | [![Op",
+          "context": "/cheaper-inference/OmniRoute/blob/release/v3.8.55/public/providers/cerebras.svg) **Cerebras** GLM 4.7, GPT-OSS One-time $5 credit; card required | [![OpenRouter](https://github.com/cheaper-inference/OmniRoute/raw/release/v3.8.55/public/providers/openrouter.svg)](https://g"
+        },
+        {
+          "match": "$10 → higher RPM | 📖 Full machine",
+          "context": "thub.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/public/providers/openrouter.svg) **OpenRouter** :free models +$10 → higher RPM | 📖 Full machine-readable catalog → [`docs/reference/PROVIDER_REFERENCE.md`](https://github.com/cheaper-inference/OmniRoute/blob/release"
+        },
+        {
+          "match": "RPM rolling leases per connection. → Resili",
+          "context": "2A Server   🛂 Adaptive admission & overload protection — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → Resilience Guide   🗂️ Canonical /v1/models ordering — one contiguous provider-grouped block per provider (combos pinned first)"
+        },
+        {
+          "match": "RPM free   Cerebras GLM 4.7, GPT-OSS One-ti",
+          "context": "Pollinations GPT, Llama, Claude No key needed   Cloudflare AI 50+ models 10K neurons/day   NVIDIA NIM GLM, MiniMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/ref"
+        },
+        {
+          "match": "RPM       📖 Full machine-readable catalog →",
+          "context": "iMax ~40 RPM free   Cerebras GLM 4.7, GPT-OSS One-time $5 credit; card required   OpenRouter :free models +$10 → higher RPM       📖 Full machine-readable catalog → docs/reference/PROVIDER_REFERENCE.md         🖥️ Where OmniRoute Runs — Anywhere       Same app, your machine, your rule"
+        },
+        {
+          "match": "RPM rolling leases per connection. → [Resil",
+          "context": "R.md) - **🛂 Adaptive admission & overload protection** — heavyweight chat requests queue instead of 503ing, with atomic RPM rolling leases per connection. → [Resilience Guide](https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/docs/architecture/RESILIENCE_GUIDE.md)"
+        },
+        {
+          "match": "RPM free | [![Cerebras](https://github.com/",
+          "context": "ithub.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/public/providers/nvidia.svg) **NVIDIA NIM** GLM, MiniMax ~40 RPM free | [![Cerebras](https://github.com/cheaper-inference/OmniRoute/raw/release/v3.8.55/public/providers/cerebras.svg)](https://github.com/cheaper-inference/Omn"
+        },
+        {
+          "match": "RPM | 📖 Full machine-readable catalog → [`d",
+          "context": "per-inference/OmniRoute/blob/release/v3.8.55/public/providers/openrouter.svg) **OpenRouter** :free models +$10 → higher RPM | 📖 Full machine-readable catalog → [`docs/reference/PROVIDER_REFERENCE.md`](https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.55/docs/reference"
+        },
+        {
+          "match": "Free",
+          "context": "GitHub - cheaper-inference/OmniRoute: Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+        },
+        {
+          "match": "Free",
+          "context": "ettings Fork 13.6k  ( 13.6k ) Star 88.5k  ( 88.5k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+        },
+        {
+          "match": "free",
+          "context": "must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cli"
+        },
+        {
+          "match": "free",
+          "context": "utors omniroute.online Topics a2a ai-agents ai-gateway anthropic claude claude-code cline codex copilot cursor deepseek free-ai gemini kimi llm-gateway mcp openai openai-proxy qwen token-saver Resources Readme MIT license Code of conduct Code o"
+        },
+        {
+          "match": "Free",
+          "context": "pository files navigation README Code of conduct Contributing MIT license Security More items         🚀 OmniRoute — The Free AI Gateway   Created by Diego Souza         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own"
+        },
+        {
+          "match": "Free",
+          "context": "s         🚀 OmniRoute — The Free AI Gateway   Created by Diego Souza         💰 ~1.62B Tokens / Month Across Third-Party Free Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party fre"
+        },
+        {
+          "match": "free",
+          "context": "ree Tiers       Bring your own provider accounts. This is an estimated aggregate across separately eligible third-party free tiers, not a token grant from OmniRoute. Sign up, obtain credentials where required, and connect the providers you can"
+        },
+        {
+          "match": "free",
+          "context": "required, and connect the providers you can use; each provider controls its limits, availability, and terms.   Stacking free tiers by hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute cat"
+        },
+        {
+          "match": "free",
+          "context": "hand is painful — dozens of SDKs, dozens of rate limits, and no idea how much you actually have. OmniRoute catalogs 465 free-tier entries across 34 recurring pool keys and computes the token headline from the 17 pools with a published positive"
+        },
+        {
+          "match": "free",
+          "context": "ional identity verification, and never summed into the headline. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers,"
+        },
+        {
+          "match": "free",
+          "context": "e. The result stays visible on the dashboard ( /dashboard/free-tiers ).         Animated summary of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figure"
+        },
+        {
+          "match": "FREE",
+          "context": "ry of the live /dashboard/free-tiers page. Full methodology (pool dedupe, credit tiers, provider terms): docs/reference/FREE_TIERS.md .   These figures are re-audited every two weeks against the live catalog and move both ways — a provider ends"
+        }
+      ]
     },
     {
       "id": "lolo-freellm",
@@ -4997,11 +5251,11 @@
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，"
+          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 11 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，"
         },
         {
           "match": "免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token",
-          "context": "见官方说明 核实 2026-11-07 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
+          "context": "见官方说明 核实 2026-11-07 11 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
         },
         {
           "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 44 天 额度",
@@ -6735,7 +6989,7 @@
       "name": "阿里云 Coding Plan 文档",
       "url": "https://help.aliyun.com/zh/model-studio/coding-plan",
       "status": "ok",
-      "hits": 7,
+      "hits": 11,
       "findings": [
         {
           "match": "¥ 200 /月 用量限制 每 5 小时 6,000 次请求 每周 4",
@@ -6746,12 +7000,28 @@
           "context": "5 更多模型：qwen3.5-plus（支持图片理解） 价格 ¥ 200 /月 用量限制 每 5 小时 6,000 次请求 每周 45,000 次请求 每月 90,000 次请求       新客首月特惠： 首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准。       限量抢购 ：名额有限、先到先得。每日 09:30:00（UTC+08:00）补充，可前往 Coding Plan 页面 抢购。       额度消耗： 单次提问将按实际“模型调用次数”扣除额度。简单任务约消耗"
         },
         {
+          "match": "¥ 200**/月 | | 用量限制 | - 每 5 小时**6,00",
+          "context": "（支持图片理解）、**qwen3.6-plus**（支持图片理解）、**kimi-k2.5**（支持图片理解）、**glm-5**、**MiniMax-M2.5** 更多模型：qwen3.5-plus（支持图片理解） | | 价格 | **¥ 200**/月 | | 用量限制 | - 每 5 小时**6,000** 次请求 - 每周**45,000** 次请求 - 每月**90,000** 次请求 | - **新客首月特惠：**首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准"
+        },
+        {
+          "match": "¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具",
+          "context": "价格 | **¥ 200**/月 | | 用量限制 | - 每 5 小时**6,000** 次请求 - 每周**45,000** 次请求 - 每月**90,000** 次请求 | - **新客首月特惠：**首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准。 - **限量抢购**：名额有限、先到先得。每日 09:30:00（UTC+08:00）补充，可前往[Coding Plan 页面](https://common-buy.aliyun.com/coding-plan)抢购。"
+        },
+        {
           "match": "首月",
           "context": "）、 glm-5 、 MiniMax-M2.5 更多模型：qwen3.5-plus（支持图片理解） 价格 ¥ 200 /月 用量限制 每 5 小时 6,000 次请求 每周 45,000 次请求 每月 90,000 次请求       新客首月特惠： 首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准。       限量抢购 ：名额有限、先到先得。每日 09:30:00（UTC+08:00）补充，可前往 Codi"
         },
         {
           "match": "首月",
           "context": "M2.5 更多模型：qwen3.5-plus（支持图片理解） 价格 ¥ 200 /月 用量限制 每 5 小时 6,000 次请求 每周 45,000 次请求 每月 90,000 次请求       新客首月特惠： 首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准。       限量抢购 ：名额有限、先到先得。每日 09:30:00（UTC+08:00）补充，可前往 Coding Plan 页面 抢购。"
+        },
+        {
+          "match": "首月",
+          "context": "wen3.5-plus（支持图片理解） | | 价格 | **¥ 200**/月 | | 用量限制 | - 每 5 小时**6,000** 次请求 - 每周**45,000** 次请求 - 每月**90,000** 次请求 | - **新客首月特惠：**首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准。 - **限量抢购**：名额有限、先到先得。每日 09:30:00（UTC+08:00）补充，可前往[Codi"
+        },
+        {
+          "match": "首月",
+          "context": "| | 价格 | **¥ 200**/月 | | 用量限制 | - 每 5 小时**6,000** 次请求 - 每周**45,000** 次请求 - 每月**90,000** 次请求 | - **新客首月特惠：**首次订阅 Pro 套餐可享首月 ¥39.90（官网目录价 ¥200/月），后续按 ¥200/月 续费，具体以下单页为准。 - **限量抢购**：名额有限、先到先得。每日 09:30:00（UTC+08:00）补充，可前往[Coding Plan 页面](https://"
         },
         {
           "match": "免费",
@@ -6792,7 +7062,7 @@
         },
         {
           "match": "$1.20** Cached**$0.0060** LEARN MOR",
-          "context": "Token Cost.** Price per 1M tokens. **$0.20**muse-spark-1.3-contributor**$1.20**deepseek-v4-flash Input**$0.30** Output**$1.20** Cached**$0.0060** LEARN MORE**TOKEN COST****▸** ## **Cache Ratio.** Share of input tokens served from cache. **93%**muse-spark-1.3-contributor**32%"
+          "context": "Token Cost.** Price per 1M tokens. **$0.20**muse-spark-1.3-contributor**$1.20**deepseek-v4-flash Input**$0.30** Output**$1.20** Cached**$0.0060** LEARN MORE**TOKEN COST****▸** ## **Cache Ratio.** Share of input tokens served from cache. **93%**muse-spark-1.3-contributor**33%"
         },
         {
           "match": "DeepSeek",
@@ -6804,19 +7074,19 @@
         },
         {
           "match": "deepseek",
-          "context": "0B 0B 0B 0B 0B NOV 18 0B 0B 0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +21% vs previous week 03 jev-1.13 0B tokens -77% vs previous week 01 muse-spark-1.3-contrib"
+          "context": "0B 0B 0B 0B 0B NOV 18 0B 0B 0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -77% vs previous week 01 muse-spark-1.3-contrib"
         },
         {
           "match": "DeepSeek",
-          "context": "0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +21% vs previous week 03 jev-1.13 0B tokens -77% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs"
+          "context": "0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -77% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs"
         },
         {
           "match": "deepseek",
-          "context": "week 03 jev-1.13 0B tokens -77% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +21% vs previous week 03 jev-1.13 0B tokens -77% vs previous week LEARN MORE TOP MODELS ▸ #"
+          "context": "week 03 jev-1.13 0B tokens -77% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -77% vs previous week LEARN MORE TOP MODELS ▸ #"
         },
         {
           "match": "DeepSeek",
-          "context": "-77% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +21% vs previous week 03 jev-1.13 0B tokens -77% vs previous week LEARN MORE TOP MODELS ▸ # Unique Users . Daily unique"
+          "context": "-77% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -78% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -77% vs previous week LEARN MORE TOP MODELS ▸ # Unique Users . Daily unique"
         },
         {
           "match": "deepseek",
@@ -6828,15 +7098,15 @@
         },
         {
           "match": "deepseek",
-          "context": "N COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 93% muse-spark-1.3-contributor 32% deepseek-v4-flash 0% jev-1.13 Cache Ratio 0% Cached 0B Uncached 0B LEARN MORE CACHE RATIO ▸ # Market Share . Compare token share"
+          "context": "N COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 93% muse-spark-1.3-contributor 33% deepseek-v4-flash 0% jev-1.13 Cache Ratio 0% Cached 0B Uncached 0B LEARN MORE CACHE RATIO ▸ # Market Share . Compare token share"
         },
         {
           "match": "DeepSeek",
-          "context": "NOV 14 NOV 14 39M NOV 15 NOV 15 69M NOV 16 NOV 16 22M NOV 17 NOV 17 1M NOV 18 NOV 18 Market share by model author Date DeepSeek Meta Other SEP 25 98.7% 1.3% 0.0% SEP 28 100.0% 0.0% 0.0% OCT 3 100.0% 0.0% 0.0% OCT 8 97.4% 0.0% 2.6% OCT 9 97.7% 2.3%"
+          "context": "NOV 14 NOV 14 39M NOV 15 NOV 15 69M NOV 16 NOV 16 22M NOV 17 NOV 17 2M NOV 18 NOV 18 Market share by model author Date DeepSeek Meta Other SEP 25 98.7% 1.3% 0.0% SEP 28 100.0% 0.0% 0.0% OCT 3 100.0% 0.0% 0.0% OCT 8 97.4% 0.0% 2.6% OCT 9 97.7% 2.3%"
         },
         {
           "match": "DeepSeek",
-          "context": "NOV 14 7.6% 92.4% 0.0% NOV 15 6.9% 93.1% 0.0% NOV 16 3.7% 96.3% 0.0% NOV 17 34.3% 65.7% 0.0% NOV 18 90.5% 9.5% 0.0% 01 DeepSeek 1M tokens 90.5 % 02 Meta 0 tokens 9.5 % [*] NOV 18 2026 LEARN MORE MARKET SHARE ▸ # Geographic Breakdown 01 Japan 3.6B"
+          "context": "NOV 14 7.6% 92.4% 0.0% NOV 15 6.9% 93.1% 0.0% NOV 16 3.7% 96.3% 0.0% NOV 17 34.3% 65.7% 0.0% NOV 18 88.7% 11.3% 0.0% 01 DeepSeek 2M tokens 88.7 % 02 Meta 0 tokens 11.3 % [*] NOV 18 2026 LEARN MORE MARKET SHARE ▸ # Geographic Breakdown 01 Japan 3.6B"
         },
         {
           "match": "deepseek",
@@ -6860,19 +7130,19 @@
         },
         {
           "match": "deepseek",
-          "context": "0B | 0B | | NOV 18 | 0B | 0B | 0B | 0B | 0B | 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+21% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week 01 **muse-spark-1.3-co"
+          "context": "0B | 0B | | NOV 18 | 0B | 0B | 0B | 0B | 0B | 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+24% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week 01 **muse-spark-1.3-co"
         },
         {
           "match": "DeepSeek",
-          "context": "| 0B | 0B | 0B | 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+21% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week 01 **muse-spark-1.3-contributor**0B tokens Meta-78%"
+          "context": "| 0B | 0B | 0B | 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+24% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week 01 **muse-spark-1.3-contributor**0B tokens Meta-78%"
         },
         {
           "match": "deepseek",
-          "context": "3 **jev-1.13**0B tokens -77% vs previous week 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+21% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week LEARN MORE**TOP MODELS"
+          "context": "3 **jev-1.13**0B tokens -77% vs previous week 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+24% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week LEARN MORE**TOP MODELS"
         },
         {
           "match": "DeepSeek",
-          "context": "vs previous week 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+21% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week LEARN MORE**TOP MODELS****▸** ## **Unique Users.**"
+          "context": "vs previous week 01 **muse-spark-1.3-contributor**0B tokens Meta-78% vs previous week 02 **deepseek-v4-flash**0B tokens DeepSeek+24% vs previous week 03 **jev-1.13**0B tokens -77% vs previous week LEARN MORE**TOP MODELS****▸** ## **Unique Users.**"
         },
         {
           "match": "deepseek",
@@ -6884,7 +7154,7 @@
         },
         {
           "match": "deepseek",
-          "context": "*TOKEN COST****▸** ## **Cache Ratio.** Share of input tokens served from cache. **93%**muse-spark-1.3-contributor**32%**deepseek-v4-flash Cache Ratio**0%** Cached**0B** Uncached**0B** LEARN MORE**MARKET SHARE****▸** ## **Geographic Breakdown** 1. 0"
+          "context": "*TOKEN COST****▸** ## **Cache Ratio.** Share of input tokens served from cache. **93%**muse-spark-1.3-contributor**33%**deepseek-v4-flash Cache Ratio**0%** Cached**0B** Uncached**0B** LEARN MORE**MARKET SHARE****▸** ## **Geographic Breakdown** 1. 0"
         },
         {
           "match": "deepseek",
@@ -7520,12 +7790,12 @@
       "hits": 30,
       "findings": [
         {
-          "match": "$0.0033 charged · 56 live instances P",
-          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 56 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
+          "match": "$0.0033 charged · 65 live instances P",
+          "context": "tions \\ -H \"Authorization: Bearer $CHUTES_KEY\" \\ -d &#x27;{\"model\":\"Qwen/Qwen3.8-27B-TEE\", ...}&#x27; ↪ 12,847 tokens · $0.0033 charged · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee s"
         },
         {
           "match": "$2.25 /hr · deploy fee starts at $6",
-          "context": "ed · 56 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
+          "context": "ed · 65 live instances Private deployment · pay per second $ chutes deploy my_chute:chute --accept-fee ↪ GPU rates from $2.25 /hr · deploy fee starts at $6.75 Models Private Chutes FAQ Model pricing Pay per token. No subscription, no minimum, no markup. Models marked run on"
         },
         {
           "match": "$0.012 per 1M tokens Input $0.12 per",
@@ -7829,15 +8099,11 @@
       "name": "Get started with Meta Mo",
       "url": "https://dev.meta.ai/docs/overview",
       "status": "ok",
-      "hits": 30,
+      "hits": 15,
       "findings": [
         {
           "match": "$0.18 per hour; see Pricing and rat",
           "context": "t POST /v1/asr/transcribe Input Audio Output Transcript text with turn-level timing and optional speaker labels Pricing $0.18 per hour; see Pricing and rate limits   Muse Voice Transcribe is built for developers adding real-time speech to voice agents, meeting and call intel"
-        },
-        {
-          "match": "$0.18 per hour; see [Pricing and ra",
-          "context": "**Input** | Audio | | **Output** | Transcript text with turn-level timing and optional speaker labels | | **Pricing** | $0.18 per hour; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-voice-transcribe-pricing) | Muse Voice Transcribe is built"
         },
         {
           "match": "Pricing",
@@ -7894,62 +8160,6 @@
         {
           "match": "pricing",
           "context": "for primitives, agent loops, and use cases. Pricing and rate limits Per-token, per-image, per-frame, and per-hour audio pricing, plus rate limits. API reference Full request and response schemas for every endpoint.   Capabilities   Muse Wonder, Mu"
-        },
-        {
-          "match": "pricing",
-          "context": "### At a glance | **Base URL** | `https://api.meta.ai/v1` | | --- | --- | | **[Standard mode](https://dev.meta.ai/docs/pricing-rate-limits#standard-mode) model** | `muse-wonder-1.0` | | **Context window** | 1,048,576 tokens | | **Auth** | Bearer"
-        },
-        {
-          "match": "Pricing",
-          "context": "del** | `muse-wonder-1.0` | | **Context window** | 1,048,576 tokens | | **Auth** | Bearer token (`MODEL_API_KEY`) | | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-wonder-pricing) | ##"
-        },
-        {
-          "match": "Pricing",
-          "context": "Context window** | 1,048,576 tokens | | **Auth** | Bearer token (`MODEL_API_KEY`) | | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-wonder-pricing) | ### Make your first call Send a re"
-        },
-        {
-          "match": "pricing",
-          "context": "Bearer token (`MODEL_API_KEY`) | | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-wonder-pricing) | ### Make your first call Send a request to the [Responses API](https://dev.meta.ai/d"
-        },
-        {
-          "match": "pricing",
-          "context": "| | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-wonder-pricing) | ### Make your first call Send a request to the [Responses API](https://dev.meta.ai/docs/protocols/responses) with yo"
-        },
-        {
-          "match": "pricing",
-          "context": "your first call. | **Base URL** | `https://api.meta.ai/v1` | | --- | --- | | **[Standard mode](https://dev.meta.ai/docs/pricing-rate-limits#standard-mode) models** | `muse-spark-1.3`, `muse-spark-1.2`, `muse-spark-1.1` | | **[Contributor mode](htt"
-        },
-        {
-          "match": "pricing",
-          "context": "mode) models** | `muse-spark-1.3`, `muse-spark-1.2`, `muse-spark-1.1` | | **[Contributor mode](https://dev.meta.ai/docs/pricing-rate-limits#contributor-mode) models** | `muse-spark-1.3-contributor`, `muse-spark-1.2-contributor` | | **Context windo"
-        },
-        {
-          "match": "Pricing",
-          "context": "se-spark-1.2-contributor` | | **Context window** | 1,048,576 tokens | | **Auth** | Bearer token (`MODEL_API_KEY`) | | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-spark-pricing) | ###"
-        },
-        {
-          "match": "Pricing",
-          "context": "ext window** | 1,048,576 tokens | | **Max output** | 524,288 tokens | | **Auth** | Bearer token (`MODEL_API_KEY`) | | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing) | ###"
-        },
-        {
-          "match": "Pricing",
-          "context": "| | **Max output** | 524,288 tokens | | **Auth** | Bearer token (`MODEL_API_KEY`) | | **Pricing** | Pay-as-you-go; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-ember-pricing) | ### Make your first call Send a req"
-        },
-        {
-          "match": "Pricing",
-          "context": "scribe` | | **Input** | Audio | | **Output** | Transcript text with turn-level timing and optional speaker labels | | **Pricing** | $0.18 per hour; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-voice-transcribe-pr"
-        },
-        {
-          "match": "Pricing",
-          "context": "**Output** | Transcript text with turn-level timing and optional speaker labels | | **Pricing** | $0.18 per hour; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-voice-transcribe-pricing) | Muse Voice Transcribe is"
-        },
-        {
-          "match": "pricing",
-          "context": "ng and optional speaker labels | | **Pricing** | $0.18 per hour; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-voice-transcribe-pricing) | Muse Voice Transcribe is built for developers adding real-time speech to v"
-        },
-        {
-          "match": "pricing",
-          "context": "ng** | $0.18 per hour; see [Pricing and rate limits](https://dev.meta.ai/docs/pricing-rate-limits#muse-voice-transcribe-pricing) | Muse Voice Transcribe is built for developers adding real-time speech to voice agents, meeting and call intelligence"
         }
       ]
     },
@@ -8170,7 +8380,7 @@
       "name": "Gemini Enterprise Agent ",
       "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start/express-mode/overview",
       "status": "ok",
-      "hits": 30,
+      "hits": 14,
       "findings": [
         {
           "match": "新用户 ： Google Cloud 的新用户可以注册免费层级的快速模式账号，在指定配额内免费试用 Age",
@@ -8179,10 +8389,6 @@
         {
           "match": "新用户免费层级的 90 天期限内，您可以在配额上限内免费使用 支持快速模式的 Agent Platform",
           "context": "能 。测试和自定义发送给不同生成式 AI 模型的提示，并获取相应的代码以在您的应用中使用。   API 密钥 。对来自应用的请求进行身份验证。   新 Google Cloud 用户可在 90 天内免费使用 。在 Google Cloud 新用户免费层级的 90 天期限内，您可以在配额上限内免费使用 支持快速模式的 Agent Platform API 。您无需提供结算信息。您可以随时通过 启用结算功能 来提高配额上限。      如果您是现有 Google Cloud 用户，或者在启用结算功能后，90 天免费层级将被移除。您需要升级到付费层级，才能获享更高的配额上限和更多 Go"
-        },
-        {
-          "match": "requests per minute | | --- | --- | --- | | Gemini | [`gemi",
-          "context": "models that are available in express mode, along with their rate limits: | Model category | Available models | Maximum requests per minute | | --- | --- | --- | | Gemini | [`gemini-3-pro-image`](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image) | [Dynamic](h"
         },
         {
           "match": "免费",
@@ -8231,66 +8437,6 @@
         {
           "match": "Free",
           "context": "提供结算信息即可注册免费层级。您可以通过添加结算账号 升级到付费层级。    快速模式下的 Agent Platform 与 Google Cloud Free 计划 是分开的，无法通过该计划使用。如果您使用的是 Google Cloud Free 方案 ，请参阅 使用入门 部分中的其他快速入门。      如需在快速模式下注册 Agent Platform，请从 Google Cloud 控制台打开 快速模式 ：      前往“快速模式”      完成设置后，您可以按照以下教程"
-        },
-        {
-          "match": "free",
-          "context": "(https://accounts.google.com/): - **New users**: New users to Google Cloud can sign up for an express mode account in a free tier to try Agent Platform for free for up to 90 days, within the specified quotas. You don't need to provide billing i"
-        },
-        {
-          "match": "free",
-          "context": "New users**: New users to Google Cloud can sign up for an express mode account in a free tier to try Agent Platform for free for up to 90 days, within the specified quotas. You don't need to provide billing information to sign up in the free ti"
-        },
-        {
-          "match": "free",
-          "context": "or free for up to 90 days, within the specified quotas. You don't need to provide billing information to sign up in the free tier. You can upgrade to a paid tier by adding a billing account. Agent Platform in express mode is separate from, and"
-        },
-        {
-          "match": "Free",
-          "context": "adding a billing account. Agent Platform in express mode is separate from, and not available through, the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features). If you are in the [Google Cloud Free Program](ht"
-        },
-        {
-          "match": "free",
-          "context": "express mode is separate from, and not available through, the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features). If you are in the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-c"
-        },
-        {
-          "match": "free",
-          "context": "de is separate from, and not available through, the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features). If you are in the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-featu"
-        },
-        {
-          "match": "Free",
-          "context": "oogle Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features). If you are in the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features), see the other quickstarts in the **Get Started**"
-        },
-        {
-          "match": "free",
-          "context": ".google.com/free/docs/free-cloud-features). If you are in the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features), see the other quickstarts in the **Get Started** section. To sign up for Agent Platform in e"
-        },
-        {
-          "match": "free",
-          "context": "m/free/docs/free-cloud-features). If you are in the [Google Cloud Free Program](https://docs.cloud.google.com/free/docs/free-cloud-features), see the other quickstarts in the **Get Started** section. To sign up for Agent Platform in express mod"
-        },
-        {
-          "match": "Free",
-          "context": "t the corresponding code to use in your application. - **An API key**. Authenticate requests from your application. - **Free tier for new Google Cloud users during 90 days**. During the 90 day limit of the free tier for new Google Cloud users,"
-        },
-        {
-          "match": "free",
-          "context": "quests from your application. - **Free tier for new Google Cloud users during 90 days**. During the 90 day limit of the free tier for new Google Cloud users, you can use the [Agent Platform APIs that support express mode](https://docs.cloud.goo"
-        },
-        {
-          "match": "free",
-          "context": "express mode](https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/express-mode/api-reference) for free, up to their quotas. You don't have to provide billing information. You can increase your quota limits at any time by e"
-        },
-        {
-          "match": "free",
-          "context": "limits at any time by enabling billing. If you are an existing Google Cloud user or after enabling billing, the 90 day free tier is removed. You transition to a paid tier to access extended quota limits and additional Google Cloud features. As"
-        },
-        {
-          "match": "free",
-          "context": "etween the express mode experiences and the full Agent Platform experience: | Item | Agent Platform express mode in the free tier | Full Agent Platform | | --- | --- | --- | | Time limit | 90 days | Unlimited | | Available services | Basic gene"
-        },
-        {
-          "match": "Free",
-          "context": "es, including Agent Platform. | | Data sources | Google Drive | All data sources available in Google Cloud. | | Quota | Free tier limits. See Available models and rate limits in express mode. | Standard pay-as-you-go limits. See [Rate limits](h"
         }
       ]
     },
@@ -8939,7 +9085,7 @@
         },
         {
           "match": "free",
-          "context": "SearXNG Documentation (2026.11.17+b99cf7496) # Welcome to SearXNG¶ > *Search without being tracked.* SearXNG is a free internet metasearch engine which aggregates results from up to 260 [search services](https://docs.searxng.org/user/conf"
+          "context": "SearXNG Documentation (2026.11.18+b867c56a5) # Welcome to SearXNG¶ > *Search without being tracked.* SearXNG is a free internet metasearch engine which aggregates results from up to 260 [search services](https://docs.searxng.org/user/conf"
         }
       ]
     },
@@ -9226,103 +9372,11 @@
       "name": "Pricing — Electron Hub",
       "url": "https://www.electronhub.ai/pricing",
       "status": "ok",
-      "hits": 26,
+      "hits": 3,
       "findings": [
         {
           "match": "$10 a month, DevPass for coding a",
           "context": "b                                                                     Pay how you build. Plans with weekly credits from $10 a month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs"
-        },
-        {
-          "match": "$0.25 of weekly credits and no card",
-          "context": "anent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in **4d 13h 25m** **Core** covers it for $3"
-        },
-        {
-          "match": "$31 a month, billed yearly. You k",
-          "context": "rd. Upgrade when they run short, and change or cancel any time. Credits refill in **4d 13h 25m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 1"
-        },
-        {
-          "match": "$59**. ## Starter For your first ",
-          "context": "ange or cancel any time. Credits refill in **4d 13h 25m** **Core** covers it for $31 a month, billed yearly. You keep **$59**. ## Starter For your first real projects. - 150+ premium models: GPT, Claude, Gemini, Grok - Agents mode - 10 requests a minute ## Core For profess"
-        },
-        {
-          "match": "$15 a month, **Business** $103 a ",
-          "context": "Everything in Core - Audit logs and standard guardrails - 50 proxy keys, 30 requests a minute Also available: **Plus** $15 a month, **Business** $103 a month, **Enterprise** $199 a month, with more credits, SSO and higher rate limits. Compare all plans ## Compare plans |"
-        },
-        {
-          "match": "$199 a month, with more credits, S",
-          "context": "s - 50 proxy keys, 30 requests a minute Also available: **Plus** $15 a month, **Business** $103 a month, **Enterprise** $199 a month, with more credits, SSO and higher rate limits. Compare all plans ## Compare plans | Feature | Free | Starter | Plus | Core | Pro | Business"
-        },
-        {
-          "match": "$0** | **$8**$96 a year | **$15*",
-          "context": "re | Pro | Business | Enterprise | Custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Price a month | **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](ma"
-        },
-        {
-          "match": "$182 a year | **$31**$374 a year |",
-          "context": "| Custom | | --- | --- | --- | --- | --- | --- | --- | --- | --- | | Price a month | **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Cr"
-        },
-        {
-          "match": "$55**$662 a year | **$103**$1,238",
-          "context": "--- | --- | --- | --- | --- | | Price a month | **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly cre"
-        },
-        {
-          "match": "$199**$2,390 a year | [Talk to us]",
-          "context": "| **$0** | **$8**$96 a year | **$15**$182 a year | **$31**$374 a year | **$55**$662 a year | **$103**$1,238 a year | **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $"
-        },
-        {
-          "match": "$0.25 | $8 | $15 | $30 | $50 | $100",
-          "context": "| **$199**$2,390 a year | [Talk to us](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free |"
-        },
-        {
-          "match": "$200 | Custom | | Free models, 200",
-          "context": "](mailto:support@electronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 |"
-        },
-        {
-          "match": "$0.13 | $4 | $7.50 | $15 | $25 | $5",
-          "context": "ls, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not included | Included | Included | Included | Included | Included | Included"
-        },
-        {
-          "match": "$100 | Custom | | Permanent credit",
-          "context": "ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not included | Included | Included | Included | Included | Included | Included | Included | | Limits | | | | | | | |"
-        },
-        {
-          "match": "free",
-          "context": "dits, permanent top-ups, or a flat rate for coding agents. Same models, same key, and you can hold more than one. Start free with $0.25 of weekly credits and no card. Upgrade when they run short, and change or cancel any time. Credits refill in"
-        },
-        {
-          "match": "Free",
-          "context": "nterprise** $199 a month, with more credits, SSO and higher rate limits. Compare all plans ## Compare plans | Feature | Free | Starter | Plus | Core | Pro | Business | Enterprise | Custom | | --- | --- | --- | --- | --- | --- | --- | --- | ---"
-        },
-        {
-          "match": "Free",
-          "context": "lectronhub.ai) | | Credits | | | | | | | | | | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet c"
-        },
-        {
-          "match": "free",
-          "context": "| | Weekly credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50"
-        },
-        {
-          "match": "free",
-          "context": "y credits | $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | C"
-        },
-        {
-          "match": "free",
-          "context": "| $0.25 | $8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | |"
-        },
-        {
-          "match": "free",
-          "context": "$8 | $15 | $30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent"
-        },
-        {
-          "match": "free",
-          "context": "$30 | $50 | $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits |"
-        },
-        {
-          "match": "free",
-          "context": "| $100 | $200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not includ"
-        },
-        {
-          "match": "free",
-          "context": "$200 | Custom | | Free models, 200 a day | through ads | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | ad-free | | Flex Wallet cap | $0.13 | $4 | $7.50 | $15 | $25 | $50 | $100 | Custom | | Permanent credits | Not included | Inclu"
         },
         {
           "match": "Pricing",
@@ -9330,7 +9384,7 @@
         },
         {
           "match": "Pricing",
-          "context": "month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs                               # Pay how you build. Steady weekly credits, permanent top-ups, or a flat rate for co"
+          "context": "month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs"
         }
       ]
     },
@@ -11372,8 +11426,30 @@
       "id": "edenai-pricing",
       "name": "Eden AI 聚合定价(试用金)",
       "url": "https://www.edenai.co/pricing",
-      "status": "error",
-      "error": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+      "status": "ok",
+      "hits": 5,
+      "findings": [
+        {
+          "match": "Free",
+          "context": "ys in 2026 LLM Routing Explained: Best Strategies for Cost, Speed, and Quality 10 Best OpenRouter Alternatives in 2027 (Free & Paid) resources         About us We believe companies should be able to choose the best AI models for their needs."
+        },
+        {
+          "match": "credit",
+          "context": "ed on providers’ websites. The only additional cost is a 5.5% Eden AI platform fee, applied at checkout when purchasing credits. Do you offer discounts for volume? Yes. For large or predictable volumes, custom pricing can be discussed under the A"
+        },
+        {
+          "match": "credit",
+          "context": "art in self-serve mode and move to Advanced at any time, without changing your integration. How do I pay? Payment is by credit card or bank transfer (we use Stripe, a secure online payment solution). You can pay from (almost) anywhere in the worl"
+        },
+        {
+          "match": "credit",
+          "context": "hasing or payment processes. In that case, please contact us to discuss your needs. Do I have to pay every time to have credit to use? No! We strongly recommend that you activate the auto-refill option, which allows your account to be refilled if"
+        },
+        {
+          "match": "credit",
+          "context": "d you define. At the same time, you can set a maximum monthly auto-refill limit. This ensures that you never run out of credit and that the service never stops working for you. let’s start Start building with Eden AI A single interface to integra"
+        }
+      ]
     },
     {
       "id": "jdcloud-llm",
@@ -12109,7 +12185,7 @@
         },
         {
           "match": "免费领的大模型额度",
-          "context": "模型 模型榜 重置监控 Token 羊毛 更多 Agent 接入 关于 更新日志 反馈 登录 深色 跟随系统 浅色 京公网安备11010502063419号 京ICP备2026012723号-5 我的 Token 羊毛 Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 提报一条羊毛 怎么折算 今天还能领 ¥ 1738 本月已领到 ¥ 0 下次刷新 还有 08:17 我的卡册 61 张，还没收 · 登录后换设备不丢卡 200额度 ◆ 豆包 AIHOT 50积分 ◆ OfficeAce"
+          "context": "模型 模型榜 重置监控 Token 羊毛 更多 Agent 接入 关于 更新日志 反馈 登录 深色 跟随系统 浅色 京公网安备11010502063419号 京ICP备2026012723号-5 我的 Token 羊毛 Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 提报一条羊毛 怎么折算 今天还能领 ¥ 1738 本月已领到 ¥ 0 下次刷新 还有 03:16 我的卡册 61 张，还没收 · 登录后换设备不丢卡 200额度 ◆ 豆包 AIHOT 50积分 ◆ OfficeAce"
         },
         {
           "match": "免费 ◆ SoMark 能当 API 用 每天都能领 豆包电脑版每天签到领 200 额度",
@@ -12193,7 +12269,7 @@
         },
         {
           "match": "免费领的大模型额度",
-          "context": "类模型厂商官方接入的平台不算）、二手积分、接码多开，官方页面没写能用哪些型号的额度，以及不调用模型的工具优惠和平时就免费的聊天产品。这里只放厂商自己的页面，领取前请看清对方的条款。 精选 热点 日报 模型榜 我的  # Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 今天还能领 ¥1738 本月已领到 ¥0 下次刷新 还有 08:17 ## 我的卡册 ## 每天都能领 - 豆包电脑版每天签到领 200 额度按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不"
+          "context": "类模型厂商官方接入的平台不算）、二手积分、接码多开，官方页面没写能用哪些型号的额度，以及不调用模型的工具优惠和平时就免费的聊天产品。这里只放厂商自己的页面，领取前请看清对方的条款。 精选 热点 日报 模型榜 我的  # Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 今天还能领 ¥1738 本月已领到 ¥0 下次刷新 还有 03:17 ## 我的卡册 ## 每天都能领 - 豆包电脑版每天签到领 200 额度按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不"
         },
         {
           "match": "免费墨点Token",

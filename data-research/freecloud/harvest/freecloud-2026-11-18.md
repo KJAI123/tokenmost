@@ -1,9 +1,9 @@
 # freecloud 采集快照 2026-11-18
 
-- 采集时间: 2026-11-18T07:46:12Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: 无 | 👀观察中: instabox-pricing, upcloud-pricing, aws-free, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-18T12:46:58Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: instabox-pricing, aws-free | 👀观察中: northflank-pricing, lowendbox-feed, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
 
-## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
+## 🔔 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
 - 🔎 **1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (** `output fail with a broken pipe. Exec output is UTF-8 text: without streaming each stream is cut at 1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (`invalidUtf8`), so read files with `GET /v1/machines/{id}/files/content` or `instabox pull`/`cp`, no`
 - 🔎 **4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` an** `cker microVM, Debian 13 (trixie) amd64 (`ci`: Ubuntu 24.04; `omarchy`: Arch Linux), kernel 6.18.60, 4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` and `orca`, 24 GiB on `omarchy`) and a 20 GiB persistent disk at `/data` (home is `/data/home`). Pytho`
@@ -139,18 +139,18 @@
 - 状态: ok | https://www.scaleway.com/en/pricing/
 - 🔎 **/model-as-a-service/)** `verless - Generative APIs - Dedicated Deployment [View pricing](https://www.scaleway.com/en/pricing/model-as-a-service/) ## Storage ### Storage Discover our versatile storage options: - Object Storage - Scaleway Glac`
 
-## 👀 UpCloud 定价（试用金）（upcloud-pricing）
+##    UpCloud 定价（试用金）（upcloud-pricing）
 - 状态: ok | https://www.upcloud.com/pricing/
-- 🔎 **50 GB** `25% less expensive than previous-generation while offering 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
-- 🔎 **16 GB** `previous-generation while offering 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
-- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **$3** `rice | Memory | CPU cores | Bandwidth | Storage | Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo`
-- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** |** `Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 G`
-- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** |** `| | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 G`
-- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** |** `** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 G`
-- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** |** `* | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16`
-- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16`
-- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **$32/mo** | Fe`
-- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **$32/mo** | Features and services specific to Cloud Servers.`
+- 🔎 **50 GB** `expensive than previous-generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
+- 🔎 **16 GB** `generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
+- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** |** `lobal price | Memory | CPU cores | Bandwidth | Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB`
+- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** |** `Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB`
+- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** |** `- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 G`
+- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** |** `*** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 G`
+- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** |** `** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16`
+- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16`
+- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Fe`
+- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Features and services specific to Cloud Servers.`
 
 ##    DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
 - 状态: ok | https://www.digitalocean.com/pricing
@@ -210,7 +210,7 @@
 - 🔎 **runs** `*1 min** wall clock time / run - **Unlimited** public vals - **3 days** log retention - **100,000** runs / day - **Email** yourself Pro For professionals and solopreneurs **$21**/mo Save $50 (2 months`
 - 🔎 **runs** `10 min** wall clock time / run - **2,000** private vals - **10 days** log retention - **1,000,000** runs / day - **Email** anyone Business For collaboration and production use **Starting from** **$16`
 
-##    Northflank 定价（免费 sandbox 服务）（northflank-pricing）
+## 👀 Northflank 定价（免费 sandbox 服务）（northflank-pricing）
 - 状态: ok | https://northflank.com/pricing
 - 🔎 **12 vCPU and 48 GB** `jobs, and 1 database - Up to $20/mo of resources on Northflank Cloud - 1 BYOC cluster, up to 12 vCPU and 48 GB - Always on, no sleeping 2. ## Pay as you go Usage-based From $0.01667 per vCPU hour`
 - 🔎 **140 MiB/s per disk included | $7** `on and service volumes | $0.11657/ GiB / month | Not billed | | Additional IOPSFirst 3,000 IOPS and 140 MiB/s per disk included | $7.37/ 1,000 IOPS / month | Not billed | | Additional throughputFirst 3,000 IOPS and 140 MiB/s per dis`
@@ -288,8 +288,11 @@
 - 🔎 **credits** `rations Price $0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1`
 - 🔎 **credits** `$0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits U`
 
-##    LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
+## 👀 LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
 - 状态: ok | https://lowendbox.com/feed/
+- 🔎 **8GB RAM for $24** `of cheap VPS, hosting deals, and industry news - [The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR!](https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-9`
+- 🔎 **8gb-ram-for-24-99-year/) — Wed, 18 Nov 2026 12:00:12 +0000** `8GB RAM for $24.99/YEAR!](https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-99-year/) — Wed, 18 Nov 2026 12:00:12 +0000 I usually write a little to tell you about a provider when we post an offer, or to give you some`
+- 🔎 **8GB RAM for $24** `. But today's offer needs no introduction! The post The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR! appeared first on LowEndBox . - [LowEndLOLs: Customers to Avoid](https://lowendbox.com/blo`
 - 🔎 **2GB KVM VPS for $1** `8230; appeared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it`
 - 🔎 **2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:0** `th First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:00:12 +0000 Godlike.Host is back with some great pricing for our readers. You'll need our special c`
 - 🔎 **2GB KVM VPS for $1** `get these deals! The post If You Missed the Godlike.Host Offer in October &#8211; It&#8217;s Back! 2GB KVM VPS for $1.83/Month First Year! appeared first on LowEndBox . - [Felware’s Limited Time Holiday Sale Starts NO`
@@ -297,9 +300,6 @@
 - 🔎 **4gb-vps/) — Mon, 09 Nov 2026 12:00:26 +0000** `//lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/) — Mon, 09 Nov 2026 12:00:26 +0000 GenixNode is a VPS provider with deals in 14 different locations around the world. From Dallas to`
 - 🔎 **4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations** `want to be. Prices vary by location but prices start as low as $2.39/month on annual contract for a 4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for R`
 - 🔎 **4GB VPS! appeared first on LowEndBox ** `4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for RackNerd’s Fall Giveaway! Win a Meta Quest 3, a Synology NAS, a Gaming Moni`
-- 🔎 **4GB VPS with 1TB Bandwidth!](https://lowendbox** `appeared first on LowEndBox . - [Great Singapore Deals from Kainode! Starting at $5.99/Month for a 4GB VPS with 1TB Bandwidth!](https://lowendbox.com/blog/great-singapore-deals-from-kainode-starting-at-5-99-month-for-a-4gb-vps-with-1tb-bandwidth`
-- 🔎 **4gb-vps-with-1tb-bandwidth/) — Sat, 07 Nov 2026 12:00:46 +0000** `dwidth!](https://lowendbox.com/blog/great-singapore-deals-from-kainode-starting-at-5-99-month-for-a-4gb-vps-with-1tb-bandwidth/) — Sat, 07 Nov 2026 12:00:46 +0000 Offers in Singapore are always popular. It's not easy to find a true "low end" provider there bec`
-- 🔎 **4GB VPS for only $5** `k centers like Dallas or Amsterdam. But Kainode has brought us some good deals today: you can get a 4GB VPS for only $5.99/month! The post Great Singapore Deals from Kainode! Starting at $5.99/Month for a 4GB VPS with 1`
 
 ##    百度智能云免费试用（baidu-free）
 - 状态: ok | https://cloud.baidu.com/campaign/free/index.html
@@ -340,7 +340,7 @@
 - 🔎 **8 vCPU Enterprise Plus instance, 64 GB of memory, and 100 GB of st** `SQL Free Trial Instance Start a 30-day [Cloud SQL](https://cloud.google.com/sql) free trial with an 8 vCPU Enterprise Plus instance, 64 GB of memory, and 100 GB of storage. Plus, new Google Cloud customers get [$300 in free credits](https://docs.cloud.google.com/sql`
 - 🔎 **10 GB of storage at no cost** `ner Free Trial Create a 90-day [Spanner](https://cloud.google.com/spanner) free trial instance with 10 GB of storage at no cost. Plus, new Google Cloud customers get [$300 in free credits](https://console.cloud.google.com/freet`
 
-## 👀 AWS Free Tier（aws-free）
+## 🔔 AWS Free Tier（aws-free）
 - 状态: ok | https://aws.amazon.com/free/
 - 🔎 **Always free** `te the service, and any eligible credits automatically apply to usage beyond the trial limits. ### Always free ![Illustration of a document, gear, and cloud with code symbols, representing cloud-based coding o`
 - 🔎 **always free within monthly usage limits on both the Free and ** `vices-gear-document-icon-560x258.bdc52734b1317300377c7e723b674137b1170d30.png) 30+ AWS services are always free within monthly usage limits on both the Free and Paid plans. If you go beyond these limits or access paid features, credits are automatically applied`
@@ -547,9 +547,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794987965233) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794987965233) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794987965233) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1795006004733) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1795006004733) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `795006004733) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -632,15 +632,15 @@
 ## 👀 GPU.nz（新西兰 GPU 云定价）（gpunz）
 - 状态: ok | https://gpu.nz/en/pricing
 - 🔎 **8 GB+ | $0** `ute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 12 GBGPU with 8 GB+ | $0.0015 | $0.044 | $0.087 | $2.09 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242`
-- 🔎 **24 GB+ | $0** `RTX 3060 12 GBGPU with 8 GB+ | $0.0015 | $0.044 | $0.087 | $2.09 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 |`
-- 🔎 **48 GB+ | $0** `| Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.236 | $0.472 | $11.33`
-- 🔎 **80 GB+ | $0** `| $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $22** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $22.01/h | $22.01/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.37/h | $17.51/h | 3`
-- 🔎 **180gb) | 180 GB | $13** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $22.01/h | $22.01/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.37/h | $17.51/h | 37 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.51/h | $9.31/h`
-- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $13.37/h | $17.51/h | 37 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.51/h | $9.31/h | 29 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55`
-- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.51/h | $9.31/h | 29 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55/h | 138 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $3.88/`
-- 🔎 **80gb) | 80 GB | $3** `pu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55/h | 138 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $3.88/h | 32 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $6.86/h`
-- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $3.88/h | 32 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $6.86/h | 11 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $5.36`
+- 🔎 **24 GB+ | $0** `RTX 3060 12 GBGPU with 8 GB+ | $0.0015 | $0.044 | $0.087 | $2.09 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 |`
+- 🔎 **48 GB+ | $0** `| Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.497 | $11.93`
+- 🔎 **80 GB+ | $0** `| $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 | Prices and availability come from the live catalog and update au`
+- 🔎 **288gb) | 288 GB | $21** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.01/h | $21.90/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.04/h | $18.10/h | 2`
+- 🔎 **180gb) | 180 GB | $15** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $21.01/h | $21.90/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $15.04/h | $18.10/h | 26 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.38/h | $8.72/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $15.04/h | $18.10/h | 26 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.38/h | $8.72/h | 33 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55`
+- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.38/h | $8.72/h | 33 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55/h | 107 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.47/h | $3.50/`
+- 🔎 **80gb) | 80 GB | $3** `pu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55/h | 107 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.47/h | $3.50/h | 32 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.91/h`
+- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.47/h | $3.50/h | 32 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $5.91/h | 2 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.35/h | $5.36/`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
