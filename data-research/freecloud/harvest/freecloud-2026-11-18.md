@@ -1,7 +1,7 @@
 # freecloud 采集快照 2026-11-18
 
-- 采集时间: 2026-11-18T02:27:08Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: daytona-pricing, modal-pricing, digitalocean-pricing | 👀观察中: instabox-pricing, northflank-pricing, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-18T07:46:12Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: 无 | 👀观察中: instabox-pricing, upcloud-pricing, aws-free, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
 
 ## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
@@ -29,7 +29,7 @@
 - 🔎 **sandbox** `oxes10 concurrent sandboxesThe maximum number of sandboxes that can run at the same time. - Default sandbox CPU and RAM [Start for Free](https://console.e2b.dev/sign-up?signup_source=pricing_hobby) $150 /`
 - 🔎 **sandbox** `lator - Everything in Hobby, usage billed by the second - Sessions up to 24 hours - 100 concurrent sandboxes, expandable to 1,100 - Custom sandbox CPU and RAM [Choose Pro](https://console.e2b.dev/sign-up?s`
 
-## 🔔 Daytona 定价（Agent 沙盒）（daytona-pricing）
+##    Daytona 定价（Agent 沙盒）（daytona-pricing）
 - 状态: ok | https://daytona.io/pricing
 - 🔎 **12GB GDDR6** `them down just as fast. Use what you need, when you need it. $200 in free compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h`
 - 🔎 **12GB GDDR6** `ree compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h GPU ### Preemptible ($/hour) Nvidia B300 $5.17/h Nvidia B200 $4.30/`
@@ -42,7 +42,7 @@
 - 🔎 **credit card required** `ated per second. Sign up for a free trial - no credit card required Sign up for a free trial - no credit card required Pay as you go with usage-based pricing Pay as you go with usage-based pricing Unlock volume disc`
 - 🔎 **credits for free** `Unlock volume discounts as you scale ##### Start-ups Daytona supports startups with up to $50k in credits for free. ##### Enterprise Designed for businesses that need larger limits, SSO, audit logs, or BYOC`
 
-## 🔔 Modal 定价（每月免费金）（modal-pricing）
+##    Modal 定价（每月免费金）（modal-pricing）
 - 状态: ok | https://modal.com/pricing
 - 🔎 **80 GB $ / sec** `c - Nvidia H200 SXM $ / sec - Nvidia H100 SXM5 $ / sec - Nvidia RTX PRO 6000 $ / sec - Nvidia A100, 80 GB $ / sec - Nvidia A100, 40 GB $ / sec - Nvidia L40S $ / sec - Nvidia A10 $ / sec - Nvidia L4 $ / sec - Nvidi`
 - 🔎 **40 GB $ / sec** `Nvidia H100 SXM5 $ / sec - Nvidia RTX PRO 6000 $ / sec - Nvidia A100, 80 GB $ / sec - Nvidia A100, 40 GB $ / sec - Nvidia L40S $ / sec - Nvidia A10 $ / sec - Nvidia L4 $ / sec - Nvidia T4 $ / sec Physical core (`
@@ -139,20 +139,20 @@
 - 状态: ok | https://www.scaleway.com/en/pricing/
 - 🔎 **/model-as-a-service/)** `verless - Generative APIs - Dedicated Deployment [View pricing](https://www.scaleway.com/en/pricing/model-as-a-service/) ## Storage ### Storage Discover our versatile storage options: - Object Storage - Scaleway Glac`
 
-##    UpCloud 定价（试用金）（upcloud-pricing）
+## 👀 UpCloud 定价（试用金）（upcloud-pricing）
 - 状态: ok | https://www.upcloud.com/pricing/
-- 🔎 **50 GB** `expensive than previous-generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
-- 🔎 **16 GB** `generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
-- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** |** `lobal price | Memory | CPU cores | Bandwidth | Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB`
-- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** |** `Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB`
-- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** |** `- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 G`
-- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** |** `*** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 G`
-- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** |** `** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16`
-- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16`
-- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Fe`
-- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Features and services specific to Cloud Servers.`
+- 🔎 **50 GB** `25% less expensive than previous-generation while offering 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
+- 🔎 **16 GB** `previous-generation while offering 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
+- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **$3** `rice | Memory | CPU cores | Bandwidth | Storage | Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo`
+- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** |** `Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 G`
+- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** |** `| | 1 GB | 1 | 250 Mbit/s | 10 GB | **$3.5/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 G`
+- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** |** `** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **$7/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 G`
+- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** |** `* | | 2 GB | 2 | 250 Mbit/s | 30 GB | **$10/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16`
+- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **$12/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16`
+- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **$14/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **$32/mo** | Fe`
+- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **$20/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **$24/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **$28/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **$32/mo** | Features and services specific to Cloud Servers.`
 
-## 🔔 DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
+##    DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
 - 状态: ok | https://www.digitalocean.com/pricing
 - 🔎 **50 GiB** `- Standard tier: $0.15 per GiB-month - High performance tier: $0.30 per GiB-month - Starting from 50 GiB - Flat pricing across all supported regions ### Volumes Starting at Business-ready block storage`
 - 🔎 **100 GiB bandwidth (overage $0** `ng is free. Inter-datacenter VPC peering is $0.01/GiB. - VPC NAT Gateway: $40.00 per node, includes 100 GiB bandwidth (overage $0.01/GiB), supports up to 500,000 connections. ### Uptime Starting at Automated endpoint alerts -`
@@ -210,7 +210,7 @@
 - 🔎 **runs** `*1 min** wall clock time / run - **Unlimited** public vals - **3 days** log retention - **100,000** runs / day - **Email** yourself Pro For professionals and solopreneurs **$21**/mo Save $50 (2 months`
 - 🔎 **runs** `10 min** wall clock time / run - **2,000** private vals - **10 days** log retention - **1,000,000** runs / day - **Email** anyone Business For collaboration and production use **Starting from** **$16`
 
-## 👀 Northflank 定价（免费 sandbox 服务）（northflank-pricing）
+##    Northflank 定价（免费 sandbox 服务）（northflank-pricing）
 - 状态: ok | https://northflank.com/pricing
 - 🔎 **12 vCPU and 48 GB** `jobs, and 1 database - Up to $20/mo of resources on Northflank Cloud - 1 BYOC cluster, up to 12 vCPU and 48 GB - Always on, no sleeping 2. ## Pay as you go Usage-based From $0.01667 per vCPU hour`
 - 🔎 **140 MiB/s per disk included | $7** `on and service volumes | $0.11657/ GiB / month | Not billed | | Additional IOPSFirst 3,000 IOPS and 140 MiB/s per disk included | $7.37/ 1,000 IOPS / month | Not billed | | Additional throughputFirst 3,000 IOPS and 140 MiB/s per dis`
@@ -340,7 +340,7 @@
 - 🔎 **8 vCPU Enterprise Plus instance, 64 GB of memory, and 100 GB of st** `SQL Free Trial Instance Start a 30-day [Cloud SQL](https://cloud.google.com/sql) free trial with an 8 vCPU Enterprise Plus instance, 64 GB of memory, and 100 GB of storage. Plus, new Google Cloud customers get [$300 in free credits](https://docs.cloud.google.com/sql`
 - 🔎 **10 GB of storage at no cost** `ner Free Trial Create a 90-day [Spanner](https://cloud.google.com/spanner) free trial instance with 10 GB of storage at no cost. Plus, new Google Cloud customers get [$300 in free credits](https://console.cloud.google.com/freet`
 
-##    AWS Free Tier（aws-free）
+## 👀 AWS Free Tier（aws-free）
 - 状态: ok | https://aws.amazon.com/free/
 - 🔎 **Always free** `te the service, and any eligible credits automatically apply to usage beyond the trial limits. ### Always free ![Illustration of a document, gear, and cloud with code symbols, representing cloud-based coding o`
 - 🔎 **always free within monthly usage limits on both the Free and ** `vices-gear-document-icon-560x258.bdc52734b1317300377c7e723b674137b1170d30.png) 30+ AWS services are always free within monthly usage limits on both the Free and Paid plans. If you go beyond these limits or access paid features, credits are automatically applied`
@@ -351,7 +351,7 @@
 - 🔎 **free plan to get started, paid plan to scale** `bf42784e3b9c3a5e4b387d48cb10b00f.png) ## Compare the plans Choose the plan that fits your needs — free plan to get started, paid plan to scale. | Benefits | Free plan | Paid plan | | --- | --- | --- | | Receive up to $200 USD free credits |`
 - 🔎 **Free plan | Paid plan |** `Choose the plan that fits your needs — free plan to get started, paid plan to scale. | Benefits | Free plan | Paid plan | | --- | --- | --- | | Receive up to $200 USD free credits | ✔ | ✔ | | Free usage of select services`
 - 🔎 **free credits | ✔ | ✔ |** `d plan to scale. | Benefits | Free plan | Paid plan | | --- | --- | --- | | Receive up to $200 USD free credits | ✔ | ✔ | | Free usage of select services | ✔ | ✔ | | Access to all AWS services | ✖ Limited to select servic`
-- 🔎 **Free plan** `e learning for every data scientist and developer. Learn more ## Learn more about our offers ### Free plan ![Missing alt text value](https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/dev`
+- 🔎 **Free plan** `generative AI applications with foundation models Learn more ## Learn more about our offers ### Free plan ![Missing alt text value](https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/dev`
 
 ##    Azure 免费服务（azure-free）
 - 状态: ok | https://azure.microsoft.com/en-us/pricing/free-services
@@ -547,9 +547,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794968819682) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794968819682) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794968819682) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794987965233) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794987965233) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794987965233) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -635,12 +635,12 @@
 - 🔎 **24 GB+ | $0** `RTX 3060 12 GBGPU with 8 GB+ | $0.0015 | $0.044 | $0.087 | $2.09 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 |`
 - 🔎 **48 GB+ | $0** `| Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.236 | $0.472 | $11.33`
 - 🔎 **80 GB+ | $0** `| $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $21.02/h | 12 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h |`
-- 🔎 **180gb) | 180 GB | $12** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $21.02/h | 12 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 34 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.05/h | $9.30/h`
-- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 34 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.05/h | $9.30/h | 28 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52`
-- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.05/h | $9.30/h | 28 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52/h | 113 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.69/`
-- 🔎 **80gb) | 80 GB | $3** `pu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52/h | 113 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.69/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.04/h | $6.86/h`
-- 🔎 **94gb) | 94 GB | $6** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.69/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.04/h | $6.86/h | 11 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.11/h | $5.37`
+- 🔎 **288gb) | 288 GB | $22** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $22.01/h | $22.01/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.37/h | $17.51/h | 3`
+- 🔎 **180gb) | 180 GB | $13** `/gpu.nz/en/gpu/b300-288gb) | 288 GB | $22.01/h | $22.01/h | 5 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.37/h | $17.51/h | 37 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.51/h | $9.31/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $13.37/h | $17.51/h | 37 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.51/h | $9.31/h | 29 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55`
+- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.51/h | $9.31/h | 29 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55/h | 138 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $3.88/`
+- 🔎 **80gb) | 80 GB | $3** `pu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.55/h | 138 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $3.88/h | 32 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $6.86/h`
+- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $3.88/h | 32 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.70/h | $6.86/h | 11 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.30/h | $5.36`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing
