@@ -301,3 +301,7 @@
 2. **平台规则手册成册**：domestic/7-platform-rulebook.md——知乎/CSDN/简书/掘金/头条/搜狐/企鹅/百家 8 平台的排版规范+风控红线+流量活动全覆盖（含 CSDN 禁言血泪复盘+申诉三通道模板+cookie 迁移 SOP）
 3. **流量活动矩阵盘点**：知乎打卡赛（已报）/掘金新人任务（首篇文章 10000 矿石+沸点 5000）/掘金创作话题（#AI编程# 10k 参与）/头条首发激励（72h 独家额外分成）/简书专题投稿（已投）——各平台免费流量入口全部建档
 4. **简书 Markdown 模式教训**：切换只对新文章生效——发知乎/CSDN 的「删 markdown 语法」铁律不适用于简书/掘金（它们要完整 markdown）
+
+## GitHub 数据线（并行）
+
+1. **awesome-free-ai-tokens-cn「本周新增」周更 ✅**（2026-11-19，commit 9a8b461）：contents API 全量替换周更段（旧 4 条→新 5 条：七牛云 Conatus 每日 1 亿至 11-30/AutoClaw 登录送 1 亿至 11-22/Simular Box 免费云电脑/OpenCode Go $10 直核/Rime STT 限免至 11-19），条目全部带官方链接+日期更新 2026-11-19——README 周更=搜索引擎重收录信号；注：任务给的「Mercury 3 注册送 1 亿」在 deals.json（301 条）中无对应条目，已按 verified_at 最新+高价值+published 三条件改选；raw.githubusercontent 复验落地 ✅
