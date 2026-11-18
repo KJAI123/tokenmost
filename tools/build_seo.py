@@ -17,7 +17,7 @@ GDIR = ROOT / "guides"
 LAYER = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", "compute": "算力平台",
          "reseller": "Token 中间商", "official_global": "大模型官方（海外）", "maas": "MaaS 平台（云上托管）"}
 TYPE = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "limited_promo": "限时活动",
-        "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励"}
+        "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励", "pricing_plan": "套餐订阅"}
 
 TPL = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
@@ -186,7 +186,7 @@ def main():
         title = f"{name}额度领取攻略：{total_s} 已核验首月参考（{today} 更新）"
         desc = f"{name}免费 token 额度大全：{len(ds)} 条信源（{verified} 条已验证），{deal_value(ds[0])}。每日核验、失效即清，附领取步骤与常见问题。"
         h1 = f"{name}额度大全：已核验首月参考 {total_s}"
-        intro = (f"本页聚合 {name}（{layer}）全部 {len(ds)} 条免费额度情报，其中 {verified} 条已验证。"
+        intro = (f"本页聚合 {name}（{layer}）全部 {len(ds)} 条额度与折扣情报，其中 {verified} 条已验证。"
                  f"已核验首月参考约 <b>{total_s}</b>（一次性、活动有效期内日额度及月额度；金额仅作 DS Flash 购买力比较，实际额度见下方原单位）。"
                  f"tokenmost 每日核验，过期自动清洗。")
         if application_only:
@@ -199,7 +199,7 @@ def main():
             tag = TYPE.get(d.get("type"), d.get("type", ""))
             badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
-            action = "查看历史条款" if d.get("verify_status") == "expired" else "查看申请" if d.get("gate") in APPLICATION_GATES else "立即领取"
+            action = "查看历史条款" if d.get("verify_status") == "expired" else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
             estimate_note = (f'<p>日估算假设：{esc_quote(estimate_assumption(d))} {esc_quote(d["daily_estimate"]["note"])} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
             blocks.append(

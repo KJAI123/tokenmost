@@ -150,6 +150,7 @@ const Workbench = (() => {
       startup: msg('初创资质', 'Startup eligibility'),
       audit: msg('需审核', 'Application review'),
       oss: msg('开源维护者', 'Open-source maintainers'),
+      subscription: msg('需订阅', 'Subscription required'),
     };
     return labels[deal.gate] || deal.gate_label || deal.gate;
   }
@@ -158,7 +159,40 @@ const Workbench = (() => {
     return ['startup', 'audit', 'oss'].includes(deal.gate);
   }
 
+  const beijingDay = now => new Date(now.getTime()+8*3600e3).toISOString().slice(0,10);
+  function isFeatured(deal, now = new Date()) {
+    const date = beijingDay(now);
+    const offer = deal.subscription_offer;
+    return deal.published !== false && deal.verify_status === 'verified'
+      && deal.type === 'pricing_plan' && deal.quota_paid === true
+      && /^\d{4}-\d{2}-\d{2}$/.test(deal.featured_until || '') && deal.featured_until >= date
+      && offer?.currency === 'USD' && offer.price > 0 && offer.monthly_usage_limit > 0
+      && offer.limit_until === deal.featured_until;
+  }
+
+  function featuredHeading() {
+    return '<div class="layer-head featured-heading">'+icon('bookmark')+'<h3>'
+      +msg('补贴推荐 · 付费', 'Featured subsidy · paid')+'</h3><p>'
+      +msg('限时提额，查看套餐门槛', 'Limited-time boost; subscription required')+'</p></div>';
+  }
+
+  function subscriptionCell(deal) {
+    if (!isFeatured(deal)) return '';
+    const offer = deal.subscription_offer;
+    return '<span class="quota-value"><span class="num">$'+esc(offer.price)+msg('/月','/mo')+'</span>'
+      +'<span class="unit">'+esc(offer.model)+'</span><span class="unit quota-native">$'
+      +esc(offer.monthly_usage_limit.toLocaleString(locale))+msg(' 模型月用量上限',' model usage/mo cap')+'</span></span>';
+  }
+  let featuredDay = beijingDay(new Date());
+  setInterval(() => {
+    const next = beijingDay(new Date());
+    if (next === featuredDay) return;
+    featuredDay = next;
+    if (document.querySelector('.featured-offer') && typeof window.render === 'function') window.render();
+  },60000);
+
   function timing(d) {
+    if (isFeatured(d)) return '<span class="offer-deadline">'+msg('提额至 ', 'Boost until ')+esc(d.featured_until)+'</span>';
     if (d.deadline && !String(d.deadline).startsWith('长期')) {
       const date = String(d.deadline);
       return '<span class="offer-deadline" title="' + esc(date) + '">'
@@ -326,5 +360,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredHeading, subscriptionCell, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();

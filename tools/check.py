@@ -106,6 +106,16 @@ for d in deals:
                 errors.append(f"{d['id']} Neurons 模型计费依据非法")
             if not estimate.get("source_url"):
                 errors.append(f"{d['id']} Neurons 估算缺官方价格来源")
+    if "featured_until" in d:
+        offer = d.get("subscription_offer", {})
+        try:
+            datetime.date.fromisoformat(d["featured_until"])
+            assert d.get("type") == "pricing_plan" and d.get("quota_paid") is True
+            assert offer["currency"] == "USD" and offer["price"] > 0 and offer["monthly_usage_limit"] > 0
+            assert offer["limit_until"] == d["featured_until"]
+            assert offer["model"] and d.get("sources")
+        except (KeyError, ValueError, TypeError, AssertionError):
+            errors.append(f"{d['id']} 补贴推荐缺少有效截止日、订阅门槛或模型用量上限")
     first = d["provider"].split()[0]
     if d["provider"].split()[0] not in site_first:
         warns.append(f"{d['id']} provider「{d['provider']}」无对应导航站点（无 ⚡接入 按钮）")

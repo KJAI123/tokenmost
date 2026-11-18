@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261118-4">
+<link rel="stylesheet" href="assets/workbench.css?v=20261119-1">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -773,7 +773,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
 <script src="assets/token-math.js?v=20261118-4"></script>
-<script src="assets/workbench.js?v=20261118-3"></script>
+<script src="assets/workbench.js?v=20261119-1"></script>
 <script src="assets/catalogue-ledger.js?v=20261118-4"></script>
 <script src="assets/daily-estimates.js?v=20261118-4"></script>
 <script>
@@ -855,10 +855,11 @@ function renderFreecloud(){
 const rowHtml=(d,ov)=>{
   const s=siteFor(d),pname=s?s.name:d.provider;
   return`
-<article class="row" data-id="${esc(d.id)}" data-layer="${dealLayer(d)}">
+<article class="row${Workbench.isFeatured(d)?' featured-offer':''}" data-id="${esc(d.id)}" data-layer="${dealLayer(d)}">
   <div class="r-content">
     <div class="r-line1">
       <span class="r-provider">${Workbench.offerLogo(d,s)}${esc(d.provider)}</span>
+      ${Workbench.isFeatured(d)?'<span class="chip featured-label">'+Workbench.msg('补贴推荐 · 付费','Featured · paid')+'</span>':''}
       <span class="r-value" title="${esc(Workbench.offerValue(d))}">${esc(Workbench.headline(d))}</span>
       ${d.coupon?`<span class="coupon"><span class="code">${esc(d.coupon)}</span>${d.placeholder?'<span class="phTag">示例</span>':`<button class="copy" data-code="${esc(d.coupon)}">复制</button>`}</span>`:''}
     </div>
@@ -874,14 +875,14 @@ const rowHtml=(d,ov)=>{
     </div>
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
-  <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${tokCell(d,ov)}</div>
+  <div class="r-tok ${d.verify_status==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${Workbench.subscriptionCell(d) || tokCell(d,ov)}</div>
   <div class="r-state">${Workbench.freshness(d)}${apiBadge(d)}${Workbench.timing(d)}</div>
   <div class="r-ops">
     ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="一键接入">⚡</button>`:''}
     <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
     <button class="couponFlag" data-supply="${esc(pname)}" title="托管你的折扣码" style="display:${auth?'':'none'}">🎁</button>
     <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" aria-pressed="${claimedSet.has(d.id)}" title="标记或取消已领">${claimedSet.has(d.id)?'★':'☆'}</button>
-    ${Workbench.couponLink(d) || `<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):Workbench.msg('领取','Claim')}</a>`}
+    ${Workbench.couponLink(d) || `<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):(d.quota_paid||d.type==='pricing_plan')?Workbench.msg('查看套餐','View plan'):Workbench.msg('领取','Claim')}</a>`}
   </div>
 </article>`};
 
@@ -1043,7 +1044,11 @@ function render(){
   </article>
   <div class="agg-detail${open?' open':''}" id="${detailId}" data-detail="${esc(g.p)}" data-layer="${dealLayer(g.best)}">${g.ds.map(d=>rowHtml(d)).join('')}</div>`:rowHtml(g.best);
     }).join('');
-    if(curCat==='all'&&!curQ&&!curType)Workbench.groupRows(box);
+    if(curCat==='all'&&!curQ&&!curType){
+      Workbench.groupRows(box);
+      const featured=DEALS.filter(d=>Workbench.isFeatured(d));
+      if(featured.length)box.insertAdjacentHTML('afterbegin',Workbench.featuredHeading()+featured.map(d=>rowHtml(d)).join(''));
+    }
   }else{
     box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+list.map(d=>rowHtml(d)).join('');
   }

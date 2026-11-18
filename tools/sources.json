@@ -629,6 +629,33 @@
     "codearts-skill-1000"
    ],
    "auto_verify": false
+  },
+  {
+   "id": "opencode-go-limits",
+   "type": "watch",
+   "url": "https://opencode.ai/console/go",
+   "deals": [
+    "opencode-go-deepseek"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "opencode-go-terms",
+   "type": "watch",
+   "url": "https://opencode.ai/docs/console/go/",
+   "deals": [
+    "opencode-go-deepseek"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "opencode-free-pricing",
+   "type": "watch",
+   "url": "https://opencode.ai/docs/console/models/",
+   "deals": [
+    "opencode-zen-free"
+   ],
+   "auto_verify": false
   }
  ]
 }
