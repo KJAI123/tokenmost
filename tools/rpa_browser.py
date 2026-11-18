@@ -26,7 +26,7 @@ import time
 import urllib.request
 import websocket
 
-CDP_HTTP = "http://127.0.0.1:9222"
+CDP_HTTP = "http://127.0.0.1:9223"  # 专用浏览器（老板 Chrome 9222 禁碰）
 HERE = os.path.dirname(os.path.abspath(__file__))
 OCR_JS = os.path.join(HERE, "rpa_ocr.js")
 
@@ -41,8 +41,31 @@ class Tab(object):
     # ---------- 连接管理 ----------
     @classmethod
     def connect(cls, url_frag=None, new_url=None, wait=8):
-        """连已有标签（url_frag 子串匹配）；或 new_url 开新标签。"""
+        """连已有标签（url_frag 子串匹配）；或 new_url 开新标签。
+
+        防僵尸标签：new_url 时先查是否已有同域名标签——有则复用并导航，无才开新。
+        （教训：每次探测都开新标签会堆出满屏 about:blank 僵尸，老板侧弹屏事故）
+        """
         if new_url:
+            new_domain = new_url.split("//")[-1].split("/")[0]
+            ts = json.loads(urllib.request.urlopen(CDP_HTTP + "/json", timeout=5).read())
+            reuse = None
+            for t in ts:
+                if t.get("type") != "page":
+                    continue
+                u = t.get("url", "")
+                if new_domain.split(".")[-2:] and any(d in u for d in [new_domain] + new_domain.split(".")[-2:]):
+                    reuse = t
+                    break
+            if reuse:
+                # 复用同域名标签：导航到目标 URL
+                req = urllib.request.Request(CDP_HTTP + "/json/activate/" + reuse["id"], method="PUT")
+                urllib.request.urlopen(req, timeout=8).read()
+                ws = websocket.create_connection(reuse["webSocketDebuggerUrl"], timeout=120)
+                tab = cls(reuse, ws)
+                tab.navigate(new_url, wait=wait)
+                return tab
+            # 无同域标签才开新
             req = urllib.request.Request(CDP_HTTP + "/json/new?" + new_url, method="PUT")
             urllib.request.urlopen(req, timeout=8).read()
             url_frag = url_frag or new_url.split("//")[-1].split("/")[0]
