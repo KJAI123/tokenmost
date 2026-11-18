@@ -1,9 +1,9 @@
 # freecloud 采集快照 2026-11-18
 
-- 采集时间: 2026-11-17T21:23:53Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: vercel-pricing, northflank-pricing, lightning-pricing, render-pricing, railway-pricing, clever-cloud, atlascloud | 👀观察中: daytona-pricing, modal-pricing, digitalocean-pricing, kaggle-notebooks, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
+- 采集时间: 2026-11-18T02:27:08Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: daytona-pricing, modal-pricing, digitalocean-pricing | 👀观察中: instabox-pricing, northflank-pricing, himitsushell, gpunz | 🌱首跑基线: 0 | 失败: 无
 
-##    InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
+## 👀 InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
 - 🔎 **1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (** `output fail with a broken pipe. Exec output is UTF-8 text: without streaming each stream is cut at 1 MiB (`truncated`), and bytes that are not UTF-8 become U+FFFD (`invalidUtf8`), so read files with `GET /v1/machines/{id}/files/content` or `instabox pull`/`cp`, no`
 - 🔎 **4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` an** `cker microVM, Debian 13 (trixie) amd64 (`ci`: Ubuntu 24.04; `omarchy`: Arch Linux), kernel 6.18.60, 4 vCPUs / 8 GiB by default, a 16 GiB root disk (8 GiB on `herdr` and `orca`, 24 GiB on `omarchy`) and a 20 GiB persistent disk at `/data` (home is `/data/home`). Pytho`
@@ -29,7 +29,7 @@
 - 🔎 **sandbox** `oxes10 concurrent sandboxesThe maximum number of sandboxes that can run at the same time. - Default sandbox CPU and RAM [Start for Free](https://console.e2b.dev/sign-up?signup_source=pricing_hobby) $150 /`
 - 🔎 **sandbox** `lator - Everything in Hobby, usage billed by the second - Sessions up to 24 hours - 100 concurrent sandboxes, expandable to 1,100 - Custom sandbox CPU and RAM [Choose Pro](https://console.e2b.dev/sign-up?s`
 
-## 👀 Daytona 定价（Agent 沙盒）（daytona-pricing）
+## 🔔 Daytona 定价（Agent 沙盒）（daytona-pricing）
 - 状态: ok | https://daytona.io/pricing
 - 🔎 **12GB GDDR6** `them down just as fast. Use what you need, when you need it. $200 in free compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h`
 - 🔎 **12GB GDDR6** `ree compute included. GPU 12GB GDDR6 GPU 16-CORE GPU 16-CORE GPU 8-CORE GPU 32-CORE GPU 12GB GDDR6 Compute vCPU $0.0504/h GPU ### Preemptible ($/hour) Nvidia B300 $5.17/h Nvidia B200 $4.30/`
@@ -42,7 +42,7 @@
 - 🔎 **credit card required** `ated per second. Sign up for a free trial - no credit card required Sign up for a free trial - no credit card required Pay as you go with usage-based pricing Pay as you go with usage-based pricing Unlock volume disc`
 - 🔎 **credits for free** `Unlock volume discounts as you scale ##### Start-ups Daytona supports startups with up to $50k in credits for free. ##### Enterprise Designed for businesses that need larger limits, SSO, audit logs, or BYOC`
 
-## 👀 Modal 定价（每月免费金）（modal-pricing）
+## 🔔 Modal 定价（每月免费金）（modal-pricing）
 - 状态: ok | https://modal.com/pricing
 - 🔎 **80 GB $ / sec** `c - Nvidia H200 SXM $ / sec - Nvidia H100 SXM5 $ / sec - Nvidia RTX PRO 6000 $ / sec - Nvidia A100, 80 GB $ / sec - Nvidia A100, 40 GB $ / sec - Nvidia L40S $ / sec - Nvidia A10 $ / sec - Nvidia L4 $ / sec - Nvidi`
 - 🔎 **40 GB $ / sec** `Nvidia H100 SXM5 $ / sec - Nvidia RTX PRO 6000 $ / sec - Nvidia A100, 80 GB $ / sec - Nvidia A100, 40 GB $ / sec - Nvidia L40S $ / sec - Nvidia A10 $ / sec - Nvidia L4 $ / sec - Nvidia T4 $ / sec Physical core (`
@@ -152,7 +152,7 @@
 - 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Fe`
 - 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Features and services specific to Cloud Servers.`
 
-## 👀 DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
+## 🔔 DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
 - 状态: ok | https://www.digitalocean.com/pricing
 - 🔎 **50 GiB** `- Standard tier: $0.15 per GiB-month - High performance tier: $0.30 per GiB-month - Starting from 50 GiB - Flat pricing across all supported regions ### Volumes Starting at Business-ready block storage`
 - 🔎 **100 GiB bandwidth (overage $0** `ng is free. Inter-datacenter VPC peering is $0.01/GiB. - VPC NAT Gateway: $40.00 per node, includes 100 GiB bandwidth (overage $0.01/GiB), supports up to 500,000 connections. ### Uptime Starting at Automated endpoint alerts -`
@@ -165,7 +165,7 @@
 - 🔎 **credit will be fully utilized, and your card will be charged only ** `account. If you spend $3 in that timeframe, your card will not be charged. If you spend $10, the $5 credit will be fully utilized, and your card will be charged only $5. Since the credit is valid for 90 days, you won't be able to use any remaining credit after the 9`
 - 🔎 **credit is valid for 90 days, you won't be able to use any remainin** `u spend $10, the $5 credit will be fully utilized, and your card will be charged only $5. Since the credit is valid for 90 days, you won't be able to use any remaining credit after the 90-day period expires. We charge you for the underlying compute on which the 1-C`
 
-## 🔔 Vercel 定价（Hobby 免费档）（vercel-pricing）
+##    Vercel 定价（Hobby 免费档）（vercel-pricing）
 - 状态: ok | https://vercel.com/pricing
 - 🔎 **1 GB / month included** `per 1M Custom 1K included per project $50 / month per 25K redirects Custom Blob Storage Size 1 GB / month included Starting at $0.023 per GB Custom Blob Simple Operations 10K / month included Starting at $0.35`
 - 🔎 **10 GB / month included** `lob Advanced Operations 2K / month included Starting at $4.50 per 1M Custom Blob Data Transfer 10 GB / month included Included in Flat Rate CDN Custom Image Optimization Transformation 5K / month included Startin`
@@ -210,7 +210,7 @@
 - 🔎 **runs** `*1 min** wall clock time / run - **Unlimited** public vals - **3 days** log retention - **100,000** runs / day - **Email** yourself Pro For professionals and solopreneurs **$21**/mo Save $50 (2 months`
 - 🔎 **runs** `10 min** wall clock time / run - **2,000** private vals - **10 days** log retention - **1,000,000** runs / day - **Email** anyone Business For collaboration and production use **Starting from** **$16`
 
-## 🔔 Northflank 定价（免费 sandbox 服务）（northflank-pricing）
+## 👀 Northflank 定价（免费 sandbox 服务）（northflank-pricing）
 - 状态: ok | https://northflank.com/pricing
 - 🔎 **12 vCPU and 48 GB** `jobs, and 1 database - Up to $20/mo of resources on Northflank Cloud - 1 BYOC cluster, up to 12 vCPU and 48 GB - Always on, no sleeping 2. ## Pay as you go Usage-based From $0.01667 per vCPU hour`
 - 🔎 **140 MiB/s per disk included | $7** `on and service volumes | $0.11657/ GiB / month | Not billed | | Additional IOPSFirst 3,000 IOPS and 140 MiB/s per disk included | $7.37/ 1,000 IOPS / month | Not billed | | Additional throughputFirst 3,000 IOPS and 140 MiB/s per dis`
@@ -236,7 +236,7 @@
 - 🔎 **free** `s. Colab is especially well suited to machine learning, data science, and education. Yes. Colab is free of charge to use. In order to provide access to as many students and under-resourced groups around`
 - 🔎 **free** `, and usage limits sometimes fluctuate. This is necessary for Colab to be able to provide resources free of charge. For more details, see Resource Limits. Colab managed runtimes prohibit abusive actions`
 
-## 🔔 Lightning AI 定价（每月免费 credits）（lightning-pricing）
+##    Lightning AI 定价（每月免费 credits）（lightning-pricing）
 - 状态: ok | https://lightning.ai/pricing
 - 🔎 **600096 GB$4** `No restrictions in Pro or higher. - T416 GB$0.55/hr - L424 GB$0.79/hr - L40S48 GB$3.54/hr - RTXP 600096 GB$4.64/hr - A10040 GB$2.19/hr - H10080 GB$5.45/hr - H200141 GB$4.50/hr Billed by the second. Free hour`
 - 🔎 **50GB of persistent storage** `htning.ai/lightning-coin.svg)Up to 30 credits to start - Up to 2 seats - Up to 2 concurrent GPUs - 50GB of persistent storage - Pay as you go - 32 core CPUs - Single GPUs - 1 free Studio with 4 hour restarts - Up to 80% off`
@@ -378,7 +378,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-## 🔔 Render 定价（免费 Web 服务）（render-pricing）
+##    Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -404,7 +404,7 @@
 - 🔎 **32GB** `ice per RTX-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM`
 - 🔎 **160GB** `-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM 64GB Disk`
 
-## 🔔 Railway 定价（试用金观察）（railway-pricing）
+##    Railway 定价（试用金观察）（railway-pricing）
 - 状态: ok | https://railway.com/pricing
 - 🔎 **1 vCPU / 0** `small apps on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### H`
 - 🔎 **5 GB RAM per service** `on Railway - Start with a 30-day free trial with $5 credits, then $1 per month - Up to 1 vCPU / 0.5 GB RAM per service - 0.5 GB of volume storage - Community support No credit card required ### Hobby $5minimum usage`
@@ -456,18 +456,18 @@
 - 🔎 **8 vCPU | 30 GB | Nvidia T4 | 16 GB | $0** `EE | | Nvidia T4 - small | 4 vCPU | 15 GB | Nvidia T4 | 16 GB | $0.40 $288 | | Nvidia T4 - medium | 8 vCPU | 30 GB | Nvidia T4 | 16 GB | $0.60 $432 | | 1x Nvidia L4 | 8 vCPU | 30 GB | Nvidia L4 | 24 GB | $0.80 $576 | | 4x Nvidia L4 | 48 vC`
 - 🔎 **8 vCPU | 30 GB | Nvidia L4 | 24 GB | $0** `40 $288 | | Nvidia T4 - medium | 8 vCPU | 30 GB | Nvidia T4 | 16 GB | $0.60 $432 | | 1x Nvidia L4 | 8 vCPU | 30 GB | Nvidia L4 | 24 GB | $0.80 $576 | | 4x Nvidia L4 | 48 vCPU | 186 GB | Nvidia L4 | 96 GB | $3.80 $2,736 | | 1x Nvidia L40S |`
 
-## 👀 Kaggle Notebooks（每周 30h 免费 GPU）（kaggle-notebooks）
+##    Kaggle Notebooks（每周 30h 免费 GPU）（kaggle-notebooks）
 - 状态: ok | https://www.kaggle.com/docs/notebooks
 - 🔎 **20 GBs of output from a Notebook may be saved to disk in /kaggle/w** `s. If you don’t, you risk consequences for rule-breaking in the Competition. #### Notebooks Up to 20 GBs of output from a Notebook may be saved to disk in /kaggle/working. This data is saved automatically and you can then reuse that data in any future Notebook: ju`
 - 🔎 **transferable and cannot be exchanged for cash or any other goods or ** `le may terminate the extra GPU hours for their linked Kaggle account. - The extra GPU hours are non-transferable and cannot be exchanged for cash or any other goods or services. - The use of Kaggle's GPU resources is subject to Kaggle's Terms of Use and other applicab`
 - 🔎 **idle time for your interactive session** `el Skylake CPUs. CPU Specifications While editing a Notebook, you are provided with 20 minutes of idle time for your interactive session. If the code is not modified or executed in that time the current interactive session will end. If`
 - 🔎 **suspend the Promotion at any time, with or without notice** `Account via the settings page at any time. **Legal Terms** - Kaggle reserves the right to end or suspend the Promotion at any time, with or without notice, at its sole discretion. The end date of the Promotion may not be publicly announced and can occur`
-- 🔎 **/models)** `nsor Processing Units (TPUs)](https://www.kaggle.com/docs/tpu) [Models](https://www.kaggle.com/docs/models) [Competitions Setup](https://www.kaggle.com/docs/competitions-setup) [Organizations](https://www.`
 - 🔎 **/modify-project) GCP account to query any data that i** `-118720642.1583860775) but requires a [billing-enabled](https://cloud.google.com/billing/docs/how-to/modify-project) GCP account to query any data that isn’t publicly released by BigQuery. You should carefully review the prices of BigQuery before trying`
 - 🔎 **per month)** `are able to use the storage space for any type of data and only pay for used storage space (per GB per month). Google Cloud Storage is a paid service and requires a [billing-enabled](https://cloud.google.com/`
 - 🔎 **/modify-project) GCP account** `rage is a paid service and requires a [billing-enabled](https://cloud.google.com/billing/docs/how-to/modify-project) GCP account. You should carefully review the prices of GCS before trying the integration in Kaggle Notebooks, a`
 - 🔎 **/modify-project) GCP account** `toML is a paid service and requires a [billing-enabled](https://cloud.google.com/billing/docs/how-to/modify-project) GCP account. You should carefully review the prices of AutoML before trying the integration in Kaggle Notebooks`
 - 🔎 **GPU** `nstalled packages, the ability to mount versioned data sources, customizable compute resources like GPUs, and more. #### Notebook Versions and Containers When you create a Notebook version using 'Save`
+- 🔎 **GPU** `still need to have internet disabled to be submitted into select competitions. ##### Adding a free GPU You can add a single NVIDIA Tesla P100 to your Notebook for free. GPU environments have lower CPU`
 
 ##    阿里云免费试用（aliyun-free）
 - 状态: ok | https://free.aliyun.com
@@ -525,7 +525,7 @@
 - 🔎 **12 GB-minutes |** `er limit | | --- | --- | --- | --- | | Frontend | Build & deploy (2vCPU 4GB) | $0.01 / GB-minutes | 12 GB-minutes | | Hosting: CDN Storage | $0.0001 / MB | 500 MB | | | Function invocations | $0.00016 / GB-second |`
 - 🔎 **000 GB-seconds |  |** `osting: CDN Storage | $0.0001 / MB | 500 MB | | | Function invocations | $0.00016 / GB-second | 25,000 GB-seconds | | | CDN & origin requests | $0.000004 / request | 300,000 requests | | | ISR read | $0.0000003 / req`
 
-## 🔔 Clever Cloud（法国 PaaS 免费额度）（clever-cloud）
+##    Clever Cloud（法国 PaaS 免费额度）（clever-cloud）
 - 状态: ok | https://clever.cloud/
 - 🔎 **traffic grows, you are usually offered two fixes** `1/2026 ### Scalability: definition, horizontal vs vertical scaling and how autoscaling works When traffic grows, you are usually offered two fixes. A bigger machine. Or more machines. Both assume that your application can make use of them, and th`
 - 🔎 **free** `. Deploy with the **Utmost Tools** [Ask for a demo](https://www.clever.cloud/contact/) [Try for free](https://api.clever-cloud.com/v2/sessions/signup) Cultivate developer efficiency. Safeguard every`
@@ -547,9 +547,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794950626047) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794950626047) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `794950626047) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1794968819682) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1794968819682) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `794968819682) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -616,7 +616,7 @@
 - 🔎 **免费试用7天** `14b792d.svg) 企业认证 经济型e实例 实例共享宿主机CPU，性价比更高，适用于对成本比较敏感、对性能抖动容忍度较高的场景 规格 4核8G 系统盘 60G 带宽 3Mbps 免费试用7天 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/b2847d2c8ccc4f`
 - 🔎 **免费试用7天** `) 企业认证 FS1飞腾通用型云主机-1C1G 搭载飞腾处理器，实例间无CPU争抢，适用于对安全、可控、合规有严格要求的核心业务场景 规格 1核1G 系统盘 40G 带宽 1Mbps 免费试用7天 试用教程 试用教程 立即试用 立即试用 ![](https://ctyun-portal.gdoss.xstore.ctyun.cn/activity_media/b2847d2c8ccc4f`
 
-## 🔔 Atlas Cloud（GPU/Agent 云）（atlascloud）
+##    Atlas Cloud（GPU/Agent 云）（atlascloud）
 - 状态: ok | https://www.atlascloud.ai
 - 🔎 **free credits to start** `hrough one unified API alongside 300+ models, with pricing from $0.04 per image, 99.99% uptime, and free credits to start. [Explore](https://www.atlascloud.ai/models/nanobanana-2) Model Classification ![Nano Banana 2 R`
 - 🔎 **free credits, 99** `, and infographics. On Atlas Cloud you reach it through one unified API alongside 300+ models, with free credits, 99.99% uptime, and no OpenAI organization verification required. [Explore](https://www.atlascloud.ai/`
@@ -631,16 +631,16 @@
 
 ## 👀 GPU.nz（新西兰 GPU 云定价）（gpunz）
 - 状态: ok | https://gpu.nz/en/pricing
-- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0012 | $0.037 | $0.074 | $1.78 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242`
-- 🔎 **24 GB+ | $0** `X 3060 Ti 8 GBGPU with 8 GB+ | $0.0012 | $0.037 | $0.074 | $1.78 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 |`
-- 🔎 **48 GB+ | $0** `| Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.497 | $11.93`
-- 🔎 **80 GB+ | $0** `| $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.497 | $11.93 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $21.03/h | 11 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $14.46/h | $19.05/h |`
-- 🔎 **180gb) | 180 GB | $14** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $21.03/h | 11 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $14.46/h | $19.05/h | 8 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.15/h | $8.72/h |`
-- 🔎 **141gb) | 141 GB | $7** `.nz/en/gpu/b200-180gb) | 180 GB | $14.46/h | $19.05/h | 8 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.15/h | $8.72/h | 21 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52`
-- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.15/h | $8.72/h | 21 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52/h | 79 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.47/h | $3.50/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.02/h | $8.52/h | 79 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.47/h | $3.50/h | 19 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.33/h | $7.16/h`
-- 🔎 **94gb) | 94 GB | $6** `n/gpu/h100-sxm-80gb) | 80 GB | $3.47/h | $3.50/h | 19 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.33/h | $7.16/h | 3 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.11/h | $5.67/`
+- 🔎 **8 GB+ | $0** `ute | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 12 GBGPU with 8 GB+ | $0.0015 | $0.044 | $0.087 | $2.09 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242`
+- 🔎 **24 GB+ | $0** `RTX 3060 12 GBGPU with 8 GB+ | $0.0015 | $0.044 | $0.087 | $2.09 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 |`
+- 🔎 **48 GB+ | $0** `| Tesla V100 Super 32 GBGPU with 24 GB+ | $0.004 | $0.121 | $0.242 | $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.236 | $0.472 | $11.33`
+- 🔎 **80 GB+ | $0** `| $5.81 | | GB10 128 GBGPU with 48 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | | GB10 128 GBGPU with 80 GB+ | $0.0079 | $0.236 | $0.472 | $11.33 | Prices and availability come from the live catalog and update au`
+- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $21.02/h | 12 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h |`
+- 🔎 **180gb) | 180 GB | $12** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.89/h | $21.02/h | 12 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 34 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.05/h | $9.30/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $12.01/h | $17.51/h | 34 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.05/h | $9.30/h | 28 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52`
+- 🔎 **141gb) | 141 GB | $6** `/en/gpu/h200-141gb) | 141 GB | $7.05/h | $9.30/h | 28 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52/h | 113 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.69/`
+- 🔎 **80gb) | 80 GB | $3** `pu/h200-nvl-141gb) | 141 GB | $6.01/h | $8.52/h | 113 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.69/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.04/h | $6.86/h`
+- 🔎 **94gb) | 94 GB | $6** `n/gpu/h100-sxm-80gb) | 80 GB | $3.48/h | $6.69/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $6.04/h | $6.86/h | 11 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $5.11/h | $5.37`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing

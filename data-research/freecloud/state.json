@@ -11,14 +11,14 @@
       "n_hits": 22
     },
     "daytona-pricing": {
-      "fp": "be8c696e0fd322c4cbed78089aae04767948af3c3a430ccaff3680826a4ef121",
-      "ts": "2026-11-16T16:32:08Z",
+      "fp": "80944c10809a9e7b6eeaa31c785497872b4547fcc24c5386bdef47b81dc8a2b2",
+      "ts": "2026-11-18T02:27:08Z",
       "n_hits": 17
     },
     "modal-pricing": {
-      "fp": "a9525253ad74e06b2863057f0cda3402a2ff2ef5696e61c0a4cf81e5004cbcb0",
-      "ts": "2026-11-06T15:21:28Z",
-      "n_hits": 28
+      "fp": "993113ba1373e20111b2155012697ceb234f87fdbc6a2b8c6751af07f884aed6",
+      "ts": "2026-11-18T02:27:08Z",
+      "n_hits": 30
     },
     "oracle-free": {
       "fp": "e3d8367f4e59ccfc5dd78ca40014e86f9eebd8ade8a75983a795806394d6b014",
@@ -146,9 +146,9 @@
       "n_hits": 141
     },
     "digitalocean-pricing": {
-      "fp": "9f36add018634676a04cf85a7030184feec1c4c13ad5378a1537a4c508acb5f6",
-      "ts": "2026-11-06T15:52:20Z",
-      "n_hits": 24
+      "fp": "44b22392f3d8233f4071ab071d7a13e72972d91bd78840464a3a4cb0e33813d7",
+      "ts": "2026-11-18T02:27:08Z",
+      "n_hits": 27
     },
     "vercel-pricing": {
       "fp": "457e36805ff9ad78fc78f5953aa2a4115e0333c1a1029fcd98ed152fe9c9906f",
@@ -293,33 +293,23 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "5f8528539628ee2a6fffe152845200ea1d8b01e7ff373d18c66df3a71fd86750",
-      "ts": "2026-11-17T21:23:53Z",
+      "fp": "c9d6e53edd7d0caad20700eeef064043beaafc20620e3f8274fd485db37394af",
+      "ts": "2026-11-18T02:27:08Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "76bf52bcc2975009f0f6dbdaa63d7357f40496f6ed7b334085d39238cd4d2f43",
-      "ts": "2026-11-17T21:23:53Z",
+      "fp": "83e6878b3c82d7c0487a7f56fccb3e00fd752be6f6b943c43adcf5c626ba7aef",
+      "ts": "2026-11-18T02:27:08Z",
       "count": 1
     },
-    "kaggle-notebooks": {
-      "fp": "a84dff1a78657f12e242be9035c419ff070abf5f12809651e25d923c52bf3f4f",
-      "ts": "2026-11-17T21:23:53Z",
+    "instabox-pricing": {
+      "fp": "0c436581f7011a09543bbcb4b662476f3996727c3462427c2b4522f1435ac555",
+      "ts": "2026-11-18T02:27:08Z",
       "count": 1
     },
-    "daytona-pricing": {
-      "fp": "80944c10809a9e7b6eeaa31c785497872b4547fcc24c5386bdef47b81dc8a2b2",
-      "ts": "2026-11-17T21:23:53Z",
-      "count": 1
-    },
-    "modal-pricing": {
-      "fp": "993113ba1373e20111b2155012697ceb234f87fdbc6a2b8c6751af07f884aed6",
-      "ts": "2026-11-17T21:23:53Z",
-      "count": 1
-    },
-    "digitalocean-pricing": {
-      "fp": "44b22392f3d8233f4071ab071d7a13e72972d91bd78840464a3a4cb0e33813d7",
-      "ts": "2026-11-17T21:23:53Z",
+    "northflank-pricing": {
+      "fp": "6b3a841e739868187cb1cc3a69295b578cc0e124a7b985c9bf44ed85b2ea67b4",
+      "ts": "2026-11-18T02:27:08Z",
       "count": 1
     }
   }

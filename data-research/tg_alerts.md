@@ -1984,3 +1984,31 @@ OpenRouter 已上线 OpenAI 的 GPT-6.2 Astra 与 Sol 模型，Astra 定价为�
 - 🆕 [AI_News_CN] GPT-6.2 Astra 与 Sol 已在 Requesty 上线，并公布新定价 
 
 Requesty 网关新增 GPT-6.2 Astra 与 Sol。Astra 每百万 token 输入 &#036;8、缓存输入 &#036;0.40、输出 &#036;40，比 GPT-6 Astra 低 2
+
+## 2026-11-18 02:26 UTC
+- 🆕 [v2ex_notice] 【OpenAI】(100&#036;的 pro 订阅)每月赠送的 API 额度都是怎么用的呢,有没有变现的可能,存在啥风险不
+- 🆕 [v2ex_notice] 【分享创造】[macOS] 轻量本地服务管理器 Foyer，前 30 用户免费兑换码
+- 🆕 [linuxdo_tg] 主 题： 免费管饱三个月，老板把面的份量减少，就被老顾客说寒了他们的心（补） 
+发 布 者： GrayParis 
+标签分类： 纯水 
+时 间：2026-11-18 10:17:57
+内容预览： 刚才帖子被判定Ai生成了，一开始是生成了个大纲，然后自己修修补补写出来的直接截图再发一遍，让佬们看个故事
+- 🆕 [linuxdo_tg] 主 题： 哈基米昨晚被薅羊毛之后，还重置了？ 
+发 布 者： unoper 
+标签分类： 人工智能 
+时 间：2026-11-18 10:20:59
+内容预览： 前天土区5x末班车，今天发现突然重置了，哈基米昨晚被猛薅之后，怎么今天还有这事？这是个啥情况 
+直达链接： https://linux.d
+- 🆕 [AI_News_CN] OpenAI公司推出新的Astra AI模型 
+
+OpenAI在取消先前发布后，推出新的Astra AI模型。OpenAI称GPT-6.2 Astra在执行复杂工作任务时更高效。GPT‑6.2 Astra定价为每百万Token输入8美元、缓存输入0.40美元、输出40美元。即日起，GPT-6.2 A
+- 🆕 [AI_News_CN] Gemini Tasks 面向六国数亿用户免费开放 
+
+Google 宣布 Gemini 中的 Tasks 功能面向美国、日本、韩国、加拿大、澳大利亚和印度的符合条件用户免费开放，具体可用功能因地区而异。
+
+ 内容详情 · 原文链接 
+
+via AI情报局 | 全球 AI 动态简报 - Telegr
+- 🆕 [AI_News_CN] OpenAI 官宣 GPT-6.2 Astra 与 Sol：API 成本暴降 60%，全面赋能专业研究与日常办公 
+
+人工智能领域的竞争再度迎来实质性进展。当地时间11月17日，OpenAI 正式发布了全新升级的两款主力模型——GPT-6.2Astra 与 GPT-6.2Sol。作为面向不同应用场景
