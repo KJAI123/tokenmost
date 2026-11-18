@@ -411,3 +411,11 @@
 - 每平台五维产出：流量分发机制/权重因子/新号冷启动要点/当前活动清单/可执行建议
 - 产出文件：platforms/traffic-rules-batch{1,2,3}.md → 汇总并入 7-platform-rulebook.md
 - 当前并行总量：4 浏览器智能体（知乎/掘金/百家号/企鹅号发布）+ 3 研究智能体 = 7 线
+
+## 🎉 百家号发布成功（2026-11-20 午后，智能体第二轮）
+
+- ✅ 《免费 AI Token 盘点：官方渠道实测（附核实日期）》507 字提交成功，**正在审核中**（URL 跳转 firstPublish 标记=首篇）
+- **封面卡点攻克**：智能封面 tab 未默认展示 → CDP DOM.setFileInputFiles（objectId 指向 accept=image/* input）上传 PIL 生成的 bjh-free-token.jpg → 预览出现 → 点「确定(1)」→ 必填解除 → 发布
+- **发布流管线定型**：标题 contenteditable + 正文 iframe innerHTML + 封面 CDP objectId 上传 + 发布按钮 (916,776) RPA 点击——全链路可复现
+- 内容为去植入纯干货版（无 tokenmost 链接）
+- 教训：file input 用 objectId 路线（DOM.querySelector nodeId 路线在弹窗 shadow DOM 失效）
