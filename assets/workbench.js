@@ -80,7 +80,7 @@ const Workbench = (() => {
   function sourceLinks(deal) {
     const explicit = Array.isArray(deal.sources) ? deal.sources : [];
     const links = new Map();
-    for (const source of [...explicit, { url: deal.url, title: msg('条目入口', 'Offer page') }]) {
+    for (const source of [...explicit, ...TokenMath.entries(deal).filter(q=>TokenMath.rates[q.unit]&&q.convert!==false).map(q=>({url:TokenMath.sources[q.unit],title:msg('折算价格依据','Conversion pricing basis')})), { url: deal.url, title: msg('条目入口', 'Offer page') }]) {
       try {
         const url = new URL(source.url);
         if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password) continue;
@@ -93,6 +93,7 @@ const Workbench = (() => {
       + '</summary><ul>' + Array.from(links, ([url, label]) =>
         '<li><a href="' + esc(url) + '" target="_blank" rel="noopener nofollow">' + esc(label) + '</a></li>'
       ).join('') + '</ul><p>' + esc(offerValue(deal)) + '</p>'
+      + (TokenMath.explain(deal) ? '<p class="quota-explanation">' + esc(TokenMath.explain(deal)) + '</p>' : '')
       + (offerNotes(deal) ? '<p>' + esc(offerNotes(deal)) + '</p>' : '') + '</details>';
   }
 

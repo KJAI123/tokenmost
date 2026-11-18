@@ -49,6 +49,27 @@ for d in deals:
         warns.append(f"{d['id']} 有日均预估但缺 daily_note 估算口径")
     if "eq_wan" in d and not d.get("eq_note"):
         warns.append(f"{d['id']} 有等效折算但缺 eq_note 依据")
+    if "token_quota" in d:
+        if not isinstance(d["token_quota"], list):
+            errors.append(f"{d['id']} token_quota 必须为数组")
+            continue
+        for quota in d["token_quota"]:
+            if not isinstance(quota, dict):
+                errors.append(f"{d['id']} token_quota 项必须为对象")
+                continue
+            if not isinstance(quota.get("amount"), (int, float)) or quota["amount"] <= 0:
+                errors.append(f"{d['id']} 原始额度 amount 必须为正数")
+            if quota.get("unit") not in ("tokens", "CNY", "USD", "credits", "points", "requests", "hours"):
+                errors.append(f"{d['id']} 额度 unit 非法")
+            if quota.get("period") not in ("once", "daily", "monthly", "weekly"):
+                errors.append(f"{d['id']} 额度 period 非法")
+            for field in ("tokens_per_unit", "equivalent_factor"):
+                if field in quota and (not isinstance(quota[field], (int, float)) or quota[field] <= 0):
+                    errors.append(f"{d['id']} {field} 必须为正数")
+            if quota.get("tokens_per_unit") and not d.get("sources"):
+                errors.append(f"{d['id']} 积分折算缺少证据来源")
+        if not d.get("quota_reviewed_at"):
+            errors.append(f"{d['id']} 缺额度复核日期 quota_reviewed_at")
     first = d["provider"].split()[0]
     if d["provider"].split()[0] not in site_first:
         warns.append(f"{d['id']} provider「{d['provider']}」无对应导航站点（无 ⚡接入 按钮）")

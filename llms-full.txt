@@ -32,7 +32,6 @@
 
 ## 讯飞星火｜长期免费
 - 内容：Spark Lite 长期免费调用；新用户另有 token 礼包（数额以控制台领取页为准）
-- 日均：长期免费层月当量 30000 万 ÷30 折日均（每天可薅）；Spark Lite 长期免费+新用户礼包；按讯飞波谷价折算保守3亿/月当量(估算)
 - 链接：https://xinghuo.xfyun.cn
 - 状态：待复核（核验时间 2026-10-28T00:36:17Z）
 
@@ -57,7 +56,6 @@
 ## 魔搭 ModelScope｜长期免费
 - 内容：API-Inference 每日 2000 次免费调用：当前 38 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
-- 日均：2000 次/天 × ~4K tok/次 ≈800 万/天（估算）+200 魔粒/天
 - 链接：https://modelscope.cn
 - 状态：已验证（核验时间 2026-11-18T03:45:15Z）
 
@@ -98,7 +96,6 @@
 ## OpenRouter｜长期免费
 - 内容：:free 模型 14 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、thinkingmachines/inkling-2-small:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
-- 日均：充 $10 解锁 1000 次/天 ×~4K tok ≈400 万/天；默认 50 次/天≈20 万/天
 - 链接：https://openrouter.ai/models?max_price=0
 - 状态：已验证（核验时间 2026-11-18T03:45:15Z）
 
@@ -150,7 +147,6 @@
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
-- 日均：1000 请求/天 × ~4K tok/次（3:1 口径）≈400 万/天（估算）
 - 链接：https://console.groq.com
 - 状态：已验证（核验时间 2026-11-18T03:45:15Z）
 
@@ -220,7 +216,6 @@
 
 ## OhMyGPT｜长期免费
 - 内容：零星模型标 $0 免费（如 GLM-4.7-Flash）
-- 日均：长期免费层月当量 15000 万 ÷30 折日均（每天可薅）；$0标价模型转发；按GLM-4.7-Flash口径月1.5亿保守(估算)
 - 链接：https://www.ohmygpt.com/pricing
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
@@ -250,7 +245,6 @@
 
 ## 商汤日日新｜长期免费
 - 内容：U1.5 文生图公测免费 + 积分池翻倍：5h 窗口 6万→12万、周窗口 60万→120万 积分，免费公测模型 6→7 款（新增 U1.5-Lite）；实名开通 Token Plan 自动生效
-- 日均：积分池翻倍后 12万/5h×4.8≈57.6万积分/天，按 1 元=5000 积分折 ≈115 元/天≈4600万 tok 当量——保守取 1440 万/天（此前口径 720 万）
 - 链接：https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741
 - 状态：待复核（核验时间 2026-10-29T11:00:00Z）
 
@@ -269,7 +263,6 @@
 ## 阿里云百炼｜免费模型
 - 内容：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）
 - 规则：限免未标截止日期，以价格页实时标注为准；免费体验模型用完后不可再调用
-- 日均：长期免费层月当量 10000 万 ÷30 折日均（每天可薅）；限时免费模型(decision-preview/R1蒸馏等)；按开放期月1千万当量保守(估算)
 - 链接：https://help.aliyun.com/zh/model-studio/model-pricing
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
@@ -415,7 +408,6 @@
 ## CodeBuddy（腾讯）｜免费模型
 - 内容：Kimi-K2.5 内置且可免费使用（高峰期排队）；体验版免费 500 Credits/月
 - 规则：⚠️ 底册「基础版永久免费」需修正：永久免费但限额500 Credits/月；官方 pricing 页 JS 未直核
-- 日均：长期免费层月当量 500 万 ÷30 折日均（每天可薅）；体验版500 Credits/月+Kimi-K2.5免费(排队)；折算月500万(估算)
 - 链接：https://www.codebuddy.cn
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
@@ -515,10 +507,9 @@
 - 链接：https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
-## Qoder CN（阿里）｜coupon
-- 内容：口径更新：CN 站每天 10:00 领 100 Credits（30天有效）——修正 R2「认证后每月发100」旧口径；另 Qwen3.8-Flash 调用系数 0.0× 免费（截止未定）
-- 规则：每日签到式领取叠加月度权益；首注300/Trial 2000维持R2口径
-- 日均：长期免费层月当量 1200 万 ÷30 折日均（每天可薅）；每日100 Credits×30天同上≈1200万/月(估算)
+## Qoder 国际版｜coupon
+- 内容：Qoder 国际版个人账号每日可手动领取 100 Credits，每份 30 天有效
+- 规则：每天 10:00（UTC+8）刷新领取窗口；免费和个人付费账号可参加，团队/企业账号不适用。此前 Qwen3.8-Flash 免费活动已结束。
 - 链接：https://qoder.cn/activities?referral_code=UWaw3XM18VyOSfWHqzR1cio1a6d6FAvD
 - 状态：待复核（核验时间 2026-11-01T00:00:00Z）
 
@@ -597,7 +588,6 @@
 ## Qoder｜免费模型
 - 内容：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）
 - 规则：Qoder 内免费调用，可一键配置接入任意 Harness；官方 X 宣发
-- 日均：长期免费层月当量 2000 万 ÷30 折日均（每天可薅）；IDE 免费调 V4.1-Flash-1017 限额未公布；保守月2000万当量（估算）
 - 链接：https://qoder.com
 - 状态：待复核（核验时间 2026-10-28T01:30:00Z）
 
@@ -630,14 +620,12 @@
 ## 腾讯 WorkBuddy｜长期免费
 - 内容：WorkBuddy 国内版（workbuddy.cn/腾讯云）：公测期送 5000 Credits + 免费版每月自动发基础积分 + 每天白拿 100 积分（公众号实测）+ 绑卡享 7 天 Pro 试用另加 500 积分；可跑报告生成/文件整理/数据处理多任务
 - 规则：公测 Credits 进团队共享池；Pro 试用需绑卡开自动续费（积分 7 天有效）；Credits 不可提现转让，消耗随模型倍率浮动（Kimi K3 1.6x）
-- 日均：免费版每天白拿 100 积分（公众号实测帖 10-28）×1 credit≈2万 tok 当量≈400 万/天；加公测 5000 一次性
 - 链接：https://cloud.tencent.com/product/workbuddy
 - 状态：待复核（核验时间 2026-10-31T00:00:00Z）
 
 ## MonkeyCode｜长期免费
 - 内容：MonkeyCode（长亭科技，代码全栈开源 AGPL）免费档：每日 1000 万-3000 万 token（多源口径，控制台实锤为准）；私有化部署注册另送 200 元算力≈9 亿 token 初始额度
 - 规则：云端 Basic 档 1vCPU/4GB；私有化版永久免费；商业版 ¥499/月 90 亿 token
-- 日均：免费档每日 1000-3000 万（保守 1000 万）；注册 9 亿为一次性（tokens_wan 90000 万）
 - 链接：https://monkeycode-ai.com
 - 状态：待复核（核验时间 2026-10-29T01:35:00Z）
 
@@ -794,7 +782,7 @@
 
 ## 小米 MiMo｜pricing_plan
 - 内容：MiMo Token Plan Lite ¥39/月含 41 亿 Credits
-- 规则：Credits 是套餐扣减单位，不能直接等同模型 Tokens
+- 规则：按官方输入 100、输出 200 Credits/token，以 3:1 无缓存折算；Pro 模型对应 Token 数不同。
 - 链接：https://mimo.mi.com/docs/zh-CN/price/token-plan
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
@@ -868,14 +856,12 @@
 ## OpenAI｜subscription_bonus
 - 内容：ChatGPT Pro/Business 订阅月月白送 API 额度：Pro 按档每月领 $100/$200/$500；Business 标准席每席 $20、高级席每席 $100（工作空间共享）——额度约等于订阅费，等于 API 白嫖
 - 规则：领取：网页版 ChatGPT 设置→账单→关联 OpenAI 开发者账号组织后每月领取；仅限符合条件的 Pro/Business 订阅
-- 日均：保守口径 Pro100 档：$100/月 API credits ÷ $0.525/M ≈ 1.9 亿/月 ≈ 635 万/天（$200/$500 档按 2×/5× 放大）
 - 链接：https://help.openai.com/zh-hans-cn/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions
 - 状态：已验证（核验时间 2026-11-05T00:00:00Z）
 
 ## 魔搭 ModelScope｜长期免费
 - 内容：魔搭免费 GPU 算力全家桶：新用户 36 小时免费 GPU+100 小时 CPU；AMD 联合激励计划可叠至 1000+ 小时免费 GPU 算力；高校 edu 邮箱另有学生专属算力；每天登录送 200 魔粒（调用模型 API）
 - 规则：魔粒每日登录自动到账（API 调用消耗，单次约 1 魔粒起，模型越大消耗越高）；AMD 算力券在 developer.amd.com.cn 用积分兑换；edu 学生通道需学校邮箱
-- 日均：每天登录送 200 魔粒≈200 万 token 等效（1 魔粒≈1 万 token 保守口径）
 - 链接：https://www.modelscope.cn/my/microservice
 - 状态：已验证（核验时间 2026-11-05T00:00:00Z）
 
@@ -1020,7 +1006,6 @@
 ## FiimeOPC｜注册赠送
 - 内容：注册拆「算力红包」：总盘 1 万亿 Token 拆 1 万份，单个最高 1 亿；每日社区任务最多再领 5000 万（发帖 1000 万+发项目 2000 万+发 AI 创意 2000 万）；邀请好友 1 亿/人；OpenAI 兼容网关一个 Key 通吃文字/图像/视频模型（opc-txt/image/video-v1），日耗上限 5 亿
 - 规则：无需绑卡充值；单账号日耗上限 5 亿 Token、最多 5 个 API Key；每日任务须过审核（灌水无效）；红包活动 11 月下旬到期（以站内倒计时为准）
-- 日均：三任务合计 5000 万/天；红包首拆按最高 1 亿+首月 30 天任务 15 亿≈16 亿上限口径
 - 链接：https://opc.fiime.cn/register
 - 状态：已验证（核验时间 2026-11-09T10:32:56Z）
 
@@ -1111,7 +1096,6 @@
 ## clixad｜长期免费
 - 内容：终端 coding agent 免费用（无 API key/无订阅/免信用卡）：**每天 5 款模型共享免费池**——GPT-5 Nano / Gemini 2.5 Flash-Lite / **Claude Haiku 5.5** / DeepSeek V4 Flash / Gemini 3.5 Flash-Lite；名义 6 万 credits/天，**beta 期翻倍 12 万/天**（≈600 万~1200 万 tokens/天），每天 UTC 0 点重置
 - 规则：GitHub 账号设备码登录即可（不填邮箱不复制 token）；模型调用走官方网关（其持有 OpenAI/Anthropic/Google key）；免费池用完可做问卷/任务墙赚 credits 或次日再来；注册奖励钱包（25,200 起+连续登录奖励）与免费池独立，免费池消耗不扣钱包
-- 日均：名义 6 万 credits/天 ≈ 600 万 tokens（1 credit≈100 token 推算，标题口径）；beta 期翻倍 12 万 credits ≈ 1200 万/天；每天 UTC 0 点重置
 - 链接：https://www.npmjs.com/package/clixad
 - 状态：待复核（核验时间 2026-11-12T17:44:58Z）
 
@@ -1266,10 +1250,10 @@
 - 状态：已验证（核验时间 2026-11-16T17:08:36Z）
 
 ## Hugging Face Inference｜长期免费
-- 内容：免费账户每月含 $0.10 推理试用额度，可试用 Hugging Face Inference Providers。
+- 内容：Hugging Face 免费账户已无每月推理赠金；PRO 及团队每席月含 $2 计算额度
 - 规则：需要通过 Hugging Face 转发请求才能抵扣；超额用量需要购买 credits。
 - 链接：https://huggingface.co/docs/inference-providers/index
-- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+- 状态：待复核（核验时间 2026-11-18T00:00:00Z）
 
 ## Vercel AI Gateway｜长期免费
 - 内容：免费档每月含 $5 推理额度，从首次请求开始发放。

@@ -7,7 +7,8 @@
 """
 import json, html, re
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from token_math import entries as quota_entries, quota as token_quota, free as free_quota
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "platform"
@@ -68,11 +69,11 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 
 FAQ_GEN = [
     ("{name}现在有什么免费额度？",
-     "截至 {updated}，{name}在 tokenmost 收录的免费羊毛共 {n} 条：{brief}。所有额度统一折算 DeepSeek V4.1 Flash 等效 token，可在本页与全平台横向比较。"),
+     "截至 {updated}，{name}在 tokenmost 收录的权益共 {n} 条：{brief}。原始额度与折算依据分开显示，金额只作 DS Flash 购买力参考。"),
     ("{name}免费额度怎么领取？",
      "点击本页各条「立即领取」直达官方页面，按官方规则注册/实名/激活即可；限时活动请留意截止日期。tokenmost 每日核验各条状态，失效信息自动清洗。"),
     ("{name}的免费额度能用多少 token？",
-     "tokenmost 按 DS Flash 等效统一计量：一次性额度与每日刷新额度分开标注，「首月可薅总量 = 一次性 + 日均 × 30 天」。本页各条收益列即等效 token 数。"),
+     "首月参考为一次性额度、有效活动天数内的日额度（最多 30 天）与月额度之和。模型积分有官方公式才折算，金额按 DS Flash 空闲价作购买力参考。未核验、付费与无固定比例的权益不计入已核验总额。"),
 ]
 
 APPLICATION_GATES = {"startup", "audit", "oss"}
@@ -94,6 +95,20 @@ def fmt_wan(w):
 
 
 def deal_value(d):
+    if "token_quota" in d:
+        parts = []
+        for q in quota_entries(d):
+            amount = f"{q['amount']:,.2f}".rstrip("0").rstrip(".")
+            unit = q["unit"]
+            text = (f"{fmt_wan(q['amount']/10000)} tokens" if unit == "tokens"
+                    else ("¥" if unit == "CNY" else "$")+amount if unit in ("CNY", "USD")
+                    else amount+{"credits":" 积分", "points":" 算力", "hours":" 小时", "requests":" 次"}.get(unit, unit))
+            text += {"daily":"/天", "monthly":"/月", "weekly":"/周"}.get(q.get("period"), "")
+            parts.append(text)
+        value = token_quota(d)["total"]
+        if value:
+            parts.append(f"首月 ≈ {fmt_wan(value)} Token 参考")
+        return "；".join(parts) or "Token 数量以官方页为准"
     parts = []
     if d.get("daily_wan"): parts.append(f"日均 ~{fmt_wan(d['daily_wan'])} tokens")
     if d.get("tokens_wan") or d.get("eq_wan"):
@@ -139,7 +154,7 @@ COLL_TPL = """<!DOCTYPE html>
 def main():
     deals = json.load(open(ROOT / "deals.json", encoding="utf-8"))
     guides = json.load(open(GDIR / "index.json", encoding="utf-8")) if (GDIR / "index.json").exists() else []
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
     groups = {}
     for d in deals:
         if not d.get("published") or d.get("category") == "intel_source":
@@ -158,16 +173,18 @@ def main():
         verified = sum(1 for d in ds if d.get("verify_status") == "verified")
         available = [d for d in ds if d.get("gate") not in APPLICATION_GATES]
         application_only = not available
-        once = sum(d.get("eq_wan") or d.get("tokens_wan") or 0 for d in available)
-        daily = sum(d.get("daily_wan") or 0 for d in available)
-        total = once + daily * 30
-        total_s = fmt_wan(total) if total else "待公布"
+        amounts = [token_quota(d) for d in available if free_quota(d) and d.get("verify_status") == "verified"]
+        once = sum(q["once"] for q in amounts)
+        daily = sum(q["daily"] for q in amounts)
+        monthly = sum(q["monthly"] for q in amounts)
+        total = sum(q["total"] for q in amounts)
+        total_s = fmt_wan(total) if total else "暂无可折算总额"
         brief = "、".join(d["provider"] for d in ds[:3])
-        title = f"{name}免费额度领取攻略：{total_s} DS Flash 等效可薅（{today} 核验）"
+        title = f"{name}额度领取攻略：{total_s} 已核验首月参考（{today} 更新）"
         desc = f"{name}免费 token 额度大全：{len(ds)} 条信源（{verified} 条已验证），{deal_value(ds[0])}。每日核验、失效即清，附领取步骤与常见问题。"
-        h1 = f"{name}免费额度大全：首月可薅 {total_s} DS Flash 等效"
+        h1 = f"{name}额度大全：已核验首月参考 {total_s}"
         intro = (f"本页聚合 {name}（{layer}）全部 {len(ds)} 条免费额度情报，其中 {verified} 条已验证。"
-                 f"首月可薅总量约 <b>{total_s}</b> DS Flash 等效 token（一次性 {fmt_wan(once) if once else '—'} ＋ 日均 {fmt_wan(daily) if daily else '—'} × 30 天）。"
+                 f"已核验首月参考约 <b>{total_s}</b>（一次性、活动有效期内日额度及月额度；金额仅作 DS Flash 购买力比较，实际额度见下方原单位）。"
                  f"tokenmost 每日核验，过期自动清洗。")
         if application_only:
             title = f"{name}申请指南（{today} 核验）"
@@ -175,11 +192,11 @@ def main():
             desc = f"收录 {len(ds)} 项申请制权益，附官方资格、额度和申请入口。"
             intro = f"本页收录 {len(ds)} 项申请制权益，其中 {verified} 项已核验。请按各计划的官方条件申请。"
         blocks = []
-        for d in sorted(ds, key=lambda x: -(x.get("eq_wan") or x.get("tokens_wan") or 0) - (x.get("daily_wan") or 0) * 30):
+        for d in sorted(ds, key=lambda x: -token_quota(x)["total"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
-            badge = "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
+            badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
-            action = "查看申请" if d.get("gate") in APPLICATION_GATES else "立即领取"
+            action = "查看历史条款" if d.get("verify_status") == "expired" else "查看申请" if d.get("gate") in APPLICATION_GATES else "立即领取"
             blocks.append(
                 f'<div class="deal"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span>{dl}'
@@ -203,7 +220,7 @@ def main():
         robots_meta = '<meta name="robots" content="noindex,follow">\n' if (verified == 0 and len(ds) < 3) else ''
         page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, h1=h1, robots=robots_meta,
                           updated=today, layer=layer, n=len(ds), intro=intro,
-                          metric="额度按官方单位列出" if application_only else "全站计量基准：DeepSeek V4.1 Flash 等效",
+                          metric="额度按官方单位列出" if application_only else "原始额度 + 有依据的 Token 折算 / 购买力参考",
                           offers_heading="申请计划" if application_only else "🎁 当前可领额度与羊毛",
                           faq_heading="申请常见问题" if application_only else f"❓ {esc_quote(name)}免费额度常见问题",
                           deals="\n".join(blocks), faq="\n".join(faq_blocks),
@@ -215,7 +232,7 @@ def main():
 
     # llms.txt（AI 搜索站点地图）
     lines = ["# tokenmost.com", "",
-             "> AI 大模型免费额度与折扣码情报站：聚合大模型官方、Agent 平台、MaaS 云、算力中心与 token 中间商的免费额度情报，每日核验，统一折算 DeepSeek V4.1 Flash 等效 token。", "",
+             "> AI 大模型额度与折扣情报站：原始额度、有官方公式的 Token 折算与 DS Flash 金额购买力参考分开显示。已核验首月参考排除付费订阅、申请制和无固定比例的权益。", "",
              "## Entity", "",
              "- Name: TokenMost",
              "- URL: https://tokenmost.com/",
