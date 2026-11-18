@@ -26,7 +26,7 @@ import time
 import urllib.request
 import websocket
 
-CDP_HTTP = "http://127.0.0.1:9222"  # 老板令 2026-11-20：直接用本机 Chrome，不再开新浏览器；标签复用防弹屏
+CDP_HTTP = "http://127.0.0.1:9223"  # 每日任务 v3（2026-11-20）：专用无头浏览器；绝不碰老板 Chrome 9222（仅 CDP 读 cookie 除外）
 HERE = os.path.dirname(os.path.abspath(__file__))
 OCR_JS = os.path.join(HERE, "rpa_ocr.js")
 
