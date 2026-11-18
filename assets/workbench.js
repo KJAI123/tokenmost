@@ -93,6 +93,7 @@ const Workbench = (() => {
       + '</summary><ul>' + Array.from(links, ([url, label]) =>
         '<li><a href="' + esc(url) + '" target="_blank" rel="noopener nofollow">' + esc(label) + '</a></li>'
       ).join('') + '</ul><p>' + esc(offerValue(deal)) + '</p>'
+      + (TokenMath.estimateExplain(deal) ? '<p class="quota-explanation">' + esc(TokenMath.estimateExplain(deal)) + '</p>' : '')
       + (TokenMath.explain(deal) ? '<p class="quota-explanation">' + esc(TokenMath.explain(deal)) + '</p>' : '')
       + (offerNotes(deal) ? '<p>' + esc(offerNotes(deal)) + '</p>' : '') + '</details>';
   }
@@ -212,7 +213,7 @@ const Workbench = (() => {
     });
     el('listhead').querySelectorAll('button[data-sort]').forEach(button => {
       const active = button.dataset.sort === sort;
-      const label = button.dataset.sort === 'tokens' ? msg('额度', 'Credits') : msg('核验', 'Verification');
+      const label = button.dataset.sort === 'tokens' ? msg('额度/估算', 'Credits/est.') : msg('核验', 'Verification');
       button.classList.toggle('on', active);
       button.setAttribute('aria-pressed', String(active));
       button.textContent = label + (active ? ' ↓' : ' ↕');

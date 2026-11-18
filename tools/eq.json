@@ -52,5 +52,6 @@
     }
   ],
   "factors_global": [],
-  "entry_schema": "deals.json token_quota[] 为原始额度，amount/unit/period；tokens_per_unit 仅有官方公式时填写；equivalent_factor 为同口径模型价格比；quota_days 限制短期体验；quota_paid 不进免费总账。运行口径 assets/token-math.js。"
+  "entry_schema": "deals.json token_quota[] 为原始额度，amount/unit/period；tokens_per_unit 仅有官方公式时填写；equivalent_factor 为同口径模型价格比；quota_days 限制短期体验；quota_paid 不进免费总账。运行口径 assets/token-math.js。",
+  "daily_estimates": "deals.json daily_estimate 仅为日用量情景：requests=次数×每次Token假设；credit_value=积分×公开售价÷DS基准；neurons=官方模型计价3:1场景；scenario=可调整的站内假设。低/中/高不是置信区间。共享pool去重，按活动剩余天数折月；不进入已核验额度或API账单抵扣。"
 }

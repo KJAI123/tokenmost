@@ -36,6 +36,31 @@ const expired={...byId['xiaomi-mimo-free5'],verify_status:'expired'};
 assert.equal(math.allowance([expired],{provider:'小米 MiMo',model:'mimo-intl'},now).cny,0);
 const q=math.sum([byId['kimi-voucher'],byId['ant-bailing-monthly-10']],now);
 near(q.total,25/1.75*100); // amount and equivalent are counted once
+// Daily scenarios never mutate official quotas or become model-billing allowances.
+const requests=math.estimate(byId['openrouter-free'],now);
+near(requests.daily.low,5);
+near(requests.daily.typical,20);
+near(requests.daily.high,40);
+near(requests.month.typical,600);
+near(math.estimate(byId['modelscope-free-infer'],now).daily.typical,800);
+near(math.estimate(byId['deep-qoder-daily-credits'],now).daily.typical,100*(20/2000)/.2625*100);
+near(math.estimate(byId['workbuddy-intl-free'],now).daily.typical,30*.01/.2625*100);
+near(math.estimate(byId['cloudflare-workers-ai-free'],now).daily.typical,10000/(13778*.75+26128*.25)*100);
+near(math.estimate(byId['tencent-ima-daily'],now).daily.typical,5);
+near(math.estimate(byId['wps-lingxi-daily'],now).month.typical,540);
+near(math.estimate(byId['wps-lingxi-daily'],now).daily.high,40);
+near(math.estimate(byId['modelscope-free-infer'],now,{requestTokens:8000,pointTokens:1000}).daily.typical,1600);
+near(math.estimate(byId['tencent-ima-daily'],now,{requestTokens:4000,pointTokens:2000}).daily.typical,10);
+assert.equal(math.quota(byId['openrouter-free'],now).total,0);
+assert.equal(math.estimate(byId['ace-music-daily-20'],now),null); // music isn't language tokens
+assert.equal(math.estimate({...byId['tencent-ima-daily'],deadline:'2026-11-17'},now),null);
+assert.equal(math.estimateMany([byId['openrouter-free'],byId['ernie-5.5-flash-free']],now).count,1);
+near(math.estimateMany([byId['openrouter-free'],byId['ernie-5.5-flash-free']],now).daily.typical,20);
+near(math.estimateMany([byId['modelscope-free-infer'],byId['modelscope-gpu-free']],now).daily.typical,800);
+assert.equal(math.estimateMany(deals,now).count,18);
+const capped={...byId['openrouter-free'],daily_estimate:{...byId['openrouter-free'].daily_estimate,token_cap_daily:100000}};
+near(math.estimate(capped,now).daily.high,10);
+assert.match(math.estimateExplain(byId['tencent-ima-daily']),/非官方/);
 const eq=JSON.parse(fs.readFileSync(path.join(root,'tools/eq.json')));
 near(math.rates.CNY,eq.base_cn.weighted_cny_per_m);
 near(math.rates.USD,eq.base_global.weighted_usd_per_m);
@@ -47,7 +72,7 @@ for(const p of plans.filter(p=>p.provider==='智谱 BigModel')) {
  assert.ok(Math.abs(p.tokens_wan-weekly/11.175*30/7)<.0001);
 }
 const staticRun=spawnSync('python3',['-c',
-  "import sys,json,datetime;sys.path.insert(0,'tools');from token_math import quota,free;print(json.dumps({d['id']:{**quota(d,datetime.date(2026,11,18)),'free':free(d)} for d in json.load(open('deals.json'))}))"
+  "import sys,json,datetime;sys.path.insert(0,'tools');from token_math import quota,free,estimate;print(json.dumps({d['id']:{**quota(d,datetime.date(2026,11,18)),'free':free(d),'estimated':estimate(d,datetime.date(2026,11,18))} for d in json.load(open('deals.json'))}))"
 ],{cwd:root,encoding:'utf8'});
 assert.equal(staticRun.status,0,staticRun.stderr);
 const staticQuotas=JSON.parse(staticRun.stdout);
@@ -55,5 +80,8 @@ for(const d of deals) {
  const dynamic=math.quota(d,now),rendered=staticQuotas[d.id];
  for(const key of ['once','daily','monthly','dailyMonth','total']) near(dynamic[key],rendered[key]);
  assert.equal(math.free(d),rendered.free,d.id);
+ const estimated=math.estimate(d,now),staticEstimate=rendered.estimated;
+ assert.equal(Boolean(estimated),Boolean(staticEstimate),d.id);
+ if(estimated) for(const period of ['daily','month']) for(const key of ['low','typical','high']) near(estimated[period][key],staticEstimate[period][key]);
 }
-console.log('Token conversion regression checks passed: currencies, periods, expiry, official points, scope and no double counting.');
+console.log('Token conversion and daily-estimate checks passed: formulas, scenarios, settings, pool deduplication, billing separation and JS/Python parity.');

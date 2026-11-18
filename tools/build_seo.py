@@ -8,7 +8,7 @@
 import json, html, re
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from token_math import entries as quota_entries, quota as token_quota, free as free_quota
+from token_math import entries as quota_entries, quota as token_quota, free as free_quota, estimate as daily_estimate, estimate_assumption
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "platform"
@@ -108,6 +108,9 @@ def deal_value(d):
         value = token_quota(d)["total"]
         if value:
             parts.append(f"首月 ≈ {fmt_wan(value)} Token 参考")
+        estimated = daily_estimate(d)
+        if estimated:
+            parts.append(f"日用量情景估计 ≈ {fmt_wan(estimated['daily']['low'])}–{fmt_wan(estimated['daily']['high'])} Token（非保证额度）")
         return "；".join(parts) or "Token 数量以官方页为准"
     parts = []
     if d.get("daily_wan"): parts.append(f"日均 ~{fmt_wan(d['daily_wan'])} tokens")
@@ -192,15 +195,18 @@ def main():
             desc = f"收录 {len(ds)} 项申请制权益，附官方资格、额度和申请入口。"
             intro = f"本页收录 {len(ds)} 项申请制权益，其中 {verified} 项已核验。请按各计划的官方条件申请。"
         blocks = []
-        for d in sorted(ds, key=lambda x: -token_quota(x)["total"]):
+        for d in sorted(ds, key=lambda x: -token_quota(x)["total"]-(daily_estimate(x) or {"month":{"typical":0}})["month"]["typical"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
             badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
             action = "查看历史条款" if d.get("verify_status") == "expired" else "查看申请" if d.get("gate") in APPLICATION_GATES else "立即领取"
+            estimate_note = (f'<p>日估算假设：{esc_quote(estimate_assumption(d))} {esc_quote(d["daily_estimate"]["note"])} '
+                             f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
             blocks.append(
                 f'<div class="deal"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span>{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
+                + estimate_note +
                 f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a></div>')
         faq_blocks = []
         faq_items = []

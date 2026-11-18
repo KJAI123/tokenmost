@@ -19,7 +19,7 @@
 
 每个新公开条目写明：提供方与产品、额度原单位、刷新周期、是否需注册/绑卡/付费/审核、地区与适用对象、截止时间（含时区如有）、公开入口和核验日期。能确认到什么程度就写到什么程度。没有官方比例及依据时，不用 Neurons、积分、次数、CPU/GPU 小时或钱数硬算 Token；每日/每月刷新用 `cadence` 表达，同一权益不因多一条信源而加进总额两次。英文页面的新条目补 `value_en`、`rule_en` 与需要的 `notes_en`。
 
-额度数据使用 `token_quota[]` 保存 `amount`、`unit`、`period`（once/daily/monthly/weekly）。金额有明确模型抵扣用途时，可按已核验官方 DeepSeek 基准显示「购买力参考」，同时保留原金额，不写成实际到账 Token。积分仅在有官方公式时填写 `tokens_per_unit`，注明模型、缓存、输入输出比例和时段；未知比例保留原单位。短期体验用 `quota_days` 限制，日刷新最多按 30 天且不超过剩余活动天数，月额度计一次。`quota_paid`、`quota_upper_bound`、`quota_conditional` 分别标记付费、随机上限和额外资格，不进入常规免费总账。旧估算保存在 `quota_history` 供追溯，不再参与计算。
+额度数据使用 `token_quota[]` 保存 `amount`、`unit`、`period`（once/daily/monthly/weekly）。金额有明确模型抵扣用途时，可按已核验官方 DeepSeek 基准显示「购买力参考」，同时保留原金额，不写成实际到账 Token。积分仅在有官方公式时填写 `tokens_per_unit`，注明模型、缓存、输入输出比例和时段；未知比例保留原单位。用户要求估计时，可另外使用 `daily_estimate` 显示可调整的「情景估计」：次数按每次输入输出用量推算，积分可按公开售价估购买力或明确写出的站内假设推算。必须展示区间、假设、原始日额、整理日期；不得把假设写进官方 `tokens_per_unit` 或已核验额度。短期体验用 `quota_days` 限制，日刷新最多按 30 天且不超过剩余活动天数，月额度计一次。`quota_paid`、`quota_upper_bound`、`quota_conditional` 分别标记付费、随机上限和额外资格，不进入常规免费总账。旧估算保存在 `quota_history` 供追溯。新 `daily_estimate` 与原始额度分开存储；同池多个模型或多个视图按 `pool`、`priority` 去重，已换算的原始 Token 不再另估。情景估计可参与列表参考排序，但独立汇总，不自动加入已核验总账或 API 抵扣。音频/生图/算力不能套文本积分情景。
 
 前端 `assets/token-math.js` 与静态页 `tools/token_math.py` 使用同一数据；发布前运行 `node tools/test_token_math.js` 检查官方公式、币种、周期、有效期、重复计数及全部条目的两端一致性。比价器每日用量乘 30 得月费用，只有适用目标模型且已核验的 API 原始额度能抵扣费用；不能拿 DS 购买力当原模型实际余额，也不能拿免费轻量模型抵扣同厂旗舰。
 

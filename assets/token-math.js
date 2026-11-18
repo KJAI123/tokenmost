@@ -6,6 +6,12 @@ const TokenMath = (() => {
   const msg = (cn, en) => zh ? cn : en;
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const positive = value => Number.isFinite(value) && value > 0 ? value : 0;
+  const estimateDefaults = Object.freeze({requestTokens:4000,pointTokens:1000});
+  let estimateSettings = {...estimateDefaults};
+  try {
+    const saved = JSON.parse(localStorage.getItem('tm_daily_estimates_v1') || 'null');
+    if (saved) setEstimateSettings(saved, false);
+  } catch (_) { /* The default scenario also works without local storage. */ }
   const format = wan => zh ? (wan >= 10000 ? (wan/10000).toFixed(2)+' 亿' : Number(wan.toFixed(1))+' 万')
     : wan >= 100000 ? (wan/100000).toFixed(2)+'B' : wan >= 100 ? (wan/100).toFixed(2)+'M' : Math.round(wan*10000).toLocaleString('en-US');
   function today(now = new Date()) {
@@ -59,18 +65,98 @@ const TokenMath = (() => {
     return result;
   }
   function sum(deals, now) {
-    return deals.reduce((s,d) => {
+    const result = deals.reduce((s,d) => {
       const q = quota(d,now);
       for (const key of ['once','daily','monthly','dailyMonth','total']) s[key] += q[key];
       s.converted ||= q.converted;
       return s;
     }, {once:0,daily:0,monthly:0,dailyMonth:0,total:0,converted:false});
+    result.estimates = estimateMany(deals, now);
+    return result;
   }
   function free(d) {
     return d.published !== false && d.verify_status !== 'expired' && !['freecloud','intel_source'].includes(d.category)
       && !['warning','price_low','pricing_plan','subscription_bonus','status'].includes(d.type)
       && !['subscribe','subscription'].includes(d.via) && !d.quota_paid && !d.quota_upper_bound && !d.quota_conditional
       && !['startup','audit','oss'].includes(d.gate);
+  }
+  function setEstimateSettings(settings, save = true) {
+    for (const key of Object.keys(estimateDefaults)) {
+      const value = Number(settings[key]);
+      if (Number.isFinite(value) && value >= 1 && value <= 1000000) estimateSettings[key] = value;
+    }
+    if (save) try { localStorage.setItem('tm_daily_estimates_v1', JSON.stringify(estimateSettings)); } catch (_) {}
+    return {...estimateSettings};
+  }
+  function estimate(d, now, settings = estimateSettings) {
+    const e = d.daily_estimate, q = e && entries(d)[e.quota_index];
+    if (!e || !q || q.period !== 'daily' || equivalent(q) || d.verify_status === 'expired' || !activeDays(d,now)) return null;
+    let factors;
+    if (e.method === 'requests') {
+      const perRequest = positive(settings.requestTokens) || estimateDefaults.requestTokens;
+      factors = {low:perRequest/4,typical:perRequest,high:perRequest*2};
+    } else if (e.method === 'credit_value') {
+      factors = Object.fromEntries(['low','typical','high'].map(key=>[key,e.unit_value[key]/rates[e.currency]*1e6]));
+    } else if (e.method === 'neurons') {
+      factors = Object.fromEntries(['low','typical','high'].map(key=>{
+        const model = e.models[key];
+        return [key,1e6/(model.input*.75+model.output*.25)];
+      }));
+    } else if (e.method === 'scenario') {
+      const perPoint = positive(settings.pointTokens) || estimateDefaults.pointTokens;
+      const scale = e.scale || 1;
+      factors = {low:perPoint*.5*scale,typical:perPoint*scale,high:perPoint*2*scale};
+    } else return null;
+    const days = activeDays(d,now);
+    const quantities = e.quantity_range || {low:q.amount,typical:q.amount,high:q.amount};
+    const monthUnits = e.schedule
+      ? e.schedule.reduce((s,step,index)=>{
+          const before=e.schedule.slice(0,index).reduce((n,item)=>n+item.days,0);
+          return s+Math.max(0,Math.min(step.days,days-before))*step.amount;
+        },0)
+      : null;
+    const daily = {}, month = {};
+    for (const key of ['low','typical','high']) {
+      const cap = positive(e.token_cap_daily) || Infinity;
+      daily[key] = Math.min(cap,quantities[key]*factors[key])/10000;
+      month[key] = monthUnits === null ? daily[key]*days : Math.min(cap*days,monthUnits*factors[key])/10000;
+    }
+    return {daily,month,days,method:e.method,pool:e.pool || d.id,priority:e.priority || 0,deal:d,quota:q};
+  }
+  function estimateMany(deals, now, settings = estimateSettings) {
+    const pools = new Map();
+    for (const d of deals) {
+      if (!free(d)) continue;
+      const e = estimate(d,now,settings);
+      if (e && (!pools.has(e.pool) || pools.get(e.pool).priority < e.priority)) pools.set(e.pool,e);
+    }
+    const rows = [...pools.values()];
+    const result = {daily:{low:0,typical:0,high:0},month:{low:0,typical:0,high:0},count:rows.length,rows};
+    for (const e of rows) for (const period of ['daily','month']) for (const key of ['low','typical','high']) result[period][key] += e[period][key];
+    return result;
+  }
+  function estimateExplain(d) {
+    const e = estimate(d);
+    if (!e) return '';
+    const basis = d.daily_estimate;
+    let text = native(e.quota)+' · '+msg('估计 ','Estimated ')+format(e.daily.low)+'–'+format(e.daily.high)+msg(' tokens/天',' tokens/day');
+    if (e.method === 'requests') text += msg('；每次请求假设含输入和输出 ','; assumed input + output per request ')+estimateSettings.requestTokens/4+' / '+estimateSettings.requestTokens+' / '+estimateSettings.requestTokens*2+' tokens';
+    if (e.method === 'scenario') text += msg('；每积分假设 ','; assumed tokens per point ')+estimateSettings.pointTokens*.5*(basis.scale||1)+' / '+estimateSettings.pointTokens*(basis.scale||1)+' / '+estimateSettings.pointTokens*2*(basis.scale||1)+msg(' tokens，非官方扣费比例',' tokens; not an official billing ratio');
+    if (e.method === 'credit_value') text += msg('；每积分售价参考 ','; price reference per credit ')+['low','typical','high'].map(key=>Number(basis.unit_value[key].toPrecision(6))).join(' / ')+' '+basis.currency+' ÷ '+rates[basis.currency]+' '+basis.currency+msg('/百万，估购买力，不代表实际 Token','/M; purchasing-power estimate, not delivered tokens');
+    if (e.method === 'neurons') text += msg('；按三款可用模型的 Neurons 价格、输入:输出 3:1、无缓存估算','; three eligible model neuron rates, uncached 3:1 input/output');
+    text += ' · '+(zh?basis.note:basis.note_en||basis.note);
+    return text;
+  }
+  function estimateCell(d, e) {
+    if (!e || !e.daily.high) return '';
+    const method = d.daily_estimate?.method;
+    const mixed = e.rows?.length > 1;
+    const label = mixed ? msg('日额度估计/天','Daily allowance estimate') : method === 'credit_value' ? msg('购买力估计/天','Value estimate/day') : method === 'scenario' ? msg('情景假设/天','Scenario/day') : msg('用量估计/天','Usage estimate/day');
+    const nativeText = mixed ? e.rows.length+msg(' 项独立日额度',' independent daily allowances') : native(entries(d)[d.daily_estimate?.quota_index] || e.quota || entries(d)[0]);
+    return '<span class="quota-value quota-estimated" title="'+escape(mixed?nativeText:estimateExplain(d))+'"><span class="num">≈ '+format(e.daily.low)+'–'+format(e.daily.high)+'</span><span class="unit">'+label+'</span><span class="unit quota-native">'+escape(nativeText)+'</span><button type="button" class="estimate-link" data-estimate-id="'+escape(d.id)+'">'+msg('估算依据','Estimate basis')+'</button></span>';
+  }
+  function rank(d) {
+    return quota(d).total + (estimate(d)?.month.typical || 0);
   }
   function explain(d) {
     return entries(d).map(q => {
@@ -92,8 +178,13 @@ const TokenMath = (() => {
         + (q.monthly+q.dailyMonth ? (q.once?' + ':'')+msg('周期 ','Recurring ')+format(q.monthly+q.dailyMonth) : '')
         : entries(d).map(native).join(' + ');
       const label = d.quota_paid ? msg('付费额度参考','Paid quota reference') : d.quota_upper_bound ? msg('首月上限','First-month maximum') : msg('首月参考','First-month reference');
-      return '<span class="quota-value" title="'+escape(explain(d)||nativeText)+'"><span class="num">'+(q.converted?'≈ ':'')+format(q.total)+'</span><span class="unit">'+label+'</span><span class="unit quota-native">'+escape(nativeText)+'</span></span>';
+      const extra = aggregate?.estimates?.daily.high ? '<button type="button" class="estimate-link" data-estimate-id="'+escape(aggregate.estimates.rows[0].deal.id)+'">'+msg('另有日额度估计','Additional daily estimate')+'</button>' : '';
+      return '<span class="quota-value" title="'+escape(explain(d)||nativeText)+'"><span class="num">'+(q.converted?'≈ ':'')+format(q.total)+'</span><span class="unit">'+label+'</span><span class="unit quota-native">'+escape(nativeText)+'</span>'+extra+'</span>';
     }
+    const estimated = aggregate?.estimates?.count ? aggregate.estimates : null;
+    if (estimated) return estimateCell(estimated.rows[0].deal,estimated);
+    const individual = estimate(d);
+    if (individual) return estimateCell(d,individual);
     const rows = entries(d);
     if (rows.length) return '<span class="quota-value" title="'+escape(explain(d))+'"><span class="quota-original">'+escape(native(rows[0]))+'</span><span class="unit">'+msg('保留原单位','Native units')+'</span></span>';
     if (d.unit === 'tool') return '<span class="quota-original">'+msg('免费工具','Free tool')+'</span>';
@@ -114,6 +205,7 @@ const TokenMath = (() => {
     }
     return {tokens,cny};
   }
-  return {rates,sources,format,entries,rawTokens,equivalent,native,quota,sum,free,explain,cell,allowance};
+  return {rates,sources,format,entries,rawTokens,equivalent,native,quota,sum,free,explain,cell,allowance,
+    estimate,estimateMany,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
 })();
 if (typeof module !== 'undefined') module.exports = TokenMath;

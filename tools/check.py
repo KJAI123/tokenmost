@@ -59,7 +59,7 @@ for d in deals:
                 continue
             if not isinstance(quota.get("amount"), (int, float)) or quota["amount"] <= 0:
                 errors.append(f"{d['id']} 原始额度 amount 必须为正数")
-            if quota.get("unit") not in ("tokens", "CNY", "USD", "credits", "points", "requests", "hours"):
+            if quota.get("unit") not in ("tokens", "CNY", "USD", "credits", "points", "requests", "hours", "neurons"):
                 errors.append(f"{d['id']} 额度 unit 非法")
             if quota.get("period") not in ("once", "daily", "monthly", "weekly"):
                 errors.append(f"{d['id']} 额度 period 非法")
@@ -70,6 +70,42 @@ for d in deals:
                 errors.append(f"{d['id']} 积分折算缺少证据来源")
         if not d.get("quota_reviewed_at"):
             errors.append(f"{d['id']} 缺额度复核日期 quota_reviewed_at")
+    if "daily_estimate" in d:
+        estimate = d["daily_estimate"]
+        method = estimate.get("method")
+        rows = d.get("token_quota", [])
+        index = estimate.get("quota_index")
+        if not isinstance(index, int) or index < 0 or index >= len(rows) or rows[index].get("period") != "daily":
+            errors.append(f"{d['id']} 日估算必须引用原始 daily 额度")
+        if method not in ("requests", "credit_value", "neurons", "scenario"):
+            errors.append(f"{d['id']} 日估算 method 非法")
+        if not all(estimate.get(k) for k in ("note", "note_en", "reviewed_at")):
+            errors.append(f"{d['id']} 日估算缺假设说明/英文/日期")
+        if isinstance(index, int) and 0 <= index < len(rows):
+            expected_units = {"requests":("requests",), "credit_value":("credits", "points"), "neurons":("neurons",), "scenario":("credits", "points")}
+            if rows[index].get("unit") not in expected_units.get(method, ()) or rows[index].get("tokens_per_unit"):
+                errors.append(f"{d['id']} 日估算方法与原始单位不匹配，或重复估算已有公式额度")
+        if method == "scenario" and (not isinstance(estimate.get("scale", 1), (int, float)) or estimate.get("scale", 1) <= 0):
+            errors.append(f"{d['id']} 情景倍率 scale 非法")
+        if method == "credit_value":
+            values = estimate.get("unit_value", {})
+            try:
+                if not 0 < values["low"] <= values["typical"] <= values["high"]:
+                    raise ValueError()
+            except (KeyError, TypeError, ValueError):
+                errors.append(f"{d['id']} 积分售价估值区间非法")
+            if estimate.get("currency") not in ("USD", "CNY") or not estimate.get("source_url"):
+                errors.append(f"{d['id']} 积分售价估算缺币种/公开价格来源")
+        if method == "neurons":
+            try:
+                models = estimate["models"]
+                for key in ("low", "typical", "high"):
+                    if models[key]["input"] <= 0 or models[key]["output"] <= 0:
+                        raise ValueError()
+            except (KeyError, TypeError, ValueError):
+                errors.append(f"{d['id']} Neurons 模型计费依据非法")
+            if not estimate.get("source_url"):
+                errors.append(f"{d['id']} Neurons 估算缺官方价格来源")
     first = d["provider"].split()[0]
     if d["provider"].split()[0] not in site_first:
         warns.append(f"{d['id']} provider「{d['provider']}」无对应导航站点（无 ⚡接入 按钮）")
