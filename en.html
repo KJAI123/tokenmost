@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261118-3">
+<link rel="stylesheet" href="assets/workbench.css?v=20261118-4">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -469,9 +469,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button type="button" class="hero-feishu" onclick="openWx('feishu')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>Feishu group<span aria-hidden="true">↗</span></button>
     </div>
     <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
-      <span class="gb-label">Verified first-month reference</span>
+      <span class="gb-label">Catalogue month · includes pending</span>
       <b id="gbNum">—</b>
-      <span class="gb-unit">Includes DS Flash value reference</span>
+      <span class="gb-breakdown" id="gbBreakdown"></span>
+      <span class="gb-unit">Includes usage & value estimates</span>
       <span class="gb-link">Credit breakdown <span aria-hidden="true">↗</span></span>
     </button>
     <button type="button" class="hero-qr" onclick="openWx()" aria-label="Enlarge WeChat group QR code">
@@ -685,7 +686,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <div id="sumPanel" role="dialog" aria-modal="true">
   <button id="sumClose">✕</button>
   <h3>💰 羊毛总账 · 极致预算</h3>
-  <p class="sub">单账号合规口径：全部平台注册 + 每站都走邀请码能白嫖多少；再算任意预算下的最优买法</p>
+  <p class="sub">Compare catalogue estimates and the verified ledger. Check eligibility and status before claiming.</p>
   <div id="sumBody"></div>
   <div class="calc-inputs" style="margin-top:14px">
     <label>预算（元，先花Free层再花它）<br><input id="sumBudget" type="number" min="0" step="10" value="100"></label>
@@ -763,9 +764,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/token-math.js?v=20261118-3"></script>
+<script src="assets/token-math.js?v=20261118-4"></script>
 <script src="assets/workbench.js?v=20261118-3"></script>
-<script src="assets/daily-estimates.js?v=20261118-3"></script>
+<script src="assets/catalogue-ledger.js?v=20261118-4"></script>
+<script src="assets/daily-estimates.js?v=20261118-4"></script>
 <script>
 /* ============ 常量 ============ */
 /* 语言自动识别（v2.32.1 老板令「根据 IP 识别+切换功能」）：浏览器语言=英文 且 首次访问 → 跳 en.html；手动偏好记忆不再打扰 */
@@ -1597,7 +1599,7 @@ function sumRender(){
   const total=TokenMath.sum(normal),student=TokenMath.sum(students);
   const links=TokenMath.sum(normal.filter(isDouble));
   const f=TokenMath.format,m=Workbench.msg;
-  document.getElementById('sumBody').innerHTML=`<div class="sum-grid">
+  document.getElementById('sumBody').innerHTML=CatalogueUI.ledger(DEALS)+`<div class="sum-grid">
     <div class="sum-card"><b>${m('① 一次性额度','① One-time allowances')}</b><span class="big">${f(total.once)}</span><span>${m('已含可折算的模型赠金，不再重复加金额','Includes convertible model credits; money is not added twice')}</span></div>
     <div class="sum-card"><b>${m('② 每日刷新','② Daily allowances')}</b><span class="big">${f(total.daily)}${m('/天','/day')}</span><span>${m('首月可用参考 ','First-month reference ')}${f(total.dailyMonth)} · ${m('按剩余活动天数，最多 30 天','Limited to remaining campaign days, up to 30')}</span></div>
     <div class="sum-card"><b>${m('③ 每月刷新','③ Monthly allowances')}</b><span class="big">${f(total.monthly)}</span><span>${m('月额度只计一次，不摊成每天发放','Counted once per month, not a daily grant')}</span></div>
@@ -1770,10 +1772,9 @@ function planRender(){
 function closePlan(){document.getElementById('planOverlay').classList.remove('open');document.getElementById('planPanel').classList.remove('open')}
 document.getElementById('planClose').addEventListener('click',closePlan);
 document.getElementById('planOverlay').addEventListener('click',closePlan);
-/* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
+/* 收录首月情景：核验、待复核与估计分别展示 */
 function calcGlobalBanner(){
-  const live=DEALS.filter(d=>TokenMath.free(d)&&d.verify_status==='verified'&&d.gate!=='student'&&d.type!=='student');
-  document.getElementById('gbNum').textContent=TokenMath.format(TokenMath.sum(live).total);
+  CatalogueUI.banner(DEALS);
 }
 // 侧边栏折叠（OpenRouter 式）
 document.getElementById('side').addEventListener('click',e=>{
@@ -1785,7 +1786,7 @@ document.getElementById('side').addEventListener('click',e=>{
 fetch('prices.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PRICES=Array.isArray(p)?p:[]}).catch(()=>{});
 fetch('usage.json?ts='+Date.now()).then(r=>r.json()).then(u=>{USAGE=Array.isArray(u)?u:[]}).catch(()=>{});
 fetch('plans.json?ts='+Date.now()).then(r=>r.json()).then(p=>{PLANS=Array.isArray(p)?p:[]}).catch(()=>{});
-/* 全球羊毛总账横幅：一次性+日均（今日视角），先取数后显示 */
+/* 收录首月情景：核验、待复核与估计分别展示 */
 /* （旧版横幅函数已并入上方 v2.24 带链接加成口径的实现） */
 /* ============ 网页端数据自动同步（v2.21 老板令「网页端要同步啊」） ============ */
 /* 开着页面也每 5 分钟自动拉新数据：内容有变就原地重渲染 + 轻提示，免手动刷新 */

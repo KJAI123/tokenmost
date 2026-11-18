@@ -61,6 +61,7 @@ const DailyEstimateUI = (() => {
     document.getElementById('estimateRequestTokens').value=next.requestTokens;
     document.getElementById('estimatePointTokens').value=next.pointTokens;
     if (typeof window.render==='function') window.render();
+    if (typeof window.calcGlobalBanner==='function') window.calcGlobalBanner();
     if (document.getElementById('sumPanel')?.classList.contains('open')) sumRender();
     render();
   }

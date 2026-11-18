@@ -135,6 +135,18 @@ const TokenMath = (() => {
     for (const e of rows) for (const period of ['daily','month']) for (const key of ['low','typical','high']) result[period][key] += e[period][key];
     return result;
   }
+  // Catalogue scale is broader than the verified ledger. Keep its three
+  // components visible; estimates never promote an offer's source status.
+  function catalogue(deals, now, settings = estimateSettings) {
+    const regular = deals.filter(d=>free(d) && d.gate !== 'student' && d.type !== 'student');
+    const verified = sum(regular.filter(d=>d.verify_status === 'verified'),now);
+    const pending = sum(regular.filter(d=>d.verify_status !== 'verified'),now);
+    const estimates = estimateMany(regular,now,settings);
+    const total = Object.fromEntries(['low','typical','high'].map(key=>[key,verified.total+pending.total+estimates.month[key]]));
+    const unquantified = regular.filter(d=>!quota(d,now).total && !estimate(d,now,settings));
+    const rows = regular.map(deal=>({deal,quota:quota(deal,now)})).filter(row=>row.quota.total>0);
+    return {verified,pending,estimates,total,unquantified,rows};
+  }
   function estimateExplain(d) {
     const e = estimate(d);
     if (!e) return '';
@@ -206,6 +218,6 @@ const TokenMath = (() => {
     return {tokens,cny};
   }
   return {rates,sources,format,entries,rawTokens,equivalent,native,quota,sum,free,explain,cell,allowance,
-    estimate,estimateMany,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
+    estimate,estimateMany,catalogue,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
 })();
 if (typeof module !== 'undefined') module.exports = TokenMath;

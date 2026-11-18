@@ -62,6 +62,26 @@ near(math.estimateMany([byId['modelscope-free-infer'],byId['modelscope-gpu-free'
 const capped={...byId['openrouter-free'],daily_estimate:{...byId['openrouter-free'].daily_estimate,token_cap_daily:100000}};
 near(math.estimate(capped,now).daily.high,10);
 assert.match(math.estimateExplain(byId['tencent-ima-daily']),/非官方/);
+// The broader catalogue must expose its verified, pending and scenario parts.
+// Student/paid/conditional offers stay outside it and unknown quotas aren't zero-value grants.
+const verifiedFixture={id:'verified',verify_status:'verified',token_quota:[{amount:1000000,unit:'tokens',period:'once'}]};
+const pendingFixture={id:'pending',verify_status:'stale',token_quota:[{amount:2000000,unit:'tokens',period:'once'}]};
+const unknownFixture={id:'unlimited',verify_status:'verified',token_quota:[]};
+const catalogue=math.catalogue([verifiedFixture,pendingFixture,unknownFixture,byId['openrouter-free'],
+  {...verifiedFixture,id:'student',gate:'student'}, {...verifiedFixture,id:'paid',quota_paid:true},
+  {...verifiedFixture,id:'conditional',quota_conditional:true}],now);
+near(catalogue.verified.total,100);
+near(catalogue.pending.total,200);
+near(catalogue.total.low,450); // 1M + 2M + 50/day × 1K/request × 30 days
+near(catalogue.total.typical,900);
+near(catalogue.total.high,1500);
+assert.deepEqual(catalogue.unquantified.map(d=>d.id),['unlimited']);
+near(math.catalogue([verifiedFixture,pendingFixture,byId['openrouter-free']],now,{requestTokens:8000,pointTokens:1000}).total.typical,1500);
+assert.equal(math.catalogue([{...pendingFixture,verify_status:'expired'},{...verifiedFixture,published:false}],now).total.typical,0);
+const actualCatalogue=math.catalogue(deals,now);
+near(actualCatalogue.verified.total,math.sum(deals.filter(d=>math.free(d)&&d.verify_status==='verified'&&d.gate!=='student'&&d.type!=='student'),now).total);
+near(actualCatalogue.total.typical,actualCatalogue.verified.total+actualCatalogue.pending.total+actualCatalogue.estimates.month.typical);
+assert.ok(actualCatalogue.total.low<=actualCatalogue.total.typical&&actualCatalogue.total.typical<=actualCatalogue.total.high);
 const eq=JSON.parse(fs.readFileSync(path.join(root,'tools/eq.json')));
 near(math.rates.CNY,eq.base_cn.weighted_cny_per_m);
 near(math.rates.USD,eq.base_global.weighted_usd_per_m);
