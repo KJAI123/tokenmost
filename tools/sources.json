@@ -702,6 +702,33 @@
     "doubao-pro-invite"
    ],
    "auto_verify": false
+  },
+  {
+   "id": "serv00-free-hosting-offer",
+   "type": "watch",
+   "url": "https://www.serv00.com/",
+   "deals": [
+    "serv00-free-hosting"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "serv00-registration-review",
+   "type": "watch",
+   "url": "https://www.serv00.com/register-account/",
+   "deals": [
+    "serv00-free-hosting"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "serv00-hosting-terms",
+   "type": "watch",
+   "url": "https://www.serv00.com/terms-of-service/",
+   "deals": [
+    "serv00-free-hosting"
+   ],
+   "auto_verify": false
   }
  ]
 }

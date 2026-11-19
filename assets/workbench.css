@@ -346,8 +346,10 @@ body.side-folded .topbar{padding-left:26px}
   .skel .d{grid-column:3}
   .skel .c{display:none}
 }
-@media(max-width:370px){
+@media(max-width:420px){
   .community-btn span{display:none}
+}
+@media(max-width:370px){
   .top-actions{gap:4px}
   .top-actions>*{padding:0 7px}
   .feed-heading{flex-wrap:wrap;gap:2px}

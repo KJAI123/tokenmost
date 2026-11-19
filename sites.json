@@ -610,6 +610,12 @@
   "layer": "freecloud",
   "sites": [
    {
+    "name": "Serv00",
+    "url": "https://www.serv00.com/",
+    "desc": "免费网页主机，支持 SSH；需人工审核与 90 天内登录保活",
+    "free": "3 GB SSD / 512 MB / 100 个网站"
+   },
+   {
     "name": "InstaBox",
     "url": "https://instabox.sh",
     "desc": "免费 4C8G Agent 云电脑（Firecracker microVM）",
