@@ -294,3 +294,6 @@
 
 ## 2026-11-19 02:25 UTC（轮 94，查询：GLM 免费）
 - 🆕 公众号新文 [?] 震惊!glm额度免费来用吧, 不够的话还有超算互联网中心赠送6000万tokens. → https://mp.weixin.qq.com/s?src=11&timestamp=1795055129&ver=7
+
+## 2026-11-19 07:30 UTC（轮 95，查询：Coding Plan 折扣）
+- 📰 标题雷达 [Coding Plan 折扣] 主流API、TokenPlan最低价格速览:Qwen4-Max正式上架、腾讯联网搜索今日计费(2026.11.18)

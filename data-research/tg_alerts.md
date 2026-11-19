@@ -2166,3 +2166,12 @@ vi
 - 🆕 [AI_News_CN] Gemini 4 Neon 上线 Cursor，CursorBench 4.1 得分 63.7% 创新高 
 
 Cursor 上线 Gemini 4 Neon，默认设置下在 CursorBench 4.1 上得分 63.7%，高于 Gemini 4 Hydrogen 的 57.3%，定价为每百万输入 
+
+## 2026-11-19 07:30 UTC
+- 🆕 [v2ex_notice] 【推广】1024proxy 免费试用｜纯净住宅 IP 零成本上手，跨境 / 采集 / 多号测试友好 🚀
+- 🆕 [AI_News_CN] DeepSeek调整API定价策略:服务端搜索与网页抓取正式免除单独计费 
+
+11月18日12:00起，DeepSeek正式实施全新API计费规则，开发者在调用大模型过程中触发的服务端搜索与网页抓取功能不再单独收费，全面转为仅按模型Token用量计费。这一调整进一步简化了大模型的商业化计费链路，直接
+- 🆕 [AI_News_CN] OpenCode 10 美元 GLM 5.3 套餐实测：未见激进量化损伤 
+
+第三方对 OpenCode Go 套餐中「500 美元额度仅售 10 美元」的 GLM 5.3 进行基准测试，GPQA Diamond 92.9%、MMLU-Pro 88.7%、MATH-500 100%、AIME 202
