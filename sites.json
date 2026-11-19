@@ -270,8 +270,14 @@
    {
     "name": "Hugging Face Inference",
     "url": "https://huggingface.co/docs/inference-providers/index",
-    "desc": "第三方模型推理入口",
-    "free": "每月 $0.10"
+    "desc": "付费推理入口；PRO 月含 $2 计算额度",
+    "free": "免费账户无每月推理赠金"
+   },
+   {
+    "name": "天翼云星辰 TokenHub",
+    "url": "https://www.ctyun.cn/document/11061839/11100599",
+    "desc": "支持模型可领免费量包，先核对用完即停开关",
+    "free": "每模型 50 万 Tokens / 14 天"
    }
   ]
  },
@@ -299,8 +305,9 @@
    {
     "name": "OpenCode",
     "url": "https://opencode.ai",
-    "desc": "开源编程 CLI+Zen 网关（Go $10 含 $80 配额）",
-    "hot": true
+    "desc": "开源编程工具与模型网关；Go 为按模型共享用量的付费订阅",
+    "hot": true,
+    "free": "指定 Free 型号限时可用"
    },
    {
     "name": "Cursor",
@@ -565,8 +572,8 @@
    {
     "name": "llm7.io",
     "url": "https://llm7.io",
-    "desc": "OpenAI 兼容推理网关",
-    "free": "10 万 tokens／24h（免费 Token）"
+    "desc": "聚合 API；旧 Limits 页面失效，免费额度待复核",
+    "free": "原日赠额度待复核"
    },
    {
     "name": "TaoToken",
@@ -603,6 +610,12 @@
     "url": "https://vercel.com/ai-gateway",
     "desc": "多提供商模型网关",
     "free": "每月 $5（指定模型）"
+   },
+   {
+    "name": "Electron Hub",
+    "url": "https://www.electronhub.ai/",
+    "desc": "多模型聚合 API，周额度与广告奖励分开核对",
+    "free": "$0.25/周，免绑卡"
    }
   ]
  },

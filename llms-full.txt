@@ -10,13 +10,13 @@
 - 内容：DeepSeek 官方高峰价：Flash ¥2/8，V4-Pro ¥9/27（每百万输入/输出）
 - 规则：仅未命中缓存输入按此输入价计费，空闲时段按高峰价一半计费
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-11-18T18:56:27Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## DeepSeek｜price_low
 - 内容：DeepSeek Flash 和 V4-Pro 空闲时段五折
 - 规则：北京时间工作日 9:00–12:00、14:00–18:00 为高峰，法定节假日按空闲
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-11-18T18:56:27Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## Kimi 开放平台｜注册赠送
 - 内容：Kimi API 新用户实名认证后领 ¥15 代金券，三个月有效
@@ -173,7 +173,7 @@
 - 内容：DeepSeek Flash 缓存命中输入每百万 ¥0.04，空闲时段 ¥0.02
 - 规则：仅缓存命中的输入可用此价，普通输入和输出另计
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## Kimi 开放平台｜限时活动
 - 内容：Kimi API 文件上传和内容抽取限时免费
@@ -500,11 +500,11 @@
 - 链接：https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
-## Qoder 国际版｜coupon
-- 内容：Qoder 国际版个人账号每日可手动领取 100 Credits，每份 30 天有效
-- 规则：每天 10:00（UTC+8）刷新领取窗口；免费和个人付费账号可参加，团队/企业账号不适用。此前 Qwen3.8-Flash 免费活动已结束。
+## Qoder 国际版｜长期活动
+- 内容：Qoder 国际版每日 100 Credits：仅限 Pro 试用和个人付费用户，免费账户已停领
+- 规则：11 月 19 日 10:00 起调整资格，每天 10:00（UTC+8）手动领取；团队/企业不参加。每份有效 30 天，已领取额度按原有效期保留。
 - 链接：https://qoder.cn/activities?referral_code=UWaw3XM18VyOSfWHqzR1cio1a6d6FAvD
-- 状态：待复核（核验时间 2026-11-01T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## 书生·端砚（上海AI实验室）｜情报
 - 内容：端砚 Token Plan 可调用模型 API，月赠墨点数量待账户确认；旧「10墨点/5亿Token」口径暂停采用
@@ -570,13 +570,13 @@
 - 内容：OpenCode Go：$10/月，GLM-5.3 限时最高 $500 模型月用量；Go Plus $40/月对应 $1,000，提额至 11 月 22 日
 - 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享百分比额度，不能叠加。5小时20%，每周50%；请求数是估计，Extra Usage开启后超额会扣余额。
 - 链接：https://opencode.ai/console/go
-- 状态：已验证（核验时间 2026-11-18T16:30:29Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## OpenCode｜长期免费
-- 内容：OpenCode 免费模型含 DeepSeek V4.1 Flash Free、LongCat 2.5 Free 等；GLM-5.3/Flash 当前按量计费或走 Go 订阅
-- 规则：仅使用当前标注 Free 的型号，清单会调整；不要把 GLM 的付费补贴当作零价模型。
+- 内容：OpenCode 限时免费型号含 DeepSeek V4.1 Flash、MiMo V2.6 Flash、LongCat 2.5 等；GLM-5.3-Flash Free 已于 11/18 下线
+- 规则：免费聊天型号要求使用 OpenCode；其他客户端需付费模型或 Go。LongCat 2.5 限 100 请求/日，免费清单和地区资格会调整。
 - 链接：https://opencode.ai/docs/console/models/#pricing
-- 状态：已验证（核验时间 2026-11-18T16:30:29Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## Qoder｜免费模型
 - 内容：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）
@@ -687,11 +687,11 @@
 - 链接：https://mimo.mi.com/docs/zh-CN/quick-start/promotions/refer
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
-## 天翼云息壤｜长期免费
-- 内容：天翼云息壤平台新用户免费领 2500 万 Tokens（新用户长期体验额度，非限时）——兼容 Cursor/Cline/OpenClaw 直连，运营商云首条实锤
-- 规则：注册天翼云→息壤控制台→模型广场领取；新用户限一次；模型含 DeepSeek/GLM 等主流开源
-- 链接：https://www.ctyun.cn
-- 状态：待复核（核验时间 2026-10-29T15:58:00Z）
+## 天翼云星辰 TokenHub｜长期免费
+- 内容：天翼云星辰 TokenHub：试用类模型每款 50 万 Tokens，免费量包激活后 14 天有效
+- 规则：在「在线推理」选择可领取模型，0 元下单并激活；每主账号每模型限一次。已开通按量付费时，开启「量包耗尽或到期即停」防止超额收费。
+- 链接：https://www.ctyun.cn/document/11061839/11100599
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## 联通云｜注册赠送
 - 内容：联通云注册送 600 万 Tokens（公众号渠道限量 1 万份，先到先得）
@@ -1046,7 +1046,7 @@
 - 内容：免费领一个 .cv 一级域名（佛得角国别后缀，个人简历域名定位）：含 WHOIS 隐私+自定义 NS+EPP 转出码+防盗锁，免卡——⏰ 活动 2026-08-17~11-17 截止
 - 规则：结账页优惠码 CODEHOST（应用后 $0）；每人限 1 个；域名须对应本人姓名（FirstName.cv / FirstLast.cv），通用词/品牌词/随机串不符合；溢价域名除外；续费按届时标准价（官网未写明免费期几年，社区实测多称 1 年）
 - 链接：https://codehost.in/free-cv-for-everyone/
-- 状态：已验证（核验时间 2026-11-10T16:46:21Z）
+- 状态：待复核（核验时间 2026-11-10T16:46:21Z）
 
 ## DNSHE｜长期免费
 - 内容：免费二级域名（新加坡非营利团队，累计服务 10 万+用户）：后缀 .de5.net / .us.ci / .cc.cd / .bot.cd，免绑卡无广告，**支持改 NS 托管 Cloudflare**（PSL 口径），全记录类型+DNSSEC+REST API
@@ -1228,9 +1228,9 @@
 - 链接：https://kilo.ai/docs/getting-started/using-kilo-for-free
 - 状态：已验证（核验时间 2026-11-16T17:08:36Z）
 
-## llm7.io｜长期免费
-- 内容：免费 API Token：文本生成合计 10 万 tokens／24 小时，输入和输出一起计量。
-- 规则：文本接口每秒 1 次、每分钟 60 次、每小时 250 次；免费额度可能随负载变化。
+## llm7.io｜status
+- 内容：LLM7 文档已改版，旧「每日 10 万 Tokens」当前无法复核
+- 规则：旧 Limits 页面返回 404，现有官方文档只确认 API 接入能力；在取得新额度政策前不计免费总量。
 - 链接：https://docs.llm7.io/limits
 - 状态：待复核（核验时间 2026-11-16T17:08:36Z）
 
@@ -1286,11 +1286,47 @@
 - 内容：AutoClaw 本周登录送 1 亿端内 Tokens（10,000 积分）
 - 规则：11 月 16 日至 22 日登录客户端，每账号一次，奖励于 11 月 22 日 23:59（北京时间）到期。
 - 链接：https://autoclaw.zhipuai.cn/blog/news/M11W3/
-- 状态：已验证（核验时间 2026-11-17T15:19:14Z）
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 
 ## ZCode｜subscription_bonus
 - 内容：ZCode 订阅用户可使用闲时任务，执行时无需消耗套餐额度
 - 规则：向 BigModel 和 Z.ai 个人订阅用户分批开放。队列自动执行免扣额度，主动发消息正常扣积分。
 - 链接：https://zcode.z.ai/cn/docs/idle-time-tasks
 - 状态：已验证（核验时间 2026-11-17T15:19:14Z）
+
+## DeepSeek｜情报
+- 内容：DeepSeek 模型触发的搜索、网页抓取不再单收费；独立 Search/Fetch API 仍为 ¥5/千次成功请求
+- 规则：2026-11-18 12:00（北京时间）起生效；工具结果仍计入模型上下文，按 Token 收费。此口径仅针对 DeepSeek 官方直连。
+- 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing/
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+
+## Qoder 国际版｜price_low
+- 内容：Qoder 夜间 Qwen3.8-Max / Flash 四折扣积分：Max 0.2×、Flash 0.04×
+- 规则：每日 14:00–00:00 UTC，即北京时间 22:00–次日 08:00，含周末；需 Pro 试用或受支持订阅，自动生效，尚未公布结束日。
+- 链接：https://docs.qoder.com/events/offpeakrate
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+
+## Qoder 国际版｜限时活动
+- 内容：Qoder Ultimate 错峰二折：2× 降至 0.4×，第二期至 11 月 30 日 08:00（北京时间）
+- 规则：每日北京时间 22:00–次日 08:00，需 Pro 试用或受支持订阅；最后窗口为 11 月 29 日 22:00 至 30 日 08:00。
+- 链接：https://docs.qoder.com/events/offpeakrate
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+
+## Qoder 国际版｜免费模型
+- 内容：Qoder Efficient 档限时不扣 Credits，付费用户及仍有积分的 Pro 试用用户可用
+- 规则：手动选择 Efficient（0.3×→0×）；高峰可能限流。自动子任务调用的其他具体模型仍收费，Service Account 不参加。结束日待公告。
+- 链接：https://docs.qoder.com/events/efficientunlimited
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+
+## 腾讯云 TokenHub｜情报
+- 内容：腾讯 TokenHub 原厂 DeepSeek 搜索/抓取另收费：API ¥5/千次，个人/企业 TokenPlan 为 100/500 积分/千次
+- 规则：API 自 11 月 1 日、TokenPlan 自 11 月 18 日 00:00（北京时间）生效；仅成功请求收费，不开联网工具则无该调用费。不能套用 DeepSeek 官方直连免工具费规则。
+- 链接：https://cloud.tencent.com/announce/detail/2538
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+
+## Electron Hub｜长期免费
+- 内容：Electron Hub 免费档每周 $0.25 额度，免绑卡；另有看广告获取的免费模型请求奖励
+- 规则：每周日 21:00 UTC（北京时间周一 05:00）刷新，5 请求/分钟；最多 20% 未用周额转入 Flex Wallet，上限约 $0.13。
+- 链接：https://www.electronhub.ai/pricing
+- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
 

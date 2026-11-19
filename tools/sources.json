@@ -78,8 +78,10 @@
    "deals": [
     "deepseek-price",
     "deepseek-offpeak",
-    "deepseek-searchfree"
-   ]
+    "deepseek-cache",
+    "deepseek-server-search-billing"
+   ],
+   "auto_verify": false
   },
   {
    "id": "zhipu-promotion",
@@ -441,7 +443,7 @@
   {
    "id": "llm7-free-policy",
    "type": "watch",
-   "url": "https://docs.llm7.io/limits",
+   "url": "https://docs.llm7.io/",
    "deals": [
     "llm7-free-token"
    ],
@@ -727,6 +729,71 @@
    "url": "https://www.serv00.com/terms-of-service/",
    "deals": [
     "serv00-free-hosting"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "qoder-daily-eligibility",
+   "type": "watch",
+   "url": "https://docs.qoder.com/events/100credits",
+   "deals": [
+    "deep-qoder-daily-credits"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "qoder-offpeak-discounts",
+   "type": "watch",
+   "url": "https://docs.qoder.com/events/offpeakrate",
+   "deals": [
+    "qoder-qwen-offpeak-discount",
+    "qoder-ultimate-offpeak-november"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "qoder-efficient-zero-credits",
+   "type": "watch",
+   "url": "https://docs.qoder.com/events/efficientunlimited",
+   "deals": [
+    "qoder-efficient-zero-credits"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "ctyun-free-model-packs",
+   "type": "watch",
+   "url": "https://www.ctyun.cn/document/11061839/11100599",
+   "deals": [
+    "ecloud-tianyi-25m"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "ctyun-tokenhub-changelog",
+   "type": "watch",
+   "url": "https://www.ctyun.cn/document/11061839/00000000",
+   "deals": [
+    "ecloud-tianyi-25m"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "tencenthub-deepseek-search-fees",
+   "type": "watch",
+   "url": "https://cloud.tencent.com/announce/detail/2538",
+   "deals": [
+    "tencenthub-deepseek-search-billing",
+    "tencenthub-signup"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "electronhub-free-policy",
+   "type": "watch",
+   "url": "https://www.electronhub.ai/pricing",
+   "deals": [
+    "electronhub-free-weekly"
    ],
    "auto_verify": false
   }

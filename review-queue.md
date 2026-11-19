@@ -4,8 +4,6 @@
 处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:"verified"；不实→归档并保留证据）。
 
 - **待复核** `zhipu-signup`（智谱 BigModel）：源 zhipu-promotion 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deepseek-price`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deepseek-offpeak`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `kimi-voucher`（Kimi 开放平台）：源 kimi-trial 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qianfan-signup`（文心千帆）：源 qianfan-quota 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xinghuo-signup`（讯飞星火）：源 xfyun-spark-docs 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -39,7 +37,6 @@
 - **待复核** `deep-xunfei-1024-10yi-r2`（讯飞星辰 MaaS）：公开入口为页面壳，未找到能确认 10 亿资格与 11 月 24 日截止的现行官方原文，需登录控制台确认。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xai-grok-code-status-r3`（xAI（Grok））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-gemini-cli-retired-r4`（Google Gemini CLI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-qoder-daily-credits`（Qoder 国际版）：活动入口需登录，官方账号与订阅页未说明每日 100 Credits。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-intern-inkpoint`（书生·端砚（上海AI实验室））：现行官方页未确认月赠10墨点；旧免费模型/价格已变化，且文档计费单位与公式示例存在冲突，需账户赠额及实际扣点记录补证。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-together-nofree-r5`（Together AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-kimi-k25-offline-r6`（Kimi（月之暗面））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -53,7 +50,6 @@
 - **待复核** `volc-k27-alias-warning`（火山方舟）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `anti-charge-checklist`（防扣费四条（全网通用））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `codex-free`（Codex）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `ecloud-tianyi-25m`（天翼云息壤）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `comet-free`（Perplexity Comet）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qwen-app-5h-limit`（千问）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qiniu-conatus-1e8`（七牛云）：源 qiniu-conatus-rule 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -65,6 +61,6 @@
 - **待复核** `claude-for-oss`（Anthropic）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `opendesign-reset-card-invite`（OpenDesign Cloud）：源 opendesign-go-referral 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `codearts-skill-1000`（华为码道）：Skill赛1000积分来自聚合线索，当前常规体验版官方原文为100积分/日；需单独核对参赛资格及活动是否仍有效。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `llm7-free-token`（llm7.io）：旧 Limits 404，现行文档未确认原每日 10 万 Tokens；已撤出额度总账，等待新额度政策。
 - **待复核** `google-antigravity-cli-free`（Google Antigravity CLI）：源 antigravity-cli-plans 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **源失联** `linuxdo-rss`：连续 52 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除

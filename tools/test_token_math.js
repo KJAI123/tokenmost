@@ -20,7 +20,11 @@ near(math.quota(byId['edgeone-makers-50w'],now).once,0);
 near(math.quota(byId['deep-zhipu-trialplan-r7'],now).total,(300*13/1.75+500*1.3/1.75)*5);
 near(math.quota(byId['autoclaw-m11w3-login'],now).total,10000);
 near(math.rawTokens(math.entries(byId['deep-zhipu-trial-card'])[0]),2000*10000/11.175);
-near(math.quota(byId['llm7-free-token'],now).total,300);
+near(math.quota(byId['llm7-free-token'],now).total,0); // Legacy quota has no current policy evidence.
+near(math.quota(quota([{amount:100000,unit:'tokens',period:'daily'}]),now).total,300);
+near(math.quota(byId['electronhub-free-weekly'],now).monthly,.25/.2625*100*30/7);
+assert.equal(math.free(byId['deep-qoder-daily-credits']),false); // Pro trial or paid-plan eligibility is required.
+assert.equal(math.estimateMany([byId['deep-qoder-daily-credits']],now).count,0);
 near(math.quota(byId['qiniu-conatus-1e8'],now).total,10000*13);
 near(math.quota(byId['fiimeopc-token'],now).once,10000); // not 16亿 plus another month's tasks
 near(math.quota(byId['aliyun-yungongkaiwu-student'],now).total,300/1.75*100); // cloud coupon not counted again
