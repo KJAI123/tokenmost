@@ -2143,3 +2143,26 @@ DeepSeek-V4.1-Flash 折扣由 6 折升级为 5 折，同时 HY4、GLM-5.3-Flash�
  在花 🎗️ 科技圈 : 
 
 DeepSeek Search 与 Fetch API 将于 11 月起对部分平台收费 DeepSeek 宣布，其网页搜索（Search）与抓取（Fetch）API 将从 2026 年 11 月 1 日起，对
+
+## 2026-11-19 02:25 UTC
+- 🆕 [v2ex_notice] 【分享创造】[开源免费] 解决 Mac 未签名应用打开已损坏问题，我用 DBX 作者的 Viva 框架，做了个 Mac 应用打开助手 Peck
+- 🆕 [linuxdo_tg] 主 题： 安卓、国内卡怎么开谷歌ULTRA最便宜？ 
+发 布 者： natsukiz 
+标签分类： 人工智能 快问快答 
+时 间：2026-11-19 10:05:11
+内容预览： 求教一下，看之前羊毛都是苹果的，安卓的话要转区还要外卡，求教下大佬们我这这种情况有招吗？如果实在没招有没有靠谱的代充啊
+- 🆕 [AI_News_CN] DeepSeek调整API定价：服务端搜索与网页抓取不再单独计费，仅按Token用量计费 
+
+DeepSeek官网显示，自北京时间2026年11月18日12：00起，调用模型时触发的服务端搜索、网页抓取不再计费，仅按模型Token用量计费。
+
+涉及的服务端搜索触发场景包括：联网工具、Anthropi
+- 🆕 [AI_News_CN] Gemini 4 Neon 现已上线 Command Code，支持 100 万 token 上下文 
+
+Command Code 已接入 Gemini 4 Neon，具备 100 万 token 上下文窗口，并在 Pro、Max 和 API 三个层级开放使用。
+
+ 内容详情 · 原文链接 
+
+vi
+- 🆕 [AI_News_CN] Gemini 4 Neon 上线 Cursor，CursorBench 4.1 得分 63.7% 创新高 
+
+Cursor 上线 Gemini 4 Neon，默认设置下在 CursorBench 4.1 上得分 63.7%，高于 Gemini 4 Hydrogen 的 57.3%，定价为每百万输入 

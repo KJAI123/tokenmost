@@ -291,3 +291,6 @@
 
 ## 2026-11-18 21:23 UTC（轮 93，查询：白嫖 API）
 - 📰 标题雷达 [白嫖 API] 谷歌漏洞曝光:攻击者可借旧API密钥&ldquo;白嫖&rdquo;Gemini AI
+
+## 2026-11-19 02:25 UTC（轮 94，查询：GLM 免费）
+- 🆕 公众号新文 [?] 震惊!glm额度免费来用吧, 不够的话还有超算互联网中心赠送6000万tokens. → https://mp.weixin.qq.com/s?src=11&timestamp=1795055129&ver=7
