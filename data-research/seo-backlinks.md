@@ -509,3 +509,10 @@
 - a4-free-llm（770 字）/ a6-ustc-token（634 字）/ a7-free-tools（615 字）三篇全部重写：删 TokenMost 植入段 → 换自然过渡句（「额度领到手才算数」/「规则截图存档」类实操建议），tokenmost 残留 0，正文全过 400 字闸门
 - a7 原第 8 条整条是 tokenmost 软文（「情报层」）→ 整条删除，标题「8 个」改「7 个」
 - 解禁即可直接发射（零植入合规版）
+
+## 🌐 站点侧优化巡检（2026-11-20 晚）
+
+- **全项绿**：robots.txt ✅（Allow+Sitemap）/ sitemap.xml 200（114 URL）/ 主页 200 / llms.txt 200 / og:image+twitter:card 全站覆盖确认（主页/en.html/pSEO platform 页全查）/ 中文编码 URL 200
+- **IndexNow 全量重提**：114 URL POST api.indexnow.org → 200 受理（key 757db935...）
+- 修正一个误判：/en 404 是路径差异（真实页面为 en.html，sitemap 登记正确），非缺失
+- 并行进行中：掘金（沸点首发+5000矿石+第2篇技术干货）/ 企鹅号（第2篇免费云服务器对比）/ GitHub（第二轮外链挖掘+8发在途轮查）
