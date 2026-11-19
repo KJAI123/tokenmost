@@ -52,13 +52,23 @@ const Workbench = (() => {
     const logos = window.LOGOS || {};
     const hostname = logoHostname(url);
     const alternateHost = logoHostname(alternateUrl);
+    const hostLogo = host => {
+      if (editorialHosts.has(host)) return '';
+      const parts=host.split('.');
+      while(parts.length>1) {
+        const candidate=parts.join('.');
+        if (editorialHosts.has(candidate)) return '';
+        if (logos[candidate]) return logos[candidate];
+        parts.shift();
+      }
+      return '';
+    };
     const local = logos['provider:' + name] || logos['provider:' + alternateName]
-      || (!editorialHosts.has(hostname) && logos[hostname])
-      || (!editorialHosts.has(alternateHost) && logos[alternateHost]);
+      || hostLogo(hostname) || hostLogo(alternateHost);
     const path = typeof local === 'string' && /^assets\/logos\/[\w.-]+\.(?:png|svg|ico|webp)$/i.test(local) ? local : '';
     const initial = name.match(/[\p{L}\p{N}]/u)?.[0]?.toUpperCase() || '·';
     return '<span class="provider-icon provider-icon--' + variant + '" aria-hidden="true">'
-      + (path ? '<img src="' + esc(path) + '" alt="" loading="lazy" decoding="async" onerror="this.remove()">' : '')
+      + (path ? '<img src="' + esc(path) + '" alt="" loading="lazy" decoding="async" onload="this.dataset.loaded=\'true\'" onerror="this.remove()">' : '')
       + '<span class="provider-initial" data-initial="' + esc(initial) + '"></span></span>';
   }
 

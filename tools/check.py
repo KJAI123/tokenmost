@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """tokenmost 数据校验 + rss.xml 同步生成。用法：python3 tools/check.py"""
-import json, sys, datetime, html, re
+import json, sys, datetime, html, re, hashlib
 from pathlib import Path
 from source_audit import evidence_errors, registry_errors
 
@@ -20,6 +20,18 @@ prices = json.loads((ROOT / "prices.json").read_text())
 errors, warns = list(evidence_errors(deals)), []
 for name in ("tools/sources.json", "tools/harvest_sources.json"):
     errors.extend(registry_errors(json.loads((ROOT / name).read_text())["sources"], name))
+
+# Successful HTTP/image decoding is not enough: cached letter tiles are not logos.
+logos = json.loads((ROOT / "assets/logos.json").read_text())
+logo_sources = json.loads((ROOT / "assets/logo-sources.json").read_text())
+rejected = {row["sha256"] for row in logo_sources.get("rejected_placeholders", [])}
+for asset in set(logos.values()):
+    if not re.fullmatch(r"assets/logos/[\w.-]+\.(png|svg|ico|webp)", asset):
+        errors.append(f"Logo 路径非法: {asset}")
+    elif not (ROOT / asset).is_file():
+        errors.append(f"Logo 文件缺失: {asset}")
+    elif hashlib.sha256((ROOT / asset).read_bytes()).hexdigest() in rejected:
+        errors.append(f"Logo 不可使用已识别的灰底字母占位图: {asset}")
 
 # --- deals 校验 ---
 ids = [d["id"] for d in deals]
@@ -59,7 +71,7 @@ for d in deals:
                 continue
             if not isinstance(quota.get("amount"), (int, float)) or quota["amount"] <= 0:
                 errors.append(f"{d['id']} 原始额度 amount 必须为正数")
-            if quota.get("unit") not in ("tokens", "CNY", "USD", "credits", "points", "requests", "hours", "neurons"):
+            if quota.get("unit") not in ("tokens", "CNY", "USD", "credits", "points", "requests", "hours", "neurons", "PU"):
                 errors.append(f"{d['id']} 额度 unit 非法")
             if quota.get("period") not in ("once", "daily", "monthly", "weekly"):
                 errors.append(f"{d['id']} 额度 period 非法")
@@ -70,22 +82,25 @@ for d in deals:
                 errors.append(f"{d['id']} 积分折算缺少证据来源")
         if not d.get("quota_reviewed_at"):
             errors.append(f"{d['id']} 缺额度复核日期 quota_reviewed_at")
-    if "daily_estimate" in d:
-        estimate = d["daily_estimate"]
+    if "quota_estimates" in d and (not isinstance(d["quota_estimates"], list) or not d["quota_estimates"]):
+        errors.append(f"{d['id']} quota_estimates 必须为非空数组")
+    if "daily_estimate" in d and "quota_estimates" in d:
+        errors.append(f"{d['id']} 新旧估计字段不可同时设置")
+    for estimate in d.get("quota_estimates", [d["daily_estimate"]] if "daily_estimate" in d else []):
         method = estimate.get("method")
         rows = d.get("token_quota", [])
         index = estimate.get("quota_index")
-        if not isinstance(index, int) or index < 0 or index >= len(rows) or rows[index].get("period") != "daily":
-            errors.append(f"{d['id']} 日估算必须引用原始 daily 额度")
-        if method not in ("requests", "credit_value", "neurons", "scenario"):
+        if not isinstance(index, int) or index < 0 or index >= len(rows) or ("daily_estimate" in d and rows[index].get("period") != "daily"):
+            errors.append(f"{d['id']} 估算必须引用有效的原始额度；旧 daily_estimate 仅可引用日额")
+        if method not in ("requests", "credit_value", "neurons", "scenario", "model_examples"):
             errors.append(f"{d['id']} 日估算 method 非法")
         if not all(estimate.get(k) for k in ("note", "note_en", "reviewed_at")):
             errors.append(f"{d['id']} 日估算缺假设说明/英文/日期")
         if isinstance(index, int) and 0 <= index < len(rows):
-            expected_units = {"requests":("requests",), "credit_value":("credits", "points"), "neurons":("neurons",), "scenario":("credits", "points")}
+            expected_units = {"requests":("requests",), "credit_value":("credits", "points", "PU"), "neurons":("neurons",), "scenario":("credits", "points", "PU"), "model_examples":("credits",)}
             if rows[index].get("unit") not in expected_units.get(method, ()) or rows[index].get("tokens_per_unit"):
                 errors.append(f"{d['id']} 日估算方法与原始单位不匹配，或重复估算已有公式额度")
-        if method == "scenario" and (not isinstance(estimate.get("scale", 1), (int, float)) or estimate.get("scale", 1) <= 0):
+        if method in ("scenario", "requests") and (not isinstance(estimate.get("scale", 1), (int, float)) or estimate.get("scale", 1) <= 0):
             errors.append(f"{d['id']} 情景倍率 scale 非法")
         if method == "credit_value":
             values = estimate.get("unit_value", {})
@@ -106,6 +121,16 @@ for d in deals:
                 errors.append(f"{d['id']} Neurons 模型计费依据非法")
             if not estimate.get("source_url"):
                 errors.append(f"{d['id']} Neurons 估算缺官方价格来源")
+        if method == "model_examples":
+            try:
+                factors = []
+                for key in ("low", "typical", "high"):
+                    model = estimate["models"][key]
+                    assert model["credits"] > 0 and model["input_tokens"] > 0 and model["output_tokens"] > 0 and model["name"]
+                    factors.append((model["input_tokens"]+model["output_tokens"])/model["credits"])
+                assert factors == sorted(factors) and estimate["source_url"]
+            except (KeyError, TypeError, AssertionError):
+                errors.append(f"{d['id']} 模型计价示例缺少有效数值、顺序或官方来源")
     if "featured_until" in d:
         offer = d.get("subscription_offer", {})
         try:

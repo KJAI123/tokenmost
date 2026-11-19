@@ -110,7 +110,9 @@ def deal_value(d):
             parts.append(f"首月 ≈ {fmt_wan(value)} Token 参考")
         estimated = daily_estimate(d)
         if estimated:
-            parts.append(f"日用量情景估计 ≈ {fmt_wan(estimated['daily']['low'])}–{fmt_wan(estimated['daily']['high'])} Token（非保证额度）")
+            period = "daily" if estimated["period"] == "daily" else "month"
+            label = "日用量" if period == "daily" else "首月"
+            parts.append(f"{label}情景估计 ≈ {fmt_wan(estimated[period]['low'])}–{fmt_wan(estimated[period]['high'])} Token（非保证额度）")
         return "；".join(parts) or "Token 数量以官方页为准"
     parts = []
     if d.get("daily_wan"): parts.append(f"日均 ~{fmt_wan(d['daily_wan'])} tokens")
@@ -200,7 +202,8 @@ def main():
             badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
             action = "查看历史条款" if d.get("verify_status") == "expired" else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
-            estimate_note = (f'<p>日估算假设：{esc_quote(estimate_assumption(d))} {esc_quote(d["daily_estimate"]["note"])} '
+            definitions = d.get("quota_estimates", [d["daily_estimate"]] if d.get("daily_estimate") else [])
+            estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
             blocks.append(
                 f'<div class="deal"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'

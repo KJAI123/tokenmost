@@ -66,6 +66,36 @@ near(math.estimateMany([byId['modelscope-free-infer'],byId['modelscope-gpu-free'
 const capped={...byId['openrouter-free'],daily_estimate:{...byId['openrouter-free'].daily_estimate,token_cap_daily:100000}};
 near(math.estimate(capped,now).daily.high,10);
 assert.match(math.estimateExplain(byId['tencent-ima-daily']),/非官方/);
+// Different refresh periods must not all become daily grants.
+const mixedFixture={id:'mixed-periods',deadline:'2026-11-20',token_quota:[
+ {amount:100,unit:'credits',period:'once'}, {amount:10,unit:'credits',period:'daily'},
+ {amount:50,unit:'credits',period:'monthly'}, {amount:20,unit:'credits',period:'weekly'}
+],quota_estimates:[0,1,2,3].map(quota_index=>({quota_index,method:'scenario'}))};
+const mixed=math.estimate(mixedFixture,now,{requestTokens:4000,pointTokens:1000});
+near(mixed.daily.typical,1);
+near(mixed.month.typical,10+3+5+2*3/7);
+assert.equal(math.estimateMany([mixedFixture],now).count,4);
+assert.match(math.cell(byId['openrouter-free'],math.sum([byId['openrouter-free']],now)),/50/); // A single-estimate provider group still carries its native quota.
+assert.match(math.cell(byId['trae-free-tier'],math.sum([byId['trae-free-tier']],now)),/3 项独立额度/);
+near(math.quota({deadline:'2026-11-20',token_quota:[{amount:7,unit:'USD',period:'weekly'}]},now).total,3/.2625*100);
+near(math.estimate(byId['trae-free-tier'],now).month.typical,(500+1500+100*30)*(49/2000)/1.75*100);
+near(math.estimate(byId['clixad-free'],now).daily.typical,60000*21500/585/10000);
+near(math.estimate(byId['cohere-trial'],now).month.typical,400);
+near(math.estimate(byId['cohere-trial'],now).daily.typical,0);
+near(math.estimate(byId['github-copilot-free'],now).month.typical,40); // 2K short completions, not 2K full chat requests.
+near(math.estimate(byId['deep-qoder-cn-free'],now).month.typical,300*(169/6000)/1.75*100);
+assert.equal(math.estimate(byId['clixad-free'],now).method,'model_examples');
+const sharedBuddy=math.estimateMany([byId['workbuddy-free'],byId['deep-codebuddy-free-kimi']],now);
+assert.equal(sharedBuddy.rows.filter(e=>e.pool==='buddy-cn-monthly').length,1);
+assert.equal(sharedBuddy.rows.find(e=>e.pool==='buddy-cn-monthly').deal.id,'deep-codebuddy-free-kimi');
+for(const id of ['workbuddy-intl-pro','atlassian-rovo-dev-free','trae-code-fission','freepi-terminal-free']) {
+ assert.ok(math.estimate(byId[id],now),id+' has a displayable scenario');
+ assert.equal(math.estimateMany([byId[id]],now).count,0,id+' excluded from standard free totals');
+}
+for(const id of ['rime-monthly-50usd','elevenlabs-free-10k','agentscope-qwenpaw-free','tencent-adp-15k','replit-free-mode','azure-free-trial','vultr-trial-250']) {
+ near(math.quota(byId[id],now).total,0);
+ assert.equal(math.estimate(byId[id],now),null,id+' is not a text-token allowance');
+}
 // The broader catalogue must expose its verified, pending and scenario parts.
 // Student/paid/conditional offers stay outside it and unknown quotas aren't zero-value grants.
 const verifiedFixture={id:'verified',verify_status:'verified',token_quota:[{amount:1000000,unit:'tokens',period:'once'}]};
@@ -83,6 +113,10 @@ assert.deepEqual(catalogue.unquantified.map(d=>d.id),['unlimited']);
 near(math.catalogue([verifiedFixture,pendingFixture,byId['openrouter-free']],now,{requestTokens:8000,pointTokens:1000}).total.typical,1500);
 assert.equal(math.catalogue([{...pendingFixture,verify_status:'expired'},{...verifiedFixture,published:false}],now).total.typical,0);
 const actualCatalogue=math.catalogue(deals,now);
+for (const d of deals) assert.equal(typeof math.cell(d),'string',d.id);
+const providerGroups=new Map();
+for (const d of deals) {const key=d.group||d.provider;if(!providerGroups.has(key))providerGroups.set(key,[]);providerGroups.get(key).push(d);}
+for (const rows of providerGroups.values()) assert.equal(typeof math.cell(rows[0],math.sum(rows,now)),'string',rows[0].provider+' group rendering');
 near(actualCatalogue.verified.total,math.sum(deals.filter(d=>math.free(d)&&d.verify_status==='verified'&&d.gate!=='student'&&d.type!=='student'),now).total);
 near(actualCatalogue.total.typical,actualCatalogue.verified.total+actualCatalogue.pending.total+actualCatalogue.estimates.month.typical);
 assert.ok(actualCatalogue.total.low<=actualCatalogue.total.typical&&actualCatalogue.total.typical<=actualCatalogue.total.high);

@@ -377,7 +377,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261119-serv00">
+<link rel="stylesheet" href="assets/workbench.css?v=20261120-quotas-logos">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -539,7 +539,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <button class="sortbtn" data-sort="tokens">额度</button>
     <button class="sortbtn on" data-sort="fresh">核验</button>
     <span class="lbl">操作</span>
-    <button type="button" class="daily-estimates-open" data-open-daily-estimates>日额度估计</button>
+    <button type="button" class="daily-estimates-open" data-open-daily-estimates>额度估计</button>
   </div>
   <div id="cards" aria-busy="true">
     <div class="skel"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
@@ -772,10 +772,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/token-math.js?v=20261118-4"></script>
-<script src="assets/workbench.js?v=20261119-1"></script>
-<script src="assets/catalogue-ledger.js?v=20261118-4"></script>
-<script src="assets/daily-estimates.js?v=20261118-4"></script>
+<script src="assets/token-math.js?v=20261120-quotas-logos"></script>
+<script src="assets/workbench.js?v=20261120-quotas-logos"></script>
+<script src="assets/catalogue-ledger.js?v=20261120-quotas-logos"></script>
+<script src="assets/daily-estimates.js?v=20261120-quotas-logos"></script>
 <script>
 /* ============ 常量 ============ */
 /* 语言自动识别 v2.32.3：IP 国别优先(ipwho.is 免费无key HTTPS)+浏览器语言兜底+偏好记忆；CN→中文版，非 CN→英文版；失败静默 */
@@ -1644,7 +1644,7 @@ function sumRender(){
   </div><p class="calc-note">${m('金额按 DeepSeek Flash 空闲价、输入:输出=3:1、无缓存折购买力参考：¥1.75/百万或 $0.2625/百万。它不是原平台实际到账 Token。原始额度和模型公式可在各条「信源」查看。','Money is a DS Flash purchasing-power reference at off-peak, uncached 3:1 input/output: ¥1.75/M or $0.2625/M. It is not a token grant on the source platform. Open Sources for native quotas and formulas.')} <a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/" target="_blank" rel="noopener">${m('官方人民币价格','Official CNY pricing')}</a> · <a href="https://api-docs.deepseek.com/quick_start/pricing/" target="_blank" rel="noopener">${m('官方美元价格','Official USD pricing')}</a></p>
   <p class="calc-note">${m('待复核、付费订阅、申请制权益、随机奖励上限，以及无固定比例的积分/次数/算力不计入该总额。平台未公布额度时仍保留原单位。','Pending reviews, paid subscriptions, application-based offers, random upper bounds and credits/requests/compute without fixed conversion are excluded. Native units remain visible.')}</p>`;
   const dailyEstimate=TokenMath.estimateMany(DEALS);
-  document.getElementById('sumBody').insertAdjacentHTML('beforeend',`<button type="button" class="daily-estimate-entry" data-open-daily-estimates><b>${m('另看每日额度估计','Explore daily allowance estimates')}</b><span>${dailyEstimate.count} ${m('个独立池','independent pools')} · ${f(dailyEstimate.daily.low)}–${f(dailyEstimate.daily.high)} ${m('/天（含购买力参考）','/day, including value references')}</span><small>${m('可调整每次请求与未知积分的假设','Adjust request and unpriced-point assumptions')} ↗</small></button>`);
+  document.getElementById('sumBody').insertAdjacentHTML('beforeend',`<button type="button" class="daily-estimate-entry" data-open-daily-estimates><b>${m('另看额度情景估计','Explore allowance scenarios')}</b><span>${dailyEstimate.count} ${m('个独立池','independent pools')} · ${f(dailyEstimate.month.low)}–${f(dailyEstimate.month.high)} ${m('/首月（含购买力参考）','/first month, including value references')}</span><small>${m('可调整每次请求与未知积分的假设','Adjust request and unpriced-point assumptions')} ↗</small></button>`);
   sumCalc();sumChecklist();
 }
 function sumCalc(){

@@ -39,7 +39,7 @@
 - 内容：腾讯云 TokenHub 新人可领指定模型体验包，常见额度为每模型 100 万 Tokens
 - 规则：新客活动至 2026 年 12 月 31 日，语言模型额度有效期一年；其他模型按体验包条款
 - 链接：https://cloud.tencent.com/document/product/1823/130053
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## MiniMax 开放平台｜price_low
 - 内容：MiniMax-M3 标准短输入档五折后 ¥2.1/8.4，M3.1-Flash ¥1/4
@@ -51,7 +51,7 @@
 - 内容：Dify 可自托管，云端免费档含 200 消息积分
 - 规则：模型用量按模型扣积分，积分用完可接自己的 API Key
 - 链接：https://dify.ai
-- 状态：待复核（核验时间 2026-11-17T11:19:44Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 魔搭 ModelScope｜长期免费
 - 内容：API-Inference 每日 2000 次免费调用：当前 38 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
@@ -82,11 +82,11 @@
 - 链接：https://www.gongjiyun.com/activities/rfiuwpe9liory1kc25jcoxv2ntg
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
-## 硅基流动｜邀请奖励
-- 内容：通过 Cube Agent 官方合作邀请注册并实名，双方可各获 ¥16 硅基流动代金券
-- 规则：需满足活动资格和官方邀请条件，到账以平台为准
+## 硅基流动｜注册赠送
+- 内容：硅基流动实名认证后可领 ¥16 通用代金券；合资格邀请双方另各得 ¥16
+- 规则：完成实名认证后到活动中心领取认证专享券；邀请券须满足推荐官活动条件，本行只计算认证券一次。
 - 链接：https://siliconflow.cn
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 硅基流动｜限时活动
 - 内容：「推荐官」：本人实名认证领 16 元全平台通用券；邀好友注册+实名，双方各得 16 元券，人数不限（券 180 天有效，可用于 Pro/高速模型）
@@ -207,7 +207,7 @@
 - 内容：Copilot Free：每月 2,000 次代码补全，Copilot Chat 使用每月 AI Credits 额度并采用自动模型选择。
 - 规则：适用个人免费账户；聊天按 AI Credits 用量计量，不以固定聊天次数承诺。
 - 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
-- 状态：待复核（核验时间 2026-11-16T17:08:36Z）
+- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
 
 ## 302.AI｜price_low
 - 内容：0 月费纯按量计费聚合（400+ 模型），充多少用多少，不设最低消费
@@ -229,7 +229,7 @@
 - 内容：Cohere 试用密钥每月最多 1,000 次 API 调用
 - 规则：用于评估，分钟限流按模型和端点变化，生产密钥另计费
 - 链接：https://docs.cohere.com/docs/rate-limits
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
 
 ## Kimi 开放平台｜price_low
 - 内容：Kimi K3 系列重复请求前缀自动走缓存计费
@@ -258,7 +258,7 @@
 - 内容：阿里云百炼首次开通后，符合条件的北京地域模型通常各送 100 万 Tokens
 - 规则：须先实名，额度一般 90 天有效；可开「免费额度用完即停」避免超额计费
 - 链接：https://help.aliyun.com/zh/model-studio/new-free-quota
-- 状态：待复核（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
 
 ## 阿里云百炼｜免费模型
 - 内容：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）
@@ -279,10 +279,10 @@
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
 ## MiniMax｜套餐订阅
-- 内容：M Plan 含 MiniMax Code：官方 Credits 补充包 Starter $5=5,000 credits、Growth $25=25,000 credits；第三方整理档位 Plus ¥49/Max ¥119/Ultra ¥469（Ultra≈71亿token月容量+每日5条视频）
-- 规则：credits→token官方未公布换算；⚠️ Reddit单源警告$20档「17亿token」宣传有兼容端点计费陷阱（低置信）；套餐曾由Token Plan更名M Plan（价格与文本额度不变，官方文档）
-- 链接：https://www.minimax.io/m-plan
-- 状态：待复核（核验时间 2026-10-29T13:30:00Z）
+- 内容：MiniMax M Plan 积分补充包：¥30/4489、¥150/22460、¥500/74900，购买后1年有效
+- 规则：本行按最小档4489积分展示付费用量参考；套餐Go/Explore/Build与加量包分开，不计入免费合计。
+- 链接：https://www.minimax.cn/m-plan
+- 状态：已验证（核验时间 2026-11-19T17:33:07Z）
 
 ## Anthropic Claude｜套餐订阅
 - 内容：Claude 付费订阅有每 5 小时会话限额和每周限额
@@ -390,7 +390,7 @@
 - 内容：Qoder CN 体验版含 2 周 Pro 试用和 300 Credits
 - 规则：IDE、CLI、QoderWork 等使用同一 Credits 体系，试用额度以账户为准
 - 链接：https://developer.aliyun.com/article/1757180
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
 
 ## Qoder CN（阿里）｜套餐订阅
 - 内容：Qoder CN Pro ¥59/月含 2,000 Credits，Pro+ ¥169/月含 6,000 Credits
@@ -398,11 +398,11 @@
 - 链接：https://developer.aliyun.com/article/1757180
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
-## CodeBuddy（腾讯）｜免费模型
-- 内容：Kimi-K2.5 内置且可免费使用（高峰期排队）；体验版免费 500 Credits/月
-- 规则：⚠️ 底册「基础版永久免费」需修正：永久免费但限额500 Credits/月；官方 pricing 页 JS 未直核
+## CodeBuddy（腾讯）｜长期免费
+- 内容：CodeBuddy 体验版每月500 Credits，与 WorkBuddy 国内版同账号共享
+- 规则：每月发放，按模型与任务扣积分；不是Kimi专属免费API，不能与WorkBuddy月基础额重复计算。
 - 链接：https://www.codebuddy.cn
-- 状态：待复核（核验时间 2026-10-27T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## CodeGeeX（智谱系）｜长期免费
 - 内容：CodeGeeX IDE 插件免费，提供代码补全、解释和问答
@@ -670,10 +670,10 @@
 - 状态：待复核（核验时间 2026-10-29T14:20:00Z）
 
 ## Trae｜长期免费
-- 内容：TRAE 国内免费档每月 500 积分，支持 2 个并行云任务
-- 规则：无需订阅付费档，模型用量按各自积分规则扣减
+- 内容：TRAE 国内免费档：每月登录500积分，新注册1500积分，每日签到100积分
+- 规则：月赠当月有效；注册与签到奖励31天有效。签到需手动完成；免费版不含会员模型专属补贴。
 - 链接：https://trae.cn
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 小米 MiMo｜注册赠送
 - 内容：小米 MiMo 中国大陆新客首次实名领 ¥5 API 赠金，40 天有效
@@ -782,13 +782,13 @@
 - 内容：WorkBuddy 国际版 Pro $10/月，合资格首月 $7，每月共 2,000 Credits
 - 规则：基础 1,000 加额外 1,000 Credits，限时活动积分另外计算
 - 链接：https://www.workbuddy.ai/docs/workbuddy/pricing
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 华为云码道 CodeArts｜长期免费
 - 内容：华为码道体验版每月 500 积分，限时每日签到领 100 积分；个人新用户注册登录另送 4,000 积分
 - 规则：需登录开通个人体验版并每日领取；按当前活动页为准。旧1000万Token/日不与现行积分叠加；付费版150/200积分日赠不计入免费档。
 - 链接：https://devcloud.cn-north-4.huaweicloud.com/chat?source=dmzntgwlb&sourcead=dmzntgwlb1&invitecode=INV-k__zSpxu3WV2HbdUK2_opuvnaG2DiGI8M_Vkr_7OCWpuqIxshK6vUbOGkAqIk_06gznQQPE1zlzUcBg16rFfyi5USB425eDT3Xnj3ci6POjTvbND700dgJfpdOJ4wXoVJrBuE_7xl_eXY8DQ7Rz_vkKwrsVe0pGdJrhSYnKlU4e9vAy8
-- 状态：已验证（核验时间 2026-11-18T15:54:09Z）
+- 状态：已验证（核验时间 2026-11-19T17:35:36Z）
 
 ## 阿里云 云工开物｜学生通道
 - 内容：高校计划学生认证年领 300 元券（1 年有效，抵公共云产品）+百炼 300 元无门槛抵扣金（抵大模型推理/训练/部署，活动至 2027-03-31）；ECS 学生机 99 元/年；教师申请审核制公共云五折（原价≤40 万）
@@ -809,10 +809,10 @@
 - 状态：已验证（核验时间 2026-11-19T03:23:10Z）
 
 ## Trae 国内版｜coupon
-- 内容：码力裂变·新用户专享：经链接注册并登录 Trae 桌面端，一次性获得 3,000 积分（叠加 Free 档每月 500 积分基础额度）
-- 规则：新用户经邀请链接注册→登录桌面端→积分一次性到账；积分消耗规则与 Free 档一致（Seed-2.1-Turbo 5 折/DeepSeek 系闲时 5 折同享）
+- 内容：TRAE 邀请活动：合资格新用户经链接注册并登录桌面端，双方各500积分
+- 规则：2026-11-13至11-30 00:00（北京时间）；奖励31天有效，不重复加入免费档月赠与注册奖励。
 - 链接：https://www.trae.cn/events/code-fission/QPBS8AX98ZQM?utm_source=copy_link&utm_medium=code_fission
-- 状态：待复核（核验时间 2026-11-03T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 智云新疆 AI Store｜注册赠送
 - 内容：电信新疆 AI Store 注册送 200 积分券——官网明码标价 1 积分=100 万 Token（deepseek-v4-flash 档），**券折 2 亿 tokens**（GLM-5.2 档 2500 万/Kimi K3 档 1000 万）；模型市场 glm-5.2/kimi-k3/deepseek-v4-flash/minimax-m3/qwen3.7-max 等，另有在线体验免费
@@ -821,10 +821,10 @@
 - 状态：待复核（核验时间 2026-11-04T00:00:00Z）
 
 ## 美团 CatPaw｜注册赠送
-- 内容：美团首款 AI 编程 IDE「妙手 CatPaw」：首次登录送 1000 Credits 见面礼+每日登录领积分；LongCat-2.0 模型限时免费（1.6T 参数/1M 上下文）；桌面/移动/云端多端运行，云端任务持续跑
-- 规则：登录即得见面礼 Credits；「登录领积分」持续获取额度；积分消耗规则以站内为准
+- 内容：美团妙手个人版：首次登录送1000 Credits；LongCat-2.5限时免费
+- 规则：个人与企业体验版分开；本行只计算个人首次登录1000积分。其他每日活动数额以账号为准。
 - 链接：https://catpaw.meituan.com
-- 状态：待复核（核验时间 2026-11-04T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## Anthropic｜限时活动
 - 内容：Claude for OSS 开源维护者计划：合格开源维护者免费领 6 个月 Claude Max 20x（≈$1,200 价值），无需绑卡；名额 1 万先到先得
@@ -1085,16 +1085,16 @@
 - 状态：已验证（核验时间 2026-11-12T15:41:12Z）
 
 ## clixad｜长期免费
-- 内容：终端 coding agent 免费用（无 API key/无订阅/免信用卡）：**每天 5 款模型共享免费池**——GPT-5 Nano / Gemini 2.5 Flash-Lite / **Claude Haiku 5.5** / DeepSeek V4 Flash / Gemini 3.5 Flash-Lite；名义 6 万 credits/天，**beta 期翻倍 12 万/天**（≈600 万~1200 万 tokens/天），每天 UTC 0 点重置
-- 规则：GitHub 账号设备码登录即可（不填邮箱不复制 token）；模型调用走官方网关（其持有 OpenAI/Anthropic/Google key）；免费池用完可做问卷/任务墙赚 credits 或次日再来；注册奖励钱包（25,200 起+连续登录奖励）与免费池独立，免费池消耗不扣钱包
-- 链接：https://www.npmjs.com/package/clixad
-- 状态：待复核（核验时间 2026-11-12T17:44:58Z）
+- 内容：Clixad 免费模型共享每日60000 Credits用量上限；每天UTC 0点重置
+- 规则：个人限额与全站日预算先触顶者生效；不是向钱包发放60000积分。用完后继续调用会扣余额，或等次日重置。
+- 链接：https://clixad.io/
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## free-pi｜长期免费
-- 内容：终端 AI 编程 agent 免费用（GitHub 登录、免 Key 免订阅免信用卡）：**4 款模型限时 Free Unlimited 不扣每日额度**（Particle-1 / DeepSeek V4.1 Flash / GLM 5.3 Flash / DeepSeek V4 Flash 默认款，V4 Flash 约 100 万上下文）+ 17 款模型随时切换 + 每日重置额度（数额官方动态调整，/usage 查）；首次 GitHub 登录一次性 +10,000 credits
-- 规则：Node 22.15+，npx free-pi-cli@latest；⚠️ 重大前提：会话默认用于训练且可能共享/出售给第三方（条款原话 no opt-out，买 credits 也关不掉），广告方会收到近期对话摘录——官方明示不适合敏感/机密/个人数据；alpha 阶段不承诺额度连续；单账号单会话
+- 内容：free-pi：免费模型日额度动态调整；合资格GitHub账号首次登录送5000 Credits
+- 规则：GitHub账号须满30天，首次5000积分只领一次；次日请求另2000、第7–9日请求另1000，属于额外任务，不计本行基础额。对话可能用于训练，当前无法退出。
 - 链接：https://freepi.ai/
-- 状态：已验证（核验时间 2026-11-16T04:31:43Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 讯飞 Loomy｜注册赠送
 - 内容：讯飞 Loomy 桌面 AI 办公助手：新用户首日最高领 **3 万积分**（专属链接注册+福利码 WNBVDM 兑 1 万 + 注册送 5 千 + 新手任务 1 万，均永久不过期）+ **每日登录送 5,000 积分**（当天过期不累积）+ 有不消耗积分的 Flash 系内置模型
@@ -1139,10 +1139,10 @@
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
 
 ## 华为果办 OfficeAce｜长期活动
-- 内容：华为果办 OfficeAce 免费版每天登录送 **100 积分**（果办预置模型如 GLM-5.2，用于站内模型推理）
-- 规则：个人体验版登录并使用客户端或微信小程序；每天赠送
-- 链接：https://officeace.cloud
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 内容：华为果办OfficeAce体验版：注册300积分，每日登录50积分（当日有效）
+- 规则：官方150积分/天是高档付费套餐上限；免费体验版50/天。积分同时消耗于模型、解析和工具，图片/文档次数不另折文本Token。
+- 链接：https://activity.huaweicloud.com/officeace.html
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## 华为码道｜长期活动
 - 内容：华为码道 Skill 创新赛线索：参赛活动曾列每日 1000 积分，待复核活动资格与有效期
@@ -1196,7 +1196,7 @@
 - 内容：腾讯云 ADP 体验版每月送 **15,000 PU**（Auto 模型，不含自定义模型与专属算力）
 - 规则：每月重置，未用完不累计
 - 链接：https://cloud.tencent.com
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## ElevenLabs｜长期免费
 - 内容：ElevenLabs 免费档每月含 10,000 credits，可体验语音生成等功能。
@@ -1254,9 +1254,9 @@
 
 ## Atlassian Rovo Dev｜长期免费
 - 内容：Rovo Dev Free：每个已开通的 Jira 站点，每位用户每月 350 credits。
-- 规则：需加入已经启用 Rovo Dev Free 的 Jira 站点；用完后暂停，至下一计费周期恢复。
+- 规则：需加入已启用Rovo Dev Free的Jira付费站点；月额度用完暂停，下周期恢复。
 - 链接：https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/
-- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
 
 ## Lightning AI Studio｜长期免费
 - 内容：免费账户可运行 1 个基础 CPU Studio；官方基础规格为 4 vCPU / 16 GB RAM。

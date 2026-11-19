@@ -209,6 +209,7 @@ body.side-folded .topbar{padding-left:26px}
   min-height: 0;
   object-fit: contain;
 }
+.provider-icon > * { grid-area: 1 / 1; }
 .provider-initial {
   display: grid;
   place-items: center;
@@ -221,7 +222,7 @@ body.side-folded .topbar{padding-left:26px}
   font-weight: 750;
 }
 .provider-initial::before { content: attr(data-initial); }
-.provider-icon img + .provider-initial { display: none; }
+.provider-icon img[data-loaded="true"] + .provider-initial { display: none; }
 .provider-icon--row {
   --logo-size:34px;
   position:absolute;inset:1px auto auto 0;padding:5px;border:1px solid var(--border);border-radius:8px;background:var(--card);

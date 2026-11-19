@@ -34,7 +34,7 @@ def quota(deal, today=None):
             value = row["amount"]*(1 if row["unit"] == "tokens" else row.get("tokens_per_unit", 0))/10000*(row.get("equivalent_factor") or 1)
         period = row.get("period", "once")
         if period == "weekly":
-            result["monthly"] += value*30/7
+            result["monthly"] += value*days/7
         else:
             result[period] += value
     result["dailyMonth"] = result["daily"]*days
@@ -54,14 +54,13 @@ def free(deal):
 ESTIMATE_DEFAULTS = {"requestTokens": 4000, "pointTokens": 1000}
 
 
-def estimate(deal, today=None, settings=None):
-    e = deal.get("daily_estimate")
+def estimate_quota(deal, e, today=None, settings=None):
     rows = entries(deal)
     if not e or e["quota_index"] >= len(rows):
         return None
     q = rows[e["quota_index"]]
-    # Estimates apply only to daily native allowances with no fixed token conversion.
-    if q["period"] != "daily" or q["unit"] == "tokens" or q.get("tokens_per_unit") or q["unit"] in RATES or deal.get("verify_status") == "expired":
+    # Native tokens and fixed conversions are never counted again as scenarios.
+    if q["period"] not in ("once", "daily", "weekly", "monthly") or q["unit"] == "tokens" or q.get("tokens_per_unit") or q["unit"] in RATES or deal.get("verify_status") == "expired":
         return None
     today = today or datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date()
     days = min(30, deal.get("quota_days") or 30)
@@ -74,7 +73,7 @@ def estimate(deal, today=None, settings=None):
     settings = {**ESTIMATE_DEFAULTS, **(settings or {})}
     method = e["method"]
     if method == "requests":
-        value = settings["requestTokens"]
+        value = settings["requestTokens"]*(e.get("scale") or 1)
         factors = dict(low=value/4, typical=value, high=value*2)
     elif method == "scenario":
         value = settings["pointTokens"]*(e.get("scale") or 1)
@@ -83,6 +82,8 @@ def estimate(deal, today=None, settings=None):
         factors = {key:e["unit_value"][key]/RATES[e["currency"]]*1e6 for key in ("low", "typical", "high")}
     elif method == "neurons":
         factors = {key:1e6/(row["input"]*.75+row["output"]*.25) for key,row in e["models"].items()}
+    elif method == "model_examples":
+        factors = {key:(row["input_tokens"]+row["output_tokens"])/row["credits"] for key,row in e["models"].items()}
     else:
         return None
     quantities = e.get("quantity_range") or dict.fromkeys(("low", "typical", "high"), q["amount"])
@@ -93,24 +94,43 @@ def estimate(deal, today=None, settings=None):
             month_units += max(0,min(step["days"],days-before))*step["amount"]
             before += step["days"]
     cap = e.get("token_cap_daily") or float("inf")
-    daily = {key:min(cap,quantities[key]*factors[key])/10000 for key in factors}
-    month = {key:daily[key]*days if month_units is None else min(cap*days,month_units*factors[key])/10000 for key in factors}
-    return dict(daily=daily,month=month,days=days,pool=e.get("pool") or deal["id"],priority=e.get("priority") or 0)
+    period_tokens = {key:min(cap,quantities[key]*factors[key])/10000 for key in factors}
+    cycles = days if q["period"] == "daily" else days/7 if q["period"] == "weekly" else 1
+    daily = {key:period_tokens[key] if q["period"] == "daily" else 0 for key in factors}
+    month = {key:period_tokens[key]*cycles if month_units is None else min(cap*days,month_units*factors[key])/10000 for key in factors}
+    return dict(daily=daily,month=month,periodTokens=period_tokens,period=q["period"],days=days,pool=e.get("pool") or f"{deal['id']}:{e['quota_index']}",priority=e.get("priority") or 0,basis=e)
+
+
+def estimates(deal, today=None, settings=None):
+    definitions = deal.get("quota_estimates", [deal["daily_estimate"]] if deal.get("daily_estimate") else [])
+    return [value for e in definitions if (value := estimate_quota(deal,e,today,settings))]
+
+
+def estimate(deal, today=None, settings=None):
+    rows = estimates(deal,today,settings)
+    if not rows:
+        return None
+    if len(rows) == 1:
+        return rows[0]
+    return dict(rows=rows,period="mixed",days=rows[0]["days"],**{period:{key:sum(row[period][key] for row in rows) for key in ("low","typical","high")} for period in ("daily","month")})
 
 
 def estimate_many(deals, today=None, settings=None):
     pools = {}
     for deal in deals:
-        value = estimate(deal,today,settings) if free(deal) else None
-        if value and (value["pool"] not in pools or pools[value["pool"]]["priority"] < value["priority"]):
-            pools[value["pool"]] = value
+        for value in estimates(deal,today,settings) if free(deal) else []:
+            if value["pool"] not in pools or pools[value["pool"]]["priority"] < value["priority"]:
+                pools[value["pool"]] = value
     return {**{period:{key:sum(v[period][key] for v in pools.values()) for key in ("low", "typical", "high")} for period in ("daily", "month")}, "count":len(pools)}
 
 
-def estimate_assumption(deal):
-    e = deal.get("daily_estimate", {})
+def estimate_assumption(deal, e=None):
+    if e is None:
+        definitions = deal.get("quota_estimates", [deal["daily_estimate"]] if deal.get("daily_estimate") else [])
+        return "；".join(estimate_assumption(deal,item) for item in definitions)
     if e.get("method") == "requests":
-        return "默认每次请求含输入+输出 1000/4000/8000 Tokens。"
+        scale = e.get("scale") or 1
+        return f"默认每次请求含输入+输出 {1000*scale:g}/{4000*scale:g}/{8000*scale:g} Tokens。"
     if e.get("method") == "scenario":
         scale = e.get("scale") or 1
         return f"示意假设：每积分 {500*scale:g}/{1000*scale:g}/{2000*scale:g} Tokens，非官方兑换率。"
@@ -119,4 +139,6 @@ def estimate_assumption(deal):
         return f"按积分售价 {values['low']:.6g}/{values['typical']:.6g}/{values['high']:.6g} {e['currency']}/积分，除以 DS Flash {RATES[e['currency']]} {e['currency']}/百万估购买力，不代表实际 Token。"
     if e.get("method") == "neurons":
         return "按公开模型 Neurons 计价、输入:输出=3:1、无缓存估算，模型选择改变可用量。"
+    if e.get("method") == "model_examples":
+        return "按官方模型示例的输入+输出 Tokens 与每轮 Credits 推算，非固定 Token 赠额；实际随模型、上下文及缓存变化。"
     return ""

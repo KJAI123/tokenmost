@@ -333,7 +333,7 @@
    {
     "name": "TraeCode",
     "url": "https://trae.cn",
-    "desc": "字节 Trae 编程国内站（Free 500 积分/月）",
+    "desc": "免费档月500积分、新客1500、日签到100",
     "hot": false
    },
    {
@@ -345,13 +345,13 @@
    {
     "name": "CodeBuddy",
     "url": "https://copilot.tencent.com",
-    "desc": "腾讯 CodeBuddy（Kimi-K2.5 免费+500 Credits/月）",
+    "desc": "体验版每月500积分，与WorkBuddy国内版共享",
     "hot": false
    },
    {
     "name": "MonkeyCode",
     "url": "https://monkeycode-ai.com",
-    "desc": "长亭开源 AI 编程平台，免费档每日千万级 token+注册送 9 亿"
+    "desc": "新客5000积分；基础用户免费日赠已取消"
    },
    {
     "name": "OpenClaw",
@@ -360,10 +360,11 @@
     "hot": false
    },
    {
-    "name": "AutoClaw",
-    "url": "https://autoclaw.ai",
-    "desc": "自动化 Claw agent，开源可自部署",
-    "hot": false
+    "name": "智谱 AutoClaw",
+    "url": "https://autoclaw.zhipuai.cn/",
+    "desc": "智谱桌面 Agent，积分及端内 Token 活动",
+    "hot": false,
+    "free": "本周登录赠额至 11/22"
    },
    {
     "name": "腾讯 WorkBuddy 国内版",
@@ -426,7 +427,7 @@
    {
     "name": "华为云码道 CodeArts",
     "url": "https://codearts.huaweicloud.com",
-    "desc": "华为云 AI 编程助手，每日登录领 1000 万 Token"
+    "desc": "华为云 AI 编程助手，日100/月500积分，新客4000"
    },
    {
     "name": "美团 CatPaw",
@@ -436,7 +437,7 @@
    {
     "name": "Atlassian Rovo Dev",
     "url": "https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/",
-    "desc": "Jira 站点的编程助手",
+    "desc": "已启用Rovo Dev的Jira付费站点编程助手",
     "free": "每人每站点 350 credits／月"
    },
    {
