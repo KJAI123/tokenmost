@@ -662,3 +662,16 @@
 - 稿件 j2 零损耗保留；9223 已恢复运行（留 juejin 首页标签）
 - **老板侧解锁路径（最快）**：用非默认 profile 起一个带 `--remote-debugging-port=9222` 的 Chrome，登录一次掘金，下轮秒迁
 - **管线加固项**：批量操作前置检查=「9223 存活+目标平台登录态验证+cookie 迁移」，三步全过才开跑
+
+## 🔗 GitHub 第三轮：新 3 发（含 6604★ 大仓）+ 维护者反馈处理（2026-11-21）
+
+**新 PR（总盘 14 发 = 1 merged + 13 open）**：
+| 仓 | 星级 | PR | 亮点 |
+|---|---|---|---|
+| mahseema/awesome-ai-tools | **6604★** | #2827 | 超大目录仓 Other 节收录——迄今最高权重外链位 |
+| hilmanski/freeStuffDev | 1976★ | #2333 | 按其数据规范新增独立 md（逐条预答 Rules：100% 免费非试用/非框架特定/非文档链接） |
+| best-of-ai/ai-directories | 902★ | #527 | 「目录的目录」，T 节字母序插入（初插不合序已二推修正） |
+
+- 筛选纪律：17 候选提 3（弃选率 82%）；couponswift 仓 CONTRIBUTING 明文禁 coupon sites 直接排除
+- **维护者反馈处理**：#171（awesome-ai-coding）maintainer 11-14 留 CHANGES_REQUESTED「要英文版链接」——已回复 tokenmost.com/en.html（验证 200）并主动提出可改列表链接为英文版（下轮跟进其反应）
+- 教训入册：轮查必须拉 /pulls/N/reviews（CHANGES_REQUESTED 不计入 comments 数，上轮漏检）
