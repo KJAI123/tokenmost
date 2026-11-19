@@ -46,3 +46,25 @@
 - 连接：`rpa_browser.CDP_HTTP='http://127.0.0.1:9222'` 运行时覆写后再 `from rpa_browser import Tab`（tools 文件默认 9223 是别的任务线的，勿改文件）。
 - 逐行输入 ProseMirror + Enter(vk13) 的既有 SOP 完全复用，本轮 13 段无粘连。
 - 发布前固定三件套：①终检（links==0 + 植入词扫描 + 字数 400-600）②挂 toast/XHR 观察器 ③elementFromPoint 预检发布按钮命中。
+
+---
+
+# 11-21 第一篇《免费域名怎么搞：3 个正规渠道+2 个坑》— 登录态丢失，未发布
+
+## 结果
+
+**未发布（登录阻断）。** 目标稿件 `data-research/seo/omqq-daily/o3-free-domain.md`（纯文本零植入干货，建议发布窗口 11-21 上午 10:00-12:00）。9223 无头浏览器重启后 om.qq.com 与微信会话双双失效，卡在扫码环节，按预案跳过。今日额度未消耗（0 篇提交），稿件未进任何平台，未做 git。
+
+## 过程与判定依据
+
+1. 9223 CDP 存活（Chrome 158 无头），但无 om.qq.com 标签，`Tab.connect(new_url='https://om.qq.com/main')` 落地 `om.qq.com/userAuth/index`「登录-腾讯内容开放平台」——登录态丢失，符合预期。
+2. 按 SOP 走恢复：勾协议（`SPAN.lv2-agreement-check-icon` @938,564，点击后 `input.lv2-agreement-checkbox.checked=true`）→ 点微信登录（`SPAN.lv2-login-way-text` @1050,329）→ 弹出「微信登录」二维码弹窗（iframe `om.qq.com/mindex/userAuth/WxLogin?source=login2`）。
+3. 轮询 60 秒无自动跳回（免扫码恢复未发生）。**判定微信会话失效的铁证**：浏览器级 `Storage.getCookies` 全量 217 条，过滤 `qq.com/weixin/wechat` 域 = **0 条**（9223 重启把持久化会话清了）。二维码在等手机扫码，此环节 RPA 无法替代，需老板扫码。
+4. 截图 `/tmp/om3-01-login.png`、`/tmp/om3-02-qr-waiting.png`（字节数相同=同一张码仍在等待；注意截图会过期，恢复时重新走一遍勾协议→微信登录出新码即可）。
+
+## 恢复后接续清单（给下一轮执行者）
+
+- 恢复入口：om.qq.com → 勾协议 → 微信登录 → 老板用手机微信扫码确认。
+- 稿件就绪：《免费域名怎么搞：3 个正规渠道+2 个坑》，标题 18 字（5-64 合规），正文 13 行纯文本约 550 字，无链接无 Markdown 无植入词（稿件头注释已注明「纯干货零植入 v4」）。直接按 SOP 逐行进 ProseMirror。
+- 发布四步不变：标题 contenteditable span → 正文逐行+Enter → 自主声明（选「该文章由AI辅助创作」，弹窗 scrollTop 到底 + elementFromPoint 预检命中 BUTTON 再点）→ 发布后内容管理列表验「加工中/全平台分发」。
+- 发布窗口：稿件建议 11-21 上午 10:00-12:00；若实际恢复晚于窗口，当天上午补发即可，日发 1-2 篇安全线照旧。
