@@ -723,3 +723,10 @@
 
 **执行条件**：老板 +86 手机号在线收码（60s-5min 时效）+ 邮箱地址（kjai123com 那个的完整地址待老板提供）
 **建议顺序**：思否→开源中国→51CTO→腾讯云→阿里云→博客园
+
+## 📌 思否 GitHub 旁路卡点（2026-11-21）
+
+- 流程已打通：思否登录页 → GitHub OAuth 新标签 → github.com/login
+- **卡点**：KJAI123 账号密码登录被禁（「This account does not support password sign-in」）——账号改用 passkey/2FA/SSO 登录，无头浏览器无法完成
+- **老板侧两条路**：①告知 GitHub 登录方式（passkey 需要本机认证，扫码/2FA 可给码）②直接给手机号收思否短信码走手机注册（3 字段最简）
+- 邮箱已确认：**kjai123com@outlook.com**（Mail.app Exchange 账号，AppleScript 可编程收验证邮件——后续注册验证全自动）
