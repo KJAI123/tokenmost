@@ -392,18 +392,18 @@
       <description>长期低价 · 规则：倍率作用于套餐 Credits，费用随模型、输入输出和缓存变化（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>火山方舟：火山方舟协作计划，授权后按合格推理量次日返还资源包</title>
+      <title>火山方舟：方舟协作奖励：授权合格 API 用量次日返资源包，每模型每日采集上限 500 万 Tokens</title>
       <link>https://www.volcengine.com/docs/ark/collaboration-reward-program</link>
       <guid isPermaLink="false">deep-volc-collab-reward</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：每模型每日最多 500 万 Tokens，资源包有效期 30 天。仅支持指定模型和方式，须实名并授权推理数据（优惠以官方页面为准）</description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：需实名、开通模型并关闭安心体验模式、授权指定接入点数据。按实际合格采集量返包，通常30天有效；未获抵扣部分按量计费。参与模型以活动页为准，Seed-2.1-pro已退出。（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>火山方舟：火山方舟新用户可用模型免费推理额度，各模型分别计算</title>
+      <title>火山方舟：方舟新用户可获模型免费推理试用额度，各模型分别计算，数额以主账号控制台为准</title>
       <link>https://docs.volcengine.com/docs/ark/free-inference-quota</link>
       <guid isPermaLink="false">deep-volc-free-quota</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：主账号与子账号共享，数额看控制台；开启仅用免费额度可防超额（优惠以官方页面为准）</description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：主账号及子账号共享，同基础模型与精调模型共享；仅抵扣按Token后付费的在线推理，不含批量推理、插件/知识库或缓存存储费用。符合条件可开安心体验模式，仅耗赠额避免额外计费。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>火山方舟：火山方舟 Coding Plan 提供 Lite 和 Pro 套餐，支持多个编程工具</title>
@@ -411,13 +411,6 @@
       <guid isPermaLink="false">deep-volc-coding-plan</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
       <description>套餐订阅 · 规则：同一套餐的额度在适用工具间共享，价格和实时限额看控制台（优惠以官方页面为准）</description>
-    </item>
-    <item>
-      <title>火山方舟：官方文章口径：Doubao-Seed-2.1-pro 每日500万tokens免费、每日自动申领、所有注册用户无捆绑、定</title>
-      <link>https://www.volcengine.com/article/2605938</link>
-      <guid isPermaLink="false">deep-volc-21pro-daily</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：⚠️ 与协作奖励计划文档矛盾：Seed-2.1-pro 已于2026-10-08退出每日奖励名单——「每日500万」实为协作奖励计划口径（数据授权换取），2.1-pro已出局（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>讯飞星辰 MaaS：讯飞星辰 Token Plan 标准档原价 ¥200/月，内含 2 万积分</title>

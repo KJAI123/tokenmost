@@ -23,9 +23,6 @@
 - **待复核** `deep-bailian-limited-free`（阿里云百炼）：现行官方表未找到原条目所列全部模型和区域的限免口径，逐模型查官方活动与价格。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-minimax-mplan`（MiniMax）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-copilot-ai-credits`（GitHub Copilot）：源 copilot-plans 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-volc-collab-reward`（火山方舟）：源 ark-collab 页面于 2026-11-17 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-volc-free-quota`（火山方舟）：源 ark-freequota 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-volc-21pro-daily`（火山方舟）：公开文章的活动口径与协作计划文档无法相互确认，需以当前模型活动页核对。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xunfei-coding-plan`（讯飞星辰 MaaS）：源 xfyun-coding-plan 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xunfei-39-crash`（讯飞星辰 MaaS）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-trae-intl-pricing`（Trae 国际版）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
