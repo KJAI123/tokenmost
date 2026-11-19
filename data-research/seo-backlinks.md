@@ -523,3 +523,17 @@
 - 内容合规终检：ProseMirror 链接数=0、植入词全零命中；自主声明如实勾「AI 辅助创作」；5 家事实全有采集数据依据
 - 新踩 2 坑入册：①视口外按钮点击落空（先 scrollIntoView）②自主声明弹窗确认按钮藏滚动区被遮罩挡（scrollTop 到底+elementFromPoint 预检）
 - 今日企鹅号 2 篇到安全线上限，停笔；SOP 完整入 omqq-agent-log2.md
+
+## 🔗 GitHub 外链第二轮：新提交 3 发（2026-11-20 晚）
+
+**新 PR（全部 open+mergeable，总盘 11 发：1 merged + 10 open）**：
+| 仓 | 星级 | PR | 落点价值 |
+|---|---|---|---|
+| 12britz/awesome-free-models | **2664★** | #98 | 🏆 Resources & Leaderboards 节（FreeLLM.net 同位=最高权重外链位） |
+| ShaikhWarsi/free-ai-tools | 1107★ | #136 | Related Resources 节 |
+| AIPMAndy/FreeToken | 173★ | #8 | CATALOG.md 开源资源表（定位双胞胎仓，收录意愿最高） |
+
+- 纪律执行：6 组关键词命中 16 候选 → 逐仓读 README → 提 3 弃 13；codertesla/ai-coding-deals（143★）CONTRIBUTING 明文 Out of Scope「比价聚合站」严守不硬塞
+- 三发锚文本/句式/body 全部独立改写，body 含 2026-11-20 核验日期+维护者披露
+- **在途轮查**：8 个 PR 全部存活（0 merged/0 closed/0 评论）；唯一动态=awesome-ai-coding#171 收到 github-actions Spam Guard 提示（账号年龄 advisory 非拒绝）——下轮重点观察
+- 台账新建 github-backlinks-log.md（轮查表+16 候选判定表+提交表）
