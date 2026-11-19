@@ -4,13 +4,16 @@
 处理方式：改 deals.json 对应条目（核实→更新 value→verify_status:"verified"；不实→归档并保留证据）。
 
 - **待复核** `zhipu-signup`（智谱 BigModel）：源 zhipu-promotion 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `qianfan-signup`（文心千帆）：源 qianfan-quota 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deepseek-price`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deepseek-offpeak`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `kimi-voucher`（Kimi 开放平台）：源 kimi-trial 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `qianfan-signup`（文心千帆）：源 qianfan-quota 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xinghuo-signup`（讯飞星火）：源 xfyun-spark-docs 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `dify-selfhost`（Dify 自部署）：源 dify-pricing 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-11-17 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-ai-studio`（Google AI Studio）：源 gemini-pricing 页面于 2026-11-17 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `google-student`（Google AI Studio）：官网按国家和账号展示资格，未核实统一的 12 月 31 日截止及可重复领取。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `google-student`（Google AI Studio）：源 gemini-students 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `groq-free`（Groq）：2026-11-18 官方公开表主要展示 Developer 档；免费账号每日 1000 次仍需账号 Limits 确认。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `sambanova-free`（SambaNova）：源 sambanova-limits 页面于 2026-11-15 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `gpushare-nov`（恒源云）：文档写 11 月但未注明年份，当前活动页未提供可核实条款。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -37,6 +40,7 @@
 - **待复核** `deep-xai-grok-code-status-r3`（xAI（Grok））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-gemini-cli-retired-r4`（Google Gemini CLI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-qoder-daily-credits`（Qoder 国际版）：活动入口需登录，官方账号与订阅页未说明每日 100 Credits。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-intern-inkpoint`（书生·端砚（上海AI实验室））：现行官方页未确认月赠10墨点；旧免费模型/价格已变化，且文档计费单位与公式示例存在冲突，需账户赠额及实际扣点记录补证。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-together-nofree-r5`（Together AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-kimi-k25-offline-r6`（Kimi（月之暗面））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xfyun-spark-freepack-r6`（讯飞开放平台）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -57,9 +61,10 @@
 - **待复核** `baseten-starter-30`（Baseten）：当前官方价格页未确认注册即送 $30，需核对 Starter 账户新客权益。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xiaomi-mimo-code`（小米 MiMo Code）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `trae-code-fission`（Trae 国内版）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `zhiyun-xj-aistore`（智云新疆 AI Store）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `claude-for-oss`（Anthropic）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `opendesign-reset-card-invite`（OpenDesign Cloud）：源 opendesign-go-referral 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `codearts-skill-1000`（华为码道）：Skill赛1000积分来自聚合线索，当前常规体验版官方原文为100积分/日；需单独核对参赛资格及活动是否仍有效。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-antigravity-cli-free`（Google Antigravity CLI）：源 antigravity-cli-plans 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 51 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
-- **待复核** `deep-intern-inkpoint`（书生·端砚）：2026-11-19官方页面已可读，现行月赠数量仍需账户确认；旧零价模型口径失效，计费单位与公式示例存在冲突，暂停固定Token折算。
+- **源失联** `linuxdo-rss`：连续 52 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
