@@ -45,19 +45,19 @@
 - 内容：MiniMax-M3 标准短输入档五折后 ¥2.1/8.4，M3.1-Flash ¥1/4
 - 规则：价格为每百万输入/输出 Tokens，M3 长输入和加速档另计
 - 链接：https://platform.minimax.cn/docs/pricing/overview.md
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## Dify 自部署｜长期免费
 - 内容：Dify 可自托管，云端免费档含 200 消息积分
 - 规则：模型用量按模型扣积分，积分用完可接自己的 API Key
 - 链接：https://dify.ai
-- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## 魔搭 ModelScope｜长期免费
 - 内容：API-Inference 每日 2000 次免费调用：当前 38 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
@@ -69,12 +69,12 @@
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## 共绩算力｜hardware_bundle
 - 内容：共绩算力个人开发者计划提供 ¥50 体验积分，可申请最高 ¥1,500 的算力支持
@@ -86,7 +86,7 @@
 - 内容：硅基流动实名认证后可领 ¥16 通用代金券；合资格邀请双方另各得 ¥16
 - 规则：完成实名认证后到活动中心领取认证专享券；邀请券须满足推荐官活动条件，本行只计算认证券一次。
 - 链接：https://siliconflow.cn
-- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
+- 状态：待复核（核验时间 2026-11-19T17:32:04Z）
 
 ## 硅基流动｜限时活动
 - 内容：「推荐官」：本人实名认证领 16 元全平台通用券；邀好友注册+实名，双方各得 16 元券，人数不限（券 180 天有效，可用于 Pro/高速模型）
@@ -94,10 +94,10 @@
 - 状态：已验证（核验时间 2026-11-19T03:43:07Z）
 
 ## OpenRouter｜长期免费
-- 内容：:free 模型 14 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、thinkingmachines/inkling-2-small:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
+- 内容：:free 模型 13 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、liquid/lfm-3-1.7b:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## NVIDIA NIM｜注册赠送
 - 内容：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可
@@ -114,12 +114,12 @@
 - 内容：AIHubMix 有标注 Free 的模型，无需信用卡
 - 规则：免费模型名单会变，调用前查看模型目录和限流
 - 链接：https://aihubmix.com/pricing
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## Google AI Studio｜长期免费
 - 内容：Gemini API 有指定模型免费档
@@ -137,13 +137,13 @@
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## Azure for Students｜学生通道
 - 内容：Azure 学生计划含 $100 额度，有效期 12 个月，无需绑卡
 - 规则：面向符合资格的全日制高校学生，仍符合资格可续期；个别服务另审
 - 链接：https://azure.microsoft.com/en-us/free/students
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
@@ -161,7 +161,7 @@
 - 内容：Claude API 官方定价说明，新用户可获得 API 测试额度
 - 规则：公开条款未注明统一金额，实际到账以 Console 为准
 - 链接：https://platform.claude.com/docs/en/about-claude/pricing
-- 状态：已验证（核验时间 2026-11-19T03:43:07Z）
+- 状态：已验证（核验时间 2026-11-19T19:05:21Z）
 
 ## 智谱 BigModel｜长期免费
 - 内容：BigModel 定价表列出 8 款免费模型，覆盖文本、视觉、图像与视频生成
@@ -372,7 +372,7 @@
 - 内容：Coding Plan 五小时／每周积分：Lite 2,000／10,000，Pro 12,000／60,000，Max 28,000／140,000
 - 规则：两个周期上限同时生效。工作日 14:00–18:00（北京时间）为高峰，其他时段模型积分按 50% 抵扣。仅限支持的工具。
 - 链接：https://docs.bigmodel.cn/cn/coding-plan/overview
-- 状态：已验证（核验时间 2026-11-17T15:19:14Z）
+- 状态：待复核（核验时间 2026-11-17T15:19:14Z）
 
 ## Trae 国内版｜套餐订阅
 - 内容：TRAE 国内付费档 Lite/Pro/Pro+/Ultra 标价 ¥49/99/239/699 每月
@@ -1238,7 +1238,7 @@
 - 内容：Workers AI 每天 10,000 Neurons 免费，按不同模型的计算消耗扣减。
 - 规则：每天 UTC 00:00 重置；免费档超额报错；部分模型要求付费账号或预付额度。
 - 链接：https://developers.cloudflare.com/workers-ai/
-- 状态：已验证（核验时间 2026-11-16T17:08:36Z）
+- 状态：待复核（核验时间 2026-11-16T17:08:36Z）
 
 ## Hugging Face Inference｜长期免费
 - 内容：Hugging Face 免费账户已无每月推理赠金；PRO 及团队每席月含 $2 计算额度
@@ -1268,7 +1268,7 @@
 - 内容：Rime STT 语音转文字限免至 11 月 19 日
 - 规则：各档均可试用，仍受并发限制，11 月 20 日起按语音时长计费
 - 链接：https://www.rime.ai/pricing
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：待复核（核验时间 2026-11-16T17:58:50Z）
 
 ## 七牛云｜免费模型
 - 内容：七牛云提供 Kimi-K3 Free 体验模型
