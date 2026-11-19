@@ -23,6 +23,7 @@ import json
 import os
 import subprocess
 import time
+import urllib.parse
 import urllib.request
 import websocket
 
@@ -54,7 +55,12 @@ class Tab(object):
                 if t.get("type") != "page":
                     continue
                 u = t.get("url", "")
-                if new_domain.split(".")[-2:] and any(d in u for d in [new_domain] + new_domain.split(".")[-2:]):
+                # 同域判定：完整域名 host 相等（教训：后两段短码 'com'/'qq' 会误匹配 om.qq.com↔jianshu.com）
+                try:
+                    same = urllib.parse.urlparse(u).hostname == new_domain
+                except Exception:
+                    same = False
+                if same:
                     reuse = t
                     break
             if reuse:
