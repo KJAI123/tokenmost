@@ -45,7 +45,6 @@
 - **待复核** `deep-xfyun-spark-freepack-r6`（讯飞开放平台）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-grok-codefast-r6`（xAI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `cline-pass-deepseek`（Cline）：当前 Cline 官方定价页未列该 $9.99 套餐，具体订阅资格需核对。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `doubao-daily-quota`（豆包）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zhipu-pinhaomo`（智谱 BigModel）：源 zhipu-promotion 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `workbuddy-free`（腾讯 WorkBuddy）：公开产品页未确认公测赠送和当前免费档规则，需查国内站结算说明。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `fireworks-payg`（Fireworks AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -66,3 +65,4 @@
 - **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-antigravity-cli-free`（Google Antigravity CLI）：源 antigravity-cli-plans 页面于 2026-11-18 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **源失联** `linuxdo-rss`：连续 51 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **待复核** `deep-intern-inkpoint`（书生·端砚）：2026-11-19官方页面已可读，现行月赠数量仍需账户确认；旧零价模型口径失效，计费单位与公式示例存在冲突，暂停固定Token折算。

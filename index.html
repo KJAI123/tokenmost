@@ -837,7 +837,7 @@ function getClaimed(){try{return new Set(JSON.parse(localStorage.getItem(CKEY)||
 function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=>g.sites).find(s=>s.name===d.provider||s.name.split(/[\s/]/)[0]===k)}
 /* 聚合行主操作按钮：组内任一条目带折扣码/折扣链接即亮金色（v2.25 修 Qoder 挂不上的根因——原先只看组内最优条目） */
 function aggGold(g){
-  const coupon=Workbench.couponLink(g.best);
+  const coupon=Workbench.couponLink(g.best)||g.ds.map(d=>Workbench.couponLink(d)).find(Boolean);
   if(coupon)return coupon;
   return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">领取</a>';
 }

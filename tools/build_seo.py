@@ -17,7 +17,7 @@ GDIR = ROOT / "guides"
 LAYER = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", "compute": "算力平台",
          "reseller": "Token 中间商", "official_global": "大模型官方（海外）", "maas": "MaaS 平台（云上托管）"}
 TYPE = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "limited_promo": "限时活动",
-        "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励", "pricing_plan": "套餐订阅"}
+        "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励", "pricing_plan": "套餐订阅", "info": "情报"}
 
 TPL = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
