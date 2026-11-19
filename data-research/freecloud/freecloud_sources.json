@@ -90,7 +90,7 @@
       "name": "Serv00（波兰免费主机·白嫖圈热门）",
       "url": "https://serv00.com/",
       "patterns": ["free", "darmowy", "WWW", "GB"],
-      "note": "扩源2026-11-06：免费 SSH 主机/免费域名热点；波兰语 darmowy=免费"
+      "note": "2026-11-19 官方复核并上架 serv00-free-hosting；免费网页主机，需人工审核、90 天内登录保活。复用本发现源，配置/注册/条款变更由 tools/sources.json 监控。"
     },
     {
       "id": "euserv-home",
