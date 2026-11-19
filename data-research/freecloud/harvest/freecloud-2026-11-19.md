@@ -1,7 +1,7 @@
 # freecloud 采集快照 2026-11-19
 
-- 采集时间: 2026-11-19T07:31:15Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
-- 源数: 58 | 🔔变化: render-pricing | 👀观察中: vercel-pricing, railway-pricing, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: colab-faq, shakticloud
+- 采集时间: 2026-11-19T12:35:34Z（pagesift 内核·零 LLM 参与·遵守 robots.txt·两次观测确认制）
+- 源数: 58 | 🔔变化: railway-pricing | 👀观察中: upcloud-pricing, lowendbox-feed, render-pricing, himitsushell, atlascloud, gpunz | 🌱首跑基线: 0 | 失败: euserv-home, vercel-pricing
 
 ##    InstaBox 定价（Agent 云电脑·文章样例主角）（instabox-pricing）
 - 状态: ok | https://instabox.sh/pricing
@@ -132,25 +132,25 @@
 - 🔎 **transfer, and support for up to 100 websites and 16 databases – **al** `om** is an innovative free web hosting platform offering **3 GB of SSD disk space**, unlimited data transfer, and support for up to 100 websites and 16 databases – **all without ads or fees for the user**. Account registration is very simple and free, and today the pl`
 
 ##    EUserv（德国免费 IPv6 VPS 申领）（euserv-home）
-- 状态: ok | https://www.euserv.com/en/
-- 🔎 **per month if not displayed different, additional one time s** `dex.php) \*)\*\*)\*\*\*) All prices are included VAT depending on selected country, price tags are per month if not displayed different, additional one time setup fee may apply starting at 0,- EUR. Please watch full description, details and pricing of servic`
+- 状态: error | https://www.euserv.com/en/
+- ❌ TIMEOUT: TLS timeout
 
 ##    Scaleway 定价（法国云，免费档+试用）（scaleway-pricing）
 - 状态: ok | https://www.scaleway.com/en/pricing/
 - 🔎 **/model-as-a-service/)** `verless - Generative APIs - Dedicated Deployment [View pricing](https://www.scaleway.com/en/pricing/model-as-a-service/) ## Storage ### Storage Discover our versatile storage options: - Object Storage - Scaleway Glac`
 
-##    UpCloud 定价（试用金）（upcloud-pricing）
+## 👀 UpCloud 定价（试用金）（upcloud-pricing）
 - 状态: ok | https://www.upcloud.com/pricing/
-- 🔎 **50 GB** `expensive than previous-generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD s`
-- 🔎 **16 GB** `generation while offering the same 99.99% SLA. #### Standard storage 10 – 50 GB #### Memory 1 – 16 GB #### CPU cores 1 – 4 - 45 second deployment - Standard performance SSD storage - Previous-gen AM`
-- 🔎 **1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** |** `lobal price | Memory | CPU cores | Bandwidth | Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB`
-- 🔎 **2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** |** `Storage | Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB`
-- 🔎 **2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** |** `- | | 1 GB | 1 | 250 Mbit/s | 10 GB | **€3/mo *** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 G`
-- 🔎 **4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** |** `*** | | 2 GB | 1 | 250 Mbit/s | 20 GB | **€6/mo** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 G`
-- 🔎 **4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** |** `** | | 2 GB | 2 | 250 Mbit/s | 30 GB | **€8/mo** | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16`
-- 🔎 **8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** |** `* | | 4 GB | 1 | 250 Mbit/s | 30 GB | **€10/mo** | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16`
-- 🔎 **8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** |** `* | | 4 GB | 2 | 500 Mbit/s | 30 GB | **€12/mo** | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Fe`
-- 🔎 **16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** |** `* | | 8 GB | 2 | 500 Mbit/s | 40 GB | **€18/mo** | | 8 GB | 4 | 500 Mbit/s | 40 GB | **€20/mo** | | 16 GB | 2 | 500 Mbit/s | 50 GB | **€24/mo** | | 16 GB | 4 | 500 Mbit/s | 50 GB | **€28/mo** | Features and services specific to Cloud Servers.`
+- 🔎 **64 TB of storage** `oud Servers. Cloud Servers can attach up to 16 concurrent storage devices per server to a total of 64 TB of storage. | Storage type | Global Price | Helsinki Price | | --- | --- | --- | | MaxIOPS | €0.220/GB/mo | €`
+- 🔎 **1 GB | 1 | 10 GB | 2 per customer | €3/mo |** `| CPU cores | Standard storage | Purchase limit | Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 10 GB | 2 per customer | €3/mo | | 1 GB | 1 | 20 GB | 5 per customer | €4.5/mo | | 2 GB | 1 | 30 GB | Unlimited | €8/mo | | 4 GB | 1`
+- 🔎 **1 GB | 1 | 20 GB | 5 per customer | €4** `it | Global Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 10 GB | 2 per customer | €3/mo | | 1 GB | 1 | 20 GB | 5 per customer | €4.5/mo | | 2 GB | 1 | 30 GB | Unlimited | €8/mo | | 4 GB | 1 | 40 GB | Unlimited | €15/mo | | 4 GB |`
+- 🔎 **2 GB | 1 | 30 GB | Unlimited | €8/mo |** `- | | 1 GB | 1 | 10 GB | 2 per customer | €3/mo | | 1 GB | 1 | 20 GB | 5 per customer | €4.5/mo | | 2 GB | 1 | 30 GB | Unlimited | €8/mo | | 4 GB | 1 | 40 GB | Unlimited | €15/mo | | 4 GB | 2 | 60 GB | Unlimited | €18/mo | | 8 GB | 2 | 80`
+- 🔎 **4 GB | 1 | 40 GB | Unlimited | €15/mo |** `€3/mo | | 1 GB | 1 | 20 GB | 5 per customer | €4.5/mo | | 2 GB | 1 | 30 GB | Unlimited | €8/mo | | 4 GB | 1 | 40 GB | Unlimited | €15/mo | | 4 GB | 2 | 60 GB | Unlimited | €18/mo | | 8 GB | 2 | 80 GB | Unlimited | €25/mo | | 16 GB | 2 | 1`
+- 🔎 **4 GB | 2 | 60 GB | Unlimited | €18/mo |** `er | €4.5/mo | | 2 GB | 1 | 30 GB | Unlimited | €8/mo | | 4 GB | 1 | 40 GB | Unlimited | €15/mo | | 4 GB | 2 | 60 GB | Unlimited | €18/mo | | 8 GB | 2 | 80 GB | Unlimited | €25/mo | | 16 GB | 2 | 100 GB | Unlimited | €35/mo | ### General`
+- 🔎 **8 GB | 2 | 80 GB | Unlimited | €25/mo |** `ted | €8/mo | | 4 GB | 1 | 40 GB | Unlimited | €15/mo | | 4 GB | 2 | 60 GB | Unlimited | €18/mo | | 8 GB | 2 | 80 GB | Unlimited | €25/mo | | 16 GB | 2 | 100 GB | Unlimited | €35/mo | ### General Purpose plans | Memory | CPU cores | MaxI`
+- 🔎 **16 GB | 2 | 100 GB | Unlimited | €35/mo |** `ed | €15/mo | | 4 GB | 2 | 60 GB | Unlimited | €18/mo | | 8 GB | 2 | 80 GB | Unlimited | €25/mo | | 16 GB | 2 | 100 GB | Unlimited | €35/mo | ### General Purpose plans | Memory | CPU cores | MaxIOPS storage | Global Price | Helsinki Price`
+- 🔎 **1 GB | 1 | 25 GB | €8** `y | CPU cores | MaxIOPS storage | Global Price | Helsinki Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 25 GB | €8.30/mo | €8.10/mo | | 2 GB | 1 | 50 GB | €15.40/mo | €16.20/mo | | 2 GB | 2 | 60 GB | €21.10/mo | €2`
+- 🔎 **2 GB | 1 | 50 GB | €15** `ice | Helsinki Price | | --- | --- | --- | --- | --- | | 1 GB | 1 | 25 GB | €8.30/mo | €8.10/mo | | 2 GB | 1 | 50 GB | €15.40/mo | €16.20/mo | | 2 GB | 2 | 60 GB | €21.10/mo | €21.60/mo | | 4 GB | 2 | 80 GB | €30.80/mo | €`
 
 ##    DigitalOcean 定价（$200/60天 试用观察）（digitalocean-pricing）
 - 状态: ok | https://www.digitalocean.com/pricing
@@ -165,18 +165,9 @@
 - 🔎 **credit will be fully utilized, and your card will be charged only ** `account. If you spend $3 in that timeframe, your card will not be charged. If you spend $10, the $5 credit will be fully utilized, and your card will be charged only $5. Since the credit is valid for 90 days, you won't be able to use any remaining credit after the 9`
 - 🔎 **credit is valid for 90 days, you won't be able to use any remainin** `u spend $10, the $5 credit will be fully utilized, and your card will be charged only $5. Since the credit is valid for 90 days, you won't be able to use any remaining credit after the 90-day period expires. We charge you for the underlying compute on which the 1-C`
 
-## 👀 Vercel 定价（Hobby 免费档）（vercel-pricing）
-- 状态: ok | https://vercel.com/pricing
-- 🔎 **1 GB / month included** `per 1M Custom 1K included per project $50 / month per 25K redirects Custom Blob Storage Size 1 GB / month included Starting at $0.023 per GB Custom Blob Simple Operations 10K / month included Starting at $0.35`
-- 🔎 **10 GB / month included** `lob Advanced Operations 2K / month included Starting at $4.50 per 1M Custom Blob Data Transfer 10 GB / month included Included in Flat Rate CDN Custom Image Optimization Transformation 5K / month included Startin`
-- 🔎 **360 GB-hrs / month included** `ctive CPU 4 hours / month included Starting at $0.128 per hour Custom Fluid Provisioned Memory 360 GB-hrs / month included Starting at $0.0106 per GB-hr Custom Function Invocations 1M / month included $0.60 per 1M Cu`
-- 🔎 **420 GB-hrs / month included** `ive CPU 5 hours / month included Starting at $0.128 per hour Custom Sandbox Provisioned Memory 420 GB-hrs / month included Starting at $0.0212 per GB-hr Custom Sandbox Creations 5K / month included $0.60 per 1,000,000`
-- 🔎 **20 GB / month included** `ndbox Creations 5K / month included $0.60 per 1,000,000 creations Custom Sandbox Data Transfer 20 GB / month included Included in Flat Rate CDN Custom Concurrent Sandboxes 10 10K Custom Snapshot Storage 15 GB`
-- 🔎 **15 GB** `cluded Included in Flat Rate CDN Custom Concurrent Sandboxes 10 10K Custom Snapshot Storage 15 GB $0.08 per GB-month Custom Drive Storage 15 GB (lifetime) included Starting at $0.05 per GB-mon`
-- 🔎 **15 GB (lifetime) included** `ent Sandboxes 10 10K Custom Snapshot Storage 15 GB $0.08 per GB-month Custom Drive Storage 15 GB (lifetime) included Starting at $0.05 per GB-month Custom Drive Reads 30 GB / month included Starting at $0.0015 p`
-- 🔎 **30 GB / month included** `tom Drive Storage 15 GB (lifetime) included Starting at $0.05 per GB-month Custom Drive Reads 30 GB / month included Starting at $0.0015 per GB Custom Drive Writes 30 GB / month included Starting at $0.004 per G`
-- 🔎 **30 GB / month included** `nth Custom Drive Reads 30 GB / month included Starting at $0.0015 per GB Custom Drive Writes 30 GB / month included Starting at $0.004 per GB Custom Daemons Active CPU 5 hours / month included Starting at $0.12`
-- 🔎 **420 GB-hrs / month included** `ive CPU 5 hours / month included Starting at $0.128 per hour Custom Daemons Provisioned Memory 420 GB-hrs / month included Starting at $0.0212 per GB-hr Custom Workflow Events 50K events / month included $20 per 1,000`
+##    Vercel 定价（Hobby 免费档）（vercel-pricing）
+- 状态: error | https://vercel.com/pricing
+- ❌ TIMEOUT: TLS timeout
 
 ##    Netlify 定价（免费 100GB 带宽档）（netlify-pricing）
 - 状态: ok | https://www.netlify.com/pricing/
@@ -224,8 +215,17 @@
 - 🔎 **168 vCPU · 16 GB | 8 vCPU | 16 GB | $0** `7 | $48.00 | | nf-compute-400Scale4 vCPU · 8 GB | 4 vCPU | 8 GB | $0.13 | $96.00 | | nf-compute-800-168 vCPU · 16 GB | 8 vCPU | 16 GB | $0.27 | $192.00 | ### GPUs on Northflank Cloud Run a sandbox with a GPU and multi-read-write storage`
 
 ##    Google Colab FAQ（免费档 GPU/runtime 口径）（colab-faq）
-- 状态: error | https://research.google.com/colaboratory/faq.html
-- ❌ TIMEOUT: TLS timeout
+- 状态: ok | https://research.google.com/colaboratory/faq.html
+- 🔎 **free trial of a Google One plan (such as a promotional or extended fre** `benefits are available to paid Google AI plan subscribers. However, they are not included during a free trial of a Google One plan (such as a promotional or extended free trial). Additionally, Google AI plan benefits are only honored in countries where Colab offers its`
+- 🔎 **transferable between Google products** `y to retroactively move the subscription to a different account. No. SheerID verifications are not transferable between Google products. If you have verified with SheerID for another Google product (Google One, YouTube Premium, etc), y`
+- 🔎 **idle for a while, and have a maximum lifetime enforced** `. Code is executed in a virtual machine private to your account. Virtual machines are deleted when idle for a while, and have a maximum lifetime enforced by the Colab service. You can download any Colab notebook that you’ve created from Google Drive fo`
+- 🔎 **idle timeout periods, maximum VM lifetime, GPU types a** `by not providing guaranteed or unlimited resources. This means that overall usage limits as well as idle timeout periods, maximum VM lifetime, GPU types available, and other factors vary over time. Colab does not publish these limits, in part because the`
+- 🔎 **idle** `hat_types_of_gpus) Colab. Colab prioritizes interactive compute. Runtimes will time out if you are idle. In the version of Colab that is free of charge notebooks can run for at most 12 hours, depending`
+- 🔎 **Idle timeouts only apply if code execution terminates** `ab Pro+ supports continuous code execution for up to 24 hours if you have sufficient compute units. Idle timeouts only apply if code execution terminates. You can fully relax any runtime limits and idle timeouts by purchasing a dedicated VM at [GCP Mar`
+- 🔎 **idle timeouts by purchasing a dedicated VM at [GCP Mar** `Idle timeouts only apply if code execution terminates. You can fully relax any runtime limits and idle timeouts by purchasing a dedicated VM at [GCP Marketplace](https://research.google.com/colaboratory/marketplace.html?utm_source=faq&utm_medium=link&u`
+- 🔎 **free** `# The Basics Colab is a hosted Jupyter Notebook service that requires no setup to use and provides free of charge access to computing resources, including GPUs and TPUs. Colab is especially well suited t`
+- 🔎 **free** `s. Colab is especially well suited to machine learning, data science, and education. Yes. Colab is free of charge to use. In order to provide access to as many students and under-resourced groups around`
+- 🔎 **free** `, and usage limits sometimes fluctuate. This is necessary for Colab to be able to provide resources free of charge. For more details, see Resource Limits. Colab managed runtimes prohibit abusive actions`
 
 ##    Lightning AI 定价（每月免费 credits）（lightning-pricing）
 - 状态: ok | https://lightning.ai/pricing
@@ -279,18 +279,18 @@
 - 🔎 **credits** `rations Price $0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1`
 - 🔎 **credits** `$0.02 Units per $1 50 generations Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits Unit credits Price $0.01 Units per $1 100 credits U`
 
-##    LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
+## 👀 LowEndBox RSS（免费 VPS 帖聚合雷达）（lowendbox-feed）
 - 状态: ok | https://lowendbox.com/feed/
-- 🔎 **8GB RAM for $24** `of cheap VPS, hosting deals, and industry news - [The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR!](https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-9`
+- 🔎 **2GB Ryzen/i9 VPS for Only $22** `eap VPS, hosting deals, and industry news - [Pre-Black-Friday Warm-Up: Win a $100 Prize and Grab a 2GB Ryzen/i9 VPS for Only $22.99/YEAR!](https://lowendbox.com/blog/pre-black-friday-warm-up-win-a-100-prize-and-grab-a-2gb-ryzen-`
+- 🔎 **2gb-ryzen-i9-vps-for-only-22-99-year/) — Thu, 19 Nov 2026 12:00** `r Only $22.99/YEAR!](https://lowendbox.com/blog/pre-black-friday-warm-up-win-a-100-prize-and-grab-a-2gb-ryzen-i9-vps-for-only-22-99-year/) — Thu, 19 Nov 2026 12:00:04 +0000 The provider is on a mission to dominate Black Friday. And they're starting early - with`
+- 🔎 **2GB Ryzen/i9 VPS for Only $22** `arting early - with a $100 giveaway! The post Pre-Black-Friday Warm-Up: Win a $100 Prize and Grab a 2GB Ryzen/i9 VPS for Only $22.99/YEAR! appeared first on LowEndBox . - [The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM f`
+- 🔎 **8GB RAM for $24** `Only $22.99/YEAR! appeared first on LowEndBox . - [The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR!](https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-9`
 - 🔎 **8gb-ram-for-24-99-year/) — Wed, 18 Nov 2026 12:00:12 +0000** `8GB RAM for $24.99/YEAR!](https://lowendbox.com/blog/the-dedirock-high-ram-vps-is-here-at-last-omg-8gb-ram-for-24-99-year/) — Wed, 18 Nov 2026 12:00:12 +0000 I usually write a little to tell you about a provider when we post an offer, or to give you some`
 - 🔎 **8GB RAM for $24** `. But today's offer needs no introduction! The post The DediRock High-RAM VPS is Here at Last! OMG! 8GB RAM for $24.99/YEAR! appeared first on LowEndBox . - [LowEndLOLs: Customers to Avoid](https://lowendbox.com/blo`
 - 🔎 **2GB KVM VPS for $1** `8230; appeared first on LowEndBox . - [If You Missed the Godlike.Host Offer in October – It’s Back! 2GB KVM VPS for $1.83/Month First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-it`
 - 🔎 **2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:0** `th First Year!](https://lowendbox.com/blog/if-you-missed-the-godlike-host-offer-in-october-its-back-2gb-kvm-vps-for-1-83-month-first-year/) — Wed, 11 Nov 2026 12:00:12 +0000 Godlike.Host is back with some great pricing for our readers. You'll need our special c`
 - 🔎 **2GB KVM VPS for $1** `get these deals! The post If You Missed the Godlike.Host Offer in October &#8211; It&#8217;s Back! 2GB KVM VPS for $1.83/Month First Year! appeared first on LowEndBox . - [Felware’s Limited Time Holiday Sale Starts NO`
 - 🔎 **4GB VPS!](https://lowendbox** `on LowEndBox . - [GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS!](https://lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/) —`
-- 🔎 **4gb-vps/) — Mon, 09 Nov 2026 12:00:26 +0000** `//lowendbox.com/blog/genixnode-amazing-low-prizes-in-14-locations-around-the-globe-2-39-month-for-a-4gb-vps/) — Mon, 09 Nov 2026 12:00:26 +0000 GenixNode is a VPS provider with deals in 14 different locations around the world. From Dallas to`
-- 🔎 **4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations** `want to be. Prices vary by location but prices start as low as $2.39/month on annual contract for a 4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for R`
-- 🔎 **4GB VPS! appeared first on LowEndBox ** `4GB VPS! The post GenixNode: Amazing Low Prices in 14 Locations Around the Globe! $2.39/Month for a 4GB VPS! appeared first on LowEndBox . - [BONUS CODE DROP for RackNerd’s Fall Giveaway! Win a Meta Quest 3, a Synology NAS, a Gaming Moni`
 
 ##    百度智能云免费试用（baidu-free）
 - 状态: ok | https://cloud.baidu.com/campaign/free/index.html
@@ -369,7 +369,7 @@
 - 🔎 **20GB | $0** `e-6x · 12GB | $0.2750 | $198.01 | | performance-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417`
 - 🔎 **24GB | $0** `-8x · 16GB | $0.3667 | $264.01 | | performance-10x · 20GB | $0.4584 | $330.01 | | performance-12x · 24GB | $0.5500 | $396.02 | | performance-14x · 28GB | $0.6417 | $462.02 | | performance-16x · 32GB | $0.7334`
 
-## 🔔 Render 定价（免费 Web 服务）（render-pricing）
+## 👀 Render 定价（免费 Web 服务）（render-pricing）
 - 状态: ok | https://render.com/pricing
 - 🔎 **5 GB of bandwidth included** `Get in touch](https://render.com/contact) - Connect your repo, and go - Deploy up to 25 services - 5 GB of bandwidth included - Single-service previews - Global regions & CDN - Custom domains - Firewall & DDoS mitigation - Da`
 - 🔎 **25 GB bandwidth included** `tigation - Database PITR - Chat support - All Hobby features, plus: - Unlimited seats & services - 25 GB bandwidth included - Full-stack previews - Horizontal autoscaling - Isolated environments - OIDC authentication - AWS`
@@ -395,7 +395,7 @@
 - 🔎 **32GB** `ice per RTX-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM`
 - 🔎 **160GB** `-4000-SFF-ADA $0.50 /hr vCPU 6 RAM 44GB Disk 240GB L4 $0.70 /hr vCPU 6 RAM 32GB Disk 160GB RTX-A6000 $0.75 /hr vCPU 6 RAM 64GB Disk 160GB L40S $1.20 /hr vCPU 15 RAM 64GB Disk`
 
-## 👀 Railway 定价（试用金观察）（railway-pricing）
+## 🔔 Railway 定价（试用金观察）（railway-pricing）
 - 状态: ok | https://railway.com/pricing
 - 🔎 **1 vCPU / 0** `monthly usage credits, services wake on request - Postgres, Redis, MySQL, MongoDB, and more - Up to 1 vCPU / 0.5 GB RAM per service, 0.5 GB volume storage - No credit card required ### Hobby $5minimum usage`
 - 🔎 **5 GB RAM per service, 0** `ge credits, services wake on request - Postgres, Redis, MySQL, MongoDB, and more - Up to 1 vCPU / 0.5 GB RAM per service, 0.5 GB volume storage - No credit card required ### Hobby $5minimum usage For hobbyist developers`
@@ -538,9 +538,9 @@
 - 🔎 **free** `nname dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo`
 - 🔎 **free** `dos2unix du echo egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpio`
 - 🔎 **free** `cho egrep eject env expand factor fallocate false fgrep file find flock fmt fold free freeramdisk fsfreeze fstype fsync ftpget ftpput getconf getopt gpiodetect gpiofind gpioget gpioinfo gpioset grep group`
-- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1795073463368) OS-Level Logging & Hooking Protection Executes shell scr`
-- 🔎 **shell** `itsushell.com/img/features_os.png?v=1795073463368) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
-- 🔎 **shell** `795073463368) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
+- 🔎 **shell** `& Docker Containers Compile Features ![auditd analysis results for HimitsuShell](https://himitsushell.com/img/features_os.png?v=1795091722150) OS-Level Logging & Hooking Protection Executes shell scr`
+- 🔎 **shell** `itsushell.com/img/features_os.png?v=1795091722150) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). She`
+- 🔎 **shell** `795091722150) OS-Level Logging & Hooking Protection Executes shell scripts using its own embedded shell interpreter instead of the system shell (e.g., /bin/bash). Shell scripts are not exposed even by OS`
 
 ##    iDrive E2 对象存储（1TB $40/yr 低价存储线）（idrive-e2）
 - 状态: ok | https://www.idrive.com/object-storage-e2/pricing
@@ -556,8 +556,17 @@
 - 🔎 **200 TB** `.00 first year ~~$11900.00~~ $8925.00 for two years ~~$17850.00~~ $14875.00 for three years 200 TB ~~$11900.00~~/year $5950.00 first year ~~$11900.00~~/year $5950.00 first year ~~$23800.00~~`
 
 ##    ShaktiCloud（Yotta GPU 云定价）（shakticloud）
-- 状态: error | https://shakticloud.ai/pricing.html
-- ❌ TIMEOUT: TLS timeout
+- 状态: ok | https://shakticloud.ai/pricing.html
+- 🔎 **10GB | GPU Compute: 10 GB slice of Nvidia H100 CPU Compute: 1 co** `oping immediately. | Workstation Name | Configuration | *Price | | --- | --- | --- | | AI Lab-H100-10GB | GPU Compute: 10 GB slice of Nvidia H100 CPU Compute: 1 core of Intel Xeon Platinum 8480+ with 28 GB RAM | ₹ 30,000 | | AI Lab-H100-20GB | GPU Compute: 20 GB`
+- 🔎 **28 GB RAM | ₹ 30,000 |** `0GB | GPU Compute: 10 GB slice of Nvidia H100 CPU Compute: 1 core of Intel Xeon Platinum 8480+ with 28 GB RAM | ₹ 30,000 | | AI Lab-H100-20GB | GPU Compute: 20 GB slice of Nvidia H100 CPU Compute: 3 cores of Intel Xeon Pla`
+- 🔎 **20GB | GPU Compute: 20 GB slice of Nvidia H100 CPU Compute: 3 co** `dia H100 CPU Compute: 1 core of Intel Xeon Platinum 8480+ with 28 GB RAM | ₹ 30,000 | | AI Lab-H100-20GB | GPU Compute: 20 GB slice of Nvidia H100 CPU Compute: 3 cores of Intel Xeon Platinum 8480+ with 56 GB RAM | ₹ 60,000 | | AI Lab-H100-40GB | GPU Compute: 40 GB`
+- 🔎 **56 GB RAM | ₹ 60,000 |** `GB | GPU Compute: 20 GB slice of Nvidia H100 CPU Compute: 3 cores of Intel Xeon Platinum 8480+ with 56 GB RAM | ₹ 60,000 | | AI Lab-H100-40GB | GPU Compute: 40 GB slice of Nvidia H100 CPU Compute: 7 cores of Intel Xeon Pla`
+- 🔎 **40GB | GPU Compute: 40 GB slice of Nvidia H100 CPU Compute: 7 co** `ia H100 CPU Compute: 3 cores of Intel Xeon Platinum 8480+ with 56 GB RAM | ₹ 60,000 | | AI Lab-H100-40GB | GPU Compute: 40 GB slice of Nvidia H100 CPU Compute: 7 cores of Intel Xeon Platinum 8480+ with 112 GB RAM | ₹ 120,000 | | AI Lab-H100-80GB | GPU Compute: 1x`
+- 🔎 **112 GB RAM | ₹ 120,000 |** `GB | GPU Compute: 40 GB slice of Nvidia H100 CPU Compute: 7 cores of Intel Xeon Platinum 8480+ with 112 GB RAM | ₹ 120,000 | | AI Lab-H100-80GB | GPU Compute: 1x Nvidia H100 with 80 GB GPU memory CPU Compute: 14 cores of Int`
+- 🔎 **80GB | GPU Compute: 1x Nvidia H100 with 80 GB GPU memory CPU Com** `H100 CPU Compute: 7 cores of Intel Xeon Platinum 8480+ with 112 GB RAM | ₹ 120,000 | | AI Lab-H100-80GB | GPU Compute: 1x Nvidia H100 with 80 GB GPU memory CPU Compute: 14 cores of Intel Xeon Platinum 8480+ with 224 GB RAM | ₹ 197,000 | | AI Lab-H100-2x80GB | GPU`
+- 🔎 **224 GB RAM | ₹ 197,000 |** `mpute: 1x Nvidia H100 with 80 GB GPU memory CPU Compute: 14 cores of Intel Xeon Platinum 8480+ with 224 GB RAM | ₹ 197,000 | | AI Lab-H100-2x80GB | GPU Compute: 2x Nvidia H100 with 160 GB GPU memory CPU Compute: 28 cores of`
+- 🔎 **160 GB GPU memory CPU Compute: 28 cores of Intel Xeon Platinum 848** `latinum 8480+ with 224 GB RAM | ₹ 197,000 | | AI Lab-H100-2x80GB | GPU Compute: 2x Nvidia H100 with 160 GB GPU memory CPU Compute: 28 cores of Intel Xeon Platinum 8480+ with 448 GB RAM | ₹ 397,000 | | AI Lab-H100-4x80GB | GPU Compute: 4x Nvidia H100 with 320 GB GPU`
+- 🔎 **448 GB RAM | ₹ 397,000 |** `pute: 2x Nvidia H100 with 160 GB GPU memory CPU Compute: 28 cores of Intel Xeon Platinum 8480+ with 448 GB RAM | ₹ 397,000 | | AI Lab-H100-4x80GB | GPU Compute: 4x Nvidia H100 with 320 GB GPU memory CPU Compute: 56 cores of`
 
 ##    Cloudzy（VPS/GPU/裸金属定价）（cloudzy）
 - 状态: ok | https://cloudzy.com/pricing
@@ -613,16 +622,16 @@
 
 ## 👀 GPU.nz（新西兰 GPU 云定价）（gpunz）
 - 状态: ok | https://gpu.nz/en/pricing
-- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0013 | $0.04 | $0.08 | $1.92 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.3`
-- 🔎 **24 GB+ | $0** `- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0013 | $0.04 | $0.08 | $1.92 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
-- 🔎 **48 GB+ | $0** `.92 | | Tesla V100 32 GBGPU with 24 GB+ | $0.0037 | $0.111 | $0.222 | $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
-- 🔎 **80 GB+ | $0** `| $5.33 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | Prices and availability come from the live catalog and update au`
-- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $24.95/h | 11 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.81/h | $17.56/h |`
-- 🔎 **180gb) | 180 GB | $13** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.36/h | $24.95/h | 11 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.81/h | $17.56/h | 32 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.41/h | $10.64/h`
-- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $13.81/h | $17.56/h | 32 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.41/h | $10.64/h | 18 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.68/h | $8.3`
-- 🔎 **141gb) | 141 GB | $6** `en/gpu/h200-141gb) | 141 GB | $7.41/h | $10.64/h | 18 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.68/h | $8.34/h | 48 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.43/h | $3.51/h`
-- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.68/h | $8.34/h | 48 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.43/h | $3.51/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.71/h | $7.37/h`
-- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.43/h | $3.51/h | 26 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.71/h | $7.37/h | 4 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.31/h | $5.10/`
+- 🔎 **8 GB+ | $0** `e | 30 minutes | 1 hour | A day (24 h) | | --- | --- | --- | --- | --- | | RTX 3060 Ti 8 GBGPU with 8 GB+ | $0.0013 | $0.04 | $0.079 | $1.90 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.0041 | $0.122 | $0.243`
+- 🔎 **24 GB+ | $0** `TX 3060 Ti 8 GBGPU with 8 GB+ | $0.0013 | $0.04 | $0.079 | $1.90 | | Tesla V100 Super 32 GBGPU with 24 GB+ | $0.0041 | $0.122 | $0.243 | $5.83 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
+- 🔎 **48 GB+ | $0** `| Tesla V100 Super 32 GBGPU with 24 GB+ | $0.0041 | $0.122 | $0.243 | $5.83 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95`
+- 🔎 **80 GB+ | $0** `| $5.83 | | GB10 128 GBGPU with 48 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | | GB10 128 GBGPU with 80 GB+ | $0.0083 | $0.249 | $0.498 | $11.95 | Prices and availability come from the live catalog and update au`
+- 🔎 **288gb) | 288 GB | $20** `, $/h | Median, $/h | Servers | | --- | --- | --- | --- | --- | | [B300](https://gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.01/h | $23.77/h | 17 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.81/h | $17.56/h |`
+- 🔎 **180gb) | 180 GB | $13** `gpu.nz/en/gpu/b300-288gb) | 288 GB | $20.01/h | $23.77/h | 17 | | [B200](https://gpu.nz/en/gpu/b200-180gb) | 180 GB | $13.81/h | $17.56/h | 23 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.34/h | $12.91/h`
+- 🔎 **141gb) | 141 GB | $7** `nz/en/gpu/b200-180gb) | 180 GB | $13.81/h | $17.56/h | 23 | | [H200 SXM](https://gpu.nz/en/gpu/h200-141gb) | 141 GB | $7.34/h | $12.91/h | 11 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.68/h | $8.1`
+- 🔎 **141gb) | 141 GB | $6** `en/gpu/h200-141gb) | 141 GB | $7.34/h | $12.91/h | 11 | | [H200 NVL](https://gpu.nz/en/gpu/h200-nvl-141gb) | 141 GB | $6.68/h | $8.10/h | 65 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.43/h | $3.49/h`
+- 🔎 **80gb) | 80 GB | $3** `gpu/h200-nvl-141gb) | 141 GB | $6.68/h | $8.10/h | 65 | | [H100 SXM](https://gpu.nz/en/gpu/h100-sxm-80gb) | 80 GB | $3.43/h | $3.49/h | 24 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.03/h | $6.98/h`
+- 🔎 **94gb) | 94 GB | $4** `n/gpu/h100-sxm-80gb) | 80 GB | $3.43/h | $3.49/h | 24 | | [H100 NVL](https://gpu.nz/en/gpu/h100-nvl-94gb) | 94 GB | $4.03/h | $6.98/h | 6 | | [H100 PCIe](https://gpu.nz/en/gpu/h100-pcie-80gb) | 80 GB | $4.94/h | $4.94/`
 
 ##    Kiro（AWS 旗下 AI IDE，免费档）（kiro-pricing）
 - 状态: ok | https://kiro.dev/pricing

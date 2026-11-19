@@ -56,9 +56,9 @@
       "n_hits": 180
     },
     "railway-pricing": {
-      "fp": "5acc53912b0d97cc457eaa9d91fdaafc7e5ed2339fbae7e047ff7b2e363e39cb",
-      "ts": "2026-11-17T21:23:53Z",
-      "n_hits": 40
+      "fp": "156f0cdecbca163d80e496a10eaba286378bb4bc3706a09b8106fe015a820aea",
+      "ts": "2026-11-19T12:35:34Z",
+      "n_hits": 43
     },
     "codespaces-pricing": {
       "fp": "ef9361b48fbf3936913688c04f996a80abaa05e5fc03671b03c5c86502a2a50d",
@@ -293,18 +293,13 @@
   },
   "pending": {
     "himitsushell": {
-      "fp": "16ea81924979e736c2291699cc81e996474e6a83351a0d6a64176cc9e6de258b",
-      "ts": "2026-11-19T07:31:15Z",
+      "fp": "c61ac357f636e5380aad04d77322d56ec746cac256f32d8c4dcc61c80c7d9cd9",
+      "ts": "2026-11-19T12:35:34Z",
       "count": 1
     },
     "gpunz": {
-      "fp": "6be6435e9cfad8fe98cd046f0dc48dd0bda447cfd66380a6a8153563a4367cc3",
-      "ts": "2026-11-19T07:31:15Z",
-      "count": 1
-    },
-    "railway-pricing": {
-      "fp": "156f0cdecbca163d80e496a10eaba286378bb4bc3706a09b8106fe015a820aea",
-      "ts": "2026-11-19T07:31:15Z",
+      "fp": "197e7d7793b075604f13f6b773a3bc81995f15bca3b4773f619bad1eab227ccf",
+      "ts": "2026-11-19T12:35:34Z",
       "count": 1
     },
     "vercel-pricing": {
@@ -313,8 +308,23 @@
       "count": 1
     },
     "atlascloud": {
-      "fp": "0af01e1c483d1c4b64358ec37fad4d2580ab6bb8d53c7e3460b21df31f9ccffb",
-      "ts": "2026-11-19T07:31:15Z",
+      "fp": "5dbbb7344cef04d48d4bf47cadb096830ede40d07edcd4f536aa9179d42f0662",
+      "ts": "2026-11-19T12:35:34Z",
+      "count": 1
+    },
+    "upcloud-pricing": {
+      "fp": "6f87e617460f8f51040789f5755beda8dbf86d71c7e8f4d33694ce5be31579c4",
+      "ts": "2026-11-19T12:35:34Z",
+      "count": 1
+    },
+    "lowendbox-feed": {
+      "fp": "306bcd38a49830bee082a1b2e91aa518651b8e0ea871079b8c4067ce5381270f",
+      "ts": "2026-11-19T12:35:34Z",
+      "count": 1
+    },
+    "render-pricing": {
+      "fp": "377b4472de82dc7e066f52abcae52669e9eaa7f85e63c5cb1bc501e7e84287a5",
+      "ts": "2026-11-19T12:35:34Z",
       "count": 1
     }
   }
