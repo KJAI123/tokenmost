@@ -76,6 +76,14 @@ FAQ_GEN = [
      "首月参考为一次性额度、有效活动天数内的日额度（最多 30 天）与月额度之和。模型积分有官方公式才折算，金额按 DS Flash 空闲价作购买力参考。未核验、付费与无固定比例的权益不计入已核验总额。"),
 ]
 
+INPUT_BUDGET_FAQ = [
+    ("{name}当前有哪些免费余额？",
+     "截至 {updated}，本页收录 {n} 条权益，原始余额、发放周期与特定模型的输入预算单列。延后到账的月赠是否计入首月，以各条规则为准。"),
+    FAQ_GEN[1],
+    ("{name}的输入预算如何计算？",
+     "用原始余额除以对应模型的官方每百万输入 Token 价格，仅计算输入、不估输出。其他共享余额的资源消耗会降低预算。同笔金额不重复折算 DS 购买力；模型输入预算不是跨模型通用 Token 或保证到账量。"),
+]
+
 APPLICATION_GATES = {"startup", "audit", "oss"}
 APPLICATION_FAQ = [
     ("有哪些申请制计划？", "本站收录 {n} 项计划，包括 {brief}。"),
@@ -104,6 +112,8 @@ def deal_value(d):
                     else ("¥" if unit == "CNY" else "$")+amount if unit in ("CNY", "USD")
                     else amount+{"credits":" 积分", "points":" 算力", "hours":" 小时", "requests":" 次"}.get(unit, unit))
             text += {"daily":"/天", "monthly":"/月", "weekly":"/周"}.get(q.get("period"), "")
+            if q.get("starts_after_days"):
+                text += "（延后发放，首月按规则排除）"
             parts.append(text)
         value = token_quota(d)["total"]
         if value:
@@ -112,7 +122,13 @@ def deal_value(d):
         if estimated:
             period = "daily" if estimated["period"] == "daily" else "month"
             label = "日用量" if period == "daily" else "首月"
-            parts.append(f"{label}情景估计 ≈ {fmt_wan(estimated[period]['low'])}–{fmt_wan(estimated[period]['high'])} Token（非保证额度）")
+            if estimated.get("basis", {}).get("method") == "model_budget":
+                value_range = fmt_wan(estimated[period]['low'])
+                if estimated[period]['low'] != estimated[period]['high']:
+                    value_range += "–"+fmt_wan(estimated[period]['high'])
+                parts.append(f"{label}仅输入预算 ≈ {value_range} Token（非通用赠额）")
+            else:
+                parts.append(f"{label}情景估计 ≈ {fmt_wan(estimated[period]['low'])}–{fmt_wan(estimated[period]['high'])} Token（非保证额度）")
         return "；".join(parts) or "Token 数量以官方页为准"
     parts = []
     if d.get("daily_wan"): parts.append(f"日均 ~{fmt_wan(d['daily_wan'])} tokens")
@@ -178,6 +194,7 @@ def main():
         verified = sum(1 for d in ds if d.get("verify_status") == "verified")
         available = [d for d in ds if d.get("gate") not in APPLICATION_GATES]
         application_only = not available
+        input_budget = any(e.get("method") == "model_budget" for d in ds for e in d.get("quota_estimates", []))
         amounts = [token_quota(d) for d in available if free_quota(d) and d.get("verify_status") == "verified"]
         once = sum(q["once"] for q in amounts)
         daily = sum(q["daily"] for q in amounts)
@@ -196,6 +213,10 @@ def main():
             h1 = f"{name}申请指南"
             desc = f"收录 {len(ds)} 项申请制权益，附官方资格、额度和申请入口。"
             intro = f"本页收录 {len(ds)} 项申请制权益，其中 {verified} 项已核验。请按各计划的官方条件申请。"
+        elif input_budget:
+            title = f"{name}额度领取攻略：免费余额与模型输入预算（{today} 更新）"
+            h1 = f"{name}免费余额与模型输入预算"
+            intro = f"本页收录 {name} 的 {len(ds)} 条权益，其中 {verified} 条已核验。原始余额、发放周期与特定模型的输入预算分开展示；输入预算不含输出，同笔余额不重复折算 DS 购买力。"
         blocks = []
         for d in sorted(ds, key=lambda x: -token_quota(x)["total"]-(daily_estimate(x) or {"month":{"typical":0}})["month"]["typical"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
@@ -213,7 +234,7 @@ def main():
                 f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a></div>')
         faq_blocks = []
         faq_items = []
-        for q_t, a_t in APPLICATION_FAQ if application_only else FAQ_GEN:
+        for q_t, a_t in APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN:
             q = q_t.format(name=name, updated=today, n=len(ds), brief=brief)
             a = a_t.format(name=name, updated=today, n=len(ds), brief=brief, total=total_s)
             faq_blocks.append(f"<details><summary>{esc_quote(q)}</summary><p>{esc_quote(a)}</p></details>")
@@ -229,7 +250,7 @@ def main():
         robots_meta = '<meta name="robots" content="noindex,follow">\n' if (verified == 0 and len(ds) < 3) else ''
         page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, h1=h1, robots=robots_meta,
                           updated=today, layer=layer, n=len(ds), intro=intro,
-                          metric="额度按官方单位列出" if application_only else "原始额度 + 有依据的 Token 折算 / 购买力参考",
+                          metric="额度按官方单位列出" if application_only else "原始余额 + 仅输入预算" if input_budget else "原始额度 + 有依据的 Token 折算 / 购买力参考",
                           offers_heading="申请计划" if application_only else "🎁 当前可领额度与羊毛",
                           faq_heading="申请常见问题" if application_only else f"❓ {esc_quote(name)}免费额度常见问题",
                           deals="\n".join(blocks), faq="\n".join(faq_blocks),
@@ -237,7 +258,7 @@ def main():
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
         pages.append({"slug": slug, "name": name, "n": len(ds), "verified": verified, "total": total_s,
                       "url": f"https://tokenmost.com/platform/{slug}.html",
-                      "title": title, "desc": desc, "application_only": application_only})
+                      "title": title, "desc": desc, "application_only": application_only,"input_budget": input_budget})
 
     # llms.txt（AI 搜索站点地图）
     lines = ["# tokenmost.com", "",
@@ -253,6 +274,7 @@ def main():
     lines += ["## 平台免费额度页", ""]
     for p in sorted(pages, key=lambda x: -x["n"]):
         label = (f"{p['name']}申请指南（{p['n']} 项）" if p["application_only"]
+                 else f"{p['name']}免费余额与输入预算（{p['n']} 条信源）" if p["input_budget"]
                  else f"{p['name']}免费额度（{p['total']}可薅，{p['n']} 条信源）")
         lines.append(f"- [{label}]({p['url']}): {p['desc'][:80]}")
     lines += ["", "## 领取攻略", ""]

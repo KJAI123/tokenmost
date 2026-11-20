@@ -98,6 +98,10 @@ near(math.estimate(drex,now).month.typical,5/.03*100);
 near(math.quota(drex,now).total,0); // Same $5 is not also a DS buying-power reference.
 assert.equal(math.estimateMany([drex],now).count,1);
 assert.match(math.cell(drex),/输入预算/);
+const drexStaticPage=fs.readFileSync(path.join(root,'platform/drex.html'),'utf8');
+assert.match(drexStaticPage,/首月仅输入预算/);
+assert.match(drexStaticPage,/延后发放，首月按规则排除/);
+assert.doesNotMatch(drexStaticPage,/金额只作 DS Flash 购买力参考/);
 assert.equal(math.estimate({...drex,quota_estimates:[{...drex.quota_estimates[0],quota_index:1}]},now),null);
 const delayedFixture={id:'delayed',token_quota:[{amount:5,unit:'USD',period:'once'},{amount:5,unit:'USD',period:'monthly',starts_after_days:30},{amount:1,unit:'USD',period:'daily',starts_after_days:20}]};
 near(math.quota(delayedFixture,now).monthly,0);
