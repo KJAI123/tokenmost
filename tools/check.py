@@ -75,6 +75,8 @@ for d in deals:
                 errors.append(f"{d['id']} 额度 unit 非法")
             if quota.get("period") not in ("once", "daily", "monthly", "weekly"):
                 errors.append(f"{d['id']} 额度 period 非法")
+            if "starts_after_days" in quota and (not isinstance(quota["starts_after_days"], (int, float)) or quota["starts_after_days"] < 0):
+                errors.append(f"{d['id']} 延迟发放天数非法")
             for field in ("tokens_per_unit", "equivalent_factor"):
                 if field in quota and (not isinstance(quota[field], (int, float)) or quota[field] <= 0):
                     errors.append(f"{d['id']} {field} 必须为正数")
@@ -92,14 +94,31 @@ for d in deals:
         index = estimate.get("quota_index")
         if not isinstance(index, int) or index < 0 or index >= len(rows) or ("daily_estimate" in d and rows[index].get("period") != "daily"):
             errors.append(f"{d['id']} 估算必须引用有效的原始额度；旧 daily_estimate 仅可引用日额")
-        if method not in ("requests", "credit_value", "neurons", "scenario", "model_examples"):
+        if method not in ("requests", "credit_value", "neurons", "scenario", "model_examples", "model_rates", "model_budget"):
             errors.append(f"{d['id']} 日估算 method 非法")
         if not all(estimate.get(k) for k in ("note", "note_en", "reviewed_at")):
             errors.append(f"{d['id']} 日估算缺假设说明/英文/日期")
         if isinstance(index, int) and 0 <= index < len(rows):
-            expected_units = {"requests":("requests",), "credit_value":("credits", "points", "PU"), "neurons":("neurons",), "scenario":("credits", "points", "PU"), "model_examples":("credits",)}
+            expected_units = {"requests":("requests",), "credit_value":("credits", "points", "PU"), "neurons":("neurons",), "scenario":("credits", "points", "PU"), "model_examples":("credits",), "model_rates":("credits",), "model_budget":("USD", "CNY")}
             if rows[index].get("unit") not in expected_units.get(method, ()) or rows[index].get("tokens_per_unit"):
                 errors.append(f"{d['id']} 日估算方法与原始单位不匹配，或重复估算已有公式额度")
+            if method == "model_budget" and rows[index].get("convert") is not False:
+                errors.append(f"{d['id']} 模型余额情景必须禁用同笔金额的固定购买力换算")
+        if method in ("model_rates", "model_budget"):
+            try:
+                factors = []
+                for key in ("low", "typical", "high"):
+                    model = estimate["models"][key]
+                    assert model["name"]
+                    if method == "model_rates":
+                        assert model["input"] > 0 and model["output"] > 0
+                        factors.append(1000/(model["input"]*.75+model["output"]*.25))
+                    else:
+                        assert model["price"] > 0 and estimate["token_scope"] == "input"
+                        factors.append(1e6/model["price"])
+                assert factors == sorted(factors) and estimate["source_url"]
+            except (KeyError, TypeError, AssertionError):
+                errors.append(f"{d['id']} 模型价格情景缺少有效数值、范围顺序或官方来源")
         if method in ("scenario", "requests") and (not isinstance(estimate.get("scale", 1), (int, float)) or estimate.get("scale", 1) <= 0):
             errors.append(f"{d['id']} 情景倍率 scale 非法")
         if method == "credit_value":

@@ -1,0 +1,4948 @@
+{
+  "reviewed_at": "2026-11-20",
+  "metrics": {
+    "records_reviewed": 308,
+    "changed_records": 12,
+    "active_nonexpired": 212,
+    "scenario_records": 39,
+    "scenario_views": 51,
+    "regular_free_pools": 40,
+    "referenced_logo_assets": 178,
+    "navigation": 98,
+    "navigation_with_icons": 98,
+    "new_or_upgraded_official_assets": 5
+  },
+  "changed_ids": [
+    "deepseek-price",
+    "deepseek-offpeak",
+    "nvidia-nim",
+    "deepseek-cache",
+    "fastgpt-free",
+    "sensenova-lite",
+    "deep-windsurf-devin",
+    "agentrouter-signup",
+    "miao-wu-daily-2000",
+    "drex-monthly-5usd",
+    "tencent-adp-15k",
+    "deepseek-server-search-billing"
+  ],
+  "retired_navigation": [
+    {
+      "layer": "compute",
+      "name": "仙童智算",
+      "url": "https://www.xiantong.ai",
+      "desc": "算力租赁",
+      "retired_at": "2026-11-20",
+      "reason": "HTTPS TLS失败，HTTP为Porkbun域名停放页；无可确认品牌入口或Logo。"
+    }
+  ],
+  "remaining_brand_logo": {
+    "provider": "AgentRouter",
+    "reason": "Official homepage and favicon endpoints return a security verification page; no verified brand asset obtained."
+  },
+  "generic_label": {
+    "provider": "API 中转站",
+    "reason": "Category warning, not a provider brand."
+  },
+  "pending_quotas": [
+    {
+      "id": "nvidia-nim",
+      "reason": "Current free-inference catalog confirmed; the 2024 1000/5000-credit limits are not current grant proof."
+    },
+    {
+      "id": "sensenova-lite",
+      "reason": "Live Free page confirms models but omits quantitative caps; search-cache and community model pools differ."
+    },
+    {
+      "id": "agentrouter-signup",
+      "reason": "Safety verification prevents current offer verification; status remains unverified."
+    },
+    {
+      "id": "stepfun-75d",
+      "reason": "Membership duration and task rewards do not define a fixed text-token allowance."
+    },
+    {
+      "id": "autoclaw-invite-fission",
+      "reason": "Invite tiers are conditional and no same-activity point/token ratio is confirmed."
+    }
+  ],
+  "validation": {
+    "math": "All 308 JS/Python record results, model tables, input-only budget, deferred grants, pool deduplication and API billing separation passed.",
+    "source_preservation": "source_audit --against baseline passed",
+    "local_ui": "Both languages: 320, 390, 768, 1440 px content viewports in same-origin iframe. No horizontal overflow; 4 full offer rows in 1440×900; sources, empty-search reset and scenario dialog checked.",
+    "local_logo_load": "Final 178 of 178 referenced assets loaded; zero pending or broken. The new ADP icon also loaded in the 320px offer row.",
+    "production": "Pending release verification; receipts will be written to the task outputs directory."
+  },
+  "records": [
+    {
+      "id": "zhipu-signup",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 20000000,
+          "unit": "tokens",
+          "period": "once",
+          "model": "GLM-4.5-Air"
+        },
+        {
+          "amount": 25000000,
+          "unit": "tokens",
+          "period": "once",
+          "note": "被邀请人的新客礼包，模型按控制台分配",
+          "note_en": "Invitee welcome package; model allocation follows the console"
+        }
+      ],
+      "first_month_wan": 4500.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "volc-ark-signup",
+      "provider": "火山方舟",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "bailian-signup",
+      "provider": "阿里云百炼",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 10000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 1000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/bailian.console.aliyun.com.png"
+    },
+    {
+      "id": "deepseek-price",
+      "provider": "DeepSeek",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/api-docs.deepseek.com.svg"
+    },
+    {
+      "id": "deepseek-offpeak",
+      "provider": "DeepSeek",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/api-docs.deepseek.com.svg"
+    },
+    {
+      "id": "kimi-voucher",
+      "provider": "Kimi 开放平台",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 15,
+          "unit": "CNY",
+          "period": "once",
+          "provider": "Kimi 开放平台",
+          "all_models": true,
+          "excluded_models": [
+            "kimi-k3"
+          ],
+          "note": "Kimi K3 不可抵扣",
+          "note_en": "Not eligible for Kimi K3"
+        }
+      ],
+      "first_month_wan": 857.1428571428571,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "kimi-k2-deadline",
+      "provider": "Kimi 开放平台",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "qianfan-signup",
+      "provider": "文心千帆",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 17000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 1700.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.baidu.com.ico"
+    },
+    {
+      "id": "xinghuo-signup",
+      "provider": "讯飞星火",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/xinghuo.xfyun.cn.ico"
+    },
+    {
+      "id": "tencenthub-signup",
+      "provider": "腾讯云 TokenHub",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 1000000,
+          "unit": "tokens",
+          "period": "once",
+          "model": "控制台所选可领语言模型",
+          "note": "只计一份100万体验包，官方同时有主账号共享说明，不按模型数量放大",
+          "note_en": "One 1M trial pack only; account-sharing rules apply. Not multiplied by model count."
+        }
+      ],
+      "first_month_wan": 100.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/tencent-cloud.png"
+    },
+    {
+      "id": "minimax-m3-half",
+      "provider": "MiniMax 开放平台",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/minimax-brand.png"
+    },
+    {
+      "id": "coze-free",
+      "provider": "扣子 Coze",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/coze.cn.png"
+    },
+    {
+      "id": "dify-selfhost",
+      "provider": "Dify 自部署",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 200,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 10.0,
+        "typical": 20.0,
+        "high": 40.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/dify.ai.svg"
+    },
+    {
+      "id": "modelscope-free-infer",
+      "provider": "魔搭 ModelScope",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 2000,
+          "unit": "requests",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 6000.0,
+        "typical": 24000.0,
+        "high": 48000.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/modelscope.cn.ico"
+    },
+    {
+      "id": "scnet-coupon",
+      "provider": "国家超算互联网 SCNet",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [
+        {
+          "amount": 10000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/scnet.cn.png"
+    },
+    {
+      "id": "autodl-student",
+      "provider": "AutoDL",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/autodl.com.png"
+    },
+    {
+      "id": "gpushare-invite",
+      "provider": "恒源云",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 10,
+          "unit": "CNY",
+          "period": "once",
+          "convert": false
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/gpushare.com.png"
+    },
+    {
+      "id": "gongji-subsidy",
+      "provider": "共绩算力",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/gongjiyun.com.ico"
+    },
+    {
+      "id": "siliconflow-signup",
+      "provider": "硅基流动",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 16,
+          "unit": "CNY",
+          "period": "once",
+          "note": "只计认证专享券，邀请奖励另列条件，不重复叠加",
+          "note_en": "Verification voucher only; referral rewards are conditional and not added again."
+        }
+      ],
+      "first_month_wan": 914.2857142857142,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/siliconflow.cn.png"
+    },
+    {
+      "id": "siliconflow-referral",
+      "provider": "硅基流动",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 16,
+          "unit": "CNY",
+          "period": "once",
+          "provider": "硅基流动",
+          "all_models": true
+        }
+      ],
+      "first_month_wan": 914.2857142857142,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/siliconflow.cn.png"
+    },
+    {
+      "id": "openrouter-free",
+      "provider": "OpenRouter",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 50,
+          "unit": "requests",
+          "period": "daily",
+          "note": "累计购买 $10 才提升到 1000 次/天",
+          "note_en": "1,000/day requires $10 lifetime purchases"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 150.0,
+        "typical": 600.0,
+        "high": 1200.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/openrouter.ai.ico"
+    },
+    {
+      "id": "nvidia-nim",
+      "provider": "NVIDIA NIM",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/build.nvidia.com.ico"
+    },
+    {
+      "id": "ohmygpt-referral",
+      "provider": "OhMyGPT",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 20,
+          "unit": "USD",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 7619.047619047619,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ohmygpt.com.ico"
+    },
+    {
+      "id": "aihubmix-free",
+      "provider": "AIHubMix",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/aihubmix.com.ico"
+    },
+    {
+      "id": "dmxapi-discount",
+      "provider": "DMXAPI",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/dmxapi.com.ico"
+    },
+    {
+      "id": "google-ai-studio",
+      "provider": "Google AI Studio",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/aistudio.google.com.ico"
+    },
+    {
+      "id": "google-student",
+      "provider": "Google AI Studio",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/gemini.google.png"
+    },
+    {
+      "id": "github-student-pack",
+      "provider": "GitHub Student Pack",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "USD",
+          "period": "once",
+          "convert": false,
+          "note": "Azure 年度云额度，非通用模型额度",
+          "note_en": "Annual Azure cloud credit, not general model credit"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/github.com.ico"
+    },
+    {
+      "id": "azure-student",
+      "provider": "Azure for Students",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/azure.microsoft.com.ico"
+    },
+    {
+      "id": "groq-free",
+      "provider": "Groq",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 1000,
+          "unit": "requests",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 3000.0,
+        "typical": 12000.0,
+        "high": 24000.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/console.groq.com.ico"
+    },
+    {
+      "id": "sambanova-free",
+      "provider": "SambaNova",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 200000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 600.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.sambanova.ai.png"
+    },
+    {
+      "id": "anthropic-credits",
+      "provider": "Anthropic",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/platform.claude.com.ico"
+    },
+    {
+      "id": "zcode-linuxdo",
+      "provider": "智谱 ZCode",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/bigmodel.cn.png"
+    },
+    {
+      "id": "aliyun-100coupon",
+      "provider": "阿里云百炼",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/developer.aliyun.com.ico"
+    },
+    {
+      "id": "ark-daily-5m",
+      "provider": "火山方舟",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 5000000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 15000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "zhipu-flash-free",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deepseek-cache",
+      "provider": "DeepSeek",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/api-docs.deepseek.com.svg"
+    },
+    {
+      "id": "kimi-filefree",
+      "provider": "Kimi 开放平台",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "minimax-mplan",
+      "provider": "MiniMax 开放平台",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/minimax-brand.png"
+    },
+    {
+      "id": "siliconflow-freemodels",
+      "provider": "硅基流动",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/siliconflow.cn.png"
+    },
+    {
+      "id": "scnet-maas",
+      "provider": "国家超算互联网 SCNet",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/scnet.cn.png"
+    },
+    {
+      "id": "gpushare-nov",
+      "provider": "恒源云",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 50,
+          "unit": "CNY",
+          "period": "once",
+          "convert": false
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/gpushare.com.png"
+    },
+    {
+      "id": "fastgpt-free",
+      "provider": "FastGPT",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "once",
+          "note": "首月仅计一次；免费档刷新周期待确认",
+          "note_en": "Counted once in month one; Free renewal cadence is unconfirmed"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 136.9142857142857,
+        "typical": 141.42857142857144,
+        "high": 141.42857142857144
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/fastgpt-brand.svg"
+    },
+    {
+      "id": "n8n-selfhost",
+      "provider": "n8n",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/n8n.io.ico"
+    },
+    {
+      "id": "github-copilot-free",
+      "provider": "GitHub Copilot",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 2000,
+          "unit": "requests",
+          "period": "monthly",
+          "note": "代码补全次数，不是2000聊天请求或2000 AI Credits",
+          "note_en": "Code completions, not 2,000 chats or 2,000 AI credits."
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 10.0,
+        "typical": 40.0,
+        "high": 80.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/github.com.ico"
+    },
+    {
+      "id": "302ai-payg",
+      "provider": "302.AI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/302.ai.ico"
+    },
+    {
+      "id": "ohmygpt-glmfree",
+      "provider": "OhMyGPT",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ohmygpt.com.ico"
+    },
+    {
+      "id": "mistral-free",
+      "provider": "Mistral",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mistral-brand.png"
+    },
+    {
+      "id": "cohere-trial",
+      "provider": "Cohere",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 1000,
+          "unit": "requests",
+          "period": "monthly",
+          "note": "评估Key月调用上限，不是每天1000次",
+          "note_en": "Evaluation-key monthly call cap, not 1,000/day."
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 100.0,
+        "typical": 400.0,
+        "high": 800.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/docs.cohere.com.png"
+    },
+    {
+      "id": "cerebras-credits",
+      "provider": "Cerebras",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cerebras.ai.png"
+    },
+    {
+      "id": "kimi-cache",
+      "provider": "Kimi 开放平台",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "openrouter-boost",
+      "provider": "OpenRouter",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/openrouter.ai.ico"
+    },
+    {
+      "id": "sensenova-lite",
+      "provider": "商汤日日新",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/sensenova-brand.png"
+    },
+    {
+      "id": "xfyun-offpeak",
+      "provider": "讯飞星火",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/xfyun.cn.png"
+    },
+    {
+      "id": "deep-bailian-newuser-quota",
+      "provider": "阿里云百炼",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 1000000,
+          "unit": "tokens",
+          "period": "once",
+          "model": "控制台所选可领模型",
+          "note": "仅计一款典型100万包；各模型独立不可转移，实际以官方清单为准",
+          "note_en": "One typical 1M pack only. Model quotas are separate/non-transferable; check the official eligible list."
+        }
+      ],
+      "first_month_wan": 100.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/help.aliyun.com.png"
+    },
+    {
+      "id": "deep-bailian-quota-detail",
+      "provider": "阿里云百炼",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/help.aliyun.com.png"
+    },
+    {
+      "id": "deep-bailian-limited-free",
+      "provider": "阿里云百炼",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/help.aliyun.com.png"
+    },
+    {
+      "id": "deep-bailian-pricing",
+      "provider": "阿里云百炼",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/help.aliyun.com.png"
+    },
+    {
+      "id": "deep-kimi-membership",
+      "provider": "Kimi（月之暗面）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "deep-minimax-mplan",
+      "provider": "MiniMax",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 4489,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 1712.3784093076483,
+        "typical": 1713.1408217783999,
+        "high": 1714.2857142857142
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/minimax-brand.png"
+    },
+    {
+      "id": "deep-claude-pro-max",
+      "provider": "Anthropic Claude",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/support.claude.com.png"
+    },
+    {
+      "id": "deep-copilot-ai-credits",
+      "provider": "GitHub Copilot",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 15,
+          "unit": "USD",
+          "period": "monthly",
+          "note": "Pro 的1500 Credits 总月额度，1 Credit=$0.01；不是原始 Token",
+          "note_en": "Pro total 1,500 credits/month at $0.01 each; not a native token quota"
+        }
+      ],
+      "first_month_wan": 5714.285714285714,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/github.com.ico"
+    },
+    {
+      "id": "deep-comate-autofree",
+      "provider": "文心快码 Comate",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/comate.baidu.com.ico"
+    },
+    {
+      "id": "deep-gemini-free-tier",
+      "provider": "Google Gemini API",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 1670000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 5010.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ai.google.dev.png"
+    },
+    {
+      "id": "deep-anthropic-trial-5usd",
+      "provider": "Anthropic",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/console.anthropic.com.ico"
+    },
+    {
+      "id": "deep-anthropic-startup",
+      "provider": "Anthropic",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/anthropic.com.ico"
+    },
+    {
+      "id": "deep-anthropic-sub-credits",
+      "provider": "Anthropic",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/support.claude.com.png"
+    },
+    {
+      "id": "deep-cerebras-free-trial",
+      "provider": "Cerebras",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 5,
+          "unit": "USD",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 1904.7619047619048,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cerebras.ai.png"
+    },
+    {
+      "id": "deep-scnet-ycjh-100cardhours",
+      "provider": "SCNet 国家超算互联网",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 10000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/scnet.cn.png"
+    },
+    {
+      "id": "deep-scnet-openclaw-10m",
+      "provider": "SCNet 国家超算互联网",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [
+        {
+          "amount": 10000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/scnet.cn.png"
+    },
+    {
+      "id": "deep-scnet-30m-promo",
+      "provider": "SCNet 国家超算互联网",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 30000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/tencent-cloud.png"
+    },
+    {
+      "id": "deep-scnet-token-plan",
+      "provider": "SCNet 国家超算互联网",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 60000,
+          "unit": "credits",
+          "period": "monthly",
+          "tokens_per_unit": 66.34146341463415,
+          "model": "Kimi-K2.6",
+          "note": "按官方未缓存输入720万/输出170万示例推算3:1混合量，非缓存综合3000万示例",
+          "note_en": "3:1 uncached estimate from official 7.2M input / 1.7M output examples; not the cached 30M example"
+        }
+      ],
+      "first_month_wan": 398.0487804878049,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/scnet.cn.png"
+    },
+    {
+      "id": "deep-scnet-deepseek-price",
+      "provider": "SCNet 国家超算互联网",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/scnet.cn.png"
+    },
+    {
+      "id": "deep-volc-collab-reward",
+      "provider": "火山方舟",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "deep-volc-free-quota",
+      "provider": "火山方舟",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "deep-volc-coding-plan",
+      "provider": "火山方舟",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "deep-volc-coding-promo",
+      "provider": "火山方舟",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "deep-volc-21pro-daily",
+      "provider": "火山方舟",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 5000000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "deep-xunfei-1024-10yi",
+      "provider": "讯飞星辰 MaaS",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 1000000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 100000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xunfei-token-plan",
+      "provider": "讯飞星辰 MaaS",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xunfei-coding-plan",
+      "provider": "讯飞星辰 MaaS",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xunfei-39-crash",
+      "provider": "讯飞星辰 MaaS",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xunfei-claude-code",
+      "provider": "讯飞星辰 MaaS",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-zhipu-1024-5yi",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 500000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/bigmodel.cn.png"
+    },
+    {
+      "id": "deep-zhipu-weekend-3yi",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 300000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 30000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-zhipu-night-global",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-zhipu-start-plan",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 3000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-zhipu-trial-card",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 2000,
+          "unit": "credits",
+          "period": "once",
+          "tokens_per_unit": 894.8545861297539,
+          "model": "GLM-5.3",
+          "equivalent_factor": 7.428571428571429,
+          "note": "输入:输出 3:1，无缓存，高峰系数；闲时可用量翻倍，MCP 另扣",
+          "note_en": "3:1 input/output, uncached, peak hours; off-peak doubles model tokens; MCP costs extra"
+        }
+      ],
+      "first_month_wan": 1329.49824224992,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deep-zhipu-coding-plan-points",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deep-zhipu-invite-tokens",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 20000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 2000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deep-zhipu-free-models",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deep-trae-cn-pricing",
+      "provider": "Trae 国内版",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/trae-cn-brand.png"
+    },
+    {
+      "id": "deep-trae-intl-pricing",
+      "provider": "Trae 国际版",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 20,
+          "unit": "USD",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 7619.047619047619,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/trae.ai.png"
+    },
+    {
+      "id": "deep-qoder-cn-free",
+      "provider": "Qoder CN（阿里）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 300,
+          "unit": "credits",
+          "period": "once",
+          "note": "2周Pro试用的一次性额度，不按日/月重复发放",
+          "note_en": "One-time allowance in a two-week Pro trial, not a recurring daily/monthly grant."
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 479.1428571428571,
+        "typical": 482.8571428571429,
+        "high": 505.7142857142856
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/developer.aliyun.com.ico"
+    },
+    {
+      "id": "deep-qoder-cn-paid",
+      "provider": "Qoder CN（阿里）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/developer.aliyun.com.ico"
+    },
+    {
+      "id": "deep-codebuddy-free-kimi",
+      "provider": "CodeBuddy（腾讯）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 500,
+          "unit": "credits",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 707.1428571428572,
+        "typical": 1414.2857142857144,
+        "high": 1421.4285714285716
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/codebuddy.cn.svg"
+    },
+    {
+      "id": "deep-codebuddy-pricing",
+      "provider": "CodeBuddy（腾讯）",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/codebuddy.cn.svg"
+    },
+    {
+      "id": "deep-codegeex-free",
+      "provider": "CodeGeeX（智谱系）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/codegeex.cn.png"
+    },
+    {
+      "id": "deep-fitten-free",
+      "provider": "Fitten Code（非十科技）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/fittencode-brand.png"
+    },
+    {
+      "id": "deep-luchentech-welfare",
+      "provider": "潞晨云",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.luchentech.com.png"
+    },
+    {
+      "id": "deep-luchentech-opensource",
+      "provider": "潞晨云",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/colossalai.org.ico"
+    },
+    {
+      "id": "deep-wuwenqiong-status",
+      "provider": "无问芯穹",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/163.com.ico"
+    },
+    {
+      "id": "deep-paratera-trial",
+      "provider": "并行智算（并行科技）",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/paratera.com.ico"
+    },
+    {
+      "id": "deep-invocloud-4090",
+      "provider": "英博云",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-aigalaxy-4090",
+      "provider": "智星云",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ai-galaxy.cn.svg"
+    },
+    {
+      "id": "deep-autodl-student",
+      "provider": "AutoDL",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/autodl.com.png"
+    },
+    {
+      "id": "deep-gpushare-student",
+      "provider": "恒源云 GpuShare",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/gpushare.com.png"
+    },
+    {
+      "id": "deep-comate-autofree-r2",
+      "provider": "文心快码 Comate",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.baidu.com.ico"
+    },
+    {
+      "id": "deep-comate-signup",
+      "provider": "文心快码 Comate",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10,
+          "unit": "CNY",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 571.4285714285714,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/comate.baidu.com.ico"
+    },
+    {
+      "id": "deep-laozhang-pricing",
+      "provider": "laozhang.ai（老张）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.laozhang.ai.png"
+    },
+    {
+      "id": "deep-deepbricks-status",
+      "provider": "Deepbricks",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/deepbricks.ai.svg"
+    },
+    {
+      "id": "deep-dmxapi-free-models",
+      "provider": "DMXAPI",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/dmxapi.cn.ico"
+    },
+    {
+      "id": "deep-gemini-cli-free",
+      "provider": "Google Gemini CLI",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 4000000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-cursor-x-subscription",
+      "provider": "Cursor（Anysphere×SpaceX）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cursor.com.ico"
+    },
+    {
+      "id": "deep-windsurf-devin",
+      "provider": "Windsurf（并入Devin/Cognition）",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/devin-brand.png"
+    },
+    {
+      "id": "deep-xai-grok-code-status",
+      "provider": "xAI（Grok）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/x.ai.ico"
+    },
+    {
+      "id": "deep-xunfei-1024-10yi-r2",
+      "provider": "讯飞星辰 MaaS",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 1000000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 100000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xunfei-wechat-miniapp",
+      "provider": "讯飞星辰 MaaS",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 1000000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 100000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xunfei-workbuddy",
+      "provider": "讯飞星辰 MaaS",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/maas.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-zhipu-start-plan-r2",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 3000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-zhipu-zcode-invite-r2",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-zhipu-trial-card-gift-r2",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-zhipu-ban-case-r2",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-zhipu-zcode-free-tier-r2",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-sensenova-tokenplan-beta",
+      "provider": "商汤日日新 SenseNova",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/sensenova-brand.png"
+    },
+    {
+      "id": "deep-zhipu-taobao-resale-warning",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deep-stepfun-step5-preview-price",
+      "provider": "阶跃星辰 StepFun",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/platform.stepfun.com.svg"
+    },
+    {
+      "id": "deep-stepfun-neo-phone",
+      "provider": "阶跃星辰 StepFun",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/stepfun.com.svg"
+    },
+    {
+      "id": "deep-zhipu-qingyan-status",
+      "provider": "智谱清言（App）",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/chatglm.cn.png"
+    },
+    {
+      "id": "deep-xai-grok-code-status-r3",
+      "provider": "xAI（Grok）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/x.ai.ico"
+    },
+    {
+      "id": "deep-anthropic-code-limits-r4",
+      "provider": "Anthropic",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/support.claude.com.png"
+    },
+    {
+      "id": "deep-anthropic-sub-credits-r4",
+      "provider": "Anthropic",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/support.claude.com.png"
+    },
+    {
+      "id": "deep-copilot-ai-credits-r4",
+      "provider": "GitHub Copilot",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/github.com.ico"
+    },
+    {
+      "id": "deep-gemini-cli-retired-r4",
+      "provider": "Google Gemini CLI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/developers.googleblog.com.png"
+    },
+    {
+      "id": "deep-chatglm-status-r4",
+      "provider": "智谱清言 chatglm.cn",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/chatglm.cn.png"
+    },
+    {
+      "id": "deep-cursor-x-subscription-r4",
+      "provider": "Cursor（X Subscription）",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/x.ai.ico"
+    },
+    {
+      "id": "deep-smzdm-list-series",
+      "provider": "smzdm 权益清单系列（情报源）",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-autoclaw-promos",
+      "provider": "智谱 AutoClaw",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/autoclaw.zhipuai.cn.ico"
+    },
+    {
+      "id": "deep-workbuddy-oct-promos",
+      "provider": "腾讯 WorkBuddy",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/workbuddy.qq.com.svg"
+    },
+    {
+      "id": "deep-tencent-tokenhub",
+      "provider": "腾讯云 TokenHub",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/tencent-cloud.png"
+    },
+    {
+      "id": "deep-tmall-1111-token",
+      "provider": "多厂商（天猫旗舰店）",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/tmall.com.png"
+    },
+    {
+      "id": "deep-deepseek-search-free",
+      "provider": "DeepSeek",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/api-docs.deepseek.com.svg"
+    },
+    {
+      "id": "deep-qoder-daily-credits",
+      "provider": "Qoder 国际版",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 11428.571428571428,
+        "typical": 11428.571428571428,
+        "high": 15238.095238095239
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/qoder.com.png"
+    },
+    {
+      "id": "deep-intern-inkpoint",
+      "provider": "书生·端砚（上海AI实验室）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/discovery.intern-ai.org.cn.svg"
+    },
+    {
+      "id": "deep-amd-tokenfactory",
+      "provider": "AMD Token Factory",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-xfyun-twinsplan",
+      "provider": "讯飞星火",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 100000000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 10000000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/xfyun.cn.png"
+    },
+    {
+      "id": "deep-siliconflow-guide-r5",
+      "provider": "硅基流动",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 20000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 2000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.siliconflow.cn.png"
+    },
+    {
+      "id": "deep-kimi-voucher-r5",
+      "provider": "Kimi（月之暗面）",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "deep-grok-codefast-price",
+      "provider": "xAI",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.x.ai.ico"
+    },
+    {
+      "id": "deep-cohere-commanda-r5",
+      "provider": "Cohere",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 430000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 1290.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/dashboard.cohere.com.ico"
+    },
+    {
+      "id": "deep-together-nofree-r5",
+      "provider": "Together AI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/together.ai.png"
+    },
+    {
+      "id": "deep-wechat-watchlist",
+      "provider": "公众号关注清单（运营情报）",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "deep-kimi-k25-offline-r6",
+      "provider": "Kimi（月之暗面）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "deep-zhipu-startplan-r6",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-tencent-yuanqi-verified-r6",
+      "provider": "腾讯元器",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 1000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/yuanqi.tencent.com.png"
+    },
+    {
+      "id": "deep-xfyun-twinsplan-r6",
+      "provider": "讯飞星火",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 100000000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 10000000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/startups.xfyun.cn.ico"
+    },
+    {
+      "id": "deep-xfyun-spark-freepack-r6",
+      "provider": "讯飞开放平台",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 2000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 200.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/xfyun.cn.png"
+    },
+    {
+      "id": "deep-sensenova-status-r6",
+      "provider": "商汤日日新 SenseNova",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/sensenova-brand.png"
+    },
+    {
+      "id": "deep-grok-codefast-r6",
+      "provider": "xAI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.x.ai.ico"
+    },
+    {
+      "id": "deep-intern-inkstone-r6",
+      "provider": "书生·端砚（上海AI实验室）",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/discovery.intern-ai.org.cn.svg"
+    },
+    {
+      "id": "deep-zhipu-trialplan-r7",
+      "provider": "ZCode",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 3000000,
+          "unit": "tokens",
+          "period": "daily",
+          "model": "GLM-5.3",
+          "equivalent_factor": 7.428571428571429
+        },
+        {
+          "amount": 5000000,
+          "unit": "tokens",
+          "period": "daily",
+          "model": "GLM-5.3-Flash",
+          "equivalent_factor": 0.7428571428571429
+        }
+      ],
+      "first_month_wan": 12999.999999999998,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deep-zhipu-flash-correction-r7",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "deep-kimi-trial-r7",
+      "provider": "Kimi（月之暗面）",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "deep-minimax-trial-r7",
+      "provider": "MiniMax",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/minimax-brand.png"
+    },
+    {
+      "id": "deep-lingma-qoder-merge-r7",
+      "provider": "通义灵码→Qoder CN",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/help.aliyun.com.png"
+    },
+    {
+      "id": "deep-trae-free-usage-r7",
+      "provider": "Trae 国内版",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 170000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 510.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/trae-cn-brand.png"
+    },
+    {
+      "id": "deep-copilot-free-r7",
+      "provider": "GitHub Copilot",
+      "published": false,
+      "verify_status": "stale",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 130000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 390.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/github.com.ico"
+    },
+    {
+      "id": "deep-trial-tier-matrix-r7",
+      "provider": "全行业体验档横评",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "cline-pass-deepseek",
+      "provider": "Cline",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cline.bot.png"
+    },
+    {
+      "id": "intel-miaowu",
+      "provider": "神秘喵星人（公众号）",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "cline-free-tier",
+      "provider": "Cline",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cline.bot.png"
+    },
+    {
+      "id": "opencode-go-deepseek",
+      "provider": "OpenCode",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/opencode.ai.ico"
+    },
+    {
+      "id": "opencode-zen-free",
+      "provider": "OpenCode",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "requests",
+          "period": "daily",
+          "model": "LongCat 2.5 Free",
+          "note": "仅该型号；其他免费模型未公布统一日额，不按12款翻倍",
+          "note_en": "This model only. Other free variants have no common published cap; not multiplied by 12."
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 300.0,
+        "typical": 1200.0,
+        "high": 2400.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/opencode.ai.ico"
+    },
+    {
+      "id": "qoder-deepseek-free",
+      "provider": "Qoder",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qoder.com.png"
+    },
+    {
+      "id": "unisound-u2flash-free",
+      "provider": "云知声",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [
+        {
+          "amount": 500000000,
+          "unit": "tokens",
+          "period": "once"
+        },
+        {
+          "amount": 200000000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/unisound.com.ico"
+    },
+    {
+      "id": "doubao-daily-quota",
+      "provider": "豆包",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 200,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 300.0,
+        "typical": 600.0,
+        "high": 1200.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/doubao.com.png"
+    },
+    {
+      "id": "xiaomi-mimo-compute",
+      "provider": "小米 MiMo",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mimo.mi.com.ico"
+    },
+    {
+      "id": "zhipu-weekend-build",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "zhipu-pinhaomo",
+      "provider": "智谱 BigModel",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "longcat-daily-free",
+      "provider": "美团 LongCat",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [
+        {
+          "amount": 50000000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/longcat.chat.svg"
+    },
+    {
+      "id": "zcode-daily-1e8",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "workbuddy-free",
+      "provider": "腾讯 WorkBuddy",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 5000,
+          "unit": "credits",
+          "period": "once"
+        },
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "daily"
+        },
+        {
+          "amount": 500,
+          "unit": "credits",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 12021.42857142857,
+        "typical": 24042.85714285714,
+        "high": 24164.285714285717
+      },
+      "methods": [
+        "credit_value",
+        "credit_value",
+        "credit_value"
+      ],
+      "logo": "assets/logos/tencent-cloud.png"
+    },
+    {
+      "id": "monkeycode-daily",
+      "provider": "MonkeyCode",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 5000,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 250.0,
+        "typical": 500.0,
+        "high": 1000.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/monkeycode-ai.com.png"
+    },
+    {
+      "id": "novita-freetostart",
+      "provider": "Novita",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/novita.ai.ico"
+    },
+    {
+      "id": "fireworks-payg",
+      "provider": "Fireworks AI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/fireworks.ai.svg"
+    },
+    {
+      "id": "deepinfra-payg",
+      "provider": "DeepInfra",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/deepinfra.com.ico"
+    },
+    {
+      "id": "stepfun-75d",
+      "provider": "阶跃星辰",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/stepfun.com.svg"
+    },
+    {
+      "id": "qoder-boost-r4",
+      "provider": "Qoder",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [
+        {
+          "amount": 120000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qoder.com.png"
+    },
+    {
+      "id": "scnet-night-free",
+      "provider": "SCNet 国家超算互联网",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "volc-k27-alias-warning",
+      "provider": "火山方舟",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/volcengine.com.png"
+    },
+    {
+      "id": "anti-charge-checklist",
+      "provider": "防扣费四条（全网通用）",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/bailian.console.aliyun.com.png"
+    },
+    {
+      "id": "codex-free",
+      "provider": "Codex",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/openai.com.ico"
+    },
+    {
+      "id": "openclaw-free",
+      "provider": "OpenClaw",
+      "published": false,
+      "verify_status": "verified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/openclaw.ai.svg"
+    },
+    {
+      "id": "autoclaw-free",
+      "provider": "AutoClaw",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "trae-free-tier",
+      "provider": "Trae",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 500,
+          "unit": "credits",
+          "period": "monthly"
+        },
+        {
+          "amount": 1500,
+          "unit": "credits",
+          "period": "once"
+        },
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 4992.857142857143,
+        "typical": 7000.0,
+        "high": 14285.714285714286
+      },
+      "methods": [
+        "credit_value",
+        "credit_value",
+        "credit_value"
+      ],
+      "logo": "assets/logos/trae-cn-brand.png"
+    },
+    {
+      "id": "xiaomi-mimo-free5",
+      "provider": "小米 MiMo",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 5,
+          "unit": "CNY",
+          "period": "once",
+          "provider": "小米 MiMo",
+          "all_models": true
+        }
+      ],
+      "first_month_wan": 285.7142857142857,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mimo.mi.com.ico"
+    },
+    {
+      "id": "xiaomi-mimo-refer",
+      "provider": "小米 MiMo",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10,
+          "unit": "CNY",
+          "period": "once",
+          "provider": "小米 MiMo",
+          "all_models": true
+        }
+      ],
+      "first_month_wan": 571.4285714285714,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mimo.mi.com.ico"
+    },
+    {
+      "id": "ecloud-tianyi-25m",
+      "provider": "天翼云星辰 TokenHub",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 500000,
+          "unit": "tokens",
+          "period": "once",
+          "model": "控制台所选可领模型",
+          "note": "保守按一款可领模型计，不代表平台通用余额",
+          "note_en": "Conservatively counts one eligible model pack, not a universal account balance"
+        }
+      ],
+      "first_month_wan": 50.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ctyun.cn.ico"
+    },
+    {
+      "id": "unicom-cloud-6m",
+      "provider": "联通云",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 6000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 600.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/china-unicom.png"
+    },
+    {
+      "id": "comet-free",
+      "provider": "Perplexity Comet",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/perplexity.ai.ico"
+    },
+    {
+      "id": "aws-activate",
+      "provider": "AWS Activate",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/startups.aws.com.png"
+    },
+    {
+      "id": "google-startups",
+      "provider": "Google for Startups",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.google.com.ico"
+    },
+    {
+      "id": "qwen-app-5h-limit",
+      "provider": "千问",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/chat.qwen.ai.png"
+    },
+    {
+      "id": "zai-subscribe-coupon",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/z.ai.svg"
+    },
+    {
+      "id": "qiniu-conatus-1e8",
+      "provider": "七牛云",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 100000000,
+          "unit": "tokens",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 110000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qiniu.com.ico"
+    },
+    {
+      "id": "zenmux-gifts",
+      "provider": "ZenMux",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zenmux.ai.svg"
+    },
+    {
+      "id": "poe-daily-points",
+      "provider": "Poe",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 300,
+          "unit": "points",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 22.5,
+        "typical": 45.0,
+        "high": 90.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/poe.com.ico"
+    },
+    {
+      "id": "baseten-starter-30",
+      "provider": "Baseten",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 30,
+          "unit": "USD",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 11428.571428571428,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/baseten.co.png"
+    },
+    {
+      "id": "aimlapi-startup-10m",
+      "provider": "AI/ML API",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 1000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/aimlapi.com.ico"
+    },
+    {
+      "id": "deep-sensenova-xiaohuanxiong",
+      "provider": "商汤小浣熊",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 9000,
+          "unit": "credits",
+          "period": "once"
+        },
+        {
+          "amount": 300,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 900.0,
+        "typical": 1800.0,
+        "high": 3600.0
+      },
+      "methods": [
+        "scenario",
+        "scenario"
+      ],
+      "logo": "assets/logos/office.xiaohuanxiong.com.ico"
+    },
+    {
+      "id": "xiaomi-mimo-code",
+      "provider": "小米 MiMo Code",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mimo.mi.com.ico"
+    },
+    {
+      "id": "xiaomi-mimo-tokenplan",
+      "provider": "小米 MiMo",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 4100000000,
+          "unit": "credits",
+          "period": "monthly",
+          "tokens_per_unit": 0.008,
+          "model": "mimo-v2.6-flash",
+          "note": "输入:输出=3:1、无缓存、正常时段；Pro 模型消耗不同",
+          "note_en": "3:1 input/output, uncached, standard hours; Pro model usage differs"
+        }
+      ],
+      "first_month_wan": 3280.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mimo.mi.com.ico"
+    },
+    {
+      "id": "workbuddy-intl-free",
+      "provider": "WorkBuddy 国际版",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "monthly"
+        },
+        {
+          "amount": 30,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 1904.7619047619046,
+        "typical": 3809.523809523809,
+        "high": 11428.571428571428
+      },
+      "methods": [
+        "credit_value",
+        "credit_value"
+      ],
+      "logo": "assets/logos/workbuddy.ai.svg"
+    },
+    {
+      "id": "workbuddy-intl-pro",
+      "provider": "WorkBuddy 国际版",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 2000,
+          "unit": "credits",
+          "period": "monthly"
+        },
+        {
+          "amount": 50,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 6666.666666666666,
+        "typical": 13333.333333333332,
+        "high": 40000.0
+      },
+      "methods": [
+        "credit_value",
+        "credit_value"
+      ],
+      "logo": "assets/logos/workbuddy.ai.svg"
+    },
+    {
+      "id": "huawei-codearts-daily",
+      "provider": "华为云码道 CodeArts",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "daily"
+        },
+        {
+          "amount": 500,
+          "unit": "credits",
+          "period": "monthly"
+        },
+        {
+          "amount": 4000,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 21000.0,
+        "typical": 21214.285714285717,
+        "high": 21342.85714285714
+      },
+      "methods": [
+        "credit_value",
+        "credit_value",
+        "credit_value"
+      ],
+      "logo": "assets/logos/huawei-cloud.png"
+    },
+    {
+      "id": "aliyun-yungongkaiwu-student",
+      "provider": "阿里云 云工开物",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 300,
+          "unit": "CNY",
+          "period": "once",
+          "note": "仅折百炼模型抵扣金，资格和模型范围以下单页为准",
+          "note_en": "Bailian model voucher only; eligibility and model scope follow checkout"
+        },
+        {
+          "amount": 300,
+          "unit": "CNY",
+          "period": "once",
+          "convert": false,
+          "note": "公共云年券不计入模型 Token",
+          "note_en": "General cloud voucher excluded from model tokens"
+        }
+      ],
+      "first_month_wan": 17142.85714285714,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/university.aliyun.com.ico"
+    },
+    {
+      "id": "libtv-double11-zeropoints",
+      "provider": "LibTV",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/liblib.tv.png"
+    },
+    {
+      "id": "doubao-pro-invite",
+      "provider": "豆包电脑版",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/doubao.com.png"
+    },
+    {
+      "id": "trae-code-fission",
+      "provider": "Trae 国内版",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 500,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 499.2857142857143,
+        "typical": 700.0,
+        "high": 1428.5714285714284
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/trae-cn-brand.png"
+    },
+    {
+      "id": "zhiyun-xj-aistore",
+      "provider": "智云新疆 AI Store",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 200,
+          "unit": "credits",
+          "period": "once",
+          "tokens_per_unit": 1000000.0,
+          "model": "deepseek-v4-flash",
+          "note": "按已记录官网 1 积分/百万档；当前可用性仍须实测",
+          "note_en": "Recorded official 1 credit/M rate; current availability still needs testing"
+        }
+      ],
+      "first_month_wan": 20000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/china-telecom.png"
+    },
+    {
+      "id": "catpaw-meituan",
+      "provider": "美团 CatPaw",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 1000,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 50.0,
+        "typical": 100.0,
+        "high": 200.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/catpaw.meituan.com.png"
+    },
+    {
+      "id": "claude-for-oss",
+      "provider": "Anthropic",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/claude.com.ico"
+    },
+    {
+      "id": "azure-startups-5k",
+      "provider": "Microsoft for Startups",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/microsoft.com.png"
+    },
+    {
+      "id": "zhipu-1111-coding-7zhe",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/docs.bigmodel.cn.png"
+    },
+    {
+      "id": "openai-pro-api-credits",
+      "provider": "OpenAI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "USD",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 38095.2380952381,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/openai.com.ico"
+    },
+    {
+      "id": "modelscope-gpu-free",
+      "provider": "魔搭 ModelScope",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 36,
+          "unit": "hours",
+          "period": "once"
+        },
+        {
+          "amount": 200,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 300.0,
+        "typical": 600.0,
+        "high": 1200.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/modelscope.cn.ico"
+    },
+    {
+      "id": "ecom-token-store-1111",
+      "provider": "电商 Token 店",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/tmall.com.png"
+    },
+    {
+      "id": "api-relay-distill-warning",
+      "provider": "API 中转站",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "kimi-subscribe-invite",
+      "provider": "Kimi 开放平台",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kimi-brand.png"
+    },
+    {
+      "id": "serv00-free-hosting",
+      "provider": "Serv00",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/serv00.com.png"
+    },
+    {
+      "id": "instabox-free-agent-vm",
+      "provider": "InstaBox",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/instabox.sh.svg"
+    },
+    {
+      "id": "oracle-cloud-always-free",
+      "provider": "Oracle Cloud",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/oracle.com.png"
+    },
+    {
+      "id": "aws-freetier-ec2",
+      "provider": "AWS",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/startups.aws.com.png"
+    },
+    {
+      "id": "gcp-freetier-vm",
+      "provider": "Google Cloud",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/cloud.google.com.ico"
+    },
+    {
+      "id": "github-codespaces-free",
+      "provider": "GitHub Codespaces",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/github.com.ico"
+    },
+    {
+      "id": "hf-spaces-free-cpu",
+      "provider": "Hugging Face Spaces",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/huggingface.co.svg"
+    },
+    {
+      "id": "modal-free-credits",
+      "provider": "Modal",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/modal.com.svg"
+    },
+    {
+      "id": "e2b-hobby-free",
+      "provider": "e2b",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/e2b.dev.png"
+    },
+    {
+      "id": "daytona-startup-50k",
+      "provider": "Daytona",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/daytona.io.png"
+    },
+    {
+      "id": "replit-free-mode",
+      "provider": "Replit",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/replit.com.png"
+    },
+    {
+      "id": "today-ai-free",
+      "provider": "Today AI",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 300000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 30000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/todayai.cn.png"
+    },
+    {
+      "id": "gemini-code-assist-individuals-sunsets",
+      "provider": "Google",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/developers.googleblog.com.png"
+    },
+    {
+      "id": "cf-workers-free",
+      "provider": "Cloudflare Workers",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/developers.cloudflare.com.png"
+    },
+    {
+      "id": "workbuddy-invite-reward",
+      "provider": "WorkBuddy 国内版",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/workbuddy.qq.com.svg"
+    },
+    {
+      "id": "autoclaw-double11-50m",
+      "provider": "智谱 AutoClaw",
+      "published": false,
+      "verify_status": "expired",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/autoclaw.zhipuai.cn.ico"
+    },
+    {
+      "id": "perplexity-education-pro",
+      "provider": "Perplexity",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/perplexity.ai.ico"
+    },
+    {
+      "id": "command-code-goat",
+      "provider": "Command Code",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "USD",
+          "period": "monthly",
+          "note": "最高模型用量，多个模型共享，非各模型叠加",
+          "note_en": "Maximum shared model value, not a separate grant per model"
+        }
+      ],
+      "first_month_wan": 38095.2380952381,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/commandcode.ai.png"
+    },
+    {
+      "id": "amd-token-factory",
+      "provider": "AMD Token Factory",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/amd-token-factory.svg"
+    },
+    {
+      "id": "qiniu-invite-3m",
+      "provider": "七牛云",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 3000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 300.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qiniu.com.ico"
+    },
+    {
+      "id": "opendesign-reset-card-invite",
+      "provider": "OpenDesign Cloud",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 220,
+          "unit": "USD",
+          "period": "monthly",
+          "note": "Go 使用 Eco 模型的最高等值用量，重置卡不额外叠加",
+          "note_en": "Go Eco maximum equivalent model usage; reset card is not an additional pool"
+        }
+      ],
+      "first_month_wan": 83809.5238095238,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/open-design.ai-180.png"
+    },
+    {
+      "id": "opendesign-free",
+      "provider": "OpenDesign",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/open-design.ai-180.png"
+    },
+    {
+      "id": "fiimeopc-token",
+      "provider": "FiimeOPC",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 100000000.0,
+          "unit": "tokens",
+          "period": "once",
+          "note": "红包最高值，实际随机",
+          "note_en": "Maximum random signup award"
+        },
+        {
+          "amount": 50000000.0,
+          "unit": "tokens",
+          "period": "daily",
+          "note": "完成全部审核任务的上限",
+          "note_en": "Upper bound after all reviewed tasks"
+        }
+      ],
+      "first_month_wan": 160000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/opc.fiime.cn.png"
+    },
+    {
+      "id": "azure-free-trial",
+      "provider": "Microsoft Azure",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/azure.microsoft.com.ico"
+    },
+    {
+      "id": "vultr-trial-250",
+      "provider": "Vultr",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/vultr.com.png"
+    },
+    {
+      "id": "agentscope-qwenpaw-free",
+      "provider": "AgentScope Platform",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 200,
+          "unit": "credits",
+          "period": "once",
+          "convert": false,
+          "note": "首次部署相关云端权益，不作为通用文本模型额度",
+          "note_en": "Deployment-related cloud credits, not a general text-model allowance"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/platform.agentscope.io.svg"
+    },
+    {
+      "id": "autoclaw-invite-fission",
+      "provider": "智谱 AutoClaw",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/autoclaw.zhipuai.cn.ico"
+    },
+    {
+      "id": "agentrouter-signup",
+      "provider": "AgentRouter",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "USD",
+          "period": "once"
+        },
+        {
+          "amount": 25,
+          "unit": "USD",
+          "period": "daily",
+          "note": "每日签到含首日，不再额外叠一次首日 $25；邀请加成未计",
+          "note_en": "Includes the first check-in; no duplicate $25 and no optional referral bonus"
+        }
+      ],
+      "first_month_wan": 323809.52380952385,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "simular-box-free",
+      "provider": "Simular Box",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/box.simular.ai.png"
+    },
+    {
+      "id": "northwest-first-com-free",
+      "provider": "Northwest",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/northwestregisteredagent.com.png"
+    },
+    {
+      "id": "codehost-cv-free",
+      "provider": "CodeHost",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": null
+    },
+    {
+      "id": "dnshe-free-domains",
+      "provider": "DNSHE",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/dnshe.com.png"
+    },
+    {
+      "id": "digitalplat-dpdns-free",
+      "provider": "DigitalPlat FreeDomain",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/digitalplat-org.png"
+    },
+    {
+      "id": "wx-miniprogram-growth-1b",
+      "provider": "微信小程序成长计划",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 1000000000,
+          "unit": "tokens",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 100000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/mp.weixin.qq.com.png"
+    },
+    {
+      "id": "modelscope-amd-gpu-100h",
+      "provider": "ModelScope 魔搭",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "hours",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/modelscope.cn.ico"
+    },
+    {
+      "id": "commandcode-go-plan",
+      "provider": "Command Code",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10,
+          "unit": "USD",
+          "period": "monthly",
+          "note": "模型选择不同会变化，以基础用量作参考",
+          "note_en": "Base reference; actual usage varies by model"
+        }
+      ],
+      "first_month_wan": 3809.5238095238096,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/commandcode.ai.png"
+    },
+    {
+      "id": "commandcode-glyph-free",
+      "provider": "Command Code",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/commandcode.ai.png"
+    },
+    {
+      "id": "clixad-free",
+      "provider": "clixad",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 60000,
+          "unit": "credits",
+          "period": "daily",
+          "note": "免费用量上限，非钱包实发；另受全站日预算约束",
+          "note_en": "Free-usage cap, not a wallet grant; also limited by the global daily budget."
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 1563.6363636363637,
+        "typical": 6615.384615384615,
+        "high": 16125.0
+      },
+      "methods": [
+        "model_examples"
+      ],
+      "logo": "assets/logos/clixad.io.svg"
+    },
+    {
+      "id": "zcode-5yi-nov",
+      "provider": "智谱 BigModel",
+      "published": false,
+      "verify_status": "unverified",
+      "classification": "archived",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/bigmodel.cn.png"
+    },
+    {
+      "id": "freepi-terminal-free",
+      "provider": "free-pi",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 5000,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 250.0,
+        "typical": 500.0,
+        "high": 1000.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/freepi.ai.svg"
+    },
+    {
+      "id": "loomy-signup-bonus",
+      "provider": "讯飞 Loomy",
+      "published": true,
+      "verify_status": "unverified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 5000,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 7500.0,
+        "typical": 15000.0,
+        "high": 30000.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/loomy.xunfei.cn.png"
+    },
+    {
+      "id": "tencent-ima-daily",
+      "provider": "腾讯 ima",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 50,
+          "unit": "points",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 75.0,
+        "typical": 150.0,
+        "high": 300.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/ima.qq.com.svg"
+    },
+    {
+      "id": "astudio-daily-100",
+      "provider": "讯飞 AStudio",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "daily"
+        },
+        {
+          "amount": 1000,
+          "unit": "credits",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 200.0,
+        "typical": 400.0,
+        "high": 800.0
+      },
+      "methods": [
+        "scenario",
+        "scenario"
+      ],
+      "logo": "assets/logos/training.xfyun.cn.png"
+    },
+    {
+      "id": "minimax-code-daily-400",
+      "provider": "MiniMax Code",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 400,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 4577.531947358383,
+        "typical": 4579.570029258364,
+        "high": 4582.630557235147
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/minimax-brand.png"
+    },
+    {
+      "id": "wps-lingxi-daily",
+      "provider": "WPS 灵犀",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 100,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 270.0,
+        "typical": 540.0,
+        "high": 1080.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/lingxi.wps.cn.png"
+    },
+    {
+      "id": "miao-wu-daily-2000",
+      "provider": "秒悟",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 5000,
+          "unit": "credits",
+          "period": "once",
+          "note": "新人首月赠额",
+          "note_en": "First-month newcomer grant"
+        },
+        {
+          "amount": 2000,
+          "unit": "credits",
+          "period": "daily",
+          "note": "每日首次登录领取",
+          "note_en": "Claim on the first login each day"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 162.5,
+        "typical": 1857.1428571428573,
+        "high": 10000.0
+      },
+      "methods": [
+        "model_rates",
+        "model_rates"
+      ],
+      "logo": "assets/logos/meoo-brand.png"
+    },
+    {
+      "id": "ace-music-daily-20",
+      "provider": "ACE Music",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 20,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/acemusic.ai.png"
+    },
+    {
+      "id": "officeace-daily-100",
+      "provider": "华为果办 OfficeAce",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 300,
+          "unit": "credits",
+          "period": "once"
+        },
+        {
+          "amount": 50,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 5014.285714285716,
+        "typical": 5040.0,
+        "high": 5131.4285714285725
+      },
+      "methods": [
+        "credit_value",
+        "credit_value"
+      ],
+      "logo": "assets/logos/huawei-cloud.png"
+    },
+    {
+      "id": "codearts-skill-1000",
+      "provider": "华为码道",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 1000,
+          "unit": "credits",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 1500.0,
+        "typical": 3000.0,
+        "high": 6000.0
+      },
+      "methods": [
+        "scenario"
+      ],
+      "logo": "assets/logos/huawei-cloud.png"
+    },
+    {
+      "id": "ernie-5.5-flash-free",
+      "provider": "百度 ERNIE",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 50,
+          "unit": "requests",
+          "period": "daily"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 150.0,
+        "typical": 600.0,
+        "high": 1200.0
+      },
+      "methods": [
+        "requests"
+      ],
+      "logo": "assets/logos/yiyan.baidu.com.png"
+    },
+    {
+      "id": "longcat-2.5-free-2w",
+      "provider": "美团 LongCat",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/longcat.chat.svg"
+    },
+    {
+      "id": "rime-monthly-50usd",
+      "provider": "Rime",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 50,
+          "unit": "USD",
+          "period": "monthly",
+          "convert": false,
+          "note": "语音用量，按字符或音频时间计费",
+          "note_en": "Voice allowance billed by characters or audio duration"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/rime.ai.png"
+    },
+    {
+      "id": "drex-monthly-5usd",
+      "provider": "Drex",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 5,
+          "unit": "USD",
+          "period": "once",
+          "convert": false,
+          "note": "注册赠额，3个月有效；用模型输入预算展示，不重复折算DS购买力",
+          "note_en": "Signup funds, valid 3 months; displayed as a model input budget, not counted again as DS value"
+        },
+        {
+          "amount": 5,
+          "unit": "USD",
+          "period": "monthly",
+          "convert": false,
+          "starts_after_days": 30,
+          "note": "首次在注册满一个月到账，首月不计入；之后每月发放且不结转",
+          "note_en": "First arrives one calendar month after signup; excluded from month one, then renewed monthly without rollover"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": {
+        "low": 16666.666666666668,
+        "typical": 16666.666666666668,
+        "high": 16666.666666666668
+      },
+      "methods": [
+        "model_budget"
+      ],
+      "logo": "assets/logos/nace-drex-brand.png"
+    },
+    {
+      "id": "livekit-monthly-2.5usd",
+      "provider": "LiveKit Inference",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 2.5,
+          "unit": "USD",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 952.3809523809524,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/livekit.io.png"
+    },
+    {
+      "id": "ant-bailing-monthly-10",
+      "provider": "蚂蚁百灵",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10,
+          "unit": "CNY",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 571.4285714285714,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ant-ling.png"
+    },
+    {
+      "id": "edgeone-makers-50w",
+      "provider": "腾讯 EdgeOne Makers",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 500000,
+          "unit": "tokens",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 50.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/edgeone.ai.png"
+    },
+    {
+      "id": "tencent-adp-15k",
+      "provider": "腾讯云 ADP",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 15000,
+          "unit": "PU",
+          "period": "monthly",
+          "convert": false,
+          "note": "PU资源面值已公开；文本只估购买力，不视作Auto原始Token",
+          "note_en": "PU face value is public; text is shown only as purchasing power, not native Auto tokens"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": {
+        "low": 857.1428571428571,
+        "typical": 857.1428571428571,
+        "high": 857.1428571428571
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/tencent-adp-brand.png"
+    },
+    {
+      "id": "elevenlabs-free-10k",
+      "provider": "ElevenLabs",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "native_nontext_or_unpriced",
+      "quota": [
+        {
+          "amount": 10000,
+          "unit": "credits",
+          "period": "monthly",
+          "convert": false,
+          "note": "语音、生图等用量；不折算成文本Tokens",
+          "note_en": "Voice/image allowance, not a text-token grant"
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/elevenlabs.io.png"
+    },
+    {
+      "id": "zed-student-10usd",
+      "provider": "Zed",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10,
+          "unit": "USD",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 3809.5238095238096,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zed.dev.png"
+    },
+    {
+      "id": "telnyx-25usd",
+      "provider": "Telnyx",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 25,
+          "unit": "USD",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 9523.809523809525,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/telnyx.com.png"
+    },
+    {
+      "id": "ant-bailing-new-20",
+      "provider": "蚂蚁百灵",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 20,
+          "unit": "CNY",
+          "period": "once"
+        }
+      ],
+      "first_month_wan": 1142.857142857143,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/ant-ling.png"
+    },
+    {
+      "id": "kilo-gateway-auto-free",
+      "provider": "Kilo Code",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/kilo.ai.ico"
+    },
+    {
+      "id": "llm7-free-token",
+      "provider": "llm7.io",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/llm7.io.ico"
+    },
+    {
+      "id": "cloudflare-workers-ai-free",
+      "provider": "Cloudflare Workers AI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 10000,
+          "unit": "neurons",
+          "period": "daily",
+          "convert": false
+        }
+      ],
+      "first_month_wan": 0,
+      "estimate_month_wan": {
+        "low": 421.3349999473332,
+        "typical": 1778.7791645667191,
+        "high": 4683.292354525231
+      },
+      "methods": [
+        "neurons"
+      ],
+      "logo": "assets/logos/developers.cloudflare.com.png"
+    },
+    {
+      "id": "huggingface-inference-free-credits",
+      "provider": "Hugging Face Inference",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/huggingface.co.svg"
+    },
+    {
+      "id": "vercel-ai-gateway-free-credits",
+      "provider": "Vercel AI Gateway",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 5,
+          "unit": "USD",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 1904.7619047619048,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/vercel.com.png"
+    },
+    {
+      "id": "atlassian-rovo-dev-free",
+      "provider": "Atlassian Rovo Dev",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "scenario",
+      "quota": [
+        {
+          "amount": 350,
+          "unit": "credits",
+          "period": "monthly"
+        }
+      ],
+      "first_month_wan": 0.0,
+      "estimate_month_wan": {
+        "low": 1333.3333333333333,
+        "typical": 1333.3333333333333,
+        "high": 1333.3333333333333
+      },
+      "methods": [
+        "credit_value"
+      ],
+      "logo": "assets/logos/support.atlassian.com.svg"
+    },
+    {
+      "id": "lightning-ai-studio-free-cpu",
+      "provider": "Lightning AI Studio",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/studio.lightning.ai.png"
+    },
+    {
+      "id": "rime-stt-free-nov19",
+      "provider": "Rime",
+      "published": true,
+      "verify_status": "expired",
+      "classification": "expired",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/rime.ai.png"
+    },
+    {
+      "id": "qiniu-kimi-k3-free",
+      "provider": "七牛云",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qiniu.com.ico"
+    },
+    {
+      "id": "google-antigravity-cli-free",
+      "provider": "Google Antigravity CLI",
+      "published": true,
+      "verify_status": "stale",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/antigravity.google.svg"
+    },
+    {
+      "id": "autoclaw-m11w3-login",
+      "provider": "智谱 AutoClaw",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 10000,
+          "unit": "credits",
+          "period": "once",
+          "tokens_per_unit": 10000,
+          "note": "官方端内 Token 当量，不是通用 API 额度",
+          "note_en": "Official in-app token allowance; not a general API quota"
+        }
+      ],
+      "first_month_wan": 10000.0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/autoclaw.zhipuai.cn.ico"
+    },
+    {
+      "id": "zcode-idle-tasks",
+      "provider": "ZCode",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/zcode.z.ai.ico"
+    },
+    {
+      "id": "deepseek-server-search-billing",
+      "provider": "DeepSeek",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/api-docs.deepseek.com.svg"
+    },
+    {
+      "id": "qoder-qwen-offpeak-discount",
+      "provider": "Qoder 国际版",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qoder.com.png"
+    },
+    {
+      "id": "qoder-ultimate-offpeak-november",
+      "provider": "Qoder 国际版",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qoder.com.png"
+    },
+    {
+      "id": "qoder-efficient-zero-credits",
+      "provider": "Qoder 国际版",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/qoder.com.png"
+    },
+    {
+      "id": "tencenthub-deepseek-search-billing",
+      "provider": "腾讯云 TokenHub",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "unquantified_or_no_separate_grant",
+      "quota": [],
+      "first_month_wan": 0,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/tencent-cloud.png"
+    },
+    {
+      "id": "electronhub-free-weekly",
+      "provider": "Electron Hub",
+      "published": true,
+      "verify_status": "verified",
+      "classification": "fixed_reference",
+      "quota": [
+        {
+          "amount": 0.25,
+          "unit": "USD",
+          "period": "weekly"
+        }
+      ],
+      "first_month_wan": 408.1632653061224,
+      "estimate_month_wan": null,
+      "methods": [],
+      "logo": "assets/logos/electronhub.ai.png"
+    }
+  ]
+}

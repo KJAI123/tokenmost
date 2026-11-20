@@ -29,7 +29,7 @@ const DailyEstimateUI = (() => {
       return b.month.typical-a.month.typical;
     });
     const counted = new Set(total.rows.map(e=>e.basis));
-    const kinds = {requests:msg('次数情景','Request scenario'),credit_value:msg('售价购买力','Price-based value'),neurons:msg('模型价格情景','Model-rate scenario'),model_examples:msg('官方模型示例','Official model examples'),scenario:msg('可调假设','Editable assumption')};
+    const kinds = {requests:msg('次数情景','Request scenario'),credit_value:msg('售价购买力','Price-based value'),neurons:msg('模型价格情景','Model-rate scenario'),model_examples:msg('官方模型示例','Official model examples'),model_rates:msg('官方扣费表情景','Official rate scenario'),model_budget:msg('模型输入预算','Model input budget'),scenario:msg('可调假设','Editable assumption')};
     document.getElementById('dailyEstimateBody').innerHTML = `<div class="estimate-totals">
       <div><span>${msg('独立额度池','Independent pools')}</span><b>${total.count}</b><small>${msg('共享额度只加一次','Shared allowances counted once')}</small></div>
       <div><span>${msg('其中日额度部分 / 天','Daily allowance component / day')}</span><b>${range(total.daily)}</b><small>${msg('参考情景 ','Reference scenario ')}${f(total.daily.typical)}</small></div>
@@ -38,7 +38,7 @@ const DailyEstimateUI = (() => {
     <div class="estimate-list">${candidates.map(e=>{
       const d=e.deal;
       const basis=e.basis, source=basis.source_url;
-      const periodLabel={once:msg('本次领取估计','This grant estimate'),daily:msg('估计 Tokens/天','Estimated tokens/day'),weekly:msg('估计 Tokens/周','Estimated tokens/week'),monthly:msg('估计 Tokens/月','Estimated tokens/month')}[e.period];
+      const periodLabel=e.method==='model_budget'?msg('仅输入 Tokens 预算','INPUT tokens budget only'):{once:msg('本次领取估计','This grant estimate'),daily:msg('估计 Tokens/天','Estimated tokens/day'),weekly:msg('估计 Tokens/周','Estimated tokens/week'),monthly:msg('估计 Tokens/月','Estimated tokens/month')}[e.period];
       return `<article class="estimate-item${d.id===selected?' selected':''}" data-estimate-row="${esc(d.id)}">
         <header><strong>${esc(d.provider)}</strong><span class="estimate-kind">${kinds[e.method]}</span>${Workbench.freshness(d)}</header>
         <div class="estimate-metrics"><div><span>${msg('原始额度','Native allowance')}</span><b>${esc(TokenMath.native(e.quota))}</b></div><div><span>${periodLabel}</span><b>${range(e.periodTokens)}</b><small>${msg('参考 ','Reference ')}${f(e.periodTokens.typical)}</small></div><div><span>${msg('首月参考','First-month estimate')}</span><b>${range(e.month)}</b><small>${e.period==='daily'?e.days+msg(' 天',' days'):e.period==='weekly'?e.days+msg('天 ÷ 7',' days ÷ 7'):msg('只计一次，不乘30','Counted once, never ×30')}</small></div></div>

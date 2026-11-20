@@ -10,13 +10,13 @@
 - 内容：DeepSeek 官方高峰价：Flash ¥2/8，V4-Pro ¥9/27（每百万输入/输出）
 - 规则：仅未命中缓存输入按此输入价计费，空闲时段按高峰价一半计费
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## DeepSeek｜price_low
 - 内容：DeepSeek Flash 和 V4-Pro 空闲时段五折
 - 规则：北京时间工作日 9:00–12:00、14:00–18:00 为高峰，法定节假日按空闲
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## Kimi 开放平台｜注册赠送
 - 内容：Kimi API 新用户实名认证后领 ¥15 代金券，三个月有效
@@ -99,9 +99,9 @@
 - 链接：https://openrouter.ai/models?max_price=0
 - 状态：已验证（核验时间 2026-11-20T03:36:06Z）
 
-## NVIDIA NIM｜注册赠送
-- 内容：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免费 API 含 GLM/MiniMax M2/DeepSeek/Qwen 国产旗舰；企业邮箱另激活 90 天 NVIDIA AI Enterprise 许可
-- 规则：用完后 API catalog 头像菜单「Request More」
+## NVIDIA NIM｜长期免费
+- 内容：NVIDIA API Catalog：可免费体验目录内部分模型推理，具体额度与限流以账号为准
+- 规则：注册开发者账号后查看各模型与余额限制；当前公开目录未给出统一Token数量或每月赠额。
 - 链接：https://build.nvidia.com
 - 状态：待复核（核验时间 2026-11-06T23:03:36Z）
 
@@ -173,7 +173,7 @@
 - 内容：DeepSeek Flash 缓存命中输入每百万 ¥0.04，空闲时段 ¥0.02
 - 规则：仅缓存命中的输入可用此价，普通输入和输出另计
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## Kimi 开放平台｜限时活动
 - 内容：Kimi API 文件上传和内容抽取限时免费
@@ -198,10 +198,10 @@
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
 ## FastGPT｜长期免费
-- 内容：FastGPT 云端免费档含 100 AI 积分、10 个 Agent、3 个知识库
-- 规则：免费档每分钟 30 次请求，进阶用量按套餐
-- 链接：https://fastgpt.io/price
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 内容：FastGPT 免费版：100 AI 积分、10 个 Agent、3 个知识库
+- 规则：免费档30 QPM。首月只计100积分；免费积分刷新周期未明确，不按每日或额外月赠累加。
+- 链接：https://fastgpt.cn/price
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## GitHub Copilot｜长期免费
 - 内容：Copilot Free：每月 2,000 次代码补全，Copilot Chat 使用每月 AI Credits 额度并采用自动模型选择。
@@ -244,8 +244,9 @@
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
 ## 商汤日日新｜长期免费
-- 内容：U1.5 文生图公测免费 + 积分池翻倍：5h 窗口 6万→12万、周窗口 60万→120万 积分，免费公测模型 6→7 款（新增 U1.5-Lite）；实名开通 Token Plan 自动生效
-- 链接：https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741
+- 内容：商汤日日新 Token Plan：Free 公测开放，含 Flash Lite 与 U1 Fast
+- 规则：官方当前列出0元公测、最多20个API Key；积分池窗口、周限额与模型扣费须以控制台为准。
+- 链接：https://www.sensenova.cn/token-plan
 - 状态：待复核（核验时间 2026-10-29T11:00:00Z）
 
 ## 讯飞星火｜price_low
@@ -452,11 +453,11 @@
 - 链接：https://cursor.com/pricing
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
-## Windsurf（并入Devin/Cognition）｜套餐订阅
-- 内容：Devin Desktop（原 Windsurf，2025-07 并入 Cognition）Free 档：无限 Tab 补全/inline 编辑 + 约 50 credits 轻量 agent 额度（受限模型）；2026-03 起 credits 制改 quota 制，Max 档日限取消仅留周配额
-- 规则：Free 档长期免费；Pro $20/月起（2026-03 提价）；⚠️ 社区传「14 天 Pro 试用」未获官方证实（Reddit 现报无试用），淘宝代充勿碰
-- 链接：https://windsurf.com
-- 状态：待复核（核验时间 2026-10-28T21:50:00Z）
+## Windsurf（并入Devin/Cognition）｜长期免费
+- 内容：Devin Desktop（原 Windsurf）Free：轻量 Agent 配额，无限 Tab 补全与 inline 编辑
+- 规则：免费模型选择受限；官方未公布固定Token或积分数量。Pro $20/月、Max $200/月，属另购套餐。
+- 链接：https://devin.ai/pricing
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## xAI（Grok）｜warning
 - 内容：Grok Code 现状：API注册赠送维持停发（未见复出新礼）；免费/低价用法已迁移至 X Subscription 池（Ultra $200 含Grok Bot+50×用量，Plus $8 仅Grok模型）；X免费档仅严格限额体验
@@ -1127,10 +1128,10 @@
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
 
 ## 秒悟｜长期活动
-- 内容：秒悟每天登录领 **2000 积分**（语言/图像等模型可用）
-- 规则：每日登录自动发放
-- 链接：https://miaowu.pro
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 内容：秒悟 Meoo：新人首月 5,000 积分，每日首次登录再领 2,000
+- 规则：免费版可领；首月赠额只计一次。积分与生图、视频等服务共享，文本用量随模型变化。
+- 链接：https://meoo.com/
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## ACE Music｜长期活动
 - 内容：ACE Music 每天 **20 积分，最多生成 10 首歌**（ACE Music v1/v1.1 Preview/ACE-Step v1.5 全模型）
@@ -1169,10 +1170,10 @@
 - 状态：已验证（核验时间 2026-11-16T17:15:17Z）
 
 ## Drex｜长期活动
-- 内容：Drex 每月送 **$5 模型调用额度**（Drex 决策系列含 Max v1.1/Max v2 等）
-- 规则：每月发放
-- 链接：https://drexdrexdrex.com
-- 状态：已验证（核验时间 2026-11-16T10:07:36Z）
+- 内容：Drex：注册赠 $5，满一个月起每月再赠 $5；约 1.67 亿输入 Tokens／$5
+- 规则：非临时邮箱；Google 登录、满30天 GitHub 或验卡三选一。注册送额3个月有效；月赠不结转，首月只计注册 $5。
+- 链接：https://www.nace.ai/developers
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## LiveKit Inference｜长期活动
 - 内容：LiveKit Build 免费档每月含 $2.50 推理额度，由 LiveKit Inference 模型共享。
@@ -1193,10 +1194,10 @@
 - 状态：已验证（核验时间 2026-11-16T10:07:36Z）
 
 ## 腾讯云 ADP｜长期活动
-- 内容：腾讯云 ADP 体验版每月送 **15,000 PU**（Auto 模型，不含自定义模型与专属算力）
-- 规则：每月重置，未用完不累计
-- 链接：https://cloud.tencent.com
-- 状态：已验证（核验时间 2026-11-19T17:32:04Z）
+- 内容：腾讯 ADP 体验版每月 15,000 PU，约 ¥15 资源面值
+- 规则：腾讯云实名认证主账号需手动领取体验版；Auto模型可用，每月重置不累计，不含自定义模型或专属算力。
+- 链接：https://adp.tencent.com/pricing/home
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## ElevenLabs｜长期免费
 - 内容：ElevenLabs 免费档每月含 10,000 credits，可体验语音生成等功能。
@@ -1298,7 +1299,7 @@
 - 内容：DeepSeek 模型触发的搜索、网页抓取不再单收费；独立 Search/Fetch API 仍为 ¥5/千次成功请求
 - 规则：2026-11-18 12:00（北京时间）起生效；工具结果仍计入模型上下文，按 Token 收费。此口径仅针对 DeepSeek 官方直连。
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing/
-- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
+- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
 
 ## Qoder 国际版｜price_low
 - 内容：Qoder 夜间 Qwen3.8-Max / Flash 四折扣积分：Max 0.2×、Flash 0.04×

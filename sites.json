@@ -140,6 +140,12 @@
     "name": "Meta AI",
     "url": "https://meta.ai",
     "desc": "Llama 系官方对话"
+   },
+   {
+    "name": "Drex / Nace",
+    "url": "https://www.nace.ai/developers",
+    "desc": "按输入计费的决策模型 API",
+    "free": "注册$5；次月起每月$5，需人类账号验证"
    }
   ]
  },
@@ -219,8 +225,8 @@
    {
     "name": "NVIDIA NIM",
     "url": "https://build.nvidia.com",
-    "desc": "注册送 1000 credits（可扩至 5000）",
-    "free": "免费 API",
+    "desc": "目录内模型免费推理体验，限额以账号为准",
+    "free": "当前未公布统一赠额",
     "api": {
      "base_url": "https://integrate.api.nvidia.com/v1",
      "model": "meta/llama-3.3-70b-instruct",
@@ -407,7 +413,7 @@
    {
     "name": "FastGPT",
     "url": "https://fastgpt.io",
-    "desc": "知识库 + 工作流，开源自部署"
+    "desc": "知识库与工作流，云端免费版含100 AI积分"
    },
    {
     "name": "n8n",
@@ -445,6 +451,18 @@
     "url": "https://github.com/features/copilot",
     "desc": "代码补全与编程助手",
     "free": "每月 2,000 次补全"
+   },
+   {
+    "name": "秒悟 Meoo",
+    "url": "https://meoo.com/",
+    "desc": "AI应用搭建与模型服务",
+    "free": "新人5,000积分＋每日登录2,000"
+   },
+   {
+    "name": "腾讯云 ADP",
+    "url": "https://adp.tencent.com/pricing/home",
+    "desc": "智能体开发平台，实名主账号领取体验版",
+    "free": "每月15,000 PU（约¥15资源面值）"
    }
   ]
  },
@@ -474,11 +492,6 @@
     "url": "https://gpushare.com",
     "desc": "GPU 按时租用",
     "free": "邀请 20+10 元、签到换券"
-   },
-   {
-    "name": "仙童智算",
-    "url": "https://www.xiantong.ai",
-    "desc": "算力租赁"
    },
    {
     "name": "阿里云 PAI",

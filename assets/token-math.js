@@ -24,6 +24,7 @@ const TokenMath = (() => {
     }
     return days;
   }
+  const rowDays = (d,q,now) => Math.max(0,activeDays(d,now)-(positive(q.starts_after_days)||0));
   function entries(d) {
     if (Array.isArray(d.token_quota)) return d.token_quota;
     // Legacy numeric token fields only. Currency and subscription prices need explicit quota records.
@@ -44,20 +45,21 @@ const TokenMath = (() => {
     const suffix = q.period === 'daily' ? msg('/天','/day') : q.period === 'monthly' ? msg('/月','/mo') : q.period === 'weekly' ? msg('/周','/week') : '';
     const amount = Number(q.amount.toFixed(2)).toLocaleString(zh?'zh-CN':'en-US');
     const units = {credits:msg(' 积分',' credits'),requests:msg(' 次',' requests'),hours:msg(' 小时',' hours'),points:msg(' 算力',' points')};
-    return (q.unit === 'tokens' ? format(q.amount/10000)+' tokens' : q.unit === 'CNY' ? '¥'+amount : q.unit === 'USD' ? '$'+amount : amount+(units[q.unit]||' '+q.unit))+suffix;
+    return (q.unit === 'tokens' ? format(q.amount/10000)+' tokens' : q.unit === 'CNY' ? '¥'+amount : q.unit === 'USD' ? '$'+amount : amount+(units[q.unit]||' '+q.unit))+suffix+(q.starts_after_days ? msg('（延后发放）',' (deferred)') : '');
   }
   function quota(d, now) {
     const result = {once:0,daily:0,monthly:0,dailyMonth:0,total:0,converted:false,rows:entries(d),days:activeDays(d,now)};
     for (const q of result.rows) {
+      const days = rowDays(d,q,now);
+      if (!days) continue;
       const value = equivalent(q);
       const period = q.period || 'once';
-      if (period === 'daily') result.daily += value;
+      if (period === 'daily') {result.daily += value; result.dailyMonth += value*days;}
       else if (period === 'monthly') result.monthly += value;
-      else if (period === 'weekly') result.monthly += value*result.days/7;
+      else if (period === 'weekly') result.monthly += value*days/7;
       else result.once += value;
       if (value && (q.unit !== 'tokens' || q.equivalent_factor)) result.converted = true;
     }
-    result.dailyMonth = result.daily*result.days;
     result.total = result.once+result.dailyMonth+result.monthly;
     if (d.verify_status === 'expired' || result.days === 0) {
       for (const key of ['once','daily','monthly','dailyMonth','total']) result[key] = 0;
@@ -90,7 +92,7 @@ const TokenMath = (() => {
   }
   function estimateQuota(d, e, now, settings = estimateSettings) {
     const q = e && entries(d)[e.quota_index];
-    if (!e || !q || !['once','daily','weekly','monthly'].includes(q.period) || equivalent(q) || d.verify_status === 'expired' || !activeDays(d,now)) return null;
+    if (!e || !q || !['once','daily','weekly','monthly'].includes(q.period) || equivalent(q) || d.verify_status === 'expired' || !rowDays(d,q,now)) return null;
     let factors;
     if (e.method === 'requests') {
       const perRequest = (positive(settings.requestTokens) || estimateDefaults.requestTokens)*(e.scale || 1);
@@ -107,12 +109,19 @@ const TokenMath = (() => {
         const model = e.models[key];
         return [key,(model.input_tokens+model.output_tokens)/model.credits];
       }));
+    } else if (e.method === 'model_rates') {
+      factors = Object.fromEntries(['low','typical','high'].map(key=>{
+        const model=e.models[key];
+        return [key,1000/(model.input*.75+model.output*.25)];
+      }));
+    } else if (e.method === 'model_budget') {
+      factors = Object.fromEntries(['low','typical','high'].map(key=>[key,1e6/e.models[key].price]));
     } else if (e.method === 'scenario') {
       const perPoint = positive(settings.pointTokens) || estimateDefaults.pointTokens;
       const scale = e.scale || 1;
       factors = {low:perPoint*.5*scale,typical:perPoint*scale,high:perPoint*2*scale};
     } else return null;
-    const days = activeDays(d,now);
+    const days = rowDays(d,q,now);
     const quantities = e.quantity_range || {low:q.amount,typical:q.amount,high:q.amount};
     const monthUnits = e.schedule
       ? e.schedule.reduce((s,step,index)=>{
@@ -181,6 +190,8 @@ const TokenMath = (() => {
     if (e.method === 'model_examples') text += msg('；按官方模型示例估算：','; based on official model examples: ')+['low','typical','high'].map(key=>{
       const m=basis.models[key];return m.name+' '+(m.input_tokens+m.output_tokens).toLocaleString(zh?'zh-CN':'en-US')+' tokens / '+m.credits+' credits';
     }).join(' · ');
+    if (e.method === 'model_rates') text += msg('；官方积分/千Token价格，假设输入:输出=3:1、无缓存：','; official credits/1K tokens, assumed uncached 3:1 input/output: ')+['low','typical','high'].map(key=>{const m=basis.models[key];return m.name+' '+m.input+'/'+m.output;}).join(' · ');
+    if (e.method === 'model_budget') text += msg('；原余额除以该模型每百万输入Token的价格，不估输出、不重复计DS购买力：','; balance divided by the model price per million INPUT tokens; output is not estimated, and DS purchasing power is not counted again: ')+basis.models.typical.name+' '+basis.models.typical.price+' '+e.quota.unit+'/M';
     text += ' · '+(zh?basis.note:basis.note_en||basis.note);
     return text;
   }
@@ -190,10 +201,11 @@ const TokenMath = (() => {
     const method = first.method;
     const mixed = e.rows?.length > 1;
     const dailyOnly = mixed ? e.rows.every(row=>row.period==='daily') : first.period==='daily';
-    const label = dailyOnly ? (method === 'credit_value' ? msg('购买力估计/天','Value estimate/day') : msg('用量估计/天','Usage estimate/day')) : msg('首月情景估计','First-month scenario');
+    const label = method === 'model_budget' && !mixed ? msg('首月输入预算','First-month INPUT budget') : dailyOnly ? (method === 'credit_value' ? msg('购买力估计/天','Value estimate/day') : msg('用量估计/天','Usage estimate/day')) : method === 'credit_value' && !mixed ? msg('首月购买力估计','First-month value estimate') : msg('首月情景估计','First-month scenario');
     const value = dailyOnly ? e.daily : e.month;
+    const range = format(value.low)+(value.low===value.high?'':'–'+format(value.high));
     const nativeText = mixed ? e.rows.length+msg(' 项独立额度',' independent allowances') : native(first.quota);
-    return '<span class="quota-value quota-estimated" title="'+escape(mixed?nativeText:estimateExplain(d))+'"><span class="num">≈ '+format(value.low)+'–'+format(value.high)+'</span><span class="unit">'+label+'</span><span class="unit quota-native">'+escape(nativeText)+'</span><button type="button" class="estimate-link" data-estimate-id="'+escape(d.id)+'">'+msg('估算依据','Estimate basis')+'</button></span>';
+    return '<span class="quota-value quota-estimated" title="'+escape(mixed?nativeText:estimateExplain(d))+'"><span class="num">≈ '+range+'</span><span class="unit">'+label+'</span><span class="unit quota-native">'+escape(nativeText)+'</span><button type="button" class="estimate-link" data-estimate-id="'+escape(d.id)+'">'+msg('估算依据','Estimate basis')+'</button></span>';
   }
   function rank(d) {
     return quota(d).total + (estimate(d)?.month.typical || 0);
@@ -243,7 +255,9 @@ const TokenMath = (() => {
       for (const q of entries(d)) {
         if (q.provider !== price.provider || (q.models && !q.models.includes(price.model)) || (q.excluded_models || []).includes(price.model)) continue;
         if (!q.models && !q.all_models) continue;
-        const times = q.period==='daily' ? activeDays(d,now) : q.period==='weekly' ? activeDays(d,now)/7 : 1;
+        const days=rowDays(d,q,now);
+        if (!days) continue;
+        const times = q.period==='daily' ? days : q.period==='weekly' ? days/7 : 1;
         tokens += rawTokens(q)*times/1e6;
         if (rates[q.unit]) cny += q.amount*times*(q.unit==='USD'?7.2:1);
       }

@@ -85,6 +85,30 @@ near(math.estimate(byId['cohere-trial'],now).daily.typical,0);
 near(math.estimate(byId['github-copilot-free'],now).month.typical,40); // 2K short completions, not 2K full chat requests.
 near(math.estimate(byId['deep-qoder-cn-free'],now).month.typical,300*(169/6000)/1.75*100);
 assert.equal(math.estimate(byId['clixad-free'],now).method,'model_examples');
+// Model tables produce alternate scenarios for a single pool, never three grants.
+const meoo=math.estimate(byId['miao-wu-daily-2000'],now);
+near(meoo.daily.typical,2000*1000/(2*.75+8*.25)/10000);
+near(meoo.month.typical,(5000+2000*30)*1000/3.5/10000);
+near(meoo.month.low,65000*1000/40/10000);
+near(meoo.month.high,65000*1000/.65/10000);
+assert.equal(math.estimateMany([byId['miao-wu-daily-2000']],now).count,2);
+near(math.quota(byId['miao-wu-daily-2000'],now).total,0);
+const drex=byId['drex-monthly-5usd'];
+near(math.estimate(drex,now).month.typical,5/.03*100);
+near(math.quota(drex,now).total,0); // Same $5 is not also a DS buying-power reference.
+assert.equal(math.estimateMany([drex],now).count,1);
+assert.match(math.cell(drex),/输入预算/);
+assert.equal(math.estimate({...drex,quota_estimates:[{...drex.quota_estimates[0],quota_index:1}]},now),null);
+const delayedFixture={id:'delayed',token_quota:[{amount:5,unit:'USD',period:'once'},{amount:5,unit:'USD',period:'monthly',starts_after_days:30},{amount:1,unit:'USD',period:'daily',starts_after_days:20}]};
+near(math.quota(delayedFixture,now).monthly,0);
+near(math.quota(delayedFixture,now).dailyMonth,10/.2625*100);
+near(math.quota(delayedFixture,now).total,15/.2625*100);
+near(math.estimate(byId['fastgpt-free'],now).month.typical,100*(99/4000)/1.75*100);
+near(math.estimate(byId['tencent-adp-15k'],now).month.typical,15/1.75*100);
+near(math.quota(byId['tencent-adp-15k'],now).total,0); // PU value is a separate scenario, never a native token grant.
+assert.match(math.cell(byId['tencent-adp-15k']),/购买力估计/);
+assert.equal(math.estimate(byId['fastgpt-free'],now).daily.typical,0);
+assert.equal(math.entries(byId['deep-windsurf-devin']).length,0);
 const sharedBuddy=math.estimateMany([byId['workbuddy-free'],byId['deep-codebuddy-free-kimi']],now);
 assert.equal(sharedBuddy.rows.filter(e=>e.pool==='buddy-cn-monthly').length,1);
 assert.equal(sharedBuddy.rows.find(e=>e.pool==='buddy-cn-monthly').deal.id,'deep-codebuddy-free-kimi');
@@ -92,7 +116,7 @@ for(const id of ['workbuddy-intl-pro','atlassian-rovo-dev-free','trae-code-fissi
  assert.ok(math.estimate(byId[id],now),id+' has a displayable scenario');
  assert.equal(math.estimateMany([byId[id]],now).count,0,id+' excluded from standard free totals');
 }
-for(const id of ['rime-monthly-50usd','elevenlabs-free-10k','agentscope-qwenpaw-free','tencent-adp-15k','replit-free-mode','azure-free-trial','vultr-trial-250']) {
+for(const id of ['rime-monthly-50usd','elevenlabs-free-10k','agentscope-qwenpaw-free','replit-free-mode','azure-free-trial','vultr-trial-250']) {
  near(math.quota(byId[id],now).total,0);
  assert.equal(math.estimate(byId[id],now),null,id+' is not a text-token allowance');
 }
@@ -134,6 +158,10 @@ const staticRun=spawnSync('python3',['-c',
   "import sys,json,datetime;sys.path.insert(0,'tools');from token_math import quota,free,estimate;print(json.dumps({d['id']:{**quota(d,datetime.date(2026,11,18)),'free':free(d),'estimated':estimate(d,datetime.date(2026,11,18))} for d in json.load(open('deals.json'))}))"
 ],{cwd:root,encoding:'utf8'});
 assert.equal(staticRun.status,0,staticRun.stderr);
+const delayedStatic=spawnSync('python3',['-c',"import sys,json,datetime;sys.path.insert(0,'tools');from token_math import quota;print(json.dumps(quota(json.loads(sys.argv[1]),datetime.date(2026,11,18))))",JSON.stringify(delayedFixture)],{cwd:root,encoding:'utf8'});
+assert.equal(delayedStatic.status,0,delayedStatic.stderr);
+const delayedRendered=JSON.parse(delayedStatic.stdout);
+for(const key of ['once','daily','monthly','dailyMonth','total']) near(math.quota(delayedFixture,now)[key],delayedRendered[key]);
 const staticQuotas=JSON.parse(staticRun.stdout);
 for(const d of deals) {
  const dynamic=math.quota(d,now),rendered=staticQuotas[d.id];

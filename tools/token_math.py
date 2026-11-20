@@ -26,6 +26,9 @@ def quota(deal, today=None):
     if deal.get("verify_status") == "expired" or not days:
         return result
     for row in entries(deal):
+        row_days = max(0, days-(row.get("starts_after_days") or 0))
+        if not row_days:
+            continue
         if row.get("convert") is False:
             continue
         if row["unit"] in RATES:
@@ -34,10 +37,11 @@ def quota(deal, today=None):
             value = row["amount"]*(1 if row["unit"] == "tokens" else row.get("tokens_per_unit", 0))/10000*(row.get("equivalent_factor") or 1)
         period = row.get("period", "once")
         if period == "weekly":
-            result["monthly"] += value*days/7
+            result["monthly"] += value*row_days/7
         else:
             result[period] += value
-    result["dailyMonth"] = result["daily"]*days
+            if period == "daily":
+                result["dailyMonth"] += value*row_days
     result["total"] = result["once"]+result["monthly"]+result["dailyMonth"]
     return result
 
@@ -60,7 +64,8 @@ def estimate_quota(deal, e, today=None, settings=None):
         return None
     q = rows[e["quota_index"]]
     # Native tokens and fixed conversions are never counted again as scenarios.
-    if q["period"] not in ("once", "daily", "weekly", "monthly") or q["unit"] == "tokens" or q.get("tokens_per_unit") or q["unit"] in RATES or deal.get("verify_status") == "expired":
+    converted = q.get("convert") is not False and (q["unit"] == "tokens" or q.get("tokens_per_unit") or q["unit"] in RATES)
+    if q["period"] not in ("once", "daily", "weekly", "monthly") or converted or deal.get("verify_status") == "expired":
         return None
     today = today or datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date()
     days = min(30, deal.get("quota_days") or 30)
@@ -68,6 +73,7 @@ def estimate_quota(deal, e, today=None, settings=None):
         days = min(days, max(0, (datetime.date.fromisoformat(deal["deadline"][:10])-today).days+1))
     except (KeyError, ValueError):
         pass
+    days = max(0, days-(q.get("starts_after_days") or 0))
     if not days:
         return None
     settings = {**ESTIMATE_DEFAULTS, **(settings or {})}
@@ -84,6 +90,10 @@ def estimate_quota(deal, e, today=None, settings=None):
         factors = {key:1e6/(row["input"]*.75+row["output"]*.25) for key,row in e["models"].items()}
     elif method == "model_examples":
         factors = {key:(row["input_tokens"]+row["output_tokens"])/row["credits"] for key,row in e["models"].items()}
+    elif method == "model_rates":
+        factors = {key:1000/(row["input"]*.75+row["output"]*.25) for key,row in e["models"].items()}
+    elif method == "model_budget":
+        factors = {key:1e6/row["price"] for key,row in e["models"].items()}
     else:
         return None
     quantities = e.get("quantity_range") or dict.fromkeys(("low", "typical", "high"), q["amount"])
@@ -141,4 +151,8 @@ def estimate_assumption(deal, e=None):
         return "按公开模型 Neurons 计价、输入:输出=3:1、无缓存估算，模型选择改变可用量。"
     if e.get("method") == "model_examples":
         return "按官方模型示例的输入+输出 Tokens 与每轮 Credits 推算，非固定 Token 赠额；实际随模型、上下文及缓存变化。"
+    if e.get("method") == "model_rates":
+        return "按官方积分/千Token模型价格，假设输入:输出=3:1、无缓存推算；同一积分池的模型情景不重复相加。"
+    if e.get("method") == "model_budget":
+        return "按原始余额与官方每百万输入Token价格推算，仅计输入、不估输出；同笔余额不重复折算DS购买力。"
     return ""

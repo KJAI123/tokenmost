@@ -17,14 +17,14 @@
       <title>DeepSeek：DeepSeek 官方高峰价：Flash ¥2/8，V4-Pro ¥9/27（每百万输入/输出）</title>
       <link>https://api-docs.deepseek.com/zh-cn/quick_start/pricing</link>
       <guid isPermaLink="false">deepseek-price</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期低价 · 规则：仅未命中缓存输入按此输入价计费，空闲时段按高峰价一半计费（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>DeepSeek：DeepSeek Flash 和 V4-Pro 空闲时段五折</title>
       <link>https://api-docs.deepseek.com/zh-cn/quick_start/pricing</link>
       <guid isPermaLink="false">deepseek-offpeak</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期低价 · 规则：北京时间工作日 9:00–12:00、14:00–18:00 为高峰，法定节假日按空闲（优惠以官方页面为准）</description>
     </item>
     <item>
@@ -126,11 +126,11 @@
       <description>长期免费 · 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>NVIDIA NIM：注册送 1000 API credits（个人资料页 Request More 可申请提额至 5000），80+ 模型免</title>
+      <title>NVIDIA NIM：NVIDIA API Catalog：可免费体验目录内部分模型推理，具体额度与限流以账号为准</title>
       <link>https://build.nvidia.com</link>
       <guid isPermaLink="false">nvidia-nim</guid>
       <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：用完后 API catalog 头像菜单「Request More」（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：注册开发者账号后查看各模型与余额限制；当前公开目录未给出统一Token数量或每月赠额。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>OhMyGPT：官方推荐计划：好友双方各得 $20 额度</title>
@@ -213,7 +213,7 @@
       <title>DeepSeek：DeepSeek Flash 缓存命中输入每百万 ¥0.04，空闲时段 ¥0.02</title>
       <link>https://api-docs.deepseek.com/zh-cn/quick_start/pricing</link>
       <guid isPermaLink="false">deepseek-cache</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期低价 · 规则：仅缓存命中的输入可用此价，普通输入和输出另计（优惠以官方页面为准）</description>
     </item>
     <item>
@@ -245,11 +245,11 @@
       <description>限时活动 · 截止 2026-11-30（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>FastGPT：FastGPT 云端免费档含 100 AI 积分、10 个 Agent、3 个知识库</title>
-      <link>https://fastgpt.io/price</link>
+      <title>FastGPT：FastGPT 免费版：100 AI 积分、10 个 Agent、3 个知识库</title>
+      <link>https://fastgpt.cn/price</link>
       <guid isPermaLink="false">fastgpt-free</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：免费档每分钟 30 次请求，进阶用量按套餐（优惠以官方页面为准）</description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：免费档30 QPM。首月只计100积分；免费积分刷新周期未明确，不按每日或额外月赠累加。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>GitHub Copilot：Copilot Free：每月 2,000 次代码补全，Copilot Chat 使用每月 AI Credits 额度并</title>
@@ -301,11 +301,11 @@
       <description>长期低价 · 规则：只适用于模型 ID 以 :free 结尾的模型，仍有分钟限流（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>商汤日日新：U1.5 文生图公测免费 + 积分池翻倍：5h 窗口 6万→12万、周窗口 60万→120万 积分，免费公测模型 6→7</title>
-      <link>https://www.sensetime.com/cn/news/sensenova-u1-5-lite-token-plan-20260911-1741</link>
+      <title>商汤日日新：商汤日日新 Token Plan：Free 公测开放，含 Flash Lite 与 U1 Fast</title>
+      <link>https://www.sensenova.cn/token-plan</link>
       <guid isPermaLink="false">sensenova-lite</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>长期免费（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：官方当前列出0元公测、最多20个API Key；积分池窗口、周限额与模型扣费须以控制台为准。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>讯飞星火：讯飞星辰 Coding Plan 波谷时段按 0.8 系数扣用量</title>
@@ -546,11 +546,11 @@
       <description>套餐订阅 · 规则：模型、实际用量和订阅权益以 Cursor 定价页为准（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Windsurf（并入Devin/Cognition）：Devin Desktop（原 Windsurf，2025-07 并入 Cognition）Free 档：无限 Tab </title>
-      <link>https://windsurf.com</link>
+      <title>Windsurf（并入Devin/Cognition）：Devin Desktop（原 Windsurf）Free：轻量 Agent 配额，无限 Tab 补全与 inline </title>
+      <link>https://devin.ai/pricing</link>
       <guid isPermaLink="false">deep-windsurf-devin</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>套餐订阅 · 规则：Free 档长期免费；Pro $20/月起（2026-03 提价）；⚠️ 社区传「14 天 Pro 试用」未获官方证实（Reddit 现报无试用），淘宝代充勿碰（优惠以官方页面为准）</description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：免费模型选择受限；官方未公布固定Token或积分数量。Pro $20/月、Max $200/月，属另购套餐。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>xAI（Grok）：Grok Code 现状：API注册赠送维持停发（未见复出新礼）</title>
@@ -1330,11 +1330,11 @@
       <description>长期活动 · 规则：签到领取；体验版（专业版体验版）；部分模型限产品内使用（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>秒悟：秒悟每天登录领 **2000 积分**（语言/图像等模型可用）</title>
-      <link>https://miaowu.pro</link>
+      <title>秒悟：秒悟 Meoo：新人首月 5,000 积分，每日首次登录再领 2,000</title>
+      <link>https://meoo.com/</link>
       <guid isPermaLink="false">miao-wu-daily-2000</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：每日登录自动发放（优惠以官方页面为准）</description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：免费版可领；首月赠额只计一次。积分与生图、视频等服务共享，文本用量随模型变化。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>ACE Music：ACE Music 每天 **20 积分，最多生成 10 首歌**（ACE Music v1/v1.1 Preview/</title>
@@ -1379,11 +1379,11 @@
       <description>长期活动 · 规则：未用额度不结转；免费额度用完可等下月续发。开通 Flex 并绑卡后，超额按用量付费。（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Drex：Drex 每月送 **$5 模型调用额度**（Drex 决策系列含 Max v1.1/Max v2 等）</title>
-      <link>https://drexdrexdrex.com</link>
+      <title>Drex：Drex：注册赠 $5，满一个月起每月再赠 $5</title>
+      <link>https://www.nace.ai/developers</link>
       <guid isPermaLink="false">drex-monthly-5usd</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：每月发放（优惠以官方页面为准）</description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：非临时邮箱；Google 登录、满30天 GitHub 或验卡三选一。注册送额3个月有效；月赠不结转，首月只计注册 $5。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>LiveKit Inference：LiveKit Build 免费档每月含 $2.50 推理额度，由 LiveKit Inference 模型共享。</title>
@@ -1407,11 +1407,11 @@
       <description>长期活动 · 规则：每月发放（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>腾讯云 ADP：腾讯云 ADP 体验版每月送 **15,000 PU**（Auto 模型，不含自定义模型与专属算力）</title>
-      <link>https://cloud.tencent.com</link>
+      <title>腾讯云 ADP：腾讯 ADP 体验版每月 15,000 PU，约 ¥15 资源面值</title>
+      <link>https://adp.tencent.com/pricing/home</link>
       <guid isPermaLink="false">tencent-adp-15k</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期活动 · 规则：每月重置，未用完不累计（优惠以官方页面为准）</description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期活动 · 规则：腾讯云实名认证主账号需手动领取体验版；Auto模型可用，每月重置不累计，不含自定义模型或专属算力。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>ElevenLabs：ElevenLabs 免费档每月含 10,000 credits，可体验语音生成等功能。</title>
@@ -1529,7 +1529,7 @@
       <title>DeepSeek：DeepSeek 模型触发的搜索、网页抓取不再单收费</title>
       <link>https://api-docs.deepseek.com/zh-cn/quick_start/pricing/</link>
       <guid isPermaLink="false">deepseek-server-search-billing</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
       <description>情报 · 规则：2026-11-18 12:00（北京时间）起生效；工具结果仍计入模型上下文，按 Token 收费。此口径仅针对 DeepSeek 官方直连。（优惠以官方页面为准）</description>
     </item>
     <item>

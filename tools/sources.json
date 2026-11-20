@@ -273,7 +273,8 @@
    "url": "https://build.nvidia.com",
    "deals": [
     "nvidia-nim"
-   ]
+   ],
+   "auto_verify": false
   },
   {
    "id": "autodl-coupon",
@@ -907,6 +908,60 @@
    "url": "https://docs.qoder.cn/product-overview/billing-description",
    "deals": [
     "deep-qoder-cn-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "meoo-official-pricing",
+   "type": "watch",
+   "url": "https://docs.meoo.com/pricing",
+   "deals": [
+    "miao-wu-daily-2000"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "nace-drex-official-pricing",
+   "type": "watch",
+   "url": "https://console.nace.ai/docs/drex/reference/pricing",
+   "deals": [
+    "drex-monthly-5usd"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "fastgpt-official-pricing",
+   "type": "watch",
+   "url": "https://fastgpt.cn/price",
+   "deals": [
+    "fastgpt-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "devin-official-pricing",
+   "type": "watch",
+   "url": "https://devin.ai/pricing",
+   "deals": [
+    "deep-windsurf-devin"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "sensenova-free-beta",
+   "type": "watch",
+   "url": "https://www.sensenova.cn/token-plan",
+   "deals": [
+    "sensenova-lite"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "adp-new-plan-pu-value",
+   "type": "watch",
+   "url": "https://cloud.tencent.com/document/product/1759/139268",
+   "deals": [
+    "tencent-adp-15k"
    ],
    "auto_verify": false
   }
