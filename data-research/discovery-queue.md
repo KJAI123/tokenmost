@@ -29,3 +29,6 @@
 - [ ] CodeHost .cv 截止提醒：2026-11-17 活动截止（条目 codehost-cv-free 活动 2026-08-17~11-17，结账码 CODEHOST $0），站内 codehost-cv-free 条目需在截止后标注（过期转 expired）；11-12 预核：官网活动页 fetch 被反爬拦（invalid response，与库内反爬注明一致），截止后标注动作不变 | CodeHost cv deadline | freecloud 线
 
 - [ ] 星辰智能体 4C8G 云电脑权益复核（2026-11-20）| 现已定位 https://agent.teleai.com.cn/，访问转官方手机号/账号登录页；需查看登录后权益页核实配置、使用时长、续期与资格，不标为已核验，也不与千问云电脑混同。
+- [ ] JoyClaw 每日到账 1 万（单位待核：积分或 tokens）｜ 11-20 资讯速递提及「每日登录自动到账当天清零」｜ 需官方页/客户端核验产品版本与单位 | freecloud/agent 线
+- [ ] DuMate 每日到账 500（单位待核）｜ 11-20 资讯速递提及｜ 需核验产品归属与领取动作 | agent 线
+- [ ] 千问办公 每日 100（与 qwen-app-5h-limit「工作」模式 5 小时滚动限额是否同一产品待核）｜ 11-20 资讯速递提及 | official_cn 线
