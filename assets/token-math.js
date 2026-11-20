@@ -19,7 +19,12 @@ const TokenMath = (() => {
   }
   function activeDays(d, now) {
     let days = Math.min(30, positive(d.quota_days) || 30);
-    if (/^\d{4}-\d{2}-\d{2}/.test(d.deadline || '')) {
+    if (/^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '')) {
+      // ISO with time+timezone: expiry is the exact instant (e.g. 09:00 GMT+8), not the whole day.
+      var endAt = Date.parse(d.deadline);
+      var nowMs = (now instanceof Date) ? now.getTime() : Date.parse(now);
+      if (!isNaN(endAt)) days = endAt <= nowMs ? 0 : Math.min(days, Math.floor((endAt-Date.parse(today(now)+'T00:00:00Z'))/864e5)+1);
+    } else if (/^\d{4}-\d{2}-\d{2}/.test(d.deadline || '')) {
       days = Math.min(days, Math.max(0, Math.floor((Date.parse(d.deadline.slice(0,10)+'T00:00:00Z')-Date.parse(today(now)+'T00:00:00Z'))/864e5)+1));
     }
     return days;

@@ -167,6 +167,29 @@ assert.equal(delayedStatic.status,0,delayedStatic.stderr);
 const delayedRendered=JSON.parse(delayedStatic.stdout);
 for(const key of ['once','daily','monthly','dailyMonth','total']) near(math.quota(delayedFixture,now)[key],delayedRendered[key]);
 const staticQuotas=JSON.parse(staticRun.stdout);
+// Timezone-aware deadlines expire at the exact instant (Nov 23, 09:00 GMT+8).
+const tzDeal={id:'tz-boundary',verify_status:'verified',published:true,deadline:'2026-11-23T09:00:00+08:00',token_quota:[{amount:100,unit:'tokens',period:'daily'}]};
+const stillClaimable=new Date('2026-11-22T23:30:00Z'); // 07:30 GMT+8 on Nov 23
+const justExpired=new Date('2026-11-23T01:30:00Z');    // 09:30 GMT+8 on Nov 23
+assert.ok(math.quota(tzDeal,stillClaimable).total>0,'08:59 GMT+8 must still be claimable');
+assert.equal(math.quota(tzDeal,justExpired).total,0,'09:00 GMT+8 must be expired');
+// Pure dates keep the end-of-day semantics on both sides of the same instants.
+assert.ok(math.quota({...tzDeal,deadline:'2026-11-23'},stillClaimable).total>0);
+assert.ok(math.quota({...tzDeal,deadline:'2026-11-23'},justExpired).total>0);
+// JS/Python parity at the exact boundary.
+const tzPy=spawnSync('python3',['-c',"import sys,datetime;sys.path.insert(0,'tools');from token_math import _deadline_days;print(_deadline_days({'deadline':'2026-11-23T09:00:00+08:00'},datetime.date(2026,11,23),datetime.datetime.fromisoformat('2026-11-23T08:59:00+08:00')))"],{cwd:root,encoding:'utf8'});
+assert.equal(tzPy.status,0,tzPy.stderr);
+assert.equal(parseInt(tzPy.stdout.trim(),10),1,'Python must also keep Nov 23 claimable until 09:00 GMT+8');
+const tzPyAfter=spawnSync('python3',['-c',"import sys,datetime;sys.path.insert(0,'tools');from token_math import _deadline_days;print(_deadline_days({'deadline':'2026-11-23T09:00:00+08:00'},datetime.date(2026,11,24)))"],{cwd:root,encoding:'utf8'});
+assert.equal(parseInt(tzPyAfter.stdout.trim(),10),0,'Python must treat 09:00 GMT+8 Nov 23 as expired on Nov 24');
+const tzPyBoundary=spawnSync('python3',['-c',"import sys,datetime;sys.path.insert(0,'tools');from token_math import _deadline_days;print(_deadline_days({'deadline':'2026-11-23T09:00:00+08:00'},datetime.date(2026,11,23),datetime.datetime.fromisoformat('2026-11-23T08:59:00+08:00')));print(_deadline_days({'deadline':'2026-11-23T09:00:00+08:00'},datetime.date(2026,11,23),datetime.datetime.fromisoformat('2026-11-23T09:30:00+08:00')))"],{cwd:root,encoding:'utf8'});
+assert.equal(tzPyBoundary.status,0,tzPyBoundary.stderr);
+const tzPyRows=tzPyBoundary.stdout.trim().split('\n').map(Number);
+assert.deepEqual(tzPyRows,[1,0],'Python 08:59 claimable / 09:30 expired');
+// Exact 09:00 GMT+8 boundary on both ends.
+assert.equal(math.quota(tzDeal,new Date('2026-11-23T01:00:00Z')).total,0,'JS 09:00 GMT+8 exact boundary expired');
+const tzPyExact=spawnSync('python3',['-c',"import sys,datetime;sys.path.insert(0,'tools');from token_math import _deadline_days;print(_deadline_days({'deadline':'2026-11-23T09:00:00+08:00'},datetime.date(2026,11,23),datetime.datetime.fromisoformat('2026-11-23T09:00:00+08:00')))"],{cwd:root,encoding:'utf8'});
+assert.equal(parseInt(tzPyExact.stdout.trim(),10),0,'Python 09:00 GMT+8 exact boundary expired');
 for(const d of deals) {
  const dynamic=math.quota(d,now),rendered=staticQuotas[d.id];
  for(const key of ['once','daily','monthly','dailyMonth','total']) near(dynamic[key],rendered[key]);
