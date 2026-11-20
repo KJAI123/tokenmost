@@ -190,6 +190,11 @@ assert.deepEqual(tzPyRows,[1,0],'Python 08:59 claimable / 09:30 expired');
 assert.equal(math.quota(tzDeal,new Date('2026-11-23T01:00:00Z')).total,0,'JS 09:00 GMT+8 exact boundary expired');
 const tzPyExact=spawnSync('python3',['-c',"import sys,datetime;sys.path.insert(0,'tools');from token_math import _deadline_days;print(_deadline_days({'deadline':'2026-11-23T09:00:00+08:00'},datetime.date(2026,11,23),datetime.datetime.fromisoformat('2026-11-23T09:00:00+08:00')))"],{cwd:root,encoding:'utf8'});
 assert.equal(parseInt(tzPyExact.stdout.trim(),10),0,'Python 09:00 GMT+8 exact boundary expired');
+// Real hourly instants (not just date-level): 08:59 claimable, 09:00 and 09:01 expired.
+const hourDeal={id:'tz-hour',verify_status:'verified',published:true,deadline:'2026-11-23T09:00:00+08:00',token_quota:[{amount:1000000,unit:'tokens',period:'once'}]};
+for(const [t,expect] of [['2026-11-22T20:00:00+08:00',1000000/10000],['2026-11-23T00:59:00+08:00',1000000/10000],['2026-11-23T08:59:00+08:00',1000000/10000],['2026-11-23T09:00:00+08:00',0],['2026-11-23T09:01:00+08:00',0]]){
+  near(math.quota(hourDeal,new Date(t)).total,expect,'hour '+t);
+}
 for(const d of deals) {
  const dynamic=math.quota(d,now),rendered=staticQuotas[d.id];
  for(const key of ['once','daily','monthly','dailyMonth','total']) near(dynamic[key],rendered[key]);
@@ -198,4 +203,6 @@ for(const d of deals) {
  assert.equal(Boolean(estimated),Boolean(staticEstimate),d.id);
  if(estimated) for(const period of ['daily','month']) for(const key of ['low','typical','high']) near(estimated[period][key],staticEstimate[period][key]);
 }
-console.log('Token conversion and daily-estimate checks passed: formulas, scenarios, settings, pool deduplication, billing separation and JS/Python parity.');
+const clockRun=spawnSync('python3',['tools/test_quota_clock.py'],{cwd:root,encoding:'utf8'});
+assert.equal(clockRun.status,0,clockRun.stderr||clockRun.stdout);
+console.log('Token conversion and daily-estimate checks passed: formulas, scenarios, settings, pool deduplication, billing separation, JS/Python parity and timestamp boundaries.');

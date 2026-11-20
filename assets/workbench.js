@@ -202,11 +202,13 @@ const Workbench = (() => {
   },60000);
 
   function timing(d) {
+    const formatInstant = value => new Intl.DateTimeFormat(locale,{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(value))+msg(' 北京时间',' GMT+8');
+    if (TokenMath.phase(d) === 'upcoming') return '<span class="offer-timing" title="'+esc(d.starts_at)+'">'+esc(formatInstant(d.starts_at))+msg(' 开始',' starts')+'</span>';
     if (isFeatured(d)) return '<span class="offer-deadline">'+msg('提额至 ', 'Boost until ')+esc(d.featured_until)+'</span>';
     if (d.deadline && !String(d.deadline).startsWith('长期')) {
       const date = String(d.deadline);
       return '<span class="offer-deadline" title="' + esc(date) + '">'
-        + esc(/^\d{4}-\d{2}-\d{2}T/.test(date) ? date.slice(0, 10) : date) + '</span>';
+        + esc(/^\d{4}-\d{2}-\d{2}T/.test(date) && Number.isFinite(Date.parse(date)) ? formatInstant(date) : date) + '</span>';
     }
     const label = d.cadence === 'monthly' ? msg('每月刷新', 'Monthly reset')
       : d.cadence === 'daily' ? msg('每日额度', 'Daily allowance')
@@ -224,6 +226,24 @@ const Workbench = (() => {
     if (days === 0) return badge('b-green', d.verify_by === 'auto' ? msg('自动核验', 'Auto-checked') : msg('近 24 小时核验', 'Verified in 24h'));
     return badge(days < 7 ? 'b-green' : 'b-amber', msg(days + ' 天前', days + (days === 1 ? ' day ago' : ' days ago')));
   }
+
+  // Recompute only when a timed offer changes phase; a tab opened before 19:00
+  // must not keep its upcoming state after the activity starts.
+  let timedSignature = null;
+  function refreshTimedOffers() {
+    if (typeof DEALS === 'undefined' || !DEALS.length) return;
+    const next = DEALS.filter(d=>d.starts_at || /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '')).map(d=>d.id+':'+TokenMath.phase(d)).join('|');
+    if (next === timedSignature) return;
+    const initialized = timedSignature !== null;
+    timedSignature = next;
+    if (!initialized) return;
+    if (typeof window.render === 'function') window.render();
+    if (typeof window.calcGlobalBanner === 'function') window.calcGlobalBanner();
+    if (typeof window.sumRender === 'function' && el('sumPanel')?.classList.contains('open')) window.sumRender();
+    if (typeof DailyEstimateUI !== 'undefined') DailyEstimateUI.refresh();
+  }
+  setInterval(refreshTimedOffers,1000);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshTimedOffers();});
 
   function matches(deal, query) {
     const terms = query.toLowerCase().split(/\s+/);

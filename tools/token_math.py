@@ -15,31 +15,57 @@ def entries(deal):
     return rows
 
 
-def _deadline_days(deal, today, now_dt=None):
-    """Days of usable quota left. Pure dates count the whole final day;
-    ISO deadlines with a timezone expire at the exact instant (e.g. 09:00 GMT+8)."""
+CHINA_TIME = datetime.timezone(datetime.timedelta(hours=8))
+
+
+def _quota_clock(value=None):
+    if value is None:
+        return datetime.datetime.now(CHINA_TIME)
+    if isinstance(value, datetime.datetime):
+        return (value if value.tzinfo else value.replace(tzinfo=CHINA_TIME)).astimezone(CHINA_TIME)
+    return datetime.datetime.combine(value, datetime.time(), tzinfo=CHINA_TIME)
+
+
+def _deadline_days(deal, today=None, now_dt=None):
+    """Actual instants expire exactly; date-only deadlines include their China calendar day."""
     dl = deal.get("deadline")
     if not dl:
         return None
+    ref = _quota_clock(now_dt if now_dt is not None else today)
     try:
         if "T" in dl:
-            end_at = datetime.datetime.fromisoformat(dl)
-            base = datetime.datetime.combine(today, datetime.time(0, 0), tzinfo=datetime.timezone.utc)
-            ref = now_dt or base
-            if end_at <= ref:
+            end_at = datetime.datetime.fromisoformat(dl.replace("Z", "+00:00"))
+            if end_at.tzinfo is None:
+                end_at = end_at.replace(tzinfo=CHINA_TIME)
+            if ref >= end_at:
                 return 0
-            return (end_at.date() - base.date()).days + 1
-        return (datetime.date.fromisoformat(dl[:10]) - today).days + 1
-    except (KeyError, ValueError):
+            end_day = end_at.astimezone(CHINA_TIME).date()
+        else:
+            end_day = datetime.date.fromisoformat(dl[:10])
+        return (end_day-ref.date()).days+1
+    except (TypeError, ValueError):
         return None
 
 
-def quota(deal, today=None):
-    today = today or datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date()
+def _active_days(deal, now=None):
+    ref = _quota_clock(now)
+    if deal.get("verify_status") == "expired":
+        return 0
+    try:
+        start = datetime.datetime.fromisoformat(deal.get("starts_at", "").replace("Z", "+00:00"))
+        if start.tzinfo is None:
+            start = start.replace(tzinfo=CHINA_TIME)
+        if ref < start:
+            return 0
+    except (TypeError, ValueError):
+        pass
     days = min(30, deal.get("quota_days") or 30)
-    dd = _deadline_days(deal, today)
-    if dd is not None:
-        days = min(days, max(0, dd))
+    remaining = _deadline_days(deal, ref)
+    return min(days, max(0,remaining)) if remaining is not None else days
+
+
+def quota(deal, today=None):
+    days = _active_days(deal,today)
     result = dict(once=0, daily=0, monthly=0, dailyMonth=0, total=0)
     if deal.get("verify_status") == "expired" or not days:
         return result
@@ -85,11 +111,7 @@ def estimate_quota(deal, e, today=None, settings=None):
     converted = q.get("convert") is not False and (q["unit"] == "tokens" or q.get("tokens_per_unit") or q["unit"] in RATES)
     if q["period"] not in ("once", "daily", "weekly", "monthly") or converted or deal.get("verify_status") == "expired":
         return None
-    today = today or datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date()
-    days = min(30, deal.get("quota_days") or 30)
-    dd = _deadline_days(deal, today)
-    if dd is not None:
-        days = min(days, max(0, dd))
+    days = _active_days(deal,today)
     days = max(0, days-(q.get("starts_after_days") or 0))
     if not days:
         return None

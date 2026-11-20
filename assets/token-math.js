@@ -17,15 +17,21 @@ const TokenMath = (() => {
   function today(now = new Date()) {
     return new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
   }
-  function activeDays(d, now) {
+  function phase(d, now = new Date()) {
+    const at = now instanceof Date ? now : new Date(now);
+    const end = /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '') ? Date.parse(d.deadline)
+      : /^\d{4}-\d{2}-\d{2}$/.test(d.deadline || '') ? Date.parse(d.deadline+'T00:00:00+08:00')+864e5 : NaN;
+    if (d.verify_status === 'expired' || Number.isFinite(end) && at.getTime() >= end) return 'expired';
+    const start = Date.parse(d.starts_at);
+    return Number.isFinite(start) && at.getTime() < start ? 'upcoming' : 'active';
+  }
+  function activeDays(d, now = new Date()) {
+    if (phase(d,now) !== 'active') return 0;
     let days = Math.min(30, positive(d.quota_days) || 30);
-    if (/^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '')) {
-      // ISO with time+timezone: expiry is the exact instant (e.g. 09:00 GMT+8), not the whole day.
-      var endAt = Date.parse(d.deadline);
-      var nowMs = (now instanceof Date) ? now.getTime() : Date.parse(now);
-      if (!isNaN(endAt)) days = endAt <= nowMs ? 0 : Math.min(days, Math.floor((endAt-Date.parse(today(now)+'T00:00:00Z'))/864e5)+1);
-    } else if (/^\d{4}-\d{2}-\d{2}/.test(d.deadline || '')) {
-      days = Math.min(days, Math.max(0, Math.floor((Date.parse(d.deadline.slice(0,10)+'T00:00:00Z')-Date.parse(today(now)+'T00:00:00Z'))/864e5)+1));
+    const endAt = Date.parse(d.deadline);
+    const date = /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '') && Number.isFinite(endAt) ? today(new Date(endAt)) : d.deadline;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(date || '')) {
+      days = Math.min(days, Math.max(0, Math.round((Date.parse(date+'T00:00:00Z')-Date.parse(today(now)+'T00:00:00Z'))/864e5)+1));
     }
     return days;
   }
@@ -229,7 +235,8 @@ const TokenMath = (() => {
   }
   function cell(d, aggregate) {
     const q = aggregate || quota(d);
-    if (d.verify_status === 'expired') return '<span class="num">'+msg('已失效','Expired')+'</span>';
+    if (phase(d) === 'expired') return '<span class="num">'+msg('已失效','Expired')+'</span>';
+    if (phase(d) === 'upcoming' && !q.total) return '<span class="quota-value"><span class="quota-original">'+msg('即将开始','Upcoming')+'</span><span class="unit quota-native">'+escape(entries(d).map(native).join(' + '))+'</span></span>';
     if (q.total > 0) {
       const nativeText = aggregate ? (q.once ? msg('一次性 ','One-time ')+format(q.once) : '')
         + (q.monthly+q.dailyMonth ? (q.once?' + ':'')+msg('周期 ','Recurring ')+format(q.monthly+q.dailyMonth) : '')
@@ -269,7 +276,7 @@ const TokenMath = (() => {
     }
     return {tokens,cny};
   }
-  return {rates,sources,format,entries,rawTokens,equivalent,native,quota,sum,free,explain,cell,allowance,
+  return {rates,sources,format,entries,rawTokens,equivalent,native,phase,quota,sum,free,explain,cell,allowance,
     estimate,estimates,estimateMany,catalogue,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
 })();
 if (typeof module !== 'undefined') module.exports = TokenMath;

@@ -79,7 +79,7 @@ def deadline_passed(value, now):
         end = datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
         if end.tzinfo is None:
             end = end.replace(tzinfo=china_time)
-        return now > end
+        return now >= end
     except ValueError:
         return False
 
