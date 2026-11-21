@@ -41,6 +41,6 @@ NVIDIA 当前要求先完成手机短信验证，才能生成 API Key。本轮�
 - [NVIDIA 官方 API Quickstart](https://docs.api.nvidia.com/nim/docs/api-quickstart)
 - [Kilo 官方匿名调用规则](https://kilo.ai/docs/gateway/authentication)
 - [OVH 官方接入说明](https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started)
-- [本轮脱敏调用记录 JSON](https://tokenmost.com/docs/freellmapi-smoke-20261121.json)
+- [本轮脱敏调用记录 JSON](https://tokenmost.com/guides/freellmapi-smoke-20261121.json)
 
 源码版本：`7ad9097fd9d83bc3e1af0f925ea813a913b18dde`；免费目录 monthly v2026.11.19。各提供方限额、适用地区与数据规则独立生效，适合按项目说明做个人测试。
