@@ -221,10 +221,21 @@ const Workbench = (() => {
     const title = Number.isFinite(date) ? new Date(date).toLocaleDateString(locale) : '';
     const days = Math.max(0, Math.floor((Date.now() - date) / 864e5));
     const badge = (tone, text) => '<span class="badge ' + tone + '" title="' + esc(title) + '">' + text + '</span>';
-    if (d.verify_status === 'expired') return badge('b-red', msg('已失效', 'Expired'));
+    if (TokenMath.phase(d) === 'expired') return badge('b-red', msg('已失效', 'Expired'));
     if (d.verify_status !== 'verified' || !Number.isFinite(date)) return badge('b-amber', msg('待复核', 'Needs review'));
+    if (d.quota_basis === 'claimed_pack') return badge('b-green', msg('已领实测', 'Claim tested'));
     if (days === 0) return badge('b-green', d.verify_by === 'auto' ? msg('自动核验', 'Auto-checked') : msg('近 24 小时核验', 'Verified in 24h'));
     return badge(days < 7 ? 'b-green' : 'b-amber', msg(days + ' 天前', days + (days === 1 ? ' day ago' : ' days ago')));
+  }
+
+  function claimLabel(deal) {
+    if (deal.claim_status !== 'window_unconfirmed') return '';
+    return TokenMath.phase(deal) === 'expired' ? msg('查看历史', 'View history') : msg('查看入口', 'View entry');
+  }
+
+  function claimNotice(deal) {
+    if (deal.claim_status !== 'window_unconfirmed' || TokenMath.phase(deal) === 'expired') return '';
+    return '<span class="badge b-amber">' + msg('新领取待核', 'New claims unconfirmed') + '</span>';
   }
 
   // Recompute only when a timed offer changes phase; a tab opened before 19:00
@@ -239,6 +250,7 @@ const Workbench = (() => {
     if (!initialized) return;
     if (typeof window.render === 'function') window.render();
     if (typeof window.calcGlobalBanner === 'function') window.calcGlobalBanner();
+    if (typeof window.refreshWorkbenchNews === 'function') window.refreshWorkbenchNews();
     if (typeof window.sumRender === 'function' && el('sumPanel')?.classList.contains('open')) window.sumRender();
     if (typeof DailyEstimateUI !== 'undefined') DailyEstimateUI.refresh();
   }
@@ -348,7 +360,7 @@ const Workbench = (() => {
     if (index === -1) showNews();
   }
   function refreshNews(deals, production) {
-    const fallback = deals.filter(d => d.published !== false && d.verify_status !== 'expired' && d.category !== 'intel_source')
+    const fallback = deals.filter(d => d.published !== false && TokenMath.phase(d) !== 'expired' && d.category !== 'intel_source')
       .sort((a, b) => new Date(b.verified_at) - new Date(a.verified_at)).slice(0, 6)
       .map(d => ({title:d.provider, text:zh ? d.value : d.value_en || d.value}));
     setNews(fallback);
@@ -390,5 +402,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredHeading, subscriptionCell, timing, freshness, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredHeading, subscriptionCell, timing, freshness, claimLabel, claimNotice, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();

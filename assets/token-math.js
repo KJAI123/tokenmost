@@ -234,6 +234,8 @@ const TokenMath = (() => {
     }).join('；');
   }
   function cell(d, aggregate) {
+    // An account-tested pack must not be presented as a mixed pool with trial/card offers.
+    if (d.quota_basis === 'claimed_pack') aggregate = undefined;
     const q = aggregate || quota(d);
     if (phase(d) === 'expired') return '<span class="num">'+msg('已失效','Expired')+'</span>';
     if (phase(d) === 'upcoming' && !q.total) return '<span class="quota-value"><span class="quota-original">'+msg('即将开始','Upcoming')+'</span><span class="unit quota-native">'+escape(entries(d).map(native).join(' + '))+'</span></span>';
@@ -241,7 +243,7 @@ const TokenMath = (() => {
       const nativeText = aggregate ? (q.once ? msg('一次性 ','One-time ')+format(q.once) : '')
         + (q.monthly+q.dailyMonth ? (q.once?' + ':'')+msg('周期 ','Recurring ')+format(q.monthly+q.dailyMonth) : '')
         : entries(d).map(native).join(' + ');
-      const label = d.quota_paid ? msg('付费额度参考','Paid quota reference') : d.quota_upper_bound ? msg('首月上限','First-month maximum') : msg('首月参考','First-month reference');
+      const label = d.quota_basis === 'claimed_pack' && !aggregate ? msg('已领礼包总量','Claimed pack total') : d.quota_paid ? msg('付费额度参考','Paid quota reference') : d.quota_upper_bound ? msg('首月上限','First-month maximum') : msg('首月参考','First-month reference');
       const extraEstimate = aggregate?.estimates?.count ? aggregate.estimates : estimate(d);
       const extraId = extraEstimate?.rows?.[0]?.deal.id || d.id;
       const extra = extraEstimate?.month.high ? '<button type="button" class="estimate-link" data-estimate-id="'+escape(extraId)+'">'+msg('另有额度估计','Additional allowance estimate')+'</button>' : '';

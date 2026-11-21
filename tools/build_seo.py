@@ -119,7 +119,7 @@ def deal_value(d):
             parts.append(text)
         value = token_quota(d)["total"]
         if value:
-            parts.append(f"首月 ≈ {fmt_wan(value)} Token 参考")
+            parts.append("已领礼包总量（新领取待核）" if d.get("quota_basis") == "claimed_pack" else f"首月 ≈ {fmt_wan(value)} Token 参考")
         estimated = daily_estimate(d)
         if estimated:
             period = "daily" if estimated["period"] == "daily" else "month"
@@ -222,9 +222,9 @@ def main():
         blocks = []
         for d in sorted(ds, key=lambda x: -token_quota(x)["total"]-(daily_estimate(x) or {"month":{"typical":0}})["month"]["typical"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
-            badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
+            badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已领实测 · 新领取待核" if d.get("quota_basis") == "claimed_pack" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
-            action = "查看历史条款" if d.get("verify_status") == "expired" else "获取工具" if d.get("unit") == "tool" else "查看活动" if d.get("starts_at") else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
+            action = "查看历史条款" if d.get("verify_status") == "expired" else "查看入口" if d.get("claim_status") == "window_unconfirmed" else "获取工具" if d.get("unit") == "tool" else "查看活动" if d.get("starts_at") else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
             definitions = d.get("quota_estimates", [d["daily_estimate"]] if d.get("daily_estimate") else [])
             estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""

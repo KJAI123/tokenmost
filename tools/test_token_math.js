@@ -205,4 +205,6 @@ for(const d of deals) {
 }
 const clockRun=spawnSync('python3',['tools/test_quota_clock.py'],{cwd:root,encoding:'utf8'});
 assert.equal(clockRun.status,0,clockRun.stderr||clockRun.stdout);
+const claimRun=spawnSync(process.execPath,['tools/test_claim_window.js'],{cwd:root,encoding:'utf8'});
+assert.equal(claimRun.status,0,claimRun.stderr||claimRun.stdout);
 console.log('Token conversion and daily-estimate checks passed: formulas, scenarios, settings, pool deduplication, billing separation, JS/Python parity and timestamp boundaries.');

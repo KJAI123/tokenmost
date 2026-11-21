@@ -764,8 +764,8 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/token-math.js?v=20261120-weekend-clock"></script>
-<script src="assets/workbench.js?v=20261120-weekend-clock"></script>
+<script src="assets/token-math.js?v=20261121-zcode-claim"></script>
+<script src="assets/workbench.js?v=20261121-zcode-claim"></script>
 <script src="assets/catalogue-ledger.js?v=20261120-remaining-quotas"></script>
 <script src="assets/daily-estimates.js?v=20261120-remaining-quotas"></script>
 <script>
@@ -824,7 +824,7 @@ function siteFor(d){const k=d.provider.split(/[\s/]/)[0];return SITES.flatMap(g=
 function aggGold(g){
   const coupon=Workbench.couponLink(g.best)||g.ds.map(d=>Workbench.couponLink(d)).find(Boolean);
   if(coupon)return coupon;
-  return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">'+Workbench.msg(TokenMath.phase(g.best)==='upcoming'?'查看活动':'领取',TokenMath.phase(g.best)==='upcoming'?'View activity':'Claim')+'</a>';
+  return '<a class="go" href="'+esc(safeUrl(g.best.url))+'" target="_blank" rel="noopener nofollow">'+(Workbench.claimLabel(g.best)||Workbench.msg(TokenMath.phase(g.best)==='upcoming'?'查看活动':'领取',TokenMath.phase(g.best)==='upcoming'?'View activity':'Claim'))+'</a>';
 }
 /* 云服务器羊毛独立版面（v2.30 老板令：token 羊毛下方单独版面） */
 function renderFreecloud(){
@@ -861,13 +861,13 @@ const rowHtml=(d,ov)=>{
     ${(d.free_models&&d.free_models.length)||(d.freebies&&d.freebies.length)?fmBlock(fmMeta(d)).block:''}
   </div>
   <div class="r-tok ${TokenMath.phase(d)==='expired'?'dead':((d.usd||d.cny)&&!ov?'cash':'')}">${Workbench.subscriptionCell(d) || tokCell(d,ov)}</div>
-  <div class="r-state">${Workbench.freshness(d)}${apiBadge(d)}${Workbench.timing(d)}</div>
+  <div class="r-state">${Workbench.freshness(d)}${Workbench.claimNotice(d)}${apiBadge(d)}${Workbench.timing(d)}</div>
   <div class="r-ops">
-    ${s?.api?`<button class="apiBtn" data-api="${esc(d.id)}" title="API setup">⚡</button>`:''}
+    ${s?.api&&d.api_via!=='client_only'?`<button class="apiBtn" data-api="${esc(d.id)}" title="API setup">⚡</button>`:''}
     <button class="couponFlag" data-share="${esc(pname)}" style="display:none"></button>
     <button class="couponFlag" data-supply="${esc(pname)}" title="Share your discount code" style="display:${auth?'':'none'}">🎁</button>
     <button class="claim ${claimedSet.has(d.id)?'on':''}" data-claim="${esc(d.id)}" aria-pressed="${claimedSet.has(d.id)}" title="Mark or unmark as claimed">${claimedSet.has(d.id)?'★':'☆'}</button>
-    ${Workbench.couponLink(d) || `<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${TokenMath.phase(d)==='upcoming'?Workbench.msg('查看活动','View activity'):Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):(d.quota_paid||d.type==='pricing_plan')?Workbench.msg('查看套餐','View plan'):Workbench.msg('领取','Claim')}</a>`}
+    ${Workbench.couponLink(d) || `<a class="go" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener nofollow">${Workbench.claimLabel(d)||(TokenMath.phase(d)==='upcoming'?Workbench.msg('查看活动','View activity'):Workbench.requiresApplication(d)?Workbench.msg('查看申请','View application'):(d.quota_paid||d.type==='pricing_plan')?Workbench.msg('查看套餐','View plan'):Workbench.msg('领取','Claim'))}</a>`}
   </div>
 </article>`};
 
@@ -1016,7 +1016,7 @@ function render(){
       </div>
     </div>
     <div class="r-tok">${g.applicationOnly ? tokCell(g.best) : TokenMath.cell(g.best,g.quota)}</div>
-    <div class="r-state">${Workbench.freshness(g.best)}${apiBadge(g.best)}${Workbench.timing(g.best)}</div>
+    <div class="r-state">${Workbench.freshness(g.best)}${Workbench.claimNotice(g.best)}${apiBadge(g.best)}${Workbench.timing(g.best)}</div>
     <div class="r-ops">
       <button type="button" class="aggToggle" data-agg="${esc(g.p)}" data-count="${g.ds.length}" aria-expanded="${open}" aria-controls="${detailId}">${Workbench.groupLabel(open,g.ds.length)}</button>
       ${g.applicationOnly?'':aggGold(g)}
