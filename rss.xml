@@ -126,11 +126,11 @@
       <description>长期免费 · 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>NVIDIA NIM：NVIDIA API Catalog：可免费体验目录内部分模型推理，具体额度与限流以账号为准</title>
+      <title>NVIDIA NIM：NVIDIA API Catalog 免费原型推理：按账号速率限流</title>
       <link>https://build.nvidia.com</link>
       <guid isPermaLink="false">nvidia-nim</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：注册开发者账号后查看各模型与余额限制；当前公开目录未给出统一Token数量或每月赠额。（优惠以官方页面为准）</description>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：开发者账号完成手机短信验证后生成API Key；本轮账号显示最高40请求/分钟，实际按模型和账号限制。无固定Token/月赠额，不能按RPM推算保证月量。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>OhMyGPT：官方推荐计划：好友双方各得 $20 额度</title>
@@ -1573,6 +1573,13 @@
       <guid isPermaLink="false">zcode-weekend-5yi-1120</guid>
       <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
       <description>限时活动 · 规则：入口=ZCode 客户端活动卡（今晚 19:00 开领）；领取窗口开到次日早上（原文未说明精确结束时刻）；额度 11-23 09:00（北京时间）清零；⚠️ 资讯线索待官方页复核（活动位于客户端，尚未取得本轮官方条款） · 截止 2026-11-23T09:00:00+08:00（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>FreeLLMAPI：FreeLLMAPI 免费本地路由：OVH、Kilo、NVIDIA 三家共5次真实调用通过</title>
+      <link>https://freellmapi.co/</link>
+      <guid isPermaLink="false">freellmapi-router</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <description>工具接入 · 规则：桌面端或自托管运行，按需添加各家 Key；部分通道支持匿名调用。路由器不另发 Token，免费目录约滞后30天，个人试用并遵守各提供方规则。（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>

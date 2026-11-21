@@ -2354,6 +2354,18 @@
     "10/month"
    ],
    "note": "官方原文：跟踪免费权益与额度变更"
+  },
+  {
+   "id": "freellmapi-readme",
+   "name": "FreeLLMAPI 路由与免费目录变化",
+   "url": "https://raw.githubusercontent.com/tashfeenahmed/freellmapi/main/README.md",
+   "patterns": [
+    "free tier",
+    "NVIDIA",
+    "catalog",
+    "billion"
+   ],
+   "note": "聚合容量仅作发现；需要逐提供方核实，禁止把汇总宣传计入到账Token。"
   }
  ]
 }

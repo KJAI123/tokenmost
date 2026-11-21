@@ -964,6 +964,15 @@
     "tencent-adp-15k"
    ],
    "auto_verify": false
+  },
+  {
+   "id": "freellmapi-readme-review",
+   "type": "watch",
+   "url": "https://raw.githubusercontent.com/tashfeenahmed/freellmapi/main/README.md",
+   "deals": [
+    "freellmapi-router"
+   ],
+   "auto_verify": false
   }
  ]
 }

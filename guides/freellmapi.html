@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FreeLLMAPI 实测：本地免费路由与 NVIDIA 接入 — tokenmost 攻略</title>
+<meta name="description" content="2026-11-21：三家提供方共五次真实调用通过：OVH、Kilo 与使用本机 Key 的 NVIDIA。">
+<meta property="og:title" content="FreeLLMAPI 实测：本地免费路由与 NVIDIA 接入 — tokenmost">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://tokenmost.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tokenmost.com/og-image.png">
+<link rel="canonical" href="https://tokenmost.com/guides/freellmapi.html">
+<meta property="og:title" content="FreeLLMAPI 实测：本地免费路由与 NVIDIA 接入 — tokenmost 攻略">
+<meta property="og:description" content="2026-11-21：三家提供方共五次真实调用通过：OVH、Kilo 与使用本机 Key 的 NVIDIA。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tokenmost.com/guides/freellmapi.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"FreeLLMAPI 实测：本地免费路由与 NVIDIA 接入","description":"2026-11-21：三家提供方共五次真实调用通过：OVH、Kilo 与使用本机 Key 的 NVIDIA。","url":"https://tokenmost.com/guides/freellmapi.html","inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}
+</script>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#00e5a0;--amber:#d29922;--red:#f85149}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:15px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:760px;margin:0 auto;padding:28px 18px 80px}
+a{color:#58a6ff}
+h1{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+.meta{color:var(--muted);font-size:.8rem;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h2{font-size:1.1rem;margin:22px 0 8px;color:var(--accent)}
+h3{font-size:.98rem;margin:16px 0 6px}
+ol,ul{padding-left:22px;margin:8px 0}
+li{margin:5px 0}
+code{background:#0a0e14;border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:.85em;font-family:monospace;color:#c9d1d9;word-break:break-all}
+pre{background:#0a0e14;border:1px solid var(--border);border-radius:9px;padding:12px;overflow-x:auto;margin:10px 0}
+pre code{border:none;padding:0}
+.warn{background:rgba(248,81,73,.08);border:1px solid var(--red);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+.tip{background:rgba(0,229,160,.06);border:1px solid var(--accent);border-radius:9px;padding:10px 14px;margin:12px 0;font-size:.9rem}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.86rem}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left}
+th{background:var(--card)}
+.back{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}
+.src{color:var(--muted);font-size:.78rem;margin-top:26px;padding-top:12px;border-top:1px solid var(--border)}
+</style></head><body>
+<a class="back" href="/">← 回 tokenmost 情报流</a>
+<h1>FreeLLMAPI 实测：本地免费路由与 NVIDIA 接入</h1>
+
+<p>2026-11-21：三家提供方共五次真实调用通过：OVH、Kilo 与使用本机 Key 的 NVIDIA。</p>
+
+<h2>实测结果</h2>
+
+<p>使用项目源码服务，独立数据库，仅监听本机；前三次使用免 Key 通道，后两次只启用 NVIDIA Key；没有绑定支付方式。</p>
+
+<ul style='margin:0;padding-left:22px'><li>普通生成：OVH / Llama 3.3 70B，HTTP 200，17+25 回答 42；本次 1.796 秒。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>流式生成：Kilo / Auto Free，回答 42 并收到结束标记；本次 1.963 秒，响应报告 cost=0。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>默认 auto：路由至 OVH / Qwen3.8 27B，HTTP 200，回答 <code>ROUTER_OK</code>；本次 1.781 秒。</li></ul>
+
+<ul style='margin:0;padding-left:22px'><li>NVIDIA 普通生成：Nemotron 3.5 Lightning，HTTP 200，回答 42；本次 2.003 秒。</li></ul>
+<ul style='margin:0;padding-left:22px'><li>NVIDIA 流式生成：同模型返回 42 并收到结束标记；本次 1.487 秒。流式用量字段标记为估计值。</li></ul>
+
+<p>这是五次短请求的结果，不代表长期速度或全部模型可用。未测试故障切换、长上下文、桌面安装包或整月额度。模型身份依据上游响应与路由记录，未做独立模型指纹验证。</p>
+
+<h2>一个真实遇到的目录过期问题</h2>
+
+<p>NVIDIA 的 GPT-OSS 20B 请求返回 HTTP 410，错误说明该模型已于 2026-11-18 停服，月度目录仍保留该条目。本轮已把它排除在本机 Key 使用范围外，改测当前官网列出的 Nemotron Lightning。接入时从本地 <code>/v1/models</code> 读取统一模型 ID；原厂 ID 或另一个提供方的简称不一定等价。</p>
+
+<h2>“74 亿/月”怎么理解</h2>
+
+<p>它是路由软件。多个平台各自提供免费层，路由器帮助选择和切换；填一把 NVIDIA Key 只能使用对应 NVIDIA 权限。</p>
+
+<p>原笔记为 74 亿/月、34 家、635 端点；11 月 21 日项目仓库的宣传已改为约 101 亿/月、87 家、1,313 端点。这些是项目汇总口径，TokenMost 没有实测全部容量，也不把它计入额外到账额度。免费版目录约滞后最新目录 30 天。</p>
+
+<h2>接入步骤</h2>
+
+<ol start='1' style='margin:0;padding-left:22px'><li>从项目官方 Releases 选择匹配系统的桌面版本，或按官方文档自托管。</li></ol>
+<ol start='2' style='margin:0;padding-left:22px'><li>先使用目录内支持匿名的通道，在试验场发一条简单请求；本轮 OVH 和 Kilo 已测试。</li></ol>
+<ol start='3' style='margin:0;padding-left:22px'><li>需要 NVIDIA 时，进入官方 build.nvidia.com，完成账号、开发者计划及手机短信验证，在官方页面生成 Key。</li></ol>
+<ol start='4' style='margin:0;padding-left:22px'><li>在本机 FreeLLMAPI 的 Keys 页面添加 NVIDIA Key；模型和余量以自己的账号为准。</li></ol>
+<ol start='5' style='margin:0;padding-left:22px'><li>在本机界面取得统一 API Key。客户端指向实际本地地址并使用 model=auto；服务端默认端口 3001，桌面版以实际显示地址为准。</li></ol>
+
+<p>NVIDIA 当前要求先完成手机短信验证，才能生成 API Key。本轮账号页面显示最高 40 请求/分钟；已用短期 Key 测通上述模型，没有固定 Token 月赠额可折算。</p>
+
+<h2>来源与复现边界</h2>
+
+<ul style='margin:0;padding-left:22px'><li><a href="https://github.com/tashfeenahmed/freellmapi" target="_blank" rel="noopener nofollow">FreeLLMAPI 项目仓库</a></li></ul>
+<ul style='margin:0;padding-left:22px'><li><a href="https://docs.api.nvidia.com/nim/docs/api-quickstart" target="_blank" rel="noopener nofollow">NVIDIA 官方 API Quickstart</a></li></ul>
+<ul style='margin:0;padding-left:22px'><li><a href="https://kilo.ai/docs/gateway/authentication" target="_blank" rel="noopener nofollow">Kilo 官方匿名调用规则</a></li></ul>
+<ul style='margin:0;padding-left:22px'><li><a href="https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started" target="_blank" rel="noopener nofollow">OVH 官方接入说明</a></li></ul>
+<ul style='margin:0;padding-left:22px'><li><a href="https://tokenmost.com/docs/freellmapi-smoke-20261121.json" target="_blank" rel="noopener nofollow">本轮脱敏调用记录 JSON</a></li></ul>
+
+<p>源码版本：<code>7ad9097fd9d83bc3e1af0f925ea813a913b18dde</code>；免费目录 monthly v2026.11.19。各提供方限额、适用地区与数据规则独立生效，适合按项目说明做个人测试。</p>
+
+</body></html>

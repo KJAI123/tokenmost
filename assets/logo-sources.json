@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-11-20",
+  "reviewed_at": "2026-11-21",
   "note": "Official website icons. Huawei products currently use the parent Huawei brand; unavailable brands keep a neutral monogram. No captcha or directory imagery is used as a brand.",
   "assets": [
     {
@@ -175,6 +175,13 @@
       "retrieved_at": "2026-11-20",
       "sha256": "cacf2110d9cbba9dda1079033ed4565aff5ee1e0d7f2b331cf9073e073e7147b",
       "note": "Current Tencent ADP product icon, distinct from the parent Tencent Cloud mark."
+    },
+    {
+      "path": "assets/logos/freellmapi.svg",
+      "page": "https://github.com/tashfeenahmed/freellmapi",
+      "asset_url": "https://raw.githubusercontent.com/tashfeenahmed/freellmapi/7ad9097fd9d83bc3e1af0f925ea813a913b18dde/client/public/favicon.svg",
+      "retrieved_at": "2026-11-21",
+      "sha256": "2e03899abef98f9172a7c7d0462a77424422d1ff87c29ae185b0b4961ff4e290"
     }
   ],
   "unresolved_aliases": [

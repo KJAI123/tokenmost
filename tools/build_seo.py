@@ -17,7 +17,7 @@ GDIR = ROOT / "guides"
 LAYER = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", "compute": "算力平台",
          "reseller": "Token 中间商", "official_global": "大模型官方（海外）", "maas": "MaaS 平台（云上托管）"}
 TYPE = {"signup_bonus": "注册赠送", "free_tier": "长期免费", "limited_promo": "限时活动",
-        "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励", "pricing_plan": "套餐订阅", "info": "情报"}
+        "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励", "pricing_plan": "套餐订阅", "info": "情报", "tool_integration": "工具接入"}
 
 TPL = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
@@ -103,6 +103,8 @@ def fmt_wan(w):
 
 
 def deal_value(d):
+    if d.get("unit") == "tool":
+        return "免费工具，无独立 Token 赠额"
     if "token_quota" in d:
         parts = []
         for q in quota_entries(d):
@@ -222,7 +224,7 @@ def main():
             tag = TYPE.get(d.get("type"), d.get("type", ""))
             badge = "已失效" if d.get("verify_status") == "expired" else "✅ 已验证" if d.get("verify_status") == "verified" else "⚠️ 待复核"
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
-            action = "查看历史条款" if d.get("verify_status") == "expired" else "查看活动" if d.get("starts_at") else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
+            action = "查看历史条款" if d.get("verify_status") == "expired" else "获取工具" if d.get("unit") == "tool" else "查看活动" if d.get("starts_at") else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
             definitions = d.get("quota_estimates", [d["daily_estimate"]] if d.get("daily_estimate") else [])
             estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""

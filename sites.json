@@ -463,6 +463,12 @@
     "url": "https://adp.tencent.com/pricing/home",
     "desc": "智能体开发平台，实名主账号领取体验版",
     "free": "每月15,000 PU（约¥15资源面值）"
+   },
+   {
+    "name": "FreeLLMAPI",
+    "url": "https://freellmapi.co/",
+    "desc": "本地 OpenAI 兼容路由，按各提供方限额调用",
+    "free": "免费路由工具；部分通道免Key"
    }
   ]
  },

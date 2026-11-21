@@ -1,0 +1,144 @@
+{
+  "tested_at": "2026-11-21T04:05:02Z",
+  "mode": "Isolated local source server. First three calls used anonymous provider routes; last two used a newly created NVIDIA key, with all other routes disabled temporarily and restored afterwards.",
+  "results": [
+    {
+      "name": "ovh-chat",
+      "model_requested": "llama-3.3-70b",
+      "model_returned": "Meta-Llama-3_3-70B-Instruct",
+      "http_status": 200,
+      "content": "42",
+      "usage": {
+        "prompt_tokens": 47,
+        "completion_tokens": 2,
+        "total_tokens": 49
+      },
+      "headers": {
+        "X-Request-ID": "ca03d12e-0183-4a68-9aec-36c9021b1b1d",
+        "X-Routed-Via": "ovh/Meta-Llama-3_3-70B-Instruct"
+      },
+      "passed": true,
+      "elapsed_seconds": 1.796
+    },
+    {
+      "name": "kilo-stream",
+      "model_requested": "kilo-auto",
+      "http_status": 200,
+      "content": "42",
+      "stream_done": true,
+      "usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 42,
+        "total_tokens": 72,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 38,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "headers": {
+        "X-Request-ID": "76b4e98d-bb15-4f52-9513-e7b390cad320",
+        "X-Routed-Via": "kilo/kilo-auto/free"
+      },
+      "passed": true,
+      "elapsed_seconds": 1.963
+    },
+    {
+      "name": "default-auto",
+      "http_status": 200,
+      "content": "\n\nROUTER_OK",
+      "usage": {
+        "prompt_tokens": 61,
+        "completion_tokens": 35,
+        "total_tokens": 96,
+        "completion_tokens_details": {
+          "reasoning_tokens": 29
+        }
+      },
+      "headers": {
+        "X-Routed-Via": "ovh/Qwen3.8-27B"
+      },
+      "elapsed_seconds": 1.781,
+      "passed": true
+    },
+    {
+      "name": "nvidia-chat",
+      "model_requested": "nemotron-3.5-lightning-30b-a3b",
+      "model_returned": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "http_status": 200,
+      "content": "42",
+      "usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 116,
+        "total_tokens": 146,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 112
+        }
+      },
+      "headers": {
+        "X-Routed-Via": "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b"
+      },
+      "passed": true,
+      "elapsed_seconds": 2.003
+    },
+    {
+      "name": "nvidia-stream",
+      "model_requested": "nemotron-3.5-lightning-30b-a3b",
+      "http_status": 200,
+      "content": "42",
+      "stream_done": true,
+      "usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 143,
+        "total_tokens": 153,
+        "estimated": true
+      },
+      "headers": {
+        "X-Routed-Via": "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b"
+      },
+      "passed": true,
+      "elapsed_seconds": 1.487
+    }
+  ],
+  "initial_checks": [
+    {
+      "name": "nvidia-chat",
+      "model_requested": "nemotron-3.5-lightning",
+      "http_status": 503,
+      "error": "{\"error\":{\"message\":\"No candidate model has a configured, usable provider key. Add provider API keys in the dashboard. All models exhausted. Add more API keys or wait for rate limits to reset. 5 models skipped: no key configured for their platform.\",\"type\":\"service_unavailable\",\"code\":\"no_providers_configured\"},\"execution_id\":\"9c1e570b-3f37-4b3f-9f89-dcdc209c1e95\"}",
+      "passed": false,
+      "elapsed_seconds": 0.003
+    },
+    {
+      "name": "nvidia-stream",
+      "model_requested": "gpt-oss-20b",
+      "http_status": 404,
+      "error": "{\"error\":{\"message\":\"Every routed provider reports the model as not found or removed upstream (1 attempt(s)). The catalog entry looks stale; pick another model or call /v1/models for the available list. Attempt trail: nvidia/openai/gpt-oss-20b key1: model_not_found. Last error: NVIDIA NIM API error 410: The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18T08:00:00Z and is no longer available.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"},\"execution_id\":\"9e2a2a28-0271-4190-90f1-2a32ff3d8bc3\"}",
+      "passed": false,
+      "elapsed_seconds": 1.24
+    }
+  ],
+  "nvidia_route_tested": true,
+  "limitations": "Five short successful calls across three providers, plus the retained unsuccessful setup/retired-model probes. Not a monthly capacity, outage-failover, long-context or desktop-binary test. Streaming usage may be estimated.",
+  "completed_at": "2026-11-21T04:19:10Z",
+  "catalog_snapshot_before_nvidia_key": {
+    "models_listed": 328,
+    "models_marked_available": 53
+  }
+}
