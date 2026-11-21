@@ -68,3 +68,29 @@
 - 稿件就绪：《免费域名怎么搞：3 个正规渠道+2 个坑》，标题 18 字（5-64 合规），正文 13 行纯文本约 550 字，无链接无 Markdown 无植入词（稿件头注释已注明「纯干货零植入 v4」）。直接按 SOP 逐行进 ProseMirror。
 - 发布四步不变：标题 contenteditable span → 正文逐行+Enter → 自主声明（选「该文章由AI辅助创作」，弹窗 scrollTop 到底 + elementFromPoint 预检命中 BUTTON 再点）→ 发布后内容管理列表验「加工中/全平台分发」。
 - 发布窗口：稿件建议 11-21 上午 10:00-12:00；若实际恢复晚于窗口，当天上午补发即可，日发 1-2 篇安全线照旧。
+
+---
+
+# 11-22《AI 编程订阅怎么选：按使用强度分三档》— 发布成功
+
+## 结果
+
+**发布成功。** 稿件 `data-research/seo/omqq-daily/o4-coding-plan.md`（AI 编程订阅三档选型，纯文本零植入）已提交，内容管理列表显示「共 4 条内容 / 图文 / **加工中** / 手工发文 / 全平台分发 / 修改于 2026-11-22 06:57:10」。发布前终检：links=0、植入词扫描 tokenmost/http/www./.com/.cn 全 0 命中、正文 9 段与稿件逐字一致（编辑器计数 628 字）、标题 19 字在框。截图 `/tmp/om4-01-editor.png` … `/tmp/om4-11-published-list.png`（关键：om4-04 标题入框、om4-05 正文 9 段、om4-09 发布前终检、om4-11 发布成功列表）。另：o3《免费域名怎么搞》已于 11-20 14:04 发布成功（已发布态），11-21 那轮登录恢复后由后续任务补发。
+
+## 登录态与额度
+
+- 9223 无 om.qq.com 标签，`Tab.connect(new_url='https://om.qq.com/main')` 直落 /main 未跳 userAuth——昨天老板扫码 + cookie 迁移的登录态有效，未要求再次扫码。
+- 今日（11-22）提交 1 篇，日发 1-2 篇安全线内。账号内容总数 4（11-19 两篇 + 11-20 一篇 + 本篇）。
+
+## 本轮新踩的坑（补充到 SOP）
+
+1. **编辑器会自动恢复孤儿草稿**：打开 /main/creation/article 直接带出 editorCache 里一份残留稿（退货处理主题 1201 字，标题空，repo 内无对应稿件=孤儿缓存），且自主声明 chip 已随缓存恢复。处理：正文/标题 select_all+Backspace 清空后再输入；其余表单项（封面/分类/标签/活动投稿）核过均为空。残留全文存档 `/tmp/om4-leftover-draft.txt`。**下次进编辑器先查正文字数计数器，非 0 先清场**。
+2. **标题点不进去的真因是滚动位置**：正文 focus 过后页面 scrollY=295，标题框 getBoundingClientRect y=-2（顶边外、被吸顶工具栏盖住），中心点 elementFromPoint 命中 `EXEDITOR-TOOLBAR-BUTTON`——RPA 点击点在工具栏上，焦点根本没离开 ProseMirror，type_text 全落正文（两次复现，pm 里出现标题文本）。**修复三步**：`window.scrollTo(0,0)` → elementFromPoint 确认命中标题 span → 点击后验证 `document.activeElement === 标题span` 再 insertText，输完再验标题框内容+pm 为空。原「type_text 后焦点会窜」的坑，本质多半就是这一种。
+3. **自主声明流程已改版（重要）**：不再有「添加内容自主声明」按钮和弹窗。现在是 `#articlePublish-selfDeclaration` 表单组里直接放一枚 chip（`omui-contentbutton`）「**该文章由AI生成**」+ 移除图标；点 chip/label/说明文字都不再弹窗，旧选项（无需标注/AI辅助创作/虚构演绎）在全 DOM 已不存在。本稿由 AI 撰写，chip 声明与事实相符，直接发布通过，未出「请选择自主声明」toast——与 2025-09 起 AI 内容强制标识的监管要求一致，后续按现状走即可。
+4. **`tab.url` 是连接时的快照**：SPA 路由跳转后不更新，点发布后 6 秒内看 `tab.url` 会误判失败。以 `location.href` + 列表卡片状态为准；toast/XHR 观察器也随页面跳转丢失（返回空），不影响判定。
+5. 发布按钮 elementFromPoint 预检命中 `SPAN`（按钮内层 span）也算命中（`b.contains(hit)`），正常点。
+
+## 复用要点（增量）
+
+- 清场 → `scrollTo(0,0)` → 标题（activeElement 校验）→ 正文逐行 insertText+Enter(vk13) → 终检（links=0/植入词/标题在框/pm 段落逐字比对）→ 预检发布按钮 → 点发布 → `location.href` 跳 articleManage + 列表验「加工中/全平台分发」。
+- 正文 9 段逐行输入无粘连，段落 `children.length` 会比实际段落数多 1（尾部空段落来自最后一个 Enter），比对时按非空段落算。
