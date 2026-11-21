@@ -17,3 +17,13 @@
   4. 副作用：多次 setFileInputFiles 使弹窗内同图缩略图堆到 4 张，选中 1 张不影响发布
 - 发布：滚顶核对标题 → 点 (880,726)「发布」→ 无确认弹窗 → URL /builder/rc/clue?...firstPublish=undefined + toast「文章发布成功」+ 页面「提交成功，正在审核中...」
 - 备注：底部「字数 0 已保存」计数器不认 innerHTML 注入，但不影响发布校验；验证截图 /tmp/bjh_pub/published.png
+
+## 11-22：办公场景 AI 免费用法三例（b3-office-ai）发布成功
+- 环境：9223 登录态直接有效（BDUSS 昨日迁移后仍存活），无标签时 Tab.connect(new_url) 开编辑器即进，未跳登录页、未迁 cookie
+- 标题：contenteditable div（558 宽 y=206）focus → insertText 一次成功，回读「办公场景 AI 免费用法：会议纪要、周报、邮件三例」
+- 正文：ueditor iframe body.innerHTML（10 <p> / 4 <b>，### 转 <b>）+ input/change + UE contentchange；回读 511 字、4 个加粗小标题均在
+- 封面（沿用 11-21 正解路线，一次走通）：
+  1. 坑：首试点「选择封面」容器中心 y=1128 在视口外点击落空（页面未滚动）；改 scrollIntoView({block:'center'}) 后取新坐标 (379,392) 再点，弹窗正常开
+  2. 弹窗内 button 空列表是常态（「确定(1)」渲染在后），setFileInputFiles(nodeId 路线，accept=image/* 的 input) → 等 4s 裁剪预览渲染 → DOM 精确 BUTTON「确定 (1)」(1145,672) → 弹窗关、picproxy 198x148 预览落位，未撞「裁剪处理中」toast
+- 发布：滚顶核对标题 → DOM「发布」(880,726) → 无确认弹窗 → URL /builder/rc/clue?...firstPublish=undefined + toast「文章发布成功」+ 页面「提交成功，正在审核中...」
+- 备注：右侧满意度调研弹窗未关不挡操作；验证截图 /tmp/bjh4-published.png（封面弹窗过程 /tmp/bjh4-crop1.png、落位 /tmp/bjh4-cover-done.png）
