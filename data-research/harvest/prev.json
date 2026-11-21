@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-21T03:27:42Z",
+  "harvested_at": "2026-11-21T17:50:51Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -260,8 +260,41 @@
       "name": "DeepSeek 定价",
       "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 8,
+      "findings": [
+        {
+          "match": "赠送余额中进行扣减",
+          "context": "1.5元 语音识别（ASR） 每小时音频 0.78元 0.39元     扣费规则 ​   模型调用费用 = token 消耗量 × 模型单价；Search API 与 Fetch API 按上表价格按次计费。对应的费用将直接从充值余额或赠送余额中进行扣减。 当充值余额与赠送余额同时存在时，优先扣减赠送余额。   产品价格可能发生变动，DeepSeek 保留修改价格的权利。请您依据实际用量按需充值，定期查看此页面以获知最新价格信息。 上一页 首次调用 API 下一页 Token 用量计算 模"
+        },
+        {
+          "match": "赠送余额同时存在时，优先扣减赠送余额",
+          "context": "小时音频 0.78元 0.39元     扣费规则 ​   模型调用费用 = token 消耗量 × 模型单价；Search API 与 Fetch API 按上表价格按次计费。对应的费用将直接从充值余额或赠送余额中进行扣减。 当充值余额与赠送余额同时存在时，优先扣减赠送余额。   产品价格可能发生变动，DeepSeek 保留修改价格的权利。请您依据实际用量按需充值，定期查看此页面以获知最新价格信息。 上一页 首次调用 API 下一页 Token 用量计算 模型细节 Search 与 Fetch API 价格"
+        },
+        {
+          "match": "高峰",
+          "context": "ropic API 支持 支持 对话前缀续写（Beta） 支持 支持 FIM 补全（Beta） 仅非思考模式支持 仅非思考模式支持 图像理解 支持 不支持 价格 (2) 百万tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元 并发限制 (3) 2500 500   ("
+        },
+        {
+          "match": "高峰",
+          "context": "非思考模式支持 仅非思考模式支持 图像理解 支持 不支持 价格 (2) 百万tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元 并发限制 (3) 2500 500   (1) 模型名请使用 deepseek-flash 。旧模型名 deepseek-v4-flash"
+        },
+        {
+          "match": "高峰",
+          "context": "tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元 并发限制 (3) 2500 500   (1) 模型名请使用 deepseek-flash 。旧模型名 deepseek-v4-flash 、 deepseek-v4-flash-vision-exp 仍可调用，但对"
+        },
+        {
+          "match": "高峰",
+          "context": "ek-v4-flash 、 deepseek-v4-flash-vision-exp 仍可调用，但对应模型已下线，请求将由 DeepSeek-V4.1-Flash-1017 模型提供服务，并按 Flash 价格计费。 (2) 空闲时段价格为高峰时段价格的一半。北京时间周一至周五（不含中国法定节假日）9:00 - 12:00、14:00 - 18:00 为高峰时段；其余时段，包括周末及中国法定节假日全天均为空闲时段。 (3) 更多并发限制细节，请参考 限速与隔离 。       S"
+        },
+        {
+          "match": "高峰",
+          "context": "求将由 DeepSeek-V4.1-Flash-1017 模型提供服务，并按 Flash 价格计费。 (2) 空闲时段价格为高峰时段价格的一半。北京时间周一至周五（不含中国法定节假日）9:00 - 12:00、14:00 - 18:00 为高峰时段；其余时段，包括周末及中国法定节假日全天均为空闲时段。 (3) 更多并发限制细节，请参考 限速与隔离 。       Search 与 Fetch API 价格 ​   Search 与 Fetch API 按次计费。   项目 计费单"
+        },
+        {
+          "match": "缓存命中",
+          "context": "esponses API 支持 支持 Anthropic API 支持 支持 对话前缀续写（Beta） 支持 支持 FIM 补全（Beta） 仅非思考模式支持 仅非思考模式支持 图像理解 支持 不支持 价格 (2) 百万tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元"
+        }
+      ]
     },
     {
       "id": "siliconflow-pricing",
@@ -554,23 +587,27 @@
         },
         {
           "match": "协作奖励",
+          "context": "You need to enable JavaScript to run this app.       协作奖励计划 - 火山方舟 - 火山引擎   文档中心 登录 注册 火山方舟 文档指南 订阅 [Agent/Coding Plan] API参考 资源 AI 套件 火山方舟 火山方舟 资源 请输入 产品公告 产品更新公告 模型发布公告 模型下线公告"
+        },
+        {
+          "match": "协作奖励",
           "context": "标准流程 模型接入指南（LLM） - 性能评测 模型接入指南（LLM） - 常见问题 热门活动 Seedance 2.0-2.5 模型资源包使用规则 Seedance 2.5 系列与 Seedance 2.0 系列模型开通、使用与退订说明 协作奖励计划 免费推理额度 实践教程 Managed Agent [基础] 构建连续对话的工单分诊助手 [基础] 工单分诊 Agent 系统提示词版本管理 [基础] Custom Tool 使用教程 [基础] 使用 Viking 知识库检索构建知识"
         },
         {
           "match": "协作奖励",
-          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​"
+          "context": ") 火山方舟模型备案信息公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 热门活动 协作奖励计划 安装 火山引擎技能包 用你的 Agent 查文档、问用法 协作奖励计划 复制全文 下载 pdf 我的收藏 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的"
         },
         {
           "match": "协作奖励",
-          "context": "关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协"
+          "context": "公示 MCP 云产品一键授权开通相关协议 知识库产品服务和专用条款 豆包助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 热门活动 协作奖励计划 安装 火山引擎技能包 用你的 Agent 查文档、问用法 协作奖励计划 复制全文 下载 pdf 我的收藏 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​"
         },
         {
           "match": "协作奖励",
-          "context": "务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 热门活动 协作奖励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页"
+          "context": "助手专区服务专用条款和数据授权使用协议 平台客户行为准则及违约处理规则 方舟售后支持范围 版权和人像素材使用规则 文档首页 火山方舟 热门活动 协作奖励计划 热门活动 协作奖励计划 安装 火山引擎技能包 用你的 Agent 查文档、问用法 协作奖励计划 复制全文 下载 pdf 我的收藏 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情"
         },
         {
           "match": "协作奖励",
-          "context": "励计划 复制全文 下载 pdf 我的收藏 协作奖励计划 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页面「立即参与」入口 ​ 您可在 火山方舟控制台-开通管理页 ，点击 立即参与 进入产品活动页面。 ​ ​ ​ ​ 方式二：通过模型广场进入模型详情页，在模型卡片进入 ​ 您可登录 火山方舟控制台 ，"
+          "context": "问用法 协作奖励计划 复制全文 下载 pdf 我的收藏 文档反馈 问问助手 活动简介 ​ 开通前提 ​ 请确保已开通模型服务并关闭安心体验模式，未完成实名认证的用户需先完成认证。 ​ ​ ​ ​ 活动入口 ​ 活动入口支持以下两个路径进入 协作奖励计划详情页 ： ​ 方式一：通过开通管理页面「立即参与」入口 ​ 您可在 火山方舟控制台-开通管理页 ，点击 立即参与 进入产品活动页面。 ​ ​ ​ ​ 方式二：通过模型广场进入模型详情页，在模型卡片进入 ​ 您可登录 火山方舟控制台 ，"
         },
         {
           "match": "协作奖励",
@@ -631,10 +668,6 @@
         {
           "match": "协作奖励",
           "context": "个账户或多个账号，这些账户或账号不可同时申请参与本计划。 ​ 您在合作期内调用火山方舟指定模型服务期间的调用数据，即因调用模型而输入和模型生成的内容，包括但不限于所有输入的文本、声音、图形、图片、图像、视频、软件或任何其他类似信息（以下称“协作奖励数据”）将授权提供给火山引擎用于火山引擎及其关联公司的模型和算法优化 。 ​ 数据授权说明 ​ 本计划项下授权的协作奖励数据为您参与本计划并按奖励规则启动奖励包计算程序及免费额度期间输入模型和模型输出的所有内容。对于采集的数据，火山方舟平台"
-        },
-        {
-          "match": "协作奖励",
-          "context": "用模型而输入和模型生成的内容，包括但不限于所有输入的文本、声音、图形、图片、图像、视频、软件或任何其他类似信息（以下称“协作奖励数据”）将授权提供给火山引擎用于火山引擎及其关联公司的模型和算法优化 。 ​ 数据授权说明 ​ 本计划项下授权的协作奖励数据为您参与本计划并按奖励规则启动奖励包计算程序及免费额度期间输入模型和模型输出的所有内容。对于采集的数据，火山方舟平台将在匿名化处理后加密存储用于火山引擎及其关联公司的模型算法和服务优化。 特别说明，对于不在以上采集范围内的数据，火山引擎"
         }
       ]
     },
@@ -2781,7 +2814,7 @@
         },
         {
           "match": "pricing",
-          "context": "gs : customize Claude Code for your workflow   Troubleshooting : solutions for common issues   code.claude.com : demos, pricing, and product details   Was this page helpful? Yes No Quickstart Claude Code Docs home page x linkedin Company Anthropic"
+          "context": "gs : customize Claude Code for your workflow   Troubleshooting : solutions for common issues   code.claude.com : demos, pricing, and product details   Quickstart Claude Code Docs home page x linkedin Company Anthropic Careers Economic Futures Rese"
         },
         {
           "match": "pricing",
@@ -2789,7 +2822,7 @@
         },
         {
           "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
+          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"treatment\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"treatment\"},\"feature_e"
         },
         {
           "match": "pricing",
@@ -3808,7 +3841,7 @@
         },
         {
           "match": "$80per month  [Select plan](https",
-          "context": "3Hu932MLCHD47mtfmpoy5gyrus)Access to Devin Bots  Significantly higher quotas  Use your ChatGPT plan  TEAM PLANS  Teams  $80per month  [Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  ![](https://devin.ai/_next/image?url=%2Fimages%2Fpricing%2Fplan-card-"
+          "context": "wTNMbSjDH2WjPMyXPmqDZB7GNU)Access to Devin Bots  Significantly higher quotas  Use your ChatGPT plan  TEAM PLANS  Teams  $80per month  [Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  ![](https://devin.ai/_next/image?url=%2Fimages%2Fpricing%2Fplan-card-"
         },
         {
           "match": "$0/month  Pro$20/month  Max$200/",
@@ -3832,7 +3865,7 @@
         },
         {
           "match": "Free",
-          "context": "5gyrus)Access to Devin Bots  Up to 100 users  Share and collaborate with multiplayer sessions  2 concurrent sessions in Free mode per user  SAML/OIDC SSO  Cost controls with 3 usage tiers  Centralized billing  Slack channel support  Use your Ch"
+          "context": "ZB7GNU)Access to Devin Bots  Up to 100 users  Share and collaborate with multiplayer sessions  2 concurrent sessions in Free mode per user  SAML/OIDC SSO  Cost controls with 3 usage tiers  Centralized billing  Slack channel support  Use your Ch"
         },
         {
           "match": "Free",
@@ -3864,7 +3897,7 @@
         },
         {
           "match": "pricing",
-          "context": "[Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  ![](https://devin.ai/_next/image?url=%2Fimages%2Fpricing%2Fplan-card-bot.png\\&w=48\\&q=75\\&dpl=dpl_HB3Hu932MLCHD47mtfmpoy5gyrus)Access to Devin Bots  Significantly higher quotas"
+          "context": "[Select plan](https://app.devin.ai/signup)  Everything in Pro, plus:  ![](https://devin.ai/_next/image?url=%2Fimages%2Fpricing%2Fplan-card-bot.png\\&w=48\\&q=75\\&dpl=dpl_EZwTNMbSjDH2WjPMyXPmqDZB7GNU)Access to Devin Bots  Significantly higher quotas"
         },
         {
           "match": "pricing",
@@ -4355,7 +4388,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 13.8k  ( 13.8k ) Star 89.2k  ( 89.2k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 13.8k  ( 13.8k ) Star 89.4k  ( 89.4k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4524,12 +4557,8 @@
           "context": "模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 7 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 8 OpenRouter 免费模型池：每日 50 次，买过 $10 永久升到 1000 3 OpenRouter · Token 额度 50 次/天 9 AMD Radeon Cloud Token Factory：免费公共模型 API（ROCm 底层，免绑卡） 3 AMD（Radeon C"
         },
         {
-          "match": "免费，每日额度分配、触及后可消耗积分继续、繁忙排队，非无限量也非对外 API 额度",
-          "context": "已结束、Hy3 端内下线，本次为混元在 WorkBuddy 内的新旧交替。 限时免费 高性价比 多模态 1M 上下文 WorkBuddy 首发 真免费羊毛：WorkBuddy 国内版/国际版 11/16–11/30 23:59 客户端内限时免费，每日额度分配、触及后可消耗积分继续、繁忙排队，非无限量也非对外 API 额度；生成图片/视频会切多模态模型照常扣积分。腾讯云 TokenHub 的 API 是限时 5 折（付费）不是免费。 Agent 助手实测 同样号称免费，额度能差几十倍——谁真能白嫖，谁用几下就得充钱 全部 10 款 WorkBuddy 宽裕"
-        },
-        {
-          "match": "免费，额度",
-          "context": "客户端内限时免费，每日额度分配、触及后可消耗积分继续、繁忙排队，非无限量也非对外 API 额度；生成图片/视频会切多模态模型照常扣积分。腾讯云 TokenHub 的 API 是限时 5 折（付费）不是免费。 Agent 助手实测 同样号称免费，额度能差几十倍——谁真能白嫖，谁用几下就得充钱 全部 10 款 WorkBuddy 宽裕 说需求，它把活干完——文档、表格、PPT、批量文件 能长期白嫖 签到 100 积分 Codex 紧张 把开发任务交给它跑完，但额度是按小时掐的 跑几个任务"
+          "match": "免费 Agent 助手实测 同样号称免费，额度",
+          "context": "。两款已在 ChatGPT Work、Codex 与 API 上线，支持 Ultrafast；同一发布周期另有面向法律场景的 Astra 定制配置。各基准与成本对比均为 OpenAI 官方自测口径。 前沿模型 专业工作 API 降价 付费非免费 Agent 助手实测 同样号称免费，额度能差几十倍——谁真能白嫖，谁用几下就得充钱 全部 10 款 WorkBuddy 宽裕 说需求，它把活干完——文档、表格、PPT、批量文件 能长期白嫖 签到 100 积分 Codex 紧张 把开发任务交给它跑完，但额度是按小时掐的 跑几个任务"
         },
         {
           "match": "免费（输入输出均 ¥0/M token",
@@ -4537,63 +4566,63 @@
         },
         {
           "match": "免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token",
-          "context": "放 进入专区 腾讯混元（Hunyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新"
+          "context": "放 进入专区 腾讯混元（Hunyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan"
+          "context": "云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan"
         },
         {
           "match": "免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token",
-          "context": "。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公测期完全免费：手机号注册即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova"
+          "context": "。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公测期完全免费：手机号注册即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 24 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
+          "context": "即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova.cn/v1 即可接。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 25 天前 点赞 收藏 需注册 查看详情 直接去官方领取 UnoRouter 长期有效 UnoRouter：GLM-5.3 等约 140 个模型免费 API（OpenAI 兼容，免信用卡） UnoR"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 24 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
+          "context": "I（OpenAI 兼容，免信用卡） UnoRouter 聚合路由 2026-09-08 起开放 GLM-5.3、GLM-5.2、Qwen-3.8-27b 等免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 25 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免"
         },
         {
           "match": "免费 API Token 专区 注册赠送、每日/每月额度",
-          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 24 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
+          "context": "免费 API：一个 Key 调 248+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 25 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-12"
         },
         {
           "match": "免费档 API 每天 1000 次",
-          "context": "度 见官方说明 核实 2026-10-27 24 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
+          "context": "度 见官方说明 核实 2026-10-27 25 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM /"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 24 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
+          "context": "wen3.8-27B 等对话模型 30 RPM / 1000 RPD / 8000 TPM / 20 万 TPD；Whisper 语音转写 20 RPM / 2000 RPD。OpenAI 兼容，推理速度是它的招牌。 Token 额度 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 1000 请求/天（免费档速率限额） 核实 2026-10-27 25 天前 点赞 收藏 需注册 查看详情 直接去官方领取 MiniMax 日期未公布 MiniMax Code：每日签到送 400 积分，连续第 4 / 7 天各 1000"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 13 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，"
+          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 14 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，"
         },
         {
           "match": "免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token",
-          "context": "见官方说明 核实 2026-11-07 13 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
+          "context": "见官方说明 核实 2026-11-07 14 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
         },
         {
-          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 41 天 额度",
-          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 41 天 额度 1000000000 Token 核实 2026-11-12 9 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条"
+          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 40 天 额度",
+          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 40 天 额度 1000000000 Token 核实 2026-11-12 9 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 20 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Con"
+          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 21 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Con"
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "积分（下载即送） 核实 2026-10-31 20 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 10 天"
+          "context": "积分（下载即送） 核实 2026-10-31 21 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 9 天 额"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 10 天 额度 100000000 Tokens/天 核实 2026-10-27 24 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qod"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 9 天 额度 100000000 Tokens/天 核实 2026-10-27 25 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 24 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名"
+          "context": "8 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 25 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型什么价，谁家算力最值 进入板块 优 优云智算 UCloud 优刻得 重点 实名"
         },
         {
           "match": "免费 + 11/16–11/22 登录领 1 亿 Tokens",
@@ -4609,11 +4638,11 @@
         },
         {
           "match": "免费 + 11/16–11/22 登录领 1 亿 Tokens",
-          "context": "突，按官方原文纠正，并补 90 天有效期与华北2 地域限制 2026-11-11 10:12 即将结束 有截止的优先，无固定截止标长期 看全部 即将结束 最近截止 · 无截止标「长期」 全部 1 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/16–11/22 登录领 1 亿 Tokens AutoClaw（智谱） · 模型体验 剩 2 天 2 L LibTV 双11：Wan3 / Kling4.0 / Minimax H3 三大视频模型最长 30 天 0 积分无限用 LibTV（哩布哩布） · 工具试用 剩 7 天 3 混"
+          "context": "突，按官方原文纠正，并补 90 天有效期与华北2 地域限制 2026-11-11 10:12 即将结束 有截止的优先，无固定截止标长期 看全部 即将结束 最近截止 · 无截止标「长期」 全部 1 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/16–11/22 登录领 1 亿 Tokens AutoClaw（智谱） · 模型体验 剩 1 天 2 L LibTV 双11：Wan3 / Kling4.0 / Minimax H3 三大视频模型最长 30 天 0 积分无限用 LibTV（哩布哩布） · 工具试用 剩 7 天 3 混"
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-21 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-22 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
           "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 5",
@@ -4621,11 +4650,15 @@
         },
         {
           "match": "新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding To",
-          "context": "unyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 17 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑"
+          "context": "unyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑"
         },
         {
           "match": "赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免",
-          "context": "8+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 24 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 R"
+          "context": "8+ 模型，免信用卡零注册成本。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-10-27 25 天前 点赞 收藏 需注册 查看详情 直接去官方领取 免费 API Token 专区 注册赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免费档 API 每天 1000 次请求（gpt-oss / Qwen3.8 / Whisper） 注册即用的免费档（Free Plan）：gpt-oss-120b 与 20b、Qwen3.8-27B 等对话模型 30 RPM / 1000 R"
+        },
+        {
+          "match": "新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换",
+          "context": "接去官方领取 Qoder 日期未公布 Qoder 中国版：每天领 100 积分 + 新人 18 元奶茶券 Qoder 中国版个人用户每天可在桌面端「用量 → 礼物」手动领 100 积分（每天 10 点更新，30 天有效）；9/30 起注册的新用户完成新手任务可另领 18 元奶茶券，10/29 23:59 前兑换。 开发者福利 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 100 积分/天 核实 2026-10-27 25 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 白嫖云 GPU 注册/实名能领多少、主流卡型"
         }
       ]
     },
@@ -6218,15 +6251,15 @@
       "findings": [
         {
           "match": "$0.20 muse-spark-1.3-contributor $0",
-          "context": "data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.66 deepseek-v4.1-flash Input $0.22 Output $0.66 Cached $0.0070 LEARN MORE TOKEN COST ▸ # Cache"
+          "context": "data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.60 deepseek-v4.1-flash Input $0.15 Output $0.60 Cached $0.0030 LEARN MORE TOKEN COST ▸ # Cache"
         },
         {
-          "match": "$0.66 deepseek-v4.1-flash Input $0.",
-          "context": "LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.66 deepseek-v4.1-flash Input $0.22 Output $0.66 Cached $0.0070 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Mo"
+          "match": "$0.60 deepseek-v4.1-flash Input $0.",
+          "context": "LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.60 deepseek-v4.1-flash Input $0.15 Output $0.60 Cached $0.0030 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Mo"
         },
         {
-          "match": "$0.66 Cached $0.0070 LEARN MORE TOK",
-          "context": "ce per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.66 deepseek-v4.1-flash Input $0.22 Output $0.66 Cached $0.0070 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 31%"
+          "match": "$0.60 Cached $0.0030 LEARN MORE TOK",
+          "context": "ce per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.60 deepseek-v4.1-flash Input $0.15 Output $0.60 Cached $0.0030 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 32%"
         },
         {
           "match": "DeepSeek",
@@ -6242,27 +6275,27 @@
         },
         {
           "match": "deepseek",
-          "context": "0B 0B 0B 0B NOV 21 0B 0B 0B 0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +23% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B"
+          "context": "0B 0B 0B 0B NOV 21 0B 0B 0B 0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +34% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B"
         },
         {
           "match": "DeepSeek",
-          "context": "0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +23% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
+          "context": "0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +34% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
         },
         {
           "match": "deepseek",
-          "context": "vious week 02 deepseek-v4-flash 0B tokens DeepSeek +23% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02"
+          "context": "vious week 02 deepseek-v4-flash 0B tokens DeepSeek +34% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02"
         },
         {
           "match": "DeepSeek",
-          "context": "h 0B tokens DeepSeek +23% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens D"
+          "context": "h 0B tokens DeepSeek +34% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens D"
         },
         {
           "match": "deepseek",
-          "context": "v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +23% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B"
+          "context": "v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +34% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B"
         },
         {
           "match": "DeepSeek",
-          "context": "k 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +23% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
+          "context": "k 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -84% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +34% vs previous week 03 jev-1.13 0B tokens -41% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
         },
         {
           "match": "deepseek",
@@ -6274,23 +6307,23 @@
         },
         {
           "match": "deepseek",
-          "context": "ched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.66 deepseek-v4.1-flash Input $0.22 Output $0.66 Cached $0.0070 LEARN MORE TOKEN COST ▸ # Cache Ratio . Shar"
+          "context": "ched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.60 deepseek-v4.1-flash Input $0.15 Output $0.60 Cached $0.0030 LEARN MORE TOKEN COST ▸ # Cache Ratio . Shar"
         },
         {
           "match": "deepseek",
-          "context": "MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.66 deepseek-v4.1-flash Input $0.22 Output $0.66 Cached $0.0070 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served"
+          "context": "MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.60 deepseek-v4.1-flash Input $0.15 Output $0.60 Cached $0.0030 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served"
         },
         {
           "match": "deepseek",
-          "context": "N COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 31% deepseek-v4-flash 0% jev-1.13 Cache Ratio 0% Cached 0B Uncached 0B LEARN MORE CACHE RATIO ▸ # Market Share . Compare token share"
+          "context": "N COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 32% deepseek-v4-flash 0% jev-1.13 Cache Ratio 0% Cached 0B Uncached 0B LEARN MORE CACHE RATIO ▸ # Market Share . Compare token share"
         },
         {
           "match": "DeepSeek",
-          "context": "2M NOV 17 NOV 17 4M NOV 18 NOV 18 15M NOV 19 NOV 19 16M NOV 20 NOV 20 0 NOV 21 NOV 21 Market share by model author Date DeepSeek Meta Other SEP 28 100.0% 0.0% 0.0% OCT 3 100.0% 0.0% 0.0% OCT 8 97.4% 0.0% 2.6% OCT 9 97.7% 2.3% 0.0% OCT 10 100.0% 0.0"
+          "context": "M NOV 17 NOV 17 4M NOV 18 NOV 18 15M NOV 19 NOV 19 16M NOV 20 NOV 20 3M NOV 21 NOV 21 Market share by model author Date DeepSeek Meta Other SEP 28 100.0% 0.0% 0.0% OCT 3 100.0% 0.0% 0.0% OCT 8 97.4% 0.0% 2.6% OCT 9 97.7% 2.3% 0.0% OCT 10 100.0% 0.0"
         },
         {
           "match": "DeepSeek",
-          "context": "V 17 34.3% 65.7% 0.0% NOV 18 69.1% 30.9% 0.0% NOV 19 19.8% 80.2% 0.0% NOV 20 24.7% 75.3% 0.0% NOV 21 97.7% 2.3% 0.0% 01 DeepSeek 0 tokens 97.7 % 02 Meta 0 tokens 2.3 % [*] NOV 21 2026 LEARN MORE MARKET SHARE ▸ # Geographic Breakdown 01 Japan 3.6B t"
+          "context": "17 34.3% 65.7% 0.0% NOV 18 69.1% 30.9% 0.0% NOV 19 19.8% 80.2% 0.0% NOV 20 24.7% 75.3% 0.0% NOV 21 88.4% 11.6% 0.0% 01 DeepSeek 2M tokens 88.4 % 02 Meta 0 tokens 11.6 % [*] NOV 21 2026 LEARN MORE MARKET SHARE ▸ # Geographic Breakdown 01 Japan 3.6B"
         },
         {
           "match": "deepseek",
@@ -6318,7 +6351,7 @@
         },
         {
           "match": "Price",
-          "context": "sion. No session cost data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.66 deepseek-v4.1-flash Input $0.22 Output $0"
+          "context": "sion. No session cost data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.60 deepseek-v4-flash $0.60 deepseek-v4.1-flash Input $0.15 Output $0"
         },
         {
           "match": "price",
@@ -6334,7 +6367,7 @@
         },
         {
           "match": "Token",
-          "context": "on Cost Token Cost Cache Ratio Market Share Geo Breakdown Try OpenCode Try OpenCode Top Models Leaderboard Session Cost Token Cost Cache Ratio Market Share Geo Breakdown Updated Nov 21, 03:06 AM UTC Updated Nov 21 Nov 21 , 03:06 AM UTC 03:06 AM"
+          "context": "on Cost Token Cost Cache Ratio Market Share Geo Breakdown Try OpenCode Try OpenCode Top Models Leaderboard Session Cost Token Cost Cache Ratio Market Share Geo Breakdown Updated Nov 21, 05:06 PM UTC Updated Nov 21 Nov 21 , 05:06 PM UTC 05:06 PM"
         }
       ]
     },
@@ -6545,10 +6578,6 @@
         },
         {
           "match": ":free",
-          "context": "ue,\"supported_efforts\":[\"xhigh\",\"medium\",\"low\",\"none\"],\"default_effort\":\"xhigh\"}},{\"id\":\"dots-studio/dots-3-note-preview:free\",\"canonical_slug\":\"dots-studio/dots-3-note-preview-20260813\",\"hugging_face_id\":\"dots-studio/dots3-note-prev\",\"name\":\"Do"
-        },
-        {
-          "match": ":free",
           "context": ",\"multilingual_index\":null,\"decision_index\":null}},\"reasoning\":{\"mandatory\":false}},{\"id\":\"nvidia/nemotron-3.5-lightning:free\",\"canonical_slug\":\"nvidia/nemotron-3.5-lightning-20260807\",\"hugging_face_id\":\"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-"
         },
         {
@@ -6569,7 +6598,7 @@
         },
         {
           "match": "pricing",
-          "context": "mage->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000000093\",\"completion\":\"0.000000371\",\"input_cache_read\":\"0.000000019\"},\"top_provider\":{\"context_length\":"
+          "context": "mage->text\",\"input_modalities\":[\"text\",\"image\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.000000075\",\"completion\":\"0.0000003\",\"input_cache_read\":\"0.000000015\"},\"top_provider\":{\"context_length\":10"
         },
         {
           "match": "pricing",
@@ -6626,6 +6655,10 @@
         {
           "match": "pricing",
           "context": "e\",\"input_modalities\":[\"image\",\"text\"],\"output_modalities\":[\"image\",\"text\"],\"tokenizer\":\"Gemini\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.0000015\",\"completion\":\"0.0000075\",\"image_output\":\"0.00003\",\"web_search\":\"0.014\"},\"top_provider\":{\"context"
+        },
+        {
+          "match": "pricing",
+          "context": "ut_modalities\":[\"text\",\"image\",\"video\",\"audio\"],\"output_modalities\":[\"text\"],\"tokenizer\":\"Other\",\"instruct_type\":null},\"pricing\":{\"prompt\":\"0.00000015\",\"completion\":\"0.0000015\"},\"top_provider\":{\"context_length\":36864,\"max_completion_tokens\":8192,\""
         }
       ]
     },
@@ -6779,7 +6812,7 @@
         },
         {
           "match": "Free",
-          "context": "AI Pro (paid plans, or trials with eligible premium devices), and  Gemini Enterprise . Gemini 4 Neon isn’t available on Free and Plus plans.   Orchestrator : To plan with Gemini 4 Neon and hand implementation steps to a faster executor, select"
+          "context": "AI Pro (paid plans, or trials with eligible premium devices), and  Gemini Enterprise . Gemini 4 Neon isn’t available on Free and Plus plans.   Orchestrator : On Google AI Ultra and Google AI Pro, select  Orchestrator to plan with Gemini 4 Neon"
         }
       ]
     },
@@ -6918,7 +6951,7 @@
         },
         {
           "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
+          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"treatment\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"treatment\"},\"feature_e"
         },
         {
           "match": "Pricing",
@@ -7161,11 +7194,11 @@
         },
         {
           "match": "free",
-          "context": "{   \"translations\" : [   {   \"detected_source_language\" : \"EN\" ,   \"text\" : \"Hallo, Welt!\"   }   ]   }   If you chose a free API plan, replace https://api.deepl.com with https://api-free.deepl.com . Set the API key export API_KEY = { YOUR_API_K"
+          "context": "{   \"translations\" : [   {   \"detected_source_language\" : \"EN\" ,   \"text\" : \"Hallo, Welt!\"   }   ]   }   If you chose a free API plan, replace https://api.deepl.com with https://api-free.deepl.com . Set the API key export API_KEY={YOUR_API_KEY}"
         },
         {
           "match": "free",
-          "context": ",   \"text\" : \"Hallo, Welt!\"   }   ]   }   If you chose a free API plan, replace https://api.deepl.com with https://api-free.deepl.com . Set the API key export API_KEY = { YOUR_API_KEY}   Sample request curl -X POST https://api.deepl.com/v2/tra"
+          "context": ",   \"text\" : \"Hallo, Welt!\"   }   ]   }   If you chose a free API plan, replace https://api.deepl.com with https://api-free.deepl.com . Set the API key export API_KEY={YOUR_API_KEY}   Sample request curl -X POST https://api.deepl.com/v2/transl"
         },
         {
           "match": "Free",
@@ -7205,7 +7238,7 @@
         },
         {
           "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
+          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"treatment\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"treatment\"},\"feature_e"
         },
         {
           "match": "pricing",
@@ -7344,7 +7377,7 @@
         },
         {
           "match": "Pricing",
-          "context": "enAI for Startups Spaces Events Developer Forum Discord Reddit X API Dashboard Try ChatGPT Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering C"
+          "context": "Startups Spaces Events Developer Forum Discord Reddit X API Dashboard Try ChatGPT  Ask AI  Model catalog Choose a model Pricing Model selection Text and code Text generation Code generation Structured output Prompting Overview Prompt engineering C"
         }
       ]
     },
@@ -8038,7 +8071,7 @@
       "name": "Models — rout.my docs",
       "url": "https://docs.rout.my/models",
       "status": "ok",
-      "hits": 5,
+      "hits": 7,
       "findings": [
         {
           "match": "requests per minute. Gemini-format clients get the same lis",
@@ -8059,6 +8092,14 @@
         {
           "match": "free",
           "context": "end your key. celebration_free_until is when the free period ends: until then the model costs you no quota. celebration_free_service_tier names the service tier the offer covers. Until celebration_unlocked_until , the model is open to you even"
+        },
+        {
+          "match": "free",
+          "context": "ken_multiplier , and the route field holds its name, description and multiplier relative to the model.   A route can be free: its token_multiplier is 0 , it works even when your daily quota is spent, and it shares the per-minute limit of free m"
+        },
+        {
+          "match": "free",
+          "context": "e free: its token_multiplier is 0 , it works even when your daily quota is spent, and it shares the per-minute limit of free models.   By default a route is open to everyone whose plan includes the model. A route can also have a plan of its own"
         }
       ]
     },
@@ -8116,7 +8157,7 @@
         },
         {
           "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"treatment\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"treatment\"},\"feature_e"
+          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
         },
         {
           "match": "Pricing",
@@ -8129,7 +8170,7 @@
       "name": "Rate limits - Together A",
       "url": "https://docs.together.ai/docs/serverless/rate-limits",
       "status": "ok",
-      "hits": 16,
+      "hits": 14,
       "findings": [
         {
           "match": "Pricing",
@@ -8158,14 +8199,6 @@
         {
           "match": "pricing",
           "context": "f\":\"https://www.together.ai/demos\"}]},{\"header\":\"Resources\",\"items\":[{\"label\":\"Pricing\",\"href\":\"https://www.together.ai/pricing\"},{\"label\":\"Support\",\"href\":\"https://support.together.ai/\"}]},{\"header\":\"Legal\",\"items\":[{\"label\":\"Cookie policy\",\"href"
-        },
-        {
-          "match": "pricing",
-          "context": "e,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"fixed-ai-action-pricing\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"s"
-        },
-        {
-          "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
         },
         {
           "match": "Pricing",
@@ -8222,7 +8255,7 @@
         },
         {
           "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"treatment\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"treatment\"},\"feature_e"
+          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
         }
       ]
     },
@@ -8255,7 +8288,7 @@
         },
         {
           "match": "pricing",
-          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"treatment\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"treatment\"},\"feature_e"
+          "context": "led\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"starter-pricing\",\"enabled\":true,\"variant\":{\"name\":\"control\",\"enabled\":true,\"payload\":{\"type\":\"string\",\"value\":\"control\"},\"feature_enabl"
         },
         {
           "match": "pricing",
@@ -8686,8 +8719,21 @@
       "name": "Limits and Plans | Jules",
       "url": "https://jules.google/docs/usage-limits/",
       "status": "ok",
-      "hits": 0,
-      "findings": []
+      "hits": 3,
+      "findings": [
+        {
+          "match": "$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE",
+          "context": "\b\u0000\u0000\u0000\u0000\u0000\u0002}rFSL*L\b\u001fD9>bo$\u001bR>\u0010 @\u0001@J}\u0000Tr$3\u0000$\u0011;=]S$0\u001f======~_?Rl\u001c\u001e\u001dҧ hحQE[ \u0004߼s?'#/u'G\u001aS/QKnK$vNY+ ʑ:\u001c^pgꍼ$ne ʦ~\u001cy,'qUT/2?B󠟍}\u0016|U\u0010\u0005YNBۤF 8RE}\u001c\u0003J;\u001fO\u000f7a\u0018Dg*nEq\u0014\u001a%[\u0019e$ln 0ُ{4\u0013rۛ٢471mHy ^Rl\u001eFa\u0016\u001e`Ц"
+        },
+        {
+          "match": "$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ",
+          "context": "? }EJ\b^\\R\u000f\u0010EX\u0005\u0007o^`bTBo\u0002YѕB[\u0014 \u0012* \u0019+ĉ%D3\u001aE#JJ\u0004\u0000bI\u0004+$UC ɅVT\u001aR\u000fiRce & 6\u0003\u00140^R\u00110\u001a\u0003\u0012\u001b^ cXm^\b82~(\u0006\u0006Hګ[\u0007F0Nh=(-P\u0013n\u0000AOh$WLc2\u00042^zo\u000e$0MF$fc\u0015!=O\u0018qA\u0005+0;ʘdElʚP2j.Zr\u001fJ_$\u0014yK a\u0013\u001cJ se~\u0006?&Q\u001eVh\u0016\u000e\u0006I\"f2BvV%g3\u0014\u0003'q/\u000e\u0018{\u001bd5P^ j!\u0010 O\u0012:v\u000e},71K~$h\u001e\u001c~1,`@ \u0005 /\u0019=r°\u0011ُK*#u+! 7\u000fRx!\u0007\u0016zXeǭc2|t (xN˺5f]\"4Fe׵\u0017Ѩp"
+        },
+        {
+          "match": "$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19",
+          "context": ")x1%C,\u001c!V#crB`q L\u0012.5\u0014`\u0016\u000f^\u00120Gct\b \u000faLLX\u0010lB\u001bȉ\u000fҧ\u0000q+I䲴vȚϽ3S:\\\u0019P]?_H(\u0013%|\u0005>pP\u000e=b\u0015 w22@\"]\u0003\u0005br@i o_M\u000eC\u00021܎\u0000q\u0000\u0016sXP\u0006\"/nb 2\u001cA\\V ` pDS$3NQ0M_##N,z\u000f`!k.\u0001-=\u001dY&M\\t\u0003!\u0019Ĩ19:\u001d'm4sʰJu\u0013_G/\u0001\u0011ar1D$A)\u0000\u00003Uq0:W?\u0006!n'\u0016\u0019ESή(\u0002hX\u001f8\u0003TR\u00101hſ@Nƴ\u0016\u0017_W \\\u0006\u0013\\\u0010\u0006\u001eypQm]Cg?Y Ap\u0018\u0015erݵsopsw\u0011n\u0011\u0003MV\u001cG\\\u00101+hpeަp{8\u001f\u0005 p'\u0001\u0002RO3"
+        }
+      ]
     },
     {
       "id": "kiro-pricing",
@@ -8997,39 +9043,43 @@
         },
         {
           "match": "$20.00   More usage than Free   /   ",
-          "context": "额度倍率(w)   模型请求数/Tokens(mo)   💰额度价值(mo)   ⏫额度倍率(mo)           Claude Pro (Claude Code claude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-hydrogen"
+          "context": "额度倍率(w)   模型请求数/Tokens(mo)   💰额度价值(mo)   ⏫额度倍率(mo)           Claude Pro (Claude Code claude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-neon 更新于"
         },
         {
           "match": "$40.73   2   7.64亿   $302.57   15   ",
-          "context": "度倍率(mo)           Claude Pro (Claude Code claude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits"
+          "context": "度倍率(mo)           Claude Pro (Claude Code claude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-neon 更新于 2026-11-21)   $19.99   More rate limits   /"
         },
         {
           "match": "$1210.28   60.5       Google AI Pro (A",
-          "context": "ude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.3"
+          "context": "ude-opus-5.5 更新于 2026-11-12)   $20.00   More usage than Free   /   1.03亿   $40.73   2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-neon 更新于 2026-11-21)   $19.99   More rate limits   /   6446.88万   $29.26   1.46   2.28亿   $103.54"
+        },
+        {
+          "match": "$19.99   More rate limits   /   6446",
+          "context": "2   7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-neon 更新于 2026-11-21)   $19.99   More rate limits   /   6446.88万   $29.26   1.46   2.28亿   $103.54   5.18   9.12亿   $414.16   20.72       Google AI Pro (Antigravity gemini-4-hydrog"
+        },
+        {
+          "match": "$29.26   1.46   2.28亿   $103.54   5.",
+          "context": "0.28   60.5       Google AI Pro (Antigravity gemini-4-neon 更新于 2026-11-21)   $19.99   More rate limits   /   6446.88万   $29.26   1.46   2.28亿   $103.54   5.18   9.12亿   $414.16   20.72       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate lim"
+        },
+        {
+          "match": "$414.16   20.72       Google AI Pro (",
+          "context": "ni-4-neon 更新于 2026-11-21)   $19.99   More rate limits   /   6446.88万   $29.26   1.46   2.28亿   $103.54   5.18   9.12亿   $414.16   20.72       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5."
         },
         {
           "match": "$19.99   More rate limits   /   1.15",
-          "context": "7.64亿   $302.57   15   30.56亿   $1210.28   60.5       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-"
+          "context": "2.28亿   $103.54   5.18   9.12亿   $414.16   20.72       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 20"
         },
         {
           "match": "$30.5   1.53   4亿   $106.75   5.34 ",
-          "context": ".28   60.5       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /"
+          "context": "16   20.72       Google AI Pro (Antigravity gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99."
         },
         {
-          "match": "$427   21.36       Google AI Pro (",
-          "context": "gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1."
-        },
-        {
-          "match": "$19.99   More rate limits   /       ",
-          "context": "30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-"
-        },
-        {
-          "match": "$30   1.5   1.6亿   $120   6      ",
-          "context": "oogle AI Pro (Antigravity gemini-4-argon 更新于 2026-11-7)   $19.99   More rate limits   /         4000万（gemini-4-argon）   $30   1.5   1.6亿   $120   6       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limit"
+          "match": "$427   21.36       Google AI Ultra",
+          "context": "gemini-4-hydrogen 更新于 2026-11-13)   $19.99   More rate limits   /   1.15亿   $30.5   1.53   4亿   $106.75   5.34   16亿   $427   21.36       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   1.27亿"
         },
         {
           "match": "$39.99，美区 $99.99)   Even more rate l",
-          "context": "gon）   $30   1.5   1.6亿   $120   6       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   1.27亿   $97.71   2.44   4.44亿   $342   8.55   17.77亿   $1368   34.2（如果按美区价格 $99.99 为 13.68）       Google AI"
+          "context": "106.75   5.34   16亿   $427   21.36       Google AI Ultra 5x (Antigravity gemini-4-carbon 更新于 2026-11-12)   ₺1989.99 (折合 $39.99，美区 $99.99)   Even more rate limits   /   1.27亿   $97.71   2.44   4.44亿   $342   8.55   17.77亿   $1368   34.2（如果按美区价格 $99.99 为 13.68）       Google AI"
         },
         {
           "match": "$97.71   2.44   4.44亿   $342   8.55 ",
@@ -9102,10 +9152,6 @@
         {
           "match": "￥108.60   2.22   13600/6亿   ￥1086   2",
           "context": "MiniMax Coding Plan Plus （minimax-m2.7）   ￥49.00   1500次模型调用 / 5 小时（目前已改套餐，该数据为老数据）   52.6   1360/6000万   ￥108.60   2.22   13600/6亿   ￥1086   22.2   54400/24亿   ￥4344   88.65       Kimi Code Andante （kimi-k2.5）   ￥49.00   Kimi Code 可调用   27.98   359/1500万   ￥21.4"
-        },
-        {
-          "match": "￥4344   88.65       Kimi Code Andan",
-          "context": "￥49.00   1500次模型调用 / 5 小时（目前已改套餐，该数据为老数据）   52.6   1360/6000万   ￥108.60   2.22   13600/6亿   ￥1086   22.2   54400/24亿   ￥4344   88.65       Kimi Code Andante （kimi-k2.5）   ￥49.00   Kimi Code 可调用   27.98   359/1500万   ￥21.46   0.44   639/2100万   ￥30.34   0.62   2556/8400万   ￥"
         }
       ]
     },
@@ -9189,11 +9235,11 @@
         },
         {
           "match": "API credits",
-          "context": "ions Learn eligibility, activation, monthly grants, API usage, billing, and subscription changes for the ChatGPT-linked API credits benefit. Updated: yesterday Learn how to claim and use API credits included with eligible ChatGPT Pro and Business subs"
+          "context": "ions Learn eligibility, activation, monthly grants, API usage, billing, and subscription changes for the ChatGPT-linked API credits benefit. Updated: 2 days ago Learn how to claim and use API credits included with eligible ChatGPT Pro and Business sub"
         },
         {
           "match": "API credits",
-          "context": "ing, and subscription changes for the ChatGPT-linked API credits benefit. Updated: yesterday Learn how to claim and use API credits included with eligible ChatGPT Pro and Business subscriptions. Overview Eligible paid ChatGPT Pro and ChatGPT Business"
+          "context": "ng, and subscription changes for the ChatGPT-linked API credits benefit. Updated: 2 days ago Learn how to claim and use API credits included with eligible ChatGPT Pro and Business subscriptions. Overview Eligible paid ChatGPT Pro and ChatGPT Business"
         },
         {
           "match": "API credits",
@@ -10958,7 +11004,7 @@
         },
         {
           "match": "免费领的大模型额度",
-          "context": "模型 模型榜 重置监控 Token 羊毛 更多 Agent 接入 关于 更新日志 反馈 登录 深色 跟随系统 浅色 京公网安备11010502063419号 京ICP备2026012723号-5 我的 Token 羊毛 Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 提报一条羊毛 怎么折算 今天还能领 ¥ 1804 本月已领到 ¥ 0 下次刷新 还有 12:32 我的卡册 62 张，还没收 · 登录后换设备不丢卡 200额度 ◆ 豆包 AIHOT 50积分 ◆ OfficeAce"
+          "context": "模型 模型榜 重置监控 Token 羊毛 更多 Agent 接入 关于 更新日志 反馈 登录 深色 跟随系统 浅色 京公网安备11010502063419号 京ICP备2026012723号-5 我的 Token 羊毛 Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 提报一条羊毛 怎么折算 今天还能领 ¥ 1804 本月已领到 ¥ 0 下次刷新 还有 06:09 我的卡册 62 张，还没收 · 登录后换设备不丢卡 200额度 ◆ 豆包 AIHOT 50积分 ◆ OfficeAce"
         },
         {
           "match": "免费 ◆ SoMark 能当 API 用 每天都能领 豆包电脑版每天签到领 200 额度",
@@ -11006,7 +11052,7 @@
         },
         {
           "match": "免费额度",
-          "context": "人额度。 首次开通百炼自动发放，需实名认证。每个参与模型（含单独发放的快照）额度独立。请用通用 API Key 调用实时推理，Batch、调优、部署、存储和套餐专属 Key 不使用这份额度。旧额度仍可用至耗尽或到期。用完后按量收费，可开启「免费额度用完即停」。 有效期： 自开通、模型发布或获批较晚日起 90 天 11月19日核实于厂商官方页面 豆包电脑版新用户领 30 天免费体验 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作能力，如豆包 2.1 Turbo；不含生视频、Pro"
+          "context": "手额度。 首次开通百炼自动发放，需实名认证。每个参与模型（含单独发放的快照）额度独立。请用通用 API Key 调用实时推理，Batch、调优、部署、存储和套餐专属 Key 不使用这份额度。旧额度仍可用至耗尽或到期。用完后按量收费，可开启「免费额度用完即停」。 有效期： 自开通、模型发布或获批较晚日起 90 天 11月21日核实于厂商官方页面 豆包电脑版新用户领 30 天免费体验 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作能力，如豆包 2.1 Turbo；不含生视频、Pro"
         },
         {
           "match": "免费推理额度，无需先实名；按模型独立，只抵扣按 Token",
@@ -11062,7 +11108,7 @@
         },
         {
           "match": "新用户 · 邮箱域名限领 · 文档用于训练 · 11月14日核实 ≈¥1002 去领 适用模型： 所有模型",
-          "context": "ic 的预览版本。限免于北京时间 11 月 23 日中午 12 点结束。届时预览版下线，并新增正式付费版。 11月18日核实于厂商官方页面 Reducto 文档解析新户额度 所有模型，包括文档解析 r-1、r-1 mini 所有模型 · 仅新用户 · 邮箱域名限领 · 文档用于训练 · 11月14日核实 ≈¥1002 去领 适用模型： 所有模型，包括文档解析 r-1、r-1 mini 新 Standard 账户获 150 美元，按基础解析价可用 r-1 约 1.5 万页或 r-1 mini 约 15 万页，额外功能另计。邮箱域名此前不能领过免费额度；上传文档会用于模型训练。 有效"
+          "context": "ic 的预览版本。限免于北京时间 11 月 23 日中午 12 点结束。届时预览版下线，并新增正式付费版。 11月21日核实于厂商官方页面 Reducto 文档解析新户额度 所有模型，包括文档解析 r-1、r-1 mini 所有模型 · 仅新用户 · 邮箱域名限领 · 文档用于训练 · 11月14日核实 ≈¥1002 去领 适用模型： 所有模型，包括文档解析 r-1、r-1 mini 新 Standard 账户获 150 美元，按基础解析价可用 r-1 约 1.5 万页或 r-1 mini 约 15 万页，额外功能另计。邮箱域名此前不能领过免费额度；上传文档会用于模型训练。 有效"
         },
         {
           "match": "新用户送 25 美元 AI 额度 Telnyx AI 产品中的所有模型，包括自营 Inference 的 ",
@@ -11963,6 +12009,135 @@
         {
           "match": "10/month",
           "context": "ar. What&#x27;s included in the Student Plan? Everything in Zed Pro: all Pro features, unlimited edit predictions, and $10/month in AI token credits. The plan is valid for one year. How do I verify my student status? Sign in with a GitHub account o"
+        }
+      ]
+    },
+    {
+      "id": "freellmapi-readme",
+      "name": "FreeLLMAPI 路由与免费目录变化",
+      "url": "https://raw.githubusercontent.com/tashfeenahmed/freellmapi/main/README.md",
+      "status": "ok",
+      "hits": 30,
+      "findings": [
+        {
+          "match": "$19/yr, cancel anytime).     --- ",
+          "context": ".co](https://freellmapi.co/?utm_source=github&utm_medium=readme&utm_campaign=premium&utm_content=readme_top#pricing)** ($19/yr, cancel anytime).     ---  ## Contents  - [Why this exists](#why-this-exists) - [Supported providers](#supported-providers) - [Compatible CLIs & c"
+        },
+        {
+          "match": "$19/year or $49 once, lifetime. S",
+          "context": "https://freellmapi.co/?utm_source=github&utm_medium=readme&utm_campaign=premium&utm_content=readme_bottom#pricing)**  - $19/year or $49 once, lifetime. Stripe checkout; cancel anytime, self-serve. - One `fla_` key covers every router you run: desktop, homelab, Raspberry Pi"
+        },
+        {
+          "match": "RPM/RPD/TPM/TPD counters per `(platform, mo",
+          "context": "r request via `auto: `, and custom chains can be renamed in place from the chain manager. - **Per-key rate tracking** — RPM/RPD/TPM/TPD counters per `(platform, model, key)` that learn providers' reported ceilings, so routing always stays under every cap. - **Self-updating model cat"
+        },
+        {
+          "match": "free tier",
+          "context": "llion tokens per month. 87 free LLM providers. 1,313 free model endpoints. One OpenAI-compatible endpoint.**  Aggregate free tiers from dozens of providers, plus custom OpenAI-compatible chat, embedding, image, and audio endpoints, behind a single `"
+        },
+        {
+          "match": "free tier",
+          "context": "index](docs/en/README.md) · [Contributor guide](CONTRIBUTING.md)  ## Why this exists  Every serious AI lab now offers a free tier, a few million tokens a month, a few thousand requests a day. On its own each tier is a toy. Stacked together, they add"
+        },
+        {
+          "match": "free tier",
+          "context": "all keeps up without a `git pull`. See [Premium (live catalog)](#premium-live-catalog) for how fast it keeps up.  ![The free tier, stacked — ~10.1B tokens of free inference per month across 87 providers](repo-assets/free-tier.png)  ## Supported prov"
+        },
+        {
+          "match": "free tier",
+          "context": "#faq-passwords-logs-uninstall](docs/en/install/01-install.md#faq-passwords-logs-uninstall)**.  ## Limitations  Stacking free tiers has real trade-offs: no frontier models, variable latency, no SLA — and the effective intelligence of the endpoint dip"
+        },
+        {
+          "match": "Free tier",
+          "context": "## Disclaimer  **This project is for personal experimentation and learning, not production.** Free tiers exist so developers can prototype against them; they aren't a stable, supported inference substrate and shouldn't be t"
+        },
+        {
+          "match": "NVIDIA",
+          "context": "s         Google   Groq   Cerebras   OpenCode Zen       Mistral   OpenRouter   Cloudflare   Cohere       Z.ai (Zhipu)   NVIDIA   HuggingFace       ModelScope Qwen3 · DeepSeek V4 · GLM-5 (needs Aliyun cn binding)        … and 75 more free provider"
+        },
+        {
+          "match": "catalog",
+          "context": "/freellmapi.co/?utm_source=github&utm_medium=readme&utm_campaign=repository&utm_content=readme_top)** · browse the full catalog: 736 model families, 1,313 free endpoints  **English** · [Türkçe](README.tr.md) · [简体中文](README.zh-cn.md) · [Русский](R"
+        },
+        {
+          "match": "catalog",
+          "context": "dashboard — Models page with the monthly token budget](repo-assets/github-hero.png)   Your router updates its own model catalog from a signed feed: new free models, quota changes, and compatibility fixes land without a `git pull`. Free installs ge"
+        },
+        {
+          "match": "catalog",
+          "context": "Works with OpenAI-compatible clients](#works-with-openai-compatible-clients) - [Languages](#languages) - [Premium (live catalog)](#premium-live-catalog) - [Using the API](#using-the-api) - [Screenshots](#screenshots) - [How it works](#how-it-works"
+        },
+        {
+          "match": "catalog",
+          "context": "ible clients](#works-with-openai-compatible-clients) - [Languages](#languages) - [Premium (live catalog)](#premium-live-catalog) - [Using the API](#using-the-api) - [Screenshots](#screenshots) - [How it works](#how-it-works) - [FAQ](#faq) - [Limit"
+        },
+        {
+          "match": "catalog",
+          "context": ", retire them, and change quotas without notice. FreeLLMAPI tracks all of that for you. The router pulls a signed model catalog from [freellmapi.co](https://freellmapi.co) on its own, so your install keeps up without a `git pull`. See [Premium (li"
+        },
+        {
+          "match": "catalog",
+          "context": "om [freellmapi.co](https://freellmapi.co) on its own, so your install keeps up without a `git pull`. See [Premium (live catalog)](#premium-live-catalog) for how fast it keeps up.  ![The free tier, stacked — ~10.1B tokens of free inference per mont"
+        },
+        {
+          "match": "catalog",
+          "context": "://freellmapi.co) on its own, so your install keeps up without a `git pull`. See [Premium (live catalog)](#premium-live-catalog) for how fast it keeps up.  ![The free tier, stacked — ~10.1B tokens of free inference per month across 87 providers](r"
+        },
+        {
+          "match": "catalog",
+          "context": "patible, Anthropic, Gemini or Ollama client      Most agents configure themselves with one command that reads your live catalog, backs up the existing config and merges into it:  ```bash npx freellmapi setup-claude --url http://localhost:3001 --ap"
+        },
+        {
+          "match": "catalog",
+          "context": "model, key)` that learn providers' reported ceilings, so routing always stays under every cap. - **Self-updating model catalog** — the router syncs a signed catalog from freellmapi.co twice a day: new models, quota changes, and provider quirk fix"
+        },
+        {
+          "match": "catalog",
+          "context": "ported ceilings, so routing always stays under every cap. - **Self-updating model catalog** — the router syncs a signed catalog from freellmapi.co twice a day: new models, quota changes, and provider quirk fixes land automatically. Free installs t"
+        },
+        {
+          "match": "catalog",
+          "context": "ch each model joins 30 days after it lands in the live feed; premium routers get it same-day. [Premium →](#premium-live-catalog) - **Sticky sessions & context handoff** — conversations stay on one model for 30 minutes; an optional compact handoff"
+        },
+        {
+          "match": "catalog",
+          "context": "n.ts` for the tray strings); `npm test` checks every locale for key/placeholder parity — PRs welcome.  ## Premium (live catalog)  The router keeps its model catalog fresh on its own: it pulls a signed catalog from [freellmapi.co](https://freellmap"
+        },
+        {
+          "match": "catalog",
+          "context": "t` checks every locale for key/placeholder parity — PRs welcome.  ## Premium (live catalog)  The router keeps its model catalog fresh on its own: it pulls a signed catalog from [freellmapi.co](https://freellmapi.co) twice a day and applies new mod"
+        },
+        {
+          "match": "catalog",
+          "context": "arity — PRs welcome.  ## Premium (live catalog)  The router keeps its model catalog fresh on its own: it pulls a signed catalog from [freellmapi.co](https://freellmapi.co) twice a day and applies new models, quota changes, and provider quirk fixes"
+        },
+        {
+          "match": "catalog",
+          "context": "tom providers are never touched, and every download is verified against a pinned Ed25519 key before it is applied.  The catalog currently tracks **87 providers**, **736 model families**, **1,313 free provider/model endpoints** (1,137 chat, 29 imag"
+        },
+        {
+          "match": "catalog",
+          "context": "owse the full set at **[freellmapi.co/models](https://freellmapi.co/models.html)**.  Free installs pull the same signed catalog, but from the monthly snapshot: a model joins it 30 days after it lands in the live feed, so the free build currently s"
+        },
+        {
+          "match": "catalog",
+          "context": "ts about 303 models behind. Nothing expires and nothing is crippled — it just arrives later.  Premium keeps that signed catalog live on every router you run. When a provider launches a strong free model, quietly tightens a quota, or breaks a wire"
+        },
+        {
+          "match": "catalog",
+          "context": "s MIT-licensed and fully free, forever. Premium is only  the live feed, and it's what funds the daily model testing and catalog  maintenance that keeps the catalog working.  The catalog server never sees your prompts, completions, or provider keys"
+        },
+        {
+          "match": "catalog",
+          "context": "er. Premium is only  the live feed, and it's what funds the daily model testing and catalog  maintenance that keeps the catalog working.  The catalog server never sees your prompts, completions, or provider keys — the router stays fully self-hoste"
+        },
+        {
+          "match": "catalog",
+          "context": "he live feed, and it's what funds the daily model testing and catalog  maintenance that keeps the catalog working.  The catalog server never sees your prompts, completions, or provider keys — the router stays fully self-hosted either way.  ## Usin"
+        },
+        {
+          "match": "billion",
+          "context": "# FreeLLMAPI  **10.1 billion tokens per month. 87 free LLM providers. 1,313 free model endpoints. One OpenAI-compatible endpoint.**  Aggregate free"
         }
       ]
     }

@@ -57,7 +57,7 @@
 - 内容：API-Inference 每日 2000 次免费调用：当前 38 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
@@ -69,12 +69,12 @@
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## 共绩算力｜hardware_bundle
 - 内容：共绩算力个人开发者计划提供 ¥50 体验积分，可申请最高 ¥1,500 的算力支持
@@ -94,10 +94,10 @@
 - 状态：待复核（核验时间 2026-11-19T03:43:07Z）
 
 ## OpenRouter｜长期免费
-- 内容：:free 模型 12 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、liquid/lfm-3-1.7b:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
+- 内容：:free 模型 11 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、liquid/lfm-3-1.7b:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## NVIDIA NIM｜长期免费
 - 内容：NVIDIA API Catalog 免费原型推理：按账号速率限流；Nemotron Lightning 普通与流式已实测
@@ -114,12 +114,12 @@
 - 内容：AIHubMix 有标注 Free 的模型，无需信用卡
 - 规则：免费模型名单会变，调用前查看模型目录和限流
 - 链接：https://aihubmix.com/pricing
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：待复核（核验时间 2026-11-21T03:19:14Z）
 
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## Google AI Studio｜长期免费
 - 内容：Gemini API 有指定模型免费档
@@ -137,13 +137,13 @@
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## Azure for Students｜学生通道
 - 内容：Azure 学生计划含 $100 额度，有效期 12 个月，无需绑卡
 - 规则：面向符合资格的全日制高校学生，仍符合资格可续期；个别服务另审
 - 链接：https://azure.microsoft.com/en-us/free/students
-- 状态：已验证（核验时间 2026-11-21T03:19:14Z）
+- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
@@ -229,7 +229,7 @@
 - 内容：Cohere 试用密钥每月最多 1,000 次 API 调用
 - 规则：用于评估，分钟限流按模型和端点变化，生产密钥另计费
 - 链接：https://docs.cohere.com/docs/rate-limits
-- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
+- 状态：待复核（核验时间 2026-11-19T17:59:43Z）
 
 ## Kimi 开放平台｜price_low
 - 内容：Kimi K3 系列重复请求前缀自动走缓存计费
@@ -259,7 +259,7 @@
 - 内容：阿里云百炼首次开通后，符合条件的北京地域模型通常各送 100 万 Tokens
 - 规则：须先实名，额度一般 90 天有效；可开「免费额度用完即停」避免超额计费
 - 链接：https://help.aliyun.com/zh/model-studio/new-free-quota
-- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
+- 状态：待复核（核验时间 2026-11-19T17:59:43Z）
 
 ## 阿里云百炼｜免费模型
 - 内容：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）
@@ -457,7 +457,7 @@
 - 内容：Devin Desktop（原 Windsurf）Free：轻量 Agent 配额，无限 Tab 补全与 inline 编辑
 - 规则：免费模型选择受限；官方未公布固定Token或积分数量。Pro $20/月、Max $200/月，属另购套餐。
 - 链接：https://devin.ai/pricing
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## xAI（Grok）｜warning
 - 内容：Grok Code 现状：API注册赠送维持停发（未见复出新礼）；免费/低价用法已迁移至 X Subscription 池（Ultra $200 含Grok Bot+50×用量，Plus $8 仅Grok模型）；X免费档仅严格限额体验
@@ -1329,7 +1329,7 @@
 - 内容：Electron Hub 免费档每周 $0.25 额度，免绑卡；另有看广告获取的免费模型请求奖励
 - 规则：每周日 21:00 UTC（北京时间周一 05:00）刷新，5 请求/分钟；最多 20% 未用周额转入 Flex Wallet，上限约 $0.13。
 - 链接：https://www.electronhub.ai/pricing
-- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
 
 ## 智谱 BigModel｜限时活动
 - 内容：ZCode 周末包：已领账号实测5亿 GLM-5.3-Flash，11月23日09:00到期；新领取待核
