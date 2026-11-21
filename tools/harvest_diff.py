@@ -130,10 +130,25 @@ def run_diff(outdir: Path) -> tuple:
     if not latest.exists():
         return 1, "latest.json 不存在，请先运行 tools/harvest.py 采集一轮"
     raw = latest.read_text(encoding="utf-8")
+    try:
+        cur = json.loads(raw)
+    except ValueError:
+        return 1, "latest.json 不是有效 JSON，基线未修改"
+    if not isinstance(cur, dict) or not isinstance(cur.get("results"), list) or not cur["results"]:
+        return 1, "latest.json 没有有效源列表，基线未修改"
+    if cur.get("scope") not in (None, "full"):
+        return 1, "latest.json 标记为部分快照，基线未修改；请先运行全量采集"
     if not baseline.exists():
         baseline.write_text(raw, encoding="utf-8")
         return 0, "首次运行：已建立基线 prev.json，下轮开始对比（本轮 no change）"
-    prev, cur = json.loads(baseline.read_text(encoding="utf-8")), json.loads(raw)
+    prev = json.loads(baseline.read_text(encoding="utf-8"))
+    # 部分快照防线：latest.json 源数断崖式减少（--only 误用/采集半途而废）时，
+    # 把"大批源消失"当真实移除并滚动基线会摧毁对比基准，下一轮再触发全量"新增"
+    # 假告警。此时拒绝滚动基线、退出非零，提示先跑一轮全量。
+    p_count, c_count = len(index_results(prev)), len(index_results(cur))
+    if p_count >= 10 and c_count < p_count * 0.5:
+        return 1, (f"疑似部分快照：当前 {c_count} 源 < 基线 {p_count} 源的一半，"
+                   "基线未滚动、未写告警；请先跑一轮全量 harvest 再对比（--only 结果应落 latest-partial.json）")
     changes = diff_states(prev, cur)
     baseline.write_text(raw, encoding="utf-8")  # 基线滚动到本轮
     if not changes:
@@ -186,7 +201,19 @@ def selftest() -> int:
         (out / "prev.json").unlink()
         code3, msg3 = run_diff(out)
         assert code3 == 0 and "基线" in msg3, msg3  # 基线丢失时可自愈重建
-    print("selftest OK: 数量/内容/状态/增删源五类变化均识别，告警落盘与基线滚动正常")
+        # 部分快照防线：源数断崖减少时拒绝滚动基线、不写移除告警
+        big = [{"id": "s%d" % i, "name": "源%d" % i, "status": "ok", "findings": []} for i in range(12)]
+        (out / "prev.json").write_text(
+            json.dumps({"harvested_at": "T0", "results": big}, ensure_ascii=False), encoding="utf-8")
+        (out / "latest.json").write_text(
+            json.dumps({"harvested_at": "T1", "results": big[:1]}, ensure_ascii=False), encoding="utf-8")
+        n_alerts_before = len(list(out.glob("alert-*.md")))
+        code4, msg4 = run_diff(out)
+        assert code4 == 1 and "部分快照" in msg4, msg4
+        kept = json.loads((out / "prev.json").read_text(encoding="utf-8"))
+        assert len(kept["results"]) == 12, "疑似部分快照时基线不得被滚动覆盖"
+        assert len(list(out.glob("alert-*.md"))) == n_alerts_before, "疑似部分快照不得写移除源告警"
+    print("selftest OK: 数量/内容/状态/增删源五类变化均识别，告警落盘、基线滚动与部分快照防线正常")
     return 0
 
 

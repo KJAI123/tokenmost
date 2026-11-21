@@ -6,15 +6,18 @@
 - 遵守 robots.txt、限速抓取、15s 超时
 - 输出：data-research/harvest/harvest-YYYY-MM-DD.md + latest.json
 - --selftest 用内置样本自检提取逻辑，不发网络请求
+- 防污染：压缩/二进制响应按 binary 状态记录，不提取乱码"命中"；
+  --only 部分采集写入 latest-partial.json/harvest-<日期>-partial.md，绝不覆盖全量快照
 
 用法:
-    python3 tools/harvest.py                # 全量抓取
-    python3 tools/harvest.py --only volc    # 只抓 id 含 volc 的源
+    python3 tools/harvest.py                # 全量抓取（覆盖 latest.json）
+    python3 tools/harvest.py --only volc    # 只抓 id 含 volc 的源（写 latest-partial.json，不动全量快照）
     python3 tools/harvest.py --selftest     # 离线自检
 """
 from __future__ import annotations  # 兼容 Python 3.9 的类型注解（PEP 604 / 内置泛型）
 
 import argparse
+import gzip
 import json
 import re
 import sys
@@ -22,6 +25,7 @@ import time
 import subprocess
 import urllib.request
 import urllib.robotparser
+import zlib
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -45,6 +49,50 @@ DEFAULT_PATTERNS = [
 TAG_RE = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
 HTML_RE = re.compile(r"<[^>]+>")
 WS_RE = re.compile(r"[ \t\r\f\v]+")
+# 控制字符（除 \t \n \r）：压缩流/二进制体被按文本解码时的典型特征
+CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+
+
+class UnreadablePayload(ValueError):
+    """响应无法可靠解压，不能用作关键词证据。"""
+
+
+def decode_payload(raw: bytes, encoding) -> str:
+    """按 Content-Encoding / 魔数解压响应体，再按 UTF-8 解码。
+
+    urllib 不自动解压；部分 CDN/代理会对未声明 Accept-Encoding 的请求也强制压缩。
+    gzip/deflate 用标准库解压；zstd/brotli 标准库不支持，显式拒绝，
+    宁可标记不可读也不能把压缩字节当关键词证据记录。"""
+    data = raw
+    encodings = [v.strip().lower() for v in (encoding or "").split(",") if v.strip()]
+    if not encodings:
+        if raw[:2] == b"\x1f\x8b":
+            encodings = ["gzip"]
+        elif raw[:2] in (b"\x78\x01", b"\x78\x9c", b"\x78\xda"):
+            encodings = ["deflate"]
+    for enc in reversed(encodings):
+        try:
+            if enc in ("gzip", "x-gzip"):
+                data = gzip.decompress(data)
+            elif enc == "deflate":
+                try:
+                    data = zlib.decompress(data)
+                except zlib.error:
+                    data = zlib.decompress(data, -zlib.MAX_WBITS)
+            elif enc != "identity":
+                raise UnreadablePayload(f"不支持的 Content-Encoding: {enc}")
+        except (OSError, EOFError, zlib.error) as exc:
+            raise UnreadablePayload(f"Content-Encoding {enc} 解压失败") from exc
+    return data.decode("utf-8", "ignore")
+
+
+def looks_binary(text: str) -> bool:
+    """前 4KB 控制字符占比 > 2% → 判为压缩/二进制体，禁止提取关键词。"""
+    if not text:
+        return False
+    sample = text[:4096]
+    ctrl = len(CONTROL_RE.findall(sample))
+    return ctrl / len(sample) > 0.02
 
 
 def load_text(html: str) -> str:
@@ -90,7 +138,8 @@ def robots_allows(url: str, cache: dict) -> bool:
 def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"})
     with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-        return r.read().decode("utf-8", "ignore")
+        # 响应可能带压缩体（部分 CDN 对未声明 Accept-Encoding 的请求也强制压缩）
+        return decode_payload(r.read(), r.headers.get("Content-Encoding"))
 
 
 import os as _os
@@ -107,7 +156,7 @@ def fetch_md(url: str) -> str:
     return ""
 
 
-def run(only: str | None = None) -> int:
+def run(only=None) -> tuple:
     cfg = json.loads(SOURCES.read_text(encoding="utf-8"))
     robots_cache: dict = {}
     results, errors = [], []
@@ -126,15 +175,23 @@ def run(only: str | None = None) -> int:
                 print(f"[skip] {sid}: robots.txt 不允许，尊重站点选择")
                 continue
             raw = fetch(url)
+            if looks_binary(raw):
+                # 压缩/二进制体被当文本解码会产出乱码"命中"并反复误报变更；
+                # 按 binary 记录即可见、可核查，不污染证据。
+                raise UnreadablePayload("响应疑似压缩/二进制体（控制字符过多），未提取关键词；需检查抓取通道")
             # pagesift 增强：双通道抽取，关键词上下文合并去重
             md = fetch_md(url)
             src_text = load_text(raw)
-            if md:
+            if md and not looks_binary(md):
                 src_text = src_text + " " + re.sub(r"\s+", " ", md)
             hits = extract(src_text, DEFAULT_PATTERNS + src.get("patterns", []))
             entry.update(status="ok", hits=len(hits), findings=hits)
             results.append(entry)
             print(f"[ok]   {sid}: {len(hits)} 处命中（{url}）")
+        except UnreadablePayload as e:
+            entry.update(status="binary", hits=0, findings=[], note=str(e))
+            results.append(entry)
+            print(f"[warn] {sid}: {e}（未提取命中）")
         except Exception as e:  # 网络失败不中断整体
             entry.update(status="error", error=f"{type(e).__name__}: {e}")
             errors.append(sid)
@@ -144,13 +201,25 @@ def run(only: str | None = None) -> int:
     return results, errors
 
 
-def save(results: list[dict]) -> Path:
+def save(results: list, only=None) -> Path:
+    """落盘采集结果。
+
+    全量运行写 latest.json + harvest-<今天>.md；--only 部分运行写
+    latest-partial.json + harvest-partial-<今天>.md，绝不覆盖全量快照，
+    否则 harvest_diff 的滚动基线会把"源大批消失"当真并彻底污染告警。"""
+    if not results:
+        raise ValueError("0 个源，拒绝覆盖快照")
     OUTDIR.mkdir(parents=True, exist_ok=True)
     today = date.today().isoformat()
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    (OUTDIR / "latest.json").write_text(
-        json.dumps({"harvested_at": now, "results": results}, ensure_ascii=False, indent=2), encoding="utf-8")
-    lines = [f"# 采集快照 {today}", "", f"- 采集时间: {now}（零 LLM 参与）",
+    partial = bool(only)
+    latest_name = "latest-partial.json" if partial else "latest.json"
+    md_name = f"harvest-{today}{'-partial' if partial else ''}.md"
+    (OUTDIR / latest_name).write_text(
+        json.dumps({"harvested_at": now, "results": results, "scope": f"--only {only}" if partial else "full"},
+                   ensure_ascii=False, indent=2), encoding="utf-8")
+    lines = [f"# 采集快照 {today}{'（部分：--only ' + only + '）' if partial else ''}", "",
+             f"- 采集时间: {now}（零 LLM 参与）",
              f"- 源数: {len(results)}，命中源: {sum(1 for r in results if r.get('hits'))}", ""]
     for r in results:
         lines.append(f"## {r['name']}（{r['id']}）")
@@ -158,10 +227,12 @@ def save(results: list[dict]) -> Path:
         if r["status"] == "ok" and r.get("findings"):
             for h in r["findings"][:12]:
                 lines.append(f"- 🔎 `…{h['context']}…`")
+        elif r["status"] == "binary":
+            lines.append(f"- ⚠️ {r.get('note', '响应疑似压缩/二进制体，未提取命中')}")
         elif r["status"] == "ok":
             lines.append("- ⚠️ 0 命中——页面可能已改版或为 JS 渲染，需人工核查 pattern")
         lines.append("")
-    out = OUTDIR / f"harvest-{today}.md"
+    out = OUTDIR / md_name
     out.write_text("\n".join(lines), encoding="utf-8")
     return out
 
@@ -174,20 +245,35 @@ def selftest() -> int:
     assert any("500 万" in h["context"] for h in hits), "应命中每日额度"
     assert any("RPM" in h["context"] for h in hits), "应命中 RPM/RPD"
     assert any("$10" in h["context"] for h in hits), "应命中美元价"
-    print(f"selftest OK: {len(hits)} 处命中，提取逻辑正常")
+    # 防污染：乱码/压缩体不得产出关键词"命中"
+    assert not looks_binary(sample), "正常文本不应判为二进制"
+    garbage = "\x00\x01\x02\x03\x04\x05\x06" * 600 + "免费额度 token"
+    assert looks_binary(garbage), "高控制字符占比的响应应判为二进制"
+    gz = gzip.compress(sample.encode("utf-8"))
+    assert "2000 万" in decode_payload(gz, None), "gzip 魔数应自动解压"
+    assert "2000 万" in decode_payload(gz, "gzip"), "Content-Encoding: gzip 应解压"
+    br_like = b"\x28\xb5\x2f\xfd" + bytes(range(256)) * 16  # zstd/br 标准库不支持
+    assert looks_binary(decode_payload(br_like, None)), "无法解压的压缩体应被判为二进制而非记录乱码命中"
+    print(f"selftest OK: {len(hits)} 处命中，提取逻辑正常；乱码/压缩防护生效")
     return 0
 
 
-def main() -> int:
+def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="只抓 id 含该子串的源")
     ap.add_argument("--selftest", action="store_true", help="离线自检，不发请求")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
     if args.selftest:
         return selftest()
     results, errors = run(args.only)
-    out = save(results)
-    print(f"\n快照已写入: {out}")
+    if not results:
+        # 0 个源被采集（--only 无匹配/拼写错误或全部 disabled）：
+        # 落盘会把当日全量快照清空，必须拒绝写文件。
+        print("错误: 0 个源被采集（--only 无匹配或全部 disabled），拒绝覆盖任何快照文件", file=sys.stderr)
+        return 1
+    out = save(results, only=args.only)
+    scope = "部分采集（--only %s）" % args.only if args.only else "全量采集"
+    print(f"\n{scope}，快照已写入: {out}")
     if errors:
         print(f"注意: {len(errors)} 个源失败（{', '.join(errors)}），可稍后重试或人工核查")
     return 0
