@@ -1,5 +1,5 @@
 {
-  "harvested_at": "2026-11-22T05:20:53Z",
+  "harvested_at": "2026-11-22T18:04:52Z",
   "results": [
     {
       "id": "zhipu-pricing",
@@ -260,41 +260,8 @@
       "name": "DeepSeek 定价",
       "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
       "status": "ok",
-      "hits": 8,
-      "findings": [
-        {
-          "match": "赠送余额中进行扣减",
-          "context": "1.5元 语音识别（ASR） 每小时音频 0.78元 0.39元     扣费规则 ​   模型调用费用 = token 消耗量 × 模型单价；Search API 与 Fetch API 按上表价格按次计费。对应的费用将直接从充值余额或赠送余额中进行扣减。 当充值余额与赠送余额同时存在时，优先扣减赠送余额。   产品价格可能发生变动，DeepSeek 保留修改价格的权利。请您依据实际用量按需充值，定期查看此页面以获知最新价格信息。 上一页 首次调用 API 下一页 Token 用量计算 模"
-        },
-        {
-          "match": "赠送余额同时存在时，优先扣减赠送余额",
-          "context": "小时音频 0.78元 0.39元     扣费规则 ​   模型调用费用 = token 消耗量 × 模型单价；Search API 与 Fetch API 按上表价格按次计费。对应的费用将直接从充值余额或赠送余额中进行扣减。 当充值余额与赠送余额同时存在时，优先扣减赠送余额。   产品价格可能发生变动，DeepSeek 保留修改价格的权利。请您依据实际用量按需充值，定期查看此页面以获知最新价格信息。 上一页 首次调用 API 下一页 Token 用量计算 模型细节 Search 与 Fetch API 价格"
-        },
-        {
-          "match": "高峰",
-          "context": "ropic API 支持 支持 对话前缀续写（Beta） 支持 支持 FIM 补全（Beta） 仅非思考模式支持 仅非思考模式支持 图像理解 支持 不支持 价格 (2) 百万tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元 并发限制 (3) 2500 500   ("
-        },
-        {
-          "match": "高峰",
-          "context": "非思考模式支持 仅非思考模式支持 图像理解 支持 不支持 价格 (2) 百万tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元 并发限制 (3) 2500 500   (1) 模型名请使用 deepseek-flash 。旧模型名 deepseek-v4-flash"
-        },
-        {
-          "match": "高峰",
-          "context": "tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元 并发限制 (3) 2500 500   (1) 模型名请使用 deepseek-flash 。旧模型名 deepseek-v4-flash 、 deepseek-v4-flash-vision-exp 仍可调用，但对"
-        },
-        {
-          "match": "高峰",
-          "context": "ek-v4-flash 、 deepseek-v4-flash-vision-exp 仍可调用，但对应模型已下线，请求将由 DeepSeek-V4.1-Flash-1017 模型提供服务，并按 Flash 价格计费。 (2) 空闲时段价格为高峰时段价格的一半。北京时间周一至周五（不含中国法定节假日）9:00 - 12:00、14:00 - 18:00 为高峰时段；其余时段，包括周末及中国法定节假日全天均为空闲时段。 (3) 更多并发限制细节，请参考 限速与隔离 。       S"
-        },
-        {
-          "match": "高峰",
-          "context": "求将由 DeepSeek-V4.1-Flash-1017 模型提供服务，并按 Flash 价格计费。 (2) 空闲时段价格为高峰时段价格的一半。北京时间周一至周五（不含中国法定节假日）9:00 - 12:00、14:00 - 18:00 为高峰时段；其余时段，包括周末及中国法定节假日全天均为空闲时段。 (3) 更多并发限制细节，请参考 限速与隔离 。       Search 与 Fetch API 价格 ​   Search 与 Fetch API 按次计费。   项目 计费单"
-        },
-        {
-          "match": "缓存命中",
-          "context": "esponses API 支持 支持 Anthropic API 支持 支持 对话前缀续写（Beta） 支持 支持 FIM 补全（Beta） 仅非思考模式支持 仅非思考模式支持 图像理解 支持 不支持 价格 (2) 百万tokens输入 （缓存命中） 空闲时段 0.02元 0.15元 高峰时段 0.04元 0.30元 百万tokens输入 （缓存未命中） 空闲时段 1元 4.5元 高峰时段 2元 9.0元 百万tokens输出 空闲时段 4元 13.5元 高峰时段 8元 27.0元"
-        }
-      ]
+      "hits": 0,
+      "findings": []
     },
     {
       "id": "siliconflow-pricing",
@@ -789,6 +756,10 @@
         },
         {
           "match": "会员",
+          "context": "Kimi 会员套餐价格与权益对比 - Kimi 帮助中心 产品 产品 产品 Kimi Kimi Work Kimi Code Kimi 浏览器扩展 Kimi Office 扩展 下载 全部产品 功能 构建应用 AI 应用与网站生成器 PPT AI 演示文"
+        },
+        {
+          "match": "会员",
           "context": "搭建落地页 制作海报 撰写商业提案 全部文章 定价 定价 下载 下载 下载 下载 试用 Kimi 新手入门 功能 Agent模式 Kimi Work 插件和技能 Kimi 浏览器扩展 表格和文档 PPT 深度研究 构建应用 3D Make 会员订阅 会员订阅服务权益介绍 会员额度更新与使用规则 会员是怎么收费的/套餐包括什么？ 会员权益到账与查询 套餐升级与降级 加油包：额外用量购买 取消自动续费 支付相关问题 用户如何自助开发票 会员问题联系方式 Kimi Code Kimi"
         },
         {
@@ -878,10 +849,6 @@
         {
           "match": "会员",
           "context": "费用，需要时可重新部署。   「Agent Website - Cloud Service」扣除的 0.08% 是什么费用？   这是你通过 Agent 发布网站后产生的云服务费用。网站发布后会持续占用云端资源以保持在线可访问，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用"
-        },
-        {
-          "match": "会员",
-          "context": "，因此会产生约会员额度 0.08% 的扣费。如果不再需要该网站在线，点击「取消发布」后即可停止计费。   相关协议     Kimi 付费服务协议   Kimi 用户服务协议   Kimi 隐私政策   本文是否对你有帮助 是 否 上一篇 会员额度更新与使用规则 下一篇 会员权益到账与查询 订阅方式与价格 如何选择套餐 旧套餐如何处理？ 额度说明 额度常见问题 如何查看额度使用情况？ 额度用完了怎么办？ 可以把额度都用在一个功能上吗？ 每天下午 4 点「Claw-云主机」扣除的"
         }
       ]
     },
@@ -2010,8 +1977,16 @@
       "name": "ZCode 官网更新日志",
       "url": "https://zcode.z.ai/changelog",
       "status": "ok",
-      "hits": 4,
+      "hits": 5,
       "findings": [
+        {
+          "match": "活动",
+          "context": "会话中新增或删除的技能实时生效，无需重开会话   分享被拒时指明问题文件、对话轮次和下一步   MCP 服务改为异步启动，应用打开更快   输入框状态区重新设计，各类运行状态统一展示   Git 状态卡支持一键查看全部变更   已结束的活动保留展示，输入新内容后再收起   内置 design 插件升级，新增生图能力   站点部署支持连接 http(s) 官方服务地址   子任务默认在后台运行，命令行单次执行会等待后台任务完成再退出。   工具执行失败时也会触发已配置的钩子。"
+        },
+        {
+          "match": "活动",
+          "context": "修复代码块横向滚动后划线错位、引用代码丢失空行   插件页面在深色主题下不再白闪   修复日文界面反馈窗口截断与中日文字体混排   远端传输进度合并显示，日志不再刷屏   修复状态区在窄窗口和页面切换时的显示问题   修复重启后子代理与活动记录丢失的问题   修复子代理停止瞬间误恢复，并兼容升级前的历史数据   修复 MCP 应用打开总提示连接不可用的问题   修复侧聊显示父会话时间线标记的问题   修复工作流侧栏在特定宽度下崩溃的问题   修复语音输入快捷键在输入框内误触发"
+        },
         {
           "match": "活动",
           "context": "进入主界面。   修复多个 Agent 并行执行或连续调用模型时，部分请求异常失败的问题，提升并行任务的稳定性。   3.15.1 发布于 2026年10月12日 Release v3.15.1 新功能     邀请好友·免费蹬蹬，共得权益活动上线。   支持订阅用户随机获得 GLM HighSpeed 体验。   更新“自主模式”，危险命令执行前会先征求确认。   新增可视化交互界面，在消息流中更直观的展示信息。   新增支持 UI 插件（MCP App）。   工作流支持创建"
@@ -2019,10 +1994,6 @@
         {
           "match": "体验",
           "context": "部分请求异常失败的问题，提升并行任务的稳定性。   3.15.1 发布于 2026年10月12日 Release v3.15.1 新功能     邀请好友·免费蹬蹬，共得权益活动上线。   支持订阅用户随机获得 GLM HighSpeed 体验。   更新“自主模式”，危险命令执行前会先征求确认。   新增可视化交互界面，在消息流中更直观的展示信息。   新增支持 UI 插件（MCP App）。   工作流支持创建前调参、运行中改并发和保存复跑。   工作流可为每个子代理单独指定"
-        },
-        {
-          "match": "体验",
-          "context": "026年10月9日 Release v3.14.5 问题修复     手动重置后，剩余重置机会的数量会保留显示。   3.14.4 发布于 2026年9月29日 Release v3.14.4 问题修复     为了进一步优化免费套餐的使用体验，关闭模型请求验证码校验。   继续向下滚动以加载更多版本。 © 2026 北京智谱华章科技股份有限公司 · 京ICP备20011824号-14 网信算备110108105858001230019号 网信算备1101081058580012"
         },
         {
           "match": "邀请",
@@ -2628,23 +2599,23 @@
         },
         {
           "match": "$1.60/$4.80 text->text qwen/qwen3.8",
-          "context": "xt+image+video->text qwen/qwen3.8-27b 1024K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3.8-27b-abliterated 33K ctx · $2.40/$18.00 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen"
+          "context": "xt+image+video->text qwen/qwen3.8-27b 1024K ctx · $0.40/$2.40 text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3.8-27b-abliterated 33K ctx · $2.40/$18.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/q"
         },
         {
           "match": "$2.40/$18.00 text->text qwen/qwen3-",
-          "context": "text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3.8-27b-abliterated 33K ctx · $2.40/$18.00 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwe"
-        },
-        {
-          "match": "$0.07/$0.00 text->embeddings qwen/q",
-          "context": ".60/$4.80 text->text qwen/qwen3.8-27b-abliterated 33K ctx · $2.40/$18.00 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+vid"
+          "context": "text+image+video->text qwen/qwen3.8-2.4t-a95b 1049K ctx · $1.60/$4.80 text->text qwen/qwen3.8-27b-abliterated 33K ctx · $2.40/$18.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwe"
         },
         {
           "match": "$0.01/$0.00 text->embeddings qwen/q",
-          "context": "40/$18.00 text->text qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
+          "context": "$1.60/$4.80 text->text qwen/qwen3.8-27b-abliterated 33K ctx · $2.40/$18.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+v"
+        },
+        {
+          "match": "$0.07/$0.00 text->embeddings qwen/q",
+          "context": "40/$18.00 text->text qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0."
         },
         {
           "match": "$0.07/$0.26 text+image+video->text ",
-          "context": "00 text->embeddings qwen/qwen3-embedding-8b 33K ctx · $0.01/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->t"
+          "context": "text->embeddings qwen/qwen3-embedding-0.6b 33K ctx · $0.07/$0.00 text->embeddings qwen/qwen3.5-flash-02-23 1000K ctx · $0.07/$0.26 text+image+video->text qwen/qwen3-coder-30b-a3b-instruct 262K ctx · $0.07/$0.28 text->text qwen/qwen3-coder-next 262K ctx · $0.12/$0.80 text->t"
         },
         {
           "match": "$0.07/$0.28 text->text qwen/qwen3-c",
@@ -2668,7 +2639,7 @@
         },
         {
           "match": "$0.30/$1.00 text->text qwen/qwen-2.",
-          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3 · $0.00/$0.00 text+image->image qwen/qwen-image-3-pro"
+          "context": "image+video->text qwen/qwen3.5-plus-20260420 1000K ctx · $0.30/$1.80 text+image+video->text qwen/qwen3-coder 262K ctx · $0.30/$1.00 text->text qwen/qwen-2.5-72b-instruct 33K ctx · $0.36/$0.40 text->text qwen/qwen-image-3-pro · $0.00/$0.00 text+image->image qwen/qwen-image-3"
         }
       ]
     },
@@ -3013,11 +2984,11 @@
         },
         {
           "match": "free",
-          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容"
+          "context": "2024-07-03 3.4K 22分55秒 点击展开 进入专区 腾讯云生态技术赋能专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支"
         },
         {
           "match": "free",
-          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯云轻量应用服务器专区 新一代开箱即用、面向轻量应用场景的云服务器 粉丝 113 内容 103 讨论 1 进入专区 精选文章 不写代码，用Lighthouse轻松搭建知识库"
+          "context": "专区 帮助腾讯云构建一个更加繁荣、高效的生态系统，促进合作伙伴和客户的共同成长、互利共赢 粉丝 2 内容 3 讨论 0 进入专区 精选文章 银河麒麟操作系统free查看服务器的内存，为什么比实际物理内存少很多？ 银河麒麟操作系统创建成功后，free -m命令查询内存大小，查询结果比实际物理内存小很多。 进入专区 腾讯混元-Dit专区 腾讯混元文生图大模型采用了与 Sora 一致的 DiT 架构,不仅支持文生图,也可作为视频等多模态视觉生成基础。 粉丝 3 内容 17 讨论 10 进入"
         }
       ]
     },
@@ -3951,27 +3922,27 @@
       "findings": [
         {
           "match": "免费模型网关 免费期限 · 以官方页面实时状态为准（匿名 200 次",
-          "context": "重置 2   刚结束 51     /           没有匹配内容，试试其他关键词。         01   HARNESS FIRST · ZERO FRICTION FIRST 免费模型 / 方案     90 项     免费模型网关 免费期限 · 以官方页面实时状态为准（匿名 200 次/小时，免 key 可调用） Kilo Code · 免费模型网关（18 个 $0 模型 ID） ¥ 0 Kilo 官方网关实拉（ai-gateway.kilo.ai/api/v1/models，2026-11-20 核验）：**471 个"
+          "context": "重置 2   刚结束 53     /           没有匹配内容，试试其他关键词。         01   HARNESS FIRST · ZERO FRICTION FIRST 免费模型 / 方案     91 项     免费模型网关 免费期限 · 以官方页面实时状态为准（匿名 200 次/小时，免 key 可调用） Kilo Code · 免费模型网关（17 个 $0 模型 ID） ¥ 0 Kilo 官方网关实拉（ai-gateway.kilo.ai/api/v1/models，2026-11-22 核验）：**470 个"
         },
         {
           "match": "免费模型匿名也可调用，匿名按 IP 限 200 次",
-          "context": "ree 已从网关下架（19 → 18）。匿名额度首次由官方文档明写「200 requests per hour per IP」（kilo.ai/docs/gateway/authentication）。 门槛 A 级 · 登录，免 key（免费模型匿名也可调用，匿名按 IP 限 200 次/小时） 免费模型 网关 471 个 ID 中 18 个为 $0：10 个带 :free 后缀 + 3 个路由型 + 3 个无标注零价（glyph-cluster、ampersand-v0.1、flint-v1.0）+ 2 个音乐模型（不适"
+          "context": "对这些 ID 返回非零 pricing（hy3 $0.132/$0.528、m3 $0.23/$0.96、gemma-4-26b $0.05/$0.19），计数一律以 API pricing 字段为准。 门槛 A 级 · 登录，免 key（免费模型匿名也可调用，匿名按 IP 限 200 次/小时） 免费模型 网关 470 个 ID 中 17 个为 $0：9 个带 :free 后缀 + 3 个路由型（kilo-auto/free、openrouter/free、beam-free）+ 3 个无标注零价（glyph-cluste"
         },
         {
           "match": "免费模型目录 ↗ 免费 API 额度",
-          "context": "i/docs/gateway/authentication 核验 · 2026-11-20（473 → 471 个 ID、19 → 18 个零价；north-mini-code:free 下架；匿名 200 次/小时首次取得官方原文） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别"
+          "context": "authentication + kilo.ai/pricing 核验 · 2026-11-22（471 → 470 个 ID、18 → 17 个零价、:free 10 → 9；dots-3-note-preview:free 下架） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别"
         },
         {
           "match": "免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度",
-          "context": "entication 核验 · 2026-11-20（473 → 471 个 ID、19 → 18 个零价；north-mini-code:free 下架；匿名 200 次/小时首次取得官方原文） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens"
+          "context": "lo.ai/pricing 核验 · 2026-11-22（471 → 470 个 ID、18 → 17 个零价、:free 10 → 9；dots-3-note-preview:free 下架） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens"
         },
         {
           "match": "免费推理额度",
-          "context": "9 → 18 个零价；north-mini-code:free 下架；匿名 200 次/小时首次取得官方原文） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度"
+          "context": "D、18 → 17 个零价、:free 10 → 9；dots-3-note-preview:free 下架） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度"
         },
         {
           "match": "免费推理试用额度，用于零成本体验模型推理服务；免费推理额度",
-          "context": "次/小时首次取得官方原文） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度。适用范围：仅抵扣按 token 后付费的在线推理费用（含缓存命中 / 未命中与输出 token），不能抵扣插件 / 知识库费用"
+          "context": "eview:free 下架） 查看免费模型目录 ↗ 免费 API 额度 免费期限 · 结束时间待公告 火山方舟 · 新用户免费推理额度 ¥ 0 火山方舟官方《免费推理额度》文档（文档页更新日 2026-10-22）：注册火山引擎账号即可获得免费推理试用额度，用于零成本体验模型推理服务；免费推理额度不同模型分别计算、主账号下共享（官方示例口径：每模型 500k tokens），基础模型与精调后模型共享同一额度。适用范围：仅抵扣按 token 后付费的在线推理费用（含缓存命中 / 未命中与输出 token），不能抵扣插件 / 知识库费用"
         },
         {
           "match": "免费推理额度为 500（k token",
@@ -4388,7 +4359,7 @@
         },
         {
           "match": "Free",
-          "context": "ettings Fork 13.8k  ( 13.8k ) Star 89.4k  ( 89.4k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
+          "context": "ettings Fork 13.9k  ( 13.9k ) Star 89.6k  ( 89.6k ) You must be signed in to star a repository About Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMa"
         },
         {
           "match": "free",
@@ -4546,15 +4517,15 @@
         },
         {
           "match": "免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens",
-          "context": "火山引擎方舟 · Token 额度 2000000 Tokens 4 SiliconFlow 注册赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 5 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 6 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 7 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 8 O"
+          "context": "火山引擎方舟 · Token 额度 2000000 Tokens 5 SiliconFlow 注册赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 6 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 7 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 8 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 9 O"
         },
         {
           "match": "免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens",
-          "context": "Tokens 5 硅基流动 · Token 额度 20000000 Tokens 5 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 6 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 7 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 8 OpenRouter 免费模型池：每日 50 次，买过 $10 永久升到 1000 3 OpenRouter · Token 额度 50 次/天"
+          "context": "Tokens 5 硅基流动 · Token 额度 20000000 Tokens 6 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 7 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 8 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 9 OpenRouter 免费模型池：每日 50 次，买过 $10 永久升到 1000 3 OpenRouter · Token 额度 50 次/天"
         },
         {
           "match": "免费模型池：每日 50 次",
-          "context": "模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 7 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 8 OpenRouter 免费模型池：每日 50 次，买过 $10 永久升到 1000 3 OpenRouter · Token 额度 50 次/天 9 AMD Radeon Cloud Token Factory：免费公共模型 API（ROCm 底层，免绑卡） 3 AMD（Radeon C"
+          "context": "模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tokens/模型 8 ERNIE-Speed 永久免费调用 4 百度智能云千帆 · 模型体验 不限量 9 OpenRouter 免费模型池：每日 50 次，买过 $10 永久升到 1000 3 OpenRouter · Token 额度 50 次/天 最新模型动态 近两个月发布 · 新的在最上面 全部 11-20 腾讯混元 · 腾讯混元官方 GitHub 仓库 Tencent-Hunyuan"
         },
         {
           "match": "免费 Agent 助手实测 同样号称免费，额度",
@@ -4566,15 +4537,15 @@
         },
         {
           "match": "免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token",
-          "context": "放 进入专区 腾讯混元（Hunyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新"
+          "context": "放 进入专区 腾讯混元（Hunyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan"
+          "context": "云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan"
         },
         {
           "match": "免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token",
-          "context": "。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公测期完全免费：手机号注册即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova"
+          "context": "。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑卡长期免费公测，每 5 小时刷新配额 商汤大模型开放平台 Token Plan 公测期完全免费：手机号注册即可，不绑卡、不充值。额度按「积分」计，每 5 小时滚动刷新，通用池与 Flash-Lite 专属池各自独立；兼容 OpenAI 协议，Base URL 换成 https://api.sensenova"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4598,27 +4569,27 @@
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 14 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，"
+          "context": "1000 MiniMax Code 官方文档「Daily Check-In」：每天签到 400 积分，第 4 天和第 7 天各 1000 积分，完整签到一周合计 4000 积分；积分可累积，自到账日起 30 天有效。 Token 额度 每日免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-07 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，"
         },
         {
           "match": "免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token",
-          "context": "见官方说明 核实 2026-11-07 14 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
+          "context": "见官方说明 核实 2026-11-07 15 天前 点赞 收藏 需注册 查看详情 直接去官方领取 腾 腾讯云 进行中 微信小程序云开发「小程序成长计划」：10 亿 Token + 10 万张生图（至 12/31） 报名微信小程序成长计划，免费获得 6 个月个人版云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026"
         },
         {
-          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 40 天 额度",
-          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 40 天 额度 1000000000 Token 核实 2026-11-12 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条"
+          "match": "免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 39 天 额度",
+          "context": "云开发环境 + AI 资源包（二期 10 亿 Token、10 万张生图），仅限微信小程序和云开发服务端使用，覆盖 hy4/hy3/deepseek-v4.1-flash 等。二期活动 2026/7/1–12/31。 Token 额度 限时免费 厂商页 开始 2026-07-01 结束 2026-12-31 剩 39 天 额度 1000000000 Token 核实 2026-11-12 10 天前 点赞 收藏 需注册 查看详情 直接去官方领取 未来两个月发布预告 2026-10-20 — 2026-12-20 · 更新至 2026-10-24 · 共 10 条"
         },
         {
           "match": "免费层 厂商页 开始 官方未公布 结束 官方未公布 额度",
-          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 21 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Con"
+          "context": "Loomy（科大讯飞）桌面 AI 工作搭子：下载送积分 + 内置免费模型 科大讯飞出品的桌面级 AI 工作搭子，下载登录送 5000 积分、每日再送 2000 积分；内置免费模型，日常任务不花积分。邀请码 3KUMN4。 开发者福利 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 5000 积分（下载即送） 核实 2026-10-31 22 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Con"
         },
         {
           "match": "免费模型：实名认证后每日 1 亿 Token",
-          "context": "积分（下载即送） 核实 2026-10-31 21 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 9 天 额"
+          "context": "积分（下载即送） 核实 2026-10-31 22 天前 点赞 收藏 需注册 含推广链接 查看详情 直接去官方领取 七牛云 进行中 七牛云 Conatus：每天 1 亿 Token 免费（10/24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 8 天 额"
         },
         {
           "match": "免费额度",
-          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 9 天 额度 100000000 Tokens/天 核实 2026-10-27 26 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
+          "context": "24–11/30） 七牛云 Conatus 免费模型：实名认证后每日 1 亿 Token 免费调用，活动 10/24–11/30；单笔充值满 100 元且到账可提至每日 10 亿。额度用完直接报错，不扣余额、不自动转付费。 开发者福利 每日免费额度 厂商页 开始 2026-10-24 结束 2026-11-30 剩 8 天 额度 100000000 Tokens/天 核实 2026-10-27 26 天前 点赞 收藏 需注册 需身份验证 含推广链接 查看详情 直接去官方领取 Qode"
         },
         {
           "match": "免费额度 厂商页 开始 官方未公布 结束 官方未公布 额度",
@@ -4638,19 +4609,19 @@
         },
         {
           "match": "免费 + 11/23–11/29 登录领 1 亿 Tokens",
-          "context": "期」 全部 1 L LibTV 双11：Wan3 / Kling4.0 / Minimax H3 三大视频模型最长 30 天 0 积分无限用 LibTV（哩布哩布） · 工具试用 剩 6 天 2 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/23–11/29 登录领 1 亿 Tokens AutoClaw（智谱） · 模型体验 剩 8 天 3 混元 Hy4 flash 发布：WorkBuddy 国内/国际版限时免费至 11/30 腾讯混元（Hunyuan） · 模型体验 剩 9 天 4 国家超算互联网：客户端 SCNet-"
+          "context": "期」 全部 1 L LibTV 双11：Wan3 / Kling4.0 / Minimax H3 三大视频模型最长 30 天 0 积分无限用 LibTV（哩布哩布） · 工具试用 剩 6 天 2 AutoClaw（智谱澳龙）：内置 GLM 免费 + 11/23–11/29 登录领 1 亿 Tokens AutoClaw（智谱） · 模型体验 剩 7 天 3 混元 Hy4 flash 发布：WorkBuddy 国内/国际版限时免费至 11/30 腾讯混元（Hunyuan） · 模型体验 剩 8 天 4 国家超算互联网：客户端 SCNet-"
         },
         {
           "match": "免费 Token/API 额度",
-          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-22 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
+          "context": "经管理员核验关键事实。 推广透明 含推广链接的活动明确披露，参与资格以厂商官方说明为准。 最近核验时间以各活动详情页为准；发现信息有误？ 提交线索 帮助我们纠正（页面最后更新： 2026-11-23 ）。 AI 羊毛情报站 汇总国内外厂商的免费 Token/API 额度、模型体验与开发者福利。 所有活动均标注官方来源与核验时间，AI 辅助采集、人工审核发布。 榜单 最新榜 热门榜 即将结束 模型动态 参与 提交福利线索 广告合作 我的收藏 我的点赞 RSS 订阅 关于 核验原则 隐私政策 用户协议 访问统"
         },
         {
-          "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 5",
-          "context": "计费） 5 Agnes AI · 模型体验 见官方说明 3 火山方舟：新户 50 万 + 协作奖励每日单模型最高 500 万（二期升级） 5 火山引擎方舟 · Token 额度 2000000 Tokens 4 SiliconFlow 注册赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 5 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 6 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tok"
+          "match": "赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 6",
+          "context": "计费） 5 Agnes AI · 模型体验 见官方说明 4 火山方舟：新户 50 万 + 协作奖励每日单模型最高 500 万（二期升级） 5 火山引擎方舟 · Token 额度 2000000 Tokens 5 SiliconFlow 注册赠送 2000 万 Tokens 5 硅基流动 · Token 额度 20000000 Tokens 6 智谱 GLM Flash 系列永久免费（含图像与视频生成） 4 智谱 AI · 模型体验 Tokens 7 阿里云百炼：每模型 100 万 Tokens 免费额度（多模型叠加） 4 阿里云百炼 · Token 额度 1000000 Tok"
         },
         {
           "match": "新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding To",
-          "context": "unyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 18 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑"
+          "context": "unyuan） 长期有效 腾讯混元 Hunyuan-Lite：永久免费（输入输出均 ¥0/M token，256K 上下文） 腾讯云混元 Hunyuan-Lite 在定价页标注输入输出均 ¥0/M token（永久免费），上下文 256K；新用户另赠 10 款主力模型共享 100 万 Token（1 年）+ 100 万 Embedding Token。 模型体验 永久免费层 厂商页 开始 官方未公布 结束 官方未公布 额度 见官方说明 核实 2026-11-04 19 天前 点赞 收藏 需注册 查看详情 直接去官方领取 商汤日日新 长期有效 商汤日日新 Token Plan：不绑"
         },
         {
           "match": "赠送、每日/每月额度，标注刷新周期与是否绑卡 进入专区 G Groq 长期有效 Groq Cloud：免",
@@ -5830,16 +5801,44 @@
       "hits": 30,
       "findings": [
         {
+          "match": "$0.99 for 12 months of Agent Pass N",
+          "context": "ave more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Black Friday $0.99 for 12 months of Agent Pass New accounts registered Nov 22–27 only. Monthly, with auto-renew. Offer terms 2,248 spots left 2 2 2 3 3 2 4 4 8 5 5 8 sp"
+        },
+        {
+          "match": "$0.99 12 months of Agent Pass 2,248",
+          "context": "-renew. Offer terms 2,248 spots left 2 2 2 3 3 2 4 4 8 5 5 8 spots left of 3,000 See offer Black Friday Nov 22 – Nov 27 $0.99 12 months of Agent Pass 2,248 spots left 2 2 2 3 3 2 4 4 8 5 5 8 spots left of 3,000 usage a month $10 in total $120 Claim for $0.99 Usage value at o"
+        },
+        {
+          "match": "$10 in total $120 Claim for $0.99",
+          "context": "ov 22 – Nov 27 $0.99 12 months of Agent Pass 2,248 spots left 2 2 2 3 3 2 4 4 8 5 5 8 spots left of 3,000 usage a month $10 in total $120 Claim for $0.99 Usage value at our public prices, not wallet credit. Offer terms Offer terms $0.99 gets you 12 months of Agent Pass — $"
+        },
+        {
+          "match": "$0.99 gets you 12 months of Agent P",
+          "context": "a month $10 in total $120 Claim for $0.99 Usage value at our public prices, not wallet credit. Offer terms Offer terms $0.99 gets you 12 months of Agent Pass — $10 of usage value every month (released $2.50 a week), $120 in total. Nov 22 – Nov 27 (Pacific) New accounts only"
+        },
+        {
+          "match": "$10 of usage value every month (r",
+          "context": "9 Usage value at our public prices, not wallet credit. Offer terms Offer terms $0.99 gets you 12 months of Agent Pass — $10 of usage value every month (released $2.50 a week), $120 in total. Nov 22 – Nov 27 (Pacific) New accounts only — registered during the offer window;"
+        },
+        {
+          "match": "$2.50 a week), $120 in total. Nov 2",
+          "context": "allet credit. Offer terms Offer terms $0.99 gets you 12 months of Agent Pass — $10 of usage value every month (released $2.50 a week), $120 in total. Nov 22 – Nov 27 (Pacific) New accounts only — registered during the offer window; no disposable email addresses. One per pers"
+        },
+        {
+          "match": "$1.99 /month, cancel anytime Usage ",
+          "context": "ancel the gifted months. If the card does not qualify, the subscription continues monthly without the free months. Then $1.99 /month, cancel anytime Usage value at our public prices, not wallet credit Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and"
+        },
+        {
           "match": "$0 / month Try Token Harbor with",
-          "context": "e with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Fl"
+          "context": "free months. Then $1.99 /month, cancel anytime Usage value at our public prices, not wallet credit Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Fl"
         },
         {
           "match": "$0.99 $1.99 / month First month onl",
-          "context": "period Promotional models added over time One OpenAI-compatible API Start free No card required. Agent Pass First month $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage"
+          "context": "eriod Promotional models added over time One OpenAI-compatible API Start free No card required. Agent Pass Black Friday $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage"
         },
         {
           "match": "$1.99/month Built for agents and sc",
-          "context": "e OpenAI-compatible API Start free No card required. Agent Pass First month $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selecte"
+          "context": "OpenAI-compatible API Start free No card required. Agent Pass Black Friday $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selecte"
         },
         {
           "match": "$10 included usage Plus your free",
@@ -5851,11 +5850,11 @@
         },
         {
           "match": "$1.99 / month . Cancel anytime in b",
-          "context": "ow Your free model allowance runs alongside it Sign in to subscribe Pay once with Alipay (no auto-renew) Auto-renews at $1.99 / month . Cancel anytime in billing settings . Office Pass Popular $9.99 / month For desktop agents and everyday work — writing, research, coding. In"
+          "context": "Minimax M3.1 Flash and everything below Your free model allowance runs alongside it Sign in to subscribe Auto-renews at $1.99 / month . Cancel anytime in billing settings . Office Pass Popular $9.99 / month For desktop agents and everyday work — writing, research, coding. In"
         },
         {
           "match": "$9.99 / month For desktop agents an",
-          "context": "nce with Alipay (no auto-renew) Auto-renews at $1.99 / month . Cancel anytime in billing settings . Office Pass Popular $9.99 / month For desktop agents and everyday work — writing, research, coding. Included usage $35 included usage Plus your free allowance Model boost Sele"
+          "context": "ongside it Sign in to subscribe Auto-renews at $1.99 / month . Cancel anytime in billing settings . Office Pass Popular $9.99 / month For desktop agents and everyday work — writing, research, coding. Included usage $35 included usage Plus your free allowance Model boost Sele"
         },
         {
           "match": "$35 included usage Plus your free",
@@ -5887,67 +5886,39 @@
         },
         {
           "match": "free",
-          "context": "Models Models Pricing Pricing Connect Blog Blog Docs Docs One API · Every model Choose how far you want to build. Start free, save more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Ye"
+          "context": "Models Models Pricing Pricing Connect Blog Blog Docs Docs One API · Every model Choose how far you want to build. Start free, save more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Black Frid"
         },
         {
           "match": "free",
-          "context": "build. Start free, save more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Res"
+          "context": "build. Start free, save more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Black Friday $0.99 for 12 months of Agent Pass New accounts registered Nov 22–27 only. Monthly, with auto-renew. Offe"
+        },
+        {
+          "match": "free",
+          "context": "igibility is verified after payment. Monthly Agent Pass with auto-renew enabled: pay for the first month, get 11 months free. Refunds or disputes cancel the gifted months. If the card does not qualify, the subscription continues monthly without"
+        },
+        {
+          "match": "free",
+          "context": "unds or disputes cancel the gifted months. If the card does not qualify, the subscription continues monthly without the free months. Then $1.99 /month, cancel anytime Usage value at our public prices, not wallet credit Monthly Yearly Free $0 /"
         },
         {
           "match": "Free",
-          "context": "e more with a pass, and move up as your monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day"
+          "context": "t the free months. Then $1.99 /month, cancel anytime Usage value at our public prices, not wallet credit Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day"
         },
         {
           "match": "free",
-          "context": "monthly AI usage grows. Just want to chat? Try Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiM"
+          "context": "ncel anytime Usage value at our public prices, not wallet credit Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiM"
         },
         {
           "match": "Free",
-          "context": "ry Rudder for free → Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiMo V2.6 Flash TH-Rudder Free allowance on a r"
+          "context": "s, not wallet credit Monthly Yearly Free $0 / month Try Token Harbor with a free allowance and a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiMo V2.6 Flash Free allowance on a rolling 7-d"
         },
         {
           "match": "Free",
-          "context": "ng model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiMo V2.6 Flash TH-Rudder Free allowance on a rolling 7-day period Promotional models added over time One OpenAI-compatible API Start free No card req"
+          "context": "d a rotating model lineup. Free allowance Resets on a rolling 7-day period Includes DeepSeek V4.1 Flash MiMo V2.6 Flash Free allowance on a rolling 7-day period Promotional models added over time One OpenAI-compatible API Start free No card req"
         },
         {
           "match": "free",
-          "context": "h TH-Rudder Free allowance on a rolling 7-day period Promotional models added over time One OpenAI-compatible API Start free No card required. Agent Pass First month $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and s"
-        },
-        {
-          "match": "free",
-          "context": "1.99/month Built for agents and scripts that call the API around the clock. Included usage $10 included usage Plus your free allowance Model boost Selected models go up to $20 Then 5 % off pay-as-you-go Adds DeepSeek V4.1 Flash 1017 Fast DeepSe"
-        },
-        {
-          "match": "free",
-          "context": "pay-as-you-go Adds DeepSeek V4.1 Flash 1017 Fast DeepSeek V4.1 Flash 1017 Minimax M3.1 Flash and everything below Your free model allowance runs alongside it Sign in to subscribe Pay once with Alipay (no auto-renew) Auto-renews at $1.99 / mont"
-        },
-        {
-          "match": "free",
-          "context": "9 / month For desktop agents and everyday work — writing, research, coding. Included usage $35 included usage Plus your free allowance Model boost Selected models go up to $70 Then 10 % off pay-as-you-go Adds Claude Sonnet 5.5 Grok 4.7 Qwen4 Ma"
-        },
-        {
-          "match": "free",
-          "context": "s $99 / month Frontier model access for heavy usage and professional work. Included usage $180 included usage Plus your free allowance Model boost Selected models go up to $360 Then 15 % off pay-as-you-go Adds Claude Fable 5.2 GPT-6.2 Astra Cla"
-        },
-        {
-          "match": "free",
-          "context": "nce. A month here is 4 windows of 7 days: a quarter of the figure in each, and unused room does not carry forward. Your free allowance carries over Subscribing does not replace the free allowance you already have. It stays alongside the pass, w"
-        },
-        {
-          "match": "free",
-          "context": "gure in each, and unused room does not carry forward. Your free allowance carries over Subscribing does not replace the free allowance you already have. It stays alongside the pass, with its own bar on your dashboard. You choose what happens at"
-        },
-        {
-          "match": "free",
-          "context": "n automated safety check flags a request. The providers that serve your request process them under their own terms. The free models are separate: they follow the free-model policy, you enable them yourself in your dashboard, and subscribing nei"
-        },
-        {
-          "match": "free",
-          "context": "The providers that serve your request process them under their own terms. The free models are separate: they follow the free-model policy, you enable them yourself in your dashboard, and subscribing neither switches them on nor counts as consen"
-        },
-        {
-          "match": "free",
-          "context": "those prompts and responses for diagnostics, safety, optimisation and model or product improvement. Our staff may read free-route conversations and may use third-party AI tools to help analyze them, and the providers that serve free models may"
+          "context": "V2.6 Flash Free allowance on a rolling 7-day period Promotional models added over time One OpenAI-compatible API Start free No card required. Agent Pass Black Friday $0.99 $1.99 / month First month only · Then $1.99/month Built for agents and"
         }
       ]
     },
@@ -6251,19 +6222,19 @@
       "findings": [
         {
           "match": "$0.20 muse-spark-1.3-contributor $0",
-          "context": "data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1.21 Cached $0.06 LEARN MORE TOKEN COST ▸ # Cache Ra"
+          "context": "data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1.20 Cached $0.0060 LEARN MORE TOKEN COST ▸ # Cache"
         },
         {
-          "match": "$1.21 deepseek-v4.1-flash Input $0.",
-          "context": "LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1.21 Cached $0.06 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Mode"
+          "match": "$1.20 deepseek-v4.1-flash Input $0.",
+          "context": "LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1.20 Cached $0.0060 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Mo"
         },
         {
-          "match": "$1.21 Cached $0.06 LEARN MORE TOKEN",
-          "context": "ce per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1.21 Cached $0.06 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 32% d"
+          "match": "$1.20 Cached $0.0060 LEARN MORE TOK",
+          "context": "ce per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1.20 Cached $0.0060 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 33%"
         },
         {
           "match": "DeepSeek",
-          "context": "As of November 22, 2026, Muse Spark 1.3 Contributor led OpenCode usage over the past 7 days with 0 tokens, followed by DeepSeek V4 Flash (0) and jev-1.13 (0). # Top Models . Usage of models across OpenCode. 0B SEP 28 SEP 28 0B SEP 29 SEP 29 0B SEP"
+          "context": "As of November 22, 2026, Muse Spark 1.3 Contributor led OpenCode usage over the past 7 days with 0 tokens, followed by DeepSeek V4 Flash (0) and jev-1.13 (0). # Top Models . Usage of models across OpenCode. Daily Weekly 0B SEP 28 SEP 28 0B SEP 29"
         },
         {
           "match": "deepseek",
@@ -6275,27 +6246,27 @@
         },
         {
           "match": "deepseek",
-          "context": "0B 0B 0B 0B NOV 22 0B 0B 0B 0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B"
+          "context": "B 0B 0B NOV 22 0B 0B 0B 0B 0B 0B 7 Days Yesterday 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +36% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B"
         },
         {
           "match": "DeepSeek",
-          "context": "0B 0B 0B Weekly Daily 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
+          "context": "B 0B 7 Days Yesterday 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +36% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
         },
         {
           "match": "deepseek",
-          "context": "vious week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02"
+          "context": "vious week 02 deepseek-v4-flash 0B tokens DeepSeek +36% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02"
         },
         {
           "match": "DeepSeek",
-          "context": "h 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens D"
+          "context": "h 0B tokens DeepSeek +36% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens D"
         },
         {
           "match": "deepseek",
-          "context": "v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B"
+          "context": "v4.1-flash 0B tokens DeepSeek 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +36% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B"
         },
         {
           "match": "DeepSeek",
-          "context": "k 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +24% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
+          "context": "k 0% vs previous week 01 muse-spark-1.3-contributor 0B tokens Meta -86% vs previous week 02 deepseek-v4-flash 0B tokens DeepSeek +36% vs previous week 03 jev-1.13 0B tokens -65% vs previous week 04 deepseek-v4.1-flash 0B tokens DeepSeek 0% vs previ"
         },
         {
           "match": "deepseek",
@@ -6307,23 +6278,23 @@
         },
         {
           "match": "deepseek",
-          "context": "ched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1.21 Cached $0.06 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share"
+          "context": "ched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1.20 Cached $0.0060 LEARN MORE TOKEN COST ▸ # Cache Ratio . Shar"
         },
         {
           "match": "deepseek",
-          "context": "MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1.21 Cached $0.06 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served f"
+          "context": "MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1.20 Cached $0.0060 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served"
         },
         {
           "match": "deepseek",
-          "context": "N COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 32% deepseek-v4-flash 0% jev-1.13 Cache Ratio 0% Cached 0B Uncached 0B LEARN MORE CACHE RATIO ▸ # Market Share . Compare token share"
+          "context": "N COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model 0-100% 90% muse-spark-1.3-contributor 33% deepseek-v4-flash 0% jev-1.13 Cache Ratio 0% Cached 0B Uncached 0B LEARN MORE CACHE RATIO ▸ # Market Share . Compare token share"
         },
         {
           "match": "DeepSeek",
-          "context": "M NOV 18 NOV 18 15M NOV 19 NOV 19 16M NOV 20 NOV 20 3M NOV 21 NOV 21 1M NOV 22 NOV 22 Market share by model author Date DeepSeek Meta Other SEP 28 100.0% 0.0% 0.0% OCT 3 100.0% 0.0% 0.0% OCT 8 97.4% 0.0% 2.6% OCT 9 97.7% 2.3% 0.0% OCT 10 100.0% 0.0"
+          "context": "M NOV 18 NOV 18 15M NOV 19 NOV 19 16M NOV 20 NOV 20 3M NOV 21 NOV 21 3M NOV 22 NOV 22 Market share by model author Date DeepSeek Meta Other SEP 28 100.0% 0.0% 0.0% OCT 3 100.0% 0.0% 0.0% OCT 8 97.4% 0.0% 2.6% OCT 9 97.7% 2.3% 0.0% OCT 10 100.0% 0.0"
         },
         {
           "match": "DeepSeek",
-          "context": "OV 18 69.1% 30.9% 0.0% NOV 19 19.8% 80.2% 0.0% NOV 20 24.7% 75.3% 0.0% NOV 21 90.4% 9.6% 0.0% NOV 22 99.8% 0.2% 0.0% 01 DeepSeek 1M tokens 99.8 % 02 Meta 0 tokens 0.2 % [*] NOV 22 2026 LEARN MORE MARKET SHARE ▸ # Geographic Breakdown 01 Japan 3.6B"
+          "context": "OV 18 69.1% 30.9% 0.0% NOV 19 19.8% 80.2% 0.0% NOV 20 24.7% 75.3% 0.0% NOV 21 90.4% 9.6% 0.0% NOV 22 98.5% 1.5% 0.0% 01 DeepSeek 3M tokens 98.5 % 02 Meta 0 tokens 1.5 % [*] Nov 22, 2026 LEARN MORE MARKET SHARE ▸ # Geographic Breakdown 01 Japan 3.6B"
         },
         {
           "match": "deepseek",
@@ -6351,7 +6322,7 @@
         },
         {
           "match": "Price",
-          "context": "sion. No session cost data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1"
+          "context": "sion. No session cost data No session-bearing model rows matched this product. LEARN MORE SESSION COST ▸ # Token Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1"
         },
         {
           "match": "price",
@@ -6363,7 +6334,7 @@
         },
         {
           "match": "$0.30",
-          "context": "en Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.28 deepseek-v4-flash $1.21 deepseek-v4.1-flash Input $0.30 Output $1.21 Cached $0.06 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Model"
+          "context": "en Cost . Price per 1M tokens. $0.20 muse-spark-1.3-contributor $0.66 deepseek-v4-flash $1.20 deepseek-v4.1-flash Input $0.30 Output $1.20 Cached $0.0060 LEARN MORE TOKEN COST ▸ # Cache Ratio . Share of input tokens served from cache. Ratio Mode"
         },
         {
           "match": "Token",
@@ -8371,7 +8342,7 @@
       "findings": [
         {
           "match": "$10 a month, DevPass for coding a",
-          "context": "b                                                                     Pay how you build. Plans with weekly credits from $10 a month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs"
+          "context": "b                                                                     Pay how you build. Plans with weekly credits from $10 a month, DevPass for coding agents, and pay-as-you-go credits that don&#x27;t expire while your account is open.       Home Models Rankings Integrati"
         },
         {
           "match": "Pricing",
@@ -8379,7 +8350,7 @@
         },
         {
           "match": "Pricing",
-          "context": "month, DevPass for coding agents, and pay-as-you-go credits that never expire.       Home Models Rankings Integrations Pricing Docs"
+          "context": "s, and pay-as-you-go credits that don&#x27;t expire while your account is open.       Home Models Rankings Integrations Pricing Docs Legal"
         }
       ]
     },
@@ -9222,11 +9193,11 @@
         },
         {
           "match": "API credits",
-          "context": "ions Learn eligibility, activation, monthly grants, API usage, billing, and subscription changes for the ChatGPT-linked API credits benefit. Updated: 6 hours ago Learn how to claim and use API credits included with eligible ChatGPT Pro and Business su"
+          "context": "ions Learn eligibility, activation, monthly grants, API usage, billing, and subscription changes for the ChatGPT-linked API credits benefit. Updated: 8 hours ago Learn how to claim and use API credits included with eligible ChatGPT Pro and Business su"
         },
         {
           "match": "API credits",
-          "context": "g, and subscription changes for the ChatGPT-linked API credits benefit. Updated: 6 hours ago Learn how to claim and use API credits included with eligible ChatGPT Pro and Business subscriptions. Overview Eligible paid ChatGPT Pro and ChatGPT Business"
+          "context": "g, and subscription changes for the ChatGPT-linked API credits benefit. Updated: 8 hours ago Learn how to claim and use API credits included with eligible ChatGPT Pro and Business subscriptions. Overview Eligible paid ChatGPT Pro and ChatGPT Business"
         },
         {
           "match": "API credits",
@@ -10991,15 +10962,7 @@
         },
         {
           "match": "免费领的大模型额度",
-          "context": "模型 模型榜 重置监控 Token 羊毛 更多 Agent 接入 关于 更新日志 反馈 登录 深色 跟随系统 浅色 京公网安备11010502063419号 京ICP备2026012723号-5 我的 Token 羊毛 Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 提报一条羊毛 怎么折算 今天还能领 ¥ 1829 本月已领到 ¥ 0 下次刷新 还有 10:39 我的卡册 64 张，还没收 · 登录后换设备不丢卡 200额度 ◆ 豆包 AIHOT 50积分 ◆ OfficeAce"
-        },
-        {
-          "match": "免费 ◆ SoMark 能当 API 用 每天都能领 豆包电脑版每天签到领 200 额度",
-          "context": "MiniCPM 免费 ◆ Agnes AI 免费 ◆ Devin Desktop 5段 ◆ fal 免费 ◆ Portal 免费 ◆ OpenCode 免费 ◆ 阶跃星辰 免费 ◆ WorkBuddy 免费 ◆ 七牛云 免费 ◆ 硅基流动 免费 ◆ SoMark 能当 API 用 每天都能领 豆包电脑版每天签到领 200 额度 按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 部分模型 · 限产品内使用 · 仅电脑端 · 需有活动入口 · 11月14日核实 200 额度 去领 适用模型："
-        },
-        {
-          "match": "免费用豆包」入口签到，每天领 200 额度",
-          "context": "· 需有活动入口 · 11月14日核实 200 额度 去领 适用模型： 按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 在最新版本豆包电脑版或豆包工作电脑版的「免费用豆包」入口签到，每天领 200 额度，周一翻倍；累计获额达 500、2000、5000 时，分别再送 200、500、1300。官方示例累计签到 30 天可得 8800 额度。两端进度互通，同一账号奖励只发一次；活动赠送额度优先消耗。 有效期： 每笔发放后 30 天，先到期先"
+          "context": "模型 模型榜 重置监控 Token 羊毛 更多 Agent 接入 关于 更新日志 反馈 登录 深色 跟随系统 浅色 京公网安备11010502063419号 京ICP备2026012723号-5 我的 Token 羊毛 Token 羊毛 能免费领的大模型额度，按官方价折成人民币。 提报一条羊毛 怎么折算 今天还能领 ¥ 821 本月已领到 ¥ 0 下次刷新 还有 05:55 我的卡册 63 张，还没收 · 登录后换设备不丢卡 50积分 ◆ OfficeAce AIHOT 1000积分 ◆ 华为"
         },
         {
           "match": "免费，无需购买额度",
@@ -11015,7 +10978,7 @@
         },
         {
           "match": "免费额度",
-          "context": "年满 18 岁 · 11月20日核实 ≈¥334 去领 适用模型： 所有模型 可用于 Prism 语音对话、Mist v3 和 Coda v2 语音合成，以及 Rime STT 转文字。50 美元约可合成 1667 分钟 Mist v3。免费额度用完后，需自行升级并绑卡才能继续。免费档限评估和开发，不得上传来电录音、健康信息或他人个人数据，符合条款的输入输出可用于训练。 有效期： 每月刷新，不结转 11月20日核实于厂商官方页面 Drex 每月 5 美元模型调用额度 所有模型：Dr"
+          "context": "年满 18 岁 · 11月22日核实 ≈¥334 去领 适用模型： 所有模型 可用于 Prism 语音对话、Mist v3 和 Coda v2 语音合成，以及 Rime STT 转文字。50 美元约可合成 1667 分钟 Mist v3。免费额度用完后，需自行升级并绑卡才能继续。免费档限评估和开发，不得上传来电录音、健康信息或他人个人数据，符合条款的输入输出可用于训练。 有效期： 每月刷新，不结转 11月22日核实于厂商官方页面 Drex 每月 5 美元模型调用额度 所有模型：Dr"
         },
         {
           "match": "免费版每个账号每月共享 50 万 Token",
@@ -11023,7 +10986,7 @@
         },
         {
           "match": "免费墨点 Token",
-          "context": "OpenAI／Anthropic 的 API 调用；Jev 使用原生 System One 决策接口。内置模型勿用于生产环境，自带厂商密钥的调用按厂商账户另计费；额度商业化后可能调整。 11月16日核实于厂商官方页面 书生·端砚测试期每月送免费墨点 Token Plan 所有模型，如 DeepSeek-V4.1-Flash-1017、GLM-5.3、Qwen3.8-27B；各模型按当前价格消耗墨点 所有模型 · 测试期福利 · 额度以账户为准 · 11月20日核实 免费 去领 适用模型： Tok"
+          "context": "OpenAI／Anthropic 的 API 调用；Jev 使用原生 System One 决策接口。内置模型勿用于生产环境，自带厂商密钥的调用按厂商账户另计费；额度商业化后可能调整。 11月23日核实于厂商官方页面 书生·端砚测试期每月送免费墨点 Token Plan 所有模型，如 DeepSeek-V4.1-Flash-1017、GLM-5.3、Qwen3.8-27B；各模型按当前价格消耗墨点 所有模型 · 测试期福利 · 额度以账户为准 · 11月20日核实 免费 去领 适用模型： Tok"
         },
         {
           "match": "免费 去领 适用模型： Token",
@@ -11035,15 +10998,11 @@
         },
         {
           "match": "免费额度",
-          "context": "≈¥1002 去领 适用模型： 所有模型，包括文档解析 r-1、r-1 mini 新 Standard 账户获 150 美元，按基础解析价可用 r-1 约 1.5 万页或 r-1 mini 约 15 万页，额外功能另计。邮箱域名此前不能领过免费额度；上传文档会用于模型训练。 有效期： 官方未公布赠额有效期 11月14日核实于厂商官方页面 Telnyx 新用户送 25 美元 AI 额度 Telnyx AI 产品中的所有模型，包括自营 Inference 的 DeepSeek V4.1"
-        },
-        {
-          "match": "免费额度",
           "context": "手额度。 首次开通百炼自动发放，需实名认证。每个参与模型（含单独发放的快照）额度独立。请用通用 API Key 调用实时推理，Batch、调优、部署、存储和套餐专属 Key 不使用这份额度。旧额度仍可用至耗尽或到期。用完后按量收费，可开启「免费额度用完即停」。 有效期： 自开通、模型发布或获批较晚日起 90 天 11月21日核实于厂商官方页面 豆包电脑版新用户领 30 天免费体验 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作能力，如豆包 2.1 Turbo；不含生视频、Pro"
         },
         {
           "match": "免费推理额度，无需先实名；按模型独立，只抵扣按 Token",
-          "context": "去领 适用模型： Doubao-Seed-2.1-pro、Doubao-Seed-2.1-turbo、Doubao-Seed-Evolving 和 Doubao-Seed-Character，每款各 50 万 Token 注册火山引擎后获得免费推理额度，无需先实名；按模型独立，只抵扣按 Token 后付费的在线推理，不含批量推理、插件、知识库和缓存存储费。付费续用才需实名并开通模型。实际额度以控制台为准。 11月14日核实于厂商官方页面 秒悟新用户首月 5000 积分 所有模型，如 Qwen4-Max-Preview、DeepSee"
+          "context": "去领 适用模型： Doubao-Seed-2.1-pro、Doubao-Seed-2.1-turbo、Doubao-Seed-Evolving 和 Doubao-Seed-Character，每款各 50 万 Token 注册火山引擎后获得免费推理额度，无需先实名；按模型独立，只抵扣按 Token 后付费的在线推理，不含批量推理、插件、知识库和缓存存储费。付费续用才需实名并开通模型。实际额度以控制台为准。 11月14日核实于厂商官方页面 秒悟新用户首月 5000 积分 所有模型，如 Qwen4-Max、DeepSeek V4.1 F"
         },
         {
           "match": "免费账号一次",
@@ -11051,59 +11010,71 @@
         },
         {
           "match": "免费档提供少量 Agent 额度",
-          "context": "Flash Medium；High 和 Max 需付费套餐，不含 Devin 云端会话及其他模型 免费账号可在 Devin Desktop 或 Devin CLI 中选择 SWE-2 Flash Medium，用于代码编写、审查和开发任务。免费档提供少量 Agent 额度，具体用量与免费截止以客户端为准。 11月19日核实于厂商官方页面 OpenCode 限时免费用 Hy4 flash、LongCat 等模型 Hy4 flash、LongCat 2.5、DeepSeek V4.1 Flash、MiMo-V2"
-        },
-        {
-          "match": "免费版本 部分模型 · 限产品内使用 · LongCat 日限百次",
-          "context": "2.5、DeepSeek V4.1 Flash、MiMo-V2.6-Flash、Inkling 2 Small、Iceman、Flint 40B、Big Pickle 及 Nemotron 3.5 Lightning／Super VL 的免费版本 部分模型 · 限产品内使用 · LongCat 日限百次 · 部分数据用于训练 · Nemotron 仅测试 · Beam 限海外 · 11月20日核实 免费 去用 适用模型： Hy4 flash、LongCat 2.5、DeepSeek V4.1 Flash、MiMo-V2.6-Flash、I"
+          "context": "Flash Medium；High 和 Max 需付费套餐，不含 Devin 云端会话及其他模型 免费账号可在 Devin Desktop 或 Devin CLI 中选择 SWE-2 Flash Medium，用于代码编写、审查和开发任务。免费档提供少量 Agent 额度，具体用量与免费截止以客户端为准。 11月19日核实于厂商官方页面 OpenCode 限时免费用 Hy4 flash、DeepSeek 等模型 Hy4 flash、DeepSeek V4.1 Flash、MiMo-V2.6-Flash、Ic"
         },
         {
           "match": "免费 WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 Token",
-          "context": "盟等地区。两款 Nemotron 仅供测试，勿提交个人或机密数据。Beam 排除中国大陆及港澳。 有效期： LongCat 2.5 自 11 月 9 日起限免两周 11月20日核实于厂商官方页面 WorkBuddy Hy4 flash 限时免费 WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 TokenHub 接口不包含在本次限免中 部分模型 · 限产品内使用 · 仅电脑端 · 每日限额 · 用完后扣积分 · 到 11月30日 · 11月18日核实 免费 去用 适用模型： WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 T"
+          "context": "于训练。部分试用模型会收集反馈或用数据改进模型，Flint 保留 30 天。两款 Nemotron 仅供测试，勿提交个人或机密数据。Beam 排除中国大陆及港澳。 11月23日核实于厂商官方页面 WorkBuddy Hy4 flash 限时免费 WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 TokenHub 接口不包含在本次限免中 部分模型 · 限产品内使用 · 仅电脑端 · 每日限额 · 用完后扣积分 · 到 11月30日 · 11月18日核实 免费 去用 适用模型： WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 T"
         },
         {
           "match": "免费额度，用完后继续使用消耗积分，额度",
-          "context": "11月30日 · 11月18日核实 免费 去用 适用模型： WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 TokenHub 接口不包含在本次限免中 在 WorkBuddy 模型选择器选 Hy4 flash。限免期间每天有免费额度，用完后继续使用消耗积分，额度和刷新时间以产品内显示为准。腾讯云 TokenHub 的 Hy4 flash 接口单独计费。 11月18日核实于厂商官方页面 七牛云免费调用 Nemotron 3 Ultra 仅 Nemotron 3 Ultra 550B A55B 免费版"
-        },
-        {
-          "match": "赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 部分模型 · 限产品内使用 · 仅电脑端 ",
-          "context": "费 ◆ 阶跃星辰 免费 ◆ WorkBuddy 免费 ◆ 七牛云 免费 ◆ 硅基流动 免费 ◆ SoMark 能当 API 用 每天都能领 豆包电脑版每天签到领 200 额度 按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 部分模型 · 限产品内使用 · 仅电脑端 · 需有活动入口 · 11月14日核实 200 额度 去领 适用模型： 按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 在最新版本豆包电脑版或豆包工作电脑版的「免"
-        },
-        {
-          "match": "赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 在最新版本豆包电脑版或豆包工作电脑版的「免",
-          "context": "赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 部分模型 · 限产品内使用 · 仅电脑端 · 需有活动入口 · 11月14日核实 200 额度 去领 适用模型： 按当前豆包套餐使用对应的模型与功能，如豆包 2.1 Turbo；赠送额度不提升会员档位或使用上限，不是开放平台 API 余额 在最新版本豆包电脑版或豆包工作电脑版的「免费用豆包」入口签到，每天领 200 额度，周一翻倍；累计获额达 500、2000、5000 时，分别再送 200、500、1300。官方示例累计签到 30 天可得 8800 额度。两端进度互通，同一账号奖励只发一次；活动赠送额度优先消耗。"
-        },
-        {
-          "match": "赠送额度优先消耗",
-          "context": "豆包工作电脑版的「免费用豆包」入口签到，每天领 200 额度，周一翻倍；累计获额达 500、2000、5000 时，分别再送 200、500、1300。官方示例累计签到 30 天可得 8800 额度。两端进度互通，同一账号奖励只发一次；活动赠送额度优先消耗。 有效期： 每笔发放后 30 天，先到期先消耗 11月14日核实于厂商官方页面 华为果办 OfficeAce 免费版每日登录送 50 积分 果办平台预置模型，如 GLM-5.2 部分模型 · 限产品内使用 · 客户端或微信小程序 · 限时"
+          "context": "11月30日 · 11月18日核实 免费 去用 适用模型： WorkBuddy 内的 Hy4 flash；其他模型及腾讯云 TokenHub 接口不包含在本次限免中 在 WorkBuddy 模型选择器选 Hy4 flash。限免期间每天有免费额度，用完后继续使用消耗积分，额度和刷新时间以产品内显示为准。腾讯云 TokenHub 的 Hy4 flash 接口单独计费。 11月18日核实于厂商官方页面 哔哩哔哩 Index-Translate 免费图文翻译接口 Index-Translate-35B-A3B 文字及"
         },
         {
           "match": "赠送 50 积分",
           "context": "-5.2 部分模型 · 限产品内使用 · 客户端或微信小程序 · 限时活动 · 11月18日核实 50 积分 去领 适用模型： 果办平台预置模型，如 GLM-5.2 个人体验版用户登录并使用果办 OfficeAce 客户端或微信小程序，每天赠送 50 积分。积分可用于在果办中调用平台预置模型。 有效期： 当日有效 11月18日核实于厂商官方页面 华为码道 Skill 创新赛每日签到领 1000 积分 码道内置模型，如 Kimi K3.1 Pro、GLM-5.3-Flash、DeepSeek"
         },
         {
-          "match": "赠送 2000 积分，有效 7 天",
-          "context": "期： 当日领取当日有效 11月15日核实于厂商官方页面 秒悟每天登录领 2000 积分 秒悟提供的语言、图像等模型 所有模型 · 限产品内使用 · 11月16日核实 2000 积分 去领 适用模型： 秒悟提供的语言、图像等模型 每天首次登录赠送 2000 积分，有效 7 天。例如 DeepSeek V4.1 Flash 每千输入 Token 扣 2 积分、每千输出扣 8 积分；输入和输出共同消耗，实际可用量随模型和上下文而变。 有效期： 领取后 7 天 11月16日核实于厂商官方页面 魔搭社区每天送 200"
-        },
-        {
-          "match": "赠送智点用于专家模式任务，可在「设置 → 智点详情」查看每笔到期日",
-          "context": "择内置模型 部分模型 · 限产品内使用 · 11月14日核实 100 智点 去领 适用模型： 灵犀专业版体验版的专家 Pro、Max 模式，由灵犀按任务选择内置模型 在灵犀专业版每日签到领 100 智点，连续签到第 7 天起每天领 200。赠送智点用于专家模式任务，可在「设置 → 智点详情」查看每笔到期日。 有效期： 以领取时页面显示的到期时间为准 11月14日核实于厂商官方页面 每月都能领 Rime 每月 50 美元语音模型额度 所有模型 · 无需绑卡 · 限商业用途 · 限评估和开发 · 年满 18 岁 · 11月20日核实 ≈¥334"
-        },
-        {
           "match": "赠送墨点，具体数量在「科研模型」查看；创建 API Key 后可调用平台模型，多个 Key 共用余额",
           "context": "测试期福利 · 额度以账户为准 · 11月20日核实 免费 去领 适用模型： Token Plan 所有模型，如 DeepSeek-V4.1-Flash-1017、GLM-5.3、Qwen3.8-27B；各模型按当前价格消耗墨点 测试期每月赠送墨点，具体数量在「科研模型」查看；创建 API Key 后可调用平台模型，多个 Key 共用余额。调用按模型当前价格扣点，可在用量查询中查看消耗。 有效期： 开通次日为计费日，按账户月度周期清空 11月20日核实于厂商官方页面 腾讯云 ADP 体验版每月送 15,000 PU ADP 体验版的 Auto 模型，不含自定义模型与专属算力"
         },
         {
-          "match": "新用户 · 邮箱域名限领 · 文档用于训练 · 11月14日核实 ≈¥1002 去领 适用模型： 所有模型",
-          "context": "ic 的预览版本。限免于北京时间 11 月 23 日中午 12 点结束。届时预览版下线，并新增正式付费版。 11月21日核实于厂商官方页面 Reducto 文档解析新户额度 所有模型，包括文档解析 r-1、r-1 mini 所有模型 · 仅新用户 · 邮箱域名限领 · 文档用于训练 · 11月14日核实 ≈¥1002 去领 适用模型： 所有模型，包括文档解析 r-1、r-1 mini 新 Standard 账户获 150 美元，按基础解析价可用 r-1 约 1.5 万页或 r-1 mini 约 15 万页，额外功能另计。邮箱域名此前不能领过免费额度；上传文档会用于模型训练。 有效"
-        },
-        {
           "match": "新用户送 25 美元 AI 额度 Telnyx AI 产品中的所有模型，包括自营 Inference 的 ",
-          "context": "50 美元，按基础解析价可用 r-1 约 1.5 万页或 r-1 mini 约 15 万页，额外功能另计。邮箱域名此前不能领过免费额度；上传文档会用于模型训练。 有效期： 官方未公布赠额有效期 11月14日核实于厂商官方页面 Telnyx 新用户送 25 美元 AI 额度 Telnyx AI 产品中的所有模型，包括自营 Inference 的 DeepSeek V4.1 Flash、GLM-5.3、GLM-5.3 Flash、Kimi K3 等；也会与其他 AI 产品共用这份额度 所有模型 · 无需绑卡 · 升级后改为 5 美元 · 11月14日核实 ≈¥167 去领 适用模型："
+          "context": "认证后，可免费调用 StepAudio 3 Realtime、Chat、Gen、Music 的预览版本。限免于北京时间 11 月 23 日中午 12 点结束。届时预览版下线，并新增正式付费版。 11月23日核实于厂商官方页面 Telnyx 新用户送 25 美元 AI 额度 Telnyx AI 产品中的所有模型，包括自营 Inference 的 DeepSeek V4.1 Flash、GLM-5.3、GLM-5.3 Flash、Kimi K3 等；也会与其他 AI 产品共用这份额度 所有模型 · 无需绑卡 · 升级后改为 5 美元 · 11月22日核实 ≈¥167 去领 适用模型："
         },
         {
           "match": "新用户送 10 美元模型调用额度 所有模型，包括 VModel 的 Talking Photo Turbo",
-          "context": "升级为完整账户后，原 25 美元优惠会被替换为 5 美元通用额度。 相当于 DeepSeek V4.1 Flash 1017 2.7 亿 Token。 有效期： 有效期以账户显示的剩余天数为准 11月14日核实于厂商官方页面 VModel 新用户送 10 美元模型调用额度 所有模型，包括 VModel 的 Talking Photo Turbo 视频生成模型，以及平台的图像、视频和文本模型 所有模型 · 免绑卡 · 余额不足即停 · 11月20日核实 ≈¥67 去领 适用模型： 所有模型，包括 VModel 的 Talking Photo Turbo 视频生成模型，以及平台的图像"
+          "context": "升级为完整账户后，原 25 美元优惠会被替换为 5 美元通用额度。 相当于 DeepSeek V4.1 Flash 1017 2.7 亿 Token。 有效期： 有效期以账户显示的剩余天数为准 11月22日核实于厂商官方页面 VModel 新用户送 10 美元模型调用额度 所有模型，包括 VModel 的 Talking Photo Turbo 视频生成模型，以及平台的图像、视频和文本模型 所有模型 · 免绑卡 · 余额不足即停 · 11月20日核实 ≈¥67 去领 适用模型： 所有模型，包括 VModel 的 Talking Photo Turbo 视频生成模型，以及平台的图像"
+        },
+        {
+          "match": "注册送 10 美元，网页和模型接口共用余额",
+          "context": "的图像、视频和文本模型 所有模型 · 免绑卡 · 余额不足即停 · 11月20日核实 ≈¥67 去领 适用模型： 所有模型，包括 VModel 的 Talking Photo Turbo 视频生成模型，以及平台的图像、视频和文本模型 新账号注册送 10 美元，网页和模型接口共用余额。按 VModel 自家的 Talking Photo Turbo 公布价，每秒 0.002 美元，约可生成 5000 秒视频。余额不足时服务暂停，续用需手动充值。 有效期： 赠金有效期以账户显示为准 11月20日核实于厂商官方页面 超算互"
+        },
+        {
+          "match": "新用户领 1 亿 Token 首期默认 GLM-5.3-Flash；实际发放型号可能调整，以到账为准 部分",
+          "context": "VModel 自家的 Talking Photo Turbo 公布价，每秒 0.002 美元，约可生成 5000 秒视频。余额不足时服务暂停，续用需手动充值。 有效期： 赠金有效期以账户显示为准 11月20日核实于厂商官方页面 超算互联网新用户领 1 亿 Token 首期默认 GLM-5.3-Flash；实际发放型号可能调整，以到账为准 部分模型 · 要实名 · 客户端领取 · 每日限量 · 用完扣现金余额 · 到 12月31日 · 11月14日核实 ≈¥60 去领 适用模型： 首期默认 GLM-5.3-Flash；实际发放型号可能调整，以到账为准 活动期间首次注册的新用户，在"
+        },
+        {
+          "match": "新用户，在 SCNet 客户端「新人专享」入口领取，每个新账号限领一次",
+          "context": "为准 部分模型 · 要实名 · 客户端领取 · 每日限量 · 用完扣现金余额 · 到 12月31日 · 11月14日核实 ≈¥60 去领 适用模型： 首期默认 GLM-5.3-Flash；实际发放型号可能调整，以到账为准 活动期间首次注册的新用户，在 SCNet 客户端「新人专享」入口领取，每个新账号限领一次。赠送额度优先消耗，用完后自动扣减现金余额。 有效期： 到账后 30 天 11月14日核实于厂商官方页面 Drex 新人 5 美元模型调用额度 所有模型：Drex 决策系列（含 Max v1.1、Max Finance、2.0）、文档理解与"
+        },
+        {
+          "match": "赠送额度优先消耗，用完后自动扣减现金余额",
+          "context": "余额 · 到 12月31日 · 11月14日核实 ≈¥60 去领 适用模型： 首期默认 GLM-5.3-Flash；实际发放型号可能调整，以到账为准 活动期间首次注册的新用户，在 SCNet 客户端「新人专享」入口领取，每个新账号限领一次。赠送额度优先消耗，用完后自动扣减现金余额。 有效期： 到账后 30 天 11月14日核实于厂商官方页面 Drex 新人 5 美元模型调用额度 所有模型：Drex 决策系列（含 Max v1.1、Max Finance、2.0）、文档理解与 Drex Search，共用账户余额 所"
+        },
+        {
+          "match": "新用户 · 名额有限 · 11月22日核实 ¥25 去领 适用模型： 星图模型调用，活动列出 DeepSe",
+          "context": "14 天 11月17日核实于厂商官方页面 UCloud 星图新客领 25 元算力金 星图模型调用，活动列出 DeepSeek、通义千问、Kimi、智谱 GLM、MiniMax 等系列，具体抵扣范围以兑换页为准 部分模型 · 要实名 · 限新用户 · 名额有限 · 11月22日核实 ¥25 去领 适用模型： 星图模型调用，活动列出 DeepSeek、通义千问、Kimi、智谱 GLM、MiniMax 等系列，具体抵扣范围以兑换页为准 新客实名后领取星力卡，每人限领、限兑一张。卡密发到注册邮箱，在星图兑换后抵扣模型调用费。名额先到先得，超出可用额度按平台价格计费。 相当于 DeepS"
+        },
+        {
+          "match": "新用户送 20 元代金券 千帆平台所有模型，如 DeepSeek V4.1、GLM-5.3 所有模型 · ",
+          "context": "到注册邮箱，在星图兑换后抵扣模型调用费。名额先到先得，超出可用额度按平台价格计费。 相当于 DeepSeek V4.1 Flash 1017 4072 万 Token。 有效期： 以星力卡兑换页为准 11月22日核实于厂商官方页面 百度千帆新用户送 20 元代金券 千帆平台所有模型，如 DeepSeek V4.1、GLM-5.3 所有模型 · 要实名 · 到 11月30日 · 11月19日核实 ¥20 去领 适用模型： 千帆平台所有模型，如 DeepSeek V4.1、GLM-5.3 首次注册百度千帆并完成实名认证后，可获得 20 元代金券，用于千帆平台的模型调用。 相当于 GL"
+        },
+        {
+          "match": "新用户领 30 天免费体验 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作能力，如豆包 2.1 Tu",
+          "context": "实时推理，Batch、调优、部署、存储和套餐专属 Key 不使用这份额度。旧额度仍可用至耗尽或到期。用完后按量收费，可开启「免费额度用完即停」。 有效期： 自开通、模型发布或获批较晚日起 90 天 11月21日核实于厂商官方页面 豆包电脑版新用户领 30 天免费体验 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作能力，如豆包 2.1 Turbo；不含生视频、Pro 模型，也不是开放平台 API 余额 部分模型 · 限产品内使用 · 仅电脑端 · 不含 Pro · 不含视频生成 · 11月21日核实 免费 去领 适用模型： 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作"
+        },
+        {
+          "match": "新用户下载并登录豆包电脑版或豆包工作电脑版，在体验套餐弹窗领取",
+          "context": "· 仅电脑端 · 不含 Pro · 不含视频生成 · 11月21日核实 免费 去领 适用模型： 豆包电脑版和豆包工作电脑版里的非 Pro 模型与工作能力，如豆包 2.1 Turbo；不含生视频、Pro 模型，也不是开放平台 API 余额 新用户下载并登录豆包电脑版或豆包工作电脑版，在体验套餐弹窗领取。可用于工作任务、PPT、表格、文档和代码等；这份体验权益不等于线上标准套餐。 有效期： 领取后 30 天 11月21日核实于厂商官方页面 华为码道 Skill 创新赛报名领 2000 积分 码道内置模型，如 Kimi K3.1 Pro、G"
+        },
+        {
+          "match": "新用户另赠 3000 积分",
+          "context": "1 Pro、GLM-5.3-Flash、DeepSeek V4.1 Flash；自接模型 API 费用另计 面向具备应用软件开发能力的个人、学生和组织。完成赛事报名后，在码道 IDE 或网页端“活动福利”手动领取；报名后首次开通并登录码道的新用户另赠 3000 积分。企业参赛需企业认证。积分仅抵码道内置模型调用，不能当通用 API 余额；旧 Token 套餐需先切换为积分套餐。 有效期： 积分有效至 12 月 26 日 23:59:59 11月20日核实于厂商官方页面 火山方舟新用户 4 款豆包模型各"
+        },
+        {
+          "match": "新用户 4 款豆包模型各送 50 万 Token Doubao-Seed-2.1-pro、Doubao-S",
+          "context": "用户另赠 3000 积分。企业参赛需企业认证。积分仅抵码道内置模型调用，不能当通用 API 余额；旧 Token 套餐需先切换为积分套餐。 有效期： 积分有效至 12 月 26 日 23:59:59 11月20日核实于厂商官方页面 火山方舟新用户 4 款豆包模型各送 50 万 Token Doubao-Seed-2.1-pro、Doubao-Seed-2.1-turbo、Doubao-Seed-Evolving 和 Doubao-Seed-Character，每款各 50 万 Token 部分模型 · 仅在线推理 · 不含插件和存储 · 11月14日核实 50 万 Token 去"
         }
       ]
     },
