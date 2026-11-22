@@ -10,13 +10,13 @@
 - 内容：DeepSeek 官方高峰价：Flash ¥2/8，V4-Pro ¥9/27（每百万输入/输出）
 - 规则：仅未命中缓存输入按此输入价计费，空闲时段按高峰价一半计费
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## DeepSeek｜price_low
 - 内容：DeepSeek Flash 和 V4-Pro 空闲时段五折
 - 规则：北京时间工作日 9:00–12:00、14:00–18:00 为高峰，法定节假日按空闲
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## Kimi 开放平台｜注册赠送
 - 内容：Kimi API 新用户实名认证后领 ¥15 代金券，三个月有效
@@ -57,7 +57,7 @@
 - 内容：API-Inference 每日 2000 次免费调用：当前 38 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
@@ -69,12 +69,12 @@
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## 共绩算力｜hardware_bundle
 - 内容：共绩算力个人开发者计划提供 ¥50 体验积分，可申请最高 ¥1,500 的算力支持
@@ -97,7 +97,7 @@
 - 内容：:free 模型 11 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、liquid/lfm-3-1.7b:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## NVIDIA NIM｜长期免费
 - 内容：NVIDIA API Catalog 免费原型推理：按账号速率限流；Nemotron Lightning 普通与流式已实测
@@ -119,7 +119,7 @@
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## Google AI Studio｜长期免费
 - 内容：Gemini API 有指定模型免费档
@@ -137,13 +137,13 @@
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## Azure for Students｜学生通道
 - 内容：Azure 学生计划含 $100 额度，有效期 12 个月，无需绑卡
 - 规则：面向符合资格的全日制高校学生，仍符合资格可续期；个别服务另审
 - 链接：https://azure.microsoft.com/en-us/free/students
-- 状态：已验证（核验时间 2026-11-21T17:42:09Z）
+- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
@@ -173,7 +173,7 @@
 - 内容：DeepSeek Flash 缓存命中输入每百万 ¥0.04，空闲时段 ¥0.02
 - 规则：仅缓存命中的输入可用此价，普通输入和输出另计
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## Kimi 开放平台｜限时活动
 - 内容：Kimi API 文件上传和内容抽取限时免费
@@ -391,7 +391,7 @@
 - 内容：Qoder CN 体验版含 2 周 Pro 试用和 300 Credits
 - 规则：IDE、CLI、QoderWork 等使用同一 Credits 体系，试用额度以账户为准
 - 链接：https://developer.aliyun.com/article/1757180
-- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
+- 状态：待复核（核验时间 2026-11-19T17:59:43Z）
 
 ## Qoder CN（阿里）｜套餐订阅
 - 内容：Qoder CN Pro ¥59/月含 2,000 Credits，Pro+ ¥169/月含 6,000 Credits
@@ -891,67 +891,67 @@
 - 内容：AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等几十项免费额度；另有 Always Free 长期项（Lambda 100 万次/月等）
 - 规则：750 小时/月仅首 12 个月（新账号）；超额计费需绑卡——设好预算告警（Billing→Budgets）防扣费
 - 链接：https://aws.amazon.com/free/
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Google Cloud｜长期免费
 - 内容：Google Cloud 免费层：e2-micro VM 永久免费（美国区，30G 磁盘）+ 30G 出网/月+新用户 $300/90 天试用金全服务可用
 - 规则：e2-micro 限美国指定区域（oregon/iowa/s. carolina）；外网 IP 算出网流量（30G/月内免费）；需绑卡但永久免费项不扣费
 - 链接：https://cloud.google.com/free/
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## GitHub Codespaces｜长期免费
 - 内容：GitHub Codespaces 云开发环境：个人免费 120 core-hours/月+15G 存储/月（2 核机=60 小时/月，4 核机=30 小时/月），浏览器即开即用
 - 规则：个人账号每月 120 core-hours+15G 存储；Pro 账号额度更高（180 core-hours）；停止的 codespace 30 天后自动删除
 - 链接：https://github.com/features/codespaces
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Hugging Face Spaces｜长期免费
 - 内容：Hugging Face Spaces 免费应用托管：2 vCPU/16G 内存容器永久免费（公开应用），Gradio/Streamlit/Docker 三种模板，AI demo 秒上线
 - 规则：免费档=公开应用（私有需付费档）；8G 磁盘；闲置重启策略；升级 CPU Basic $0.03/h
 - 链接：https://huggingface.co/spaces
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Modal｜长期免费
 - 内容：Modal 云函数平台 Starter 档：**每月白送 $30 compute credits**（GPU/CPU 均可用，月月刷新）+ 1TiB/月免费出网 + 3 席位 + 100 容器并发——AI 推理/批处理白嫖首选
 - 规则：Starter 档 \$0/月+\$30 credits 月月刷新（用不完不结转）；GPU（A10G/A100/H100）均可用 credits 支付；超量按秒计费
 - 链接：https://modal.com/pricing
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## e2b｜长期免费
 - 内容：e2b Agent 沙盒 Hobby 档免费：10 个沙盒并发、无需绑卡，给 AI Agent 的安全云沙箱（代码执行/浏览器/文件系统），已启动 2B+ 沙盒
 - 规则：Hobby 档免费含 10 沙盒并发+磁盘 10GiB；无需信用卡；升级 Pro \$150/月（20 沙盒）
 - 链接：https://e2b.dev/pricing
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Daytona｜限时活动
 - 内容：Daytona（Agent 沙盒平台）初创扶持：**最高 \$50,000 credits** 免费领（Startups 计划，自助申请）；平台按秒计费无需绑卡的免费试用另可开
 - 规则：Startups 计划自助申请领 credits（最高 \$50k）；免费试用无需绑卡；按秒计费用完即止
 - 链接：https://daytona.io/pricing
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Replit｜长期免费
 - 内容：Replit 云端 IDE Free Mode：30 小时 AI Agent 对话/月+60 个项目+**\$20 模型抵用金**（更强模型可用）+无限工作区
 - 规则：Free Mode 30h AI 对话/月（30 天滚动）；\$20 模型抵用金用于高级模型；Core \$25/月升 \$100 抵用金
 - 链接：https://replit.com/pricing
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Today AI｜注册赠送
 - 内容：Today AI 中国版（todayai.cn）：注册即送 **3 亿 Token + 3 个月 Pro 会员**，到期回落永久免费基础版；内置 DeepSeek V4.1 Flash（1 倍额度耗 3 亿）与 GLM 5.3（4 倍额度），主打主动记忆+24 小时云电脑
 - 规则：注册即送到账；Pro 期 3 个月后回落基础版（永久免费）；GLM 5.3 消耗 4 倍额度省着用
 - 链接：https://todayai.cn
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Google｜warning
 - 内容：⚠️ 羊毛消失警示：Gemini Code Assist 个人免费版（每月 18 万次代码补全+240 次 chat/天）**2026-10-09 起弃用**，IDE 扩展与 Gemini CLI 个人账号需迁移 Antigravity——免费补全羊毛通道关闭
 - 规则：个人（Gmail）账号 IDE 扩展/CLI 已弃用，迁移 Antigravity 系列；企业版不受影响
 - 链接：https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Cloudflare Workers｜长期免费
 - 内容：Cloudflare Workers 免费层：**10 万次请求/天**（每次 CPU 10ms）+静态托管 Pages 不限请求+ Workers KV/DO 有限额度——全球边缘节点部署 AI API 代理/轻应用白嫖
 - 规则：免费档 10 万请求/天+CPU 每请求 10ms（重计算不适合，轻代理/API 网关够用）；Pages 静态托管不限请求；Workers KV 10 万读/天
 - 链接：https://workers.cloudflare.com
-- 状态：已验证（核验时间 2026-11-07T00:00:00Z）
+- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## WorkBuddy 国内版｜coupon
 - 内容：WorkBuddy 邀请有礼：经邀请链接注册并登录桌面端，邀请双方均可获积分奖励（具体档位以活动页实领为准，与每日 100 积分/公测 5000 Credits 可叠加）
@@ -1131,7 +1131,7 @@
 - 内容：秒悟 Meoo：新人首月 5,000 积分，每日首次登录再领 2,000
 - 规则：免费版可领；首月赠额只计一次。积分与生图、视频等服务共享，文本用量随模型变化。
 - 链接：https://meoo.com/
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## ACE Music｜长期活动
 - 内容：ACE Music 每天 **20 积分，最多生成 10 首歌**（ACE Music v1/v1.1 Preview/ACE-Step v1.5 全模型）
@@ -1203,7 +1203,7 @@
 - 内容：ElevenLabs 免费档每月含 10,000 credits，可体验语音生成等功能。
 - 规则：文本转语音的免费档适用于个人非商业用途，需署名；每个产品的额度消耗按官方定价表计。
 - 链接：https://elevenlabs.io
-- 状态：已验证（核验时间 2026-11-16T17:15:17Z）
+- 状态：待复核（核验时间 2026-11-16T17:15:17Z）
 
 ## Zed｜学生通道
 - 内容：通过学生资格核验后，Zed 学生计划连续 12 个月每月含 $10 AI Token Credits。
@@ -1299,25 +1299,25 @@
 - 内容：DeepSeek 模型触发的搜索、网页抓取不再单收费；独立 Search/Fetch API 仍为 ¥5/千次成功请求
 - 规则：2026-11-18 12:00（北京时间）起生效；工具结果仍计入模型上下文，按 Token 收费。此口径仅针对 DeepSeek 官方直连。
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing/
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## Qoder 国际版｜price_low
 - 内容：Qoder 夜间 Qwen3.8-Max / Flash 四折扣积分：Max 0.2×、Flash 0.04×
 - 规则：每日 14:00–00:00 UTC，即北京时间 22:00–次日 08:00，含周末；需 Pro 试用或受支持订阅，自动生效，尚未公布结束日。
 - 链接：https://docs.qoder.com/events/offpeakrate
-- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
 
 ## Qoder 国际版｜限时活动
 - 内容：Qoder Ultimate 错峰二折：2× 降至 0.4×，第二期至 11 月 30 日 08:00（北京时间）
 - 规则：每日北京时间 22:00–次日 08:00，需 Pro 试用或受支持订阅；最后窗口为 11 月 29 日 22:00 至 30 日 08:00。
 - 链接：https://docs.qoder.com/events/offpeakrate
-- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
 
 ## Qoder 国际版｜免费模型
 - 内容：Qoder Efficient 档限时不扣 Credits，付费用户及仍有积分的 Pro 试用用户可用
 - 规则：手动选择 Efficient（0.3×→0×）；高峰可能限流。自动子任务调用的其他具体模型仍收费，Service Account 不参加。结束日待公告。
 - 链接：https://docs.qoder.com/events/efficientunlimited
-- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
 
 ## 腾讯云 TokenHub｜情报
 - 内容：腾讯 TokenHub 原厂 DeepSeek 搜索/抓取另收费：API ¥5/千次，个人/企业 TokenPlan 为 100/500 积分/千次
