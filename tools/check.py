@@ -155,8 +155,18 @@ for d in deals:
         try:
             datetime.date.fromisoformat(d["featured_until"])
             assert d.get("type") == "pricing_plan" and d.get("quota_paid") is True
-            assert offer["currency"] == "USD" and offer["price"] > 0 and offer["monthly_usage_limit"] > 0
-            assert offer["limit_until"] == d["featured_until"]
+            assert offer["currency"] == "USD" and offer["price"] > 0
+            multiplier = offer.get("usage_multiplier", [])
+            assert (offer.get("monthly_usage_limit", 0) > 0
+                    or (len(multiplier) == 2 and all(isinstance(n, (int, float)) and n > 0 for n in multiplier)
+                        and multiplier[1] >= multiplier[0]))
+            if offer.get("limit_until"):
+                datetime.date.fromisoformat(offer["limit_until"])
+                assert offer["limit_until"] <= d["featured_until"]
+            if offer.get("intro_price"):
+                assert 0 < offer["intro_price"] <= offer["price"]
+            if "featured_rank" in d:
+                assert isinstance(d["featured_rank"], int) and d["featured_rank"] > 0
             assert offer["model"] and d.get("sources")
         except (KeyError, ValueError, TypeError, AssertionError):
             errors.append(f"{d['id']} 补贴推荐缺少有效截止日、订阅门槛或模型用量上限")

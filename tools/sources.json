@@ -973,6 +973,15 @@
     "freellmapi-router"
    ],
    "auto_verify": false
+  },
+  {
+   "id": "cline-pass-official",
+   "type": "watch",
+   "url": "https://cline.bot/cline-pass",
+   "deals": [
+    "cline-pass-deepseek"
+   ],
+   "auto_verify": false
   }
  ]
 }

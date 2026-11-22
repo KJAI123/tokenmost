@@ -555,11 +555,11 @@
 - 链接：https://help.aliyun.com/zh/lingma/
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
-## Cline｜price_low
-- 内容：Cline Pass 订阅 $9.99/月，含 13 个开源模型托管额度（Kimi K3、DeepSeek V4 Pro 等，官方倍率 2-5 倍）；DeepSeek V4.1 Flash 社区实测首月可跑约 60-70 亿 tokens（折合约 ¥0.002/百万，全网最低一档）
-- 规则：首月 8 折优惠码在公众号「神秘喵星人」后台获取；OpenAI 兼容 Key 可拎出单独使用；60-70 亿为社区实测口径非官方承诺
-- 链接：https://cline.bot/
-- 状态：待复核（核验时间 2026-10-28T01:30:00Z）
+## Cline｜套餐订阅
+- 内容：ClinePass：$9.99/月，官方标示 2–5 倍用量，含 GLM、Kimi、DeepSeek 等模型
+- 规则：需付费订阅，可能另收支付处理费。实际额度以账户为准，官方未给固定 Token 总量；API Key 可接其他编程工具，取消后可用至订阅期末。
+- 链接：https://cline.bot/cline-pass
+- 状态：已验证（核验时间 2026-11-22T05:33:16Z）
 
 ## Cline｜长期免费
 - 内容：Cline 个人开源扩展可免费使用，自带 API Key 或选择 Cline 模型服务
@@ -571,7 +571,7 @@
 - 内容：OpenCode Go：$10/月，GLM-5.3 限时最高 $500 模型月用量；Go Plus $40/月对应 $1,000，提额至 11 月 22 日
 - 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享百分比额度，不能叠加。5小时20%，每周50%；请求数是估计，Extra Usage开启后超额会扣余额。
 - 链接：https://opencode.ai/console/go
-- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
+- 状态：已验证（核验时间 2026-11-22T05:33:16Z）
 
 ## OpenCode｜长期免费
 - 内容：OpenCode 限时免费型号含 DeepSeek V4.1 Flash、MiMo V2.6 Flash、LongCat 2.5 等；GLM-5.3-Flash Free 已于 11/18 下线
@@ -983,11 +983,11 @@
 - 链接：https://s.qiniu.com/EnYbIb
 - 状态：已验证（核验时间 2026-11-08T00:00:00Z）
 
-## OpenDesign Cloud｜coupon
-- 内容：首订双方各得 1 张重置卡 · Go 首月 $8，续费 $10/月
-- 规则：注册后 48 小时内首次付费订阅。Go 使用 DeepSeek V4.1 Flash Eco，每月等值用量最高 $220。重置卡付款 48 小时后发放，30 天有效。
-- 链接：https://open-design.ai/cloud/r/T_AUpaq9bCDO
-- 状态：待复核（核验时间 2026-11-16T18:15:18Z）
+## OpenDesign｜套餐订阅
+- 内容：OpenDesign Go：首月 $8，续费 $10/月，Coding Plan 月度用量最高 $220
+- 规则：月付首月 $8，之后 $10/月。Go 的 Coding Plan 月度用量最高 $220，按所选模型消耗；API 与客户端共用额度，不含 Top Models 额度。
+- 链接：https://go.open-design.ai/
+- 状态：已验证（核验时间 2026-11-22T05:33:16Z）
 
 ## OpenDesign｜长期免费
 - 内容：OpenDesign 开源设计工作台：**Claude Design 的开源免费替代**（Apache 协议），本地优先；用你自己的 coding agent 生成原型/落地页/数据看板/Slides/HTML 视频，可接 Gemini CLI 免费额度实现零成本 AI 设计

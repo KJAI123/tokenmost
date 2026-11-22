@@ -21,6 +21,24 @@ for(const lang of ['zh-CN','en']){
   setInterval:(fn,ms)=>{timers.push({fn,ms});return timers.length;},clearTimeout(){},setTimeout:()=>0};
  vm.runInNewContext(scripts+'\nmodule.exports={math:TokenMath,workbench:Workbench};',sandbox);
  const {math,workbench:wb}=sandbox.module.exports;
+ const catalogue=JSON.parse(fs.readFileSync(path.join(root,'deals.json')));
+ const later=clock;clock='2026-11-22T12:00:00+08:00';
+ const featured=wb.featuredDeals(catalogue,new Date(clock));
+ assert.deepEqual(Array.from(featured,d=>d.id),['opendesign-reset-card-invite','opencode-go-deepseek','cline-pass-deepseek']);
+ const extra={...featured[0],id:'fourth-paid-plan',provider:'Fourth',group:'Fourth',featured_rank:4};
+ const duplicate={...featured[0],id:'duplicate-plan',featured_rank:5};
+ assert.deepEqual(Array.from(wb.featuredDeals([extra,duplicate,...catalogue],new Date(clock)),d=>d.id),Array.from(featured,d=>d.id),'Pin at most three distinct platforms, in editorial order.');
+ assert.equal(wb.isFeatured({...featured[0],verify_status:'stale'},new Date(clock)),false);
+ assert.equal(wb.isFeatured({...featured[0],quota_paid:false},new Date(clock)),false);
+ assert.deepEqual(Array.from(wb.featuredDeals(catalogue,new Date('2026-11-23T00:00:00+08:00')),d=>d.id),['opendesign-reset-card-invite','cline-pass-deepseek'],'Expired boost leaves the recommendations.');
+ assert.equal(wb.featuredDeals(catalogue,new Date('2026-11-30T00:00:00+08:00')).length,0);
+ assert.equal(math.catalogue(featured).total.typical,0,'Paid recommendations do not enter the free ledger.');
+ assert.match(wb.subscriptionCell(featured[0]),lang==='en'?/\$8 first mo/:/\$8 首月/);
+ assert.match(wb.subscriptionCell(featured[0]),/\$10/);
+ assert.match(wb.subscriptionCell(featured[2]),/2–5/);
+ assert.equal(featured[2].subscription_offer.monthly_usage_limit,undefined,'A multiplier is not an invented dollar cap.');
+ assert.doesNotMatch(wb.timing(featured[0]),/2026-11-29/,'Editorial review date is not an offer expiry.');
+ clock=later;
  assert.equal(math.quota(deal).total,50000);
  assert.match(math.cell(deal),lang==='en'?/Claimed pack total/:/已领礼包总量/);
  const grouped=math.cell(deal,{...math.quota(deal),total:999999});
@@ -41,4 +59,4 @@ for(const lang of ['zh-CN','en']){
  assert.equal(rendered,1,'Deadline transition refreshes existing open pages.');
  assert.equal(newsRefreshes,1);assert.equal(newsItems.textContent,lang==='en'?'No updates yet':'暂无更新','Expired pack leaves fallback news.');
 }
-console.log('Claim-window checks passed: scope labels, totals/API separation, exact cutoff and open-page/news refresh in both languages.');
+console.log('Claim-window and featured checks passed: scope labels, paid isolation, capped ordering, expiry and both languages.');

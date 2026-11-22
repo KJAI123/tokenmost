@@ -173,25 +173,41 @@ const Workbench = (() => {
   function isFeatured(deal, now = new Date()) {
     const date = beijingDay(now);
     const offer = deal.subscription_offer;
+    const range = offer?.usage_multiplier;
+    const hasUsage = offer?.monthly_usage_limit > 0
+      || (Array.isArray(range) && range.length === 2 && range.every(n=>Number.isFinite(n)&&n>0) && range[1]>=range[0]);
     return deal.published !== false && deal.verify_status === 'verified'
       && deal.type === 'pricing_plan' && deal.quota_paid === true
       && /^\d{4}-\d{2}-\d{2}$/.test(deal.featured_until || '') && deal.featured_until >= date
-      && offer?.currency === 'USD' && offer.price > 0 && offer.monthly_usage_limit > 0
-      && offer.limit_until === deal.featured_until;
+      && TokenMath.phase(deal, now) !== 'expired' && TokenMath.phase(deal, now) !== 'upcoming'
+      && offer?.currency === 'USD' && offer.price > 0 && hasUsage
+      && (!offer.limit_until || (/^\d{4}-\d{2}-\d{2}$/.test(offer.limit_until) && offer.limit_until >= date));
   }
 
-  function featuredHeading() {
+  function featuredDeals(deals, now = new Date()) {
+    const seen = new Set();
+    return deals.filter(d=>isFeatured(d,now)).sort((a,b)=>(a.featured_rank||99)-(b.featured_rank||99))
+      .filter(d=>{const key=d.group||d.provider;if(seen.has(key))return false;seen.add(key);return true;}).slice(0,3);
+  }
+
+  function featuredHeading(count) {
     return '<div class="layer-head featured-heading">'+icon('bookmark')+'<h3>'
       +msg('补贴推荐 · 付费', 'Featured subsidy · paid')+'</h3><p>'
-      +msg('限时提额，查看套餐门槛', 'Limited-time boost; subscription required')+'</p></div>';
+      +msg('精选补贴套餐，需付费订阅', 'Selected subsidized plans; subscription required')+'</p>'
+      +'<span class="layer-count">'+esc(count)+msg(' 个推荐',' picks')+'</span></div>';
   }
 
   function subscriptionCell(deal) {
     if (!isFeatured(deal)) return '';
     const offer = deal.subscription_offer;
-    return '<span class="quota-value"><span class="num">$'+esc(offer.price)+msg('/月','/mo')+'</span>'
-      +'<span class="unit">'+esc(offer.model)+'</span><span class="unit quota-native">$'
-      +esc(offer.monthly_usage_limit.toLocaleString(locale))+msg(' 模型月用量上限',' model usage/mo cap')+'</span></span>';
+    const price = offer.intro_price || offer.price;
+    const usage = offer.monthly_usage_limit > 0
+      ? '$'+offer.monthly_usage_limit.toLocaleString(locale)+msg(' 月用量上限',' monthly usage cap')
+      : msg('官方 ', 'Official ')+offer.usage_multiplier.join('–')+msg(' 倍用量','× usage');
+    return '<span class="quota-value"><span class="num">$'+esc(price)
+      +msg(offer.intro_price?' 首月':'/月',offer.intro_price?' first mo':'/mo')+'</span>'
+      +(offer.intro_price?'<span class="unit">'+msg('续费 $','Then $')+esc(offer.price)+msg('/月','/mo')+'</span>':'')
+      +'<span class="unit">'+esc(offer.model)+'</span><span class="unit quota-native">'+esc(usage)+'</span></span>';
   }
   let featuredDay = beijingDay(new Date());
   setInterval(() => {
@@ -204,7 +220,9 @@ const Workbench = (() => {
   function timing(d) {
     const formatInstant = value => new Intl.DateTimeFormat(locale,{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(value))+msg(' 北京时间',' GMT+8');
     if (TokenMath.phase(d) === 'upcoming') return '<span class="offer-timing" title="'+esc(d.starts_at)+'">'+esc(formatInstant(d.starts_at))+msg(' 开始',' starts')+'</span>';
-    if (isFeatured(d)) return '<span class="offer-deadline">'+msg('提额至 ', 'Boost until ')+esc(d.featured_until)+'</span>';
+    if (isFeatured(d)) return d.subscription_offer.limit_until
+      ? '<span class="offer-deadline">'+msg('提额至 ', 'Boost until ')+esc(d.subscription_offer.limit_until)+'</span>'
+      : '<span class="offer-timing">'+msg('月度订阅','Monthly subscription')+'</span>';
     if (d.deadline && !String(d.deadline).startsWith('长期')) {
       const date = String(d.deadline);
       return '<span class="offer-deadline" title="' + esc(date) + '">'
@@ -402,5 +420,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredHeading, subscriptionCell, timing, freshness, claimLabel, claimNotice, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredDeals, featuredHeading, subscriptionCell, timing, freshness, claimLabel, claimNotice, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();
