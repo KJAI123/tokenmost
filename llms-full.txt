@@ -57,7 +57,7 @@
 - 内容：API-Inference 每日 2000 次免费调用：当前 38 款模型（deepseek-ai/DeepSeek-V4-Flash-0731、deepseek-ai/DeepSeek-V4-Pro、deepseek-ai/DeepSeek-V4-Pro-0813 等），OpenAI 兼容端点
 - 规则：需注册+实名/绑阿里云；北京时间 0 点重置；模型清单可 GET /v1/models 实时查看
 - 链接：https://modelscope.cn
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## 国家超算互联网 SCNet｜限时活动
 - 内容：「用户体验官」免费领 Qwen3-235B + MiniMax-M2.5 各 500 万 tokens（至 2027.01）；OpenClaw 一键部署入口 scnet.cn/ui/chatbot/openclaw
@@ -69,12 +69,12 @@
 - 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
 - 规则：认证有效期 1 年，折扣以网站实时价格为准
 - 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## 恒源云｜注册赠送
 - 内容：邀请得 20 元/人 + 被邀者再得 10 元（与现金 1:1 无门槛抵扣）；每日签到得元宝无限换代金券，学生邀请不时翻倍
 - 链接：https://gpushare.com/docs/free_ride/coupon
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## 共绩算力｜hardware_bundle
 - 内容：共绩算力个人开发者计划提供 ¥50 体验积分，可申请最高 ¥1,500 的算力支持
@@ -97,7 +97,7 @@
 - 内容：:free 模型 11 个（inclusionai/ling-3.2-flash:free、baidu/ernie-5.5-flash-preview:free、liquid/lfm-3-1.7b:free 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天
 - 规则：免费档 20 RPM；余量可查 GET /api/v1/key 的 free_model_daily_requests
 - 链接：https://openrouter.ai/models?max_price=0
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## NVIDIA NIM｜长期免费
 - 内容：NVIDIA API Catalog 免费原型推理：按账号速率限流；Nemotron Lightning 普通与流式已实测
@@ -119,7 +119,7 @@
 ## DMXAPI｜price_low
 - 内容：OpenAI 等官方价格 7 折、1 美元 ≈ 5 元、1 美元起充
 - 链接：https://dmxapi.com/shouye.html
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## Google AI Studio｜长期免费
 - 内容：Gemini API 有指定模型免费档
@@ -137,13 +137,13 @@
 - 内容：Copilot 学生免费（含 AI 额度）+ Azure $100/12 个月（年年可续，含 Azure OpenAI）+ Microsoft 365 Copilot + Notion AI 教育版
 - 规则：GitHub 学生认证；OpenAI/Mistral/Cohere 独立额度已不在 Pack 内；⚠️ 2026 预警：Copilot Pro/Pro+/Student 新注册已官方暂停（现有学生也被削减模型选择），Copilot Free 仍可注册；学生包其余权益(Azure $100 等)不受影响
 - 链接：https://education.github.com/pack
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## Azure for Students｜学生通道
 - 内容：Azure 学生计划含 $100 额度，有效期 12 个月，无需绑卡
 - 规则：面向符合资格的全日制高校学生，仍符合资格可续期；个别服务另审
 - 链接：https://azure.microsoft.com/en-us/free/students
-- 状态：已验证（核验时间 2026-11-22T02:24:41Z）
+- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
 
 ## Groq｜长期免费
 - 内容：免费 tier：openai/gpt-oss-120b、qwen3.8-27b 等 30 RPM / 1000 请求每日 / 8K TPM，LPU 推理极快
@@ -571,13 +571,13 @@
 - 内容：OpenCode Go：$10/月，GLM-5.3 限时最高 $500 模型月用量；Go Plus $40/月对应 $1,000，提额至 11 月 22 日
 - 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享百分比额度，不能叠加。5小时20%，每周50%；请求数是估计，Extra Usage开启后超额会扣余额。
 - 链接：https://opencode.ai/console/go
-- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
 
 ## OpenCode｜长期免费
 - 内容：OpenCode 限时免费型号含 DeepSeek V4.1 Flash、MiMo V2.6 Flash、LongCat 2.5 等；GLM-5.3-Flash Free 已于 11/18 下线
 - 规则：免费聊天型号要求使用 OpenCode；其他客户端需付费模型或 Go。LongCat 2.5 限 100 请求/日，免费清单和地区资格会调整。
 - 链接：https://opencode.ai/docs/console/models/#pricing
-- 状态：已验证（核验时间 2026-11-19T16:15:17Z）
+- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
 
 ## Qoder｜免费模型
 - 内容：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）
@@ -1173,7 +1173,7 @@
 - 内容：Drex：注册赠 $5，满一个月起每月再赠 $5；约 1.67 亿输入 Tokens／$5
 - 规则：非临时邮箱；Google 登录、满30天 GitHub 或验卡三选一。注册送额3个月有效；月赠不结转，首月只计注册 $5。
 - 链接：https://www.nace.ai/developers
-- 状态：已验证（核验时间 2026-11-20T06:00:00Z）
+- 状态：待复核（核验时间 2026-11-20T06:00:00Z）
 
 ## LiveKit Inference｜长期活动
 - 内容：LiveKit Build 免费档每月含 $2.50 推理额度，由 LiveKit Inference 模型共享。
