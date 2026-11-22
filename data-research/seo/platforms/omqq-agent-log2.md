@@ -94,3 +94,26 @@
 
 - 清场 → `scrollTo(0,0)` → 标题（activeElement 校验）→ 正文逐行 insertText+Enter(vk13) → 终检（links=0/植入词/标题在框/pm 段落逐字比对）→ 预检发布按钮 → 点发布 → `location.href` 跳 articleManage + 列表验「加工中/全平台分发」。
 - 正文 9 段逐行输入无粘连，段落 `children.length` 会比实际段落数多 1（尾部空段落来自最后一个 Enter），比对时按非空段落算。
+
+---
+
+# 11-23《笔记软件免费方案：Obsidian 三件套搭配》— 发布成功
+
+## 结果
+
+**发布成功。** 稿件 `data-research/seo/omqq-daily/o5-open-source-note.md`（Obsidian 三件套免费组合，纯文本零植入）已提交，内容管理列表显示「共 6 条内容 / 图文 / **加工中** / 手工发文 / 全平台分发 / 修改于 2026-11-23 06:51:00」。发布前终检：links=0、植入词扫描 tokenmost/http/www./.com/.cn 全 0 命中、正文 12 段与稿件逐字一致（编辑器计数 570 字）、标题 23 字在框。正文自带三处【核实日期：2026-11-20】标记按「与稿件逐字一致」原样进正文，渲染无异常。截图 `/tmp/om5-01-main.png` … `/tmp/om5-12-published-list.png`（关键：om5-05 声明已应用、om5-07 标题入框、om5-08 正文 12 段、om5-09 发布前终检、om5-12 发布成功列表）。
+
+## 登录态与额度
+
+- 9223 今日重启、cookie 全量迁移：无 om.qq.com 标签，`Tab.connect(new_url='https://om.qq.com/main')` 直落 /main 未跳 userAuth——迁移后的登录态有效。
+- 今日（11-23）本任务提交 1 篇。另有另一任务线的《海外仓退货到手…》已于今晨 04:52:47 发布（已发布态，账号内容总数因此为 6）——正是本轮清场的 editorCache 孤儿稿（存档 `/tmp/om5-leftover-draft.txt`），它已从别处发出，清场无损失。
+
+## 本轮新踩的坑（补充到 SOP）
+
+1. **声明弹窗其实还在，「无弹窗」只是「随缓存在位」的特例**：11-22 的缓存带了 chip 所以直接在位；本轮缓存未带声明，`#articlePublish-selfDeclaration` 表单组里是虚线按钮「**添加内容自主声明**」，点击弹出「发布内容自主声明」弹窗（10 个 `label.omui-radio` 单选项：无需标注/该文章由AI生成/AI辅助创作/个人观点/虚构演绎/转载/营销广告/健康医疗/危险行为/事件可考证）。选「该文章由AI生成」→ 弹窗体 `scrollTop=scrollHeight`（558/504，确认按钮在折叠区）→ elementFromPoint 预检命中 `BUTTON.omui-button--primary` → 确认，表单组变「作者声明：该文章由AI生成」。**进编辑器先看声明组是 chip 还是添加按钮，两条路径都要会走。**
+2. **PM 清场时点击 focus 会被视口裁剪带偏**：正文 focus 过后 PM 顶边 y 为负，`Math.max(rc.y+60,10)` 把点击点夹到 y=10 落在吸顶工具栏，select_all 全选落在错误元素、Backspace 没删到（正文残留 701 字）。可靠做法：直接 `pm.focus()`（JS，已验 `activeElement===pm`）再 select_all+Backspace，一次干净。
+3. 编辑器计数器口径：本轮正文 textContent 617 vs 计数器 570（计数器不吃空格/标记外字符），与 11-19 的 701/673 同口径，字数核查以计数器为准。
+
+## 复用要点（增量）
+
+- 全流程：connect 验登录（`location.href`）→ 开 /main/creation/article → 查正文字数计数器，非 0 先存档再清场（pm.focus() 路径）→ 声明（chip 在位跳过 / 添加按钮走弹窗）→ `scrollTo(0,0)`+elementFromPoint+activeElement 三步标题 → pm.focus() 后逐行 insertText+Enter(vk13) → 终检（links/植入词/逐字比对/计数器）→ 发布按钮 scrollIntoView+预检+RPA → `location.href` 判 articleManage → 列表验「加工中/手工发文/全平台分发」。
