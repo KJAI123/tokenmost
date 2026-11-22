@@ -5,6 +5,7 @@
   platform/<slug>.html —— 每平台一页（title/desc/JSON-LD/FAQ/h1 全套，承接长尾词）
   llms.txt / llms-full.txt —— AI 搜索（ChatGPT/Perplexity）站点地图
 """
+from urllib.parse import quote
 import json, html, re
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
@@ -25,11 +26,11 @@ TPL = """<!DOCTYPE html>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="https://tokenmost.com/platform/{slug}.html">
+<link rel="canonical" href="https://tokenmost.com/platform/{slug_enc}.html">
 <meta property="og:title" content="{title} — tokenmost">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://tokenmost.com/platform/{slug}.html">
+<meta property="og:url" content="https://tokenmost.com/platform/{slug_enc}.html">
 {robots}<meta property="og:image" content="https://tokenmost.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -150,11 +151,11 @@ COLL_TPL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="https://tokenmost.com/{slug}.html">
+<link rel="canonical" href="https://tokenmost.com/{slug_enc}.html">
 <meta property="og:title" content="{title} — tokenmost">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://tokenmost.com/{slug}.html">
+<meta property="og:url" content="https://tokenmost.com/{slug_enc}.html">
 <meta property="og:image" content="https://tokenmost.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -250,7 +251,7 @@ def main():
                                              "acceptedAnswer": {"@type": "Answer", "text": it["a"]}} for it in faq_items]},
                             ensure_ascii=False)
         robots_meta = '<meta name="robots" content="noindex,follow">\n' if (verified == 0 and len(ds) < 3) else ''
-        page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, h1=h1, robots=robots_meta,
+        page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, slug_enc=quote(slug), h1=h1, robots=robots_meta,
                           updated=today, layer=layer, n=len(ds), intro=intro,
                           metric="额度按官方单位列出" if application_only else "原始余额 + 仅输入预算" if input_budget else "原始额度 + 有依据的 Token 折算 / 购买力参考",
                           offers_heading="申请计划" if application_only else "🎁 当前可领额度与羊毛",
@@ -332,7 +333,7 @@ def main():
                           ("免绑卡的免费 VPS 靠谱吗？", "免卡/免费/长期可用是三个独立条件，适合练手不适合业务。"),
                           ("怎么 0 元搭一套服务？", "免费域名+Cloudflare+免费算力机+cloud-mail 邮箱，全链路 0 元。")]]},
                            ensure_ascii=False)
-        page = COLL_TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug,
+        page = COLL_TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, slug_enc=quote(slug),
                                h1=esc_quote(h1), intro=intro, n=n, rows=rows, faq=faq,
                                ld_item=ld_item, ld_faq=ld_faq, updated=today)
         (ROOT / (slug + ".html")).write_text(page, encoding="utf-8")
@@ -349,8 +350,9 @@ def main():
     urls += [("https://tokenmost.com/llms.txt", today, "daily", "0.5"),
              ("https://tokenmost.com/llms-full.txt", today, "daily", "0.5"),
              ("https://tokenmost.com/rss.xml", today, "daily", "0.6")]
+    _SAFE = ':/?&='
     for loc, mod, freq, pri in urls:
-        sm.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{mod}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>")
+        sm.append(f"  <url>\n    <loc>{quote(loc, safe=_SAFE)}</loc>\n    <lastmod>{mod}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>")
     sm.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n", encoding="utf-8")
 
