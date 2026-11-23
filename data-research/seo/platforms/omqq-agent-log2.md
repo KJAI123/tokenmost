@@ -117,3 +117,23 @@
 ## 复用要点（增量）
 
 - 全流程：connect 验登录（`location.href`）→ 开 /main/creation/article → 查正文字数计数器，非 0 先存档再清场（pm.focus() 路径）→ 声明（chip 在位跳过 / 添加按钮走弹窗）→ `scrollTo(0,0)`+elementFromPoint+activeElement 三步标题 → pm.focus() 后逐行 insertText+Enter(vk13) → 终检（links/植入词/逐字比对/计数器）→ 发布按钮 scrollIntoView+预检+RPA → `location.href` 判 articleManage → 列表验「加工中/手工发文/全平台分发」。
+
+---
+
+# 11-24《免费 HTTPS 证书怎么续：Let's Encrypt 三个月续期自动化》— 登录态丢失，未发布
+
+## 结果
+
+**未发布（登录阻断）。** 目标稿件 `data-research/seo/omqq-daily/o6-free-cert.md`（Let's Encrypt 90 天证书续期自动化，纯文本体零植入，标题 37 字 / 正文 7 段 850 字，植入词扫描 tokenmost/http://https://www./.com/.cn 全 0 命中）。9223 上 om.qq.com 登录态失效，按本轮指令「勿要求老板重复扫码」直接跳过，未走任何恢复流程。今日额度未消耗（0 篇提交），稿件未进任何平台，未做 git。
+
+## 过程与判定依据
+
+1. 9223 CDP 存活，但无 om.qq.com 标签（现存的 3 个 page 是 csdn 线 + about:blank）。`Tab.connect(new_url='https://om.qq.com/main')` 落地 `om.qq.com/userAuth/index`「登录-腾讯内容开放平台」，符合 11-21 同款失效形态。
+2. 复核证据：再次导航 /main 仍跳 userAuth（排除首跳时序假阴性）；浏览器级 `Storage.getCookies` 全量 161 条，`om.qq.com` 域下仅 `ts_uid / ts_refer / wxky` 3 条埋点 cookie——**无任何会话 cookie**（qq.com 泛域 27 条、weixin 18 条均为其他腾讯域残留，救不了 om.qq.com 的登录）。
+3. 截图留档 `/tmp/om6-01-entry.png`（userAuth 落地页）、`/tmp/om6-02-login-check.png`（复核后同页）。登录页标签留在 9223 未关，后续恢复可直接续用。
+
+## 恢复后接续清单（给下一轮执行者）
+
+- 登录恢复：om.qq.com → 勾协议 → 微信登录 → 老板手机微信扫码（与 11-21 流程一致）。
+- 稿件就绪零改动：《免费 HTTPS 证书怎么续：Let's Encrypt 三个月续期自动化》，标题 37 字（5-64 合规，含空格），正文 7 段 850 字纯文本，无链接无 Markdown 无植入词。注意稿件头注释的建议发布窗口是 **2026-11-26（周四）上午 10:00-12:00**——今天（11-24）本就早于窗口，恢复登录后在 11-26 窗口内发布即可，无需改稿。
+- 发布路径照 11-23 复用要点全流程走：进编辑器先查正文字数计数器（非 0 先存档 /tmp/ 再清场）→ 声明组看 chip 还是「添加内容自主声明」虚线按钮（后者走弹窗 10 选项选「该文章由AI生成」，弹窗体滚到底 + elementFromPoint 预检确认钮）→ 三步标题 → 逐行 insertText+Enter(vk13) → 终检 → 发布验 articleManage 列表「加工中/全平台分发」。
