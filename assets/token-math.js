@@ -179,7 +179,7 @@ const TokenMath = (() => {
   // Catalogue scale is broader than the verified ledger. Keep its three
   // components visible; estimates never promote an offer's source status.
   function catalogue(deals, now, settings = estimateSettings) {
-    const regular = deals.filter(d=>free(d) && d.gate !== 'student' && d.type !== 'student' && phase(d,now) === 'active');
+    const regular = deals.filter(d=>free(d) && d.gate !== 'student' && d.type !== 'student' && phase(d,now) === 'active' && (!d.calendar_window?.observed_through || today(now)<=d.calendar_window.observed_through));
     const verified = sum(regular.filter(d=>d.verify_status === 'verified'),now);
     const pending = sum(regular.filter(d=>d.verify_status !== 'verified'),now);
     const estimates = estimateMany(regular,now,settings);
@@ -188,11 +188,49 @@ const TokenMath = (() => {
     const rows = regular.map(deal=>({deal,quota:quota(deal,now)})).filter(row=>row.quota.total>0);
     return {verified,pending,estimates,total,unquantified,rows};
   }
+  // Only dated evidence can describe a past month. An undated offer page
+  // establishes availability through the observation day, never future dates.
+  function calendarLedger(deals, now = new Date(), month = today(now).slice(0,7)) {
+    const monthStart = Date.parse(month+'-01T00:00:00+08:00');
+    const next = new Date(month+'-01T00:00:00Z');
+    next.setUTCMonth(next.getUTCMonth()+1);
+    const monthEnd = next.getTime()-8*3600000;
+    const dateIndex = t=>Math.floor((t+8*3600000)/864e5);
+    const windows = (from,to)=>to>from ? dateIndex(to-1)-dateIndex(from)+1 : 0;
+    const pools = new Map();
+    for (const deal of deals) {
+      const term = deal.calendar_window;
+      if (!term) continue;
+      const from = Math.max(monthStart,Date.parse(term.start));
+      const through = term.observed_through ? Date.parse(term.observed_through+'T00:00:00+08:00')+864e5 : Date.parse(deal.deadline);
+      const to = Math.min(monthEnd,through);
+      const days = windows(from,to);
+      if (!days) continue;
+      const remainingDays = windows(Math.max(now.getTime(),from),to);
+      entries(deal).forEach((q,i)=>{
+        const rate = rawTokens(q)/10000;
+        if (!rate || !['once','daily'].includes(q.period)) return;
+        const personal = term.scope === 'personal';
+        const key = (personal?'account:':'public:')+(q.pool || deal.id+':'+i);
+        const value = rate*(q.period==='daily'?days:1);
+        const remaining = personal || !remainingDays ? 0 : rate*(q.period==='daily'?remainingDays:1);
+        const row = {deal,q,term,days,remainingDays,value,remaining,personal};
+        const previous = pools.get(key);
+        if (!previous || value>previous.value || value===previous.value && remaining>previous.remaining) pools.set(key,row);
+      });
+    }
+    const rows = [...pools.values()].sort((a,b)=>b.value-a.value);
+    const publicRows = rows.filter(r=>!r.personal);
+    const total = publicRows.reduce((n,r)=>n+r.value,0);
+    const remaining = publicRows.reduce((n,r)=>n+r.remaining,0);
+    const carryIn = publicRows.reduce((n,r)=>n+(r.q.period==='once' && Date.parse(r.term.start)<monthStart ? r.value : 0),0);
+    return {month,carryIn,rows:publicRows,personal:rows.filter(r=>r.personal),total,remaining};
+  }
   // All internal totals use ten-thousand tokens, just like quota() and format().
   function monthlyLedger(deals, now = new Date(), settings = estimateSettings) {
     const eligible = deals.filter(d => free(d) && d.verify_status === 'verified'
       && d.gate !== 'student' && d.type !== 'student' && d.type !== 'paid_discount'
-      && phase(d,now) === 'active');
+      && phase(d,now) === 'active' && (!d.calendar_window?.observed_through || today(now)<=d.calendar_window.observed_through));
     const pools = new Map();
     for (const deal of eligible) {
       entries(deal).forEach((q,index) => {
@@ -324,6 +362,6 @@ const TokenMath = (() => {
     return {tokens,cny};
   }
   return {rates,sources,format,entries,nativeSummary,rawTokens,equivalent,native,phase,quota,sum,free,explain,cell,allowance,
-    estimate,estimates,estimateMany,catalogue,monthlyLedger,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
+    estimate,estimates,estimateMany,catalogue,monthlyLedger,calendarLedger,today,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
 })();
 if (typeof module !== 'undefined') module.exports = TokenMath;

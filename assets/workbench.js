@@ -263,7 +263,8 @@ const Workbench = (() => {
   let timedSignature = null;
   function refreshTimedOffers() {
     if (typeof DEALS === 'undefined' || !DEALS.length) return;
-    const next = DEALS.filter(d=>d.starts_at || /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '')).map(d=>d.id+':'+TokenMath.phase(d)).join('|');
+    const localDay = new Date(Date.now()+8*3600000).toISOString().slice(0,10);
+    const next = localDay+'|'+DEALS.filter(d=>d.starts_at || /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '')).map(d=>d.id+':'+TokenMath.phase(d)).join('|');
     if (next === timedSignature) return;
     const initialized = timedSignature !== null;
     timedSignature = next;

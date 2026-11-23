@@ -239,3 +239,23 @@ assert.equal(clockRun.status,0,clockRun.stderr||clockRun.stdout);
 const claimRun=spawnSync(process.execPath,['tools/test_claim_window.js'],{cwd:root,encoding:'utf8'});
 assert.equal(claimRun.status,0,claimRun.stderr||claimRun.stdout);
 console.log('Token conversion and daily-estimate checks passed: formulas, scenarios, settings, pool deduplication, billing separation, JS/Python parity and timestamp boundaries.');
+
+// Calendar records survive expiry, while the current-month remainder loses each elapsed day.
+const november = at => math.calendarLedger(deals,new Date('2026-11-'+at+'+08:00'));
+for (const [time,remaining] of [['01T12:00:00',443000],['23T21:00:00',185000],['24T00:00:00',75000],['29T23:59:00',20000],['30T23:58:59',10000],['30T23:59:00',0]]) {
+  const c=november(time);
+  near(c.total,443000); near(c.remaining,remaining); near(c.carryIn,8000);
+  assert.deepEqual(c.personal.map(r=>r.value),[50000]);
+  assert(c.personal.every(r=>!r.remaining));
+}
+const december=new Date('2026-11-30T16:00:00Z');
+near(math.calendarLedger(deals,december).total,0);
+near(math.calendarLedger(deals,december,'2026-11').total,443000);
+near(math.calendarLedger(deals,december,'2026-11').remaining,0);
+const iFlytek=byId['xfyun-spark-x26-nov17'];
+near(math.monthlyLedger([iFlytek],current).firstClaim,100000);
+near(math.monthlyLedger([iFlytek],new Date('2026-11-24T00:00:00+08:00')).firstClaim,0);
+const duplicate={...iFlytek,id:'alternate-source'};
+near(math.calendarLedger([iFlytek,duplicate],current).total,100000);
+assert.equal(math.calendarLedger([byId['openai-api-data-sharing-tokens']],current).total,0);
+assert.equal(bailian.token_quota.length,56);

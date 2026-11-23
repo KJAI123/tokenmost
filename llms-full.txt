@@ -258,10 +258,10 @@
 - 状态：待复核（核验时间 2026-11-16T17:58:50Z）
 
 ## 阿里云百炼｜注册赠送
-- 内容：百炼北京地域新人额度，已逐项核到 26 款文本模型各 100 万 Token
-- 规则：须实名，逐模型使用，90 天有效。主子账号共享，请开启「免费额度用完即停」。
+- 内容：百炼北京新户 56 款模型各 100 万 Token，含 26 款文本和 30 款专用模型
+- 规则：实名新户，主子账号共享。逐模型使用，语音、视觉、向量等专用额仅适用对应模型。有效期以各行说明及控制台为准，建议开启「免费额度用完即停」。
 - 链接：https://help.aliyun.com/zh/model-studio/new-free-quota
-- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+- 状态：已验证（核验时间 2026-11-23T13:14:12Z）
 
 ## 阿里云百炼｜免费模型
 - 内容：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）
@@ -465,12 +465,6 @@
 - 内容：Grok Code 现状：API注册赠送维持停发（未见复出新礼）；免费/低价用法已迁移至 X Subscription 池（Ultra $200 含Grok Bot+50×用量，Plus $8 仅Grok模型）；X免费档仅严格限额体验
 - 规则：底册「xAI赠送停发」结论维持；独立API羊毛预期删除，改挂X Subscription口径
 - 链接：https://x.ai/news/x-subscription
-- 状态：待复核（核验时间 2026-10-27T00:00:00Z）
-
-## 讯飞星辰 MaaS｜限时活动
-- 内容：【二次攻坚·确认在线】1024 活动：注册+个人实名认证（秒过、免人脸免身份证上传）→ 首页「星火X2.6的活动」→ 创建 API → 领 10 亿 tokens（Spark-X2.6 额度）
-- 规则：⚠️ 领取弹窗上方有勾选框：勾选=免费额度用完自动转按量计费，务必取消勾选再确认；实测消耗极快（作者不到一天用完）；有效期未见官方原文（知乎口径31天，中）；Base URL https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions，Key 形如 ak-xxx；可接 workbuddy（AI 自行配置自定义模型）
-- 链接：https://maas.xfyun.cn
 - 状态：待复核（核验时间 2026-10-27T00:00:00Z）
 
 ## 智谱 BigModel｜warning
@@ -1409,4 +1403,16 @@
 - 规则：免绑卡。按 1 倍模型 gpt-oss-120b 折合 30 天 3000 万原始 Token，其他倍率依所选模型而变。每账号试用一次。
 - 链接：https://regolo.ai/pricing/
 - 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+
+## 讯飞星辰 MaaS｜限时活动
+- 内容：讯飞星火 X2.6 注册礼 10 亿 Token，每账号按一份计
+- 规则：11/17 开始，11/23 官网仍列「注册即享」10 亿。先在领取页核对资格、库存与用完后的计费设置，结束时间未公布。
+- 链接：https://www.xfyun.cn/activities/promotion
+- 状态：已验证（核验时间 2026-11-23T13:14:12Z）
+
+## OpenAI｜长期免费
+- 内容：API 数据共享组织每日免费 Token，按组织档位与模型组计算
+- 规则：仅限符合资格且有正余额的组织。所有者须自愿共享 API 输入与输出，两个模型组各自共池，每天 00:00 UTC 重置。跨过限额的请求可能整笔收费。
+- 链接：https://help.openai.com/en/articles/10306912-sharing-feedback-evaluation-and-fine-tuning-data-and-api-inputs-and-outputs-with-openai
+- 状态：已验证（核验时间 2026-11-23T13:14:12Z）
 
