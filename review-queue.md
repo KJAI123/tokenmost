@@ -13,7 +13,7 @@
 - **待复核** `dify-selfhost`（Dify 自部署）：源 dify-pricing 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-billing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `siliconflow-referral`（硅基流动）：源 siliconflow-referral 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `aihubmix-free`（AIHubMix）：源 aihubmix-pricing 页面于 2026-11-21 变更（连续 3 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-ai-studio`（Google AI Studio）：源 gemini-pricing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-student`（Google AI Studio）：源 gemini-students 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -30,7 +30,7 @@
 - **待复核** `deep-bailian-newuser-quota`（阿里云百炼）：源 bailian-quota 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-bailian-limited-free`（阿里云百炼）：现行官方表未找到原条目所列全部模型和区域的限免口径，逐模型查官方活动与价格。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-copilot-ai-credits`（GitHub Copilot）：源 copilot-plans 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-volc-collab-reward`（火山方舟）：源 ark-collab 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-volc-collab-reward`（火山方舟）：源 ark-collab 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-volc-free-quota`（火山方舟）：源 ark-freequota 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xunfei-coding-plan`（讯飞星辰 MaaS）：源 xfyun-coding-plan 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xunfei-39-crash`（讯飞星辰 MaaS）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -53,6 +53,8 @@
 - **待复核** `deep-kimi-k25-offline-r6`（Kimi（月之暗面））：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-xfyun-spark-freepack-r6`（讯飞开放平台）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-grok-codefast-r6`（xAI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-zhipu-trialplan-r7`（ZCode）：源 zcode-trial-configuration 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `opencode-go-deepseek`（OpenCode）：源 opencode-go-terms 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `opencode-zen-free`（OpenCode）：源 opencode-free-pricing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `doubao-daily-quota`（豆包）：源 doubao-current-campaign 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zhipu-pinhaomo`（智谱 BigModel）：源 zhipu-promotion 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -89,6 +91,10 @@
 - **待复核** `today-ai-free`（Today AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `gemini-code-assist-individuals-sunsets`（Google）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `cf-workers-free`（Cloudflare Workers）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `perplexity-education-pro`（Perplexity）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `amd-token-factory`（AMD Token Factory）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `qiniu-invite-3m`（七牛云）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `opendesign-free`（OpenDesign）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `freepi-terminal-free`（free-pi）：源 quota-review-fc936a6181 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `miao-wu-daily-2000`（秒悟）：源 meoo-official-pricing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `officeace-daily-100`（华为果办 OfficeAce）：源 quota-review-99b6e53c88 页面于 2026-11-20 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -100,10 +106,10 @@
 - **待复核** `cloudflare-workers-ai-free`（Cloudflare Workers AI）：源 cloudflare-ai-free-policy 页面于 2026-11-19 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `vercel-ai-gateway-free-credits`（Vercel AI Gateway）：源 vercel-gateway-free-policy 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `atlassian-rovo-dev-free`（Atlassian Rovo Dev）：源 quota-review-992d4df445 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `google-antigravity-cli-free`（Google Antigravity CLI）：源 antigravity-cli-plans 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `google-antigravity-cli-free`（Google Antigravity CLI）：源 antigravity-cli-plans 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deepseek-server-search-billing`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qoder-qwen-offpeak-discount`（Qoder 国际版）：源 qoder-offpeak-discounts 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qoder-ultimate-offpeak-november`（Qoder 国际版）：源 qoder-offpeak-discounts 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qoder-efficient-zero-credits`（Qoder 国际版）：源 qoder-efficient-zero-credits 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `electronhub-free-weekly`（Electron Hub）：源 electronhub-free-policy 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 60 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `linuxdo-rss`：连续 61 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
