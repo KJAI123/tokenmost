@@ -247,6 +247,7 @@ const Workbench = (() => {
   }
 
   function claimLabel(deal) {
+    if (deal.type === 'paid_discount') return requiresApplication(deal) ? msg('查看申请', 'View application') : msg('查看价格', 'View pricing');
     if (deal.claim_status !== 'window_unconfirmed') return '';
     return TokenMath.phase(deal) === 'expired' ? msg('查看历史', 'View history') : msg('查看入口', 'View entry');
   }

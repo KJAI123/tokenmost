@@ -3,7 +3,16 @@ const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
-const deal=JSON.parse(fs.readFileSync(path.join(root,'deals.json'))).find(d=>d.id==='zcode-weekend-5yi-1120');
+const liveCatalogue=JSON.parse(fs.readFileSync(path.join(root,'deals.json')));
+const liveDeal=liveCatalogue.find(d=>d.id==='zcode-weekend-5yi-1120');
+// Historical time-travel cases use their verified snapshot state; current
+// automation may already have expired the pack or marked a promotion stale.
+const deal={...liveDeal,verify_status:'verified'};
+const actualMath=require('../assets/token-math.js');
+if(new Date(liveDeal.deadline).getTime()<=Date.now()){
+ assert.equal(actualMath.quota(liveDeal,new Date()).total,0);
+ assert.equal(actualMath.phase(liveDeal,new Date()),'expired');
+}
 assert.equal(deal.claim_status,'window_unconfirmed');
 assert.equal(deal.api_via,'client_only');
 assert.equal(deal.token_quota[0].model,'GLM-5.3-Flash');
@@ -21,7 +30,10 @@ for(const lang of ['zh-CN','en']){
   setInterval:(fn,ms)=>{timers.push({fn,ms});return timers.length;},clearTimeout(){},setTimeout:()=>0};
  vm.runInNewContext(scripts+'\nmodule.exports={math:TokenMath,workbench:Workbench};',sandbox);
  const {math,workbench:wb}=sandbox.module.exports;
- const catalogue=JSON.parse(fs.readFileSync(path.join(root,'deals.json')));
+ const historicFeaturedIds=new Set(['opendesign-reset-card-invite','opencode-go-deepseek','cline-pass-deepseek']);
+ const catalogue=liveCatalogue.map(d=>historicFeaturedIds.has(d.id)?{...d,verify_status:'verified'}:d);
+ const currentFeatured=wb.featuredDeals(liveCatalogue,new Date());
+ assert.ok(currentFeatured.every(d=>d.verify_status==='verified'&&wb.isFeatured(d,new Date())),'Current recommendations never restore stale or expired data.');
  const later=clock;clock='2026-11-22T12:00:00+08:00';
  const featured=wb.featuredDeals(catalogue,new Date(clock));
  assert.deepEqual(Array.from(featured,d=>d.id),['opendesign-reset-card-invite','opencode-go-deepseek','cline-pass-deepseek']);

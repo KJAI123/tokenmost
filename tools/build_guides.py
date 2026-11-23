@@ -14,17 +14,14 @@ TEMPLATE = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{title} — tokenmost 攻略</title>
 <meta name="description" content="{desc}">
-<meta property="og:title" content="{title} — tokenmost">
+<meta property="og:title" content="{title} — tokenmost 攻略">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://tokenmost.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://tokenmost.com/og-image.png">
 <link rel="canonical" href="https://tokenmost.com/guides/{gid}.html">
-<meta property="og:title" content="{title} — tokenmost 攻略">
 <meta property="og:description" content="{desc}">
-<meta property="og:type" content="article">
 <meta property="og:url" content="https://tokenmost.com/guides/{gid}.html">
-<meta name="twitter:card" content="summary">
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{desc}","url":"https://tokenmost.com/guides/{gid}.html","inLanguage":"zh-CN","publisher":{{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}}}
 </script>

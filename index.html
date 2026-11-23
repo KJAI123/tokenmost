@@ -21,7 +21,6 @@
 <meta property="og:title" content="tokenmost.com — AI 大模型免费额度与折扣码情报站">
 <meta property="og:description" content="只关注免费 · 花 1 分钱买 token 都是原罪。五层来源每日核验，统一 DS Flash 等效计量，白嫖总账一目了然。">
 <meta property="og:locale" content="zh_CN">
-<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tokenmost.com — AI 大模型免费额度与折扣码情报站">
 <meta name="twitter:description" content="五层来源每日核验 · 统一 DS Flash 等效计量 · 用量比价器 · 10 篇领取攻略">
 <link rel="alternate" type="application/rss+xml" title="tokenmost 情报流" href="https://tokenmost.com/rss.xml">
@@ -33,8 +32,6 @@
 </script>
 <meta name="theme-color" content="#eef6ff">
 <link rel="manifest" href="manifest.webmanifest">
-<meta property="og:title" content="TokenMost — AI token 折扣情报与导航">
-<meta property="og:description" content="折扣码一键复制 · 每日人工核验 · 账号本地托管">
 <link rel="icon" type="image/svg+xml" href="assets/tokenmost-mark.svg?v=20261117-5">
 <style>
 /* ============ 设计系统（frontend-design skill 纪律） ============
@@ -615,15 +612,15 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p class="sub">领完羊毛，复制即用 —— 从免费额度到跑通第一条 API</p>
   <div class="api-tabs"></div>
   <div class="api-field">
-    <label>Base URL（OpenAI 兼容端点）</label>
+    <label for="apiBase">Base URL（OpenAI 兼容端点）</label>
     <input id="apiBase" spellcheck="false">
   </div>
   <div class="api-field">
-    <label>模型名</label>
+    <label for="apiModel">模型名</label>
     <input id="apiModel" spellcheck="false">
   </div>
   <div class="api-field">
-    <label>KEY 环境变量名（建议 export 到终端，别写死在代码里）</label>
+    <label for="apiEnv">KEY 环境变量名（建议 export 到终端，别写死在代码里）</label>
     <input id="apiEnv" spellcheck="false">
   </div>
   <div class="snippet-wrap">
@@ -656,7 +653,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <label style="font-size:.78rem;color:var(--muted)"><input id="calcOffpeak" type="checkbox"> 走错峰空闲价</label>
   </div>
   <div class="tabs" id="calcFilters" style="margin-bottom:12px"></div>
-  <div style="overflow-x:auto"><table class="price" id="calcTable"></table></div>
+  <div style="overflow-x:auto"><table class="price" id="calcTable"><caption style="text-align:left;color:var(--muted);font-size:.75rem">各模型 30 天用量比价</caption><thead><tr><th scope="col">模型</th><th scope="col">输入/百万</th><th scope="col">输出/百万</th><th scope="col">30 天费用</th><th scope="col">可抵扣参考</th><th scope="col">净月成本</th><th scope="col">vs DeepSeek</th></tr></thead></table></div>
   <p class="calc-note" id="calcSummary"></p>
   <p class="calc-note">每日输入/输出 × 30 天。仅已核验且适用该模型的 API 原始额度抵扣费用；购买力参考、客户端奖励和其他模型的免费额度不直接抵扣。USD/CNY 固定参考汇率 7.2。</p>
 </div>
@@ -699,7 +696,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div class="calc-inputs" style="margin-top:14px">
     <label>预算（元，先花免费层再花它）<br><input id="sumBudget" type="number" min="0" step="10" value="100"></label>
   </div>
-  <div style="overflow-x:auto"><table class="price" id="sumTable"></table></div>
+  <div style="overflow-x:auto"><table class="price" id="sumTable"><caption style="text-align:left;color:var(--muted);font-size:.75rem">同预算下各买法可得 token 对照</caption><thead><tr><th scope="col">买法（同预算 token 最多）</th><th scope="col">综合单价*</th><th scope="col">该预算可得</th></tr></thead></table></div>
   <p class="calc-note" id="sumNote"></p>
 </div>
 <!-- ============ Coding Plan 量化对照 ============ -->
@@ -709,7 +706,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <h3>⌨️ Coding Plan 量化对照（包月 vs 按量）</h3>
   <p class="sub">各家编程订阅套餐折算成 tokens/月 与 ¥/百万 token，与最低按量价同台比价</p>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap"><label style="font-size:.85rem">我的月预算 ¥<input id="planBudget" type="number" min="0" step="10" value="30" style="width:90px;margin-left:6px;padding:4px 8px;border:1px solid var(--border);border-radius:8px"></label><div id="planBudgetOut" style="flex:1;min-width:0"></div></div><div id="planHero"></div>
-  <div style="overflow-x:auto"><table class="price" id="planTable"></table></div>
+  <div style="overflow-x:auto"><table class="price" id="planTable"><caption style="text-align:left;color:var(--muted);font-size:.75rem">Coding Plan 包月与按量比价</caption><thead><tr><th scope="col">套餐</th><th scope="col">月价</th><th scope="col">官方额度口径</th><th scope="col">折算 tokens/月</th><th scope="col">折合 ¥/百万</th><th scope="col">vs 最低按量</th></tr></thead></table></div>
   <p class="calc-note" id="planNote"></p>
 </div>
 <!-- ============ 共享码小窗 / 供码 / 登录 ============ -->
@@ -734,9 +731,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <h3 id="authTitle">登录</h3>
   <p class="sub">手机号 + 密码。登录后可托管折扣码、查看复制次数。账号仅用于标识贡献者。</p>
   <div class="mini-form">
-    <label>手机号</label>
+    <label for="auPhone">手机号</label>
     <input id="auPhone" placeholder="138xxxxxxxx" maxlength="11" autocomplete="off">
-    <label>密码（≥6 位）</label>
+    <label for="auPass">密码（≥6 位）</label>
     <input id="auPass" type="password" placeholder="••••••" autocomplete="off">
     <button id="auGo">登录</button>
     <p class="auth-switch" id="authSwitch"></p>
@@ -751,15 +748,15 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p style="font-size:.78rem;color:var(--muted)">本地浏览器存储 · 不上传任何服务器</p>
   <div class="vault-warn">⚠️ 此面板只存账号备注/额度/到期与（选填）API Key，<b>不存密码</b>。Key 仅保存在<b>你本地浏览器</b>、只用于在你浏览器里直连查余额，<b>绝不上传</b>；密码请交给浏览器密码管理器，登录点「直达」一键填充。</div>
   <div class="vault-form">
-    <label>平台</label>
+    <label for="v-site">平台</label>
     <select id="v-site"></select>
-    <label>手机号 / 邮箱（新号快速入库，仅备注用）</label>
+    <label for="v-account">手机号 / 邮箱（新号快速入库，仅备注用）</label>
     <input id="v-account" placeholder="138xxxxxxxx / xxx@qq.com" autocomplete="off">
-    <label>额度备注</label>
+    <label for="v-note">额度备注</label>
     <textarea id="v-note" rows="2" placeholder="剩余 200 万 token / 已领新手礼"></textarea>
-    <label>额度/会员到期日（可选）</label>
+    <label for="v-exp">额度/会员到期日（可选）</label>
     <input id="v-exp" type="date">
-    <label>API Key（选填 · 仅存本地，用于浏览器直连查余额，绝不上传）</label>
+    <label for="v-key">API Key（选填 · 仅存本地，用于浏览器直连查余额，绝不上传）</label>
     <input id="v-key" type="password" placeholder="sk-…（可留空）" autocomplete="off">
     <button id="v-add">＋ 添加托管</button>
   </div>
@@ -827,7 +824,7 @@ const LAYER={
  reseller:{name:'Token 中间商',color:'#bc8cff'},
  official_global:{name:'大模型官方（海外）',color:'#8b949e'},freecloud:{name:'云服务器羊毛',color:'#e05a6d'},intel_source:{name:'情报源',color:'#98a2b3'}
 };
-const TYPE={signup_bonus:'注册赠送',free_tier:'长期免费',coupon:'折扣码',student:'学生通道',limited_promo:'限时活动',price_low:'长期低价',free_model:'免费模型',pricing_plan:'套餐订阅',recurring_promo:'长期活动',warning:'避雷',tool_integration:'工具接入',invite_bonus:'邀请奖励',subscription_bonus:'订阅赠送',info:'情报'};
+const TYPE={paid_discount:'付费折扣',signup_bonus:'注册赠送',free_tier:'长期免费',coupon:'折扣码',student:'学生通道',limited_promo:'限时活动',price_low:'长期低价',free_model:'免费模型',pricing_plan:'套餐订阅',recurring_promo:'长期活动',warning:'避雷',tool_integration:'工具接入',invite_bonus:'邀请奖励',subscription_bonus:'订阅赠送',info:'情报'};
 const VKEY='tm_vault_v1',CKEY='tm_claimed_v1';
 let SITES=[],DEALS=[],claimedSet=new Set(),curCat='all',curQ='',curType='';
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
@@ -958,7 +955,7 @@ function render(){
   if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
   let list=DEALS.filter(d=>d.published!==false&&d.category!=='freecloud');
   claimedSet=getClaimed();
-  const PAID=new Set(['price_low','pricing_plan']);
+  const PAID=new Set(['price_low','pricing_plan','paid_discount']);
   if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
   else if(curCat==='warn'){list=list.filter(d=>d.type==='warning'||TokenMath.phase(d)==='expired');}
   else{
@@ -1067,7 +1064,7 @@ function render(){
     }).catch(function(){});
   }
 }
-const PAID_TYPES=new Set(['price_low','pricing_plan']);
+const PAID_TYPES=new Set(['price_low','pricing_plan','paid_discount']);
 function stats(){
   const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&TokenMath.phase(d)!=='expired'&&!PAID_TYPES.has(d.type)&&d.type!=='warning');
   document.getElementById('n-deals').textContent=live.length;
@@ -1227,15 +1224,15 @@ function openSub(provider){
   if(!auth)return authOpen();
   const names=[...new Set(SITES.flatMap(g=>g.sites).map(s=>s.name))];
   document.getElementById('subForm').innerHTML=`
-    <label>平台</label>
+    <label for="sf-provider">平台</label>
     <select id="sf-provider">${names.map(n=>`<option ${n===provider?'selected':''}>${esc(n)}</option>`).join('')}</select>
-    <label>类型</label>
+    <label for="sf-kind">类型</label>
     <select id="sf-kind"><option value="code">🎟 折扣码</option><option value="link">🔗 折扣链接（推广/邀请/活动直达）</option></select>
-    <label id="sf-code-label">折扣码</label>
+    <label id="sf-code-label" for="sf-code">折扣码</label>
     <input id="sf-code" placeholder="如 SILICON-XXXX" autocomplete="off">
-    <label>说明（来源/规则，选填）</label>
+    <label for="sf-note">说明（来源/规则，选填）</label>
     <textarea id="sf-note" rows="2" placeholder="例：官方公众号活动码，新用户可用"></textarea>
-    <label>次数上限（达限自动下架）</label>
+    <label for="sf-max">次数上限（达限自动下架）</label>
     <input id="sf-max" type="number" min="1" max="10000" value="50">
     <button id="sf-go">🎟 提交托管</button>
     <p class="calc-note" id="sf-msg"></p>`;
@@ -1602,7 +1599,7 @@ function calcRender(){
   document.getElementById('calcFilters').innerHTML='<button class="tab '+(!calcVendor?'active':'')+'" data-cv="">'+m('全部','All')+'</button>'+vendors.map(v=>'<button class="tab '+(calcVendor===v?'active':'')+'" data-cv="'+esc(v)+'">'+esc(v)+'</button>').join('');
   const shown=rows.filter(p=>!calcVendor||p.provider===calcVendor).sort((a,b)=>a.costCny-b.costCny);
   const ds=rows.find(p=>p.provider==='DeepSeek'&&p.model==='deepseek-flash');
-  let html='<tr>'+[m('模型','Model'),m('输入/百万','Input/M'),m('输出/百万','Output/M'),m('30 天费用','30-day cost'),m('可抵扣参考','Eligible allowance'),m('净月成本','Net monthly cost'),'vs DeepSeek'].map(t=>'<th>'+t+'</th>').join('')+'</tr>';
+  let html='<caption>'+m('各模型 30 天用量比价','Model-by-model 30-day cost comparison')+'</caption><thead><tr>'+[m('模型','Model'),m('输入/百万','Input/M'),m('输出/百万','Output/M'),m('30 天费用','30-day cost'),m('可抵扣参考','Eligible allowance'),m('净月成本','Net monthly cost'),'vs DeepSeek'].map(t=>'<th scope="col">'+t+'</th>').join('')+'</tr></thead>';
   for(const p of shown){
     const pct=ds?.costCny>0?Math.round((p.costCny/ds.costCny-1)*100):null;
     const discount=[p.used>0?p.used.toFixed(2)+'M':'',p.moneyDiscount>0?'¥'+p.moneyDiscount.toFixed(2):''].filter(Boolean).join(' + ');
@@ -1657,7 +1654,7 @@ function sumCalc(){
   const freeWan=TokenMath.sum(DEALS.filter(d=>TokenMath.free(d)&&d.verify_status==='verified'&&d.gate!=='student'&&d.type!=='student')).total;
   const best=rows[0];
   document.getElementById('sumTable').innerHTML=
-    '<tr><th>买法（同预算 token 最多）</th><th>综合单价*</th><th>该预算可得</th></tr>'+
+    '<caption>'+Workbench.msg('同预算下各买法可得 token 对照','Token yield by purchase option for the same budget')+'</caption><thead><tr><th scope="col">买法（同预算 token 最多）</th><th scope="col">综合单价*</th><th scope="col">该预算可得</th></tr></thead>'+
     rows.map(r=>`<tr><td class="mono">${esc(r.model)}<br><span style="color:var(--muted);font-size:.72rem">${esc(r.provider)}</span></td><td class="mono">¥${r.bl.toFixed(2)}/百万</td><td class="mono"><b>${fmtYi(B/r.bl)}</b></td></tr>`).join('')+
     (best?`<tr class="cheapest"><td>✅ 极致路线：白嫖 ${fmtWan(freeWan)} ＋ 预算全买最低价</td><td class="mono">—</td><td class="mono"><b>≈ ${fmtYi(freeWan/100+B/best.bl)}</b></td></tr>`:'')+
     (()=>{const bp=PLANS.map(p=>({...p,pm:planPerM(p)})).filter(p=>p.pm!==null).sort((a,b)=>a.pm-b.pm)[0];
@@ -1798,7 +1795,7 @@ function planRender(){
       :`<span style="color:var(--muted)">${Workbench.msg('暂无固定 Token 比例','No fixed token conversion')}</span>`;
     return`<tr><td class="mono">${esc(r.provider)}<br><span style="color:var(--muted);font-size:.75rem">${esc(r.plan)}</span></td><td class="mono">${r.currency==='USD'?'$'+r.price:'¥'+r.price}</td><td style="font-size:.75rem;white-space:normal;max-width:210px">${esc(r.quota)}</td><td colspan="3">${val}</td></tr>`}).join('');
   document.getElementById('planTable').innerHTML=
-    '<tr><th>套餐</th><th>月价</th><th>官方额度口径</th><th>折算 tokens/月</th><th>折合 ¥/百万</th><th>vs 最低按量</th></tr>'
+    '<caption>'+Workbench.msg('Coding Plan 包月与按量比价','Coding-plan subscriptions vs pay-as-you-go')+'</caption><thead><tr><th scope="col">套餐</th><th scope="col">月价</th><th scope="col">官方额度口径</th><th scope="col">折算 tokens/月</th><th scope="col">折合 ¥/百万</th><th scope="col">vs 最低按量</th></tr></thead>'
     +(convRows?`<tr><td colspan="6" style="background:var(--hover);color:var(--muted);font-size:.75rem">▼ 可折算组（官方 Token 数/公式，按所选模型比较）</td></tr>`+convRows:'')
     +(refRows?`<tr><td colspan="6" style="background:var(--hover);color:var(--muted);font-size:.75rem">▼ 参考组（积分/次数/会话制，官方未公布折算——不做假换算）</td></tr>`+refRows:'');
   document.getElementById('planNote').textContent=Workbench.msg('模型积分按官方公式、输入:输出=3:1、无缓存折算。智谱按周额度×30/7估算并显示高峰至闲时区间，另受5小时限额；小米按正常时段 Flash 模型。美元 Credits 只作购买力参考，不混入真实 Token 排名。USD 汇率固定参考 1:7.2。','Model credits use official formulas at 3:1 input/output without cache. GLM uses weekly quota ×30/7 with peak/off-peak range and 5-hour limits; MiMo uses Flash at standard hours. Dollar credits are value references, excluded from native-token rankings. FX reference: USD/CNY 7.2.');

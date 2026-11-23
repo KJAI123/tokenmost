@@ -17,7 +17,7 @@ near(math.quota(byId['vercel-ai-gateway-free-credits'],now).monthly,5/.2625*100)
 near(math.quota(byId['vercel-ai-gateway-free-credits'],now).daily,0);
 near(math.quota(byId['edgeone-makers-50w'],now).monthly,50);
 near(math.quota(byId['edgeone-makers-50w'],now).once,0);
-near(math.quota(byId['deep-zhipu-trialplan-r7'],now).total,(300*13/1.75+500*1.3/1.75)*5);
+near(math.quota(byId['deep-zhipu-trialplan-r7'],now).total,0); // Official trial pages conflict; no fixed amount selected.
 near(math.quota(byId['autoclaw-m11w3-login'],now).total,10000);
 near(math.rawTokens(math.entries(byId['deep-zhipu-trial-card'])[0]),2000*10000/11.175);
 near(math.quota(byId['llm7-free-token'],now).total,0); // Legacy quota has no current policy evidence.
