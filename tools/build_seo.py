@@ -18,6 +18,7 @@ from urllib.parse import quote
 import json, html, re
 from pathlib import Path
 from datetime import datetime, timezone, timedelta, date
+from build_discovery import write_discovery
 from token_math import entries as quota_entries, quota as token_quota, free as free_quota, estimate as daily_estimate, estimate_assumption
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,7 +66,7 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 .back{{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}}
 .rel{{margin-top:26px;padding-top:12px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}}
 .rel a{{margin-right:14px}}
-</style></head><body>
+</style><script defer src="/assets/engagement.js"></script></head><body data-surface="platform">
 <a class="back" href="/">← 回 tokenmost 情报流</a>
 <h1>{h1}</h1>
 <p class="sub">信源核验：{updated} · 页面生成：{gen} · {layer} · 共 {n} 条信源 · {metric}</p>
@@ -74,7 +75,7 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 {deals}
 <h2>{faq_heading}</h2>
 {faq}
-<div class="rel">继续看：<a href="/">全部平台情报流</a><a href="/guides/coding-plan-guide.html">Coding Plan 选购攻略</a><a href="/guides/free-tier-survival.html">海外免费层生存指南</a><a href="/rss.xml">RSS 订阅</a></div>
+<div class="rel">继续看：<a href="/platform/">平台目录</a><a href="/free-ai-api.html">免费 API 对比</a><a href="/guides/">领取攻略</a><a href="/verified.xml">已核验权益 RSS</a><button type="button" data-share-page hidden>分享本页</button> <span role="status" data-share-status></span></div>
 </body></html>"""
 
 FAQ_GEN = [
@@ -324,7 +325,7 @@ def main():
         total_s = fmt_wan(total) if total else "暂无可折算总额"
         brief = "、".join(d["provider"] for d in ds[:3])
         title = f"{name}额度领取攻略：{total_s} 已核验首月参考（{vshort}）"
-        desc = f"{name}免费 token 额度大全：{len(ds)} 条信源（{verified} 条已验证），{deal_value(ds[0])}。每日核验、失效即清，附领取步骤与常见问题。"
+        desc = f"{name}免费 token 额度大全：{len(ds)} 条信源（{verified} 条已验证），{deal_value(ds[0])}。附适用条件、逐条核验日期与官方入口。"
         h1 = f"{name}额度大全：已核验首月参考 {total_s}"
         intro = (f"本页聚合 {name}（{layer}）全部 {len(ds)} 条额度与折扣情报，其中 {verified} 条已验证。"
                  f"已核验首月参考约 <b>{total_s}</b>（一次性、活动有效期内日额度及月额度；金额仅作 DS Flash 购买力比较，实际额度见下方原单位）。"
@@ -338,6 +339,21 @@ def main():
             title = f"{name}额度领取攻略：免费余额与模型输入预算（{vshort}）"
             h1 = f"{name}免费余额与模型输入预算"
             intro = f"本页收录 {name} 的 {len(ds)} 条权益，其中 {verified} 条已核验。原始余额、发放周期与特定模型的输入预算分开展示；输入预算不含输出，同笔余额不重复折算 DS 购买力。"
+        elif not total:
+            if all(d.get("verify_status") == "expired" for d in ds):
+                subject = "历史活动与截止日期"
+            elif not verified:
+                subject = "额度线索与核验进度"
+            elif all(d.get("quota_paid") or d.get("type") in ("pricing_plan","paid_discount","price_low") for d in ds):
+                subject = "套餐价格与使用条件"
+            else:
+                subject = "额度规则、使用限制与入口"
+            h1 = f"{name} · {subject}"
+            title = f"{h1} | TokenMost"
+            primary = next((d for d in ds if d.get("verify_status") == "verified"), ds[0])
+            status = "已核验" if primary.get("verify_status") == "verified" else "历史记录" if primary.get("verify_status") == "expired" else "待复核"
+            desc = f"{status} · {primary['value'][:100]}。查看对应来源和核验日期。"
+            intro = f"本站收录 {len(ds)} 条 {esc_quote(name)} 记录。下方列出每条记录的原始单位、适用条件和核验状态。"
         blocks = []
         for d in sorted(ds, key=lambda x: -token_quota(x)["total"]-(daily_estimate(x) or {"month":{"typical":0}})["month"]["typical"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
@@ -349,7 +365,7 @@ def main():
             estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
             blocks.append(
-                f'<div class="deal"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
+                f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
@@ -380,10 +396,12 @@ def main():
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
         old_page = old_pages.get(slug)
         page_lm = gen_day.isoformat() if old_page is None or _content_key(old_page) != _content_key(page) else None
-        pages.append({"slug": slug, "name": name, "n": len(ds), "verified": verified, "total": total_s,
+        pages.append({"slug": slug, "name": name, "category": ds[0]["category"], "has_total": bool(total), "n": len(ds), "verified": verified, "total": total_s,
                       "url": f"https://tokenmost.com/platform/{slug}.html",
                       "title": title, "desc": desc, "application_only": application_only,"input_budget": input_budget,
                       "lastmod": page_lm})
+
+    write_discovery(ROOT, pages, guides, deals, slugify, LAYER)
 
     # llms.txt（AI 搜索站点地图）
     lines = ["# tokenmost.com", "",
@@ -392,16 +410,18 @@ def main():
              "- Name: TokenMost",
              "- URL: https://tokenmost.com/",
              "- Type: AI token deals intelligence site",
-             "- Data freshness: verified daily (per-offer verification dates; expired offers auto-removed)",
-             "- Metric: all offers normalized to DeepSeek V4.1 Flash equivalent tokens",
-             "- Open data: deals.json / llms-full.txt / rss.xml",
+             "- Data freshness: per-offer verification status and dates; historical and pending records are retained",
+             "- Metric: native tokens, requests, credits, and purchasing-power scenarios reported separately",
+             "- Open data: deals.json / llms-full.txt / rss.xml / verified.xml",
+             "- Free API comparison: https://tokenmost.com/free-ai-api.html",
+             "- Platform directory: https://tokenmost.com/platform/",
              "- Contact: no signup required, site is fully public", ""]
     lines += ["## 平台免费额度页", ""]
     for p in sorted(pages, key=lambda x: -x["n"]):
         label = (f"{p['name']}申请指南（{p['n']} 项）" if p["application_only"]
                  else f"{p['name']}免费余额与输入预算（{p['n']} 条信源）" if p["input_budget"]
-                 else f"{p['name']}免费额度（{p['total']}可薅，{p['n']} 条信源）")
-        lines.append(f"- [{label}]({p['url']}): {p['desc'][:80]}")
+                 else f"{p['name']}首月额度参考（{p['total']}）" if p["has_total"] else p["name"]+"额度规则与来源")
+        lines.append(f"- [{label}]({p['url']}): {p['desc'][:80].rstrip()}")
     lines += ["", "## 领取攻略", ""]
     for g in guides:
         lines.append(f"- [{g['title']}](https://tokenmost.com/guides/{g['id']}.html): {g.get('desc','')[:80]}")
@@ -478,6 +498,7 @@ def main():
     urls = [("https://tokenmost.com/", None, "daily", "1.0"),
             ("https://tokenmost.com/en.html", None, "daily", "0.9"),
             ("https://tokenmost.com/free-cloud-servers.html", coll_lm, "daily", "0.9")]
+    urls += [("https://tokenmost.com/"+path,None,"daily","0.9") for path in ("free-ai-api.html","platform/","guides/")]
     sm_pages = [p for p in pages if not (p["verified"] == 0 and p["n"] < 3)]
     urls += [(p["url"], p["lastmod"], "daily", "0.9") for p in sorted(sm_pages, key=lambda x: -x["n"])]
     urls += [(f"https://tokenmost.com/guides/{g['id']}.html", None, "weekly", "0.8") for g in guides]

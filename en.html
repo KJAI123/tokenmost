@@ -5,11 +5,13 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>TokenMost — Free AI Tokens & LLM API Credits, Daily-Verified</title>
-<meta name="description" content="TokenMost tracks 260+ free AI token and credit offers from official channels — Zhipu, DeepSeek, Kimi, MiniMax, iFlytek, Alibaba Cloud and more. Daily human verification, per-offer verification dates, price comparison in DeepSeek-equivalent units, plus free cloud server deals and claiming guides.">
+<title>TokenMost | Free AI API credits, token quotas and claim guides</title>
+<meta name="description" content="Compare recurring free AI token caps, one-time credits and limited offers. Check model limits, eligibility and official claim links for each platform.">
 <meta name="keywords" content="AI 大模型Free额度,token 羊毛,大模型Discount码,Free API,DeepSeek 价格,智谱 GLM Free额度,Kimi Free,讯飞星火Free tokens,阿里云百炼Free额度,API 比价,白嫖大模型">
 <link rel="canonical" href="https://tokenmost.com/en.html">
-<link rel="preload" href="/deals.json" as="fetch">
+<script>const firstCatalogue = fetch('deals.json',{cache:'no-cache'}); firstCatalogue.catch(()=>{});</script>
+<script defer src="assets/engagement.js"></script>
+<link rel="alternate" type="application/rss+xml" title="TokenMost verified offers" href="/verified.xml">
 <meta property="og:image" content="https://tokenmost.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,18 +20,16 @@
 <meta property="og:url" content="https://tokenmost.com/en.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="tokenmost.com">
-<meta property="og:title" content="tokenmost.com — AI 大模型Free额度与Discount码情报站">
-<meta property="og:description" content="Free tokens only · paying a cent for tokens is a sin。五层来源每日Verified，统一 DS Flash 等效计量，Free haul一目了然。">
-<meta property="og:locale" content="zh_CN">
-<meta name="twitter:title" content="tokenmost.com — AI 大模型Free额度与Discount码情报站">
-<meta name="twitter:description" content="五层来源每日Verified · 统一 DS Flash 等效计量 · Price compare器 · 10 篇Claim guides">
+<meta property="og:title" content="TokenMost | Free AI API credits, token quotas and claim guides">
+<meta property="og:description" content="Compare recurring free AI token caps, one-time credits and limited offers. Check model limits, eligibility and official claim links for each platform.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="TokenMost | Free AI API credits, token quotas and claim guides">
+<meta name="twitter:description" content="Compare recurring free AI token caps, one-time credits and limited offers. Check model limits, eligibility and official claim links for each platform.">
 <link rel="alternate" type="application/rss+xml" title="tokenmost 情报流" href="rss.xml">
 <link rel="alternate" hreflang="en" href="https://tokenmost.com/en.html">
 <link rel="alternate" hreflang="zh" href="https://tokenmost.com/">
 <link rel="alternate" hreflang="x-default" href="https://tokenmost.com/">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost.com","alternateName":"TokenMost 羊毛铺","url":"https://tokenmost.com/","description":"AI 大模型Free额度与Discount码情报站：聚合LLM Providers、Agent 平台、MaaS 云、算力中心与 token 中间商的Free额度与Discount情报，每日Verified，统一折算 DeepSeek V4.1 Flash 等效 token。","inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"tokenmost.com","url":"https://tokenmost.com/"}}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "tokenmost.com", "alternateName": "TokenMost", "url": "https://tokenmost.com/", "description": "Compare recurring free AI token caps, one-time credits and limited offers. Check model limits, eligibility and official claim links for each platform.", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "tokenmost.com", "url": "https://tokenmost.com/"}}</script>
 <meta name="theme-color" content="#eef6ff">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="assets/tokenmost-mark.svg?v=20261117-5">
@@ -413,6 +413,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     <a class="sitem" href="#navArea"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>Platform directory</a>
     <button type="button" class="shead" data-fold="p" aria-expanded="true" aria-controls="fold-p">Tools <i aria-hidden="true">▾</i></button>
     <div class="sgroup-body" id="fold-p">
+      <a class="sitem" href="/free-ai-api.html"><svg class="ui-icon" aria-hidden="true"><use href="#tm-globe"/></svg>Free API comparison (中文)</a>
       <a class="sitem" id="sumBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chart"/></svg>Credit totals</a>
       <a class="sitem" id="calcBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-calc"/></svg>Price calculator</a>
       <a class="sitem" id="doubleBtnSide" href="#" onclick="return false"><svg class="ui-icon" aria-hidden="true"><use href="#tm-ticket"/></svg>Bonus offers</a>
@@ -438,12 +439,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 </style>
 <!-- ============ 主区 ============ -->
 <main id="main" tabindex="-1">
-<noscript>
-  <section style="border:1px solid #e5e8ee;border-radius:10px;background:#fff;padding:16px;margin:12px 0;font-size:.9rem;line-height:1.7">
-    <h2 style="font-size:1.05rem;margin-bottom:8px">tokenmost.com — AI 大模型Free额度与Discount码情报站</h2>
-    <p>聚合五层来源的 token 羊毛情报（每日Verified）：智谱 BigModel（免费模型 API）、DeepSeek（谷峰价与缓存Low price）、Kimi（15 元 API 券）、讯飞星火（Free资源包）、MiniMax（M3 永久五折）、阿里云百炼（新人多模型Free额度）、美团 LongCat（每日 5000 万）、天翼云息壤（新用户 2500 万）、小米 MiMo（新客 ¥5 赠金+邀请各 ¥10）等；Global有 Google AI Studio Free层、Mistral、Cohere、Anthropic、xAI 等。有官方比例的额度折算 Token，金额显示 DS Flash 购买力参考，其他权益保留原单位。启用 JavaScript 可查看实时情报流、Price compare器与Discount码；Claim guides见 <a href="/guides/bailian-70.html">百炼Free额度攻略</a>、<a href="/guides/kimi-guide.html">Kimi 攻略</a>、<a href="/guides/free-tier-survival.html">GlobalFree层生存指南</a>、<a href="/guides/coding-plan-guide.html">Coding Plan 选购攻略</a> 等 10 篇。订阅 <a href="/rss.xml">RSS 情报流</a>。</p>
-  </section>
-</noscript>
+<noscript><section><h2>Browse TokenMost</h2><p><a href="/free-ai-api.html">Free API comparison (中文)</a> · <a href="/platform/">Platform directory (中文)</a> · <a href="/guides/">Claim guides (中文)</a></p></section></noscript>
 <div class="topbar">
   <a class="mobile-brand" href="en.html"><img class="brand-mark" src="assets/tokenmost-mark.svg?v=20261117-5" width="32" height="32" alt=""><span>TokenMost</span></a>
   <nav class="top-nav" aria-label="Quick navigation">
@@ -581,6 +577,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is TokenMost?", "acceptedAnswer": {"@type": "Answer", "text": "tokenmost.com is an intelligence site for free AI token and credit offers: it aggregates deals from LLM vendors (Zhipu, DeepSeek, Kimi, MiniMax, iFlytek), agent platforms, MaaS clouds, compute providers and resellers. Every offer is verified daily and carries a verification date; expired offers are removed automatically."}}, {"@type": "Question", "name": "What does DS Flash equivalent mean?", "acceptedAnswer": {"@type": "Answer", "text": "Native tokens are retained. Credits use official model formulas when available. Monetary allowances show a DS Flash value reference at uncached 3:1 input/output, ¥1.75/M or $0.2625/M; this is not the source platform’s actual token balance."}}, {"@type": "Question", "name": "How are the value numbers calculated?", "acceptedAnswer": {"@type": "Answer", "text": "First-month reference = one-time + daily allowance within its valid campaign days (up to 30) + monthly allowance. Paid subscriptions, unverified offers and credits without a fixed ratio are excluded from the verified total."}}, {"@type": "Question", "name": "Which platforms give the most free tokens?", "acceptedAnswer": {"@type": "Answer", "text": "Measured in DS Flash equivalent: Zhipu BigModel (300M daily), iFlytek Spark (up to 1B during events), Yunzhisheng U2-Flash (unlimited free calls), plus signup bonuses from Baidu Qianfan, Alibaba Bailian and more. The homepage leaderboard updates daily."}}, {"@type": "Question", "name": "Is the data trustworthy?", "acceptedAnswer": {"@type": "Answer", "text": "Every offer is verified against official pages, console tests or multiple independent sources, labeled with a verification status (verified today / pending re-check / expired). Stale and expired entries are removed automatically; limited-time events show their deadlines."}}, {"@type": "Question", "name": "How do I use the discount codes?", "acceptedAnswer": {"@type": "Answer", "text": "Open the Coupon tab to view and copy codes for each platform. Some codes are community-shared by site users; always confirm validity on the vendor's official page."}}, {"@type": "Question", "name": "How does the price calculator work?", "acceptedAnswer": {"@type": "Answer", "text": "Enter your input/output token usage and it converts every vendor's list price to CNY and ranks them. Free-tier credits are deducted from net cost, so you can see at a glance where the same tokens are cheapest."}}, {"@type": "Question", "name": "How often is the data updated?", "acceptedAnswer": {"@type": "Answer", "text": "Dual-track updates: automated monitoring of official pricing and campaign pages, plus human review before anything goes live. Expired offers are cleaned automatically. Subscribe to the RSS feed for instant updates."}}]}</script>
 <div id="visitStats" style="max-width:1080px;margin:0 auto 8px;text-align:center;font-size:.78rem;color:var(--muted);display:none"></div>
 <footer>
+  <nav aria-label="Explore"><a href="/free-ai-api.html">Free API comparison (中文)</a> · <a href="/platform/">Platform directory (中文)</a> · <a href="/guides/">Claim guides (中文)</a></nav>
   <p>Auto+manual daily updates · offers subject to official pages</p>
   <p class="disclaim">⚠️ Disclaimer: independent aggregator，not affiliated with listed platforms. Verify on official pages before acting. Not financial advice.</p>
   <p><a href="#" id="wxFootLink">WeChat group</a> · <a href="#" onclick="openWx('feishu');return false">Feishu group</a> · <a href="rss.xml">RSS Feed</a> · <a href="https://github.com/KJAI123/free-ai-tokens" target="_blank" rel="noopener">Open dataset</a> · <a href="en.html" target="_blank" rel="noopener">English</a> · © 2026 tokenmost.com</p>
@@ -1827,7 +1824,7 @@ Promise.all([
   LOGOS_P,
   Promise.all([
     fetch('sites.json?ts='+Date.now()).then(r=>r.json()),
-    fetch('deals.json?ts='+Date.now()).then(r=>r.json())
+    firstCatalogue.then(r=>r.json())
   ])
 ]).then(([lg,[sites,deals]])=>{
   window.LOGOS=lg||{};

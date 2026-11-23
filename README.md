@@ -6,6 +6,12 @@
 
 五层来源：大模型官方（国内）/ Agent 平台 / 算力 / Token 中间商 / 大模型官方（海外）。
 
+## 快速入口
+
+- [免费 AI API 额度对比](https://tokenmost.com/free-ai-api.html?utm_source=github_readme) 按模型查看原始日额、月额与领取条件。
+- [平台目录](https://tokenmost.com/platform/?utm_source=github_readme) 和 [领取攻略](https://tokenmost.com/guides/?utm_source=github_readme) 支持直接链接到具体平台。
+- [订阅已核验免费权益](https://tokenmost.com/verified.xml) 获取最近复核的常规免费权益。每项包含原始领取入口和对应的平台说明。
+
 ## 三层信息结构
 
 | 层 | 内容 | 变化频率 | 载体 |

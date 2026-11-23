@@ -231,7 +231,7 @@ rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 import subprocess as _sp
 _g = ROOT / "tools" / "build_guides.py"
 if _g.exists():
-    _sp.run([sys.executable, str(_g)])
+    _sp.run([sys.executable, str(_g)],check=True)
 
 pub = sum(1 for d in deals if d.get("published", True))
 verified_pub = sum(1 for d in deals if d.get("published", True) and d["verify_status"] == "verified")
@@ -242,7 +242,7 @@ try:
     import build_seo
     build_seo.main()
 except Exception as e:
-    warns.append(f"build_seo: {e}")
+    errors.append(f"build_seo: {e}")
 for e in errors: print("ERROR:", e)
 for w in warns: print("WARN:", w)
 sys.exit(1 if errors else 0)
