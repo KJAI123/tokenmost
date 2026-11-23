@@ -257,7 +257,7 @@ const TokenMath = (() => {
     if (rows.length) return '<span class="quota-value" title="'+escape(explain(d))+'"><span class="quota-original">'+escape(native(rows[0]))+'</span><span class="unit">'+msg('保留原单位','Native units')+'</span></span>';
     if (d.unit === 'tool') return '<span class="quota-original">'+msg('免费工具','Free tool')+'</span>';
     if (d.category === 'freecloud') return '<span class="quota-original">'+(d.id==='amd-token-factory'?msg('按账号限额','Account limits'):msg('云与工具权益','Cloud & tool perks'))+'</span><span class="unit">'+msg('保留原单位','Native units')+'</span>';
-    if (['price_low','pricing_plan','info','status','warning'].includes(d.type)) return '<span class="quota-original">'+msg('价格 / 规则','Pricing / terms')+'</span><span class="unit">'+msg('无独立赠额','No separate grant')+'</span>';
+    if (['price_low','pricing_plan','paid_discount','info','status','warning'].includes(d.type)) return '<span class="quota-original">'+msg('价格 / 规则','Pricing / terms')+'</span><span class="unit">'+msg('无独立赠额','No separate grant')+'</span>';
     if (d.free_models?.length) return '<span class="quota-original">'+msg('免费模型','Free models')+'</span><span class="unit">'+msg('未定额 / 动态限流','Unspecified / rate-limited')+'</span>';
     return '<span class="quota-original">'+msg('未公布','Not specified')+'</span><span class="unit">'+msg('Token 额度','Token quota')+'</span>';
   }
