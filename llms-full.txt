@@ -66,10 +66,10 @@
 - 状态：待复核（核验时间 2026-11-06T11:21:27Z）
 
 ## AutoDL｜学生通道
-- 内容：注册立送 30 天炼丹会员；教育邮箱学生认证享会员价 1 年（GPU 约 1.5-2.5 元/时）
-- 规则：认证有效期 1 年，折扣以网站实时价格为准
-- 链接：https://www.autodl.com/docs/coupon/
-- 状态：已验证（核验时间 2026-11-22T05:11:43Z）
+- 内容：AutoDL注册送30天会员；学生认证享1年会员价资格
+- 规则：注册后在控制台通过教育邮箱认证；无法邮箱认证可联系官方客服。单次学生认证周期1年，过期需重新认证。会员价不等于赠送GPU使用时长。
+- 链接：https://www.autodl.com/docs/student/
+- 状态：已验证（核验时间 2026-11-23T05:34:42Z）
 
 ## 恒源云｜注册赠送
 - 内容：恒源云邀请：邀请人20元/人，被邀新用户10元券（指定GPU机器）
@@ -294,10 +294,10 @@
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
 ## GitHub Copilot｜套餐订阅
-- 内容：GitHub Copilot 个人计划按 AI Credits 计量，1 积分折 $0.01
-- 规则：不同套餐月度包和模型价格不同，超额用量看账号设置
-- 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
-- 状态：待复核（核验时间 2026-11-16T23:09:18Z）
+- 内容：Copilot按AI Credits计费：1积分对应0.01美元用量，Pro月总1500积分
+- 规则：Pro月总1500积分包含1000基础与500 Flex，不能再重复相加。其他套餐与超额预算按官方表和账号设置；这是付费套餐用量，不是免费Token或可提现余额。
+- 链接：https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing
+- 状态：已验证（核验时间 2026-11-23T05:32:55Z）
 
 ## Cerebras｜注册赠送
 - 内容：Cerebras 新账号可获 $5 推理试用金
@@ -1280,10 +1280,10 @@
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
 ## Google Antigravity CLI｜长期免费
-- 内容：Antigravity CLI 接替 Gemini CLI 的个人免费入口
-- 规则：免费个人账户可迁移使用，模型和限额以当前套餐为准
-- 链接：https://antigravity.google/
-- 状态：待复核（核验时间 2026-11-16T17:58:50Z）
+- 内容：Google Antigravity CLI提供0美元/月免费档，模型资格与限流看套餐
+- 规则：官方免费档起价0美元/月；升级Google AI Plus、Pro或Ultra可提高限流，并可选择AI Credits超额计费。未公布固定免费Token数，模型可用性按当前套餐核对。
+- 链接：https://antigravity.google/docs/overview?tab=cli
+- 状态：已验证（核验时间 2026-11-23T05:34:42Z）
 
 ## ZCode｜subscription_bonus
 - 内容：ZCode 订阅用户可使用闲时任务，执行时无需消耗套餐额度
