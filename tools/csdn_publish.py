@@ -122,7 +122,8 @@ def publish(md_file):
     })()""")
     gate = json.loads(g)
     print(' gate:', gate)
-    if gate['chars'] < 500 or not gate['tm']:
+    # 2026-11-24 新规：CSDN 零提及（tokenmost 提及=营销驳回主因），tm 不再要求
+    if gate['chars'] < 500:
         print(' GATE FAILED — abort (draft kept)')
         return None
     # 发布弹窗（AI 面板挡先收起）
