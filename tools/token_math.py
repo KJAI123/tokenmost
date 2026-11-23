@@ -39,7 +39,7 @@ def _deadline_days(deal, today=None, now_dt=None):
                 end_at = end_at.replace(tzinfo=CHINA_TIME)
             if ref >= end_at:
                 return 0
-            end_day = end_at.astimezone(CHINA_TIME).date()
+            end_day = (end_at-datetime.timedelta(microseconds=1)).astimezone(CHINA_TIME).date()
         else:
             end_day = datetime.date.fromisoformat(dl[:10])
         return (end_day-ref.date()).days+1

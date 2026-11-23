@@ -466,10 +466,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button type="button" class="hero-feishu" onclick="openWx('feishu')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>飞书交流群<span aria-hidden="true">↗</span></button>
     </div>
     <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
-      <span class="gb-label">收录首月情景 · 含待复核</span>
+      <span class="gb-label">未来 30 天 · 免费 Token 上限</span>
       <b id="gbNum">—</b>
       <span class="gb-breakdown" id="gbBreakdown"></span>
-      <span class="gb-unit">含用量估计与购买力参考</span>
+      <span class="gb-unit">已核验 · 含今日可用的限时额度</span>
       <span class="gb-link">查看总账 <span aria-hidden="true">↗</span></span>
     </button>
     <button type="button" class="hero-qr" onclick="openWx()" aria-label="放大微信群二维码">
@@ -769,9 +769,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/token-math.js?v=20261121-zcode-claim"></script>
+<script src="assets/token-math.js?v=20261123-monthly"></script>
 <script src="assets/workbench.js?v=20261122-featured-top3"></script>
-<script src="assets/catalogue-ledger.js?v=20261120-remaining-quotas"></script>
+<script src="assets/catalogue-ledger.js?v=20261123-monthly"></script>
 <script src="assets/daily-estimates.js?v=20261120-remaining-quotas"></script>
 <script>
 /* ============ 常量 ============ */
@@ -1831,6 +1831,7 @@ function toast(msg){
   t._h=setTimeout(()=>t.classList.remove('show'),2600);
 }
 async function pollData(){
+  if (DEALS.length) calcGlobalBanner();
   try{
     const [st,sd]=await Promise.all([
       fetch('sites.json?nocache='+Date.now(),{cache:'no-store'}),

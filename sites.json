@@ -107,7 +107,8 @@
      "base_url": "https://api.mistral.ai/v1",
      "model": "mistral-large-latest",
      "env": "MISTRAL_API_KEY"
-    }
+    },
+    "free": "Studio / Vibe 免费试用；API 需启用计费"
    },
    {
     "name": "Cohere",
@@ -146,6 +147,12 @@
     "url": "https://www.nace.ai/developers",
     "desc": "按输入计费的决策模型 API",
     "free": "注册$5；次月起每月$5，需人类账号验证"
+   },
+   {
+    "name": "Vikasit AI",
+    "url": "https://vikasit.ai/inference",
+    "desc": "Vikasit Nova 每天免费 200 万 Token",
+    "free": "开发者登录即可，无需绑卡。仅限 Nova 推理 API，其他模型按量计费。"
    }
   ]
  },
@@ -202,7 +209,7 @@
     "name": "魔搭 ModelScope",
     "url": "https://modelscope.cn",
     "desc": "模型社区 + 免费推理 API",
-    "free": "每日 2000 次免费推理",
+    "free": "模型名单动态更新，次数以账号为准",
     "hot": true,
     "api": {
      "base_url": "https://api-inference.modelscope.cn/v1",
@@ -237,7 +244,7 @@
     "name": "Groq",
     "url": "https://console.groq.com",
     "desc": "LPU 极速推理",
-    "free": "免费 tier 1K 请求/日",
+    "free": "gpt-oss-120b 每日最多 20 万 Token",
     "api": {
      "base_url": "https://api.groq.com/openai/v1",
      "model": "openai/gpt-oss-120b",
@@ -248,7 +255,7 @@
     "name": "SambaNova",
     "url": "https://cloud.sambanova.ai",
     "desc": "免费层免绑卡（DeepSeek/Llama/gpt-oss）",
-    "free": "每日 20 次免费"
+    "free": "评估用 gpt-oss-120b 每日 20 万 Token"
    },
    {
     "name": "Together AI",
@@ -284,6 +291,12 @@
     "url": "https://www.ctyun.cn/document/11061839/11100599",
     "desc": "支持模型可领免费量包，先核对用完即停开关",
     "free": "每模型 50 万 Tokens / 14 天"
+   },
+   {
+    "name": "Scaleway",
+    "url": "https://www.scaleway.com/en/generative-apis/",
+    "desc": "Scaleway 新客户可用 100 万免费 Token，超额按量计费",
+    "free": "免费档按组织跨项目分摊；超过 100 万按量计费。未证实会按月重置，首次计一次。"
    }
   ]
  },
@@ -577,7 +590,7 @@
     "name": "OpenRouter",
     "url": "https://openrouter.ai",
     "desc": "海外聚合器",
-    "free": "17 个 :free 模型",
+    "free": "免费模型共用 50 次/日",
     "api": {
      "base_url": "https://openrouter.ai/api/v1",
      "model": "nvidia/nemotron-3-super-120b-a12b:free",

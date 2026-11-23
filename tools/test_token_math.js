@@ -31,7 +31,7 @@ near(math.quota(byId['aliyun-yungongkaiwu-student'],now).total,300/1.75*100); //
 near(math.quota(quota([{amount:100,unit:'USD',period:'once'}]),now).total,100/.2625*100);
 near(math.quota({tokens_wan:300,eq_wan:999999,token_quota:[]},now).total,0); // explicit empty wins
 near(math.quota({daily_wan:5,deadline:'2026-11-17'},now).total,0);
-for(const id of ['ace-music-daily-20','groq-free','modelscope-amd-gpu-100h','openrouter-free','sensenova-lite']) near(math.quota(byId[id],now).total,0);
+for(const id of ['ace-music-daily-20','modelscope-amd-gpu-100h','openrouter-free','sensenova-lite']) near(math.quota(byId[id],now).total,0);
 for(const id of ['openai-pro-api-credits','opendesign-reset-card-invite','fiimeopc-token','deep-zhipu-trial-card']) assert.equal(math.free(byId[id]),false);
 assert.match(math.cell(byId['ant-bailing-monthly-10']),/¥10/);
 assert.match(math.explain(byId['kimi-voucher']),/1.75/);
@@ -140,6 +140,18 @@ near(catalogue.total.high,1500);
 assert.deepEqual(catalogue.unquantified.map(d=>d.id),['unlimited']);
 near(math.catalogue([verifiedFixture,pendingFixture,byId['openrouter-free']],now,{requestTokens:8000,pointTokens:1000}).total.typical,1500);
 assert.equal(math.catalogue([{...pendingFixture,verify_status:'expired'},{...verifiedFixture,published:false}],now).total.typical,0);
+// Rolling native caps and separate usage scenarios. One-time, gated and shared grants cannot inflate either sum.
+const current = new Date('2026-11-23T08:00:00Z');
+const dailyDeal = {...verifiedFixture,token_quota:[{amount:200000,unit:'tokens',period:'daily',pool:'shared-models'}]};
+const scenario = {...mixedFixture,deadline:undefined,verify_status:'verified'};
+const month = math.monthlyLedger([dailyDeal,{...dailyDeal,id:'other-model'},verifiedFixture,pendingFixture,
+  {...dailyDeal,id:'conditional',quota_conditional:true}, {...dailyDeal,id:'paid',quota_paid:true},
+  {...dailyDeal,id:'student',gate:'student'},byId['qiniu-conatus-1e8'],scenario],current);
+near(month.standing,600); near(month.limited,80000); near(month.total,80600);
+assert.equal(month.rows.length,2);
+assert.equal(month.usage.count,3); // daily, weekly, monthly, no signup grant
+near(math.monthlyLedger([byId['qiniu-conatus-1e8']],new Date('2026-11-30T15:59:00Z')).total,0);
+near(math.monthlyLedger([byId['groq-free'],byId['sambanova-free'],byId['vikasit-nova-free'],byId['edgeone-makers-50w']],current).standing,7250);
 const actualCatalogue=math.catalogue(deals,now);
 for (const d of deals) assert.equal(typeof math.cell(d),'string',d.id);
 const providerGroups=new Map();

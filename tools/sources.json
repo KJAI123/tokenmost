@@ -1,6 +1,6 @@
 {
  "stale_days": 14,
- "note": "数据源注册表。type: json=结构化API可自动更新内容；watch=哈希监控（页面没变=自动续验证戳，变了=进复核队列+降级待复核）；rss=关键词筛选只生成草稿。新增源往这里加，sync.py 自动生效。",
+ "note": "JSON 接口更新模型目录，watch 页面用于发现条款变化。仅显式允许的来源可自动更新核验日期。RSS 只生成草稿。",
  "sources": [
   {
    "id": "zhipu-coding-overview",
@@ -47,7 +47,10 @@
     {
      "do": "update_deal",
      "deal": "openrouter-free",
-     "template": ":free 模型 {n_free} 个（{free_top} 等）；免费日限 50 次，累计充值 ≥$10 即永久提到 1000 次/天"
+     "template": "OpenRouter 当前有 {n_free} 个 :free 模型，共用免费调用池",
+     "auto_verify": false,
+     "template_en": "OpenRouter currently lists {n_free} :free models sharing one request pool.",
+     "sync_free_models": true
     },
     {
      "do": "sync_prices",
@@ -67,7 +70,9 @@
     {
      "do": "update_deal",
      "deal": "modelscope-free-infer",
-     "template": "API-Inference 每日 2000 次免费调用：当前 {n_models} 款模型（{top_models} 等），OpenAI 兼容端点"
+     "template": "魔搭 API-Inference 当前列出 {n_models} 个模型，日调用上限以账号页面为准",
+     "auto_verify": false,
+     "template_en": "ModelScope API-Inference lists {n_models} models. See your account for the daily call limit."
     }
    ]
   },
@@ -124,7 +129,9 @@
    "type": "watch",
    "url": "https://platform.kimi.com/docs/pricing/chat",
    "deals": [
-    "kimi-k2-deadline"
+    "kimi-k2-deadline",
+    "kimi-filefree",
+    "kimi-cache"
    ]
   },
   {
@@ -175,7 +182,8 @@
    "type": "watch",
    "url": "https://platform.minimax.cn/docs/pricing/overview.md",
    "deals": [
-    "minimax-m3-half"
+    "minimax-m3-half",
+    "minimax-h3-image-4k-half-price"
    ]
   },
   {
@@ -184,7 +192,8 @@
    "url": "https://console.groq.com/docs/rate-limits",
    "deals": [
     "groq-free"
-   ]
+   ],
+   "auto_verify": false
   },
   {
    "id": "gemini-pricing",
@@ -224,7 +233,8 @@
    "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
    "deals": [
     "sambanova-free"
-   ]
+   ],
+   "auto_verify": false
   },
   {
    "id": "together-pricing",
@@ -289,7 +299,8 @@
    "type": "watch",
    "url": "https://gpushare.com/docs/free_ride/coupon",
    "deals": [
-    "gpushare-invite"
+    "gpushare-invite",
+    "gpushare-nov"
    ]
   },
   {
@@ -384,7 +395,8 @@
    "url": "https://www.xfyun.cn/doc/spark/CodingPlan.html",
    "deals": [
     "xfyun-offpeak",
-    "deep-xunfei-coding-plan"
+    "deep-xunfei-coding-plan",
+    "deep-xunfei-claude-code"
    ],
    "confirm_runs": 2
   },
@@ -593,7 +605,8 @@
    "type": "watch",
    "url": "https://www.workbuddy.ai/docs/workbuddy/pricing",
    "deals": [
-    "workbuddy-intl-free"
+    "workbuddy-intl-free",
+    "workbuddy-intl-pro"
    ],
    "auto_verify": false
   },
@@ -980,6 +993,332 @@
    "url": "https://cline.bot/cline-pass",
    "deals": [
     "cline-pass-deepseek"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "autoclaw-m11w4-login-terms",
+   "type": "watch",
+   "url": "https://autoclaw.z.ai/en/blog/news/M11W4/",
+   "deals": [
+    "autoclaw-m11w4-login"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "zhipu-hangzhou-personal-discount-terms",
+   "type": "watch",
+   "url": "https://docs.bigmodel.cn/cn/coding-plan/hangzhou-rules",
+   "deals": [
+    "zhipu-hangzhou-personal-discount"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "workbuddy-free-terms",
+   "type": "watch",
+   "url": "https://www.workbuddy.cn/docs/workbuddy/Pricing",
+   "deals": [
+    "workbuddy-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "edgeone-makers-free-quotas",
+   "type": "watch",
+   "url": "https://pages.edgeone.ai/document/limits-and-quotas",
+   "deals": [
+    "edgeone-makers-50w"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "scaleway-generative-new-customer",
+   "type": "watch",
+   "url": "https://www.scaleway.com/en/generative-apis/",
+   "deals": [
+    "scaleway-generative-welcome"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "openrouter-free-rate-policy",
+   "type": "watch",
+   "url": "https://openrouter.ai/docs/api_reference/limits",
+   "deals": [
+    "openrouter-free",
+    "ernie-5.5-flash-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "vikasit-nova-free-policy",
+   "type": "watch",
+   "url": "https://vikasit.ai/inference",
+   "deals": [
+    "vikasit-nova-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-243b294eb5e1",
+   "type": "watch",
+   "url": "https://www.gongjiyun.com/activities/rfiuwpe9liory1kc25jcoxv2ntg",
+   "deals": [
+    "gongji-subsidy"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-d04d024154b8",
+   "type": "watch",
+   "url": "https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation",
+   "deals": [
+    "siliconflow-freemodels"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-b8b3332e58ef",
+   "type": "watch",
+   "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+   "deals": [
+    "mistral-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-76fbe324d496",
+   "type": "watch",
+   "url": "https://openrouter.ai/collections/free-models",
+   "deals": [
+    "openrouter-boost"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-6b43c566b2b6",
+   "type": "watch",
+   "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+   "deals": [
+    "deep-bailian-pricing"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-e3fe6a2f00be",
+   "type": "watch",
+   "url": "https://www.kimi.com/code/docs/kimi-code/membership",
+   "deals": [
+    "deep-kimi-membership"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-1a386ba36183",
+   "type": "watch",
+   "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work",
+   "deals": [
+    "deep-claude-pro-max"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-91a87cbc733f",
+   "type": "watch",
+   "url": "https://www.cerebras.ai/inference",
+   "deals": [
+    "deep-cerebras-free-trial"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-34ab7e03b2e1",
+   "type": "watch",
+   "url": "https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html",
+   "deals": [
+    "deep-scnet-token-plan",
+    "deep-scnet-deepseek-price"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-7614ee811dba",
+   "type": "watch",
+   "url": "https://docs.volcengine.com/docs/ark/coding-plan-personal-plan-overview",
+   "deals": [
+    "deep-volc-coding-plan"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-b01ee3d5fe45",
+   "type": "watch",
+   "url": "https://www.xfyun.cn/doc/spark/TokenPlan.html",
+   "deals": [
+    "deep-xunfei-token-plan"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-c1e212e4d26b",
+   "type": "watch",
+   "url": "https://docs.bigmodel.cn/cn/coding-plan/faq",
+   "deals": [
+    "deep-zhipu-trial-card"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-96612fe5b9e2",
+   "type": "watch",
+   "url": "https://www.trae.cn/pricing",
+   "deals": [
+    "deep-trae-cn-pricing"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-8f53c2809275",
+   "type": "watch",
+   "url": "https://help.aliyun.com/zh/lingma/account-and-subscription",
+   "deals": [
+    "deep-qoder-cn-paid"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-0042922bca76",
+   "type": "watch",
+   "url": "https://marketplace.visualstudio.com/items?itemName=aminer.codegeex",
+   "deals": [
+    "deep-codegeex-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-66da71cbf7b8",
+   "type": "watch",
+   "url": "https://cloud.luchentech.com/doc/docs/welfare/invitation-bonus",
+   "deals": [
+    "deep-luchentech-welfare"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-b23f724e0ad5",
+   "type": "watch",
+   "url": "https://colossalai.org/zh-Hans/docs/get_started/bonus",
+   "deals": [
+    "deep-luchentech-opensource"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-30a2f70dbd33",
+   "type": "watch",
+   "url": "https://cursor.com/pricing",
+   "deals": [
+    "deep-cursor-x-subscription"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-f61234c4ee64",
+   "type": "watch",
+   "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan",
+   "deals": [
+    "deep-anthropic-code-limits-r4"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-4159ec1ffae5",
+   "type": "watch",
+   "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
+   "deals": [
+    "deep-anthropic-sub-credits-r4"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-d38148a9e35d",
+   "type": "watch",
+   "url": "https://help.aliyun.com/zh/lingma/qoder-cn-update-log",
+   "deals": [
+    "deep-lingma-qoder-merge-r7"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-698d61a536ce",
+   "type": "watch",
+   "url": "https://cline.bot/pricing",
+   "deals": [
+    "cline-free-tier"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-781d2cbaf910",
+   "type": "watch",
+   "url": "https://mimo.mi.com/docs/zh-CN/quick-start/promotions/new%20user",
+   "deals": [
+    "xiaomi-mimo-free5"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-3723305051e2",
+   "type": "watch",
+   "url": "https://mimo.mi.com/docs/zh-CN/quick-start/promotions/refer",
+   "deals": [
+    "xiaomi-mimo-refer"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-636c922deff1",
+   "type": "watch",
+   "url": "https://aws.amazon.com/startups/credits/",
+   "deals": [
+    "aws-activate"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-c661f469c0a8",
+   "type": "watch",
+   "url": "https://cloud.google.com/startup/ai",
+   "deals": [
+    "google-startups"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-d960ef54a8b5",
+   "type": "watch",
+   "url": "https://mimo.mi.com/docs/zh-CN/price/token-plan",
+   "deals": [
+    "xiaomi-mimo-tokenplan"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-df3a4348f9a8",
+   "type": "watch",
+   "url": "https://autoclaw.zhipuai.cn/blog/news/autoclaw-invite-code-guide/",
+   "deals": [
+    "autoclaw-invite-fission"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-995624e07852",
+   "type": "watch",
+   "url": "https://zcode.z.ai/cn/docs/welcome",
+   "deals": [
+    "zcode-idle-tasks"
    ],
    "auto_verify": false
   }

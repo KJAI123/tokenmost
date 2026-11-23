@@ -7,7 +7,7 @@
 
 流程：
   1. 按 tools/sources.json 逐源抓取（json API / watch 页面 / rss）
-     - json  : 结构化 API → 按 action 更新 deal 文案 / 比价行，成功即续验证戳（verify_by=auto）
+     - json  : 结构化 API → 按 action 更新模型目录 / 比价行，显式允许时才续验证戳（verify_by=auto）
      - watch : 官方页面哈希监控 → 哈希不变时，仅允许已配置自动续期的来源更新核验戳；
                变了=内容可能过期 → 相关 deal 降级「待复核」+ 写入 review-queue.md
      - rss   : linux.do 等社区源 → 关键词白/黑名单过滤 → 只生成 published:false 草稿
@@ -26,9 +26,10 @@ import datetime
 import subprocess
 import urllib.request
 import urllib.error
+from http.client import HTTPException
 from urllib.parse import urljoin
 from pathlib import Path
-from source_audit import evidence_snapshot, lost_evidence
+from source_audit import evidence_snapshot, lost_evidence, link_key
 
 ROOT = Path(__file__).resolve().parent.parent
 UA = {"User-Agent": "Mozilla/5.0 (compatible; tokenmost-sync/1.0; +https://tokenmost.com)"}
@@ -38,19 +39,26 @@ TODAY = NOW.date()
 DRY = "--dry-run" in sys.argv
 
 
-def fetch(url: str, timeout: int = 25, ua=None) -> str:
+def open_url(url: str, timeout: int, ua=None):
     for _ in range(5):  # 手动跟随重定向（urllib 不处理 308）
         req = urllib.request.Request(url, headers={"User-Agent": ua or UA["User-Agent"]})
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-                return r.read().decode("utf-8", errors="replace")
+            return urllib.request.urlopen(req, timeout=timeout)
         except urllib.error.HTTPError as e:
             loc = e.headers.get("Location") if e.headers else None
             if e.code in (301, 302, 303, 307, 308) and loc:
                 url = urljoin(url, loc)
+                e.close()
+                if not link_key(url):
+                    raise ValueError("无效的重定向目标")
                 continue
             raise
     raise RuntimeError(f"重定向超过 5 跳: {url}")
+
+
+def fetch(url: str, timeout: int = 25, ua=None) -> str:
+    with open_url(url, timeout, ua) as response:
+        return response.read().decode("utf-8", errors="replace")
 
 
 def content_hash(text: str) -> str:
@@ -82,6 +90,74 @@ def deadline_passed(value, now):
         return now >= end
     except ValueError:
         return False
+
+
+def free_model_rows(catalog):
+    return [{"id": m["id"], "ctx": str(m.get("context_length") or ""), "note": ""}
+            for m in catalog if m["id"].endswith(":free")]
+
+
+def probe_entry(url):
+    with open_url(url, 10) as response:
+        response.read(1024)
+        return response.status
+
+
+def check_entry_links(deals, sources, state, now, probe=probe_entry):
+    """Check the public claim entry weekly for records without a rule monitor."""
+    watched = {did for src in sources for did in src.get("deals", [])}
+    watched.update(action["deal"] for src in sources for action in src.get("actions", []) if "deal" in action)
+    targets = {}
+    originals = {}
+    for d in deals:
+        if (not d.get("published") or d.get("verify_status") == "expired" or d["id"] in watched
+                or d.get("category") == "intel_source" or d.get("type") == "warning"):
+            continue
+        key = link_key(d.get("url"))
+        if key:
+            targets.setdefault(key, []).append(d["id"])
+            originals.setdefault(key, d["url"])
+
+    previous = state.get("entry_links", {})
+    current = {}
+    for url, ids in sorted(targets.items()):
+        key = hashlib.sha256(url.encode()).hexdigest()[:16]
+        record = dict(previous.get(key, {}), deals=sorted(ids))
+        current[key] = record
+        last = record.get("checked_at")
+        retry_days = 1 if record.get("fail_streak") else 7
+        if last and now - datetime.datetime.fromisoformat(last.replace("Z", "+00:00")) < datetime.timedelta(days=retry_days):
+            continue
+        record["checked_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+        try:
+            # Probe the original link; link_key() only normalizes identity for deduplication.
+            code = probe(originals[url])
+            record.update(status="reachable", http=code, fail_streak=0)
+        except urllib.error.HTTPError as exc:
+            status = "access_limited" if exc.code in (401,403,429) else "http_error"
+            record.update(status=status, http=exc.code, fail_streak=record.get("fail_streak", 0)+1)
+        except (OSError, ValueError, HTTPException):
+            record.update(status="unreachable", fail_streak=record.get("fail_streak", 0)+1)
+            record.pop("http", None)
+    state["entry_links"] = current
+    return current
+
+
+def review_items(deals, src_state, entry_links=None):
+    queue = []
+    for d in deals:
+        if d.get("published", True) and d.get("verify_status") == "stale":
+            queue.append(f"- **待复核** `{d['id']}`（{d['provider']}）：{d.get('stale_reason', '原因见 sync 运行摘要')} → 核实后更新 value/notes 并改 `verify_status:\"verified\"`")
+        elif not d.get("published", True) and str(d.get("notes", "")).startswith("🤖"):
+            queue.append(f"- **RSS 草稿** `{d['id']}`：{d.get('value', '')[:60]} <{d.get('url', '')}> → 核实官方来源后改 `published:true` 并补 category/provider；不实就删条目")
+    for sid, st in sorted(src_state.items()):
+        if st.get("fail_streak", 0) >= 3:
+            queue.append(f"- **源失联** `{sid}`：连续 {st['fail_streak']} 次失败（{st.get('last_error', '')}）→ 检查 URL 是否失效，或从 tools/sources.json 移除")
+
+    for entry in (entry_links or {}).values():
+        if entry.get("fail_streak", 0) >= 3:
+            queue.append(f"- **领取入口需检查** {', '.join(entry['deals'])}：连续 {entry['fail_streak']} 次未确认可达（{entry['status']}）；权益保持原核验状态")
+    return queue
 
 
 def main() -> int:
@@ -118,28 +194,27 @@ def main() -> int:
         st = src_state.setdefault(sid, {})
         try:
             text = fetch(url, ua=src.get("ua"))
+            if len(text) < src.get("min_len", 200):
+                raise ValueError(f"响应过短（{len(text)} 字符），保留原基线")
+            if styp == "json":
+                data = json.loads(text)
+                catalog = data.get("data") if isinstance(data, dict) else None
+                if not isinstance(catalog, list) or not catalog or not all(
+                    isinstance(m, dict) and isinstance(m.get("id"), str) and m["id"] for m in catalog
+                ):
+                    raise ValueError("模型列表为空或格式异常，保留原数据")
         except Exception as e:
             st["fail_streak"] = st.get("fail_streak", 0) + 1
             st["last_error"] = f"{type(e).__name__}: {e}"[:200]
             summary.append(f"FAIL {sid}: {st['last_error']}")
             continue
         st["fail_streak"] = 0
+        st.pop("last_error", None)
         st["last_ok"] = NOW_ISO
         h = content_hash(text)
-        min_len = src.get("min_len", 200)
-        if len(text) < min_len:
-            summary.append(f"SKIP {sid}: 响应过短（{len(text)}B < {min_len}B），疑似 JS 渲染页或反爬，记为基线不参与续期")
-            st["hash"], st["len"] = h, len(text)
-            continue
 
-        # ---- 结构化 JSON 源：内容级自动更新 ----
         if styp == "json":
-            try:
-                data = json.loads(text)
-            except json.JSONDecodeError as e:
-                summary.append(f"FAIL {sid}: JSON 解析失败 {e}")
-                continue
-            models = [m.get("id", "?") for m in data.get("data", [])]
+            models = [m["id"] for m in catalog]
             free = [m["id"] for m in data.get("data", []) if str(m.get("id", "")).endswith(":free")]
             ctx = {
                 "n_models": len(models), "n_free": len(free),
@@ -154,8 +229,18 @@ def main() -> int:
                     new_val = act["template"].format(**ctx)
                     if d.get("value") != new_val:
                         summary.append(f"UPDATE {sid} → {act['deal']}: 文案已随 API 更新")
+                    deals_dirty |= d.get("value") != new_val
                     d["value"] = new_val
-                    bump([act["deal"]], sid)
+                    if act.get("template_en"):
+                        new_en = act["template_en"].format(**ctx)
+                        deals_dirty |= d.get("value_en") != new_en
+                        d["value_en"] = new_en
+                    if act.get("sync_free_models"):
+                        rows = free_model_rows(catalog)
+                        deals_dirty |= d.get("free_models") != rows
+                        d["free_models"] = rows
+                    if act.get("auto_verify", False):
+                        bump([act["deal"]], sid)
                 elif act["do"] == "sync_prices":
                     tag = f"auto:{sid}"
                     keep = [p for p in prices if p.get("source") != tag]
@@ -172,11 +257,11 @@ def main() -> int:
 
         # ---- 哈希监控源：两次观测确认制 ----
         # 页面「每次请求都在变」（计数器/轮换 banner/时间戳）会永远误报；只有同一新哈希
-        # 连续出现 confirm_runs 次才认定为真实变更。确认前的观测仍续验证戳（抖动≠过期）。
+        # 连续出现 confirm_runs 次才认定为真实变更。待确认期间保留上次验证日期。
         if styp == "watch":
             def renew_if_allowed():
                 # A stable document tracks changes; it does not prove an offer was redeemed.
-                if src.get("auto_verify", True):
+                if src.get("auto_verify", False):
                     bump(src.get("deals", []), sid)
 
             prev = st.get("hash")
@@ -190,7 +275,7 @@ def main() -> int:
             if h == prev:
                 st.pop("pending", None)
                 renew_if_allowed()
-                summary.append(f"OK    {sid}: 未变化" + ("，已自动续期" if src.get("auto_verify", True) else "，核验日期保持不变"))
+                summary.append(f"OK    {sid}: 未变化" + ("，已自动续期" if src.get("auto_verify", False) else "，核验日期保持不变"))
                 continue
             pend = st.get("pending") or {}
             if pend.get("hash") == h:
@@ -208,11 +293,9 @@ def main() -> int:
                     summary.append(f"CHANGED {sid}: 连续 {pend['seen']} 次观测到新内容，{len(src.get('deals', []))} 条降级待复核")
                 else:
                     st["pending"] = pend
-                    renew_if_allowed()
                     summary.append(f"WAIT  {sid}: 新哈希首次复现（{pend['seen']}/{confirm_runs}），待下次确认")
             else:
                 st["pending"] = {"hash": h, "seen": 1}
-                renew_if_allowed()
                 summary.append(f"WAIT  {sid}: 内容与基线不同（可能抖动），进入待确认")
             continue
 
@@ -275,15 +358,8 @@ def main() -> int:
             summary.append(f"STALE {d['id']}: {age} 天未复核")
 
     # ---- 复核队列 = 当前状态的实时视图（从 deals + 源健康推导，人工修复即自动出队）----
-    queue = []
-    for d in deals:
-        if d.get("published", True) and d.get("verify_status") == "stale":
-            queue.append(f"- **待复核** `{d['id']}`（{d['provider']}）：{d.get('stale_reason', '原因见 sync 运行摘要')} → 核实后更新 value/notes 并改 `verify_status:\"verified\"`")
-        elif not d.get("published", True) and str(d.get("notes", "")).startswith("🤖"):
-            queue.append(f"- **RSS 草稿** `{d['id']}`：{d.get('value', '')[:60]} <{d.get('url', '')}> → 核实官方来源后改 `published:true` 并补 category/provider；不实就删条目")
-    for sid, st in sorted(src_state.items()):
-        if st.get("fail_streak", 0) >= 3:
-            queue.append(f"- **源失联** `{sid}`：连续 {st['fail_streak']} 次失败（{st.get('last_error', '')}）→ 检查 URL 是否失效，或从 tools/sources.json 移除")
+    entry_links = check_entry_links(deals, cfg["sources"], state, NOW)
+    queue = review_items(deals, src_state, entry_links)
 
     dropped = lost_evidence(original_evidence, evidence_snapshot(deals))
     if dropped:

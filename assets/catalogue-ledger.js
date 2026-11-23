@@ -2,17 +2,16 @@
 const CatalogueUI = (() => {
   const m = Workbench.msg, f = TokenMath.format;
   const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const nativeAmount = wan => wan>=10000 && document.documentElement.lang.startsWith('zh')
+    ? (wan/10000).toLocaleString('zh-CN',{maximumFractionDigits:4})+' 亿' : f(wan);
   const range = value => value.low===value.high?f(value.low):f(value.low)+'–'+f(value.high);
   function banner(deals) {
-    const c = TokenMath.catalogue(deals);
-    document.getElementById('gbNum').textContent = '≈ '+f(c.total.typical);
+    const monthly = TokenMath.monthlyLedger(deals);
+    document.getElementById('gbNum').textContent = nativeAmount(monthly.total);
     document.getElementById('gbBreakdown').innerHTML = [
-      [m('已核验','Verified'),c.verified.total],
-      [m('待复核','Pending'),c.pending.total],
-      [m('情景估计','Scenarios'),c.estimates.month.typical]
+      [m('常规','Recurring'),monthly.standing], [m('限时','Limited'),monthly.limited]
     ].map(([label,value])=>'<span>'+label+' <strong>'+f(value)+'</strong></span>').join('');
-    document.getElementById('globalBanner').title = m('收录首月情景：','Catalogue first-month scenario: ')+range(c.total)
-      +' · '+m('含待复核、用量假设及购买力；不是保证到账量。点击看逐项明细。','Includes pending offers, usage assumptions and value references; not guaranteed grants. Open itemized details.');
+    document.getElementById('globalBanner').title = m('按各平台免费规则分别用满；点击查看模型、限制与有效天数。','Assumes full use on each platform. Open for models, limits and active days.');
   }
   function ledger(deals) {
     const c = TokenMath.catalogue(deals);
@@ -20,7 +19,20 @@ const CatalogueUI = (() => {
     const estimates = [...c.estimates.rows].sort((a,b)=>b.month.typical-a.month.typical);
     const item = (d,value,basis) => '<li><div><a href="'+esc(d.url)+'" target="_blank" rel="noopener">'+esc(d.provider)+' ↗</a>'
       +Workbench.freshness(d)+'<small>'+esc(basis)+'</small></div><strong>'+value+'</strong></li>';
-    return `<section class="catalogue-overview" aria-labelledby="catalogueTitle">
+    const monthly = TokenMath.monthlyLedger(deals);
+    const nativeRows = monthly.rows.map(({deal,q,days,value,limited}) => {
+      const source = deal.sources?.find(s=>s.kind==='official');
+      const basis = [TokenMath.native(q), q.model, limited ? days+m(' 个有效日',' active days') : ''].filter(Boolean).join(' · ');
+      return item({...deal,url:source?.url || deal.url},f(value),basis);
+    }).join('');
+    return `<section class="catalogue-overview" aria-labelledby="monthlyTitle">
+      <div class="catalogue-title"><div><h3 id="monthlyTitle">${m('未来 30 天可用的免费 Token','Free tokens available over the next 30 days')}</h3><p>${m('从北京时间今天起，按每个平台的免费上限分别用满。日额按有效日累计，月额计一个周期。','From today in Beijing time, assuming full use on each platform. Daily caps count active days, monthly caps count one cycle.')}</p></div><b>${nativeAmount(monthly.total)}</b></div>
+      <div class="catalogue-parts"><div><span>${m('常规额度 · 每 30 天','Recurring · per 30 days')}</span><b>${f(monthly.standing)}</b></div><div><span>${m('限时活动 · 只计剩余天数','Promotions · remaining days only')}</span><b>${f(monthly.limited)}</b></div></div>
+      <details class="catalogue-detail" open><summary>${m('逐项额度与官方规则','Allowances and official terms')} · ${monthly.rows.length}</summary><ul>${nativeRows}</ul></details>
+      <details class="catalogue-detail"><summary>${m('其他免费用量 · 单独估算','Other free usage · separate estimate')} ≈ ${f(monthly.usage.month.typical)}</summary>
+      <p class="calc-note">${m('已核验的周期性请求、积分和算力按当前用量假设折算。估计区间','Verified recurring requests, credits and compute converted under the current usage assumptions. Range')} ${range(monthly.usage.month)}。</p>
+      <ul>${monthly.usage.rows.map(e=>item(e.deal,f(e.month.typical),TokenMath.estimateExplain(e.deal,e))).join('')}</ul></details>
+      </section><section class="catalogue-overview" aria-labelledby="catalogueTitle">
       <div class="catalogue-title"><div><h3 id="catalogueTitle">${m('全站收录 · 首月情景参考','Catalogue · first-month scenario')}</h3><p>${m('含待复核与可调估计；各平台分别领取，不是保证到账量。','Includes pending offers and editable estimates; claimed separately, not guaranteed grants.')}</p></div><b id="catalogueTotal">≈ ${f(c.total.typical)}</b></div>
       <div class="catalogue-parts">
         <div><span>${m('已核验额度参考','Verified allowance reference')}</span><b>${f(c.verified.total)}</b><small>${m('可直接折算的常规权益','Convertible standard offers')}</small></div>

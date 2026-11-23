@@ -29,7 +29,7 @@ const TokenMath = (() => {
     if (phase(d,now) !== 'active') return 0;
     let days = Math.min(30, positive(d.quota_days) || 30);
     const endAt = Date.parse(d.deadline);
-    const date = /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '') && Number.isFinite(endAt) ? today(new Date(endAt)) : d.deadline;
+    const date = /^\d{4}-\d{2}-\d{2}T/.test(d.deadline || '') && Number.isFinite(endAt) ? today(new Date(endAt-1)) : d.deadline;
     if (/^\d{4}-\d{2}-\d{2}$/.test(date || '')) {
       days = Math.min(days, Math.max(0, Math.round((Date.parse(date+'T00:00:00Z')-Date.parse(today(now)+'T00:00:00Z'))/864e5)+1));
     }
@@ -162,11 +162,12 @@ const TokenMath = (() => {
     for (const e of rows) for (const period of ['daily','month']) for (const key of ['low','typical','high']) result[period][key] += e[period][key];
     return result;
   }
-  function estimateMany(deals, now, settings = estimateSettings) {
+  function estimateMany(deals, now, settings = estimateSettings, include = () => true) {
     const pools = new Map();
     for (const d of deals) {
       if (!free(d)) continue;
       for (const e of estimates(d,now,settings)) {
+        if (!include(e)) continue;
         if (!pools.has(e.pool) || pools.get(e.pool).priority < e.priority) pools.set(e.pool,e);
       }
     }
@@ -186,6 +187,33 @@ const TokenMath = (() => {
     const unquantified = regular.filter(d=>!quota(d,now).total && !estimate(d,now,settings));
     const rows = regular.map(deal=>({deal,quota:quota(deal,now)})).filter(row=>row.quota.total>0);
     return {verified,pending,estimates,total,unquantified,rows};
+  }
+  // All internal totals use ten-thousand tokens, just like quota() and format().
+  function monthlyLedger(deals, now = new Date(), settings = estimateSettings) {
+    const eligible = deals.filter(d => free(d) && d.verify_status === 'verified'
+      && d.gate !== 'student' && d.type !== 'student' && d.type !== 'paid_discount'
+      && phase(d,now) === 'active');
+    const pools = new Map();
+    for (const deal of eligible) {
+      entries(deal).forEach((q,index) => {
+        if (q.unit !== 'tokens' || !['daily','weekly','monthly'].includes(q.period)) return;
+        const days = rowDays(deal,q,now);
+        if (!days || !positive(q.amount)) return;
+        const cycles = q.period === 'daily' ? days : q.period === 'weekly' ? days/7 : 1;
+        const value = q.amount * cycles / 10000;
+        const pool = q.pool || deal.id+':'+index;
+        const limited = Boolean(deal.deadline || deal.quota_days || deal.type === 'limited_promo');
+        const previous = pools.get(pool);
+        if (!previous || value > previous.value) pools.set(pool,{deal,q,days,value,limited});
+      });
+    }
+    const rows = [...pools.values()].sort((a,b)=>b.value-a.value);
+    const standing = rows.reduce((n,r)=>n+(r.limited?0:r.value),0);
+    const limited = rows.reduce((n,r)=>n+(r.limited?r.value:0),0);
+    const nativePools = new Set(pools.keys());
+    const usage = estimateMany(eligible, now, settings, e => e.period !== 'once'
+      && !nativePools.has(e.pool) && ['requests','neurons','model_rates','model_examples','scenario'].includes(e.method));
+    return {standing,limited,total:standing+limited,rows,usage};
   }
   function estimateExplain(d, selected) {
     if (!selected) return estimates(d).map(e=>estimateExplain(d,e)).join('；');
@@ -279,6 +307,6 @@ const TokenMath = (() => {
     return {tokens,cny};
   }
   return {rates,sources,format,entries,rawTokens,equivalent,native,phase,quota,sum,free,explain,cell,allowance,
-    estimate,estimates,estimateMany,catalogue,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
+    estimate,estimates,estimateMany,catalogue,monthlyLedger,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
 })();
 if (typeof module !== 'undefined') module.exports = TokenMath;

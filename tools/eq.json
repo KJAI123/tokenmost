@@ -3,7 +3,7 @@
     "name": "TokenMost 额度折算口径",
     "rule": "原始 Token、模型按官方公式折算、金额购买力参考分别展示；无固定比例的积分/次数/音视频/算力不强转。",
     "update": "随 prices.json 牌价变动由 sync/check 提醒复核",
-    "reviewed_at": "2026-11-20"
+    "reviewed_at": "2026-11-23"
   },
   "base_cn": {
     "model": "DeepSeek V4.1 Flash（deepseek-flash）",

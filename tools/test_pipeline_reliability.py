@@ -14,6 +14,8 @@ import zlib
 import harvest
 import harvest_diff
 import notify_hourly as notify
+import sync
+import datetime
 
 
 HTML = "<p>新用户免费 2000 万 Tokens，每天 1000 次。</p>"
@@ -40,6 +42,32 @@ class PipelineTests(unittest.TestCase):
         self.use(patch.object(notify.time, "sleep", return_value=None))
         self.use(contextlib.redirect_stdout(io.StringIO()))
         self.use(contextlib.redirect_stderr(io.StringIO()))
+
+    def test_entry_health_is_deduplicated_and_independent_of_verification(self):
+        rows = [dict(id=i,url=url,published=True,verify_status="verified")
+                for i,url in [("a","https://example.org/claim/"),("b","https://example.org/claim"),
+                              ("watched","https://example.org/rules"),("old","https://example.org/old")]]
+        rows[-1]["verify_status"] = "expired"
+        sources = [{"deals":["watched"]}]
+        now = datetime.datetime.now(datetime.timezone.utc)
+        state, calls = {}, []
+        def denied(url):
+            calls.append(url)
+            raise urllib.error.HTTPError(url,403,"restricted",{},None)
+        for hours in (0,1,24,48):
+            sync.check_entry_links(rows,sources,state,now+datetime.timedelta(hours=hours),denied)
+        self.assertEqual(len(calls),3)
+        entry, = state["entry_links"].values()
+        self.assertEqual((entry["status"],entry["fail_streak"],entry["deals"]),("access_limited",3,["a","b"]))
+        self.assertEqual(len(sync.review_items([],{},state["entry_links"])),1)
+        def success(url):
+            calls.append(url)
+            return 200
+        for days in (3,4,9,10):
+            sync.check_entry_links(rows,sources,state,now+datetime.timedelta(days=days),success)
+        self.assertEqual(len(calls),5)
+        self.assertEqual(sync.review_items([],{},state["entry_links"]),[])
+        self.assertEqual(rows[0]["verify_status"],"verified")
 
     def harvest_setup(self, fetch):
         cfg = self.root / "sources.json"

@@ -51,6 +51,8 @@ def registry_errors(sources, registry):
 
 def evidence_errors(deals):
     for d in deals:
+        if d.get("published") and not link_key(d.get("url")):
+            yield f"{d.get('id', '?')}: 公开领取入口必须是有效的 HTTP(S) 地址"
         if "sources" not in d:
             continue
         sid = d.get("id", "?")
@@ -115,6 +117,12 @@ def main():
     print("状态: " + " / ".join(f"{key} {n}" for key, n in sorted(statuses.items())))
     print(f"候选 {len(candidates)} 个 | 采集 {sum(not s.get('disabled') for s in harvest)} 个（{domains} 域）"
           f" | 同步/监控 {len(watch)} 个")
+    state_path = ROOT / ".sync-state.json"
+    if state_path.exists():
+        entries = json.loads(state_path.read_text()).get("entry_links", {})
+        active_ids = {d["id"] for d in active}
+        probed = {did for row in entries.values() for did in row.get("deals", [])}
+        print(f"领取入口检查 {len((probed - monitored) & active_ids)} 条 | 条款或入口覆盖 {len((probed | monitored) & active_ids)}/{len(active_ids)} 条")
     for err in errors:
         print("ERROR:", err)
     return bool(errors)
