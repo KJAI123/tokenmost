@@ -462,10 +462,10 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <button type="button" class="hero-feishu" onclick="openWx('feishu')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>Feishu group<span aria-hidden="true">↗</span></button>
     </div>
     <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
-      <span class="gb-label">Free token caps · next 30 days</span>
+      <span class="gb-label">Verified first-month tokens · incl. trials</span>
       <b id="gbNum">—</b>
       <span class="gb-breakdown" id="gbBreakdown"></span>
-      <span class="gb-unit">Verified · includes active promotions</span>
+      <span class="gb-unit" id="gbEstimate"></span>
       <span class="gb-link">Credit breakdown <span aria-hidden="true">↗</span></span>
     </button>
     <button type="button" class="hero-qr" onclick="openWx()" aria-label="Enlarge WeChat group QR code">
@@ -478,9 +478,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
     </button>
   </div>
   <div class="stats" aria-label="Directory statistics">
-    <div class="stat"><span>Verified</span><b id="n-deals">—</b></div>
+    <div class="stat"><span>Verified / listed offers</span><b id="n-deals">—</b></div>
     <div class="stat"><span>24h checks</span><b id="n-fresh">—</b></div>
-    <div class="stat"><span>Listed sites</span><b id="n-sites">—</b></div>
+    <div class="stat"><span>Directory entries</span><b id="n-sites">—</b></div>
     <div class="stat"><span>Last verified</span><b id="updated">—</b></div>
   </div>
 </header>
@@ -758,9 +758,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <div id="v-my"></div>
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
-<script src="assets/token-math.js?v=20261123-monthly"></script>
-<script src="assets/workbench.js?v=20261122-featured-top3"></script>
-<script src="assets/catalogue-ledger.js?v=20261123-monthly"></script>
+<script src="assets/token-math.js?v=20261123-scope"></script>
+<script src="assets/workbench.js?v=20261123-quota"></script>
+<script src="assets/catalogue-ledger.js?v=20261123-scope"></script>
 <script src="assets/daily-estimates.js?v=20261120-remaining-quotas"></script>
 <script>
 /* ============ 常量 ============ */
@@ -1031,11 +1031,15 @@ function render(){
   stats();
   loadShared();
 }
-const PAID_TYPES=new Set(['price_low','pricing_plan','paid_discount']);
 function stats(){
-  const live=DEALS.filter(d=>d.published!==false&&d.verify_status==='verified'&&TokenMath.phase(d)!=='expired'&&!PAID_TYPES.has(d.type)&&d.type!=='warning');
-  document.getElementById('n-deals').textContent=live.length;
-  document.getElementById('n-fresh').textContent=live.filter(d=>(Date.now()-new Date(d.verified_at))<864e5).length;
+  const now = new Date();
+  const listed = DEALS.filter(d=>d.published!==false && d.category!=='intel_source' && d.type!=='warning' && TokenMath.phase(d,now)==='active');
+  const live = listed.filter(d=>d.verify_status==='verified');
+  document.getElementById('n-deals').textContent=live.length+' / '+listed.length;
+  document.getElementById('n-fresh').textContent=live.filter(d=>{
+    const age = now-Date.parse(d.verified_at);
+    return age>=0 && age<864e5;
+  }).length;
   const latest=live.reduce((m,d)=>Math.max(m,new Date(d.verified_at)),0);
   document.getElementById('updated').textContent=latest
     ? new Intl.DateTimeFormat(Workbench.locale,{month:'short',day:'numeric'}).format(latest) : '—';
@@ -1798,7 +1802,11 @@ function toast(msg){
   t._h=setTimeout(()=>t.classList.remove('show'),2600);
 }
 async function pollData(){
-  if (DEALS.length) calcGlobalBanner();
+  if (DEALS.length) {
+    stats();
+    calcGlobalBanner();
+    if (document.getElementById('sumPanel').classList.contains('open')) sumRender();
+  }
   try{
     const [st,sd]=await Promise.all([
       fetch('sites.json?nocache='+Date.now(),{cache:'no-store'}),

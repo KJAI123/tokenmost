@@ -258,10 +258,10 @@
 - 状态：待复核（核验时间 2026-11-16T17:58:50Z）
 
 ## 阿里云百炼｜注册赠送
-- 内容：阿里云百炼首次开通后，符合条件的北京地域模型通常各送 100 万 Tokens
-- 规则：须先实名，额度一般 90 天有效；可开「免费额度用完即停」避免超额计费
+- 内容：百炼北京地域新人额度，已逐项核到 26 款文本模型各 100 万 Token
+- 规则：须实名，逐模型使用，90 天有效。主子账号共享，请开启「免费额度用完即停」。
 - 链接：https://help.aliyun.com/zh/model-studio/new-free-quota
-- 状态：已验证（核验时间 2026-11-23T11:35:29Z）
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
 
 ## 阿里云百炼｜免费模型
 - 内容：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）
@@ -1373,4 +1373,40 @@
 - 规则：免费档按组织跨项目分摊；超过 100 万按量计费。未证实会按月重置，首次计一次。
 - 链接：https://www.scaleway.com/en/generative-apis/
 - 状态：已验证（核验时间 2026-11-23T11:31:08Z）
+
+## IBM watsonx.ai｜长期免费
+- 内容：Lite 免费档基础模型推理每月 30 万 Token
+- 规则：每个 Lite 计划限 2 次推理请求/秒，工具算力和文档额度另计。
+- 链接：https://www.ibm.com/products/watsonx-ai/pricing
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+
+## Free.ai｜长期免费
+- 内容：验证邮箱后，自托管聊天每天最多 3 万 Token
+- 规则：网页和 API 共池，UTC 零点重置。仅按自托管文本的实际 Token 计，免费 API 每月限 1000 次请求。
+- 链接：https://free.ai/developer/
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+
+## Clean APIs｜长期免费
+- 内容：免费档聊天模型共用每月 50 万 Token
+- 规则：无需绑卡，每分钟最多 60 次请求。
+- 链接：https://www.cleanapis.com/pricing
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+
+## Experiential Labs｜长期免费
+- 内容：验卡后，核心模型每天共享 100 万输入输出 Token
+- 规则：需可退还的 1 美元验卡，UTC 零点重置。每分钟最多 10 次请求或 25 万 Token。
+- 链接：https://www.experientiallabs.ai/pricing
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+
+## DreamPrompting｜长期免费
+- 内容：托管 API 每个账号滚动 24 小时最多 50 万 Token
+- 规则：每 24 小时最多 5000 次请求。多把 Key 共池，上游拥堵会影响实际用量。
+- 链接：https://dreamprompting.com/api-docs?lang=en
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+
+## Regolo.ai｜注册赠送
+- 内容：新户试用 30 天，每天 100 万额度 Token
+- 规则：免绑卡。按 1 倍模型 gpt-oss-120b 折合 30 天 3000 万原始 Token，其他倍率依所选模型而变。每账号试用一次。
+- 链接：https://regolo.ai/pricing/
+- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
 

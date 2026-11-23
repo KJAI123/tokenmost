@@ -315,11 +315,11 @@
       <description>长期低价 · 规则：工作日 22:00 至次日 08:00、周末和节假日全天为波谷（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>阿里云百炼：阿里云百炼首次开通后，符合条件的北京地域模型通常各送 100 万 Tokens</title>
+      <title>阿里云百炼：百炼北京地域新人额度，已逐项核到 26 款文本模型各 100 万 Token</title>
       <link>https://help.aliyun.com/zh/model-studio/new-free-quota</link>
       <guid isPermaLink="false">deep-bailian-newuser-quota</guid>
       <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description>注册赠送 · 规则：须先实名，额度一般 90 天有效；可开「免费额度用完即停」避免超额计费（优惠以官方页面为准）</description>
+      <description>注册赠送 · 规则：须实名，逐模型使用，90 天有效。主子账号共享，请开启「免费额度用完即停」。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>阿里云百炼：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qw</title>
@@ -1615,6 +1615,48 @@
       <guid isPermaLink="false">scaleway-generative-welcome</guid>
       <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
       <description>注册赠送 · 规则：免费档按组织跨项目分摊；超过 100 万按量计费。未证实会按月重置，首次计一次。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>IBM watsonx.ai：Lite 免费档基础模型推理每月 30 万 Token</title>
+      <link>https://www.ibm.com/products/watsonx-ai/pricing</link>
+      <guid isPermaLink="false">ibm-watsonx-lite</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：每个 Lite 计划限 2 次推理请求/秒，工具算力和文档额度另计。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Free.ai：验证邮箱后，自托管聊天每天最多 3 万 Token</title>
+      <link>https://free.ai/developer/</link>
+      <guid isPermaLink="false">freeai-selfhosted-chat</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：网页和 API 共池，UTC 零点重置。仅按自托管文本的实际 Token 计，免费 API 每月限 1000 次请求。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Clean APIs：免费档聊天模型共用每月 50 万 Token</title>
+      <link>https://www.cleanapis.com/pricing</link>
+      <guid isPermaLink="false">cleanapis-free-chat</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：无需绑卡，每分钟最多 60 次请求。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Experiential Labs：验卡后，核心模型每天共享 100 万输入输出 Token</title>
+      <link>https://www.experientiallabs.ai/pricing</link>
+      <guid isPermaLink="false">experiential-core-free</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：需可退还的 1 美元验卡，UTC 零点重置。每分钟最多 10 次请求或 25 万 Token。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>DreamPrompting：托管 API 每个账号滚动 24 小时最多 50 万 Token</title>
+      <link>https://dreamprompting.com/api-docs?lang=en</link>
+      <guid isPermaLink="false">dreamprompting-free</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：每 24 小时最多 5000 次请求。多把 Key 共池，上游拥堵会影响实际用量。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Regolo.ai：新户试用 30 天，每天 100 万额度 Token</title>
+      <link>https://regolo.ai/pricing/</link>
+      <guid isPermaLink="false">regolo-core-trial</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>注册赠送 · 规则：免绑卡。按 1 倍模型 gpt-oss-120b 折合 30 天 3000 万原始 Token，其他倍率依所选模型而变。每账号试用一次。（优惠以官方页面为准）</description>
     </item>
   </channel>
 </rss>

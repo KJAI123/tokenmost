@@ -152,6 +152,25 @@ assert.equal(month.rows.length,2);
 assert.equal(month.usage.count,3); // daily, weekly, monthly, no signup grant
 near(math.monthlyLedger([byId['qiniu-conatus-1e8']],new Date('2026-11-30T15:59:00Z')).total,0);
 near(math.monthlyLedger([byId['groq-free'],byId['sambanova-free'],byId['vikasit-nova-free'],byId['edgeone-makers-50w']],current).standing,7250);
+// First-use grants join the first-month view only. Conflicting versions of one pool count once.
+const trialFixture = {...dailyDeal,id:'trial',quota_introductory:true,quota_days:30,
+  token_quota:[{amount:1000000,unit:'tokens',period:'daily',pool:'trial-core'}]};
+const fixedCredit = {...verifiedFixture,id:'official-ratio',token_quota:[{amount:5000,unit:'credits',period:'once',tokens_per_unit:10000}]};
+const sharedFirst = {...verifiedFixture,id:'same-pool',token_quota:[{amount:30000000,unit:'tokens',period:'once',pool:'shared-models'}]};
+for (const candidates of [[dailyDeal,sharedFirst],[sharedFirst,dailyDeal]]) {
+  const ledger = math.monthlyLedger([...candidates,trialFixture,verifiedFixture,fixedCredit,pendingFixture,
+    {...verifiedFixture,id:'gated',quota_conditional:true},{...fixedCredit,id:'old',deadline:'2026-11-22'}],current);
+  near(ledger.total,600);
+  near(ledger.firstClaim,8100);
+  near(ledger.firstMonth,8700);
+}
+const regolo = byId['regolo-core-trial'];
+near(math.monthlyLedger([regolo],current).standing,0);
+near(math.monthlyLedger([regolo],current).firstClaim,3000);
+const bailian = byId['deep-bailian-newuser-quota'];
+assert.equal(new Set(bailian.token_quota.map(q=>q.pool)).size,bailian.token_quota.length);
+assert.ok(bailian.token_quota.every(q=>q.model && q.period==='once'));
+for (const id of ['wx-miniprogram-growth-1b','agentrouter-signup','aimlapi-startup-10m','siliconflow-referral']) assert.equal(math.free(byId[id]),false,id);
 const actualCatalogue=math.catalogue(deals,now);
 for (const d of deals) assert.equal(typeof math.cell(d),'string',d.id);
 const providerGroups=new Map();

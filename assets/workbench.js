@@ -156,6 +156,7 @@ const Workbench = (() => {
   function gateLabel(deal) {
     const labels = {
       verify: msg('需实名', 'ID verification'),
+      card: msg('需验卡', 'Card verification'),
       student: msg('学生认证', 'Student verification'),
       startup: msg('初创资质', 'Startup eligibility'),
       audit: msg('需审核', 'Application review'),

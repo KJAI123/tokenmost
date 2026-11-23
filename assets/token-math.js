@@ -179,7 +179,7 @@ const TokenMath = (() => {
   // Catalogue scale is broader than the verified ledger. Keep its three
   // components visible; estimates never promote an offer's source status.
   function catalogue(deals, now, settings = estimateSettings) {
-    const regular = deals.filter(d=>free(d) && d.gate !== 'student' && d.type !== 'student');
+    const regular = deals.filter(d=>free(d) && d.gate !== 'student' && d.type !== 'student' && phase(d,now) === 'active');
     const verified = sum(regular.filter(d=>d.verify_status === 'verified'),now);
     const pending = sum(regular.filter(d=>d.verify_status !== 'verified'),now);
     const estimates = estimateMany(regular,now,settings);
@@ -196,24 +196,34 @@ const TokenMath = (() => {
     const pools = new Map();
     for (const deal of eligible) {
       entries(deal).forEach((q,index) => {
-        if (q.unit !== 'tokens' || !['daily','weekly','monthly'].includes(q.period)) return;
+        const period = q.period || 'once';
+        if (q.convert === false || !rawTokens(q) || !['once','daily','weekly','monthly'].includes(period)) return;
         const days = rowDays(deal,q,now);
         if (!days || !positive(q.amount)) return;
         const cycles = q.period === 'daily' ? days : q.period === 'weekly' ? days/7 : 1;
-        const value = q.amount * cycles / 10000;
+        const value = rawTokens(q) * cycles / 10000;
         const pool = q.pool || deal.id+':'+index;
         const limited = Boolean(deal.deadline || deal.quota_days || deal.type === 'limited_promo');
+        const firstClaim = period === 'once' || deal.quota_introductory === true;
         const previous = pools.get(pool);
-        if (!previous || value > previous.value) pools.set(pool,{deal,q,days,value,limited});
+        // A repeatable entitlement takes precedence over another listing of the same pool.
+        if (!previous || (previous.firstClaim && !firstClaim)
+            || (previous.firstClaim === firstClaim && value > previous.value)) {
+          pools.set(pool,{deal,q,days,value,limited,firstClaim});
+        }
       });
     }
-    const rows = [...pools.values()].sort((a,b)=>b.value-a.value);
+    const sorted = [...pools.values()].sort((a,b)=>b.value-a.value);
+    const rows = sorted.filter(row=>!row.firstClaim);
+    const firstClaimRows = sorted.filter(row=>row.firstClaim);
+    const firstClaim = firstClaimRows.reduce((total,row)=>total+row.value,0);
     const standing = rows.reduce((n,r)=>n+(r.limited?0:r.value),0);
     const limited = rows.reduce((n,r)=>n+(r.limited?r.value:0),0);
     const nativePools = new Set(pools.keys());
-    const usage = estimateMany(eligible, now, settings, e => e.period !== 'once'
+    const recurring = eligible.filter(d=>!d.quota_introductory);
+    const usage = estimateMany(recurring, now, settings, e => e.period !== 'once'
       && !nativePools.has(e.pool) && ['requests','neurons','model_rates','model_examples','scenario'].includes(e.method));
-    return {standing,limited,total:standing+limited,rows,usage};
+    return {standing,limited,total:standing+limited,firstClaim,firstMonth:standing+limited+firstClaim,rows,firstClaimRows,usage};
   }
   function estimateExplain(d, selected) {
     if (!selected) return estimates(d).map(e=>estimateExplain(d,e)).join('；');
@@ -246,6 +256,13 @@ const TokenMath = (() => {
     const nativeText = mixed ? e.rows.length+msg(' 项独立额度',' independent allowances') : native(first.quota);
     return '<span class="quota-value quota-estimated" title="'+escape(mixed?nativeText:estimateExplain(d))+'"><span class="num">≈ '+range+'</span><span class="unit">'+label+'</span><span class="unit quota-native">'+escape(nativeText)+'</span><button type="button" class="estimate-link" data-estimate-id="'+escape(d.id)+'">'+msg('估算依据','Estimate basis')+'</button></span>';
   }
+  function nativeSummary(d) {
+    const rows = entries(d);
+    if (rows.length > 3 && rows.every(q=>q.model && q.period==='once' && q.unit==='tokens' && q.amount===rows[0].amount)) {
+      return msg(rows.length+' 款模型，各 ',' '+rows.length+' model pools, each ')+native(rows[0]);
+    }
+    return rows.map(native).join(' + ');
+  }
   function rank(d) {
     return quota(d).total + (estimate(d)?.month.typical || 0);
   }
@@ -270,7 +287,7 @@ const TokenMath = (() => {
     if (q.total > 0) {
       const nativeText = aggregate ? (q.once ? msg('一次性 ','One-time ')+format(q.once) : '')
         + (q.monthly+q.dailyMonth ? (q.once?' + ':'')+msg('周期 ','Recurring ')+format(q.monthly+q.dailyMonth) : '')
-        : entries(d).map(native).join(' + ');
+        : nativeSummary(d);
       const label = d.quota_basis === 'claimed_pack' && !aggregate ? msg('已领礼包总量','Claimed pack total') : d.quota_paid ? msg('付费额度参考','Paid quota reference') : d.quota_upper_bound ? msg('首月上限','First-month maximum') : msg('首月参考','First-month reference');
       const extraEstimate = aggregate?.estimates?.count ? aggregate.estimates : estimate(d);
       const extraId = extraEstimate?.rows?.[0]?.deal.id || d.id;
@@ -306,7 +323,7 @@ const TokenMath = (() => {
     }
     return {tokens,cny};
   }
-  return {rates,sources,format,entries,rawTokens,equivalent,native,phase,quota,sum,free,explain,cell,allowance,
+  return {rates,sources,format,entries,nativeSummary,rawTokens,equivalent,native,phase,quota,sum,free,explain,cell,allowance,
     estimate,estimates,estimateMany,catalogue,monthlyLedger,estimateExplain,rank,estimateDefaults,setEstimateSettings,getEstimateSettings:()=>({...estimateSettings})};
 })();
 if (typeof module !== 'undefined') module.exports = TokenMath;

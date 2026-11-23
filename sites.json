@@ -297,6 +297,18 @@
     "url": "https://www.scaleway.com/en/generative-apis/",
     "desc": "Scaleway 新客户可用 100 万免费 Token，超额按量计费",
     "free": "免费档按组织跨项目分摊；超过 100 万按量计费。未证实会按月重置，首次计一次。"
+   },
+   {
+    "name": "IBM watsonx.ai",
+    "url": "https://www.ibm.com/products/watsonx-ai/pricing",
+    "desc": "每个 Lite 计划限 2 次推理请求/秒，工具算力和文档额度另计。",
+    "free": "Lite 免费档基础模型推理每月 30 万 Token"
+   },
+   {
+    "name": "Regolo.ai",
+    "url": "https://regolo.ai/pricing/",
+    "desc": "免绑卡。按 1 倍模型 gpt-oss-120b 折合 30 天 3000 万原始 Token，其他倍率依所选模型而变。每账号试用一次。",
+    "free": "新户试用 30 天，每天 100 万额度 Token"
    }
   ]
  },
@@ -650,6 +662,30 @@
     "url": "https://www.electronhub.ai/",
     "desc": "多模型聚合 API，周额度与广告奖励分开核对",
     "free": "$0.25/周，免绑卡"
+   },
+   {
+    "name": "Free.ai",
+    "url": "https://free.ai/developer/",
+    "desc": "网页和 API 共池，UTC 零点重置。仅按自托管文本的实际 Token 计，免费 API 每月限 1000 次请求。",
+    "free": "验证邮箱后，自托管聊天每天最多 3 万 Token"
+   },
+   {
+    "name": "Clean APIs",
+    "url": "https://www.cleanapis.com/pricing",
+    "desc": "无需绑卡，每分钟最多 60 次请求。",
+    "free": "免费档聊天模型共用每月 50 万 Token"
+   },
+   {
+    "name": "Experiential Labs",
+    "url": "https://www.experientiallabs.ai/pricing",
+    "desc": "需可退还的 1 美元验卡，UTC 零点重置。每分钟最多 10 次请求或 25 万 Token。",
+    "free": "验卡后，核心模型每天共享 100 万输入输出 Token"
+   },
+   {
+    "name": "DreamPrompting",
+    "url": "https://dreamprompting.com/api-docs?lang=en",
+    "desc": "每 24 小时最多 5000 次请求。多把 Key 共池，上游拥堵会影响实际用量。",
+    "free": "托管 API 每个账号滚动 24 小时最多 50 万 Token"
    }
   ]
  },

@@ -1101,7 +1101,8 @@
    "type": "watch",
    "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
    "deals": [
-    "deep-bailian-pricing"
+    "deep-bailian-pricing",
+    "deep-bailian-newuser-quota"
    ],
    "auto_verify": false
   },
@@ -1319,6 +1320,78 @@
    "url": "https://zcode.z.ai/cn/docs/welcome",
    "deals": [
     "zcode-idle-tasks"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-d97a4d3ab98a",
+   "type": "watch",
+   "url": "https://www.ibm.com/products/watsonx-ai/pricing",
+   "deals": [
+    "ibm-watsonx-lite"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-05d714583bb6",
+   "type": "watch",
+   "url": "https://www.ibm.com/docs/en/watsonx/saas?topic=cloud-watsonxai-runtime-plans",
+   "deals": [
+    "ibm-watsonx-lite"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-84b7197e9afe",
+   "type": "watch",
+   "url": "https://free.ai/developer/",
+   "deals": [
+    "freeai-selfhosted-chat"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-dbd4189b5f3e",
+   "type": "watch",
+   "url": "https://free.ai/tokens/",
+   "deals": [
+    "freeai-selfhosted-chat"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-a43eab397933",
+   "type": "watch",
+   "url": "https://www.cleanapis.com/pricing",
+   "deals": [
+    "cleanapis-free-chat"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-2e4ddb13448d",
+   "type": "watch",
+   "url": "https://www.experientiallabs.ai/pricing",
+   "deals": [
+    "experiential-core-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-0955fe129523",
+   "type": "watch",
+   "url": "https://dreamprompting.com/api-docs?lang=en",
+   "deals": [
+    "dreamprompting-free"
+   ],
+   "auto_verify": false
+  },
+  {
+   "id": "terms-f36b673693af",
+   "type": "watch",
+   "url": "https://regolo.ai/pricing/",
+   "deals": [
+    "regolo-core-trial"
    ],
    "auto_verify": false
   }
