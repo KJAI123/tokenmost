@@ -461,7 +461,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <p>Free APIs, model credits and deals</p>
       <button type="button" class="hero-feishu" onclick="openWx('feishu')"><svg class="ui-icon" aria-hidden="true"><use href="#tm-chat"/></svg>Feishu group<span aria-hidden="true">↗</span></button>
     </div>
-    <button type="button" class="global-banner" id="globalBanner" onclick="document.getElementById('sumBtnSide').click()">
+    <button type="button" class="global-banner" id="globalBanner" onclick="openSum(this)">
       <span class="gb-label">Calendar-month offers</span>
       <b id="gbNum">—</b>
       <span class="gb-breakdown" id="gbBreakdown"></span>
@@ -677,9 +677,9 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <a id="feishuJoinLink" class="community-join" href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=358r1ee1-47ad-402e-9775-c1f44b6d2526&amp;qr_code=true" target="_blank" rel="noopener" hidden>Open Feishu to join <span aria-hidden="true">↗</span></a>
   <div class="wx-miss" id="wxMiss" hidden>The QR code could not load. Please refresh and try again.</div>
 </div>
-<div id="sumPanel" role="dialog" aria-modal="true">
-  <button id="sumClose">✕</button>
-  <h3>💰 羊毛总账 · 极致预算</h3>
+<div id="sumPanel" role="dialog" aria-modal="true" aria-labelledby="sumTitle" tabindex="-1">
+  <button id="sumClose" type="button" aria-label="Close">✕</button>
+  <h3 id="sumTitle">💰 Allowance ledger · Budget optimizer</h3>
   <p class="sub">Compare catalogue estimates and the verified ledger. Check eligibility and status before claiming.</p>
   <div id="sumBody"></div>
   <div class="calc-inputs" style="margin-top:14px">
@@ -1444,7 +1444,7 @@ const wf=document.getElementById('wxFootLink');if(wf)wf.addEventListener('click'
 
 document.getElementById('vaultBtnSide').addEventListener('click',()=>vaultToggle(true));
 document.getElementById('planBtnSide').addEventListener('click',()=>{planRender();openPanel('#planOverlay','#planPanel')});
-document.getElementById('sumBtnSide').addEventListener('click',()=>{sumRender();openPanel('#sumOverlay','#sumPanel')});
+document.getElementById('sumBtnSide').addEventListener('click',()=>openSum(document.getElementById('sumBtnSide')));
 document.getElementById('calcBtnSide').addEventListener('click',()=>{calcRestore();calcRender();openPanel('#calcOverlay','#calcPanel')});
 document.getElementById('doubleBtnSide').addEventListener('click',()=>{
   document.querySelectorAll('#tabs .tab').forEach(t=>t.classList.toggle('active',t.dataset.cat==='double'));
@@ -1482,7 +1482,7 @@ document.getElementById('bottomNav').addEventListener('click',e=>{
   if(act==='feed')window.scrollTo({top:0,behavior:'smooth'});
   if(act==='nav')document.getElementById('navArea').scrollIntoView({behavior:'smooth'});
   if(act==='guide')openGuides();
-  if(act==='tools'){sumRender();openPanel('#sumOverlay','#sumPanel')}
+  if(act==='tools'){openSum(b)}
   if(act==='mine')vaultToggle(true);
 });
 /* ============ Tools条 ============ */
@@ -1596,6 +1596,11 @@ document.getElementById('calcOffpeak').addEventListener('change',calcPersist);
 function fmtWan(w){return fmtEN(w)}
 function fmtYi(m){return m>=1?m.toFixed(2)+'M ¥':Math.round(m*100)+'K ¥'}
 function sumRender(){
+  const panel=document.getElementById('sumPanel');
+  const activeBefore=document.activeElement;
+  const keepFocus=!!(activeBefore&&panel&&panel.contains(activeBefore));
+  let restoreClaim=null;
+  if(keepFocus&&activeBefore.dataset&&activeBefore.dataset.claim)restoreClaim=activeBefore.dataset.claim;
   const live=DEALS.filter(d=>TokenMath.free(d)&&d.verify_status==='verified');
   const normal=live.filter(d=>d.gate!=='student'&&d.type!=='student');
   const students=live.filter(d=>d.gate==='student'||d.type==='student');
@@ -1614,6 +1619,13 @@ function sumRender(){
   const dailyEstimate=TokenMath.estimateMany(DEALS);
   document.getElementById('sumBody').insertAdjacentHTML('beforeend',`<button type="button" class="daily-estimate-entry" data-open-daily-estimates><b>${m('另看额度情景估计','Explore allowance scenarios')}</b><span>${dailyEstimate.count} ${m('个独立池','independent pools')} · ${f(dailyEstimate.month.low)}–${f(dailyEstimate.month.high)} ${m('/首月（含购买力参考）','/first month, including value references')}</span><small>${m('可调整每次请求与未知积分的假设','Adjust request and unpriced-point assumptions')} ↗</small></button>`);
   sumCalc();sumChecklist();
+  if(keepFocus){
+    let target=null;
+    if(restoreClaim){try{target=panel.querySelector('input[data-claim="'+CSS.escape(restoreClaim)+'"]')}catch(_){}}
+    if(!target&&activeBefore&&activeBefore.isConnected)target=activeBefore;
+    if(!target)target=document.getElementById('sumBudget');
+    if(target)target.focus();
+  }
 }
 function sumCalc(){
   const B=parseFloat(document.getElementById('sumBudget').value)||0;
@@ -1632,9 +1644,35 @@ function sumCalc(){
       return bp&&bp.pm<best?.bl?`<tr><td>⌨️ 包月参考：${esc(bp.provider)} ${esc(bp.plan)} ¥${(bp.price*(bp.currency==='USD'?FX:1)).toFixed(0)}/月 ≈ ${fmtWan(bp.tokens_wan)}/月（月付口径，见 ⌨️ Coding 面板）</td><td class="mono">¥${bp.pm.toFixed(2)}/百万</td><td class="mono">${fmtWan(bp.tokens_wan)}/月</td></tr>`:''})();
   document.getElementById('sumNote').textContent='* 综合单价按输入:输出=3:1 加权（每百万 token），DeepSeek 已计入空闲时段半价，USD 按 1:7.2 折算；缓存命中可再低（DeepSeek 低至 0.02 元/百万输入）。策略：先吃Free层 → 券抵扣 → 剩余预算买最低单价。';
 }
-function closeSum(){document.getElementById('sumOverlay').classList.remove('open');document.getElementById('sumPanel').classList.remove('open')}
+let sumTrigger=null;
+const SUM_FOCUSABLE='a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),summary,[tabindex]:not([tabindex="-1"])';
+function sumVisibleFocusables(){
+  return Array.from(document.getElementById('sumPanel').querySelectorAll(SUM_FOCUSABLE))
+    .filter(el=>el.offsetParent!==null||el.getClientRects().length);
+}
+function openSum(trigger){
+  sumTrigger=trigger||document.getElementById('sumBtnSide');
+  sumRender();
+  openPanel('#sumOverlay','#sumPanel');
+  document.getElementById('sumPanel').focus();
+}
+function closeSum(){
+  const panel=document.getElementById('sumPanel');
+  const wasOpen=panel.classList.contains('open');
+  document.getElementById('sumOverlay').classList.remove('open');
+  panel.classList.remove('open');
+  if(wasOpen&&sumTrigger&&document.contains(sumTrigger))sumTrigger.focus({preventScroll:true});
+  sumTrigger=null;
+}
 document.getElementById('sumClose').addEventListener('click',closeSum);
 document.getElementById('sumOverlay').addEventListener('click',closeSum);
+document.getElementById('sumPanel').addEventListener('keydown',e=>{
+  if(e.key!=='Tab'||!document.getElementById('sumPanel').classList.contains('open'))return;
+  const f=sumVisibleFocusables();if(!f.length)return;
+  const first=f[0],last=f[f.length-1],idx=f.indexOf(document.activeElement);
+  if(e.shiftKey){if(idx<=0){e.preventDefault();last.focus();}}
+  else if(idx===-1||idx===f.length-1){e.preventDefault();first.focus();}
+});
 document.getElementById('sumBudget').addEventListener('input',sumCalc);
 window._L={"check_title": "✅ Today’s claim checklist (progress saved, resets daily)", "check_done": "done", "claim": "Claim", "daily_tag": "daily", "limit_tag": "limited", "budget_label": "My monthly budget ¥", "budget_hint": "Top-3 value picks within budget (officially convertible plans, lower ¥/M = better)", "over": "No monthly plan within budget (lowest {min}/mo) — free tier + pay-as-you-go fits better, or raise the budget", "agent_preset": "🤖 Heavy Agent 11M/day", "roadmap_title": "🛭 Registration roadmap: right link = extra bonus", "roadmap_th": ["Platform", "Via discount link", "Go"], "roadmap_hint": "Signing up via exclusive link = platform base bonus + link bonus, both land (limited items per official pages)"};
 
