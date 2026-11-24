@@ -469,11 +469,11 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
       <span class="gb-link">查看总账 <span aria-hidden="true">↗</span></span>
     </button>
     <button type="button" class="hero-qr" onclick="openWx()" aria-label="放大微信群二维码">
-      <img id="heroQrImage" src="assets/wechat-qr-20261124.png" width="112" height="112" alt="微信群入群二维码" fetchpriority="high">
+      <img id="heroQrImage" src="assets/wechat-qr-20261202.png" width="112" height="112" alt="微信群入群二维码" fetchpriority="high">
       <span class="hero-qr-copy">
         <strong>微信扫码进群</strong>
         <span>点击放大</span>
-        <time datetime="2026-11-24">11 月 24 日前有效</time>
+        <time datetime="2026-12-02">12 月 2 日前有效</time>
       </span>
     </button>
   </div>
@@ -1457,7 +1457,7 @@ function openWx(group='wechat'){
     : Workbench.msg('AI 羊毛交流 · 微信群','AI offers and discussion · WeChat');
   document.getElementById('wxExpiry').textContent=feishu
     ? Workbench.msg('仅限企业内部成员加入 · 二维码长期有效','Organization members only · QR code has no expiry')
-    : Workbench.msg('入群二维码 11 月 24 日前有效','Group QR code valid before November 24');
+    : Workbench.msg('入群二维码 12 月 2 日前有效','Group QR code valid before December 2');
   document.getElementById('feishuJoinLink').hidden=!feishu;
   img.alt=feishu?Workbench.msg('飞书群入群二维码','Feishu group QR code'):Workbench.msg('微信群入群二维码','WeChat group QR code');
   img.style.display='none';
