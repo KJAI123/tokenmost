@@ -12,7 +12,8 @@ const now = new Date('2026-11-18T03:00:00Z');
 const near = (a,b) => assert.ok(Math.abs(a-b)<1e-6, `${a} != ${b}`);
 const quota = rows => ({token_quota:rows});
 
-near(math.quota(byId['kimi-voucher'],now).total,15/1.75*100);
+near(math.quota(quota([{amount:15,unit:'CNY',period:'once'}]),now).total,15/1.75*100);
+near(math.quota(byId['kimi-voucher'],now).total,0);
 near(math.quota(byId['vercel-ai-gateway-free-credits'],now).monthly,5/.2625*100);
 near(math.quota(byId['vercel-ai-gateway-free-credits'],now).daily,0);
 near(math.quota(byId['edgeone-makers-50w'],now).monthly,50);
@@ -34,14 +35,15 @@ near(math.quota({daily_wan:5,deadline:'2026-11-17'},now).total,0);
 for(const id of ['ace-music-daily-20','modelscope-amd-gpu-100h','openrouter-free','sensenova-lite']) near(math.quota(byId[id],now).total,0);
 for(const id of ['openai-pro-api-credits','opendesign-reset-card-invite','fiimeopc-token','deep-zhipu-trial-card']) assert.equal(math.free(byId[id]),false);
 assert.match(math.cell(byId['ant-bailing-monthly-10']),/¥10/);
-assert.match(math.explain(byId['kimi-voucher']),/1.75/);
+assert.match(math.cell(byId['kimi-voucher']),/¥15/);
+assert.match(math.explain(byId['kimi-voucher']),/暂无固定 Token 比例/);
 assert.equal(math.allowance([byId['kimi-voucher']],{provider:'Kimi 开放平台',model:'kimi-k3'},now).cny,0);
 near(math.allowance([byId['xiaomi-mimo-free5']],{provider:'小米 MiMo',model:'mimo-intl'},now).cny,5);
 assert.equal(math.allowance([byId['autoclaw-m11w3-login']],{provider:'智谱 BigModel',model:'GLM-5.3'},now).tokens,0);
 const expired={...byId['xiaomi-mimo-free5'],verify_status:'expired'};
 assert.equal(math.allowance([expired],{provider:'小米 MiMo',model:'mimo-intl'},now).cny,0);
 const q=math.sum([byId['kimi-voucher'],byId['ant-bailing-monthly-10']],now);
-near(q.total,25/1.75*100); // amount and equivalent are counted once
+near(q.total,10/1.75*100); // Kimi remains visible in RMB without entering the Token sum.
 // Daily scenarios never mutate official quotas or become model-billing allowances.
 const requests=math.estimate(byId['openrouter-free'],now);
 near(requests.daily.low,5);

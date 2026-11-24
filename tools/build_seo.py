@@ -369,7 +369,10 @@ def main():
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
-                f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a></div>')
+                f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a>'
+                + ('<p><a href="../guides/kimi-guide.html">查看 Kimi API 15 元券领取攻略 →</a></p>'
+                   if d["id"] == "kimi-voucher" else "")
+                + '</div>')
         faq_blocks = []
         faq_items = []
         for q_t, a_t in APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN:
