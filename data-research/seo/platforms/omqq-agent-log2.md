@@ -144,3 +144,46 @@
 - **修复**：封面修复智能体批量补图（每篇仅 1 次修改机会——「单篇最多修改 3 次」且已用 0 次）
 - **管线铁律修正**：企鹅号封面**必传**（不再选填）——SOP 新增步骤「封面区 + 号→上传→预览落位验证」，缺封面禁止点发布
 - CSDN 同步检查：csdn_publish.py 也无封面上传步骤——CSDN 封面影响推荐同理，后续版本补
+
+---
+
+# 11-24 封面修复（实际执行 2026-11-25 01:16-01:25）— 6 篇全部补上，审核全过
+
+## 结果
+
+**6/6 成功，零失败零重试。** 6 篇已发布文章逐一走「修改→补封面→提交」，全部通过审核回到「已发布」态，列表卡片封面缩略图（168px，inews.gtimg.com）全部落位——0 流量根因（无封面不进推荐池）已消除。每篇消耗 1 次修改额度（3 次上限余 2）。
+
+| # | 文章 | 封面 | 提交时间 | 终态 |
+|---|------|------|---------|------|
+| 1 | 笔记软件免费方案：Obsidian 三件套搭配 | generic-ai-tools.jpg | 01:16:44 | 已发布+封面 |
+| 2 | 海外仓退货到手，先核对安全，再做这 4 个判断 | generic-ai-tools.jpg | 01:18:26 | 已发布+封面 |
+| 3 | AI 编程订阅怎么选：按使用强度分三档 | juejin-json2md.jpg | 01:19:06 | 已发布+封面 |
+| 4 | 免费域名怎么搞：3 个正规渠道+2 个坑 | omqq-pitfalls.jpg | 01:19:41 | 已发布+封面 |
+| 5 | 免费云服务器怎么选：5家对比+3个坑 | bjh-free-token.jpg | 01:20:17 | 已发布+封面 |
+| 6 | AI 工具选型避坑：普通用户最容易犯的 3 个错误 | omqq-pitfalls.jpg | 01:20:49 | 已发布+封面 |
+
+终验截图 `/tmp/omcover-final-all-published.png`（6 卡片全带封面缩略图）；每篇过程证据 `/tmp/omcover-{1..6}.png`（列表终态）+ `/tmp/omcover/art{n}-placed.png`（编辑器封面落位后、提交前）。
+
+## 全流程 SOP（每篇 ~90 秒，全部一次成功）
+
+1. 列表卡片「修改」是 `<a href="/main/creation/article?articleId=…&isPubed=1">`——直接 `location.href` 进编辑器（轮询 addCoverBtn/封面 label 出现判定加载完成，~15s）。
+2. `window.scrollTo(0, scrollHeight)` 到封面区；已有封面检查（`.coverThumb` 存在则跳过，防止误耗额度）；无封面时封面组文案是「封面/选填」+ `.addCoverBtn`。
+3. RPA 点 `.addCoverBtn` → 弹 `omui-dialog--lg`（默认「文内图片」tab）→ 点「本地上传」tab（`LI.omui-tab__label`）。
+4. **上传零裁剪步骤**：`DOM.getDocument → DOM.querySelector('.omui-upload-image-trigger input[type=file]') → DOM.setFileInputFiles(jpg 绝对路径)`，~2-4s 后弹窗内出现 `omui-upload-image-item-thumb`（src 已是 gtimg CDN）即完成，无裁剪确认环节。
+5. elementFromPoint 预检命「确认」钮（`omui-button--primary`）→ RPA 点击 → 弹窗关闭，编辑器封面组变「封面/更换/编辑」+ `.coverThumb` 落位 → **截图留证后才进下一步**。
+6. elementFromPoint 预检「提交」钮 → 点击 → 「发布提醒」弹窗（**提交后进入修改审核中，审核通过前原文不覆盖**——编辑已发布文章独有的确认弹窗）→ 预检命「确定」→ 点击 → 跳回 articleManage。
+7. 列表验「加工中/审核中→已发布」+ 封面缩略图出现。实测审核 1-5 分钟内放行，6 篇 01:25 时已全部回「已发布」。
+
+## 本轮新坑/要点（补充到 SOP）
+
+1. **列表状态文案计数陷阱**：articleManage 页 filter 菜单（全部/已发布/审核中/…/加工中）本身含「审核中」「加工中」字样，`innerText.match(/审核中/g)` 轮询时会恒 ≥1——判篇级状态必须逐卡片读，不能整页计数。
+2. **加工中/审核中卡片不显示缩略图**：提交后卡片短暂无封面图+无数据，别误判失败；等状态回「已发布」后缩略图出现（每篇 CDN URL 唯一）。
+3. 编辑器里「封面选填」文案仍存在——企鹅号表单仍标选填，但推荐池机制要求必传；SOP 已把封面列为发布前必检项（`.coverThumb` 缺失禁止点提交）。
+4. 正文/声明在修改流程中原样保留（含「该文章由AI生成」chip 与旧文「作者声明：该文章由AI辅助创作」两种形态），修改不触碰正文即可零风险过审。
+5. 连接复用注意：`Tab.connect(url_frag='om.qq.com')` 每次重连同一标签，SPA 内 location.href 跳转后 `tab.url` 快照不更新（11-22 已记），本轮以 `location.href` 实时值为准，无新坑。
+
+## 管线铁律修正（落地）
+
+- 企鹅号发布 SOP 新增必检步骤：「封面区 .coverThumb 落位验证通过才允许点提交」——后续新稿发布时直接带封面，不再需要补图流程。
+- 修改额度纪律：每篇编辑消耗 1/3，本轮 6 篇各用 1 次，余量 2 次/篇；补图脚本 `/tmp/omcover/fix_one.py`（n articleId cover.jpg）可复用。
+- 未做 git（按指令）。
