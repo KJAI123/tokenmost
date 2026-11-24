@@ -503,6 +503,14 @@
     "desc_en": "Third-party AI desktop workspace built on DeepSeek Harness",
     "free": "注册 1,000 积分，签到 100 积分/天",
     "free_en": "1,000 signup points and 100 points per daily check-in"
+   },
+   {
+    "name": "CCode",
+    "url": "https://ccode.si/",
+    "desc": "终端编程工具。免费额度限 CCode 应用",
+    "desc_en": "Terminal coding agent. The free budget is limited to the CCode app.",
+    "free": "每月 $10 共用额度，需绑定 GitHub",
+    "free_en": "$10/month shared budget with a linked GitHub account"
    }
   ]
  },
@@ -694,6 +702,23 @@
     "url": "https://dreamprompting.com/api-docs?lang=en",
     "desc": "每 24 小时最多 5000 次请求。多把 Key 共池，上游拥堵会影响实际用量。",
     "free": "托管 API 每个账号滚动 24 小时最多 50 万 Token"
+   },
+   {
+    "name": "cheapllm.shop",
+    "url": "https://cheapllm.shop/",
+    "api": {"base_url": "https://cheapllm.shop/v1", "model": "deepseek-v4.1-flash-1017", "env": "CHEAPLLM_API_KEY"},
+    "desc": "DeepSeek V4.1 Flash 1017 的第三方 API",
+    "desc_en": "Third-party API for DeepSeek V4.1 Flash 1017",
+    "free": "Beta 免费、免绑卡",
+    "free_en": "Free beta, no card required"
+   },
+   {
+    "name": "BlockRun",
+    "url": "https://blockrun.ai/free",
+    "desc": "多模型网关，免费模型无需 API Key",
+    "desc_en": "Model gateway with keyless free routes",
+    "free": "实时目录 9 款免费，按 IP 限速",
+    "free_en": "Nine free catalog models at check time, subject to per-IP limits"
    }
   ]
  },
