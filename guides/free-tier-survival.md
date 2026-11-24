@@ -19,6 +19,8 @@
 
 gpt-oss-120b 的公开上限为 20 万 Token/天，另有每分钟 30 次、8,000 Token 和每天 1,000 次的限制。按 30 天计最多 600 万 Token，组织的实际限额见控制台。[官方免费档限额](https://console.groq.com/docs/rate-limits)
 
+<a href="../platform/groq.html">查看 Groq 的额度与使用规则</a>
+
 ## 3. Cerebras——永久免费层已死，现在是 $5 体验金
 
 - **2026-07 改版**：取消「每天 100 万 tokens 永久免费」，改为 **Free Trial：注册送 $5 一次性 credits**（官网原文直核）。
@@ -31,10 +33,14 @@ gpt-oss-120b 的公开上限为 20 万 Token/天，另有每分钟 30 次、8,00
 
 免费方案提供 Studio 和 Vibe 用量；创建 API Key 和调用 API 需要启用按量计费。工作区可查看当前限额。[Mistral 官方用量说明](https://docs.mistral.ai/admin/billing-usage/usage-limits)
 
+<a href="../platform/mistral.html">查看 Mistral 的额度与使用规则</a>
+
 ## 5. Cohere——老实的幸存者
 
 - **Trial Key 政策至今未变（verified 口径）**：注册送 Trial Key、**无需信用卡、每月 1000 次调用、Chat 端点按模型限速**，每月自动重置。官方 FAQ 原文口径。
 - **活法**：1000 次/月适合「月度批处理一个明确任务」（如每月跑一次全库文档摘要），Command 系模型质量在线；商用再升 Production。
+
+<a href="../platform/cohere.html">查看 Cohere 的额度与使用规则</a>
 
 ## 6. OpenRouter——免费模型聚合，按累计购买金额区分调用上限
 
@@ -44,6 +50,8 @@ gpt-oss-120b 的公开上限为 20 万 Token/天，另有每分钟 30 次、8,00
   - $10 是正常买的可用额度（付费模型也能花），不是「门票费」；超限返回 429。
 - **历史**：免费层曾 200 次/天 → 砍到 50 次/天 → 充值解锁机制。
 - ⚠️ 免费模型请求可能带「数据用于训练」条款；到顶还可能被额外限流。玩法：充 $10 一次性解锁 1000/天，把 :free 模型池当「多厂商免费轮换层」，按天轮换不同厂商的免费档。
+
+<a href="../platform/openrouter.html">查看 OpenRouter 的额度与使用规则</a>
 
 ## 7. 生存优先级总表
 
@@ -65,4 +73,4 @@ gpt-oss-120b 的公开上限为 20 万 Token/天，另有每分钟 30 次、8,00
 - Cerebras：https://www.cerebras.ai/inference （官网直核 $5 体验金）｜ 第三方限速：pricepertoken.com
 - Mistral 现状：https://docs.mistral.ai/admin/overview + Reddit r/MistralAI（403 tier_not_allowed 口径）
 - Cohere Trial：官方 FAQ（每月 1000 次口径）+ dashboard.cohere.com/api-keys
-- OpenRouter：官方 FAQ/Limits 口径（openrouter.ai/docs）+ CSDN 政策调整解读（2026）：https://blog.csdn.net/weixin_41287260/article/details/159652183
+- OpenRouter：官方 FAQ/Limits 口径（openrouter.ai/docs）+ CSDN 政策调整解读（2026）：<span style="overflow-wrap:anywhere">https://blog.csdn.net/weixin_41287260/article/details/159652183</span>
