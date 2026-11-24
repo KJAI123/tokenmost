@@ -31,7 +31,13 @@ for(const lang of ['zh-CN','en']){
  vm.runInNewContext(scripts+'\nmodule.exports={math:TokenMath,workbench:Workbench};',sandbox);
  const {math,workbench:wb}=sandbox.module.exports;
  const historicFeaturedIds=new Set(['opendesign-reset-card-invite','opencode-go-deepseek','cline-pass-deepseek']);
- const catalogue=liveCatalogue.map(d=>historicFeaturedIds.has(d.id)?{...d,verify_status:'verified'}:d);
+ const catalogue=liveCatalogue.map(d=>{
+  if(!historicFeaturedIds.has(d.id))return d;
+  const historical=d.id==='opencode-go-deepseek'
+    ? d.offer_history?.find(entry=>entry.previous?.featured_until==='2026-11-22')?.previous
+    : undefined;
+  return {...d,...historical,verify_status:'verified'};
+ });
  const currentFeatured=wb.featuredDeals(liveCatalogue,new Date());
  assert.ok(currentFeatured.every(d=>d.verify_status==='verified'&&wb.isFeatured(d,new Date())),'Current recommendations never restore stale or expired data.');
  const later=clock;clock='2026-11-22T12:00:00+08:00';

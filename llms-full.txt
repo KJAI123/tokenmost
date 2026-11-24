@@ -564,16 +564,16 @@
 - 状态：已验证（核验时间 2026-11-16T17:58:50Z）
 
 ## OpenCode｜套餐订阅
-- 内容：OpenCode Go：$10/月，GLM-5.3 限时最高 $500 模型月用量；Go Plus $40/月对应 $1,000，提额至 11 月 22 日
-- 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享百分比额度，不能叠加。5小时20%，每周50%；请求数是估计，Extra Usage开启后超额会扣余额。
+- 内容：OpenCode Go：$10/月，GLM-5.3 现行月用量上限 Go $200 / Go Plus $400（$500/$1,000 限时提额已于 11/22 到期并从官方页面移除）；另有 Go Teams $20/成员/月（2 成员起，每成员额度比 Go 高 $5/月）
+- 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享一个百分比额度，不能叠加：5小时=月额20%，每周=月额50%（周一 00:00 UTC 重置），月额随新付费账期重置。每模型月上限为整月仅用该模型时的账期覆盖额；请求数为官方估算，非保证；Extra Usage 开启后超额转按量余额扣费（Go Teams 默认开启），或改用免费模型。
 - 链接：https://opencode.ai/console/go
-- 状态：待复核（核验时间 2026-11-22T05:33:16Z）
+- 状态：已验证（核验时间 2026-11-24T03:11:21Z）
 
 ## OpenCode｜长期免费
-- 内容：OpenCode 限时免费型号含 DeepSeek V4.1 Flash、MiMo V2.6 Flash、LongCat 2.5 等；GLM-5.3-Flash Free 已于 11/18 下线
-- 规则：免费聊天型号要求使用 OpenCode；其他客户端需付费模型或 Go。LongCat 2.5 限 100 请求/日，免费清单和地区资格会调整。
+- 内容：OpenCode 免费型号现有 11 个（2026-11-24 官方快照，均为限时免费，清单会调整）：DeepSeek V4.1 Flash、MiMo-V2.6-Flash、Nemotron 3.5 Lightning、Nemotron 3.5 Super VL、Big Pickle、Tidepool Alpha、Iceman、Beam、Flint 40B、Hy4 flash、Jev 1.13；LongCat 2.5 Free 与 Inkling 2 Small Free 已不在当前免费清单（LongCat 2.5 转为 Go 付费模型）；GLM-5.3-Flash Free 已于 11/18 下线
+- 规则：免费聊天型号要求使用 OpenCode 客户端；其他客户端需付费模型或 Go。官方现行页面未公布免费型号的具体日请求上限数字（Go 页 FAQ 仅说明免费型号有每日请求限制）；免费清单、地区资格与数据条款会调整。Beam Free 不含中国大陆（含港澳）等官方列明地区。
 - 链接：https://opencode.ai/docs/console/models/#pricing
-- 状态：待复核（核验时间 2026-11-19T16:15:17Z）
+- 状态：已验证（核验时间 2026-11-24T03:11:21Z）
 
 ## Qoder｜免费模型
 - 内容：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M 上下文，Code Arena 开源榜第一）

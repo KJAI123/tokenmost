@@ -672,18 +672,18 @@
       <description>长期免费 · 规则：模型推理费用取决于所选提供方，扩展免费本身不附固定模型额度（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>OpenCode：OpenCode Go：$10/月，GLM-5.3 限时最高 $500 模型月用量</title>
+      <title>OpenCode：OpenCode Go：$10/月，GLM-5.3 现行月用量上限 Go $200 / Go Plus $400（$50</title>
       <link>https://opencode.ai/console/go</link>
       <guid isPermaLink="false">opencode-go-deepseek</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description>套餐订阅 · 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享百分比额度，不能叠加。5小时20%，每周50%；请求数是估计，Extra Usage开启后超额会扣余额。（优惠以官方页面为准）</description>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：需订阅并配置账单，仅限编码Agent流量；付费模型共享一个百分比额度，不能叠加：5小时=月额20%，每周=月额50%（周一 00:00 UTC 重置），月额随新付费账期重置。每模型月上限为整月仅用该模型时的账期覆盖额；请求数为官方估算，非保证；Extra Usage 开启后超额转按量余额扣费（Go Teams 默认开启），或改用免费模型。（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>OpenCode：OpenCode 限时免费型号含 DeepSeek V4.1 Flash、MiMo V2.6 Flash、LongCat</title>
+      <title>OpenCode：OpenCode 免费型号现有 11 个（2026-11-24 官方快照，均为限时免费，清单会调整）：DeepSeek </title>
       <link>https://opencode.ai/docs/console/models/#pricing</link>
       <guid isPermaLink="false">opencode-zen-free</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：免费聊天型号要求使用 OpenCode；其他客户端需付费模型或 Go。LongCat 2.5 限 100 请求/日，免费清单和地区资格会调整。（优惠以官方页面为准）</description>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：免费聊天型号要求使用 OpenCode 客户端；其他客户端需付费模型或 Go。官方现行页面未公布免费型号的具体日请求上限数字（Go 页 FAQ 仅说明免费型号有每日请求限制）；免费清单、地区资格与数据条款会调整。Beam Free 不含中国大陆（含港澳）等官方列明地区。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Qoder：Qoder IDE 免费调用 DeepSeek V4.1-Flash-1017（10 月 17 日发布，763B，1M </title>
