@@ -191,6 +191,26 @@ const Workbench = (() => {
       .filter(d=>{const key=d.group||d.provider;if(seen.has(key))return false;seen.add(key);return true;}).slice(0,3);
   }
 
+  function pinnedInvites(deals) {
+    const invites = deals.filter(deal => deal.published !== false && deal.pinned_invite_rank > 0
+      && deal.type === 'coupon' && deal.via === 'invite' && !deal.placeholder && deal.url
+      && TokenMath.phase(deal) === 'active')
+      .sort((a,b) => a.pinned_invite_rank - b.pinned_invite_rank);
+    if (!invites.length) return '';
+    return '<section class="pinned-invites" aria-labelledby="pinnedInviteTitle">'
+      +'<div class="layer-head featured-heading">'+icon('bookmark')
+      +'<h3 id="pinnedInviteTitle">'+msg('置顶邀请','Pinned invites')+'</h3></div>'
+      +invites.map(deal => `<div class="pinned-invite">
+        <div class="pinned-invite-text">
+          <b>${esc(deal.provider)}</b>
+          <span class="chip">${msg('邀请码 ','Code ')}${esc(deal.invite_code)}</span>
+          <p>${esc(summary(deal))}</p>
+        </div>
+        <div class="r-ops"><a class="go cgo" href="${esc(safeUrl(deal.url))}" target="_blank" rel="noopener nofollow sponsored"
+          aria-label="${esc(msg('打开 '+deal.provider+' 邀请链接','Open '+deal.provider+' invite link'))}">${msg('邀请链接','Invite link')}</a></div>
+      </div>`).join('')+'</section>';
+  }
+
   function featuredHeading(count) {
     return '<div class="layer-head featured-heading">'+icon('bookmark')+'<h3>'
       +msg('补贴推荐 · 付费', 'Featured subsidy · paid')+'</h3><p>'
@@ -423,5 +443,5 @@ const Workbench = (() => {
     el('search').focus();
   });
 
-  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredDeals, featuredHeading, subscriptionCell, timing, freshness, claimLabel, claimNotice, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
+  return {msg, locale, groupRows, providerLogo, offerLogo, couponLink, sourceLinks, offerNotes, offerValue, headline, summary, groupSummary, gateLabel, requiresApplication, isFeatured, featuredDeals, pinnedInvites, featuredHeading, subscriptionCell, timing, freshness, claimLabel, claimNotice, matches, expanded, groupLabel, toggleGroup, updateFilters, refreshNews};
 })();

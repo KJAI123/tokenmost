@@ -171,6 +171,11 @@ body.side-folded .topbar{padding-left:26px}
 .layer-head.L4 .ui-icon{color:var(--amber)}
 .layer-head.featured-heading{background:var(--yellow-soft)}
 .layer-head.featured-heading .ui-icon{color:var(--amber)}
+.pinned-invite{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 10px;border-bottom:1px solid var(--border);background:var(--card)}
+.pinned-invite-text{min-width:0;font-size:13px}
+.pinned-invite-text .chip{margin-inline-start:5px;white-space:nowrap}
+.pinned-invite-text p{margin:2px 0 0;font-size:11px;color:var(--muted)}
+.pinned-invite .r-ops{flex:none}
 .row.featured-offer{box-shadow:inset 3px 0 var(--accent);background:#f8fcff}
 .featured-label{background:var(--yellow-soft);border-color:#eed985;color:#765500;font-weight:700}
 .row .r-tok .application-chip{color:var(--amber);background:var(--yellow-soft);border-color:#edd68b}

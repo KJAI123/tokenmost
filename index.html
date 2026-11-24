@@ -374,7 +374,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   .r-value{-webkit-line-clamp:3}
 }
 </style>
-<link rel="stylesheet" href="assets/workbench.css?v=20261123-calendar">
+<link rel="stylesheet" href="assets/workbench.css?v=20261124-invites">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"tokenmost","alternateName":"TokenMost 免费 AI token 羊毛情报站","url":"https://tokenmost.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://tokenmost.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
@@ -767,7 +767,7 @@ footer .disclaim{max-width:640px;margin:8px auto 0;font-size:.75rem;opacity:.85}
   <p style="font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center">额度见底 / 快到期？<a href="#" id="v-more" style="color:var(--accent)">回情报流找下一批羊毛 →</a></p>
 </aside>
 <script src="assets/token-math.js?v=20261123-calendar"></script>
-<script src="assets/workbench.js?v=20261123-calendar"></script>
+<script src="assets/workbench.js?v=20261124-invites"></script>
 <script src="assets/catalogue-ledger.js?v=20261123-calendar"></script>
 <script src="assets/daily-estimates.js?v=20261120-remaining-quotas"></script>
 <script>
@@ -1042,6 +1042,7 @@ function render(){
       Workbench.groupRows(box);
       const featured=Workbench.featuredDeals(DEALS);
       if(featured.length)box.insertAdjacentHTML('afterbegin',Workbench.featuredHeading(featured.length)+featured.map(d=>rowHtml(d)).join(''));
+      box.insertAdjacentHTML('afterbegin',Workbench.pinnedInvites(DEALS));
     }
   }else{
     box.innerHTML=(curCat==='double'?DOUBLE_NOTE+dblRoadmapHTML():'')+list.map(d=>rowHtml(d)).join('');
