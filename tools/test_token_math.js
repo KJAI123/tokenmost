@@ -119,10 +119,14 @@ assert.equal(math.entries(byId['deep-windsurf-devin']).length,0);
 const sharedBuddy=math.estimateMany([byId['workbuddy-free'],byId['deep-codebuddy-free-kimi']],now);
 assert.equal(sharedBuddy.rows.filter(e=>e.pool==='buddy-cn-monthly').length,1);
 assert.equal(sharedBuddy.rows.find(e=>e.pool==='buddy-cn-monthly').deal.id,'deep-codebuddy-free-kimi');
-for(const id of ['workbuddy-intl-pro','atlassian-rovo-dev-free','trae-code-fission','freepi-terminal-free']) {
+for(const id of ['workbuddy-intl-pro','trae-code-fission','freepi-terminal-free']) {
  assert.ok(math.estimate(byId[id],now),id+' has a displayable scenario');
  assert.equal(math.estimateMany([byId[id]],now).count,0,id+' excluded from standard free totals');
 }
+const rovoFree=byId['atlassian-rovo-dev-free'];
+assert.equal(math.entries(rovoFree)[0].amount,350);
+assert.equal(math.estimate(rovoFree,now),null);
+assert.equal(math.estimateMany([rovoFree],now).count,0);
 for(const id of ['rime-monthly-50usd','elevenlabs-free-10k','agentscope-qwenpaw-free','replit-free-mode','azure-free-trial','vultr-trial-250']) {
  near(math.quota(byId[id],now).total,0);
  assert.equal(math.estimate(byId[id],now),null,id+' is not a text-token allowance');

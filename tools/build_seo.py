@@ -101,6 +101,13 @@ INPUT_BUDGET_FAQ = [
      "用原始余额除以对应模型的官方每百万输入 Token 价格，仅计算输入、不估输出。其他共享余额的资源消耗会降低预算。同笔金额不重复折算 DS 购买力；模型输入预算不是跨模型通用 Token 或保证到账量。"),
 ]
 
+ROVO_DEV_USAGE = "https://support.atlassian.com/rovo/docs/view-your-rovo-dev-credit-usage/"
+ROVO_DEV_BILLING = "https://support.atlassian.com/subscriptions-and-billing/docs/how-billing-works-for-rovo-dev-standard/"
+ROVO_DEV_FREE_FAQ = [
+    ("Rovo Dev Free 积分用在哪里？", "只用于 Rovo Dev 功能。Rovo Dev Standard 和 Code Reviewer 使用各自的计费规则。"),
+    ("Rovo Dev CLI 需要什么条件？", "需要有已启用 Rovo Dev 且分配了额度的站点，以及 CLI 所需的 Rovo Dev 专用授权。"),
+]
+
 APPLICATION_GATES = {"startup", "audit", "oss"}
 APPLICATION_FAQ = [
     ("有哪些申请制计划？", "本站收录 {n} 项计划，包括 {brief}。"),
@@ -360,6 +367,13 @@ def main():
             status = "已核验" if primary.get("verify_status") == "verified" else "历史记录" if primary.get("verify_status") == "expired" else "待复核"
             desc = f"{status} · {primary['value'][:100]}。查看对应来源和核验日期。"
             intro = f"本站收录 {len(ds)} 条 {esc_quote(name)} 记录。下方列出每条记录的原始单位、适用条件和核验状态。"
+        rovo_free = len(ds) == 1 and ds[0]["id"] == "atlassian-rovo-dev-free"
+        if rovo_free:
+            offer = ds[0]
+            h1 = esc_quote(offer["value"])
+            title = f"{offer['value']} | TokenMost"
+            desc = f"{offer['value']}。{offer['rule']}在 Rovo Dev 的 Your usage 查看余量。"
+            intro = esc_quote(offer["rule"]) + "在 Atlassian 应用切换器打开 <b>Rovo Dev</b>，选择 <b>Your usage</b> 查看余量。"
         blocks = []
         for d in sorted(ds, key=lambda x: -token_quota(x)["total"]-(daily_estimate(x) or {"month":{"typical":0}})["month"]["typical"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
@@ -374,16 +388,23 @@ def main():
             if d["id"] in RELATED_GUIDES:
                 guide_id, label = RELATED_GUIDES[d["id"]]
                 guide_link = f'<p><a href="../guides/{quote(guide_id)}.html">{esc_quote(label)}</a></p>'
+            if rovo_free:
+                primary_url = ROVO_DEV_USAGE
+                action = "查看官方查额步骤"
+                guide_link = f'<p><a href="{ROVO_DEV_BILLING}" target="_blank" rel="noopener">查看官方计费规则 →</a></p>'
+            else:
+                primary_url = d["url"]
             blocks.append(
                 f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
-                f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a>'
+                f'<a class="go" href="{esc_quote(primary_url)}" target="_blank" rel="noopener nofollow">{action} →</a>'
                 + guide_link + '</div>')
         faq_blocks = []
         faq_items = []
-        for q_t, a_t in APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN:
+        faq_items_for_page = ROVO_DEV_FREE_FAQ if rovo_free else APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN
+        for q_t, a_t in faq_items_for_page:
             q = q_t.format(name=name, updated=vlabel, n=len(ds), brief=brief)
             a = a_t.format(name=name, updated=vlabel, n=len(ds), brief=brief, total=total_s)
             faq_blocks.append(f"<details><summary>{esc_quote(q)}</summary><p>{esc_quote(a)}</p></details>")
@@ -399,9 +420,9 @@ def main():
         robots_meta = '<meta name="robots" content="noindex,follow">\n' if (verified == 0 and len(ds) < 3) else ''
         page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, slug_enc=quote(slug), h1=h1, robots=robots_meta,
                           updated=vlabel, gen=today, layer=layer, n=len(ds), intro=intro,
-                          metric="额度按官方单位列出" if application_only else "原始余额 + 仅输入预算" if input_budget else "原始额度 + 有依据的 Token 折算 / 购买力参考",
-                          offers_heading="申请计划" if application_only else "🎁 当前可领额度与羊毛",
-                          faq_heading="申请常见问题" if application_only else f"❓ {esc_quote(name)}免费额度常见问题",
+                          metric="Rovo Dev 专用积分" if rovo_free else "额度按官方单位列出" if application_only else "原始余额 + 仅输入预算" if input_budget else "原始额度 + 有依据的 Token 折算 / 购买力参考",
+                          offers_heading="额度与查额入口" if rovo_free else "申请计划" if application_only else "🎁 当前可领额度与羊毛",
+                          faq_heading="Rovo Dev Free 常见问题" if rovo_free else "申请常见问题" if application_only else f"❓ {esc_quote(name)}免费额度常见问题",
                           deals="\n".join(blocks), faq="\n".join(faq_blocks),
                           ld_web=ld_web, ld_faq=ld_faq)
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
