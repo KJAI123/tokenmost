@@ -30,6 +30,12 @@ LAYER = {"official_cn": "大模型官方（国内）", "agent": "Agent 平台", 
 TYPE = {"paid_discount": "付费折扣", "signup_bonus": "注册赠送", "free_tier": "长期免费", "limited_promo": "限时活动",
         "recurring_promo": "长期活动", "free_model": "免费模型", "student": "学生通道", "invite_bonus": "邀请奖励", "pricing_plan": "套餐订阅", "info": "情报", "tool_integration": "工具接入"}
 
+
+RELATED_GUIDES = {
+    "kimi-voucher": ("kimi-guide", "查看 Kimi API 15 元券领取攻略 →"),
+    "freellmapi-router": ("freellmapi", "查看本机接入、Key 要求与上游限额 →"),
+}
+
 TPL = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -364,15 +370,17 @@ def main():
             definitions = d.get("quota_estimates", [d["daily_estimate"]] if d.get("daily_estimate") else [])
             estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
+            guide_link = ""
+            if d["id"] in RELATED_GUIDES:
+                guide_id, label = RELATED_GUIDES[d["id"]]
+                guide_link = f'<p><a href="../guides/{quote(guide_id)}.html">{esc_quote(label)}</a></p>'
             blocks.append(
                 f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
                 f'<a class="go" href="{esc_quote(d["url"])}" target="_blank" rel="noopener nofollow">{action} →</a>'
-                + ('<p><a href="../guides/kimi-guide.html">查看 Kimi API 15 元券领取攻略 →</a></p>'
-                   if d["id"] == "kimi-voucher" else "")
-                + '</div>')
+                + guide_link + '</div>')
         faq_blocks = []
         faq_items = []
         for q_t, a_t in APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN:
