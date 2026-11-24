@@ -861,11 +861,11 @@
       <description>长期免费 · 规则：5 小时窗口制（用量窗口滚动）；窗口内 agent 任务消耗额度较快（实测 6 分 44 秒任务即触发上限提示）；等待重置或订阅后发「继续」续跑（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>七牛云：七牛云 Conatus 实名用户每天可用 1 亿 Tokens，活动至 11 月 30 日</title>
+      <title>七牛云：七牛云 Conatus 实名且未受风控用户活动期间每日免费 1 亿 Tokens，仅走活动免费日额，超额直接拒绝、不扣余</title>
       <link>https://www.qiniu.com/ai/free-models/conatus-2026</link>
       <guid isPermaLink="false">qiniu-conatus-1e8</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description>限时活动 · 规则：需实名认证；同一账号的 Key 共用日额，北京时间零点重置。充值提额另计。 · 截止 2026-11-30T23:59:00+08:00（优惠以官方页面为准）</description>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>限时活动 · 规则：需登录并完成实名认证且未受风控限制方可调用；同一账号所有 API Key 共享每日额度，每日 00:00（北京时间）重置，当日未用额度不结转、不兑换。本期仅支持活动免费额度：超额请求直接拒绝，不扣账户余额、资源包、订阅额度或积分，不自动转付费或切换模型。任意一笔大于 100 元且已到账的充值可将免费日额提升至 10 亿（多笔不累计，购买资源包或订阅不计入门槛）；未充值账户仍为每日 1 亿。 · 截止 2026-11-30T23:59:00+08:00（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>ZenMux：ZenMux（200+ 模型聚合，首创 AI 保险赔付机制）注册送平台 Gifts 赠送额度，可直接试用 Claude </title>
@@ -1155,11 +1155,11 @@
       <description>长期免费 · 规则：OpenAI 兼容接口 https://developer.amd.com.cn/radeon/api/v1（也兼容 Anthropic）；需注册 AMD AI 开发者账号拿 Key；免费额度用 pts 统计，实际限额因账号而异——Model Usage 页可查每日上限与重置时间（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>七牛云：七牛云 AI 推理平台邀请活动：经链接注册即送 **300 万 Token 融合资源包**（50+ 全球 AI 大模型通</title>
+      <title>七牛云：七牛云 AI 推理邀请礼：300 万 Token 融合包面值，按模型刊例价比例抵扣。新人经邀请链接注册并首次进入推理对话</title>
       <link>https://s.qiniu.com/EnYbIb</link>
       <guid isPermaLink="false">qiniu-invite-3m</guid>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
-      <description>折扣码 · 规则：新用户经邀请链接注册→自动到账 300 万 Token 融合资源包（按使用模型刊例价格比例抵扣）；仅限个人用户；邀请方需开通推广功能（优惠以官方页面为准）</description>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>折扣码 · 规则：新用户经邀请链接注册，首次进入七牛云 AI 大模型控制台对话页后 300 万 Token 融合资源包自动发放（活动期间每用户限领 1 次，不限注册时间）；奖励按使用模型刊例价格比例抵扣，仅支持实时推理、不含文生图/图生图/视频生成/ASR/TTS 等，抵扣范围以资源包详情页为准；仅限个人用户；邀请方需开通推广功能，好友激活后得 300 万 Token、需在活动页手动领取，领取后 24 小时内到账。活动时间以官方公布为准，页面未标明截止日期。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>OpenDesign：OpenDesign Go：首月 $8，续费 $10/月，Coding Plan 月度用量最高 $220</title>
