@@ -123,7 +123,7 @@
       <link>https://openrouter.ai/models?max_price=0</link>
       <guid isPermaLink="false">openrouter-free</guid>
       <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：常规免费档共享 50 次/天、20 次/分钟。已购买至少 $10 积分的账号上限另计。（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：:free 模型按账号共用调用池。基础档 50 次/天，高档 1,000 次/天，两档均为 20 次/分钟。累计购买 10 credits 是官方表格的名义门槛；考虑舍入和充值手续费，高档从低一个 credit 起算。BYOK 和豁免账号另有规则，实际限额以控制台为准。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>NVIDIA NIM：NVIDIA API Catalog 免费原型推理：按账号速率限流</title>
@@ -294,7 +294,7 @@
       <description>长期低价 · 规则：默认缓存 5 分钟，命中输入不重复收取缓存写入费（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>OpenRouter：OpenRouter 免费模型默认每天 50 次，累计购满 $10 额度后每天 1,000 次</title>
+      <title>OpenRouter：OpenRouter :free 共池：50 次/天或 1,000 次/天，均为 20 次/分钟。高档比名义门槛 10 </title>
       <link>https://openrouter.ai/docs/api-reference/limits</link>
       <guid isPermaLink="false">openrouter-boost</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
