@@ -495,6 +495,14 @@
     "url": "https://freellmapi.co/",
     "desc": "本地 OpenAI 兼容路由，按各提供方限额调用",
     "free": "免费路由工具；部分通道免Key"
+   },
+   {
+    "name": "QuWork",
+    "url": "https://qurwork.com/",
+    "desc": "基于 DeepSeek Harness 的第三方 AI 桌面工作台",
+    "desc_en": "Third-party AI desktop workspace built on DeepSeek Harness",
+    "free": "注册 1,000 积分，签到 100 积分/天",
+    "free_en": "1,000 signup points and 100 points per daily check-in"
    }
   ]
  },
