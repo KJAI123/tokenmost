@@ -1,45 +1,26 @@
-# Kimi 攻略：15 元 API 券、会员档位、旗舰模型充值路径
+# Kimi API 15 元券能用 K3 吗？领取条件与 Highspeed 限制
 
-> 核实于 2026-10-27 ｜ 素材以 Kimi 官方帮助文档直核为主 ｜ 难度：★☆☆
+国内新用户完成认证后可领 15 元 API 券，适用于 Kimi K3 和 K3.1 Pro 普通版。K3.1 Pro Highspeed 不适用。
 
-## 1. API 新人 15 元代金券（官方文档口径，verified）
+核对日期 2026-11-25。以上适用范围来自 [Kimi 开放平台账号与财务](https://platform.kimi.com/docs/guide/account-and-payments)。
 
-1. **注册**：https://platform.kimi.com （国内手机号，仅限新用户）。
-2. **实名认证**：认证通过后代金券自动发放——**注册即赠 15 元代金券**（官方免费试用额度说明页原文）。
-3. **有效期 3 个月**（自发放日起），过期作废——领了就排任务。
-4. **⚠️ 券的硬限制**：**不可用于 Kimi-K3 / K3.1-Pro 等旗舰模型**——跑旗舰必须充值解锁（最低充值 10 元）。
-5. **⚠️ 混扣规则**（官方账号与财务文档）：默认**现金 50% + 代金券 50% 各半扣**，一类用尽后全额扣另一类——意味着 15 元券实际要搭配余额才能花完，充 10 元就能把券的价值吃满。
+## 领取后去哪里查券？
 
-## 2. 网页/App 端：长期免费对话 + 会员档位
+1. 用国内手机号注册 [Kimi API 开放平台](https://platform.kimi.com/)，在 [用户中心](https://platform.kimi.com/console/auth) 完成实名认证。
+2. 登录控制台，打开「费用明细」，查看代金券余额。券到账后会自动用于符合条件的 API 调用。帮助中心列出的有效期为自发放起 **3 个月**，实际以账户显示为准。
+3. 用 `kimi-k3` 或 `kimi-k3.1-pro` 前，先核对模型和余额。发出小请求后，可以在费用明细对照现金和券余额的变化。
 
-- 网页端对话长期免费（社区清单口径）；新用户另有约 800 万 tokens 赠送口径（smzdm 清单，**待核实**）。
-- 会员四档（官方定价页，R2 直核）：**Go ¥49（无 Kimi Code 额度）/ Plus ¥99 / Pro ¥199 / Max ¥699**。
-- **Kimi Code 门槛**：Plus 及以上；K3.1-Pro 与 K3 调用需 Plus+；**1M 上下文与 Highspeed 版需 Pro 及以上**。
-- 新会员已取消周限额（仅 5 小时滚动窗口）；加油包：单次最低 ¥25，官方示例简单请求约 ¥0.03、复杂多步约 ¥1.6。
+[官方免费测试权益说明](https://www.kimi.com/help/kimi-api/api-free-trial) · [官方账号与财务说明](https://platform.kimi.com/docs/guide/account-and-payments)
 
-## 3. 充值返券（历史活动，盯公众号复刻）
+## K3、Highspeed 和扣费规则
 
-- 2026-03 官方活动口径：**充值满 ¥500 赠 20%–40% 代金券**，次日到账、90 天有效。
-- **盯防渠道**：官方微信公众号「**Kimi**」+ platform.kimi.com 公告 + changelog（https://platform.kimi.com/docs/changelog ）。
+- **可用**：Kimi K3 与 K3.1 Pro 普通版。**不适用**：K3.1 Pro Highspeed。其他模型的抵扣资格请以账户显示为准。
+- 官方帮助中心仍把 K3 列为不可用，开放平台财务文档明确列为可用。两处文档口径不同，实际扣费请核对账户明细。
+- [开放平台变更日志](https://platform.kimi.com/docs/changelog) 写明现金和券同时有余额时各扣 50%，一类耗尽后从另一类全额扣除，已签合同用户依合同。帮助中心仍写券优先扣。最低充值额和账户扣费以当期控制台为准。
+- 15 元是按量抵扣金额。可用 Token 取决于模型单价、输入输出和缓存用量。
 
-## 4. 「K2.5 于 10-31 停止新用户」传闻 → 官方定案（已核实）
+## Kimi Code 会员额度在哪里看？
 
-- **官方 changelog 逐字**（platform.kimi.com/docs/changelog）：K2.5 于 2026-01 发布 → **2026-07 起 kimi-k2.5 与 moonshot-v1 全系停止向新注册用户开放** → **2026-08 全平台下线、调用返回 404**，官方迁移目标 Kimi-K3。
-- **结论**：传闻日期（10-31）错误但方向正确——事情早已发生完毕。开放平台现役模型只有 **K3（旗舰）与 K2.7-Code（含高速版）**。
-- ⚠️ 注意区分：百炼/讯飞等第三方聚合平台托管的 `kimi-k2.5` 快照与 Kimi 开放平台下线无关，仍可按各家额度调用。
-- K2 系（2026-05）与 kimi-latest 也已下线——网上「K2 攻略」全部过期。
+API 券在开放平台「费用明细」查看。Kimi Code 使用单独的会员额度，新套餐 Plus 及以上可用，Go 档没有 Kimi Code 额度。Desktop、CLI、VS Code 和第三方工具共用该会员额度。
 
-## 5. 避坑
-
-- 15 元券跑不了 K3——想体验旗舰先充 10 元，再把券当主力余额用。
-- Kimi Code 额度与开放平台 API 额度是两个池子，不通用。
-- 「Kimi 会员权益直通车」「低价代充」类第三方链接=共享账号风险，官方明文封禁多人共用。
-
----
-**核实于 2026-10-27**。来源列表（官方文档直核，高）：
-- 免费试用额度说明（15 元券）：https://www.kimi.com/help/kimi-api/api-free-trial
-- 账号与财务（混扣规则/充值）：https://platform.kimi.com/docs/guide/account-and-payments
-- 会员权益（档位/5h 限额/加油包）：https://www.kimi.com/code/docs/kimi-code/membership.html
-- 发布记录（K2.5 下线定案）：https://platform.kimi.com/docs/changelog
-- 火山侧 K2.7-Code 下线：https://docs.volcengine.com/docs/ark/coding-plan-personal-plan-overview
-- 新用户约 800 万 tokens：**待核实**（smzdm 清单单源）
+[Kimi Code 官方会员权益](https://www.kimi.com/code/docs/kimi-code/membership.html)

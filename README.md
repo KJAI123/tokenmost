@@ -10,6 +10,7 @@
 
 - [免费 AI API 额度对比](https://tokenmost.com/free-ai-api.html?utm_source=github_readme) 按模型查看原始日额、月额与领取条件。
 - [平台目录](https://tokenmost.com/platform/?utm_source=github_readme) 和 [领取攻略](https://tokenmost.com/guides/?utm_source=github_readme) 支持直接链接到具体平台。
+- [Kimi API 15 元券领取攻略](https://tokenmost.com/guides/kimi-guide.html?utm_source=github_readme&utm_medium=readme&utm_campaign=kimi_api_guide&utm_content=featured_kimi) 查看实名认证步骤、K3 可用范围和 Highspeed 限制。
 - [订阅已核验免费权益](https://tokenmost.com/verified.xml) 获取最近复核的常规免费权益。每项包含原始领取入口和对应的平台说明。
 
 ## 三层信息结构

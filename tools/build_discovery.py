@@ -35,7 +35,7 @@ def write_discovery(root, pages, guides, deals, slugify, layers):
         items = ''.join(f'<li><a href="/platform/{quote(m["slug"])}.html">{esc(m["name"])}</a><small>{m["verified"]} 条已核验 / 共 {m["n"]} 条</small></li>' for m in members)
         sections.append(f'<section><h2>{esc(layers.get(layer,"云服务与工具"))}</h2><ul class="grid">{items}</ul></section>')
     (root/'platform/index.html').write_text(page('AI 平台免费额度目录','按平台查当前额度、核验日期和官方领取入口。','/platform/','<p><a href="/free-cloud-servers.html">免费云服务器与开发资源</a></p>'+''.join(sections),'directory'))
-    links = ''.join(f'<li><a href="/guides/{quote(g["id"])}.html">{esc(g["title"])}</a></li>' for g in guides)
+    links = ''.join(f'<li><a href="{quote(g["id"])}.html">{esc(g["title"])}</a></li>' for g in guides)
     (root/'guides/index.html').write_text(page('AI 免费额度领取攻略','从注册、接入到检查用量，按你正在使用的平台选择教程。','/guides/',f'<ul class="guides">{links}</ul>','directory'))
 
     eligible = [d for d in deals if free(d) and d.get('verify_status')=='verified' and _active_days(d)
