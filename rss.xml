@@ -311,8 +311,8 @@
       <title>Cohere：Cohere 试用密钥每月最多 1,000 次 API 调用</title>
       <link>https://docs.cohere.com/docs/rate-limits</link>
       <guid isPermaLink="false">cohere-trial</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：用于评估，分钟限流按模型和端点变化，生产密钥另计费（优惠以官方页面为准）</description>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：仅用于评估 Key。分钟限速按模型和端点区分。生产 Key 独立计费，部分新 Chat 模型在生产 Key 下仍有月限。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Kimi 开放平台：Kimi K3 系列重复请求前缀自动走缓存计费</title>
@@ -892,7 +892,7 @@
       <title>七牛云：七牛云 Conatus 实名且未受风控用户活动期间每日免费 1 亿 Tokens，仅走活动免费日额，超额直接拒绝、不扣余</title>
       <link>https://www.qiniu.com/ai/free-models/conatus-2026</link>
       <guid isPermaLink="false">qiniu-conatus-1e8</guid>
-      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
       <description>限时活动 · 规则：需登录并完成实名认证且未受风控限制方可调用；同一账号所有 API Key 共享每日额度，每日 00:00（北京时间）重置，当日未用额度不结转、不兑换。本期仅支持活动免费额度：超额请求直接拒绝，不扣账户余额、资源包、订阅额度或积分，不自动转付费或切换模型。任意一笔大于 100 元且已到账的充值可将免费日额提升至 10 亿（多笔不累计，购买资源包或订阅不计入门槛）；未充值账户仍为每日 1 亿。 · 截止 2026-11-30T23:59:00+08:00（优惠以官方页面为准）</description>
     </item>
     <item>
@@ -1494,8 +1494,8 @@
       <title>Cloudflare Workers AI：Workers AI 每天 10,000 Neurons 免费，按不同模型的计算消耗扣减。</title>
       <link>https://developers.cloudflare.com/workers-ai/</link>
       <guid isPermaLink="false">cloudflare-workers-ai-free</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：每天 UTC 00:00 重置；免费档超额报错；部分模型要求付费账号或预付额度。（优惠以官方页面为准）</description>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：每日 UTC 00:00 重置。Workers Free 超额报错。定价页列出的部分模型需 Workers Paid 或 AI Gateway 预付额度。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>Hugging Face Inference：Hugging Face 免费账户已无每月推理赠金</title>
