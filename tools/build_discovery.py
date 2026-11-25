@@ -41,7 +41,7 @@ def write_discovery(root, pages, guides, deals, slugify, layers):
     eligible = [d for d in deals if free(d) and d.get('verify_status')=='verified' and _active_days(d)
                 and d.get('gate')!='student' and d.get('type') not in ('student','paid_discount')]
     def detail(d):
-        return '/platform/'+quote(slugify(d.get('group') or d['provider']))+'.html#deal-'+quote(d['id'])
+        return 'platform/'+quote(slugify(d.get('group') or d['provider']))+'.html#deal-'+quote(d['id'])
     native, others = [], []
     for d in eligible:
         for q in entries(d):
@@ -73,7 +73,7 @@ def write_discovery(root, pages, guides, deals, slugify, layers):
     for d in sorted((d for d in eligible if d.get('type') not in ('info','tool_integration') and entries(d)),key=lambda row:(row['verified_at'],row['id']),reverse=True)[:40]:
         item=ET.SubElement(channel,'item')
         ET.SubElement(item,'title').text=d['provider']+' · '+d['value']
-        ET.SubElement(item,'link').text=HOST+detail(d).replace('#','?utm_source=verified_rss#',1)
+        ET.SubElement(item,'link').text=HOST+'/'+detail(d).replace('#','?utm_source=verified_rss#',1)
         ET.SubElement(item,'guid',isPermaLink='false').text='tokenmost:'+d['id']
         timestamp=datetime.fromisoformat(d['verified_at'].replace('Z','+00:00'))
         ET.SubElement(item,'pubDate').text=format_datetime(timestamp.replace(tzinfo=timestamp.tzinfo or timezone.utc))
