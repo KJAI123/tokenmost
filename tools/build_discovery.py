@@ -9,11 +9,17 @@ from token_math import entries, free, _active_days
 
 HOST = 'https://tokenmost.com'
 esc = html.escape
-NAV = '<nav aria-label="主导航"><a class="brand" href="/">TokenMost</a><a href="/free-ai-api.html">免费 API 对比</a><a href="/platform/">平台目录</a><a href="/guides/">领取攻略</a></nav>'
+NAV = (
+    '<nav aria-label="主导航"><a class="brand" href="{prefix}">TokenMost</a>'
+    '<a href="{prefix}free-ai-api.html">免费 API 对比</a>'
+    '<a href="{prefix}platform/">平台目录</a>'
+    '<a href="{prefix}guides/">领取攻略</a></nav>'
+)
 
 
-def page(title, desc, url, body, surface, *, verified_feed='/verified.xml'):
+def page(title, desc, url, body, surface, *, verified_feed='/verified.xml', nav_prefix='/'):
     canonical = HOST + url
+    nav = NAV.format(prefix=nav_prefix)
     return f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} · TokenMost</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{canonical}">
@@ -21,7 +27,7 @@ def page(title, desc, url, body, surface, *, verified_feed='/verified.xml'):
 <meta property="og:url" content="{canonical}"><meta property="og:type" content="website"><meta property="og:image" content="{HOST}/og-image.png">
 <meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="已核验免费权益" href="{verified_feed}">
 <link rel="stylesheet" href="/assets/discovery.css"><script defer src="/assets/engagement.js"></script></head>
-<body data-surface="{surface}"><header>{NAV}</header><main><h1>{esc(title)}</h1><p class="intro">{esc(desc)}</p>{body}</main>
+<body data-surface="{surface}"><header>{nav}</header><main><h1>{esc(title)}</h1><p class="intro">{esc(desc)}</p>{body}</main>
 <footer><a href="{verified_feed}">订阅免费权益 RSS</a><button type="button" data-share-page hidden>分享本页</button><span role="status" data-share-status></span></footer></body></html>
 '''
 
@@ -63,7 +69,7 @@ def write_discovery(root, pages, guides, deals, slugify, layers):
     (root/'free-ai-api.html').write_text(page(
         '免费 AI API 额度对比',
         '按平台比较每日或每月刷新的免费上限、适用模型和账号条件。EdgeOne 单列内置模型权益。',
-        '/free-ai-api.html', body, 'comparison', verified_feed=f'{HOST}/verified.xml',
+        '/free-ai-api.html', body, 'comparison', verified_feed=f'{HOST}/verified.xml', nav_prefix='./',
     ))
 
     rss = ET.Element('rss', version='2.0')
