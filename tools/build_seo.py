@@ -72,7 +72,7 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 .back{{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}}
 .rel{{margin-top:26px;padding-top:12px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}}
 .rel a{{margin-right:14px}}
-</style><script defer src="/assets/engagement.js"></script></head><body data-surface="platform">
+</style><script defer src="../assets/engagement.js"></script></head><body data-surface="platform">
 <a class="back" href="../">← 回 tokenmost 情报流</a>
 <h1>{h1}</h1>
 <p class="sub">信源核验：{updated} · 页面生成：{gen} · {layer} · 共 {n} 条信源 · {metric}</p>
