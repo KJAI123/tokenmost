@@ -17,7 +17,8 @@ NAV = (
 )
 
 
-def page(title, desc, url, body, surface, *, verified_feed='/verified.xml', nav_prefix='/', engagement_src='../assets/engagement.js'):
+def page(title, desc, url, body, surface, *, verified_feed='/verified.xml', nav_prefix='/',
+         engagement_src='../assets/engagement.js', stylesheet_href='../assets/discovery.css'):
     canonical = HOST + url
     nav = NAV.format(prefix=nav_prefix)
     return f'''<!doctype html>
@@ -26,7 +27,7 @@ def page(title, desc, url, body, surface, *, verified_feed='/verified.xml', nav_
 <meta property="og:title" content="{esc(title)} · TokenMost"><meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}"><meta property="og:type" content="website"><meta property="og:image" content="{HOST}/og-image.png">
 <meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="已核验免费权益" href="{verified_feed}">
-<link rel="stylesheet" href="/assets/discovery.css"><script defer src="{esc(engagement_src)}"></script></head>
+<link rel="stylesheet" href="{esc(stylesheet_href)}"><script defer src="{esc(engagement_src)}"></script></head>
 <body data-surface="{surface}"><header>{nav}</header><main><h1>{esc(title)}</h1><p class="intro">{esc(desc)}</p>{body}</main>
 <footer><a href="{verified_feed}">订阅免费权益 RSS</a><button type="button" data-share-page hidden>分享本页</button><span role="status" data-share-status></span></footer></body></html>
 '''
@@ -70,7 +71,7 @@ def write_discovery(root, pages, guides, deals, slugify, layers):
         '免费 AI API 额度对比',
         '按平台比较每日或每月刷新的免费上限、适用模型和账号条件。EdgeOne 单列内置模型权益。',
         '/free-ai-api.html', body, 'comparison', verified_feed=f'{HOST}/verified.xml', nav_prefix='./',
-        engagement_src='./assets/engagement.js',
+        engagement_src='./assets/engagement.js', stylesheet_href='./assets/discovery.css',
     ))
 
     rss = ET.Element('rss', version='2.0')
