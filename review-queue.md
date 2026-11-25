@@ -13,7 +13,7 @@
 - **待复核** `minimax-m3-half`（MiniMax 开放平台）：源 minimax-pricing 页面于 2026-11-20 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `dify-selfhost`（Dify 自部署）：源 dify-pricing 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `modelscope-free-infer`（魔搭 ModelScope）：官方限额页未公布固定每日调用次数（并发动态、魔粒按次扣减）；旧 2,000 次/天仅社区口径留历史，实际限速与余额以账号页为准。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-referral 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-billing 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `aihubmix-free`（AIHubMix）：源 aihubmix-pricing 页面于 2026-11-21 变更（连续 3 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -25,7 +25,6 @@
 - **待复核** `302ai-payg`（302.AI）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ohmygpt-glmfree`（OhMyGPT）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `mistral-free`（Mistral）：源 terms-b8b3332e58ef 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `cohere-trial`（Cohere）：源 quota-review-a03104fba0 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `sensenova-lite`（商汤日日新）：源 sensenova-free-beta 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xfyun-offpeak`（讯飞星火）：源 xfyun-coding-plan 页面于 2026-11-16 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-bailian-newuser-quota`（阿里云百炼）：源 terms-6b43c566b2b6 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -33,7 +32,8 @@
 - **待复核** `deep-bailian-pricing`（阿里云百炼）：源 terms-6b43c566b2b6 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-kimi-membership`（Kimi（月之暗面））：源 terms-e3fe6a2f00be 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-minimax-mplan`（MiniMax）：源 quota-review-9ee8e8cdb5 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `deep-claude-pro-max`（Anthropic Claude）：源 terms-1a386ba36183 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-claude-pro-max`（Anthropic Claude）：源 terms-1a386ba36183 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `deep-copilot-ai-credits`（GitHub Copilot）：源 copilot-plans 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-volc-collab-reward`（火山方舟）：源 ark-collab 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-volc-free-quota`（火山方舟）：源 ark-freequota 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-volc-coding-plan`（火山方舟）：源 terms-7614ee811dba 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -70,11 +70,10 @@
 - **待复核** `codex-free`（Codex）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xiaomi-mimo-free5`（小米 MiMo）：源 terms-781d2cbaf910 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xiaomi-mimo-refer`（小米 MiMo）：源 terms-3723305051e2 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `ecloud-tianyi-25m`（天翼云星辰 TokenHub）：源 ctyun-free-model-packs 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `ecloud-tianyi-25m`（天翼云星辰 TokenHub）：源 ctyun-tokenhub-changelog 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `comet-free`（Perplexity Comet）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-startups`（Google for Startups）：源 terms-c661f469c0a8 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qwen-app-5h-limit`（千问）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `qiniu-conatus-1e8`（七牛云）：源 qiniu-conatus-rule 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `poe-daily-points`（Poe）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `baseten-starter-30`（Baseten）：当前官方价格页未确认注册即送 $30，需核对 Starter 账户新客权益。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deep-sensenova-xiaohuanxiong`（商汤小浣熊）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -91,6 +90,7 @@
 - **待复核** `ecom-token-store-1111`（电商 Token 店）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `api-relay-distill-warning`（API 中转站）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `instabox-free-agent-vm`（InstaBox）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `oracle-cloud-always-free`（Oracle Cloud）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `aws-freetier-ec2`（AWS）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `gcp-freetier-vm`（Google Cloud）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `github-codespaces-free`（GitHub Codespaces）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -107,17 +107,24 @@
 - **待复核** `opendesign-reset-card-invite`（OpenDesign）：源 opendesign-go-referral 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `opendesign-free`（OpenDesign）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `fiimeopc-token`（FiimeOPC）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `azure-free-trial`（Microsoft Azure）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `vultr-trial-250`（Vultr）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `agentscope-qwenpaw-free`（AgentScope Platform）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `simular-box-free`（Simular Box）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `northwest-first-com-free`（Northwest）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `dnshe-free-domains`（DNSHE）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `digitalplat-dpdns-free`（DigitalPlat FreeDomain）：超过 14 天未被任何数据源自动续期（源失联或未配置监控） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `freepi-terminal-free`（free-pi）：源 quota-review-fc936a6181 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `minimax-code-daily-400`（MiniMax Code）：源 quota-review-9ee8e8cdb5 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `miao-wu-daily-2000`（秒悟）：源 meoo-official-pricing 页面于 2026-11-22 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `codearts-skill-1000`（华为码道）：源 codearts-current-pricing 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `drex-monthly-5usd`（Drex）：源 nace-drex-official-pricing 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `livekit-monthly-2.5usd`（LiveKit Inference）：源 livekit-inference-credit-policy 页面于 2026-11-21 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `livekit-monthly-2.5usd`（LiveKit Inference）：源 livekit-inference-credit-policy 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `elevenlabs-free-10k`（ElevenLabs）：源 elevenlabs-free-credit-policy 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zed-student-10usd`（Zed）：源 zed-student-credit-policy 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `cloudflare-workers-ai-free`（Cloudflare Workers AI）：源 cloudflare-ai-free-policy 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `vercel-ai-gateway-free-credits`（Vercel AI Gateway）：源 vercel-gateway-free-policy 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `google-antigravity-cli-free`（Google Antigravity CLI）：源 antigravity-cli-plans 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zcode-idle-tasks`（ZCode）：源 terms-995624e07852 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deepseek-server-search-billing`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-23 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `qoder-qwen-offpeak-discount`（Qoder 国际版）：源 qoder-offpeak-discounts 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -128,6 +135,6 @@
 - **待复核** `freellmapi-router`（FreeLLMAPI）：源 freellmapi-readme-review 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `autoclaw-m11w4-login`（智谱 AutoClaw）：源 autoclaw-m11w4-login-terms 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `xfyun-spark-x26-nov17`（讯飞星辰 MaaS）：源 xfyun-spark-nov17 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 66 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
-- **源失联** `scaleway-generative-new-customer`：连续 3 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
-- **源失联** `terms-96612fe5b9e2`：连续 4 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `linuxdo-rss`：连续 67 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `scaleway-generative-new-customer`：连续 4 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `terms-96612fe5b9e2`：连续 5 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
