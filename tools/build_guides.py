@@ -47,9 +47,9 @@ th{{background:var(--card)}}
 .back{{display:inline-block;margin-bottom:16px;color:var(--muted);font-size:.85rem}}
 .src{{color:var(--muted);font-size:.78rem;margin-top:26px;padding-top:12px;border-top:1px solid var(--border)}}
 </style><script defer src="/assets/engagement.js"></script></head><body data-surface="guide">
-<a class="back" href="/">← 回 tokenmost 情报流</a>
+<a class="back" href="../">← 回 tokenmost 情报流</a>
 {body}
-<footer class="src"><a href="/guides/">全部领取攻略</a> · <a href="/free-ai-api.html">免费 API 对比</a> · <a href="/verified.xml">订阅已核验权益</a> · <button type="button" data-share-page hidden>分享本页</button> <span role="status" data-share-status></span></footer>
+<footer class="src"><a href="../guides/">全部领取攻略</a> · <a href="../free-ai-api.html">免费 API 对比</a> · <a href="../verified.xml">订阅已核验权益</a> · <button type="button" data-share-page hidden>分享本页</button> <span role="status" data-share-status></span></footer>
 </body></html>"""
 
 

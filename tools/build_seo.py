@@ -73,7 +73,7 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 .rel{{margin-top:26px;padding-top:12px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem}}
 .rel a{{margin-right:14px}}
 </style><script defer src="/assets/engagement.js"></script></head><body data-surface="platform">
-<a class="back" href="/">← 回 tokenmost 情报流</a>
+<a class="back" href="../">← 回 tokenmost 情报流</a>
 <h1>{h1}</h1>
 <p class="sub">信源核验：{updated} · 页面生成：{gen} · {layer} · 共 {n} 条信源 · {metric}</p>
 <p>{intro}</p>
@@ -81,7 +81,7 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 {deals}
 <h2>{faq_heading}</h2>
 {faq}
-<div class="rel">继续看：<a href="/platform/">平台目录</a><a href="/free-ai-api.html">免费 API 对比</a><a href="/guides/">领取攻略</a><a href="/verified.xml">已核验权益 RSS</a><button type="button" data-share-page hidden>分享本页</button> <span role="status" data-share-status></span></div>
+<div class="rel">继续看：<a href="../platform/">平台目录</a><a href="../free-ai-api.html">免费 API 对比</a><a href="../guides/">领取攻略</a><a href="../verified.xml">已核验权益 RSS</a><button type="button" data-share-page hidden>分享本页</button> <span role="status" data-share-status></span></div>
 </body></html>"""
 
 FAQ_GEN = [
