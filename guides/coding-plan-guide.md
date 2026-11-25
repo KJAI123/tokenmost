@@ -2,6 +2,8 @@
 
 > 核实于 2026-10-27（官网/文档直核）｜ 2026-11-11 增补全网大对比总表（◆=搜索口径待 TK 复核，其余官方直核）｜ 全文只列各厂商**官方公布的数字**，官方不公布的一律标注。
 
+选套餐前，先<a href="#plan-eligibility">核对免费档与活动资格</a>，再看额度单位和数据授权。Qoder、TRAE 和火山方舟三项规则于 2026-11-25 复核。
+
 ## 先看一张表：官方敢公布折算的只有这三家
 
 绝大多数编程套餐的「积分」是黑箱，官方不给 token 换算。敢把公式写在文档里的目前只有三家：
@@ -22,13 +24,16 @@
 - **SCNet 基础版**：¥30/月 6 万 Credits ≈ 综合 3000 万 tokens（倍率 1.0 模型；Flash 类倍率 0.13-0.15 可放大 6-7 倍）
 - **不可换算的黑箱**：Kimi（官方只给"简单请求约 ¥0.03、复杂任务约 ¥1.6"）、Claude（官方拒绝公布绝对数，Settings>Usage 进度条是唯一口径）、Copilot（AI Credits 无 token 换算）
 
-## 决策树：你该买包月还是按量
+## <span id="plan-eligibility">决策树</span>：你该买包月还是按量
 
-1. **每天写代码 <2 小时 / 只是偶尔问问题** → 别买包月。用免费层：智谱 BigModel 的 8 款免费模型、ZCode 绑定 BigModel 后的 5 天试用、Qoder 社区版月 100 Credits、CodeBuddy 体验版 500 Credits/月、Trae 免费档 500 积分/月，轮着够用。
+1. **每天写代码 <2 小时 / 只是偶尔问问题** → 别买包月。用免费层：智谱 BigModel 的 8 款免费模型、ZCode 绑定 BigModel 后的 5 天试用、CodeBuddy 体验版 500 Credits/月和 TRAE 国内个人版免费档。Qoder 活动资格见下方。
 2. **重度但能接受限定模型** → 首选**智谱包月**：官方公式透明、闲时 5 折、Flash 限免兜底；¥49 V2 老价若还能续（老用户权益）是全场最划算档。
 3. **要多模型聚合（GLM+DeepSeek+Kimi 一份钱）** → **讯飞 Token Plan ¥30 档**或 **SCNet ¥30 档**，两家都有官方折算且 Flash 类倍率极低；注意都禁 API 自动化调用（仅编程工具交互式使用）。
 4. **海外模型刚需（Claude/GPT 原生）** → Claude Max/Team 订阅满 7 天可领 API credits（限 Max/Team，非 Pro）；GitHub Copilot 按新 AI Credits 体系选档。
 5. **算力侧需求（微调/跑模型）** → 走 GPU 租赁（并行智算/智星云/AutoDL 学生价），别用编程套餐硬凑。
+
+- **Qoder 国际版活动**：[查看 Qoder 国际版领取规则](https://docs.qoder.com/zh/events/100credits)。自 2026-11-19 10:00（UTC+8）起，Pro 试用期和个人付费订阅用户可在桌面端、移动端或 IDE 每日主动领 100 Credits。每笔自领取起有效 30 天，活动结束时间另行公告。国际版免费体验账号已停止新领。Qoder CN 的权益须查国内版当期规则。
+- **TRAE 国内个人版 Free**：[查看 TRAE 国内个人版定价](https://www.trae.cn/pricing)。每月 500 个 TRAE 积分，用于产品内消费。国际版适用独立规则，通用 API 额度另查对应平台。
 
 ## ⚠️ 翻雷清单（2026 年实雷，收录站实测/官方口径）
 
@@ -36,10 +41,10 @@
 2. **GitHub Copilot 已改 AI Credits 计量**：老口径"Pro 300 / Pro+ 1000 premium requests"作废；现为 Pro $10=1500 credits、Pro+ $39=7000、Max $100=20000（官方 docs 直核）。看旧攻略买 Copilot 会算错账。
 3. **Cursor 已并入 X Subscription**：SpaceX 收购 Anysphere 后（2026-08-14 交割），2026-10-12 起官方档位变成 Plus $8 / Premium $30 / Super $100 / Ultra $200 的共享池（周刷新，Grok 模型为主）。**老攻略"$20 Pro=500 fast requests"全部过期**；社区正抱怨套餐重叠混乱，建议观望再入。
 4. **Kimi 新老会员双轨**：新会员（Plus ¥99 及以上）Kimi Code 取消周限额、只有 5 小时滚动窗口；老会员仍有周限额。Go 档（¥49）**没有** coding 额度，别买错。
-5. **Trae 计费争议**：GitHub issue #2318 用户称 2026-02 计费变更令权益缩水 5-10 倍、GPT-5.3-Codex 仅 Ultra 档可用。国内版现为五档积分制（Free 500 积分起，官方页直核），下单前看当前规则。
+5. **Trae 计费争议**：GitHub issue #2318 用户称 2026-02 计费变更令权益缩水 5-10 倍、GPT-5.3-Codex 仅 Ultra 档可用。国内个人版采用积分制，下单前查上文的国内个人版定价。
 6. **文心快码 Auto-Free"不限量"是旗舰档福利**：免费档只有补全；专业版 Auto-Free 限 150k tokens/h；"不限量至 2026-12-31"绑 ¥199/月旗舰版（官方文直核）。看到"免费不限量"标题党的先看绑定档位。
 7. **智谱多 IP 风控**：官方明文禁共享、3 次违规封号，社区已有"服务器+多 IP+出差"被封 Lite 的实锤。单人单环境最安全。
-8. **火山协作奖励计划**：数据授权"永久且已采集不可撤回"（官方原文），且 2026-09/10 两轮共 40 款模型退出名单——报名前看在列模型 + 想清楚隐私。
+8. **火山协作奖励计划**：火山引擎可永久使用合作期内已授权的协作奖励数据。撤回授权后，后续调用数据停止提供，个人参与随之结束。部分模型会按公告退出。参与前请[查看火山方舟协作奖励计划规则](https://docs.volcengine.com/docs/ark/collaboration-reward-program?lang=zh)，核对授权条款与在列模型。
 
 ## 全网大对比总表（2026-11 增补，22 个套餐一屏看完）
 
@@ -56,8 +61,8 @@
 | 智谱 Pro / Max | ¥269 起 / ¥885 起（官方页为准） | 12000/60000 与 28000/140000 积分 | 同上 | 同公式线性放大 |
 | Kimi 会员（Plus ¥99+） | ¥99 起 | Kimi Code 5 小时滚动窗（新版取消周限） | Kimi Code | ⚠️ Go ¥49 档**无** coding 额度 |
 | 通义灵码 专业版 ◆ | ¥49/人/月 | 官方未公布 token 换算 | 自家 IDE/插件 | 深度适配千问 3 |
-| TRAE 免费档 | ¥0 | 500 积分/月 + 每日签到 150 | 自家 IDE | 五档积分制；2026-02 有缩水争议史 |
-| Qoder 社区版 | ¥0 | 月 100 Credits + 每日主动领 100 | 自家 IDE | 免费=每天手动领 |
+| TRAE 国内个人版 Free | ¥0 | 500 TRAE 积分/月 | TRAE 产品内 | 国际版按独立规则 |
+| Qoder CN | 以国内定价为准 | 固定月赠待核 | 自家 IDE | 国际版活动资格见上文 |
 | CodeBuddy（腾讯）◆ | 积分制两档（500/2000） | 补全免费 5000 次/月，会员无限 | 自家 IDE | 官方页金额未列全，TK 复核 |
 | 文心快码 | ¥199（旗舰） | Auto-Free「不限量至 2026-12-31」绑旗舰档；免费档只有补全 | 自家 | 「不限量」标题党重灾区 |
 
@@ -80,7 +85,7 @@
 3. **要多模型一网打尽**：阿里云百炼 Token Plan ¥139 档（Qwen+GLM+Kimi+MiniMax 四家通享）
 4. **Claude/GPT 原生抽 fart**：Claude Max 5x $100 或 ChatGPT Pro 100 $100；重度 Codex 直接看 $500 档
 5. **极客低价**：Cursor Plus $8（Grok 生态）
-6. **不花钱**：TRAE 500 积分 + Qoder 每日 100 + 智谱 Flash 限免 + Copilot Free 轮着薅（本站免费专区天天更新）
+6. **不花钱**：先看 TRAE 国内个人版的每月 500 积分、智谱 Flash 限免和 Copilot Free，按各自规则使用。
 
 ## 一句话总结
 
@@ -89,8 +94,8 @@
 ---
 **核实于 2026-10-27**。来源列表：
 - 智谱官方文档（.md 直核）：https://docs.bigmodel.cn/cn/coding-plan/overview ｜ /usage-revision ｜ /faq ｜ /usage-notes
-- 讯飞官方文档：https://www.xfyun.cn/doc/spark/TokenPlan.html ｜ /CodingPlan.html
-- SCNet 官方文档：https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html
+- 讯飞官方文档：<span style="overflow-wrap:anywhere">https://www.xfyun.cn/doc/spark/TokenPlan.html</span> ｜ /CodingPlan.html
+- SCNet 官方文档：<span style="overflow-wrap:anywhere">https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html</span>
 - 讯飞 3.9 翻车复盘：https://post.smzdm.com/p/a4q5znk8 ｜ 新浪财经实测：http://finance.sina.com.cn/wm/2026-04-20/doc-inhvcewk6911910.shtml
 - Copilot AI Credits：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
 - Cursor/X Subscription：https://cursor.com/pricing ｜ https://x.ai/news/x-subscription
