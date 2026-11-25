@@ -12,17 +12,17 @@ esc = html.escape
 NAV = '<nav aria-label="主导航"><a class="brand" href="/">TokenMost</a><a href="/free-ai-api.html">免费 API 对比</a><a href="/platform/">平台目录</a><a href="/guides/">领取攻略</a></nav>'
 
 
-def page(title, desc, url, body, surface):
+def page(title, desc, url, body, surface, *, verified_feed='/verified.xml'):
     canonical = HOST + url
     return f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} · TokenMost</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{canonical}">
 <meta property="og:title" content="{esc(title)} · TokenMost"><meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}"><meta property="og:type" content="website"><meta property="og:image" content="{HOST}/og-image.png">
-<meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="已核验免费权益" href="/verified.xml">
+<meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="已核验免费权益" href="{verified_feed}">
 <link rel="stylesheet" href="/assets/discovery.css"><script defer src="/assets/engagement.js"></script></head>
 <body data-surface="{surface}"><header>{NAV}</header><main><h1>{esc(title)}</h1><p class="intro">{esc(desc)}</p>{body}</main>
-<footer><a href="/verified.xml">订阅免费权益 RSS</a><button type="button" data-share-page hidden>分享本页</button><span role="status" data-share-status></span></footer></body></html>
+<footer><a href="{verified_feed}">订阅免费权益 RSS</a><button type="button" data-share-page hidden>分享本页</button><span role="status" data-share-status></span></footer></body></html>
 '''
 
 
@@ -60,7 +60,11 @@ def write_discovery(root, pages, guides, deals, slugify, layers):
     def cards(rows):
         return '<div class="cards">'+''.join(card for _,card in sorted(rows))+'</div>'
     body = f'<section><h2>按 Token 发放</h2>{cards(native)}</section><section><h2>按调用次数或算力发放</h2>{cards(others)}</section>'
-    (root/'free-ai-api.html').write_text(page('免费 AI API 额度对比','按平台比较每日或每月刷新的免费上限、适用模型和账号条件。EdgeOne 单列内置模型权益。','/free-ai-api.html',body,'comparison'))
+    (root/'free-ai-api.html').write_text(page(
+        '免费 AI API 额度对比',
+        '按平台比较每日或每月刷新的免费上限、适用模型和账号条件。EdgeOne 单列内置模型权益。',
+        '/free-ai-api.html', body, 'comparison', verified_feed=f'{HOST}/verified.xml',
+    ))
 
     rss = ET.Element('rss', version='2.0')
     channel = ET.SubElement(rss,'channel')
