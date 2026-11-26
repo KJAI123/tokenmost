@@ -240,7 +240,7 @@
 - 内容：Copilot Free：每月 2,000 次代码补全，Copilot Chat 使用每月 AI Credits 额度并采用自动模型选择。
 - 规则：适用个人免费账户；聊天按 AI Credits 用量计量，不以固定聊天次数承诺。
 - 链接：https://docs.github.com/en/copilot/get-started/plans-for-github-copilot
-- 状态：已验证（核验时间 2026-11-19T17:59:43Z）
+- 状态：待复核（核验时间 2026-11-19T17:59:43Z）
 
 ## 302.AI｜price_low
 - 内容：0 月费纯按量计费聚合（400+ 模型），充多少用多少，不设最低消费
@@ -262,7 +262,7 @@
 - 内容：Cohere 试用密钥每月最多 1,000 次 API 调用
 - 规则：仅用于评估 Key。分钟限速按模型和端点区分。生产 Key 独立计费，部分新 Chat 模型在生产 Key 下仍有月限。
 - 链接：https://docs.cohere.com/docs/rate-limits
-- 状态：已验证（核验时间 2026-11-25T05:48:51Z）
+- 状态：待复核（核验时间 2026-11-25T05:48:51Z）
 
 ## Kimi 开放平台｜price_low
 - 内容：Kimi K3 系列重复请求前缀自动走缓存计费
@@ -1061,7 +1061,7 @@
 - 内容：AutoClaw 新用户桌面端填邀请码，注册最高得 4,800 积分
 - 规则：新用户在 AutoClaw 桌面端登录时填写邀请码。符合条件的月卡或加油包购买双方可获 8% 或 12% 积分奖励，购买返积分可累积。
 - 链接：https://autoglm.zhipuai.cn/misc/autoclaw-invite?activity_id=autoclaw_fission&channel=fission&source_location=credits_page&target_app=autoclaw&target_app_version=2.5.3&os=mac&IC=7WHSTDYA
-- 状态：已验证（核验时间 2026-11-24T02:31:57Z）
+- 状态：待复核（核验时间 2026-11-24T02:31:57Z）
 
 ## AgentRouter｜注册赠送
 - 内容：注册送 **$100** + 首次签到 $25（首日到手 $125，经邀请链接注册再 +$50 → 首日最高 **$175**）；此后每日签到 +$25（退出重登即算一次签到）——可跑 GPT-6 代模型（gpt-5.6-sol / gpt-6-astra / gpt-6.1-sol）
@@ -1109,7 +1109,7 @@
 - 内容：魔搭 × AMD 联合开发者激励计划（登记制·长期有效·0 元）：免费领 **100 小时 AMD Instinct MI300 GPU**（**192GB 显存**，可跑 70B/120B 大模型）——23 核 CPU + 200GB 内存，Ubuntu 22.04 + ROCm 7.2.3 + PyTorch 2.12 预装
 - 规则：入口：魔搭「我的 Notebook」顶部横幅 → AMD 官网 developer.amd.com.cn 魔搭账号一键授权 → 完善资料（工作单位可填「个人开发者」）→ 审核通过**自动充入魔搭账户**（AMD 页无领取按钮）；首次启动须绑实名阿里云账号；单次开机约 8 小时上限（长任务加 checkpoint）；⚠️ 只有 /mnt/workspace 目录持久化，其余重启清空；高峰期启动失败不扣时长
 - 链接：https://modelscope.cn/events/247
-- 状态：已验证（核验时间 2026-11-11T17:06:34Z）
+- 状态：待复核（核验时间 2026-11-11T17:06:34Z）
 
 ## Command Code｜套餐订阅
 - 内容：Go 入门档：$1/月=**$10 credits**（含优惠最高 ~$15 用量）——GLM-5.2 / Tencent Hy3 / Qwen 系列 / DeepSeek V4.1 Flash 各 $10 独立额度 + 18+ 开源模型，约 9K 请求；积分零加价滚存不过期
@@ -1277,7 +1277,7 @@
 - 内容：Workers AI 每天 10,000 Neurons 免费，按不同模型的计算消耗扣减。
 - 规则：每日 UTC 00:00 重置。Workers Free 超额报错。定价页列出的部分模型需 Workers Paid 或 AI Gateway 预付额度。
 - 链接：https://developers.cloudflare.com/workers-ai/
-- 状态：已验证（核验时间 2026-11-25T05:48:51Z）
+- 状态：待复核（核验时间 2026-11-25T05:48:51Z）
 
 ## Hugging Face Inference｜长期免费
 - 内容：Hugging Face 免费账户已无每月推理赠金；PRO 及团队每席月含 $2 计算额度
@@ -1301,7 +1301,7 @@
 - 内容：免费账户可同时运行 1 个基础 CPU Studio，官方定价页标为 Free、内存 16 GB。
 - 规则：免费档每次可运行 1 个 CPU Studio，每 4 小时需重启。Lightning AI 可能要求手机号以防滥用。切换到付费算力前请核对价格。
 - 链接：https://studio.lightning.ai/
-- 状态：已验证（核验时间 2026-11-24T07:59:42Z）
+- 状态：待复核（核验时间 2026-11-24T07:59:42Z）
 
 ## Rime｜限时活动
 - 内容：Rime STT 语音转文字限免至 11 月 19 日
@@ -1445,7 +1445,7 @@
 - 内容：新户试用 30 天，每天 100 万额度 Token
 - 规则：免绑卡。按 1 倍模型 gpt-oss-120b 折合 30 天 3000 万原始 Token，其他倍率依所选模型而变。每账号试用一次。
 - 链接：https://regolo.ai/pricing/
-- 状态：已验证（核验时间 2026-11-23T12:22:25Z）
+- 状态：待复核（核验时间 2026-11-23T12:22:25Z）
 
 ## 讯飞星辰 MaaS｜限时活动
 - 内容：讯飞星火 X2.6 注册礼 10 亿 Token，每账号按一份计
