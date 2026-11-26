@@ -85,13 +85,16 @@ details p{{color:var(--muted);font-size:.9rem;margin-top:8px}}
 </body></html>"""
 
 FAQ_GEN = [
-    ("{name}现在有什么免费额度？",
-     "本页信源核验日期：{updated}。{name}在 tokenmost 收录的权益共 {n} 条：{brief}。原始额度与折算依据分开显示，金额只作 DS Flash 购买力参考。"),
-    ("{name}免费额度怎么领取？",
-     "点击本页各条「立即领取」直达官方页面，按官方规则注册/实名/激活即可；限时活动请留意截止日期。tokenmost 每日核验各条状态，失效信息自动清洗。"),
-    ("{name}的免费额度能用多少 token？",
-     "首月参考为一次性额度、有效活动天数内的日额度（最多 30 天）与月额度之和。模型积分有官方公式才折算，金额按 DS Flash 空闲价作购买力参考。未核验、付费与无固定比例的权益不计入已核验总额。"),
+    ("{name}收录了哪些权益与规则？",
+     "本页共 {n} 条记录，{evidence_summary}。信源核验日期：{updated}。每条记录附核验日期及已有来源类型，日期缺失时标为未知。"),
+    ("怎样确认申请条件和实际额度？",
+     "从对应条目查看平台入口和资格。待复核或未核验的条目请以服务商页面为准，已失效条目可查历史规则。申请、审核结果及实际到账额度以服务商和账户为准。"),
+    ("页面上的 Token 参考值如何计算？",
+     "首月参考包含一次性额度、活动有效期内日额度（最多 30 天）和月额度。模型积分按官方公式折算，金额按 DS Flash 空闲价提供购买力参考。已核验总额只纳入符合计算规则的免费权益。"),
 ]
+
+SOURCE_TYPES = {"official": "官方来源", "community": "社区线索", "firsthand": "一手记录"}
+PLATFORM_STATUS = {"verified": "规则已核验", "expired": "已失效", "stale": "待复核"}
 
 INPUT_BUDGET_FAQ = [
     ("{name}当前有哪些免费余额？",
@@ -419,6 +422,13 @@ def main():
         vlabel = verify_label(ds, gen_day)
         vshort = verify_short(vlabel)
         verified = sum(1 for d in ds if d.get("verify_status") == "verified")
+        expired = sum(1 for d in ds if d.get("verify_status") == "expired")
+        pending = len(ds) - verified - expired
+        evidence_summary = "，".join(
+            f"{count} 条{label}"
+            for count, label in ((verified, "规则已核验"), (pending, "待复核或未核验"), (expired, "已失效"))
+            if count
+        )
         available = [d for d in ds if d.get("gate") not in APPLICATION_GATES]
         application_only = not available
         input_budget = any(e.get("method") == "model_budget" for d in ds for e in d.get("quota_estimates", []))
@@ -430,11 +440,11 @@ def main():
         total_s = fmt_wan(total) if total else "暂无可折算总额"
         brief = "、".join(d["provider"] for d in ds[:3])
         title = f"{name}额度领取攻略：{total_s} 已核验首月参考（{vshort}）"
-        desc = f"{name}免费 token 额度大全：{len(ds)} 条信源（{verified} 条已验证），{deal_value(ds[0])}。附适用条件、逐条核验日期与官方入口。"
+        desc = f"{name}免费 token 额度大全：{len(ds)} 条信源（{verified} 条已验证），{deal_value(ds[0])}。附已记录的条件、核验日期与来源入口。"
         h1 = f"{name}额度大全：已核验首月参考 {total_s}"
-        intro = (f"本页聚合 {name}（{layer}）全部 {len(ds)} 条额度与折扣情报，其中 {verified} 条已验证。"
-                 f"已核验首月参考约 <b>{total_s}</b>（一次性、活动有效期内日额度及月额度；金额仅作 DS Flash 购买力比较，实际额度见下方原单位）。"
-                 f"tokenmost 每日核验，过期自动清洗。")
+        intro = (f"本页收录 {len(ds)} 条 {esc_quote(name)} 记录，{evidence_summary}。"
+                 f"已核验首月参考约 <b>{total_s}</b>，含一次性额度、活动有效期内日额度及月额度。"
+                 "金额提供 DS Flash 购买力参考，实际资格与到账以服务商及账户信息为准。")
         if application_only:
             title = f"{name}申请指南（{vshort}）"
             h1 = f"{name}申请指南"
@@ -445,7 +455,7 @@ def main():
             h1 = f"{name}免费余额与模型输入预算"
             intro = f"本页收录 {name} 的 {len(ds)} 条权益，其中 {verified} 条已核验。原始余额、发放周期与特定模型的输入预算分开展示；输入预算不含输出，同笔余额不重复折算 DS 购买力。"
         elif not total:
-            if all(d.get("verify_status") == "expired" for d in ds):
+            if expired == len(ds):
                 subject = "历史活动与截止日期"
             elif not verified:
                 subject = "额度线索与核验进度"
@@ -455,10 +465,13 @@ def main():
                 subject = "额度规则、使用限制与入口"
             h1 = f"{name} · {subject}"
             title = f"{h1} | TokenMost"
-            primary = next((d for d in ds if d.get("verify_status") == "verified"), ds[0])
+            primary = next((d for d in ds if d.get("verify_status") == "verified"), None)
+            if primary is None:
+                primary = next((d for d in ds if d.get("verify_status") != "expired"), ds[0])
             status = "已核验" if primary.get("verify_status") == "verified" else "历史记录" if primary.get("verify_status") == "expired" else "待复核"
             desc = f"{status} · {primary['value'][:100]}。查看对应来源和核验日期。"
-            intro = f"本站收录 {len(ds)} 条 {esc_quote(name)} 记录。下方列出每条记录的原始单位、适用条件和核验状态。"
+            intro = (f"本页收录 {len(ds)} 条 {esc_quote(name)} 记录，{evidence_summary}。"
+                     "下方列出原始单位、适用条件和核验状态。申请资格及到账情况以服务商和账户为准。")
         rovo_free = len(ds) == 1 and ds[0]["id"] == "atlassian-rovo-dev-free"
         if rovo_free:
             offer = ds[0]
@@ -466,6 +479,12 @@ def main():
             title = f"{offer['value']} | TokenMost"
             desc = f"{offer['value']}。{offer['rule']}在 Rovo Dev 的 Your usage 查看余量。"
             intro = esc_quote(offer["rule"]) + "在 Atlassian 应用切换器打开 <b>Rovo Dev</b>，选择 <b>Your usage</b> 查看余量。"
+        generic_platform = not (rovo_free or application_only)
+        offers_heading = "权益与核验状态"
+        if expired == len(ds):
+            offers_heading = "已失效活动与历史记录"
+        elif expired:
+            offers_heading = "权益、核验状态与历史记录"
         blocks = []
         for d in sorted(ds, key=lambda x: -token_quota(x)["total"]-(daily_estimate(x) or {"month":{"typical":0}})["month"]["typical"]):
             tag = TYPE.get(d.get("type"), d.get("type", ""))
@@ -473,6 +492,18 @@ def main():
             vtag = evidence_tag(d, gen_day)
             dl = f' <span style="color:var(--red)">📅 {esc_quote(d["deadline"])}</span>' if d.get("deadline") else ""
             action = "查看历史条款" if d.get("verify_status") == "expired" else "查看入口" if d.get("claim_status") == "window_unconfirmed" else "获取工具" if d.get("unit") == "tool" else "查看活动" if d.get("starts_at") else "查看申请" if d.get("gate") in APPLICATION_GATES else "查看套餐" if d.get("quota_paid") or d.get("type") == "pricing_plan" else "立即领取"
+            source_tag = ""
+            if generic_platform:
+                if d.get("quota_basis") != "claimed_pack" or d.get("verify_status") == "expired":
+                    badge = PLATFORM_STATUS.get(d.get("verify_status"), "未核验")
+                if action == "立即领取":
+                    action = "查看领取条件" if d.get("verify_status") == "verified" else "查看入口"
+                source_labels = dict.fromkeys(
+                    SOURCE_TYPES.get(source.get("kind"), "来源类型未注明")
+                    for source in d.get("sources") or []
+                )
+                source_text = " / ".join(source_labels) or "来源类型未注明"
+                source_tag = f'<span class="tag">{source_text}</span>'
             definitions = d.get("quota_estimates", [d["daily_estimate"]] if d.get("daily_estimate") else [])
             estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
                              f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
@@ -494,7 +525,7 @@ def main():
                 primary_url = d["url"]
             blocks.append(
                 f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
-                f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{dl}'
+                f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{source_tag}{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
                 f'<a class="go" href="{esc_quote(primary_url)}" target="_blank" rel="noopener nofollow">{action} →</a>'
@@ -504,7 +535,8 @@ def main():
         faq_items_for_page = ROVO_DEV_FREE_FAQ if rovo_free else APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN
         for q_t, a_t in faq_items_for_page:
             q = q_t.format(name=name, updated=vlabel, n=len(ds), brief=brief)
-            a = a_t.format(name=name, updated=vlabel, n=len(ds), brief=brief, total=total_s)
+            a = a_t.format(name=name, updated=vlabel, n=len(ds), brief=brief, total=total_s,
+                           evidence_summary=evidence_summary)
             faq_blocks.append(f"<details><summary>{esc_quote(q)}</summary><p>{esc_quote(a)}</p></details>")
             faq_items.append({"q": q, "a": a})
         ld_web = json.dumps({"@context": "https://schema.org", "@type": "WebPage", "name": title,
@@ -519,8 +551,8 @@ def main():
         page = TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, slug_enc=quote(slug), h1=h1, robots=robots_meta,
                           updated=vlabel, gen=today, layer=layer, n=len(ds), intro=intro,
                           metric="Rovo Dev 专用积分" if rovo_free else "额度按官方单位列出" if application_only else "原始余额 + 仅输入预算" if input_budget else "原始额度 + 有依据的 Token 折算 / 购买力参考",
-                          offers_heading="额度与查额入口" if rovo_free else "申请计划" if application_only else "🎁 当前可领额度与羊毛",
-                          faq_heading="Rovo Dev Free 常见问题" if rovo_free else "申请常见问题" if application_only else f"❓ {esc_quote(name)}免费额度常见问题",
+                          offers_heading="额度与查额入口" if rovo_free else "申请计划" if application_only else offers_heading,
+                          faq_heading="Rovo Dev Free 常见问题" if rovo_free else "申请常见问题" if application_only else f"{esc_quote(name)}权益常见问题",
                           deals="\n".join(blocks), faq="\n".join(faq_blocks),
                           ld_web=ld_web, ld_faq=ld_faq)
         (OUT / f"{slug}.html").write_text(page, encoding="utf-8")
