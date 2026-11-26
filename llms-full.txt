@@ -926,10 +926,10 @@
 - 状态：待复核（核验时间 2026-11-07T00:00:00Z）
 
 ## Google Cloud｜长期免费
-- 内容：Google Cloud 免费层：e2-micro VM 永久免费（美国区，30G 磁盘）+ 30G 出网/月+新用户 $300/90 天试用金全服务可用
-- 规则：e2-micro 限美国指定区域（oregon/iowa/s. carolina）；外网 IP 算出网流量（30G/月内免费）；需绑卡但永久免费项不扣费
+- 内容：Google Cloud Compute Engine 免费层：e2-micro 月度工时、30 GB·月标准持久盘、1 GB/月合格出网
+- 规则：非抢占式 e2-micro 限 us-west1、us-central1、us-east1，三个区的免费工时合计以当月总时数为上限。出网从北美发出，目的地排除中国和澳大利亚。
 - 链接：https://cloud.google.com/free/
-- 状态：待复核（核验时间 2026-11-07T00:00:00Z）
+- 状态：已验证（核验时间 2026-11-27T04:36:53+08:00）
 
 ## GitHub Codespaces｜长期免费
 - 内容：GitHub Codespaces 云开发环境：个人免费 120 core-hours/月+15G 存储/月（2 核机=60 小时/月，4 核机=30 小时/月），浏览器即开即用
