@@ -390,6 +390,12 @@ def main():
             if d["id"] in RELATED_GUIDES:
                 guide_id, label = RELATED_GUIDES[d["id"]]
                 guide_link = f'<p><a href="../guides/{quote(guide_id)}.html">{esc_quote(label)}</a></p>'
+            if d["id"] == "oracle-cloud-always-free":
+                official_links = " · ".join(
+                    f'<a href="{esc_quote(source["url"])}" target="_blank" rel="noopener">{esc_quote(source["title"])}</a>'
+                    for source in d["sources"] if source.get("kind") == "official"
+                )
+                guide_link = f'<p>{esc_quote(d["notes"])}</p><p>{official_links}</p>'
             if rovo_free:
                 primary_url = ROVO_DEV_USAGE
                 action = "查看官方查额步骤"
@@ -499,7 +505,7 @@ def main():
             lim = (d.get("rule") or "详见平台")[:60].replace("|", "·")
             u = d.get("url", "#"); nm = d.get("provider", "")
             rows += "<tr><td><a href='" + u + "' rel='nofollow noopener' target='_blank'>" + html.escape(str(nm)) + "</a></td><td>" + html.escape(str(d.get("value", ""))[:80]) + "</td><td>" + html.escape(lim) + "</td><td><a href='https://tokenmost.com/platform/" + html.escape(slugify(str(d.get('group') or d.get('provider','')))) + ".html'>详情</a></td></tr>"
-        oracle_faq = "Oracle Always Free 的闲置计算实例可能被回收。两份官方文档给出的 A1 月额度不同，具体上限请核对租户额度与账单。"
+        oracle_faq = "Oracle Always Free 的闲置实例可能被回收。Free Tier 文档与价格表分别列 A1 免费和付费租户的额度。Arm 参考页另把试用列入较大档，实际适用范围以租户额度和账单为准。"
         faq = (
             f"<h3>免费云服务器真的永久免费吗？</h3><p>{oracle_faq}</p>"
             "<h3>免绑卡的免费 VPS 靠谱吗？</h3><p>免卡、免费、长期可用是三个独立条件。纯 IPv6/NAT 小鸡适合练手，注册商随时可能改规则（deSEC 2026-10 已停新注册）；正经业务请上大厂免费层或付费。</p>"

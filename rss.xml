@@ -1078,11 +1078,11 @@
       <description>长期免费 · 规则：免费档单机最长连跑 480 分钟（长任务走 nohup/tmux 或 suspend/resume）；空闲 30 分钟自动暂停（暂停免费只算存储）；exec 单条 10 分钟上限；单次上传 10MiB（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Oracle Cloud：Oracle 免费 AMD 微型机最多 2 台，每台 1/8 OCPU、1 GB 内存。A1 月额度两份官文不同。另有 </title>
+      <title>Oracle Cloud：Oracle A1 免费租户每月 1,500 OCPU 小时、9,000 GB 小时（约 2 OCPU、12 GB）</title>
       <link>https://www.oracle.com/cloud/free/</link>
       <guid isPermaLink="false">oracle-cloud-always-free</guid>
       <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：注册须实体双币卡验证（拒虚拟卡/预付卡，$1 预授权可退）；主区域选定永久不可改，免费资源只能在主区开。闲置实例可能被回收。7 天内 CPU 使用率第 95 百分位与网络使用率均低于 20%，A1 还须同时满足内存使用率低于 20%。（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：付费租户：价表列每月 3,000 OCPU 小时、18,000 GB 小时，裸金属、VM 与容器共享。两组上限不可叠加。试用资格待核。免费资源限主区。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>AWS：AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等</title>
