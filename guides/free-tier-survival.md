@@ -13,11 +13,15 @@
   2. 社区实测口径：Flash 系约几百~1000/天、Pro 系约 100/天甚至更低、preview/experimental 更紧；
   3. RPD 太平洋时间午夜重置（UTC-8）。
 - **活法**：AI Studio API 免费层仍是海外免费主力；CLI 编程场景换 Antigravity 体验或直接用 API Key + 开源 Agent 框架。
-- ⚠️ 免费层数据可能被用于训练（免费层条款），敏感代码别走免费档。
+- **未付费服务**：Google 可用提交内容和生成回复来改进产品及机器学习技术，也可能由人工审阅。避免提交私人代码、个人信息或其他机密内容。
+- **按付费服务处理的条件**：Gemini API 看调用项目是否关联有效的 Cloud Billing 账号。AI Studio 看当前账号是否能访问这类项目，或是否为 Workspace 企业账号。付费数据条款下，Google 不用提示词和回复改进产品，但可为安全、滥用防控或法定义务短期记录。[Google 付费数据条款](https://aistudio.google.com/docs/terms#data-use-paid)
+- **地区例外**：位于欧洲经济区、瑞士或英国时，即使使用 AI Studio 或 Gemini API 免费额度，数据用途也按付费服务条款处理。[Google 官方数据用途条款](https://aistudio.google.com/docs/terms#data-use-unpaid)
 
 ## 2. Groq 免费档
 
 gpt-oss-120b 的公开上限为 20 万 Token/天，另有每分钟 30 次、8,000 Token 和每天 1,000 次的限制。按 30 天计最多 600 万 Token，组织的实际限额见控制台。[官方免费档限额](https://console.groq.com/docs/rate-limits)
+
+**训练与留存**：Groq 表示不会用客户数据为自己训练模型。普通推理默认不保留输入和输出，排障或调查滥用时可能记录最多 30 天，法律要求时可更久。批处理、微调等功能另有留存规则。使用量元数据始终记录，组织管理员可在控制台启用零数据留存（ZDR）。[Groq Trust Center](https://trust.groq.com/faq?s=9pcm46fyh5sypzqgtfto) · [Groq 留存与数据控制](https://console.groq.com/docs/your-data)
 
 <a href="../platform/groq.html">查看 Groq 的额度与使用规则</a>
 
@@ -65,7 +69,9 @@ gpt-oss-120b 的公开上限为 20 万 Token/天，另有每分钟 30 次、8,00
 | Groq | 限速免费层 | gpt-oss-120b 每天 20 万 Token | 低延迟原型 |
 | Mistral | Studio / Vibe 免费档 | 工作区月上限 | 客户端体验 |
 
-**三条生存法则**：① 静态数字一律以控制台实显为准（海外已全面动态化）；② 免费层默认数据会被训练——私人代码走付费或国内厂商；③ 把「每日限速」当节奏而不是障碍——多平台轮换，每个平台跑当日最适合它的一段任务。
+**三条生存法则**：① 静态数字一律以控制台实显为准（海外已全面动态化）；② 提交敏感数据前，按使用的产品、项目和地区分别确认训练用途、留存期限和功能例外；③ 把「每日限速」当节奏而不是障碍——多平台轮换，每个平台跑当日最适合它的一段任务。
+
+Gemini 与 Groq 的数据用途条款核对于 2026-11-27。
 
 ---
 **核实于 2026-10-27**。来源列表：
