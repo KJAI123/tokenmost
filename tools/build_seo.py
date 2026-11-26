@@ -390,7 +390,7 @@ def main():
             if d["id"] in RELATED_GUIDES:
                 guide_id, label = RELATED_GUIDES[d["id"]]
                 guide_link = f'<p><a href="../guides/{quote(guide_id)}.html">{esc_quote(label)}</a></p>'
-            if d["id"] == "oracle-cloud-always-free":
+            if d["id"] in ("oracle-cloud-always-free", "aws-freetier-ec2"):
                 official_links = " · ".join(
                     f'<a href="{esc_quote(source["url"])}" target="_blank" rel="noopener">{esc_quote(source["title"])}</a>'
                     for source in d["sources"] if source.get("kind") == "official"
