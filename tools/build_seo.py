@@ -497,8 +497,9 @@ def main():
             lim = (d.get("rule") or "详见平台")[:60].replace("|", "·")
             u = d.get("url", "#"); nm = d.get("provider", "")
             rows += "<tr><td><a href='" + u + "' rel='nofollow noopener' target='_blank'>" + html.escape(str(nm)) + "</a></td><td>" + html.escape(str(d.get("value", ""))[:80]) + "</td><td>" + html.escape(lim) + "</td><td><a href='https://tokenmost.com/platform/" + html.escape(slugify(str(d.get('group') or d.get('provider','')))) + ".html'>详情</a></td></tr>"
+        oracle_faq = "Oracle Always Free 的闲置计算实例可能被回收。两份官方文档给出的 A1 月额度不同，具体上限请核对租户额度与账单。"
         faq = (
-            "<h3>免费云服务器真的永久免费吗？</h3><p>Oracle Always Free、Azure 12 个月免费服务等「Always Free/长期免费」档在账号存续期有效，但 Oracle 2026 年已把 A1 配额砍半（4核24G→2核12G），且纯免费账号有闲置回收（7 天利用率低于 20% 会被停）——不要把重要数据只存一份在免费机上。</p>"
+            f"<h3>免费云服务器真的永久免费吗？</h3><p>{oracle_faq}</p>"
             "<h3>免绑卡的免费 VPS 靠谱吗？</h3><p>免卡、免费、长期可用是三个独立条件。纯 IPv6/NAT 小鸡适合练手，注册商随时可能改规则（deSEC 2026-10 已停新注册）；正经业务请上大厂免费层或付费。</p>"
             "<h3>怎么把免费服务器用出价值？</h3><p>推荐 0 元链路：免费域名托管 Cloudflare（免费 DNS/CDN/证书）→ 服务跑 InstaBox/Oracle 免费机 → 邮箱用 <a href='/guides/cloud-mail-email.html'>cloud-mail 无限邮箱</a>（Cloudflare Email Routing 免费收信）→ 监控走免费额度。全链路 0 元。</p>")
         ld_item = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
@@ -509,7 +510,7 @@ def main():
                              ensure_ascii=False)
         ld_faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q.split("？")[0] + "？", "acceptedAnswer": {"@type": "Answer", "text": a[:200]}}
-            for q, a in [("免费云服务器真的永久免费吗？", "Oracle Always Free 等长期档在账号存续期有效，但 2026 年配额已砍半且有闲置回收规则。"),
+            for q, a in [("免费云服务器真的永久免费吗？", oracle_faq),
                           ("免绑卡的免费 VPS 靠谱吗？", "免卡/免费/长期可用是三个独立条件，适合练手不适合业务。"),
                           ("怎么 0 元搭一套服务？", "免费域名+Cloudflare+免费算力机+cloud-mail 邮箱，全链路 0 元。")]]},
                            ensure_ascii=False)

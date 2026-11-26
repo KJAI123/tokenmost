@@ -784,7 +784,7 @@
       <description>长期低价 · 规则：按量计费无月费；部分模型有免费试用额度（以控制台为准）（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>阶跃星辰：Step Plan 限时免费体验（官方已发关闭预告）：规则条文为登录得 15 天、完成首次 API 调用再得 15 天</title>
+      <title>阶跃星辰：Step Plan 已公告将关闭新增免费体验领取通道。公告未给生效时间，账户当前能否领取待核</title>
       <link>https://www.stepfun.com</link>
       <guid isPermaLink="false">stepfun-75d</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
@@ -1071,11 +1071,11 @@
       <description>长期免费 · 规则：免费档单机最长连跑 480 分钟（长任务走 nohup/tmux 或 suspend/resume）；空闲 30 分钟自动暂停（暂停免费只算存储）；exec 单条 10 分钟上限；单次上传 10MiB（优惠以官方页面为准）</description>
     </item>
     <item>
-      <title>Oracle Cloud：Oracle 云永免费层：2 台 AMD 微型机（1C/1G）+ Ampere A1 ARM **纯免费号 2 核 12</title>
+      <title>Oracle Cloud：Oracle 免费 AMD 微型机最多 2 台，每台 1/8 OCPU、1 GB 内存。A1 月额度两份官文不同。另有 </title>
       <link>https://www.oracle.com/cloud/free/</link>
       <guid isPermaLink="false">oracle-cloud-always-free</guid>
       <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description>长期免费 · 规则：注册须实体双币卡验证（拒虚拟卡/预付卡，$1 预授权可退）；主区域选定永久不可改，免费资源只能在主区开；⚠️ 纯免费号闲置回收：7 天内 CPU/网络 95 分位 &lt;20% 判闲置停机（PAYG 账号豁免）；升级 PAYG 后立即建 $1 预算提醒防误扣费（优惠以官方页面为准）</description>
+      <description>长期免费 · 规则：注册须实体双币卡验证（拒虚拟卡/预付卡，$1 预授权可退）；主区域选定永久不可改，免费资源只能在主区开。闲置实例可能被回收。7 天内 CPU 使用率第 95 百分位与网络使用率均低于 20%，A1 还须同时满足内存使用率低于 20%。（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>AWS：AWS 免费层：EC2 t3.micro 750 小时/月（跑满一台整月）×12 个月+RDS/CDN/lambda 等</title>
