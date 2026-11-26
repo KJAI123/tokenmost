@@ -282,20 +282,110 @@ COLL_TPL = """<!DOCTYPE html>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="https://tokenmost.com/og-image.png">
+<script type="application/ld+json">{ld_web}</script>
 <script type="application/ld+json">{ld_item}</script>
 <script type="application/ld+json">{ld_faq}</script>
-<style>body{{font-family:-apple-system,"PingFang SC",sans-serif;max-width:900px;margin:0 auto;padding:24px 16px;line-height:1.7;color:#1a2b22}}h1{{color:#059669;font-size:1.5rem}}h2{{font-size:1.15rem;margin-top:28px;border-left:4px solid #059669;padding-left:10px}}table{{border-collapse:collapse;width:100%;font-size:.9rem}}td,th{{border:1px solid #d8e4dd;padding:8px 10px;text-align:left}}th{{background:#ecfdf5}}a{{color:#059669}}.up{{font-size:.78rem;color:#6b7280}}.faq h3{{font-size:1rem;margin:18px 0 6px}}</style>
+<style>
+body{{font-family:-apple-system,"PingFang SC",sans-serif;max-width:900px;margin:0 auto;padding:24px 16px;line-height:1.65;color:#1a2b22}}
+h1{{color:#065e47;font-size:1.5rem}}
+h2{{font-size:1.15rem;margin-top:28px}}
+table{{border-collapse:collapse;width:100%;table-layout:fixed;font-size:.9rem}}
+td,th{{border:1px solid #d8e4dd;padding:8px;text-align:left;vertical-align:top;overflow-wrap:anywhere}}
+th{{background:#f2f7f4}}
+th:first-child{{width:21%}}
+th:last-child{{width:21%}}
+td p{{margin:0}}
+td p+p{{margin-top:6px}}
+td a+a,td time{{display:block}}
+a{{color:#065e47}}
+.up,.limits,td time{{color:#47594f;font-size:.85rem}}
+.status{{display:block;font-weight:600}}
+.status-verified{{color:#065e47}}
+.status-stale,.status-unverified{{color:#795408}}
+.faq h3{{font-size:1rem;margin:18px 0 6px}}
+@media (max-width:520px){{td,th{{padding:6px}}th:first-child,th:last-child{{width:24%}}td time{{font-size:.8rem}}}}
+</style>
 </head><body>
-<p class="up"><a href="/">← tokenmost 免费羊毛情报站</a> · 数据每日核验 · 信源核验：{updated} · 页面生成：{gen}</p>
-<h1>{h1}</h1>
+<p class="up"><a href="./">← TokenMost 首页</a> · 信源核验日期：{updated} · 页面生成：{gen}</p>
+<h1>{heading}</h1>
 <p>{intro}</p>
-<h2>一图看懂：{n} 个平台怎么选</h2>
-<table><tr><th>平台</th><th>免费给什么</th><th>关键限制</th><th>详情</th></tr>{rows}</table>
+<p>当前申请资格、库存、审批和实领额度以服务商及账户信息为准。</p>
+<h2>平台规则与信源核验</h2>
+<table aria-label="平台规则与信源核验">
+  <thead><tr><th scope="col">平台与入口</th><th scope="col">权益与条件</th><th scope="col">信源核验</th></tr></thead>
+  <tbody>
+{rows}
+  </tbody>
+</table>
 <h2>常见问题</h2>
 <div class="faq">{faq}</div>
-<p>更多品类：<a href="/guides/cloud-mail-email.html">0 元搭无限邮箱</a> · <a href="/guides/free-tier-survival.html">海外免费层生存指南</a> · <a href="/">每日 token 羊毛情报流</a>（RSS 可订阅）</p>
+<p>更多攻略：<a href="./guides/cloud-mail-email.html">免费邮箱搭建</a> · <a href="./guides/free-tier-survival.html">海外免费层指南</a></p>
 </body></html>"""
+
+
+def render_freecloud(records, gen_day):
+    slug = "free-cloud-servers"
+    canonical = f"https://tokenmost.com/{slug}.html"
+    heading = "免费云服务器与免费域名"
+    title = f"{heading}：额度、条件与核验状态"
+    statuses = {"verified": "规则已核验", "stale": "待复核", "unverified": "未核验"}
+    ordered = sorted(records, key=lambda d: -(d.get("eq_wan") or d.get("tokens_wan") or 0))
+    state_counts = dict.fromkeys(statuses, 0)
+    rows, items = [], []
+    for position, deal in enumerate(ordered, 1):
+        state = deal.get("verify_status")
+        if state not in statuses:
+            state = "unverified"
+        state_counts[state] += 1
+        status = statuses[state]
+        checked_date, _ = evidence_date(deal, gen_day)
+        date_text = checked_date.isoformat() if checked_date else "核验日期未知"
+        date_html = f'<time datetime="{date_text}">{date_text}</time>' if checked_date else "<div>核验日期未知</div>"
+        name = deal["provider"]
+        value = str(deal.get("value") or "详见平台")
+        rule = str(deal.get("rule") or "详见平台")
+        provider_slug = quote(slugify(deal.get("group") or name))
+        platform_url = f"https://tokenmost.com/platform/{provider_slug}.html"
+        row_id = f'deal-{deal["id"]}'
+        rows.append(
+            f'    <tr id="{esc_quote(row_id)}" data-status="{state}">'
+            f'<td><a href="{esc_quote(deal["url"])}" rel="nofollow noopener" target="_blank">{esc_quote(name)}</a>'
+            f'<a href="{platform_url}">详情</a></td>'
+            f'<td><p>{esc_quote(value)}</p><p class="limits">{esc_quote(rule)}</p></td>'
+            f'<td><span class="status status-{state}">{status}</span>{date_html}</td></tr>'
+        )
+        items.append({"@type": "ListItem", "position": position, "name": name,
+                      "url": f"{canonical}#{quote(row_id)}",
+                      "description": f"{status} · {date_text}。{value}"})
+    breakdown = "，".join([f'{state_counts["verified"]} 条规则已核验', f'{state_counts["stale"]} 条待复核']
+                       + ([f'{state_counts["unverified"]} 条未核验'] if state_counts["unverified"] else []))
+    intro = f"这里收录 {len(ordered)} 条免费云服务器、托管和域名权益，{breakdown}。每条附服务商入口、使用条件及核验日期。"
+    faq = [
+        ("规则已核验代表什么？", "本站核查了所列权益规则。申请结果和实际领取额度取决于服务商审核、库存和账户条件。"),
+        ("免费套餐可能产生哪些费用？", "请核对套餐适用区域、用量限制和账单规则。超额使用或启用收费功能可能产生费用。"),
+        ("Oracle A1 额度怎么确认？", "Free Tier 文档与价格表分别列 A1 免费和付费租户的额度。Arm 参考页还把试用列入较大档。实际适用范围以租户额度和账单为准，闲置实例可能被回收。"),
+    ]
+    faq_html = "".join(f"<h3>{esc_quote(question)}</h3><p>{esc_quote(answer)}</p>" for question, answer in faq)
+    ld_web = {"@context": "https://schema.org", "@type": "WebPage", "name": title,
+              "url": canonical, "description": intro, "inLanguage": "zh-CN"}
+    ld_list = {"@context": "https://schema.org", "@type": "ItemList", "name": heading,
+               "description": intro, "numberOfItems": len(items), "itemListElement": items}
+    ld_faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": question, "acceptedAnswer": {"@type": "Answer", "text": answer}}
+        for question, answer in faq
+    ]}
+
+    def json_ld(data):
+        return json.dumps(data, ensure_ascii=False).replace("<", r"\u003c")
+
+    return COLL_TPL.format(title=esc_quote(title), desc=esc_quote(intro), slug_enc=slug,
+                           heading=esc_quote(heading), intro=esc_quote(intro), rows="\n".join(rows), faq=faq_html,
+                           ld_web=json_ld(ld_web), ld_item=json_ld(ld_list), ld_faq=json_ld(ld_faq),
+                           updated=verify_label(ordered, gen_day), gen=gen_day.isoformat())
+
 
 def main():
     deals = json.load(open(ROOT / "deals.json", encoding="utf-8"))
@@ -484,50 +574,17 @@ def main():
     llms_full_lm = gen_day.isoformat() if old_llms_full != llms_full_content else None
 
 
-    # ===== 品类聚合页（长尾词 landing）：免费云服务器/域名/GPU =====
-    coll_specs = [
-        ("free-cloud-servers", "免费云服务器大全 2026：{n} 个平台可白嫖（长期免费+注册赠送）",
-         "免费云服务器怎么选？本文聚合 {n} 个真实可领的平台：Oracle/Azure/GCP/AWS 大厂免费层、免卡 VPS、免费域名、AI 云电脑与 192G 显存 GPU，全部标注限制与续期规则，每日核验。",
-         "freecloud"),
+    freecloud_records = [
+        deal for deal in deals
+        if deal.get("category") == "freecloud" and deal.get("published", True)
+        and deal.get("verify_status") != "expired"
     ]
     coll_lm = None
-    for slug, t_tpl, d_tpl, cat in coll_specs:
-        cd = [d for d in deals if d.get("category") == cat and d.get("published", True) and d.get("verify_status") != "expired"]
-        if len(cd) < 5:
-            continue
-        n = len(cd)
-        cvlabel = verify_label(cd, gen_day)
-        title = t_tpl.format(n=n); desc = d_tpl.format(n=n)
-        h1 = "免费云服务器与免费域名大全（2026 实测 " + str(n) + " 平台）"
-        intro = "免费云服务器真正的门槛不是能不能领，而是能不能稳定用。本文只收录当前仍可申请的平台，统一标注配置、续期规则与隐藏成本；数据每日核验，失效自动下架。搭配 <a href='/guides/cloud-mail-email.html'>0 元无限邮箱</a> 与 <a href='/guides/free-tier-survival.html'>海外免费层生存指南</a> 使用效果最佳。"
-        rows = ""
-        for d in sorted(cd, key=lambda x: -(x.get("eq_wan") or x.get("tokens_wan") or 0)):
-            lim = (d.get("rule") or "详见平台")[:60].replace("|", "·")
-            u = d.get("url", "#"); nm = d.get("provider", "")
-            rows += "<tr><td><a href='" + u + "' rel='nofollow noopener' target='_blank'>" + html.escape(str(nm)) + "</a></td><td>" + html.escape(str(d.get("value", ""))[:80]) + "</td><td>" + html.escape(lim) + "</td><td><a href='https://tokenmost.com/platform/" + html.escape(slugify(str(d.get('group') or d.get('provider','')))) + ".html'>详情</a></td></tr>"
-        oracle_faq = "Oracle Always Free 的闲置实例可能被回收。Free Tier 文档与价格表分别列 A1 免费和付费租户的额度。Arm 参考页另把试用列入较大档，实际适用范围以租户额度和账单为准。"
-        faq = (
-            f"<h3>免费云服务器真的永久免费吗？</h3><p>{oracle_faq}</p>"
-            "<h3>免绑卡的免费 VPS 靠谱吗？</h3><p>免卡、免费、长期可用是三个独立条件。纯 IPv6/NAT 小鸡适合练手，注册商随时可能改规则（deSEC 2026-10 已停新注册）；正经业务请上大厂免费层或付费。</p>"
-            "<h3>怎么把免费服务器用出价值？</h3><p>推荐 0 元链路：免费域名托管 Cloudflare（免费 DNS/CDN/证书）→ 服务跑 InstaBox/Oracle 免费机 → 邮箱用 <a href='/guides/cloud-mail-email.html'>cloud-mail 无限邮箱</a>（Cloudflare Email Routing 免费收信）→ 监控走免费额度。全链路 0 元。</p>")
-        ld_item = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
-                              "name": title, "itemListElement": [
-                                  {"@type": "ListItem", "position": i + 1, "name": html.escape(str(d.get("provider", ""))),
-                                   "description": html.escape(str(d.get("value", ""))[:100])}
-                                  for i, d in enumerate(sorted(cd, key=lambda x: -(x.get("eq_wan") or x.get("tokens_wan") or 0)))]},
-                             ensure_ascii=False)
-        ld_faq = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-            {"@type": "Question", "name": q.split("？")[0] + "？", "acceptedAnswer": {"@type": "Answer", "text": a[:200]}}
-            for q, a in [("免费云服务器真的永久免费吗？", oracle_faq),
-                          ("免绑卡的免费 VPS 靠谱吗？", "免卡/免费/长期可用是三个独立条件，适合练手不适合业务。"),
-                          ("怎么 0 元搭一套服务？", "免费域名+Cloudflare+免费算力机+cloud-mail 邮箱，全链路 0 元。")]]},
-                           ensure_ascii=False)
-        page = COLL_TPL.format(title=esc_quote(title), desc=esc_quote(desc), slug=slug, slug_enc=quote(slug),
-                               h1=esc_quote(h1), intro=intro, n=n, rows=rows, faq=faq,
-                               ld_item=ld_item, ld_faq=ld_faq, updated=cvlabel, gen=today)
-        (ROOT / (slug + ".html")).write_text(page, encoding="utf-8")
+    if len(freecloud_records) >= 5:
+        page = render_freecloud(freecloud_records, gen_day)
+        _coll_path.write_text(page, encoding="utf-8")
         coll_lm = gen_day.isoformat() if old_coll is None or _content_key(old_coll) != _content_key(page) else None
-        print(f"品类聚合页: {slug}.html（{n} 平台）")
+        print(f"品类聚合页: {_coll_path.name}（{len(freecloud_records)} 条）")
 
     # sitemap 并入 platform 页
     sm = ['<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
