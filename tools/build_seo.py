@@ -127,6 +127,8 @@ def fmt_wan(w):
 
 
 def deal_value(d):
+    if d.get("type") == "paid_discount" and d.get("api_via") == "api" and not d.get("token_quota"):
+        return "按用量付费"
     if d.get("unit") == "tool":
         return "免费工具，无独立 Token 赠额"
     if "token_quota" in d:

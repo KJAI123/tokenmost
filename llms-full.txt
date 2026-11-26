@@ -2,7 +2,7 @@
 
 ## DeepSeek｜付费折扣
 - 内容：DeepSeek 语音 API 限时五折：TTS ¥1.50/万计费字符，ASR ¥0.39/小时音频
-- 规则：使用 DeepSeek 官方 API Key 调用对应语音接口，按实际用量扣费。TTS 刊例价 ¥3/万计费字符，汉字计 2 个字符，其他字符计 1 个。ASR 刊例价 ¥0.78/小时音频，按秒计费，不足 1 秒按 1 秒计。
+- 规则：使用官方 API Key 按量扣费。TTS 原价 ¥3/万计费字符，汉字算 2 个，其余算 1 个。ASR 原价 ¥0.78/小时音频，按秒计费，不足 1 秒按 1 秒。
 - 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing/#speech-pricing
 - 状态：已验证（核验时间 2026-11-26T14:39:18Z）
 

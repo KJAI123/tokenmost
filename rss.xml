@@ -11,7 +11,7 @@
       <link>https://api-docs.deepseek.com/zh-cn/quick_start/pricing/#speech-pricing</link>
       <guid isPermaLink="false">deepseek-speech-discount</guid>
       <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description>付费折扣 · 规则：使用 DeepSeek 官方 API Key 调用对应语音接口，按实际用量扣费。TTS 刊例价 ¥3/万计费字符，汉字计 2 个字符，其他字符计 1 个。ASR 刊例价 ¥0.78/小时音频，按秒计费，不足 1 秒按 1 秒计。 · 截止 截止未公布 / End date unannounced（优惠以官方页面为准）</description>
+      <description>付费折扣 · 规则：使用官方 API Key 按量扣费。TTS 原价 ¥3/万计费字符，汉字算 2 个，其余算 1 个。ASR 原价 ¥0.78/小时音频，按秒计费，不足 1 秒按 1 秒。 · 截止 截止未公布 / End date unannounced（优惠以官方页面为准）</description>
     </item>
     <item>
       <title>cheapllm.shop：cheapllm.shop Beta 免费用 DeepSeek V4.1 Flash 1017，无固定速率或 Token</title>
