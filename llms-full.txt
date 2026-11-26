@@ -1,5 +1,11 @@
 # tokenmost.com — 全量情报（Markdown 版）
 
+## DeepSeek｜付费折扣
+- 内容：DeepSeek 语音 API 限时五折：TTS ¥1.50/万计费字符，ASR ¥0.39/小时音频
+- 规则：使用 DeepSeek 官方 API Key 调用对应语音接口，按实际用量扣费。TTS 刊例价 ¥3/万计费字符，汉字计 2 个字符，其他字符计 1 个。ASR 刊例价 ¥0.78/小时音频，按秒计费，不足 1 秒按 1 秒计。
+- 链接：https://api-docs.deepseek.com/zh-cn/quick_start/pricing/#speech-pricing
+- 状态：已验证（核验时间 2026-11-26T14:39:18Z）
+
 ## cheapllm.shop｜限时活动
 - 内容：cheapllm.shop Beta 免费用 DeepSeek V4.1 Flash 1017，无固定速率或 Token 上限
 - 规则：注册取 Key，免绑卡。忙时排队，30 秒后可能 503。Beta 结束日未知。期后每账号每滚动小时至少 5,000 输入＋1,000 输出 Tokens。
