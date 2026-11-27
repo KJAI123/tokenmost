@@ -948,11 +948,11 @@ let sortKey='tokens';
 /* 🪙 加倍领取：用折扣码/邀请链接在平台基础赠送之上额外加成的条目（v2.18，老板令「通过折扣加倍领取」） */
 function isDouble(d){return (d.coupon&&!d.placeholder)||d.type==='coupon'||d.type==='invite_bonus'||d.via==='invite'}
 const DOUBLE_NOTE='<div class="double-note">🪙 <b>加倍领取</b>：以下平台的福利可经<b>折扣码 / 邀请链接</b>加成领取——点「领取 / 券领」复制码，注册或订阅时填入（或直接经邀请链接进入），到账额度 = 平台基础赠送 + 额外加成（返赠 / 折扣 / 翻倍）。链接即码的条目点领取就自动带上邀请关系，无需手动填。</div>';
+const PAID=new Set(['price_low','pricing_plan','paid_discount']);
 function render(){
   if(!DEALS.length)return;  // 数据未到时不渲染（避免登录触发清空）
   let list=DEALS.filter(d=>d.published!==false&&d.category!=='freecloud');
   claimedSet=getClaimed();
-  const PAID=new Set(['price_low','pricing_plan','paid_discount']);
   if(curCat==='paid'){list=list.filter(d=>PAID.has(d.type));}
   else if(curCat==='warn'){list=list.filter(d=>d.type==='warning'||TokenMath.phase(d)==='expired');}
   else{
@@ -1907,7 +1907,11 @@ Promise.all([
   window.LOGOS=lg||{};
   SITES=sites;DEALS=deals;lastSyncSig=syncSig(deals);
   renderNav();vInit();
-  if(typeof _q!=='undefined'&&_q){curQ=_q;var _se=document.getElementById('search');if(_se)_se.value=_q;}
+  if(_q){
+    curQ=_q;
+    document.getElementById('search').value=_q;
+    if(DEALS.some(d=>d.id===_q&&d.published!==false&&PAID.has(d.type)&&TokenMath.estimate(d)))curCat='paid';
+  }
   render();vRender();calcGlobalBanner();refreshWorkbenchNews();
   // 防护：数据渲染完成后，后续可选功能（登录态/共享码）抛错不得清空主板块
   try{authRefreshUI()}catch(_){}

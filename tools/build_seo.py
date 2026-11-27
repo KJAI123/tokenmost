@@ -506,7 +506,7 @@ def main():
                 source_tag = f'<span class="tag">{source_text}</span>'
             definitions = d.get("quota_estimates", [d["daily_estimate"]] if d.get("daily_estimate") else [])
             estimate_note = (f'<p>估算假设：{esc_quote(estimate_assumption(d))} {esc_quote("；".join(e["note"] for e in definitions))} '
-                             f'<a href="/?q={esc_quote(d["id"])}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
+                             f'<a href="../?q={quote(d["id"], safe="")}">调整假设 / 查看完整估计 →</a></p>') if daily_estimate(d) else ""
             guide_link = ""
             if d["id"] in RELATED_GUIDES:
                 guide_id, label = RELATED_GUIDES[d["id"]]
