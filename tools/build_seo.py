@@ -36,6 +36,11 @@ RELATED_GUIDES = {
     "freellmapi-router": ("freellmapi", "查看本机接入、Key 要求与上游限额 →"),
 }
 
+RELATED_OFFICIAL_RULES = {
+    "trae-free-tier": ("https://docs.trae.cn/ide_plans-and-billing", "查看官方套餐与计费"),
+    "trae-code-fission": ("https://docs.trae.cn/ide_invite-new-users-to-earn-credits-for-traecode", "查看官方邀请活动规则"),
+}
+
 TPL = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -511,6 +516,11 @@ def main():
             if d["id"] in RELATED_GUIDES:
                 guide_id, label = RELATED_GUIDES[d["id"]]
                 guide_link = f'<p><a href="../guides/{quote(guide_id)}.html">{esc_quote(label)}</a></p>'
+            elif d["id"] in RELATED_OFFICIAL_RULES:
+                rules_url, label = RELATED_OFFICIAL_RULES[d["id"]]
+                if any(source.get("url") == rules_url and source.get("kind") == "official"
+                       for source in d.get("sources", ())):
+                    guide_link = f'<p><a href="{esc_quote(rules_url)}" target="_blank" rel="noopener">{esc_quote(label)}</a></p>'
             if d["id"] in ("oracle-cloud-always-free", "aws-freetier-ec2", "gcp-freetier-vm"):
                 official_links = " · ".join(
                     f'<a href="{esc_quote(source["url"])}" target="_blank" rel="noopener">{esc_quote(source["title"])}</a>'
