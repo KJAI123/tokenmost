@@ -39,6 +39,7 @@ RELATED_GUIDES = {
 RELATED_OFFICIAL_RULES = {
     "trae-free-tier": ("https://docs.trae.cn/ide_plans-and-billing", "查看官方套餐与计费"),
     "trae-code-fission": ("https://docs.trae.cn/ide_invite-new-users-to-earn-credits-for-traecode", "查看官方邀请活动规则"),
+    "deep-zhipu-trial-card": ("https://docs.bigmodel.cn/cn/coding-plan/tool/others", "查看智谱支持的工具"),
 }
 
 TPL = """<!DOCTYPE html>
@@ -533,13 +534,23 @@ def main():
                 guide_link = f'<p><a href="{ROVO_DEV_BILLING}" target="_blank" rel="noopener">查看官方计费规则 →</a></p>'
             else:
                 primary_url = d["url"]
+            extra_terms = ""
+            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card"):
+                extra_terms = (
+                    f'<p>{esc_quote(d["notes"])}</p>'
+                    '<details lang="en"><summary>English terms</summary>'
+                    f'<p>{esc_quote(d["value_en"])}</p><p>{esc_quote(d["rule_en"])}</p>'
+                    f'<p>{esc_quote(d["notes_en"])}</p></details>'
+                )
+            if d["id"] == "deep-anthropic-sub-credits-r4":
+                action = "查看官方 API 额度规则"
             blocks.append(
                 f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{source_tag}{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
                 f'<a class="go" href="{esc_quote(primary_url)}" target="_blank" rel="noopener nofollow">{action} →</a>'
-                + guide_link + '</div>')
+                + guide_link + extra_terms + '</div>')
         faq_blocks = []
         faq_items = []
         faq_items_for_page = ROVO_DEV_FREE_FAQ if rovo_free else APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN
