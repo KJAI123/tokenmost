@@ -126,7 +126,7 @@
 - 状态：已验证（核验时间 2026-11-27T15:52:03Z）
 
 ## OpenRouter｜长期免费
-- 内容：OpenRouter 当前有 11 个 :free 模型，共用免费调用池
+- 内容：OpenRouter 当前有 10 个 :free 模型，共用免费调用池
 - 规则：:free 模型按账号共用调用池。基础档 50 次/天，高档 1,000 次/天，两档均为 20 次/分钟。累计购买 10 credits 是官方表格的名义门槛；考虑舍入和充值手续费，高档从低一个 credit 起算。BYOK 和豁免账号另有规则，实际限额以控制台为准。
 - 链接：https://openrouter.ai/models?max_price=0
 - 状态：已验证（核验时间 2026-11-23T11:31:08Z）
@@ -293,7 +293,7 @@
 - 内容：阿里云百炼北京新户 55 个独立模型池，各 100 万 Token
 - 规则：华北 2（北京）实名首次开通自动发放。不同模型独立，主子账号共用，各模型按规则有效 90 天。建议开启用完即停。
 - 链接：https://help.aliyun.com/zh/model-studio/new-free-quota
-- 状态：已验证（核验时间 2026-11-27T16:34:23Z）
+- 状态：待复核（核验时间 2026-11-27T16:34:23Z）
 
 ## 阿里云百炼｜免费模型
 - 内容：限时免费模型：decision-model-preview（北京/新加坡）、deepseek-r1-distill-qwen-1.5b、facechain-facedetect；另有仅供免费体验用完即停名单（qwen-audio-turbo、wanx-x-painting、deepseek-r1-distill-llama-70b 等11款）
@@ -515,7 +515,7 @@
 - 内容：Claude Code 与 Claude Web 共享订阅用量，Pro 和 Max 有五小时和周限额
 - 规则：Max 等计划可能另设模型限额；使用单独 API Key 可走 API 计费
 - 链接：https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan
-- 状态：已验证（核验时间 2026-11-16T17:58:50Z）
+- 状态：待复核（核验时间 2026-11-16T17:58:50Z）
 
 ## Anthropic｜套餐订阅
 - 内容：Claude API 月额度：Max $100、Ultra $200；Team 标准席 $20、高级席 $100，全队共池最高 $500
@@ -768,7 +768,7 @@
 - 内容：七牛云 Conatus：实名免充值档每天 1 亿 Token，活动至 12 月 31 日 23:59（北京时间）
 - 规则：需登录并完成实名认证且未受风控限制方可调用；同一账号所有 API Key 共享每日额度，每日 00:00（北京时间）重置，当日未用额度不结转、不兑换。本期仅支持活动免费额度：超额请求直接拒绝，不扣账户余额、资源包、订阅额度或积分，不自动转付费或切换模型。任意一笔大于 100 元且已到账的充值可将免费日额提升至 10 亿（多笔不累计，购买资源包或订阅不计入门槛）；未充值账户仍为每日 1 亿。
 - 链接：https://www.qiniu.com/ai/free-models/conatus-2026
-- 状态：已验证（核验时间 2026-11-28T00:53:44+08:00）
+- 状态：待复核（核验时间 2026-11-28T00:53:44+08:00）
 
 ## ZenMux｜注册赠送
 - 内容：ZenMux（200+ 模型聚合，首创 AI 保险赔付机制）注册送平台 Gifts 赠送额度，可直接试用 Claude Opus 4.6/Gemini 3 Pro 等旗舰；邀请好友另有 Referrals 奖励
@@ -1014,7 +1014,7 @@
 - 内容：Command Code GOAT：$10/月=**最高 $100 credits**（官方 Up to 口径：Ling 3.1 Flash / DeepSeek V4.1 Flash / GLM-5.3 Flash 各 $100，Tencent Hy3 / Qwen3.8-27B 各 $70，29+ 模型共享）——积分按底层 API 原价消耗零加价、滚存永不过期；含 API 访问 + 约 75K 请求
 - 规则：GOAT \$10/月含最高 \$100 用量额度（10 倍杠杆，靠开源模型批量折扣实现）；早期为 \$70 后提升 \$100 并官宣永久；倍率型订阅——用闭源旗舰模型消耗更快
 - 链接：https://saibodan.com/deals/commandcode-goat-plan
-- 状态：已验证（核验时间 2026-11-12T15:41:12Z）
+- 状态：待复核（核验时间 2026-11-12T15:41:12Z）
 
 ## AMD Token Factory｜长期免费
 - 内容：AMD AI 开发者平台 Token Factory（Dify 官方认证插件/Cherry Studio 可直连）：开源模型 API **每日免费额度重置**——社区口径每日约 \$10 上限（Dify 插件页标注 \$1/天，因账号而异），覆盖 MiMo-V2.6-Flash/DeepSeek-V4 Flash/GLM Flash 等；其他模型经 Fireworks AI credit 通道调用
@@ -1122,13 +1122,13 @@
 - 内容：Go 入门档：$1/月=**$10 credits**（含优惠最高 ~$15 用量）——GLM-5.2 / Tencent Hy3 / Qwen 系列 / DeepSeek V4.1 Flash 各 $10 独立额度 + 18+ 开源模型，约 9K 请求；积分零加价滚存不过期
 - 规则：$1/月另收 processing fee；不含 API 访问与云访问（其余档位均含）；用量分析受限、仅社区支持
 - 链接：https://commandcode.ai/pricing
-- 状态：已验证（核验时间 2026-11-12T15:41:12Z）
+- 状态：待复核（核验时间 2026-11-12T15:41:12Z）
 
 ## Command Code｜长期免费
 - 内容：Glyph Cluster 隐形预览期**完全免费**：请求不消耗任何 credits（'Requests cost no credits while the stealth preview lasts'）——所有 Command Code 用户可用
 - 规则：预览期限时免费（官方未公布截止）；隐形预览产品，功能与正式版可能有差异
 - 链接：https://commandcode.ai/pricing
-- 状态：已验证（核验时间 2026-11-12T15:41:12Z）
+- 状态：待复核（核验时间 2026-11-12T15:41:12Z）
 
 ## clixad｜长期免费
 - 内容：Clixad 免费模型共享每日60000 Credits用量上限；每天UTC 0点重置
