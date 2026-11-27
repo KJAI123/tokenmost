@@ -26,7 +26,8 @@ near(math.quota(quota([{amount:100000,unit:'tokens',period:'daily'}]),now).total
 near(math.quota(byId['electronhub-free-weekly'],now).monthly,.25/.2625*100*30/7);
 assert.equal(math.free(byId['deep-qoder-daily-credits']),false); // Pro trial or paid-plan eligibility is required.
 assert.equal(math.estimateMany([byId['deep-qoder-daily-credits']],now).count,0);
-near(math.quota(byId['qiniu-conatus-1e8'],now).total,10000*13);
+const conatus=byId['qiniu-conatus-1e8'];
+near(math.quota(conatus,now).total,300000);
 near(math.quota(byId['fiimeopc-token'],now).once,10000); // not 16亿 plus another month's tasks
 near(math.quota(byId['aliyun-yungongkaiwu-student'],now).total,300/1.75*100); // cloud coupon not counted again
 near(math.quota(quota([{amount:100,unit:'USD',period:'once'}]),now).total,100/.2625*100);
@@ -154,10 +155,12 @@ const scenario = {...mixedFixture,deadline:undefined,verify_status:'verified'};
 const month = math.monthlyLedger([dailyDeal,{...dailyDeal,id:'other-model'},verifiedFixture,pendingFixture,
   {...dailyDeal,id:'conditional',quota_conditional:true}, {...dailyDeal,id:'paid',quota_paid:true},
   {...dailyDeal,id:'student',gate:'student'},byId['qiniu-conatus-1e8'],scenario],current);
-near(month.standing,600); near(month.limited,80000); near(month.total,80600);
+near(month.standing,600); near(month.limited,300000); near(month.total,300600);
 assert.equal(month.rows.length,2);
 assert.equal(month.usage.count,3); // daily, weekly, monthly, no signup grant
-near(math.monthlyLedger([byId['qiniu-conatus-1e8']],new Date('2026-11-30T15:59:00Z')).total,0);
+near(math.monthlyLedger([conatus],new Date('2026-11-30T15:59:00Z')).total,300000);
+near(math.monthlyLedger([conatus],new Date('2026-12-31T15:58:59Z')).total,10000);
+near(math.monthlyLedger([conatus],new Date('2026-12-31T15:59:00Z')).total,0);
 near(math.monthlyLedger([byId['groq-free'],byId['sambanova-free'],byId['vikasit-nova-free'],byId['edgeone-makers-50w']],current).standing,7250);
 // First-use grants join the first-month view only. Conflicting versions of one pool count once.
 const trialFixture = {...dailyDeal,id:'trial',quota_introductory:true,quota_days:30,
@@ -251,7 +254,8 @@ console.log('Token conversion and daily-estimate checks passed: formulas, scenar
 const iFlytek=byId['xfyun-spark-x26-nov17'];
 // Replay the Nov 24 observation independently of later source reviews.
 const datedGrant={...iFlytek,calendar_window:{...iFlytek.calendar_window,observed_through:'2026-11-24'}};
-const novemberDeals=deals.map(d=>d.id===iFlytek.id?datedGrant:d);
+const previousConatus={...conatus,deadline:'2026-11-30T23:59:00+08:00'};
+const novemberDeals=deals.map(d=>d.id===iFlytek.id?datedGrant:d.id===conatus.id?previousConatus:d);
 const november = at => math.calendarLedger(novemberDeals,new Date('2026-11-'+at+'+08:00'));
 for (const [time,remaining] of [['01T12:00:00',438000],['23T21:00:00',180000],['24T00:00:00',170000],['25T00:00:00',60000],['29T23:59:00',20000],['30T23:58:59',10000],['30T23:59:00',0]]) {
   const c=november(time);
@@ -261,7 +265,9 @@ for (const [time,remaining] of [['01T12:00:00',438000],['23T21:00:00',180000],['
   assert(c.personal.every(r=>!r.remaining));
 }
 const december=new Date('2026-11-30T16:00:00Z');
-near(math.calendarLedger(deals,december).total,0);
+near(math.calendarLedger(deals,december).total,310000);
+near(math.calendarLedger(deals,december).remaining,310000);
+near(math.calendarLedger(deals,new Date('2026-12-31T15:59:00Z')).remaining,0);
 near(math.calendarLedger(deals,december,'2026-11').total,438000);
 near(math.calendarLedger(deals,december,'2026-11').remaining,0);
 near(math.monthlyLedger([datedGrant],new Date('2026-11-24T23:59:59+08:00')).firstClaim,100000);
