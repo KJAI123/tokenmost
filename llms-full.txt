@@ -208,10 +208,10 @@
 - 状态：待复核（核验时间 2026-11-23T11:35:29Z）
 
 ## Kimi 开放平台｜限时活动
-- 内容：Kimi 文件内容抽取/存储接口限时免费，截止未公布
-- 规则：仅上传并抽取文档时，文件接口本身不收费；把抽取内容作为模型输入时仍按量计费。官方未公布限时结束日期。
-- 链接：https://platform.kimi.com/docs/pricing/chat
-- 状态：待复核（核验时间 2026-11-23T05:12:28Z）
+- 内容：Kimi 文件抽取和存储接口限时免费，单文件上限 100 MiB
+- 规则：用开放平台 API Key 上传受支持文档并选 file-extract。组织默认 10 GiB，总量按存储计。抽取结果送入模型按输入 Token 计费。
+- 链接：https://platform.kimi.com/docs/api/files-upload
+- 状态：已验证（核验时间 2026-11-27T04:52:52Z）
 
 ## 硅基流动｜长期免费
 - 内容：硅基流动模型目录中的免费模型按零价调用
@@ -265,10 +265,10 @@
 - 状态：待复核（核验时间 2026-11-25T05:48:51Z）
 
 ## Kimi 开放平台｜price_low
-- 内容：Kimi K3 系列重复请求前缀自动走缓存计费
-- 规则：默认缓存 5 分钟，命中输入不重复收取缓存写入费
-- 链接：https://platform.kimi.com/docs/pricing/chat
-- 状态：待复核（核验时间 2026-11-16T17:58:50Z）
+- 内容：Kimi K3 与 K3.1 Pro 上下文缓存按百万 Token 计费
+- 规则：同一组织重复前缀可复用，默认 5 分钟、可选 1 小时。以 K3 为例，每百万 Token 写入 ¥20 或 ¥40，命中 ¥2。
+- 链接：https://platform.kimi.com/docs/guide/context-caching
+- 状态：已验证（核验时间 2026-11-27T04:52:52Z）
 
 ## OpenRouter｜price_low
 - 内容：OpenRouter :free 共池：50 次/天或 1,000 次/天，均为 20 次/分钟。高档比名义门槛 10 credits 低一个 credit 起算。
