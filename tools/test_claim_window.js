@@ -49,7 +49,13 @@ for(const lang of ['zh-CN','en']){
  assert.equal(wb.isFeatured({...featured[0],verify_status:'stale'},new Date(clock)),false);
  assert.equal(wb.isFeatured({...featured[0],quota_paid:false},new Date(clock)),false);
  assert.deepEqual(Array.from(wb.featuredDeals(catalogue,new Date('2026-11-23T00:00:00+08:00')),d=>d.id),['opendesign-reset-card-invite','cline-pass-deepseek'],'Expired boost leaves the recommendations.');
- assert.equal(wb.featuredDeals(catalogue,new Date('2026-11-30T00:00:00+08:00')).length,0);
+ assert.deepEqual(Array.from(wb.featuredDeals(catalogue,new Date('2026-11-30T00:00:00+08:00')),d=>d.id),['opendesign-reset-card-invite']);
+ assert.equal(wb.featuredDeals(catalogue,new Date('2026-12-06T00:00:00+08:00')).length,0);
+ const pinnedBefore=wb.pinnedInvites(liveCatalogue,new Date('2026-11-29T23:59:59+08:00'));
+ const pinnedAfter=wb.pinnedInvites(liveCatalogue,new Date('2026-11-30T00:00:00+08:00'));
+ assert.match(pinnedBefore,/QPBS8AX98ZQM/);
+ assert.doesNotMatch(pinnedAfter,/QPBS8AX98ZQM/);
+ assert.match(pinnedAfter,/s\.qiniu\.com\/EnYbIb/);
  assert.equal(math.catalogue(featured).total.typical,0,'Paid recommendations do not enter the free ledger.');
  assert.match(wb.subscriptionCell(featured[0]),lang==='en'?/\$8 first mo/:/\$8 首月/);
  assert.match(wb.subscriptionCell(featured[0]),/\$10/);

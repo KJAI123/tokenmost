@@ -12,6 +12,7 @@ const CatalogueUI = (() => {
   function banner(deals) {
     const monthly = TokenMath.monthlyLedger(deals);
     const calendar = TokenMath.calendarLedger(deals);
+    const catalogue = TokenMath.catalogue(deals);
     const dated = calendar.rows.length>0;
     document.querySelector('#globalBanner .gb-label').textContent = dated
       ? monthName(calendar.month)+m('有据活动 · 全月上限',' dated offers · full month')
@@ -24,8 +25,9 @@ const CatalogueUI = (() => {
       [m('周期额度','Recurring caps'),monthly.total],
       [m('首领及试用','First claims & trials'),monthly.firstClaim]
     ];
-    document.getElementById('gbBreakdown').innerHTML = parts.map(([label,value])=>'<span>'+label+' <strong>'+nativeAmount(value)+'</strong></span>').join('');
-    document.getElementById('gbEstimate').textContent = dated ? m('含已结束活动，按平台分别用满','Includes past offers at full eligible use') : m('按各平台分别用满估算','Assumes full eligible use per platform');
+    document.getElementById('gbBreakdown').innerHTML = parts.map(([label,value])=>'<span>'+label+' <strong>'+nativeAmount(value)+'</strong></span>').join('')
+      +'<span>'+m('全站首月情景','Catalogue scenario')+' <strong>≈ '+f(catalogue.total.typical)+'</strong></span>';
+    document.getElementById('gbEstimate').textContent = m('全站情景含估算与待复核','Catalogue scenario includes estimates and pending offers');
     document.getElementById('globalBanner').title = m('查看活动日期、领取条件与计算明细','View offer dates, eligibility and calculations');
   }
   function calendarSection(deals,calendar) {
@@ -42,12 +44,18 @@ const CatalogueUI = (() => {
     const tiers = [];
     for (const deal of deals.filter(d=>d.conditional_tiers && d.published!==false)) {
       for (const tier of deal.conditional_tiers) {
+        const note = m(tier.note || deal.rule,tier.note_en || deal.rule_en || deal.rule);
+        if (tier.window==='one_time') {
+          if (calendar.month<deal.starts_at.slice(0,7) || calendar.month>deal.deadline.slice(0,7)) continue;
+          const amount=range({low:tier.token_amount_range[0]/10000,high:tier.token_amount_range[1]/10000});
+          tiers.push('<li><div><a href="'+esc(deal.url)+'" target="_blank" rel="noopener">'+esc(deal.group || deal.provider)+' · '+esc(m(tier.label,tier.label_en))+' ↗</a><small>'+esc(note)+'</small></div><strong>'+amount+'<small>'+m('单次额度 · 单列','One claim · shown separately')+'</small></strong></li>');
+          continue;
+        }
         const promotion = tier.window==='campaign';
         const window = calendar.rows.find(r=>r.deal===deal);
         if (promotion && !window) continue;
         const daily = tier.daily_groups.reduce((a,b)=>a+b,0)/10000;
         const period = promotion?window.days:30;
-        const note = m(tier.note || deal.rule,tier.note_en || deal.rule_en || deal.rule);
         tiers.push('<li><div><a href="'+esc(deal.url)+'" target="_blank" rel="noopener">'+esc(deal.group || deal.provider)+' · '+esc(m(tier.label,tier.label_en))+' ↗</a><small>'+tier.daily_groups.map(v=>amount(v/10000)).join(' + ')+m(' / 天',' / day')+' · '+esc(note)+'</small></div><strong>'+amount(daily*period)+'<small>'+ (promotion?m('全月条件档','Full-month tier'):m('按现行规则 × 30 天','Current terms × 30 days'))+'</small></strong></li>');
       }
     }

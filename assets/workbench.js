@@ -191,24 +191,25 @@ const Workbench = (() => {
       .filter(d=>{const key=d.group||d.provider;if(seen.has(key))return false;seen.add(key);return true;}).slice(0,3);
   }
 
-  function pinnedInvites(deals) {
+  function pinnedInvites(deals, now = new Date()) {
     const invites = deals.filter(deal => deal.published !== false && deal.pinned_invite_rank > 0
-      && deal.type === 'coupon' && deal.via === 'invite' && !deal.placeholder && deal.url
-      && TokenMath.phase(deal) === 'active')
+      && deal.type === 'coupon' && deal.via === 'invite' && !deal.placeholder && /^https:\/\//i.test(deal.url || '')
+      && TokenMath.phase(deal, now) === 'active')
       .sort((a,b) => a.pinned_invite_rank - b.pinned_invite_rank);
     if (!invites.length) return '';
     return '<section class="pinned-invites" aria-labelledby="pinnedInviteTitle">'
       +'<div class="layer-head featured-heading">'+icon('bookmark')
-      +'<h3 id="pinnedInviteTitle">'+msg('置顶邀请','Pinned invites')+'</h3></div>'
+      +'<h3 id="pinnedInviteTitle">'+msg('置顶优惠与邀请链接','Pinned offers and invites')+'</h3></div>'
+      +'<div class="pinned-invite-list">'
       +invites.map(deal => `<div class="pinned-invite">
         <div class="pinned-invite-text">
           <b>${esc(deal.provider)}</b>
-          <span class="chip">${msg('邀请码 ','Code ')}${esc(deal.invite_code)}</span>
+          ${deal.invite_code ? '<span class="chip">'+msg('邀请码 ','Code ')+esc(deal.invite_code)+'</span>' : ''}
           <p>${esc(summary(deal))}</p>
         </div>
-        <div class="r-ops"><a class="go cgo" href="${esc(safeUrl(deal.url))}" target="_blank" rel="noopener nofollow sponsored"
+        <div class="r-ops"><a class="go cgo" href="${esc(deal.url)}" target="_blank" rel="noopener nofollow sponsored"
           aria-label="${esc(msg('打开 '+deal.provider+' 邀请链接','Open '+deal.provider+' invite link'))}">${msg('邀请链接','Invite link')}</a></div>
-      </div>`).join('')+'</section>';
+      </div>`).join('')+'</div></section>';
   }
 
   function featuredHeading(count) {

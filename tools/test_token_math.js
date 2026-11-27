@@ -269,4 +269,7 @@ near(math.monthlyLedger([datedGrant],new Date('2026-11-25T00:00:00+08:00')).firs
 const duplicate={...iFlytek,id:'alternate-source'};
 near(math.calendarLedger([iFlytek,duplicate],current).total,100000);
 assert.equal(math.calendarLedger([byId['openai-api-data-sharing-tokens']],current).total,0);
-assert.equal(bailian.token_quota.length,56);
+assert.equal(bailian.token_quota.length,55);
+assert.equal(new Set(bailian.token_quota.map(q=>q.pool)).size,55);
+assert.ok(bailian.token_quota.some(q=>q.model==='decision-model'&&q.amount===1000000));
+assert.ok(!bailian.token_quota.some(q=>['qwen3.7-max','qwen3.7-flash'].includes(q.model)));
