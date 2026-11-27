@@ -37,6 +37,7 @@ RELATED_GUIDES = {
 }
 
 RELATED_OFFICIAL_RULES = {
+    "302ai-payg": ("https://help.302.ai/en/docs/FAQ", "查看官方计费 FAQ（英文）"),
     "trae-free-tier": ("https://docs.trae.cn/ide_plans-and-billing", "查看官方套餐与计费"),
     "trae-code-fission": ("https://docs.trae.cn/ide_invite-new-users-to-earn-credits-for-traecode", "查看官方邀请活动规则"),
     "deep-zhipu-trial-card": ("https://docs.bigmodel.cn/cn/coding-plan/tool/others", "查看智谱支持的工具"),
@@ -136,6 +137,8 @@ def fmt_wan(w):
 
 
 def deal_value(d):
+    if d["id"] == "302ai-payg":
+        return "按用量付费"
     if d.get("type") == "paid_discount" and d.get("api_via") == "api" and not d.get("token_quota"):
         return "按用量付费"
     if d.get("unit") == "tool":
@@ -535,7 +538,7 @@ def main():
             else:
                 primary_url = d["url"]
             extra_terms = ""
-            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card"):
+            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg"):
                 extra_terms = (
                     f'<p>{esc_quote(d["notes"])}</p>'
                     '<details lang="en"><summary>English terms</summary>'
@@ -544,6 +547,8 @@ def main():
                 )
             if d["id"] == "deep-anthropic-sub-credits-r4":
                 action = "查看官方 API 额度规则"
+            elif d["id"] == "302ai-payg":
+                action = "查看官方定价"
             blocks.append(
                 f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{source_tag}{dl}'
