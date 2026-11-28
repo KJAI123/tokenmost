@@ -169,6 +169,8 @@ def deal_value(d):
                 parts.append(f"{label}仅输入预算 ≈ {value_range} Token（非通用赠额）")
             else:
                 parts.append(f"{label}情景估计 ≈ {fmt_wan(estimated[period]['low'])}–{fmt_wan(estimated[period]['high'])} Token（非保证额度）")
+        if not parts and d.get("quota_basis") == "claimed_pack":
+            return "单账号卡面上限"
         return "；".join(parts) or "Token 数量以官方页为准"
     parts = []
     if d.get("daily_wan"): parts.append(f"日均 ~{fmt_wan(d['daily_wan'])} tokens")
@@ -525,6 +527,9 @@ def main():
                 if any(source.get("url") == rules_url and source.get("kind") == "official"
                        for source in d.get("sources", ())):
                     guide_link = f'<p><a href="{esc_quote(rules_url)}" target="_blank" rel="noopener">{esc_quote(label)}</a></p>'
+            if d["id"] == "zcode-weekend-3yi-1128":
+                evidence_url = next(source["url"] for source in d["sources"] if source["kind"] == "firsthand")
+                guide_link = f'<p><a href="{esc_quote(evidence_url)}">查看端内核验摘要</a></p>'
             if d["id"] in ("oracle-cloud-always-free", "aws-freetier-ec2", "gcp-freetier-vm"):
                 official_links = " · ".join(
                     f'<a href="{esc_quote(source["url"])}" target="_blank" rel="noopener">{esc_quote(source["title"])}</a>'
@@ -538,7 +543,7 @@ def main():
             else:
                 primary_url = d["url"]
             extra_terms = ""
-            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg"):
+            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128"):
                 extra_terms = (
                     f'<p>{esc_quote(d["notes"])}</p>'
                     '<details lang="en"><summary>English terms</summary>'
