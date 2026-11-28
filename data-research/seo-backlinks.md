@@ -965,3 +965,19 @@
 - WebBridge CSDN 发布管线首跑验证：attach_tab(老板标签 1136206118) → navigate 编辑器 → evaluate React setter 标题 → fill contenteditable 正文 → aria snapshot 找按钮 → **mouse_click+focus_emulation**（合成 click 无效，真实指针必须）→ success URL
 - 坑入册：①弹窗按钮合成 click 不触发，须 mouse_click+focus_emulation ②@e ref 转义在 bash heredoc 中易错，改用 JSON 文件体 ③CSDN SSO 半断：mp 页有管理菜单但 editor 跳登录——重登后同步恢复
 - 登录态保持：老板 Chrome（Kimi WebBridge 扩展）为唯一操作面，9223 退役
+
+## 📊 11-28 全网状态巡检（WebBridge 只读，老板令「都看一下」）
+
+**百家号 🎉 b2/b3/b4 全部过审**：
+- b4《素材站盘点》**已发布已推荐**（推荐池生效！）/ b3《办公 AI 三例》已发布 / b2《学生党权益》已发布
+- 百家号内容资产 3 篇全过审，隔天日更节奏合规
+
+**企鹅号**：7 篇在列（含 14:13 HBGSC 新稿「退件还没检测」——ZCode 原发布者线发布，去重拦截生效零冲突）；o6 暂缓（避免与原发布者线撞车）
+
+**知乎**：禁言期（今晚 19:43 解禁），创作分 1,749 持续上涨中（内容资产仍在积累）
+
+**CSDN**：c14《去重拦截》发布成功（WebBridge 全流程首篇）+ AI 案例 4 篇 1419 阅读
+
+**掘金**：登录态确认（老板 Chrome）
+
+**架构**：WebBridge 全面接管（老板 Chrome 唯一操作面），login_watch.sh 巡检工具就绪
