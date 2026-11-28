@@ -37,6 +37,9 @@ RELATED_GUIDES = {
 }
 
 RELATED_OFFICIAL_RULES = {
+    "suno-free-daily": ("https://help.suno.com/en/articles/9601601", "查看 Suno 免费档作品使用权"),
+    "kiro-free-monthly": ("https://kiro.dev/docs/billing/related-questions/", "查看 Kiro 免费档与计费问答"),
+    "kiro-pro-first-upgrade": ("https://kiro.dev/docs/billing/related-questions/", "查看 Kiro 首次升级及扣费规则"),
     "monkeycode-referral": ("https://monkeycode.docs.baizhi.cloud/node/019d963c-425a-7c49-8126-d5308fd61cdc", "查看官方邀请积分规则"),
     "302ai-payg": ("https://help.302.ai/en/docs/FAQ", "查看官方计费 FAQ（英文）"),
     "trae-free-tier": ("https://docs.trae.cn/ide_plans-and-billing", "查看官方套餐与计费"),
@@ -548,7 +551,8 @@ def main():
             else:
                 primary_url = d["url"]
             extra_terms = ""
-            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128", "monkeycode-referral", "qoder-cn-new-user-task-rewards"):
+            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128", "monkeycode-referral", "qoder-cn-new-user-task-rewards",
+                           "suno-free-daily", "kiro-free-monthly", "kiro-pro-first-upgrade"):
                 extra_terms = (
                     f'<p>{esc_quote(d["notes"])}</p>'
                     '<details lang="en"><summary>English terms</summary>'

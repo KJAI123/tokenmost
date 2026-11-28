@@ -1742,5 +1742,26 @@
       <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
       <description>长期免费 · 规则：仅限符合资格且有正余额的组织。所有者须自愿共享 API 输入与输出，两个模型组各自共池，每天 00:00 UTC 重置。跨过限额的请求可能整笔收费。（优惠以官方页面为准）</description>
     </item>
+    <item>
+      <title>Suno：Suno Free：每天重置为 50 创作积分，免费档歌曲限个人非商用</title>
+      <link>https://suno.com/pricing</link>
+      <guid isPermaLink="false">suno-free-daily</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：免费账号按 UTC 每日恢复至 50 创作积分，余额不跨天累加。生成的歌曲可分享，限个人非商用，不能变现。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Kiro：Kiro Free：免费个人档每月 50 Credits</title>
+      <link>https://kiro.dev/pricing/</link>
+      <guid isPermaLink="false">kiro-free-monthly</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description>长期免费 · 规则：新用户从免费档开始，额度用于 Kiro 支持的功能。定价页列有开放权重模型和 Claude Sonnet 4.5，适用限制以端内为准。（优惠以官方页面为准）</description>
+    </item>
+    <item>
+      <title>Kiro：Kiro 首次升级 Pro：当月剩余时间免订阅费，另送 500 试用 Credits</title>
+      <link>https://kiro.dev/docs/billing/upgrading/</link>
+      <guid isPermaLink="false">kiro-pro-first-upgrade</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description>套餐订阅 · 规则：首次从 Free 升级 Pro，需在官网填写付款资料。500 试用 Credits 有效 12 个月，计划额度按当月剩余时间比例发放。（优惠以官方页面为准）</description>
+    </item>
   </channel>
 </rss>
