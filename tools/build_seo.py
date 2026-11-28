@@ -140,6 +140,8 @@ def fmt_wan(w):
 
 
 def deal_value(d):
+    if d["id"] == "qoder-cn-new-user-task-rewards":
+        return "礼品卡及抵扣券"
     if d["id"] == "302ai-payg":
         return "按用量付费"
     if d.get("type") == "paid_discount" and d.get("api_via") == "api" and not d.get("token_quota"):
@@ -546,7 +548,7 @@ def main():
             else:
                 primary_url = d["url"]
             extra_terms = ""
-            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128", "monkeycode-referral"):
+            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128", "monkeycode-referral", "qoder-cn-new-user-task-rewards"):
                 extra_terms = (
                     f'<p>{esc_quote(d["notes"])}</p>'
                     '<details lang="en"><summary>English terms</summary>'
