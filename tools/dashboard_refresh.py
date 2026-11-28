@@ -52,9 +52,9 @@ th { color:#7a8699; font-weight:500; }
   <div class="kpi"><div class="v" id="k-pub"></div><div class="l">累计发布(4天)</div></div>
   <div class="kpi"><div class="v" id="k-reads"></div><div class="l">CSDN 总阅读</div></div>
   <div class="kpi"><div class="v" id="k-ammo"></div><div class="l">弹药库(人味化)</div></div>
-  <div class="kpi"><div class="v" id="k-bl"></div><div class="l">外链管道(1 merged)</div></div>
+  <div class="kpi"><div class="v" id="k-bl"></div><div class="l">外链管道</div></div>
   <div class="kpi"><div class="v" id="k-ore"></div><div class="l">掘金矿石</div></div>
-  <div class="kpi"><div class="v">8/19</div><div class="l">GEO 矩阵有号</div></div>
+  <div class="kpi"><div class="v" id="k-geo"></div><div class="l">GEO 矩阵有号</div></div>
 </div>
 <h2>平台矩阵状态</h2>
 <div class="card"><table id="acc"></table>
@@ -63,17 +63,17 @@ th { color:#7a8699; font-weight:500; }
 <div>
 <h2>CSDN · AI 案例分享系列</h2>
 <div class="card"><table id="art"></table>
-<div class="note">流量券 10 张全部「推广中」(标称 6000+ 曝光, 实际待平台回传) · 零提及新规验证: 带提及 0% 通过 vs 零提及 100% 通过</div></div>
+<div class="note" id="coupon-note"></div></div>
 <h2>知乎事件线</h2>
 <div class="card"><ul class="timeline" id="tl"></ul></div>
 </div>
 <div>
 <h2>外链管道 (GitHub)</h2>
 <div class="card">
-<span class="pill g">1 merged</span><span class="pill b">13 open</span>
-<div class="note" style="margin-top:8px">🏆 已合并: ai-megalist (88★)<br>在途大仓: awesome-ai-tools 6604★ · awesome-free-models 2664★ · freeStuffDev 1976★ · awesome-free-ai-tools 1107★<br>#171 维护者要英文版链接——已响应待回</div></div>
+<span class="pill g" id="bl-merged"></span><span class="pill b" id="bl-open"></span>
+<div class="note" id="bl-note" style="margin-top:8px;white-space:pre-line"></div></div>
 <h2>弹药库</h2>
-<div class="card"><div class="note">26 篇全量人味化 ✓ (去AI味最高纪律)<br>知乎 a4-a16(13) · CSDN c6-c13(8) · 掘金 j2-j6(5) · 企鹅 o3-o7(5) · 百家 b2-b4(3) · 简书 js1<br>排期覆盖至 11-30+ · 原稿备份 /tmp/tokenmost_orig</div></div>
+<div class="card"><div class="note" id="ammo-note" style="white-space:pre-line"></div></div>
 <h2>⏳ 待老板配合</h2>
 <div class="card"><div class="note" id="boss"></div></div>
 </div>
@@ -83,9 +83,16 @@ const D = __DATA__;
 document.querySelector('.sub').textContent = '数据快照: ' + D.updated + ' · 刷新: python3 tools/dashboard_refresh.py';
 document.getElementById('k-pub').textContent = D.kpis.total_published;
 document.getElementById('k-reads').textContent = D.kpis.reads_total.toLocaleString();
-document.getElementById('k-ammo').textContent = D.kpis.ammo;
-document.getElementById('k-bl').textContent = D.kpis.backlinks;
+document.getElementById('k-ammo').textContent = D.ammo.total;
+document.getElementById('k-bl').textContent = D.backlinks.total;
 document.getElementById('k-ore').textContent = D.kpis.ore.toLocaleString();
+document.getElementById('k-geo').textContent = D.kpis.geo_accounts;
+document.getElementById('coupon-note').textContent = D.coupons.total + ' coupons, ' + D.coupons.active + ' active; ' + D.coupons.faceValue + '; ' + D.coupons.note + '; ' + D.coupons.policyNote;
+document.getElementById('bl-merged').textContent = D.backlinks.merged + ' merged';
+document.getElementById('bl-open').textContent = D.backlinks.open + ' open';
+document.getElementById('bl-note').textContent = 'Merged: ' + D.backlinks.mergedName + '\\nPending: ' + D.backlinks.top.join(' · ') + '\\n' + D.backlinks.pendingNote;
+document.getElementById('ammo-note').textContent = D.ammo.total + ' articles, ' + D.ammo.humanized + ' humanized. ' + D.ammo.note + '\\n' + D.ammo.breakdown + '\\n' + D.ammo.schedule;
+
 const cls = {ok:'st-ok', warn:'st-warn', banned:'st-banned', todo:'st-todo'};
 document.getElementById('acc').innerHTML = '<tr><th>平台</th><th>状态</th><th>备注</th></tr>' +
   D.accounts.map(a => `<tr><td>${a.platform}</td><td class="${cls[a.status]||''}">${a.statusText}</td><td style="color:#7a8699">${a.note}</td></tr>`).join('');

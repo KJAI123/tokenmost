@@ -22,9 +22,9 @@
     {"title": "Coding Plan横评", "reads": 0, "likes": 0, "collects": 0, "date": "11-23", "delta": "❌驳回"},
     {"title": "学生党AI权益盘点", "reads": 0, "likes": 0, "collects": 0, "date": "11-22", "delta": "❌驳回"}
   ],
-  "coupons": {"total": 10, "active": 10, "faceValue": "6000+曝光标称", "note": "全部推广中, 实际曝光未知待平台回传"},
-  "backlinks": {"total": 14, "merged": 1, "open": 13, "top": ["awesome-ai-tools 6604★", "awesome-free-models 2664★", "freeStuffDev 1976★"]},
-  "ammo": {"total": 26, "humanized": 26, "note": "全量人味化收官, 原稿备份/tmp/tokenmost_orig"},
+  "coupons": {"total": 10, "active": 10, "faceValue": "6000+曝光标称", "note": "全部推广中, 实际曝光未知待平台回传", "policyNote": "零提及新规验证: 带提及 0% 通过 vs 零提及 100% 通过"},
+  "backlinks": {"total": 14, "merged": 1, "open": 13, "top": ["awesome-ai-tools 6604★", "awesome-free-models 2664★", "freeStuffDev 1976★", "awesome-free-ai-tools 1107★"], "mergedName": "ai-megalist (88★)", "pendingNote": "#171 维护者要英文版链接——已响应待回"},
+  "ammo": {"total": 26, "humanized": 26, "note": "全量人味化收官, 原稿备份/tmp/tokenmost_orig", "breakdown": "知乎 a4-a16(13) · CSDN c6-c13(8) · 掘金 j2-j6(5) · 企鹅 o3-o7(5) · 百家 b2-b4(3) · 简书 js1", "schedule": "排期覆盖至 11-30+ · 原稿备份 /tmp/tokenmost_orig"},
   "zhihu_timeline": [
     {"date": "11-18", "event": "羊毛快讯判垃圾营销删除(首次违规)"},
     {"date": "11-19~21", "event": "全功能静默拦截(禁言前兆)"},
@@ -33,5 +33,5 @@
     {"date": "今晚", "event": "复验→自答a11→AI声明必勾"}
   ],
   "pending_boss": ["企鹅号扫码(o6)", "简书扫码", "思否滑块+手机码", "头条完善信息", "公众号注册"],
-  "kpis": {"total_published": 14, "platforms_active": 5, "ammo": 26, "backlinks": 14, "reads_total": 1419, "ore": 15001}
+  "kpis": {"total_published": 14, "platforms_active": 5, "reads_total": 1419, "ore": 15001, "geo_accounts": "8/19"}
 }
