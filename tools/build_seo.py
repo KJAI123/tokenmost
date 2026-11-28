@@ -37,6 +37,7 @@ RELATED_GUIDES = {
 }
 
 RELATED_OFFICIAL_RULES = {
+    "monkeycode-referral": ("https://monkeycode.docs.baizhi.cloud/node/019d963c-425a-7c49-8126-d5308fd61cdc", "查看官方邀请积分规则"),
     "302ai-payg": ("https://help.302.ai/en/docs/FAQ", "查看官方计费 FAQ（英文）"),
     "trae-free-tier": ("https://docs.trae.cn/ide_plans-and-billing", "查看官方套餐与计费"),
     "trae-code-fission": ("https://docs.trae.cn/ide_invite-new-users-to-earn-credits-for-traecode", "查看官方邀请活动规则"),
@@ -545,7 +546,7 @@ def main():
             else:
                 primary_url = d["url"]
             extra_terms = ""
-            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128"):
+            if d["id"] in ("deep-anthropic-sub-credits-r4", "deep-zhipu-trial-card", "302ai-payg", "zcode-weekend-3yi-1128", "monkeycode-referral"):
                 extra_terms = (
                     f'<p>{esc_quote(d["notes"])}</p>'
                     '<details lang="en"><summary>English terms</summary>'
@@ -556,12 +557,16 @@ def main():
                 action = "查看官方 API 额度规则"
             elif d["id"] == "302ai-payg":
                 action = "查看官方定价"
+            link_rel = "noopener nofollow"
+            if d["id"] == "monkeycode-referral":
+                action = "打开邀请链接"
+                link_rel += " sponsored"
             blocks.append(
                 f'<div class="deal" id="deal-{esc_quote(d["id"])}"><b>{esc_quote(d["value"][:80])}{"…" if len(d["value"])>80 else ""}</b>'
                 f'<span class="tag">{esc_quote(tag)}</span><span class="tag">{badge}</span><span class="tag">{esc_quote(vtag)}</span>{source_tag}{dl}'
                 f'<p>💰 {esc_quote(deal_value(d))} ｜ 📐 {esc_quote(d.get("rule","以官方页为准")[:90])}</p>'
                 + estimate_note +
-                f'<a class="go" href="{esc_quote(primary_url)}" target="_blank" rel="noopener nofollow">{action} →</a>'
+                f'<a class="go" href="{esc_quote(primary_url)}" target="_blank" rel="{link_rel}">{action} →</a>'
                 + guide_link + extra_terms + '</div>')
         faq_blocks = []
         faq_items = []
