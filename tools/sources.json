@@ -925,6 +925,15 @@
    "auto_verify": false
   },
   {
+   "id": "qoder-cn-task-rewards",
+   "type": "watch",
+   "url": "https://docs.qoder.cn/events/task-rewards",
+   "deals": [
+    "qoder-cn-new-user-task-rewards"
+   ],
+   "auto_verify": false
+  },
+  {
    "id": "meoo-official-pricing",
    "type": "watch",
    "url": "https://docs.meoo.com/pricing",
