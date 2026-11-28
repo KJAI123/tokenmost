@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>TokenMost 运营中台</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0e1a; color:#e0e6f0; font-family:-apple-system,'PingFang SC',sans-serif; padding:24px; }
+h1 { font-size:22px; margin-bottom:4px; }
+.sub { color:#7a8699; font-size:12px; margin-bottom:20px; }
+.grid { display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-bottom:20px; }
+.kpi { background:#121826; border:1px solid #1e2a42; border-radius:10px; padding:14px; }
+.kpi .v { font-size:26px; font-weight:700; color:#4ade80; }
+.kpi .l { font-size:11px; color:#7a8699; margin-top:2px; }
+h2 { font-size:15px; margin:20px 0 10px; color:#9db4d0; border-left:3px solid #3b82f6; padding-left:8px; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.card { background:#121826; border:1px solid #1e2a42; border-radius:10px; padding:14px; }
+table { width:100%; border-collapse:collapse; font-size:12.5px; }
+td, th { padding:6px 8px; border-bottom:1px solid #1a2338; text-align:left; }
+th { color:#7a8699; font-weight:500; }
+.st-ok { color:#4ade80; } .st-warn { color:#fbbf24; } .st-banned { color:#f87171; } .st-todo { color:#7a8699; }
+.delta-up { color:#4ade80; } .delta-rej { color:#f87171; }
+.timeline li { list-style:none; padding:4px 0; font-size:12.5px; color:#b8c4d8; border-left:2px solid #3b82f6; padding-left:10px; margin-left:4px; }
+.pill { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; margin:2px; }
+.pill.b { background:#1e3a5f; color:#7cc4ff; } .pill.g { background:#14532d; color:#4ade80; } .pill.y { background:#713f12; color:#fbbf24; }
+.note { font-size:11.5px; color:#7a8699; margin-top:8px; line-height:1.5; }
+</style>
+</head>
+<body>
+<h1>🚀 TokenMost 运营中台</h1>
+<div class="sub">数据快照: 2026-11-28T12:10+08:00 · 每日发射任务后由 automation 更新 dashboard-data.json</div>
+
+<div class="grid">
+  <div class="kpi"><div class="v">14</div><div class="l">累计发布(4天)</div></div>
+  <div class="kpi"><div class="v">1419</div><div class="l">CSDN 总阅读</div></div>
+  <div class="kpi"><div class="v">26</div><div class="l">弹药库(人味化)</div></div>
+  <div class="kpi"><div class="v">14</div><div class="l">外链管道(1 merged)</div></div>
+  <div class="kpi"><div class="v">15001</div><div class="l">掘金矿石</div></div>
+  <div class="kpi"><div class="v">8/19</div><div class="l">GEO 矩阵有号</div></div>
+</div>
+
+<h2>平台矩阵状态</h2>
+<div class="card"><table id="acc"></table>
+<div class="note">状态: <span class="st-ok">■</span> 正常运转 · <span class="st-warn">■</span> 待动作(扫码/迁移/审核) · <span class="st-banned">■</span> 禁言/受限 · <span class="st-todo">■</span> 待注册</div></div>
+
+<div class="two">
+<div>
+<h2>CSDN · AI 案例分享系列</h2>
+<div class="card"><table id="art"></table>
+<div class="note">流量券 10 张全部「推广中」(标称 6000+ 曝光, 实际待平台回传) · 零提及新规验证: 带提及 0% 通过 vs 零提及 100% 通过</div></div>
+<h2>知乎事件线</h2>
+<div class="card"><ul class="timeline" id="tl"></ul></div>
+</div>
+<div>
+<h2>外链管道 (GitHub)</h2>
+<div class="card" id="bl">
+<span class="pill g">1 merged</span><span class="pill b">13 open</span>
+<div class="note" style="margin-top:8px">🏆 已合并: ai-megalist (88★)<br>在途大仓: awesome-ai-tools 6604★ · awesome-free-models 2664★ · freeStuffDev 1976★ · awesome-free-ai-tools 1107★<br>#171 维护者要英文版链接——已响应待回</div></div>
+<h2>弹药库</h2>
+<div class="card"><div class="note">26 篇全量人味化 ✓ (去AI味最高纪律)<br>知乎 a4-a16(13) · CSDN c6-c13(8) · 掘金 j2-j6(5) · 企鹅 o3-o7(5) · 百家 b2-b4(3) · 简书 js1<br>排期覆盖至 11-30+ · 原稿备份 /tmp/tokenmost_orig</div></div>
+<h2>⏳ 待老板配合</h2>
+<div class="card"><div class="note" id="boss"></div></div>
+</div>
+</div>
+<script>
+const D = {"updated": "2026-11-28T12:10+08:00", "accounts": [{"platform": "知乎", "status": "banned", "statusText": "禁言今晚19:43解禁", "score": "创作分 1,647", "note": "v5: AI声明必勾+日1动作"}, {"platform": "CSDN", "status": "ok", "statusText": "解禁·零提及新规", "note": "c6/c7驳回, c8/c11/c12/c13通过"}, {"platform": "企鹅号", "status": "warn", "statusText": "正式运营·需扫码恢复", "note": "6篇已发+封面齐, o6待发(剩4额度)"}, {"platform": "百家号", "status": "ok", "statusText": "正常·隔天日更", "note": "b2/b3/b4已发, b4审核中"}, {"platform": "掘金", "status": "warn", "statusText": "有号·cookie待迁", "note": "j2-j6库存, 9222断链"}, {"platform": "头条号", "status": "warn", "statusText": "有号·待完善信息", "note": "完善后启用首发3倍"}, {"platform": "博客园", "status": "ok", "statusText": "已注册登录", "note": "发文权限审核中"}, {"platform": "腾讯云", "status": "ok", "statusText": "已注册登录", "note": "SEO第一梯队, 入驻后发文"}, {"platform": "思否", "status": "warn", "statusText": "半成品·滑块待拖", "note": "9223登录页开着"}, {"platform": "开源中国/51CTO", "status": "todo", "statusText": "待注册", "note": "需手机码"}, {"platform": "简书", "status": "warn", "statusText": "需老板扫码", "note": "js1稿件就绪"}, {"platform": "公众号/微博/B站/抖音/小红书", "status": "todo", "statusText": "待注册/待实名", "note": "GEO矩阵 8/19"}], "csdn_articles": [{"title": "同一个号:两拒三过差别一处", "reads": 130, "likes": 0, "collects": 5, "date": "11-27", "delta": "新发"}, {"title": "AI帮我发了6篇全0流量", "reads": 525, "likes": 2, "collects": 3, "date": "11-25", "delta": "+370 🚀"}, {"title": "滑块验证折腾记录", "reads": 465, "likes": 1, "collects": 4, "date": "11-24", "delta": "+97"}, {"title": "Python一行命令处理JSON", "reads": 299, "likes": 3, "collects": 6, "date": "11-24", "delta": "+70"}, {"title": "Coding Plan横评", "reads": 0, "likes": 0, "collects": 0, "date": "11-23", "delta": "❌驳回"}, {"title": "学生党AI权益盘点", "reads": 0, "likes": 0, "collects": 0, "date": "11-22", "delta": "❌驳回"}], "coupons": {"total": 10, "active": 10, "faceValue": "6000+曝光标称", "note": "全部推广中, 实际曝光未知待平台回传"}, "backlinks": {"total": 14, "merged": 1, "open": 13, "top": ["awesome-ai-tools 6604★", "awesome-free-models 2664★", "freeStuffDev 1976★"]}, "ammo": {"total": 26, "humanized": 26, "note": "全量人味化收官, 原稿备份/tmp/tokenmost_orig"}, "zhihu_timeline": [{"date": "11-18", "event": "羊毛快讯判垃圾营销删除(首次违规)"}, {"date": "11-19~21", "event": "全功能静默拦截(禁言前兆)"}, {"date": "11-21 19:43", "event": "正式禁言7天(AI批量生成判定)"}, {"date": "11-28 19:43", "event": "解禁→v5执行(今晚)"}, {"date": "今晚", "event": "复验→自答a11→AI声明必勾"}], "pending_boss": ["企鹅号扫码(o6)", "简书扫码", "思否滑块+手机码", "头条完善信息", "公众号注册"], "kpis": {"total_published": 14, "platforms_active": 5, "ammo": 26, "backlinks": 14, "reads_total": 1419, "ore": 15001}};
+document.querySelectorAll('.kpi .v')[0].textContent = D.kpis.total_published;
+document.querySelectorAll('.kpi .v')[1].textContent = D.kpis.reads_total.toLocaleString();
+document.querySelectorAll('.kpi .v')[2].textContent = D.kpis.ammo;
+document.querySelectorAll('.kpi .v')[3].textContent = D.kpis.backlinks;
+document.querySelectorAll('.kpi .v')[4].textContent = D.kpis.ore.toLocaleString();
+const cls = {ok:'st-ok', warn:'st-warn', banned:'st-banned', todo:'st-todo'};
+document.getElementById('acc').innerHTML = '<tr><th>平台</th><th>状态</th><th>备注</th></tr>' +
+  D.accounts.map(a => `<tr><td>${a.platform}</td><td class="${cls[a.status]||''}">${a.statusText}</td><td style="color:#7a8699">${a.note}</td></tr>`).join('');
+document.getElementById('art').innerHTML = '<tr><th>文章</th><th>阅读</th><th>赞/收</th><th>趋势</th></tr>' +
+  D.csdn_articles.map(a => `<tr><td>${a.title}</td><td>${a.reads}</td><td>${a.likes}/${a.collects}</td><td class="${a.delta.includes('❌')?'delta-rej':'delta-up'}">${a.delta}</td></tr>`).join('');
+document.getElementById('tl').innerHTML = D.zhihu_timeline.map(x => `<li><b>${x.date}</b> — ${x.event}</li>`).join('');
+document.getElementById('boss').innerHTML = D.pending_boss.map(x => '• ' + x).join('<br>');
+document.querySelector('.sub').textContent = '数据快照: ' + D.updated + ' · 每日发射任务后由 automation 更新 dashboard-data.json';
+</script>
+</body>
+</html>
