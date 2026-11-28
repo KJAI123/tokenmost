@@ -13,13 +13,14 @@
 - **待复核** `minimax-m3-half`（MiniMax 开放平台）：源 minimax-pricing 页面于 2026-11-20 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `dify-selfhost`（Dify 自部署）：源 dify-pricing 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `modelscope-free-infer`（魔搭 ModelScope）：官方限额页未公布固定每日调用次数（并发动态、魔粒按次扣减）；旧 2,000 次/天仅社区口径留历史，实际限速与余额以账号页为准。 → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-referral 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `siliconflow-signup`（硅基流动）：源 siliconflow-billing 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `openrouter-free`（OpenRouter）：源 openrouter-free-rate-policy 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `nvidia-nim`（NVIDIA NIM）：源 nvidia-build 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `ohmygpt-referral`（OhMyGPT）：源 ohmygpt-pricing 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `aihubmix-free`（AIHubMix）：源 aihubmix-pricing 页面于 2026-11-21 变更（连续 3 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `aihubmix-free`（AIHubMix）：源 aihubmix-pricing 页面于 2026-11-28 变更（连续 3 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-ai-studio`（Google AI Studio）：源 gemini-pricing 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `google-student`（Google AI Studio）：源 gemini-students 页面于 2026-11-26 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `sambanova-free`（SambaNova）：源 sambanova-limits 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `anthropic-credits`（Anthropic）：源 anthropic-pricing 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `deepseek-cache`（DeepSeek）：源 deepseek-pricing 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `kimi-filefree`（Kimi 开放平台）：源 kimi-pricing 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -131,7 +132,7 @@
 - **待复核** `livekit-monthly-2.5usd`（LiveKit Inference）：源 livekit-inference-credit-policy 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `elevenlabs-free-10k`（ElevenLabs）：源 elevenlabs-free-credit-policy 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zed-student-10usd`（Zed）：源 zed-student-credit-policy 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `llm7-free-token`（llm7.io）：源 llm7-free-policy 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `cloudflare-workers-ai-free`（Cloudflare Workers AI）：源 cloudflare-ai-free-policy 页面于 2026-11-26 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `vercel-ai-gateway-free-credits`（Vercel AI Gateway）：源 vercel-gateway-free-policy 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `atlassian-rovo-dev-free`（Atlassian Rovo Dev）：源 quota-review-992d4df445 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
@@ -145,12 +146,13 @@
 - **待复核** `qoder-efficient-zero-credits`（Qoder 国际版）：源 qoder-efficient-zero-credits 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `tencenthub-deepseek-search-billing`（腾讯云 TokenHub）：源 tencenthub-deepseek-search-fees 页面于 2026-11-25 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `electronhub-free-weekly`（Electron Hub）：源 electronhub-free-policy 页面于 2026-11-24 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **待复核** `freellmapi-router`（FreeLLMAPI）：源 freellmapi-readme-review 页面于 2026-11-27 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
+- **待复核** `freellmapi-router`（FreeLLMAPI）：源 freellmapi-readme-review 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `autoclaw-m11w4-login`（智谱 AutoClaw）：源 autoclaw-m11w4-login-terms 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `zhipu-hangzhou-personal-discount`（智谱 BigModel）：源 zhipu-hangzhou-personal-discount-terms 页面于 2026-11-28 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
 - **待复核** `regolo-core-trial`（Regolo.ai）：源 terms-f36b673693af 页面于 2026-11-26 变更（连续 2 次观测一致） → 核实后更新 value/notes 并改 `verify_status:"verified"`
-- **源失联** `linuxdo-rss`：连续 71 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
-- **源失联** `terms-96612fe5b9e2`：连续 9 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `linuxdo-rss`：连续 72 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `scaleway-generative-new-customer`：连续 3 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
+- **源失联** `terms-96612fe5b9e2`：连续 10 次失败（HTTPError: HTTP Error 403: Forbidden）→ 检查 URL 是否失效，或从 tools/sources.json 移除
 - **领取入口需检查** ace-music-daily-20：连续 4 次未确认可达（http_error）；权益保持原核验状态
 - **领取入口需检查** zhiyun-xj-aistore：连续 4 次未确认可达（unreachable）；权益保持原核验状态
 - **领取入口需检查** ant-bailing-monthly-10, ant-bailing-new-20：连续 4 次未确认可达（unreachable）；权益保持原核验状态
