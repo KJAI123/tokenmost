@@ -113,9 +113,11 @@ INPUT_BUDGET_FAQ = [
 
 ROVO_DEV_USAGE = "https://support.atlassian.com/rovo/docs/view-your-rovo-dev-credit-usage/"
 ROVO_DEV_BILLING = "https://support.atlassian.com/subscriptions-and-billing/docs/how-billing-works-for-rovo-dev-standard/"
+ROVO_DEV_CLI_INSTALL = "https://support.atlassian.com/rovo/docs/install-and-run-rovo-dev-cli-on-your-device/"
 ROVO_DEV_FREE_FAQ = [
     ("Rovo Dev Free 积分用在哪里？", "只用于 Rovo Dev 功能。Rovo Dev Standard 和 Code Reviewer 使用各自的计费规则。"),
-    ("Rovo Dev CLI 需要什么条件？", "需要有已启用 Rovo Dev 且分配了额度的站点，以及 CLI 所需的 Rovo Dev 专用授权。"),
+    ("Rovo Dev CLI 需要什么条件？", "需要有已启用 Rovo Dev 且分配了额度的站点，以及 CLI 所需的 Rovo Dev 专用授权。",
+     ("查看 Atlassian 官方安装与运行说明", ROVO_DEV_CLI_INSTALL)),
 ]
 
 APPLICATION_GATES = {"startup", "audit", "oss"}
@@ -564,11 +566,12 @@ def main():
         faq_blocks = []
         faq_items = []
         faq_items_for_page = ROVO_DEV_FREE_FAQ if rovo_free else APPLICATION_FAQ if application_only else INPUT_BUDGET_FAQ if input_budget else FAQ_GEN
-        for q_t, a_t in faq_items_for_page:
+        for q_t, a_t, *links in faq_items_for_page:
             q = q_t.format(name=name, updated=vlabel, n=len(ds), brief=brief)
             a = a_t.format(name=name, updated=vlabel, n=len(ds), brief=brief, total=total_s,
                            evidence_summary=evidence_summary)
-            faq_blocks.append(f"<details><summary>{esc_quote(q)}</summary><p>{esc_quote(a)}</p></details>")
+            references = "".join(f'<p><a href="{esc_quote(url)}">{esc_quote(label)}</a></p>' for label, url in links)
+            faq_blocks.append(f"<details><summary>{esc_quote(q)}</summary><p>{esc_quote(a)}</p>{references}</details>")
             faq_items.append({"q": q, "a": a})
         ld_web = json.dumps({"@context": "https://schema.org", "@type": "WebPage", "name": title,
                              "url": f"https://tokenmost.com/platform/{slug}.html", "inLanguage": "zh-CN",
