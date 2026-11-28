@@ -957,3 +957,11 @@
 - **知乎禁言到期时间修正**：11-21 **19:43** 起算 7 天 → **今晚 19:43 解禁**（白天 STILL-BANNED 为正确状态非复验失败）；已清理 9223 堆积标签（13→3）
 - **今晚 19:43 后执行**：解禁复验 → 自答 a11（人味版）到 question/2107366866469638733 → **AI 声明必勾**（v5 核心）→ 日 1 动作红线启动
 - CSDN 封面缺失待补。4 篇文章均显示「未设置封面」。
+
+## 🎉 c14 WebBridge 全流程发布成功（2026-11-28 晚）
+
+- ✅《两个自动化会话差点把同一篇文章发两遍——去重拦截立功了》660 字发布成功（success/171552378）——AI 案例第 5 篇（真实素材=今日企鹅号 GG1 去重拦截事件）
+- **🚀 架构切换完成：WebBridge 全面替代 9223 CDP**（老板令「都用 webbridge 搞，别开新页面」）
+- WebBridge CSDN 发布管线首跑验证：attach_tab(老板标签 1136206118) → navigate 编辑器 → evaluate React setter 标题 → fill contenteditable 正文 → aria snapshot 找按钮 → **mouse_click+focus_emulation**（合成 click 无效，真实指针必须）→ success URL
+- 坑入册：①弹窗按钮合成 click 不触发，须 mouse_click+focus_emulation ②@e ref 转义在 bash heredoc 中易错，改用 JSON 文件体 ③CSDN SSO 半断：mp 页有管理菜单但 editor 跳登录——重登后同步恢复
+- 登录态保持：老板 Chrome（Kimi WebBridge 扩展）为唯一操作面，9223 退役
