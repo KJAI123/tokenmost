@@ -981,3 +981,10 @@
 **掘金**：登录态确认（老板 Chrome）
 
 **架构**：WebBridge 全面接管（老板 Chrome 唯一操作面），login_watch.sh 巡检工具就绪
+
+## 🎨 企鹅号 7 篇醒目封面替换完成（2026-11-28 晚，7/7 零重试）
+
+- **6 篇旧暗色封面 + 1 篇无封面（退件稿）全部换上亮色醒目版**：高饱和底色+130px 超大白字+黑描边（信息流抓眼设计）
+- 每篇仅耗 1/3 修改额度；终验=逐卡核对缩略图 src 与上传 CDN id 一一对应
+- 老板 Chrome WebBridge 后台操作（borrowed 模式），新坑入册：封面弹窗「确认」mouse_click 被 .omui-dialog-mask 判遮罩拦——改 elementFromPoint 预检命中 BUTTON 后 DOM click；「本地上传」页签点击后才生成 file input
+- 观察点：亮色封面+瀑布流组合 24-48h 给量测试

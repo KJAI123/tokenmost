@@ -187,3 +187,28 @@
 - 企鹅号发布 SOP 新增必检步骤：「封面区 .coverThumb 落位验证通过才允许点提交」——后续新稿发布时直接带封面，不再需要补图流程。
 - 修改额度纪律：每篇编辑消耗 1/3，本轮 6 篇各用 1 次，余量 2 次/篇；补图脚本 `/tmp/omcover/fix_one.py`（n articleId cover.jpg）可复用。
 - 未做 git（按指令）。
+
+## 11-25 封面醒目化（亮色版替换执行）
+
+日期：2026-11-28（老板令「封面要醒目」，旧暗色封面 0 阅读，全部换成 assets/covers/vivid/ 亮色版）。
+额度纪律：旧 6 篇此前已用 1/3，本次每篇只点 1 次修改，全部成功，无失败重试。执行会话 `om-cover-vivid`，截图 /tmp/omv-1.png ~ /tmp/omv-7.png。
+
+| # | 文章 | 封面 | 结果 | 验证 |
+|---|---|---|---|---|
+| 1 | 退件还没检测，怎么先算一笔账？（新稿，原无封面） | v1-tuijian.jpg | ✅ 成功 | 编辑器 .coverThumb 落位（src OApJ9g1P82…）→ 提交 → 列表「修改于 15:25:07」→ 复审通过后卡片已带新图（src 与上传一致） |
+| 2 | AI 工具选型避坑：普通用户最容易犯的 3 个错误 | v1-bikeng.jpg | ✅ 成功 | coverThumb 新 src OyQvT-Ibi4… → 提交 → 修改于 15:28:08 → 列表卡片缩略图已换新 |
+| 3 | 免费云服务器怎么选：5家对比+3个坑 | v1-cloud.jpg | ✅ 成功 | coverThumb 新 src OMb2HKsMUK… → 提交 → 修改于 15:29:55 → 列表缩略图已换新 |
+| 4 | 免费域名怎么搞：3 个正规渠道+2 个坑 | v1-domain.jpg | ✅ 成功 | coverThumb 新 src O2YnB9915… → 提交 → 列表缩略图已换新 |
+| 5 | AI 编程订阅怎么选：按使用强度分三档 | v1-coding.jpg | ✅ 成功 | coverThumb 新 src O7GV5VvBF9… → 提交 → 列表缩略图已换新 |
+| 6 | 海外仓退货到手，先核对安全，再做这 4 个判断 | v1-haiwai.jpg | ✅ 成功 | coverThumb 新 src OMNF3w6JgkL… → 提交 → 列表缩略图已换新 |
+| 7 | 笔记软件免费方案：Obsidian 三件套搭配 | v1-notes.jpg | ✅ 成功 | coverThumb 新 src OfxHCHGTDSL… → 提交 → 修改于 15:34:50，卡片缩略图经审核管线转码 URL 显示 |
+
+失败原因：无（7/7 一次通过）。
+
+流程要点（复用）：
+- 入口路径：文章管理卡片「修改」（mouse_click + focus_emulation:true，后台 tab）→ 编辑器加载 12s。
+- 有封面旧稿走封面缩略图 hover 动作「更换」（span 点击）打开封面弹窗；无封面新稿走 addCoverBtn 虚线框。
+- 弹窗内点「本地上传」页签（li.omui-tab__label）→ `upload {"selector":"input[type=file]"}` 直接注入文件 → 预览出现且「确认」可点 → elementFromPoint 预检命中 BUTTON 后 DOM click（mouse_click 会被 .omui-dialog-mask 拦，确认/提交类按钮用预检+DOM click 更稳）。
+- 提交链：「提交」→ 发布提醒弹窗「确定」→ 自动回列表；每篇最终逐卡核对缩略图 src 与本次上传 CDN id 一致。
+- 修改审核流转很快：多篇提交后数分钟内复审通过回到「发布于」状态且新封面已上卡。
+- 本轮后修改额度：6 篇旧文余 1 次/篇，新稿（退件）余 2 次/篇。未做 git（按指令）。
